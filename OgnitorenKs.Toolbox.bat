@@ -95,6 +95,16 @@ call :Logs
 set download=%konum%\Download
 
 :: ==============================================================================================================================
+:: Toolbox iáin gerekli klasîrler oluüturuluyor.
+mkdir "%konum%\Download" > NUL 2>&1
+mkdir "%konum%\Edit\Appx" > NUL 2>&1
+mkdir "%konum%\Edit\Desktop" > NUL 2>&1
+mkdir "%konum%\Edit\Driver" > NUL 2>&1
+mkdir "%konum%\Edit\ESDtoWIM" > NUL 2>&1
+mkdir "%konum%\Edit\Logs" > NUL 2>&1
+mkdir "%konum%\Edit\Mount" > NUL 2>&1
+mkdir "%konum%\Edit\Update" > NUL 2>&1
+:: ==============================================================================================================================
 ::
 :: Wget.exe yazçlçmlarç bazç antivirÅs yazçlçmlarç tarafçndan virÅs olarak algçlanmaktadçr. 
 :: Bu tarz bir durumda wget.exe dosyasç silinirse indirme iülemleri geráekleütirilemez.
