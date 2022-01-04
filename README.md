@@ -93,6 +93,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 37. - Free Download Manager: İndirme işlemlerinde kullanılacak yardımcı program. Torrent indirme desteğide bulunmaktadır.
 38. - ByClick Downloader: Youtube'dan video indirmeye yarayan uygulamadır.
 39. - Utorrent: Torrent indirme yazılımıdır.
+40?. - Internet Download Manager: Free Download Manager ile hemen hemen aynı işlevlere sahiptir.
 #### ► Diğer Uygulamalar
 40. - GlassWire: İnternet takip programı. Bilgisayarınızda hangi program nereye ne göndermiş ne almış hepsini görebilirsiniz.
 41. - TeamViewer: Bilgisayarlar arası uzaktan bağlantı sağlar.

@@ -1,42 +1,42 @@
-::                               NOTEPAD++ > Kodlama > Karakter Takm > Trk‡e > OEM857
+::                               NOTEPAD++ > Kodlama > Karakter Takï¿½mï¿½ > Tï¿½rkï¿½e > OEM857
 :: ==============================================================================================================================
 ::
-::       þþþþþþþ   þþþþþþ   þþ    þþ þþþþ þþþþþþþþ  þþþþþþþ  þþþþþþþþ  þþþþþþþþ þþ    þþ þþ    þþ  þþþþþþ
-::      þþ     þþ þþ    þþ  þþþ   þþ  þþ     þþ    þþ     þþ þþ     þþ þþ       þþþ   þþ þþ   þþ  þþ    þ
-::      þþ     þþ þþ        þþþþ  þþ  þþ     þþ    þþ     þþ þþ     þþ þþ       þþþþ  þþ þþ  þþ   þþ
-::      þþ     þþ þþ   þþþþ þþ þþ þþ  þþ     þþ    þþ     þþ þþþþþþþþ  þþþþþþ   þþ þþ þþ þþþþþ      þþþþþþ 
-::      þþ     þþ þþ    þþ  þþ  þþþþ  þþ     þþ    þþ     þþ þþ   þþ   þþ       þþ  þþþþ þþ  þþ         þþ
-::      þþ     þþ þþ    þþ  þþ   þþþ  þþ     þþ    þþ     þþ þþ    þþ  þþ       þþ   þþþ þþ   þþ  þþ    þþ
-::       þþþþþþþ   þþþþþþ   þþ    þþ þþþþ    þþ     þþþþþþþ  þþ     þþ þþþþþþþþ þþ    þþ þþ    þþ  þþþþþþ 
+::       ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½   ï¿½ï¿½    ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½    ï¿½ï¿½ ï¿½ï¿½    ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+::      ï¿½ï¿½     ï¿½ï¿½ ï¿½ï¿½    ï¿½ï¿½  ï¿½ï¿½ï¿½   ï¿½ï¿½  ï¿½ï¿½     ï¿½ï¿½    ï¿½ï¿½     ï¿½ï¿½ ï¿½ï¿½     ï¿½ï¿½ ï¿½ï¿½       ï¿½ï¿½ï¿½   ï¿½ï¿½ ï¿½ï¿½   ï¿½ï¿½  ï¿½ï¿½    ï¿½
+::      ï¿½ï¿½     ï¿½ï¿½ ï¿½ï¿½        ï¿½ï¿½ï¿½ï¿½  ï¿½ï¿½  ï¿½ï¿½     ï¿½ï¿½    ï¿½ï¿½     ï¿½ï¿½ ï¿½ï¿½     ï¿½ï¿½ ï¿½ï¿½       ï¿½ï¿½ï¿½ï¿½  ï¿½ï¿½ ï¿½ï¿½  ï¿½ï¿½   ï¿½ï¿½
+::      ï¿½ï¿½     ï¿½ï¿½ ï¿½ï¿½   ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½  ï¿½ï¿½     ï¿½ï¿½    ï¿½ï¿½     ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½   ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
+::      ï¿½ï¿½     ï¿½ï¿½ ï¿½ï¿½    ï¿½ï¿½  ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½  ï¿½ï¿½     ï¿½ï¿½    ï¿½ï¿½     ï¿½ï¿½ ï¿½ï¿½   ï¿½ï¿½   ï¿½ï¿½       ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½  ï¿½ï¿½         ï¿½ï¿½
+::      ï¿½ï¿½     ï¿½ï¿½ ï¿½ï¿½    ï¿½ï¿½  ï¿½ï¿½   ï¿½ï¿½ï¿½  ï¿½ï¿½     ï¿½ï¿½    ï¿½ï¿½     ï¿½ï¿½ ï¿½ï¿½    ï¿½ï¿½  ï¿½ï¿½       ï¿½ï¿½   ï¿½ï¿½ï¿½ ï¿½ï¿½   ï¿½ï¿½  ï¿½ï¿½    ï¿½ï¿½
+::       ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½   ï¿½ï¿½    ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½    ï¿½ï¿½     ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  ï¿½ï¿½     ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½    ï¿½ï¿½ ï¿½ï¿½    ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
 ::
-::  Hazrlayan: Hseyin UZUNYAYLA / OgnitorenKs
-::  Toolbox' hazrlad§m sistemlerde temel programlar indirip, basit bir Ÿekilde sistem zerinde dzenleme yapmas i‡in hazrladm.
-::  Srekli olarak gncellenecektir. Toolbox' indirmek i‡in aŸa§daki linkleri kullanabilirsiniz.
+::  Hazï¿½rlayan: Hï¿½seyin UZUNYAYLA / OgnitorenKs
+::  Toolbox'ï¿½ hazï¿½rladï¿½ï¿½ï¿½m sistemlerde temel programlarï¿½ indirip, basit bir ï¿½ekilde sistem ï¿½zerinde dï¿½zenleme yapmasï¿½ iï¿½in hazï¿½rladï¿½m.
+::  Sï¿½rekli olarak gï¿½ncellenecektir. Toolbox'ï¿½ indirmek iï¿½in aï¿½aï¿½ï¿½daki linkleri kullanabilirsiniz.
 ::   https://www.technopat.net/sosyal/konu/ognitorenks-toolbox-kullanimi.1790250/
 ::
-::  OgnitorenKs.Toolbox katlmsz kurulum dosyasn indirmek i‡in aŸa§daki "Toolbox.Update.bat" dosyasn indirip y”netici olarak ‡alŸtrn.
+::  OgnitorenKs.Toolbox katï¿½lï¿½msï¿½z kurulum dosyasï¿½nï¿½ indirmek iï¿½in aï¿½aï¿½ï¿½daki "Toolbox.Update.bat" dosyasï¿½nï¿½ indirip yï¿½netici olarak ï¿½alï¿½ï¿½tï¿½rï¿½n.
 ::   https://docs.google.com/uc?export=download&id=1JmrWYeNjVopcIP0n9iNkMUCEbQ2SIvpY
 ::
-::  ˜stek ve ”nerileriniz olursa, iletiŸim;
+::  ï¿½stek ve ï¿½nerileriniz olursa, iletiï¿½im;
 ::   Discord: OgnitorenKs#2737 
 ::   Mail: ognitorenks@gmail.com
-::   Site: ognitorenks.blogspot.com (Bu b”lm Ÿu an aktif de§il)
-::   Site: www.technopat.net\Sosyal (Yeni bir konu a‡p yada hazrlad§m konularda @OgnitorenKs yazarak etiketleyebilirsiniz) 
+::   Site: ognitorenks.blogspot.com (Bu bï¿½lï¿½m ï¿½u an aktif deï¿½il)
+::   Site: www.technopat.net\Sosyal (Yeni bir konu aï¿½ï¿½p yada hazï¿½rladï¿½ï¿½ï¿½m konularda @OgnitorenKs yazarak etiketleyebilirsiniz) 
 :: ==============================================================================================================================
-::  Projeye katkda bulunanlar;
+::  Projeye katkï¿½da bulunanlar;
 ::  ---------------------------
-::   Eray Trkay [470650]
+::   Eray Tï¿½rkay [470650]
 ::  ----------------------
-::     Sistem Hakknda - RAM soket yapsnn eklenmesi.
-::    	Sistem Hakknda - Sistem format tarihinin eklenmesi.
+::     Sistem Hakkï¿½nda - RAM soket yapï¿½sï¿½nï¿½n eklenmesi.
+::    	Sistem Hakkï¿½nda - Sistem format tarihinin eklenmesi.
 ::  ----------------------
 ::   KaanBeyhan [DOGGEST]
 ::  ----------------------
-::     ˜ndirme iŸlemlerinde ilerleme ‡ubu§unun eklenmesi.
+::     ï¿½ndirme iï¿½lemlerinde ilerleme ï¿½ubuï¿½unun eklenmesi.
 ::  ---------
 ::   Archley
 ::  ---------
-:: 	   Wifi Crack ‡alŸmasnn toolbox'a eklenmesi. 
+:: 	   Wifi Crack ï¿½alï¿½ï¿½masï¿½nï¿½n toolbox'a eklenmesi. 
 ::
 :: ==============================================================================================================================
 echo off
@@ -47,21 +47,21 @@ call :setESC
 Call :menuRGB
 
 :: ==============================================================================================================================
-::  RENK HAR˜TASI
+::  RENK HARï¿½TASI
 ::  -------------
-:: ^%RGB%^[33m > Sar renkli b”lmler. Men i‡indeki sar renkli b”lmler
-:: ^%RGB%^[36m > Mavi renkli b”lmler. Men i‡indeki mavi renkli b”lmler
-:: ^%RGB%^[37m > Beyaz renkli b”lmler. Men i‡indeki beyaz renkli b”lmler
-:: ^%RGB%^[90m > Gri renkli b”lmler. Men i‡indeki gri renkli b”lmler(€er‡eveler dahil de§il)
-:: ^%RGB%^[92m > De§iŸken rengi (YeŸil). Kullancdan bir de§er girmesi istenilen b”lmlere aittir.
-:: ^%RGB%^[96m > ˜kinci de§iŸken rengi (A‡k Mavi) | Menye yansyan bilgi mesajlar. Ana ekrana dŸecek olan ikinci de§iŸken b”lmlerine aittir.
+:: ^%RGB%^[33m > Sarï¿½ renkli bï¿½lï¿½mler. Menï¿½ iï¿½indeki sarï¿½ renkli bï¿½lï¿½mler
+:: ^%RGB%^[36m > Mavi renkli bï¿½lï¿½mler. Menï¿½ iï¿½indeki mavi renkli bï¿½lï¿½mler
+:: ^%RGB%^[37m > Beyaz renkli bï¿½lï¿½mler. Menï¿½ iï¿½indeki beyaz renkli bï¿½lï¿½mler
+:: ^%RGB%^[90m > Gri renkli bï¿½lï¿½mler. Menï¿½ iï¿½indeki gri renkli bï¿½lï¿½mler(ï¿½erï¿½eveler dahil deï¿½il)
+:: ^%RGB%^[92m > Deï¿½iï¿½ken rengi (Yeï¿½il). Kullanï¿½cï¿½dan bir deï¿½er girmesi istenilen bï¿½lï¿½mlere aittir.
+:: ^%RGB%^[96m > ï¿½kinci deï¿½iï¿½ken rengi (Aï¿½ï¿½k Mavi) | Menï¿½ye yansï¿½yan bilgi mesajlarï¿½. Ana ekrana dï¿½ï¿½ecek olan ikinci deï¿½iï¿½ken bï¿½lï¿½mlerine aittir.
 ::
-:: ^%ESC%^[41m > Hata mesajlar dolgu rengi (krmz)
-:: ^%ESC%^[32m > ˜Ÿlem (yeŸil) numara rengidir. Men i‡indeki iŸlem numaralardr.
-:: ^%ESC%^[36m > Menye d”n renk ayardr. Menye d”n b”lmlerinin renk ayardr.
-:: ^%ESC%^[100m > BaŸlk b”lmlerinde arka plan dolduran renktir.
-:: ^%ESC%^[1;97m > BaŸlkta dolgu b”lmnn i‡inde yer alan yaz rengidir. 1; b”lm kaln yazmasn sa§lar. 97m beyaz renk yazmasn sa§lar.
-:: ^%ESC%^[90m > €er‡eveleri ve | iŸaretlerinin rengini de§iŸir.
+:: ^%ESC%^[41m > Hata mesajlarï¿½ dolgu rengi (kï¿½rmï¿½zï¿½)
+:: ^%ESC%^[32m > ï¿½ï¿½lem (yeï¿½il) numara rengidir. Menï¿½ iï¿½indeki iï¿½lem numaralarï¿½dï¿½r.
+:: ^%ESC%^[36m > Menï¿½ye dï¿½n renk ayarï¿½dï¿½r. Menï¿½ye dï¿½n bï¿½lï¿½mlerinin renk ayarï¿½dï¿½r.
+:: ^%ESC%^[100m > Baï¿½lï¿½k bï¿½lï¿½mlerinde arka planï¿½ dolduran renktir.
+:: ^%ESC%^[1;97m > Baï¿½lï¿½kta dolgu bï¿½lï¿½mï¿½nï¿½n iï¿½inde yer alan yazï¿½ rengidir. 1; bï¿½lï¿½mï¿½ kalï¿½n yazmasï¿½nï¿½ saï¿½lar. 97m beyaz renk yazmasï¿½nï¿½ saï¿½lar.
+:: ^%ESC%^[90m > ï¿½erï¿½eveleri ve | iï¿½aretlerinin rengini deï¿½iï¿½ir.
 :: 
 :: ==============================================================================================================================
 
@@ -75,27 +75,27 @@ echo                           -------
 echo                       %ESC%[91m***  UYARI ***%ESC%[0m
 echo                           -------
 echo 
-echo              %ESC%[92mSa§-Tk Y”netici olarak ‡alŸtrnz...%ESC%[0m 
+echo              %ESC%[92mSaï¿½-Tï¿½k Yï¿½netici olarak ï¿½alï¿½ï¿½tï¿½rï¿½nï¿½z...%ESC%[0m 
 echo 
 echo  ___________________________________________________________
 echo 
-echo             %ESC%[92mKapatmak i‡in herhangi bir tuŸa basnz.%ESC%[0m 
+echo             %ESC%[92mKapatmak iï¿½in herhangi bir tuï¿½a basï¿½nï¿½z.%ESC%[0m 
 pause > nul
 exit
 )
 mode con cols=96 lines=37 
 :: ==============================================================================================================================
-::                                                  DOWNLOAD KONUM B™LšMš
+::                                                  DOWNLOAD KONUM Bï¿½Lï¿½Mï¿½
 ::
-::   Download konumunu de§iŸtirmek istiyorsanz;
-::   set download= eŸittirden sonra klas”r yolunu yazn.
-::   Varsaylan olarak Toolbox klas”r i‡ine ykler.
+::   Download konumunu deï¿½iï¿½tirmek istiyorsanï¿½z;
+::   set download= eï¿½ittirden sonra klasï¿½r yolunu yazï¿½n.
+::   Varsayï¿½lan olarak Toolbox klasï¿½rï¿½ iï¿½ine yï¿½kler.
 
 call :Logs
 set download=%konum%\Download
 
 :: ==============================================================================================================================
-:: Toolbox i‡in gerekli klas”rler oluŸturuluyor.
+:: Toolbox iï¿½in gerekli klasï¿½rler oluï¿½turuluyor.
 mkdir "%konum%\Download" > NUL 2>&1
 mkdir "%konum%\Edit\Appx" > NUL 2>&1
 mkdir "%konum%\Edit\Desktop" > NUL 2>&1
@@ -106,19 +106,19 @@ mkdir "%konum%\Edit\Mount" > NUL 2>&1
 mkdir "%konum%\Edit\Update" > NUL 2>&1
 :: ==============================================================================================================================
 ::
-:: Wget.exe yazlmlar baz antivirs yazlmlar tarafndan virs olarak alglanmaktadr. 
-:: Bu tarz bir durumda wget.exe dosyas silinirse indirme iŸlemleri ger‡ekleŸtirilemez.
-:: AŸa§daki komut ile wget dosyasnn olup olmad§n kontrol ediyorum. Hata vermesi durumunda Powershell komutuyle yeniden indiriyorum.
+:: Wget.exe yazï¿½lï¿½mlarï¿½ bazï¿½ antivirï¿½s yazï¿½lï¿½mlarï¿½ tarafï¿½ndan virï¿½s olarak algï¿½lanmaktadï¿½r. 
+:: Bu tarz bir durumda wget.exe dosyasï¿½ silinirse indirme iï¿½lemleri gerï¿½ekleï¿½tirilemez.
+:: Aï¿½aï¿½ï¿½daki komut ile wget dosyasï¿½nï¿½n olup olmadï¿½ï¿½ï¿½nï¿½ kontrol ediyorum. Hata vermesi durumunda Powershell komutuyle yeniden indiriyorum.
 dir /b "%konum%\Files\wget.exe" > NUL 2>&1
-	if %errorlevel%==1 (echo [%date% - %time%] ^| Wget indiriliyor ^| Wget.exe dosyas bulunamad. Yeniden indirildi. >> %konum%\Logs
-						echo   %ESC%[1;97m%ESC%%ESC%[41m                                Wget.exe dosyas bulunamad                                 %ESC%[0m
+	if %errorlevel%==1 (echo [%date% - %time%] ^| Wget indiriliyor ^| Wget.exe dosyasï¿½ bulunamadï¿½. Yeniden indirildi. >> %konum%\Logs
+						echo   %ESC%[1;97m%ESC%%ESC%[41m                                Wget.exe dosyasï¿½ bulunamadï¿½                                 %ESC%[0m
 						echo   %ESC%[1;97m%ESC%%ESC%[42m                                    Yeniden indiriliyor                                     %ESC%[0m
 						Call :netkontrol
 						powershell -command "& { iwr https://eternallybored.org/misc/wget/1.21.2/64/wget.exe -OutFile %konum%\Files\wget.exe }")
 ::
 :: ------------------------------------------------------------------------------------------------------------------------------
 ::
-:: Ana ekranda yer alan Kullanc ad, iŸletim sistemi gibi bilgiler alnr. 
+:: Ana ekranda yer alan Kullanï¿½cï¿½ adï¿½, iï¿½letim sistemi gibi bilgiler alï¿½nï¿½r. 
 
 wmic os get RegisteredUser, CSName, Caption, OSArchitecture, BuildNumber /value > %Logs%\OS.txt
 FOR /F "tokens=2 delims='='" %%a in ('FIND "Caption" %Logs%\OS.txt') do set caption=%%a 
@@ -134,12 +134,12 @@ FOR /F "tokens=3 delims= " %%f in ('reg query "HKLM\SOFTWARE\Microsoft\Windows N
 for /f "tokens=2 delims='('" %%f in ('powercfg -list ^| findstr /C:"*"') do set gucc=%%f
 set gucc=%gucc:~0,-3%
 
-:: Men i‡inde sisteme g”re ayarlama yapyorum
+:: Menï¿½ iï¿½inde sisteme gï¿½re ayarlama yapï¿½yorum
 FOR /F "tokens=3" %%a in ('FIND "Caption" %Logs%\OS.txt') do set caption2=%%a 
 	if %caption2%==10 (set editmenu=Windows 10 Edit)
 	if %caption2%==11 (set editmenu=Windows 11 Edit)
 	
-:: Y”nlendirme b”lmn sisteme g”re ayarlyorum.
+:: Yï¿½nlendirme bï¿½lï¿½mï¿½nï¿½ sisteme gï¿½re ayarlï¿½yorum.
 echo %caption2% > NUL
 	if %caption2%==10 (set editmenugo=Win10SettingsMenu) 
 	if %caption2%==11 (set editmenugo=Win11SettingsMenu)
@@ -150,11 +150,11 @@ echo %caption2% > NUL
 (
 echo.
 echo ---------------------------------------------------------------------------------------------------------------------------
-echo [%date% - %time%] OgnitorenKs Toolbox baŸlatld.
-echo  ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-echo  º OGNITORENKS TOOLBOX v1.8 ^| USER: %registereduser% ^| PC-Name: %pcname%	
-echo  º OS: %caption% ^| x%osarch% ^| %ImageBuild% ^| %isderleme% ^| G‡: %gucc% 	
-echo  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+echo [%date% - %time%] OgnitorenKs Toolbox baï¿½latï¿½ldï¿½.
+echo  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»
+echo  ï¿½ OGNITORENKS TOOLBOX v1.8 ^| USER: %registereduser% ^| PC-Name: %pcname%	
+echo  ï¿½ OS: %caption% ^| x%osarch% ^| %ImageBuild% ^| %isderleme% ^| Gï¿½ï¿½: %gucc% 	
+echo  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼
 echo ---------------------------------------------------------------------------------------------------------------------------
 echo.
 ) >> %konum%\Logs
@@ -163,40 +163,40 @@ echo.
 cls
 mode con cols=96 lines=37 
 title          O  G  N  I  T  O  R  E  N  K  S     ^|    OGNITORENKS TOOLBOX    ^|       T   O   O   L   B   O   X       
-echo   %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
-echo   %ESC%[90mº%ESC%[1;97m%ESC%%ESC%[100m OGNITORENKS TOOLBOX v1.8 %ESC%[0m%ESC%[90m ^|%ESC%%ESC%[32m USER:%ESC%%ESC%[37m %registereduser% %ESC%%ESC%[90m^|%ESC%%ESC%[32m PC-Name: %ESC%%ESC%[37m%pcname%%ESC%[0m	
-echo   %ESC%[90mº%ESC%%ESC%[32m OS:%ESC%%ESC%[37m %caption% %ESC%%ESC%[90m^|%ESC%%ESC%[37m x%osarch% %ESC%%ESC%[90m^|%ESC%%ESC%[37m %ImageBuild% %ESC%[0m%ESC%[90m^|%ESC%%ESC%[37m %isderleme% %ESC%%ESC%[90m^|%ESC%%ESC%[32m G‡:%ESC%%ESC%[37m %gucc% %ESC%[0m	
-echo   %ESC%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%ESC%[0m
-echo   %ESC%[90mº%ESC%%ESC%[32m  1.%ESC%%RGB%[37m All In One Runtimes%RGB%[0m  %ESC%[90mº%ESC%[0m %ESC%[32m 27.%ESC%%RGB%[36m Kdenlive%RGB%[0m               %ESC%[90mº%ESC%[0m          %ESC%[92m BONUS%ESC%[0m               %ESC%[90mº%ESC%[0m  
-echo   %ESC%[90mº%ESC%%ESC%[32m  2.%ESC%%RGB%[33m Discord%RGB%[0m              %ESC%[90mº%ESC%[0m %ESC%[32m 28.%ESC%%RGB%[36m Krita%RGB%[0m                  %ESC%[90mº%ESC%%ESC%[32m 53.%ESC%%RGB%[36m %editmenu%%ESC%[0m             %ESC%[90mº%ESC%[0m 
-echo   %ESC%[90mº%ESC%%ESC%[32m  3.%ESC%%RGB%[33m Whatsapp%RGB%[0m             %ESC%[90mº%ESC%[0m %ESC%[32m 29.%ESC%%RGB%[36m Gimp%RGB%[0m                   %ESC%[90mº%ESC%%ESC%[32m 54.%ESC%%RGB%[33m Kapatlan Servisleri Y”net%RGB%[0m  %ESC%[90mº%ESC%[0m 
-echo   %ESC%[90mº%ESC%%ESC%[32m  4.%ESC%%RGB%[33m Signal%RGB%[0m               %ESC%[90mº%ESC%[0m %ESC%[32m 30.%ESC%%RGB%[36m OBS Studio%RGB%[0m             %ESC%[90mº%ESC%%ESC%[32m 55.%ESC%%RGB%[33m Simge Hatasn dzelt%RGB%[0m       %ESC%[90mº%ESC%[0m 
-echo   %ESC%[90mº%ESC%%ESC%[32m  5.%ESC%%RGB%[33m Telegram%RGB%[0m             %ESC%[90mº%ESC%[0m %ESC%[32m 31.%ESC%%RGB%[36m ShareX%RGB%[0m                 %ESC%[90mº%ESC%%ESC%[32m 56.%ESC%%RGB%[36m Windows Dzenleme%RGB%[0m           %ESC%[90mº%ESC%[0m 
-echo   %ESC%[90mº%ESC%%ESC%[32m  6.%ESC%%RGB%[33m Microsoft Teams%RGB%[0m      %ESC%[90mº%ESC%[0m %ESC%[32m 32.%ESC%%RGB%[36m Audacity%RGB%[0m               %ESC%[90mº%ESC%%ESC%[32m 57.%ESC%%RGB%[33m Gncelleme Sonras Temizlik%RGB%[0m %ESC%[90mº%ESC%[0m 
-echo   %ESC%[90mº%ESC%%ESC%[32m  7.%ESC%%RGB%[33m Zoom%RGB%[0m                 %ESC%[90mº%ESC%[0m %ESC%[32m 33.%ESC%%RGB%[36m K-Lite Codec%RGB%[0m           %ESC%[90mº%ESC%%ESC%[32m 58.%ESC%%RGB%[33m Sistem / Market Onar%RGB%[0m        %ESC%[90mº%ESC%[0m 
-echo   %ESC%[90mº%ESC%%ESC%[32m  8.%ESC%%RGB%[36m EpicGames%RGB%[0m            %ESC%[90mº%ESC%[0m %ESC%[32m 34.%ESC%%RGB%[36m VLC Media Player%RGB%[0m       %ESC%[90mº%ESC%%ESC%[32m 59.%ESC%%RGB%[33m PC Temizle%RGB%[0m                  %ESC%[90mº%ESC%[0m 
-echo   %ESC%[90mº%ESC%%ESC%[32m  9.%ESC%%RGB%[36m Steam%RGB%[0m                %ESC%[90mº%ESC%[0m %ESC%[32m 35.%ESC%%RGB%[36m Aimp%RGB%[0m                   %ESC%[90mº%ESC%%ESC%[32m 60.%ESC%%RGB%[36m Appx Y”netici%RGB%[0m               %ESC%[90mº%ESC%[0m 
-echo   %ESC%[90mº%ESC%%ESC%[32m 10.%ESC%%RGB%[36m GOG Galaxy%RGB%[0m           %ESC%[90mº%ESC%[0m %ESC%[32m 36.%ESC%%RGB%[36m Any Video Converter%RGB%[0m    %ESC%[90mº%ESC%%ESC%[32m 61.%ESC%%RGB%[36m Folder to ISO%RGB%[0m               %ESC%[90mº%ESC%[0m 
-echo   %ESC%[90mº%ESC%%ESC%[32m 11.%ESC%%RGB%[36m Uplay%RGB%[0m                %ESC%[90mº%ESC%[0m %ESC%[32m 37.%ESC%%RGB%[33m Free Download Manager%RGB%[0m  %ESC%[90mº%ESC%%ESC%[32m 62.%ESC%%RGB%[33m Fat32 to NTFS%RGB%[0m               %ESC%[90mº%ESC%[0m 
-echo   %ESC%[90mº%ESC%%ESC%[32m 12.%ESC%%RGB%[36m Origin%RGB%[0m               %ESC%[90mº%ESC%[0m %ESC%[32m 38.%ESC%%RGB%[33m ByClick Downloader%RGB%[0m     %ESC%[90mº%ESC%%ESC%[32m 63.%ESC%%RGB%[33m Ping ™l‡er%RGB%[0m                  %ESC%[90mº%ESC%[0m  
-echo   %ESC%[90mº%ESC%%ESC%[32m 13.%ESC%%RGB%[36m Cheat Engine%RGB%[0m         %ESC%[90mº%ESC%[0m %ESC%[32m 39.%ESC%%RGB%[33m Utorrent%RGB%[0m               %ESC%[90mº%ESC%%ESC%[32m 64.%ESC%%RGB%[33m Lisans Y”netimi%RGB%[0m             %ESC%[90mº%ESC%[0m
-echo   %ESC%[90mº%ESC%%ESC%[32m 14.%ESC%%RGB%[36m Wemod%RGB%[0m                %ESC%[90mº%ESC%[0m %ESC%[32m 40.%ESC%%RGB%[33m GlassWire%RGB%[0m              %ESC%[90mº%ESC%%ESC%[32m 65.%ESC%%RGB%[33m Kullanc Hesap Y”netimi%RGB%[0m     %ESC%[90mº%ESC%[0m
-echo   %ESC%[90mº%ESC%%ESC%[32m 15.%ESC%%RGB%[37m League Of Legends%RGB%[0m    %ESC%[90mº%ESC%[0m %ESC%[32m 41.%ESC%%RGB%[33m TeamViewer%RGB%[0m             %ESC%[90mº%ESC%%ESC%[32m 66.%ESC%%RGB%[33m Sistem Hakknda%RGB%[0m             %ESC%[90mº%ESC%[0m 
-echo   %ESC%[90mº%ESC%%ESC%[32m 16.%ESC%%RGB%[37m Blitz%RGB%[0m                %ESC%[90mº%ESC%[0m %ESC%[32m 42.%ESC%%RGB%[33m Hamachi%RGB%[0m                %ESC%[90mº%ESC%%ESC%[32m 67.%ESC%%RGB%[33m Wifi Crack%RGB%[0m                  %ESC%[90mº%ESC%[0m
-echo   %ESC%[90mº%ESC%%ESC%[32m 17.%ESC%%RGB%[33m Google Chrome%RGB%[0m        %ESC%[90mº%ESC%[0m %ESC%[32m 43.%ESC%%RGB%[33m Stremio%RGB%[0m                %ESC%[90mº%ESC%[0m                                 %ESC%[90mº%ESC%[0m  
-echo   %ESC%[90mº%ESC%%ESC%[32m 18.%ESC%%RGB%[33m Mozilla Firefox%RGB%[0m      %ESC%[90mº%ESC%[0m %ESC%[32m 44.%ESC%%RGB%[36m ISLC%RGB%[0m                   %ESC%[90mº%ESC%[0m                                 %ESC%[90mº%ESC%[0m 
-echo   %ESC%[90mº%ESC%%ESC%[32m 19.%ESC%%RGB%[33m Brave%RGB%[0m                %ESC%[90mº%ESC%[0m %ESC%[32m 45.%ESC%%RGB%[36m MSI Afterburner%RGB%[0m        %ESC%[90mº%ESC%[0m                                 %ESC%[90mº%ESC%[0m 
-echo   %ESC%[90mº%ESC%%ESC%[32m 20.%ESC%%RGB%[33m Microsoft Edge%RGB%[0m       %ESC%[90mº%ESC%[0m %ESC%[32m 46.%ESC%%RGB%[36m Hibit Uninstaller%RGB%[0m      %ESC%[90mº%ESC%[0m                                 %ESC%[90mº%ESC%[0m 
-echo   %ESC%[90mº%ESC%%ESC%[32m 21.%ESC%%RGB%[36m Libre Office%RGB%[0m         %ESC%[90mº%ESC%[0m %ESC%[32m 47.%ESC%%RGB%[36m Unlocker%RGB%[0m               %ESC%[90mº%ESC%[0m                                 %ESC%[90mº%ESC%[0m 
-echo   %ESC%[90mº%ESC%%ESC%[32m 22.%ESC%%RGB%[36m PDF-XChange Edit”r%RGB%[0m   %ESC%[90mº%ESC%[0m %ESC%[32m 48.%ESC%%RGB%[36m OpenShell%RGB%[0m              %ESC%[90mº%ESC%[0m                                 %ESC%[90mº%ESC%[0m 
-echo   %ESC%[90mº%ESC%%ESC%[32m 23.%ESC%%RGB%[36m Notepad++%RGB%[0m            %ESC%[90mº%ESC%[0m %ESC%[32m 49.%ESC%%RGB%[36m SSD Booster%RGB%[0m            %ESC%[90mº%ESC%[0m                                 %ESC%[90mº%ESC%[0m 
-echo   %ESC%[90mº%ESC%%ESC%[32m 24.%ESC%%RGB%[36m Calibre%RGB%[0m              %ESC%[90mº%ESC%[0m %ESC%[32m 50.%ESC%%RGB%[36m Everything%RGB%[0m             %ESC%[90mº%ESC%%ESC%[32m 97.%ESC%%RGB%[36m Toolbox Kullanm%RGB%[0m           %ESC%[90mº%ESC%[0m 
-echo   %ESC%[90mº%ESC%%ESC%[32m 25.%ESC%%RGB%[33m 7 - Zip%RGB%[0m              %ESC%[90mº%ESC%[0m %ESC%[32m 51.%ESC%%RGB%[36m TaskbarX%RGB%[0m               %ESC%[90mº%ESC%%ESC%[32m 98.%ESC%%RGB%[36m Toolbox Gncelle%RGB%[0m            %ESC%[90mº%ESC%[0m 
-echo   %ESC%[90mº%ESC%%ESC%[32m 26.%ESC%%RGB%[33m WinRAR%RGB%[0m               %ESC%[90mº%ESC%[0m %ESC%[32m 52.%ESC%%RGB%[37m €oklu Se‡im Yap%RGB%[0m        %ESC%[90mº%ESC%%ESC%[32m 99.%ESC%%RGB%[36m Srm Notlar%RGB%[0m               %ESC%[90mº%ESC%[0m
-echo   %ESC%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%ESC%[0m
-echo   %ESC%[90mº%ESC%[0m                          %ESC%[32m X.%ESC%%ESC%[33m Kalntlar temizleyerek kapat%ESC%[0m                              %ESC%[90mº%ESC%[0m
-echo   %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
-set /p menu= %RGB%[92m  Yapmak istedi§iniz iŸlem : %RGB%[0m
+echo   %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»%ESC%[0m
+echo   %ESC%[90mï¿½%ESC%[1;97m%ESC%%ESC%[100m OGNITORENKS TOOLBOX v1.8 %ESC%[0m%ESC%[90m ^|%ESC%%ESC%[32m USER:%ESC%%ESC%[37m %registereduser% %ESC%%ESC%[90m^|%ESC%%ESC%[32m PC-Name: %ESC%%ESC%[37m%pcname%%ESC%[0m	
+echo   %ESC%[90mï¿½%ESC%%ESC%[32m OS:%ESC%%ESC%[37m %caption% %ESC%%ESC%[90m^|%ESC%%ESC%[37m x%osarch% %ESC%%ESC%[90m^|%ESC%%ESC%[37m %ImageBuild% %ESC%[0m%ESC%[90m^|%ESC%%ESC%[37m %isderleme% %ESC%%ESC%[90m^|%ESC%%ESC%[32m Gï¿½ï¿½:%ESC%%ESC%[37m %gucc% %ESC%[0m	
+echo   %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¹%ESC%[0m
+echo   %ESC%[90mï¿½%ESC%%ESC%[32m  1.%ESC%%RGB%[37m All In One Runtimes%RGB%[0m  %ESC%[90mï¿½%ESC%[0m %ESC%[32m 27.%ESC%%RGB%[36m Kdenlive%RGB%[0m               %ESC%[90mï¿½%ESC%[0m          %ESC%[92m BONUS%ESC%[0m               %ESC%[90mï¿½%ESC%[0m  
+echo   %ESC%[90mï¿½%ESC%%ESC%[32m  2.%ESC%%RGB%[33m Discord%RGB%[0m              %ESC%[90mï¿½%ESC%[0m %ESC%[32m 28.%ESC%%RGB%[36m Krita%RGB%[0m                  %ESC%[90mï¿½%ESC%%ESC%[32m 53.%ESC%%RGB%[36m %editmenu%%ESC%[0m             %ESC%[90mï¿½%ESC%[0m 
+echo   %ESC%[90mï¿½%ESC%%ESC%[32m  3.%ESC%%RGB%[33m Whatsapp%RGB%[0m             %ESC%[90mï¿½%ESC%[0m %ESC%[32m 29.%ESC%%RGB%[36m Gimp%RGB%[0m                   %ESC%[90mï¿½%ESC%%ESC%[32m 54.%ESC%%RGB%[33m Kapatï¿½lan Servisleri Yï¿½net%RGB%[0m  %ESC%[90mï¿½%ESC%[0m 
+echo   %ESC%[90mï¿½%ESC%%ESC%[32m  4.%ESC%%RGB%[33m Signal%RGB%[0m               %ESC%[90mï¿½%ESC%[0m %ESC%[32m 30.%ESC%%RGB%[36m OBS Studio%RGB%[0m             %ESC%[90mï¿½%ESC%%ESC%[32m 55.%ESC%%RGB%[33m Simge Hatasï¿½nï¿½ dï¿½zelt%RGB%[0m       %ESC%[90mï¿½%ESC%[0m 
+echo   %ESC%[90mï¿½%ESC%%ESC%[32m  5.%ESC%%RGB%[33m Telegram%RGB%[0m             %ESC%[90mï¿½%ESC%[0m %ESC%[32m 31.%ESC%%RGB%[36m ShareX%RGB%[0m                 %ESC%[90mï¿½%ESC%%ESC%[32m 56.%ESC%%RGB%[36m Windows Dï¿½zenleme%RGB%[0m           %ESC%[90mï¿½%ESC%[0m 
+echo   %ESC%[90mï¿½%ESC%%ESC%[32m  6.%ESC%%RGB%[33m Microsoft Teams%RGB%[0m      %ESC%[90mï¿½%ESC%[0m %ESC%[32m 32.%ESC%%RGB%[36m Audacity%RGB%[0m               %ESC%[90mï¿½%ESC%%ESC%[32m 57.%ESC%%RGB%[33m Gï¿½ncelleme Sonrasï¿½ Temizlik%RGB%[0m %ESC%[90mï¿½%ESC%[0m 
+echo   %ESC%[90mï¿½%ESC%%ESC%[32m  7.%ESC%%RGB%[33m Zoom%RGB%[0m                 %ESC%[90mï¿½%ESC%[0m %ESC%[32m 33.%ESC%%RGB%[36m K-Lite Codec%RGB%[0m           %ESC%[90mï¿½%ESC%%ESC%[32m 58.%ESC%%RGB%[33m Sistem / Market Onar%RGB%[0m        %ESC%[90mï¿½%ESC%[0m 
+echo   %ESC%[90mï¿½%ESC%%ESC%[32m  8.%ESC%%RGB%[36m EpicGames%RGB%[0m            %ESC%[90mï¿½%ESC%[0m %ESC%[32m 34.%ESC%%RGB%[36m VLC Media Player%RGB%[0m       %ESC%[90mï¿½%ESC%%ESC%[32m 59.%ESC%%RGB%[33m PC Temizle%RGB%[0m                  %ESC%[90mï¿½%ESC%[0m 
+echo   %ESC%[90mï¿½%ESC%%ESC%[32m  9.%ESC%%RGB%[36m Steam%RGB%[0m                %ESC%[90mï¿½%ESC%[0m %ESC%[32m 35.%ESC%%RGB%[36m Aimp%RGB%[0m                   %ESC%[90mï¿½%ESC%%ESC%[32m 60.%ESC%%RGB%[36m Appx Yï¿½netici%RGB%[0m               %ESC%[90mï¿½%ESC%[0m 
+echo   %ESC%[90mï¿½%ESC%%ESC%[32m 10.%ESC%%RGB%[36m GOG Galaxy%RGB%[0m           %ESC%[90mï¿½%ESC%[0m %ESC%[32m 36.%ESC%%RGB%[36m Any Video Converter%RGB%[0m    %ESC%[90mï¿½%ESC%%ESC%[32m 61.%ESC%%RGB%[36m Folder to ISO%RGB%[0m               %ESC%[90mï¿½%ESC%[0m 
+echo   %ESC%[90mï¿½%ESC%%ESC%[32m 11.%ESC%%RGB%[36m Uplay%RGB%[0m                %ESC%[90mï¿½%ESC%[0m %ESC%[32m 37.%ESC%%RGB%[33m Free Download Manager%RGB%[0m  %ESC%[90mï¿½%ESC%%ESC%[32m 62.%ESC%%RGB%[33m Fat32 to NTFS%RGB%[0m               %ESC%[90mï¿½%ESC%[0m 
+echo   %ESC%[90mï¿½%ESC%%ESC%[32m 12.%ESC%%RGB%[36m Origin%RGB%[0m               %ESC%[90mï¿½%ESC%[0m %ESC%[32m 38.%ESC%%RGB%[33m ByClick Downloader%RGB%[0m     %ESC%[90mï¿½%ESC%%ESC%[32m 63.%ESC%%RGB%[33m Ping ï¿½lï¿½er%RGB%[0m                  %ESC%[90mï¿½%ESC%[0m  
+echo   %ESC%[90mï¿½%ESC%%ESC%[32m 13.%ESC%%RGB%[36m Cheat Engine%RGB%[0m         %ESC%[90mï¿½%ESC%[0m %ESC%[32m 39.%ESC%%RGB%[33m Utorrent%RGB%[0m               %ESC%[90mï¿½%ESC%%ESC%[32m 64.%ESC%%RGB%[33m Lisans Yï¿½netimi%RGB%[0m             %ESC%[90mï¿½%ESC%[0m
+echo   %ESC%[90mï¿½%ESC%%ESC%[32m 14.%ESC%%RGB%[36m Wemod%RGB%[0m                %ESC%[90mï¿½%ESC%[0m %ESC%[32m 40.%ESC%%RGB%[33m GlassWire%RGB%[0m              %ESC%[90mï¿½%ESC%%ESC%[32m 65.%ESC%%RGB%[33m Kullancï¿½ Hesap Yï¿½netimi%RGB%[0m     %ESC%[90mï¿½%ESC%[0m
+echo   %ESC%[90mï¿½%ESC%%ESC%[32m 15.%ESC%%RGB%[37m League Of Legends%RGB%[0m    %ESC%[90mï¿½%ESC%[0m %ESC%[32m 41.%ESC%%RGB%[33m TeamViewer%RGB%[0m             %ESC%[90mï¿½%ESC%%ESC%[32m 66.%ESC%%RGB%[33m Sistem Hakkï¿½nda%RGB%[0m             %ESC%[90mï¿½%ESC%[0m 
+echo   %ESC%[90mï¿½%ESC%%ESC%[32m 16.%ESC%%RGB%[37m Blitz%RGB%[0m                %ESC%[90mï¿½%ESC%[0m %ESC%[32m 42.%ESC%%RGB%[33m Hamachi%RGB%[0m                %ESC%[90mï¿½%ESC%%ESC%[32m 67.%ESC%%RGB%[33m Wifi Crack%RGB%[0m                  %ESC%[90mï¿½%ESC%[0m
+echo   %ESC%[90mï¿½%ESC%%ESC%[32m 17.%ESC%%RGB%[33m Google Chrome%RGB%[0m        %ESC%[90mï¿½%ESC%[0m %ESC%[32m 43.%ESC%%RGB%[33m Stremio%RGB%[0m                %ESC%[90mï¿½%ESC%[0m                                 %ESC%[90mï¿½%ESC%[0m  
+echo   %ESC%[90mï¿½%ESC%%ESC%[32m 18.%ESC%%RGB%[33m Mozilla Firefox%RGB%[0m      %ESC%[90mï¿½%ESC%[0m %ESC%[32m 44.%ESC%%RGB%[36m ISLC%RGB%[0m                   %ESC%[90mï¿½%ESC%[0m                                 %ESC%[90mï¿½%ESC%[0m 
+echo   %ESC%[90mï¿½%ESC%%ESC%[32m 19.%ESC%%RGB%[33m Brave%RGB%[0m                %ESC%[90mï¿½%ESC%[0m %ESC%[32m 45.%ESC%%RGB%[36m MSI Afterburner%RGB%[0m        %ESC%[90mï¿½%ESC%[0m                                 %ESC%[90mï¿½%ESC%[0m 
+echo   %ESC%[90mï¿½%ESC%%ESC%[32m 20.%ESC%%RGB%[33m Microsoft Edge%RGB%[0m       %ESC%[90mï¿½%ESC%[0m %ESC%[32m 46.%ESC%%RGB%[36m Hibit Uninstaller%RGB%[0m      %ESC%[90mï¿½%ESC%[0m                                 %ESC%[90mï¿½%ESC%[0m 
+echo   %ESC%[90mï¿½%ESC%%ESC%[32m 21.%ESC%%RGB%[36m Libre Office%RGB%[0m         %ESC%[90mï¿½%ESC%[0m %ESC%[32m 47.%ESC%%RGB%[36m Unlocker%RGB%[0m               %ESC%[90mï¿½%ESC%[0m                                 %ESC%[90mï¿½%ESC%[0m 
+echo   %ESC%[90mï¿½%ESC%%ESC%[32m 22.%ESC%%RGB%[36m PDF-XChange Editï¿½r%RGB%[0m   %ESC%[90mï¿½%ESC%[0m %ESC%[32m 48.%ESC%%RGB%[36m OpenShell%RGB%[0m              %ESC%[90mï¿½%ESC%[0m                                 %ESC%[90mï¿½%ESC%[0m 
+echo   %ESC%[90mï¿½%ESC%%ESC%[32m 23.%ESC%%RGB%[36m Notepad++%RGB%[0m            %ESC%[90mï¿½%ESC%[0m %ESC%[32m 49.%ESC%%RGB%[36m SSD Booster%RGB%[0m            %ESC%[90mï¿½%ESC%[0m                                 %ESC%[90mï¿½%ESC%[0m 
+echo   %ESC%[90mï¿½%ESC%%ESC%[32m 24.%ESC%%RGB%[36m Calibre%RGB%[0m              %ESC%[90mï¿½%ESC%[0m %ESC%[32m 50.%ESC%%RGB%[36m Everything%RGB%[0m             %ESC%[90mï¿½%ESC%%ESC%[32m 97.%ESC%%RGB%[36m Toolbox Kullanï¿½mï¿½%RGB%[0m           %ESC%[90mï¿½%ESC%[0m 
+echo   %ESC%[90mï¿½%ESC%%ESC%[32m 25.%ESC%%RGB%[33m 7 - Zip%RGB%[0m              %ESC%[90mï¿½%ESC%[0m %ESC%[32m 51.%ESC%%RGB%[36m TaskbarX%RGB%[0m               %ESC%[90mï¿½%ESC%%ESC%[32m 98.%ESC%%RGB%[36m Toolbox Gï¿½ncelle%RGB%[0m            %ESC%[90mï¿½%ESC%[0m 
+echo   %ESC%[90mï¿½%ESC%%ESC%[32m 26.%ESC%%RGB%[33m WinRAR%RGB%[0m               %ESC%[90mï¿½%ESC%[0m %ESC%[32m 52.%ESC%%RGB%[37m ï¿½oklu Seï¿½im Yap%RGB%[0m        %ESC%[90mï¿½%ESC%%ESC%[32m 99.%ESC%%RGB%[36m Sï¿½rï¿½m Notlarï¿½%RGB%[0m               %ESC%[90mï¿½%ESC%[0m
+echo   %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¹%ESC%[0m
+echo   %ESC%[90mï¿½%ESC%[0m                          %ESC%[32m X.%ESC%%ESC%[33m Kalï¿½ntï¿½larï¿½ temizleyerek kapat%ESC%[0m                              %ESC%[90mï¿½%ESC%[0m
+echo   %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼%ESC%[0m
+set /p menu= %RGB%[92m  Yapmak istediï¿½iniz iï¿½lem : %RGB%[0m
 	if %menu%==1 (Call :Download1)
 	if %menu%==2 (Call :Download2)
 	if %menu%==3 (Call :Download3)
@@ -248,9 +248,11 @@ set /p menu= %RGB%[92m  Yapmak istedi§iniz iŸlem : %RGB%[0m
 	if %menu%==49 (Call :Download49)
 	if %menu%==50 (Call :Download50)
 	if %menu%==51 (Call :Download51)
+	if %menu%==522 (Call :Download52)
+	if %menu%==533 (Call :Download53)
 	if %menu%==52 GOTO MultiSelect
 	if %menu%==53 GOTO %editmenugo%
-	if %menu%==54 GOTO kapatilanservislery”netimi
+	if %menu%==54 GOTO kapatilanservisleryï¿½netimi
 	if %menu%==55 (Call :icofix)
 	if %menu%==56 (Call :WindowsEdition)
 	if %menu%==57 GOTO UpdateAfter
@@ -265,41 +267,41 @@ set /p menu= %RGB%[92m  Yapmak istedi§iniz iŸlem : %RGB%[0m
 	if %menu%==66 (Call :SistemHakkinda)
 	if %menu%==67 (Call :wificrackarchley)
 	if %menu%==97 (start https://drive.google.com/file/d/1TeuGBW_3OSMtNn4jW10KFXZ433isP6jJ/view?usp=sharing&goto menu)
-	if %menu%==98 (Call :Logss "Toolbox.Update" "Toolbox gncelleme arac ‡alŸtrld."
+	if %menu%==98 (Call :Logss "Toolbox.Update" "Toolbox gï¿½ncelleme aracï¿½ ï¿½alï¿½ï¿½tï¿½rï¿½ldï¿½."
 				   Powershell -command "Start-Process '%konum%\Toolbox.Update.bat'"&exit)
-	if %menu%==99 (Call :Logss "Toolbox.Update" "Toolbox Srm Notlar sayfas a‡ld."
+	if %menu%==99 (Call :Logss "Toolbox.Update" "Toolbox Sï¿½rï¿½m Notlarï¿½ sayfasï¿½ aï¿½ï¿½ldï¿½."
 				   start https://drive.google.com/file/d/14w5_BWIKreSDhCjJk_Ay27uer-SI9ix3/view&goto menu)
-	if %menu%==x (Call :Logss "Kalntlar.Temizle" "Download klas”r temizlendi."
+	if %menu%==x (Call :Logss "Kalï¿½ntï¿½larï¿½.Temizle" "Download klasï¿½rï¿½ temizlendi."
 				  cls&DEL /F /Q /A %download%\*&RD /S /Q %download%\*&goto exit)
-	if %menu%==X (Call :Logss "Kalntlar.Temizle" "Download klas”r temizlendi."
+	if %menu%==X (Call :Logss "Kalï¿½ntï¿½larï¿½.Temizle" "Download klasï¿½rï¿½ temizlendi."
 				  cls&DEL /F /Q /A %download%\*&RD /S /Q %download%\*&goto exit)
 else
 	goto menu
 
 
 :MultiSelect
-set /p $multi= %ESC%[96m  Se‡im arasna virgl koyun  : %ESC%[0m
+set /p $multi= %ESC%[96m  Seï¿½im arasï¿½na virgï¿½l koyun  : %ESC%[0m
 (
 echo ---------------------------------------------------------------------------------------------------------------------------
-echo [%date% - %time%] ^| MultiSelect ^| Se‡ilenler:"%$multi%"
+echo [%date% - %time%] ^| MultiSelect ^| Seï¿½ilenler:"%$multi%"
 ) >> %konum%\Logs
 cls
-echo   %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
-echo   %ESC%[90mº%ESC%[1;97m%ESC%%ESC%[100m OGNITORENKS TOOLBOX %ESC%[0m%ESC%[90m ^|%ESC%%ESC%[32m USER:%ESC%%ESC%[37m %registereduser% %ESC%%ESC%[90m^|%ESC%%ESC%[32m PC-Name: %ESC%%ESC%[37m%pcname%%ESC%[0m	
-echo   %ESC%[90mº%ESC%%ESC%[32m OS:%ESC%%ESC%[37m %caption% %ESC%%ESC%[90m^|%ESC%%ESC%[37m x%osarch% %ESC%%ESC%[90m^|%ESC%%ESC%[37m %ImageBuild% %ESC%[0m%ESC%[90m^|%ESC%%ESC%[37m %isderleme% %ESC%%ESC%[90m^|%ESC%%ESC%[32m G‡:%ESC%%ESC%[37m %gucc% %ESC%[0m
-echo   %ESC%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%ESC%[0m
-echo                                         %ESC%[92m €OKLU ˜ND˜RME%ESC%[0m 
-echo   %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
-echo    %RGB%[96m Se‡ilen indirmeler: %$multi%%RGB%[0m
+echo   %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»%ESC%[0m
+echo   %ESC%[90mï¿½%ESC%[1;97m%ESC%%ESC%[100m OGNITORENKS TOOLBOX %ESC%[0m%ESC%[90m ^|%ESC%%ESC%[32m USER:%ESC%%ESC%[37m %registereduser% %ESC%%ESC%[90m^|%ESC%%ESC%[32m PC-Name: %ESC%%ESC%[37m%pcname%%ESC%[0m	
+echo   %ESC%[90mï¿½%ESC%%ESC%[32m OS:%ESC%%ESC%[37m %caption% %ESC%%ESC%[90m^|%ESC%%ESC%[37m x%osarch% %ESC%%ESC%[90m^|%ESC%%ESC%[37m %ImageBuild% %ESC%[0m%ESC%[90m^|%ESC%%ESC%[37m %isderleme% %ESC%%ESC%[90m^|%ESC%%ESC%[32m Gï¿½ï¿½:%ESC%%ESC%[37m %gucc% %ESC%[0m
+echo   %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¹%ESC%[0m
+echo                                         %ESC%[92m ï¿½OKLU ï¿½NDï¿½RME%ESC%[0m 
+echo   %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼%ESC%[0m
+echo    %RGB%[96m Seï¿½ilen indirmeler: %$multi%%RGB%[0m
 FOR %%a in (%$multi%) do (Call :Download%%a)
 echo --------------------------------------------------------------------------------------------------------------------------- >> %konum%\Logs
 goto menu
 
 :Download1
 cls
-:: AŸa§daki FOR d”ngsyle link.bat dosyas i‡inden programlara ait linkleri alyorum.
-:: Link sistemini katlmsz program hazrlama b”lmnde kulland§m i‡in ortak bir sistem olarak hazrladm.
-:: Di§er download b”lmleri de ayn Ÿekilde ‡alŸmaktadr.
+:: Aï¿½aï¿½ï¿½daki FOR dï¿½ngï¿½sï¿½yle link.bat dosyasï¿½ iï¿½inden programlara ait linkleri alï¿½yorum.
+:: Link sistemini katï¿½lï¿½msï¿½z program hazï¿½rlama bï¿½lï¿½mï¿½nde kullandï¿½ï¿½ï¿½m iï¿½in ortak bir sistem olarak hazï¿½rladï¿½m.
+:: Diï¿½er download bï¿½lï¿½mleri de aynï¿½ ï¿½ekilde ï¿½alï¿½ï¿½maktadï¿½r.
 FOR /F "tokens=1" %%i in ('FIND "05x86ATL" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" 05x86ATL.exe /Q
 FOR /F "tokens=1" %%i in ('FIND "05x64ATL" %konum%\Ekler\Links.bat') do set link=%%i
@@ -631,36 +633,46 @@ goto :eof
 FOR /F "tokens=1" %%i in ('FIND "TaskbarX" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wgetozel "%link%" TaskbarX.zip 
 powershell -command "Expand-Archive -Force '%download%\TaskbarX.zip' 'C:\Users\%username%\Desktop\TaskbarX'"
-powershell -command "Start-Process 'C:\Users\%username%\Desktop\TaskbarX\TaskbarX Configurator.exe'
-powershell -command "Start-Process 'C:\Users\%username%\Desktop\TaskbarX\TaskbarX.exe'
+powershell -command "Start-Process 'C:\Users\%username%\Desktop\TaskbarX\TaskbarX Configurator.exe'"
+powershell -command "Start-Process 'C:\Users\%username%\Desktop\TaskbarX\TaskbarX.exe'"
 goto :eof
+
+:Download52
+FOR /F "tokens=1" %%i in ('FIND "IDMAN" %konum%\Ekler\Links.bat') do set link=%%i
+Call :wget "%link%" IDMAN.exe /skipdlgs
+goto :eof
+
+:Download53
+FOR /F "tokens=1" %%i in ('FIND "python-x64" %konum%\Ekler\Links.bat') do set link=%%i
+Call :wgetdesktop "%link%" python-x64.exe /quiet InstallAllUsers=1 PrependPath=1
+powershell -command "Start-Process 'C:\Users\%username%\Desktop\python-x64.exe'"
 
 :: ---------------------------------------------------------------------------------------------------------------------------------------------------
 :WindowsRepair
 cls
 mode con cols=80 lines=30
 
-Call :Logss "WindowsRepair" "Windows onarma se‡ene§i kullanld."
+Call :Logss "WindowsRepair" "Windows onarma seï¿½eneï¿½i kullanï¿½ldï¿½."
 
 Call :PC.Temizle
-echo %ESC%[92m   Sfc /scannow komutu ‡alŸyor...%ESC%[0m
+echo %ESC%[92m   Sfc /scannow komutu ï¿½alï¿½ï¿½ï¿½yor...%ESC%[0m
 sfc /scannow
-echo %ESC%[92m   DISM /Online /Cleanup-Image /RestoreHealth komutu ‡alŸtrlyor...%ESC%[0m
+echo %ESC%[92m   DISM /Online /Cleanup-Image /RestoreHealth komutu ï¿½alï¿½ï¿½tï¿½rï¿½lï¿½yor...%ESC%[0m
 DISM /Online /Cleanup-Image /RestoreHealth
 echo %ESC%[92m   WinSxS Temizleniyor...%ESC%[0m
 Dism /Online /Cleanup-Image /StartComponentCleanup 
-echo %ESC%[92m   Market Regedit kaytlar dzenleniyor...%ESC%[0m
-:: Market b”lmnnn sorunsuz ‡alŸmas i‡in reg kaytlarn dzenler
+echo %ESC%[92m   Market Regedit kayï¿½tlarï¿½ dï¿½zenleniyor...%ESC%[0m
+:: Market bï¿½lï¿½mï¿½nï¿½nï¿½n sorunsuz ï¿½alï¿½ï¿½masï¿½ iï¿½in reg kayï¿½tlarï¿½nï¿½ dï¿½zenler
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsStore" /f /v "RemoveWindowsStore" /t REG_DWORD /d 0 > NUL 2>&1
-:: Market i‡in gerekli hizmetleri baŸlatr.
-echo %ESC%[92m   Market uygulamas i‡in servisler ‡alŸtrlyor...%ESC%[0m
-:: AppX Deployment Service (Da§tm Hizmeti)
+:: Market iï¿½in gerekli hizmetleri baï¿½latï¿½r.
+echo %ESC%[92m   Market uygulamasï¿½ iï¿½in servisler ï¿½alï¿½ï¿½tï¿½rï¿½lï¿½yor...%ESC%[0m
+:: AppX Deployment Service (Daï¿½ï¿½tï¿½m Hizmeti)
 sc config AppXSvc start= demand > NUL 2>&1
 net start AppXSvc > NUL 2>&1
-:: Yetenek EriŸim Y”neticisi Hizmeti
+:: Yetenek Eriï¿½im Yï¿½neticisi Hizmeti
 sc config camsvc start= demand > NUL 2>&1
 net start camsvc > NUL 2>&1
-:: žifreleme Hizmetleri
+:: ï¿½ifreleme Hizmetleri
 sc config cryptsvc start= auto > NUL 2>&1
 net start cryptsvc > NUL 2>&1
 :: Windows Update
@@ -669,37 +681,37 @@ net start wuauserv > NUL 2>&1
 :: Depolama Hizmeti
 sc config StorSvc start= demand > NUL 2>&1
 net start StorSvc > NUL 2>&1
-:: Arka Plan Akll Aktarm Hizmeti
+:: Arka Plan Akï¿½llï¿½ Aktarï¿½m Hizmeti
 sc config bits start= auto > NUL 2>&1
 net start bits > NUL 2>&1
-:: Windows Modl Ykleyici
+:: Windows Modï¿½l Yï¿½kleyici
 sc config trustedinstaller start= demand > NUL 2>&1
 net start trustedinstaller > NUL 2>&1
 net start ClipSVC > NUL 2>&1
-echo %ESC%[92m   DLL dosyalar kontrol ediliyor...%ESC%[0m
+echo %ESC%[92m   DLL dosyalarï¿½ kontrol ediliyor...%ESC%[0m
 regsvr32 softpub.dll /s&regsvr32 wintrust.dll /s&regsvr32 initpki.dll /s&regsvr32 dssenh.dll /s&regsvr32 rsaenh.dll /s&regsvr32 gpkcsp.dll /s&regsvr32 sccbase.dll /s&regsvr32 slbcsp.dll /s&regsvr32 mssip32.dll /s&regsvr32 cryptdlg.dll /s&regsvr32 msxml3.dll /s&regsvr32 comcat.dll /s&Regsvr32 Msxml.dll /s&Regsvr32 Msxml2.dll /s&regsvr32 mshtml.dll /s&regsvr32 shdocvw.dll /s&regsvr32 browseui.dll /s&regsvr32 msjava.dll /s&regsvr32 shdoc401.dll /s&regsvr32 cdm.dll /s&regsvr32 shdoc401.dll /i /s&regsvr32 gpkcsp.dll /s&regsvr32 sccbase.dll /s&regsvr32 asctrls.ocx /s&regsvr32 wintrust.dll /s&regsvr32 initpki.dll /s&regsvr32 softpub.dll /s&regsvr32 oleaut32.dll /s&regsvr32 shdocvw.dll /I /s&regsvr32 Shell32.dll /s&regsvr32 browseui.dll /s&regsvr32 browseui.dll /I /s&regsvr32 msrating.dll /s&regsvr32 mlang.dll /s&regsvr32 hlink.dll /s&regsvr32 mshtmled.dll /s&regsvr32 urlmon.dll /s&regsvr32 urlmon.dll /i /s&regsvr32 plugin.ocx /s&regsvr32 sendmail.dll /s&regsvr32 scrobj.dll /s&regsvr32 mmefxe.ocx /s&regsvr32 corpol.dll /s&regsvr32 jscript.dll /s&regsvr32 imgutil.dll /s&regsvr32 thumbvw.dll /s&regsvr32 cryptext.dll /s&regsvr32 rsabase.dll /s&regsvr32 inseng.dll /s&regsvr32 iesetup.dll /i /s&regsvr32 actxprxy.dll /s&regsvr32 dispex.dll /s&regsvr32 occache.dll /s&regsvr32 occache.dll /i /s&regsvr32 iepeers.dll /s&regsvr32 cdfview.dll /s&regsvr32 webcheck.dll /s&regsvr32 mobsync.dll /s&regsvr32 pngfilt.dll /s&regsvr32 licmgr10.dll /s
 regsvr32 icmfilter.dll /s&regsvr32 hhctrl.ocx /s&regsvr32 inetcfg.dll /s&regsvr32 tdc.ocx /s&regsvr32 MSR2C.DLL /s&regsvr32 msident.dll /s&regsvr32 msieftp.dll /s&regsvr32 xmsconf.ocx /s&regsvr32 ils.dll /s&regsvr32 msoeacct.dll /s&regsvr32 inetcomm.dll /s&regsvr32 msdxm.ocx /s&regsvr32 dxmasf.dll /s&regsvr32 l3codecx.ax /s&regsvr32 acelpdec.ax /s&regsvr32 mpg4ds32.ax /s&regsvr32 voxmsdec.ax /s&regsvr32 danim.dll /s&regsvr32 Daxctle.ocx /s&regsvr32 lmrt.dll /s&regsvr32 datime.dll /s&regsvr32 dxtrans.dll /s&regsvr32 dxtmsft.dll /s&regsvr32 WEBPOST.DLL /s&regsvr32 WPWIZDLL.DLL /s&regsvr32 POSTWPP.DLL /s&regsvr32 CRSWPP.DLL /s&regsvr32 FTPWPP.DLL /s&regsvr32 FPWPP.DLL /s&regsvr32 WUAPI.DLL /s&regsvr32 wups2.dll /S&regsvr32 WUAUENG.DLL /s&regsvr32 ATL.DLL /s&regsvr32 WUCLTUI.DLL /s&regsvr32 WUPS.DLL /s&regsvr32 WUWEB.DLL /s&regsvr32 wshom.ocx /s&regsvr32 wshext.dll /s&regsvr32 vbscript.dll /s&regsvr32 scrrun.dll mstinit.exe /setup /s&regsvr32 msnsspc.dll /SspcCreateSspiReg /s&regsvr32 msapsspc.dll /SspcCreateSspiReg /s
 wsreset
-echo %ESC%[92m ˜Ÿlem tamamland.%ESC%[0m
+echo %ESC%[92m ï¿½ï¿½lem tamamlandï¿½.%ESC%[0m
 timeout /t 3 /nobreak > NUL
 goto :eof
 
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 :PCTemizle
 cls
-Call :Logss "PCTemizle" "'PC Temizle' se‡e§i ‡alŸtrld." >> %konum%\Logs
-echo %ESC%[92m   Eski tarihli dosya ge‡miŸi temizleniyor...%ESC%[0m
+Call :Logss "PCTemizle" "'PC Temizle' seï¿½eï¿½i ï¿½alï¿½ï¿½tï¿½rï¿½ldï¿½." >> %konum%\Logs
+echo %ESC%[92m   Eski tarihli dosya geï¿½miï¿½i temizleniyor...%ESC%[0m
 FhManagew.exe -cleanup 360 -quiet > NUL 2>&1
 
-echo %ESC%[92m   ico ve k‡k resim belle§i temizleniyor...%ESC%[0m
+echo %ESC%[92m   ico ve kï¿½ï¿½ï¿½k resim belleï¿½i temizleniyor...%ESC%[0m
 taskkill /f /IM explorer.exe > NUL 2>&1
 DEL /F /Q /A %userprofile%\AppData\Local\Microsoft\Windows\Explorer\*.* > NUL 2>&1
 DEL /F /Q /A %LocalAppData%\Microsoft\Windows\Explorer\thumbcache_*.db > NUL 2>&1
 Start explorer.exe > NUL 2>&1
 
-echo %ESC%[92m   Temp dosyas temizleniyor...%ESC%[0m
+echo %ESC%[92m   Temp dosyasï¿½ temizleniyor...%ESC%[0m
 DEL /F /Q /A %temp%\OgnitorenKs.Toolbax\* > NUL 2>&1
 RD /S /Q %temp%\* > NUL 2>&1
 
@@ -711,89 +723,89 @@ net start wuauserv > NUL 2>&1
 echo %ESC%[92m   Prefetch temizleniyor...%ESC%[0m
 DEL /F /Q /A %windir%\prefetch\* > NUL 2>&1
 
-echo %ESC%[92m   Windows tarafndan oluŸturulan ‡”p dosyalar temizleniyor...%ESC%[0m
+echo %ESC%[92m   Windows tarafï¿½ndan oluï¿½turulan ï¿½ï¿½p dosyalar temizleniyor...%ESC%[0m
 DEL /F /Q /A %windir%\temp\* > NUL 2>&1
 
-::echo %ESC%[92m   Adobe Reader kalntlar temizleniyor...%ESC%[0m
+::echo %ESC%[92m   Adobe Reader kalï¿½ntï¿½larï¿½ temizleniyor...%ESC%[0m
 ::DEL /F /Q /A %localappdata%\Adobe\Acrobat\DC\Cache\* > NUL 2>&1
 ::DEL /F /Q /A %localappdata%\Adobe\Acrobat\DC\*.lst > NUL 2>&1
 
-echo %ESC%[92m   Microsoft Edge ”nbelle§i temizleniyor...%ESC%[0m
+echo %ESC%[92m   Microsoft Edge ï¿½nbelleï¿½i temizleniyor...%ESC%[0m
 DEL /F /Q /A %programfiles(x86)%\Microsoft\Edge\User Data\Default\Cache\* > NUL 2>&1
 DEL /F /Q /A %localappdata%\Microsoft\Edge\User Data\Default\Service Worker\CacheStorage\* > NUL 2>&1
 
-echo %ESC%[92m   Ekran Kart Driver kalntlar temizleniyor...%ESC%[0m
+echo %ESC%[92m   Ekran Kartï¿½ Driver kalï¿½ntï¿½larï¿½ temizleniyor...%ESC%[0m
 RD /S /Q %systemdrive%\AMD > NUL 2>&1
 RD /S /Q %systemdrive%\NVIDIA > NUL 2>&1
 
-echo %ESC%[92m   Sistem Log Dosyalar siliniyor...%ESC%[0m
+echo %ESC%[92m   Sistem Log Dosyalarï¿½ siliniyor...%ESC%[0m
 DEL /F /Q /A %windir%\System32\LogFiles\* > NUL 2>&1
 
-echo %ESC%[92m   Yaz tipi ”nbelli§i siliniyor...%ESC%[0m
+echo %ESC%[92m   Yazï¿½ tipi ï¿½nbelliï¿½i siliniyor...%ESC%[0m
 DEL /F /Q /A %windir%\System32\FNTCACHE.DAT > NUL 2>&1
 
-echo %ESC%[92m   Windows Sistem ™nbelli§i temizleniyor...%ESC%[0m
+echo %ESC%[92m   Windows Sistem ï¿½nbelliï¿½i temizleniyor...%ESC%[0m
 DEL /F /Q /A %windir%\System32\config\systemprofile\AppData\LocalLow\Microsoft\CryptnetUrlCache\Content\* > NUL 2>&1
 
-echo %ESC%[92m   Windows Ykleyici ™nbelli§i temizleniyor...%ESC%[0m
+echo %ESC%[92m   Windows Yï¿½kleyici ï¿½nbelliï¿½i temizleniyor...%ESC%[0m
 DEL /F /Q /A %windir%\Installer\$PatchCache$\Managed\* > NUL 2>&1
 
-echo %ESC%[92m   Uygulamalar tarafndan oluŸturulan kalntlar temizleniyor...%ESC%[0m
+echo %ESC%[92m   Uygulamalar tarafï¿½ndan oluï¿½turulan kalï¿½ntï¿½lar temizleniyor...%ESC%[0m
 DEL /F /Q /A %localappdata%\Temp\* > NUL 2>&1
 
-echo %ESC%[92m   Hata Raporu Dosyalar temizleniyor...%ESC%[0m
+echo %ESC%[92m   Hata Raporu Dosyalarï¿½ temizleniyor...%ESC%[0m
 DEL /F /Q /A %programdata%\Microsoft\Windows\WER\ReportQueue\* > NUL 2>&1
 
 echo %ESC%[92m   WinSxS temizleniyor...%ESC%[0m
 Dism /Online /Cleanup-Image /StartComponentCleanup
 
-echo %ESC%[92m   Disk temizleme iŸlemi yaplyor...%ESC%[0m
+echo %ESC%[92m   Disk temizleme iï¿½lemi yapï¿½lï¿½yor...%ESC%[0m
 cleanmgr /verylowdisk /sagerun:5
 
-echo %ESC%[92m   ˜Ÿlem tamamland. Ana menye aktarlyorsunuz...%ESC%[0m
+echo %ESC%[92m   ï¿½ï¿½lem tamamlandï¿½. Ana menï¿½ye aktarï¿½lï¿½yorsunuz...%ESC%[0m
 timeout /t 2 /nobreak > NUL
 goto :eof
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 :Fat32toNTFS
-title Fat32 to NTFS d”nŸtrme / OgnitorenKs
-set /p deger=%RGB%[96m  D”nŸtrlecek Disk harfi:%RGB%[0m
+title Fat32 to NTFS dï¿½nï¿½ï¿½tï¿½rme / OgnitorenKs
+set /p deger=%RGB%[96m  Dï¿½nï¿½ï¿½tï¿½rï¿½lecek Disk harfi:%RGB%[0m
 	if %deger%==X GOTO menu
 	if %deger%==x GOTO menu
-Call :Logss "Fat32toNTFS" "%deger% diski NTFS'ye d”nŸtrld."
+Call :Logss "Fat32toNTFS" "%deger% diski NTFS'ye dï¿½nï¿½ï¿½tï¿½rï¿½ldï¿½."
 convert %deger%: /fs:NTFS /v
 goto :eof
 
 :stop
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 :Slmgrvbs
 cls
 mode con cols=55 lines=16
-title Lisans Y”netimi \ OgnitorenKs
+title Lisans Yï¿½netimi \ OgnitorenKs
 echo 
-echo   %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
-echo   %ESC%[90mº%ESC%%ESC%[1;97m%ESC%%ESC%[100m          Lisans Y”netimi / SLMGR.VBS            %ESC%[0m%ESC%%ESC%[90mº%ESC%[0m
-echo   %ESC%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%ESC%[0m
-echo   %ESC%[90mº%ESC%[0m  %ESC%[32m 1.%ESC%%RGB%[33m Lisans Gir %RGB%%RGB%[90m[ipk]%RGB%[0m                           %ESC%[90mº%ESC%[0m
-echo   %ESC%[90mº%ESC%[0m  %ESC%[32m 2.%ESC%%RGB%[33m Lisans Durumu %RGB%%RGB%[90m[dli]%RGB%[0m                        %ESC%[90mº%ESC%[0m
-echo   %ESC%[90mº%ESC%[0m  %ESC%[32m 3.%ESC%%RGB%[33m Lisans Durumu Detayl %RGB%%RGB%[90m[dlv]%RGB%[0m                %ESC%[90mº%ESC%[0m
-echo   %ESC%[90mº%ESC%[0m  %ESC%[32m 4.%ESC%%RGB%[33m Lisans Sresini ™§ren %RGB%%RGB%[90m[xpr]%RGB%[0m                %ESC%[90mº%ESC%[0m
-echo   %ESC%[90mº%ESC%[0m  %ESC%[32m 5.%ESC%%RGB%[33m Lisans Sil %RGB%%RGB%[90m[upk]%RGB%[0m                           %ESC%[90mº%ESC%[0m
-echo   %ESC%[90mº%ESC%[0m  %ESC%[32m 6.%ESC%%RGB%[33m Lisans Sre Sfrla %RGB%%RGB%[90m[rearm]%RGB%[0m                %ESC%[90mº%ESC%[0m
-echo   %ESC%[90mº%ESC%[0m  %ESC%[32m X.%ESC%%ESC%[36m Ana Men%ESC%[0m                                   %ESC%[90mº%ESC%[0m
-echo   %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
-set /p deger=%RGB%[92m  Yapmak istedi§iniz iŸlem : %RGB%[0m
+echo   %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»%ESC%[0m
+echo   %ESC%[90mï¿½%ESC%%ESC%[1;97m%ESC%%ESC%[100m          Lisans Yï¿½netimi / SLMGR.VBS            %ESC%[0m%ESC%%ESC%[90mï¿½%ESC%[0m
+echo   %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¹%ESC%[0m
+echo   %ESC%[90mï¿½%ESC%[0m  %ESC%[32m 1.%ESC%%RGB%[33m Lisans Gir %RGB%%RGB%[90m[ipk]%RGB%[0m                           %ESC%[90mï¿½%ESC%[0m
+echo   %ESC%[90mï¿½%ESC%[0m  %ESC%[32m 2.%ESC%%RGB%[33m Lisans Durumu %RGB%%RGB%[90m[dli]%RGB%[0m                        %ESC%[90mï¿½%ESC%[0m
+echo   %ESC%[90mï¿½%ESC%[0m  %ESC%[32m 3.%ESC%%RGB%[33m Lisans Durumu Detaylï¿½ %RGB%%RGB%[90m[dlv]%RGB%[0m                %ESC%[90mï¿½%ESC%[0m
+echo   %ESC%[90mï¿½%ESC%[0m  %ESC%[32m 4.%ESC%%RGB%[33m Lisans Sï¿½resini ï¿½ï¿½ren %RGB%%RGB%[90m[xpr]%RGB%[0m                %ESC%[90mï¿½%ESC%[0m
+echo   %ESC%[90mï¿½%ESC%[0m  %ESC%[32m 5.%ESC%%RGB%[33m Lisans Sil %RGB%%RGB%[90m[upk]%RGB%[0m                           %ESC%[90mï¿½%ESC%[0m
+echo   %ESC%[90mï¿½%ESC%[0m  %ESC%[32m 6.%ESC%%RGB%[33m Lisans Sï¿½re Sï¿½fï¿½rla %RGB%%RGB%[90m[rearm]%RGB%[0m                %ESC%[90mï¿½%ESC%[0m
+echo   %ESC%[90mï¿½%ESC%[0m  %ESC%[32m X.%ESC%%ESC%[36m Ana Menï¿½%ESC%[0m                                   %ESC%[90mï¿½%ESC%[0m
+echo   %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼%ESC%[0m
+set /p deger=%RGB%[92m  Yapmak istediï¿½iniz iï¿½lem : %RGB%[0m
 	if %deger%==1 (Call :slmgrlisans)
 	if %deger%==2 (Call :Logss "SLMGR.VBS" "Lisans Durumu, kontrol edildi."
 				   slmgr /dli&goto Slmgrvbs)		   
-	if %deger%==3 (Call :Logss "SLMGR.VBS" "Lisans Durumu Detayl, kontrol edildi."
+	if %deger%==3 (Call :Logss "SLMGR.VBS" "Lisans Durumu Detaylï¿½, kontrol edildi."
 				   slmgr /dlv&goto Slmgrvbs)
-	if %deger%==4 (Call :Logss "SLMGR.VBS" "Lisans Sresini ™§ren, ‡alŸtrld."
+	if %deger%==4 (Call :Logss "SLMGR.VBS" "Lisans Sï¿½resini ï¿½ï¿½ren, ï¿½alï¿½ï¿½tï¿½rï¿½ldï¿½."
 				   slmgr /xpr&goto Slmgrvbs)
-	if %deger%==5 (Call :Logss "SLMGR.VBS" "Lisans Sil, ‡alŸtrld."
+	if %deger%==5 (Call :Logss "SLMGR.VBS" "Lisans Sil, ï¿½alï¿½ï¿½tï¿½rï¿½ldï¿½."
 				   slmgr /upk&goto Slmgrvbs)
-	if %deger%==6 (Call :Logss "SLMGR.VBS" "Lisans Sre Sfrla, ‡alŸtrld."
+	if %deger%==6 (Call :Logss "SLMGR.VBS" "Lisans Sï¿½re Sï¿½fï¿½rla, ï¿½alï¿½ï¿½tï¿½rï¿½ldï¿½."
 				   slmgr /rearm&goto Slmgrvbs)
 	if %deger%==x GOTO menu
 	if %deger%==X GOTO menu
@@ -802,26 +814,26 @@ else
 
 :slmgrlisans
 cls
-echo   %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
-echo   %ESC%[90mº%ESC%%ESC%[1;97m%ESC%%ESC%[100m            Manuel Lisanslama Hizmeti            %ESC%[0m%ESC%%ESC%[90mº%ESC%[0m
-echo   %ESC%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%ESC%[0m
+echo   %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»%ESC%[0m
+echo   %ESC%[90mï¿½%ESC%%ESC%[1;97m%ESC%%ESC%[100m            Manuel Lisanslama Hizmeti            %ESC%[0m%ESC%%ESC%[90mï¿½%ESC%[0m
+echo   %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¹%ESC%[0m
 set /p deger= %ESC%[92m   Lisans : %ESC%[0m
 	if %deger%==X (goto :eof)
 	if %deger%==x (goto :eof)
-echo [%date% - %time%] ^| Slmgr.vbs ^| Slmgr Lisans(ipk), Windows lisansland >> %konum%\Logs
+echo [%date% - %time%] ^| Slmgr.vbs ^| Slmgr Lisans(ipk), Windows lisanslandï¿½ >> %konum%\Logs
 slmgr /ipk %deger%
 
-echo %ESC%[92m ˜Ÿlem tamamland.%ESC%[0m
+echo %ESC%[92m ï¿½ï¿½lem tamamlandï¿½.%ESC%[0m
 timeout /t 2 /nobreak > NUL
 goto :eof
 :stop
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 :icofix
 cls
 Call :konum
 echo [%date% - %time%] ^| icofix ^| Simge sorunu giderildi. >> %konum%\Logs
-echo %ESC%[92m Simge sorunu dzeltiliyor...%ESC%[0m
+echo %ESC%[92m Simge sorunu dï¿½zeltiliyor...%ESC%[0m
 taskkill /f /im explorer.exe
 DEL /F /Q /A %userprofile%\AppData\Local\Microsoft\Windows\Explorer\*.* > NUL 2>&1
 del /f /s /q /a %LocalAppData%\Microsoft\Windows\Explorer\thumbcache_*.db > NUL 2>&1
@@ -829,38 +841,38 @@ del /f /s /q /a %LocalAppData%\Microsoft\Windows\Explorer\thumbcache_*.db > NUL 
 start explorer.exe
 goto menu
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 :stop
-:kapatilanservislery”netimi
+:kapatilanservisleryï¿½netimi
 cls
 mode con cols=55 lines=28
-title Kapatlan Servisler Y”netimi / OgnitorenKs
-echo  %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
-echo  %ESC%[90mº%ESC%%ESC%[1;97m%ESC%%ESC%[100m           Kapatlan Servisler Y”netimi            %ESC%[0m%ESC%[90mº%ESC%[0m
-echo  %ESC%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m Bluetooth %RGB%%RGB%[90m[A€]%RGB%[0m                              %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 2.%ESC%%RGB%[33m Yazc %RGB%%RGB%[90m[A€]%RGB%[0m                                 %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 3.%ESC%%RGB%[33m Telefon Hizmetini %RGB%%RGB%[90m[A€]%RGB%[0m                      %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 4.%ESC%%RGB%[33m Tarifeli a§lar %RGB%%RGB%[90m[A€]%RGB%[0m                        %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 5.%ESC%%RGB%[33m IP yardmcs %RGB%%RGB%[90m[A€]%RGB%[0m                          %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 6.%ESC%%RGB%[33m Mobil Etkin Nokta (Hotspot) %RGB%%RGB%[90m[A€]%RGB%[0m            %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 7.%ESC%%RGB%[33m Radyo ve U‡ak modu hizmetini %RGB%%RGB%[90m[A€]%RGB%[0m           %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 8.%ESC%%RGB%[33m AkŸ deneyimini (Ekran paylaŸ) %RGB%%RGB%[90m[A€]%RGB%[0m         %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 9.%ESC%%RGB%[33m Windows žimdi Ba§lan(WPS) %RGB%%RGB%[90m[A€]%RGB%[0m              %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 10.%ESC%%RGB%[33m Tarayc hizmetlerini %RGB%%RGB%[90m[A€]%RGB%[0m                  %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 11.%ESC%%RGB%[33m Kamera hizmetlerini %RGB%%RGB%[90m[A€]%RGB%[0m                    %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 12.%ESC%%RGB%[33m Uzak Masast %RGB%%RGB%[90m[A€]%RGB%[0m                          %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 13.%ESC%%RGB%[33m Insider hizmetini %RGB%%RGB%[90m[A€]%RGB%[0m                      %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 14.%ESC%%RGB%[33m Biyometrik hizmeti %RGB%%RGB%[90m[A€]%RGB%[0m                     %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 15.%ESC%%RGB%[33m Kalem ve Dokunmatik Klavye hizmetini %RGB%%RGB%[90m[A€]%RGB%[0m   %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 16.%ESC%%RGB%[33m Sistem Geri ykleme hizmetini%RGB%%RGB%[90m[A€]%RGB%[0m           %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 17.%ESC%%RGB%[33m Sysmain (Hzl Getir)%RGB%%RGB%[90m[A€]%RGB%[0m                   %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 18.%ESC%%RGB%[33m Hzl BaŸlat (Hibernate)%RGB%%RGB%[90m[A€]%RGB%[0m                %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 19.%ESC%%RGB%[33m Konum hizmetini%RGB%%RGB%[90m[A€]%RGB%[0m                         %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 20.%ESC%%RGB%[33m Windows Media Player%RGB%%RGB%[90m[A€]%RGB%[0m                    %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menye d”n %ESC%[0m                                 %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
-set /p deger= %RGB%[92m ˜Ÿlem : %RGB%[0m
+title Kapatï¿½lan Servisler Yï¿½netimi / OgnitorenKs
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%%ESC%[1;97m%ESC%%ESC%[100m           Kapatï¿½lan Servisler Yï¿½netimi            %ESC%[0m%ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¹%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m Bluetooth %RGB%%RGB%[90m[Aï¿½]%RGB%[0m                              %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 2.%ESC%%RGB%[33m Yazï¿½cï¿½ %RGB%%RGB%[90m[Aï¿½]%RGB%[0m                                 %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 3.%ESC%%RGB%[33m Telefon Hizmetini %RGB%%RGB%[90m[Aï¿½]%RGB%[0m                      %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 4.%ESC%%RGB%[33m Tarifeli aï¿½larï¿½ %RGB%%RGB%[90m[Aï¿½]%RGB%[0m                        %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 5.%ESC%%RGB%[33m IP yardï¿½mcï¿½sï¿½ %RGB%%RGB%[90m[Aï¿½]%RGB%[0m                          %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 6.%ESC%%RGB%[33m Mobil Etkin Nokta (Hotspot) %RGB%%RGB%[90m[Aï¿½]%RGB%[0m            %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 7.%ESC%%RGB%[33m Radyo ve Uï¿½ak modu hizmetini %RGB%%RGB%[90m[Aï¿½]%RGB%[0m           %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 8.%ESC%%RGB%[33m Akï¿½ï¿½ deneyimini (Ekran paylaï¿½) %RGB%%RGB%[90m[Aï¿½]%RGB%[0m         %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 9.%ESC%%RGB%[33m Windows ï¿½imdi Baï¿½lan(WPS) %RGB%%RGB%[90m[Aï¿½]%RGB%[0m              %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m  %ESC%[32m 10.%ESC%%RGB%[33m Tarayï¿½cï¿½ hizmetlerini %RGB%%RGB%[90m[Aï¿½]%RGB%[0m                  %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m  %ESC%[32m 11.%ESC%%RGB%[33m Kamera hizmetlerini %RGB%%RGB%[90m[Aï¿½]%RGB%[0m                    %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m  %ESC%[32m 12.%ESC%%RGB%[33m Uzak Masaï¿½stï¿½ %RGB%%RGB%[90m[Aï¿½]%RGB%[0m                          %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m  %ESC%[32m 13.%ESC%%RGB%[33m Insider hizmetini %RGB%%RGB%[90m[Aï¿½]%RGB%[0m                      %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m  %ESC%[32m 14.%ESC%%RGB%[33m Biyometrik hizmeti %RGB%%RGB%[90m[Aï¿½]%RGB%[0m                     %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m  %ESC%[32m 15.%ESC%%RGB%[33m Kalem ve Dokunmatik Klavye hizmetini %RGB%%RGB%[90m[Aï¿½]%RGB%[0m   %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m  %ESC%[32m 16.%ESC%%RGB%[33m Sistem Geri yï¿½kleme hizmetini%RGB%%RGB%[90m[Aï¿½]%RGB%[0m           %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m  %ESC%[32m 17.%ESC%%RGB%[33m Sysmain (Hï¿½zlï¿½ Getir)%RGB%%RGB%[90m[Aï¿½]%RGB%[0m                   %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m  %ESC%[32m 18.%ESC%%RGB%[33m Hï¿½zlï¿½ Baï¿½lat (Hibernate)%RGB%%RGB%[90m[Aï¿½]%RGB%[0m                %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m  %ESC%[32m 19.%ESC%%RGB%[33m Konum hizmetini%RGB%%RGB%[90m[Aï¿½]%RGB%[0m                         %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m  %ESC%[32m 20.%ESC%%RGB%[33m Windows Media Player%RGB%%RGB%[90m[Aï¿½]%RGB%[0m                    %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menï¿½ye dï¿½n %ESC%[0m                                 %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼%ESC%[0m
+set /p deger= %RGB%[92m ï¿½ï¿½lem : %RGB%[0m
 	if %deger%==1 goto serv.1.bluetooth
 	if %deger%==2 goto serv.2.yazici
 	if %deger%==3 goto serv.3.phone
@@ -872,7 +884,7 @@ set /p deger= %RGB%[92m ˜Ÿlem : %RGB%[0m
 	if %deger%==9 goto serv.9.wps
 	if %deger%==10 goto serv.10.tarayici
 	if %deger%==11 goto serv.11.camera
-	if %deger%==12 goto serv.12.uzakmasast
+	if %deger%==12 goto serv.12.uzakmasaï¿½stï¿½
 	if %deger%==13 goto serv.13.insider
 	if %deger%==14 goto serv.14.biyometrik
 	if %deger%==15 goto serv.15.dokunmatik
@@ -884,50 +896,50 @@ set /p deger= %RGB%[92m ˜Ÿlem : %RGB%[0m
 	if %deger%==x goto menu
 	if %deger%==X goto menu
 else 
-	goto kapatilanservislery”netimi
+	goto kapatilanservisleryï¿½netimi
 
 
 :serv.1.bluetooth
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Bluetooth hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mBluetooth hizmeti a‡lyor...%RGB%[0m 
+echo [%date% - %time%] ^| Kapatï¿½lan Hizmetleri Yï¿½net ^| Bluetooth hizmeti aï¿½ï¿½ldï¿½. >> %konum%\Logs
+echo  %RGB%[96mBluetooth hizmeti aï¿½ï¿½lï¿½yor...%RGB%[0m 
 :: Bluetooth (AVCTP hizmeti) 
-::  Ses, video denetim aktarm protokoldr.
+::  Ses, video denetim aktarï¿½m protokolï¿½dï¿½r.
 sc config "BthAvctpSvc" start= demand > NUL 2>&1
 net start BthAvctpSvc > NUL 2>&1
 :: Bluetooth destek hizmeti
-::  Bluetooth cihazlarn bulunmas ve iliŸkilendirmesini sa§lar.
+::  Bluetooth cihazlarï¿½n bulunmasï¿½ ve iliï¿½kilendirmesini saï¿½lar.
 sc config "bthserv" start= demand > NUL 2>&1
 net start bthserv > NUL 2>&1
-:: Bluetooth kullanc deste§i hizmeti
-::  Kullanc oturumuyla Bluetooth ”zelliklerinin tam ‡alŸmasn sa§lar.
+:: Bluetooth kullanï¿½cï¿½ desteï¿½i hizmeti
+::  Kullanï¿½cï¿½ oturumuyla Bluetooth ï¿½zelliklerinin tam ï¿½alï¿½ï¿½masï¿½nï¿½ saï¿½lar.
 sc config "BluetoothUserService" start= demand > NUL 2>&1
 net start BluetoothUserService > NUL 2>&1
-:: Ses a§ ge‡idi hizmeti
-::  Eller boŸta profilinin ses a§ ge‡idini destekler.
+:: Ses aï¿½ geï¿½idi hizmeti
+::  Eller boï¿½ta profilinin ses aï¿½ geï¿½idini destekler.
 sc config "BTAGService" start= demand > NUL 2>&1
 net start BTAGService > NUL 2>&1
-:: Natural Kimlik Do§rulaycs
+:: Natural Kimlik Doï¿½rulayï¿½cï¿½sï¿½
 sc config NaturalAuthentication start= demand > NUL 2>&1
 net start NaturalAuthentication > NUL 2>&1
-goto kapatilanservislery”netimi
+goto kapatilanservisleryï¿½netimi
 
 :serv.2.yazici
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Yazc hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mYazc hizmetleri a‡lyor...%RGB%[0m 
+echo [%date% - %time%] ^| Kapatï¿½lan Hizmetleri Yï¿½net ^| Yazï¿½cï¿½ hizmeti aï¿½ï¿½ldï¿½. >> %konum%\Logs
+echo  %RGB%[96mYazï¿½cï¿½ hizmetleri aï¿½ï¿½lï¿½yor...%RGB%[0m 
 sc config "Spooler" start= auto > NUL 2>&1
 net start Spooler > NUL 2>&1
 DEL /F /Q /A %windir%\System32\spool\PRINTERS\* > NUL 2>&1
-::PrintWorkFlow (iŸ akŸ hizmeti)
+::PrintWorkFlow (iï¿½ akï¿½ï¿½ï¿½ hizmeti)
 sc config PrintWorkflowUserSvc start= demand > NUL 2>&1
 net start PrintWorkflowUserSvc > NUL 2>&1
-:: Uzak Masast Hizmetleri Kullanc Modu Ba§lant Noktas Yeniden Y”nlendiricisi
+:: Uzak Masaï¿½stï¿½ Hizmetleri Kullanï¿½cï¿½ Modu Baï¿½lantï¿½ Noktasï¿½ Yeniden Yï¿½nlendiricisi
 sc config UmRdpService start= demand > NUL 2>&1
 net start UmRdpService > NUL 2>&1
-goto kapatilanservislery”netimi
+goto kapatilanservisleryï¿½netimi
 
 :serv.3.phone
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Telefon hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mTelefon hizmeti a‡lyor...%RGB%[0m 
+echo [%date% - %time%] ^| Kapatï¿½lan Hizmetleri Yï¿½net ^| Telefon hizmeti aï¿½ï¿½ldï¿½. >> %konum%\Logs
+echo  %RGB%[96mTelefon hizmeti aï¿½ï¿½lï¿½yor...%RGB%[0m 
 :: Telefon
 sc config TapiSrv start= demand > NUL 2>&1
 net start TapiSrv > NUL 2>&1
@@ -935,236 +947,236 @@ net start TapiSrv > NUL 2>&1
 sc config PhoneSvc start= demand > NUL 2>&1
 net start PhoneSvc > NUL 2>&1
 :: Bluetooth (AVCTP hizmeti) 
-::  Ses, video denetim aktarm protokoldr.
+::  Ses, video denetim aktarï¿½m protokolï¿½dï¿½r.
 sc config "BthAvctpSvc" start= demand > NUL 2>&1
 net start BthAvctpSvc > NUL 2>&1
 :: Bluetooth destek hizmeti
-::  Bluetooth cihazlarn bulunmas ve iliŸkilendirmesini sa§lar.
+::  Bluetooth cihazlarï¿½n bulunmasï¿½ ve iliï¿½kilendirmesini saï¿½lar.
 sc config "bthserv" start= demand > NUL 2>&1
 net start bthserv > NUL 2>&1
-:: Bluetooth kullanc deste§i hizmeti
-::  Kullanc oturumuyla Bluetooth ”zelliklerinin tam ‡alŸmasn sa§lar.
+:: Bluetooth kullanï¿½cï¿½ desteï¿½i hizmeti
+::  Kullanï¿½cï¿½ oturumuyla Bluetooth ï¿½zelliklerinin tam ï¿½alï¿½ï¿½masï¿½nï¿½ saï¿½lar.
 sc config "BluetoothUserService" start= demand > NUL 2>&1
 net start BluetoothUserService > NUL 2>&1
-:: Ses a§ ge‡idi hizmeti
-::  Eller boŸta profilinin ses a§ ge‡idini destekler.
+:: Ses aï¿½ geï¿½idi hizmeti
+::  Eller boï¿½ta profilinin ses aï¿½ geï¿½idini destekler.
 sc config "BTAGService" start= demand > NUL 2>&1
 net start BTAGService > NUL 2>&1
-:: Natural Kimlik Do§rulaycs
+:: Natural Kimlik Doï¿½rulayï¿½cï¿½sï¿½
 sc config NaturalAuthentication start= demand > NUL 2>&1
 net start NaturalAuthentication > NUL 2>&1
-goto kapatilanservislery”netimi
+goto kapatilanservisleryï¿½netimi
 
 :serv.4.tarifeli
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Tarifeli a§lar hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mTarifeli a§lar hizmeti a‡lyor...%RGB%[0m 
-:: Veri kullanm
-::  Arkaplan verilierni ve a§ kullanmn snrlar
+echo [%date% - %time%] ^| Kapatï¿½lan Hizmetleri Yï¿½net ^| Tarifeli aï¿½lar hizmeti aï¿½ï¿½ldï¿½. >> %konum%\Logs
+echo  %RGB%[96mTarifeli aï¿½lar hizmeti aï¿½ï¿½lï¿½yor...%RGB%[0m 
+:: Veri kullanï¿½mï¿½
+::  Arkaplan verilierni ve aï¿½ kullanï¿½mï¿½nï¿½ sï¿½nï¿½rlar
 sc config DusmSvc start= auto > NUL 2>&1
 net start DusmSvc > NUL 2>&1
-goto kapatilanservislery”netimi
+goto kapatilanservisleryï¿½netimi
 
-:serv.5.ipyardmci
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| IP yardmc hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mIP yardmcs hizmeti a‡lyor...%RGB%[0m 
-::  IPv6 ge‡iŸ teknolojileri ve IP-HTTPS kullanarak tnel ba§lants sa§lar.
+:serv.5.ipyardï¿½mci
+echo [%date% - %time%] ^| Kapatï¿½lan Hizmetleri Yï¿½net ^| IP yardï¿½mcï¿½ hizmeti aï¿½ï¿½ldï¿½. >> %konum%\Logs
+echo  %RGB%[96mIP yardï¿½mcï¿½sï¿½ hizmeti aï¿½ï¿½lï¿½yor...%RGB%[0m 
+::  IPv6 geï¿½iï¿½ teknolojileri ve IP-HTTPS kullanarak tï¿½nel baï¿½lantï¿½sï¿½ saï¿½lar.
 sc config iphlpsvc start= auto > NUL 2>&1
 net start iphlpsvc > NUL 2>&1
-:: IP €eviri yaplandrma hizmeti (v4'den v6'ya tam tersi y”nde ‡eviriyi yaplandrr)
+:: IP ï¿½eviri yapï¿½landï¿½rma hizmeti (v4'den v6'ya tam tersi yï¿½nde ï¿½eviriyi yapï¿½landï¿½rï¿½r)
 sc config IpxlatCfgSvc start= demand > NUL 2>&1
 net start IpxlatCfgSvc > NUL 2>&1
-goto kapatilanservislery”netimi
+goto kapatilanservisleryï¿½netimi
 
 :serv.6.hotspot
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Mobil Etkin Nokta hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mMobil etkin nokta hizmeti a‡lyor...%RGB%[0m 
-::  Veri ba§lantsnn baŸka bir cihazla paylaŸlmasn sa§lar
+echo [%date% - %time%] ^| Kapatï¿½lan Hizmetleri Yï¿½net ^| Mobil Etkin Nokta hizmeti aï¿½ï¿½ldï¿½. >> %konum%\Logs
+echo  %RGB%[96mMobil etkin nokta hizmeti aï¿½ï¿½lï¿½yor...%RGB%[0m 
+::  Veri baï¿½lantï¿½sï¿½nï¿½n baï¿½ka bir cihazla paylaï¿½ï¿½lmasï¿½nï¿½ saï¿½lar
 sc config icssvc start= demand > NUL 2>&1
 net start icssvc > NUL 2>&1
-:: Internet Ba§lants PaylaŸm (ICS)
+:: Internet Baï¿½lantï¿½sï¿½ Paylaï¿½ï¿½mï¿½ (ICS)
 sc config SharedAccess start= demand > NUL 2>&1
 net start SharedAccess > NUL 2>&1
-:: WMP A§ PaylaŸm hizmeti
+:: WMP Aï¿½ Paylaï¿½ï¿½mï¿½ hizmeti
 sc config WMPNetworkSvc start= demand > NUL 2>&1
 net start WMPNetworkSvc > NUL 2>&1
-goto kapatilanservislery”netimi
+goto kapatilanservisleryï¿½netimi
 
 :serv.7.ucakmodu
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Radyo ve U‡ak Modu hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mRadyo y”netim ve u‡ak modu hizmeti a‡lyor...%RGB%[0m 
-::  Radyo y”netimi ve u‡ak modu hizmeti
+echo [%date% - %time%] ^| Kapatï¿½lan Hizmetleri Yï¿½net ^| Radyo ve Uï¿½ak Modu hizmeti aï¿½ï¿½ldï¿½. >> %konum%\Logs
+echo  %RGB%[96mRadyo yï¿½netim ve uï¿½ak modu hizmeti aï¿½ï¿½lï¿½yor...%RGB%[0m 
+::  Radyo yï¿½netimi ve uï¿½ak modu hizmeti
 sc config RMSvc start= demand > NUL 2>&1
 net start RMSvc > NUL 2>&1
-goto kapatilanservislery”netimi
+goto kapatilanservisleryï¿½netimi
 
 :serv.8.akis
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| AkŸ deneyimi hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mAkŸ deneyimi hizmetleri a‡lyor...%RGB%[0m 
-:: Miracast, DLNA kullanc arabirimini
+echo [%date% - %time%] ^| Kapatï¿½lan Hizmetleri Yï¿½net ^| Akï¿½ï¿½ deneyimi hizmeti aï¿½ï¿½ldï¿½. >> %konum%\Logs
+echo  %RGB%[96mAkï¿½ï¿½ deneyimi hizmetleri aï¿½ï¿½lï¿½yor...%RGB%[0m 
+:: Miracast, DLNA kullanï¿½cï¿½ arabirimini
 sc config DevicePickerUserSvc_54454 start= demand > NUL 2>&1
 net start DevicePickerUserSvc_54454 > NUL 2>&1
 sc config DevicePickerUserSvc start= demand > NUL 2>&1
 net start DevicePickerUserSvc > NUL 2>&1
-:: Cihaz AkŸ
+:: Cihaz Akï¿½ï¿½ï¿½
 sc config DevicesFlowUserSvc_54454 start= demand > NUL 2>&1
 net start DevicesFlowUserSvc_54454 > NUL 2>&1
 sc config DevicesFlowUserSvc start= demand > NUL 2>&1
 net start DevicesFlowUserSvc > NUL 2>&1
-:: WMP a§ paylaŸm hizmeti
+:: WMP aï¿½ paylaï¿½ï¿½m hizmeti
 sc config WMPNetworkSvc start= demand > NUL 2>&1
 net start WMPNetworkSvc > NUL 2>&1
-echo Da§tlmŸ Ba§lant ˜zleme ˜stemcisi
-::  Bir bilgisayardaki ya da bir a§ zerindeki bilgisayarlar zerinde NTFS dosyalar arasndaki ba§lantlar korur.
+echo Daï¿½ï¿½tï¿½lmï¿½ï¿½ Baï¿½lantï¿½ ï¿½zleme ï¿½stemcisi
+::  Bir bilgisayardaki ya da bir aï¿½ ï¿½zerindeki bilgisayarlar ï¿½zerinde NTFS dosyalarï¿½ arasï¿½ndaki baï¿½lantï¿½larï¿½ korur.
 sc config TrkWks start= auto > NUL 2>&1
 net start TrkWks > NUL 2>&1
-:: EŸ ad ‡”zmleme protokol
+:: Eï¿½ adï¿½ ï¿½ï¿½zï¿½mleme protokolï¿½
 sc config PNPRsvc start= demand > NUL 2>&1
 net start PNPRsvc > NUL 2>&1
-:: EŸ a§ gruplandrma
+:: Eï¿½ aï¿½ gruplandï¿½rma
 sc config p2psvc start= demand
 net start p2psvc > NUL 2>&1
-:: EŸler aras a§ oluŸturma kimlik y”neticisi
+:: Eï¿½ler arasï¿½ aï¿½ oluï¿½turma kimlik yï¿½neticisi
 sc config p2pimsvc start= demand > NUL 2>&1
 net start p2pimsvc > NUL 2>&1
 :: BranchCache
 sc config PeerDistSvc start= demand > NUL 2>&1
 net start PeerDistSvc > NUL 2>&1
-:: Upnp Aygt ana bilgisyar (A§daki cihazlar bulur)
+:: Upnp Aygï¿½t ana bilgisyarï¿½ (Aï¿½daki cihazlarï¿½ bulur)
 sc config SSDPSRV start= demand > NUL 2>&1
 net start SSDPSRV > NUL 2>&1
-:: Natural Kimlik Do§rulaycs
+:: Natural Kimlik Doï¿½rulayï¿½cï¿½sï¿½
 sc config NaturalAuthentication start= demand > NUL 2>&1
 net start NaturalAuthentication > NUL 2>&1
-::PNRP Makine ad yayn hizmeti
+::PNRP Makine adï¿½ yayï¿½n hizmeti
 sc config PNRPAutoReg start= demand > NUL 2>&1
 net start PNRPAutoReg > NUL 2>&1
-:: WMPNetworkSvc (WMP A§ paylaŸm hizmeti)
+:: WMPNetworkSvc (WMP Aï¿½ paylaï¿½ï¿½mï¿½ hizmeti)
 sc config WMPNetworkSvc start= demand > NUL 2>&1
 net start WMPNetworkSvc > NUL 2>&1
-:: €alŸma klas”rleri istemcisi
+:: ï¿½alï¿½ï¿½ma klasï¿½rleri istemcisi
 sc config workfolderssvc start= demand > NUL 2>&1
 net start workfolderssvc > NUL 2>&1
-goto kapatilanservislery”netimi
+goto kapatilanservisleryï¿½netimi
 
 :serv.9.wps
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| WPS hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mWindows žimdi Ba§lan hizmeti a‡lyor...%RGB%[0m 
-:: Windows žimdi Ba§lan - Yaplandrma Dosyas Kaydedici
-::  WPS protokolnn uygulanmasn sa§lar.
+echo [%date% - %time%] ^| Kapatï¿½lan Hizmetleri Yï¿½net ^| WPS hizmeti aï¿½ï¿½ldï¿½. >> %konum%\Logs
+echo  %RGB%[96mWindows ï¿½imdi Baï¿½lan hizmeti aï¿½ï¿½lï¿½yor...%RGB%[0m 
+:: Windows ï¿½imdi Baï¿½lan - Yapï¿½landï¿½rma Dosyasï¿½ Kaydedici
+::  WPS protokolï¿½nï¿½n uygulanmasï¿½nï¿½ saï¿½lar.
 sc config wcncsvc start= demand > NUL 2>&1
 net start wcncsvc > NUL 2>&1
-goto kapatilanservislery”netimi
+goto kapatilanservisleryï¿½netimi
 
 :serv.10.tarayici
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Tarayc hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mTarayc hizmetleri a‡lyor...%RGB%[0m 
-:: Resim alma olaylar (Windows G”rnt Alma-WIA)
+echo [%date% - %time%] ^| Kapatï¿½lan Hizmetleri Yï¿½net ^| Tarayï¿½cï¿½ hizmeti aï¿½ï¿½ldï¿½. >> %konum%\Logs
+echo  %RGB%[96mTarayï¿½cï¿½ hizmetleri aï¿½ï¿½lï¿½yor...%RGB%[0m 
+:: Resim alma olaylarï¿½ (Windows Gï¿½rï¿½ntï¿½ Alma-WIA)
 sc config WiaRpc start= demand > NUL 2>&1
 net start WiaRpc > NUL 2>&1
-:: Windows Resim Alma (Windows G”rnt Alma (WIA))
+:: Windows Resim Alma (Windows Gï¿½rï¿½ntï¿½ Alma (WIA))
 sc config StiSvc start= demand > NUL 2>&1
 net start StiSvc > NUL 2>&1
-goto kapatilanservislery”netimi
+goto kapatilanservisleryï¿½netimi
 
 :serv.11.camera
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Kamera hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mWindows Kamera hizmetleri a‡lyor...%RGB%[0m 
-:: Windows Kamera ‡er‡eve sunucusu
+echo [%date% - %time%] ^| Kapatï¿½lan Hizmetleri Yï¿½net ^| Kamera hizmeti aï¿½ï¿½ldï¿½. >> %konum%\Logs
+echo  %RGB%[96mWindows Kamera hizmetleri aï¿½ï¿½lï¿½yor...%RGB%[0m 
+:: Windows Kamera ï¿½erï¿½eve sunucusu
 sc config FrameServer start= demand > NUL 2>&1
 net start FrameServer > NUL 2>&1
-:: Windows Kamera €er‡eve Sunucusu
+:: Windows Kamera ï¿½erï¿½eve Sunucusu
 sc config FrameServerMonitor start= demand > NUL 2>&1
 net start FrameServerMonitor > NUL 2>&1
-goto kapatilanservislery”netimi
+goto kapatilanservisleryï¿½netimi
 
 :serv.12.uzakmasaustu
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Uzak Masast hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mUzak Masast hizmetleri a‡lyor...%RGB%[0m 
-:: Uzak masast hizmetleri
+echo [%date% - %time%] ^| Kapatï¿½lan Hizmetleri Yï¿½net ^| Uzak Masaï¿½stï¿½ hizmeti aï¿½ï¿½ldï¿½. >> %konum%\Logs
+echo  %RGB%[96mUzak Masaï¿½stï¿½ hizmetleri aï¿½ï¿½lï¿½yor...%RGB%[0m 
+:: Uzak masaï¿½stï¿½ hizmetleri
 sc config TermService start= demand > NUL 2>&1
 net start TermService > NUL 2>&1
-:: Uzak Masast Hizmetleri Kullanc Modu Ba§lant Noktas Yeniden Y”nlendiricisi
+:: Uzak Masaï¿½stï¿½ Hizmetleri Kullanï¿½cï¿½ Modu Baï¿½lantï¿½ Noktasï¿½ Yeniden Yï¿½nlendiricisi
 sc config UmRdpService start= demand > NUL 2>&1
 net start UmRdpService > NUL 2>&1
-:: Uzak Masast Yaplandrmas
+:: Uzak Masaï¿½stï¿½ Yapï¿½landï¿½rmasï¿½
 sc config SessionEnv start= demand > NUL 2>&1
 net start SessionEnv > NUL 2>&1
-:: Y”nlendirme ve Uzaktan EriŸim
+:: Yï¿½nlendirme ve Uzaktan Eriï¿½im
 sc config RemoteAccess start= demand > NUL 2>&1
 net start RemoteAccess > NUL 2>&1
-:: EŸ ad ‡”zmleme protokol
+:: Eï¿½ adï¿½ ï¿½ï¿½zï¿½mleme protokolï¿½
 sc config PNPRsvc start= demand > NUL 2>&1
 net start PNPRsvc > NUL 2>&1
-:: EŸ a§ gruplandrma
+:: Eï¿½ aï¿½ gruplandï¿½rma
 sc config p2psvc start= demand
 net start p2psvc > NUL 2>&1
-:: EŸler aras a§ oluŸturma kimlik y”neticisi
+:: Eï¿½ler arasï¿½ aï¿½ oluï¿½turma kimlik yï¿½neticisi
 sc config p2pimsvc start= demand
 net start p2pimsvc > NUL 2>&1
-::PNRP Makine ad yayn hizmeti
+::PNRP Makine adï¿½ yayï¿½n hizmeti
 sc config PNRPAutoReg start= demand > NUL 2>&1
 net start PNRPAutoReg > NUL 2>&1
-:: €alŸma klas”rleri istemcisi
+:: ï¿½alï¿½ï¿½ma klasï¿½rleri istemcisi
 sc config workfolderssvc start= demand > NUL 2>&1
 net start workfolderssvc > NUL 2>&1
-goto kapatilanservislery”netimi
+goto kapatilanservisleryï¿½netimi
 
 :serv.13.insider
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Insider hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mWindows Insider hizmeti a‡lyor...%RGB%[0m 
+echo [%date% - %time%] ^| Kapatï¿½lan Hizmetleri Yï¿½net ^| Insider hizmeti aï¿½ï¿½ldï¿½. >> %konum%\Logs
+echo  %RGB%[96mWindows Insider hizmeti aï¿½ï¿½lï¿½yor...%RGB%[0m 
 :: Windows Insider Hizmeti
 sc config wisvc start= demand > NUL 2>&1
 net start wisvc > NUL 2>&1
-goto kapatilanservislery”netimi
+goto kapatilanservisleryï¿½netimi
 
 :serv.14.biyometrik
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Biyometrik hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mWindows Biyometrik hizmeti a‡lyor...%RGB%[0m 
+echo [%date% - %time%] ^| Kapatï¿½lan Hizmetleri Yï¿½net ^| Biyometrik hizmeti aï¿½ï¿½ldï¿½. >> %konum%\Logs
+echo  %RGB%[96mWindows Biyometrik hizmeti aï¿½ï¿½lï¿½yor...%RGB%[0m 
 :: Windows Biyometrik Hizmeti
 sc config WbioSrvc start= demand > NUL 2>&1
 net start WbioSrvc > NUL 2>&1
-goto kapatilanservislery”netimi
+goto kapatilanservisleryï¿½netimi
 
 :serv.15.dokunmatik
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Dokunmatik Klavye ve Kalem hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mDokunmatik Klavye ve Kalem hizmeti a‡lyor...%RGB%[0m 
+echo [%date% - %time%] ^| Kapatï¿½lan Hizmetleri Yï¿½net ^| Dokunmatik Klavye ve Kalem hizmeti aï¿½ï¿½ldï¿½. >> %konum%\Logs
+echo  %RGB%[96mDokunmatik Klavye ve Kalem hizmeti aï¿½ï¿½lï¿½yor...%RGB%[0m 
 :: Kalem servisi
 sc config PenService start= demand > NUL 2>&1
 net start PenService > NUL 2>&1
-::Dokunmatik Klavyeyi ve el yazs paneli hizmeit
+::Dokunmatik Klavyeyi ve el yazï¿½sï¿½ paneli hizmeit
 sc config TabletInputService start= demand > NUL 2>&1
 net start TabletInputService > NUL 2>&1
-goto kapatilanservislery”netimi
+goto kapatilanservisleryï¿½netimi
 
 :serv.16.sistemgeriyukleme
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Sistem Geri ykleme hizmeti a‡ld. hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mSistem geri ykleme hizmeti a‡lyor...%RGB%[0m 
-::Windows Yedekleme ve Geri Ykleme hizmeti
+echo [%date% - %time%] ^| Kapatï¿½lan Hizmetleri Yï¿½net ^| Sistem Geri yï¿½kleme hizmeti aï¿½ï¿½ldï¿½. hizmeti aï¿½ï¿½ldï¿½. >> %konum%\Logs
+echo  %RGB%[96mSistem geri yï¿½kleme hizmeti aï¿½ï¿½lï¿½yor...%RGB%[0m 
+::Windows Yedekleme ve Geri Yï¿½kleme hizmeti
 sc config SDRSVC start= demand > NUL 2>&1
 net start SDRSVC > NUL 2>&1
 schtasks /change /TN "\Microsoft\Windows\SystemRestore\SR" /ENABLE  > NUL 2>&1
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore" /f /v "DisableSR" /t REG_DWORD /d 0 > NUL 2>&1
-goto kapatilanservislery”netimi
+goto kapatilanservisleryï¿½netimi
 
 :serv.17.sysmain
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Hzl Getir^(Sysmain^) hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mHzl Getir hizmeti a‡lyor...%RGB%[0m 
+echo [%date% - %time%] ^| Kapatï¿½lan Hizmetleri Yï¿½net ^| Hï¿½zlï¿½ Getir^(Sysmain^) hizmeti aï¿½ï¿½ldï¿½. >> %konum%\Logs
+echo  %RGB%[96mHï¿½zlï¿½ Getir hizmeti aï¿½ï¿½lï¿½yor...%RGB%[0m 
 sc config SysMain start= auto > NUL 2>&1
 net start SysMain > NUL 2>&1
-goto kapatilanservislery”netimi
+goto kapatilanservisleryï¿½netimi
 
 :serv.18.hibernate
-::Hzl baŸlang‡
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Hzl baŸlang‡^(Hibernate^) hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mHzl baŸlat a‡lyor...%RGB%[0m 
+::Hï¿½zlï¿½ baï¿½langï¿½ï¿½
+echo [%date% - %time%] ^| Kapatï¿½lan Hizmetleri Yï¿½net ^| Hï¿½zlï¿½ baï¿½langï¿½ï¿½^(Hibernate^) hizmeti aï¿½ï¿½ldï¿½. >> %konum%\Logs
+echo  %RGB%[96mHï¿½zlï¿½ baï¿½lat aï¿½ï¿½lï¿½yor...%RGB%[0m 
 powercfg /hibernate on
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\Power" /v "HibernateEnabled" /t REG_DWORD /d 1 /f > NUL 2>&1
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /v "HiberbootEnabled" /t REG_DWORD /d "1" /f
-goto kapatilanservislery”netimi
+goto kapatilanservisleryï¿½netimi
 
 :serv.19.konum
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Konum hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mKonum hizmeti a‡lyor...%RGB%[0m 
+echo [%date% - %time%] ^| Kapatï¿½lan Hizmetleri Yï¿½net ^| Konum hizmeti aï¿½ï¿½ldï¿½. >> %konum%\Logs
+echo  %RGB%[96mKonum hizmeti aï¿½ï¿½lï¿½yor...%RGB%[0m 
 reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\LocationAndSensors" /v "DisableLocation" /f > NUL 2>&1
 reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\location" /v "Value" /t REG_SZ /d "Allow" /f > NUL 2>&1
 reg add "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\System" /v "AllowLocation" /t REG_DWORD /d 1 /f > NUL 2>&1
@@ -1172,25 +1184,25 @@ sc config NaturalAuthentication start= demand > NUL 2>&1
 net start NaturalAuthentication > NUL 2>&1
 sc config lfsvc start= demand > NUL 2>&1
 net start lfsvc > NUL 2>&1
-goto kapatilanservislery”netimi
+goto kapatilanservisleryï¿½netimi
 
 :serv.20.mediaplayer
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| MediaPlayer hizmeti a‡ld. >> %konum%\Logs
+echo [%date% - %time%] ^| Kapatï¿½lan Hizmetleri Yï¿½net ^| MediaPlayer hizmeti aï¿½ï¿½ldï¿½. >> %konum%\Logs
 :: Windows Media Player
-echo  %RGB%[96mWindows Media Player a‡lyor...%RGB%[0m 
+echo  %RGB%[96mWindows Media Player aï¿½ï¿½lï¿½yor...%RGB%[0m 
 Dism /Online /Remove-Feature /FeatureName:MediaPlayback /Quiet /NoRestart
-goto kapatilanservislery”netimi
+goto kapatilanservisleryï¿½netimi
 
 
 :stop
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 :wificrackarchley
 mode con cols=58 lines=35
 title Wireless Password Cracker / (Archley)
-echo  %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
-echo  %ESC%[90mº%ESC%%ESC%[1;97m%ESC%%ESC%[100m               Wireless Password Cracker              %ESC%[0m%ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%%ESC%[1;97m%ESC%%ESC%[100m                      (Archley)                       %ESC%[0m%ESC%[90mº%ESC%[0m
-echo  %ESC%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%%ESC%[1;97m%ESC%%ESC%[100m               Wireless Password Cracker              %ESC%[0m%ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%%ESC%[1;97m%ESC%%ESC%[100m                      (Archley)                       %ESC%[0m%ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¹%ESC%[0m
 FOR /F "tokens=5" %%a in ('netsh wlan show profil ^| find "All"') do (
 	FOR /F "tokens=4" %%b in ('netsh wlan show profile "%%a" key^=clear ^| find "Content"') do (
 		echo    %ESC%[36m%%a :%ESC%%ESC%[33m %%b%ESC%[0m
@@ -1198,44 +1210,44 @@ FOR /F "tokens=5" %%a in ('netsh wlan show profil ^| find "All"') do (
 		)
 	)
 )
-echo  %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
-echo %ESC%[32m  Kapatmak i‡in herhangi bir tuŸa basnz.%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼%ESC%[0m
+echo %ESC%[32m  Kapatmak iï¿½in herhangi bir tuï¿½a basï¿½nï¿½z.%ESC%[0m
 pause > NUL
 goto :eof
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 :stop
 :WinSahiplik
 cls
 mode con cols=55 lines=15
-echo  %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
-echo  %ESC%[90mº%ESC%%ESC%[1;97m%ESC%%ESC%[100m              Sa§ Tk Sahiplik Men                %ESC%[0m%ESC%[90mº%ESC%[0m
-echo  %ESC%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m Ekle%RGB%[0m                                        %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 2.%ESC%%RGB%[33m Kaldr%RGB%[0m                                      %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menye d”n%ESC%[0m                                  %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
-set /p deger= %ESC%[92m  ˜Ÿlem : %ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%%ESC%[1;97m%ESC%%ESC%[100m              Saï¿½ Tï¿½k Sahiplik Menï¿½                %ESC%[0m%ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¹%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m Ekle%RGB%[0m                                        %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 2.%ESC%%RGB%[33m Kaldï¿½r%RGB%[0m                                      %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menï¿½ye dï¿½n%ESC%[0m                                  %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼%ESC%[0m
+set /p deger= %ESC%[92m  ï¿½ï¿½lem : %ESC%[0m
 	if %deger%==1 (title Sahiplik al ekleniyor... / OgnitorenKs
-				   echo [%date% - %time%] ^| WinSahiplik ^| Sa§-tk "Sahiplik Al" eklendi. >> %konum%\Logs
-				   reg add "HKCR\*\shell\runas" /f /ve /t REG_SZ /d "Sahipli§i Al" > NUL 2>&1
+				   echo [%date% - %time%] ^| WinSahiplik ^| Saï¿½-tï¿½k "Sahiplik Al" eklendi. >> %konum%\Logs
+				   reg add "HKCR\*\shell\runas" /f /ve /t REG_SZ /d "Sahipliï¿½i Al" > NUL 2>&1
 				   reg add "HKCR\*\shell\runas" /f /v "Icon" /t REG_SZ /d "imageres.dll,73" > NUL 2>&1
 				   reg add "HKCR\*\shell\runas" /f /v "NoWorkingDirectory" /t REG_SZ /d "" > NUL 2>&1
 				   reg add "HKCR\*\shell\runas\command" /f /ve /t REG_SZ /d "cmd.exe /c takeown /f \"%%^1\" && ica \"%%^1\" /grant administrators:F" > NUL 2>&1
 				   reg add "HKCR\*\shell\runas\command" /f /v "IsolatedCommand" /t REG_SZ /d "cmd.exe /c takeown /f \"%%^1\" && ica \"%%^1\" /grant administrators:F" > NUL 2>&1
-				   reg add "HKCR\Directory\shell\runas" /f /ve /t REG_SZ /d "Sahipli§i Al" > NUL 2>&1
+				   reg add "HKCR\Directory\shell\runas" /f /ve /t REG_SZ /d "Sahipliï¿½i Al" > NUL 2>&1
 				   reg add "HKCR\Directory\shell\runas" /f /v "Icon" /t REG_SZ /d "imageres.dll,73" > NUL 2>&1
 				   reg add "HKCR\Directory\shell\runas" /f /v "NoWorkingDirectory" /t REG_SZ /d "" > NUL 2>&1
 				   reg add "HKCR\Directory\shell\runas\command" /f /ve /t REG_SZ /d "cmd.exe /c takeown /f \"%%^1\" /r /d y && ica \"%%^1\" /grant administrators:F /t" > NUL 2>&1
 				   reg add "HKCR\Directory\shell\runas\command" /f /v "IsolatedCommand" /t REG_SZ /d "cmd.exe /c takeown /f \"%%^1\" /r /d y && ica \"%%^1\" /grant administrators:F /t" > NUL 2>&1
-				   echo %ESC%[92m ˜Ÿlem tamamland.%ESC%[0m
+				   echo %ESC%[92m ï¿½ï¿½lem tamamlandï¿½.%ESC%[0m
 				   timeout /t 1 /nobreak > NUL
 				   goto :eof)
-	if %deger%==2 (title Sahiplik al kaldrlyor... / OgnitorenKs
-				   echo [%date% - %time%] ^| WinSahiplik ^| Sa§-tk "Sahiplik Al" kaldrld. >> %konum%\Logs
+	if %deger%==2 (title Sahiplik al kaldï¿½rï¿½lï¿½yor... / OgnitorenKs
+				   echo [%date% - %time%] ^| WinSahiplik ^| Saï¿½-tï¿½k "Sahiplik Al" kaldï¿½rï¿½ldï¿½. >> %konum%\Logs
 				   reg delete "HKCR\*\shell\runas" /f > NUL 2>&1
 				   reg delete "HKCR\Directory\shell\runas" /f > NUL 2>&1
-				   echo %ESC%[92m ˜Ÿlem tamamland.%ESC%[0m
+				   echo %ESC%[92m ï¿½ï¿½lem tamamlandï¿½.%ESC%[0m
 				   timeout /t 1 /nobreak > NUL
 				   goto :eof)
 	if %deger%==x GOTO kontroll
@@ -1243,21 +1255,21 @@ set /p deger= %ESC%[92m  ˜Ÿlem : %ESC%[0m
 else
 	goto WinSahiplik
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 :stop
 :WinCompactOS
 cls
 mode con cols=55 lines=15
 echo 
 echo 
-echo  %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
-echo  %ESC%[90mº%ESC%%ESC%[1;97m%ESC%%ESC%[100m           CompactOS (Windows SkŸtrma)          %ESC%[0m%ESC%[90mº%ESC%[0m
-echo  %ESC%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m CompactOS %RGB%%RGB%[90m[A€]%RGB%[0m                              %ESC%[0mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 2.%ESC%%RGB%[33m CompactOS %RGB%%RGB%[90m[KAPAT]%RGB%[0m                           %ESC%[0mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menye d”n%ESC%[0m                                  %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
-set /p deger= %RGB%[92m ˜Ÿlem :%RGB%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%%ESC%[1;97m%ESC%%ESC%[100m           CompactOS (Windows Sï¿½kï¿½ï¿½tï¿½rma)          %ESC%[0m%ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¹%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m CompactOS %RGB%%RGB%[90m[Aï¿½]%RGB%[0m                              %ESC%[0mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 2.%ESC%%RGB%[33m CompactOS %RGB%%RGB%[90m[KAPAT]%RGB%[0m                           %ESC%[0mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menï¿½ye dï¿½n%ESC%[0m                                  %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼%ESC%[0m
+set /p deger= %RGB%[92m ï¿½ï¿½lem :%RGB%[0m
 	if %deger%==1 (Call :CompactOn)
 	if %deger%==2 (Call :CompactOff)
 	if %deger%==x GOTO kontroll
@@ -1267,15 +1279,15 @@ else
 
 :CompactOn
 echo 
-echo [%date% - %time%] ^| CompactOS ^| CompactOS skŸtrma iŸlemi uyguland. >> %konum%\Logs
-echo %RGB%[96m CompactOS skŸtrma iŸlemi uygulanyor...%RGB%[0m
+echo [%date% - %time%] ^| CompactOS ^| CompactOS sï¿½kï¿½ï¿½tï¿½rma iï¿½lemi uygulandï¿½. >> %konum%\Logs
+echo %RGB%[96m CompactOS sï¿½kï¿½ï¿½tï¿½rma iï¿½lemi uygulanï¿½yor...%RGB%[0m
 Compact.exe /CompactOS:always
 goto :eof
 
 :CompactOff
 echo 
-echo [%date% - %time%] ^| CompactOS ^| CompactOS skŸtrma iŸlemi kapatld. >> %konum%\Logs
-echo %RGB%[96m CompactOS skŸtrma iŸlemi devre dŸ braklyor...%RGB%[0m
+echo [%date% - %time%] ^| CompactOS ^| CompactOS sï¿½kï¿½ï¿½tï¿½rma iï¿½lemi kapatï¿½ldï¿½. >> %konum%\Logs
+echo %RGB%[96m CompactOS sï¿½kï¿½ï¿½tï¿½rma iï¿½lemi devre dï¿½ï¿½ï¿½ bï¿½rakï¿½lï¿½yor...%RGB%[0m
 Compact.exe /CompactOS:never
 goto :eof
 :stop
@@ -1283,13 +1295,13 @@ goto :eof
 :gpedit
 Call :Logs
 echo [%date% - %time%] ^| Gpedit ^| Gpedit.msc eklendi. >> %konum%\Logs
-echo %RGB%[96m Gpedit.msc (Yerel Grup ilkesi) aktifleŸtiriliyor...%RGB%[0m
+echo %RGB%[96m Gpedit.msc (Yerel Grup ilkesi) aktifleï¿½tiriliyor...%RGB%[0m
 for %%a in ("dir /b %SystemRoot%\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~3*.mum") do (Dism /Online /Norestart /Add-Package:"%%a" > NUL 2>&1)
 for %%a in ("dir /b %SystemRoot%\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~3*.mum") do (Dism /Online /Norestart /Add-Package:"%%a" > NUL 2>&1)
 goto kontroll
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
-::  W˜NDOWS 11 B™LšMš 
+:: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+::  Wï¿½NDOWS 11 Bï¿½Lï¿½Mï¿½ 
 
 :stop
 :Win11SettingsMenu
@@ -1297,22 +1309,22 @@ cls
 call :konum
 call :PowerRun
 mode con cols=55 lines=17
-title Windows 11 ™zelleŸtir / OgnitorenKs
+title Windows 11 ï¿½zelleï¿½tir / OgnitorenKs
 echo 
-echo  %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
-echo  %ESC%[90mº%ESC%%ESC%[1;97m%ESC%%ESC%[100m              Windows 11 ™zelleŸtirme              %ESC%[0m%ESC%[90mº%ESC%[0m
-echo  %ESC%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m Taskbar Boyut %RGB%%RGB%[90m[Kš€šK/BšYšK]%RGB%[0m                 %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 2.%ESC%%RGB%[33m Taskbar Konumu %RGB%%RGB%[90m[ALT/šST]%RGB%[0m                    %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 3.%ESC%%RGB%[33m Taskbar Simge Konumu %RGB%%RGB%[90m[SOL/ORTA]%RGB%[0m             %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 4.%ESC%%RGB%[33m Sa§-Tk Men %RGB%%RGB%[90m[ESK˜/YEN˜]%RGB%[0m                    %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 5.%ESC%%RGB%[33m Sa§-Tk Terminal %RGB%%RGB%[90m[EKLE/KALDIR]%RGB%[0m              %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 6.%ESC%%RGB%[33m Sahiplik Al %RGB%%RGB%[90m[EKLE/KALDIR]%RGB%[0m                   %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 7.%ESC%%RGB%[33m Compact OS (Windows SkŸtrma) %RGB%%RGB%[90m[A€/KAPAT]%RGB%[0m  %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 8.%ESC%%RGB%[33m Gpedit.msc (Yerel Grup ilkesi)%RGB%%RGB%[90m[EKLE]%RGB%[0m        %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menye d”n%ESC%[0m                                  %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
-set /p deger=%RGB%[92m  ˜Ÿlem : %RGB%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%%ESC%[1;97m%ESC%%ESC%[100m              Windows 11 ï¿½zelleï¿½tirme              %ESC%[0m%ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¹%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m Taskbar Boyut %RGB%%RGB%[90m[Kï¿½ï¿½ï¿½K/Bï¿½Yï¿½K]%RGB%[0m                 %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 2.%ESC%%RGB%[33m Taskbar Konumu %RGB%%RGB%[90m[ALT/ï¿½ST]%RGB%[0m                    %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 3.%ESC%%RGB%[33m Taskbar Simge Konumu %RGB%%RGB%[90m[SOL/ORTA]%RGB%[0m             %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 4.%ESC%%RGB%[33m Saï¿½-Tï¿½k Menï¿½ %RGB%%RGB%[90m[ESKï¿½/YENï¿½]%RGB%[0m                    %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 5.%ESC%%RGB%[33m Saï¿½-Tï¿½k Terminal %RGB%%RGB%[90m[EKLE/KALDIR]%RGB%[0m              %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 6.%ESC%%RGB%[33m Sahiplik Al %RGB%%RGB%[90m[EKLE/KALDIR]%RGB%[0m                   %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 7.%ESC%%RGB%[33m Compact OS (Windows Sï¿½kï¿½ï¿½tï¿½rma) %RGB%%RGB%[90m[Aï¿½/KAPAT]%RGB%[0m  %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 8.%ESC%%RGB%[33m Gpedit.msc (Yerel Grup ilkesi)%RGB%%RGB%[90m[EKLE]%RGB%[0m        %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menï¿½ye dï¿½n%ESC%[0m                                  %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼%ESC%[0m
+set /p deger=%RGB%[92m  ï¿½ï¿½lem : %RGB%[0m
 	if %deger%==1 (Call :Win11MenuChange)
 	if %deger%==2 (Call :Win11MenuLocation)
 	if %deger%==3 (Call :Win11MenuOld)
@@ -1330,49 +1342,49 @@ else
 :Win11MenuChange
 cls
 mode con cols=55 lines=15
-title G”rev ‡ubu§u boyut ayar / OgnitorenKs
+title Gï¿½rev ï¿½ubuï¿½u boyut ayarï¿½ / OgnitorenKs
 echo 
 echo 
-echo  %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
-echo  %ESC%[90mº%ESC%%ESC%[1;97m%ESC%%ESC%[100m             G”rev €ubu§u Boyut Ayar              %ESC%[0m%ESC%[90mº%ESC%[0m
-echo  %ESC%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 0.%ESC%%RGB%[33m K‡k %RGB%[0m                                      %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m Varsaylan %RGB%[0m                                 %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 2.%ESC%%RGB%[33m Byk %RGB%[0m                                      %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menye d”n%ESC%[0m                                  %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
-set /p deger= %RGB%[92m G”rev ‡ubu§u bykl§ : %RGB%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%%ESC%[1;97m%ESC%%ESC%[100m             Gï¿½rev ï¿½ubuï¿½u Boyut Ayarï¿½              %ESC%[0m%ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¹%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 0.%ESC%%RGB%[33m Kï¿½ï¿½ï¿½k %RGB%[0m                                      %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m Varsayï¿½lan %RGB%[0m                                 %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 2.%ESC%%RGB%[33m Bï¿½yï¿½k %RGB%[0m                                      %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menï¿½ye dï¿½n%ESC%[0m                                  %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼%ESC%[0m
+set /p deger= %RGB%[92m Gï¿½rev ï¿½ubuï¿½u bï¿½yï¿½klï¿½ï¿½ï¿½ : %RGB%[0m
 	if %deger%==x goto Win11SettingsMenu
 	if %deger%==X goto Win11SettingsMenu
 
-echo [%date% - %time%] ^| Win11MenuChange ^| Taskbar boyut ayar "%deger%" olarak ayarland. >> %konum%\Logs	
+echo [%date% - %time%] ^| Win11MenuChange ^| Taskbar boyut ayarï¿½ "%deger%" olarak ayarlandï¿½. >> %konum%\Logs	
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /f /v "TaskbarSi" /t REG_DWORD /d %deger%
 Call :ExplorerReset
-echo %ESC%[92m ˜Ÿlem tamamland.%ESC%[0m
+echo %ESC%[92m ï¿½ï¿½lem tamamlandï¿½.%ESC%[0m
 timeout /t 2 /nobreak > NUL
 goto :eof
 
 :Win11MenuLocation
 cls
 mode con cols=55 lines=15
-title G”rev ‡ubu§u konum ayar / OgnitorenKs
+title Gï¿½rev ï¿½ubuï¿½u konum ayarï¿½ / OgnitorenKs
 echo 
 echo 
-echo  %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
-echo  %ESC%[90mº%ESC%%ESC%[1;97m%ESC%%ESC%[100m                G”rev €ubu§u Konumu                %ESC%[0m%ESC%[90mº%ESC%[0m
-echo  %ESC%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m šst%RGB%[0m                                         %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 3.%ESC%%RGB%[33m Alt %RGB%[0m                                        %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menye d”n%ESC%[0m                                  %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
-set /p deger= %RGB%[92m G”rev ‡ubu§u konumu : %RGB%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%%ESC%[1;97m%ESC%%ESC%[100m                Gï¿½rev ï¿½ubuï¿½u Konumu                %ESC%[0m%ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¹%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m ï¿½st%RGB%[0m                                         %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 3.%ESC%%RGB%[33m Alt %RGB%[0m                                        %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menï¿½ye dï¿½n%ESC%[0m                                  %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼%ESC%[0m
+set /p deger= %RGB%[92m Gï¿½rev ï¿½ubuï¿½u konumu : %RGB%[0m
 	if %deger%==x goto win11settingsmenu
 	if %deger%==X goto win11settingsmenu
 
-echo [%date% - %time%] ^| Win11MenuLocation ^| Taskbar konum ayar "%deger%" olarak ayarland. >> %konum%\Logs
+echo [%date% - %time%] ^| Win11MenuLocation ^| Taskbar konum ayarï¿½ "%deger%" olarak ayarlandï¿½. >> %konum%\Logs
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\StuckRects3" /v "Settings" /t REG_BINARY /d "30000000feffffff7af400000%deger%0000003000000030000000000000000804000080070000380400006000000001000000" /f
 Call :ExplorerReset
-echo %ESC%[92m ˜Ÿlem tamamland.%ESC%[0m
+echo %ESC%[92m ï¿½ï¿½lem tamamlandï¿½.%ESC%[0m
 timeout /t 2 /nobreak > NUL
 goto :eof
 
@@ -1380,44 +1392,44 @@ goto :eof
 :Win11MenuOld
 cls
 mode con cols=55 lines=15
-title G”rev ‡ubu§u simge konumu ayar / OgnitorenKs
+title Gï¿½rev ï¿½ubuï¿½u simge konumu ayarï¿½ / OgnitorenKs
 echo 
 echo 
-echo  %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
-echo  %ESC%[90mº%ESC%%ESC%[1;97m%ESC%%ESC%[100m            G”rev €ubu§u Simge Konumu              %ESC%[0m%ESC%[90mº%ESC%[0m
-echo  %ESC%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 0.%ESC%%RGB%[33m Sol%RGB%[0m                                         %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m Orta%RGB%[0m                                        %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menye d”n%ESC%[0m                                  %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
-set /p deger= %RGB%[92m Tarafnz se‡iniz : %RGB%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%%ESC%[1;97m%ESC%%ESC%[100m            Gï¿½rev ï¿½ubuï¿½u Simge Konumu              %ESC%[0m%ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¹%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 0.%ESC%%RGB%[33m Sol%RGB%[0m                                         %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m Orta%RGB%[0m                                        %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menï¿½ye dï¿½n%ESC%[0m                                  %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼%ESC%[0m
+set /p deger= %RGB%[92m Tarafï¿½nï¿½zï¿½ seï¿½iniz : %RGB%[0m
 	if %deger%==x goto Win11SettingsMenu
 	if %deger%==X goto Win11SettingsMenu
 
-echo [%date% - %time%] ^| Win11MenuOld ^| Taskbar simge konumu "%deger%" olarak ayarland. >> %konum%\Logs
+echo [%date% - %time%] ^| Win11MenuOld ^| Taskbar simge konumu "%deger%" olarak ayarlandï¿½. >> %konum%\Logs
 reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /f /v "TaskbarAl" /t REG_DWORD /d %deger%
 Call :ExplorerReset
-echo %ESC%[92m ˜Ÿlem tamamland.%ESC%[0m
+echo %ESC%[92m ï¿½ï¿½lem tamamlandï¿½.%ESC%[0m
 timeout /t 2 /nobreak > NUL
 goto :eof
 
 :Win11RightClick
 cls
 mode con cols=55 lines=15
-title Sa§ tk se‡enek ayar / OgnitorenKs
+title Saï¿½ tï¿½k seï¿½enek ayarï¿½ / OgnitorenKs
 echo 
 echo 
-echo  %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
-echo  %ESC%[90mº%ESC%%ESC%[1;97m%ESC%%ESC%[100m                 Sa§-Tk Men Ayar                %ESC%[0m%ESC%[90mº%ESC%[0m
-echo  %ESC%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m Eski%RGB%[0m                                        %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 2.%ESC%%RGB%[33m Yeni%RGB%[0m                                        %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menye d”n%ESC%[0m                                  %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
-set /p deger= %RGB%[92m Tarafnz se‡iniz : %RGB%[0m
-	if %deger%==1 (echo [%date% - %time%] ^| Win11RightClick ^| Windows 11 sa§-tk ayar eski haline getirildi.. >> %konum%\Logs
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%%ESC%[1;97m%ESC%%ESC%[100m                 Saï¿½-Tï¿½k Menï¿½ Ayarï¿½                %ESC%[0m%ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¹%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m Eski%RGB%[0m                                        %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 2.%ESC%%RGB%[33m Yeni%RGB%[0m                                        %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menï¿½ye dï¿½n%ESC%[0m                                  %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼%ESC%[0m
+set /p deger= %RGB%[92m Tarafï¿½nï¿½zï¿½ seï¿½iniz : %RGB%[0m
+	if %deger%==1 (echo [%date% - %time%] ^| Win11RightClick ^| Windows 11 saï¿½-tï¿½k ayarï¿½ eski haline getirildi.. >> %konum%\Logs
 				   reg add "HKEY_CURRENT_USER\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f&taskkill /f /im explorer.exe&start explorer.exe&goto :eof)
-	if %deger%==2 (echo [%date% - %time%] ^| Win11RightClick ^| Windows 11 sa§-tk ayar yeni haline getirildi.. >> %konum%\Logs
+	if %deger%==2 (echo [%date% - %time%] ^| Win11RightClick ^| Windows 11 saï¿½-tï¿½k ayarï¿½ yeni haline getirildi.. >> %konum%\Logs
 				   reg delete "HKEY_CURRENT_USER\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f&goto :eof)
 	if %deger%==x goto Win11SettingsMenu
 	if %deger%==X goto Win11SettingsMenu
@@ -1427,45 +1439,45 @@ else
 :Win11RightMenuTerminal
 cls
 mode con cols=55 lines=15
-title Sa§-tk Terminal ayar / OgnitorenKs
+title Saï¿½-tï¿½k Terminal ayarï¿½ / OgnitorenKs
 echo 
 echo 
-echo  %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
-echo  %ESC%[90mº%ESC%%ESC%[1;97m%ESC%%ESC%[100m              Sa§-Tk Terminal Ayar               %ESC%[0m%ESC%[90mº%ESC%[0m
-echo  %ESC%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m Terminal%RGB%%RGB%[90m [KALDIR]%RGB%[0m                           %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 2.%ESC%%RGB%[33m Terminal%RGB%%RGB%[90m [EKLE]%RGB%[0m                             %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menye d”n%ESC%[0m                                  %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
-set /p deger= %RGB%[92m ˜Ÿlem : %RGB%[0m
-	if %deger%==1 (echo [%date% - %time%] ^| Win11RightMenuTerminal ^| Windows 11 sa§-tk b”lmnden terminal kaldrld. >> %konum%\Logs
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%%ESC%[1;97m%ESC%%ESC%[100m              Saï¿½-Tï¿½k Terminal Ayarï¿½               %ESC%[0m%ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¹%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m Terminal%RGB%%RGB%[90m [KALDIR]%RGB%[0m                           %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 2.%ESC%%RGB%[33m Terminal%RGB%%RGB%[90m [EKLE]%RGB%[0m                             %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menï¿½ye dï¿½n%ESC%[0m                                  %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼%ESC%[0m
+set /p deger= %RGB%[92m ï¿½ï¿½lem : %RGB%[0m
+	if %deger%==1 (echo [%date% - %time%] ^| Win11RightMenuTerminal ^| Windows 11 saï¿½-tï¿½k bï¿½lï¿½mï¿½nden terminal kaldï¿½rï¿½ldï¿½. >> %konum%\Logs
 				   reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked" /f /v "{9F156763-7844-4DC4-B2B1-901F640F5155}" /t REG_SZ /d ""&start explorer.exe&goto :eof)
-	if %deger%==2 (echo [%date% - %time%] ^| Win11RightMenuTerminal ^| Windows 11 sa§-tk b”lmne terminal eklendi. >> %konum%\Logs
+	if %deger%==2 (echo [%date% - %time%] ^| Win11RightMenuTerminal ^| Windows 11 saï¿½-tï¿½k bï¿½lï¿½mï¿½ne terminal eklendi. >> %konum%\Logs
 				   reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked" /f&goto :eof)
 	if %deger%==x goto Win11SettingsMenu
 	if %deger%==X goto Win11SettingsMenu
 else
 	goto Win11SettingsMenu
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 :stop
 :Win10SettingsMenu
 cls
 mode con cols=55 lines=17
-title Windows 10 ™zelleŸtir / OgnitorenKs
+title Windows 10 ï¿½zelleï¿½tir / OgnitorenKs
 echo 
-echo  %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
-echo  %ESC%[90mº%ESC%%ESC%[1;97m%ESC%%ESC%[100m              Windows 10 ™zelleŸtirme              %ESC%[0m%ESC%[90mº%ESC%[0m
-echo  %ESC%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m Saat yan, simgeler%RGB%%RGB%[90m [G™STER/G˜ZLE]%RGB%[0m          %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 2.%ESC%%RGB%[33m Bildirim Alan%RGB%%RGB%[90m [A€/KAPAT]%RGB%[0m                   %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 3.%ESC%%RGB%[33m Sahiplik Al%RGB%%RGB%[90m [EKLE/KALDIR]%RGB%[0m                   %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 4.%ESC%%RGB%[33m Market%RGB%%RGB%[90m [YšKLE/KALDIR]%RGB%[0m                       %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 5.%ESC%%RGB%[33m Compact OS (Windows SkŸtrma)%RGB%%RGB%[90m [A€/KAPAT]%RGB%[0m  %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 6.%ESC%%RGB%[33m Gpedit.msc (Yerel Grup ilkesi)%RGB%%RGB%[90m [EKLE]%RGB%[0m       %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 7.%ESC%%RGB%[33m Simgeleri De§iŸtir%RGB%%RGB%[90m [ESK˜/YEN˜]%RGB%[0m              %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menye d”n%ESC%[0m                                  %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
-set /p deger=%RGB%[92m  ˜Ÿlem : %RGB%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%%ESC%[1;97m%ESC%%ESC%[100m              Windows 10 ï¿½zelleï¿½tirme              %ESC%[0m%ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¹%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m Saat yanï¿½, simgeler%RGB%%RGB%[90m [Gï¿½STER/Gï¿½ZLE]%RGB%[0m          %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 2.%ESC%%RGB%[33m Bildirim Alanï¿½%RGB%%RGB%[90m [Aï¿½/KAPAT]%RGB%[0m                   %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 3.%ESC%%RGB%[33m Sahiplik Al%RGB%%RGB%[90m [EKLE/KALDIR]%RGB%[0m                   %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 4.%ESC%%RGB%[33m Market%RGB%%RGB%[90m [Yï¿½KLE/KALDIR]%RGB%[0m                       %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 5.%ESC%%RGB%[33m Compact OS (Windows Sï¿½kï¿½ï¿½tï¿½rma)%RGB%%RGB%[90m [Aï¿½/KAPAT]%RGB%[0m  %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 6.%ESC%%RGB%[33m Gpedit.msc (Yerel Grup ilkesi)%RGB%%RGB%[90m [EKLE]%RGB%[0m       %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 7.%ESC%%RGB%[33m Simgeleri Deï¿½iï¿½tir%RGB%%RGB%[90m [ESKï¿½/YENï¿½]%RGB%[0m              %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menï¿½ye dï¿½n%ESC%[0m                                  %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼%ESC%[0m
+set /p deger=%RGB%[92m  ï¿½ï¿½lem : %RGB%[0m
 	if %deger%==1 (Call :Win10EkranTepsi)
 	if %deger%==2 (Call :Win10Bildirim)
 	if %deger%==3 (Call :WinSahiplik)
@@ -1483,24 +1495,24 @@ else
 :Win10EkranTepsi
 cls
 mode con cols=55 lines=15
-title G”rev ‡ubu§u dzenleniyor... / OgnitorenKs
+title Gï¿½rev ï¿½ubuï¿½u dï¿½zenleniyor... / OgnitorenKs
 echo 
 echo 
-echo  %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
-echo  %ESC%[90mº%ESC%%ESC%[1;97m%ESC%%ESC%[100m               Saat Yan Simge Ayar               %ESC%[0m%ESC%[90mº%ESC%[0m
-echo  %ESC%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 0.%ESC%%RGB%[33m Hepsini G”ster%RGB%%RGB%[90m [A€]%RGB%[0m                         %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m Hepsini Gizle%RGB%%RGB%[90m [KAPAT]%RGB%[0m                       %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menye d”n%ESC%[0m                                  %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
-set /p deger=%RGB%[92m  ˜Ÿlem : %RGB%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%%ESC%[1;97m%ESC%%ESC%[100m               Saat Yanï¿½ Simge Ayarï¿½               %ESC%[0m%ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¹%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 0.%ESC%%RGB%[33m Hepsini Gï¿½ster%RGB%%RGB%[90m [Aï¿½]%RGB%[0m                         %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m Hepsini Gizle%RGB%%RGB%[90m [KAPAT]%RGB%[0m                       %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menï¿½ye dï¿½n%ESC%[0m                                  %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼%ESC%[0m
+set /p deger=%RGB%[92m  ï¿½ï¿½lem : %RGB%[0m
 	if %deger%==x goto Win10SettingsMenu
 	if %deger%==X goto Win10SettingsMenu
 
-echo [%date% - %time%] ^| Win10EkranTepsi ^| Windows 10 Saat yan simgeri ayar "%deger%" olarak ayarland. >> %konum%\Logs
+echo [%date% - %time%] ^| Win10EkranTepsi ^| Windows 10 Saat yanï¿½ simgeri ayarï¿½ "%deger%" olarak ayarlandï¿½. >> %konum%\Logs
 reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer" /f /v "EnableAutoTray" /t REG_DWORD /d %deger% > NUL 2>&1
 Call :ExplorerReset
-echo %ESC%[92m ˜Ÿlem tamamland.%ESC%[0m
+echo %ESC%[92m ï¿½ï¿½lem tamamlandï¿½.%ESC%[0m
 timeout /t 2 /nobreak > NUL
 goto :eof
 
@@ -1509,25 +1521,25 @@ goto :eof
 :Win10Bildirim
 cls
 mode con cols=55 lines=15
-title Bildirim alan dzenleniyor... / OgnitorenKs
+title Bildirim alanï¿½ dï¿½zenleniyor... / OgnitorenKs
 echo 
 echo 
-echo  %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
-echo  %ESC%[90mº%ESC%%ESC%[1;97m%ESC%%ESC%[100m               Bildirim Alan Ayar                %ESC%[0m%ESC%[90mº%ESC%[0m
-echo  %ESC%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 0.%ESC%%RGB%[33m A‡k%RGB%[0m                                        %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m Kapal%RGB%[0m                                      %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menye d”n%ESC%[0m                                  %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
-set /p deger= %RGB%[92m  ˜Ÿlem : %RGB%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%%ESC%[1;97m%ESC%%ESC%[100m               Bildirim Alanï¿½ Ayarï¿½                %ESC%[0m%ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¹%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 0.%ESC%%RGB%[33m Aï¿½ï¿½k%RGB%[0m                                        %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m Kapalï¿½%RGB%[0m                                      %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menï¿½ye dï¿½n%ESC%[0m                                  %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼%ESC%[0m
+set /p deger= %RGB%[92m  ï¿½ï¿½lem : %RGB%[0m
 	if %deger%==x goto Win10SettingsMenu
 	if %deger%==X goto Win10SettingsMenu
 
-echo [%date% - %time%] ^| Win10Bildirim ^| Windows 10 Bildirim alan ayar "%deger%" olarak ayarland. >> %konum%\Logs
+echo [%date% - %time%] ^| Win10Bildirim ^| Windows 10 Bildirim alanï¿½ ayarï¿½ "%deger%" olarak ayarlandï¿½. >> %konum%\Logs
 reg add "HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer" /f /v "DisableNotificationCenter" /t REG_DWORD /d %deger% > NUL 2>&1
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer" /f /v "DisableNotificationCenter" /t REG_DWORD /d %deger% > NUL 2>&1
 Call :ExplorerReset
-echo %ESC%[92m ˜Ÿlem tamamland.%ESC%[0m
+echo %ESC%[92m ï¿½ï¿½lem tamamlandï¿½.%ESC%[0m
 timeout /t 2 /nobreak > NUL
 goto :eof
 
@@ -1536,17 +1548,17 @@ goto :eof
 :Win10StoreDelIns
 cls
 mode con cols=55 lines=15
-title Market Y”neticisi / OgnitorenKs
+title Market Yï¿½neticisi / OgnitorenKs
 echo 
 echo 
-echo  %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
-echo  %ESC%[90mº%ESC%%ESC%[1;97m%ESC%%ESC%[100m                   Market Y”netici                 %ESC%[0m%ESC%[90mº%ESC%[0m
-echo  %ESC%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m Market%RGB%%RGB%[90m [KALDIR]%RGB%[0m                             %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 2.%ESC%%RGB%[33m Market%RGB%%RGB%[90m [YšKLE]%RGB%[0m                              %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menye d”n%ESC%[0m                                  %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
-set /p deger=%RGB%[92m  ˜Ÿlem : %RGB%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%%ESC%[1;97m%ESC%%ESC%[100m                   Market Yï¿½netici                 %ESC%[0m%ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¹%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m Market%RGB%%RGB%[90m [KALDIR]%RGB%[0m                             %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 2.%ESC%%RGB%[33m Market%RGB%%RGB%[90m [Yï¿½KLE]%RGB%[0m                              %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menï¿½ye dï¿½n%ESC%[0m                                  %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼%ESC%[0m
+set /p deger=%RGB%[92m  ï¿½ï¿½lem : %RGB%[0m
 	if %deger%==1 (Call :Win10StoreDel)
 	if %deger%==2 (Call :Win10StoreIns)
 	if %deger%==x GOTO Win10SettingsMenu
@@ -1557,8 +1569,8 @@ else
 :Win10StoreDel
 cls
 mode con cols=109 lines=35
-title Market kaldrlyor... / OgnitorenKs
-echo [%date% - %time%] ^| Win10StoreDelIns ^| Windows 10 market uygulamalar kaldrld. >> %konum%\Logs
+title Market kaldï¿½rï¿½lï¿½yor... / OgnitorenKs
+echo [%date% - %time%] ^| Win10StoreDelIns ^| Windows 10 market uygulamalarï¿½ kaldï¿½rï¿½ldï¿½. >> %konum%\Logs
 echo %ESC%[92m Microsoft Store siliniyor...%ESC%[0m
 
 powershell -command "Get-AppXPackage | Remove-AppxPackage"
@@ -1575,16 +1587,16 @@ sc config StorSvc start= disabled
 net stop StorSvc > NUL 2>&1
 net stop "ClipSVC" > NUL 2>&1
 
-echo %ESC%[92m ˜Ÿlem tamamland. Menye aktarlyorsunuz...%ESC%[0m
+echo %ESC%[92m ï¿½ï¿½lem tamamlandï¿½. Menï¿½ye aktarï¿½lï¿½yorsunuz...%ESC%[0m
 timeout /t 3 /nobreak
 goto :eof
 
 :Win10StoreIns
 cls
 mode con cols=109 lines=35
-title Market ykleniyor... / OgnitorenKs
-echo [%date% - %time%] ^| Win10StoreDelIns ^| Windows 10 Market uygulamas yeniden yklendi. >> %konum%\Logs
-echo %ESC%[92m Microsoft Store ykleniyor...%ESC%[0m
+title Market yï¿½kleniyor... / OgnitorenKs
+echo [%date% - %time%] ^| Win10StoreDelIns ^| Windows 10 Market uygulamasï¿½ yeniden yï¿½klendi. >> %konum%\Logs
+echo %ESC%[92m Microsoft Store yï¿½kleniyor...%ESC%[0m
 powershell -command "Add-AppxPackage -DisableDevelopmentMode -Register $Env:%windir%\SystemApps\*\AppxManifest.xml"
 
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ClipSVC\Parameters" /v "" /t REG_SZ /d /f
@@ -1596,7 +1608,7 @@ reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ClipSVC\Parameters
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ClipSVC\Parameters" /v "ServiceDllUnloadOnStop" /t REG_DWORD /d 1 /f
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsStore" /v "RemoveWindowsStore" /t REG_DWORD /d 0 /f
 
-echo %ESC%[92m Hizmetler baŸlatlyor...%ESC%[0m
+echo %ESC%[92m Hizmetler baï¿½latï¿½lï¿½yor...%ESC%[0m
 sc config AppXSvc start= demand > NUL 2>&1
 net start AppXSvc > NUL 2>&1
 sc config camsvc start= demand > NUL 2>&1
@@ -1616,11 +1628,11 @@ net stop wuauserv > NUL 2>&1
 RD /S /Q "%windir%\SoftwareDistribution"
 net start wuauserv > NUL 2>&1
 
-echo %ESC%[92m DLL dosyalar kontrol ediliyor...%ESC%[0m
+echo %ESC%[92m DLL dosyalarï¿½ kontrol ediliyor...%ESC%[0m
 regsvr32  softpub.dll /s&regsvr32  wintrust.dll /s&regsvr32  initpki.dll /s&regsvr32  dssenh.dll /s&regsvr32  rsaenh.dll /s&regsvr32  gpkcsp.dll /s&regsvr32  sccbase.dll /s&regsvr32  slbcsp.dll /s&regsvr32  mssip32.dll /s&regsvr32  cryptdlg.dll /s&regsvr32  msxml3.dll /s&regsvr32  comcat.dll /s&Regsvr32  Msxml.dll /s&Regsvr32  Msxml2.dll /s&regsvr32  mshtml.dll /s&regsvr32  shdocvw.dll /s&regsvr32  browseui.dll /s&regsvr32  msjava.dll /s&regsvr32  shdoc401.dll /s&regsvr32  cdm.dll /s&regsvr32  shdoc401.dll /i /s&regsvr32  gpkcsp.dll /s&regsvr32  sccbase.dll /s&regsvr32  asctrls.ocx /s&regsvr32  wintrust.dll /s&regsvr32  initpki.dll /s&regsvr32  softpub.dll /s&regsvr32  oleaut32.dll /s&regsvr32  shdocvw.dll /I /s&regsvr32  Shell32.dll /s&regsvr32  browseui.dll /s&regsvr32  browseui.dll /I /s&regsvr32  msrating.dll /s&regsvr32  mlang.dll /s&regsvr32  hlink.dll /s&regsvr32  mshtmled.dll /s&regsvr32  urlmon.dll /s&regsvr32  urlmon.dll /i /s&regsvr32  plugin.ocx /s&regsvr32  sendmail.dll /s&regsvr32  scrobj.dll /s&regsvr32  mmefxe.ocx /s&regsvr32  corpol.dll /s&regsvr32  jscript.dll /s&regsvr32  imgutil.dll /s&regsvr32  thumbvw.dll /s&regsvr32  cryptext.dll /s&regsvr32  rsabase.dll /s&regsvr32  inseng.dll /s&regsvr32  iesetup.dll /i /s&regsvr32  actxprxy.dll /s&regsvr32  dispex.dll /s&regsvr32  occache.dll /s&regsvr32  occache.dll /i /s&regsvr32  iepeers.dll /s&regsvr32  cdfview.dll /s&regsvr32  webcheck.dll /s&regsvr32  mobsync.dll /s&regsvr32  pngfilt.dll /s&regsvr32  licmgr10.dll /s
 regsvr32  icmfilter.dll /s&regsvr32  hhctrl.ocx /s&regsvr32  inetcfg.dll /s&regsvr32  tdc.ocx /s&regsvr32  MSR2C.DLL /s&regsvr32  msident.dll /s&regsvr32  msieftp.dll /s&regsvr32  xmsconf.ocx /s&regsvr32  ils.dll /s&regsvr32  msoeacct.dll /s&regsvr32  inetcomm.dll /s&regsvr32  msdxm.ocx /s&regsvr32  dxmasf.dll /s&regsvr32  l3codecx.ax /s&regsvr32  acelpdec.ax /s&regsvr32  mpg4ds32.ax /s&regsvr32  voxmsdec.ax /s&regsvr32  danim.dll /s&regsvr32  Daxctle.ocx /s&regsvr32  lmrt.dll /s&regsvr32  datime.dll /s&regsvr32  dxtrans.dll /s&regsvr32  dxtmsft.dll /s&regsvr32  WEBPOST.DLL /s&regsvr32  WPWIZDLL.DLL /s&regsvr32  POSTWPP.DLL /s&regsvr32  CRSWPP.DLL /s&regsvr32  FTPWPP.DLL /s&regsvr32  FPWPP.DLL /s&regsvr32  WUAPI.DLL /s&regsvr32  wups2.dll /S&regsvr32  WUAUENG.DLL /s&regsvr32  ATL.DLL /s&regsvr32  WUCLTUI.DLL /s&regsvr32  WUPS.DLL /s&regsvr32  WUWEB.DLL /s&regsvr32  wshom.ocx /s&regsvr32  wshext.dll /s&regsvr32  vbscript.dll /s&regsvr32  scrrun.dll mstinit.exe /setup /s&regsvr32  msnsspc.dll /SspcCreateSspiReg /s&regsvr32  msapsspc.dll /SspcCreateSspiReg /s
 wsreset
-echo %ESC%[92m ˜Ÿlem tamamland. Menye aktarlyorsunuz...%ESC%[0m
+echo %ESC%[92m ï¿½ï¿½lem tamamlandï¿½. Menï¿½ye aktarï¿½lï¿½yorsunuz...%ESC%[0m
 timeout /t 3 /nobreak
 goto :eof
 
@@ -1628,17 +1640,17 @@ goto :eof
 :icochangemenu
 cls
 mode con cols=55 lines=15
-title ICO Y”neticisi / OgnitorenKs
+title ICO Yï¿½neticisi / OgnitorenKs
 echo 
 echo 
-echo  %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
-echo  %ESC%[90mº%ESC%%ESC%[1;97m%ESC%%ESC%[100m                    ICO Y”netici                   %ESC%[0m%ESC%[90mº%ESC%[0m
-echo  %ESC%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m Eski Simge%RGB%%RGB%[90m [YšKLE]%RGB%[0m                          %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 2.%ESC%%RGB%[33m Yeni Simge%RGB%%RGB%[90m [YšKLE]%RGB%[0m                          %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menye d”n%ESC%[0m                                  %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
-set /p deger=%RGB%[92m  ˜Ÿlem : %RGB%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%%ESC%[1;97m%ESC%%ESC%[100m                    ICO Yï¿½netici                   %ESC%[0m%ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¹%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m Eski Simge%RGB%%RGB%[90m [Yï¿½KLE]%RGB%[0m                          %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 2.%ESC%%RGB%[33m Yeni Simge%RGB%%RGB%[90m [Yï¿½KLE]%RGB%[0m                          %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menï¿½ye dï¿½n%ESC%[0m                                  %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼%ESC%[0m
+set /p deger=%RGB%[92m  ï¿½ï¿½lem : %RGB%[0m
 	if %deger%==1 (Call :icochange Oldico)
 	if %deger%==2 (Call :icochange Newico)
 	if %deger%==x GOTO Win10SettingsMenu
@@ -1650,13 +1662,13 @@ else
 cls
 Call :PowerRun
 Call :konum
-echo [%date% - %time%] ^| icochangemenu ^| "%~1" simge dosyas yklendi. >> %konum%\Logs
-title ICO Ayarlar yaplyor / OgnitorenKs
+echo [%date% - %time%] ^| icochangemenu ^| "%~1" simge dosyasï¿½ yï¿½klendi. >> %konum%\Logs
+title ICO Ayarlarï¿½ yapï¿½lï¿½yor / OgnitorenKs
 dir /b %konum%\Files\Oldico.zip > NUL 2>&1
 	if %errorlevel%==1 (Call :oldicodown)
-title ICO Ayarlar yaplyor / OgnitorenKs
+title ICO Ayarlarï¿½ yapï¿½lï¿½yor / OgnitorenKs
 taskkill /f /im "explorer.exe" > NUL 2>&1
-echo %ESC%[92m Simgeler ykleniyor...%ESC%[0m
+echo %ESC%[92m Simgeler yï¿½kleniyor...%ESC%[0m
 %PowerRun% Powershell -command "Expand-Archive -Force '%konum%\Files\%~1.zip' 'C:\'"
 timeout /t 20 /nobreak > NUL
 DEL /F /Q /A %userprofile%\AppData\Local\Microsoft\Windows\Explorer\*.* > NUL 2>&1
@@ -1666,40 +1678,40 @@ powershell -command "Start-Process 'C:\Windows\explorer.exe'"
 goto Win10SettingsMenu
 
 :oldicodown
-echo %ESC%[96m Simge dosyalar indiriliyor...%ESC%[0m
+echo %ESC%[96m Simge dosyalarï¿½ indiriliyor...%ESC%[0m
 ping -n 1 www.google.com.tr -w 20000 > NUL
-	if %errorlevel%==1 (echo  %ESC%[1;97m%ESC%%ESC%[41m               ˜nternet ba§lants yok.              %ESC%[0m
-						echo  %ESC%[1;97m%ESC%%ESC%[41m   Ba§lanty sa§layp herhangi bir tuŸa basnz    %ESC%[0m
-						Call :Logss "oldicodown" "HATA! ˜nternet ba§lants bulunamad."
+	if %errorlevel%==1 (echo  %ESC%[1;97m%ESC%%ESC%[41m               ï¿½nternet baï¿½lantï¿½sï¿½ yok.              %ESC%[0m
+						echo  %ESC%[1;97m%ESC%%ESC%[41m   Baï¿½lantï¿½yï¿½ saï¿½layï¿½p herhangi bir tuï¿½a basï¿½nï¿½z    %ESC%[0m
+						Call :Logss "oldicodown" "HATA! ï¿½nternet baï¿½lantï¿½sï¿½ bulunamadï¿½."
 						pause > NUL
 						goto oldicodown)
 
-echo [%date% - %time%] ^| oldicodown ^| Simge dosyalar indirildi. >> %konum%\Logs
+echo [%date% - %time%] ^| oldicodown ^| Simge dosyalarï¿½ indirildi. >> %konum%\Logs
 %konum%\Files\wget -c -q --no-check-certificate --show-progress "https://docs.google.com/uc?export=download&id=1CXNQ2WVGM_udNMvaloaxFFQ_2sMaY5RQ" -O %konum%\Files\Oldico.zip
 %konum%\Files\wget -c -q --no-check-certificate --show-progress "https://docs.google.com/uc?export=download&id=1_Vcmp6xUwlqwuUdAjscS9bnGEi_XW24G" -O %konum%\Files\Newico.zip
 goto :eof
 
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 :stop
 :AdminMenu
 cls
 mode con cols=55 lines=17
-title Kullanc ˜Ÿlemleri \ OgnitorenKs
+title Kullanï¿½cï¿½ ï¿½ï¿½lemleri \ OgnitorenKs
 echo 
-echo  %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
-echo  %ESC%[90mº%ESC%%ESC%[1;97m%ESC%%ESC%[100m              Kullanc Hesap Y”netimi             %ESC%[0m%ESC%[90mº%ESC%[0m
-echo  %ESC%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m Administrator%RGB%%RGB%[90m [AKT˜F]%RGB%[0m                       %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 2.%ESC%%RGB%[33m Administrator%RGB%%RGB%[90m [PAS˜F]%RGB%[0m                       %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 3.%ESC%%RGB%[33m Admin grubuna Kullanc ekle%RGB%[0m                %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 4.%ESC%%RGB%[33m Kullanc%RGB%%RGB%[90m [EKLE]%RGB%[0m                            %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 5.%ESC%%RGB%[33m Kullanc%RGB%%RGB%[90m [S˜L]%RGB%[0m                             %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 6.%ESC%%RGB%[33m žifremi unuttum%RGB%[0m                             %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 7.%ESC%%RGB%[33m Mevcut Kullanclar G”ster%RGB%[0m                 %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menye d”n%ESC%[0m                                  %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
-set /p deger=%RGB%[92m Yapmak istedi§iniz iŸlem : %RGB%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%%ESC%[1;97m%ESC%%ESC%[100m              Kullanï¿½cï¿½ Hesap Yï¿½netimi             %ESC%[0m%ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¹%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m Administrator%RGB%%RGB%[90m [AKTï¿½F]%RGB%[0m                       %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 2.%ESC%%RGB%[33m Administrator%RGB%%RGB%[90m [PASï¿½F]%RGB%[0m                       %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 3.%ESC%%RGB%[33m Admin grubuna Kullanï¿½cï¿½ ekle%RGB%[0m                %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 4.%ESC%%RGB%[33m Kullanï¿½cï¿½%RGB%%RGB%[90m [EKLE]%RGB%[0m                            %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 5.%ESC%%RGB%[33m Kullanï¿½cï¿½%RGB%%RGB%[90m [Sï¿½L]%RGB%[0m                             %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 6.%ESC%%RGB%[33m ï¿½ifremi unuttum%RGB%[0m                             %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m 7.%ESC%%RGB%[33m Mevcut Kullanï¿½cï¿½larï¿½ Gï¿½ster%RGB%[0m                 %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menï¿½ye dï¿½n%ESC%[0m                                  %ESC%[90mï¿½%ESC%[0m
+echo  %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼%ESC%[0m
+set /p deger=%RGB%[92m Yapmak istediï¿½iniz iï¿½lem : %RGB%[0m
 	if %deger%==1 GOTO Tweak1AdminAktif
 	if %deger%==2 GOTO Tweak2AdminPasif
 	if %deger%==3 GOTO Tweak3GrupAdmin
@@ -1715,15 +1727,15 @@ else
 :Tweak1AdminAktif
 cls
 mode con cols=55 lines=20
-title Administrator A‡ \ OgnitorenKs
+title Administrator Aï¿½ \ OgnitorenKs
 echo 
-echo   %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
-echo   %ESC%[90mº%ESC%%ESC%[1;97m%ESC%%ESC%[100m        Administrator aktifleŸtiriliyor...       %ESC%[0m%ESC%[90mº%ESC%[0m
-echo   %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
-echo [%date% - %time%] ^| AdminMenu ^| Administrator aktifleŸtirildi. >> %konum%\Logs
+echo   %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»%ESC%[0m
+echo   %ESC%[90mï¿½%ESC%%ESC%[1;97m%ESC%%ESC%[100m        Administrator aktifleï¿½tiriliyor...       %ESC%[0m%ESC%[90mï¿½%ESC%[0m
+echo   %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼%ESC%[0m
+echo [%date% - %time%] ^| AdminMenu ^| Administrator aktifleï¿½tirildi. >> %konum%\Logs
 net user administrator /active:yes
 net user administrator *
-echo %ESC%[92m ˜Ÿlem tamamland. Menye aktarlyorsunuz...%ESC%[0m
+echo %ESC%[92m ï¿½ï¿½lem tamamlandï¿½. Menï¿½ye aktarï¿½lï¿½yorsunuz...%ESC%[0m
 timeout /t 1 /nobreak > NUL
 goto AdminMenu
 
@@ -1732,95 +1744,95 @@ cls
 mode con cols=55 lines=20
 title Administrator kapat \ OgnitorenKs
 echo 
-echo   %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
-echo   %ESC%[90mº%ESC%%ESC%[1;97m%ESC%%ESC%[100m           Administrator kapatlyor...          %ESC%[0m%ESC%[90mº%ESC%[0m
-echo   %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
-echo [%date% - %time%] ^| AdminMenu ^| Administrator kapatld. >> %konum%\Logs
+echo   %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»%ESC%[0m
+echo   %ESC%[90mï¿½%ESC%%ESC%[1;97m%ESC%%ESC%[100m           Administrator kapatï¿½lï¿½yor...          %ESC%[0m%ESC%[90mï¿½%ESC%[0m
+echo   %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼%ESC%[0m
+echo [%date% - %time%] ^| AdminMenu ^| Administrator kapatï¿½ldï¿½. >> %konum%\Logs
 net user Administrator /active:no
-echo %ESC%[92m ˜Ÿlem tamamland. Menye aktarlyorsunuz...%ESC%[0m
+echo %ESC%[92m ï¿½ï¿½lem tamamlandï¿½. Menï¿½ye aktarï¿½lï¿½yorsunuz...%ESC%[0m
 timeout /t 1 /nobreak > NUL
 goto AdminMenu
 
 :Tweak3GrupAdmin
 cls
 mode con cols=55 lines=20
-title Admin Grubuna Kullanc ekle \ OgnitorenKs
+title Admin Grubuna Kullanï¿½cï¿½ ekle \ OgnitorenKs
 echo 
-echo   %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
-echo   %ESC%[90mº%ESC%%ESC%[1;97m%ESC%%ESC%[100m          Admin Grubuna kullanc ekle           %ESC%[0m%ESC%[90mº%ESC%[0m
-echo   %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
-set /p deger=%RGB%[92m     Kullanc Ad : %RGB%[0m  
+echo   %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»%ESC%[0m
+echo   %ESC%[90mï¿½%ESC%%ESC%[1;97m%ESC%%ESC%[100m          Admin Grubuna kullanï¿½cï¿½ ekle           %ESC%[0m%ESC%[90mï¿½%ESC%[0m
+echo   %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼%ESC%[0m
+set /p deger=%RGB%[92m     Kullancï¿½ Adï¿½ : %RGB%[0m  
 	if %deger%==x GOTO AdminMenu
 	if %deger%==X GOTO AdminMenu
-echo [%date% - %time%] ^| AdminMenu ^| Admin grubuna %deger% kullancs eklendi. >> %konum%\Logs
+echo [%date% - %time%] ^| AdminMenu ^| Admin grubuna %deger% kullanï¿½cï¿½sï¿½ eklendi. >> %konum%\Logs
 net localgroup Administrators %deger% /add 
-echo %ESC%[92m ˜Ÿlem tamamland. Menye aktarlyorsunuz...%ESC%[0m
+echo %ESC%[92m ï¿½ï¿½lem tamamlandï¿½. Menï¿½ye aktarï¿½lï¿½yorsunuz...%ESC%[0m
 timeout /t 2 /nobreak > NUL
 goto AdminMenu
 
 :Tweak4NewUsers
 cls
 mode con cols=55 lines=20
-title Yeni Kullanc ekle \ OgnitorenKs
+title Yeni Kullanï¿½cï¿½ ekle \ OgnitorenKs
 echo 
-echo   %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
-echo   %ESC%[90mº%ESC%%ESC%[1;97m%ESC%%ESC%[100m               Yeni kullanc ekle               %ESC%[0m%ESC%[90mº%ESC%[0m
-echo   %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
-set /p deger=%RGB%[92m     Kullanc Ad : %RGB%[0m
+echo   %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»%ESC%[0m
+echo   %ESC%[90mï¿½%ESC%%ESC%[1;97m%ESC%%ESC%[100m               Yeni kullanï¿½cï¿½ ekle               %ESC%[0m%ESC%[90mï¿½%ESC%[0m
+echo   %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼%ESC%[0m
+set /p deger=%RGB%[92m     Kullancï¿½ Adï¿½ : %RGB%[0m
 	if %deger%==x GOTO AdminMenu
 	if %deger%==X GOTO AdminMenu
-echo [%date% - %time%] ^| AdminMenu ^| Yeni kullanc "%deger%" oluŸturuldu. >> %konum%\Logs
+echo [%date% - %time%] ^| AdminMenu ^| Yeni kullanï¿½cï¿½ "%deger%" oluï¿½turuldu. >> %konum%\Logs
 net user %deger% * /add
 
-echo %ESC%[92m ˜Ÿlem tamamland. Menye aktarlyorsunuz...%ESC%[0m
+echo %ESC%[92m ï¿½ï¿½lem tamamlandï¿½. Menï¿½ye aktarï¿½lï¿½yorsunuz...%ESC%[0m
 timeout /t 2 /nobreak > NUL
 goto AdminMenu
 
 :Tweak5DelUsers
 cls
 mode con cols=55 lines=20
-title Kullanc Sil \ OgnitorenKs
+title Kullanï¿½cï¿½ Sil \ OgnitorenKs
 echo 
-echo   %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
-echo   %ESC%[90mº%ESC%%ESC%[1;97m%ESC%%ESC%[100m                  Kullanc Sil                  %ESC%[0m%ESC%[90mº%ESC%[0m
-echo   %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
-set /p deger=%RGB%[92m     Kullanc Ad : %RGB%[0m
+echo   %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»%ESC%[0m
+echo   %ESC%[90mï¿½%ESC%%ESC%[1;97m%ESC%%ESC%[100m                  Kullanï¿½cï¿½ Sil                  %ESC%[0m%ESC%[90mï¿½%ESC%[0m
+echo   %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼%ESC%[0m
+set /p deger=%RGB%[92m     Kullancï¿½ Adï¿½ : %RGB%[0m
 	if %deger%==x GOTO AdminMenu
 	if %deger%==X GOTO AdminMenu
-echo [%date% - %time%] ^| AdminMenu ^| Kullanc "%deger%" silindi. >> %konum%\Logs
+echo [%date% - %time%] ^| AdminMenu ^| Kullanï¿½cï¿½ "%deger%" silindi. >> %konum%\Logs
 net user %deger% /delete
 
-echo %ESC%[92m ˜Ÿlem tamamland. Menye aktarlyorsunuz...%ESC%[0m
+echo %ESC%[92m ï¿½ï¿½lem tamamlandï¿½. Menï¿½ye aktarï¿½lï¿½yorsunuz...%ESC%[0m
 timeout /t 2 /nobreak > NUL
 goto AdminMenu
 
 :Tweak6UsersKey
 cls
 mode con cols=55 lines=20
-title žifremi Unuttum / De§iŸtir \ OgnitorenKs
+title ï¿½ifremi Unuttum / Deï¿½iï¿½tir \ OgnitorenKs
 echo 
-echo   %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
-echo   %ESC%[90mº%ESC%%ESC%[1;97m%ESC%%ESC%[100m             žifremi Unuttum / De§iŸtir          %ESC%[0m%ESC%[90mº%ESC%[0m
-echo   %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
-set /p deger=%RGB%[92m     Kullanc Ad : %RGB%[0m
+echo   %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»%ESC%[0m
+echo   %ESC%[90mï¿½%ESC%%ESC%[1;97m%ESC%%ESC%[100m             ï¿½ifremi Unuttum / Deï¿½iï¿½tir          %ESC%[0m%ESC%[90mï¿½%ESC%[0m
+echo   %ESC%[90mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼%ESC%[0m
+set /p deger=%RGB%[92m     Kullancï¿½ Adï¿½ : %RGB%[0m
 	if %deger%==x GOTO AdminMenu
 	if %deger%==X GOTO AdminMenu
-echo [%date% - %time%] ^| AdminMenu ^| Kullanc "%deger%" Ÿifre de§iŸtirildi. >> %konum%\Logs
+echo [%date% - %time%] ^| AdminMenu ^| Kullanï¿½cï¿½ "%deger%" ï¿½ifre deï¿½iï¿½tirildi. >> %konum%\Logs
 net user %deger% *
 
-echo %ESC%[92m ˜Ÿlem tamamland. Menye aktarlyorsunuz...%ESC%[0m
+echo %ESC%[92m ï¿½ï¿½lem tamamlandï¿½. Menï¿½ye aktarï¿½lï¿½yorsunuz...%ESC%[0m
 timeout /t 2 /nobreak > NUL
 goto AdminMenu
 
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 :stop
 :UpdateAfter
 cls
 Call :PowerRun
-echo [%date% - %time%] ^| UpdateAfter ^| Gncelleme sonras temizlik b”lm ‡alŸtrld. >> %konum%\Logs
-echo %ESC%[92m Gncelleme sonras temizlik iŸlemi yaplyor.%ESC%[0m
-echo %ESC%[92m Defender dosyalar siliniyor.%ESC%[0m
+echo [%date% - %time%] ^| UpdateAfter ^| Gï¿½ncelleme sonrasï¿½ temizlik bï¿½lï¿½mï¿½ ï¿½alï¿½ï¿½tï¿½rï¿½ldï¿½. >> %konum%\Logs
+echo %ESC%[92m Gï¿½ncelleme sonrasï¿½ temizlik iï¿½lemi yapï¿½lï¿½yor.%ESC%[0m
+echo %ESC%[92m Defender dosyalarï¿½ siliniyor.%ESC%[0m
 %PowerRun% DEL /F /Q /A "%windir%\System32\CompatTelRunner.exe" > NUL 2>&1
 %PowerRun% DEL /F /Q /A "%windir%\System32\drivers\MsSecFlt.sys" > NUL 2>&1
 %PowerRun% DEL /F /Q /A "%windir%\System32\drivers\WdBoot.sys" > NUL 2>&1
@@ -1841,7 +1853,7 @@ echo %ESC%[92m Defender dosyalar siliniyor.%ESC%[0m
 %PowerRun% DEL /F /Q /A "%programdata%\Microsoft\Windows Defender Advanced Threat Protection" > NUL 2>&1
 %PowerRun% DEL /F /Q /A "%programdata%\Microsoft\Windows Defender" > NUL 2>&1
 %PowerRun% DEL /F /Q /A "%windir%\SystemApps\Microsoft.Windows.SecHealthUI_cw5n1h2txyewy" > NUL 2>&1
-echo %ESC%[92m Defender hizmetler kapatlyor.%ESC%[0m
+echo %ESC%[92m Defender hizmetler kapatï¿½lï¿½yor.%ESC%[0m
 %PowerRun% sc config SecurityHealthService start= disabled > NUL 2>&1
 %PowerRun% net stop SecurityHealthService > NUL 2>&1
 %PowerRun% sc config Sense start= disabled > NUL 2>&1
@@ -1854,7 +1866,7 @@ echo %ESC%[92m Defender hizmetler kapatlyor.%ESC%[0m
 %PowerRun% net stop WinDefend > NUL 2>&1
 %PowerRun% sc config wscsvc start= disabled > NUL 2>&1
 %PowerRun% net stop wscsvc > NUL 2>&1
-echo %ESC%[92m Yeniden a‡lan di§er hizmetler kapatlyor.%ESC%[0m
+echo %ESC%[92m Yeniden aï¿½ï¿½lan diï¿½er hizmetler kapatï¿½lï¿½yor.%ESC%[0m
 net stop DiagTrack > NUL 2>&1
 sc delete DiagTrack > NUL 2>&1
 net stop dmwappushservice > NUL 2>&1
@@ -1863,7 +1875,7 @@ net stop diagnosticshub.standartcollector.service > NUL 2>&1
 sc delete diagnosticshub.standartcollector.service > NUL 2>&1
 net stop diagsvc > NUL 2>&1
 sc delete diagsvc > NUL 2>&1
-:: Czdan Hizmeti
+:: Cï¿½zdan Hizmeti
 sc config WalletService start= disabled > NUL 2>&1
 net stop WalletService > NUL 2>&1
 :: Ebeveyn Kontrolleri
@@ -1872,30 +1884,30 @@ net stop WpcMonSvc > NUL 2>&1
 :: Fax
 sc config fax start= disabled > NUL 2>&1
 net stop fax > NUL 2>&1
-:: KiŸi hizmeti
+:: Kiï¿½i hizmeti
 sc config PimIndexMaintenanceSvc start= disabled > NUL 2>&1
 net stop PimIndexMaintenanceSvc > NUL 2>&1
-:: Kurumsal uygulama y”netimi hizmeti
+:: Kurumsal uygulama yï¿½netimi hizmeti
 sc config EntAppSvc start= disabled > NUL 2>&1
 net stop EntAppSvc > NUL 2>&1
-:: Edge gncelleme hizmeti
+:: Edge gï¿½ncelleme hizmeti
 net stop edgeupdate > NUL 2>&1
 net stop edgeupdatem > NUL 2>&1
 sc config edgeupdate start= disabled > NUL 2>&1
 sc config edgeupdatem start= disabled > NUL 2>&1
-:: Parekende G”steri hizmeti
+:: Parekende Gï¿½steri hizmeti
 sc config RetailDemo start= disabled > NUL 2>&1
 net stop RetailDemo > NUL 2>&1
-:: Program Uyumluluk Yardmcs Hizmeti
+:: Program Uyumluluk Yardï¿½mcï¿½sï¿½ Hizmeti
 sc config PcaSvc start= disabled > NUL 2>&1
 net stop PcaSvc > NUL 2>&1
-:: Hzl Getir
+:: Hï¿½zlï¿½ Getir
 sc config SysMain start= disabled > NUL 2>&1
 net stop SysMain > NUL 2>&1
-:: Tanlama ˜lkesi Hizmeti
+:: Tanï¿½lama ï¿½lkesi Hizmeti
 sc config DPS start= disabled > NUL 2>&1
 net stop DPS > NUL 2>&1
-:: Karma Ger‡eklik
+:: Karma Gerï¿½eklik
 sc config SharedRealitySvc start= disabled > NUL 2>&1
 net stop SharedRealitySvc > NUL 2>&1
 sc config VacSvc start= disabled > NUL 2>&1
@@ -1912,19 +1924,19 @@ net stop WerSvc > NUL 2>&1
 :: Windows Search
 net stop WSearch > NUL 2>&1
 sc config WSearch start= disabled > NUL 2>&1
-:: €evrimdŸ dosyalar
+:: ï¿½evrimdï¿½ï¿½ï¿½ dosyalar
 sc config CscService start= disabled > NUL 2>&1
 net stop CscService > NUL 2>&1
 :: NFC/SE hizmeti
 sc config SEMgrSvc start= disabled > NUL 2>&1
 net stop SEMgrSvc > NUL 2>&1
-:: ™nerilen Sorun giderme hizmeti
+:: ï¿½nerilen Sorun giderme hizmeti
 net stop TroubleshootingSvc > NUL 2>&1
 sc config TroubleshootingSvc start= disabled > NUL 2>&1
-:: ˜ndirilen haritalar y”neticisi
+:: ï¿½ndirilen haritalar yï¿½neticisi
 net stop MapsBroker > NUL 2>&1
 sc config MapsBroker start= disabled > NUL 2>&1
-echo %ESC%[92m Regedit kaytlar yeniden dzenleniyor.%ESC%[0m
+echo %ESC%[92m Regedit kayï¿½tlarï¿½ yeniden dï¿½zenleniyor.%ESC%[0m
 :: Defender
 Reg add "HKLM\SOFTWARE\Microsoft\Windows Defender Security Center\Notifications" /v "DisableNotifications" /t REG_DWORD /d "1" /f >nul 2>&1
 Reg add "HKLM\SOFTWARE\Microsoft\Windows Defender Security Center\Notifications" /v "DisableEnhancedNotifications" /t REG_DWORD /d "1" /f >nul 2>&1
@@ -2003,247 +2015,247 @@ Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\System" /v "EnableSmartScreen"
 Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\SmartScreen" /v "ConfigureAppInstallControl" /t REG_SZ /d "Anywhere" /f >nul 2>&1
 Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\SmartScreen" /v "ConfigureAppInstallControlEnabled" /t REG_DWORD /d "0" /f >nul 2>&1
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" /f /v "ContentEvaluation" /t REG_DWORD /d 0 > NUL 2>&1
-::Di§er
-:: Gncellemenin yklenmesi gerekti§inde bilgisayar mmkn olan en ksa srede devre dŸ brak
+::Diï¿½er
+:: Gï¿½ncellemenin yï¿½klenmesi gerektiï¿½inde bilgisayarï¿½ mï¿½mkï¿½n olan en kï¿½sa sï¿½rede devre dï¿½ï¿½ï¿½ bï¿½rak
 reg add "HKLM\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" /f /v "IsExpedited" /t REG_DWORD /d 0 > NUL 2>&1
-:: Gncelleme sonras yeniden baŸlatma bildirimi devre dŸ braklyor...
+:: Gï¿½ncelleme sonrasï¿½ yeniden baï¿½latma bildirimi devre dï¿½ï¿½ï¿½ bï¿½rakï¿½lï¿½yor...
 reg add "HKLM\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" /f /v "RestartNotificationsAllowed2" /t REG_DWORD /d 0 > NUL 2>&1
-:: KonuŸma modellerinin gnceleŸtirmeleri devre dŸ braklyor...
+:: Konuï¿½ma modellerinin gï¿½nceleï¿½tirmeleri devre dï¿½ï¿½ï¿½ bï¿½rakï¿½lï¿½yor...
 reg add "HKLM\SOFTWARE\Microsoft\Speech_OneCore\Preferences" /f /v "ModelDownloadAllowed" /t REG_DWORD /d 0 > NUL 2>&1
-:: Teslimat Optimizasyonu BITS hizmeti olarak ayarlanyor...
+:: Teslimat Optimizasyonu BITS hizmeti olarak ayarlanï¿½yor...
 reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Config" /f /v "DODownloadMode" /t REG_DWORD /d "100" > NUL 2>&1
-:: Driverlar kurulu de§il ise kurulmas i‡in ayarlanyor...
+:: Driverlar kurulu deï¿½il ise kurulmasï¿½ iï¿½in ayarlanï¿½yor...
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\DriverSearching" /f /v "SearchOrderConfig" /t REG_DWORD /d 2 > NUL 2>&1
-:: GncelleŸtirmeler Manuel yaplyor...
+:: Gï¿½ncelleï¿½tirmeler Manuel yapï¿½lï¿½yor...
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU" /f /v "NoAutoUpdate" /t REG_DWORD /d "0" > NUL 2>&1
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU" /f /v "AUOptions" /t REG_DWORD /d "2" > NUL 2>&1
-:: Explorer "Bu Bilgisayar" olarak ayarlanyor...
+:: Explorer "Bu Bilgisayar" olarak ayarlanï¿½yor...
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /f /v "LaunchTo" /t REG_DWORD /d 1 > NUL 2>&1
-:: Dosya kopyalama iletiŸim kutusuda daha fazla detay g”ster olarak ayarlanyor...
+:: Dosya kopyalama iletiï¿½im kutusuda daha fazla detay gï¿½ster olarak ayarlanï¿½yor...
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\OperationStatusManager" /f /v "EnthusiastMode" /t REG_DWORD /d 1 > NUL 2>&1
-:: G”rev G”rnm Simgesi Kaldrlyor...
+:: Gï¿½rev Gï¿½rï¿½nï¿½mï¿½ Simgesi Kaldï¿½rï¿½lï¿½yor...
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /f /v "ShowTaskViewButton" /t REG_DWORD /d 0 > NUL 2>&1
-:: Dosya uzantlar aktifleŸtiriliyor...
+:: Dosya uzantï¿½larï¿½ aktifleï¿½tiriliyor...
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /f /v "HideFileExt" /t REG_DWORD /d 0 > NUL 2>&1
-:: Otomatik oynatma kapatlyor...
+:: Otomatik oynatma kapatï¿½lï¿½yor...
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers" /f /v "DisableAutoplay" /t REG_DWORD /d 1 > NUL 2>&1
-:: Son a‡lan belgelerin ge‡miŸi kapatlyor...
+:: Son aï¿½ï¿½lan belgelerin geï¿½miï¿½i kapatï¿½lï¿½yor...
 reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer" /f /v "NoRecentDocsHistory" /t REG_DWORD /d 0 > NUL 2>&1
-:: Windows'u kapatrken yeni a‡lan belgelerin ge‡miŸini temizle aktifleŸtiriliyor...
+:: Windows'u kapatï¿½rken yeni aï¿½ï¿½lan belgelerin geï¿½miï¿½ini temizle aktifleï¿½tiriliyor...
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer" /v "ClearRecentDocsOnExit" /t REG_DWORD /d 1 /f > NUL 2>&1
-:: Son kullanlan dosyalarn hzl eriŸimde g”rntlenmesi engelleniyor...
+:: Son kullanï¿½lan dosyalarï¿½n hï¿½zlï¿½ eriï¿½imde gï¿½rï¿½ntï¿½lenmesi engelleniyor...
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /f /v "ShowRecent" /t REG_DWORD /d 0 > NUL 2>&1
-:: Hzl EriŸimden Sk Kullanlan klas”rler kaldrlyor
+:: Hï¿½zlï¿½ Eriï¿½imden Sï¿½k Kullanï¿½lan klasï¿½rler kaldï¿½rï¿½lï¿½yor
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /f /v "ShowFrequent" /t REG_DWORD /d 0 > NUL 2>&1
-:: G”rev €ubu§u ve btn simgeleri tm monit”rlerde g”ster
+:: Gï¿½rev ï¿½ubuï¿½u ve bï¿½tï¿½n simgeleri tï¿½m monitï¿½rlerde gï¿½ster
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /f /v "MMTaskbarEnabled" /t REG_DWORD /d 1 > NUL 2>&1
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /f /v "MMTaskbarMode" /t REG_DWORD /d 0 > NUL 2>&1
-:: Ksayol yazs kaldrlyor...
+:: Kï¿½sayol yazï¿½sï¿½ kaldï¿½rï¿½lï¿½yor...
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /f /v "Link" /t REG_BINARY /d "00000000" > NUL 2>&1
-:: Birlikte a‡ se‡ene§inden internette ara se‡ene§i kaldrlyor...
+:: Birlikte aï¿½ seï¿½eneï¿½inden internette ara seï¿½eneï¿½i kaldï¿½rï¿½lï¿½yor...
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /f /v "NoInternetOpenWith" /t REG_DWORD /d 1 > NUL 2>&1
-:: G”rev ‡ubu§u transparan ”zelli§i devre dŸ braklyor...
+:: Gï¿½rev ï¿½ubuï¿½u transparan ï¿½zelliï¿½i devre dï¿½ï¿½ï¿½ bï¿½rakï¿½lï¿½yor...
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize" /f /v "EnableTransparency" /t REG_DWORD /d 0 > NUL 2>&1
-:: Arama b”lm simge haline getiriliyor
+:: Arama bï¿½lï¿½mï¿½ simge haline getiriliyor
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" /f /v "SearchboxTaskbarMode" /t REG_DWORD /d 1 > NUL 2>&1
-:: Web aramas kapatlyor.
+:: Web aramasï¿½ kapatï¿½lï¿½yor.
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" /f /v "DisableWebSearch" /t REG_DWORD /d 1 > NUL 2>&1
-:: Web'de arama yapmayn veya Arama'da web sonu‡larn g”rntlemeyin
+:: Web'de arama yapmayï¿½n veya Arama'da web sonuï¿½larï¿½nï¿½ gï¿½rï¿½ntï¿½lemeyin
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" /f /v "ConnectedSearchUseWeb" /t REG_DWORD /d 0 > NUL 2>&1
-:: žifrelenmiŸ dosyalarn indekslenme izni kaldrlyor.
+:: ï¿½ifrelenmiï¿½ dosyalarï¿½n indekslenme izni kaldï¿½rï¿½lï¿½yor.
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" /f /v "AllowIndexingEncryptedStoresOrItems" /t REG_DWORD /d 0 > NUL 2>&1
-:: Arama ve Cortana'nn konumu kullanma izni kapatlyor.
+:: Arama ve Cortana'nï¿½n konumu kullanma izni kapatï¿½lï¿½yor.
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" /f /v "AllowSearchToUseLocation" /t REG_DWORD /d 0 > NUL 2>&1
-:: ˜‡eri§i ve ”zellikleri dizine eklerken her zaman otomatik dil alglamay kullann kapatlyor.
+:: ï¿½ï¿½eriï¿½i ve ï¿½zellikleri dizine eklerken her zaman otomatik dil algï¿½lamayï¿½ kullanï¿½n kapatï¿½lï¿½yor.
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" /f /v "AlwaysUseAutoLangDetection" /t REG_DWORD /d 0 > NUL 2>&1
-:: Cortana izni kapatlyor.
+:: Cortana izni kapatï¿½lï¿½yor.
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Search" /f /v "CortanaConsent" /t REG_DWORD /d 0 > NUL 2>&1
-:: Cortana Ortam modu kapatlyor.
+:: Cortana Ortam modu kapatï¿½lï¿½yor.
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Search" /f /v "CortanaInAmbientMode" /t REG_DWORD /d 0 > NUL 2>&1
-:: Arama b”lmnn konumu kullanmas engelleniyor.
+:: Arama bï¿½lï¿½mï¿½nï¿½n konumu kullanmasï¿½ engelleniyor.
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Search" /f /v "AllowSearchToUseLocation" /t REG_DWORD /d 0 > NUL 2>&1
-:: Gvenli arama modu kapatlyor.
+:: Gï¿½venli arama modu kapatï¿½lï¿½yor.
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\SearchSettings" /f /v "SafeSearchMode" /t REG_DWORD /d 0 > NUL 2>&1
-:: Dosya Gezgini arama kutusundaki son arama giriŸlerinin g”rntlenmesini kapatn
+:: Dosya Gezgini arama kutusundaki son arama giriï¿½lerinin gï¿½rï¿½ntï¿½lenmesini kapatï¿½n
 reg add "HKCU\Software\Policies\Microsoft\Windows\Explorer" /f /v "DisableSearchBoxSuggestions" /t REG_DWORD /d 1 > NUL 2>&1
-:: Web aramas kapatlyor.
+:: Web aramasï¿½ kapatï¿½lï¿½yor.
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" /f /v "DisableWebSearch" /t REG_DWORD /d 1 > NUL 2>&1
-:: Tarifeli ba§lantlar zerinden aramada web'de arama yapmayn veya web sonu‡larn g”rntlemeyin
+:: Tarifeli baï¿½lantï¿½lar ï¿½zerinden aramada web'de arama yapmayï¿½n veya web sonuï¿½larï¿½nï¿½ gï¿½rï¿½ntï¿½lemeyin
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" /f /v "ConnectedSearchUseWebOverMeteredConnections" /t REG_DWORD /d 0 > NUL 2>&1
-:: Bulut arama kapatlyor.
+:: Bulut arama kapatï¿½lï¿½yor.
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" /f /v "AllowCloudSearch" /t REG_DWORD /d 0 > NUL 2>&1
-:: Gizlilik politikas devre dŸ braklyor.
+:: Gizlilik politikasï¿½ devre dï¿½ï¿½ï¿½ bï¿½rakï¿½lï¿½yor.
 reg add "HKCU\Software\Microsoft\InputPersonalization\TrainedDataStore" /f /v "AcceptedPrivacyPolicy" /t REG_DWORD /d 0 > NUL 2>&1
-:: Sesle etkinleŸtirme kapatlyor.
+:: Sesle etkinleï¿½tirme kapatï¿½lï¿½yor.
 reg add "HKLM\SOFTWARE\Microsoft\Speech_OneCore\Preferences" /f /v "VoiceActivationDefaultOn" /t REG_DWORD /d 0 > NUL 2>&1
-:: Kilit Ekrannn šstnde Sesle EtkinleŸtirme kapatlyor.
+:: Kilit Ekranï¿½nï¿½n ï¿½stï¿½nde Sesle Etkinleï¿½tirme kapatï¿½lï¿½yor.
 reg add "HKLM\SOFTWARE\Microsoft\Speech_OneCore\Preferences" /f /v "VoiceActivationEnableAboveLockscreen" /t REG_DWORD /d 0 > NUL 2>&1
-:: Ses etkinleŸtirme kapatlyor.
+:: Ses etkinleï¿½tirme kapatï¿½lï¿½yor.
 reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE" /f /v "DisableVoice" /t REG_DWORD /d 1 > NUL 2>&1
-:: Arama - Bing web sonu‡larn dahil et kapatlyor...
+:: Arama - Bing web sonuï¿½larï¿½nï¿½ dahil et kapatï¿½lï¿½yor...
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Search" /f /v "BingSearchEnabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: Ayarlar uygulamasn ”nerilen i‡eri§i g”stermesi kapatlyor...
+:: Ayarlar uygulamasï¿½n ï¿½nerilen iï¿½eriï¿½i gï¿½stermesi kapatï¿½lï¿½yor...
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "SubscribedContent-338393Enabled" /t REG_DWORD /d 0 > NUL 2>&1
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "SubscribedContent-353694Enabled" /t REG_DWORD /d 0 > NUL 2>&1
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "SubscribedContent-353696Enabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: Ba§lanmak i‡in Hotspot 2.0 €evrimi‡i kaydolmay kullann kapatlyor
+:: Baï¿½lanmak iï¿½in Hotspot 2.0 ï¿½evrimiï¿½i kaydolmayï¿½ kullanï¿½n kapatï¿½lï¿½yor
 reg add "HKLM\SOFTWARE\Microsoft\WlanSvc\AnqpCache" /f /v "OsuRegistrationStatus" /t REG_DWORD /d 0 > NUL 2>&1
-:: BaŸlang‡ ve arama sonu‡larn iyileŸtirmek i‡in Windows izleme uygulamasnn baŸlatlmasna izin verin kapatlyor
+:: Baï¿½langï¿½ï¿½ ve arama sonuï¿½larï¿½nï¿½ iyileï¿½tirmek iï¿½in Windows izleme uygulamasï¿½nï¿½n baï¿½latï¿½lmasï¿½na izin verin kapatï¿½lï¿½yor
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /f /v "Start_TrackProgs" /t REG_DWORD /d 0 > NUL 2>&1
-:: BaŸlang‡taki ara sra ”neriler kapatlyor...
+:: Baï¿½langï¿½ï¿½taki ara sï¿½ra ï¿½neriler kapatï¿½lï¿½yor...
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "SystemPaneSuggestionsEnabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: Cihazmn kurulumunu ‡evrimi‡i olarak tamamlayabilece§im yollar ”ner kapatlyor.
+:: Cihazï¿½mï¿½n kurulumunu ï¿½evrimiï¿½i olarak tamamlayabileceï¿½im yollar ï¿½ner kapatï¿½lï¿½yor.
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\UserProfileEngagement" /f /v "ScoobeSystemSettingEnabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: Programlanabilir G”rev €ubu§u ”zelli§i devre dŸ braklyor.
+:: Programlanabilir Gï¿½rev ï¿½ubuï¿½u ï¿½zelliï¿½i devre dï¿½ï¿½ï¿½ bï¿½rakï¿½lï¿½yor.
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\CloudContent" /f /v "DisableCloudOptimizedContent" /t REG_DWORD /d 1 > NUL 2>&1
 :: Cortana
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" /f /v "AllowCortana" /t REG_DWORD /d 0 > NUL 2>&1
 reg add "HKLM\SOFTWARE\Policies\Wow6432Node\Microsoft\Windows\Windows Search" /f /v "AllowCortana" /t REG_DWORD /d 0 > NUL 2>&1
-:: Cortana - Cihaz de§iŸtirirken etkinlik ”nerileri
+:: Cortana - Cihaz deï¿½iï¿½tirirken etkinlik ï¿½nerileri
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Search" /f /v "HistoryViewEnabled" /t REG_DWORD 0 > NUL 2>&1
-:: Cortana - Oturum a‡t§m cihazlar ge‡miŸimi kullan
+:: Cortana - Oturum aï¿½tï¿½ï¿½ï¿½m cihazlar geï¿½miï¿½imi kullan
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" /f /v "DeviceHistoryEnabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: Cortana Butonu kaldrlyor...
+:: Cortana Butonu kaldï¿½rï¿½lï¿½yor...
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /f /v "ShowCortanaButton" /t REG_DWORD /d 0 > NUL 2>&1
-:: Deneyim geliŸtirme programna izin ver(NVIDIA Srcs) kapatlyor...
+:: Deneyim geliï¿½tirme programï¿½na izin ver(NVIDIA Sï¿½rï¿½cï¿½sï¿½) kapatï¿½lï¿½yor...
 reg add "HKCU\SOFTWARE\NVIDIA Corporation\NVControlPanel2\Client" /f /v "OptInOrOutPreference" /t REG_DWORD /d 0 > NUL 2>&1
-:: Deneylere izin ver kapatlyor
+:: Deneylere izin ver kapatï¿½lï¿½yor
 reg add "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\System" /f /v "AllowExperimentation" /t REG_DWORD /d 0 > NUL 2>&1
-:: Gelecekte yazmay iyileŸtirmenize yardmc olmas i‡in nasl yazd§m hakknda Microsoft'a bilgi g”nderme kapatlyor.
+:: Gelecekte yazmayï¿½ iyileï¿½tirmenize yardï¿½mcï¿½ olmasï¿½ iï¿½in nasï¿½l yazdï¿½ï¿½ï¿½m hakkï¿½nda Microsoft'a bilgi gï¿½nderme kapatï¿½lï¿½yor.
 reg add "HKCU\SOFTWARE\Microsoft\Input\TIPC" /f /v "Enabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: Geri Bildirim frekans kapatlyor.
+:: Geri Bildirim frekansï¿½ kapatï¿½lï¿½yor.
 reg add "HKCU\SOFTWARE\Microsoft\Siuf\Rules" /f /v "NumberOfSIUFInPeriod" /t REG_DWORD /d 0 > NUL 2>&1
-:: GiriŸ verilerinizi Microsoft'a g”ndererek konuŸma, yazma ve mrekkepleme giriŸinizi kiŸiselleŸtirin kapatlyor
+:: Giriï¿½ verilerinizi Microsoft'a gï¿½ndererek konuï¿½ma, yazma ve mï¿½rekkepleme giriï¿½inizi kiï¿½iselleï¿½tirin kapatï¿½lï¿½yor
 reg add "HKCU\Software\Microsoft\Personalization\Settings" /f /v "AcceptedPrivacyPolicy" /t REG_DWORD /d 0 > NUL 2>&1
 reg add "HKCU\Software\Microsoft\InputPersonalization\TrainedDataStore" /f /v "HarvestContacts " /t REG_DWORD /d 0 > NUL 2>&1
-:: Konum Hizmetlerini kapatlyor...
+:: Konum Hizmetlerini kapatï¿½lï¿½yor...
 reg add "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\System" /f /v "AllowLocation" /t REG_DWORD /d 0 > NUL 2>&1
-:: Kullanc dil listesine eriŸerek web sitelerinin yerel olarak alakal i‡erik sa§lamas engelleniyor.
+:: Kullanï¿½cï¿½ dil listesine eriï¿½erek web sitelerinin yerel olarak alakalï¿½ iï¿½erik saï¿½lamasï¿½ engelleniyor.
 reg add "HKCU\Control Panel\International\User Profile" /f /v "HttpAcceptLanguageOptOut" /t REG_DWORD /d 1 > NUL 2>&1
-:: Kullancnn di§er cihazlardaki uygulamalarn uygulamalar a‡mas engelleniyor...
+:: Kullanï¿½cï¿½nï¿½n diï¿½er cihazlardaki uygulamalarï¿½n uygulamalarï¿½ aï¿½masï¿½ engelleniyor...
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\SmartGlass" /f /v "UserAuthPolicy" /t REG_DWORD /d 0 > NUL 2>&1
-:: Okumay iyileŸtirmek, taramay hzlandrmak i‡in sayfa tahminini kullann. G”z Atma Verilerinin Microsoft'a G”nderilmesi engelleniyor...
+:: Okumayï¿½ iyileï¿½tirmek, taramayï¿½ hï¿½zlandï¿½rmak iï¿½in sayfa tahminini kullanï¿½n. Gï¿½z Atma Verilerinin Microsoft'a Gï¿½nderilmesi engelleniyor...
 reg add "HKLM\SOFTWARE\Microsoft\Internet Explorer\FlipAhead" /f /v "FPEnabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: Skype KiŸiler ba§lants devre dŸ braklyor...
+:: Skype Kiï¿½iler baï¿½lantï¿½sï¿½ devre dï¿½ï¿½ï¿½ bï¿½rakï¿½lï¿½yor...
 reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE\AppSettings" /f /v "Skype-UserConsentAccepted" /t REG_DWORD /d 0 > NUL 2>&1
-:: Sponsorlu uygulamalarn otomatik kurulumu (Tketici Deneyimi)
+:: Sponsorlu uygulamalarï¿½n otomatik kurulumu (Tï¿½ketici Deneyimi)
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\CloudContent" /f /v "DisableWindowsConsumerFeatures" /t REG_DWORD /d 1 > NUL 2>&1
 reg add "HKLM\SOFTWARE\WOW6432Node\Policies\Microsoft\Windows\CloudContent" /f /v "DisableWindowsConsumerFeatures" /t REG_DWORD /d 1 > NUL 2>&1
-:: Tanlama verilerinizi kullanarak Microsoft'un ilgili ipu‡lar ve ”nerilerle daha ”zel deneyimler sunmasna izin verin.
+:: Tanï¿½lama verilerinizi kullanarak Microsoft'un ilgili ipuï¿½larï¿½ ve ï¿½nerilerle daha ï¿½zel deneyimler sunmasï¿½na izin verin.
 reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Privacy" /f /v "TailoredExperiencesWithDiagnosticDataEnabled" /t REG_DWORD /d 0 > NUL 2>&1
 reg add "HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Privacy" /f /v "TailoredExperiencesWithDiagnosticDataEnabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: Telemetry Devre DŸ braklyor...
+:: Telemetry Devre Dï¿½ï¿½ï¿½ bï¿½rakï¿½lï¿½yor...
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\DataCollection" /f /v "AllowTelemetry" /t REG_DWORD /d 0 > NUL 2>&1
-:: Uygulamalarn arka planda ‡alŸmas engelleniyor...
+:: Uygulamalarï¿½n arka planda ï¿½alï¿½ï¿½masï¿½ engelleniyor...
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications" /f /v "Migrated" /t REG_DWORD /d 4 > NUL 2>&1
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications" /f /v "GlobalUserDisabled" /t REG_DWORD /d 1 > NUL 2>&1
-:: Uygulamalarn uygulamalardaki deneyimler i‡in kullanc reklam kimli§ini kullanmas engelleniyor.
+:: Uygulamalarï¿½n uygulamalardaki deneyimler iï¿½in kullanï¿½cï¿½ reklam kimliï¿½ini kullanmasï¿½ engelleniyor.
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\AdvertisingInfo" /f /v "DisabledByGroupPolicy" /t REG_DWORD /d 1 > NUL 2>&1
-:: Windows ve Cortana'nn sizi daha iyi anlamasna izin vermek i‡in kiŸileri toplama kapatlyor.
+:: Windows ve Cortana'nï¿½n sizi daha iyi anlamasï¿½na izin vermek iï¿½in kiï¿½ileri toplama kapatï¿½lï¿½yor.
 reg add "HKCU\Software\Microsoft\InputPersonalization\TrainedDataStore" /f /v "HarvestContacts" /t REG_DWORD /d 0 > NUL 2>&1
-:: Windows ve Cortana'nn sizi daha iyi anlamasna izin vermek i‡in yazl metin (mrekkep) toplayn kapatlyor.
+:: Windows ve Cortana'nï¿½n sizi daha iyi anlamasï¿½na izin vermek iï¿½in yazï¿½lï¿½ metin (mï¿½rekkep) toplayï¿½n kapatï¿½lï¿½yor.
 reg add "HKCU\Software\Microsoft\InputPersonalization" /f /v "RestrictImplicitInkCollection" /t REG_DWORD /d 1 > NUL 2>&1
-:: Windows ve Cortana'nn sizi daha iyi anlamasna izin vermek i‡in yazl metni toplayn.
+:: Windows ve Cortana'nï¿½n sizi daha iyi anlamasï¿½na izin vermek iï¿½in yazï¿½lï¿½ metni toplayï¿½n.
 reg add "HKCU\Software\Microsoft\InputPersonalization" /f /v "RestrictImplicitTextCollection" /t REG_DWORD /d 1 > NUL 2>&1
-:: Windows'un bu bilgisayardan etkinliklerimi toplamasna izin ver (Zaman ‡izelgesi)
+:: Windows'un bu bilgisayardan etkinliklerimi toplamasï¿½na izin ver (Zaman ï¿½izelgesi)
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\System" /f /v "EnableActivityFeed" /t REG_DWORD /d 0 > NUL 2>&1
-:: Windows'un s‡rama listelerini doldurmak i‡in a‡lan belgeleri izlemesi kapatlyor.
+:: Windows'un sï¿½ï¿½rama listelerini doldurmak iï¿½in aï¿½ï¿½lan belgeleri izlemesi kapatï¿½lï¿½yor.
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /f /v "Start_TrackDocs" /t REG_DWORD /d 0 > NUL 2>&1
-:: €evrimi‡i konuŸma hizmetleri devre dŸ braklyor...
+:: ï¿½evrimiï¿½i konuï¿½ma hizmetleri devre dï¿½ï¿½ï¿½ bï¿½rakï¿½lï¿½yor...
 reg add "HKLM\SOFTWARE\Policies\Microsoft\InputPersonalization" /f /v "AllowInputPersonalization" /t REG_DWORD /d 0 > NUL 2>&1
-:: ™nerilen a‡k scak noktalara otomatik ba§lan kapatlyor.
+:: ï¿½nerilen aï¿½ï¿½k sï¿½cak noktalara otomatik baï¿½lan kapatï¿½lï¿½yor.
 reg add "HKLM\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\features" /f /v "WiFiSenseOpen" /t REG_DWORD /d 0 > NUL 2>&1
 reg add "HKLM\SOFTWARE\Microsoft\PolicyManager\default\Wifi\AllowAutoConnectToWiFiSenseHotspots" /f /v "value" /t REG_DWORD /d 0 > NUL 2>&1
-:: šcretli a§ hizmetlerinin mevcut olup olmad§n g”rmek i‡in ge‡ici olarak eriŸim noktalarna otomatik olarak ba§lanma kapatlyor.
+:: ï¿½cretli aï¿½ hizmetlerinin mevcut olup olmadï¿½ï¿½ï¿½nï¿½ gï¿½rmek iï¿½in geï¿½ici olarak eriï¿½im noktalarï¿½na otomatik olarak baï¿½lanma kapatï¿½lï¿½yor.
 reg add "HKLM\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\features" /f /v "PaidWifi" /t REG_DWORD /d 0 > NUL 2>&1
-:: ˜‡g”rsel yazma engelleniyor...
+:: ï¿½ï¿½gï¿½rï¿½sel yazma engelleniyor...
 reg add "HKCU\SOFTWARE\Microsoft\Input\Settings" /f /v "InsightsEnabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: OneDrive EŸitlemesi devre dŸ braklyor...
+:: OneDrive Eï¿½itlemesi devre dï¿½ï¿½ï¿½ bï¿½rakï¿½lï¿½yor...
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\OneDrive" /f /v "DisableFileSyncNGSC" /t REG_DWORD /d 1 > NUL 2>&1
-:: AutoLogger devre dŸ braklyor...
+:: AutoLogger devre dï¿½ï¿½ï¿½ bï¿½rakï¿½lï¿½yor...
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\WMI\Autologger\SQMLogger" /v "Start" /t REG_DWORD /d 0 /f > NUL 2>&1
-:: Windows Hata Raporlama devre dŸ braklyor...
+:: Windows Hata Raporlama devre dï¿½ï¿½ï¿½ bï¿½rakï¿½lï¿½yor...
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting" /f /v "DontSendAdditionalData" /t REG_DWORD /d 1 > NUL 2>&1
-:: Wifi Hotspot Raporlama devre dŸ braklyor...
+:: Wifi Hotspot Raporlama devre dï¿½ï¿½ï¿½ bï¿½rakï¿½lï¿½yor...
 reg add "HKLM\SOFTWARE\Microsoft\PolicyManager\default\Wifi\AllowWiFiHotSpotReporting" /f /v "value" /t REG_DWORD /d 0 > NUL 2>&1
-:: Windows Reklam Kimli§ini devre dŸ braklyor...
+:: Windows Reklam Kimliï¿½ini devre dï¿½ï¿½ï¿½ bï¿½rakï¿½lï¿½yor...
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\AdvertisingInfo" /f /v "Enabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: MŸteri Deneyim Program devre dŸ brakrlyor...
+:: Mï¿½ï¿½teri Deneyim Programï¿½ devre dï¿½ï¿½ï¿½ bï¿½rakï¿½rï¿½lï¿½yor...
 reg add "HKLM\SOFTWARE\Microsoft\SQMClient\Windows" /f /v "CEIPEnable" /t REG_DWORD /d 0 > NUL 2>&1
-::Metadata izleme dosyalar kaldrlyor...
+::Metadata izleme dosyalarï¿½ kaldï¿½rï¿½lï¿½yor...
 reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Device Metadata" /f > NUL 2>&1
-:: Windows'un bilgisayardaki etkinlikleri toplamas engelleniyor...
+:: Windows'un bilgisayardaki etkinlikleri toplamasï¿½ engelleniyor...
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\System" /f /v "PublishUserActivities" /t REG_DWORD /d 0 > NUL 2>&1
 reg add "HKLM\Software\Policies\Microsoft\Windows\System" /f /v "EnableActivityFeed" /t REG_DWORD /d 0 > NUL 2>&1
-:: Atlama Listelerinde en son a‡lan ”§eler engelleniyor...
+:: Atlama Listelerinde en son aï¿½ï¿½lan ï¿½ï¿½eler engelleniyor...
 reg add "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\Start" /f /v "HideRecentJumplists" /t REG_DWORD /d 1 > NUL 2>&1
-:: ™zellik reklam balonu bildirimlerini kapatlyor...
+:: ï¿½zellik reklam balonu bildirimlerini kapatï¿½lï¿½yor...
 reg add "HKCU\Software\Policies\Microsoft\Windows\Explorer\NoBalloonFeatureAdvertisements" /f /v "NoBalloonFeatureAdvertisements" /t REG_DWORD /d 1 > NUL 2>&1
-:: Hiberboot Devre DŸ braklyor
+:: Hiberboot Devre Dï¿½ï¿½ï¿½ bï¿½rakï¿½lï¿½yor
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /f /v "HiberbootEnabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: Hazrda bekletme ”zelli§i devre dŸ braklyor...
+:: Hazï¿½rda bekletme ï¿½zelliï¿½i devre dï¿½ï¿½ï¿½ bï¿½rakï¿½lï¿½yor...
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\Power" /f /v "HibernateEnabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: Kapatma mens - Hibernate kapatlyor.
+:: Kapatma menï¿½sï¿½ - Hibernate kapatï¿½lï¿½yor.
 reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FlyoutMenuSettings" /f /v "ShowHibernateOption" /t REG_DWORD /d 0 > NUL 2>&1
-:: AyrlmŸ depolama alan devre dŸ braklyor...
+:: Ayrï¿½lmï¿½ï¿½ depolama alanï¿½ devre dï¿½ï¿½ï¿½ bï¿½rakï¿½lï¿½yor...
 reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\ReserveManager" /f /v "ShippedWithReserves" /t REG_DWORD /d 0 > NUL 2>&1
-:: Prefetch devre dŸ braklyor...
+:: Prefetch devre dï¿½ï¿½ï¿½ bï¿½rakï¿½lï¿½yor...
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters" /f /v "EnablePrefetcher" /t REG_DWORD /d 0 > NUL 2>&1
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters" /f /v "EnableSuperFetch" /t REG_DWORD /d 0 > NUL 2>&1
-:: Startup Delay (BaŸlang‡ Gecikmesi) devre dŸ braklyor...
+:: Startup Delay (Baï¿½langï¿½ï¿½ Gecikmesi) devre dï¿½ï¿½ï¿½ bï¿½rakï¿½lï¿½yor...
 reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Serialize" /f /v "StartupDelayInMSec" /t REG_DWORD /d 0 > NUL 2>&1
-:: Qos Limiti Devre DŸ braklyor...
+:: Qos Limiti Devre Dï¿½ï¿½ï¿½ bï¿½rakï¿½lï¿½yor...
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Psched" /f /v "NonBestEffortLimit" /t REG_DWORD /d 0 > NUL 2>&1
-:: Windows 255 Karakter Snr devre dŸ braklyor...
+:: Windows 255 Karakter Sï¿½nï¿½rï¿½ devre dï¿½ï¿½ï¿½ bï¿½rakï¿½lï¿½yor...
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\FileSystem" /f /v "LongPathsEnabled" /t REG_DWORD /d 1 > NUL 2>&1
-:: DiagTrack Devre DŸ braklyor...
+:: DiagTrack Devre Dï¿½ï¿½ï¿½ bï¿½rakï¿½lï¿½yor...
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\WMI\Autologger\AutoLogger-Diagtrack-Listener" /f /v "Start" /t REG_DWORD /d 0 > NUL 2>&1
-:: Narrator QuickStart kapatlyor.
+:: Narrator QuickStart kapatï¿½lï¿½yor.
 reg add "HKEY_CURRENT_USER\Software\Microsoft\Narrator\QuickStart" /f /v "SkipQuickStart" /t REG_DWORD /d 1 > NUL 2>&1
-:: Windows ”nerileri devre dŸ braklyor...
+:: Windows ï¿½nerileri devre dï¿½ï¿½ï¿½ bï¿½rakï¿½lï¿½yor...
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "SoftLandingEnabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: Windows karŸlama deneyimi kapatlyor...
+:: Windows karï¿½ï¿½lama deneyimi kapatï¿½lï¿½yor...
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "SubscribedContent-310093Enabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: Program uyumluluk yardmcs devre dŸ braklyor...
+:: Program uyumluluk yardï¿½mcï¿½sï¿½ devre dï¿½ï¿½ï¿½ bï¿½rakï¿½lï¿½yor...
 reg add "HKCU\SOFTWARE\Policies\Microsoft\Windows\AppCompat" /f /v "DisablePCA" /t REG_DWORD /d 1 > NUL 2>&1
-:: Donanm hzlandrmal GPU Planlamas aktifleŸtiriliyor...
+:: Donanï¿½m hï¿½zlandï¿½rmalï¿½ GPU Planlamasï¿½ aktifleï¿½tiriliyor...
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\GraphicsDrivers" /f /v "HwSchMode" /t REG_DWORD /d 2 > NUL 2>&1
-:: ˜Ÿaret‡i hassasiyeti devre dŸ braklyor...
+:: ï¿½ï¿½aretï¿½i hassasiyeti devre dï¿½ï¿½ï¿½ bï¿½rakï¿½lï¿½yor...
 reg add "HKCU\Control Panel\Mouse" /f /v "MouseSpeed" /t REG_SZ /d 0 > NUL 2>&1
-:: Kapatma iŸleminde uygulamalar a‡k ise otomatik kapat ve bekleme sresi azaltlyor
+:: Kapatma iï¿½leminde uygulamalar aï¿½ï¿½k ise otomatik kapat ve bekleme sï¿½resi azaltï¿½lï¿½yor
 reg add "HKCU\Control Panel\Desktop" /f /v "AutoEndTasks" /t REG_SZ /d 1 > NUL 2>&1
-:: :: Uygulamalar cevap vermedi§i zaman g”revi sonlandr se‡ene§ine baslmadan ”nceki bekleme sresini ksaltr.
+:: :: Uygulamalar cevap vermediï¿½i zaman gï¿½revi sonlandï¿½r seï¿½eneï¿½ine basï¿½lmadan ï¿½nceki bekleme sï¿½resini kï¿½saltï¿½r.
 reg add "HKCU\Control Panel\Desktop" /f /v "HungAppTimeout" /t REG_SZ /d "1000" > NUL 2>&1
-:: Bilgisayar kapatlrken ya da oturumdan ‡klrken kullanc uygulamalarnn kapatlmas i‡in sistem bekleme sresini ksaltr.
+:: Bilgisayar kapatï¿½lï¿½rken ya da oturumdan ï¿½ï¿½kï¿½lï¿½rken kullanï¿½cï¿½ uygulamalarï¿½nï¿½n kapatï¿½lmasï¿½ iï¿½in sistem bekleme sï¿½resini kï¿½saltï¿½r.
 reg add "HKCU\Control Panel\Desktop" /f /v "WaitToKillAppTime" /t REG_SZ /d "2000" > NUL 2>&1
-:: Cevap vermeyen hizmetlerin kapatlmasndan ”nceki sistem bekleme sresini ksaltr.
+:: Cevap vermeyen hizmetlerin kapatï¿½lmasï¿½ndan ï¿½nceki sistem bekleme sï¿½resini kï¿½saltï¿½r.
 reg add "HKCU\Control Panel\Desktop" /f /v "LowLevelHooksTimeout" /t REG_SZ /d "1000" > NUL 2>&1
-:: Bilgisayarn kapatlmas srasnda durdurulacak hizmetler uyars geldi§inde, uygulamalarn kapanmas i‡in beklenen sreyi ksaltr.
+:: Bilgisayarï¿½n kapatï¿½lmasï¿½ sï¿½rasï¿½nda durdurulacak hizmetler uyarï¿½sï¿½ geldiï¿½inde, uygulamalarï¿½n kapanmasï¿½ iï¿½in beklenen sï¿½reyi kï¿½saltï¿½r.
 reg add "HKLM\SYSTEM\CurrentControlSet\Control" /f /v "WaitToKillServiceTimeout" /t REG_SZ /d "2000" > NUL 2>&1
-:: Men g”sterimi bekleme sresini azaltr. B”ylelikle tkland§ zaman menler daha hzl gelecek.
+:: Menï¿½ gï¿½sterimi bekleme sï¿½resini azaltï¿½r. Bï¿½ylelikle tï¿½klandï¿½ï¿½ï¿½ zaman menï¿½ler daha hï¿½zlï¿½ gelecek.
 reg add "HKCU\Control Panel\Desktop" /f /v "MenuShowDelay" /t REG_SZ /d "8" > NUL 2>&1
-:: DŸk Depolama alan uyars devre dŸ braklyor...
+:: Dï¿½ï¿½ï¿½k Depolama alanï¿½ uyarï¿½sï¿½ devre dï¿½ï¿½ï¿½ bï¿½rakï¿½lï¿½yor...
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /f /v "NoLowDiskSpaceChecks" /t REG_DWORD /d 1 > NUL 2>&1
-:: :: Farenizle birlikte bir nesnenin zerine geldi§inizde g”rlen a‡klamann ‡kŸ sresini ksaltr
+:: :: Farenizle birlikte bir nesnenin ï¿½zerine geldiï¿½inizde gï¿½rï¿½len aï¿½ï¿½klamanï¿½n ï¿½ï¿½kï¿½ï¿½ sï¿½resini kï¿½saltï¿½r
 reg add "HKCU\Control Panel\Mouse" /f /v "MouseHoverTime" /t REG_SZ /d 8 > NUL 2>&1
-:: Bilgisayarnzda mevcut olmayan programlara ait ksayollarn ba§lantsnn Windows tarafndan boŸa vakit harcanarak aranmasn ”nler
+:: Bilgisayarï¿½nï¿½zda mevcut olmayan programlara ait kï¿½sayollarï¿½n baï¿½lantï¿½sï¿½nï¿½n Windows tarafï¿½ndan boï¿½a vakit harcanarak aranmasï¿½nï¿½ ï¿½nler
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /f /v "LinkResolveIgnoreLinkInfo" /t REG_DWORD /d 1 > NUL 2>&1
-:: Ksayol ba§lant sorununu ‡”zmek i‡in Windows'un diski aramasn ”nler
+:: Kï¿½sayol baï¿½lantï¿½ sorununu ï¿½ï¿½zmek iï¿½in Windows'un diski aramasï¿½nï¿½ ï¿½nler
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /f /v "NoResolveSearch" /t REG_DWORD /d 1 > NUL 2>&1
-:: Ksayol ba§lant sorununu ‡”zmek i‡in Windows'un NTFS dosya sisteminin izleme ”zelli§ini kullanmasn engeller
+:: Kï¿½sayol baï¿½lantï¿½ sorununu ï¿½ï¿½zmek iï¿½in Windows'un NTFS dosya sisteminin izleme ï¿½zelliï¿½ini kullanmasï¿½nï¿½ engeller
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /f /v "NoResolveTrack" /t REG_DWORD /d 1 > NUL 2>&1
-:: Odak Yardm aktifleŸtiriliyor
+:: Odak Yardï¿½mï¿½ aktifleï¿½tiriliyor
 reg add "HKCU\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\QuietHours" /f /v "Enable" /t REG_DWORD /d 1 > NUL 2>&1
 
-:: 3.Parti Market uygulamalarnn yeniden yklenmesi engelleyen b”lm
+:: 3.Parti Market uygulamalarï¿½nï¿½n yeniden yï¿½klenmesi engelleyen bï¿½lï¿½m
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "ContentDeliveryAllowed" /t REG_DWORD /d 0 > NUL 2>&1
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "FeatureManagementEnabled" /t REG_DWORD /d 0 > NUL 2>&1
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "PreInstalledAppsEverEnabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: ™nceden yklenmiŸ OEM uygulamalar devre dŸ braklyor...
+:: ï¿½nceden yï¿½klenmiï¿½ OEM uygulamalar devre dï¿½ï¿½ï¿½ bï¿½rakï¿½lï¿½yor...
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "OemPreInstalledAppsEnabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: ™nceden yklenmiŸ OEM uygulamalar (Minecraft, CandyCrush, Flipboard) kapatlyor.
+:: ï¿½nceden yï¿½klenmiï¿½ OEM uygulamalar (Minecraft, CandyCrush, Flipboard) kapatï¿½lï¿½yor.
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "PreInstalledAppsEnabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: ™nerilen uygulamalar otomatik olarak ykleyin kapatlyor.
+:: ï¿½nerilen uygulamalarï¿½ otomatik olarak yï¿½kleyin kapatï¿½lï¿½yor.
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "SilentInstalledAppsEnabled" /t REG_DWORD /d 0 > NUL 2>&1
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "SubscribedContent-314559Enabled" /t REG_DWORD /d 0 > NUL 2>&1
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "SubscribedContent-338387Enabled" /t REG_DWORD /d 0 > NUL 2>&1
@@ -2252,7 +2264,7 @@ reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" 
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "SubscribedContent-338393Enabled" /t REG_DWORD /d 0 > NUL 2>&1
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "SubscribedContentEnabled" /t REG_DWORD /d 0 > NUL 2>&1
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "SystemPane RecommendionsEnabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: Market otomatik gncelleŸtirme kapatr.
+:: Market otomatik gï¿½ncelleï¿½tirme kapatï¿½r.
 reg add "HKLM\SOFTWARE\Policies\Microsoft\WindowsStore" /v "AutoDownload" /t REG_DWORD /d 2 /f > NUL 2>&1
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\CloudContent" /f /v "DisableWindowsConsumerFeatures" /t REG_DWORD /d 1 > NUL 2>&1
 bcdedit /deletevalue useplatformclock
@@ -2260,7 +2272,7 @@ bcdedit /set {current} recoveryenabled no
 powercfg /h off
 bcdedit /set useplatformtick yes
 bcdedit /set disabledynamictick yes
-echo %ESC%[92m G”rev zamanlaycsnda dzenlemeler yaplyor.%ESC%[0m
+echo %ESC%[92m Gï¿½rev zamanlayï¿½cï¿½sï¿½nda dï¿½zenlemeler yapï¿½lï¿½yor.%ESC%[0m
 schtasks /change /TN "\Microsoft\Windows\Windows Defender\Windows Defender Cache Maintenance" /DISABLE > NUL 2>&1
 schtasks /change /TN "\Microsoft\Windows\Windows Defender\Windows Defender Cleanup" /DISABLE > NUL 2>&1
 schtasks /change /TN "\Microsoft\Windows\Windows Defender\Windows Defender Scheduled Scan" /DISABLE > NUL 2>&1
@@ -2285,49 +2297,49 @@ schtasks /change /TN "\Microsoft\Windows\UpdateOrchestrator\Schedule Scan" /DISA
 schtasks /change /TN "\Microsoft\Windows\UpdateOrchestrator\Schedule Scan Static Task" /DISABLE > NUL 2>&1
 schtasks /change /TN "\Microsoft\Windows\UpdateOrchestrator\UpdateModelTask" /DISABLE > NUL 2>&1
 schtasks /change /TN "\Microsoft\Windows\WaaSMedic\PerformRemediation" /DISABLE > NUL 2>&1
-echo %ESC%[92m ˜Ÿlem tamamland.%ESC%[0m
+echo %ESC%[92m ï¿½ï¿½lem tamamlandï¿½.%ESC%[0m
 timeout /t 2 /nobreak > NUL
 goto menu
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 :PingMeter
 call :konum
-echo [%date% - %time%] ^| UpdateAfter ^| Ping ”l‡er ‡alŸtrld. >> %konum%\Logs
+echo [%date% - %time%] ^| UpdateAfter ^| Ping ï¿½lï¿½er ï¿½alï¿½ï¿½tï¿½rï¿½ldï¿½. >> %konum%\Logs
 powershell -command "Start-Process '%konum%\Ekler\Pingolc.bat'"
 goto :eof
 
 :SistemHakkinda
 call :konum
-echo [%date% - %time%] ^| SistemHakkinda ^| Sistem hakknda b”lm ‡alŸtrld. >> %konum%\Logs
+echo [%date% - %time%] ^| SistemHakkinda ^| Sistem hakkï¿½nda bï¿½lï¿½mï¿½ ï¿½alï¿½ï¿½tï¿½rï¿½ldï¿½. >> %konum%\Logs
 powershell -command "Start-Process '%konum%\Ekler\Sistem.Hakkinda.bat'"
 goto :eof
 
 :FoldertoISO
 call :konum
-echo [%date% - %time%] ^| FoldertoISO ^| Folder to ISO yazlm ‡alŸtrld. >> %konum%\Logs
+echo [%date% - %time%] ^| FoldertoISO ^| Folder to ISO yazï¿½lï¿½mï¿½ ï¿½alï¿½ï¿½tï¿½rï¿½ldï¿½. >> %konum%\Logs
 powershell -command "Start-Process '%konum%\Files\Folder2Iso\Folder2Iso.exe'"
 goto :eof
 
 :AppxManager
 call :konum
-echo [%date% - %time%] ^| AppxManager ^| Appx Manager uygulamas ‡alŸtrld. >> %konum%\Logs
+echo [%date% - %time%] ^| AppxManager ^| Appx Manager uygulamasï¿½ ï¿½alï¿½ï¿½tï¿½rï¿½ldï¿½. >> %konum%\Logs
 powershell -command "Start-Process '%konum%\Files\WindowsAppBoss.exe'
 goto :eof
 
 :WindowsEdition
 Call :konum
-echo [%date% - %time%] ^| WindowsEdition ^| Windows Dzenleme b”lm ‡alŸtrld. >> %konum%\Logs
+echo [%date% - %time%] ^| WindowsEdition ^| Windows Dï¿½zenleme bï¿½lï¿½mï¿½ ï¿½alï¿½ï¿½tï¿½rï¿½ldï¿½. >> %konum%\Logs
 powershell -command "Start-Process '%konum%\Ekler\Windows.Edition.bat'
 goto :eof
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 :PowerRun
 Call :konum
 dir /b "%konum%\Files\PowerRun.exe" > NUL 2>&1
-	if %errorlevel%==1 (echo %ESC%[1;97m%ESC%%ESC%[41m HATA! PowerRun.exe dosyas bulunamad. Yeniden indiriliyor... %ESC%[0m
-						Call :Logss "PowerRun indiriliyor" "PowerRun.exe dosyas bulunamad. Yeniden indirildi." >> %konum%\Logs
+	if %errorlevel%==1 (echo %ESC%[1;97m%ESC%%ESC%[41m HATA! PowerRun.exe dosyasï¿½ bulunamadï¿½. Yeniden indiriliyor... %ESC%[0m
+						Call :Logss "PowerRun indiriliyor" "PowerRun.exe dosyasï¿½ bulunamadï¿½. Yeniden indirildi." >> %konum%\Logs
 						Call :wgetdesktop "https://docs.google.com/uc?export=download&id=1wfov7bUB3j3X_VzwLw3X8bvNYtVNJ6NI" "%konum%\Download\PowerRun.zip"
 						powershell -command "Expand-Archive -Force '%konum%\Download\PowerRun.zip' '%konum%\Files"
 						timeout /t 2 /nobreak > NUL)
@@ -2363,58 +2375,58 @@ else
 echo [%date% - %time%] ^| %~1 ^| %~2 >> %konum%\Logs
 goto :eof
 :: --------------------------------------------------------------------------------------------
-:: %~1: B”lm ad | %~2: Bilgi ksm
+:: %~1: Bï¿½lï¿½m adï¿½ | %~2: Bilgi kï¿½smï¿½
 :: --------------------------------------------------------------------------------------------
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 :: --------------------------------------------------------------------------------------------
-:: ˜lerleme ‡ubu§u konusunda yardmc olan KaanBeyhan'a (Doggest) teŸekkr ederim.
+:: ï¿½lerleme ï¿½ubuï¿½u konusunda yardï¿½mcï¿½ olan KaanBeyhan'a (Doggest) teï¿½ekkï¿½r ederim.
 :: --------------------------------------------------------------------------------------------
 :wget
 ping -n 1 www.google.com.tr -w 20000 > NUL
-	if %errorlevel%==1 (echo   %ESC%[1;97m%ESC%%ESC%[41m                                  ˜nternet ba§lants yok.                                  %ESC%[0m
-						echo [%date% - %time%] ^| wget ^| HATA! ˜nternet ba§lants bulunamad. ˜sim:%~2 Link:"%~1" Download:%download% >> %konum%\Logs
+	if %errorlevel%==1 (echo   %ESC%[1;97m%ESC%%ESC%[41m                                  ï¿½nternet baï¿½lantï¿½sï¿½ yok.                                  %ESC%[0m
+						echo [%date% - %time%] ^| wget ^| HATA! ï¿½nternet baï¿½lantï¿½sï¿½ bulunamadï¿½. ï¿½sim:%~2 Link:"%~1" Download:%download% >> %konum%\Logs
 						timeout /t 4 /nobreak > NUL
 						goto :eof)
-echo [%date% - %time%] ^| wget ^| %~2 program indirildi. Link:"%~1" Download:%download% >> %konum%\Logs
+echo [%date% - %time%] ^| wget ^| %~2 programï¿½ indirildi. Link:"%~1" Download:%download% >> %konum%\Logs
 Files\wget.exe -c -q --no-check-certificate --show-progress "%~1" -O %download%\%~2"
 "%download%\%~2" %~3
 goto :eof
 
 :: ========================================================================================================
-:: %1= Link | %~2= ˜ndirme ismi  | %~3= Sessiz kurulum parametresi
+:: %1= Link | %~2= ï¿½ndirme ismi  | %~3= Sessiz kurulum parametresi
 :: ========================================================================================================
 
 :wgetozel
 ping -n 1 www.google.com.tr -w 20000 > NUL
-	if %errorlevel%==1 (echo   %ESC%[1;97m%ESC%%ESC%[41m                                  ˜nternet ba§lants yok.                                  %ESC%[0m
-						echo [%date% - %time%] ^| wgetozel ^| HATA! ˜nternet ba§lants bulunamad. ˜sim:%~2 Link:"%~1" Download:%download% >> %konum%\Logs
+	if %errorlevel%==1 (echo   %ESC%[1;97m%ESC%%ESC%[41m                                  ï¿½nternet baï¿½lantï¿½sï¿½ yok.                                  %ESC%[0m
+						echo [%date% - %time%] ^| wgetozel ^| HATA! ï¿½nternet baï¿½lantï¿½sï¿½ bulunamadï¿½. ï¿½sim:%~2 Link:"%~1" Download:%download% >> %konum%\Logs
 						timeout /t 4 /nobreak > NUL
 						goto :eof)
-echo [%date% - %time%] ^| wgetozel ^| %~2 program indirildi. Link:"%~1" Download:%download% >> %konum%\Logs
+echo [%date% - %time%] ^| wgetozel ^| %~2 programï¿½ indirildi. Link:"%~1" Download:%download% >> %konum%\Logs
 Files\wget.exe -c -q --no-check-certificate --show-progress %1 -O %download%\%~2
 goto :eof
 
 :: ========================================================================================================
-:: %1= Link | %~2= ˜ndirme ismi 
+:: %1= Link | %~2= ï¿½ndirme ismi 
 :: ========================================================================================================
 
 :wgetdesktop
 ping -n 1 www.google.com.tr -w 20000 > NUL
-	if %errorlevel%==1 (echo   %ESC%[1;97m%ESC%%ESC%[41m                                  ˜nternet ba§lants yok.                                  %ESC%[0m
-						echo [%date% - %time%] ^| wgetdesktop ^| HATA! ˜nternet ba§lants bulunamad. ˜sim:"%~2" Link:"%~1" >> %konum%\Logs
+	if %errorlevel%==1 (echo   %ESC%[1;97m%ESC%%ESC%[41m                                  ï¿½nternet baï¿½lantï¿½sï¿½ yok.                                  %ESC%[0m
+						echo [%date% - %time%] ^| wgetdesktop ^| HATA! ï¿½nternet baï¿½lantï¿½sï¿½ bulunamadï¿½. ï¿½sim:"%~2" Link:"%~1" >> %konum%\Logs
 						timeout /t 4 /nobreak > NUL
 						goto :eof)
-echo [%date% - %time%] ^| wgetdesktop ^| Masstne "%~2" program indirildi. Link:"%~1" >> %konum%\Logs
+echo [%date% - %time%] ^| wgetdesktop ^| Masï¿½stï¿½ne "%~2" programï¿½ indirildi. Link:"%~1" >> %konum%\Logs
 Files\wget -c -q --no-check-certificate --show-progress %1 -O %~2
 goto :eof
 
 :: ========================================================================================================
-:: %1= Link | %~2= Masast konumu ve ismi
+:: %1= Link | %~2= Masaï¿½stï¿½ konumu ve ismi
 :: ========================================================================================================
 
 :ZipExport
-echo [%date% - %time%] ^| ZipExport ^| %~1 dosyas "%download%\%~n1"  >> %konum%\Logs
+echo [%date% - %time%] ^| ZipExport ^| %~1 dosyasï¿½ "%download%\%~n1"  >> %konum%\Logs
 powershell -command "Expand-Archive -Force '%download%\%~1' '%download%\%~n1'" 
 goto :eof
 
@@ -2424,16 +2436,16 @@ goto :eof
  
 :netkontrol
 ping -n 1 www.google.com.tr -w 20000 > NUL
-	if %errorlevel%==1 (echo   %ESC%[1;97m%ESC%%ESC%[41m                                  ˜nternet ba§lants yok.                                  %ESC%[0m
-						echo   %ESC%[1;97m%ESC%%ESC%[41m               Wget.exe indirilemedi, indirme iŸlemlerinde hata alacaksnz                 %ESC%[0m
-						echo [%date% - %time%] ^| wgetyok ^| HATA! ˜nternet ba§lants olmad§ i‡in wget.exe indirilemedi. >> %konum%\Logs
+	if %errorlevel%==1 (echo   %ESC%[1;97m%ESC%%ESC%[41m                                  ï¿½nternet baï¿½lantï¿½sï¿½ yok.                                  %ESC%[0m
+						echo   %ESC%[1;97m%ESC%%ESC%[41m               Wget.exe indirilemedi, indirme iï¿½lemlerinde hata alacaksï¿½nï¿½z                 %ESC%[0m
+						echo [%date% - %time%] ^| wgetyok ^| HATA! ï¿½nternet baï¿½lantï¿½sï¿½ olmadï¿½ï¿½ï¿½ iï¿½in wget.exe indirilemedi. >> %konum%\Logs
 						timeout /t 5 /nobreak > NUL
 						goto :eof)
 goto :eof
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 :setESC
 for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do rem"') do (

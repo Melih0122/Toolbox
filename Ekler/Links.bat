@@ -1,33 +1,33 @@
-::                               NOTEPAD++ > Kodlama > Karakter Takçmç > TÅrkáe > OEM857
+::                               NOTEPAD++ > Kodlama > Karakter TakÔøΩmÔøΩ > TÔøΩrkÔøΩe > OEM857
 :: ==============================================================================================================================
 ::
-::       ˛˛˛˛˛˛˛   ˛˛˛˛˛˛   ˛˛    ˛˛ ˛˛˛˛ ˛˛˛˛˛˛˛˛  ˛˛˛˛˛˛˛  ˛˛˛˛˛˛˛˛  ˛˛˛˛˛˛˛˛ ˛˛    ˛˛ ˛˛    ˛˛  ˛˛˛˛˛˛
-::      ˛˛     ˛˛ ˛˛    ˛˛  ˛˛˛   ˛˛  ˛˛     ˛˛    ˛˛     ˛˛ ˛˛     ˛˛ ˛˛       ˛˛˛   ˛˛ ˛˛   ˛˛  ˛˛    ˛
-::      ˛˛     ˛˛ ˛˛        ˛˛˛˛  ˛˛  ˛˛     ˛˛    ˛˛     ˛˛ ˛˛     ˛˛ ˛˛       ˛˛˛˛  ˛˛ ˛˛  ˛˛   ˛˛
-::      ˛˛     ˛˛ ˛˛   ˛˛˛˛ ˛˛ ˛˛ ˛˛  ˛˛     ˛˛    ˛˛     ˛˛ ˛˛˛˛˛˛˛˛  ˛˛˛˛˛˛   ˛˛ ˛˛ ˛˛ ˛˛˛˛˛      ˛˛˛˛˛˛ 
-::      ˛˛     ˛˛ ˛˛    ˛˛  ˛˛  ˛˛˛˛  ˛˛     ˛˛    ˛˛     ˛˛ ˛˛   ˛˛   ˛˛       ˛˛  ˛˛˛˛ ˛˛  ˛˛         ˛˛
-::      ˛˛     ˛˛ ˛˛    ˛˛  ˛˛   ˛˛˛  ˛˛     ˛˛    ˛˛     ˛˛ ˛˛    ˛˛  ˛˛       ˛˛   ˛˛˛ ˛˛   ˛˛  ˛˛    ˛˛
-::       ˛˛˛˛˛˛˛   ˛˛˛˛˛˛   ˛˛    ˛˛ ˛˛˛˛    ˛˛     ˛˛˛˛˛˛˛  ˛˛     ˛˛ ˛˛˛˛˛˛˛˛ ˛˛    ˛˛ ˛˛    ˛˛  ˛˛˛˛˛˛ 
+::       ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ   ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ   ÔøΩÔøΩ    ÔøΩÔøΩ ÔøΩÔøΩÔøΩÔøΩ ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ  ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ  ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ  ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ ÔøΩÔøΩ    ÔøΩÔøΩ ÔøΩÔøΩ    ÔøΩÔøΩ  ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ
+::      ÔøΩÔøΩ     ÔøΩÔøΩ ÔøΩÔøΩ    ÔøΩÔøΩ  ÔøΩÔøΩÔøΩ   ÔøΩÔøΩ  ÔøΩÔøΩ     ÔøΩÔøΩ    ÔøΩÔøΩ     ÔøΩÔøΩ ÔøΩÔøΩ     ÔøΩÔøΩ ÔøΩÔøΩ       ÔøΩÔøΩÔøΩ   ÔøΩÔøΩ ÔøΩÔøΩ   ÔøΩÔøΩ  ÔøΩÔøΩ    ÔøΩ
+::      ÔøΩÔøΩ     ÔøΩÔøΩ ÔøΩÔøΩ        ÔøΩÔøΩÔøΩÔøΩ  ÔøΩÔøΩ  ÔøΩÔøΩ     ÔøΩÔøΩ    ÔøΩÔøΩ     ÔøΩÔøΩ ÔøΩÔøΩ     ÔøΩÔøΩ ÔøΩÔøΩ       ÔøΩÔøΩÔøΩÔøΩ  ÔøΩÔøΩ ÔøΩÔøΩ  ÔøΩÔøΩ   ÔøΩÔøΩ
+::      ÔøΩÔøΩ     ÔøΩÔøΩ ÔøΩÔøΩ   ÔøΩÔøΩÔøΩÔøΩ ÔøΩÔøΩ ÔøΩÔøΩ ÔøΩÔøΩ  ÔøΩÔøΩ     ÔøΩÔøΩ    ÔøΩÔøΩ     ÔøΩÔøΩ ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ  ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ   ÔøΩÔøΩ ÔøΩÔøΩ ÔøΩÔøΩ ÔøΩÔøΩÔøΩÔøΩÔøΩ      ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ 
+::      ÔøΩÔøΩ     ÔøΩÔøΩ ÔøΩÔøΩ    ÔøΩÔøΩ  ÔøΩÔøΩ  ÔøΩÔøΩÔøΩÔøΩ  ÔøΩÔøΩ     ÔøΩÔøΩ    ÔøΩÔøΩ     ÔøΩÔøΩ ÔøΩÔøΩ   ÔøΩÔøΩ   ÔøΩÔøΩ       ÔøΩÔøΩ  ÔøΩÔøΩÔøΩÔøΩ ÔøΩÔøΩ  ÔøΩÔøΩ         ÔøΩÔøΩ
+::      ÔøΩÔøΩ     ÔøΩÔøΩ ÔøΩÔøΩ    ÔøΩÔøΩ  ÔøΩÔøΩ   ÔøΩÔøΩÔøΩ  ÔøΩÔøΩ     ÔøΩÔøΩ    ÔøΩÔøΩ     ÔøΩÔøΩ ÔøΩÔøΩ    ÔøΩÔøΩ  ÔøΩÔøΩ       ÔøΩÔøΩ   ÔøΩÔøΩÔøΩ ÔøΩÔøΩ   ÔøΩÔøΩ  ÔøΩÔøΩ    ÔøΩÔøΩ
+::       ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ   ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ   ÔøΩÔøΩ    ÔøΩÔøΩ ÔøΩÔøΩÔøΩÔøΩ    ÔøΩÔøΩ     ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ  ÔøΩÔøΩ     ÔøΩÔøΩ ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ ÔøΩÔøΩ    ÔøΩÔøΩ ÔøΩÔøΩ    ÔøΩÔøΩ  ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ 
 ::
-::  Hazçrlayan: HÅseyin UZUNYAYLA / OgnitorenKs
-::  Toolbox'ç hazçrladçßçm sistemlerde temel programlarç indirip, basit bir üekilde sistem Åzerinde dÅzenleme yapmasç iáin hazçrladçm.
-::  SÅrekli olarak gÅncellenecektir. Toolbox'ç indirmek iáin aüaßçdaki linkleri kullanabilirsiniz.
+::  HazÔøΩrlayan: HÔøΩseyin UZUNYAYLA / OgnitorenKs
+::  Toolbox'ÔøΩ hazÔøΩrladÔøΩÔøΩÔøΩm sistemlerde temel programlarÔøΩ indirip, basit bir ÔøΩekilde sistem ÔøΩzerinde dÔøΩzenleme yapmasÔøΩ iÔøΩin hazÔøΩrladÔøΩm.
+::  SÔøΩrekli olarak gÔøΩncellenecektir. Toolbox'ÔøΩ indirmek iÔøΩin aÔøΩaÔøΩÔøΩdaki linkleri kullanabilirsiniz.
 ::   https://www.technopat.net/sosyal/konu/ognitorenks-toolbox-kullanimi.1790250/
 ::
-::  OgnitorenKs.Toolbox katçlçmsçz kurulum dosyasçnç indirmek iáin aüaßçdaki "Toolbox.Update.bat" dosyasçnç indirip yînetici olarak áalçütçrçn.
+::  OgnitorenKs.Toolbox katÔøΩlÔøΩmsÔøΩz kurulum dosyasÔøΩnÔøΩ indirmek iÔøΩin aÔøΩaÔøΩÔøΩdaki "Toolbox.Update.bat" dosyasÔøΩnÔøΩ indirip yÔøΩnetici olarak ÔøΩalÔøΩÔøΩtÔøΩrÔøΩn.
 ::   https://docs.google.com/uc?export=download&id=1JmrWYeNjVopcIP0n9iNkMUCEbQ2SIvpY
 ::
-::  òstek ve înerileriniz olursa, iletiüim;
+::  ÔøΩstek ve ÔøΩnerileriniz olursa, iletiÔøΩim;
 ::   Discord: OgnitorenKs#2737 
 ::   Mail: ognitorenks@gmail.com
-::   Site: ognitorenks.blogspot.com (Bu bîlÅm üu an aktif deßil)
-::   Site: www.technopat.net\Sosyal (Yeni bir konu aáçp yada hazçrladçßçm konularda @OgnitorenKs yazarak etiketleyebilirsiniz) 
+::   Site: ognitorenks.blogspot.com (Bu bÔøΩlÔøΩm ÔøΩu an aktif deÔøΩil)
+::   Site: www.technopat.net\Sosyal (Yeni bir konu aÔøΩÔøΩp yada hazÔøΩrladÔøΩÔøΩÔøΩm konularda @OgnitorenKs yazarak etiketleyebilirsiniz) 
 :: ==============================================================================================================================
 echo off
 cls
 
-echo Bu bat dosyasç indirme linklerini barçndçrmaktadçr.
-echo Kapatmak iáin herhangi bir tuüa basçnçz...
+echo Bu bat dosyasÔøΩ indirme linklerini barÔøΩndÔøΩrmaktadÔøΩr.
+echo Kapatmak iÔøΩin herhangi bir tuÔøΩa basÔøΩnÔøΩz...
 
 pause > NUL
 exit
@@ -273,8 +273,17 @@ https://www.voidtools.com/Everything-1.4.1.1015.x64-Setup.exe Everything.exe
 :: https://github.com/ChrisAnd1998/TaskbarX/releases
 https://github.com/ChrisAnd1998/TaskbarX/releases/download/1.7.6.0/TaskbarX_1.7.6.0_x64.zip TaskbarX.zip  
 
+:52
+:: https://internetdownloadmanager.com/
+https://mirror2.internetdownloadmanager.com/idman640build2.exe?v=lt&filename=idman640build2.exe IDMAN.exe
 
-:Kaldçrçlanlar
+:53
+:: https://www.python.org
+https://www.python.org/ftp/python/3.10.1/python-3.10.1-amd64.exe python-x64.exe
+https://www.python.org/ftp/python/3.10.1/python-3.10.1.exe python-x32.exe
+
+
+:KaldÔøΩrÔøΩlanlar
 :d1
 :: get.adobe.com/tr/reader/enterprise/
 ::https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2100120155/AcroRdrDC2100120155_en_US.exe AdobeReader.exe
