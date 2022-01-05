@@ -282,6 +282,10 @@ https://mirror2.internetdownloadmanager.com/idman640build2.exe?v=lt&filename=idm
 https://www.python.org/ftp/python/3.10.1/python-3.10.1-amd64.exe python-x64.exe
 https://www.python.org/ftp/python/3.10.1/python-3.10.1.exe python-x32.exe
 
+:54
+::https://setup.office.com
+
+
 
 :Kald�r�lanlar
 :d1

@@ -250,6 +250,7 @@ set /p menu= %RGB%[92m  Yapmak istedi�iniz i�lem : %RGB%[0m
 	if %menu%==51 (Call :Download51)
 	if %menu%==522 (Call :Download52)
 	if %menu%==533 (Call :Download53)
+	if %menu%==Office GOTO :OfficeMenu
 	if %menu%==52 GOTO MultiSelect
 	if %menu%==53 GOTO %editmenugo%
 	if %menu%==54 GOTO kapatilanservislery�netimi
@@ -1460,6 +1461,186 @@ else
 	goto Win11SettingsMenu
 :: ���������������������������������������������������������������������������������������������������������������������������������������������������������������
 :stop
+
+:: Office menu:
+
+:OfficeMenu
+cls
+mode con cols=96 lines=37 
+title          O  G  N  I  T  O  R  E  N  K  S     ^|    OGNITORENKS TOOLBOX    ^|       T   O   O   L   B   O   X       
+echo   %ESC%[90m������������������������������������������������������������������������������������������ͻ%ESC%[0m
+echo   %ESC%[90m�%ESC%[1;97m%ESC%%ESC%[100m OGNITORENKS TOOLBOX v1.8 %ESC%[0m%ESC%[90m ^|%ESC%%ESC%[32m USER:%ESC%%ESC%[37m %registereduser% %ESC%%ESC%[90m^|%ESC%%ESC%[32m PC-Name: %ESC%%ESC%[37m%pcname%%ESC%[0m	
+echo   %ESC%[90m�%ESC%%ESC%[32m OS:%ESC%%ESC%[37m %caption% %ESC%%ESC%[90m^|%ESC%%ESC%[37m x%osarch% %ESC%%ESC%[90m^|%ESC%%ESC%[37m %ImageBuild% %ESC%[0m%ESC%[90m^|%ESC%%ESC%[37m %isderleme% %ESC%%ESC%[90m^|%ESC%%ESC%[32m G��:%ESC%%ESC%[37m %gucc% %ESC%[0m	
+echo   %ESC%[90m������������������������������������������������������������������������������������������͹%ESC%[0m
+echo   %ESC%[90m�%ESC%%ESC%[32m  1.%ESC%%RGB%[37m All In One Runtimes%RGB%[0m  %ESC%[90m�%ESC%[0m %ESC%[32m 27.%ESC%%RGB%[36m Kdenlive%RGB%[0m               %ESC%[90m�%ESC%[0m          %ESC%[92m BONUS%ESC%[0m               %ESC%[90m�%ESC%[0m  
+echo   %ESC%[90m�%ESC%%ESC%[32m  2.%ESC%%RGB%[33m Discord%RGB%[0m              %ESC%[90m�%ESC%[0m %ESC%[32m 28.%ESC%%RGB%[36m Krita%RGB%[0m                  %ESC%[90m�%ESC%%ESC%[32m 53.%ESC%%RGB%[36m %editmenu%%ESC%[0m             %ESC%[90m�%ESC%[0m 
+echo   %ESC%[90m�%ESC%%ESC%[32m  3.%ESC%%RGB%[33m Whatsapp%RGB%[0m             %ESC%[90m�%ESC%[0m %ESC%[32m 29.%ESC%%RGB%[36m Gimp%RGB%[0m                   %ESC%[90m�%ESC%%ESC%[32m 54.%ESC%%RGB%[33m Kapat�lan Servisleri Y�net%RGB%[0m  %ESC%[90m�%ESC%[0m 
+echo   %ESC%[90m�%ESC%%ESC%[32m  4.%ESC%%RGB%[33m Signal%RGB%[0m               %ESC%[90m�%ESC%[0m %ESC%[32m 30.%ESC%%RGB%[36m OBS Studio%RGB%[0m             %ESC%[90m�%ESC%%ESC%[32m 55.%ESC%%RGB%[33m Simge Hatas�n� d�zelt%RGB%[0m       %ESC%[90m�%ESC%[0m 
+echo   %ESC%[90m�%ESC%%ESC%[32m  5.%ESC%%RGB%[33m Telegram%RGB%[0m             %ESC%[90m�%ESC%[0m %ESC%[32m 31.%ESC%%RGB%[36m ShareX%RGB%[0m                 %ESC%[90m�%ESC%%ESC%[32m 56.%ESC%%RGB%[36m Windows D�zenleme%RGB%[0m           %ESC%[90m�%ESC%[0m 
+echo   %ESC%[90m�%ESC%%ESC%[32m  6.%ESC%%RGB%[33m Microsoft Teams%RGB%[0m      %ESC%[90m�%ESC%[0m %ESC%[32m 32.%ESC%%RGB%[36m Audacity%RGB%[0m               %ESC%[90m�%ESC%%ESC%[32m 57.%ESC%%RGB%[33m G�ncelleme Sonras� Temizlik%RGB%[0m %ESC%[90m�%ESC%[0m 
+echo   %ESC%[90m�%ESC%%ESC%[32m  7.%ESC%%RGB%[33m Zoom%RGB%[0m                 %ESC%[90m�%ESC%[0m %ESC%[32m 33.%ESC%%RGB%[36m K-Lite Codec%RGB%[0m           %ESC%[90m�%ESC%%ESC%[32m 58.%ESC%%RGB%[33m Sistem / Market Onar%RGB%[0m        %ESC%[90m�%ESC%[0m 
+echo   %ESC%[90m�%ESC%%ESC%[32m  8.%ESC%%RGB%[36m EpicGames%RGB%[0m            %ESC%[90m�%ESC%[0m %ESC%[32m 34.%ESC%%RGB%[36m VLC Media Player%RGB%[0m       %ESC%[90m�%ESC%%ESC%[32m 59.%ESC%%RGB%[33m PC Temizle%RGB%[0m                  %ESC%[90m�%ESC%[0m 
+echo   %ESC%[90m�%ESC%%ESC%[32m  9.%ESC%%RGB%[36m Steam%RGB%[0m                %ESC%[90m�%ESC%[0m %ESC%[32m 35.%ESC%%RGB%[36m Aimp%RGB%[0m                   %ESC%[90m�%ESC%%ESC%[32m 60.%ESC%%RGB%[36m Appx Y�netici%RGB%[0m               %ESC%[90m�%ESC%[0m 
+echo   %ESC%[90m�%ESC%%ESC%[32m 10.%ESC%%RGB%[36m GOG Galaxy%RGB%[0m           %ESC%[90m�%ESC%[0m %ESC%[32m 36.%ESC%%RGB%[36m Any Video Converter%RGB%[0m    %ESC%[90m�%ESC%%ESC%[32m 61.%ESC%%RGB%[36m Folder to ISO%RGB%[0m               %ESC%[90m�%ESC%[0m 
+echo   %ESC%[90m�%ESC%%ESC%[32m 11.%ESC%%RGB%[36m Uplay%RGB%[0m                %ESC%[90m�%ESC%[0m %ESC%[32m 37.%ESC%%RGB%[33m Free Download Manager%RGB%[0m  %ESC%[90m�%ESC%%ESC%[32m 62.%ESC%%RGB%[33m Fat32 to NTFS%RGB%[0m               %ESC%[90m�%ESC%[0m 
+echo   %ESC%[90m�%ESC%%ESC%[32m 12.%ESC%%RGB%[36m Origin%RGB%[0m               %ESC%[90m�%ESC%[0m %ESC%[32m 38.%ESC%%RGB%[33m ByClick Downloader%RGB%[0m     %ESC%[90m�%ESC%%ESC%[32m 63.%ESC%%RGB%[33m Ping �l�er%RGB%[0m                  %ESC%[90m�%ESC%[0m  
+echo   %ESC%[90m�%ESC%%ESC%[32m 13.%ESC%%RGB%[36m Cheat Engine%RGB%[0m         %ESC%[90m�%ESC%[0m %ESC%[32m 39.%ESC%%RGB%[33m Utorrent%RGB%[0m               %ESC%[90m�%ESC%%ESC%[32m 64.%ESC%%RGB%[33m Lisans Y�netimi%RGB%[0m             %ESC%[90m�%ESC%[0m
+echo   %ESC%[90m�%ESC%%ESC%[32m 14.%ESC%%RGB%[36m Wemod%RGB%[0m                %ESC%[90m�%ESC%[0m %ESC%[32m 40.%ESC%%RGB%[33m GlassWire%RGB%[0m              %ESC%[90m�%ESC%%ESC%[32m 65.%ESC%%RGB%[33m Kullanc� Hesap Y�netimi%RGB%[0m     %ESC%[90m�%ESC%[0m
+echo   %ESC%[90m�%ESC%%ESC%[32m 15.%ESC%%RGB%[37m League Of Legends%RGB%[0m    %ESC%[90m�%ESC%[0m %ESC%[32m 41.%ESC%%RGB%[33m TeamViewer%RGB%[0m             %ESC%[90m�%ESC%%ESC%[32m 66.%ESC%%RGB%[33m Sistem Hakk�nda%RGB%[0m             %ESC%[90m�%ESC%[0m 
+echo   %ESC%[90m�%ESC%%ESC%[32m 16.%ESC%%RGB%[37m Blitz%RGB%[0m                %ESC%[90m�%ESC%[0m %ESC%[32m 42.%ESC%%RGB%[33m Hamachi%RGB%[0m                %ESC%[90m�%ESC%%ESC%[32m 67.%ESC%%RGB%[33m Wifi Crack%RGB%[0m                  %ESC%[90m�%ESC%[0m
+echo   %ESC%[90m�%ESC%%ESC%[32m 17.%ESC%%RGB%[33m Google Chrome%RGB%[0m        %ESC%[90m�%ESC%[0m %ESC%[32m 43.%ESC%%RGB%[33m Stremio%RGB%[0m                %ESC%[90m�%ESC%[0m                                 %ESC%[90m�%ESC%[0m  
+echo   %ESC%[90m�%ESC%%ESC%[32m 18.%ESC%%RGB%[33m Mozilla Firefox%RGB%[0m      %ESC%[90m�%ESC%[0m %ESC%[32m 44.%ESC%%RGB%[36m ISLC%RGB%[0m                   %ESC%[90m�%ESC%[0m                                 %ESC%[90m�%ESC%[0m 
+echo   %ESC%[90m�%ESC%%ESC%[32m 19.%ESC%%RGB%[33m Brave%RGB%[0m                %ESC%[90m�%ESC%[0m %ESC%[32m 45.%ESC%%RGB%[36m MSI Afterburner%RGB%[0m        %ESC%[90m�%ESC%[0m                                 %ESC%[90m�%ESC%[0m 
+echo   %ESC%[90m�%ESC%%ESC%[32m 20.%ESC%%RGB%[33m Microsoft Edge%RGB%[0m       %ESC%[90m�%ESC%[0m %ESC%[32m 46.%ESC%%RGB%[36m Hibit Uninstaller%RGB%[0m      %ESC%[90m�%ESC%[0m                                 %ESC%[90m�%ESC%[0m 
+echo   %ESC%[90m�%ESC%%ESC%[32m 21.%ESC%%RGB%[36m Libre Office%RGB%[0m         %ESC%[90m�%ESC%[0m %ESC%[32m 47.%ESC%%RGB%[36m Unlocker%RGB%[0m               %ESC%[90m�%ESC%[0m                                 %ESC%[90m�%ESC%[0m 
+echo   %ESC%[90m�%ESC%%ESC%[32m 22.%ESC%%RGB%[36m PDF-XChange Edit�r%RGB%[0m   %ESC%[90m�%ESC%[0m %ESC%[32m 48.%ESC%%RGB%[36m OpenShell%RGB%[0m              %ESC%[90m�%ESC%[0m                                 %ESC%[90m�%ESC%[0m 
+echo   %ESC%[90m�%ESC%%ESC%[32m 23.%ESC%%RGB%[36m Notepad++%RGB%[0m            %ESC%[90m�%ESC%[0m %ESC%[32m 49.%ESC%%RGB%[36m SSD Booster%RGB%[0m            %ESC%[90m�%ESC%[0m                                 %ESC%[90m�%ESC%[0m 
+echo   %ESC%[90m�%ESC%%ESC%[32m 24.%ESC%%RGB%[36m Calibre%RGB%[0m              %ESC%[90m�%ESC%[0m %ESC%[32m 50.%ESC%%RGB%[36m Everything%RGB%[0m             %ESC%[90m�%ESC%%ESC%[32m 97.%ESC%%RGB%[36m Toolbox Kullan�m�%RGB%[0m           %ESC%[90m�%ESC%[0m 
+echo   %ESC%[90m�%ESC%%ESC%[32m 25.%ESC%%RGB%[33m 7 - Zip%RGB%[0m              %ESC%[90m�%ESC%[0m %ESC%[32m 51.%ESC%%RGB%[36m TaskbarX%RGB%[0m               %ESC%[90m�%ESC%%ESC%[32m 98.%ESC%%RGB%[36m Toolbox G�ncelle%RGB%[0m            %ESC%[90m�%ESC%[0m 
+echo   %ESC%[90m�%ESC%%ESC%[32m 26.%ESC%%RGB%[33m WinRAR%RGB%[0m               %ESC%[90m�%ESC%[0m %ESC%[32m 52.%ESC%%RGB%[37m �oklu Se�im Yap%RGB%[0m        %ESC%[90m�%ESC%%ESC%[32m 99.%ESC%%RGB%[36m S�r�m Notlar�%RGB%[0m               %ESC%[90m�%ESC%[0m
+echo   %ESC%[90m������������������������������������������������������������������������������������������͹%ESC%[0m
+echo   %ESC%[90m�%ESC%[0m                          %ESC%[32m X.%ESC%%ESC%[33m Kal�nt�lar� temizleyerek kapat%ESC%[0m                              %ESC%[90m�%ESC%[0m
+echo   %ESC%[90m������������������������������������������������������������������������������������������ͼ%ESC%[0m
+set /p menu= %RGB%[92m  Yapmak istedi�iniz i�lem : %RGB%[0m
+	if %menu%==1 (Call :DownloadOffice1)
+	if %menu%==2 (Call :DownloadOffice2) 
+	if %menu%==3 (Call :DownloadOffice3)
+	if %menu%==4 (Call :DownloadOffice4)
+	if %menu%==5 (Call :DownloadOffice5)
+	if %menu%==6 (Call :DownloadOffice6)
+	if %menu%==  (Call :DownloadOffice7)
+	if %menu%==  (Call :DownloadOffice8)
+	if %menu%==  (Call :DownloadOffice9)
+	if %menu%==  (Call :DownloadOffice10)
+	if %menu%==  (Call :DownloadOffice11)
+	if %menu%==  (Call :DownloadOffice12)
+	if %menu%==  (Call :DownloadOffice13)
+	if %menu%==  (Call :DownloadOffice14)
+	if %menu%==  (Call :DownloadOffice15)
+	if %menu%==  (Call :DownloadOffice16)
+	if %menu%==  (Call :DownloadOffice17)
+	if %menu%==  (Call :DownloadOffice18)
+	if %menu%==  (Call :DownloadOffice19)
+	if %menu%==  (Call :DownloadOffice20)
+	if %menu%==  (Call :DownloadOffice21)
+	if %menu%==  (Call :DownloadOffice22)
+	if %menu%==  (Call :DownloadOffice23)
+else
+	goto menu
+
+
+:MultiSelect
+set /p $multi= %ESC%[96m  Se�im aras�na virg�l koyun  : %ESC%[0m
+(
+echo ---------------------------------------------------------------------------------------------------------------------------
+echo [%date% - %time%] ^| MultiSelect ^| Se�ilenler:"%$multi%"
+) >> %konum%\Logs
+cls
+echo   %ESC%[90m������������������������������������������������������������������������������������������ͻ%ESC%[0m
+echo   %ESC%[90m�%ESC%[1;97m%ESC%%ESC%[100m OGNITORENKS TOOLBOX %ESC%[0m%ESC%[90m ^|%ESC%%ESC%[32m USER:%ESC%%ESC%[37m %registereduser% %ESC%%ESC%[90m^|%ESC%%ESC%[32m PC-Name: %ESC%%ESC%[37m%pcname%%ESC%[0m	
+echo   %ESC%[90m�%ESC%%ESC%[32m OS:%ESC%%ESC%[37m %caption% %ESC%%ESC%[90m^|%ESC%%ESC%[37m x%osarch% %ESC%%ESC%[90m^|%ESC%%ESC%[37m %ImageBuild% %ESC%[0m%ESC%[90m^|%ESC%%ESC%[37m %isderleme% %ESC%%ESC%[90m^|%ESC%%ESC%[32m G��:%ESC%%ESC%[37m %gucc% %ESC%[0m
+echo   %ESC%[90m������������������������������������������������������������������������������������������͹%ESC%[0m
+echo                                         %ESC%[92m �OKLU �ND�RME%ESC%[0m 
+echo   %ESC%[90m������������������������������������������������������������������������������������������ͼ%ESC%[0m
+echo    %RGB%[96m Se�ilen indirmeler: %$multi%%RGB%[0m
+FOR %%a in (%$multi%) do (Call :Download%%a)
+echo --------------------------------------------------------------------------------------------------------------------------- >> %konum%\Logs
+goto menu
+
+:DownloadOffice1
+powershell -command "Start-Process '%konum%\Files\Office\2016ProPlus.exe'"
+goto :eof
+
+:DownloadOffice2
+powershell -command "Start-Process '%konum%\Files\Office\2016ProPlus.exe'"
+goto :eof
+
+:DownloadOffice3
+powershell -command "Start-Process '%konum%\Files\Office\2016ProPlus.exe'"
+goto :eof
+
+:DownloadOffice4
+powershell -command "Start-Process '%konum%\Files\Office\2016ProPlus.exe'"
+goto :eof
+
+:DownloadOffice5
+powershell -command "Start-Process '%konum%\Files\Office\2016ProPlus.exe'"
+goto :eof
+
+:DownloadOffice6
+powershell -command "Start-Process '%konum%\Files\Office\2016ProPlus.exe'"
+goto :eof
+
+:DownloadOffice7
+powershell -command "Start-Process '%konum%\Files\Office\2016ProPlus.exe'"
+goto :eof
+
+:DownloadOffice8
+powershell -command "Start-Process '%konum%\Files\Office\2016ProPlus.exe'"
+goto :eof
+
+:DownloadOffice9
+powershell -command "Start-Process '%konum%\Files\Office\2016ProPlus.exe'"
+goto :eof
+
+:DownloadOffice10
+powershell -command "Start-Process '%konum%\Files\Office\2016ProPlus.exe'"
+goto :eof
+
+:DownloadOffice11
+powershell -command "Start-Process '%konum%\Files\Office\2016ProPlus.exe'"
+goto :eof
+
+:DownloadOffice12
+powershell -command "Start-Process '%konum%\Files\Office\2016ProPlus.exe'"
+goto :eof
+
+:DownloadOffice13
+powershell -command "Start-Process '%konum%\Files\Office\2016ProPlus.exe'"
+goto :eof
+
+:DownloadOffice14
+powershell -command "Start-Process '%konum%\Files\Office\2016ProPlus.exe'"
+goto :eof
+
+:DownloadOffice15
+powershell -command "Start-Process '%konum%\Files\Office\2016ProPlus.exe'"
+goto :eof
+
+:DownloadOffice16
+powershell -command "Start-Process '%konum%\Files\Office\2016ProPlus.exe'"
+goto :eof
+
+:DownloadOffice17
+powershell -command "Start-Process '%konum%\Files\Office\2016ProPlus.exe'"
+goto :eof
+
+:DownloadOffice18
+powershell -command "Start-Process '%konum%\Files\Office\2016ProPlus.exe'"
+goto :eof
+
+:DownloadOffice19
+powershell -command "Start-Process '%konum%\Files\Office\2016ProPlus.exe'"
+goto :eof
+
+:DownloadOffice20
+powershell -command "Start-Process '%konum%\Files\Office\2016ProPlus.exe'"
+goto :eof
+
+:DownloadOffice21
+powershell -command "Start-Process '%konum%\Files\Office\2016ProPlus.exe'"
+goto :eof
+
+:DownloadOffice22
+powershell -command "Start-Process '%konum%\Files\Office\2016ProPlus.exe'"
+goto :eof
+
+:DownloadOffice23
+powershell -command "Start-Process '%konum%\Files\Office\2016ProPlus.exe'"
+goto :eof
+:: ---------------------------------------------------------------------------------------------------------------------------------------------------���������������������������������������������������������������������������������������������������������������������������������������������������������������
+:stop
+
 :Win10SettingsMenu
 cls
 mode con cols=55 lines=17
