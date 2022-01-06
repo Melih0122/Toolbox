@@ -107,6 +107,10 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 49. - SSD Booster: SSD için sistemi optimize eder.
 50. - Everything: Sistemdeki dosyaları arayıp bulmanızı sağlar. Çok kullanışlı bir programdır.
 51. - TaskbarX: Başlat çubuğunu özelleştirmenizi sağlar.
+#### ► IDE, Kod Editörleri ve Diğer Geliştirme Araçları
+vscode. - Visual Studio Code: Visual Studio'nun editör halidir. Genelde web geliştirme için kullanılır.
+git. - Git: Dağıtık takip sistemidir.
+github. - GitHub Desktop: Grafik arayüzlü bir git istemcisidir.
 ### • 52 - ÇOKLU İNDİRME
 52. - Çoklu İndirme: Bu bölümde 1 - 51 arası işlemleri seçerek toplu bir şekilde indirme işlemi sağlayabilirsiniz. "X" tuşu ile geri çıkabilirsiniz.
 # BONUS
