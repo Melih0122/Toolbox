@@ -241,6 +241,7 @@ set /p menu= %RGB%[92m  Yapmak istedi�iniz i�lem : %RGB%[0m
 	if %menu%==42 (Call :Download42)
 	if %menu%==43 (Call :Download43)
 	if %menu%==44 (Call :Download44)
+	if %menu%==444 (Call :Download444)
 	if %menu%==45 (Call :Download45)
 	if %menu%==46 (Call :Download46)
 	if %menu%==47 (Call :Download47)
@@ -250,6 +251,8 @@ set /p menu= %RGB%[92m  Yapmak istedi�iniz i�lem : %RGB%[0m
 	if %menu%==51 (Call :Download51)
 	if %menu%==522 (Call :Download52)
 	if %menu%==533 (Call :Download53)
+	if %menu%==git (Call :DownloadGit)
+	if %menu%==github (Call :DownloadGithub)
 	if %menu%==Office GOTO :OfficeMenu
 	if %menu%==52 GOTO MultiSelect
 	if %menu%==53 GOTO %editmenugo%
@@ -597,6 +600,11 @@ move "C:\ISLC\ISLC.lnk" "C:\Users\%username%\Desktop"
 powershell -command "Start-Process 'C:\ISLC\Intelligent standby list cleaner ISLC.exe'
 goto :eof
 
+:Download444
+FOR /F "tokens=1" %%i in ('FIND "vscode" %konum%\Ekler\Links.bat') do set link=%%i
+Call :wgetozel "%link%" vscode.exe "/VERYSILENT /NORESTART /MERGETASKS=!runcode"
+goto :eof
+
 :Download45
 FOR /F "tokens=1" %%i in ('FIND "MSIAfterburner" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wgetozel "%link%" MSIAfterburner.zip /S
@@ -640,13 +648,23 @@ goto :eof
 
 :Download52
 FOR /F "tokens=1" %%i in ('FIND "IDMAN" %konum%\Ekler\Links.bat') do set link=%%i
-Call :wget "%link%" IDMAN.exe /skipdlgs
+Call :wget "%link%" IDMAN.exe "/skipdlgs"
 goto :eof
 
 :Download53
 FOR /F "tokens=1" %%i in ('FIND "python-x64" %konum%\Ekler\Links.bat') do set link=%%i
-Call :wgetdesktop "%link%" python-x64.exe /quiet InstallAllUsers=1 PrependPath=1
-powershell -command "Start-Process 'C:\Users\%username%\Desktop\python-x64.exe'"
+Call :wgetdesktop "%link%" python-x64.exe "/quiet InstallAllUsers=1 PrependPath=1"
+goto :eof
+
+:DownloadGit
+FOR /F "tokens=1" %%i in ('FIND' "git" %konum%\Ekler.Links.bat) do set link=%%i
+Call :wget "%link%" git.exe "/VERYSILENT /NORESTART /COMPONENTS=icons,icons\desktop,ext,ext\shellhere,ext\guihere,gitlfs,assoc,assoc_sh,autoupdate"
+goto :eof
+
+:DownloadGithub
+FOR /F "tokens=1" %%i in ('FIND "github_dekstop" %konum%\Ekler\Links.bat') do set link=%%i
+Call :wget "%link%" github_desktop.exe -s
+goto :eof
 
 :: ---------------------------------------------------------------------------------------------------------------------------------------------------
 :WindowsRepair

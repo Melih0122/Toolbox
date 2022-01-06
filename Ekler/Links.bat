@@ -244,7 +244,8 @@ https://secure.logmein.com/hamachi.msi Hamachi.msi
 https://www.strem.io/download?platform=windows&four=true Stremio.exe
 
 :44
-
+:: https://code.visualstudio.com
+https://az764295.vo.msecnd.net/stable/899d46d82c4c95423fb7e10e68eba52050e30ba3/VSCodeUserSetup-x64-1.63.2.exe vscode.exe
 
 :45
 :: https://www.msi.com/Landing/afterburner/graphics-cards
@@ -282,10 +283,13 @@ https://mirror2.internetdownloadmanager.com/idman640build2.exe?v=lt&filename=idm
 https://www.python.org/ftp/python/3.10.1/python-3.10.1-amd64.exe python-x64.exe
 https://www.python.org/ftp/python/3.10.1/python-3.10.1.exe python-x32.exe
 
-:54
-::https://setup.office.com
+:git
+:: https://git-scm.com/
+https://github.com/git-for-windows/git/releases/download/v2.34.1.windows.1/Git-2.34.1-64-bit.exe git.exe
 
-
+:github_desktop
+:: https://desktop.github.com
+https://desktop.githubusercontent.com/github-desktop/releases/2.9.6-9196a1ae/GitHubDesktopSetup-x64.exe github_desktop.exe
 
 :Kald�r�lanlar
 :d1
