@@ -16,6 +16,9 @@
 ::  OgnitorenKs.Toolbox katılımsız kurulum dosyasını indirmek için aşağıdaki "Toolbox.Update.bat" dosyasını indirip yönetici olarak çalıştırın.
 ::  ► https://docs.google.com/uc?export=download&id=1JmrWYeNjVopcIP0n9iNkMUCEbQ2SIvpY
 ::
+::  Github üzerinden çalışmaya ulaşmak isterseniz;
+::  ► https://github.com/OgnitorenKs/OgnitorenKs.Toolbox
+::
 ::  İstek ve önerileriniz olursa, iletişim;
 ::  ► Discord: OgnitorenKs#2737 
 ::  ► Mail: ognitorenks@gmail.com
@@ -41,12 +44,38 @@
 -----------------
  ► Versiyon 1.8 -
 -----------------
-Yayınlanma Tarihi: 
+Yayınlanma Tarihi: 08.01.2022
 
  • Wifi Crack bölümü eklendi.
 	• Bu bölümde sisteme girdiğiniz Wifi liste ve şifrelerini görebilirsiniz.
 	• Çalışmasını toolbox'a eklediği için Archley'e teşekkür ederim.
-
+ • Simge hatasını düzelt bölümüne yeni parametre eklendi.
+ • Explorer Resetten sonra Explorer'ın açılmama hatası giderildi.
+ • FAT32 to NTFS bölümü ana ekrandan ayrıldı. Yeni bölümde artık diskleri ve isimlerini görerek rahat bir şekilde işlem yapabilirsiniz.
+ • Sistem hakkında bölümünün tüm komutları yenilendi. Eklenenler;
+   • Windows 11 beta sürümlerinde Microsoft tarafından wmic uygulaması kaldırılmasından dolayı oluşan hata düzeltildi.
+   • Saat dilimi 
+   • HDD/SSD disk bilgisi
+ • Kullanıcı Hesap Yönetimi bölümünde 7 numaralı bölümün kodları yenilendi.
+ • "Çoklu indirme" bölümü "Listeyi Genişlet >>>" olarak değiştirildi. 52 işlem numarası "Z" olarak değiştirildi.
+   • Liste genişletildiğinde Bonus bölümünde de programlar göreceksiniz. Bu bölümde zamanla yapılacak eklemeler için boş alanlar bıraktım.
+   • Liste genişlet seçildiğinde artık çoklu seçim yapacaksanız. İki işlevi bir arada sundum.
+ • Online katılımsız bölümündeki program listesi güncellendi. 
+   • Mem Reduct yazılımı eklendi. Sessiz kurulum için Autoit ile script hazırladım.
+   • Python / Microsoft Office 2019 / Stellarium / Recuva;
+   • AOEMI Partition Assistans / Python / PhyCharm;
+   • Visual Studio Code / Github / Git / İnternet Download Manager
+   • World Of Tanks / Genshin Impact / Valorant oyunları eklendi.
+   • TaskbarX bölümündeki kod hatası giderildi.
+ • Signal indirme linki yenilendi. (5.26.1 > 5.27.1)
+ • Steam indirme linki yenilendi.
+ • Edge indirme linki yenilendi. (v96 > v97)
+ • Libre Office indirme linki yenilendi. (7.2.4 > 7.2.5)
+ • Krita indirme linki yenilendi. (5.0.0 > 5.0.2)
+ • ShareX indirme linki yenilendi. (13.6.1 > 13.7.0)
+ • K-Lite indirme linki yenilendi. (16.6.5 > 16.7.0)
+ • Hibit Uninstaller indirme linki yenilendi. (2.7.15 > 2.7.35)
+ •
 
 :: ==============================================================================================================================
 

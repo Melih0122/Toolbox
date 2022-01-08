@@ -39,82 +39,92 @@
 
 Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar ücretsiz alternatifler arasında seçilmiştir. WinRaR hariç o da ücretli ama ücretsiz bir yazılımdır.	
    
-1. - All in One Runtimes: C++ 2005-2019 / Java / XNA Framework / OpenAL / DirectX. Bu programlar oyunlar ve bazı uygulamalarda sorun yaşamamanız için mutlaka kurulmalıdır.
+	• 1 - All in One Runtimes: C++ 2005-2019 / Java / XNA Framework / OpenAL / DirectX. Bu programlar oyunlar ve bazı uygulamalarda sorun yaşamamanız için mutlaka kurulmalıdır.
 #### ► Mesajlaşma Uygulamaları 
-2. - Discord: Sunucu kurup arkadaşlarınız sohbet edebileceğiniz bir uygulama. Online oyun oynuyorsanız arkadaşlarınızla iletişim kurmak için birebirdir.
-3. - Whatsapp: Telefondaki uygulamayı bilgisayarınıza senkronize etmeyi sağlar.
-4. - Signal: Telefondaki uygulamayı bilgisayarınıza senkronize etmeyi sağlar.
-5. - Telegram: Telefondaki uygulamayı bilgisayarınıza senkronize etmeyi sağlar.
-6. - Microsoft Teams: Discord uygulaması gibidir. Ancak genelde eğitim amaçlı kullanılır.
-7. - Zoom: Skype benzeri uygulamadır. Eğitim amaçlı kullanılır. 
+	• 2 - Discord: Sunucu kurup arkadaşlarınız sohbet edebileceğiniz bir uygulama. Online oyun oynuyorsanız arkadaşlarınızla iletişim kurmak için birebirdir.
+	• 3 - Whatsapp: Telefondaki uygulamayı bilgisayarınıza senkronize etmeyi sağlar.
+	• 4 - Signal: Telefondaki uygulamayı bilgisayarınıza senkronize etmeyi sağlar.
+	• 5 - Telegram: Telefondaki uygulamayı bilgisayarınıza senkronize etmeyi sağlar.
+	• 6 - Microsoft Teams: Discord uygulaması gibidir. Ancak genelde eğitim amaçlı kullanılır.
+	• 7 - Zoom: Skype benzeri uygulamadır. Eğitim amaçlı kullanılır. 
 #### ► Oyun Uygulamaları 
-8. - EpicGames: Oyun kütüphanesi. Her hafta verdiği ücretsiz oyunlarla piyasada tanınır.
-9. - Steam: Oyun kütüphanesi. Bu kategorideki en popüler uygulamadır. 
-10. - GOG Galaxy= CD Project şirketine aittir. Eski birçok oyunu buradan satın alarak oynayabilirsiniz. Diğer oyun kütüphanelerini uygulamaya entegre edebiliyorsunuz.
-11. - Uplay: Ubisoft şirketinin oyun kütüphane uygulamasıdır.
-12. - Origin: EA Games şirketinin oyun kütühane uygulamasıdır.
+	• 8 - EpicGames: Oyun kütüphanesi. Her hafta verdiği ücretsiz oyunlarla piyasada tanınır.
+	• 9 - Steam: Oyun kütüphanesi. Bu kategorideki en popüler uygulamadır. 
+	• 10 - GOG Galaxy= CD Project şirketine aittir. Eski birçok oyunu buradan satın alarak oynayabilirsiniz. Diğer oyun kütüphanelerini uygulamaya entegre edebiliyorsunuz.
+	• 11 - Uplay: Ubisoft şirketinin oyun kütüphane uygulamasıdır.
+	• 12 - Origin: EA Games şirketinin oyun kütühane uygulamasıdır.
 #### ► Hile Uygulamaları 
 	Online oyunlar için değil :)
-13. - Cheat Engine: Hile motorudur. Online oyunlarda denemeyin ban yeme ihtimaliniz yüksek. Hikayeli oyunlarda kullanılabilir. (Hileye hayır) 
-14. - Wemod: Hile kütüphanesidir. Yalnızca hikayeli oyunlarda işe yarar.
-#### ► Oyunlar
-15. - League Of Legends: Riot Games'in oyunudur. 5 vs 5 şeklinde karşılaşma yapılır. Sıkıntılı insanlarla oynandığında klavye kırdırabilir. (Sorumlusu ben değilim :D)
-16. - Blitz: League Of Legends oyununun yardımcı uygulamasıdır. Hile değildir, ban yeme riski yoktur. Oyun içi rehber görevi görür.
+	• 13 - Cheat Engine: Hile motorudur. Online oyunlarda denemeyin ban yeme ihtimaliniz yüksek. Hikayeli oyunlarda kullanılabilir. (Hileye hayır) 
+	• 14 - Wemod: Hile kütüphanesidir. Yalnızca hikayeli oyunlarda işe yarar.
 #### ► Tarayıcı Uygulamaları
-17. - Google Chrome: En çok kullanılan tarayıcıdır. 
-18. - Mozilla Firefox: Genellikle Linux sistemlerde kullanılır. Windows sürümünde de çok güzel özellik bulunmaktadır.
-19. - Brave: Chromium tabanlı tarayıcıdır. Entegre reklam engelleyicisi vardır. Google web mağazasından uygulama indirebilir. Cripto para cüzdanı gibi özellikleri var.
-20. - Microsoft Edge: Microsoft herkes kullansın diye Windows'un her yerine mayın gibi döşediği tarayıcıdır. Chromuim tabanlıdır. Hızlı bir tarayıcıdır. Google web mağazasına bağlanabilir.
+	• 15 - Google Chrome: En çok kullanılan tarayıcıdır. 
+	• 16 - Mozilla Firefox: Genellikle Linux sistemlerde kullanılır. Windows sürümünde de çok güzel özellik bulunmaktadır.
+	• 17 - Brave: Chromium tabanlı tarayıcıdır. Entegre reklam engelleyicisi vardır. Google web mağazasından uygulama indirebilir. Cripto para cüzdanı gibi özellikleri var.
+	• 18 - Microsoft Edge: Microsoft herkes kullansın diye Windows'un her yerine mayın gibi döşediği tarayıcıdır. Chromuim tabanlıdır. Hızlı bir tarayıcıdır. Google web mağazasına bağlanabilir.
+#### ► Ram Temizleme Uygulamaları
+	• 19 - ISLC: RamStandby(bekleme) listesini temizlemeye yarayan uygulamadır.
+	• 20 - Mem Reduct: Ram içinde boşta bekleyen tüm işlemleri kapatır. Oyunlarda bu temizleme işleminde kasma yaşanabilir.
 #### ► Office Uygulamaları
-21. - LibreOffice: Microsoft Office uygulamasının ücretsiz alternatifidir. 
-22. - PDF-XChange Editör: PDF dosyalarını düzenleyip, okuyabilirsiniz. Adobe Reader alternatifidir. Ücretsiz özellikleri bakımından Adobe Reader'den daha iyi bir uygulamadır.
-23. - Notepad++: Bilmeyen için not defteri uygulamasıdır. Yazılımcılar için kod editörüdür.
-24. - Calibre: E-kitap formundaki dosyaları açıp, okumanızı sağlar.
+	• 21 - LibreOffice: Microsoft Office uygulamasının ücretsiz alternatifidir. 
+	• 22 - Microsoft Office 2019: Office uygulamalarının en iyisidir. Bilgisayara ucundan bakan herkesin ismini bildiği programdır.
+	• 23 - PDF-XChange Editör: PDF dosyalarını düzenleyip, okuyabilirsiniz. Adobe Reader alternatifidir. Ücretsiz özellikleri bakımından Adobe Reader'den daha iyi bir uygulamadır.
+	• 24 - Calibre: E-kitap formundaki dosyaları açıp, okumanızı sağlar.
 #### ► Sıkıştırma Uygulamaları 
-25. - 7-Zip: Kullanıcılar genellikle WinRaR uygulamasını kullanır ancak 7-Zip yabana atılacak bir uygulama değildir.
-26. - WinRaR: Ücretli ama ücretsizdir! 
+	• 25 - 7-Zip: Kullanıcılar genellikle WinRaR uygulamasını kullanır ancak 7-Zip yabana atılacak bir uygulama değildir.
+	• 26 - WinRaR: Ücretli ama ücretsizdir! 
 #### ► Video Düzenleme Uygulamaları
-27. - Kdenlive: Ücretsizdir. 92 MB civarında bir uygulamadır. Kullanımı çok basittir. Çıktı işlemlerinde ekran kartını kullanmama sorunu halledilirse çok iyi uygulamadır.
+	• 27 - Kdenlive: Ücretsizdir. 92 MB civarında bir uygulamadır. Kullanımı çok basittir. Çıktı işlemlerinde ekran kartını kullanmama sorunu halledilirse çok iyi uygulamadır.
 #### ► Resim Düzenleme Uygulamaları
-28. - Krita: Adobe Photoshop uygulamasının ücretsiz alternatifidir. Steam uygulamasından satın alarak destekte olabilirsiniz. 
-29. - Gimp: Adobe Photoshop uygulamasının ücretsiz alternatifidir.
+	• 28 - Krita: Adobe Photoshop uygulamasının ücretsiz alternatifidir. Steam uygulamasından satın alarak destekte olabilirsiniz. 
+	• 29 - Gimp: Adobe Photoshop uygulamasının ücretsiz alternatifidir.
 #### ► Ekran Kayıt (SS) Uygulamaları
-30. - OBS Studio: Ekran kaydı alma işlemi dışında canlı yayınlar içinde kullanılır. Kayıtlarınıza marka logosu atmaz.
-31. - ShareX: Ekran görüntüsü (SS) alma yazılımıdır. Ses kaydı almadan ekran kaydedebilir. GIF oluştabilir. Daha sayısız özellik bulunur.
+	• 30 - OBS Studio: Ekran kaydı alma işlemi dışında canlı yayınlar içinde kullanılır. Kayıtlarınıza marka logosu atmaz.
+	• 31 - ShareX: Ekran görüntüsü (SS) alma yazılımıdır. Ses kaydı almadan ekran kaydedebilir. GIF oluştabilir. Daha sayısız özellik bulunur.
 #### ► Ses Düzeltme Uygulamaları
-32. - Audacity: Ses düzeltme uygulamasıdır. 
+	• 32 - Audacity: Ses düzeltme uygulamasıdır. 
 #### ► Multimedia Uygulamaları
-33. - K-Lite Codec: Video izleme uygulamasıdır. Açamayacağı video dosyası yoktur. 
-34. - VLC Media Player: Video izleme uygulamasıdır. Açamayacağı video dosyası yoktur. Videolarla ilgili çok fazla özelliğe sahiptir.
-35. - Aimp: Ses dosyalarını açmaya yarayan uygulamadır. Tasarım ve özellikle olarak çok beğendiğimi belirtmek isterim.
+	• 33 - K-Lite Codec: Video izleme uygulamasıdır. Açamayacağı video dosyası yoktur. 
+	• 34 - VLC Media Player: Video izleme uygulamasıdır. Açamayacağı video dosyası yoktur. Videolarla ilgili çok fazla özelliğe sahiptir.
+	• 35 - Aimp: Ses dosyalarını açmaya yarayan uygulamadır. Tasarım ve özellikle olarak çok beğendiğimi belirtmek isterim.
 #### ► Dönüştürücü Uygulamaları
-36. - Any Video Converter: Video ses dönüştürme uygulamasıdır.
+	• 36 - Any Video Converter: Video ses dönüştürme uygulamasıdır.
 #### ► İndirme Uygulamaları
-37. - Free Download Manager: İndirme işlemlerinde kullanılacak yardımcı program. Torrent indirme desteğide bulunmaktadır.
-38. - ByClick Downloader: Youtube'dan video indirmeye yarayan uygulamadır.
-39. - Utorrent: Torrent indirme yazılımıdır.
-40?. - Internet Download Manager: Free Download Manager ile hemen hemen aynı işlevlere sahiptir.
+	• 37 - Free Download Manager: İndirme işlemlerinde kullanılacak yardımcı program. Torrent indirme desteğide bulunmaktadır.
+	• 38 - Internet Download Manager: Free Download Manager ile hemen hemen aynı işlevlere sahiptir.
+	• 39 - ByClick Downloader: Youtube'dan video indirmeye yarayan uygulamadır.
+	• 40 - Utorrent: Torrent indirme yazılımıdır.
 #### ► Diğer Uygulamalar
-40. - GlassWire: İnternet takip programı. Bilgisayarınızda hangi program nereye ne göndermiş ne almış hepsini görebilirsiniz.
-41. - TeamViewer: Bilgisayarlar arası uzaktan bağlantı sağlar.
-42. - Hamachi: Ortak bir ağ kurmaya yarayan yazılımdır. Online oyunlarda arkadaşlarınızla oyun kurmak için ortak bir ağ gerektiğinde hayat kurtaran bir programdır.
-43. - Stremio: Torrent üzerinden film izleyebilirsiniz. İzlediğiniz veya izlemek istediğiniz filmeleri kütüphanenize ekleyebilirsiniz. 
-44. - ISLC: RamStandby(bekleme) listesini temizlemeye yarayan uygulamadır.
-45. - MSI Afterburner: GPU fan ayarı yapar, SS alır, Video kaydı alır, oyunlarda donanımların kullanım değerlerini gösterir, voltaj değerlerini değiştirebilirsiniz.
-46. - Hibit Uninstaller: Kalıntı bırakmadan program kaldırmayı sağlar. Ayrıca çöp dosya temizler. Market uygulamalarını da kaldırabilir.
-47. - Unlocker: Silinmeyen dosyaları silmeyi sağlar.
-48. - OpenShell: Alternatif başlat menüsüdür.
-49. - SSD Booster: SSD için sistemi optimize eder.
-50. - Everything: Sistemdeki dosyaları arayıp bulmanızı sağlar. Çok kullanışlı bir programdır.
-51. - TaskbarX: Başlat çubuğunu özelleştirmenizi sağlar.
+	• 41 - GlassWire: İnternet takip programı. Bilgisayarınızda hangi program nereye ne göndermiş ne almış hepsini görebilirsiniz.
+	• 42 - TeamViewer: Bilgisayarlar arası uzaktan bağlantı sağlar.
+	• 43 - Hamachi: Ortak bir ağ kurmaya yarayan yazılımdır. Online oyunlarda arkadaşlarınızla oyun kurmak için ortak bir ağ gerektiğinde hayat kurtaran bir programdır.
+	• 44 - Stremio: Torrent üzerinden film izleyebilirsiniz. İzlediğiniz veya izlemek istediğiniz filmeleri kütüphanenize ekleyebilirsiniz. 
+	• 45 - MSI Afterburner: GPU fan ayarı yapar, SS alır, Video kaydı alır, oyunlarda donanımların kullanım değerlerini gösterir, voltaj değerlerini değiştirebilirsiniz.
+	• 46 - Hibit Uninstaller: Kalıntı bırakmadan program kaldırmayı sağlar. Ayrıca çöp dosya temizler. Market uygulamalarını da kaldırabilir.
+	• 47 - Wise Care 365: PC temizlik uygulamasıdır. Tek sürüme verilen ücretsiz pro sürümüdür.
+	• 48 - Unlocker: Silinmeyen dosyaları silmeyi sağlar.
+	• 49 - SSD Booster: SSD için sistemi optimize eder.
+	• 50 - OpenShell: Alternatif başlat menüsüdür.
+	• 51 - Everything: Sistemdeki dosyaları arayıp bulmanızı sağlar. Çok kullanışlı bir programdır.
+	• 52 - TaskbarX: Başlat çubuğunu özelleştirmenizi sağlar.
+	• 53 - Stellarium: Uzay bilgi uygulaması. Muazzam.
+	• 54 - Recuva: Silinen dosyaları kurtarır.
+	• 55 - AOMEI Partition Assistans: Disk yardımcı uygulaması.
 #### ► IDE, Kod Editörleri ve Diğer Geliştirme Araçları
-vscode. - Visual Studio Code: Visual Studio'nun editör halidir. Genelde web geliştirme için kullanılır.
-git. - Git: Dağıtık takip sistemidir.
-github. - GitHub Desktop: Grafik arayüzlü bir git istemcisidir.
-### • 52 - ÇOKLU İNDİRME
-52. - Çoklu İndirme: Bu bölümde 1 - 51 arası işlemleri seçerek toplu bir şekilde indirme işlemi sağlayabilirsiniz. "X" tuşu ile geri çıkabilirsiniz.
+	• 56 - Python: Programlama dilidir.
+	• 57 - PhyCharm: Python kod editörüdür.
+	• 58 - Notepad++: Bilmeyen için not defteri uygulamasıdır. Yazılımcılar için kod editörüdür.
+	• 59 - Visual Studio Code: Visual Studio'nun editör halidir. Genelde web geliştirme için kullanılır.
+	• 60 - Github Desktop: Grafik arayüzlü bir git istemcisidir.
+	• 61 - Git: Dağıtım takip sistemidir.
+#### ► Oyunlar
+    • 74 - World Of Tanks: Online tank oyunu.
+    • 75 - Genshin Impact: Online oyundur.
+	• 76 - League Of Legends: Riot Games'in oyunudur. 5 vs 5 şeklinde karşılaşma yapılır. Sıkıntılı insanlarla oynandığında klavye kırdırabilir. (Sorumlusu ben değilim :D)
+	• 77 - Blitz: League Of Legends oyununun yardımcı uygulamasıdır. Hile değildir, ban yeme riski yoktur. Oyun içi rehber görevi görür.
+	• 78 - Valorant: Riot Games'in CS:GO tarzı oyunudur.
 # BONUS
-53. - Bu bölüm işletim sistemine göre değişiklik göstermektedir. Windows 11 ve Windows 10 için iki ayrı bölüme ayrılmıştır.
+	• 53. - Bu bölüm işletim sistemine göre değişiklik göstermektedir. Windows 11 ve Windows 10 için iki ayrı bölüme ayrılmıştır.
 ### • 53 - Windows 10 Düzenleme
 ![Win10](https://user-images.githubusercontent.com/93199689/147974750-eff9701b-ccf6-462b-aa04-bde6f0853337.png)
 

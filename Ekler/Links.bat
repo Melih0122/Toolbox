@@ -1,33 +1,33 @@
-::                               NOTEPAD++ > Kodlama > Karakter TakÔøΩmÔøΩ > TÔøΩrkÔøΩe > OEM857
+::                               NOTEPAD++ > Kodlama > Karakter Takçmç > TÅrkáe > OEM857
 :: ==============================================================================================================================
 ::
-::       ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ   ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ   ÔøΩÔøΩ    ÔøΩÔøΩ ÔøΩÔøΩÔøΩÔøΩ ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ  ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ  ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ  ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ ÔøΩÔøΩ    ÔøΩÔøΩ ÔøΩÔøΩ    ÔøΩÔøΩ  ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ
-::      ÔøΩÔøΩ     ÔøΩÔøΩ ÔøΩÔøΩ    ÔøΩÔøΩ  ÔøΩÔøΩÔøΩ   ÔøΩÔøΩ  ÔøΩÔøΩ     ÔøΩÔøΩ    ÔøΩÔøΩ     ÔøΩÔøΩ ÔøΩÔøΩ     ÔøΩÔøΩ ÔøΩÔøΩ       ÔøΩÔøΩÔøΩ   ÔøΩÔøΩ ÔøΩÔøΩ   ÔøΩÔøΩ  ÔøΩÔøΩ    ÔøΩ
-::      ÔøΩÔøΩ     ÔøΩÔøΩ ÔøΩÔøΩ        ÔøΩÔøΩÔøΩÔøΩ  ÔøΩÔøΩ  ÔøΩÔøΩ     ÔøΩÔøΩ    ÔøΩÔøΩ     ÔøΩÔøΩ ÔøΩÔøΩ     ÔøΩÔøΩ ÔøΩÔøΩ       ÔøΩÔøΩÔøΩÔøΩ  ÔøΩÔøΩ ÔøΩÔøΩ  ÔøΩÔøΩ   ÔøΩÔøΩ
-::      ÔøΩÔøΩ     ÔøΩÔøΩ ÔøΩÔøΩ   ÔøΩÔøΩÔøΩÔøΩ ÔøΩÔøΩ ÔøΩÔøΩ ÔøΩÔøΩ  ÔøΩÔøΩ     ÔøΩÔøΩ    ÔøΩÔøΩ     ÔøΩÔøΩ ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ  ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ   ÔøΩÔøΩ ÔøΩÔøΩ ÔøΩÔøΩ ÔøΩÔøΩÔøΩÔøΩÔøΩ      ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ 
-::      ÔøΩÔøΩ     ÔøΩÔøΩ ÔøΩÔøΩ    ÔøΩÔøΩ  ÔøΩÔøΩ  ÔøΩÔøΩÔøΩÔøΩ  ÔøΩÔøΩ     ÔøΩÔøΩ    ÔøΩÔøΩ     ÔøΩÔøΩ ÔøΩÔøΩ   ÔøΩÔøΩ   ÔøΩÔøΩ       ÔøΩÔøΩ  ÔøΩÔøΩÔøΩÔøΩ ÔøΩÔøΩ  ÔøΩÔøΩ         ÔøΩÔøΩ
-::      ÔøΩÔøΩ     ÔøΩÔøΩ ÔøΩÔøΩ    ÔøΩÔøΩ  ÔøΩÔøΩ   ÔøΩÔøΩÔøΩ  ÔøΩÔøΩ     ÔøΩÔøΩ    ÔøΩÔøΩ     ÔøΩÔøΩ ÔøΩÔøΩ    ÔøΩÔøΩ  ÔøΩÔøΩ       ÔøΩÔøΩ   ÔøΩÔøΩÔøΩ ÔøΩÔøΩ   ÔøΩÔøΩ  ÔøΩÔøΩ    ÔøΩÔøΩ
-::       ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ   ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ   ÔøΩÔøΩ    ÔøΩÔøΩ ÔøΩÔøΩÔøΩÔøΩ    ÔøΩÔøΩ     ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ  ÔøΩÔøΩ     ÔøΩÔøΩ ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ ÔøΩÔøΩ    ÔøΩÔøΩ ÔøΩÔøΩ    ÔøΩÔøΩ  ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ 
+::       ˛˛˛˛˛˛˛   ˛˛˛˛˛˛   ˛˛    ˛˛ ˛˛˛˛ ˛˛˛˛˛˛˛˛  ˛˛˛˛˛˛˛  ˛˛˛˛˛˛˛˛  ˛˛˛˛˛˛˛˛ ˛˛    ˛˛ ˛˛    ˛˛  ˛˛˛˛˛˛
+::      ˛˛     ˛˛ ˛˛    ˛˛  ˛˛˛   ˛˛  ˛˛     ˛˛    ˛˛     ˛˛ ˛˛     ˛˛ ˛˛       ˛˛˛   ˛˛ ˛˛   ˛˛  ˛˛    ˛
+::      ˛˛     ˛˛ ˛˛        ˛˛˛˛  ˛˛  ˛˛     ˛˛    ˛˛     ˛˛ ˛˛     ˛˛ ˛˛       ˛˛˛˛  ˛˛ ˛˛  ˛˛   ˛˛
+::      ˛˛     ˛˛ ˛˛   ˛˛˛˛ ˛˛ ˛˛ ˛˛  ˛˛     ˛˛    ˛˛     ˛˛ ˛˛˛˛˛˛˛˛  ˛˛˛˛˛˛   ˛˛ ˛˛ ˛˛ ˛˛˛˛˛      ˛˛˛˛˛˛ 
+::      ˛˛     ˛˛ ˛˛    ˛˛  ˛˛  ˛˛˛˛  ˛˛     ˛˛    ˛˛     ˛˛ ˛˛   ˛˛   ˛˛       ˛˛  ˛˛˛˛ ˛˛  ˛˛         ˛˛
+::      ˛˛     ˛˛ ˛˛    ˛˛  ˛˛   ˛˛˛  ˛˛     ˛˛    ˛˛     ˛˛ ˛˛    ˛˛  ˛˛       ˛˛   ˛˛˛ ˛˛   ˛˛  ˛˛    ˛˛
+::       ˛˛˛˛˛˛˛   ˛˛˛˛˛˛   ˛˛    ˛˛ ˛˛˛˛    ˛˛     ˛˛˛˛˛˛˛  ˛˛     ˛˛ ˛˛˛˛˛˛˛˛ ˛˛    ˛˛ ˛˛    ˛˛  ˛˛˛˛˛˛ 
 ::
-::  HazÔøΩrlayan: HÔøΩseyin UZUNYAYLA / OgnitorenKs
-::  Toolbox'ÔøΩ hazÔøΩrladÔøΩÔøΩÔøΩm sistemlerde temel programlarÔøΩ indirip, basit bir ÔøΩekilde sistem ÔøΩzerinde dÔøΩzenleme yapmasÔøΩ iÔøΩin hazÔøΩrladÔøΩm.
-::  SÔøΩrekli olarak gÔøΩncellenecektir. Toolbox'ÔøΩ indirmek iÔøΩin aÔøΩaÔøΩÔøΩdaki linkleri kullanabilirsiniz.
+::  Hazçrlayan: HÅseyin UZUNYAYLA / OgnitorenKs
+::  Toolbox'ç hazçrladçßçm sistemlerde temel programlarç indirip, basit bir üekilde sistem Åzerinde dÅzenleme yapmasç iáin hazçrladçm.
+::  SÅrekli olarak gÅncellenecektir. Toolbox'ç indirmek iáin aüaßçdaki linkleri kullanabilirsiniz.
 ::   https://www.technopat.net/sosyal/konu/ognitorenks-toolbox-kullanimi.1790250/
 ::
-::  OgnitorenKs.Toolbox katÔøΩlÔøΩmsÔøΩz kurulum dosyasÔøΩnÔøΩ indirmek iÔøΩin aÔøΩaÔøΩÔøΩdaki "Toolbox.Update.bat" dosyasÔøΩnÔøΩ indirip yÔøΩnetici olarak ÔøΩalÔøΩÔøΩtÔøΩrÔøΩn.
+::  OgnitorenKs.Toolbox katçlçmsçz kurulum dosyasçnç indirmek iáin aüaßçdaki "Toolbox.Update.bat" dosyasçnç indirip yînetici olarak áalçütçrçn.
 ::   https://docs.google.com/uc?export=download&id=1JmrWYeNjVopcIP0n9iNkMUCEbQ2SIvpY
 ::
-::  ÔøΩstek ve ÔøΩnerileriniz olursa, iletiÔøΩim;
+::  òstek ve înerileriniz olursa, iletiüim;
 ::   Discord: OgnitorenKs#2737 
 ::   Mail: ognitorenks@gmail.com
-::   Site: ognitorenks.blogspot.com (Bu bÔøΩlÔøΩm ÔøΩu an aktif deÔøΩil)
-::   Site: www.technopat.net\Sosyal (Yeni bir konu aÔøΩÔøΩp yada hazÔøΩrladÔøΩÔøΩÔøΩm konularda @OgnitorenKs yazarak etiketleyebilirsiniz) 
+::   Site: ognitorenks.blogspot.com (Bu bîlÅm üu an aktif deßil)
+::   Site: www.technopat.net\Sosyal (Yeni bir konu aáçp yada hazçrladçßçm konularda @OgnitorenKs yazarak etiketleyebilirsiniz) 
 :: ==============================================================================================================================
 echo off
 cls
 
-echo Bu bat dosyasÔøΩ indirme linklerini barÔøΩndÔøΩrmaktadÔøΩr.
-echo Kapatmak iÔøΩin herhangi bir tuÔøΩa basÔøΩnÔøΩz...
+echo Bu bat dosyasç indirme linklerini barçndçrmaktadçr.
+echo Kapatmak iáin herhangi bir tuüa basçnçz...
 
 pause > NUL
 exit
@@ -90,7 +90,7 @@ https://web.whatsapp.com/desktop/windows/release/x64/WhatsAppSetup.exe WhatsApp.
 
 :04
 :: https://signal.org/download/
-https://updates.signal.org/desktop/signal-desktop-win-5.26.1.exe Signal.exe 
+https://updates.signal.org/desktop/signal-desktop-win-5.27.1.exe Signal.exe 
 
 :05
 :: https://desktop.telegram.org/
@@ -107,9 +107,10 @@ https://zoom.us/client/latest/ZoomInstallerFull.msi Zoom.msi
 :: https://www.epicgames.com/store/tr/
 https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi EpicGames.msi
 
-:09
+:9
 :: https://store.steampowered.com/about/
-https://cdn.cloudflare.steamstatic.com/client/installer/SteamSetup.exe Steam.exe 
+
+https://cdn.akamai.steamstatic.com/client/installer/SteamSetup.exe Steam.exe 
 
 :10
 https://cdn.gog.com/open/galaxy/client/2.0.37.384/setup_galaxy_2.0.37.384.exe GOG.exe 
@@ -130,38 +131,36 @@ https://d1tvmj3dyb0q0v.cloudfront.net/installer/260073092516468167/74653034 Chea
 https://api.wemod.com/client/download Wemod.exe 
 
 :15
-:: https://signup.tr.leagueoflegends.com/tr/signup/redownload?page_referrer=index
-https://lol.secure.dyn.riotcdn.net/channels/public/x/installer/current/live.tr.exe LeagueOfLegends.exe  
-
-:16
-:: https://blitz.gg/download
-https://blitz.gg/download/win Blitz.exe 
-
-:17
-:: https://support.google.com/chrome/a/answer/7650032?hl=tr   
+:: https://support.google.com/chrome/a/answer/7650032?hl=tr
 https://dl.google.com/tag/s/appguid%253D%257B8A69D345-D564-463C-AFF1-A69D9E530F96%257D%2526iid%253D%257BBEF3DB5A-5C0B-4098-B932-87EC614379B7%257D%2526lang%253Den%2526browser%253D4%2526usagestats%253D1%2526appname%253DGoogle%252520Chrome%2526needsadmin%253Dtrue%2526ap%253Dx64-stable-statsdef_1%2526brand%253DGCEB/dl/chrome/install/GoogleChromeEnterpriseBundle64.zip?_ga%3D2.8891187.708273100.1528207374-1188218225.1527264447 Chrome.zip
 
-:18
+:16
 https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=tr Firefox.exe
 
-:19
+:17
 https://brave-browser-downloads.s3.brave.com/latest/brave_installer-x64.exe Brave.exe
 
-:20
+:18
 :: https://www.microsoft.com/en-us/edge/business/download
-https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/e0f579f4-420a-43fb-b0b1-e6f86712ac76/MicrosoftEdgeEnterpriseX64.msi edge.msi 
+https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/4726286f-d08f-4d1c-9d86-8cc88d8ca208/MicrosoftEdgeEnterpriseX64.msi edge.msi 
+
+:19
+::ISLC
+
+:20
+:: https://github.com/henrypp/memreduct/releases
+https://github.com/henrypp/memreduct/releases/download/v.3.3.5/memreduct-3.3.5-setup.exe MemReduct.exe
 
 :21
 :: https://tr.libreoffice.org/indir/libreoffice-taze-surum/
-https://ftp.linux.org.tr/tdf/libreoffice/stable/7.2.4/win/x86_64/LibreOffice_7.2.4_Win_x64.msi LibreOffice.msi
+https://ftp.gwdg.de/pub/tdf/libreoffice/stable/7.2.5/win/x86_64/LibreOffice_7.2.5_Win_x64.msi LibreOffice.msi
 
 :22
-:: https://pdf-xchange.eu/DL/pdf-xchange-editor.htm
-https://www.pdf-xchange.de/DL/tracker9/editor-msi64-tracker.php PdfXchange.msi
+:: Microsoft Office
 
 :23
-:: https://notepad-plus-plus.org/downloads/
-https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.2/npp.8.2.Installer.x64.exe Notepad.exe 
+:: https://pdf-xchange.eu/DL/pdf-xchange-editor.htm
+https://www.pdf-xchange.de/DL/tracker9/editor-msi64-tracker.php PdfXchange.msi
 
 :24
 :: https://calibre-ebook.com/download_windows64 
@@ -181,7 +180,7 @@ https://download.kde.org/stable/kdenlive/21.12/windows/kdenlive-21.12.0.exe Kden
 
 :28 
 :: https://krita.org/en/download/krita-desktop/
-https://download.kde.org/stable/krita/5.0.0/krita-x64-5.0.0-setup.exe Krita.exe 
+https://download.kde.org/stable/krita/5.0.2/krita-x64-5.0.2-setup.exe Krita.exe 
 
 :29
 :: https://www.gimp.org/downloads/
@@ -193,7 +192,7 @@ https://cdn-fastly.obsproject.com/downloads/OBS-Studio-27.1.3-Full-Installer-x64
 
 :31
 ::https://github.com/ShareX/ShareX/releases
-https://github.com/ShareX/ShareX/releases/download/v13.6.1/ShareX-13.6.1-setup.exe ShareX.exe
+https://github.com/ShareX/ShareX/releases/download/v13.7.0/ShareX-13.7.0-setup.exe ShareX.exe
 
 :32
 :: https://www.audacityteam.org/download/
@@ -201,7 +200,7 @@ https://github.com/audacity/audacity/releases/download/Audacity-3.1.3/audacity-w
 
 :33
 :: https://codecguide.com/download_k-lite_codec_pack_mega.htm
-https://files2.codecguide.com/K-Lite_Codec_Pack_1665_Mega.exe Klite.exe
+https://files2.codecguide.com/K-Lite_Codec_Pack_1670_Mega.exe Klite.exe
 
 :34
 :: https://www.videolan.org/index.tr.html
@@ -220,32 +219,32 @@ https://www.any-video-converter.com/avc-free.exe AnyVideoConverter.exe
 https://dn3.freedownloadmanager.org/6/latest/fdm_x64_setup.exe FreeDownloadManager.exe
 
 :38
+:: https://www.internetdownloadmanager.com/
+https://mirror2.internetdownloadmanager.com/idman640build2.exe?v=lt&filename=idman640build2.exe idm.exe
+
+:39
 :: https://www.byclickdownloader.com/tr/
 https://proxy.byclickdownloader.com/ExternalSetup/InstallPage/ByClickDownloader-Setup.exe ByClick.exe
 
-:39
+:40
 :: https://www.utorrent.com/intl/tr/desktop/compare/
 https://download-hr.utorrent.com/track/stable/endpoint/utorrent/os/windows Utorrent.exe
 
-:40
+:41
 :: https://www.glasswire.com/
 https://download.glasswire.com/GlassWireSetup.exe GlassWire.exe
 
-:41
+:42
 :: https://www.teamviewer.com/tr/yukleme/windows/
 https://download.teamviewer.com/download/TeamViewer_Setup_x64.exe TeamViewer.exe
 
-:42
+:43
 :: https://www.vpn.net/
 https://secure.logmein.com/hamachi.msi Hamachi.msi
 
-:43
+:44
 :: https://www.stremio.com/downloads
 https://www.strem.io/download?platform=windows&four=true Stremio.exe
-
-:44
-:: https://code.visualstudio.com
-https://az764295.vo.msecnd.net/stable/899d46d82c4c95423fb7e10e68eba52050e30ba3/VSCodeUserSetup-x64-1.63.2.exe vscode.exe
 
 :45
 :: https://www.msi.com/Landing/afterburner/graphics-cards
@@ -253,58 +252,114 @@ https://ftp.nluug.nl/pub/games/PC/guru3d/afterburner/[Guru3D.com]-MSIAfterburner
 
 :46
 :: http://www.hibitsoft.ir/Uninstaller.html
-http://www.hibitsoft.ir/HiBitUninstaller/HiBitUninstaller-setup-2.7.15.exe Hibit.exe
+https://www.hibitsoft.ir/HiBitUninstaller/HiBitUninstaller-setup-2.7.35.exe Hibit.exe
 
 :47
-:: https://www.iobit.com/en/iobit-unlocker.php#
-https://cdn.iobit.com/dl/unlocker-setup.exe Unlocker.exe
+https://docs.google.com/uc?export=download&id=1HhC57sKyUV0-6roBqfLkDEwfo_ptXJdS WiseCare365.zip
 
 :48
-:: https://github.com/Open-Shell/Open-Shell-Menu/releases
-https://github.com/Open-Shell/Open-Shell-Menu/releases/download/v4.4.160/OpenShellSetup_4_4_160.exe OpenShell.exe
+:: https://www.iobit.com/en/iobit-unlocker.php#
+https://cdn.iobit.com/dl/unlocker-setup.exe Unlocker.exe
 
 :49
 http://www.omidsoft.com/download-ssd/setup.exe SSDBooster.exe 
 
 :50
+:: https://github.com/Open-Shell/Open-Shell-Menu/releases
+https://github.com/Open-Shell/Open-Shell-Menu/releases/download/v4.4.160/OpenShellSetup_4_4_160.exe OpenShell.exe
+
+:51
 :: https://www.voidtools.com/tr-tr/
 https://www.voidtools.com/Everything-1.4.1.1015.x64-Setup.exe Everything.exe
 
-:51
+:52
 :: https://github.com/ChrisAnd1998/TaskbarX/releases
 https://github.com/ChrisAnd1998/TaskbarX/releases/download/1.7.6.0/TaskbarX_1.7.6.0_x64.zip TaskbarX.zip  
 
-:52
-:: https://internetdownloadmanager.com/
-https://mirror2.internetdownloadmanager.com/idman640build2.exe?v=lt&filename=idman640build2.exe IDMAN.exe
-
 :53
+:: https://stellarium.org/
+https://github.com/Stellarium/stellarium/releases/download/v0.21.3/stellarium-0.21.3-win64.exe Stellarium.exe
+
+:54 
+:: Recuva
+https://download.ccleaner.com/rcsetup153.exe Recuva.exe
+
+:55
+:: AOMEI Partition Assistan
+https://www2.aomeisoftware.com/download/pa/PAssist_Std.exe AOMEI.exe
+
+:56
 :: https://www.python.org
-https://www.python.org/ftp/python/3.10.1/python-3.10.1-amd64.exe python-x64.exe
-https://www.python.org/ftp/python/3.10.1/python-3.10.1.exe python-x32.exe
+https://www.python.org/ftp/python/3.10.1/python-3.10.1-amd64.exe Python.exe
 
-:git
-:: https://git-scm.com/
-https://github.com/git-for-windows/git/releases/download/v2.34.1.windows.1/Git-2.34.1-64-bit.exe git.exe
+:57
+:: https://www.jetbrains.com/pycharm/download/#section=windows
+https://download.jetbrains.com/python/pycharm-professional-2021.3.1.exe PyCharm.exe
 
-:github_desktop
-:: https://desktop.github.com
-https://desktop.githubusercontent.com/github-desktop/releases/2.9.6-9196a1ae/GitHubDesktopSetup-x64.exe github_desktop.exe
+:58
+:: https://notepad-plus-plus.org/downloads/
+https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.2/npp.8.2.Installer.x64.exe Notepad.exe 
 
-:KaldÔøΩrÔøΩlanlar
-:d1
+:59
+:: https://code.visualstudio.com/
+https://az764295.vo.msecnd.net/stable/899d46d82c4c95423fb7e10e68eba52050e30ba3/VSCodeUserSetup-x64-1.63.2.exe VisualStudioCode.exe
+
+:60
+:: https://desktop.github.com/
+https://central.github.com/deployments/desktop/desktop/latest/win32 Github.exe
+
+:61
+:: git 
+https://github.com/git-for-windows/git/releases/download/v2.34.1.windows.1/Git-2.34.1-64-bit.exe Git.exe
+
+:64
+:65
+:66
+:67
+:68
+:69
+:70
+:71
+:72
+:73
+
+:74
+:: https://worldoftanks.eu/tr/game/download/
+https://redirect.wargaming.net/WoT/latest_web_install_eu WorldOfTanks.exe
+
+:75
+::
+https://ys-api-os.mihoyo.com/event/download_porter/link/ys_global/genshinimpactpc/default GenshinImpact.exe
+
+:76
+:: https://signup.tr.leagueoflegends.com/tr/signup/redownload?page_referrer=index
+https://lol.secure.dyn.riotcdn.net/channels/public/x/installer/current/live.tr.exe LeagueOfLegends.exe
+
+:77
+:: https://blitz.gg/download
+https://blitz.gg/download/win Blitz.exe
+
+:78
+:: https://playvalorant.com/tr-tr/download/
+https://valorant.secure.dyn.riotcdn.net/channels/public/x/installer/current/live.live.eu.exe Valorant.exe
+
+
+
+:Kaldçrçlanlar
+:k1
 :: get.adobe.com/tr/reader/enterprise/
 ::https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2100120155/AcroRdrDC2100120155_en_US.exe AdobeReader.exe
 ::https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/1900820071/AcroRdrDC1900820071_tr_TR.exe AdobeReader.exe 
 
-:d2
+:k2
 :: EagleGet
 http://dl.eagleget.com/latest/eagleget_setup.exe EagleGet.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
 
-:d3
+:k3
 :: https://app.prntscr.com/tr/download.html
 https://app.prntscr.com/build/setup-lightshot.exe LightShoot.exe
 
-:d4
+:k4
 :: http://www.pcfreetime.com/formatfactory/index.php?language=en
 http://public.pcfreetime.com/FFSetup5.9.0.0.exe FormatFactory.exe
+
