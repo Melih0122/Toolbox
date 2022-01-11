@@ -188,7 +188,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 		
 	• 8 - Gpedit.msc (Yerel Grup ilkesi) [Ekle]: Windows Home ve Home Single Language sürümlerine "Gpedit.msc" ekler.
 ### • 54 - Kapatılan Servisleri Yönet
-![KapatılanServis](https://user-images.githubusercontent.com/93199689/147974759-85ee1d62-5f2b-487c-9d67-0a1bac1a3ee0.png)
+![KapatılanServisYonetimi](https://user-images.githubusercontent.com/93199689/148984019-69ee9db8-2026-4a85-9daf-e1b5949c3ce8.png)
 
 	• 1 - Bluetooth [Aç]: Bluetooth hizmetlerini açar.
 	• 2 - Yazıcı [Aç]: Yazıcı hizmetlerini açar.
@@ -328,6 +328,7 @@ Mavi renkli işlem numaraları 27 numaralı işlem ile alakalıdır.
 	• İçerisinde belirli sitelerin ping durumlarını otomatik gösterir. Alt bölümde yer alan "Ping ölç" bölümüyle istediğiniz site ve IP'nin pingini ölçebilirsiniz.
 ### • 64 - Lisans Yönetimi: 
 SLMGR.VBS komutlarını içermektedir. Crack tarzı işlemler bulunmamaktadır.
+![LisansYonetimi](https://user-images.githubusercontent.com/93199689/148984026-2f91e49b-5fd0-4a14-85b0-aeab3ffa1d48.png)
 
 	• 1 - Lisans Gir [ipk]: Lisans numaranızı girerek sistemi lisanslayabilirsiniz.
 	• 2 - Lisans Durumu [dli]: Lisans durumu hakkında bilgi verir.
@@ -336,6 +337,8 @@ SLMGR.VBS komutlarını içermektedir. Crack tarzı işlemler bulunmamaktadır.
 	• 5 - Lisans Sil [upk]: Sistem kullandığınız lisansı siler.
 	• 6 - Lisans Süre Sıfırla [rearm]: Windows 30 günlük deneme sürümü süresini 3 defa uzatabilirsiniz. 
 ### • 65 - Kullancı Hesap Yönetimi: 
+![KullanıcıHesabı](https://user-images.githubusercontent.com/93199689/148984022-2d26e786-5d72-4941-9753-c7ff7e923927.png)
+
 	• 1 - Administrator [AKTİF]: Administrator hesabını açar.
 	• 2 - Administrator [PASİF]: Administrator hesabını kapatır.
 	• 3 - Admin grubuna Kullanıcı ekle: Admin grubuna kullanıcı eklersiniz.
@@ -344,6 +347,7 @@ SLMGR.VBS komutlarını içermektedir. Crack tarzı işlemler bulunmamaktadır.
 	• 6 - Şifremi unuttum: Şifre değiştirmek veya şifre oluşturmak için bu bölüm kullanılabilir.
 	• 7 - Mevcut Kullanıcıları Göster: Sistemde kayıtlı kullanıcıları gösterir.
 ### • 66 - Sistem Hakkında:
+![SistemHakkında](https://user-images.githubusercontent.com/93199689/148984034-bcafa477-5e34-4fe5-8723-09c16225dcee.png)
 	• Sistem ve donanım hakkında bilgi verir.
 ### • 67 - Wifi Crack:	 
 	• Bu bölümde sisteme girdiğiniz Wifi liste ve şifrelerini görebilirsiniz.
