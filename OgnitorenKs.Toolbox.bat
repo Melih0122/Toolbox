@@ -147,6 +147,7 @@ FOR /F "tokens=3 delims= " %%f in ('reg query "HKLM\SOFTWARE\Microsoft\Windows N
 for /f "tokens=2 delims='('" %%f in ('powercfg -list ^| findstr /C:"*"') do set gucc=%%f
 set gucc=%gucc:~0,-3%
 
+
 :: MenÅ iáinde sisteme gîre ayarlama yapçyorum
 FOR /F "tokens=5" %%a in ('FIND "Caption" %Logs%\OS.txt') do set caption2=%%a 
 	if %caption2%==10 (set editmenu=Windows 10 Edit)
@@ -157,7 +158,7 @@ echo %caption2% > NUL
 	if %caption2%==10 (set editmenugo=Win10SettingsMenu) 
 	if %caption2%==11 (set editmenugo=Win11SettingsMenu)
 
-set versiyon=1.8
+set versiyon=1.9
 
 ::set editmenu=Windows 11 Edit
 ::set editmenugo=Win11SettingsMenu
@@ -203,7 +204,7 @@ echo   %ESC%[90m∫%ESC%%ESC%[32m 18.%ESC%%RGB%[33m Microsoft Edge%RGB%[0m       %
 echo   %ESC%[90m∫%ESC%%ESC%[32m 19.%ESC%%RGB%[37m ISLC%RGB%[0m                 %ESC%[90m∫%ESC%[0m %ESC%[32m 45.%ESC%%RGB%[36m MSI Afterburner%RGB%[0m        %ESC%[90m∫%ESC%[0m                                 %ESC%[90m∫%ESC%[0m 
 echo   %ESC%[90m∫%ESC%%ESC%[32m 20.%ESC%%RGB%[37m MemReduct%RGB%[0m            %ESC%[90m∫%ESC%[0m %ESC%[32m 46.%ESC%%RGB%[36m Hibit Uninstaller%RGB%[0m      %ESC%[90m∫%ESC%[0m                                 %ESC%[90m∫%ESC%[0m 
 echo   %ESC%[90m∫%ESC%%ESC%[32m 21.%ESC%%RGB%[36m Libre Office%RGB%[0m         %ESC%[90m∫%ESC%[0m %ESC%[32m 47.%ESC%%RGB%[36m Wise Care 365%RGB%[0m          %ESC%[90m∫%ESC%[0m                                 %ESC%[90m∫%ESC%[0m 
-echo   %ESC%[90m∫%ESC%%ESC%[32m 22.%ESC%%RGB%[36m Microsoft Office 2019%RGB%[0m%ESC%[90m∫%ESC%[0m %ESC%[32m 48.%ESC%%RGB%[36m Unlocker%RGB%[0m               %ESC%[90m∫%ESC%[0m                                 %ESC%[90m∫%ESC%[0m 
+echo   %ESC%[90m∫%ESC%%ESC%[32m 22.%ESC%%RGB%[36m Adobe Reader%RGB%[0m         %ESC%[90m∫%ESC%[0m %ESC%[32m 48.%ESC%%RGB%[36m Unlocker%RGB%[0m               %ESC%[90m∫%ESC%[0m                                 %ESC%[90m∫%ESC%[0m 
 echo   %ESC%[90m∫%ESC%%ESC%[32m 23.%ESC%%RGB%[36m PDF-XChange Editîr%RGB%[0m   %ESC%[90m∫%ESC%[0m %ESC%[32m 49.%ESC%%RGB%[36m SSD Booster%RGB%[0m            %ESC%[90m∫%ESC%[0m                                 %ESC%[90m∫%ESC%[0m 
 echo   %ESC%[90m∫%ESC%%ESC%[32m 24.%ESC%%RGB%[36m Calibre%RGB%[0m              %ESC%[90m∫%ESC%[0m %ESC%[32m 50.%ESC%%RGB%[36m OpenShell%RGB%[0m              %ESC%[90m∫%ESC%%ESC%[32m 97.%ESC%%RGB%[36m Toolbox Kullançmç%RGB%[0m           %ESC%[90m∫%ESC%[0m 
 echo   %ESC%[90m∫%ESC%%ESC%[32m 25.%ESC%%RGB%[33m 7 - Zip%RGB%[0m              %ESC%[90m∫%ESC%[0m %ESC%[32m 51.%ESC%%RGB%[36m Everything%RGB%[0m             %ESC%[90m∫%ESC%%ESC%[32m 98.%ESC%%RGB%[36m Toolbox GÅncelle%RGB%[0m            %ESC%[90m∫%ESC%[0m 
@@ -321,7 +322,7 @@ echo   %ESC%[90m∫%ESC%%ESC%[32m 18.%ESC%%RGB%[33m Microsoft Edge%RGB%[0m       %
 echo   %ESC%[90m∫%ESC%%ESC%[32m 19.%ESC%%RGB%[37m ISLC%RGB%[0m                 %ESC%[90m∫%ESC%[0m %ESC%[32m 45.%ESC%%RGB%[36m MSI Afterburner%RGB%[0m        %ESC%[90m∫%ESC%%ESC%[32m 71.%ESC%%RGB%[36m %RGB%[0m                            %ESC%[90m∫%ESC%[0m 
 echo   %ESC%[90m∫%ESC%%ESC%[32m 20.%ESC%%RGB%[37m MemReduct%RGB%[0m            %ESC%[90m∫%ESC%[0m %ESC%[32m 46.%ESC%%RGB%[36m Hibit Uninstaller%RGB%[0m      %ESC%[90m∫%ESC%%ESC%[32m 72.%ESC%%RGB%[36m %RGB%[0m                            %ESC%[90m∫%ESC%[0m 
 echo   %ESC%[90m∫%ESC%%ESC%[32m 21.%ESC%%RGB%[36m Libre Office%RGB%[0m         %ESC%[90m∫%ESC%[0m %ESC%[32m 47.%ESC%%RGB%[36m Wise Care 365%RGB%[0m          %ESC%[90m∫%ESC%%ESC%[32m 73.%ESC%%RGB%[36m %RGB%[0m                            %ESC%[90m∫%ESC%[0m 
-echo   %ESC%[90m∫%ESC%%ESC%[32m 22.%ESC%%RGB%[36m Microsoft Office 2019%RGB%[0m%ESC%[90m∫%ESC%[0m %ESC%[32m 48.%ESC%%RGB%[36m Unlocker%RGB%[0m               %ESC%[90m∫%ESC%%ESC%[32m 74.%ESC%%RGB%[37m World Of Tanks%RGB%[0m              %ESC%[90m∫%ESC%[0m 
+echo   %ESC%[90m∫%ESC%%ESC%[32m 22.%ESC%%RGB%[36m Adobe Reader%RGB%[0m         %ESC%[90m∫%ESC%[0m %ESC%[32m 48.%ESC%%RGB%[36m Unlocker%RGB%[0m               %ESC%[90m∫%ESC%%ESC%[32m 74.%ESC%%RGB%[37m World Of Tanks%RGB%[0m              %ESC%[90m∫%ESC%[0m 
 echo   %ESC%[90m∫%ESC%%ESC%[32m 23.%ESC%%RGB%[36m PDF-XChange Editîr%RGB%[0m   %ESC%[90m∫%ESC%[0m %ESC%[32m 49.%ESC%%RGB%[36m SSD Booster%RGB%[0m            %ESC%[90m∫%ESC%%ESC%[32m 75.%ESC%%RGB%[37m Genshin Impact%RGB%[0m              %ESC%[90m∫%ESC%[0m 
 echo   %ESC%[90m∫%ESC%%ESC%[32m 24.%ESC%%RGB%[36m Calibre%RGB%[0m              %ESC%[90m∫%ESC%[0m %ESC%[32m 50.%ESC%%RGB%[36m OpenShell%RGB%[0m              %ESC%[90m∫%ESC%%ESC%[32m 76.%ESC%%RGB%[37m League Of Legends%RGB%[0m           %ESC%[90m∫%ESC%[0m 
 echo   %ESC%[90m∫%ESC%%ESC%[32m 25.%ESC%%RGB%[33m 7 - Zip%RGB%[0m              %ESC%[90m∫%ESC%[0m %ESC%[32m 51.%ESC%%RGB%[36m Everything%RGB%[0m             %ESC%[90m∫%ESC%%ESC%[32m 77.%ESC%%RGB%[37m Blitz%RGB%[0m                       %ESC%[90m∫%ESC%[0m 
@@ -330,9 +331,11 @@ echo   %ESC%[90mÃÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕ ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕ ÕÕÕÕÕÕ
 echo   %ESC%[90m∫%ESC%[0m                             %ESC%[32m X.%ESC%%ESC%[33m ^<^<^< Listeyi Daralt%ESC%[0m                                       %ESC%[90m∫%ESC%[0m
 echo   %ESC%[90m»ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕº%ESC%[0m
 set /p $multi= %ESC%[96m  Seáim arasçna virgÅl koyun  : %ESC%[0m
-echo %$multi% > NUL
-	if %$multi%==x goto menu
-	if %$multi%==X goto menu	
+
+echo %$multi% | find "x" > NUL 2>&1
+	if %errorlevel%==0 goto menu
+echo %$multi% | find "X" > NUL 2>&1
+	if %errorlevel%==0 goto menu	
 (
 echo ---------------------------------------------------------------------------------------------------------------------------
 echo [%date% - %time%] ^| MultiSelect ^| Seáilenler:"%$multi%"
@@ -345,72 +348,44 @@ echo   %ESC%[90mÃÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕ
 echo                                         %ESC%[92m ÄOKLU òNDòRME%ESC%[0m 
 echo   %ESC%[90m»ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕº%ESC%[0m
 echo    %RGB%[96m Seáilen indirmeler: %$multi%%RGB%[0m
+:MultiSelect
 FOR %%a in (%$multi%) do (Call :Download%%a)
 echo --------------------------------------------------------------------------------------------------------------------------- >> %konum%\Logs
 goto menu2
-
-
-:MultiSelect
-set /p $multi= %ESC%[96m  Seáim arasçna virgÅl koyun  : %ESC%[0m
-(
-echo ---------------------------------------------------------------------------------------------------------------------------
-echo [%date% - %time%] ^| MultiSelect ^| Seáilenler:"%$multi%"
-) >> %konum%\Logs
-cls
-echo   %ESC%[90m…ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕª%ESC%[0m
-echo   %ESC%[90m∫%ESC%[1;97m%ESC%%ESC%[100m OGNITORENKS TOOLBOX %ESC%[0m%ESC%[90m ^|%ESC%%ESC%[32m USER:%ESC%%ESC%[37m %registereduser% %ESC%%ESC%[90m^|%ESC%%ESC%[32m PC-Name: %ESC%%ESC%[37m%pcname%%ESC%[0m	
-echo   %ESC%[90m∫%ESC%%ESC%[32m OS:%ESC%%ESC%[37m %caption% %ESC%%ESC%[90m^|%ESC%%ESC%[37m x%osarch% %ESC%%ESC%[90m^|%ESC%%ESC%[37m %ImageBuild% %ESC%[0m%ESC%[90m^|%ESC%%ESC%[37m %isderleme% %ESC%%ESC%[90m^|%ESC%%ESC%[32m GÅá:%ESC%%ESC%[37m %gucc% %ESC%[0m
-echo   %ESC%[90mÃÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕπ%ESC%[0m
-echo                                         %ESC%[92m ÄOKLU òNDòRME%ESC%[0m 
-echo   %ESC%[90m»ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕº%ESC%[0m
-echo    %RGB%[96m Seáilen indirmeler: %$multi%%RGB%[0m
-FOR %%a in (%$multi%) do (Call :Download%%a)
-echo --------------------------------------------------------------------------------------------------------------------------- >> %konum%\Logs
-goto menu
 
 :Download1
 cls
 :: Aüaßçdaki FOR dîngÅsÅyle link.bat dosyasç iáinden programlara ait linkleri alçyorum.
 :: Link sistemini katçlçmsçz program hazçrlama bîlÅmÅnde kullandçßçm iáin ortak bir sistem olarak hazçrladçm.
 :: Dißer download bîlÅmleri de aynç üekilde áalçümaktadçr.
-FOR /F "tokens=1" %%i in ('FIND "05x86ATL" %konum%\Ekler\Links.bat') do set link=%%i
-Call :wget "%link%" 05x86ATL.exe /Q
-FOR /F "tokens=1" %%i in ('FIND "05x64ATL" %konum%\Ekler\Links.bat') do set link=%%i
-Call :wget "%link%" 05x64ATL.exe /Q
+FOR /F "tokens=1" %%i in ('FIND "05x86.exe" %konum%\Ekler\Links.bat') do set link=%%i
+Call :wget "%link%" 05x86.exe /Q
+FOR /F "tokens=1" %%i in ('FIND "05x64.exe" %konum%\Ekler\Links.bat') do set link=%%i
+Call :wget "%link%" 05x64.exe /Q
 
-FOR /F "tokens=1" %%i in ('FIND "05x86MFC" %konum%\Ekler\Links.bat') do set link=%%i
-Call :wget "%link%" 05x86MFC.exe /Q
-FOR /F "tokens=1" %%i in ('FIND "05x64MFC" %konum%\Ekler\Links.bat') do set link=%%i
-Call :wget "%link%" 05x64MFC.exe /Q
+FOR /F "tokens=1" %%i in ('FIND "08x86.exe" %konum%\Ekler\Links.bat') do set link=%%i
+Call :wget "%link%" 08x86.exe /q
+FOR /F "tokens=1" %%i in ('FIND "08x64.exe" %konum%\Ekler\Links.bat') do set link=%%i
+Call :wget "%link%" 08x64.exe /q
 
-FOR /F "tokens=1" %%i in ('FIND "08x86ATL" %konum%\Ekler\Links.bat') do set link=%%i
-Call :wget "%link%" 08x86ATL.exe /q
-FOR /F "tokens=1" %%i in ('FIND "08x64ATL" %konum%\Ekler\Links.bat') do set link=%%i
-Call :wget "%link%" 08x64ATL.exe /q
-
-FOR /F "tokens=1" %%i in ('FIND "08x86MFC" %konum%\Ekler\Links.bat') do set link=%%i
-Call :wget "%link%" 08x86MFC.exe /q
-FOR /F "tokens=1" %%i in ('FIND "08x64MFC" %konum%\Ekler\Links.bat') do set link=%%i
-Call :wget "%link%" 08x64MFC.exe /q
-
-FOR /F "tokens=1" %%i in ('FIND "10x86" %konum%\Ekler\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "10x86.exe" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" 10x86.exe "/q /norestart"
-FOR /F "tokens=1" %%i in ('FIND "10x64" %konum%\Ekler\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "10x64.exe" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" 10x64.exe "/q /norestart"
 
-FOR /F "tokens=1" %%i in ('FIND "12x86" %konum%\Ekler\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "12x86.exe" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" 12x86.exe "/install /quiet /norestart"
-FOR /F "tokens=1" %%i in ('FIND "12x64" %konum%\Ekler\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "12x64.exe" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" 12x64.exe "/install /quiet /norestart"
 
-FOR /F "tokens=1" %%i in ('FIND "13x86" %konum%\Ekler\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "13x86.exe" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" 13x86.exe "/install /quiet /norestart"
-FOR /F "tokens=1" %%i in ('FIND "13x64" %konum%\Ekler\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "13x64.exe" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" 13x64.exe "/install /quiet /norestart"
 
-FOR /F "tokens=1" %%i in ('FIND "15x86" %konum%\Ekler\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "15x86.exe" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" 15x86.exe "/install /quiet /norestart"
-FOR /F "tokens=1" %%i in ('FIND "15x64" %konum%\Ekler\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "15x64.exe" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" 15x64.exe "/install /quiet /norestart" 
 
 FOR /F "tokens=1" %%i in ('FIND "javax64" %konum%\Ekler\Links.bat') do set link=%%i
@@ -555,16 +530,8 @@ Call :wget "%link%" LibreOffice.msi "/qn /norestart ALLUSERS=1 CREATEDESKTOPLINK
 goto :eof
 
 :Download22
-::Office
-Powershell -command "Expand-Archive -Force '%konum%\Files\OfficeSetup.zip' '%download%'"
-echo  %ESC%[32m Microsoft Office indiriliyor...%ESC%[0m
-echo  %ESC%[32m òndirme iülemi uzun sÅrebilir...%ESC%[0m
-%download%\SETUP /download OgnitorenKs.xml
-echo  %ESC%[32m òndirme iülemi tamamlandç.%ESC%[0m
-echo  %ESC%[32m Microsoft Office kuruluyor...%ESC%[0m
-%download%\SETUP /configure OgnitorenKs.xml
-echo  %ESC%[32m Kurulum iülemi tamamlandç.%ESC%[0m
-timeout /t 2 /nobreak > NUL
+FOR /F "tokens=1" %%i in ('FIND "AdobeReader.exe" %konum%\Ekler\Links.bat') do set link=%%i
+Call :wget "%link%" "AdobeReader.exe" "/sPB /rs /msi"
 goto :eof
 
 :Download23
@@ -648,7 +615,6 @@ goto :eof
 FOR /F "tokens=1" %%i in ('FIND "idm.exe" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" idm.exe /skipdlgs
 goto :eof
-
 
 :Download39
 FOR /F "tokens=1" %%i in ('FIND "ByClick" %konum%\Ekler\Links.bat') do set link=%%i
@@ -806,13 +772,16 @@ mode con cols=80 lines=30
 
 Call :Logss "WindowsRepair" "Windows onarma seáeneßi kullançldç."
 
-Call :PC.Temizle
 echo %ESC%[92m   Sfc /scannow komutu áalçüçyor...%ESC%[0m
 sfc /scannow
 echo %ESC%[92m   DISM /Online /Cleanup-Image /RestoreHealth komutu áalçütçrçlçyor...%ESC%[0m
 DISM /Online /Cleanup-Image /RestoreHealth
 echo %ESC%[92m   WinSxS Temizleniyor...%ESC%[0m
 Dism /Online /Cleanup-Image /StartComponentCleanup 
+echo %ESC%[92m   SoftwareDistribution temizleniyor...%ESC%[0m
+net stop wuauserv > NUL 2>&1
+RD /S /Q  %windir%\SoftwareDistribution > NUL 2>&1
+net start wuauserv > NUL 2>&1
 echo %ESC%[92m   Market Regedit kayçtlarç dÅzenleniyor...%ESC%[0m
 :: Market bîlÅmÅnÅnÅn sorunsuz áalçümasç iáin reg kayçtlarçnç dÅzenler
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsStore" /f /v "RemoveWindowsStore" /t REG_DWORD /d 0 > NUL 2>&1
@@ -853,7 +822,7 @@ goto :eof
 
 :PCTemizle
 cls
-Call :Logss "PCTemizle" "'PC Temizle' seáeßi áalçütçrçldç."
+Call :Logss "PCTemizle" "PC Temizle seáeßi áalçütçrçldç."
 echo %ESC%[92m   Eski tarihli dosya geámiüi temizleniyor...%ESC%[0m
 FhManagew.exe -cleanup 360 -quiet > NUL 2>&1
 
@@ -1011,18 +980,18 @@ title Kapatçlan Servisler Yînetimi / OgnitorenKs
 echo  %ESC%[90m…ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕª%ESC%[0m
 echo  %ESC%[90m∫%ESC%%ESC%[1;97m%ESC%%ESC%[100m           Kapatçlan Servisler Yînetimi            %ESC%[0m%ESC%[90m∫%ESC%[0m
 echo  %ESC%[90mÃÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕπ%ESC%[0m
-echo  %ESC%[90m∫%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m Bluetooth %RGB%%RGB%[90m[AÄ]%RGB%[0m                              %ESC%[90m∫%ESC%[0m
-echo  %ESC%[90m∫%ESC%[0m   %ESC%[32m 2.%ESC%%RGB%[33m Yazçcç %RGB%%RGB%[90m[AÄ]%RGB%[0m                                 %ESC%[90m∫%ESC%[0m
-echo  %ESC%[90m∫%ESC%[0m   %ESC%[32m 3.%ESC%%RGB%[33m Telefon Hizmetini %RGB%%RGB%[90m[AÄ]%RGB%[0m                      %ESC%[90m∫%ESC%[0m
-echo  %ESC%[90m∫%ESC%[0m   %ESC%[32m 4.%ESC%%RGB%[33m Tarifeli aßlarç %RGB%%RGB%[90m[AÄ]%RGB%[0m                        %ESC%[90m∫%ESC%[0m
-echo  %ESC%[90m∫%ESC%[0m   %ESC%[32m 5.%ESC%%RGB%[33m IP yardçmcçsç %RGB%%RGB%[90m[AÄ]%RGB%[0m                          %ESC%[90m∫%ESC%[0m
-echo  %ESC%[90m∫%ESC%[0m   %ESC%[32m 6.%ESC%%RGB%[33m Mobil Etkin Nokta (Hotspot) %RGB%%RGB%[90m[AÄ]%RGB%[0m            %ESC%[90m∫%ESC%[0m
-echo  %ESC%[90m∫%ESC%[0m   %ESC%[32m 7.%ESC%%RGB%[33m Radyo ve Uáak modu hizmetini %RGB%%RGB%[90m[AÄ]%RGB%[0m           %ESC%[90m∫%ESC%[0m
-echo  %ESC%[90m∫%ESC%[0m   %ESC%[32m 8.%ESC%%RGB%[33m Akçü deneyimini (Ekran paylaü) %RGB%%RGB%[90m[AÄ]%RGB%[0m         %ESC%[90m∫%ESC%[0m
-echo  %ESC%[90m∫%ESC%[0m   %ESC%[32m 9.%ESC%%RGB%[33m Windows ûimdi Baßlan(WPS) %RGB%%RGB%[90m[AÄ]%RGB%[0m              %ESC%[90m∫%ESC%[0m
-echo  %ESC%[90m∫%ESC%[0m  %ESC%[32m 10.%ESC%%RGB%[33m Tarayçcç hizmetlerini %RGB%%RGB%[90m[AÄ]%RGB%[0m                  %ESC%[90m∫%ESC%[0m
-echo  %ESC%[90m∫%ESC%[0m  %ESC%[32m 11.%ESC%%RGB%[33m Kamera hizmetlerini %RGB%%RGB%[90m[AÄ]%RGB%[0m                    %ESC%[90m∫%ESC%[0m
-echo  %ESC%[90m∫%ESC%[0m  %ESC%[32m 12.%ESC%%RGB%[33m Uzak MasaÅstÅ %RGB%%RGB%[90m[AÄ]%RGB%[0m                          %ESC%[90m∫%ESC%[0m
+echo  %ESC%[90m∫%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m Bluetooth hizmetini %RGB%%RGB%[90m[AÄ]%RGB%[0m                    %ESC%[90m∫%ESC%[0m
+echo  %ESC%[90m∫%ESC%[0m   %ESC%[32m 2.%ESC%%RGB%[33m Yazçcç hizmetini %RGB%%RGB%[90m[AÄ]%RGB%[0m                       %ESC%[90m∫%ESC%[0m
+echo  %ESC%[90m∫%ESC%[0m   %ESC%[32m 3.%ESC%%RGB%[33m Baskç hizmetini %RGB%%RGB%[90m[AÄ]%RGB%[0m                        %ESC%[90m∫%ESC%[0m
+echo  %ESC%[90m∫%ESC%[0m   %ESC%[32m 4.%ESC%%RGB%[33m Telefon hizmetini %RGB%%RGB%[90m[AÄ]%RGB%[0m                      %ESC%[90m∫%ESC%[0m
+echo  %ESC%[90m∫%ESC%[0m   %ESC%[32m 5.%ESC%%RGB%[33m Tarifeli aßlarç %RGB%%RGB%[90m[AÄ]%RGB%[0m                        %ESC%[90m∫%ESC%[0m
+echo  %ESC%[90m∫%ESC%[0m   %ESC%[32m 6.%ESC%%RGB%[33m IP yardçmcçsç (IPv6)%RGB%%RGB%[90m[AÄ]%RGB%[0m                    %ESC%[90m∫%ESC%[0m
+echo  %ESC%[90m∫%ESC%[0m   %ESC%[32m 7.%ESC%%RGB%[33m Mobil Etkin Nokta (Hotspot) %RGB%%RGB%[90m[AÄ]%RGB%[0m            %ESC%[90m∫%ESC%[0m
+echo  %ESC%[90m∫%ESC%[0m   %ESC%[32m 8.%ESC%%RGB%[33m Radyo ve Uáak modu hizmetini %RGB%%RGB%[90m[AÄ]%RGB%[0m           %ESC%[90m∫%ESC%[0m
+echo  %ESC%[90m∫%ESC%[0m   %ESC%[32m 9.%ESC%%RGB%[33m Uzak MasaÅstÅ/Akçü/Aß hizmetleri%RGB%%RGB%[90m[AÄ]%RGB%[0m        %ESC%[90m∫%ESC%[0m
+echo  %ESC%[90m∫%ESC%[0m  %ESC%[32m 10.%ESC%%RGB%[33m Windows ûimdi Baßlan(WPS) %RGB%%RGB%[90m[AÄ]%RGB%[0m              %ESC%[90m∫%ESC%[0m
+echo  %ESC%[90m∫%ESC%[0m  %ESC%[32m 11.%ESC%%RGB%[33m Tarayçcç hizmetlerini %RGB%%RGB%[90m[AÄ]%RGB%[0m                  %ESC%[90m∫%ESC%[0m
+echo  %ESC%[90m∫%ESC%[0m  %ESC%[32m 12.%ESC%%RGB%[33m Kamera hizmetlerini %RGB%%RGB%[90m[AÄ]%RGB%[0m                    %ESC%[90m∫%ESC%[0m
 echo  %ESC%[90m∫%ESC%[0m  %ESC%[32m 13.%ESC%%RGB%[33m Insider hizmetini %RGB%%RGB%[90m[AÄ]%RGB%[0m                      %ESC%[90m∫%ESC%[0m
 echo  %ESC%[90m∫%ESC%[0m  %ESC%[32m 14.%ESC%%RGB%[33m Biyometrik hizmeti %RGB%%RGB%[90m[AÄ]%RGB%[0m                     %ESC%[90m∫%ESC%[0m
 echo  %ESC%[90m∫%ESC%[0m  %ESC%[32m 15.%ESC%%RGB%[33m Kalem ve Dokunmatik Klavye hizmetini %RGB%%RGB%[90m[AÄ]%RGB%[0m   %ESC%[90m∫%ESC%[0m
@@ -1036,16 +1005,16 @@ echo  %ESC%[90m»ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕº%ESC%[0m
 set /p deger= %RGB%[92m òülem : %RGB%[0m
 	if %deger%==1 goto serv.1.bluetooth
 	if %deger%==2 goto serv.2.yazici
-	if %deger%==3 goto serv.3.phone
-	if %deger%==4 goto serv.4.tarifeli
-	if %deger%==5 goto serv.5.ipyardimci
-	if %deger%==6 goto serv.6.hotspot
-	if %deger%==7 goto serv.7.ucakmodu
-	if %deger%==8 goto serv.8.akis
-	if %deger%==9 goto serv.9.wps
-	if %deger%==10 goto serv.10.tarayici
-	if %deger%==11 goto serv.11.camera
-	if %deger%==12 goto serv.12.uzakmasaÅstÅ
+	if %deger%==3 goto serv.3.baski
+	if %deger%==4 goto serv.4.phone
+	if %deger%==5 goto serv.5.tarifeli
+	if %deger%==6 goto serv.6.ipyardimci
+	if %deger%==7 goto serv.7.hotspot
+	if %deger%==8 goto serv.8.ucakmodu
+	if %deger%==9 goto serv.9.akis
+	if %deger%==10 goto serv.10.wps
+	if %deger%==11 goto serv.11.tarayici
+	if %deger%==12 goto serv.12.camera
 	if %deger%==13 goto serv.13.insider
 	if %deger%==14 goto serv.14.biyometrik
 	if %deger%==15 goto serv.15.dokunmatik
@@ -1079,9 +1048,6 @@ net start BluetoothUserService > NUL 2>&1
 ::  Eller boüta profilinin ses aß geáidini destekler.
 sc config "BTAGService" start= demand > NUL 2>&1
 net start BTAGService > NUL 2>&1
-:: Natural Kimlik Doßrulayçcçsç
-sc config NaturalAuthentication start= demand > NUL 2>&1
-net start NaturalAuthentication > NUL 2>&1
 goto kapatilanservisleryînetimi
 
 :serv.2.yazici
@@ -1090,15 +1056,18 @@ echo  %RGB%[96mYazçcç hizmetleri aáçlçyor...%RGB%[0m 
 sc config "Spooler" start= auto > NUL 2>&1
 net start Spooler > NUL 2>&1
 DEL /F /Q /A %windir%\System32\spool\PRINTERS\* > NUL 2>&1
-::PrintWorkFlow (iü akçüç hizmeti)
-sc config PrintWorkflowUserSvc start= demand > NUL 2>&1
-net start PrintWorkflowUserSvc > NUL 2>&1
 :: Uzak MasaÅstÅ Hizmetleri Kullançcç Modu Baßlantç Noktasç Yeniden Yînlendiricisi
 sc config UmRdpService start= demand > NUL 2>&1
-net start UmRdpService > NUL 2>&1
 goto kapatilanservisleryînetimi
 
-:serv.3.phone
+:serv.3.baski
+echo [%date% - %time%] ^| Kapatçlan Hizmetleri Yînet ^| Yazçcç hizmeti aáçldç. >> %konum%\Logs
+echo  %RGB%[96mBaskç hizmetleri aáçlçyor...%RGB%[0m 
+::PrintWorkFlow (iü akçüç hizmeti)
+sc config McpManagementService start= demand > NUL 2>&1
+sc config PrintWorkflowUserSvc start= demand > NUL 2>&1
+
+:serv.4.phone
 echo [%date% - %time%] ^| Kapatçlan Hizmetleri Yînet ^| Telefon hizmeti aáçldç. >> %konum%\Logs
 echo  %RGB%[96mTelefon hizmeti aáçlçyor...%RGB%[0m 
 :: Telefon
@@ -1123,12 +1092,9 @@ net start BluetoothUserService > NUL 2>&1
 ::  Eller boüta profilinin ses aß geáidini destekler.
 sc config "BTAGService" start= demand > NUL 2>&1
 net start BTAGService > NUL 2>&1
-:: Natural Kimlik Doßrulayçcçsç
-sc config NaturalAuthentication start= demand > NUL 2>&1
-net start NaturalAuthentication > NUL 2>&1
 goto kapatilanservisleryînetimi
 
-:serv.4.tarifeli
+:serv.5.tarifeli
 echo [%date% - %time%] ^| Kapatçlan Hizmetleri Yînet ^| Tarifeli aßlar hizmeti aáçldç. >> %konum%\Logs
 echo  %RGB%[96mTarifeli aßlar hizmeti aáçlçyor...%RGB%[0m 
 :: Veri kullançmç
@@ -1137,7 +1103,7 @@ sc config DusmSvc start= auto > NUL 2>&1
 net start DusmSvc > NUL 2>&1
 goto kapatilanservisleryînetimi
 
-:serv.5.ipyardçmci
+:serv.6.ipyardçmci
 echo [%date% - %time%] ^| Kapatçlan Hizmetleri Yînet ^| IP yardçmcç hizmeti aáçldç. >> %konum%\Logs
 echo  %RGB%[96mIP yardçmcçsç hizmeti aáçlçyor...%RGB%[0m 
 ::  IPv6 geáiü teknolojileri ve IP-HTTPS kullanarak tÅnel baßlantçsç saßlar.
@@ -1148,7 +1114,7 @@ sc config IpxlatCfgSvc start= demand > NUL 2>&1
 net start IpxlatCfgSvc > NUL 2>&1
 goto kapatilanservisleryînetimi
 
-:serv.6.hotspot
+:serv.7.hotspot
 echo [%date% - %time%] ^| Kapatçlan Hizmetleri Yînet ^| Mobil Etkin Nokta hizmeti aáçldç. >> %konum%\Logs
 echo  %RGB%[96mMobil etkin nokta hizmeti aáçlçyor...%RGB%[0m 
 ::  Veri baßlantçsçnçn baüka bir cihazla paylaüçlmasçnç saßlar
@@ -1157,12 +1123,12 @@ net start icssvc > NUL 2>&1
 :: Internet Baßlantçsç Paylaüçmç (ICS)
 sc config SharedAccess start= demand > NUL 2>&1
 net start SharedAccess > NUL 2>&1
-:: WMP Aß Paylaüçmç hizmeti
-sc config WMPNetworkSvc start= demand > NUL 2>&1
-net start WMPNetworkSvc > NUL 2>&1
+:: Uygulama katmanç aß geáidi hizmeti
+sc config ALG start= demand > NUL 2>&1
+net start ALG > NUL 2>&1
 goto kapatilanservisleryînetimi
 
-:serv.7.ucakmodu
+:serv.8.ucakmodu
 echo [%date% - %time%] ^| Kapatçlan Hizmetleri Yînet ^| Radyo ve Uáak Modu hizmeti aáçldç. >> %konum%\Logs
 echo  %RGB%[96mRadyo yînetim ve uáak modu hizmeti aáçlçyor...%RGB%[0m 
 ::  Radyo yînetimi ve uáak modu hizmeti
@@ -1170,56 +1136,51 @@ sc config RMSvc start= demand > NUL 2>&1
 net start RMSvc > NUL 2>&1
 goto kapatilanservisleryînetimi
 
-:serv.8.akis
+:serv.9.akis
 echo [%date% - %time%] ^| Kapatçlan Hizmetleri Yînet ^| Akçü deneyimi hizmeti aáçldç. >> %konum%\Logs
-echo  %RGB%[96mAkçü deneyimi hizmetleri aáçlçyor...%RGB%[0m 
+echo  %RGB%[96mUzak MasaÅstÅ/Akçü hizmetleri aáçlçyor...%RGB%[0m 
+:: ConsentUx kullançcç hizmeti 
+sc config ConsentUxUserSvc start= demand > NUL 2>&1
+net start ConsentUxUserSvc > NUL 2>&1
 :: Miracast, DLNA kullançcç arabirimini
-sc config DevicePickerUserSvc_54454 start= demand > NUL 2>&1
-net start DevicePickerUserSvc_54454 > NUL 2>&1
 sc config DevicePickerUserSvc start= demand > NUL 2>&1
 net start DevicePickerUserSvc > NUL 2>&1
 :: Cihaz Akçüç
-sc config DevicesFlowUserSvc_54454 start= demand > NUL 2>&1
-net start DevicesFlowUserSvc_54454 > NUL 2>&1
 sc config DevicesFlowUserSvc start= demand > NUL 2>&1
 net start DevicesFlowUserSvc > NUL 2>&1
 :: WMP aß paylaüçm hizmeti
 sc config WMPNetworkSvc start= demand > NUL 2>&1
 net start WMPNetworkSvc > NUL 2>&1
-echo Daßçtçlmçü Baßlantç òzleme òstemcisi
-::  Bir bilgisayardaki ya da bir aß Åzerindeki bilgisayarlar Åzerinde NTFS dosyalarç arasçndaki baßlantçlarç korur.
-sc config TrkWks start= auto > NUL 2>&1
-net start TrkWks > NUL 2>&1
 :: Eü adç áîzÅmleme protokolÅ
-sc config PNPRsvc start= demand > NUL 2>&1
-net start PNPRsvc > NUL 2>&1
+sc config PNRPsvc start= demand > NUL 2>&1
+net start PNRPsvc > NUL 2>&1
 :: Eü aß gruplandçrma
-sc config p2psvc start= demand
+sc config p2psvc start= demand > NUL 2>&1
 net start p2psvc > NUL 2>&1
 :: Eüler arasç aß oluüturma kimlik yîneticisi
 sc config p2pimsvc start= demand > NUL 2>&1
 net start p2pimsvc > NUL 2>&1
-:: BranchCache
-sc config PeerDistSvc start= demand > NUL 2>&1
-net start PeerDistSvc > NUL 2>&1
 :: Upnp Aygçt ana bilgisyarç (Aßdaki cihazlarç bulur)
 sc config SSDPSRV start= demand > NUL 2>&1
 net start SSDPSRV > NUL 2>&1
-:: Natural Kimlik Doßrulayçcçsç
-sc config NaturalAuthentication start= demand > NUL 2>&1
-net start NaturalAuthentication > NUL 2>&1
 ::PNRP Makine adç yayçn hizmeti
 sc config PNRPAutoReg start= demand > NUL 2>&1
 net start PNRPAutoReg > NUL 2>&1
-:: WMPNetworkSvc (WMP Aß paylaüçmç hizmeti)
-sc config WMPNetworkSvc start= demand > NUL 2>&1
-net start WMPNetworkSvc > NUL 2>&1
-:: Äalçüma klasîrleri istemcisi
-sc config workfolderssvc start= demand > NUL 2>&1
-net start workfolderssvc > NUL 2>&1
+:: UPNP aygçt ana makinesi
+sc config upnphost start= demand > NUL 2>&1
+net start upnphost > NUL 2>&1
+:: Uzak masaÅstÅ hizmetleri
+sc config TermService start= demand > NUL 2>&1
+net start TermService > NUL 2>&1
+:: Uzak MasaÅstÅ Hizmetleri Kullançcç Modu Baßlantç Noktasç Yeniden Yînlendiricisi
+sc config UmRdpService start= demand > NUL 2>&1
+net start UmRdpService > NUL 2>&1
+:: Uzak MasaÅstÅ Yapçlandçrmasç
+sc config SessionEnv start= demand > NUL 2>&1
+net start SessionEnv > NUL 2>&1
 goto kapatilanservisleryînetimi
 
-:serv.9.wps
+:serv.10.wps
 echo [%date% - %time%] ^| Kapatçlan Hizmetleri Yînet ^| WPS hizmeti aáçldç. >> %konum%\Logs
 echo  %RGB%[96mWindows ûimdi Baßlan hizmeti aáçlçyor...%RGB%[0m 
 :: Windows ûimdi Baßlan - Yapçlandçrma Dosyasç Kaydedici
@@ -1228,18 +1189,16 @@ sc config wcncsvc start= demand > NUL 2>&1
 net start wcncsvc > NUL 2>&1
 goto kapatilanservisleryînetimi
 
-:serv.10.tarayici
+:serv.11.tarayici
 echo [%date% - %time%] ^| Kapatçlan Hizmetleri Yînet ^| Tarayçcç hizmeti aáçldç. >> %konum%\Logs
 echo  %RGB%[96mTarayçcç hizmetleri aáçlçyor...%RGB%[0m 
 :: Resim alma olaylarç (Windows GîrÅntÅ Alma-WIA)
 sc config WiaRpc start= demand > NUL 2>&1
-net start WiaRpc > NUL 2>&1
 :: Windows Resim Alma (Windows GîrÅntÅ Alma (WIA))
 sc config StiSvc start= demand > NUL 2>&1
-net start StiSvc > NUL 2>&1
 goto kapatilanservisleryînetimi
 
-:serv.11.camera
+:serv.12.camera
 echo [%date% - %time%] ^| Kapatçlan Hizmetleri Yînet ^| Kamera hizmeti aáçldç. >> %konum%\Logs
 echo  %RGB%[96mWindows Kamera hizmetleri aáçlçyor...%RGB%[0m 
 :: Windows Kamera áeráeve sunucusu
@@ -1250,44 +1209,11 @@ sc config FrameServerMonitor start= demand > NUL 2>&1
 net start FrameServerMonitor > NUL 2>&1
 goto kapatilanservisleryînetimi
 
-:serv.12.uzakmasaustu
-echo [%date% - %time%] ^| Kapatçlan Hizmetleri Yînet ^| Uzak MasaÅstÅ hizmeti aáçldç. >> %konum%\Logs
-echo  %RGB%[96mUzak MasaÅstÅ hizmetleri aáçlçyor...%RGB%[0m 
-:: Uzak masaÅstÅ hizmetleri
-sc config TermService start= demand > NUL 2>&1
-net start TermService > NUL 2>&1
-:: Uzak MasaÅstÅ Hizmetleri Kullançcç Modu Baßlantç Noktasç Yeniden Yînlendiricisi
-sc config UmRdpService start= demand > NUL 2>&1
-net start UmRdpService > NUL 2>&1
-:: Uzak MasaÅstÅ Yapçlandçrmasç
-sc config SessionEnv start= demand > NUL 2>&1
-net start SessionEnv > NUL 2>&1
-:: Yînlendirme ve Uzaktan Eriüim
-sc config RemoteAccess start= demand > NUL 2>&1
-net start RemoteAccess > NUL 2>&1
-:: Eü adç áîzÅmleme protokolÅ
-sc config PNPRsvc start= demand > NUL 2>&1
-net start PNPRsvc > NUL 2>&1
-:: Eü aß gruplandçrma
-sc config p2psvc start= demand
-net start p2psvc > NUL 2>&1
-:: Eüler arasç aß oluüturma kimlik yîneticisi
-sc config p2pimsvc start= demand
-net start p2pimsvc > NUL 2>&1
-::PNRP Makine adç yayçn hizmeti
-sc config PNRPAutoReg start= demand > NUL 2>&1
-net start PNRPAutoReg > NUL 2>&1
-:: Äalçüma klasîrleri istemcisi
-sc config workfolderssvc start= demand > NUL 2>&1
-net start workfolderssvc > NUL 2>&1
-goto kapatilanservisleryînetimi
-
 :serv.13.insider
 echo [%date% - %time%] ^| Kapatçlan Hizmetleri Yînet ^| Insider hizmeti aáçldç. >> %konum%\Logs
 echo  %RGB%[96mWindows Insider hizmeti aáçlçyor...%RGB%[0m 
 :: Windows Insider Hizmeti
 sc config wisvc start= demand > NUL 2>&1
-net start wisvc > NUL 2>&1
 goto kapatilanservisleryînetimi
 
 :serv.14.biyometrik
@@ -1332,7 +1258,7 @@ echo [%date% - %time%] ^| Kapatçlan Hizmetleri Yînet ^| Hçzlç baülangçá^(Hiberna
 echo  %RGB%[96mHçzlç baülat aáçlçyor...%RGB%[0m 
 powercfg /hibernate on
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\Power" /v "HibernateEnabled" /t REG_DWORD /d 1 /f > NUL 2>&1
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /v "HiberbootEnabled" /t REG_DWORD /d "1" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /v "HiberbootEnabled" /t REG_DWORD /d "1" /f > NUL 2>&1
 goto kapatilanservisleryînetimi
 
 :serv.19.konum
@@ -1352,19 +1278,20 @@ echo [%date% - %time%] ^| Kapatçlan Hizmetleri Yînet ^| MediaPlayer hizmeti aáçl
 :: Windows Media Player
 echo  %RGB%[96mWindows Media Player aáçlçyor...%RGB%[0m 
 Dism /Online /Remove-Feature /FeatureName:MediaPlayback /Quiet /NoRestart
+sc config WMPNetworkSvc start= demand > NUL 2>&1
 goto kapatilanservisleryînetimi
 
 
 :stop
 :: ˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛
 :wificrackarchley
-mode con cols=58 lines=35
+mode con cols=65 lines=45
 title Wireless Password Cracker / (Archley)
 echo [%date% - %time%] ^| WifiCrack ^| Wifi Crack bîlÅmÅ aáçldç. >> %konum%\Logs
-echo  %ESC%[90m…ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕª%ESC%[0m
-echo  %ESC%[90m∫%ESC%%ESC%[1;97m%ESC%%ESC%[100m               Wireless Password Cracker              %ESC%[0m%ESC%[90m∫%ESC%[0m
-echo  %ESC%[90m∫%ESC%%ESC%[1;97m%ESC%%ESC%[100m                      (Archley)                       %ESC%[0m%ESC%[90m∫%ESC%[0m
-echo  %ESC%[90mÃÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕπ%ESC%[0m
+echo  %ESC%[90m…ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕª%ESC%[0m
+echo  %ESC%[90m∫%ESC%%ESC%[1;97m%ESC%%ESC%[46m                   Wireless Password Cracker                 %ESC%[0m%ESC%[90m∫%ESC%[0m
+echo  %ESC%[90m∫%ESC%%ESC%[1;97m%ESC%%ESC%[46m                          (Archley)                          %ESC%[0m%ESC%[90m∫%ESC%[0m
+echo  %ESC%[90mÃÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕπ%ESC%[0m
 FOR /F "tokens=5" %%a in ('netsh wlan show profil ^| find "All"') do (
 	FOR /F "tokens=4" %%b in ('netsh wlan show profile "%%a" key^=clear ^| find "Content"') do (
 		echo    %ESC%[36m%%a :%ESC%%ESC%[33m %%b%ESC%[0m
@@ -1372,7 +1299,7 @@ FOR /F "tokens=5" %%a in ('netsh wlan show profil ^| find "All"') do (
 		)
 	)
 )
-echo  %ESC%[90m»ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕº%ESC%[0m
+echo  %ESC%[90m»ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕº%ESC%[0m
 echo %ESC%[32m  Kapatmak iáin herhangi bir tuüa basçnçz.%ESC%[0m
 pause > NUL
 goto :eof
@@ -1458,9 +1385,9 @@ goto :eof
 Call :Logs
 echo [%date% - %time%] ^| Gpedit ^| Gpedit.msc eklendi. >> %konum%\Logs
 echo %RGB%[96m Gpedit.msc (Yerel Grup ilkesi) aktifleütiriliyor...%RGB%[0m
-for %%a in ("dir /b %SystemRoot%\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~3*.mum") do (Dism /Online /Norestart /Add-Package:"%%a" > NUL 2>&1)
-for %%a in ("dir /b %SystemRoot%\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~3*.mum") do (Dism /Online /Norestart /Add-Package:"%%a" > NUL 2>&1)
-goto kontroll
+FOR /f %%a IN ('"dir /b %SystemRoot%\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~*.mum"') DO (DISM /Online /NoRestart /Add-Package:"%SystemRoot%\servicing\Packages\%%a" > NUL 2>&1)
+FOR /f %%a IN ('"dir /b %SystemRoot%\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~*.mum"') DO (DISM /Online /NoRestart /Add-Package:"%SystemRoot%\servicing\Packages\%%a" > NUL 2>&1)
+goto :eof
 
 :: ˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛
 ::  WòNDOWS 11 BôLöMö 
@@ -1494,7 +1421,7 @@ set /p deger=%RGB%[92m  òülem : %RGB%[0m
 	if %deger%==5 (Call :Win11RightMenuTerminal)
 	if %deger%==6 (Call :WinSahiplik)
 	if %deger%==7 (Call :WinCompactOS)
-	if %deger%==8 GOTO gpedit
+	if %deger%==8 (Call :gpedit)
 	if %deger%==x GOTO menu
 	if %deger%==X GOTO menu
 else
@@ -1613,7 +1540,7 @@ echo  %ESC%[90m∫%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m MenÅye dîn%ESC%[0m        
 echo  %ESC%[90m»ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕº%ESC%[0m
 set /p deger= %RGB%[92m òülem : %RGB%[0m
 	if %deger%==1 (echo [%date% - %time%] ^| Win11RightMenuTerminal ^| Windows 11 saß-tçk bîlÅmÅnden terminal kaldçrçldç. >> %konum%\Logs
-				   reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked" /f /v "{9F156763-7844-4DC4-B2B1-901F640F5155}" /t REG_SZ /d ""&start explorer.exe&goto :eof)
+				   reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked" /v "{9F156763-7844-4DC4-B2B1-901F640F5155}" /t REG_SZ /d "" /f&taskkill /f /im "explorer.exe"&start explorer.exe&goto :eof)
 	if %deger%==2 (echo [%date% - %time%] ^| Win11RightMenuTerminal ^| Windows 11 saß-tçk bîlÅmÅne terminal eklendi. >> %konum%\Logs
 				   reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked" /f&goto :eof)
 	if %deger%==x goto Win11SettingsMenu
@@ -1645,7 +1572,7 @@ set /p deger=%RGB%[92m  òülem : %RGB%[0m
 	if %deger%==3 (Call :WinSahiplik)
 	if %deger%==4 (Call :Win10StoreDelIns)
 	if %deger%==5 (Call :WinCompactOS)
-	if %deger%==6 GOTO gpedit
+	if %deger%==6 (Call :gpedit)
 	if %deger%==7 GOTO icochangemenu
 	if %deger%==x GOTO menu
 	if %deger%==X GOTO menu
@@ -2016,19 +1943,37 @@ echo %ESC%[92m Defender dosyalarç siliniyor.%ESC%[0m
 %PowerRun% DEL /F /Q /A "%programdata%\Microsoft\Windows Defender" > NUL 2>&1
 %PowerRun% DEL /F /Q /A "%windir%\SystemApps\Microsoft.Windows.SecHealthUI_cw5n1h2txyewy" > NUL 2>&1
 echo %ESC%[92m Defender hizmetler kapatçlçyor.%ESC%[0m
-%PowerRun% sc config SecurityHealthService start= disabled > NUL 2>&1
 %PowerRun% net stop SecurityHealthService > NUL 2>&1
-%PowerRun% sc config Sense start= disabled > NUL 2>&1
+%PowerRun% sc delete SecurityHealthService > NUL 2>&1
 %PowerRun% net stop Sense > NUL 2>&1
-%PowerRun% sc config SgrmBroker start= disabled > NUL 2>&1
+%PowerRun% sc delete Sense > NUL 2>&1
 %PowerRun% net stop SgrmBroker > NUL 2>&1
-%PowerRun% sc config WdNisSvc start= disabled > NUL 2>&1
+%PowerRun% sc delete SgrmBroker > NUL 2>&1
 %PowerRun% net stop WdNisSvc > NUL 2>&1
-%PowerRun% sc config WinDefend start= disabled > NUL 2>&1
+%PowerRun% sc delete WdNisSvc > NUL 2>&1
 %PowerRun% net stop WinDefend > NUL 2>&1
-%PowerRun% sc config wscsvc start= disabled > NUL 2>&1
+%PowerRun% sc delete WinDefend  > NUL 2>&1
 %PowerRun% net stop wscsvc > NUL 2>&1
-echo %ESC%[92m Yeniden aáçlan dißer hizmetler kapatçlçyor.%ESC%[0m
+%PowerRun% sc delete wscsvc  > NUL 2>&1
+echo %ESC%[92m Hizmetler ilk haline getiriliyor...%ESC%[0m
+sc config SCardSvr start= disabled > NUL 2>&1
+net stop SCardSvr > NUL 2>&1
+sc config ScDeviceEnum start= disabled > NUL 2>&1
+net stop ScDeviceEnum > NUL 2>&1
+sc config SCPolicySvc start= disabled > NUL 2>&1
+net stop SCPolicySvc > NUL 2>&1
+sc config CertPropSvc start= disabled > NUL 2>&1
+net stop CertPropSvc > NUL 2>&1
+sc config AJRouter start= disabled > NUL 2>&1
+net stop AJRouter > NUL 2>&1
+%PowerRun% sc config PeerDistSvc start= disabled > NUL 2>&1
+%PowerRun% net stop PeerDistSvc > NUL 2>&1
+sc config Ifsvc start= disabled > NUL 2>&1
+net stop Ifsvc > NUL 2>&1
+sc config WalletService start= disabled > NUL 2>&1
+net stop WalletService > NUL 2>&1
+sc config TrkWks start= disabled > NUL 2>&1
+net stop TrkWks > NUL 2>&1
 net stop DiagTrack > NUL 2>&1
 sc delete DiagTrack > NUL 2>&1
 net stop dmwappushservice > NUL 2>&1
@@ -2037,6 +1982,8 @@ net stop diagnosticshub.standartcollector.service > NUL 2>&1
 sc delete diagnosticshub.standartcollector.service > NUL 2>&1
 net stop diagsvc > NUL 2>&1
 sc delete diagsvc > NUL 2>&1
+sc config fhsvc start= disabled > NUL 2>&1
+net stop fhsvc > NUL 2>&1
 :: CÅzdan Hizmeti
 sc config WalletService start= disabled > NUL 2>&1
 net stop WalletService > NUL 2>&1
@@ -2063,9 +2010,6 @@ net stop RetailDemo > NUL 2>&1
 :: Program Uyumluluk Yardçmcçsç Hizmeti
 sc config PcaSvc start= disabled > NUL 2>&1
 net stop PcaSvc > NUL 2>&1
-:: Hçzlç Getir
-sc config SysMain start= disabled > NUL 2>&1
-net stop SysMain > NUL 2>&1
 :: Tançlama òlkesi Hizmeti
 sc config DPS start= disabled > NUL 2>&1
 net stop DPS > NUL 2>&1
@@ -2606,8 +2550,47 @@ ping -n 1 www.google.com.tr -w 20000 > NUL
 goto :eof
 
 :: ˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛
-	
-:: ˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛
+
+
+:: ==============================================================================================================================
+:1i
+cls
+echo   %ESC%[90m…ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕª%ESC%[0m
+echo    %ESC%[92m 1 - All in One Runtimes%ESC%[0m
+echo   %ESC%[90mÃÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕπ%ESC%[0m
+echo    %ESC%[33m All in One Runtimes bîlÅmÅ iáinde;%ESC%[0m
+echo    %ESC%[37m   Microsoft Visual C++ 2005 / 2008 / 2010 / 2012 / 2013 / 2015 / 2019%ESC%[0m
+echo    %ESC%[37m   OpenAL: Oyun ses kalitesini arttçrçr.%ESC%[0m 
+echo    %ESC%[37m   XNA Framework 4.0: C# ile programlanan oyunlarçn áalçümasç iáin gerekli%ESC%[0m
+echo    %ESC%[37m   Java%ESC%[0m
+echo    %ESC%[37m   Desktop Runtime 5: C++ bileüenleriyle ilgilidir.%ESC%[0m 
+echo    %ESC%[37m   DirectX: Oyunlarçn aáçlmasç iáin yÅklenmesi üart%ESC%[0m 
+echo    %ESC%[33m yer almaktadçr.%ESC%[0m
+echo    %ESC%[33m Uygulama ve oyunlarçn sorunsuz áalçümasç iáin mutlaka kurulmasç gerekmektedir.%ESC%[0m
+echo   %ESC%[90m»ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕº%ESC%[0m
+echo    %ESC%[32m MenÅye dînmek iáin herhangi bir tuüa basçnçz.%ESC%[0m
+pause > NUL
+goto :eof
+
+:2i
+echo %ESC%[96m  Discord: Arkadaülarçnçzla iletiüim kurabileceßiniz chat uygulamasçdçr. %ESC%[0m
+pause > NUL
+goto :eof
+
+:3i
+cls
+echo   %ESC%[90m…ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕª%ESC%[0m
+echo    %ESC%[92m %ESC%[0m
+echo   %ESC%[90mÃÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕπ%ESC%[0m
+echo    %ESC%[33m %ESC%[0m
+echo   %ESC%[90m»ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕº%ESC%[0m
+echo    %ESC%[32m MenÅye dînmek iáin herhangi bir tuüa basçnçz.%ESC%[0m
+pause > NUL
+goto :eof
+
+
+
+:: ==============================================================================================================================
 
 :setESC
 for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do rem"') do (

@@ -32,37 +32,24 @@ echo Kapatmak iáin herhangi bir tuüa basçnçz...
 pause > NUL
 exit
 :01
-:: https://www.microsoft.com/en-us/download/details.aspx?id=14431
-https://download.microsoft.com/download/6/B/B/6BB661D6-A8AE-4819-B79F-236472F6070C/vcredist_x86.exe 05x86ATL.exe 
-https://download.microsoft.com/download/6/B/B/6BB661D6-A8AE-4819-B79F-236472F6070C/vcredist_x64.exe 05x64ATL.exe 
-
-:: https://www.microsoft.com/en-us/download/details.aspx?id=26347
-https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x86.EXE 05x86MFC.exe  
-https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x64.EXE 05x64MFC.exe  
-
-:: https://www.microsoft.com/en-us/download/details.aspx?id=11895
-https://download.microsoft.com/download/9/7/7/977B481A-7BA6-4E30-AC40-ED51EB2028F2/vcredist_x86.exe 08x86ATL.exe  
-https://download.microsoft.com/download/9/7/7/977B481A-7BA6-4E30-AC40-ED51EB2028F2/vcredist_x64.exe 08x64ATL.exe 
+:: https://docs.microsoft.com/tr-TR/cpp/windows/latest-supported-vc-redist?view=msvc-170
+https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x86.EXE 05x86.exe
+https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x64.EXE 05x64.exe  
  
-:: https://www.microsoft.com/en-us/download/details.aspx?id=26368
-https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x86.exe 08x86MFC.exe  
-https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x64.exe 08x64MFC.exe 
+https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x86.exe 08x86.exe  
+https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x64.exe 08x64.exe 
  
-:: https://www.microsoft.com/en-us/download/details.aspx?id=26999
-https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x86.exe 10x86.exe 
-https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x64.exe 10x64.exe 
+https://download.microsoft.com/download/C/6/D/C6D0FD4E-9E53-4897-9B91-836EBA2AACD3/vcredist_x86.exe 10x86.exe 
+https://download.microsoft.com/download/A/8/0/A80747C3-41BD-45DF-B505-E9710D2744E0/vcredist_x64.exe 10x64.exe 
 
-:: https://www.microsoft.com/en-us/download/details.aspx?id=30679
 https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x86.exe 12x86.exe 
 https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe 12x64.exe
 
-:: https://www.microsoft.com/en-us/download/details.aspx?id=40784
-https://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x86.exe 13x86.exe 
-https://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x64.exe 13x64.exe 
+https://aka.ms/highdpimfc2013x86trk 13x86.exe 
+https://aka.ms/highdpimfc2013x64trk 13x64.exe 
 
-:: https://www.microsoft.com/tr-tr/download/details.aspx?id=48145
-https://aka.ms/vs/16/release/vc_redist.x86.exe 15x86.exe
-https://aka.ms/vs/16/release/vc_redist.x64.exe 15x64.exe
+https://aka.ms/vs/17/release/vc_redist.x86.exe 15x86.exe
+https://aka.ms/vs/17/release/vc_redist.x64.exe 15x64.exe
 
 :: https://www.java.com/tr/download/manual.jsp
 https://javadl.oracle.com/webapps/download/AutoDL?BundleId=245479_4d5417147a92418ea8b615e228bb6935 javax64.exe
@@ -74,8 +61,8 @@ https://download.microsoft.com/download/A/C/2/AC2C903B-E6E8-42C2-9FD7-BEBAC362A9
 https://openal.org/downloads/oalinst.zip oal.zip 
 
 :: https://dotnet.microsoft.com/download/dotnet/5.0
-https://download.visualstudio.microsoft.com/download/pr/1daf85dc-291b-4bb8-812e-a0df5cdb6701/85455a4a851347de26e2901e043b81e1/windowsdesktop-runtime-5.0.12-win-x64.exe Desktop5x64.exe  
-https://download.visualstudio.microsoft.com/download/pr/d3318276-b6db-422e-a156-8fdab0b4f27f/c758ff5762bb1d618c093a6f125ed592/windowsdesktop-runtime-5.0.12-win-x86.exe Desktop5x86.exe 
+https://download.visualstudio.microsoft.com/download/pr/2bfb80f2-b8f2-44b0-90c1-d3c8c1c8eac8/409dd3d3367feeeda048f4ff34b32e82/windowsdesktop-runtime-5.0.13-win-x64.exe Desktop5x64.exe  
+https://download.visualstudio.microsoft.com/download/pr/c8125c6b-d399-4be3-b201-8f1394fc3b25/724758f754fc7b67daba74db8d6d91d9/windowsdesktop-runtime-5.0.13-win-x86.exe Desktop5x86.exe 
 
 ::
 https://download.microsoft.com/download/8/4/A/84A35BF1-DAFE-4AE8-82AF-AD2AE20B6B14/directx_Jun2010_redist.exe DirectX.exe
@@ -156,7 +143,8 @@ https://github.com/henrypp/memreduct/releases/download/v.3.3.5/memreduct-3.3.5-s
 https://ftp.gwdg.de/pub/tdf/libreoffice/stable/7.2.5/win/x86_64/LibreOffice_7.2.5_Win_x64.msi LibreOffice.msi
 
 :22
-:: Microsoft Office
+:: get.adobe.com/tr/reader/enterprise/
+https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/1900820071/AcroRdrDC1900820071_tr_TR.exe AdobeReader.exe
 
 :23
 :: https://pdf-xchange.eu/DL/pdf-xchange-editor.htm
@@ -347,19 +335,14 @@ https://valorant.secure.dyn.riotcdn.net/channels/public/x/installer/current/live
 
 :Kaldçrçlanlar
 :k1
-:: get.adobe.com/tr/reader/enterprise/
-::https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2100120155/AcroRdrDC2100120155_en_US.exe AdobeReader.exe
-::https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/1900820071/AcroRdrDC1900820071_tr_TR.exe AdobeReader.exe 
-
-:k2
 :: EagleGet
 http://dl.eagleget.com/latest/eagleget_setup.exe EagleGet.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
 
-:k3
+:k2
 :: https://app.prntscr.com/tr/download.html
 https://app.prntscr.com/build/setup-lightshot.exe LightShoot.exe
 
-:k4
+:k3
 :: http://www.pcfreetime.com/formatfactory/index.php?language=en
 http://public.pcfreetime.com/FFSetup5.9.0.0.exe FormatFactory.exe
 

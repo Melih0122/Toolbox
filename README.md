@@ -67,7 +67,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	• 20 - Mem Reduct: Ram içinde boşta bekleyen tüm işlemleri kapatır. Oyunlarda bu temizleme işleminde kasma yaşanabilir.
 #### ► Office Uygulamaları
 	• 21 - LibreOffice: Microsoft Office uygulamasının ücretsiz alternatifidir. 
-	• 22 - Microsoft Office 2019: Office uygulamalarının en iyisidir. Bilgisayara ucundan bakan herkesin ismini bildiği programdır.
+	• 22 - Adobe Reader: PDF dosyalarını açar.
 	• 23 - PDF-XChange Editör: PDF dosyalarını düzenleyip, okuyabilirsiniz. Adobe Reader alternatifidir. Ücretsiz özellikleri bakımından Adobe Reader'den daha iyi bir uygulamadır.
 	• 24 - Calibre: E-kitap formundaki dosyaları açıp, okumanızı sağlar.
 #### ► Sıkıştırma Uygulamaları 
@@ -191,16 +191,16 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 
 	• 1 - Bluetooth [Aç]: Bluetooth hizmetlerini açar.
 	• 2 - Yazıcı [Aç]: Yazıcı hizmetlerini açar.
-	• 3 - Telefon hizmetini [Aç]: Telefon uygulamasına ait hizmetleri açar.
-	• 4 - Tarifeli ağları [Aç]: Kotalı internetiniz var, kota aşımını önlemek için bu hizmeti kullanabilirsiniz. (Nasıl oluyor hiç bilmiyorum, yalnızca hizmeti açıyorum :D)
-	• 5 - IP Yardımcısı [Aç]: IPv6 destekli internet hizmetiniz var ise bu hizmeti açın.
-	• 6 - Mobil Etkin Nokta (Hotspot) [Aç]: Kullandığınız cihazdan interneti paylaşmanızı sağlayayacak donanım var ise buradan hizmeti açabilirsiniz.
-	• 7 - Radyo ve Uçak modu hizmeti [Aç]: Laptoplarda kullanılacak hizmettir. Windows 11'de bu hizmet kapalı olunca ağ simgesi görünmüyor. 
-	• 8 - Akış deneyimi (Ekran Paylaş) [Aç]: Aynı ağı kullanan cihazları görmek ve ekrana yansıtma, aktarma gibi özellikleri kullanılabilmesi için hizmetleri açar.
-	• 9 - Windows Şimdi Bağlan (WPS) [Aç]: WPS özelliğini kullanmanızı sağlayan hizmeti açar.
-	• 10 - Tarayıcı hizmetlerini [Aç]: Tarayıcı cihazınızı sorunsuz kullanmanız için hizmetleri açar.
-	• 11 - Kamera hizmetlerini [Aç]: Kamera cihazınızı sorunsuz kullanmanız için hizmetleri açar.
-	• 12 - Uzak Masaüstü [Aç]: Uzak masaüstü hizmetlerini açar. Ağdaki cihazlar arası paylaşımda sıkıntı yaşıyorsanız 7 numaralı işlem ile birlikte açın.
+	• 3 - Baskı [Aç]: Yazıcı hizmetlerini açar.
+	• 4 - Telefon hizmetini [Aç]: Telefon uygulamasına ait hizmetleri açar.
+	• 5 - Tarifeli ağları [Aç]: Kotalı internetiniz var, kota aşımını önlemek için bu hizmeti kullanabilirsiniz. (Nasıl oluyor hiç bilmiyorum, yalnızca hizmeti açıyorum :D)
+	• 6 - IP Yardımcısı [Aç]: IPv6 destekli internet hizmetiniz var ise bu hizmeti açın.
+	• 7 - Mobil Etkin Nokta (Hotspot) [Aç]: Kullandığınız cihazdan interneti paylaşmanızı sağlayayacak donanım var ise buradan hizmeti açabilirsiniz.
+	• 8 - Radyo ve Uçak modu hizmeti [Aç]: Laptoplarda kullanılacak hizmettir. Windows 11'de bu hizmet kapalı olunca ağ simgesi görünmüyor. 
+	• 9 - Uzak Masaüstü/Akış/Ağ hizmetleri [Aç]: Uzak bağlantı, ağdaki cihazları görme dosya paylaşmaya izin veren hizmetleri açar. 
+	• 10 - Windows Şimdi Bağlan (WPS) [Aç]: WPS özelliğini kullanmanızı sağlayan hizmeti açar.
+	• 11 - Tarayıcı hizmetlerini [Aç]: Tarayıcı cihazınızı sorunsuz kullanmanız için hizmetleri açar.
+	• 12 - Kamera hizmetlerini [Aç]: Kamera cihazınızı sorunsuz kullanmanız için hizmetleri açar.
 	• 13 - Insider hizmeti [Aç]: Windows ön sürümlerini erkenden deneyimleyip hataları bulup bildirmek gibi bir koca yüreğiniz var ise bu servisi aktif ederek. Insider sürüme kayıt olunuz.
 	• 14 - Biyometrik Hizmeti [Aç]: Kullanıdığınız cihazda parmak okuyucu tarzı cihazlar var ise sorunsuz kullanmanız için açar.
 	• 15 - Kalem ve Dokunmatik Klavye hizmetini [Aç]: Dokunmatik destekli cihazınız var ise sorunsuz kullanmanız için hizmetleri açar.

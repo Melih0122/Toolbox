@@ -231,30 +231,16 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> C++ 2005
 echo echo  C++ 2005 kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "05x86ATL" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
-echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\05x86ATL.exe 
+echo FOR /F "tokens=1" %%%%i in ^('FIND "05x86.exe" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\05x86.exe 
 echo "%%konum%%\Download\05x86ATL.exe" /Q
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
 
 (
 echo.
-echo FOR /F "tokens=1" %%%%i in ^('FIND "05x64ATL" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
-echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\05x64ATL.exe 
+echo FOR /F "tokens=1" %%%%i in ^('FIND "05x64.exe" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\05x64.exe 
 echo "%%konum%%\Download\05x64ATL.exe" /Q
-) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
-
-(
-echo.
-echo FOR /F "tokens=1" %%%%i in ^('FIND "05x86MFC" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
-echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\05x86MFC.exe 
-echo "%%konum%%\Download\05x86MFC.exe" /Q
-) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
-
-(
-echo.
-echo FOR /F "tokens=1" %%%%i in ^('FIND "05x64MFC" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
-echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\05x64MFC.exe
-echo "%%konum%%\Download\05x64MFC.exe" /Q
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
 
 (
@@ -262,30 +248,16 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> C++ 2008
 echo echo  C++ 2008 kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "08x86ATL" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
-echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\08x86ATL.exe
+echo FOR /F "tokens=1" %%%%i in ^('FIND "08x86.exe" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\08x86.exe
 echo "%%konum%%\Download\08x86ATL.exe" /q
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
 
 (
 echo.
-echo FOR /F "tokens=1" %%%%i in ^('FIND "08x64ATL" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
-echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\08x64ATL.exe
+echo FOR /F "tokens=1" %%%%i in ^('FIND "08x64.exe" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\08x64.exe
 echo "%%konum%%\Download\08x64ATL.exe" /q
-) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
-
-(
-echo.
-echo FOR /F "tokens=1" %%%%i in ^('FIND "08x86MFC" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
-echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\08x86MFC.exe
-echo "%%konum%%\Download\08x86MFC.exe" /q
-) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
-
-(
-echo.
-echo FOR /F "tokens=1" %%%%i in ^('FIND "08x64MFC" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
-echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\08x64MFC.exe
-echo "%%konum%%\Download\08x64MFC.exe" /q
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
 
 (
@@ -293,14 +265,14 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> C++ 2010
 echo echo  C++ 2010 kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "10x86" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "10x86.exe" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\10x86.exe
 echo "%%konum%%\Download\10x86.exe" /q /norestart
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
 
 (
 echo.
-echo FOR /F "tokens=1" %%%%i in ^('FIND "10x64" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "10x64.exe" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\10x64.exe
 echo "%%konum%%\Download\10x64.exe" /q /norestart
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
@@ -310,14 +282,14 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> C++ 2012
 echo echo  C++ 2012 kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "12x86" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "12x86.exe" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\12x86.exe
 echo "%%konum%%\Download\12x86.exe" /install /quiet /norestart
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
 
 (
 echo.
-echo FOR /F "tokens=1" %%%%i in ^('FIND "12x64" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "12x64.exe" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\12x64.exe
 echo "%%konum%%\Download\12x64.exe" /install /quiet /norestart
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
@@ -327,14 +299,14 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> C++ 2013
 echo echo  C++ 2013 kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "13x86" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "13x86.exe" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\13x86.exe
 echo "%%konum%%\Download\13x86.exe" /install /quiet /norestart
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
 
 (
 echo.
-echo FOR /F "tokens=1" %%%%i in ^('FIND "13x64" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "13x64.exe" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\13x64.exe
 echo "%%konum%%\Download\13x64.exe" /install /quiet /norestart
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
@@ -342,9 +314,9 @@ echo "%%konum%%\Download\13x64.exe" /install /quiet /norestart
 (
 echo.
 echo :: -----------------------------------------------------------------------------------
-echo :: ^>^>^> C++ 2015
-echo echo  C++ 2015 kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "15x86" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo :: ^>^>^> C++ 2015-2022
+echo echo  C++ 2015-2022 kuruluyor...
+echo FOR /F "tokens=1" %%%%i in ^('FIND "15x86.exe" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\15x86.exe
 echo "%%konum%%\Download\15x86.exe" /install /quiet /norestart
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat

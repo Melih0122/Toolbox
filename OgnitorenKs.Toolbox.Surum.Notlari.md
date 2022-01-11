@@ -42,6 +42,27 @@
 ::
 :: ==============================================================================================================================
 -----------------
+ ► Versiyon 1.9 -
+-----------------
+Yayınlanma Tarihi: 11.01.2022
+
+ • Gpedit.msc bölümündeki kod hatası giderildi. (Archley'e geri bildirimi için teşekkür ederim.)
+ • Çoklu seçme bölümlerindeki kod hatası giderildi. (Geri dönüş kodları toolbox'ın kapanmasına neden oluyordu)
+   • Windows Düzenleme > AIO bölümüne "X" geri çıkış tuşu yeniden eklendi.
+   • Windows Düzenleme > ESD to WIM bölümüne "X" geri çıkış tuşu yeniden eklendi.
+ • Desktop Runtime indirme linki yenilendi. (5.0.12 > 5.0.13)
+ • Windows düzenleme > Windows 11 Edit > Sağ-tık Terminal bölümüne explorer reset komutu eklendi. 
+ • Windows / Market Onar kodları düzenlendi.
+ • Kapatılan servisler bölümünde değişiklikle yapıldı.
+   • Uzak masaüstü ve akış bölümü birleştirildi. İki ayrı bölüm olunca sorunlar yaşanıyordu. 
+   • Baskı hizmetlerini aç bölümü eklendi.
+ • Güncelleştirme sonrası temizlik bölümünde düzenlemeler yapıldı.
+ • All in One Runtimes bölümünde C++ linkleri yenilendi.
+ • Microsoft Office bölümünde yaşanan sorundan dolayı Office uygulaması kaldırıldı. 
+   • Adobe Reader yazılımı tekrar eklendi.
+
+:: ==============================================================================================================================
+-----------------
  ► Versiyon 1.8 -
 -----------------
 Yayınlanma Tarihi: 08.01.2022

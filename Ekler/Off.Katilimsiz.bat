@@ -152,6 +152,12 @@ else
 
 :MultiSelect2
 set /p $multi2= %ESC%[96m  Seim arasna virgl koyun  : %ESC%[0m
+
+echo %$multi2% | find "x" > NUL 2>&1
+	if %errorlevel%==0 goto onlinemenu
+echo %$multi2% | find "X" > NUL 2>&1
+	if %errorlevel%==0 goto onlinemenu
+
 (
 echo ---------------------------------------------------------------------------------------------------------------------------
 echo [%date% - %time%] ^| OffKatlmsz ^| €okluSeim - Seilenler:'%$multi2%
@@ -163,6 +169,7 @@ echo   %ESC%[90mฬอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
 echo                                           %ESC%[92m €OKLU SE€M%ESC%[0m 
 echo   %ESC%[90mศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ%ESC%[0m
 echo    %ESC%[96m Seilen indirmeler: %$multi2%%ESC%[0m
+:MultiSelect3
 FOR %%a in (%$multi2%) do Call :Download%%a
 echo --------------------------------------------------------------------------------------------------------------------------- >> %konum%\Logs
 goto onlinemenu
@@ -234,128 +241,91 @@ goto :eof
 :Download1
 Find "DirectX" %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat > NUL 2>&1
 	if %errorlevel%==0 (goto :eof)
-FOR /F "tokens=1" %%i in ('FIND "05x86ATL" %konum%\Ekler\Links.bat') do set link=%%i
-Call :wget "%link%" "%Mount%\OgnitorenKs.Toolbox\Katilimsiz\05x86ATL.exe"
+	
+:: ----------------------------------------------------------------------------------------------------------	
+FOR /F "tokens=1" %%i in ('FIND "05x86.exe" %konum%\Ekler\Links.bat') do set link=%%i
+Call :wget "%link%" "%Mount%\OgnitorenKs.Toolbox\Katilimsiz\05x86.exe"
+FOR /F "tokens=1" %%i in ('FIND "05x64.exe" %konum%\Ekler\Links.bat') do set link=%%i
+Call :wget "%link%" "%Mount%\OgnitorenKs.Toolbox\Katilimsiz\05x64.exe"
 (
 echo.
 echo :: -----------------------------------------------------------------------------------
 echo echo  C++ 2005 kuruluyor...
-echo "C:\OgnitorenKs.Toolbox\Katilimsiz\05x86ATL.exe" /Q
-) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
-FOR /F "tokens=1" %%i in ('FIND "05x64ATL" %konum%\Ekler\Links.bat') do set link=%%i
-Call :wget "%link%" "%Mount%\OgnitorenKs.Toolbox\Katilimsiz\05x64ATL.exe"
-(
-echo.
-echo "C:\OgnitorenKs.Toolbox\Katilimsiz\05x64ATL.exe" /Q
+echo "C:\OgnitorenKs.Toolbox\Katilimsiz\05x86.exe" /Q
+echo "C:\OgnitorenKs.Toolbox\Katilimsiz\05x64.exe" /Q
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
 
-FOR /F "tokens=1" %%i in ('FIND "05x86MFC" %konum%\Ekler\Links.bat') do set link=%%i
-Call :wget "%link%" "%Mount%\OgnitorenKs.Toolbox\Katilimsiz\05x86MFC.exe"
-(
-echo.
-echo "C:\OgnitorenKs.Toolbox\Katilimsiz\05x86MFC.exe" /Q
-) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
+:: ----------------------------------------------------------------------------------------------------------	
 
-FOR /F "tokens=1" %%i in ('FIND "05x64MFC" %konum%\Ekler\Links.bat') do set link=%%i
-Call :wget "%link%" "%Mount%\OgnitorenKs.Toolbox\Katilimsiz\05x64MFC.exe"
-(
-echo.
-echo "C:\OgnitorenKs.Toolbox\Katilimsiz\05x64MFC.exe" /Q
-) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
-
-FOR /F "tokens=1" %%i in ('FIND "08x86ATL" %konum%\Ekler\Links.bat') do set link=%%i
-Call :wget "%link%" "%Mount%\OgnitorenKs.Toolbox\Katilimsiz\08x86ATL.exe"
+FOR /F "tokens=1" %%i in ('FIND "08x86.exe" %konum%\Ekler\Links.bat') do set link=%%i
+Call :wget "%link%" "%Mount%\OgnitorenKs.Toolbox\Katilimsiz\08x86.exe"
+FOR /F "tokens=1" %%i in ('FIND "08x64.exe" %konum%\Ekler\Links.bat') do set link=%%i
+Call :wget "%link%" "%Mount%\OgnitorenKs.Toolbox\Katilimsiz\08x64.exe"
 (
 echo.
 echo :: -----------------------------------------------------------------------------------
 echo echo  C++ 2008 kuruluyor...
-echo "C:\OgnitorenKs.Toolbox\Katilimsiz\08x86ATL.exe" /q
+echo "C:\OgnitorenKs.Toolbox\Katilimsiz\08x86.exe" /q
+echo "C:\OgnitorenKs.Toolbox\Katilimsiz\08x64.exe" /q
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
 
-FOR /F "tokens=1" %%i in ('FIND "08x64ATL" %konum%\Ekler\Links.bat') do set link=%%i
-Call :wget "%link%" "%Mount%\OgnitorenKs.Toolbox\Katilimsiz\08x64ATL.exe"
-(
-echo.
-echo "C:\OgnitorenKs.Toolbox\Katilimsiz\08x64ATL.exe" /q
-) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
+:: ----------------------------------------------------------------------------------------------------------
 
-FOR /F "tokens=1" %%i in ('FIND "08x86MFC" %konum%\Ekler\Links.bat') do set link=%%i
-Call :wget "%link%" "%Mount%\OgnitorenKs.Toolbox\Katilimsiz\08x86MFC.exe"
-(
-echo.
-echo "C:\OgnitorenKs.Toolbox\Katilimsiz\08x86MFC.exe" /q
-) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
-
-FOR /F "tokens=1" %%i in ('FIND "08x64MFC" %konum%\Ekler\Links.bat') do set link=%%i
-Call :wget "%link%" "%Mount%\OgnitorenKs.Toolbox\Katilimsiz\08x64MFC.exe"
-(
-echo.
-echo "C:\OgnitorenKs.Toolbox\Katilimsiz\08x64MFC.exe" /q
-) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
-
-FOR /F "tokens=1" %%i in ('FIND "10x86" %konum%\Ekler\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "10x86.exe" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" "%Mount%\OgnitorenKs.Toolbox\Katilimsiz\10x86.exe"
+FOR /F "tokens=1" %%i in ('FIND "10x64.exe" %konum%\Ekler\Links.bat') do set link=%%i
+Call :wget "%link%" "%Mount%\OgnitorenKs.Toolbox\Katilimsiz\10x64.exe"
 (
 echo.
 echo :: -----------------------------------------------------------------------------------
 echo echo  C++ 2010 kuruluyor...
 echo "C:\OgnitorenKs.Toolbox\Katilimsiz\10x86.exe" /q /norestart
-) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
-
-FOR /F "tokens=1" %%i in ('FIND "10x64" %konum%\Ekler\Links.bat') do set link=%%i
-Call :wget "%link%" "%Mount%\OgnitorenKs.Toolbox\Katilimsiz\10x64.exe"
-(
-echo.
 echo "C:\OgnitorenKs.Toolbox\Katilimsiz\10x64.exe" /q /norestart
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
 
-FOR /F "tokens=1" %%i in ('FIND "12x86" %konum%\Ekler\Links.bat') do set link=%%i
+:: ----------------------------------------------------------------------------------------------------------
+
+FOR /F "tokens=1" %%i in ('FIND "12x86.exe" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" "%Mount%\OgnitorenKs.Toolbox\Katilimsiz\12x86.exe"
+FOR /F "tokens=1" %%i in ('FIND "12x64.exe" %konum%\Ekler\Links.bat') do set link=%%i
+Call :wget "%link%" "%Mount%\OgnitorenKs.Toolbox\Katilimsiz\12x64.exe"
 (
 echo.
 echo :: -----------------------------------------------------------------------------------
 echo echo  C++ 2012 kuruluyor...
 echo "C:\OgnitorenKs.Toolbox\Katilimsiz\12x86.exe" /install /quiet /norestart
-) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
-
-FOR /F "tokens=1" %%i in ('FIND "12x64" %konum%\Ekler\Links.bat') do set link=%%i
-Call :wget "%link%" "%Mount%\OgnitorenKs.Toolbox\Katilimsiz\12x64.exe"
-(
-echo.
 echo "C:\OgnitorenKs.Toolbox\Katilimsiz\12x64.exe" /install /quiet /norestart
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
 
-FOR /F "tokens=1" %%i in ('FIND "13x86" %konum%\Ekler\Links.bat') do set link=%%i
+:: ----------------------------------------------------------------------------------------------------------
+
+FOR /F "tokens=1" %%i in ('FIND "13x86.exe" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" "%Mount%\OgnitorenKs.Toolbox\Katilimsiz\13x86.exe"
+FOR /F "tokens=1" %%i in ('FIND "13x64.exe" %konum%\Ekler\Links.bat') do set link=%%i
+Call :wget "%link%" "%Mount%\OgnitorenKs.Toolbox\Katilimsiz\13x64.exe"
 (
 echo.
 echo :: -----------------------------------------------------------------------------------
 echo echo  C++ 2013 kuruluyor...
 echo "C:\OgnitorenKs.Toolbox\Katilimsiz\13x86.exe" /install /quiet /norestart
-) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
-
-FOR /F "tokens=1" %%i in ('FIND "13x64" %konum%\Ekler\Links.bat') do set link=%%i
-Call :wget "%link%" "%Mount%\OgnitorenKs.Toolbox\Katilimsiz\13x64.exe"
-(
-echo.
 echo "C:\OgnitorenKs.Toolbox\Katilimsiz\13x64.exe" /install /quiet /norestart
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
 
+:: ----------------------------------------------------------------------------------------------------------
+
 FOR /F "tokens=1" %%i in ('FIND "15x86" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" "%Mount%\OgnitorenKs.Toolbox\Katilimsiz\15x86.exe"
-(
-echo.
-echo :: -----------------------------------------------------------------------------------
-echo echo  C++ 2015 kuruluyor...
-echo "C:\OgnitorenKs.Toolbox\Katilimsiz\15x86.exe" /install /quiet /norestart
-) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
-
 FOR /F "tokens=1" %%i in ('FIND "15x64" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" "%Mount%\OgnitorenKs.Toolbox\Katilimsiz\15x64.exe"
 (
 echo.
+echo :: -----------------------------------------------------------------------------------
+echo echo  C++ 2015-2022 kuruluyor...
+echo "C:\OgnitorenKs.Toolbox\Katilimsiz\15x86.exe" /install /quiet /norestart
 echo "C:\OgnitorenKs.Toolbox\Katilimsiz\15x64.exe" /install /quiet /norestart
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
+
+:: ----------------------------------------------------------------------------------------------------------
 
 FOR /F "tokens=1" %%i in ('FIND "javax64" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" "%Mount%\OgnitorenKs.Toolbox\Katilimsiz\javax64.exe"
