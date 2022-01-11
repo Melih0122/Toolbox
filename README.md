@@ -328,6 +328,7 @@ Mavi renkli işlem numaraları 27 numaralı işlem ile alakalıdır.
 	• İçerisinde belirli sitelerin ping durumlarını otomatik gösterir. Alt bölümde yer alan "Ping ölç" bölümüyle istediğiniz site ve IP'nin pingini ölçebilirsiniz.
 ### • 64 - Lisans Yönetimi: 
 SLMGR.VBS komutlarını içermektedir. Crack tarzı işlemler bulunmamaktadır.
+
 ![LisansYonetimi](https://user-images.githubusercontent.com/93199689/148984026-2f91e49b-5fd0-4a14-85b0-aeab3ffa1d48.png)
 
 	• 1 - Lisans Gir [ipk]: Lisans numaranızı girerek sistemi lisanslayabilirsiniz.
