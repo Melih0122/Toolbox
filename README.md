@@ -5,7 +5,7 @@
 
 ![Adsız](https://drive.google.com/uc?export=view&id=1y9heaUaj1a6V9zuNZKKxG2-bm8y9PWVn)
 
-<a href="https://drive.google.com/uc?export=view&id=<FILEID>"><img src="https://drive.google.com/uc?export=view&id=<FILEID>" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+<a href="https://drive.google.com/uc?export=view&id=1y9heaUaj1a6V9zuNZKKxG2"><img src="https://drive.google.com/uc?export=view&id=1y9heaUaj1a6V9zuNZKKxG2" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 
 ### Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
 
