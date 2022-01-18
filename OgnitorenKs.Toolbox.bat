@@ -1085,15 +1085,14 @@ set /p deger= %RGB%[92m ˜Ÿlem : %RGB%[0m
 	if %deger%==19A (Call :serv.19.konum start demand Allow 1 delete "/v "DisableLocation" /f" a‡lyor)
 	if %deger%==19K (Call :serv.19.konum stop disabled Deny 0 add "/v "DisableLocation" /t REG_DWORD /d 1 /f" kaptlyor)
 	if %deger%==19k (Call :serv.19.konum stop disabled Deny 0 add "/v "DisableLocation" /t REG_DWORD /d 1 /f" kaptlyor)
-	if %deger%==20a (Call :serv.20.mediaplayer start demand Enable a‡lyor)
-	if %deger%==20A (Call :serv.20.mediaplayer start demand Enable a‡lyor)
-	if %deger%==20K (Call :serv.20.mediaplayer stop disabled Disable kapatlyor)
-	if %deger%==20k (Call :serv.20.mediaplayer stop disabled Disable kapatlyor)
+	if %deger%==20a (Call :serv.20.mediaplayer start demand ENABLE a‡lyor)
+	if %deger%==20A (Call :serv.20.mediaplayer start demand ENABLE a‡lyor)
+	if %deger%==20K (Call :serv.20.mediaplayer stop disabled DISABLE kapatlyor)
+	if %deger%==20k (Call :serv.20.mediaplayer stop disabled DISABLE kapatlyor)
 	if %deger%==x goto menu
 	if %deger%==X goto menu
 else 
 	goto kapatilanservislery”netimi
-
 
 :serv.1.bluetooth
 echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Bluetooth hizmeti %3. >> %konum%\Logs
@@ -1114,6 +1113,10 @@ echo   %RGB%[96mBluetooth hizmeti %3 ...%RGB%[0m
 ::  Eller boŸta profilinin ses a§ ge‡idini destekler.
 %PowerRun% sc config "BTAGService" start= %2
 %PowerRun% net %1 BTAGService
+::-------------------------------------------------------
+::    A‡ = %1 : start | %2 : demand   | %3 : a‡lyor
+:: Kapat = %1 : stop  | %2 : disabled | %3 : kapatlyor
+::-------------------------------------------------------
 goto :eof
 
 :serv.2.yazici
@@ -1125,6 +1128,10 @@ DEL /F /Q /A %windir%\System32\spool\PRINTERS\*
 :: Uzak Masast Hizmetleri Kullanc Modu Ba§lant Noktas Yeniden Y”nlendiricisi
 %PowerRun% sc config UmRdpService start= %2
 %PowerRun% net %1 UmRdpService
+::----------------------------------------------------------------------
+::    A‡ = %1 : start | %2 : demand   | %3 : auto     | %4 : a‡lyor
+:: Kapat = %1 : stop  | %2 : disabled | %3 : disabled | %4 : kapatlyor
+::----------------------------------------------------------------------
 goto :eof
 
 :serv.3.baski
@@ -1135,6 +1142,10 @@ echo   %RGB%[96mBask hizmetleri %3 ...%RGB%[0m
 %PowerRun% net %1 McpManagementService
 %PowerRun% sc config PrintWorkflowUserSvc start= %2
 %PowerRun% net %1 PrintWorkflowUserSvc
+::-------------------------------------------------------
+::    A‡ = %1 : start | %2 : demand   | %3 : a‡lyor
+:: Kapat = %1 : stop  | %2 : disabled | %3 : kapatlyor
+::-------------------------------------------------------
 goto :eof
 
 :serv.4.phone
@@ -1162,6 +1173,10 @@ echo   %RGB%[96mTelefon hizmeti %3 ...%RGB%[0m
 ::  Eller boŸta profilinin ses a§ ge‡idini destekler.
 %PowerRun% sc config "BTAGService" start= %2
 %PowerRun% net %1 BTAGService
+::-------------------------------------------------------
+::    A‡ = %1 : start | %2 : demand   | %3 : a‡lyor
+:: Kapat = %1 : stop  | %2 : disabled | %3 : kapatlyor
+::-------------------------------------------------------
 goto :eof
 
 :serv.5.tarifeli
@@ -1171,6 +1186,10 @@ echo   %RGB%[96mTarifeli a§lar hizmeti %3 ...%RGB%[0m
 ::  Arkaplan verilierni ve a§ kullanmn snrlar
 %PowerRun% sc config DusmSvc start= %2
 %PowerRun% net %1 DusmSvc
+::-------------------------------------------------------
+::    A‡ = %1 : start | %2 : auto     | %3 : a‡lyor
+:: Kapat = %1 : stop  | %2 : disabled | %3 : kapatlyor
+::-------------------------------------------------------
 goto :eof
 
 :serv.6.ipyardmci
@@ -1182,6 +1201,10 @@ echo   %RGB%[96mIP yardmcs hizmeti %4 ...%RGB%[0m
 :: IP €eviri yaplandrma hizmeti (v4'den v6'ya tam tersi y”nde ‡eviriyi yaplandrr)
 %PowerRun% sc config IpxlatCfgSvc start= %2
 %PowerRun% net %1 IpxlatCfgSvc
+::----------------------------------------------------------------------
+::    A‡ = %1 : start | %2 : demand   | %3 : auto     | %4 : a‡lyor
+:: Kapat = %1 : stop  | %2 : disabled | %3 : disabled | %4 : kapatlyor
+::----------------------------------------------------------------------
 goto :eof
 
 :serv.7.hotspot
@@ -1196,6 +1219,10 @@ echo   %RGB%[96mMobil etkin nokta hizmeti %3 ...%RGB%[0m
 :: Uygulama katman a§ ge‡idi hizmeti
 %PowerRun% sc config ALG start= %2
 %PowerRun% net %1 ALG
+::-------------------------------------------------------
+::    A‡ = %1 : start | %2 : demand   | %3 : a‡lyor
+:: Kapat = %1 : stop  | %2 : disabled | %3 : kapatlyor
+::-------------------------------------------------------
 goto :eof
 
 :serv.8.ucakmodu
@@ -1204,6 +1231,10 @@ echo   %RGB%[96mRadyo y”netim ve u‡ak modu hizmeti %3 ...%RGB%[0m
 ::  Radyo y”netimi ve u‡ak modu hizmeti
 %PowerRun% sc config RMSvc start= %2
 %PowerRun% net %1 RMSvc
+::-------------------------------------------------------
+::    A‡ = %1 : start | %2 : demand   | %3 : a‡lyor
+:: Kapat = %1 : stop  | %2 : disabled | %3 : kapatlyor
+::-------------------------------------------------------
 goto :eof
 
 :serv.9.akis
@@ -1248,6 +1279,10 @@ echo   %RGB%[96mUzak Masast/AkŸ hizmetleri %3 ...%RGB%[0m
 :: Uzak Masast Yaplandrmas
 %PowerRun% sc config SessionEnv start= %2
 %PowerRun% net %1 SessionEnv
+::-------------------------------------------------------
+::    A‡ = %1 : start | %2 : demand   | %3 : a‡lyor
+:: Kapat = %1 : stop  | %2 : disabled | %3 : kapatlyor
+::-------------------------------------------------------
 goto :eof
 
 :serv.10.wps
@@ -1257,6 +1292,10 @@ echo   %RGB%[96mWindows imdi Ba§lan hizmeti %3 ...%RGB%[0m
 ::  WPS protokolnn uygulanmasn sa§lar.
 %PowerRun% sc config wcncsvc start= %2
 %PowerRun% net %1 wcncsvc
+::-------------------------------------------------------
+::    A‡ = %1 : start | %2 : demand   | %3 : a‡lyor
+:: Kapat = %1 : stop  | %2 : disabled | %3 : kapatlyor
+::-------------------------------------------------------
 goto :eof
 
 :serv.11.tarayici
@@ -1268,6 +1307,10 @@ echo   %RGB%[96mTarayc hizmetleri %3 ...%RGB%[0m
 :: Windows Resim Alma (Windows G”rnt Alma (WIA))
 %PowerRun% sc config StiSvc start= %2
 %PowerRun% net %1 StiSvc
+::-------------------------------------------------------
+::    A‡ = %1 : start | %2 : demand   | %3 : a‡lyor
+:: Kapat = %1 : stop  | %2 : disabled | %3 : kapatlyor
+::-------------------------------------------------------
 goto :eof
 
 :serv.12.camera
@@ -1279,6 +1322,10 @@ echo   %RGB%[96mWindows Kamera hizmetleri %3 ...%RGB%[0m
 :: Windows Kamera €er‡eve Sunucusu
 %PowerRun% sc config FrameServerMonitor start= %2
 %PowerRun% net %1 FrameServerMonitor
+::-------------------------------------------------------
+::    A‡ = %1 : start | %2 : demand   | %3 : a‡lyor
+:: Kapat = %1 : stop  | %2 : disabled | %3 : kapatlyor
+::-------------------------------------------------------
 goto :eof
 
 :serv.13.insider
@@ -1287,6 +1334,10 @@ echo   %RGB%[96mWindows Insider hizmeti %3 ...%RGB%[0m
 :: Windows Insider Hizmeti
 %PowerRun% sc config wisvc start= %2
 %PowerRun% net %1 wisvc
+::-------------------------------------------------------
+::    A‡ = %1 : start | %2 : demand   | %3 : a‡lyor
+:: Kapat = %1 : stop  | %2 : disabled | %3 : kapatlyor
+::-------------------------------------------------------
 goto :eof
 
 :serv.14.biyometrik
@@ -1295,6 +1346,10 @@ echo   %RGB%[96mWindows Biyometrik hizmeti %3 ...%RGB%[0m
 :: Windows Biyometrik Hizmeti
 %PowerRun% sc config WbioSrvc start= %2
 %PowerRun% net %1 WbioSrvc
+::-------------------------------------------------------
+::    A‡ = %1 : start | %2 : demand   | %3 : a‡lyor
+:: Kapat = %1 : stop  | %2 : disabled | %3 : kapatlyor
+::-------------------------------------------------------
 goto :eof
 
 :serv.15.dokunmatik
@@ -1306,6 +1361,10 @@ echo   %RGB%[96mDokunmatik Klavye ve Kalem hizmeti %3 ...%RGB%[0m
 ::Dokunmatik Klavyeyi ve el yazs paneli hizmeit
 %PowerRun% sc config TabletInputService start= %2
 %PowerRun% net %1 TabletInputService
+::-------------------------------------------------------
+::    A‡ = %1 : start | %2 : demand   | %3 : a‡lyor
+:: Kapat = %1 : stop  | %2 : disabled | %3 : kapatlyor
+::-------------------------------------------------------
 goto :eof
 
 :serv.16.sistemgeriyukleme
@@ -1316,6 +1375,10 @@ echo   %RGB%[96mSistem geri ykleme hizmeti %5 ...%RGB%[0m
 %PowerRun% net %1 SDRSVC
 schtasks /change /TN "\Microsoft\Windows\SystemRestore\SR" /%3 > NUL 2>&1
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore" /f /v "DisableSR" /t REG_DWORD /d %4 > NUL 2>&1
+::-------------------------------------------------------------------------------
+::    A‡ = %1 : start | %2 : demand   | %3 : ENABLE  | %4 : 0 | %5 : a‡lyor
+:: Kapat = %1 : stop  | %2 : disabled | %3 : DISABLE | %4 : 1 | %5 : kapatlyor
+::-------------------------------------------------------------------------------
 goto :eof
 
 :serv.17.sysmain
@@ -1323,6 +1386,10 @@ echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Hzl Getir^(Sysmain^) h
 echo   %RGB%[96mHzl Getir hizmeti %3 ...%RGB%[0m
 %PowerRun% sc config SysMain start= %2
 %PowerRun% net %1 SysMain
+::-------------------------------------------------------
+::    A‡ = %1 : start | %2 : auto   | %3 : a‡lyor
+:: Kapat = %1 : stop  | %2 : disabled | %3 : kapatlyor
+::-------------------------------------------------------
 goto :eof
 
 :serv.18.hibernate
@@ -1332,6 +1399,10 @@ echo   %RGB%[96mHzl baŸlat %3 ...%RGB%[0m
 powercfg /hibernate %1
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\Power" /v "HibernateEnabled" /t REG_DWORD /d %2 /f > NUL 2>&1
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /v "HiberbootEnabled" /t REG_DWORD /d %2 /f > NUL 2>&1
+::-------------------------------------------------------
+::    A‡ = %1 : On  | %2 : 1  | %3 : a‡lyor
+:: Kapat = %1 : Off | %2 : 0  | %3 : kapatlyor
+::-------------------------------------------------------
 goto :eof
 
 :serv.19.konum
@@ -1344,6 +1415,10 @@ reg add "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\System" /v "AllowL
 %PowerRun% net %1 NaturalAuthentication
 %PowerRun% sc config lfsvc start= %2
 %PowerRun% net %1 lfsvc
+::----------------------------------------------------------------------------------------------------------------------------------------------
+::    A‡ = %1 : start  | %2 : demand    | %3 : Allow |  %4 : 1 | %5 : delete | %6 : /v "DisableLocation" /f                   | %7 : a‡lyor
+:: Kapat = %1 : stop   | %2 : disabled  | %3 : Deny  |  %4 : 0 | %5 : add    | %6 : /v "DisableLocation" /t REG_DWORD /d 1 /f | %7 : kapatlyor
+::----------------------------------------------------------------------------------------------------------------------------------------------
 goto :eof
 
 :serv.20.mediaplayer
@@ -1353,6 +1428,10 @@ echo   %RGB%[96mWindows Media Player %4 ...%RGB%[0m
 Dism /Online /%3-Feature /FeatureName:MediaPlayback /Quiet /NoRestart
 %PowerRun% sc config WMPNetworkSvc start= %2
 %PowerRun% net %1 WMPNetworkSvc
+::---------------------------------------------------------------------
+::    A‡ = %1 : start | %2 : demand   | %3 : ENABLE  | %4 : a‡lyor
+:: Kapat = %1 : stop  | %2 : disabled | %3 : DISABLE | %4 : kapatlyor
+::---------------------------------------------------------------------
 goto :eof
 
 
@@ -1363,8 +1442,8 @@ mode con cols=65 lines=45
 title Wireless Password Cracker / (Archley)
 echo [%date% - %time%] ^| WifiCrack ^| Wifi Crack b”lm a‡ld. >> %konum%\Logs
 echo  %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
-echo  %ESC%[90mº%ESC%%ESC%[1;97m%ESC%%ESC%[46m                   Wireless Password Cracker                 %ESC%[0m%ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%%ESC%[1;97m%ESC%%ESC%[46m                          (Archley)                          %ESC%[0m%ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%%ESC%[1;97m%ESC%%ESC%[100m                   Wireless Password Cracker                 %ESC%[0m%ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%%ESC%[1;97m%ESC%%ESC%[100m                          (Archley)                          %ESC%[0m%ESC%[90mº%ESC%[0m
 echo  %ESC%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%ESC%[0m
 FOR /F "tokens=5" %%a in ('netsh wlan show profil ^| find "All"') do (
 	FOR /F "tokens=4" %%b in ('netsh wlan show profile "%%a" key^=clear ^| find "Content"') do (
