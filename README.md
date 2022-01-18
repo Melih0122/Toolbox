@@ -189,7 +189,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 		
 	• 8 - Gpedit.msc (Yerel Grup ilkesi) [Ekle]: Windows Home ve Home Single Language sürümlerine "Gpedit.msc" ekler.
 ### • 54 - Kapatılan Servisleri Yönet
-![KapatılanServisYonetimi](https://user-images.githubusercontent.com/93199689/148984019-69ee9db8-2026-4a85-9daf-e1b5949c3ce8.png)
+![cmd_BIB9uzpoGo](https://user-images.githubusercontent.com/93199689/149864879-9d945f79-08f2-489b-b8a7-ade45f6c6cb3.png)
 
 	• 1 [A/K] - Bluetooth : Bluetooth hizmetlerini açar.
 	• 2 [A/K]- Yazıcı : Yazıcı hizmetlerini açar.
