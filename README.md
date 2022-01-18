@@ -35,7 +35,7 @@
    	• ---------
 	  • Wifi Crack çalışmasının toolbox'a eklenmesi.
 
-# OGNİTORENK TOOLBOX İÇERİĞİ
+# OGNİTORENKS TOOLBOX İÇERİĞİ
 ## 1 - Online Katılımsız Bölümü;
 
 Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar ücretsiz alternatifler arasında seçilmiştir. WinRaR hariç o da ücretli ama ücretsiz bir yazılımdır.	
