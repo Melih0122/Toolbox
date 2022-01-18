@@ -1370,9 +1370,15 @@ goto :eof
 :serv.16.sistemgeriyukleme
 echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Sistem Geri ykleme hizmeti a‡ld. hizmeti %5. >> %konum%\Logs
 echo   %RGB%[96mSistem geri ykleme hizmeti %5 ...%RGB%[0m
-::Windows Yedekleme ve Geri Ykleme hizmeti
+:: Windows Yedekleme ve Geri Ykleme hizmeti
 %PowerRun% sc config SDRSVC start= %2
 %PowerRun% net %1 SDRSVC
+:: Birim G”lge kopyas
+%PowerRun% sc config VSS start= %2
+%PowerRun% net %1 VSS
+:: Dosya ge‡miŸi hizmeti
+%PowerRun% sc config fhsvc start= %2
+%PowerRun% net %1 fhsvc
 schtasks /change /TN "\Microsoft\Windows\SystemRestore\SR" /%3 > NUL 2>&1
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore" /f /v "DisableSR" /t REG_DWORD /d %4 > NUL 2>&1
 ::-------------------------------------------------------------------------------
