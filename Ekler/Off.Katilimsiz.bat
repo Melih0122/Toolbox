@@ -66,7 +66,7 @@ echo   %ESC%[90mº%ESC%%ESC%[32m  7.%ESC%%ESC%[33m Zoom%ESC%[0m                 %
 echo   %ESC%[90mº%ESC%%ESC%[32m  8.%ESC%%ESC%[36m EpicGames%ESC%[0m            %ESC%[90mº%ESC%[0m %ESC%[32m 34.%ESC%%ESC%[36m VLC Media Player%ESC%[0m       %ESC%[90mº%ESC%%ESC%[32m 59.%ESC%%ESC%[33m Bcdedit Ayarlarn ekle%ESC%[0m     %ESC%[90mº%ESC%[0m 
 echo   %ESC%[90mº%ESC%%ESC%[32m  9.%ESC%%ESC%[36m Steam%ESC%[0m                %ESC%[90mº%ESC%[0m %ESC%[32m 35.%ESC%%ESC%[36m Aimp%ESC%[0m                   %ESC%[90mº%ESC%%ESC%[32m 60.%ESC%%ESC%[33m SVCHost Optimizasyon ekle%ESC%[0m   %ESC%[90mº%ESC%[0m 
 echo   %ESC%[90mº%ESC%%ESC%[32m 10.%ESC%%ESC%[36m GOG Galaxy%ESC%[0m           %ESC%[90mº%ESC%[0m %ESC%[32m 36.%ESC%%ESC%[33m Free Download Manager%ESC%[0m  %ESC%[90mº%ESC%%ESC%[32m 61.%ESC%%ESC%[33m Micr.Teams kaldr ekle%ESC%[0m      %ESC%[90mº%ESC%[0m 
-echo   %ESC%[90mº%ESC%%ESC%[32m 11.%ESC%%ESC%[36m Uplay%ESC%[0m                %ESC%[90mº%ESC%[0m %ESC%[32m 37.%ESC%%ESC%[33m ByClick Downloader%ESC%[0m     %ESC%[90mº%ESC%[0m                                 %ESC%[90mº%ESC%[0m 
+echo   %ESC%[90mº%ESC%%ESC%[32m 11.%ESC%%ESC%[36m Uplay%ESC%[0m                %ESC%[90mº%ESC%[0m %ESC%[32m 37.%ESC%%ESC%[33m ByClick Downloader%ESC%[0m     %ESC%[90mº%ESC%%ESC%[32m 62.%ESC%%ESC%[33m Simge ™nbellek Temizle ekle%ESC%[0m %ESC%[90mº%ESC%[0m 
 echo   %ESC%[90mº%ESC%%ESC%[32m 12.%ESC%%ESC%[36m Origin%ESC%[0m               %ESC%[90mº%ESC%[0m %ESC%[32m 38.%ESC%%ESC%[33m Utorrent%ESC%[0m               %ESC%[90mº%ESC%[0m                                 %ESC%[90mº%ESC%[0m  
 echo   %ESC%[90mº%ESC%%ESC%[32m 13.%ESC%%ESC%[36m Cheat Engine%ESC%[0m         %ESC%[90mº%ESC%[0m %ESC%[32m 39.%ESC%%ESC%[33m GlassWire%ESC%[0m              %ESC%[90mº%ESC%[0m                                 %ESC%[90mº%ESC%[0m
 echo   %ESC%[90mº%ESC%%ESC%[32m 14.%ESC%%ESC%[36m Wemod%ESC%[0m                %ESC%[90mº%ESC%[0m %ESC%[32m 40.%ESC%%ESC%[33m TeamViewer%ESC%[0m             %ESC%[90mº%ESC%[0m                                 %ESC%[90mº%ESC%[0m
@@ -145,6 +145,7 @@ set /p menu= %ESC%[92m  Yapmak istedi§iniz iŸlem : %ESC%[0m
 	if %menu%==59 (Call :Bcdedit)
 	if %menu%==60 (Call :Svchost)
 	if %menu%==61 (Call :MicrosoftTeams)
+	if %menu%==62 (Call :icofix)
 	if %menu%==98 (Call :KatilimsizYedekle)
 	if %menu%==99 (Call :KatilimsizYukle)
 else
@@ -203,7 +204,7 @@ echo :: ========================================================================
 echo :: ===================================================================================
 echo.
 ) > %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
-copy /y "%konum%\Files\wget.exe" "%Mount%\OgnitorenKs.Toolbox\Files"
+
 (
 echo ---------------------------------------------------------------------------------------------------------------------------
 echo [%date% - %time%] ^| OffKatlmsz ^| OpenBat - Katlmsz dosyas giriŸ b”lm hazrland.
@@ -1144,7 +1145,7 @@ echo [%date% - %time%] ^| OffKatlmsz ^| Bcdedit ayarlar eklendi. >> %konum%\
 echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> Bcdedit Duzenlemeleri
-echo echo  Stuttering sorunu icin duzenleme yapiliyor... (Bcdedit)
+echo echo  Stuttering sorunu icin duzenleme yapiliyor... ^(Bcdedit^)
 echo bcdedit /deletevalue useplatformclock ^> NUL
 echo bcdedit /set {current} recoveryenabled no ^> NUL
 echo powercfg /h off ^> NUL
@@ -1182,6 +1183,28 @@ echo :: ------------------------------------------------------------------------
 echo :: ^>^>^> MicrosoftTeams
 echo echo Microsoft Teams kaldiriliyor...
 echo Powershell -Command "Get-AppxPackage *Teams* | Remove-AppxPackage"
+) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
+goto :eof
+
+:icofix
+Find "Simge onbellek temizleniyor..." %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat > NUL 2>&1
+	if %errorlevel%==0 (goto :eof)
+echo [%date% - %time%] ^| OnKatlmsz ^| Simge ”nbellek temizle eklendi. >> %konum%\Logs
+mkdir %Mount%\OgnitorenKs.Toolbox\Files > NUL 2>&1
+copy /y "%konum%\Files\ReIconCache.exe" "%Mount%\OgnitorenKs.Toolbox\Files" > NUL 2>&1
+(
+echo.
+echo :: -----------------------------------------------------------------------------------
+echo :: ^>^>^> icofix
+echo echo Simge onbellek temizleniyor...
+echo taskkill /f /im explorer.exe
+echo DEL /F /Q /A "%%userprofile%%\AppData\Local\IconCache.db" ^> NUL 2^>^&1
+echo DEL /F /Q /A %%userprofile%%\AppData\Local\Microsoft\Windows\Explorer\^*.^* ^> NUL 2^>^&1
+echo del /f /s /q /a %%LocalAppData%%\Microsoft\Windows\Explorer\thumbcache_*.db ^> NUL 2^>^&1
+echo "%%konum%%\Files\ReIconCache.exe"
+echo powershell -command "Start-Process 'C:\Windows\explorer.exe'"
+echo timeout /t 2 /nobreak ^> NUL
+echo DEL /F /Q /A "C:\OgnitorenKs.Toolbox\Files\ReIconCache.exe" ^> NUL 2^>^&1
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
 goto :eof
 

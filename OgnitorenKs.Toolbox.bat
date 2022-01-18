@@ -158,7 +158,7 @@ echo %caption2% > NUL
 	if %caption2%==10 (set editmenugo=Win10SettingsMenu) 
 	if %caption2%==11 (set editmenugo=Win11SettingsMenu)
 
-set versiyon=1.9
+set versiyon=2.0
 
 ::set editmenu=Windows 11 Edit
 ::set editmenugo=Win11SettingsMenu
@@ -310,8 +310,8 @@ echo   %ESC%[90mº%ESC%%ESC%[32m  6.%ESC%%RGB%[33m Microsoft Teams%RGB%[0m      %
 echo   %ESC%[90mº%ESC%%ESC%[32m  7.%ESC%%RGB%[33m Zoom%RGB%[0m                 %ESC%[90mº%ESC%[0m %ESC%[32m 33.%ESC%%RGB%[36m K-Lite Codec%RGB%[0m           %ESC%[90mº%ESC%%ESC%[32m 59.%ESC%%RGB%[33m Visual Studio Code%RGB%[0m          %ESC%[90mº%ESC%[0m 
 echo   %ESC%[90mº%ESC%%ESC%[32m  8.%ESC%%RGB%[36m EpicGames%RGB%[0m            %ESC%[90mº%ESC%[0m %ESC%[32m 34.%ESC%%RGB%[36m VLC Media Player%RGB%[0m       %ESC%[90mº%ESC%%ESC%[32m 60.%ESC%%RGB%[33m Github%RGB%[0m                      %ESC%[90mº%ESC%[0m 
 echo   %ESC%[90mº%ESC%%ESC%[32m  9.%ESC%%RGB%[36m Steam%RGB%[0m                %ESC%[90mº%ESC%[0m %ESC%[32m 35.%ESC%%RGB%[36m Aimp%RGB%[0m                   %ESC%[90mº%ESC%%ESC%[32m 61.%ESC%%RGB%[33m Git%RGB%[0m                         %ESC%[90mº%ESC%[0m 
-echo   %ESC%[90mº%ESC%%ESC%[32m 10.%ESC%%RGB%[36m GOG Galaxy%RGB%[0m           %ESC%[90mº%ESC%[0m %ESC%[32m 36.%ESC%%RGB%[36m Any Video Converter%RGB%[0m    %ESC%[90mº%ESC%%ESC%[32m 62.%ESC%%RGB%[33m %RGB%[0m                            %ESC%[90mº%ESC%[0m 
-echo   %ESC%[90mº%ESC%%ESC%[32m 11.%ESC%%RGB%[36m Uplay%RGB%[0m                %ESC%[90mº%ESC%[0m %ESC%[32m 37.%ESC%%RGB%[33m Free Download Manager%RGB%[0m  %ESC%[90mº%ESC%%ESC%[32m 63.%ESC%%RGB%[33m %RGB%[0m                            %ESC%[90mº%ESC%[0m 
+echo   %ESC%[90mº%ESC%%ESC%[32m 10.%ESC%%RGB%[36m GOG Galaxy%RGB%[0m           %ESC%[90mº%ESC%[0m %ESC%[32m 36.%ESC%%RGB%[36m Any Video Converter%RGB%[0m    %ESC%[90mº%ESC%%ESC%[32m 62.%ESC%%RGB%[36m %RGB%[0m                            %ESC%[90mº%ESC%[0m 
+echo   %ESC%[90mº%ESC%%ESC%[32m 11.%ESC%%RGB%[36m Uplay%RGB%[0m                %ESC%[90mº%ESC%[0m %ESC%[32m 37.%ESC%%RGB%[33m Free Download Manager%RGB%[0m  %ESC%[90mº%ESC%%ESC%[32m 63.%ESC%%RGB%[36m %RGB%[0m                            %ESC%[90mº%ESC%[0m 
 echo   %ESC%[90mº%ESC%%ESC%[32m 12.%ESC%%RGB%[36m Origin%RGB%[0m               %ESC%[90mº%ESC%[0m %ESC%[32m 38.%ESC%%RGB%[33m ˜nt Download Manager%RGB%[0m   %ESC%[90mº%ESC%%ESC%[32m 64.%ESC%%RGB%[36m %RGB%[0m                            %ESC%[90mº%ESC%[0m  
 echo   %ESC%[90mº%ESC%%ESC%[32m 13.%ESC%%RGB%[36m Cheat Engine%RGB%[0m         %ESC%[90mº%ESC%[0m %ESC%[32m 39.%ESC%%RGB%[33m ByClick Downloader%RGB%[0m     %ESC%[90mº%ESC%%ESC%[32m 65.%ESC%%RGB%[36m %RGB%[0m                            %ESC%[90mº%ESC%[0m
 echo   %ESC%[90mº%ESC%%ESC%[32m 14.%ESC%%RGB%[36m Wemod%RGB%[0m                %ESC%[90mº%ESC%[0m %ESC%[32m 40.%ESC%%RGB%[33m Utorrent%RGB%[0m               %ESC%[90mº%ESC%%ESC%[32m 66.%ESC%%RGB%[36m %RGB%[0m                            %ESC%[90mº%ESC%[0m
@@ -321,7 +321,7 @@ echo   %ESC%[90mº%ESC%%ESC%[32m 17.%ESC%%RGB%[33m Brave%RGB%[0m                %
 echo   %ESC%[90mº%ESC%%ESC%[32m 18.%ESC%%RGB%[33m Microsoft Edge%RGB%[0m       %ESC%[90mº%ESC%[0m %ESC%[32m 44.%ESC%%RGB%[33m Stremio%RGB%[0m                %ESC%[90mº%ESC%%ESC%[32m 70.%ESC%%RGB%[36m %RGB%[0m                            %ESC%[90mº%ESC%[0m 
 echo   %ESC%[90mº%ESC%%ESC%[32m 19.%ESC%%RGB%[37m ISLC%RGB%[0m                 %ESC%[90mº%ESC%[0m %ESC%[32m 45.%ESC%%RGB%[36m MSI Afterburner%RGB%[0m        %ESC%[90mº%ESC%%ESC%[32m 71.%ESC%%RGB%[36m %RGB%[0m                            %ESC%[90mº%ESC%[0m 
 echo   %ESC%[90mº%ESC%%ESC%[32m 20.%ESC%%RGB%[37m MemReduct%RGB%[0m            %ESC%[90mº%ESC%[0m %ESC%[32m 46.%ESC%%RGB%[36m Hibit Uninstaller%RGB%[0m      %ESC%[90mº%ESC%%ESC%[32m 72.%ESC%%RGB%[36m %RGB%[0m                            %ESC%[90mº%ESC%[0m 
-echo   %ESC%[90mº%ESC%%ESC%[32m 21.%ESC%%RGB%[36m Libre Office%RGB%[0m         %ESC%[90mº%ESC%[0m %ESC%[32m 47.%ESC%%RGB%[36m Wise Care 365%RGB%[0m          %ESC%[90mº%ESC%%ESC%[32m 73.%ESC%%RGB%[36m %RGB%[0m                            %ESC%[90mº%ESC%[0m 
+echo   %ESC%[90mº%ESC%%ESC%[32m 21.%ESC%%RGB%[36m Libre Office%RGB%[0m         %ESC%[90mº%ESC%[0m %ESC%[32m 47.%ESC%%RGB%[36m Wise Care 365%RGB%[0m          %ESC%[90mº%ESC%%ESC%[32m 73.%ESC%%RGB%[37m OSU! %RGB%[0m                       %ESC%[90mº%ESC%[0m 
 echo   %ESC%[90mº%ESC%%ESC%[32m 22.%ESC%%RGB%[36m Adobe Reader%RGB%[0m         %ESC%[90mº%ESC%[0m %ESC%[32m 48.%ESC%%RGB%[36m Unlocker%RGB%[0m               %ESC%[90mº%ESC%%ESC%[32m 74.%ESC%%RGB%[37m World Of Tanks%RGB%[0m              %ESC%[90mº%ESC%[0m 
 echo   %ESC%[90mº%ESC%%ESC%[32m 23.%ESC%%RGB%[36m PDF-XChange Edit”r%RGB%[0m   %ESC%[90mº%ESC%[0m %ESC%[32m 49.%ESC%%RGB%[36m SSD Booster%RGB%[0m            %ESC%[90mº%ESC%%ESC%[32m 75.%ESC%%RGB%[37m Genshin Impact%RGB%[0m              %ESC%[90mº%ESC%[0m 
 echo   %ESC%[90mº%ESC%%ESC%[32m 24.%ESC%%RGB%[36m Calibre%RGB%[0m              %ESC%[90mº%ESC%[0m %ESC%[32m 50.%ESC%%RGB%[36m OpenShell%RGB%[0m              %ESC%[90mº%ESC%%ESC%[32m 76.%ESC%%RGB%[37m League Of Legends%RGB%[0m           %ESC%[90mº%ESC%[0m 
@@ -740,6 +740,11 @@ FOR /F "tokens=1" %%i in ('FIND "Git.exe" %konum%\Ekler\Links.bat') do set link=
 Call :wget "%link%" Git.exe "/VERYSILENT /NORESTART"
 goto :eof
 
+:Download73
+FOR /F "tokens=1" %%i in ('FIND "osu.exe" %konum%\Ekler\Links.bat') do set link=%%i
+Call :wgetdesktop "%link%" "C:\users\%username%\Desktop\osu.exe" 
+goto :eof
+
 :Download74
 FOR /F "tokens=1" %%i in ('FIND "WorldOfTanks.exe" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wgetdesktop "%link%" "C:\users\%username%\Desktop\WorldOfTanks.exe" 
@@ -976,53 +981,114 @@ goto menu
 :kapatilanservislery”netimi
 cls
 mode con cols=55 lines=28
+Call :PowerRun
 title Kapatlan Servisler Y”netimi / OgnitorenKs
 echo  %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
 echo  %ESC%[90mº%ESC%%ESC%[1;97m%ESC%%ESC%[100m           Kapatlan Servisler Y”netimi            %ESC%[0m%ESC%[90mº%ESC%[0m
 echo  %ESC%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m Bluetooth hizmetini %RGB%%RGB%[90m[A€]%RGB%[0m                    %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 2.%ESC%%RGB%[33m Yazc hizmetini %RGB%%RGB%[90m[A€]%RGB%[0m                       %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 3.%ESC%%RGB%[33m Bask hizmetini %RGB%%RGB%[90m[A€]%RGB%[0m                        %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 4.%ESC%%RGB%[33m Telefon hizmetini %RGB%%RGB%[90m[A€]%RGB%[0m                      %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 5.%ESC%%RGB%[33m Tarifeli a§lar %RGB%%RGB%[90m[A€]%RGB%[0m                        %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 6.%ESC%%RGB%[33m IP yardmcs (IPv6)%RGB%%RGB%[90m[A€]%RGB%[0m                    %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 7.%ESC%%RGB%[33m Mobil Etkin Nokta (Hotspot) %RGB%%RGB%[90m[A€]%RGB%[0m            %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 8.%ESC%%RGB%[33m Radyo ve U‡ak modu hizmetini %RGB%%RGB%[90m[A€]%RGB%[0m           %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 9.%ESC%%RGB%[33m Uzak Masast/AkŸ/A§ hizmetleri%RGB%%RGB%[90m[A€]%RGB%[0m        %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 10.%ESC%%RGB%[33m Windows imdi Ba§lan(WPS) %RGB%%RGB%[90m[A€]%RGB%[0m              %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 11.%ESC%%RGB%[33m Tarayc hizmetlerini %RGB%%RGB%[90m[A€]%RGB%[0m                  %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 12.%ESC%%RGB%[33m Kamera hizmetlerini %RGB%%RGB%[90m[A€]%RGB%[0m                    %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 13.%ESC%%RGB%[33m Insider hizmetini %RGB%%RGB%[90m[A€]%RGB%[0m                      %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 14.%ESC%%RGB%[33m Biyometrik hizmeti %RGB%%RGB%[90m[A€]%RGB%[0m                     %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 15.%ESC%%RGB%[33m Kalem ve Dokunmatik Klavye hizmetini %RGB%%RGB%[90m[A€]%RGB%[0m   %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 16.%ESC%%RGB%[33m Sistem Geri ykleme hizmetini%RGB%%RGB%[90m[A€]%RGB%[0m           %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 17.%ESC%%RGB%[33m Sysmain (Hzl Getir)%RGB%%RGB%[90m[A€]%RGB%[0m                   %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 18.%ESC%%RGB%[33m Hzl BaŸlat (Hibernate)%RGB%%RGB%[90m[A€]%RGB%[0m                %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 19.%ESC%%RGB%[33m Konum hizmetini%RGB%%RGB%[90m[A€]%RGB%[0m                         %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 20.%ESC%%RGB%[33m Windows Media Player%RGB%%RGB%[90m[A€]%RGB%[0m                    %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menye d”n %ESC%[0m                                 %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 1%ESC%%RGB%[90m[%RGB%%RGB%[36mA%RGB%%RGB%[90m/%RGB%%RGB%[36mK%RGB%%RGB%[90m]%RGB%%ESC%[32m.%ESC%%RGB%[33m Bluetooth hizmetini %RGB%[0m                   %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 2%ESC%%RGB%[90m[%RGB%%RGB%[36mA%RGB%%RGB%[90m/%RGB%%RGB%[36mK%RGB%%RGB%[90m]%RGB%%ESC%[32m.%ESC%%RGB%[33m Yazc hizmetini %RGB%[0m                      %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 3%ESC%%RGB%[90m[%RGB%%RGB%[36mA%RGB%%RGB%[90m/%RGB%%RGB%[36mK%RGB%%RGB%[90m]%RGB%%ESC%[32m.%ESC%%RGB%[33m Bask hizmetini %RGB%[0m                       %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 4%ESC%%RGB%[90m[%RGB%%RGB%[36mA%RGB%%RGB%[90m/%RGB%%RGB%[36mK%RGB%%RGB%[90m]%RGB%%ESC%[32m.%ESC%%RGB%[33m Telefon hizmetini %RGB%[0m                     %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 5%ESC%%RGB%[90m[%RGB%%RGB%[36mA%RGB%%RGB%[90m/%RGB%%RGB%[36mK%RGB%%RGB%[90m]%RGB%%ESC%[32m.%ESC%%RGB%[33m Tarifeli a§lar %RGB%[0m                       %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 6%ESC%%RGB%[90m[%RGB%%RGB%[36mA%RGB%%RGB%[90m/%RGB%%RGB%[36mK%RGB%%RGB%[90m]%RGB%%ESC%[32m.%ESC%%RGB%[33m IP yardmcs (IPv6)%RGB%[0m                   %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 7%ESC%%RGB%[90m[%RGB%%RGB%[36mA%RGB%%RGB%[90m/%RGB%%RGB%[36mK%RGB%%RGB%[90m]%RGB%%ESC%[32m.%ESC%%RGB%[33m Mobil Etkin Nokta (Hotspot) %RGB%[0m           %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 8%ESC%%RGB%[90m[%RGB%%RGB%[36mA%RGB%%RGB%[90m/%RGB%%RGB%[36mK%RGB%%RGB%[90m]%RGB%%ESC%[32m.%ESC%%RGB%[33m Radyo ve U‡ak modu hizmetini %RGB%[0m          %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 9%ESC%%RGB%[90m[%RGB%%RGB%[36mA%RGB%%RGB%[90m/%RGB%%RGB%[36mK%RGB%%RGB%[90m]%RGB%%ESC%[32m.%ESC%%RGB%[33m Uzak Masast/AkŸ/A§ hizmetleri%RGB%[0m       %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 10%ESC%%RGB%[90m[%RGB%%RGB%[36mA%RGB%%RGB%[90m/%RGB%%RGB%[36mK%RGB%%RGB%[90m]%RGB%%ESC%[32m.%ESC%%RGB%[33m Windows imdi Ba§lan(WPS) %RGB%[0m             %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 11%ESC%%RGB%[90m[%RGB%%RGB%[36mA%RGB%%RGB%[90m/%RGB%%RGB%[36mK%RGB%%RGB%[90m]%RGB%%ESC%[32m.%ESC%%RGB%[33m Tarayc hizmetlerini %RGB%[0m                 %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 12%ESC%%RGB%[90m[%RGB%%RGB%[36mA%RGB%%RGB%[90m/%RGB%%RGB%[36mK%RGB%%RGB%[90m]%RGB%%ESC%[32m.%ESC%%RGB%[33m Kamera hizmetlerini %RGB%[0m                   %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 13%ESC%%RGB%[90m[%RGB%%RGB%[36mA%RGB%%RGB%[90m/%RGB%%RGB%[36mK%RGB%%RGB%[90m]%RGB%%ESC%[32m.%ESC%%RGB%[33m Insider hizmetini %RGB%[0m                     %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 14%ESC%%RGB%[90m[%RGB%%RGB%[36mA%RGB%%RGB%[90m/%RGB%%RGB%[36mK%RGB%%RGB%[90m]%RGB%%ESC%[32m.%ESC%%RGB%[33m Biyometrik hizmeti %RGB%[0m                    %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 15%ESC%%RGB%[90m[%RGB%%RGB%[36mA%RGB%%RGB%[90m/%RGB%%RGB%[36mK%RGB%%RGB%[90m]%RGB%%ESC%[32m.%ESC%%RGB%[33m Kalem ve Dokunmatik hizmetini %RGB%[0m         %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 16%ESC%%RGB%[90m[%RGB%%RGB%[36mA%RGB%%RGB%[90m/%RGB%%RGB%[36mK%RGB%%RGB%[90m]%RGB%%ESC%[32m.%ESC%%RGB%[33m Sistem Geri ykleme hizmetini%RGB%[0m          %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 17%ESC%%RGB%[90m[%RGB%%RGB%[36mA%RGB%%RGB%[90m/%RGB%%RGB%[36mK%RGB%%RGB%[90m]%RGB%%ESC%[32m.%ESC%%RGB%[33m Sysmain (Hzl Getir)%RGB%[0m                  %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 18%ESC%%RGB%[90m[%RGB%%RGB%[36mA%RGB%%RGB%[90m/%RGB%%RGB%[36mK%RGB%%RGB%[90m]%RGB%%ESC%[32m.%ESC%%RGB%[33m Hzl BaŸlat (Hibernate)%RGB%[0m               %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 19%ESC%%RGB%[90m[%RGB%%RGB%[36mA%RGB%%RGB%[90m/%RGB%%RGB%[36mK%RGB%%RGB%[90m]%RGB%%ESC%[32m.%ESC%%RGB%[33m Konum hizmetini%RGB%[0m                        %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 20%ESC%%RGB%[90m[%RGB%%RGB%[36mA%RGB%%RGB%[90m/%RGB%%RGB%[36mK%RGB%%RGB%[90m]%RGB%%ESC%[32m.%ESC%%RGB%[33m Windows Media Player%RGB%[0m                   %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m        %ESC%[32m X.%ESC%%ESC%[36m Menye d”n %ESC%[0m                            %ESC%[90mº%ESC%[0m
 echo  %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
 set /p deger= %RGB%[92m ˜Ÿlem : %RGB%[0m
-	if %deger%==1 goto serv.1.bluetooth
-	if %deger%==2 goto serv.2.yazici
-	if %deger%==3 goto serv.3.baski
-	if %deger%==4 goto serv.4.phone
-	if %deger%==5 goto serv.5.tarifeli
-	if %deger%==6 goto serv.6.ipyardimci
-	if %deger%==7 goto serv.7.hotspot
-	if %deger%==8 goto serv.8.ucakmodu
-	if %deger%==9 goto serv.9.akis
-	if %deger%==10 goto serv.10.wps
-	if %deger%==11 goto serv.11.tarayici
-	if %deger%==12 goto serv.12.camera
-	if %deger%==13 goto serv.13.insider
-	if %deger%==14 goto serv.14.biyometrik
-	if %deger%==15 goto serv.15.dokunmatik
-	if %deger%==16 goto serv.16.sistemgeriyukleme
-	if %deger%==17 goto serv.17.sysmain
-	if %deger%==18 goto serv.18.hibernate
-	if %deger%==19 goto serv.19.konum
-	if %deger%==20 goto serv.20.mediaplayer
+	if %deger%==1a (Call :serv.1.bluetooth start demand a‡lyor)
+	if %deger%==1A (Call :serv.1.bluetooth start demand a‡lyor)
+	if %deger%==1K (Call :serv.1.bluetooth stop disabled kapatlyor)
+	if %deger%==1k (Call :serv.1.bluetooth stop disabled kapatlyor)
+	if %deger%==2a (Call :serv.2.yazici start demand auto a‡lyor)
+	if %deger%==2A (Call :serv.2.yazici start demand auto a‡lyor)
+	if %deger%==2K (Call :serv.2.yazici stop disabled disabled kapatlyor)
+	if %deger%==2k (Call :serv.2.yazici stop disabled disabled kapatlyor)
+	if %deger%==3a (Call :serv.3.baski start demand a‡lyor)
+	if %deger%==3A (Call :serv.3.baski start demand a‡lyor)
+	if %deger%==3K (Call :serv.3.baski stop disabled kapatlyor)
+	if %deger%==3k (Call :serv.3.baski stop disabled kapatlyor)
+	if %deger%==4a (Call :serv.4.phone start demand a‡lyor)
+	if %deger%==4A (Call :serv.4.phone start demand a‡lyor)
+	if %deger%==4K (Call :serv.4.phone stop disabled kapatlyor)
+	if %deger%==4k (Call :serv.4.phone stop disabled kapatlyor)
+	if %deger%==5a (Call :serv.5.tarifeli start auto a‡lyor)
+	if %deger%==5A (Call :serv.5.tarifeli start auto a‡lyor)
+	if %deger%==5K (Call :serv.5.tarifeli stop disabled kapatlyor)
+	if %deger%==5k (Call :serv.5.tarifeli stop disabled kapatlyor)
+	if %deger%==6a (Call :serv.6.ipyardimci start demand auto a‡lyor)
+	if %deger%==6A (Call :serv.6.ipyardimci start demand auto a‡lyor)
+	if %deger%==6K (Call :serv.6.ipyardimci stop disabled disabled kapatlyor)
+	if %deger%==6k (Call :serv.6.ipyardimci stop disabled disabled kapatlyor)
+	if %deger%==7a (Call :serv.7.hotspot start demand a‡lyor)
+	if %deger%==7A (Call :serv.7.hotspot start demand a‡lyor)
+	if %deger%==7K (Call :serv.7.hotspot stop disabled kapatlyor)
+	if %deger%==7k (Call :serv.7.hotspot stop disabled kapatlyor)
+	if %deger%==8a (Call :serv.8.ucakmodu start demand a‡lyor)
+	if %deger%==8A (Call :serv.8.ucakmodu start demand a‡lyor)
+	if %deger%==8K (Call :serv.8.ucakmodu stop disabled kapatlyor)
+	if %deger%==8k (Call :serv.8.ucakmodu stop disabled kapatlyor)
+	if %deger%==9a (Call :serv.9.akis start demand a‡lyor)
+	if %deger%==9A (Call :serv.9.akis start demand a‡lyor)
+	if %deger%==9K (Call :serv.9.akis stop disabled kapatlyor)
+	if %deger%==9k (Call :serv.9.akis stop disabled kapatlyor)
+	if %deger%==10a (Call :serv.10.wps start demand a‡lyor)
+	if %deger%==10A (Call :serv.10.wps start demand a‡lyor)
+	if %deger%==10K (Call :serv.10.wps stop disabled kapatlyor)
+	if %deger%==10k (Call :serv.10.wps stop disabled kapatlyor)
+	if %deger%==11a (Call :serv.11.tarayici start demand a‡lyor)
+	if %deger%==11A (Call :serv.11.tarayici start demand a‡lyor)
+	if %deger%==11K (Call :serv.11.tarayici stop disabled kapatlyor)
+	if %deger%==11k (Call :serv.11.tarayici stop disabled kapatlyor)
+	if %deger%==12a (Call :serv.12.camera start demand a‡lyor)
+	if %deger%==12A (Call :serv.12.camera start demand a‡lyor)
+	if %deger%==12K (Call :serv.12.camera stop disabled kapatlyor)
+	if %deger%==12k (Call :serv.12.camera stop disabled kapatlyor)
+	if %deger%==13a (Call :serv.13.insider start demand a‡lyor)
+	if %deger%==13A (Call :serv.13.insider start demand a‡lyor)
+	if %deger%==13K (Call :serv.13.insider stop disabled kapatlyor)
+	if %deger%==13k (Call :serv.13.insider stop disabled kapatlyor)
+	if %deger%==14a (Call :serv.14.biyometrik start demand a‡lyor)
+	if %deger%==14A (Call :serv.14.biyometrik start demand a‡lyor)
+	if %deger%==14K (Call :serv.14.biyometrik stop disabled kapatlyor)
+	if %deger%==14k (Call :serv.14.biyometrik stop disabled kapatlyor)
+	if %deger%==15a (Call :serv.15.dokunmatik start demand a‡lyor)
+	if %deger%==15A (Call :serv.15.dokunmatik start demand a‡lyor)
+	if %deger%==15K (Call :serv.15.dokunmatik stop disabled kapatlyor)
+	if %deger%==15k (Call :serv.15.dokunmatik stop disabled kapatlyor)
+	if %deger%==16a (Call :serv.16.sistemgeriyukleme start demand ENABLE 0 a‡lyor)
+	if %deger%==16A (Call :serv.16.sistemgeriyukleme start demand ENABLE 0 a‡lyor)
+	if %deger%==16K (Call :serv.16.sistemgeriyukleme stop disabled DISABLE 1 kapatlyor)
+	if %deger%==16k (Call :serv.16.sistemgeriyukleme stop disabled DISABLE 1 kapatlyor)
+	if %deger%==17a (Call :serv.17.sysmain start auto a‡lyor)
+	if %deger%==17A (Call :serv.17.sysmain start auto a‡lyor)
+	if %deger%==17K (Call :serv.17.sysmain stop disabled kapatlyor)
+	if %deger%==17k (Call :serv.17.sysmain stop disabled kapatlyor)
+	if %deger%==18a (Call :serv.18.hibernate on 1 a‡lyor)
+	if %deger%==18A (Call :serv.18.hibernate on 1 a‡lyor)
+	if %deger%==18K (Call :serv.18.hibernate off 0 kapatlyor)
+	if %deger%==18k (Call :serv.18.hibernate off 0 kapatlyor)
+	if %deger%==19a (Call :serv.19.konum start demand Allow 1 delete "/v "DisableLocation" /f" a‡lyor)
+	if %deger%==19A (Call :serv.19.konum start demand Allow 1 delete "/v "DisableLocation" /f" a‡lyor)
+	if %deger%==19K (Call :serv.19.konum stop disabled Deny 0 add "/v "DisableLocation" /t REG_DWORD /d 1 /f" kaptlyor)
+	if %deger%==19k (Call :serv.19.konum stop disabled Deny 0 add "/v "DisableLocation" /t REG_DWORD /d 1 /f" kaptlyor)
+	if %deger%==20a (Call :serv.20.mediaplayer start demand Enable a‡lyor)
+	if %deger%==20A (Call :serv.20.mediaplayer start demand Enable a‡lyor)
+	if %deger%==20K (Call :serv.20.mediaplayer stop disabled Disable kapatlyor)
+	if %deger%==20k (Call :serv.20.mediaplayer stop disabled Disable kapatlyor)
 	if %deger%==x goto menu
 	if %deger%==X goto menu
 else 
@@ -1030,256 +1096,264 @@ else
 
 
 :serv.1.bluetooth
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Bluetooth hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mBluetooth hizmeti a‡lyor...%RGB%[0m 
+echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Bluetooth hizmeti %3. >> %konum%\Logs
+echo   %RGB%[96mBluetooth hizmeti %3 ...%RGB%[0m
 :: Bluetooth (AVCTP hizmeti) 
 ::  Ses, video denetim aktarm protokoldr.
-sc config "BthAvctpSvc" start= demand > NUL 2>&1
-net start BthAvctpSvc > NUL 2>&1
+%PowerRun% sc config "BthAvctpSvc" start= %2
+%PowerRun% net %1 BthAvctpSvc
 :: Bluetooth destek hizmeti
 ::  Bluetooth cihazlarn bulunmas ve iliŸkilendirmesini sa§lar.
-sc config "bthserv" start= demand > NUL 2>&1
-net start bthserv > NUL 2>&1
+%PowerRun% sc config "bthserv" start= %2
+%PowerRun% net %1 bthserv
 :: Bluetooth kullanc deste§i hizmeti
 ::  Kullanc oturumuyla Bluetooth ”zelliklerinin tam ‡alŸmasn sa§lar.
-sc config "BluetoothUserService" start= demand > NUL 2>&1
-net start BluetoothUserService > NUL 2>&1
+%PowerRun% sc config "BluetoothUserService" start= %2
+%PowerRun% net %1 BluetoothUserService
 :: Ses a§ ge‡idi hizmeti
 ::  Eller boŸta profilinin ses a§ ge‡idini destekler.
-sc config "BTAGService" start= demand > NUL 2>&1
-net start BTAGService > NUL 2>&1
-goto kapatilanservislery”netimi
+%PowerRun% sc config "BTAGService" start= %2
+%PowerRun% net %1 BTAGService
+goto :eof
 
 :serv.2.yazici
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Yazc hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mYazc hizmetleri a‡lyor...%RGB%[0m 
-sc config "Spooler" start= auto > NUL 2>&1
-net start Spooler > NUL 2>&1
-DEL /F /Q /A %windir%\System32\spool\PRINTERS\* > NUL 2>&1
+echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Yazc hizmeti %4. >> %konum%\Logs
+echo   %RGB%[96mYazc hizmetleri %4 ...%RGB%[0m
+%PowerRun% sc config "Spooler" start= %3
+%PowerRun% net %1 Spooler
+DEL /F /Q /A %windir%\System32\spool\PRINTERS\*
 :: Uzak Masast Hizmetleri Kullanc Modu Ba§lant Noktas Yeniden Y”nlendiricisi
-sc config UmRdpService start= demand > NUL 2>&1
-goto kapatilanservislery”netimi
+%PowerRun% sc config UmRdpService start= %2
+%PowerRun% net %1 UmRdpService
+goto :eof
 
 :serv.3.baski
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Yazc hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mBask hizmetleri a‡lyor...%RGB%[0m 
+echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Yazc hizmeti %3. >> %konum%\Logs
+echo   %RGB%[96mBask hizmetleri %3 ...%RGB%[0m 
 ::PrintWorkFlow (iŸ akŸ hizmeti)
-sc config McpManagementService start= demand > NUL 2>&1
-sc config PrintWorkflowUserSvc start= demand > NUL 2>&1
+%PowerRun% sc config McpManagementService start= %2
+%PowerRun% net %1 McpManagementService
+%PowerRun% sc config PrintWorkflowUserSvc start= %2
+%PowerRun% net %1 PrintWorkflowUserSvc
+goto :eof
 
 :serv.4.phone
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Telefon hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mTelefon hizmeti a‡lyor...%RGB%[0m 
+echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Telefon hizmeti %3. >> %konum%\Logs
+echo   %RGB%[96mTelefon hizmeti %3 ...%RGB%[0m 
 :: Telefon
-sc config TapiSrv start= demand > NUL 2>&1
-net start TapiSrv > NUL 2>&1
+%PowerRun% sc config TapiSrv start= %2
+%PowerRun% net %1 TapiSrv
 :: Telefon Hizmeti
-sc config PhoneSvc start= demand > NUL 2>&1
-net start PhoneSvc > NUL 2>&1
+%PowerRun% sc config PhoneSvc start= %2
+%PowerRun% net %1 PhoneSvc
 :: Bluetooth (AVCTP hizmeti) 
 ::  Ses, video denetim aktarm protokoldr.
-sc config "BthAvctpSvc" start= demand > NUL 2>&1
-net start BthAvctpSvc > NUL 2>&1
+%PowerRun% sc config "BthAvctpSvc" start= %2
+%PowerRun% net %1 BthAvctpSvc
 :: Bluetooth destek hizmeti
 ::  Bluetooth cihazlarn bulunmas ve iliŸkilendirmesini sa§lar.
-sc config "bthserv" start= demand > NUL 2>&1
-net start bthserv > NUL 2>&1
+%PowerRun% sc config "bthserv" start= %2
+%PowerRun% net %1 bthserv
 :: Bluetooth kullanc deste§i hizmeti
 ::  Kullanc oturumuyla Bluetooth ”zelliklerinin tam ‡alŸmasn sa§lar.
-sc config "BluetoothUserService" start= demand > NUL 2>&1
-net start BluetoothUserService > NUL 2>&1
+%PowerRun% sc config "BluetoothUserService" start= %2
+%PowerRun% net %1 BluetoothUserService
 :: Ses a§ ge‡idi hizmeti
 ::  Eller boŸta profilinin ses a§ ge‡idini destekler.
-sc config "BTAGService" start= demand > NUL 2>&1
-net start BTAGService > NUL 2>&1
-goto kapatilanservislery”netimi
+%PowerRun% sc config "BTAGService" start= %2
+%PowerRun% net %1 BTAGService
+goto :eof
 
 :serv.5.tarifeli
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Tarifeli a§lar hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mTarifeli a§lar hizmeti a‡lyor...%RGB%[0m 
+echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Tarifeli a§lar hizmeti %3. >> %konum%\Logs
+echo   %RGB%[96mTarifeli a§lar hizmeti %3 ...%RGB%[0m
 :: Veri kullanm
 ::  Arkaplan verilierni ve a§ kullanmn snrlar
-sc config DusmSvc start= auto > NUL 2>&1
-net start DusmSvc > NUL 2>&1
-goto kapatilanservislery”netimi
+%PowerRun% sc config DusmSvc start= %2
+%PowerRun% net %1 DusmSvc
+goto :eof
 
 :serv.6.ipyardmci
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| IP yardmc hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mIP yardmcs hizmeti a‡lyor...%RGB%[0m 
+echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| IP yardmc hizmeti %4. >> %konum%\Logs
+echo   %RGB%[96mIP yardmcs hizmeti %4 ...%RGB%[0m
 ::  IPv6 ge‡iŸ teknolojileri ve IP-HTTPS kullanarak tnel ba§lants sa§lar.
-sc config iphlpsvc start= auto > NUL 2>&1
-net start iphlpsvc > NUL 2>&1
+%PowerRun% sc config iphlpsvc start= %3
+%PowerRun% net %1 iphlpsvc
 :: IP €eviri yaplandrma hizmeti (v4'den v6'ya tam tersi y”nde ‡eviriyi yaplandrr)
-sc config IpxlatCfgSvc start= demand > NUL 2>&1
-net start IpxlatCfgSvc > NUL 2>&1
-goto kapatilanservislery”netimi
+%PowerRun% sc config IpxlatCfgSvc start= %2
+%PowerRun% net %1 IpxlatCfgSvc
+goto :eof
 
 :serv.7.hotspot
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Mobil Etkin Nokta hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mMobil etkin nokta hizmeti a‡lyor...%RGB%[0m 
+echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Mobil Etkin Nokta hizmeti %3. >> %konum%\Logs
+echo   %RGB%[96mMobil etkin nokta hizmeti %3 ...%RGB%[0m
 ::  Veri ba§lantsnn baŸka bir cihazla paylaŸlmasn sa§lar
-sc config icssvc start= demand > NUL 2>&1
-net start icssvc > NUL 2>&1
+%PowerRun% sc config icssvc start= %2
+%PowerRun% net %1 icssvc
 :: Internet Ba§lants PaylaŸm (ICS)
-sc config SharedAccess start= demand > NUL 2>&1
-net start SharedAccess > NUL 2>&1
+%PowerRun% sc config SharedAccess start= %2
+%PowerRun% net %1 SharedAccess
 :: Uygulama katman a§ ge‡idi hizmeti
-sc config ALG start= demand > NUL 2>&1
-net start ALG > NUL 2>&1
-goto kapatilanservislery”netimi
+%PowerRun% sc config ALG start= %2
+%PowerRun% net %1 ALG
+goto :eof
 
 :serv.8.ucakmodu
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Radyo ve U‡ak Modu hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mRadyo y”netim ve u‡ak modu hizmeti a‡lyor...%RGB%[0m 
+echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Radyo ve U‡ak Modu hizmeti %3. >> %konum%\Logs
+echo   %RGB%[96mRadyo y”netim ve u‡ak modu hizmeti %3 ...%RGB%[0m
 ::  Radyo y”netimi ve u‡ak modu hizmeti
-sc config RMSvc start= demand > NUL 2>&1
-net start RMSvc > NUL 2>&1
-goto kapatilanservislery”netimi
+%PowerRun% sc config RMSvc start= %2
+%PowerRun% net %1 RMSvc
+goto :eof
 
 :serv.9.akis
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| AkŸ deneyimi hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mUzak Masast/AkŸ hizmetleri a‡lyor...%RGB%[0m 
+echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| AkŸ deneyimi hizmeti %3. >> %konum%\Logs
+echo   %RGB%[96mUzak Masast/AkŸ hizmetleri %3 ...%RGB%[0m
 :: ConsentUx kullanc hizmeti 
-sc config ConsentUxUserSvc start= demand > NUL 2>&1
-net start ConsentUxUserSvc > NUL 2>&1
+%PowerRun% sc config ConsentUxUserSvc start= %2
+%PowerRun% net %1 ConsentUxUserSvc
 :: Miracast, DLNA kullanc arabirimini
-sc config DevicePickerUserSvc start= demand > NUL 2>&1
-net start DevicePickerUserSvc > NUL 2>&1
+%PowerRun% sc config DevicePickerUserSvc start= %2
+%PowerRun% net %1 DevicePickerUserSvc
 :: Cihaz AkŸ
-sc config DevicesFlowUserSvc start= demand > NUL 2>&1
-net start DevicesFlowUserSvc > NUL 2>&1
+%PowerRun% sc config DevicesFlowUserSvc start= %2
+%PowerRun% net %1 DevicesFlowUserSvc
 :: WMP a§ paylaŸm hizmeti
-sc config WMPNetworkSvc start= demand > NUL 2>&1
-net start WMPNetworkSvc > NUL 2>&1
-:: EŸ ad ‡”zmleme protokol
-sc config PNRPsvc start= demand > NUL 2>&1
-net start PNRPsvc > NUL 2>&1
-:: EŸ a§ gruplandrma
-sc config p2psvc start= demand > NUL 2>&1
-net start p2psvc > NUL 2>&1
-:: EŸler aras a§ oluŸturma kimlik y”neticisi
-sc config p2pimsvc start= demand > NUL 2>&1
-net start p2pimsvc > NUL 2>&1
-:: Upnp Aygt ana bilgisyar (A§daki cihazlar bulur)
-sc config SSDPSRV start= demand > NUL 2>&1
-net start SSDPSRV > NUL 2>&1
+%PowerRun% sc config WMPNetworkSvc start= %2
+%PowerRun% net %1 WMPNetworkSvc
 ::PNRP Makine ad yayn hizmeti
-sc config PNRPAutoReg start= demand > NUL 2>&1
-net start PNRPAutoReg > NUL 2>&1
+%PowerRun% sc config PNRPAutoReg start= %2
+%PowerRun% net %1 PNRPAutoReg
+:: EŸ ad ‡”zmleme protokol
+%PowerRun% sc config PNRPsvc start= %2
+%PowerRun% net %1 PNRPsvc
+:: EŸ a§ gruplandrma
+%PowerRun% sc config p2psvc start= %2
+%PowerRun% net %1 p2psvc
+:: EŸler aras a§ oluŸturma kimlik y”neticisi
+%PowerRun% sc config p2pimsvc start= %2
+%PowerRun% net %1 p2pimsvc
 :: UPNP aygt ana makinesi
-sc config upnphost start= demand > NUL 2>&1
-net start upnphost > NUL 2>&1
+%PowerRun% sc config upnphost start= %2
+%PowerRun% net %1 upnphost
+:: Upnp Aygt ana bilgisyar (A§daki cihazlar bulur)
+%PowerRun% sc config SSDPSRV start= %2
+%PowerRun% net %1 SSDPSRV
 :: Uzak masast hizmetleri
-sc config TermService start= demand > NUL 2>&1
-net start TermService > NUL 2>&1
+%PowerRun% sc config TermService start= %2
+%PowerRun% net %1 TermService
 :: Uzak Masast Hizmetleri Kullanc Modu Ba§lant Noktas Yeniden Y”nlendiricisi
-sc config UmRdpService start= demand > NUL 2>&1
-net start UmRdpService > NUL 2>&1
+%PowerRun% sc config UmRdpService start= %2
+%PowerRun% net %1 UmRdpService
 :: Uzak Masast Yaplandrmas
-sc config SessionEnv start= demand > NUL 2>&1
-net start SessionEnv > NUL 2>&1
-goto kapatilanservislery”netimi
+%PowerRun% sc config SessionEnv start= %2
+%PowerRun% net %1 SessionEnv
+goto :eof
 
 :serv.10.wps
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| WPS hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mWindows imdi Ba§lan hizmeti a‡lyor...%RGB%[0m 
+echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| WPS hizmeti %3. >> %konum%\Logs
+echo   %RGB%[96mWindows imdi Ba§lan hizmeti %3 ...%RGB%[0m
 :: Windows imdi Ba§lan - Yaplandrma Dosyas Kaydedici
 ::  WPS protokolnn uygulanmasn sa§lar.
-sc config wcncsvc start= demand > NUL 2>&1
-net start wcncsvc > NUL 2>&1
-goto kapatilanservislery”netimi
+%PowerRun% sc config wcncsvc start= %2
+%PowerRun% net %1 wcncsvc
+goto :eof
 
 :serv.11.tarayici
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Tarayc hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mTarayc hizmetleri a‡lyor...%RGB%[0m 
+echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Tarayc hizmeti %3. >> %konum%\Logs
+echo   %RGB%[96mTarayc hizmetleri %3 ...%RGB%[0m
 :: Resim alma olaylar (Windows G”rnt Alma-WIA)
-sc config WiaRpc start= demand > NUL 2>&1
+%PowerRun% sc config WiaRpc start= %2
+%PowerRun% net %1 WiaRpc
 :: Windows Resim Alma (Windows G”rnt Alma (WIA))
-sc config StiSvc start= demand > NUL 2>&1
-goto kapatilanservislery”netimi
+%PowerRun% sc config StiSvc start= %2
+%PowerRun% net %1 StiSvc
+goto :eof
 
 :serv.12.camera
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Kamera hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mWindows Kamera hizmetleri a‡lyor...%RGB%[0m 
+echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Kamera hizmeti %3. >> %konum%\Logs
+echo   %RGB%[96mWindows Kamera hizmetleri %3 ...%RGB%[0m
 :: Windows Kamera ‡er‡eve sunucusu
-sc config FrameServer start= demand > NUL 2>&1
-net start FrameServer > NUL 2>&1
+%PowerRun% sc config FrameServer start= %2
+%PowerRun% net %1 FrameServer
 :: Windows Kamera €er‡eve Sunucusu
-sc config FrameServerMonitor start= demand > NUL 2>&1
-net start FrameServerMonitor > NUL 2>&1
-goto kapatilanservislery”netimi
+%PowerRun% sc config FrameServerMonitor start= %2
+%PowerRun% net %1 FrameServerMonitor
+goto :eof
 
 :serv.13.insider
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Insider hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mWindows Insider hizmeti a‡lyor...%RGB%[0m 
+echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Insider hizmeti %3. >> %konum%\Logs
+echo   %RGB%[96mWindows Insider hizmeti %3 ...%RGB%[0m
 :: Windows Insider Hizmeti
-sc config wisvc start= demand > NUL 2>&1
-goto kapatilanservislery”netimi
+%PowerRun% sc config wisvc start= %2
+%PowerRun% net %1 wisvc
+goto :eof
 
 :serv.14.biyometrik
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Biyometrik hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mWindows Biyometrik hizmeti a‡lyor...%RGB%[0m 
+echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Biyometrik hizmeti %3. >> %konum%\Logs
+echo   %RGB%[96mWindows Biyometrik hizmeti %3 ...%RGB%[0m
 :: Windows Biyometrik Hizmeti
-sc config WbioSrvc start= demand > NUL 2>&1
-net start WbioSrvc > NUL 2>&1
-goto kapatilanservislery”netimi
+%PowerRun% sc config WbioSrvc start= %2
+%PowerRun% net %1 WbioSrvc
+goto :eof
 
 :serv.15.dokunmatik
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Dokunmatik Klavye ve Kalem hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mDokunmatik Klavye ve Kalem hizmeti a‡lyor...%RGB%[0m 
+echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Dokunmatik Klavye ve Kalem hizmeti %3. >> %konum%\Logs
+echo   %RGB%[96mDokunmatik Klavye ve Kalem hizmeti %3 ...%RGB%[0m
 :: Kalem servisi
-sc config PenService start= demand > NUL 2>&1
-net start PenService > NUL 2>&1
+%PowerRun% sc config PenService start= %2
+%PowerRun% net %1 PenService
 ::Dokunmatik Klavyeyi ve el yazs paneli hizmeit
-sc config TabletInputService start= demand > NUL 2>&1
-net start TabletInputService > NUL 2>&1
-goto kapatilanservislery”netimi
+%PowerRun% sc config TabletInputService start= %2
+%PowerRun% net %1 TabletInputService
+goto :eof
 
 :serv.16.sistemgeriyukleme
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Sistem Geri ykleme hizmeti a‡ld. hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mSistem geri ykleme hizmeti a‡lyor...%RGB%[0m 
+echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Sistem Geri ykleme hizmeti a‡ld. hizmeti %5. >> %konum%\Logs
+echo   %RGB%[96mSistem geri ykleme hizmeti %5 ...%RGB%[0m
 ::Windows Yedekleme ve Geri Ykleme hizmeti
-sc config SDRSVC start= demand > NUL 2>&1
-net start SDRSVC > NUL 2>&1
-schtasks /change /TN "\Microsoft\Windows\SystemRestore\SR" /ENABLE  > NUL 2>&1
-reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore" /f /v "DisableSR" /t REG_DWORD /d 0 > NUL 2>&1
-goto kapatilanservislery”netimi
+%PowerRun% sc config SDRSVC start= %2
+%PowerRun% net %1 SDRSVC
+schtasks /change /TN "\Microsoft\Windows\SystemRestore\SR" /%3 > NUL 2>&1
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore" /f /v "DisableSR" /t REG_DWORD /d %4 > NUL 2>&1
+goto :eof
 
 :serv.17.sysmain
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Hzl Getir^(Sysmain^) hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mHzl Getir hizmeti a‡lyor...%RGB%[0m 
-sc config SysMain start= auto > NUL 2>&1
-net start SysMain > NUL 2>&1
-goto kapatilanservislery”netimi
+echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Hzl Getir^(Sysmain^) hizmeti %3. >> %konum%\Logs
+echo   %RGB%[96mHzl Getir hizmeti %3 ...%RGB%[0m
+%PowerRun% sc config SysMain start= %2
+%PowerRun% net %1 SysMain
+goto :eof
 
 :serv.18.hibernate
 ::Hzl baŸlang‡
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Hzl baŸlang‡^(Hibernate^) hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mHzl baŸlat a‡lyor...%RGB%[0m 
-powercfg /hibernate on
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Power" /v "HibernateEnabled" /t REG_DWORD /d 1 /f > NUL 2>&1
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /v "HiberbootEnabled" /t REG_DWORD /d "1" /f > NUL 2>&1
-goto kapatilanservislery”netimi
+echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Hzl baŸlang‡^(Hibernate^) hizmeti %3. >> %konum%\Logs
+echo   %RGB%[96mHzl baŸlat %3 ...%RGB%[0m
+powercfg /hibernate %1
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Power" /v "HibernateEnabled" /t REG_DWORD /d %2 /f > NUL 2>&1
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /v "HiberbootEnabled" /t REG_DWORD /d %2 /f > NUL 2>&1
+goto :eof
 
 :serv.19.konum
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Konum hizmeti a‡ld. >> %konum%\Logs
-echo  %RGB%[96mKonum hizmeti a‡lyor...%RGB%[0m 
-reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\LocationAndSensors" /v "DisableLocation" /f > NUL 2>&1
-reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\location" /v "Value" /t REG_SZ /d "Allow" /f > NUL 2>&1
-reg add "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\System" /v "AllowLocation" /t REG_DWORD /d 1 /f > NUL 2>&1
-sc config NaturalAuthentication start= demand > NUL 2>&1
-net start NaturalAuthentication > NUL 2>&1
-sc config lfsvc start= demand > NUL 2>&1
-net start lfsvc > NUL 2>&1
-goto kapatilanservislery”netimi
+echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Konum hizmeti %7. >> %konum%\Logs
+echo   %RGB%[96mKonum hizmeti %7 ...%RGB%[0m
+reg %5 "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\LocationAndSensors" %~6 > NUL 2>&1
+reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\location" /v "Value" /t REG_SZ /d "%3" /f > NUL 2>&1
+reg add "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\System" /v "AllowLocation" /t REG_DWORD /d %4 /f > NUL 2>&1
+%PowerRun% sc config NaturalAuthentication start= %2
+%PowerRun% net %1 NaturalAuthentication
+%PowerRun% sc config lfsvc start= %2
+%PowerRun% net %1 lfsvc
+goto :eof
 
 :serv.20.mediaplayer
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| MediaPlayer hizmeti a‡ld. >> %konum%\Logs
+echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| MediaPlayer hizmeti %4. >> %konum%\Logs
 :: Windows Media Player
-echo  %RGB%[96mWindows Media Player a‡lyor...%RGB%[0m 
-Dism /Online /Remove-Feature /FeatureName:MediaPlayback /Quiet /NoRestart
-sc config WMPNetworkSvc start= demand > NUL 2>&1
-goto kapatilanservislery”netimi
+echo   %RGB%[96mWindows Media Player %4 ...%RGB%[0m
+Dism /Online /%3-Feature /FeatureName:MediaPlayback /Quiet /NoRestart
+%PowerRun% sc config WMPNetworkSvc start= %2
+%PowerRun% net %1 WMPNetworkSvc
+goto :eof
 
 
 :stop
@@ -2559,7 +2633,7 @@ echo   %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
 echo    %ESC%[92m 1 - All in One Runtimes%ESC%[0m
 echo   %ESC%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%ESC%[0m
 echo    %ESC%[33m All in One Runtimes b”lm i‡inde;%ESC%[0m
-echo    %ESC%[37m   Microsoft Visual C++ 2005 / 2008 / 2010 / 2012 / 2013 / 2015 / 2019%ESC%[0m
+echo    %ESC%[37m   Microsoft Visual C++ 2005 / 2008 / 2010 / 2012 / 2013 / 2015 / 2019 / 2022%ESC%[0m
 echo    %ESC%[37m   OpenAL: Oyun ses kalitesini arttrr.%ESC%[0m 
 echo    %ESC%[37m   XNA Framework 4.0: C# ile programlanan oyunlarn ‡alŸmas i‡in gerekli%ESC%[0m
 echo    %ESC%[37m   Java%ESC%[0m

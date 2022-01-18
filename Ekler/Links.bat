@@ -77,7 +77,7 @@ https://web.whatsapp.com/desktop/windows/release/x64/WhatsAppSetup.exe WhatsApp.
 
 :04
 :: https://signal.org/download/
-https://updates.signal.org/desktop/signal-desktop-win-5.27.1.exe Signal.exe 
+https://updates.signal.org/desktop/signal-desktop-win-5.28.0.exe Signal.exe 
 
 :05
 :: https://desktop.telegram.org/
@@ -129,7 +129,7 @@ https://brave-browser-downloads.s3.brave.com/latest/brave_installer-x64.exe Brav
 
 :18
 :: https://www.microsoft.com/en-us/edge/business/download
-https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/4726286f-d08f-4d1c-9d86-8cc88d8ca208/MicrosoftEdgeEnterpriseX64.msi edge.msi 
+https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/74afcca4-26d7-4572-ad9d-71fce1ccd55b/MicrosoftEdgeEnterpriseX64.msi edge.msi 
 
 :19
 ::ISLC
@@ -240,7 +240,7 @@ https://ftp.nluug.nl/pub/games/PC/guru3d/afterburner/[Guru3D.com]-MSIAfterburner
 
 :46
 :: http://www.hibitsoft.ir/Uninstaller.html
-https://www.hibitsoft.ir/HiBitUninstaller/HiBitUninstaller-setup-2.7.35.exe Hibit.exe
+http://www.hibitsoft.ir/HiBitUninstaller/HiBitUninstaller-setup-2.7.40.exe Hibit.exe
 
 :47
 https://docs.google.com/uc?export=download&id=1HhC57sKyUV0-6roBqfLkDEwfo_ptXJdS WiseCare365.zip
@@ -278,7 +278,7 @@ https://www2.aomeisoftware.com/download/pa/PAssist_Std.exe AOMEI.exe
 
 :56
 :: https://www.python.org
-https://www.python.org/ftp/python/3.10.1/python-3.10.1-amd64.exe Python.exe
+https://www.python.org/ftp/python/3.10.2/python-3.10.2-amd64.exe Python.exe
 
 :57
 :: https://www.jetbrains.com/pycharm/download/#section=windows
@@ -309,7 +309,10 @@ https://github.com/git-for-windows/git/releases/download/v2.34.1.windows.1/Git-2
 :70
 :71
 :72
+
 :73
+::https://osu.ppy.sh/home/download
+https://m1.ppy.sh/r/osu!install.exe osu.exe
 
 :74
 :: https://worldoftanks.eu/tr/game/download/
@@ -345,4 +348,7 @@ https://app.prntscr.com/build/setup-lightshot.exe LightShoot.exe
 :k3
 :: http://www.pcfreetime.com/formatfactory/index.php?language=en
 http://public.pcfreetime.com/FFSetup5.9.0.0.exe FormatFactory.exe
+
+:Guncelleme
+http://download.windowsupdate.com/c/msdownload/update/software/secu/2022/01/windows10.0-kb5009543-x64_c7b660efcaaa2dd1d55fe91c5cea3d9b209a15cd.msu Windows10Update KB5009543.msu
 

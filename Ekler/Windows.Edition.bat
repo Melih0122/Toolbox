@@ -74,7 +74,7 @@ exit
 
 :WindowsEditMenu
 cls
-mode con cols=53 lines=40
+mode con cols=53 lines=42
 echo  %ESC%[90m…ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕª%ESC%[0m
 echo  %ESC%[90m∫%ESC%%ESC%[1;97m%ESC%%ESC%[100m           OgnitorenKs Windows Edition           %ESC%[0m%ESC%[90m∫%ESC%[0m
 echo  %ESC%[90mÃÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕπ%ESC%[0m
@@ -107,11 +107,12 @@ echo  %ESC%[90m∫  %ESC%[36m 21.%ESC%%RGB%[33m Walpaper Deßiütir%RGB%%RGB%[90m [O
 echo  %ESC%[90m∫  %ESC%[36m 22.%ESC%%RGB%[33m Telemetry engelle (Hosts)%RGB%%RGB%[90m[OFFLINE]%RGB%[0m        %ESC%[90m∫%ESC%[0m
 echo  %ESC%[90m∫  %ESC%[36m 23.%ESC%%RGB%[33m OneDrive Sil %RGB%%RGB%[90m[OFFLINE]%RGB%[0m                    %ESC%[90m∫%ESC%[0m
 echo  %ESC%[90m∫  %ESC%[36m 24.%ESC%%RGB%[33m Gpedit.msc ekle%RGB%%RGB%[90m[OFFLINE]%RGB%[0m                  %ESC%[90m∫%ESC%[0m
+echo  %ESC%[90m∫  %ESC%[36m 25.%ESC%%RGB%[33m Silinmesi gerekenler%RGB%%RGB%[90m[OFFLINE]%RGB%[0m             %ESC%[90m∫%ESC%[0m
 echo  %ESC%[90mÃÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕπ%ESC%[0m
-echo  %ESC%[90m∫  %ESC%[36m 25.%ESC%%RGB%[33m Katçlçmsçz program ve ayar ekle %RGB%%RGB%[90m[OFFLINE]%RGB%[0m %ESC%[90m∫%ESC%[0m
-echo  %ESC%[90m∫  %ESC%[36m 26.%ESC%%RGB%[33m Katçlçmsçz program ve ayar ekle %RGB%%RGB%[90m[ONLINE]%RGB%[0m  %ESC%[90m∫%ESC%[0m
+echo  %ESC%[90m∫  %ESC%[36m 26.%ESC%%RGB%[33m Katçlçmsçz program ve ayar ekle %RGB%%RGB%[90m[OFFLINE]%RGB%[0m %ESC%[90m∫%ESC%[0m
+echo  %ESC%[90m∫  %ESC%[36m 27.%ESC%%RGB%[33m Katçlçmsçz program ve ayar ekle %RGB%%RGB%[90m[ONLINE]%RGB%[0m  %ESC%[90m∫%ESC%[0m
 echo  %ESC%[90mÃÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕπ%ESC%[0m
-echo  %ESC%[90m∫  %ESC%[36m 27.%ESC%%ESC%[36m Mount yol tançmla%ESC%[0m                         %ESC%[90m∫%ESC%[0m
+echo  %ESC%[90m∫  %ESC%[36m 28.%ESC%%ESC%[36m Mount yol tançmla%ESC%[0m                         %ESC%[90m∫%ESC%[0m
 echo  %ESC%[90m»ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕº%ESC%[0m
 set /p WindowsEditMenu= %ESC%[92m Yapmak istedißiniz iülem : %ESC%[0m
 	if %WindowsEditMenu%==1 (Call :WimReader)
@@ -138,9 +139,10 @@ set /p WindowsEditMenu= %ESC%[92m Yapmak istedißiniz iülem : %ESC%[0m
 	if %WindowsEditMenu%==22 (Call :Hosts)
 	if %WindowsEditMenu%==23 (Call :OneDrivedel)
 	if %WindowsEditMenu%==24 (Call :gpeditmsc)
-	if %WindowsEditMenu%==25 (Call :katilimsizoffline)
-	if %WindowsEditMenu%==26 (Call :katilimsizonline)
-	if %WindowsEditMenu%==27 (Call :degisken3)
+	if %WindowsEditMenu%==25 (Call :delhard)
+	if %WindowsEditMenu%==26 (Call :katilimsizoffline)
+	if %WindowsEditMenu%==27 (Call :katilimsizonline)
+	if %WindowsEditMenu%==28 (Call :degisken3)
 else
 	goto WindowsEditMenu
 
@@ -627,7 +629,7 @@ echo  %ESC%[90m∫%ESC%%ESC%[1;97m%ESC%%ESC%[100m                    Yeni Simgeler
 echo  %ESC%[90m»ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕº%ESC%[0m
 Call :PowerRun
 echo [%date% - %time%] ^| Newico ^| Yeni simgeler entegre edildi. Mount=%Mount% >> %konum2%\Logs
-%PowerRun% Powershell -command "Expand-Archive -Force '%konum2%\Files\Newico.zip' '%Mount%\Windows'"
+%PowerRun% Powershell -command "Expand-Archive -Force '%konum2%\Files\Newico.zip' '%Mount%'"
 
 echo  %ESC%[92m òülem tamamlandç. %ESC%[0m  
 timeout /t 2 /nobreak > NUL
@@ -684,6 +686,25 @@ FOR /f %%a IN ('"dir /b %Mount%\servicing\Packages\Microsoft-Windows-GroupPolicy
 FOR /f %%a IN ('"dir /b %Mount%\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~*.mum") do (Dism /Image:%Mount% /Add-Package:"%SystemRoot%\servicing\Packages\%%a")
 goto :eof
 
+:delhard
+Call :PowerRun
+%PowerRun% DEL /F /Q /A "%Mount%\Windows\System32\drivers\MsSecFlt.sys" > NUL 
+REM System Guard Runtime Monitor Agent (Sistem korumasç)
+%PowerRun% DEL "%Mount%\Windows\System32\drivers\SgrmAgent.sys" > NUL 
+REM Windows Defender
+%PowerRun% DEL /F /Q /A "%Mount%\Windows\System32\drivers\WdBoot.sys" > NUL 
+REM Windows Defender
+%PowerRun% DEL /F /Q /A "%Mount%\Windows\System32\drivers\WdFilter.sys" > NUL 
+REM Windows Defender
+%PowerRun% DEL /F /Q /A "%Mount%\Windows\System32\drivers\WdNisDrv.sys" > NUL 
+%PowerRun% DEL /F /Q /A "%Mount%\Windows\System32\smartscreen.exe" > NUL 
+%PowerRun% DEL /F /Q /A "%Mount%\Windows\System32\CompatTelRunner.exe" > NUL 
+%PowerRun% DEL /F /Q /A "%Mount%\Windows\System32\securityhealthhost.exe" > NUL 
+%PowerRun% DEL /F /Q /A "%Mount%\Windows\System32\securityhealthservice.exe" > NUL  
+%PowerRun% DEL /F /Q /A "%Mount%\Windows\System32\securityhealthsystray.exe" > NUL 2>&1
+%PowerRun% DEL /F /Q /A "%Mount%\Windows\System32\SgrmBroker.exe" > NUL 2>&1
+goto :eof
+
 :: ˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛
 
 :Windows10regedit
@@ -708,6 +729,50 @@ Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Windows\CurrentVersion\Explorer\A
 goto RegeditOrtak
 
 :RegeditOrtak
+:: Cortana 
+Call :dword "HKLM\OG_DEFAULT\SOFTWARE\Microsoft\InputPersonalization\TrainedDataStore" "HarvestContacts" "0" 
+Call :dword "HKLM\OG_DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" "DeviceHistoryEnabled" "0"
+Call :dword "HKLM\OG_DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" "HistoryViewEnabled" "0"
+Call :dword "HKLM\OG_DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Windows Search" "CortanaConsent" "0"
+Call :dword "HKLM\OG_DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Windows Search" "CortanaIsReplaceable" "1"
+Call :dword "HKLM\OG_DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Windows Search" "CortanaIsReplaced" "1"
+Call :dword "HKLM\OG_DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Windows Search" "SearchboxTaskbarMode" "0"
+Call :dword "HKLM\OG_DEFAULT\SOFTWARE\Policies\Microsoft\InputPersonalization" "RestrictImplicitInkCollection" "1"
+Call :dword "HKLM\OG_DEFAULT\SOFTWARE\Policies\Microsoft\InputPersonalization" "RestrictImplicitTextCollection" "1"
+Call :dword "HKLM\OG_NTUSER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\MicrosoftEdge\ServiceUI" "EnableCortana" "0"
+Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\InputPersonalization" "RestrictImplicitInkCollection" "1"
+Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\InputPersonalization" "RestrictImplicitTextCollection" "1"
+Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\InputPersonalization\TrainedDataStore" "HarvestContacts" "0"
+Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Personalization\Settings" "AcceptedPrivacyPolicy" "0"
+Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" "DeviceHistoryEnabled" "0"
+Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" "HistoryViewEnabled" "0"
+Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\Windows Search" "CortanaConsent" "0"
+Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\Windows Search" "CortanaIsReplaceable" "1"
+Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\Windows Search" "CortanaIsReplaced" "1"
+Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\Windows Search" "SearchboxTaskbarMode" "0"
+Call :dword "HKLM\OG_SOFTWARE\Microsoft\PolicyManager\current\device\AboveLock" "AllowCortanaAboveLock" "0"
+Call :dword "HKLM\OG_SOFTWARE\Microsoft\PolicyManager\current\device\Experience" "AllowCortana" "0"
+Call :dword "HKLM\OG_SOFTWARE\Microsoft\Speech_OneCore\Preferences" "ModelDownloadAllowed" "0"
+Call :dword "HKLM\OG_SOFTWARE\Microsoft\Windows\CurrentVersion\Search" "SearchboxTaskbarMode" "1"
+Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\InputPersonalization" "AllowInputPersonalization" "0"
+Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\Windows Search" "AllowCloudSearch" "0"
+Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\Windows Search" "AllowCortana" "0"
+Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\Windows Search" "AllowCortanaAboveLock" "0"
+Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\Windows Search" "AllowSearchToUseLocation" "0"
+Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\Windows Search" "ConnectedSearchPrivacy" "3"
+Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\Windows Search" "ConnectedSearchSafeSearch" "3"
+Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\Windows Search" "ConnectedSearchUseWeb" "0"
+Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\Windows Search" "ConnectedSearchUseWebOverMeteredConnections" "0"
+Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\Windows Search" "DisableWebSearch" "1"
+Call :dword "HKLM\OG_SOFTWARE\Policies\Wow6432Node\Microsoft\Windows\Windows Search" "AllowCortana" "0"
+Call :dword "HKLM\OG_SOFTWARE\Policies\Wow6432Node\Microsoft\Windows\Windows Search" "AllowCortanaAboveLock" "0"
+Call :sz "HKLM\OG_SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules" "Block Cortana ActionUriServer.exe" "v2.26|Action=Block|Active=TRUE|Dir=Out|RA42=IntErnet|RA62=IntErnet|App=C:\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy\ActionUriServer.exe|Name=Block Cortana ActionUriServer.exe|Desc=Block Cortana Outbound UDP/TCP Traffic|"
+Call :sz "HKLM\OG_SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules" "Block Cortana Package" "v2.26|Action=Block|Active=TRUE|Dir=Out|RA42=IntErnet|RA62=IntErnet|Name=Block Cortana Package|Desc=Block Cortana Outbound UDP/TCP Traffic|AppPkgId=S-1-15-2-1861897761-1695161497-2927542615-642690995-327840285-2659745135-2630312742|Platform=2:6:2|Platform2=GTEQ|"
+Call :sz "HKLM\OG_SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules" "Block Cortana PlacesServer.exe" "v2.26|Action=Block|Active=TRUE|Dir=Out|RA42=IntErnet|RA62=IntErnet|App=C:\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy\PlacesServer.exe|Name=Block Cortana PlacesServer.exe|Desc=Block Cortana Outbound UDP/TCP Traffic|"
+Call :sz "HKLM\OG_SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules" "Block Cortana RemindersServer.exe" "v2.26|Action=Block|Active=TRUE|Dir=Out|RA42=IntErnet|RA62=IntErnet|App=C:\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy\RemindersServer.exe|Name=Block Cortana RemindersServer.exe|Desc=Block Cortana Outbound UDP/TCP Traffic|"
+Call :sz "HKLM\OG_SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules" "Block Cortana RemindersShareTargetApp.exe" "v2.26|Action=Block|Active=TRUE|Dir=Out|RA42=IntErnet|RA62=IntErnet|App=C:\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy\RemindersShareTargetApp.exe|Name=Block Cortana RemindersShareTargetApp.exe|Desc=Block Cortana Outbound UDP/TCP Traffic|"
+Call :sz "HKLM\OG_SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules" "Block Cortana SearchUI.exe" "v2.26|Action=Block|Active=TRUE|Dir=Out|RA42=IntErnet|RA62=IntErnet|App=C:\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy\SearchUI.exe|Name=Block Cortana SearchUI.exe|Desc=Block Cortana Outbound UDP/TCP Traffic|"
+Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Narrator\QuickStart" "SkipQuickStart" 1 &  :: Narrator QuickStart kapatçlçyor
 :: 3.Parti programlarçn yÅklenmesini engelle
 Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\CloudContent" "DisableWindowsConsumerFeatures" "1"
 Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "ContentDeliveryAllowed" 0
@@ -853,13 +918,13 @@ Call :dword "HKLM\OG_SOFTWARE\Microsoft\SQMClient\Windows" "CEIPEnable" "0" & ::
 Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\SQMClient\Windows" "CEIPEnable" "0" & :: MÅüteri Deneyim Programçnç devre dçüç bçrakçr
 Call :binary "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" "Link" "00000000" & :: Kçsayol yazçsç kaldçrçlçyor...
 Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore" "DisableSR" "1" & :: Sistem geri yÅkleme kapatçr
-Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.Photos.8wekyb3d8bbwe" "Disabled" "1" & Fotoßraflar uygulamasç arka planda áalçümaz
-Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.Photos.8wekyb3d8bbwe" "SleepDisabled" "1" & Fotoßraflar uygulamasç arka planda áalçümaz
-Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.Photos.8wekyb3d8bbwe" "DisabledByUser" "1" & Fotoßraflar uygulamasç arka planda áalçümaz
+Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.Photos.8wekyb3d8bbwe" Disabled 1 & ::Fotoßraflar uygulamasç arka planda áalçümaz
+Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.Photos.8wekyb3d8bbwe" SleepDisabled 1 & ::Fotoßraflar uygulamasç arka planda áalçümaz
+Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.Photos.8wekyb3d8bbwe" DisabledByUser 1 & :: Fotoßraflar uygulamasç arka planda áalçümaz
 :: eklentiler
 Call :sz "HKLM\OG_SOFTWARE\WOW6432Node\Microsoft\Edge\Extensions\cjpalhdlnbpafiamejdnhcphjbkeiagm" "update_url" "https://clients2.google.com/service/update2/crx" & :: UBlock Origin
-Call :sz "HKLM\OG_SOFTWARE\WOW6432Node\Microsoft\Edge\Extensions\cjpalhdlnbpafiamejdnhcphjbkeiagm" "update_url" "https://clients2.google.com/service/update2/crx" & :: HTTPS Everywhere 
-Call :sz "HKLM\OG_SOFTWARE\WOW6432Node\Microsoft\Edge\Extensions\cjpalhdlnbpafiamejdnhcphjbkeiagm" "update_url" "https://clients2.google.com/service/update2/crx" & :: Clear URL's
+Call :sz "HKLM\OG_SOFTWARE\WOW6432Node\Microsoft\Edge\Extensions\gcbommkclmclpchllfjekcdonpmejbdp" "update_url" "https://clients2.google.com/service/update2/crx" & :: HTTPS Everywhere 
+Call :sz "HKLM\OG_SOFTWARE\WOW6432Node\Microsoft\Edge\Extensions\lckanjgmijmafbedllaakclkaicjfmnk" "update_url" "https://clients2.google.com/service/update2/crx" & :: Clear URL's
 :: Sahiplißi al
 Call :vesz "HKLM\OG_SOFTWARE\Classes\*\shell\runas" "Sahiplißi Al" 
 Call :sz "HKLM\OG_SOFTWARE\Classes\*\shell\runas" "Icon" "imageres.dll,73" 
@@ -872,6 +937,9 @@ Call :sz "HKLM\OG_SOFTWARE\Classes\Directory\shell\runas" "NoWorkingDirectory" "
 Call :vesz "HKLM\OG_SOFTWARE\Classes\Directory\shell\runas\command" "cmd.exe /c takeown /f \"%%%%1\" /r /d y && ica \"%%%%1\" /grant administrators:F /t"
 Call :sz "HKLM\OG_SOFTWARE\Classes\Directory\shell\runas\command" "IsolatedCommand" "cmd.exe /c takeown /f \"%%%%1\" /r /d y && ica \"%%%%1\" /grant administrators:F /t"
 Call :sz "HKLM\OG_SOFTWARE\Classes\.bat\ShellNew" "NullFile" "" & :: Saß tçk Yeni bîlÅmÅne Bat dosyasç oluüturma ekle
+::3D Nesneler
+Call :delete "HKLM\OG_SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}"
+Call :delete "HKLM\OG_SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}"
 timeout /t 7 /nobreak > NUL
 Call :RegTopla
 goto WindowsEditMenu
@@ -1102,47 +1170,3 @@ exit /B 0
 
 
 :PasifeAlinanlar
-:: Cortana 
-Call :dword "HKLM\OG_DEFAULT\SOFTWARE\Microsoft\InputPersonalization\TrainedDataStore" "HarvestContacts" "0" 
-Call :dword "HKLM\OG_DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" "DeviceHistoryEnabled" "0"
-Call :dword "HKLM\OG_DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" "HistoryViewEnabled" "0"
-Call :dword "HKLM\OG_DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Windows Search" "CortanaConsent" "0"
-Call :dword "HKLM\OG_DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Windows Search" "CortanaIsReplaceable" "1"
-Call :dword "HKLM\OG_DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Windows Search" "CortanaIsReplaced" "1"
-Call :dword "HKLM\OG_DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Windows Search" "SearchboxTaskbarMode" "0"
-Call :dword "HKLM\OG_DEFAULT\SOFTWARE\Policies\Microsoft\InputPersonalization" "RestrictImplicitInkCollection" "1"
-Call :dword "HKLM\OG_DEFAULT\SOFTWARE\Policies\Microsoft\InputPersonalization" "RestrictImplicitTextCollection" "1"
-Call :dword "HKLM\OG_NTUSER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\MicrosoftEdge\ServiceUI" "EnableCortana" "0"
-Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\InputPersonalization" "RestrictImplicitInkCollection" "1"
-Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\InputPersonalization" "RestrictImplicitTextCollection" "1"
-Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\InputPersonalization\TrainedDataStore" "HarvestContacts" "0"
-Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Personalization\Settings" "AcceptedPrivacyPolicy" "0"
-Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" "DeviceHistoryEnabled" "0"
-Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" "HistoryViewEnabled" "0"
-Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\Windows Search" "CortanaConsent" "0"
-Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\Windows Search" "CortanaIsReplaceable" "1"
-Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\Windows Search" "CortanaIsReplaced" "1"
-Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\Windows Search" "SearchboxTaskbarMode" "0"
-Call :dword "HKLM\OG_SOFTWARE\Microsoft\PolicyManager\current\device\AboveLock" "AllowCortanaAboveLock" "0"
-Call :dword "HKLM\OG_SOFTWARE\Microsoft\PolicyManager\current\device\Experience" "AllowCortana" "0"
-Call :dword "HKLM\OG_SOFTWARE\Microsoft\Speech_OneCore\Preferences" "ModelDownloadAllowed" "0"
-Call :dword "HKLM\OG_SOFTWARE\Microsoft\Windows\CurrentVersion\Search" "SearchboxTaskbarMode" "1"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\InputPersonalization" "AllowInputPersonalization" "0"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\Windows Search" "AllowCloudSearch" "0"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\Windows Search" "AllowCortana" "0"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\Windows Search" "AllowCortanaAboveLock" "0"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\Windows Search" "AllowSearchToUseLocation" "0"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\Windows Search" "ConnectedSearchPrivacy" "3"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\Windows Search" "ConnectedSearchSafeSearch" "3"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\Windows Search" "ConnectedSearchUseWeb" "0"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\Windows Search" "ConnectedSearchUseWebOverMeteredConnections" "0"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\Windows Search" "DisableWebSearch" "1"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Wow6432Node\Microsoft\Windows\Windows Search" "AllowCortana" "0"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Wow6432Node\Microsoft\Windows\Windows Search" "AllowCortanaAboveLock" "0"
-Call :sz "HKLM\OG_SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules" "Block Cortana ActionUriServer.exe" "v2.26|Action=Block|Active=TRUE|Dir=Out|RA42=IntErnet|RA62=IntErnet|App=C:\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy\ActionUriServer.exe|Name=Block Cortana ActionUriServer.exe|Desc=Block Cortana Outbound UDP/TCP Traffic|"
-Call :sz "HKLM\OG_SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules" "Block Cortana Package" "v2.26|Action=Block|Active=TRUE|Dir=Out|RA42=IntErnet|RA62=IntErnet|Name=Block Cortana Package|Desc=Block Cortana Outbound UDP/TCP Traffic|AppPkgId=S-1-15-2-1861897761-1695161497-2927542615-642690995-327840285-2659745135-2630312742|Platform=2:6:2|Platform2=GTEQ|"
-Call :sz "HKLM\OG_SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules" "Block Cortana PlacesServer.exe" "v2.26|Action=Block|Active=TRUE|Dir=Out|RA42=IntErnet|RA62=IntErnet|App=C:\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy\PlacesServer.exe|Name=Block Cortana PlacesServer.exe|Desc=Block Cortana Outbound UDP/TCP Traffic|"
-Call :sz "HKLM\OG_SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules" "Block Cortana RemindersServer.exe" "v2.26|Action=Block|Active=TRUE|Dir=Out|RA42=IntErnet|RA62=IntErnet|App=C:\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy\RemindersServer.exe|Name=Block Cortana RemindersServer.exe|Desc=Block Cortana Outbound UDP/TCP Traffic|"
-Call :sz "HKLM\OG_SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules" "Block Cortana RemindersShareTargetApp.exe" "v2.26|Action=Block|Active=TRUE|Dir=Out|RA42=IntErnet|RA62=IntErnet|App=C:\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy\RemindersShareTargetApp.exe|Name=Block Cortana RemindersShareTargetApp.exe|Desc=Block Cortana Outbound UDP/TCP Traffic|"
-Call :sz "HKLM\OG_SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules" "Block Cortana SearchUI.exe" "v2.26|Action=Block|Active=TRUE|Dir=Out|RA42=IntErnet|RA62=IntErnet|App=C:\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy\SearchUI.exe|Name=Block Cortana SearchUI.exe|Desc=Block Cortana Outbound UDP/TCP Traffic|"
-Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Narrator\QuickStart" "SkipQuickStart" 1 &  :: Narrator QuickStart kapatçlçyor.
