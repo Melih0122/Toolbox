@@ -2,7 +2,7 @@
 # OGNİTORENKS TOOLBOX
 - Toolbox Windows 10 - 11 sürümlerinin x64 mimarilerinde açılmaktadır. Farklı sürümler için desteği yoktur. En güncel olan sürüm ile senkronize olarak gelişmektedir.
 - Windows ekran ölçeklendirme ayarı Toolbox'ın pencerini ayarını bozabiliyor. Sorunsuz kullanım için Toolbox'ı kullanırken ölçeklendirme etkileri kapatılmalıdır.
-- 
+
 ![cmd_6ThYu41LCV](https://user-images.githubusercontent.com/93199689/149926518-3cf6c8a5-c2f5-442d-8374-d1769067a126.png)
 ![cmd_hrSHoXFkfM](https://user-images.githubusercontent.com/93199689/149926525-b91c4075-4088-4ced-8b45-8f75ba895dc2.png)
 
