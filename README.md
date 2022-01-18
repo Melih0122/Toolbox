@@ -119,11 +119,12 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	• 60 - Github Desktop: Grafik arayüzlü bir git istemcisidir.
 	• 61 - Git: Dağıtım takip sistemidir.
 #### ► Oyunlar
+    • 73 - OSU!: Müzik video oyunduur.
     • 74 - World Of Tanks: Online tank oyunu.
     • 75 - Genshin Impact: Online oyundur.
-	• 76 - League Of Legends: Riot Games'in oyunudur. 5 vs 5 şeklinde karşılaşma yapılır. Sıkıntılı insanlarla oynandığında klavye kırdırabilir. (Sorumlusu ben değilim :D)
-	• 77 - Blitz: League Of Legends oyununun yardımcı uygulamasıdır. Hile değildir, ban yeme riski yoktur. Oyun içi rehber görevi görür.
-	• 78 - Valorant: Riot Games'in CS:GO tarzı oyunudur.
+    • 76 - League Of Legends: Riot Games'in oyunudur. 5 vs 5 şeklinde karşılaşma yapılır. Sıkıntılı insanlarla oynandığında klavye kırdırabilir. (Sorumlusu ben değilim :D)
+    • 77 - Blitz: League Of Legends oyununun yardımcı uygulamasıdır. Hile değildir, ban yeme riski yoktur. Oyun içi rehber görevi görür.
+    • 78 - Valorant: Riot Games'in CS:GO tarzı oyunudur.
 # BONUS
 	• 53. - Bu bölüm işletim sistemine göre değişiklik göstermektedir. Windows 11 ve Windows 10 için iki ayrı bölüme ayrılmıştır.
 ### • 53 - Windows 10 Düzenleme
@@ -188,28 +189,28 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 		
 	• 8 - Gpedit.msc (Yerel Grup ilkesi) [Ekle]: Windows Home ve Home Single Language sürümlerine "Gpedit.msc" ekler.
 ### • 54 - Kapatılan Servisleri Yönet
-![KapatılanServisYonetimi](https://user-images.githubusercontent.com/93199689/148984019-69ee9db8-2026-4a85-9daf-e1b5949c3ce8.png)
+![cmd_BIB9uzpoGo](https://user-images.githubusercontent.com/93199689/149864879-9d945f79-08f2-489b-b8a7-ade45f6c6cb3.png)
 
-	• 1 - Bluetooth [Aç]: Bluetooth hizmetlerini açar.
-	• 2 - Yazıcı [Aç]: Yazıcı hizmetlerini açar.
-	• 3 - Baskı [Aç]: Yazıcı hizmetlerini açar.
-	• 4 - Telefon hizmetini [Aç]: Telefon uygulamasına ait hizmetleri açar.
-	• 5 - Tarifeli ağları [Aç]: Kotalı internetiniz var, kota aşımını önlemek için bu hizmeti kullanabilirsiniz. (Nasıl oluyor hiç bilmiyorum, yalnızca hizmeti açıyorum :D)
-	• 6 - IP Yardımcısı [Aç]: IPv6 destekli internet hizmetiniz var ise bu hizmeti açın.
-	• 7 - Mobil Etkin Nokta (Hotspot) [Aç]: Kullandığınız cihazdan interneti paylaşmanızı sağlayayacak donanım var ise buradan hizmeti açabilirsiniz.
-	• 8 - Radyo ve Uçak modu hizmeti [Aç]: Laptoplarda kullanılacak hizmettir. Windows 11'de bu hizmet kapalı olunca ağ simgesi görünmüyor. 
-	• 9 - Uzak Masaüstü/Akış/Ağ hizmetleri [Aç]: Uzak bağlantı, ağdaki cihazları görme dosya paylaşmaya izin veren hizmetleri açar. 
-	• 10 - Windows Şimdi Bağlan (WPS) [Aç]: WPS özelliğini kullanmanızı sağlayan hizmeti açar.
-	• 11 - Tarayıcı hizmetlerini [Aç]: Tarayıcı cihazınızı sorunsuz kullanmanız için hizmetleri açar.
-	• 12 - Kamera hizmetlerini [Aç]: Kamera cihazınızı sorunsuz kullanmanız için hizmetleri açar.
-	• 13 - Insider hizmeti [Aç]: Windows ön sürümlerini erkenden deneyimleyip hataları bulup bildirmek gibi bir koca yüreğiniz var ise bu servisi aktif ederek. Insider sürüme kayıt olunuz.
-	• 14 - Biyometrik Hizmeti [Aç]: Kullanıdığınız cihazda parmak okuyucu tarzı cihazlar var ise sorunsuz kullanmanız için açar.
-	• 15 - Kalem ve Dokunmatik Klavye hizmetini [Aç]: Dokunmatik destekli cihazınız var ise sorunsuz kullanmanız için hizmetleri açar.
-	• 16 - Sistem geri yükleme hizmeti [Aç]: Sistem geri yükleme hizmetini açar.
-	• 17 - Sysmain (Hızlı Getir) [Aç]: Windows daha hızlı deneyim sunması için diski daha fazla kullanır. Yüksek disk kullanımına sebebiyet verir. SSD varsa gereksizdir. Kullanırsanız hizmeti açar.
-	• 18 - Hızlı Başlat (Hibernate) [Aç]: Sistem önbellekleme yaparak hızlı açılmasını sağlar. Ancak kapanmama gibi sorunlara neden olmaktadır. Kullanmak isterseniz hizmeti açar.
-	• 19 - Konum hizmetini [Aç]: Bilgisayarlarda bu özelliği hep gereksiz bulmuşumdur. Laptop cihazınız konumunuzu tam olarak tespit edebiliyorsa açın. Yoksa hiç açmayın.
-	• 20 - Windows Media Player [Aç]: Windows Media Player'ı yeniden açmanızı sağlar. 
+	• 1 [A/K] - Bluetooth : Bluetooth hizmetlerini açar.
+	• 2 [A/K]- Yazıcı : Yazıcı hizmetlerini açar.
+	• 3 [A/K]- Telefon hizmetini : Telefon uygulamasına ait hizmetleri açar.
+	• 4 [A/K]- Tarifeli ağları : Kotalı internetiniz var, kota aşımını önlemek için bu hizmeti kullanabilirsiniz. (Nasıl oluyor hiç bilmiyorum, yalnızca hizmeti açıyorum :D)
+	• 5 [A/K]- IP Yardımcısı : IPv6 destekli internet hizmetiniz var ise bu hizmeti açın.
+	• 6 [A/K]- Mobil Etkin Nokta (Hotspot) : Kullandığınız cihazdan interneti paylaşmanızı sağlayayacak donanım var ise buradan hizmeti açabilirsiniz.
+	• 7 [A/K]- Radyo ve Uçak modu hizmeti : Laptoplarda kullanılacak hizmettir. Windows 11'de bu hizmet kapalı olunca ağ simgesi görünmüyor. 
+	• 8 [A/K]- Akış deneyimi (Ekran Paylaş) : Aynı ağı kullanan cihazları görmek ve ekrana yansıtma, aktarma gibi özellikleri kullanılabilmesi için hizmetleri açar.
+	• 9 [A/K]- Windows Şimdi Bağlan (WPS) : WPS özelliğini kullanmanızı sağlayan hizmeti açar.
+	• 10 [A/K]- Tarayıcı hizmetlerini : Tarayıcı cihazınızı sorunsuz kullanmanız için hizmetleri açar.
+	• 11 [A/K]- Kamera hizmetlerini : Kamera cihazınızı sorunsuz kullanmanız için hizmetleri açar.
+	• 12 [A/K]- Uzak Masaüstü : Uzak masaüstü hizmetlerini açar. Ağdaki cihazlar arası paylaşımda sıkıntı yaşıyorsanız 7 numaralı işlem ile birlikte açın.
+	• 13 [A/K]- Insider hizmeti : Windows ön sürümlerini erkenden deneyimleyip hataları bulup bildirmek gibi bir koca yüreğiniz var ise bu servisi aktif ederek. Insider sürüme kayıt olunuz.
+	• 14 [A/K]- Biyometrik Hizmeti : Kullanıdığınız cihazda parmak okuyucu tarzı cihazlar var ise sorunsuz kullanmanız için açar.
+	• 15 [A/K]- Kalem ve Dokunmatik Klavye hizmetini : Dokunmatik destekli cihazınız var ise sorunsuz kullanmanız için hizmetleri açar.
+	• 16 [A/K]- Sistem geri yükleme hizmeti : Sistem geri yükleme hizmetini açar.
+	• 17 [A/K]- Sysmain (Hızlı Getir) : Windows daha hızlı deneyim sunması için diski daha fazla kullanır. Yüksek disk kullanımına sebebiyet verir. SSD varsa gereksizdir. Kullanırsanız hizmeti açar.
+	• 18 [A/K]- Hızlı Başlat (Hibernate) : Sistem önbellekleme yaparak hızlı açılmasını sağlar. Ancak kapanmama gibi sorunlara neden olmaktadır. Kullanmak isterseniz hizmeti açar.
+	• 19 [A/K]- Konum hizmetini : Bilgisayarlarda bu özelliği hep gereksiz bulmuşumdur. Laptop cihazınız konumunuzu tam olarak tespit edebiliyorsa açın. Yoksa hiç açmayın.
+	• 20 [A/K]- Windows Media Player : Windows Media Player'ı yeniden açmanızı sağlar. 
 ### • 55 - Simge Hatasını Düzelt: 
 	• Simgeleri değiştirdikten sonra oluşacak sorunları giderir.
 ### • 56 - Windows Düzenleme:
