@@ -361,8 +361,9 @@ SLMGR.VBS komutlarını içermektedir. Crack tarzı işlemler bulunmamaktadır.
 	• 6 - Şifremi unuttum: Şifre değiştirmek veya şifre oluşturmak için bu bölüm kullanılabilir.
 	• 7 - Mevcut Kullanıcıları Göster: Sistemde kayıtlı kullanıcıları gösterir.
 ### • 66 - Sistem Hakkında:
+- Sistem ve donanım hakkında bilgi verir.
 ![SistemHakkında](https://user-images.githubusercontent.com/93199689/148984034-bcafa477-5e34-4fe5-8723-09c16225dcee.png)
-	• Sistem ve donanım hakkında bilgi verir.
+
 ### • 67 - Wifi Crack:	 
 	• Bu bölümde sisteme girdiğiniz Wifi liste ve şifrelerini görebilirsiniz.
 	• Çalışmasını toolbox'a eklediği için Archley'e teşekkür ederim.
