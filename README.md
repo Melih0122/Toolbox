@@ -226,7 +226,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 ### • 56 - Windows Düzenleme:
 Mavi renkli işlem numaraları 27 numaralı işlem ile alakalıdır.
 
-![Windows Edit](https://user-images.githubusercontent.com/93199689/147974753-c88b0a8c-39f3-4b13-b481-a73c9e0cfb50.png)
+![cmd_ny6Aqy4yKG](https://user-images.githubusercontent.com/93199689/150528537-55f9eb5d-c0a1-4207-86ec-d4ac4822bba7.png)
  
 	• 1 - WIM / ESD Okuyucu: install.wim ve install.esd dosyalarının içeriği hakkında bilgi verir.
 	     • https://www.technopat.net/sosyal/konu/wim-ve-esd-dosyalarini-okumak.1672854/
@@ -301,12 +301,14 @@ Mavi renkli işlem numaraları 27 numaralı işlem ile alakalıdır.
 	• 22 - Telemetri engelle (Host) [Offline]: Offline sistemden hosts dosyasını değiştirir içerisinde telemetri servislerini engelleyen parametreler vardır.
 	• 23 - OneDrive Sil [Offline]: Offline sistemden OneDrive siler.
 	• 24 - Gpedit.msc ekle [Offline]: Offline sistemden Windows Home ve Home Single Language sürümlerine ekleyebilirsiniz.
+	• 25 - Hyper-V ekle: Home ve HomeSingle Language sürümlerinin imajlarına Hyper-V ekler.
+	• 26 - Silinmesi gerekenler: Defender hizmetine bağlı servisleri siler.
 	• -------------------------------------------------------------------------------------------------------------------------
-	• 25 - Katılımsız program ve ayar ekle [Offline]: Offline sisteme katılımsız program entegre eder.
+	• 27 - Katılımsız program ve ayar ekle [Offline]: Offline sisteme katılımsız program entegre eder.
 	     • 51 numaralı işlem [Çoklu Seçim] bölümü 1 - 50 işlemlerini kapsamaktadır.
 ![cmd_GkxOczJV0D](https://user-images.githubusercontent.com/93199689/149943609-de7cf7d2-37eb-4080-9b2c-bc8650c7e87c.png)
 
-	• 26 - Katılımsız program ve ayar ekle [Online]: Offline sisteme indir, kur, sil olarak program entegre eder.
+	• 28 - Katılımsız program ve ayar ekle [Online]: Offline sisteme indir, kur, sil olarak program entegre eder.
 	     • Yazacaklarım 25 ve 26. bölümleri kapsamaktadır.
 	     • Bu bölümde program eklemek isterseniz öncelikle 53 numaralı işlemi [Katılımsız kurulum dosyası oluştur] uygulayın. Ondan sonra dilediğinizi ekleyin.
 	     • Program ve ayar ekleme işlemi bittikten sonra 54 numaralı işlemi [Katılımsız kurulum dosyasını tamamla] uygulayın. 
@@ -317,7 +319,7 @@ Mavi renkli işlem numaraları 27 numaralı işlem ile alakalıdır.
 ![cmd_GTPUe3pUKN](https://user-images.githubusercontent.com/93199689/149943587-8d0c7b9b-5fdb-4466-9da0-6824834442f2.png)
 
 	• -------------------------------------------------------------------------------------------------------------------------
-	• 27 - Mount yol tanımla: Bu bölüm 9 - 11 - 12 - 14 - 15 - 18 - 20 - 21	- 22 - 23 - 24 - 25 - 26 bölümlerle bağlantılıdır. 
+	• 29 - Mount yol tanımla: Bu bölüm 9 - 11 - 12 - 14 - 15 - 18 - 20 - 21	- 22 - 23 - 24 - 25 - 26 bölümlerle bağlantılıdır. 
 	     • Burada tanımlanan klasör yolu ile işlem yapılmaktadır.
 	     • Bu bölüm ilk girişte "Edit\Mount" klasör yolunu alır. Mount dosyaları farklı bir klasörde ise 27 numaralı işlem ile değiştirin.
 ### • 57 - Güncelleme Sonrası Temizlik:
