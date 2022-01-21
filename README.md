@@ -145,8 +145,8 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	     •[Kaldır]: 2 - Sağ-tık bölümünden "Sahipli Al" butonunu kaldırır.
 	     
 	• 4 - Taskbar Hava Durumu [Aç/Kapat]:
-		 •[Kapat]: 0 - Görev çubuğundaki hava durumu simgesini kaldırır.
-		 •[Aç]:	1 - Görev çubuğundaki hava durumu simgesini ve ayarlarını geri getirir.
+             •[Kapat]: 0 - Görev çubuğundaki hava durumu simgesini kaldırır.
+	     •[Aç]:	1 - Görev çubuğundaki hava durumu simgesini ve ayarlarını geri getirir.
 		
 	• 5 - Market [Yükle/Kaldır]:
 	     •[Kaldır]: 1 - Kaldırılabilir bütün market uygulamalarını siler.
