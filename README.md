@@ -2,7 +2,7 @@
 # OGNİTORENKS TOOLBOX
 - Toolbox Windows 10 - 11 sürümlerinin x64 mimarilerinde açılmaktadır. Farklı sürümler için desteği yoktur. En güncel olan sürüm ile senkronize olarak gelişmektedir.
 - Windows ekran ölçeklendirme ayarı Toolbox'ın pencerini ayarını bozabiliyor. Sorunsuz kullanım için Toolbox'ı kullanırken ölçeklendirme etkileri kapatılmalıdır.
-- 
+
 ![cmd_6ThYu41LCV](https://user-images.githubusercontent.com/93199689/149926518-3cf6c8a5-c2f5-442d-8374-d1769067a126.png)
 ![cmd_hrSHoXFkfM](https://user-images.githubusercontent.com/93199689/149926525-b91c4075-4088-4ced-8b45-8f75ba895dc2.png)
 
@@ -303,7 +303,7 @@ Mavi renkli işlem numaraları 27 numaralı işlem ile alakalıdır.
 	• -------------------------------------------------------------------------------------------------------------------------
 	• 25 - Katılımsız program ve ayar ekle [Offline]: Offline sisteme katılımsız program entegre eder.
 	     • 51 numaralı işlem [Çoklu Seçim] bölümü 1 - 50 işlemlerini kapsamaktadır.
-![OffKatılımsız](https://user-images.githubusercontent.com/93199689/147974755-b3fc1a01-8c48-47cb-8f24-61d44a2e0447.png)
+![cmd_GkxOczJV0D](https://user-images.githubusercontent.com/93199689/149943609-de7cf7d2-37eb-4080-9b2c-bc8650c7e87c.png)
 
 	• 26 - Katılımsız program ve ayar ekle [Online]: Offline sisteme indir, kur, sil olarak program entegre eder.
 	     • Yazacaklarım 25 ve 26. bölümleri kapsamaktadır.
@@ -313,7 +313,7 @@ Mavi renkli işlem numaraları 27 numaralı işlem ile alakalıdır.
 	     • 99 numaralı işlem [Yedekten ekle] ile yedeklediğiniz .zip dosyasının yolunu tanımlayarak offline sisteme entegre edebilirsiniz.
 	     • Offline ve online bölümleri aynı anda kullanabilirsiniz. Ancak bu tarz bir durumda 53 numaralı işlemi [Online] bölümünden uygulayın.
 	     • Online bölümü ekleme işleminde indirme olmadığı için çoklu seçim bölümü yoktur.
-![OnKatılımsız](https://user-images.githubusercontent.com/93199689/147974756-d2de45c0-9f42-4898-9a35-c34ff756b5a9.png)
+![cmd_GTPUe3pUKN](https://user-images.githubusercontent.com/93199689/149943587-8d0c7b9b-5fdb-4466-9da0-6824834442f2.png)
 
 	• -------------------------------------------------------------------------------------------------------------------------
 	• 27 - Mount yol tanımla: Bu bölüm 9 - 11 - 12 - 14 - 15 - 18 - 20 - 21	- 22 - 23 - 24 - 25 - 26 bölümlerle bağlantılıdır. 
