@@ -143,6 +143,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	• 3 - Sahiplik Al [Ekle/Kaldır]: Bazı sistem dosyalarında yetki sorunu yaşadığınızda imdadınıza yetişecek bölümdür.
 	     •[Ekle]: 1 - Sağ-tık bölümüne "Sahiplik Al" butonunu ekler.
 	     •[Kaldır]: 2 - Sağ-tık bölümünden "Sahipli Al" butonunu kaldırır.
+	     
 	• 4 - Taskbar Hava Durumu [Aç/Kapat]:
 		 •[Kapat]: 0 - Görev çubuğundaki hava durumu simgesini kaldırır.
 		 •[Aç]:	1 - Görev çubuğundaki hava durumu simgesini ve ayarlarını geri getirir.
