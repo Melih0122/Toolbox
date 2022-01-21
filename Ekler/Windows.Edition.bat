@@ -107,12 +107,13 @@ echo  %ESC%[90mบ  %ESC%[36m 21.%ESC%%RGB%[33m Walpaper Deงitir%RGB%%RGB%[90m [O
 echo  %ESC%[90mบ  %ESC%[36m 22.%ESC%%RGB%[33m Telemetry engelle (Hosts)%RGB%%RGB%[90m[OFFLINE]%RGB%[0m        %ESC%[90mบ%ESC%[0m
 echo  %ESC%[90mบ  %ESC%[36m 23.%ESC%%RGB%[33m OneDrive Sil %RGB%%RGB%[90m[OFFLINE]%RGB%[0m                    %ESC%[90mบ%ESC%[0m
 echo  %ESC%[90mบ  %ESC%[36m 24.%ESC%%RGB%[33m Gpedit.msc ekle%RGB%%RGB%[90m[OFFLINE]%RGB%[0m                  %ESC%[90mบ%ESC%[0m
-echo  %ESC%[90mบ  %ESC%[36m 25.%ESC%%RGB%[33m Silinmesi gerekenler%RGB%%RGB%[90m[OFFLINE]%RGB%[0m             %ESC%[90mบ%ESC%[0m
+echo  %ESC%[90mบ  %ESC%[36m 25.%ESC%%RGB%[33m Hyper-V ekle%RGB%%RGB%[90m[OFFLINE]%RGB%[0m                     %ESC%[90mบ%ESC%[0m
+echo  %ESC%[90mบ  %ESC%[36m 26.%ESC%%RGB%[33m Silinmesi gerekenler%RGB%%RGB%[90m[OFFLINE]%RGB%[0m             %ESC%[90mบ%ESC%[0m
 echo  %ESC%[90mฬอออออออออออออออออออออออออออออออออออออออออออออออออน%ESC%[0m
-echo  %ESC%[90mบ  %ESC%[36m 26.%ESC%%RGB%[33m Katlmsz program ve ayar ekle %RGB%%RGB%[90m[OFFLINE]%RGB%[0m %ESC%[90mบ%ESC%[0m
-echo  %ESC%[90mบ  %ESC%[36m 27.%ESC%%RGB%[33m Katlmsz program ve ayar ekle %RGB%%RGB%[90m[ONLINE]%RGB%[0m  %ESC%[90mบ%ESC%[0m
+echo  %ESC%[90mบ  %ESC%[36m 27.%ESC%%RGB%[33m Katlmsz program ve ayar ekle %RGB%%RGB%[90m[OFFLINE]%RGB%[0m %ESC%[90mบ%ESC%[0m
+echo  %ESC%[90mบ  %ESC%[36m 28.%ESC%%RGB%[33m Katlmsz program ve ayar ekle %RGB%%RGB%[90m[ONLINE]%RGB%[0m  %ESC%[90mบ%ESC%[0m
 echo  %ESC%[90mฬอออออออออออออออออออออออออออออออออออออออออออออออออน%ESC%[0m
-echo  %ESC%[90mบ  %ESC%[36m 28.%ESC%%ESC%[36m Mount yol tanmla%ESC%[0m                         %ESC%[90mบ%ESC%[0m
+echo  %ESC%[90mบ  %ESC%[36m 29.%ESC%%ESC%[36m Mount yol tanmla%ESC%[0m                         %ESC%[90mบ%ESC%[0m
 echo  %ESC%[90mศอออออออออออออออออออออออออออออออออออออออออออออออออผ%ESC%[0m
 set /p WindowsEditMenu= %ESC%[92m Yapmak istediงiniz ilem : %ESC%[0m
 	if %WindowsEditMenu%==1 (Call :WimReader)
@@ -139,10 +140,11 @@ set /p WindowsEditMenu= %ESC%[92m Yapmak istediงiniz ilem : %ESC%[0m
 	if %WindowsEditMenu%==22 (Call :Hosts)
 	if %WindowsEditMenu%==23 (Call :OneDrivedel)
 	if %WindowsEditMenu%==24 (Call :gpeditmsc)
-	if %WindowsEditMenu%==25 (Call :delhard)
-	if %WindowsEditMenu%==26 (Call :katilimsizoffline)
-	if %WindowsEditMenu%==27 (Call :katilimsizonline)
-	if %WindowsEditMenu%==28 (Call :degisken3)
+	if %WindowsEditMenu%==25 (Call :HyperV)
+	if %WindowsEditMenu%==26 (Call :delhard)
+	if %WindowsEditMenu%==27 (Call :katilimsizoffline)
+	if %WindowsEditMenu%==28 (Call :katilimsizonline)
+	if %WindowsEditMenu%==29 (Call :degisken3)
 else
 	goto WindowsEditMenu
 
@@ -684,6 +686,16 @@ echo  %ESC%[90mศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
 echo [%date% - %time%] ^| Gpedit.msc ^| Gpedit.msc entegre edildi. Mount=%Mount% >> %konum2%\Logs
 FOR /f %%a IN ('"dir /b %Mount%\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~*.mum"') do (Dism /Image:%Mount% /Add-Package:"%SystemRoot%\servicing\Packages\%%a")
 FOR /f %%a IN ('"dir /b %Mount%\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~*.mum") do (Dism /Image:%Mount% /Add-Package:"%SystemRoot%\servicing\Packages\%%a")
+goto :eof
+
+
+:HyperV
+mode con cols=70 lines=40
+echo  %ESC%[90mษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป%ESC%[0m
+echo  %ESC%[90mบ%ESC%%ESC%[1;97m%ESC%%ESC%[100m                          Hyper-V Offline                         %ESC%[0m%ESC%[90mบ%ESC%[0m
+echo  %ESC%[90mศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ%ESC%[0m
+echo [%date% - %time%] ^| HyperV ^| Hyper-V entegre edildi. Mount=%Mount% >> %konum2%\Logs
+For /f %%a IN ('"dir /b %Mount%\Windows\servicing\Packages\Microsoft-Hyper-V*.mum"') DO (DISM /Image:%Mount% /Add-Package:"%Mount%\Windows\servicing\Packages\%%a")
 goto :eof
 
 :delhard

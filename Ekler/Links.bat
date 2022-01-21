@@ -350,5 +350,5 @@ https://app.prntscr.com/build/setup-lightshot.exe LightShoot.exe
 http://public.pcfreetime.com/FFSetup5.9.0.0.exe FormatFactory.exe
 
 :Guncelleme
-http://download.windowsupdate.com/c/msdownload/update/software/secu/2022/01/windows10.0-kb5009543-x64_c7b660efcaaa2dd1d55fe91c5cea3d9b209a15cd.msu Windows10Update KB5009543.msu
+http://download.windowsupdate.com/d/msdownload/update/software/updt/2022/01/windows10.0-kb5010793-x64_3bae2e811e2712bd1678a1b8d448b71a8e8c6292.msu Windows10Update KB5010793.msu
 

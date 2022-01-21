@@ -42,6 +42,44 @@
 ::
 :: ==============================================================================================================================
 -----------------
+ ► Versiyon 2.1 -
+-----------------
+Yayınlanma Tarihi: 
+
+ • "Kapatılan Servisleri Yönet" bölümünde değişiklikler yapıldı.
+   • Kod okunaklığını arttırmak için yorum satırları eklendi.
+   • Sistem geri yükleme bölümüne bazı bağlı servisler eklendi.
+   • Hyper-V hizmetini [Aç/Kapat] eklendi. 
+     • Bu bölüm ile Home ve Home Single Language sistemlerde Hyper-V açmanız mümkün olacak.
+   • Xbox hizmeti [Aç/Kapat] eklendi.
+   • Bitlocker Sürücü şifreleme hizmeti [Aç/Kapat] eklendi.
+   • Karma Gerçeklik hizmeti (VR) [Aç/Kapat] eklendi.
+ • Windows Düzenleme > "Hyper-V ekle [Offline]" bölümü eklendi. 
+   • Home ve Home Single Language sürümlerine Hyper-V ekleyebilirsiniz.
+ • Windows 10 Edit > "Taskbar Hava Durumu [Aç/Kapat]" eklendi.
+ • Windows 10 Edit > "Market [Yükle/Sil]" bölümünde düzenlemeler yapıldı.
+ • "Güncelleme sonrası temizlik" bölümünde yorum satırları arttırıldı. Bazı eklemeler yapıldı.
+ • Yeni simge dosyaları güncellendi. Windows 11 sürümü içindeki dosyalar alındı.
+
+:: ==============================================================================================================================
+-----------------
+ ► Versiyon 2.0 -
+-----------------
+Yayınlanma Tarihi: 18.01.2022
+
+ • Windows Düzenleme > "Yeni simgeleri yükle" bölümündeki yol hatası giderildi. 
+ • Windows Düzenkene > "Katılımsız program ve ayar ekle [Online/Offline]" > Simge önbelleğini temizle seçeneği eklendi.
+   • Simge değişikliği sonrası olası sorunlar için
+ • OSU oyunu indirme bölümüne eklendi.
+ • "Kapatılan Servisleri Yönet" bölümü düzenlendi.
+   • Tüm servislere Aç / Kapat seçeneği eklendi.
+   • İşlem yapmak için "1a" "3k" "4A" "10K" gibi yazmanız gerekmektedir. Tırnak işaretleri dahil değil
+ • Hibit Uninstaller indirme linki yenilendi. (2.7.35 > 2.7.40)
+ • Signal indirme linki yenilendi. (5.27.1 > 5.28.0) 
+ • Python indirme linki yenilendi. (3.10.1 > 3.10.2)
+
+:: ==============================================================================================================================
+-----------------
  ► Versiyon 1.9 -
 -----------------
 Yayınlanma Tarihi: 11.01.2022

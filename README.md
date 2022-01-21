@@ -143,18 +143,21 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	• 3 - Sahiplik Al [Ekle/Kaldır]: Bazı sistem dosyalarında yetki sorunu yaşadığınızda imdadınıza yetişecek bölümdür.
 	     •[Ekle]: 1 - Sağ-tık bölümüne "Sahiplik Al" butonunu ekler.
 	     •[Kaldır]: 2 - Sağ-tık bölümünden "Sahipli Al" butonunu kaldırır.
+	• 4 - Taskbar Hava Durumu [Aç/Kapat]:
+		 •[Kapat]: 0 - Görev çubuğundaki hava durumu simgesini kaldırır.
+		 •[Aç]:	1 - Görev çubuğundaki hava durumu simgesini ve ayarlarını geri getirir.
 		
-	• 4 - Market [Yükle/Kaldır]:
+	• 5 - Market [Yükle/Kaldır]:
 	     •[Kaldır]: 1 - Kaldırılabilir bütün market uygulamalarını siler.
 	     •[Yükle]: 2 - Market uygulamasını yeniden yükler.
 		
-	• 5 - CompactOS (Windows Sıkıştırma) [Aç/Kapat]: Windows sistem dosyalarını sıkıştırarak 3 - 4 GB'lık bir alan kazanmanızı sağlar. Performans kaybı yaratmaz.
+	• 6 - CompactOS (Windows Sıkıştırma) [Aç/Kapat]: Windows sistem dosyalarını sıkıştırarak 3 - 4 GB'lık bir alan kazanmanızı sağlar. Performans kaybı yaratmaz.
 	     •[Aç]: 1 - Windows sistem dosyalarını sıkıştırmayı açar.
 	     •[Kapat]: 2 - Windows sistem dosyalarını sıkıştırmayı kapatır.
 		
-	• 6 - Gpedit.msc (Yerel Grup ilkesi) [Ekle]: Windows Home ve Home Single Language sürümlerine "Gpedit.msc" ekler.
+	• 7 - Gpedit.msc (Yerel Grup ilkesi) [Ekle]: Windows Home ve Home Single Language sürümlerine "Gpedit.msc" ekler.
 	
-	• 7 - Simgeleri Değiştir [Eski/Yeni]: 21H2 beta sürümünde gelen ancak iptal edilen simgeleri sisteme yükler. Bu bölüme ilk girişinizde simge dosyalarını indirecektir!
+	• 8 - Simgeleri Değiştir [Eski/Yeni]: 21H2 beta sürümünde gelen ancak iptal edilen simgeleri sisteme yükler. Bu bölüme ilk girişinizde simge dosyalarını indirecektir!
 	     •[Eski]: 1 - Windows 10 eski (Varsayılan) simgeleri yükler.
 	     •[Yeni]: 2 - Windows 10 yeni simgeleri yükler.
 ### • 53 - Windows 11 Düzenleme
@@ -193,18 +196,18 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 ### • 54 - Kapatılan Servisleri Yönet
 ![cmd_BIB9uzpoGo](https://user-images.githubusercontent.com/93199689/149864879-9d945f79-08f2-489b-b8a7-ade45f6c6cb3.png)
 
-	• 1 [A/K] - Bluetooth : Bluetooth hizmetlerini açar.
-	• 2 [A/K]- Yazıcı : Yazıcı hizmetlerini açar.
-	• 3 [A/K]- Telefon hizmetini : Telefon uygulamasına ait hizmetleri açar.
-	• 4 [A/K]- Tarifeli ağları : Kotalı internetiniz var, kota aşımını önlemek için bu hizmeti kullanabilirsiniz. (Nasıl oluyor hiç bilmiyorum, yalnızca hizmeti açıyorum :D)
-	• 5 [A/K]- IP Yardımcısı : IPv6 destekli internet hizmetiniz var ise bu hizmeti açın.
-	• 6 [A/K]- Mobil Etkin Nokta (Hotspot) : Kullandığınız cihazdan interneti paylaşmanızı sağlayayacak donanım var ise buradan hizmeti açabilirsiniz.
-	• 7 [A/K]- Radyo ve Uçak modu hizmeti : Laptoplarda kullanılacak hizmettir. Windows 11'de bu hizmet kapalı olunca ağ simgesi görünmüyor. 
-	• 8 [A/K]- Akış deneyimi (Ekran Paylaş) : Aynı ağı kullanan cihazları görmek ve ekrana yansıtma, aktarma gibi özellikleri kullanılabilmesi için hizmetleri açar.
-	• 9 [A/K]- Windows Şimdi Bağlan (WPS) : WPS özelliğini kullanmanızı sağlayan hizmeti açar.
-	• 10 [A/K]- Tarayıcı hizmetlerini : Tarayıcı cihazınızı sorunsuz kullanmanız için hizmetleri açar.
-	• 11 [A/K]- Kamera hizmetlerini : Kamera cihazınızı sorunsuz kullanmanız için hizmetleri açar.
-	• 12 [A/K]- Uzak Masaüstü : Uzak masaüstü hizmetlerini açar. Ağdaki cihazlar arası paylaşımda sıkıntı yaşıyorsanız 7 numaralı işlem ile birlikte açın.
+	• 1 [A/K]- Bluetooth hizmetini : Bluetooth hizmetlerini kapatır açar.
+	• 2 [A/K]- Yazıcı hizmetini : Yazıcı hizmetlerini kapatır açar.
+	• 3 [A/K]- Baskı hizmetini: Baskı cihazınız var ise kapatıp açar.
+	• 4 [A/K]- Telefon hizmetini : Telefon uygulamasına ait hizmetleri kapatır açar.
+	• 5 [A/K]- Tarifeli ağları : Kotalı internetiniz var, kota aşımını önlemek için bu hizmeti kullanabilirsiniz. (Nasıl oluyor hiç bilmiyorum, yalnızca hizmeti açıyorum :D)
+	• 6 [A/K]- IP Yardımcısı (IPv6) : IPv6 destekli internet hizmetiniz var ise bu hizmeti açın.
+	• 7 [A/K]- Mobil Etkin Nokta (Hotspot) : Kullandığınız cihazdan interneti paylaşmanızı sağlayayacak donanım var ise buradan hizmeti açabilirsiniz.
+	• 8 [A/K]- Radyo ve Uçak modu hizmeti : Laptoplarda kullanılacak hizmettir. Windows 11'de bu hizmet kapalı olunca ağ simgesi görünmüyor. 
+	• 9 [A/K]- Uzak Masaüstü/Akış/Ağ hizmetleri : Aynı ağı kullanan cihazları görmek ve ekrana yansıtma, aktarma, uzak masaüstü hizmetleri için gerekli hizmetleri kapatır, açar.
+	• 10 [A/K]- Windows Şimdi Bağlan (WPS) : WPS özelliğini kullanmanızı sağlayan hizmeti açar.
+	• 11 [A/K]- Tarayıcı hizmetlerini : Tarayıcı cihazınızı sorunsuz kullanmanız için hizmetleri açar.
+	• 12 [A/K]- Kamera hizmetlerini : Kamera cihazınızı sorunsuz kullanmanız için hizmetleri açar.
 	• 13 [A/K]- Insider hizmeti : Windows ön sürümlerini erkenden deneyimleyip hataları bulup bildirmek gibi bir koca yüreğiniz var ise bu servisi aktif ederek. Insider sürüme kayıt olunuz.
 	• 14 [A/K]- Biyometrik Hizmeti : Kullanıdığınız cihazda parmak okuyucu tarzı cihazlar var ise sorunsuz kullanmanız için açar.
 	• 15 [A/K]- Kalem ve Dokunmatik Klavye hizmetini : Dokunmatik destekli cihazınız var ise sorunsuz kullanmanız için hizmetleri açar.
@@ -212,7 +215,11 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	• 17 [A/K]- Sysmain (Hızlı Getir) : Windows daha hızlı deneyim sunması için diski daha fazla kullanır. Yüksek disk kullanımına sebebiyet verir. SSD varsa gereksizdir. Kullanırsanız hizmeti açar.
 	• 18 [A/K]- Hızlı Başlat (Hibernate) : Sistem önbellekleme yaparak hızlı açılmasını sağlar. Ancak kapanmama gibi sorunlara neden olmaktadır. Kullanmak isterseniz hizmeti açar.
 	• 19 [A/K]- Konum hizmetini : Bilgisayarlarda bu özelliği hep gereksiz bulmuşumdur. Laptop cihazınız konumunuzu tam olarak tespit edebiliyorsa açın. Yoksa hiç açmayın.
-	• 20 [A/K]- Windows Media Player : Windows Media Player'ı yeniden açmanızı sağlar. 
+	• 20 [A/K]- Windows Media Player : Windows Media Player'ı yeniden açmanızı sağlar.
+	• 21 [A/K]- Hyper-V hizmetini: Home ve Home Single Language sistemlerde bile Hyper-V açıp kapatmanızı sağlar.
+	• 22 [A/K]- Xbox hizmetini: Xbox servislerini kapatıp, açar.
+	• 23 [A/K]- Bitlocker Sürücü şifreleme hizmeti: Sürücü şifreleme hizmetini kapatır açar.
+	• 24 [A/K]- Karma Gerçeklik hizmeti (VR): Karma gerçeklik kapatır açar.
 ### • 55 - Simge Hatasını Düzelt: 
 	• Simgeleri değiştirdikten sonra oluşacak sorunları giderir.
 ### • 56 - Windows Düzenleme:

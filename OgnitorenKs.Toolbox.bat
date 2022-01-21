@@ -158,7 +158,7 @@ echo %caption2% > NUL
 	if %caption2%==10 (set editmenugo=Win10SettingsMenu) 
 	if %caption2%==11 (set editmenugo=Win11SettingsMenu)
 
-set versiyon=2.0
+set versiyon=2.1
 
 ::set editmenu=Windows 11 Edit
 ::set editmenugo=Win11SettingsMenu
@@ -281,7 +281,7 @@ set /p menu= %RGB%[92m  Yapmak istedi§iniz iŸlem : %RGB%[0m
 	if %menu%==65 GOTO AdminMenu
 	if %menu%==66 (Call :SistemHakkinda)
 	if %menu%==67 (Call :wificrackarchley)
-	if %menu%==97 (start https://drive.google.com/file/d/1TeuGBW_3OSMtNn4jW10KFXZ433isP6jJ/view?usp=sharing&goto menu)
+	if %menu%==97 (start https://github.com/OgnitorenKs/OgnitorenKs.Toolbox&goto menu)
 	if %menu%==98 (Call :Logss "Toolbox.Update" "Toolbox gncelleme arac ‡alŸtrld."
 				   Powershell -command "Start-Process '%konum%\Toolbox.Update.bat'"&exit)
 	if %menu%==99 (Call :Logss "Toolbox.Update" "Toolbox Srm Notlar sayfas a‡ld."
@@ -980,7 +980,7 @@ goto menu
 :stop
 :kapatilanservislery”netimi
 cls
-mode con cols=55 lines=28
+mode con cols=55 lines=32
 Call :PowerRun
 title Kapatlan Servisler Y”netimi / OgnitorenKs
 echo  %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
@@ -1006,6 +1006,10 @@ echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 17%ESC%%RGB%[90m[%RGB%%RGB%[36mA%RGB%%RGB%[9
 echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 18%ESC%%RGB%[90m[%RGB%%RGB%[36mA%RGB%%RGB%[90m/%RGB%%RGB%[36mK%RGB%%RGB%[90m]%RGB%%ESC%[32m.%ESC%%RGB%[33m Hzl BaŸlat (Hibernate)%RGB%[0m               %ESC%[90mº%ESC%[0m
 echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 19%ESC%%RGB%[90m[%RGB%%RGB%[36mA%RGB%%RGB%[90m/%RGB%%RGB%[36mK%RGB%%RGB%[90m]%RGB%%ESC%[32m.%ESC%%RGB%[33m Konum hizmetini%RGB%[0m                        %ESC%[90mº%ESC%[0m
 echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 20%ESC%%RGB%[90m[%RGB%%RGB%[36mA%RGB%%RGB%[90m/%RGB%%RGB%[36mK%RGB%%RGB%[90m]%RGB%%ESC%[32m.%ESC%%RGB%[33m Windows Media Player%RGB%[0m                   %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 21%ESC%%RGB%[90m[%RGB%%RGB%[36mA%RGB%%RGB%[90m/%RGB%%RGB%[36mK%RGB%%RGB%[90m]%RGB%%ESC%[32m.%ESC%%RGB%[33m Hyper-V hizmetini%RGB%[0m                      %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 22%ESC%%RGB%[90m[%RGB%%RGB%[36mA%RGB%%RGB%[90m/%RGB%%RGB%[36mK%RGB%%RGB%[90m]%RGB%%ESC%[32m.%ESC%%RGB%[33m Xbox hizmetini%RGB%[0m                         %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 23%ESC%%RGB%[90m[%RGB%%RGB%[36mA%RGB%%RGB%[90m/%RGB%%RGB%[36mK%RGB%%RGB%[90m]%RGB%%ESC%[32m.%ESC%%RGB%[33m Bitlocker Src Ÿifreleme hizmeti%RGB%[0m     %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m  %ESC%[32m 24%ESC%%RGB%[90m[%RGB%%RGB%[36mA%RGB%%RGB%[90m/%RGB%%RGB%[36mK%RGB%%RGB%[90m]%RGB%%ESC%[32m.%ESC%%RGB%[33m Karma Ger‡eklik hizmeti (VR)%RGB%[0m           %ESC%[90mº%ESC%[0m
 echo  %ESC%[90mº%ESC%[0m        %ESC%[32m X.%ESC%%ESC%[36m Menye d”n %ESC%[0m                            %ESC%[90mº%ESC%[0m
 echo  %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
 set /p deger= %RGB%[92m ˜Ÿlem : %RGB%[0m
@@ -1089,6 +1093,22 @@ set /p deger= %RGB%[92m ˜Ÿlem : %RGB%[0m
 	if %deger%==20A (Call :serv.20.mediaplayer start demand ENABLE a‡lyor)
 	if %deger%==20K (Call :serv.20.mediaplayer stop disabled DISABLE kapatlyor)
 	if %deger%==20k (Call :serv.20.mediaplayer stop disabled DISABLE kapatlyor)
+	if %deger%==21a (Call :serv.21.hyperv demand Enable For a‡lyor)
+	if %deger%==21A (Call :serv.21.hyperv demand Enable For a‡lyor)
+	if %deger%==21K (Call :serv.21.hyperv disabled Disable "::" kapatlyor)
+	if %deger%==21k (Call :serv.21.hyperv disabled Disable "::" kapatlyor)
+	if %deger%==22a (Call :serv.22.xbox start demand 1 0 delete "/v "AllowGameDVR" /f" a‡lyor)
+	if %deger%==22A (Call :serv.22.xbox start demand 1 0 delete "/v "AllowGameDVR" /f" a‡lyor)
+	if %deger%==22K (Call :serv.22.xbox stop disabled 0 2 add "/v "AllowGameDVR" /t REG_DWORD /d 0 /f" kapatlyor)
+	if %deger%==22k (Call :serv.22.xbox stop disabled 0 2 add "/v "AllowGameDVR" /t REG_DWORD /d 0 /f" kapatlyor)
+	if %deger%==23a (Call :serv.23.bitlocker start demand a‡lyor)
+	if %deger%==23A (Call :serv.23.bitlocker start demand a‡lyor)
+	if %deger%==23K (Call :serv.23.bitlocker stop disabled kapatlyor)
+	if %deger%==23k (Call :serv.23.bitlocker stop disabled kapatlyor)
+	if %deger%==24a (Call :serv.24.mixedreality demand a‡lyor)
+	if %deger%==24A (Call :serv.24.mixedreality demand a‡lyor)
+	if %deger%==24K (Call :serv.24.mixedreality disabled kapatlyor)
+	if %deger%==24k (Call :serv.24.mixedreality disabled kapatlyor)
 	if %deger%==x goto menu
 	if %deger%==X goto menu
 else 
@@ -1440,6 +1460,101 @@ Dism /Online /%3-Feature /FeatureName:MediaPlayback /Quiet /NoRestart
 ::---------------------------------------------------------------------
 goto :eof
 
+:serv.21.hyperv
+echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Hyper-V hizmeti %4. >> %konum%\Logs
+echo   %RGB%[96mHyper-V hizmeti %4 ...%RGB%[0m
+:: HV Ana Bilgisayar Hizmeti
+%PowerRun% sc config HvHost start= %1
+:: Hyper-V Birim G”lge Kopyas ˜steyicisi
+%PowerRun% sc config vmicvss start= %1
+:: Hyper-V Konuk Arabirimi Hizmeti
+%PowerRun% sc config vmicguestinterface start= %1
+:: Hyper-V Konuk Kapatma Hizmeti
+%PowerRun% sc config vmicshutdown start= %1
+:: Hyper-V PowerShell Direct Hizmeti
+%PowerRun% sc config vmicvmsession start= %1
+:: Hyper-V Sinyal Hizmeti
+%PowerRun% sc config vmicheartbeat start= %1
+:: Hyper-V Uzak Masast SanallaŸtrma Hizmeti
+%PowerRun% sc config vmicrdv start= %1
+:: Hyper-V Veri De§iŸimi Hizmeti
+%PowerRun% sc config vmickvpexchange start= %1
+:: Hyper-V Zaman EŸitleme Hizmeti
+%PowerRun% sc config vmictimesync start= %1
+%~3 /f %%a IN ('"dir /b %SystemRoot%\servicing\Packages\Microsoft-Hyper-V*.mum"') DO (DISM /Online /NoRestart /Add-Package:"%SystemRoot%\servicing\Packages\%%a" > NUL 2>&1)
+DISM /Online /%2-Feature /FeatureName:Microsoft-Hyper-V-All /Quiet /NoRestart
+DISM /Online /%2-Feature /FeatureName:Microsoft-Hyper-V /Quiet /NoRestart
+DISM /Online /%2-Feature /FeatureName:Microsoft-Hyper-V-Tools-All /Quiet /NoRestart
+DISM /Online /%2-Feature /FeatureName:Microsoft-Hyper-V-Management-PowerShell /Quiet /NoRestart
+DISM /Online /%2-Feature /FeatureName:Microsoft-Hyper-V-Hypervisor /Quiet /NoRestart
+DISM /Online /%2-Feature /FeatureName:Microsoft-Hyper-V-Services /Quiet /NoRestart
+DISM /Online /%2-Feature /FeatureName:Microsoft-Hyper-V-Management-Clients /Quiet /NoRestart
+::------------------------------------------
+::    A‡ = %1 : demand    | %2 : Enable  | %~3 : For | %4 : a‡lyor   
+:: Kapat = %1 : disabled  | %2 : Disable | %~3 : ::  | %4 : kapatlyor
+::------------------------------------------
+goto :eof
+
+:serv.22.xbox
+echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Xbox hizmeti %7. >> %konum%\Logs
+echo   %RGB%[96mXbox hizmeti %7 ...%RGB%[0m
+:: Oyun DVR ve Yayn kullanc hizmeti
+%PowerRun% sc config BcastDVRUserService start= %2
+%PowerRun% net %1 BcastDVRUserService
+:: Xbox Accessory Management Service
+%PowerRun% sc config XboxGipSvc start= %2
+%PowerRun% net %1 XboxGipSvc
+:: Xbox Live A§ Hizmeti
+%PowerRun% sc config XboxNetApiSvc start= %2
+%PowerRun% net %1 XboxNetApiSvc
+:: Xbox Live Kimlik Do§rulama Y”neticisi
+%PowerRun% sc config XblAuthManager start= %2
+%PowerRun% net %1 XblAuthManager
+:: Xbox Live Oyun Kaydetme
+%PowerRun% sc config XblGameSave start= %2
+%PowerRun% net %1 XblGameSave
+:: Teslimat optimizasyonu
+%PowerRun% sc config DoSvc start= %2
+%PowerRun% net %1 DoSvc
+reg add "HKCU\System\GameConfigStore" /v "GameDVR_Enabled" /t REG_SZ /d "%3" /f > NUL 2>&1
+reg add "HKCU\System\GameConfigStore" /v "GameDVR_FSEBehavior" /t REG_SZ /d "%4" /f > NUL 2>&1
+reg %5 "HKLM\SOFTWARE\Policies\Microsoft\Windows\GameDVR" %6 > NUL 2>&1
+::----------------------------------------------------------------------------------------------------------------------------------------------
+::    A‡ = %1 : start  | %2 : demand    | %3 : 1  |  %4 : 0 | %5 : delete | %6 : /v "AllowGameDVR" /f                     | %7 : a‡lyor
+:: Kapat = %1 : stop   | %2 : disabled  | %3 : 0  |  %4 : 2 | %5 : add    | %6 : /v "AllowGameDVR" /t REG_DWORD /d 0 /f   | %7 : kapatlyor
+::----------------------------------------------------------------------------------------------------------------------------------------------
+goto :eof
+
+:serv.23.bitlocker
+echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Bitlocker hizmeti %3. >> %konum%\Logs
+echo   %RGB%[96mBitlocker hizmeti %3 ...%RGB%[0m
+:: Bitlocker src Ÿifreleme hizmeti
+%PowerRun% sc config BDESVC start= %2
+%PowerRun% net %1 BDESVC
+::-------------------------------------------------------
+::    A‡ = %1 : start | %2 : demand   | %3 : a‡lyor
+:: Kapat = %1 : stop  | %2 : disabled | %3 : kapatlyor
+::------------------------------------------------------
+goto :eof
+
+:serv.24.mixedreality
+echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Karma Ger‡eklik hizmeti %2. >> %konum%\Logs
+echo   %RGB%[96mKarma Ger‡eklik hizmeti %2 ...%RGB%[0m
+:: Uzlamsal veri hizmeti
+%PowerRun% sc config SharedRealitySvc start= %1
+:: Volumetrik ses oluŸturucu hizmeti
+%PowerRun% sc config VacSvc start= %1
+:: Windows alglama benzetimi hizmeti
+%PowerRun% sc config perceptionsimulation start= %1
+:: Windows Alglama Hizmeti
+%PowerRun% sc config spectrum start= %1
+::Windows Mixed Reality OpenXR Service
+%PowerRun% sc config MixedRealityOpenXRSvc start= %1
+::------------------------------------------
+::    A‡ = %1 : demand    | %2 : a‡lyor   
+:: Kapat = %1 : disabled  | %2 : kapatlyor
+::------------------------------------------
+goto :eof
 
 :stop
 :: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
@@ -1719,20 +1834,22 @@ echo  %ESC%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%ESC%[0m
 echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m Saat yan, simgeler%RGB%%RGB%[90m [G™STER/G˜ZLE]%RGB%[0m          %ESC%[90mº%ESC%[0m
 echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 2.%ESC%%RGB%[33m Bildirim Alan%RGB%%RGB%[90m [A€/KAPAT]%RGB%[0m                   %ESC%[90mº%ESC%[0m
 echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 3.%ESC%%RGB%[33m Sahiplik Al%RGB%%RGB%[90m [EKLE/KALDIR]%RGB%[0m                   %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 4.%ESC%%RGB%[33m Market%RGB%%RGB%[90m [YšKLE/KALDIR]%RGB%[0m                       %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 5.%ESC%%RGB%[33m Compact OS (Windows SkŸtrma)%RGB%%RGB%[90m [A€/KAPAT]%RGB%[0m  %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 6.%ESC%%RGB%[33m Gpedit.msc (Yerel Grup ilkesi)%RGB%%RGB%[90m [EKLE]%RGB%[0m       %ESC%[90mº%ESC%[0m
-echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 7.%ESC%%RGB%[33m Simgeleri De§iŸtir%RGB%%RGB%[90m [ESK˜/YEN˜]%RGB%[0m              %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 4.%ESC%%RGB%[33m Taskbar Hava Durumu%RGB%%RGB%[90m [A€/KAPAT]%RGB%[0m              %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 5.%ESC%%RGB%[33m Market%RGB%%RGB%[90m [YšKLE/KALDIR]%RGB%[0m                       %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 6.%ESC%%RGB%[33m Compact OS (Windows SkŸtrma)%RGB%%RGB%[90m [A€/KAPAT]%RGB%[0m  %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 7.%ESC%%RGB%[33m Gpedit.msc (Yerel Grup ilkesi)%RGB%%RGB%[90m [EKLE]%RGB%[0m       %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 8.%ESC%%RGB%[33m Simgeleri De§iŸtir%RGB%%RGB%[90m [ESK˜/YEN˜]%RGB%[0m              %ESC%[90mº%ESC%[0m
 echo  %ESC%[90mº%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menye d”n%ESC%[0m                                  %ESC%[90mº%ESC%[0m
 echo  %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
 set /p deger=%RGB%[92m  ˜Ÿlem : %RGB%[0m
 	if %deger%==1 (Call :Win10EkranTepsi)
 	if %deger%==2 (Call :Win10Bildirim)
 	if %deger%==3 (Call :WinSahiplik)
-	if %deger%==4 (Call :Win10StoreDelIns)
-	if %deger%==5 (Call :WinCompactOS)
-	if %deger%==6 (Call :gpedit)
-	if %deger%==7 GOTO icochangemenu
+	if %deger%==4 (Call :Win10HavaDurumu)
+	if %deger%==5 (Call :Win10StoreDelIns)
+	if %deger%==6 (Call :WinCompactOS)
+	if %deger%==7 (Call :gpedit)
+	if %deger%==8 GOTO icochangemenu
 	if %deger%==x GOTO menu
 	if %deger%==X GOTO menu
 else
@@ -1793,6 +1910,30 @@ goto :eof
 
 :: 
 
+:Win10HavaDurumu
+cls
+mode con cols=55 lines=15
+title Taskbar Hava Durumu dzenleniyor... / OgnitorenKs
+echo 
+echo 
+echo  %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
+echo  %ESC%[90mº%ESC%%ESC%[1;97m%ESC%%ESC%[100m         G”rev €ubu§u Hava Durumu Ayar            %ESC%[0m%ESC%[90mº%ESC%[0m
+echo  %ESC%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 0.%ESC%%RGB%[33m Kapat%RGB%[0m                                       %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m   %ESC%[32m 1.%ESC%%RGB%[33m A‡%RGB%[0m                                          %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mº%ESC%[0m   %ESC%[32m X.%ESC%%ESC%[36m Menye d”n%ESC%[0m                                  %ESC%[90mº%ESC%[0m
+echo  %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
+set /p deger= %RGB%[92m  ˜Ÿlem : %RGB%[0m
+	if %deger%==x goto Win10SettingsMenu
+	if %deger%==X goto Win10SettingsMenu
+	
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Feeds" /v "EnableFeeds" /t REG_DWORD /d %deger% /f 
+Call :ExplorerReset
+echo %ESC%[92m ˜Ÿlem tamamland.%ESC%[0m
+timeout /t 2 /nobreak > NUL
+goto :eof
+
+
 :Win10StoreDelIns
 cls
 mode con cols=55 lines=15
@@ -1827,13 +1968,18 @@ echo %ESC%[92m Hizmetler durduruluyor...%ESC%[0m
 net stop wuauserv > NUL 2>&1
 RD /S /Q "%windir%\SoftwareDistribution" > NUL 2>&1
 net start wuauserv > NUL 2>&1
-sc config AppXSvc start= disabled > NUL 2>&1
-net stop AppXSvc > NUL 2>&1
-sc config camsvc start= disabled > NUL 2>&1
-net stop camsvc > NUL 2>&1
-sc config StorSvc start= disabled
-net stop StorSvc > NUL 2>&1
-net stop "ClipSVC" > NUL 2>&1
+:: AppX Da§tm Hizmeti
+%PowerRun% sc config AppXSvc start= disabled
+%PowerRun% net stop AppXSvc
+:: Yetenek eriŸim y”netim istemcisi
+%PowerRun% sc config camsvc start= disabled
+%PowerRun% net stop camsvc
+:: Depolama hizmeti
+%PowerRun% sc config StorSvc start= disabled
+%PowerRun% net stop StorSvc
+:: ˜stemci Lisans Hizmeti
+%PowerRun% sc config ClipSVC start= disabled
+%PowerRun% net stop ClipSVC
 
 echo %ESC%[92m ˜Ÿlem tamamland. Menye aktarlyorsunuz...%ESC%[0m
 timeout /t 3 /nobreak
@@ -1857,21 +2003,22 @@ reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ClipSVC\Parameters
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsStore" /v "RemoveWindowsStore" /t REG_DWORD /d 0 /f
 
 echo %ESC%[92m Hizmetler baŸlatlyor...%ESC%[0m
-sc config AppXSvc start= demand > NUL 2>&1
-net start AppXSvc > NUL 2>&1
-sc config camsvc start= demand > NUL 2>&1
-net start camsvc > NUL 2>&1
-sc config cryptsvc start= auto > NUL 2>&1
-net start cryptsvc > NUL 2>&1
-sc config wuauserv start= demand > NUL 2>&1
-net start wuauserv > NUL 2>&1
-sc config StorSvc start= demand > NUL 2>&1
-net start StorSvc > NUL 2>&1
-sc config bits start= auto > NUL 2>&1
-net start bits > NUL 2>&1
-sc config trustedinstaller start= demand > NUL 2>&1
-net start trustedinstaller > NUL 2>&1
-net start ClipSVC > NUL 2>&1
+%PowerRun% sc config AppXSvc start= demand
+%PowerRun% net start AppXSvc
+%PowerRun% sc config camsvc start= demand
+%PowerRun% net start camsvc
+%PowerRun% sc config cryptsvc start= auto
+%PowerRun% net start cryptsvc
+%PowerRun% sc config wuauserv start= demand
+%PowerRun% net start wuauserv
+%PowerRun% sc config StorSvc start= demand
+%PowerRun% net start StorSvc
+%PowerRun% sc config bits start= auto
+%PowerRun% net start bits
+%PowerRun% sc config trustedinstaller start= demand
+%PowerRun% net start trustedinstaller
+%PowerRun% sc config ClipSVC start= demand
+%PowerRun% net start ClipSVC
 net stop wuauserv > NUL 2>&1
 RD /S /Q "%windir%\SoftwareDistribution"
 net start wuauserv > NUL 2>&1
@@ -2081,137 +2228,170 @@ Call :PowerRun
 echo [%date% - %time%] ^| UpdateAfter ^| Gncelleme sonras temizlik b”lm ‡alŸtrld. >> %konum%\Logs
 echo %ESC%[92m Gncelleme sonras temizlik iŸlemi yaplyor.%ESC%[0m
 echo %ESC%[92m Defender dosyalar siliniyor.%ESC%[0m
-%PowerRun% DEL /F /Q /A "%windir%\System32\CompatTelRunner.exe" > NUL 2>&1
-%PowerRun% DEL /F /Q /A "%windir%\System32\drivers\MsSecFlt.sys" > NUL 2>&1
-%PowerRun% DEL /F /Q /A "%windir%\System32\drivers\WdBoot.sys" > NUL 2>&1
-%PowerRun% DEL /F /Q /A "%windir%\System32\drivers\WdFilter.sys" > NUL 2>&1
-%PowerRun% DEL /F /Q /A "%windir%\System32\drivers\WdNisDrv.sys" > NUL 2>&1
-%PowerRun% DEL /F /Q /A "%windir%\System32\smartscreen.exe" > NUL 2>&1
-%PowerRun% DEL /F /Q /A "%windir%\System32\securityhealthhost.exe" > NUL 2>&1
-%PowerRun% DEL /F /Q /A "%windir%\System32\securityhealthservice.exe" > NUL 2>&1
-%PowerRun% DEL /F /Q /A "%windir%\System32\securityhealthsystray.exe" > NUL 2>&1
-%PowerRun% DEL /F /Q /A "%windir%\System32\SgrmBroker.exe" > NUL 2>&1
-%PowerRun% DEL /F /Q /A "%programfiles%\Windows Defender Advanced Threat Protection" > NUL 2>&1
-%PowerRun% DEL /F /Q /A "%programfiles%\Windows Defender" > NUL 2>&1
-%PowerRun% DEL /F /Q /A "%programfiles%\Windows Security" > NUL 2>&1
-%PowerRun% DEL /F /Q /A "%programfiles(x86)%\Windows Security" > NUL 2>&1
-%PowerRun% DEL /F /Q /A "%programfiles(x86)%\Windows Defender" > NUL 2>&1
-%PowerRun% DEL /F /Q /A "%programfiles(x86)%\Windows Defender Advanced Threat Protection" > NUL 2>&1
-%PowerRun% DEL /F /Q /A "%programdata%\Microsoft\Windows Security Health" > NUL 2>&1
-%PowerRun% DEL /F /Q /A "%programdata%\Microsoft\Windows Defender Advanced Threat Protection" > NUL 2>&1
-%PowerRun% DEL /F /Q /A "%programdata%\Microsoft\Windows Defender" > NUL 2>&1
-%PowerRun% DEL /F /Q /A "%windir%\SystemApps\Microsoft.Windows.SecHealthUI_cw5n1h2txyewy" > NUL 2>&1
+%PowerRun% DEL /F /Q /A "%windir%\System32\CompatTelRunner.exe"
+%PowerRun% DEL /F /Q /A "%windir%\System32\drivers\MsSecFlt.sys"
+%PowerRun% DEL /F /Q /A "%windir%\System32\drivers\WdBoot.sys"
+%PowerRun% DEL /F /Q /A "%windir%\System32\drivers\WdFilter.sys"
+%PowerRun% DEL /F /Q /A "%windir%\System32\drivers\WdNisDrv.sys"
+%PowerRun% DEL /F /Q /A "%windir%\System32\smartscreen.exe"
+%PowerRun% DEL /F /Q /A "%windir%\System32\securityhealthhost.exe"
+%PowerRun% DEL /F /Q /A "%windir%\System32\securityhealthservice.exe"
+%PowerRun% DEL /F /Q /A "%windir%\System32\securityhealthsystray.exe"
+%PowerRun% DEL /F /Q /A "%windir%\System32\SgrmBroker.exe"
+%PowerRun% DEL /F /Q /A "%programfiles%\Windows Defender Advanced Threat Protection"
+%PowerRun% DEL /F /Q /A "%programfiles%\Windows Defender"
+%PowerRun% DEL /F /Q /A "%programfiles%\Windows Security"
+%PowerRun% DEL /F /Q /A "%programfiles(x86)%\Windows Security"
+%PowerRun% DEL /F /Q /A "%programfiles(x86)%\Windows Defender"
+%PowerRun% DEL /F /Q /A "%programfiles(x86)%\Windows Defender Advanced Threat Protection"
+%PowerRun% DEL /F /Q /A "%programdata%\Microsoft\Windows Security Health"
+%PowerRun% DEL /F /Q /A "%programdata%\Microsoft\Windows Defender Advanced Threat Protection"
+%PowerRun% DEL /F /Q /A "%programdata%\Microsoft\Windows Defender"
+%PowerRun% DEL /F /Q /A "%windir%\SystemApps\Microsoft.Windows.SecHealthUI_cw5n1h2txyewy"
 echo %ESC%[92m Defender hizmetler kapatlyor.%ESC%[0m
-%PowerRun% net stop SecurityHealthService > NUL 2>&1
-%PowerRun% sc delete SecurityHealthService > NUL 2>&1
-%PowerRun% net stop Sense > NUL 2>&1
-%PowerRun% sc delete Sense > NUL 2>&1
-%PowerRun% net stop SgrmBroker > NUL 2>&1
-%PowerRun% sc delete SgrmBroker > NUL 2>&1
-%PowerRun% net stop WdNisSvc > NUL 2>&1
-%PowerRun% sc delete WdNisSvc > NUL 2>&1
-%PowerRun% net stop WinDefend > NUL 2>&1
-%PowerRun% sc delete WinDefend  > NUL 2>&1
-%PowerRun% net stop wscsvc > NUL 2>&1
-%PowerRun% sc delete wscsvc  > NUL 2>&1
+%PowerRun% net stop SecurityHealthService
+%PowerRun% sc delete SecurityHealthService
+%PowerRun% net stop Sense
+%PowerRun% sc delete Sense
+%PowerRun% net stop SgrmBroker
+%PowerRun% sc delete SgrmBroker
+%PowerRun% net stop WdNisSvc
+%PowerRun% sc delete WdNisSvc
+%PowerRun% net stop WinDefend
+%PowerRun% sc delete WinDefend 
+%PowerRun% net stop wscsvc
+%PowerRun% sc delete wscsvc 
 echo %ESC%[92m Hizmetler ilk haline getiriliyor...%ESC%[0m
-sc config SCardSvr start= disabled > NUL 2>&1
-net stop SCardSvr > NUL 2>&1
-sc config ScDeviceEnum start= disabled > NUL 2>&1
-net stop ScDeviceEnum > NUL 2>&1
-sc config SCPolicySvc start= disabled > NUL 2>&1
-net stop SCPolicySvc > NUL 2>&1
-sc config CertPropSvc start= disabled > NUL 2>&1
-net stop CertPropSvc > NUL 2>&1
-sc config AJRouter start= disabled > NUL 2>&1
-net stop AJRouter > NUL 2>&1
-%PowerRun% sc config PeerDistSvc start= disabled > NUL 2>&1
-%PowerRun% net stop PeerDistSvc > NUL 2>&1
-sc config Ifsvc start= disabled > NUL 2>&1
-net stop Ifsvc > NUL 2>&1
-sc config WalletService start= disabled > NUL 2>&1
-net stop WalletService > NUL 2>&1
-sc config TrkWks start= disabled > NUL 2>&1
-net stop TrkWks > NUL 2>&1
-net stop DiagTrack > NUL 2>&1
-sc delete DiagTrack > NUL 2>&1
-net stop dmwappushservice > NUL 2>&1
-sc delete dmwappushservice > NUL 2>&1
-net stop diagnosticshub.standartcollector.service > NUL 2>&1
-sc delete diagnosticshub.standartcollector.service > NUL 2>&1
-net stop diagsvc > NUL 2>&1
-sc delete diagsvc > NUL 2>&1
-sc config fhsvc start= disabled > NUL 2>&1
-net stop fhsvc > NUL 2>&1
+:: Akll kart
+%PowerRun% sc config SCardSvr start= disabled
+%PowerRun% net stop SCardSvr
+:: Akll kart cihaz numaralandrma hizmeti
+%PowerRun% sc config ScDeviceEnum start= disabled
+%PowerRun% net stop ScDeviceEnum
+:: Akll kart kaldrma ilkesi
+%PowerRun% sc config SCPolicySvc start= disabled
+%PowerRun% net stop SCPolicySvc
+:: Sertifika yayma (Akll Kart)
+%PowerRun% sc config CertPropSvc start= disabled
+%PowerRun% net stop CertPropSvc
+:: All joyn y”nlendirici hizmeti
+%PowerRun% sc config AJRouter start= disabled
+%PowerRun% net stop AJRouter
+:: BrancCache istemcisi
+%PowerRun% sc config PeerDistSvc start= disabled
+%PowerRun% net stop PeerDistSvc
+:: Co§rafi konum hizmeti
+%PowerRun% sc config Ifsvc start= disabled
+%PowerRun% net stop Ifsvc
 :: Czdan Hizmeti
-sc config WalletService start= disabled > NUL 2>&1
-net stop WalletService > NUL 2>&1
+%PowerRun% sc config WalletService start= disabled
+%PowerRun% net stop WalletService
+:: Da§tlmŸ ba§lant izleme istemcisi
+%PowerRun% sc config TrkWks start= disabled
+%PowerRun% net stop TrkWks
+:: Ba§l kullanc deneyimleri ve Telemetrisi
+%PowerRun% net stop DiagTrack
+%PowerRun% sc delete DiagTrack
+%PowerRun% net stop dmwappushservice
+%PowerRun% sc delete dmwappushservice
+%PowerRun% net stop diagnosticshub.standartcollector.service
+%PowerRun% sc delete diagnosticshub.standartcollector.service
+:: Diagnostic Execution Service (TeŸhis ve Sorun Giderme)
+%PowerRun% net stop diagsvc
+%PowerRun% sc delete diagsvc
+:: Dosya Ge‡miŸi Hizmeti
+%PowerRun% sc config fhsvc start= disabled
+%PowerRun% net stop fhsvc
+:: Czdan Hizmeti
+%PowerRun% sc config WalletService start= disabled
+%PowerRun% net stop WalletService
 :: Ebeveyn Kontrolleri
-sc config WpcMonSvc start= disabled > NUL 2>&1
-net stop WpcMonSvc > NUL 2>&1
+%PowerRun% sc config WpcMonSvc start= disabled
+%PowerRun% net stop WpcMonSvc
 :: Fax
-sc config fax start= disabled > NUL 2>&1
-net stop fax > NUL 2>&1
+%PowerRun% sc config fax start= disabled
+%PowerRun% net stop fax
 :: KiŸi hizmeti
-sc config PimIndexMaintenanceSvc start= disabled > NUL 2>&1
-net stop PimIndexMaintenanceSvc > NUL 2>&1
+%PowerRun% sc config PimIndexMaintenanceSvc start= disabled
+%PowerRun% net stop PimIndexMaintenanceSvc
 :: Kurumsal uygulama y”netimi hizmeti
-sc config EntAppSvc start= disabled > NUL 2>&1
-net stop EntAppSvc > NUL 2>&1
+%PowerRun% sc config EntAppSvc start= disabled
+%PowerRun% net stop EntAppSvc
 :: Edge gncelleme hizmeti
-net stop edgeupdate > NUL 2>&1
-net stop edgeupdatem > NUL 2>&1
-sc config edgeupdate start= disabled > NUL 2>&1
-sc config edgeupdatem start= disabled > NUL 2>&1
+%PowerRun% net stop edgeupdate
+%PowerRun% net stop edgeupdatem
+%PowerRun% sc config edgeupdate start= disabled
+%PowerRun% sc config edgeupdatem start= disabled
 :: Parekende G”steri hizmeti
-sc config RetailDemo start= disabled > NUL 2>&1
-net stop RetailDemo > NUL 2>&1
+%PowerRun% sc config RetailDemo start= disabled
+%PowerRun% net stop RetailDemo
 :: Program Uyumluluk Yardmcs Hizmeti
-sc config PcaSvc start= disabled > NUL 2>&1
-net stop PcaSvc > NUL 2>&1
+%PowerRun% sc config PcaSvc start= disabled
+%PowerRun% net stop PcaSvc
 :: Tanlama ˜lkesi Hizmeti
-sc config DPS start= disabled > NUL 2>&1
-net stop DPS > NUL 2>&1
+%PowerRun% sc config DPS start= disabled
+%PowerRun% net stop DPS
 :: Karma Ger‡eklik
-sc config SharedRealitySvc start= disabled > NUL 2>&1
-net stop SharedRealitySvc > NUL 2>&1
-sc config VacSvc start= disabled > NUL 2>&1
-net stop VacSvc > NUL 2>&1
-sc config perceptionsimulation start= disabled > NUL 2>&1
-net stop perceptionsimulation > NUL 2>&1
-sc config spectrum start= disabled > NUL 2>&1
-net stop spectrum > NUL 2>&1
-net stop MixedRealityOpenXRSvc > NUL 2>&1
-sc config MixedRealityOpenXRSvc start= disabled > NUL 2>&1
+%PowerRun% sc config SharedRealitySvc start= disabled
+%PowerRun% net stop SharedRealitySvc
+%PowerRun% sc config VacSvc start= disabled
+%PowerRun% net stop VacSvc
+%PowerRun% sc config perceptionsimulation start= disabled
+%PowerRun% net stop perceptionsimulation
+%PowerRun% sc config spectrum start= disabled
+%PowerRun% net stop spectrum
+%PowerRun% net stop MixedRealityOpenXRSvc
+%PowerRun% sc config MixedRealityOpenXRSvc start= disabled
 :: Windows Hata Raporlama
-sc config WerSvc start= disabled > NUL 2>&1
-net stop WerSvc > NUL 2>&1
+%PowerRun% sc config WerSvc start= disabled
+%PowerRun% net stop WerSvc
 :: Windows Search
-net stop WSearch > NUL 2>&1
-sc config WSearch start= disabled > NUL 2>&1
+%PowerRun% net stop WSearch
+%PowerRun% sc config WSearch start= disabled
 :: €evrimdŸ dosyalar
-sc config CscService start= disabled > NUL 2>&1
-net stop CscService > NUL 2>&1
+%PowerRun% sc config CscService start= disabled
+%PowerRun% net stop CscService
 :: NFC/SE hizmeti
-sc config SEMgrSvc start= disabled > NUL 2>&1
-net stop SEMgrSvc > NUL 2>&1
+%PowerRun% sc config SEMgrSvc start= disabled
+%PowerRun% net stop SEMgrSvc
 :: ™nerilen Sorun giderme hizmeti
-net stop TroubleshootingSvc > NUL 2>&1
-sc config TroubleshootingSvc start= disabled > NUL 2>&1
+%PowerRun% net stop TroubleshootingSvc
+%PowerRun% sc config TroubleshootingSvc start= disabled
 :: ˜ndirilen haritalar y”neticisi
-net stop MapsBroker > NUL 2>&1
-sc config MapsBroker start= disabled > NUL 2>&1
+%PowerRun% net stop MapsBroker
+%PowerRun% sc config MapsBroker start= disabled
+:: KiŸi verileri
+%PowerRun% net stop PimIndexMainteanceSvc
+%PowerRun% sc config PimIndexMainteanceSvc start= disabled
+:: Natural Kimlik Do§rulamas
+%PowerRun% net stop NaturalAuthentication
+%PowerRun% sc config NaturalAuthentication start= disabled
+:: Perakende g”steri hizmeti
+%PowerRun% net stop RetailDemo
+%PowerRun% sc config RetailDemo start= disabled
+:: Resim alma olaylar
+%PowerRun% net stop WiaRpc
+%PowerRun% sc config WiaRpc start= disabled
+:: Windows resim alma (WIA) 
+%PowerRun% net stop StiSvc
+%PowerRun% sc config StiSvc start= disabled
+:: Temalar
+%PowerRun% net stop Themes
+%PowerRun% sc config Themes start= disabled
+:: €alŸma klas”rleri istemcisi
+%PowerRun% net stop workfolderssvc
+%PowerRun% sc config workfolderssvc start= disabled
 echo %ESC%[92m Regedit kaytlar yeniden dzenleniyor.%ESC%[0m
 :: Defender
 Reg add "HKLM\SOFTWARE\Microsoft\Windows Defender Security Center\Notifications" /v "DisableNotifications" /t REG_DWORD /d "1" /f >nul 2>&1
 Reg add "HKLM\SOFTWARE\Microsoft\Windows Defender Security Center\Notifications" /v "DisableEnhancedNotifications" /t REG_DWORD /d "1" /f >nul 2>&1
 Reg add "HKCU\SOFTWARE\Microsoft\Windows Security Health\State" /v "AccountProtection_MicrosoftAccount_Disconnected" /t REG_DWORD /d "0" /f >nul 2>&1
-%PowerRun% Reg add "HKLM\SOFTWARE\Microsoft\Windows Defender" /v "DisableAntiSpyware" /t REG_DWORD /d "1" /f >nul 2>&1
-%PowerRun% Reg add "HKLM\SOFTWARE\Microsoft\Windows Defender" /v "DisableAntiVirus" /t REG_DWORD /d "1" /f >nul 2>&1
-%PowerRun% Reg add "HKLM\SOFTWARE\Microsoft\Windows Defender\Features" /v "TamperProtection" /t REG_DWORD /d "0" /f >nul 2>&1
-%PowerRun% Reg add "HKLM\SOFTWARE\Microsoft\Windows Defender\Features" /v "TamperProtectionSource" /t REG_DWORD /d "2" /f >nul 2>&1
-%PowerRun% Reg add "HKLM\SOFTWARE\Microsoft\Windows Defender\Signature Updates" /v "FirstAuGracePeriod" /t REG_DWORD /d "0" /f >nul 2>&1
-%PowerRun% Reg add "HKLM\SOFTWARE\Microsoft\Windows Defender\UX Configuration" /v "DisablePrivacyMode" /t REG_DWORD /d "1" /f >nul 2>&1
+%PowerRun% Reg add "HKLM\SOFTWARE\Microsoft\Windows Defender" /v "DisableAntiSpyware" /t REG_DWORD /d "1" /f
+%PowerRun% Reg add "HKLM\SOFTWARE\Microsoft\Windows Defender" /v "DisableAntiVirus" /t REG_DWORD /d "1" /f
+%PowerRun% Reg add "HKLM\SOFTWARE\Microsoft\Windows Defender\Features" /v "TamperProtection" /t REG_DWORD /d "0" /f
+%PowerRun% Reg add "HKLM\SOFTWARE\Microsoft\Windows Defender\Features" /v "TamperProtectionSource" /t REG_DWORD /d "2" /f
+%PowerRun% Reg add "HKLM\SOFTWARE\Microsoft\Windows Defender\Signature Updates" /v "FirstAuGracePeriod" /t REG_DWORD /d "0" /f
+%PowerRun% Reg add "HKLM\SOFTWARE\Microsoft\Windows Defender\UX Configuration" /v "DisablePrivacyMode" /t REG_DWORD /d "1" /f
 Reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\StartupApproved\Run" /v "SecurityHealth" /t REG_BINARY /d "030000000000000000000000" /f >nul 2>&1
 Reg add "HKLM\SOFTWARE\Policies\Microsoft\MRT" /v "DontOfferThroughWUAU" /t REG_DWORD /d "1" /f >nul 2>&1
 Reg add "HKLM\SOFTWARE\Policies\Microsoft\MRT" /v "DontReportInfectionInformation" /t REG_DWORD /d "1" /f >nul 2>&1
