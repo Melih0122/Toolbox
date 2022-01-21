@@ -3,8 +3,8 @@
 - Toolbox Windows 10 - 11 sürümlerinin x64 mimarilerinde açılmaktadır. Farklı sürümler için desteği yoktur. En güncel olan sürüm ile senkronize olarak gelişmektedir.
 - Windows ekran ölçeklendirme ayarı Toolbox'ın pencerini ayarını bozabiliyor. Sorunsuz kullanım için Toolbox'ı kullanırken ölçeklendirme etkileri kapatılmalıdır.
 
-![cmd_6ThYu41LCV](https://user-images.githubusercontent.com/93199689/149926518-3cf6c8a5-c2f5-442d-8374-d1769067a126.png)
-![cmd_hrSHoXFkfM](https://user-images.githubusercontent.com/93199689/149926525-b91c4075-4088-4ced-8b45-8f75ba895dc2.png)
+![cmd_IiBcLnkWC7](https://user-images.githubusercontent.com/93199689/150528049-5378675c-9a31-496a-b4d9-a2dce83edf34.png)
+![cmd_ecyhLuefWA](https://user-images.githubusercontent.com/93199689/150528075-46b0f063-08cb-48c4-a3a5-8f9eb281ba0e.png)
 
 ### Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
 
@@ -130,7 +130,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 # BONUS
 	• 53. - Bu bölüm işletim sistemine göre değişiklik göstermektedir. Windows 11 ve Windows 10 için iki ayrı bölüme ayrılmıştır.
 ### • 53 - Windows 10 Düzenleme
-![Win10](https://user-images.githubusercontent.com/93199689/147974750-eff9701b-ccf6-462b-aa04-bde6f0853337.png)
+![cmd_fqQX7gF94V](https://user-images.githubusercontent.com/93199689/150528025-d02fcc25-66f3-485f-af46-765b53406b4c.png)
 
 	• 1 - Saat yanı simgeler [GÖSTER/GİZLE]: 
 	     •[Göster]: 0 - Saat yanında yer alan tüm simgeleri gösterir.
@@ -194,7 +194,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 		
 	• 8 - Gpedit.msc (Yerel Grup ilkesi) [Ekle]: Windows Home ve Home Single Language sürümlerine "Gpedit.msc" ekler.
 ### • 54 - Kapatılan Servisleri Yönet
-![cmd_BIB9uzpoGo](https://user-images.githubusercontent.com/93199689/149864879-9d945f79-08f2-489b-b8a7-ade45f6c6cb3.png)
+![cmd_QzboAOTK6v](https://user-images.githubusercontent.com/93199689/150527971-8c3bcd83-b282-4b54-8647-da835df6b9e2.png)
 
 	• 1 [A/K]- Bluetooth hizmetini : Bluetooth hizmetlerini kapatır açar.
 	• 2 [A/K]- Yazıcı hizmetini : Yazıcı hizmetlerini kapatır açar.
