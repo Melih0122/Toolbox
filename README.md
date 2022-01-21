@@ -42,7 +42,7 @@
 
 Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar ücretsiz alternatifler arasında seçilmiştir. WinRaR hariç o da ücretli ama ücretsiz bir yazılımdır.	
    
-	• 1 - All in One Runtimes: C++ 2005-2019 / Java / XNA Framework / OpenAL / DirectX. Bu programlar oyunlar ve bazı uygulamalarda sorun yaşamamanız için mutlaka kurulmalıdır.
+	• 1 - All in One Runtimes: C++ 2005-2022 / Java / XNA Framework / OpenAL / DirectX. Bu programlar oyunlar ve bazı uygulamalarda sorun yaşamamanız için mutlaka kurulmalıdır.
 #### ► Mesajlaşma Uygulamaları 
 	• 2 - Discord: Sunucu kurup arkadaşlarınız sohbet edebileceğiniz bir uygulama. Online oyun oynuyorsanız arkadaşlarınızla iletişim kurmak için birebirdir.
 	• 3 - Whatsapp: Telefondaki uygulamayı bilgisayarınıza senkronize etmeyi sağlar.
