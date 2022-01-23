@@ -196,6 +196,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	• 8 - Gpedit.msc (Yerel Grup ilkesi) [Ekle]: Windows Home ve Home Single Language sürümlerine "Gpedit.msc" ekler.
 ### • 54 - Kapatılan Servisleri Yönet
 Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip daha sonra aç / kapat baş harflerini eklemek gerekiyor.
+
 Örnek: 1a / 2k / 4A / 10K / 23a / 24k  
 ![cmd_QzboAOTK6v](https://user-images.githubusercontent.com/93199689/150527971-8c3bcd83-b282-4b54-8647-da835df6b9e2.png)
 
