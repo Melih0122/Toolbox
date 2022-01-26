@@ -42,9 +42,27 @@
 ::
 :: ==============================================================================================================================
 -----------------
- ► Versiyon 2.1 -
+ ► Versiyon 2.2 -
 -----------------
 Yayınlanma Tarihi: 
+
+ • Windows Düzenleme > Setup düzenleme bölümünde Windows 11 Bypass aracında bilgi vermeden kapanma sorunu giderildi.
+ • ISLC bölümündeki yol hatası giderildi. (Kick Furkanowski'e geri bildirimi için teşekkür ederim)
+ • Signal indirme linki yenilendi. (5.28.0 > 5.29.0)
+ • 7-Zip indirme linki yenilendi. (21.06 > 21.07)
+ • Notepad++ indirme linki yenilendi. (8.2 > 8.2.1)
+ • Mem Reduct indirme linki yenilendi. (3.3.5 > 3.4)
+ • Hibit Uninstaller indirme linki yenilendi. (2.7.40 > 2.7.45)
+ • İndirme bölümüne Blender uygulaması eklendi.
+ • İndirme bölümüne Shotcut uygulaması eklendi.
+ • İndirme bölümüne Openshot uygulaması eklendi.
+ •
+
+:: ==============================================================================================================================
+-----------------
+ ► Versiyon 2.1 -
+-----------------
+Yayınlanma Tarihi: 21.01.2022
 
  • "Kapatılan Servisleri Yönet" bölümünde değişiklikler yapıldı.
    • Kod okunaklığını arttırmak için yorum satırları eklendi.
@@ -310,7 +328,6 @@ Yayınlanma Tarihi: 26 Kasım 2021
  • Format Factory indirme linki güncellendi. (5.8.1 ► 5.9.0)
    • Format Factory katılımsız kurulmamaktadır. Kurulum işlemlerinin manuel ilerletilmesi gerekmektedir.
    • Kurulumda dikkat edin farklı programlar kurdurmaya çalışmakta o seçenekleri kabul etmeyin.
-   • Sonraki sürümlerde oto kurulum yapması için script hazırlayacağım.
  • TaskbarX indirme linki güncllendi. (1.7.2.0 ► 1.7.3.0)
  • SSDFresh uygulaması sistemsel bir arızaya neden olduğu için kaldırıldı
    • Alternatif olarak SSDBooster yazılımı eklendi. Portable bir yazılımdır ve masaüstüne indirilmektedir.

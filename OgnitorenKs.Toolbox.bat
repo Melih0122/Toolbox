@@ -158,7 +158,7 @@ echo %caption2% > NUL
 	if %caption2%==10 (set editmenugo=Win10SettingsMenu) 
 	if %caption2%==11 (set editmenugo=Win11SettingsMenu)
 
-set versiyon=2.1
+set versiyon=2.2
 
 ::set editmenu=Windows 11 Edit
 ::set editmenugo=Win11SettingsMenu
@@ -184,30 +184,30 @@ echo   %ESC%[90mบ%ESC%[1;97m%ESC%%ESC%[100m OGNITORENKS TOOLBOX %versiyon% %ESC%
 echo   %ESC%[90mบ%ESC%%ESC%[32m OS:%ESC%%ESC%[37m %caption% %ESC%%ESC%[90m^|%ESC%%ESC%[37m x%osarch% %ESC%%ESC%[90m^|%ESC%%ESC%[37m %ImageBuild% %ESC%[0m%ESC%[90m^|%ESC%%ESC%[37m %isderleme% %ESC%%ESC%[90m^|%ESC%%ESC%[32m G:%ESC%%ESC%[37m %gucc% %ESC%[0m	
 echo   %ESC%[90mฬออออออออออออออออออออออออออหอออออออออออออออออออออออออออออหอออออออออออออออออออออออออออออออออน%ESC%[0m
 echo   %ESC%[90mบ%ESC%%ESC%[32m  1.%ESC%%RGB%[37m All In One Runtimes%RGB%[0m  %ESC%[90mบ%ESC%[0m %ESC%[32m 27.%ESC%%RGB%[36m Kdenlive%RGB%[0m               %ESC%[90mบ%ESC%[0m          %ESC%[92m BONUS%ESC%[0m               %ESC%[90mบ%ESC%[0m  
-echo   %ESC%[90mบ%ESC%%ESC%[32m  2.%ESC%%RGB%[33m Discord%RGB%[0m              %ESC%[90mบ%ESC%[0m %ESC%[32m 28.%ESC%%RGB%[36m Krita%RGB%[0m                  %ESC%[90mบ%ESC%%ESC%[32m 53.%ESC%%RGB%[36m %editmenu%%ESC%[0m             %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m  3.%ESC%%RGB%[33m Whatsapp%RGB%[0m             %ESC%[90mบ%ESC%[0m %ESC%[32m 29.%ESC%%RGB%[36m Gimp%RGB%[0m                   %ESC%[90mบ%ESC%%ESC%[32m 54.%ESC%%RGB%[33m Kapatlan Servisleri Y”net%RGB%[0m  %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m  4.%ESC%%RGB%[33m Signal%RGB%[0m               %ESC%[90mบ%ESC%[0m %ESC%[32m 30.%ESC%%RGB%[36m OBS Studio%RGB%[0m             %ESC%[90mบ%ESC%%ESC%[32m 55.%ESC%%RGB%[33m Simge Hatasn dzelt%RGB%[0m       %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m  5.%ESC%%RGB%[33m Telegram%RGB%[0m             %ESC%[90mบ%ESC%[0m %ESC%[32m 31.%ESC%%RGB%[36m ShareX%RGB%[0m                 %ESC%[90mบ%ESC%%ESC%[32m 56.%ESC%%RGB%[36m Windows Dzenleme%RGB%[0m           %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m  6.%ESC%%RGB%[33m Microsoft Teams%RGB%[0m      %ESC%[90mบ%ESC%[0m %ESC%[32m 32.%ESC%%RGB%[36m Audacity%RGB%[0m               %ESC%[90mบ%ESC%%ESC%[32m 57.%ESC%%RGB%[33m Gncelleme Sonras Temizlik%RGB%[0m %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m  7.%ESC%%RGB%[33m Zoom%RGB%[0m                 %ESC%[90mบ%ESC%[0m %ESC%[32m 33.%ESC%%RGB%[36m K-Lite Codec%RGB%[0m           %ESC%[90mบ%ESC%%ESC%[32m 58.%ESC%%RGB%[33m Sistem / Market Onar%RGB%[0m        %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m  8.%ESC%%RGB%[36m EpicGames%RGB%[0m            %ESC%[90mบ%ESC%[0m %ESC%[32m 34.%ESC%%RGB%[36m VLC Media Player%RGB%[0m       %ESC%[90mบ%ESC%%ESC%[32m 59.%ESC%%RGB%[33m PC Temizle%RGB%[0m                  %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m  9.%ESC%%RGB%[36m Steam%RGB%[0m                %ESC%[90mบ%ESC%[0m %ESC%[32m 35.%ESC%%RGB%[36m Aimp%RGB%[0m                   %ESC%[90mบ%ESC%%ESC%[32m 60.%ESC%%RGB%[36m Appx Y”netici%RGB%[0m               %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m 10.%ESC%%RGB%[36m GOG Galaxy%RGB%[0m           %ESC%[90mบ%ESC%[0m %ESC%[32m 36.%ESC%%RGB%[36m Any Video Converter%RGB%[0m    %ESC%[90mบ%ESC%%ESC%[32m 61.%ESC%%RGB%[36m Folder to ISO%RGB%[0m               %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m 11.%ESC%%RGB%[36m Uplay%RGB%[0m                %ESC%[90mบ%ESC%[0m %ESC%[32m 37.%ESC%%RGB%[33m Free Download Manager%RGB%[0m  %ESC%[90mบ%ESC%%ESC%[32m 62.%ESC%%RGB%[33m Fat32 to NTFS%RGB%[0m               %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m 12.%ESC%%RGB%[36m Origin%RGB%[0m               %ESC%[90mบ%ESC%[0m %ESC%[32m 38.%ESC%%RGB%[33m nt Download Manager%RGB%[0m   %ESC%[90mบ%ESC%%ESC%[32m 63.%ESC%%RGB%[33m Ping ler%RGB%[0m                  %ESC%[90mบ%ESC%[0m  
-echo   %ESC%[90mบ%ESC%%ESC%[32m 13.%ESC%%RGB%[36m Cheat Engine%RGB%[0m         %ESC%[90mบ%ESC%[0m %ESC%[32m 39.%ESC%%RGB%[33m ByClick Downloader%RGB%[0m     %ESC%[90mบ%ESC%%ESC%[32m 64.%ESC%%RGB%[33m Lisans Y”netimi%RGB%[0m             %ESC%[90mบ%ESC%[0m
-echo   %ESC%[90mบ%ESC%%ESC%[32m 14.%ESC%%RGB%[36m Wemod%RGB%[0m                %ESC%[90mบ%ESC%[0m %ESC%[32m 40.%ESC%%RGB%[33m Utorrent%RGB%[0m               %ESC%[90mบ%ESC%%ESC%[32m 65.%ESC%%RGB%[33m Kullanc Hesap Y”netimi%RGB%[0m     %ESC%[90mบ%ESC%[0m
-echo   %ESC%[90mบ%ESC%%ESC%[32m 15.%ESC%%RGB%[33m Google Chrome%RGB%[0m        %ESC%[90mบ%ESC%[0m %ESC%[32m 41.%ESC%%RGB%[33m GlassWire%RGB%[0m              %ESC%[90mบ%ESC%%ESC%[32m 66.%ESC%%RGB%[33m Sistem Hakknda%RGB%[0m             %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m 16.%ESC%%RGB%[33m Mozilla Firefox%RGB%[0m      %ESC%[90mบ%ESC%[0m %ESC%[32m 42.%ESC%%RGB%[33m TeamViewer%RGB%[0m             %ESC%[90mบ%ESC%%ESC%[32m 67.%ESC%%RGB%[33m Wifi Crack%RGB%[0m                  %ESC%[90mบ%ESC%[0m
-echo   %ESC%[90mบ%ESC%%ESC%[32m 17.%ESC%%RGB%[33m Brave%RGB%[0m                %ESC%[90mบ%ESC%[0m %ESC%[32m 43.%ESC%%RGB%[33m Hamachi%RGB%[0m                %ESC%[90mบ%ESC%[0m                                 %ESC%[90mบ%ESC%[0m  
-echo   %ESC%[90mบ%ESC%%ESC%[32m 18.%ESC%%RGB%[33m Microsoft Edge%RGB%[0m       %ESC%[90mบ%ESC%[0m %ESC%[32m 44.%ESC%%RGB%[33m Stremio%RGB%[0m                %ESC%[90mบ%ESC%[0m                                 %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m 19.%ESC%%RGB%[37m ISLC%RGB%[0m                 %ESC%[90mบ%ESC%[0m %ESC%[32m 45.%ESC%%RGB%[36m MSI Afterburner%RGB%[0m        %ESC%[90mบ%ESC%[0m                                 %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m 20.%ESC%%RGB%[37m MemReduct%RGB%[0m            %ESC%[90mบ%ESC%[0m %ESC%[32m 46.%ESC%%RGB%[36m Hibit Uninstaller%RGB%[0m      %ESC%[90mบ%ESC%[0m                                 %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m 21.%ESC%%RGB%[36m Libre Office%RGB%[0m         %ESC%[90mบ%ESC%[0m %ESC%[32m 47.%ESC%%RGB%[36m Wise Care 365%RGB%[0m          %ESC%[90mบ%ESC%[0m                                 %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m 22.%ESC%%RGB%[36m Adobe Reader%RGB%[0m         %ESC%[90mบ%ESC%[0m %ESC%[32m 48.%ESC%%RGB%[36m Unlocker%RGB%[0m               %ESC%[90mบ%ESC%[0m                                 %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m 23.%ESC%%RGB%[36m PDF-XChange Edit”r%RGB%[0m   %ESC%[90mบ%ESC%[0m %ESC%[32m 49.%ESC%%RGB%[36m SSD Booster%RGB%[0m            %ESC%[90mบ%ESC%[0m                                 %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m 24.%ESC%%RGB%[36m Calibre%RGB%[0m              %ESC%[90mบ%ESC%[0m %ESC%[32m 50.%ESC%%RGB%[36m OpenShell%RGB%[0m              %ESC%[90mบ%ESC%%ESC%[32m 97.%ESC%%RGB%[36m Toolbox Kullanm%RGB%[0m           %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m 25.%ESC%%RGB%[33m 7 - Zip%RGB%[0m              %ESC%[90mบ%ESC%[0m %ESC%[32m 51.%ESC%%RGB%[36m Everything%RGB%[0m             %ESC%[90mบ%ESC%%ESC%[32m 98.%ESC%%RGB%[36m Toolbox Gncelle%RGB%[0m            %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m  2.%ESC%%RGB%[33m Discord%RGB%[0m              %ESC%[90mบ%ESC%[0m %ESC%[32m 28.%ESC%%RGB%[36m OpenShot%RGB%[0m               %ESC%[90mบ%ESC%%ESC%[32m 53.%ESC%%RGB%[36m %editmenu%%ESC%[0m             %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m  3.%ESC%%RGB%[33m Whatsapp%RGB%[0m             %ESC%[90mบ%ESC%[0m %ESC%[32m 29.%ESC%%RGB%[36m Shotcut%RGB%[0m                %ESC%[90mบ%ESC%%ESC%[32m 54.%ESC%%RGB%[33m Kapatlan Servisleri Y”net%RGB%[0m  %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m  4.%ESC%%RGB%[33m Signal%RGB%[0m               %ESC%[90mบ%ESC%[0m %ESC%[32m 30.%ESC%%RGB%[36m Krita%RGB%[0m                  %ESC%[90mบ%ESC%%ESC%[32m 55.%ESC%%RGB%[33m Simge Hatasn dzelt%RGB%[0m       %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m  5.%ESC%%RGB%[33m Telegram%RGB%[0m             %ESC%[90mบ%ESC%[0m %ESC%[32m 31.%ESC%%RGB%[36m Gimp%RGB%[0m                   %ESC%[90mบ%ESC%%ESC%[32m 56.%ESC%%RGB%[36m Windows Dzenleme%RGB%[0m           %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m  6.%ESC%%RGB%[33m Microsoft Teams%RGB%[0m      %ESC%[90mบ%ESC%[0m %ESC%[32m 32.%ESC%%RGB%[36m OBS Studio%RGB%[0m             %ESC%[90mบ%ESC%%ESC%[32m 57.%ESC%%RGB%[33m Gncelleme Sonras Temizlik%RGB%[0m %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m  7.%ESC%%RGB%[33m Zoom%RGB%[0m                 %ESC%[90mบ%ESC%[0m %ESC%[32m 33.%ESC%%RGB%[36m ShareX%RGB%[0m                 %ESC%[90mบ%ESC%%ESC%[32m 58.%ESC%%RGB%[33m Sistem / Market Onar%RGB%[0m        %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m  8.%ESC%%RGB%[36m EpicGames%RGB%[0m            %ESC%[90mบ%ESC%[0m %ESC%[32m 34.%ESC%%RGB%[36m Audacity%RGB%[0m               %ESC%[90mบ%ESC%%ESC%[32m 59.%ESC%%RGB%[33m PC Temizle%RGB%[0m                  %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m  9.%ESC%%RGB%[36m Steam%RGB%[0m                %ESC%[90mบ%ESC%[0m %ESC%[32m 35.%ESC%%RGB%[36m K-Lite Codec%RGB%[0m           %ESC%[90mบ%ESC%%ESC%[32m 60.%ESC%%RGB%[36m Appx Y”netici%RGB%[0m               %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m 10.%ESC%%RGB%[36m GOG Galaxy%RGB%[0m           %ESC%[90mบ%ESC%[0m %ESC%[32m 36.%ESC%%RGB%[36m VLC Media Player%RGB%[0m       %ESC%[90mบ%ESC%%ESC%[32m 61.%ESC%%RGB%[36m Folder to ISO%RGB%[0m               %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m 11.%ESC%%RGB%[36m Uplay%RGB%[0m                %ESC%[90mบ%ESC%[0m %ESC%[32m 37.%ESC%%RGB%[36m Aimp%RGB%[0m                   %ESC%[90mบ%ESC%%ESC%[32m 62.%ESC%%RGB%[33m Fat32 to NTFS%RGB%[0m               %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m 12.%ESC%%RGB%[36m Origin%RGB%[0m               %ESC%[90mบ%ESC%[0m %ESC%[32m 38.%ESC%%RGB%[36m Any Video Converter%RGB%[0m    %ESC%[90mบ%ESC%%ESC%[32m 63.%ESC%%RGB%[33m Ping ler%RGB%[0m                  %ESC%[90mบ%ESC%[0m  
+echo   %ESC%[90mบ%ESC%%ESC%[32m 13.%ESC%%RGB%[36m Cheat Engine%RGB%[0m         %ESC%[90mบ%ESC%[0m %ESC%[32m 39.%ESC%%RGB%[33m Free Download Manager%RGB%[0m  %ESC%[90mบ%ESC%%ESC%[32m 64.%ESC%%RGB%[33m Lisans Y”netimi%RGB%[0m             %ESC%[90mบ%ESC%[0m
+echo   %ESC%[90mบ%ESC%%ESC%[32m 14.%ESC%%RGB%[36m Wemod%RGB%[0m                %ESC%[90mบ%ESC%[0m %ESC%[32m 40.%ESC%%RGB%[33m nt Download Manager%RGB%[0m   %ESC%[90mบ%ESC%%ESC%[32m 65.%ESC%%RGB%[33m Kullanc Hesap Y”netimi%RGB%[0m     %ESC%[90mบ%ESC%[0m
+echo   %ESC%[90mบ%ESC%%ESC%[32m 15.%ESC%%RGB%[33m Google Chrome%RGB%[0m        %ESC%[90mบ%ESC%[0m %ESC%[32m 41.%ESC%%RGB%[33m ByClick Downloader%RGB%[0m     %ESC%[90mบ%ESC%%ESC%[32m 66.%ESC%%RGB%[33m Sistem Hakknda%RGB%[0m             %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m 16.%ESC%%RGB%[33m Mozilla Firefox%RGB%[0m      %ESC%[90mบ%ESC%[0m %ESC%[32m 42.%ESC%%RGB%[33m Utorrent%RGB%[0m               %ESC%[90mบ%ESC%%ESC%[32m 67.%ESC%%RGB%[33m Wifi Crack%RGB%[0m                  %ESC%[90mบ%ESC%[0m
+echo   %ESC%[90mบ%ESC%%ESC%[32m 17.%ESC%%RGB%[33m Brave%RGB%[0m                %ESC%[90mบ%ESC%[0m %ESC%[32m 43.%ESC%%RGB%[33m GlassWire%RGB%[0m              %ESC%[90mบ%ESC%[0m                                 %ESC%[90mบ%ESC%[0m  
+echo   %ESC%[90mบ%ESC%%ESC%[32m 18.%ESC%%RGB%[33m Microsoft Edge%RGB%[0m       %ESC%[90mบ%ESC%[0m %ESC%[32m 44.%ESC%%RGB%[33m TeamViewer%RGB%[0m             %ESC%[90mบ%ESC%[0m                                 %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m 19.%ESC%%RGB%[37m ISLC%RGB%[0m                 %ESC%[90mบ%ESC%[0m %ESC%[32m 45.%ESC%%RGB%[33m Hamachi%RGB%[0m                %ESC%[90mบ%ESC%[0m                                 %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m 20.%ESC%%RGB%[37m MemReduct%RGB%[0m            %ESC%[90mบ%ESC%[0m %ESC%[32m 46.%ESC%%RGB%[33m Stremio%RGB%[0m                %ESC%[90mบ%ESC%[0m                                 %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m 21.%ESC%%RGB%[36m Libre Office%RGB%[0m         %ESC%[90mบ%ESC%[0m %ESC%[32m 47.%ESC%%RGB%[36m MSI Afterburner%RGB%[0m        %ESC%[90mบ%ESC%[0m                                 %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m 22.%ESC%%RGB%[36m Adobe Reader%RGB%[0m         %ESC%[90mบ%ESC%[0m %ESC%[32m 48.%ESC%%RGB%[36m Hibit Uninstaller%RGB%[0m      %ESC%[90mบ%ESC%[0m                                 %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m 23.%ESC%%RGB%[36m PDF-XChange Edit”r%RGB%[0m   %ESC%[90mบ%ESC%[0m %ESC%[32m 49.%ESC%%RGB%[36m Wise Care 365%RGB%[0m          %ESC%[90mบ%ESC%[0m                                 %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m 24.%ESC%%RGB%[36m Calibre%RGB%[0m              %ESC%[90mบ%ESC%[0m %ESC%[32m 50.%ESC%%RGB%[36m Unlocker%RGB%[0m               %ESC%[90mบ%ESC%%ESC%[32m 97.%ESC%%RGB%[36m Toolbox Kullanm%RGB%[0m           %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m 25.%ESC%%RGB%[33m 7 - Zip%RGB%[0m              %ESC%[90mบ%ESC%[0m %ESC%[32m 51.%ESC%%RGB%[36m SSD Booster%RGB%[0m            %ESC%[90mบ%ESC%%ESC%[32m 98.%ESC%%RGB%[36m Toolbox Gncelle%RGB%[0m            %ESC%[90mบ%ESC%[0m 
 echo   %ESC%[90mบ%ESC%%ESC%[32m 26.%ESC%%RGB%[33m WinRAR%RGB%[0m               %ESC%[90mบ%ESC%[0m %ESC%[32m  Z.%ESC%%RGB%[37m Listeyi Genilet ^>^>^>   %RGB%[0m%ESC%[90mบ%ESC%%ESC%[32m 99.%ESC%%RGB%[36m Srm Notlar%RGB%[0m               %ESC%[90mบ%ESC%[0m
 echo   %ESC%[90mฬออออออออออออออออออออออออออสอออออออออออออออออออออออออออออสอออออออออออออออออออออออออออออออออน%ESC%[0m
 echo   %ESC%[90mบ%ESC%[0m                          %ESC%[32m X.%ESC%%ESC%[33m Kalntlar temizleyerek kapat%ESC%[0m                              %ESC%[90mบ%ESC%[0m
@@ -290,7 +290,7 @@ set /p menu= %RGB%[92m  Yapmak istediงiniz ilem : %RGB%[0m
 				  cls&DEL /F /Q /A %download%\*&RD /S /Q %download%\*&goto exit)
 	if %menu%==X (Call :Logss "Kalntlar.Temizle" "Download klas”r temizlendi."
 				  cls&DEL /F /Q /A %download%\*&RD /S /Q %download%\*&goto exit)
-else
+) else
 	goto menu
 
 :menu2
@@ -301,32 +301,32 @@ echo   %ESC%[90mษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
 echo   %ESC%[90mบ%ESC%[1;97m%ESC%%ESC%[100m OGNITORENKS TOOLBOX %versiyon% %ESC%[0m%ESC%[90m ^|%ESC%%ESC%[32m USER:%ESC%%ESC%[37m %registereduser% %ESC%%ESC%[90m^|%ESC%%ESC%[32m PC-Name: %ESC%%ESC%[37m%pcname%%ESC%[0m	
 echo   %ESC%[90mบ%ESC%%ESC%[32m OS:%ESC%%ESC%[37m %caption% %ESC%%ESC%[90m^|%ESC%%ESC%[37m x%osarch% %ESC%%ESC%[90m^|%ESC%%ESC%[37m %ImageBuild% %ESC%[0m%ESC%[90m^|%ESC%%ESC%[37m %isderleme% %ESC%%ESC%[90m^|%ESC%%ESC%[32m G:%ESC%%ESC%[37m %gucc% %ESC%[0m	
 echo   %ESC%[90mฬออออออออออออออออออออออออออหอออออออออออออออออออออออออออออหอออออออออออออออออออออออออออออออออน%ESC%[0m
-echo   %ESC%[90mบ%ESC%%ESC%[32m  1.%ESC%%RGB%[37m All In One Runtimes%RGB%[0m  %ESC%[90mบ%ESC%[0m %ESC%[32m 27.%ESC%%RGB%[36m Kdenlive%RGB%[0m               %ESC%[90mบ%ESC%%ESC%[32m 53.%ESC%%RGB%[36m Stellarium%RGB%[0m                  %ESC%[90mบ%ESC%[0m  
-echo   %ESC%[90mบ%ESC%%ESC%[32m  2.%ESC%%RGB%[33m Discord%RGB%[0m              %ESC%[90mบ%ESC%[0m %ESC%[32m 28.%ESC%%RGB%[36m Krita%RGB%[0m                  %ESC%[90mบ%ESC%%ESC%[32m 54.%ESC%%RGB%[36m Recuva%RGB%[0m                      %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m  3.%ESC%%RGB%[33m Whatsapp%RGB%[0m             %ESC%[90mบ%ESC%[0m %ESC%[32m 29.%ESC%%RGB%[36m Gimp%RGB%[0m                   %ESC%[90mบ%ESC%%ESC%[32m 55.%ESC%%RGB%[36m AOMEI Partiton Assistans%RGB%[0m    %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m  4.%ESC%%RGB%[33m Signal%RGB%[0m               %ESC%[90mบ%ESC%[0m %ESC%[32m 30.%ESC%%RGB%[36m OBS Studio%RGB%[0m             %ESC%[90mบ%ESC%%ESC%[32m 56.%ESC%%RGB%[33m Python%RGB%[0m                      %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m  5.%ESC%%RGB%[33m Telegram%RGB%[0m             %ESC%[90mบ%ESC%[0m %ESC%[32m 31.%ESC%%RGB%[36m ShareX%RGB%[0m                 %ESC%[90mบ%ESC%%ESC%[32m 57.%ESC%%RGB%[33m Phycharm%RGB%[0m                    %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m  6.%ESC%%RGB%[33m Microsoft Teams%RGB%[0m      %ESC%[90mบ%ESC%[0m %ESC%[32m 32.%ESC%%RGB%[36m Audacity%RGB%[0m               %ESC%[90mบ%ESC%%ESC%[32m 58.%ESC%%RGB%[33m Notepad++%RGB%[0m                   %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m  7.%ESC%%RGB%[33m Zoom%RGB%[0m                 %ESC%[90mบ%ESC%[0m %ESC%[32m 33.%ESC%%RGB%[36m K-Lite Codec%RGB%[0m           %ESC%[90mบ%ESC%%ESC%[32m 59.%ESC%%RGB%[33m Visual Studio Code%RGB%[0m          %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m  8.%ESC%%RGB%[36m EpicGames%RGB%[0m            %ESC%[90mบ%ESC%[0m %ESC%[32m 34.%ESC%%RGB%[36m VLC Media Player%RGB%[0m       %ESC%[90mบ%ESC%%ESC%[32m 60.%ESC%%RGB%[33m Github%RGB%[0m                      %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m  9.%ESC%%RGB%[36m Steam%RGB%[0m                %ESC%[90mบ%ESC%[0m %ESC%[32m 35.%ESC%%RGB%[36m Aimp%RGB%[0m                   %ESC%[90mบ%ESC%%ESC%[32m 61.%ESC%%RGB%[33m Git%RGB%[0m                         %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m 10.%ESC%%RGB%[36m GOG Galaxy%RGB%[0m           %ESC%[90mบ%ESC%[0m %ESC%[32m 36.%ESC%%RGB%[36m Any Video Converter%RGB%[0m    %ESC%[90mบ%ESC%%ESC%[32m 62.%ESC%%RGB%[36m %RGB%[0m                            %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m 11.%ESC%%RGB%[36m Uplay%RGB%[0m                %ESC%[90mบ%ESC%[0m %ESC%[32m 37.%ESC%%RGB%[33m Free Download Manager%RGB%[0m  %ESC%[90mบ%ESC%%ESC%[32m 63.%ESC%%RGB%[36m %RGB%[0m                            %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m 12.%ESC%%RGB%[36m Origin%RGB%[0m               %ESC%[90mบ%ESC%[0m %ESC%[32m 38.%ESC%%RGB%[33m nt Download Manager%RGB%[0m   %ESC%[90mบ%ESC%%ESC%[32m 64.%ESC%%RGB%[36m %RGB%[0m                            %ESC%[90mบ%ESC%[0m  
-echo   %ESC%[90mบ%ESC%%ESC%[32m 13.%ESC%%RGB%[36m Cheat Engine%RGB%[0m         %ESC%[90mบ%ESC%[0m %ESC%[32m 39.%ESC%%RGB%[33m ByClick Downloader%RGB%[0m     %ESC%[90mบ%ESC%%ESC%[32m 65.%ESC%%RGB%[36m %RGB%[0m                            %ESC%[90mบ%ESC%[0m
-echo   %ESC%[90mบ%ESC%%ESC%[32m 14.%ESC%%RGB%[36m Wemod%RGB%[0m                %ESC%[90mบ%ESC%[0m %ESC%[32m 40.%ESC%%RGB%[33m Utorrent%RGB%[0m               %ESC%[90mบ%ESC%%ESC%[32m 66.%ESC%%RGB%[36m %RGB%[0m                            %ESC%[90mบ%ESC%[0m
-echo   %ESC%[90mบ%ESC%%ESC%[32m 15.%ESC%%RGB%[33m Google Chrome%RGB%[0m        %ESC%[90mบ%ESC%[0m %ESC%[32m 41.%ESC%%RGB%[33m GlassWire%RGB%[0m              %ESC%[90mบ%ESC%%ESC%[32m 67.%ESC%%RGB%[36m %RGB%[0m                            %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m 16.%ESC%%RGB%[33m Mozilla Firefox%RGB%[0m      %ESC%[90mบ%ESC%[0m %ESC%[32m 42.%ESC%%RGB%[33m TeamViewer%RGB%[0m             %ESC%[90mบ%ESC%%ESC%[32m 68.%ESC%%RGB%[36m %RGB%[0m                            %ESC%[90mบ%ESC%[0m
-echo   %ESC%[90mบ%ESC%%ESC%[32m 17.%ESC%%RGB%[33m Brave%RGB%[0m                %ESC%[90mบ%ESC%[0m %ESC%[32m 43.%ESC%%RGB%[33m Hamachi%RGB%[0m                %ESC%[90mบ%ESC%%ESC%[32m 69.%ESC%%RGB%[36m %RGB%[0m                            %ESC%[90mบ%ESC%[0m  
-echo   %ESC%[90mบ%ESC%%ESC%[32m 18.%ESC%%RGB%[33m Microsoft Edge%RGB%[0m       %ESC%[90mบ%ESC%[0m %ESC%[32m 44.%ESC%%RGB%[33m Stremio%RGB%[0m                %ESC%[90mบ%ESC%%ESC%[32m 70.%ESC%%RGB%[36m %RGB%[0m                            %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m 19.%ESC%%RGB%[37m ISLC%RGB%[0m                 %ESC%[90mบ%ESC%[0m %ESC%[32m 45.%ESC%%RGB%[36m MSI Afterburner%RGB%[0m        %ESC%[90mบ%ESC%%ESC%[32m 71.%ESC%%RGB%[36m %RGB%[0m                            %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m 20.%ESC%%RGB%[37m MemReduct%RGB%[0m            %ESC%[90mบ%ESC%[0m %ESC%[32m 46.%ESC%%RGB%[36m Hibit Uninstaller%RGB%[0m      %ESC%[90mบ%ESC%%ESC%[32m 72.%ESC%%RGB%[36m %RGB%[0m                            %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m 21.%ESC%%RGB%[36m Libre Office%RGB%[0m         %ESC%[90mบ%ESC%[0m %ESC%[32m 47.%ESC%%RGB%[36m Wise Care 365%RGB%[0m          %ESC%[90mบ%ESC%%ESC%[32m 73.%ESC%%RGB%[37m OSU! %RGB%[0m                       %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m 22.%ESC%%RGB%[36m Adobe Reader%RGB%[0m         %ESC%[90mบ%ESC%[0m %ESC%[32m 48.%ESC%%RGB%[36m Unlocker%RGB%[0m               %ESC%[90mบ%ESC%%ESC%[32m 74.%ESC%%RGB%[37m World Of Tanks%RGB%[0m              %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m 23.%ESC%%RGB%[36m PDF-XChange Edit”r%RGB%[0m   %ESC%[90mบ%ESC%[0m %ESC%[32m 49.%ESC%%RGB%[36m SSD Booster%RGB%[0m            %ESC%[90mบ%ESC%%ESC%[32m 75.%ESC%%RGB%[37m Genshin Impact%RGB%[0m              %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m 24.%ESC%%RGB%[36m Calibre%RGB%[0m              %ESC%[90mบ%ESC%[0m %ESC%[32m 50.%ESC%%RGB%[36m OpenShell%RGB%[0m              %ESC%[90mบ%ESC%%ESC%[32m 76.%ESC%%RGB%[37m League Of Legends%RGB%[0m           %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m 25.%ESC%%RGB%[33m 7 - Zip%RGB%[0m              %ESC%[90mบ%ESC%[0m %ESC%[32m 51.%ESC%%RGB%[36m Everything%RGB%[0m             %ESC%[90mบ%ESC%%ESC%[32m 77.%ESC%%RGB%[37m Blitz%RGB%[0m                       %ESC%[90mบ%ESC%[0m 
-echo   %ESC%[90mบ%ESC%%ESC%[32m 26.%ESC%%RGB%[33m WinRAR%RGB%[0m               %ESC%[90mบ%ESC%[0m %ESC%[32m 52.%ESC%%RGB%[36m TaskbarX%RGB%[0m               %ESC%[90mบ%ESC%%ESC%[32m 78.%ESC%%RGB%[37m Valorant%RGB%[0m                    %ESC%[90mบ%ESC%[0m
+echo   %ESC%[90mบ%ESC%%ESC%[32m  1.%ESC%%RGB%[37m All In One Runtimes%RGB%[0m  %ESC%[90mบ%ESC%[0m %ESC%[32m 27.%ESC%%RGB%[36m Kdenlive%RGB%[0m               %ESC%[90mบ%ESC%%ESC%[32m 53.%ESC%%RGB%[36m Everything%RGB%[0m                  %ESC%[90mบ%ESC%[0m  
+echo   %ESC%[90mบ%ESC%%ESC%[32m  2.%ESC%%RGB%[33m Discord%RGB%[0m              %ESC%[90mบ%ESC%[0m %ESC%[32m 28.%ESC%%RGB%[36m OpenShot%RGB%[0m               %ESC%[90mบ%ESC%%ESC%[32m 54.%ESC%%RGB%[36m TaskbarX%RGB%[0m                    %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m  3.%ESC%%RGB%[33m Whatsapp%RGB%[0m             %ESC%[90mบ%ESC%[0m %ESC%[32m 29.%ESC%%RGB%[36m Shotcut%RGB%[0m                %ESC%[90mบ%ESC%%ESC%[32m 55.%ESC%%RGB%[36m Stellarium%RGB%[0m                  %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m  4.%ESC%%RGB%[33m Signal%RGB%[0m               %ESC%[90mบ%ESC%[0m %ESC%[32m 30.%ESC%%RGB%[36m Krita%RGB%[0m                  %ESC%[90mบ%ESC%%ESC%[32m 56.%ESC%%RGB%[36m Recuva%RGB%[0m                      %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m  5.%ESC%%RGB%[33m Telegram%RGB%[0m             %ESC%[90mบ%ESC%[0m %ESC%[32m 31.%ESC%%RGB%[36m Gimp%RGB%[0m                   %ESC%[90mบ%ESC%%ESC%[32m 57.%ESC%%RGB%[36m AOMEI Partiton Assistans%RGB%[0m    %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m  6.%ESC%%RGB%[33m Microsoft Teams%RGB%[0m      %ESC%[90mบ%ESC%[0m %ESC%[32m 32.%ESC%%RGB%[36m OBS Studio%RGB%[0m             %ESC%[90mบ%ESC%%ESC%[32m 58.%ESC%%RGB%[33m Python%RGB%[0m                      %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m  7.%ESC%%RGB%[33m Zoom%RGB%[0m                 %ESC%[90mบ%ESC%[0m %ESC%[32m 33.%ESC%%RGB%[36m ShareX%RGB%[0m                 %ESC%[90mบ%ESC%%ESC%[32m 59.%ESC%%RGB%[33m Phycharm%RGB%[0m                    %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m  8.%ESC%%RGB%[36m EpicGames%RGB%[0m            %ESC%[90mบ%ESC%[0m %ESC%[32m 34.%ESC%%RGB%[36m Audacity%RGB%[0m               %ESC%[90mบ%ESC%%ESC%[32m 60.%ESC%%RGB%[33m Notepad++%RGB%[0m                   %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m  9.%ESC%%RGB%[36m Steam%RGB%[0m                %ESC%[90mบ%ESC%[0m %ESC%[32m 35.%ESC%%RGB%[36m K-Lite Codec%RGB%[0m           %ESC%[90mบ%ESC%%ESC%[32m 61.%ESC%%RGB%[33m Visual Studio Code%RGB%[0m          %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m 10.%ESC%%RGB%[36m GOG Galaxy%RGB%[0m           %ESC%[90mบ%ESC%[0m %ESC%[32m 36.%ESC%%RGB%[36m VLC Media Player%RGB%[0m       %ESC%[90mบ%ESC%%ESC%[32m 62.%ESC%%RGB%[33m Github%RGB%[0m                      %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m 11.%ESC%%RGB%[36m Uplay%RGB%[0m                %ESC%[90mบ%ESC%[0m %ESC%[32m 37.%ESC%%RGB%[36m Aimp%RGB%[0m                   %ESC%[90mบ%ESC%%ESC%[32m 63.%ESC%%RGB%[33m Git%RGB%[0m                         %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m 12.%ESC%%RGB%[36m Origin%RGB%[0m               %ESC%[90mบ%ESC%[0m %ESC%[32m 38.%ESC%%RGB%[36m Any Video Converter%RGB%[0m    %ESC%[90mบ%ESC%%ESC%[32m 64.%ESC%%RGB%[36m Blender%RGB%[0m                     %ESC%[90mบ%ESC%[0m  
+echo   %ESC%[90mบ%ESC%%ESC%[32m 13.%ESC%%RGB%[36m Cheat Engine%RGB%[0m         %ESC%[90mบ%ESC%[0m %ESC%[32m 39.%ESC%%RGB%[33m Free Download Manager%RGB%[0m  %ESC%[90mบ%ESC%%ESC%[32m 65.%ESC%%RGB%[36m %RGB%[0m                            %ESC%[90mบ%ESC%[0m
+echo   %ESC%[90mบ%ESC%%ESC%[32m 14.%ESC%%RGB%[36m Wemod%RGB%[0m                %ESC%[90mบ%ESC%[0m %ESC%[32m 40.%ESC%%RGB%[33m nt Download Manager%RGB%[0m   %ESC%[90mบ%ESC%%ESC%[32m 66.%ESC%%RGB%[36m %RGB%[0m                            %ESC%[90mบ%ESC%[0m
+echo   %ESC%[90mบ%ESC%%ESC%[32m 15.%ESC%%RGB%[33m Google Chrome%RGB%[0m        %ESC%[90mบ%ESC%[0m %ESC%[32m 41.%ESC%%RGB%[33m ByClick Downloader%RGB%[0m     %ESC%[90mบ%ESC%%ESC%[32m 67.%ESC%%RGB%[36m %RGB%[0m                            %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m 16.%ESC%%RGB%[33m Mozilla Firefox%RGB%[0m      %ESC%[90mบ%ESC%[0m %ESC%[32m 42.%ESC%%RGB%[33m Utorrent%RGB%[0m               %ESC%[90mบ%ESC%%ESC%[32m 68.%ESC%%RGB%[36m %RGB%[0m                            %ESC%[90mบ%ESC%[0m
+echo   %ESC%[90mบ%ESC%%ESC%[32m 17.%ESC%%RGB%[33m Brave%RGB%[0m                %ESC%[90mบ%ESC%[0m %ESC%[32m 43.%ESC%%RGB%[33m GlassWire%RGB%[0m              %ESC%[90mบ%ESC%%ESC%[32m 69.%ESC%%RGB%[36m %RGB%[0m                            %ESC%[90mบ%ESC%[0m  
+echo   %ESC%[90mบ%ESC%%ESC%[32m 18.%ESC%%RGB%[33m Microsoft Edge%RGB%[0m       %ESC%[90mบ%ESC%[0m %ESC%[32m 44.%ESC%%RGB%[33m TeamViewer%RGB%[0m             %ESC%[90mบ%ESC%%ESC%[32m 70.%ESC%%RGB%[36m %RGB%[0m                            %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m 19.%ESC%%RGB%[37m ISLC%RGB%[0m                 %ESC%[90mบ%ESC%[0m %ESC%[32m 45.%ESC%%RGB%[33m Hamachi%RGB%[0m                %ESC%[90mบ%ESC%%ESC%[32m 71.%ESC%%RGB%[36m %RGB%[0m                            %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m 20.%ESC%%RGB%[37m MemReduct%RGB%[0m            %ESC%[90mบ%ESC%[0m %ESC%[32m 46.%ESC%%RGB%[33m Stremio%RGB%[0m                %ESC%[90mบ%ESC%%ESC%[32m 72.%ESC%%RGB%[36m %RGB%[0m                            %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m 21.%ESC%%RGB%[36m Libre Office%RGB%[0m         %ESC%[90mบ%ESC%[0m %ESC%[32m 47.%ESC%%RGB%[36m MSI Afterburner%RGB%[0m        %ESC%[90mบ%ESC%%ESC%[32m 73.%ESC%%RGB%[37m OSU! %RGB%[0m                       %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m 22.%ESC%%RGB%[36m Adobe Reader%RGB%[0m         %ESC%[90mบ%ESC%[0m %ESC%[32m 48.%ESC%%RGB%[36m Hibit Uninstaller%RGB%[0m      %ESC%[90mบ%ESC%%ESC%[32m 74.%ESC%%RGB%[37m World Of Tanks%RGB%[0m              %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m 23.%ESC%%RGB%[36m PDF-XChange Edit”r%RGB%[0m   %ESC%[90mบ%ESC%[0m %ESC%[32m 49.%ESC%%RGB%[36m Wise Care 365%RGB%[0m          %ESC%[90mบ%ESC%%ESC%[32m 75.%ESC%%RGB%[37m Genshin Impact%RGB%[0m              %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m 24.%ESC%%RGB%[36m Calibre%RGB%[0m              %ESC%[90mบ%ESC%[0m %ESC%[32m 50.%ESC%%RGB%[36m Unlocker%RGB%[0m               %ESC%[90mบ%ESC%%ESC%[32m 76.%ESC%%RGB%[37m League Of Legends%RGB%[0m           %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m 25.%ESC%%RGB%[33m 7 - Zip%RGB%[0m              %ESC%[90mบ%ESC%[0m %ESC%[32m 51.%ESC%%RGB%[36m SSD Booster%RGB%[0m            %ESC%[90mบ%ESC%%ESC%[32m 77.%ESC%%RGB%[37m Blitz%RGB%[0m                       %ESC%[90mบ%ESC%[0m 
+echo   %ESC%[90mบ%ESC%%ESC%[32m 26.%ESC%%RGB%[33m WinRAR%RGB%[0m               %ESC%[90mบ%ESC%[0m %ESC%[32m 52.%ESC%%RGB%[36m OpenShell%RGB%[0m              %ESC%[90mบ%ESC%%ESC%[32m 78.%ESC%%RGB%[37m Valorant%RGB%[0m                    %ESC%[90mบ%ESC%[0m
 echo   %ESC%[90mฬออออออออออออออออออออออออออสอออออออออออออออออออออออออออออสอออออออออออออออออออออออออออออออออน%ESC%[0m
 echo   %ESC%[90mบ%ESC%[0m                             %ESC%[32m X.%ESC%%ESC%[33m ^<^<^< Listeyi Daralt%ESC%[0m                                       %ESC%[90mบ%ESC%[0m
 echo   %ESC%[90mศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ%ESC%[0m
@@ -511,7 +511,7 @@ goto :eof
 
 :Download19
 Powershell -command "Expand-Archive -Force '%konum%\Files\ISLC.zip' 'C:\'"
-Powershell -command "New-Item -ItemType SymbolicLink -Path 'C:\Users\OgnitorenKs\Desktop' -Name 'ISLC' -Value 'C:\ISLC\Intelligent standby list cleaner ISLC.exe'"
+Powershell -command "New-Item -ItemType SymbolicLink -Path 'C:\Users\%username%\Desktop' -Name 'ISLC' -Value 'C:\ISLC\Intelligent standby list cleaner ISLC.exe'"
 goto :eof
 
 :Download20
@@ -561,104 +561,114 @@ Call :wget "%link%" Kdenlive.exe /S
 goto :eof
 
 :Download28
+FOR /F "tokens=1" %%i in ('FIND "Openshot.exe" %konum%\Ekler\Links.bat') do set link=%%i
+Call :wget "%link%" Openshot.exe /VERYSILENT /NORESTART
+goto :eof
+
+:Download29
+FOR /F "tokens=1" %%i in ('FIND "Shotcut.exe" %konum%\Ekler\Links.bat') do set link=%%i
+Call :wget "%link%" Shotcut.exe /S
+goto :eof
+
+:Download30
 FOR /F "tokens=1" %%i in ('FIND "Krita" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" Krita.exe /S
 goto :eof
 
-:Download29
+:Download31
 FOR /F "tokens=1" %%i in ('FIND "Gimp" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" Gimp.exe "/VERYSILENT /NORESTART /MERGETASKS=desktopicon /ALLUSERS"
 goto :eof
 
-:Download30
+:Download32
 FOR /F "tokens=1" %%i in ('FIND "OBS" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" OBS.exe /S
 goto :eof
 
-:Download31
+:Download33
 FOR /F "tokens=1" %%i in ('FIND "ShareX" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" ShareX.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
 goto :eof
 
-:Download32
+:Download34
 FOR /F "tokens=1" %%i in ('FIND "Audacity" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" Audacity.exe "/VERYSILENT /NORESTART"
 goto :eof
 
-:Download33
+:Download35
 FOR /F "tokens=1" %%i in ('FIND "Klite" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" Klite.exe /verysilent
 goto :eof
 
-:Download34
+:Download36
 FOR /F "tokens=1" %%i in ('FIND "VLCMediaPlayer" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" VLCMediaPlayer.exe "/L=1055 /S"
 goto :eof
 
-:Download35
+:Download37
 FOR /F "tokens=1" %%i in ('FIND "Aimp" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" Aimp.exe "/AUTO /SILENT"
 goto :eof
 
-:Download36
+:Download38
 FOR /F "tokens=1" %%i in ('FIND "AnyVideoConverter" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" AnyVideoConverter.exe /S
 Powershell -command "New-Item -ItemType SymbolicLink -Path 'C:\Users\OgnitorenKs\Desktop' -Name 'Any Video Converter' -Value 'C:\Program Files (x86)\Anvsoft\Any Video Converter\AVCFree.exe'"
 goto :eof
 
-:Download37
+:Download39
 FOR /F "tokens=1" %%i in ('FIND "FreeDownloadManager" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" FreeDownloadManager.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
 goto :eof
 
-:Download38
+:Download40
 FOR /F "tokens=1" %%i in ('FIND "idm.exe" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" idm.exe /skipdlgs
 goto :eof
 
-:Download39
+:Download41
 FOR /F "tokens=1" %%i in ('FIND "ByClick" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" ByClick.exe /q
 goto :eof
 
-:Download40
+:Download42
 FOR /F "tokens=1" %%i in ('FIND "Utorrent" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" Utorrent.exe /S
 goto :eof
 
-:Download41
+:Download43
 FOR /F "tokens=1" %%i in ('FIND "GlassWire" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" GlassWire.exe /S
 goto :eof
 
-:Download42
+:Download44
 FOR /F "tokens=1" %%i in ('FIND "TeamViewer" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" TeamViewer.exe /S
 goto :eof
 
-:Download43
+:Download45
 FOR /F "tokens=1" %%i in ('FIND "Hamachi" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" Hamachi.msi /q
 goto :eof
 
-:Download44
+:Download46
 FOR /F "tokens=1" %%i in ('FIND "Stremio" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" Stremio.exe /S
 goto :eof
 
-:Download45
+:Download47
 FOR /F "tokens=1" %%i in ('FIND "MSIAfterburner" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wgetozel "%link%" MSIAfterburner.zip /S
 Call :ZipExport MSIAfterburner.zip 
 for /f %%i in ('"dir /b %download%\MSIAfterburner\*.exe"') do "%download%\MSIAfterburner\%%i" /S
 goto :eof
 
-:Download46
+:Download48
 FOR /F "tokens=1" %%i in ('FIND "Hibit" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" Hibit.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
 goto :eof
 
-:Download47
+:Download49
 FOR /F "tokens=1" %%i in ('FIND "WiseCare365.zip" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wgetozel "%link%" WiseCare365.zip
 powershell -command "Expand-Archive -Force '%download%\WiseCare365.zip' '%download%'"
@@ -666,28 +676,28 @@ powershell -command "Expand-Archive -Force '%download%\WiseCare365.zip' '%downlo
 DEL /F /Q /A "%download%\WiseCare365.zip"
 goto :eof
 
-:Download48
+:Download50
 FOR /F "tokens=1" %%i in ('FIND "Unlocker.exe" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" Unlocker.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
 goto :eof
 
-:Download49
+:Download51
 FOR /F "tokens=1" %%i in ('FIND "SSDBooster" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wgetdesktop "%link%" "C:\users\%username%\Desktop\SSDBooster.exe"
 powershell -command "Start-Process 'C:\Users\%username%\Desktop\SSDBooster.exe'"
 goto :eof
 
-:Download50
+:Download52
 FOR /F "tokens=1" %%i in ('FIND "OpenShell" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" OpenShell.exe "/quiet /norestart ADDLOCAL=StartMenu"
 goto :eof
 
-:Download51
+:Download53
 FOR /F "tokens=1" %%i in ('FIND "Everything" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" Everything.exe /S
 goto :eof
 
-:Download52
+:Download54
 FOR /F "tokens=1" %%i in ('FIND "TaskbarX" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wgetozel "%link%" TaskbarX.zip 
 powershell -command "Expand-Archive -Force '%download%\TaskbarX.zip' 'C:\Users\%username%\Desktop\TaskbarX'"
@@ -695,49 +705,54 @@ powershell -command "Start-Process 'C:\Users\%username%\Desktop\TaskbarX\Taskbar
 powershell -command "Start-Process 'C:\Users\%username%\Desktop\TaskbarX\TaskbarX.exe'"
 goto :eof
 
-:Download53
+:Download55
 FOR /F "tokens=1" %%i in ('FIND "Stellarium.exe" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" Stellarium.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
 goto :eof
 
-:Download54
+:Download56
 FOR /F "tokens=1" %%i in ('FIND "Recuva.exe" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" Recuva.exe /S
 goto :eof
 
-:Download55
+:Download57
 FOR /F "tokens=1" %%i in ('FIND "AOMEI.exe" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" AOMEI.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
 goto :eof
 
-:Download56
+:Download58
 FOR /F "tokens=1" %%i in ('FIND "Python.exe" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" Python.exe "/quiet InstallAllUsers=1 PrependPath=1"
 goto :eof
 
-:Download57
+:Download59
 FOR /F "tokens=1" %%i in ('FIND "PyCharm.exe" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" PyCharm.exe "/S /CONFIG=%download%\silent.config /D=C:\PyCharm
 goto :eof
 
-:Download58
+:Download60
 FOR /F "tokens=1" %%i in ('FIND "Notepad" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" Notepad.exe /S
 goto :eof
 
-:Download59
+:Download61
 FOR /F "tokens=1" %%i in ('FIND "VisualStudioCode.exe" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" VisualStudioCode.exe "/VERYSILENT /NORESTART /MERGETASKS=!runcode"
 goto :eof
 
-:Download60
+:Download62
 FOR /F "tokens=1" %%i in ('FIND "Github.exe" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" Github.exe -s
 goto :eof
 
-:Download61
+:Download63
 FOR /F "tokens=1" %%i in ('FIND "Git.exe" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" Git.exe "/VERYSILENT /NORESTART"
+goto :eof
+
+:Download64
+FOR /F "tokens=1" %%i in ('FIND "Blender.msi" %konum%\Ekler\Links.bat') do set link=%%i
+Call :wget "%link%" Blender.msi "ALLUSERS=1 /qn"
 goto :eof
 
 :Download73
@@ -943,7 +958,7 @@ set /p deger=%RGB%[92m  Yapmak istediงiniz ilem : %RGB%[0m
 				   slmgr /rearm&goto Slmgrvbs)
 	if %deger%==x GOTO menu
 	if %deger%==X GOTO menu
-else
+) else
 	goto Slmgrvbs
 
 :slmgrlisans
@@ -1111,7 +1126,7 @@ set /p deger= %RGB%[92m lem : %RGB%[0m
 	if %deger%==24k (Call :serv.24.mixedreality disabled kapatlyor)
 	if %deger%==x goto menu
 	if %deger%==X goto menu
-else 
+) else 
 	goto kapatilanservislery”netimi
 
 :serv.1.bluetooth
@@ -1481,6 +1496,10 @@ echo   %RGB%[96mHyper-V hizmeti %4 ...%RGB%[0m
 %PowerRun% sc config vmickvpexchange start= %1
 :: Hyper-V Zaman Eitleme Hizmeti
 %PowerRun% sc config vmictimesync start= %1
+:: Hyper-V Sanal Makine Y”netimi
+%PowerRun% sc config vmms start= %1
+:: Hyper-V Ana Bilgisayar lem Hizmeti
+%PowerRun% sc config vmcompute start= %1
 %~3 /f %%a IN ('"dir /b %SystemRoot%\servicing\Packages\Microsoft-Hyper-V*.mum"') DO (DISM /Online /NoRestart /Add-Package:"%SystemRoot%\servicing\Packages\%%a" > NUL 2>&1)
 DISM /Online /%2-Feature /FeatureName:Microsoft-Hyper-V-All /Quiet /NoRestart
 DISM /Online /%2-Feature /FeatureName:Microsoft-Hyper-V /Quiet /NoRestart
@@ -1615,7 +1634,7 @@ set /p deger= %ESC%[92m  lem : %ESC%[0m
 				   goto :eof)
 	if %deger%==x GOTO kontroll
 	if %deger%==X GOTO kontroll
-else
+) else
 	goto WinSahiplik
 
 :: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
@@ -1637,7 +1656,7 @@ set /p deger= %RGB%[92m lem :%RGB%[0m
 	if %deger%==2 (Call :CompactOff)
 	if %deger%==x GOTO kontroll
 	if %deger%==X GOTO kontroll
-else
+) else
 	GOTO WinCompactOS
 
 :CompactOn
@@ -1698,7 +1717,7 @@ set /p deger=%RGB%[92m  lem : %RGB%[0m
 	if %deger%==8 (Call :gpedit)
 	if %deger%==x GOTO menu
 	if %deger%==X GOTO menu
-else
+) else
 	goto Win11SettingsMenu
 
 	
@@ -1796,7 +1815,7 @@ set /p deger= %RGB%[92m Tarafnz seiniz : %RGB%[0m
 				   reg delete "HKEY_CURRENT_USER\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f&goto :eof)
 	if %deger%==x goto Win11SettingsMenu
 	if %deger%==X goto Win11SettingsMenu
-else
+) else
 	goto Win11SettingsMenu	
 
 :Win11RightMenuTerminal
@@ -1819,7 +1838,7 @@ set /p deger= %RGB%[92m lem : %RGB%[0m
 				   reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked" /f&goto :eof)
 	if %deger%==x goto Win11SettingsMenu
 	if %deger%==X goto Win11SettingsMenu
-else
+) else
 	goto Win11SettingsMenu
 :: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
 :stop
@@ -1852,7 +1871,7 @@ set /p deger=%RGB%[92m  lem : %RGB%[0m
 	if %deger%==8 GOTO icochangemenu
 	if %deger%==x GOTO menu
 	if %deger%==X GOTO menu
-else
+) else
 	goto Win10SettingsMenu
 	
 :: 
@@ -1952,7 +1971,7 @@ set /p deger=%RGB%[92m  lem : %RGB%[0m
 	if %deger%==2 (Call :Win10StoreIns)
 	if %deger%==x GOTO Win10SettingsMenu
 	if %deger%==X GOTO Win10SettingsMenu
-else
+) else
 	goto Win10.Store.Del.Ins
 
 :Win10StoreDel
@@ -2050,7 +2069,7 @@ set /p deger=%RGB%[92m  lem : %RGB%[0m
 	if %deger%==2 (Call :icochange Newico)
 	if %deger%==x GOTO Win10SettingsMenu
 	if %deger%==X GOTO Win10SettingsMenu
-else
+) else
 	goto icochange
 
 :icochange
@@ -2116,7 +2135,7 @@ set /p deger=%RGB%[92m Yapmak istediงiniz ilem : %RGB%[0m
 	if %deger%==7 (start cmd /k Powershell -command "Get-LocalUser"&goto AdminMenu)
 	if %deger%==x GOTO menu
 	if %deger%==X GOTO menu
-else
+) else
 	goto AdminMenu
 
 :Tweak1AdminAktif
@@ -2156,7 +2175,7 @@ echo 
 echo   %ESC%[90mษอออออออออออออออออออออออออออออออออออออออออออออออออป%ESC%[0m
 echo   %ESC%[90mบ%ESC%%ESC%[1;97m%ESC%%ESC%[100m          Admin Grubuna kullanc ekle           %ESC%[0m%ESC%[90mบ%ESC%[0m
 echo   %ESC%[90mศอออออออออออออออออออออออออออออออออออออออออออออออออผ%ESC%[0m
-set /p deger=%RGB%[92m     Kullanc Ad : %RGB%[0m  
+set /p deger=%RGB%[92m  Kullanc Ad : %RGB%[0m  
 	if %deger%==x GOTO AdminMenu
 	if %deger%==X GOTO AdminMenu
 echo [%date% - %time%] ^| AdminMenu ^| Admin grubuna %deger% kullancs eklendi. >> %konum%\Logs
@@ -2173,7 +2192,7 @@ echo 
 echo   %ESC%[90mษอออออออออออออออออออออออออออออออออออออออออออออออออป%ESC%[0m
 echo   %ESC%[90mบ%ESC%%ESC%[1;97m%ESC%%ESC%[100m               Yeni kullanc ekle               %ESC%[0m%ESC%[90mบ%ESC%[0m
 echo   %ESC%[90mศอออออออออออออออออออออออออออออออออออออออออออออออออผ%ESC%[0m
-set /p deger=%RGB%[92m     Kullanc Ad : %RGB%[0m
+set /p deger=%RGB%[92m  Kullanc Ad : %RGB%[0m
 	if %deger%==x GOTO AdminMenu
 	if %deger%==X GOTO AdminMenu
 echo [%date% - %time%] ^| AdminMenu ^| Yeni kullanc "%deger%" oluturuldu. >> %konum%\Logs
@@ -2191,7 +2210,7 @@ echo 
 echo   %ESC%[90mษอออออออออออออออออออออออออออออออออออออออออออออออออป%ESC%[0m
 echo   %ESC%[90mบ%ESC%%ESC%[1;97m%ESC%%ESC%[100m                  Kullanc Sil                  %ESC%[0m%ESC%[90mบ%ESC%[0m
 echo   %ESC%[90mศอออออออออออออออออออออออออออออออออออออออออออออออออผ%ESC%[0m
-set /p deger=%RGB%[92m     Kullanc Ad : %RGB%[0m
+set /p deger=%RGB%[92m  Kullanc Ad : %RGB%[0m
 	if %deger%==x GOTO AdminMenu
 	if %deger%==X GOTO AdminMenu
 echo [%date% - %time%] ^| AdminMenu ^| Kullanc "%deger%" silindi. >> %konum%\Logs
@@ -2209,7 +2228,7 @@ echo 
 echo   %ESC%[90mษอออออออออออออออออออออออออออออออออออออออออออออออออป%ESC%[0m
 echo   %ESC%[90mบ%ESC%%ESC%[1;97m%ESC%%ESC%[100m             ifremi Unuttum / Deงitir          %ESC%[0m%ESC%[90mบ%ESC%[0m
 echo   %ESC%[90mศอออออออออออออออออออออออออออออออออออออออออออออออออผ%ESC%[0m
-set /p deger=%RGB%[92m     Kullanc Ad : %RGB%[0m
+set /p deger=%RGB%[92m  Kullanc Ad : %RGB%[0m
 	if %deger%==x GOTO AdminMenu
 	if %deger%==X GOTO AdminMenu
 echo [%date% - %time%] ^| AdminMenu ^| Kullanc "%deger%" ifre deงitirildi. >> %konum%\Logs
@@ -2381,6 +2400,9 @@ echo %ESC%[92m Hizmetler ilk haline getiriliyor...%ESC%[0m
 :: €alma klas”rleri istemcisi
 %PowerRun% net stop workfolderssvc
 %PowerRun% sc config workfolderssvc start= disabled
+:: kincil oturum ama 
+%PowerRun% sc config seclogon start= disabled
+timeout /t 5 /nobreak > NUL
 echo %ESC%[92m Regedit kaytlar yeniden dzenleniyor.%ESC%[0m
 :: Defender
 Reg add "HKLM\SOFTWARE\Microsoft\Windows Defender Security Center\Notifications" /v "DisableNotifications" /t REG_DWORD /d "1" /f >nul 2>&1
@@ -2749,25 +2771,25 @@ goto menu
 :: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
 
 :PingMeter
-call :konum
+Call :konum
 echo [%date% - %time%] ^| UpdateAfter ^| Ping ”ler altrld. >> %konum%\Logs
 powershell -command "Start-Process '%konum%\Ekler\Pingolc.bat'"
 goto :eof
 
 :SistemHakkinda
-call :konum
+Call :konum
 echo [%date% - %time%] ^| SistemHakkinda ^| Sistem hakknda b”lm altrld. >> %konum%\Logs
 powershell -command "Start-Process '%konum%\Ekler\Sistem.Hakkinda.bat'"
 goto :eof
 
 :FoldertoISO
-call :konum
+Call :konum
 echo [%date% - %time%] ^| FoldertoISO ^| Folder to ISO yazlm altrld. >> %konum%\Logs
 powershell -command "Start-Process '%konum%\Files\Folder2Iso\Folder2Iso.exe'"
 goto :eof
 
 :AppxManager
-call :konum
+Call :konum
 echo [%date% - %time%] ^| AppxManager ^| Appx Manager uygulamas altrld. >> %konum%\Logs
 powershell -command "Start-Process '%konum%\Files\WindowsAppBoss.exe'
 goto :eof
@@ -2812,7 +2834,7 @@ cls
 FOR /F "tokens=3" %%i in ('FIND "Caption" %Logs%\OS.txt') do SET caption3=%%i
 	if %caption3%==11 GOTO Win11settingsmenu
 	if %caption3%==10 GOTO Win10settingsmenu
-else
+) else
 	exit
 
 :: --------------------------------------------------------------------------------------------	

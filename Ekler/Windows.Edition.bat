@@ -252,7 +252,7 @@ set /p isokayit=%RGB%[92m   ISO ismi : %RGB%[0m
 	if %isokayit%==X GOTO WindowsEditMenu
  
 mode con cols=85 lines=45
-echo [%date% - %time%] ^| ISO Maker ^| %MerkezWim% yolundaki imaj: Etiket ismi:%etiket% ^| ISO ismi:%isokayit% olarak ISO'ya d”nŸtrld >> %konum2%\Logs
+echo [%date% - %time%] ^| ISO Maker ^| ˜maj:"%MerkezWim%" ^| Etiket ismi:"%etiket%" ^| ISO ismi:"%isokayit%" olarak ISO'ya dosyas oluŸturuldu. >> %konum2%\Logs
 %konum2%\Files\oscdimg.exe -b%MerkezWim%\boot\etfsboot.com -h -u2 -m -l%etiket% %MerkezWim%\ %konum2%\Edit\%isokayit%.iso
 
 powershell -command "Start-Process '%konum2%\Edit'"
@@ -312,7 +312,7 @@ echo  %ESC%[90mÈÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍ
 set /p selectindex=%RGB%[92m Silinecek srm se‡iniz : %RGB%[0m
 	if %selectindex%==X goto WindowsEditMenu
 	if %selectindex%==x goto WindowsEditMenu
-echo [%date% - %time%] ^| WimDelete ^| %MerkezWim% Index="%selectindex%" silme iŸlemi ger‡ekleŸtirildi >> %konum2%\Logs
+echo [%date% - %time%] ^| WimDelete ^| Index="%selectindex%" silindi. "%MerkezWim%" >> %konum2%\Logs
 Powershell -command "Remove-WindowsImage -ImagePath '%MerkezWim%' -Index '%selectindex%' -CheckIntegrity"
 :: Kullanlabilecek farkl y”ntemler
 ::%konum2%\Files\imagex.exe /delete "%MerkezWim%" %selectindex% /check
@@ -351,7 +351,7 @@ echo    %ESC%[32m Index%ESC%%ESC%[33m %selectindex% %ESC%%ESC%[32m%ESC%%ESC%[33
 echo  %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
 Dism /Mount-Image /ImageFile:"%MerkezWim%" /MountDir:"%konum2%\Edit\Mount" /Index:%selectindex%
 ::%konum2%\Files\imagex.exe /mountrw %MerkezWim% %selectindex% "%konum2%\Edit\Mount"
-echo [%date% - %time%] ^| WimMount ^| %MerkezWim% - %selectindex% - %%c - %%b srm Mount edildi >> %konum2%\Logs
+echo [%date% - %time%] ^| WimMount ^| "%selectindex%" - "%%c - %%b" srm Mount edildi. "%MerkezWim%" >> %konum2%\Logs
 echo %ESC%[92m ˜Ÿlem tamamland.%ESC%[0m
 timeout /t 2 /nobreak > NUL
 goto :eof
@@ -696,6 +696,13 @@ echo  %ESC%[90mº%ESC%%ESC%[1;97m%ESC%%ESC%[100m                          Hyper-V
 echo  %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
 echo [%date% - %time%] ^| HyperV ^| Hyper-V entegre edildi. Mount=%Mount% >> %konum2%\Logs
 For /f %%a IN ('"dir /b %Mount%\Windows\servicing\Packages\Microsoft-Hyper-V*.mum"') DO (DISM /Image:%Mount% /Add-Package:"%Mount%\Windows\servicing\Packages\%%a")
+DISM /Image:%Mount% /Enable-Feature /FeatureName:Microsoft-Hyper-V-All
+DISM /Image:%Mount% /Enable-Feature /FeatureName:Microsoft-Hyper-V
+DISM /Image:%Mount% /Enable-Feature /FeatureName:Microsoft-Hyper-V-Tools-All
+DISM /Image:%Mount% /Enable-Feature /FeatureName:Microsoft-Hyper-V-Management-PowerShell
+DISM /Image:%Mount% /Enable-Feature /FeatureName:Microsoft-Hyper-V-Hypervisor
+DISM /Image:%Mount% /Enable-Feature /FeatureName:Microsoft-Hyper-V-Services
+DISM /Image:%Mount% /Enable-Feature /FeatureName:Microsoft-Hyper-V-Management-Clients
 goto :eof
 
 :delhard
@@ -1093,6 +1100,7 @@ echo [%date% - %time%] ^| SetupDownload ^| Setup.zip dosyas indirildi >> %konum
 goto :eof
 
 :icodownload
+echo 
 %konum2%\Files\wget -c -q --no-check-certificate --show-progress "https://docs.google.com/uc?export=download&id=1_Vcmp6xUwlqwuUdAjscS9bnGEi_XW24G" -O %konum2%\Files\Newico.zip
 echo [%date% - %time%] ^| icodownload ^|  Newico.zip dosyas indirildi >> %konum2%\logs
 goto :eof

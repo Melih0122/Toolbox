@@ -77,7 +77,7 @@ https://web.whatsapp.com/desktop/windows/release/x64/WhatsAppSetup.exe WhatsApp.
 
 :04
 :: https://signal.org/download/
-https://updates.signal.org/desktop/signal-desktop-win-5.28.0.exe Signal.exe 
+https://updates.signal.org/desktop/signal-desktop-win-5.29.0.exe Signal.exe 
 
 :05
 :: https://desktop.telegram.org/
@@ -129,14 +129,15 @@ https://brave-browser-downloads.s3.brave.com/latest/brave_installer-x64.exe Brav
 
 :18
 :: https://www.microsoft.com/en-us/edge/business/download
-https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/74afcca4-26d7-4572-ad9d-71fce1ccd55b/MicrosoftEdgeEnterpriseX64.msi edge.msi 
+https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/9f730c98-d191-4607-aa1e-e28bd4d9f67e/MicrosoftEdgeEnterpriseX64.msi edge.msi 
 
 :19
 ::ISLC
 
 :20
 :: https://github.com/henrypp/memreduct/releases
-https://github.com/henrypp/memreduct/releases/download/v.3.3.5/memreduct-3.3.5-setup.exe MemReduct.exe
+https://github.com/henrypp/memreduct/releases/download/v.3.4/memreduct-3.4-setup.exe MemReduct.exe
+
 
 :21
 :: https://tr.libreoffice.org/indir/libreoffice-taze-surum/
@@ -156,7 +157,7 @@ https://calibre-ebook.com/dist/win64 Calibre.msi
 
 :25
 :: https://www.7-zip.org/download.html
-https://www.7-zip.org/a/7z2106-x64.msi 7-Zip.msi 
+https://www.7-zip.org/a/7z2107-x64.msi 7-Zip.msi 
 
 :26
 :: https://www.win-rar.com/predownload.html?&L=5
@@ -166,139 +167,150 @@ https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-602tr.exe Wi
 :: https://kdenlive.org/en/download/
 https://download.kde.org/stable/kdenlive/21.12/windows/kdenlive-21.12.0.exe Kdenlive.exe 
 
-:28 
+:28
+:: https://www.openshot.org/tr/download/
+https://github.com/OpenShot/openshot-qt/releases/download/v2.6.1/OpenShot-v2.6.1-x86_64.exe Openshot.exe
+
+:29
+:: https://shotcut.org/download/
+https://github.com/mltframework/shotcut/releases/download/v21.12.24/shotcut-win64-211224.exe Shotcut.exe
+
+:30
 :: https://krita.org/en/download/krita-desktop/
 https://download.kde.org/stable/krita/5.0.2/krita-x64-5.0.2-setup.exe Krita.exe 
 
-:29
+:31
 :: https://www.gimp.org/downloads/
 https://download.gimp.org/mirror/pub/gimp/v2.10/windows/gimp-2.10.30-setup.exe Gimp.exe
 
-:30
+:32
 :: https://obsproject.com/tr/download
 https://cdn-fastly.obsproject.com/downloads/OBS-Studio-27.1.3-Full-Installer-x64.exe OBS.exe
 
-:31
+:33
 ::https://github.com/ShareX/ShareX/releases
 https://github.com/ShareX/ShareX/releases/download/v13.7.0/ShareX-13.7.0-setup.exe ShareX.exe
 
-:32
+:34
 :: https://www.audacityteam.org/download/
 https://github.com/audacity/audacity/releases/download/Audacity-3.1.3/audacity-win-3.1.3-64bit.exe Audacity.exe
 
-:33
+:35
 :: https://codecguide.com/download_k-lite_codec_pack_mega.htm
 https://files2.codecguide.com/K-Lite_Codec_Pack_1670_Mega.exe Klite.exe
 
-:34
+:36
 :: https://www.videolan.org/index.tr.html
 https://ftp.linux.org.tr/videolan/vlc/3.0.16/win64/vlc-3.0.16-win64.exe VLCMediaPlayer.exe
 
-:35
+:37
 :: https://www.aimp.ru/?do=download&os=windows
 https://www.aimp.ru/?do=download.file&id=4 Aimp.exe
 
-:36
+:38
 ::https://www.any-video-converter.com/en3/for_video_free/
 https://www.any-video-converter.com/avc-free.exe AnyVideoConverter.exe
 
-:37
+:39
 :: https://www.freedownloadmanager.org/
 https://dn3.freedownloadmanager.org/6/latest/fdm_x64_setup.exe FreeDownloadManager.exe
 
-:38
+:40
 :: https://www.internetdownloadmanager.com/
-https://mirror2.internetdownloadmanager.com/idman640build2.exe?v=lt&filename=idman640build2.exe idm.exe
+https://mirror2.internetdownloadmanager.com/idman640build5.exe?v=lt&filename=idman640build5.exe idm.exe
 
-:39
+:41
 :: https://www.byclickdownloader.com/tr/
 https://proxy.byclickdownloader.com/ExternalSetup/InstallPage/ByClickDownloader-Setup.exe ByClick.exe
 
-:40
+:42
 :: https://www.utorrent.com/intl/tr/desktop/compare/
 https://download-hr.utorrent.com/track/stable/endpoint/utorrent/os/windows Utorrent.exe
 
-:41
+:43
 :: https://www.glasswire.com/
 https://download.glasswire.com/GlassWireSetup.exe GlassWire.exe
 
-:42
+:44
 :: https://www.teamviewer.com/tr/yukleme/windows/
 https://download.teamviewer.com/download/TeamViewer_Setup_x64.exe TeamViewer.exe
 
-:43
+:45
 :: https://www.vpn.net/
 https://secure.logmein.com/hamachi.msi Hamachi.msi
 
-:44
+:46
 :: https://www.stremio.com/downloads
 https://www.strem.io/download?platform=windows&four=true Stremio.exe
 
-:45
+:47
 :: https://www.msi.com/Landing/afterburner/graphics-cards
 https://ftp.nluug.nl/pub/games/PC/guru3d/afterburner/[Guru3D.com]-MSIAfterburner.zip MSIAfterburner.zip
 
-:46
+:48
 :: http://www.hibitsoft.ir/Uninstaller.html
-http://www.hibitsoft.ir/HiBitUninstaller/HiBitUninstaller-setup-2.7.40.exe Hibit.exe
+http://www.hibitsoft.ir/HiBitUninstaller/HiBitUninstaller-setup-2.7.45.exe Hibit.exe
 
-:47
+:49
 https://docs.google.com/uc?export=download&id=1HhC57sKyUV0-6roBqfLkDEwfo_ptXJdS WiseCare365.zip
 
-:48
+:50
 :: https://www.iobit.com/en/iobit-unlocker.php#
 https://cdn.iobit.com/dl/unlocker-setup.exe Unlocker.exe
 
-:49
+:51
 http://www.omidsoft.com/download-ssd/setup.exe SSDBooster.exe 
 
-:50
+:52
 :: https://github.com/Open-Shell/Open-Shell-Menu/releases
 https://github.com/Open-Shell/Open-Shell-Menu/releases/download/v4.4.160/OpenShellSetup_4_4_160.exe OpenShell.exe
 
-:51
+:53
 :: https://www.voidtools.com/tr-tr/
 https://www.voidtools.com/Everything-1.4.1.1015.x64-Setup.exe Everything.exe
 
-:52
+:54
 :: https://github.com/ChrisAnd1998/TaskbarX/releases
 https://github.com/ChrisAnd1998/TaskbarX/releases/download/1.7.6.0/TaskbarX_1.7.6.0_x64.zip TaskbarX.zip  
 
-:53
+:55
 :: https://stellarium.org/
 https://github.com/Stellarium/stellarium/releases/download/v0.21.3/stellarium-0.21.3-win64.exe Stellarium.exe
 
-:54 
+:56
 :: Recuva
 https://download.ccleaner.com/rcsetup153.exe Recuva.exe
 
-:55
+:57
 :: AOMEI Partition Assistan
 https://www2.aomeisoftware.com/download/pa/PAssist_Std.exe AOMEI.exe
 
-:56
+:58
 :: https://www.python.org
 https://www.python.org/ftp/python/3.10.2/python-3.10.2-amd64.exe Python.exe
 
-:57
+:59
 :: https://www.jetbrains.com/pycharm/download/#section=windows
 https://download.jetbrains.com/python/pycharm-professional-2021.3.1.exe PyCharm.exe
 
-:58
+:60
 :: https://notepad-plus-plus.org/downloads/
-https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.2/npp.8.2.Installer.x64.exe Notepad.exe 
+https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.2.1/npp.8.2.1.Installer.x64.exe Notepad.exe 
 
-:59
+:61
 :: https://code.visualstudio.com/
 https://az764295.vo.msecnd.net/stable/899d46d82c4c95423fb7e10e68eba52050e30ba3/VSCodeUserSetup-x64-1.63.2.exe VisualStudioCode.exe
 
-:60
+:62
 :: https://desktop.github.com/
 https://central.github.com/deployments/desktop/desktop/latest/win32 Github.exe
 
-:61
+:63
 :: git 
 https://github.com/git-for-windows/git/releases/download/v2.34.1.windows.1/Git-2.34.1-64-bit.exe Git.exe
+
+:64
+https://mirrors.aliyun.com/blender/release/Blender3.0/blender-3.0.0-windows-x64.msi Blender.msi
 
 :64
 :65
@@ -351,4 +363,5 @@ http://public.pcfreetime.com/FFSetup5.9.0.0.exe FormatFactory.exe
 
 :Guncelleme
 http://download.windowsupdate.com/d/msdownload/update/software/updt/2022/01/windows10.0-kb5010793-x64_3bae2e811e2712bd1678a1b8d448b71a8e8c6292.msu Windows10Update KB5010793.msu
+http://download.windowsupdate.com/d/msdownload/update/software/updt/2022/01/windows10.0-kb5010795-x64_7fd6ce84756ac03585cc012568979eb08cc6d583.msu Windows11Update KB5010795.msu
 
