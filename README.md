@@ -3,8 +3,8 @@
 - Toolbox Windows 10 - 11 sürümlerinin x64 mimarilerinde açılmaktadır. Farklı sürümler için desteği yoktur. En güncel olan sürüm ile senkronize olarak gelişmektedir.
 - Windows ekran ölçeklendirme ayarı Toolbox'ın pencere ayarını bozabiliyor. Sorunsuz kullanım için Toolbox'ı kullanırken ölçeklendirme etkileri kapatılmalıdır.
 
-![cmd_IiBcLnkWC7](https://user-images.githubusercontent.com/93199689/150528049-5378675c-9a31-496a-b4d9-a2dce83edf34.png)
-![cmd_ecyhLuefWA](https://user-images.githubusercontent.com/93199689/150528075-46b0f063-08cb-48c4-a3a5-8f9eb281ba0e.png)
+![cmd_yOYUywyJR5](https://user-images.githubusercontent.com/93199689/151236712-b533bbe5-09c0-4014-90c1-9f3bb7da9ad7.png)
+![cmd_icYhCtkCfL](https://user-images.githubusercontent.com/93199689/151236721-78f4323f-df1a-4749-99e0-b07801566bf9.png)
 
 ### Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
 
@@ -78,48 +78,52 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	• 26 - WinRaR: Ücretli ama ücretsizdir! 
 #### ► Video Düzenleme Uygulamaları
 	• 27 - Kdenlive: Ücretsizdir. 92 MB civarında bir uygulamadır. Kullanımı çok basittir. Çıktı işlemlerinde ekran kartını kullanmama sorunu halledilirse çok iyi uygulamadır.
+	• 28 - Openshot: Ücretsiz video düzenleme uygulamasıdır.
+	• 29 - Shotcut: Ücretsiz video düzenleme uygulamasıdır.
 #### ► Resim Düzenleme Uygulamaları
-	• 28 - Krita: Adobe Photoshop uygulamasının ücretsiz alternatifidir. Steam uygulamasından satın alarak destekte olabilirsiniz. 
-	• 29 - Gimp: Adobe Photoshop uygulamasının ücretsiz alternatifidir.
+	• 30 - Krita: Adobe Photoshop uygulamasının ücretsiz alternatifidir. Steam uygulamasından satın alarak destekte olabilirsiniz. 
+	• 31 - Gimp: Adobe Photoshop uygulamasının ücretsiz alternatifidir.
 #### ► Ekran Kayıt (SS) Uygulamaları
-	• 30 - OBS Studio: Ekran kaydı alma işlemi dışında canlı yayınlar içinde kullanılır. Kayıtlarınıza marka logosu atmaz.
-	• 31 - ShareX: Ekran görüntüsü (SS) alma yazılımıdır. Ses kaydı almadan ekran kaydedebilir. GIF oluştabilir. Daha sayısız özellik bulunur.
+	• 32 - OBS Studio: Ekran kaydı alma işlemi dışında canlı yayınlar içinde kullanılır. Kayıtlarınıza marka logosu atmaz.
+	• 33 - ShareX: Ekran görüntüsü (SS) alma yazılımıdır. Ses kaydı almadan ekran kaydedebilir. GIF oluştabilir. Daha sayısız özellik bulunur.
 #### ► Ses Düzeltme Uygulamaları
-	• 32 - Audacity: Ses düzeltme uygulamasıdır. 
+	• 34 - Audacity: Ses düzeltme uygulamasıdır. 
 #### ► Multimedia Uygulamaları
-	• 33 - K-Lite Codec: Video izleme uygulamasıdır. Açamayacağı video dosyası yoktur. 
-	• 34 - VLC Media Player: Video izleme uygulamasıdır. Açamayacağı video dosyası yoktur. Videolarla ilgili çok fazla özelliğe sahiptir.
-	• 35 - Aimp: Ses dosyalarını açmaya yarayan uygulamadır. Tasarım ve özellikle olarak çok beğendiğimi belirtmek isterim.
+	• 35 - K-Lite Codec: Video izleme uygulamasıdır. Açamayacağı video dosyası yoktur. 
+	• 36 - VLC Media Player: Video izleme uygulamasıdır. Açamayacağı video dosyası yoktur. Videolarla ilgili çok fazla özelliğe sahiptir.
+	• 37 - Aimp: Ses dosyalarını açmaya yarayan uygulamadır. Tasarım ve özellikle olarak çok beğendiğimi belirtmek isterim.
 #### ► Dönüştürücü Uygulamaları
-	• 36 - Any Video Converter: Video ses dönüştürme uygulamasıdır.
+	• 38 - Any Video Converter: Video ses dönüştürme uygulamasıdır.
 #### ► İndirme Uygulamaları
-	• 37 - Free Download Manager: İndirme işlemlerinde kullanılacak yardımcı program. Torrent indirme desteğide bulunmaktadır.
-	• 38 - Internet Download Manager: Free Download Manager ile hemen hemen aynı işlevlere sahiptir.
-	• 39 - ByClick Downloader: Youtube'dan video indirmeye yarayan uygulamadır.
-	• 40 - Utorrent: Torrent indirme yazılımıdır.
+	• 39 - Free Download Manager: İndirme işlemlerinde kullanılacak yardımcı program. Torrent indirme desteğide bulunmaktadır.
+	• 40 - Internet Download Manager: Free Download Manager ile hemen hemen aynı işlevlere sahiptir.
+	• 41 - ByClick Downloader: Youtube'dan video indirmeye yarayan uygulamadır.
+	• 42 - Utorrent: Torrent indirme yazılımıdır.
 #### ► Diğer Uygulamalar
-	• 41 - GlassWire: İnternet takip programı. Bilgisayarınızda hangi program nereye ne göndermiş ne almış hepsini görebilirsiniz.
-	• 42 - TeamViewer: Bilgisayarlar arası uzaktan bağlantı sağlar.
-	• 43 - Hamachi: Ortak bir ağ kurmaya yarayan yazılımdır. Online oyunlarda arkadaşlarınızla oyun kurmak için ortak bir ağ gerektiğinde hayat kurtaran bir programdır.
-	• 44 - Stremio: Torrent üzerinden film izleyebilirsiniz. İzlediğiniz veya izlemek istediğiniz filmeleri kütüphanenize ekleyebilirsiniz. 
-	• 45 - MSI Afterburner: GPU fan ayarı yapar, SS alır, Video kaydı alır, oyunlarda donanımların kullanım değerlerini gösterir, voltaj değerlerini değiştirebilirsiniz.
-	• 46 - Hibit Uninstaller: Kalıntı bırakmadan program kaldırmayı sağlar. Ayrıca çöp dosya temizler. Market uygulamalarını da kaldırabilir.
-	• 47 - Wise Care 365: PC temizlik uygulamasıdır. Tek sürüme verilen ücretsiz pro sürümüdür.
-	• 48 - Unlocker: Silinmeyen dosyaları silmeyi sağlar.
-	• 49 - SSD Booster: SSD için sistemi optimize eder.
-	• 50 - OpenShell: Alternatif başlat menüsüdür.
-	• 51 - Everything: Sistemdeki dosyaları arayıp bulmanızı sağlar. Çok kullanışlı bir programdır.
-	• 52 - TaskbarX: Başlat çubuğunu özelleştirmenizi sağlar.
-	• 53 - Stellarium: Uzay bilgi uygulaması. Muazzam.
-	• 54 - Recuva: Silinen dosyaları kurtarır.
-	• 55 - AOMEI Partition Assistans: Disk yardımcı uygulaması.
+	• 43 - GlassWire: İnternet takip programı. Bilgisayarınızda hangi program nereye ne göndermiş ne almış hepsini görebilirsiniz.
+	• 44 - TeamViewer: Bilgisayarlar arası uzaktan bağlantı sağlar.
+	• 45 - Hamachi: Ortak bir ağ kurmaya yarayan yazılımdır. Online oyunlarda arkadaşlarınızla oyun kurmak için ortak bir ağ gerektiğinde hayat kurtaran bir programdır.
+	• 46 - Stremio: Torrent üzerinden film izleyebilirsiniz. İzlediğiniz veya izlemek istediğiniz filmeleri kütüphanenize ekleyebilirsiniz. 
+	• 47 - MSI Afterburner: GPU fan ayarı yapar, SS alır, Video kaydı alır, oyunlarda donanımların kullanım değerlerini gösterir, voltaj değerlerini değiştirebilirsiniz.
+	• 48 - Hibit Uninstaller: Kalıntı bırakmadan program kaldırmayı sağlar. Ayrıca çöp dosya temizler. Market uygulamalarını da kaldırabilir.
+	• 49 - Wise Care 365: PC temizlik uygulamasıdır. Tek sürüme verilen ücretsiz pro sürümüdür.
+	• 50 - Unlocker: Silinmeyen dosyaları silmeyi sağlar.
+	• 51 - SSD Booster: SSD için sistemi optimize eder.
+	• 52 - OpenShell: Alternatif başlat menüsüdür.
+	• 53 - Everything: Sistemdeki dosyaları arayıp bulmanızı sağlar. Çok kullanışlı bir programdır.
+	• 54 - TaskbarX: Başlat çubuğunu özelleştirmenizi sağlar.
+	• 55 - Stellarium: Uzay bilgi uygulaması. Muazzam.
+	• 56 - Recuva: Silinen dosyaları kurtarır.
+	• 57 - AOMEI Partition Assistans: Disk yardımcı uygulaması.
 #### ► IDE, Kod Editörleri ve Diğer Geliştirme Araçları
-	• 56 - Python: Programlama dilidir.
-	• 57 - PhyCharm: Python kod editörüdür.
-	• 58 - Notepad++: Bilmeyen için not defteri uygulamasıdır. Yazılımcılar için kod editörüdür.
-	• 59 - Visual Studio Code: Visual Studio'nun editör halidir. Genelde web geliştirme için kullanılır.
-	• 60 - Github Desktop: Grafik arayüzlü bir git istemcisidir.
-	• 61 - Git: Dağıtım takip sistemidir.
+	• 58 - Python: Programlama dilidir.
+	• 59 - PhyCharm: Python kod editörüdür.
+	• 60 - Notepad++: Bilmeyen için not defteri uygulamasıdır. Yazılımcılar için kod editörüdür.
+	• 61 - Visual Studio Code: Visual Studio'nun editör halidir. Genelde web geliştirme için kullanılır.
+	• 62 - Github Desktop: Grafik arayüzlü bir git istemcisidir.
+	• 63 - Git: Dağıtım takip sistemidir.
+#### ► 3D Uygulamalar	
+	• 64 - Blender: Ücretsiz, açık kaynaklı bir çalışmadır. 3D tasarımlarda kullanılacak mükemmel uygulama. 
 #### ► Oyunlar
     • 73 - OSU!: Müzik video oyunduur.
     • 74 - World Of Tanks: Online tank oyunu.
