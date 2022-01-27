@@ -44,7 +44,7 @@
 -----------------
  ► Versiyon 2.2 -
 -----------------
-Yayınlanma Tarihi: 
+Yayınlanma Tarihi: 26.01.2022
 
  • Windows Düzenleme > Setup düzenleme bölümünde Windows 11 Bypass aracında bilgi vermeden kapanma sorunu giderildi.
  • ISLC bölümündeki yol hatası giderildi. (Kick Furkanowski'e geri bildirimi için teşekkür ederim)
@@ -56,7 +56,7 @@ Yayınlanma Tarihi:
  • İndirme bölümüne Blender uygulaması eklendi.
  • İndirme bölümüne Shotcut uygulaması eklendi.
  • İndirme bölümüne Openshot uygulaması eklendi.
- •
+
 
 :: ==============================================================================================================================
 -----------------

@@ -516,12 +516,7 @@ goto :eof
 
 :Download20
 FOR /F "tokens=1" %%i in ('FIND "MemReduct.exe" %konum%\Ekler\Links.bat') do set link=%%i
-Call :wgetozel "%link%" MemReduct.exe 
-Powershell -command "Expand-Archive -Force '%konum%\Files\MemReductScript.zip' '%download%'"
-powershell -command "Start-Process '%download%\MemReductScript.exe'"
-"%Download%\MemReduct.exe"
-timeout /t 2 /nobreak > NUL
-DEL /F /Q /A "%download%\MemReductScript.exe"
+Call :wget "%link%" MemReduct.exe /S
 goto :eof
 
 :Download21
