@@ -168,7 +168,7 @@ echo.
 echo ---------------------------------------------------------------------------------------------------------------------------
 echo [%date% - %time%] OgnitorenKs Toolbox balatld.
 echo  ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
-echo  บ OGNITORENKS TOOLBOX %versiyon% ^| USER: %registereduser% ^| PC-Name: %pcname%	
+echo  บ OGNITORENKS TOOLBOX %versiyon% ^| USER:%registereduser% ^| PC-Name:%pcname%	
 echo  บ OS: %caption% ^| x%osarch% ^| %ImageBuild% ^| %isderleme% ^| G: %gucc% 	
 echo  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
 echo ---------------------------------------------------------------------------------------------------------------------------
@@ -180,7 +180,7 @@ cls
 mode con cols=96 lines=37 
 title          O  G  N  I  T  O  R  E  N  K  S     ^|    OGNITORENKS TOOLBOX    ^|       T   O   O   L   B   O   X       
 echo   %ESC%[90mษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป%ESC%[0m
-echo   %ESC%[90mบ%ESC%[1;97m%ESC%%ESC%[100m OGNITORENKS TOOLBOX %versiyon% %ESC%[0m%ESC%[90m ^|%ESC%%ESC%[32m USER:%ESC%%ESC%[37m %registereduser% %ESC%%ESC%[90m^|%ESC%%ESC%[32m PC-Name: %ESC%%ESC%[37m%pcname%%ESC%[0m	
+echo   %ESC%[90mบ%ESC%[1;97m%ESC%%ESC%[100m OGNITORENKS TOOLBOX %versiyon% %ESC%[0m%ESC%[90m ^|%ESC%%ESC%[32m USER:%ESC%%ESC%[37m%registereduser% %ESC%%ESC%[90m^|%ESC%%ESC%[32m PC-Name:%ESC%%ESC%[37m%pcname%%ESC%[0m	
 echo   %ESC%[90mบ%ESC%%ESC%[32m OS:%ESC%%ESC%[37m %caption% %ESC%%ESC%[90m^|%ESC%%ESC%[37m x%osarch% %ESC%%ESC%[90m^|%ESC%%ESC%[37m %ImageBuild% %ESC%[0m%ESC%[90m^|%ESC%%ESC%[37m %isderleme% %ESC%%ESC%[90m^|%ESC%%ESC%[32m G:%ESC%%ESC%[37m %gucc% %ESC%[0m	
 echo   %ESC%[90mฬออออออออออออออออออออออออออหอออออออออออออออออออออออออออออหอออออออออออออออออออออออออออออออออน%ESC%[0m
 echo   %ESC%[90mบ%ESC%%ESC%[32m  1.%ESC%%RGB%[37m All In One Runtimes%RGB%[0m  %ESC%[90mบ%ESC%[0m %ESC%[32m 27.%ESC%%RGB%[36m Kdenlive%RGB%[0m               %ESC%[90mบ%ESC%[0m          %ESC%[92m BONUS%ESC%[0m               %ESC%[90mบ%ESC%[0m  
@@ -298,7 +298,7 @@ cls
 mode con cols=96 lines=37 
 title          O  G  N  I  T  O  R  E  N  K  S     ^|    OGNITORENKS TOOLBOX    ^|       T   O   O   L   B   O   X       
 echo   %ESC%[90mษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป%ESC%[0m
-echo   %ESC%[90mบ%ESC%[1;97m%ESC%%ESC%[100m OGNITORENKS TOOLBOX %versiyon% %ESC%[0m%ESC%[90m ^|%ESC%%ESC%[32m USER:%ESC%%ESC%[37m %registereduser% %ESC%%ESC%[90m^|%ESC%%ESC%[32m PC-Name: %ESC%%ESC%[37m%pcname%%ESC%[0m	
+echo   %ESC%[90mบ%ESC%[1;97m%ESC%%ESC%[100m OGNITORENKS TOOLBOX %versiyon% %ESC%[0m%ESC%[90m ^|%ESC%%ESC%[32m USER:%ESC%%ESC%[37m%registereduser% %ESC%%ESC%[90m^|%ESC%%ESC%[32m PC-Name:%ESC%%ESC%[37m%pcname%%ESC%[0m	
 echo   %ESC%[90mบ%ESC%%ESC%[32m OS:%ESC%%ESC%[37m %caption% %ESC%%ESC%[90m^|%ESC%%ESC%[37m x%osarch% %ESC%%ESC%[90m^|%ESC%%ESC%[37m %ImageBuild% %ESC%[0m%ESC%[90m^|%ESC%%ESC%[37m %isderleme% %ESC%%ESC%[90m^|%ESC%%ESC%[32m G:%ESC%%ESC%[37m %gucc% %ESC%[0m	
 echo   %ESC%[90mฬออออออออออออออออออออออออออหอออออออออออออออออออออออออออออหอออออออออออออออออออออออออออออออออน%ESC%[0m
 echo   %ESC%[90mบ%ESC%%ESC%[32m  1.%ESC%%RGB%[37m All In One Runtimes%RGB%[0m  %ESC%[90mบ%ESC%[0m %ESC%[32m 27.%ESC%%RGB%[36m Kdenlive%RGB%[0m               %ESC%[90mบ%ESC%%ESC%[32m 53.%ESC%%RGB%[36m Everything%RGB%[0m                  %ESC%[90mบ%ESC%[0m  
@@ -342,7 +342,7 @@ echo [%date% - %time%] ^| MultiSelect ^| Seilenler:"%$multi%"
 ) >> %konum%\Logs
 cls
 echo   %ESC%[90mษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป%ESC%[0m
-echo   %ESC%[90mบ%ESC%[1;97m%ESC%%ESC%[100m OGNITORENKS TOOLBOX %ESC%[0m%ESC%[90m ^|%ESC%%ESC%[32m USER:%ESC%%ESC%[37m %registereduser% %ESC%%ESC%[90m^|%ESC%%ESC%[32m PC-Name: %ESC%%ESC%[37m%pcname%%ESC%[0m	
+echo   %ESC%[90mบ%ESC%[1;97m%ESC%%ESC%[100m OGNITORENKS TOOLBOX %ESC%[0m%ESC%[90m ^|%ESC%%ESC%[32m USER:%ESC%%ESC%[37m%registereduser% %ESC%%ESC%[90m^|%ESC%%ESC%[32m PC-Name:%ESC%%ESC%[37m%pcname%%ESC%[0m	
 echo   %ESC%[90mบ%ESC%%ESC%[32m OS:%ESC%%ESC%[37m %caption% %ESC%%ESC%[90m^|%ESC%%ESC%[37m x%osarch% %ESC%%ESC%[90m^|%ESC%%ESC%[37m %ImageBuild% %ESC%[0m%ESC%[90m^|%ESC%%ESC%[37m %isderleme% %ESC%%ESC%[90m^|%ESC%%ESC%[32m G:%ESC%%ESC%[37m %gucc% %ESC%[0m
 echo   %ESC%[90mฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน%ESC%[0m
 echo                                         %ESC%[92m €OKLU NDRME%ESC%[0m 
@@ -978,8 +978,9 @@ cls
 Call :konum
 echo [%date% - %time%] ^| icofix ^| Simge sorunu giderildi. >> %konum%\Logs
 echo %ESC%[92m Simge sorunu dzeltiliyor...%ESC%[0m
+ie4uinit.exe -show
 taskkill /f /im explorer.exe
-DEL /F /Q /A "%userprofile%\AppData\Local\IconCache.db" > NUL 2>&1
+DEL /F /Q /A "%localappdata%\IconCache.db" > NUL 2>&1
 DEL /F /Q /A %userprofile%\AppData\Local\Microsoft\Windows\Explorer\*.* > NUL 2>&1
 del /f /s /q /a %LocalAppData%\Microsoft\Windows\Explorer\thumbcache_*.db > NUL 2>&1
 "%konum%\Files\ReIconCache.exe"
@@ -2519,7 +2520,7 @@ reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /f /v
 :: G”rev ubuงu transparan ”zelliงi devre d braklyor...
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize" /f /v "EnableTransparency" /t REG_DWORD /d 0 > NUL 2>&1
 :: Arama b”lm simge haline getiriliyor
-reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" /f /v "SearchboxTaskbarMode" /t REG_DWORD /d 1 > NUL 2>&1
+:: reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" /f /v "SearchboxTaskbarMode" /t REG_DWORD /d 1 > NUL 2>&1
 :: Web aramas kapatlyor.
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" /f /v "DisableWebSearch" /t REG_DWORD /d 1 > NUL 2>&1
 :: Web'de arama yapmayn veya Arama'da web sonularn g”rntlemeyin

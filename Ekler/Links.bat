@@ -249,7 +249,7 @@ https://ftp.nluug.nl/pub/games/PC/guru3d/afterburner/[Guru3D.com]-MSIAfterburner
 
 :48
 :: http://www.hibitsoft.ir/Uninstaller.html
-http://www.hibitsoft.ir/HiBitUninstaller/HiBitUninstaller-setup-2.7.45.exe Hibit.exe
+http://www.hibitsoft.ir/HiBitUninstaller/HiBitUninstaller-setup-2.7.47.exe Hibit.exe
 
 :49
 https://docs.google.com/uc?export=download&id=1HhC57sKyUV0-6roBqfLkDEwfo_ptXJdS WiseCare365.zip
