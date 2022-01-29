@@ -253,7 +253,9 @@ set /p isokayit=%RGB%[92m   ISO ismi : %RGB%[0m
  
 mode con cols=85 lines=45
 echo [%date% - %time%] ^| ISO Maker ^| ˜maj:"%MerkezWim%" ^| Etiket ismi:"%etiket%" ^| ISO ismi:"%isokayit%" olarak ISO'ya dosyas oluŸturuldu. >> %konum2%\Logs
-%konum2%\Files\oscdimg.exe -b%MerkezWim%\boot\etfsboot.com -h -u2 -m -l%etiket% %MerkezWim%\ %konum2%\Edit\%isokayit%.iso
+::%konum2%\Files\oscdimg.exe -b%MerkezWim%\boot\etfsboot.com -h -u2 -m -l%etiket% %MerkezWim%\ %konum2%\Edit\%isokayit%.iso
+::%konum2%\Files\oscdimg.exe -m -o -u2 -udfver102 -bootdata:2#p0,e,bd%MerkezWim%\boot\etfsboot.com#pEF,e,bd%MerkezWim%\efi\microsoft\boot\efisys.bin %etiket% %isokayit%.iso
+%konum2%\Files\oscdimg.exe -m -o -u2 -udfver102 -bootdata:2#p0,e,b%MerkezWim%\boot\etfsboot.com#pEF,e,b%MerkezWim%\efi\microsoft\boot\efisys.bin -L%etiket% %MerkezWim%\ %konum2%\Edit\%isokayit%.iso
 
 powershell -command "Start-Process '%konum2%\Edit'"
 echo %ESC%[92m ˜Ÿlem tamamland.%ESC%[0m 
@@ -722,6 +724,8 @@ REM Windows Defender
 %PowerRun% DEL /F /Q /A "%Mount%\Windows\System32\securityhealthservice.exe" > NUL  
 %PowerRun% DEL /F /Q /A "%Mount%\Windows\System32\securityhealthsystray.exe" > NUL 2>&1
 %PowerRun% DEL /F /Q /A "%Mount%\Windows\System32\SgrmBroker.exe" > NUL 2>&1
+Dism /Image:"%Mount%" /Remove-Capability /CapabilityName:App.Support.QuickAssist~~~~0.0.1.0 > NUL 2>&1
+Dism /Image:"%Mount%" /Remove-Capability /CapabilityName:Print.Fax.Scan~~~~0.0.1.0 > NUL 2>&1
 goto :eof
 
 :: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
@@ -745,6 +749,11 @@ Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Windows\CurrentVersion\Background
 Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\AppPrivacy" "LetAppsRunInBackground" "2" & :: Arka planda uygulamalarn ‡alŸmasn engelleniyor... 
 Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "SeparateProcess" "0" & :: Windows 11 Explorer Ram kullanm sorun dzeltiliyor...
 Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "TaskbarMn" "0" & :: Sohbet ikonu kaldrlyor..
+Call :dword "HKLM\OG_NTUSER\Microsoft\Windows\CurrentVersion\Search" "SearchboxTaskbarMode" "1" & :: Arama ‡ubu§u g”rev ‡ubu§undan kaldrlyor.
+Call :dword "HKLM\OG_SOFTWARE\Microsoft\MdmCommon\SettingValues" "LocationSyncEnabled" 0 & :: Cihazm bul ”zelli§i kapatlyor.
+Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Windows\CurrentVersion\AdvertisingInfo" "Enabled" 0 & :: Reklam kimli§i kapatlyor
+Call :sz "HKLM\OG_NTUSER\Control Panel\Accessibility\StickyKeys" "Flags" 506 & :: YapŸkan tuŸlar kapatr
+Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Windows\DWM" "ColorPrevalence" 1 & :: BaŸlk ‡ubuklarnda ve pencere kenarlarnda vurgu rengi g”sterilsin.
 goto RegeditOrtak
 
 :RegeditOrtak
@@ -959,6 +968,8 @@ Call :sz "HKLM\OG_SOFTWARE\Classes\.bat\ShellNew" "NullFile" "" & :: Sa§ tk Yen
 ::3D Nesneler
 Call :delete "HKLM\OG_SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}"
 Call :delete "HKLM\OG_SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}"
+Call :sz "HKLM\OG_NTUSER\System\GameConfigStore" "GameDVR_Enabled" "0" & :: Oyun modu devre dŸ braklyor... 
+Call :dword "HKLM\OG_NTUSER\System\GameConfigStore" "GameDVR_FSEBehavior" "2" & :: Tam ekran iyileŸtirmeleri devre dŸ braklyor...
 timeout /t 7 /nobreak > NUL
 Call :RegTopla
 goto WindowsEditMenu
