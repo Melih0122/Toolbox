@@ -1151,11 +1151,13 @@ echo bcdedit /set {current} recoveryenabled no ^> NUL
 echo powercfg /h off ^> NUL
 echo bcdedit /set useplatformtick yes ^> NUL
 echo bcdedit /set disabledynamictick yes ^> NUL
+echo C:\OgnitorenKs.Toolbox\Files\DevManView.exe /disable "High Precision Event Timer"
 echo sc delete DiagTrack ^> NUL
 echo sc delete dmwappushservice ^> NUL
-) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
+) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
+copy /y "%konum%\Files\DevManView.exe" "%Mount%\OgnitorenKs.Toolbox\Files"
 goto :eof
-exit
+
 
 :Svchost
 Find "SVCHost" %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat > NUL 2>&1

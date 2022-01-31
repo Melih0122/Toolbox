@@ -45,7 +45,7 @@ https://download.microsoft.com/download/A/8/0/A80747C3-41BD-45DF-B505-E9710D2744
 https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x86.exe 12x86.exe 
 https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe 12x64.exe
 
-https://aka.ms/highdpimfc2013x86trk 13x86.exe 
+https://aka.ms/highdpimfc2013x86trk 13x86.exe
 https://aka.ms/highdpimfc2013x64trk 13x64.exe 
 
 https://aka.ms/vs/17/release/vc_redist.x86.exe 15x86.exe
@@ -77,7 +77,7 @@ https://web.whatsapp.com/desktop/windows/release/x64/WhatsAppSetup.exe WhatsApp.
 
 :04
 :: https://signal.org/download/
-https://updates.signal.org/desktop/signal-desktop-win-5.29.0.exe Signal.exe 
+https://updates.signal.org/desktop/signal-desktop-win-5.29.1.exe Signal.exe 
 
 :05
 :: https://desktop.telegram.org/
@@ -96,7 +96,6 @@ https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/d
 
 :9
 :: https://store.steampowered.com/about/
-
 https://cdn.akamai.steamstatic.com/client/installer/SteamSetup.exe Steam.exe 
 
 :10
@@ -129,7 +128,7 @@ https://brave-browser-downloads.s3.brave.com/latest/brave_installer-x64.exe Brav
 
 :18
 :: https://www.microsoft.com/en-us/edge/business/download
-https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/9f730c98-d191-4607-aa1e-e28bd4d9f67e/MicrosoftEdgeEnterpriseX64.msi edge.msi 
+https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/dbdd4903-2893-48c6-bd53-a3f03a424e01/MicrosoftEdgeEnterpriseX64.msi edge.msi
 
 :19
 ::ISLC
@@ -165,7 +164,7 @@ https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-602tr.exe Wi
 
 :27
 :: https://kdenlive.org/en/download/
-https://download.kde.org/stable/kdenlive/21.12/windows/kdenlive-21.12.0.exe Kdenlive.exe 
+https://download.kde.org/stable/kdenlive/21.12/windows/kdenlive-21.12.1.exe Kdenlive.exe
 
 :28
 :: https://www.openshot.org/tr/download/
@@ -173,7 +172,7 @@ https://github.com/OpenShot/openshot-qt/releases/download/v2.6.1/OpenShot-v2.6.1
 
 :29
 :: https://shotcut.org/download/
-https://github.com/mltframework/shotcut/releases/download/v21.12.24/shotcut-win64-211224.exe Shotcut.exe
+https://github.com/mltframework/shotcut/releases/download/v22.01.30/shotcut-win64-220130.exe Shotcut.exe
 
 :30
 :: https://krita.org/en/download/krita-desktop/
@@ -197,7 +196,7 @@ https://github.com/audacity/audacity/releases/download/Audacity-3.1.3/audacity-w
 
 :35
 :: https://codecguide.com/download_k-lite_codec_pack_mega.htm
-https://files2.codecguide.com/K-Lite_Codec_Pack_1670_Mega.exe Klite.exe
+https://files2.codecguide.com/K-Lite_Codec_Pack_1680_Mega.exe Klite.exe
 
 :36
 :: https://www.videolan.org/index.tr.html
@@ -217,7 +216,7 @@ https://dn3.freedownloadmanager.org/6/latest/fdm_x64_setup.exe FreeDownloadManag
 
 :40
 :: https://www.internetdownloadmanager.com/
-https://mirror2.internetdownloadmanager.com/idman640build5.exe?v=lt&filename=idman640build5.exe idm.exe
+https://mirror2.internetdownloadmanager.com/idman640build7.exe?v=lt&filename=idman640build7.exe idm.exe
 
 :41
 :: https://www.byclickdownloader.com/tr/
@@ -291,7 +290,7 @@ https://www.python.org/ftp/python/3.10.2/python-3.10.2-amd64.exe Python.exe
 
 :59
 :: https://www.jetbrains.com/pycharm/download/#section=windows
-https://download.jetbrains.com/python/pycharm-professional-2021.3.1.exe PyCharm.exe
+https://download-cdn.jetbrains.com/python/pycharm-professional-2021.3.2.exe PyCharm.exe
 
 :60
 :: https://notepad-plus-plus.org/downloads/
@@ -306,11 +305,12 @@ https://az764295.vo.msecnd.net/stable/899d46d82c4c95423fb7e10e68eba52050e30ba3/V
 https://central.github.com/deployments/desktop/desktop/latest/win32 Github.exe
 
 :63
-:: git 
-https://github.com/git-for-windows/git/releases/download/v2.34.1.windows.1/Git-2.34.1-64-bit.exe Git.exe
+:: https://git-scm.com/download/win
+https://github.com/git-for-windows/git/releases/download/v2.35.1.windows.1/Git-2.35.1-64-bit.exe Git.exe
 
 :64
-https://mirrors.aliyun.com/blender/release/Blender3.0/blender-3.0.0-windows-x64.msi Blender.msi
+:: https://www.blender.org/download/
+https://www.blender.org/download/release/Blender3.0/blender-3.0.1-windows-x64.msi/ Blender.msi
 
 :64
 :65
@@ -363,5 +363,5 @@ http://public.pcfreetime.com/FFSetup5.9.0.0.exe FormatFactory.exe
 
 :Guncelleme
 http://download.windowsupdate.com/d/msdownload/update/software/updt/2022/01/windows10.0-kb5010793-x64_3bae2e811e2712bd1678a1b8d448b71a8e8c6292.msu Windows10Update KB5010793.msu
-http://download.windowsupdate.com/d/msdownload/update/software/updt/2022/01/windows10.0-kb5010795-x64_7fd6ce84756ac03585cc012568979eb08cc6d583.msu Windows11Update KB5010795.msu
+http://download.windowsupdate.com/d/msdownload/update/software/updt/2022/01/windows10.0-kb5008353-x64_f8f68bd79a0bf5d9e542de5cca217dcd7c1cd89f.msu Windows11Update KB5008353.msu
 
