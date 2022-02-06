@@ -10,7 +10,7 @@
 
 - Toolbox'ı hazırladığım sistemlerde temel programları indirip, basit bir şekilde sistem üzerinde düzenleme yapması için hazırladım.
 - Sürekli olarak güncellenecektir. Toolbox'ı indirmek için aşağıdaki linkleri kullanabilirsiniz.
-- ► https://www.technopat.net/sosyal/konu/ognitorenks-toolbox-kullanimi.1790250/
+- ► https://docs.google.com/uc?export=download&id=19uNjxzHFY5A6g4mFg8FirFTnyL2R0HZ3
 	
 - OgnitorenKs.Toolbox katılımsız kurulum dosyasını indirmek için aşağıdaki "Toolbox.Update.bat" dosyasını indirip yönetici olarak çalıştırın.
 - ► https://docs.google.com/uc?export=download&id=1JmrWYeNjVopcIP0n9iNkMUCEbQ2SIvpY
@@ -19,12 +19,11 @@
 - ► Discord: OgnitorenKs#2737 
 - ► Mail: ognitorenks@gmail.com
 - ► Site: ognitorenks.blogspot.com (Bu bölüm şu an aktif değil)
-- ► Site: www.technopat.net\Sosyal (Yeni bir konu açıp yada hazırladığım konularda @OgnitorenKs yazarak etiketleyebilirsiniz) 
 
 ### Projeye katkıda bulunanlar;
 
 	• ----------------------
-	• ► Eray Türkay [470650]
+	• ► Eray Türkay 
 	• ----------------------
 	  • Sistem Hakkında - RAM soket yapısının eklenmesi.
 	  • Sistem Hakkında - Sistem format tarihinin eklenmesi.
@@ -236,7 +235,6 @@ Mavi renkli işlem numaraları 27 numaralı işlem ile alakalıdır.
 ![cmd_ny6Aqy4yKG](https://user-images.githubusercontent.com/93199689/150528537-55f9eb5d-c0a1-4207-86ec-d4ac4822bba7.png)
  
 	• 1 - WIM / ESD Okuyucu: install.wim ve install.esd dosyalarının içeriği hakkında bilgi verir.
-	     • https://www.technopat.net/sosyal/konu/wim-ve-esd-dosyalarini-okumak.1672854/
 	• 2 - AIO Windows Hazırla: İnstall.wim sürümlerini birleştirmeye yarar. "X" tuşu burada çalışmaz.
 	• 3 - ISO Hazırla: Windows format dosyalarını ISO'ya dönüştürür. "Edit" klasörü içerisinde .iso dosyanızı bulabilirsiniz. "X" tuşu burada çalışmaz.
 	• 4 - ESD to WIM [Dönüştür]: install.esd dosyalarını install.wim olarak dönüştürür. Çoklu seçim yapılabilir. Çoklu seçimlerde seçim arasına virgül koyun. "Örnek; 1,2,3,4" 
@@ -287,8 +285,6 @@ Mavi renkli işlem numaraları 27 numaralı işlem ile alakalıdır.
 	• 12 - Win11 Hazır Regedit Kayıtları: Windows 11 için hazırladığım hazır reg kayıtlarıdır. Offline sisteme entegre edilir.
 	• 13 - Dism Update [Online]: Windows update dosyalarını yüklü sisteme yükler. Update dosyalarını "Edit\Update" içine atınız.
 	• 14 - Dism Update [Offline]: Windows update dosyalarını offline sisteme yükler. Update dosyalarını "Edit\Update" içine atınız.
-	     • Dism ile detaylı bilgi için; 
-		• ► https://www.technopat.net/sosyal/konu/dism-ile-offline-online-guencelleme-entegrasyonu.1671141/
 	     • Sisteme güncelleme kurmak için Microsoft Update Catalog sitesinden Windows sürümünüzü yazarak arama yapın.
 		• Çıkan arama sonuçlarında "Cumulative" yazan son güncelleştirmeyi indirip yükleyin. Önceki sürümleri de kapsamaktadır. 
 		• Güncelleme dosyalarını indirmek için: 
@@ -297,12 +293,9 @@ Mavi renkli işlem numaraları 27 numaralı işlem ile alakalıdır.
 	• 16 - Appx Yükleyici [Online]: Market uygulama paketlerini online sisteme yükler. Yükleme dosyalarını "Edit\Appx" içine atınız
 	     • Appx dosyalarının indirmek için; 
 		• ► https://store.rg-adguard.net/
-	     • Detaylı bilgi için;
-		• ► https://www.technopat.net/sosyal/konu/powershell-appx-komutlarinin-kullanimi.1684246/
 	• 17 - Driver Yedekle [Online]: Yüklü sistemden Driverları yedekler. Yedeklediği konum "Edit\Driver\Yedek"
 	• 18 - Driver Yedekle [Offline]: Offline sisteme driver entegre eder. Driver dosyalarını "Edit\Driver" klasörü içine atın. Yedek aldıktan sonra bu bölümü seçerseniz, yedekleri imaja yükler.
 	• 19 - Setup Düzenle [Offline]: Windows yükleme dosyalarını özelleştirir. İlk girişte "Files\setup10.zip" dosyasını indirir. Kendinize özel bölüm oluşturmak istiyorsanız. Aşağıdaki linke bakınız.
-	     • ► https://www.technopat.net/sosyal/konu/ntlite-ile-windows-10-setup-duezenleme.1355403/
 	• 20 - Yeni simgeleri yükle [Offline]: Yeni simgeleri imaja entegre eder. İlk girişte "Files\Newico.zip" dosyasını indirir. 
 	• 21 - Walpaper değiştir [Offline]: Varsayılan duvar kağıtlarını değiştirir. Seçtiğiniz resimleri yüklemek istiyorsanız "Files\Walpaper.zip" dosyasını düzenleyin.
 	• 22 - Telemetri engelle (Host) [Offline]: Offline sistemden hosts dosyasını değiştirir içerisinde telemetri servislerini engelleyen parametreler vardır.
