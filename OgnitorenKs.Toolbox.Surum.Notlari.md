@@ -12,7 +12,7 @@
 ::  Toolbox'ı hazırladığım sistemlerde temel programları indirip, basit bir şekilde sistem üzerinde düzenleme yapması için hazırladım.
 ::  Sürekli olarak güncellenecektir. Toolbox'ı indirmek için aşağıdaki linkleri kullanabilirsiniz.
 ::
-::  OgnitorenKs.Toolbox katılımsız kurulum dosyasını indirmek için aşağıdaki "Toolbox.Update.bat" dosyasını indirip yönetici olarak çalıştırın.
+::  OgnitorenKs.Toolbox katılımsız kurulum dosyasını indirmek için aşağıdaki "OgnitorenKs.Toolbox.Setup.bat" dosyasını indirip yönetici olarak çalıştırın.
 ::  ► https://docs.google.com/uc?export=download&id=19uNjxzHFY5A6g4mFg8FirFTnyL2R0HZ3
 ::
 ::  Github üzerinden çalışmaya ulaşmak isterseniz;

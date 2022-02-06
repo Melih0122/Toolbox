@@ -29,7 +29,7 @@ echo 
 echo               [˛˛˛˛˛˛˛˛˛˛˛˛                                    ]
 Call :ogni
 :: OgnitorenKs.Toolbox dosyalarç indirilir.
-C:\OgnitorenKs.Toolbox\Files\wget --no-check-certificate "https://docs.google.com/uc?export=download&id=1RGyfwovjOn2f-J-pvLoqma1UZmI_TKBN" -O C:\OgnitorenKs.Toolbox\OgnitorenKs.Toolbox.zip > NUL 2>&1
+C:\OgnitorenKs.Toolbox\Files\wget --no-check-certificate "https://docs.google.com/uc?export=download&id=1g8mbmzrFcXSZT7r5Oiwdqfs9wGNS2xWl" -O C:\OgnitorenKs.Toolbox\OgnitorenKs.Toolbox.zip > NUL 2>&1
 cls
 Call :bosluk
 echo                     %ESC%[92m OgnitorenKs Toolbox GÅncelleniyor...%ESC%[0m
