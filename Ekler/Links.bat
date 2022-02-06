@@ -12,16 +12,11 @@
 ::  Hazçrlayan: HÅseyin UZUNYAYLA / OgnitorenKs
 ::  Toolbox'ç hazçrladçßçm sistemlerde temel programlarç indirip, basit bir üekilde sistem Åzerinde dÅzenleme yapmasç iáin hazçrladçm.
 ::  SÅrekli olarak gÅncellenecektir. Toolbox'ç indirmek iáin aüaßçdaki linkleri kullanabilirsiniz.
-::   https://www.technopat.net/sosyal/konu/ognitorenks-toolbox-kullanimi.1790250/
-::
-::  OgnitorenKs.Toolbox katçlçmsçz kurulum dosyasçnç indirmek iáin aüaßçdaki "Toolbox.Update.bat" dosyasçnç indirip yînetici olarak áalçütçrçn.
-::   https://docs.google.com/uc?export=download&id=1JmrWYeNjVopcIP0n9iNkMUCEbQ2SIvpY
 ::
 ::  òstek ve înerileriniz olursa, iletiüim;
 ::   Discord: OgnitorenKs#2737 
 ::   Mail: ognitorenks@gmail.com
 ::   Site: ognitorenks.blogspot.com (Bu bîlÅm üu an aktif deßil)
-::   Site: www.technopat.net\Sosyal (Yeni bir konu aáçp yada hazçrladçßçm konularda @OgnitorenKs yazarak etiketleyebilirsiniz) 
 :: ==============================================================================================================================
 echo off
 cls
@@ -251,7 +246,7 @@ https://ftp.nluug.nl/pub/games/PC/guru3d/afterburner/[Guru3D.com]-MSIAfterburner
 http://www.hibitsoft.ir/HiBitUninstaller/HiBitUninstaller-setup-2.7.47.exe Hibit.exe
 
 :49
-https://docs.google.com/uc?export=download&id=1HhC57sKyUV0-6roBqfLkDEwfo_ptXJdS WiseCare365.zip
+https://docs.google.com/uc?export=download&id=1N_twp3rHSmIEfpZrg6RUalHA0AuJDtwa WiseCare365.zip
 
 :50
 :: https://www.iobit.com/en/iobit-unlocker.php#
@@ -361,7 +356,4 @@ https://app.prntscr.com/build/setup-lightshot.exe LightShoot.exe
 :: http://www.pcfreetime.com/formatfactory/index.php?language=en
 http://public.pcfreetime.com/FFSetup5.9.0.0.exe FormatFactory.exe
 
-:Guncelleme
-http://download.windowsupdate.com/d/msdownload/update/software/updt/2022/01/windows10.0-kb5010793-x64_3bae2e811e2712bd1678a1b8d448b71a8e8c6292.msu Windows10Update KB5010793.msu
-http://download.windowsupdate.com/d/msdownload/update/software/updt/2022/01/windows10.0-kb5008353-x64_f8f68bd79a0bf5d9e542de5cca217dcd7c1cd89f.msu Windows11Update KB5008353.msu
 

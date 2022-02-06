@@ -11,18 +11,13 @@
 ::       þþþþþþþ   þþþþþþ   þþ    þþ þþþþ    þþ     þþþþþþþ  þþ     þþ þþþþþþþþ þþ    þþ þþ    þþ  þþþþþþ 
 ::
 ::  Hazrlayan: Hseyin UZUNYAYLA / OgnitorenKs
-::  Toolbox' hazrlad§m sistemlerde baz konularda kullanclara yardmc olmas i‡in hazrlamŸtm.
-::  Zamanla yapt§m geliŸtirmeler sonucu Toolbox'a kullanc dostu bir‡ok b”lm ekledim.
-::  Toolbox srekli olarak gncellenecektir. Toolbox' indirebilece§iniz siteler;
-::   www.technopat.net\Sosyal 
-::   ognitorenks.blogspot.com (žu an bu b”lm pasif, ‡alŸmalarm devam ediyor.)
-::  Bu iki site harici herhangi bir site de paylaŸm yapmayaca§m. Harici bir sayfa zerinden indirmeyiniz
-::  Farkl istek ve ”nerileriniz olursa, ˜letiŸim;
+::  Toolbox' hazrlad§m sistemlerde temel programlar indirip, basit bir Ÿekilde sistem zerinde dzenleme yapmas i‡in hazrladm.
+::  Srekli olarak gncellenecektir. Toolbox' indirmek i‡in aŸa§daki linkleri kullanabilirsiniz.
+::
+::  ˜stek ve ”nerileriniz olursa, iletiŸim;
 ::   Discord: OgnitorenKs#2737 
 ::   Mail: ognitorenks@gmail.com
-::   
-::   Site: ognitorenks.blogspot.com 
-::   Site: www.technopat.net\Sosyal (Yeni bir konu a‡p yada hazrlad§m konularda @OgnitorenKs yazarak etiketleyebilirsiniz) 
+::   Site: ognitorenks.blogspot.com (Bu b”lm Ÿu an aktif de§il)
 :: ============================================================================================================================== 
 echo off
 cls
@@ -936,9 +931,6 @@ Call :dword "HKLM\OG_SYSTEM\ControlSet001\Control\WMI\Autologger\SQMLogger" "Sta
 Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\AdvertisingInfo" "DisabledByGroupPolicy" "1" & :: Reklam kimli§i etkinli§i kapatlyor...
 Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\EnhancedStorageDevices" "TCGSecurityActivationDisabled" "0" & :: Windows'un GeliŸmiŸ Depolama aygtlarn etkinleŸtirmesine izin verme
 Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting" "DontSendAdditionalData" "1" & :: Windows Hata Raporlama devre dŸ braklyor...
-Call :dword "HKLM\OG_SOFTWARE\Microsoft\Windows\Windows Error Reporting" /v "LoggingDisabled" 1 & :: Windows Hata Raporlama devre dŸ braklyor...
-Call :dword "HKLM\OG_SOFTWARE\Microsoft\Windows\Windows Error Reporting\Consent" "DefaultOverrideBehavior" 1 & :: Windows Hata Raporlama devre dŸ braklyor...
-Call :dword "HKLM\OG_SOFTWARE\Microsoft\Windows\Windows Error Reporting\Consent" "DefaultConsent" 0 & :: Windows Hata Raporlama devre dŸ braklyor...
 Call :dword "HKLM\OG_SOFTWARE\Microsoft\PolicyManager\default\Wifi\AllowWiFiHotSpotReporting" "value" "0" & :: Wifi Hotspot Raporlama devre dŸ braklyor...
 Call :dword "HKLM\OG_SOFTWARE\Microsoft\PolicyManager\default\Wifi\AllowAutoConnectToWiFiSenseHotspots" "value" "0" & :: Gvenli Wifi noktalarna otomatik ba§lan devre dŸ braklyor..
 Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\AdvertisingInfo" "Enabled" "0" & :: Windows Reklam Kimli§ini devre dŸ braklyor...
@@ -968,16 +960,9 @@ Call :sz "HKLM\OG_SOFTWARE\Classes\Directory\shell\runas" "NoWorkingDirectory" "
 Call :vesz "HKLM\OG_SOFTWARE\Classes\Directory\shell\runas\command" "cmd.exe /c takeown /f \"%%%%1\" /r /d y && ica \"%%%%1\" /grant administrators:F /t"
 Call :sz "HKLM\OG_SOFTWARE\Classes\Directory\shell\runas\command" "IsolatedCommand" "cmd.exe /c takeown /f \"%%%%1\" /r /d y && ica \"%%%%1\" /grant administrators:F /t"
 Call :sz "HKLM\OG_SOFTWARE\Classes\.bat\ShellNew" "NullFile" "" & :: Sa§ tk Yeni b”lmne Bat dosyas oluŸturma ekle
-:: Cab dosyalarnn sa§ tk se‡eneklerine ykleme ”zell§i ekler.
-Call :delete "HKLM\OG_SOFTWARE\Classes\CABFolder\Shell\RunAs" 
-Call :vesz "HKLM\OG_SOFTWARE\Classes\CABFolder\Shell\RunAs" "Install"
-Call :sz "HKLM\OG_SOFTWARE\Classes\CABFolder\Shell\RunAs" "HasLUAShield" ""
-Call :vesz "HKLM\OG_SOFTWARE\Classes\CABFolder\Shell\RunAs\Command" "cmd /k dism /online /add-package /packagepath:\"%%%%1\""
 ::3D Nesneler
 Call :delete "HKLM\OG_SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}"
 Call :delete "HKLM\OG_SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}"
-Call :sz "HKLM\OG_NTUSER\System\GameConfigStore" "GameDVR_Enabled" "0" & :: Oyun modu devre dŸ braklyor... 
-Call :dword "HKLM\OG_NTUSER\System\GameConfigStore" "GameDVR_FSEBehavior" "2" & :: Tam ekran iyileŸtirmeleri devre dŸ braklyor...
 Call :sz "HKLM\OG_NTUSER\System\GameConfigStore" "GameDVR_Enabled" "0" & :: Oyun modu devre dŸ braklyor... 
 Call :dword "HKLM\OG_NTUSER\System\GameConfigStore" "GameDVR_FSEBehavior" "2" & :: Tam ekran iyileŸtirmeleri devre dŸ braklyor...
 Call :sz "HKLM\OG_NTUSER\Control Panel\Accessibility\StickyKeys" "Flags" 506 & :: YapŸkan tuŸlar kapatr
@@ -1116,14 +1101,14 @@ goto :EOF
 
 
 :SetupDownload
-%konum2%\Files\wget -c -q --no-check-certificate --show-progress "https://docs.google.com/uc?export=download&id=1WSaIkfQdiBywEYGguZEy_8X_jcDu--sN" -O %konum2%\Download\Setup.zip
+%konum2%\Files\wget -c -q --no-check-certificate --show-progress "https://docs.google.com/uc?export=download&id=1Fw7Z61gQ9gw6KX4F1tWZtZlrk45JMrLe" -O %konum2%\Download\Setup.zip
 powershell -command "Expand-Archive -Force '%konum2%\Download\Setup.zip' '%konum2%\Files'"
 echo [%date% - %time%] ^| SetupDownload ^| Setup.zip dosyas indirildi >> %konum2%\logs
 goto :eof
 
 :icodownload
 echo 
-%konum2%\Files\wget -c -q --no-check-certificate --show-progress "https://docs.google.com/uc?export=download&id=1_Vcmp6xUwlqwuUdAjscS9bnGEi_XW24G" -O %konum2%\Files\Newico.zip
+%konum2%\Files\wget -c -q --no-check-certificate --show-progress "https://docs.google.com/uc?export=download&id=1D6TR20HEo6diHH_g53GxPL5Tpdg3cT2m" -O %konum2%\Files\Newico.zip
 echo [%date% - %time%] ^| icodownload ^|  Newico.zip dosyas indirildi >> %konum2%\logs
 goto :eof
 

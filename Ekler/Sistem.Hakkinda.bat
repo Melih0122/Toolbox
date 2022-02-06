@@ -12,16 +12,11 @@
 ::  Hazçrlayan: HÅseyin UZUNYAYLA / OgnitorenKs
 ::  Toolbox'ç hazçrladçßçm sistemlerde temel programlarç indirip, basit bir üekilde sistem Åzerinde dÅzenleme yapmasç iáin hazçrladçm.
 ::  SÅrekli olarak gÅncellenecektir. Toolbox'ç indirmek iáin aüaßçdaki linkleri kullanabilirsiniz.
-::   https://www.technopat.net/sosyal/konu/ognitorenks-toolbox-kullanimi.1790250/
-::
-::  OgnitorenKs.Toolbox katçlçmsçz kurulum dosyasçnç indirmek iáin aüaßçdaki "Toolbox.Update.bat" dosyasçnç indirip yînetici olarak áalçütçrçn.
-::   https://docs.google.com/uc?export=download&id=1JmrWYeNjVopcIP0n9iNkMUCEbQ2SIvpY
 ::
 ::  òstek ve înerileriniz olursa, iletiüim;
 ::   Discord: OgnitorenKs#2737 
 ::   Mail: ognitorenks@gmail.com
 ::   Site: ognitorenks.blogspot.com (Bu bîlÅm üu an aktif deßil)
-::   Site: www.technopat.net\Sosyal (Yeni bir konu aáçp yada hazçrladçßçm konularda @OgnitorenKs yazarak etiketleyebilirsiniz) 
 :: ==============================================================================================================================
 echo off
 cls

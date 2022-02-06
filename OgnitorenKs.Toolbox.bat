@@ -12,20 +12,15 @@
 ::  Hazrlayan: Hseyin UZUNYAYLA / OgnitorenKs
 ::  Toolbox' hazrlad§m sistemlerde temel programlar indirip, basit bir Ÿekilde sistem zerinde dzenleme yapmas i‡in hazrladm.
 ::  Srekli olarak gncellenecektir. Toolbox' indirmek i‡in aŸa§daki linkleri kullanabilirsiniz.
-::   https://www.technopat.net/sosyal/konu/ognitorenks-toolbox-kullanimi.1790250/
-::
-::  OgnitorenKs.Toolbox katlmsz kurulum dosyasn indirmek i‡in aŸa§daki "Toolbox.Update.bat" dosyasn indirip y”netici olarak ‡alŸtrn.
-::   https://docs.google.com/uc?export=download&id=1JmrWYeNjVopcIP0n9iNkMUCEbQ2SIvpY
 ::
 ::  ˜stek ve ”nerileriniz olursa, iletiŸim;
 ::   Discord: OgnitorenKs#2737 
 ::   Mail: ognitorenks@gmail.com
 ::   Site: ognitorenks.blogspot.com (Bu b”lm Ÿu an aktif de§il)
-::   Site: www.technopat.net\Sosyal (Yeni bir konu a‡p yada hazrlad§m konularda @OgnitorenKs yazarak etiketleyebilirsiniz) 
 :: ==============================================================================================================================
 ::  Projeye katkda bulunanlar;
 ::  ---------------------------
-::   Eray Trkay [470650]
+::   Eray Trkay
 ::  ----------------------
 ::     Sistem Hakknda - RAM soket yapsnn eklenmesi.
 ::    	Sistem Hakknda - Sistem format tarihinin eklenmesi.
@@ -158,7 +153,7 @@ echo %caption2% > NUL
 	if %caption2%==10 (set editmenugo=Win10SettingsMenu) 
 	if %caption2%==11 (set editmenugo=Win11SettingsMenu)
 
-set versiyon=2.2
+set versiyon=2.3
 
 ::set editmenu=Windows 11 Edit
 ::set editmenugo=Win11SettingsMenu
@@ -285,7 +280,7 @@ set /p menu= %RGB%[92m  Yapmak istedi§iniz iŸlem : %RGB%[0m
 	if %menu%==98 (Call :Logss "Toolbox.Update" "Toolbox gncelleme arac ‡alŸtrld."
 				   Powershell -command "Start-Process '%konum%\Toolbox.Update.bat'"&exit)
 	if %menu%==99 (Call :Logss "Toolbox.Update" "Toolbox Srm Notlar sayfas a‡ld."
-				   start https://drive.google.com/file/d/14w5_BWIKreSDhCjJk_Ay27uer-SI9ix3/view&goto menu)
+				   start https://drive.google.com/file/d/1Le61P_h-O3R0F9KsMRR0dikvQxnQaPCC&goto menu)
 	if %menu%==x (Call :Logss "Kalntlar.Temizle" "Download klas”r temizlendi."
 				  cls&DEL /F /Q /A %download%\*&RD /S /Q %download%\*&goto exit)
 	if %menu%==X (Call :Logss "Kalntlar.Temizle" "Download klas”r temizlendi."
@@ -358,6 +353,49 @@ cls
 :: AŸa§daki FOR d”ngsyle link.bat dosyas i‡inden programlara ait linkleri alyorum.
 :: Link sistemini katlmsz program hazrlama b”lmnde kulland§m i‡in ortak bir sistem olarak hazrladm.
 :: Di§er download b”lmleri de ayn Ÿekilde ‡alŸmaktadr.
+
+
+::-----------------------
+:: Kaldrma b”lm
+
+echo %ESC%[1;97m%ESC%%ESC%[42m Eski srmler kaldrlyor%ESC%[0m
+DEL /F /Q /A "%Logs%\aiodel.txt" > NUL 2>&1
+
+For /f "skip=3 tokens=*" %%a in ('Powershell -command "Get-CimInstance -Class Win32_Product | Select-Object -Property IdentifyingNumber,Name"') do echo %%a >> %Logs%\aiodel.txt
+
+:: 2005 / 2008 / 2010 kaldr
+FOR /F "tokens=1" %%a in ('Findstr /C:"C++ 2005" %Logs%\aiodel.txt') do msiexec.exe /x %%a /qn
+FOR /F "tokens=1" %%a in ('Findstr /C:"C++ 2008" %Logs%\aiodel.txt') do msiexec.exe /x %%a /qn
+FOR /F "tokens=1" %%a in ('Findstr /C:"C++ 2010" %Logs%\aiodel.txt') do msiexec.exe /x %%a /qn
+
+:: 2012-2013 kaldr
+FOR /F "tokens=*" %%a  in ('dir /b /s "%programdata%\vcredist_x86.exe"') do "%%a" /uninstall /quiet /norestart
+FOR /F "tokens=*" %%a  in ('dir /b /s "%programdata%\vcredist_x64.exe"') do "%%a" /uninstall /quiet /norestart
+
+:: 2015-2022 kaldr
+FOR /F "tokens=*" %%a  in ('dir /b /s "%programdata%\VC_redist.x64.exe"') do "%%a" /uninstall /quiet /norestart
+FOR /F "tokens=*" %%a  in ('dir /b /s "%programdata%\VC_redist.x86.exe"') do "%%a" /uninstall /quiet /norestart
+
+:: Desktop runtime kaldr
+FOR /F "tokens=*" %%a  in ('dir /b /s "%programdata%\windowsdesktop-runtime-*-win-x64.exe"') do "%%a" /uninstall /quiet /norestart
+FOR /F "tokens=*" %%a  in ('dir /b /s "%programdata%\windowsdesktop-runtime-*-win-x86.exe"') do "%%a" /uninstall /quiet /norestart
+
+:: Java kaldr
+For /f "tokens=1" %%a in ('Findstr /C:"Java" %Logs%\aiodel.txt') do msiexec.exe /x %%a /qn
+
+:: OpenAL kaldr
+"%ProgramFiles(x86)%\OpenAL\oalinst.exe" /U /SILENT
+
+:: XNA Framework 4.0 kaldr
+FOR /F "tokens=1" %%a in ('Findstr /C:"XNA Framework" %Logs%\aiodel.txt') do msiexec.exe /x %%a /qn
+::-----------------------
+:: Microsoft Servis b”lm
+echo %ESC%[1;97m%ESC%%ESC%[42m Net Framework3.5/4.8/Direct Play aktifleŸtiriliyor%ESC%[0m
+Dism /Online /Enable-Feature /Featurename:NetFx3 /all /limitaccess /Quiet /NoRestart
+Dism /Online /Enable-Feature /FeatureName:IIS-ASPNET45 /All /Quiet /NoRestart
+Dism /Online /Enable-Feature /FeatureName:DirectPlay /All /Quiet /NoRestart
+::-----------------------
+:: Ykleme b”lm
 FOR /F "tokens=1" %%i in ('FIND "05x86.exe" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" 05x86.exe /Q
 FOR /F "tokens=1" %%i in ('FIND "05x64.exe" %konum%\Ekler\Links.bat') do set link=%%i
@@ -389,7 +427,7 @@ FOR /F "tokens=1" %%i in ('FIND "15x64.exe" %konum%\Ekler\Links.bat') do set lin
 Call :wget "%link%" 15x64.exe "/install /quiet /norestart" 
 
 FOR /F "tokens=1" %%i in ('FIND "javax64" %konum%\Ekler\Links.bat') do set link=%%i
-Call :wget "%link%" javax64.exe "INSTALL_SILENT=Enable SPONSORS=Disable WEB_ANALYTICS=Disable REBOOT=Disable WEB_JAVA=Disable"
+Call :wget "%link%" javax64.exe "INSTALL_SILENT=Enable SPONSORS=Disable WEB_ANALYTICS=Disable REBOOT=Disable WEB_JAVA=Disable REMOVEOUTOFDATEJRES=1"
 
 FOR /F "tokens=1" %%i in ('FIND "xnafx40" %konum%\Ekler\Links.bat') do set link=%%i
 Call :wget "%link%" xnafx40.msi /qn
@@ -1589,7 +1627,7 @@ FOR /F "tokens=5" %%a in ('netsh wlan show profil ^| find "All"') do (
 	)
 )
 echo  %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
-echo %ESC%[32m  Kapatmak i‡in herhangi bir tuŸa basnz.%ESC%[0m
+echo %ESC%[32m  Menye d”nmek i‡in herhangi bir tuŸa basnz.%ESC%[0m
 pause > NUL
 goto :eof
 
@@ -2097,8 +2135,8 @@ ping -n 1 www.google.com.tr -w 20000 > NUL
 						goto oldicodown)
 
 echo [%date% - %time%] ^| oldicodown ^| Simge dosyalar indirildi. >> %konum%\Logs
-%konum%\Files\wget -c -q --no-check-certificate --show-progress "https://docs.google.com/uc?export=download&id=1CXNQ2WVGM_udNMvaloaxFFQ_2sMaY5RQ" -O %konum%\Files\Oldico.zip
-%konum%\Files\wget -c -q --no-check-certificate --show-progress "https://docs.google.com/uc?export=download&id=1_Vcmp6xUwlqwuUdAjscS9bnGEi_XW24G" -O %konum%\Files\Newico.zip
+%konum%\Files\wget -c -q --no-check-certificate --show-progress "https://docs.google.com/uc?export=download&id=18kwIyPhIpk0wS-LbwMhsi4ocXJk0R-rG" -O %konum%\Files\Oldico.zip
+%konum%\Files\wget -c -q --no-check-certificate --show-progress "https://docs.google.com/uc?export=download&id=1D6TR20HEo6diHH_g53GxPL5Tpdg3cT2m" -O %konum%\Files\Newico.zip
 goto :eof
 
 
@@ -2803,7 +2841,7 @@ Call :konum
 dir /b "%konum%\Files\PowerRun.exe" > NUL 2>&1
 	if %errorlevel%==1 (echo %ESC%[1;97m%ESC%%ESC%[41m HATA! PowerRun.exe dosyas bulunamad. Yeniden indiriliyor... %ESC%[0m
 						Call :Logss "PowerRun indiriliyor" "PowerRun.exe dosyas bulunamad. Yeniden indirildi."
-						Call :wgetdesktop "https://docs.google.com/uc?export=download&id=1wfov7bUB3j3X_VzwLw3X8bvNYtVNJ6NI" "%konum%\Download\PowerRun.zip"
+						Call :wgetdesktop "https://docs.google.com/uc?export=download&id=10UikjZGEvcnB9j6gDYmURZhmhruiKbfK" "%konum%\Download\PowerRun.zip"
 						powershell -command "Expand-Archive -Force '%konum%\Download\PowerRun.zip' '%konum%\Files"
 						timeout /t 2 /nobreak > NUL)
 						
@@ -2907,45 +2945,6 @@ ping -n 1 www.google.com.tr -w 20000 > NUL
 goto :eof
 
 :: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
-
-
-:: ==============================================================================================================================
-:1i
-cls
-echo   %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
-echo    %ESC%[92m 1 - All in One Runtimes%ESC%[0m
-echo   %ESC%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%ESC%[0m
-echo    %ESC%[33m All in One Runtimes b”lm i‡inde;%ESC%[0m
-echo    %ESC%[37m   Microsoft Visual C++ 2005 / 2008 / 2010 / 2012 / 2013 / 2015 / 2019 / 2022%ESC%[0m
-echo    %ESC%[37m   OpenAL: Oyun ses kalitesini arttrr.%ESC%[0m 
-echo    %ESC%[37m   XNA Framework 4.0: C# ile programlanan oyunlarn ‡alŸmas i‡in gerekli%ESC%[0m
-echo    %ESC%[37m   Java%ESC%[0m
-echo    %ESC%[37m   Desktop Runtime 5: C++ bileŸenleriyle ilgilidir.%ESC%[0m 
-echo    %ESC%[37m   DirectX: Oyunlarn a‡lmas i‡in yklenmesi Ÿart%ESC%[0m 
-echo    %ESC%[33m yer almaktadr.%ESC%[0m
-echo    %ESC%[33m Uygulama ve oyunlarn sorunsuz ‡alŸmas i‡in mutlaka kurulmas gerekmektedir.%ESC%[0m
-echo   %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
-echo    %ESC%[32m Menye d”nmek i‡in herhangi bir tuŸa basnz.%ESC%[0m
-pause > NUL
-goto :eof
-
-:2i
-echo %ESC%[96m  Discord: ArkadaŸlarnzla iletiŸim kurabilece§iniz chat uygulamasdr. %ESC%[0m
-pause > NUL
-goto :eof
-
-:3i
-cls
-echo   %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
-echo    %ESC%[92m %ESC%[0m
-echo   %ESC%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%ESC%[0m
-echo    %ESC%[33m %ESC%[0m
-echo   %ESC%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%ESC%[0m
-echo    %ESC%[32m Menye d”nmek i‡in herhangi bir tuŸa basnz.%ESC%[0m
-pause > NUL
-goto :eof
-
-
 
 :: ==============================================================================================================================
 

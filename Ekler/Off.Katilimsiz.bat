@@ -12,16 +12,11 @@
 ::  Hazrlayan: Hseyin UZUNYAYLA / OgnitorenKs
 ::  Toolbox' hazrlad§m sistemlerde temel programlar indirip, basit bir Ÿekilde sistem zerinde dzenleme yapmas i‡in hazrladm.
 ::  Srekli olarak gncellenecektir. Toolbox' indirmek i‡in aŸa§daki linkleri kullanabilirsiniz.
-::   https://www.technopat.net/sosyal/konu/ognitorenks-toolbox-kullanimi.1790250/
-::
-::  OgnitorenKs.Toolbox katlmsz kurulum dosyasn indirmek i‡in aŸa§daki "Toolbox.Update.bat" dosyasn indirip y”netici olarak ‡alŸtrn.
-::   https://docs.google.com/uc?export=download&id=1JmrWYeNjVopcIP0n9iNkMUCEbQ2SIvpY
 ::
 ::  ˜stek ve ”nerileriniz olursa, iletiŸim;
 ::   Discord: OgnitorenKs#2737 
 ::   Mail: ognitorenks@gmail.com
 ::   Site: ognitorenks.blogspot.com (Bu b”lm Ÿu an aktif de§il)
-::   Site: www.technopat.net\Sosyal (Yeni bir konu a‡p yada hazrlad§m konularda @OgnitorenKs yazarak etiketleyebilirsiniz) 
 :: ==============================================================================================================================
 echo off
 cls
@@ -1171,7 +1166,7 @@ echo echo SVCHost Ram optimizasyonu yapiliyor...
 echo FOR /F "tokens=4" %%%%g IN ^('systeminfo ^^^| FIND "Total"'^) DO set ramtotal=%%%%g
 echo set ramtotal=%%ramtotal:~0,-4%%
 echo set /a ramtotal=^(%%ramtotal%%*1024*1024^)
-echo reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control" /v "SvcHostSplitThresholdInKB" /t REG_DWORD /d 0x%%ramtotal%% /f > NUL 2>&1
+echo reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control" /v "SvcHostSplitThresholdInKB" /t REG_DWORD /d 0x%%ramtotal%% /f ^> NUL 2^>^&1
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
 goto :eof
 
