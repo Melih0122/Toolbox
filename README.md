@@ -3,8 +3,8 @@
 - Toolbox Windows 10 - 11 sürümlerinin x64 mimarilerinde açılmaktadır. Farklı sürümler için desteği yoktur. En güncel olan sürüm ile senkronize olarak gelişmektedir.
 - Windows ekran ölçeklendirme ayarı Toolbox'ın pencere ayarını bozabiliyor. Sorunsuz kullanım için Toolbox'ı kullanırken ölçeklendirme etkileri kapatılmalıdır.
 
-![cmd_yOYUywyJR5](https://user-images.githubusercontent.com/93199689/151236712-b533bbe5-09c0-4014-90c1-9f3bb7da9ad7.png)
-![cmd_icYhCtkCfL](https://user-images.githubusercontent.com/93199689/151236721-78f4323f-df1a-4749-99e0-b07801566bf9.png)
+![cmd_k7kLkoB9Ha](https://user-images.githubusercontent.com/93199689/152683972-467e259e-004e-4ffd-b3de-fd03a3ea6fde.png)
+![cmd_4kkFAVjdTu](https://user-images.githubusercontent.com/93199689/152683973-311e3316-3684-4d2f-ad03-6bab3eff2030.png)
 
 ### Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
 
