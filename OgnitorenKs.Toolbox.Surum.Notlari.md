@@ -11,10 +11,9 @@
 ::  Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
 ::  Toolbox'ı hazırladığım sistemlerde temel programları indirip, basit bir şekilde sistem üzerinde düzenleme yapması için hazırladım.
 ::  Sürekli olarak güncellenecektir. Toolbox'ı indirmek için aşağıdaki linkleri kullanabilirsiniz.
-::  ► https://www.technopat.net/sosyal/konu/ognitorenks-toolbox-kullanimi.1790250/
 ::
 ::  OgnitorenKs.Toolbox katılımsız kurulum dosyasını indirmek için aşağıdaki "Toolbox.Update.bat" dosyasını indirip yönetici olarak çalıştırın.
-::  ► https://docs.google.com/uc?export=download&id=1JmrWYeNjVopcIP0n9iNkMUCEbQ2SIvpY
+::  ► https://docs.google.com/uc?export=download&id=19uNjxzHFY5A6g4mFg8FirFTnyL2R0HZ3
 ::
 ::  Github üzerinden çalışmaya ulaşmak isterseniz;
 ::  ► https://github.com/OgnitorenKs/OgnitorenKs.Toolbox
@@ -23,11 +22,10 @@
 ::  ► Discord: OgnitorenKs#2737 
 ::  ► Mail: ognitorenks@gmail.com
 ::  ► Site: ognitorenks.blogspot.com (Bu bölüm şu an aktif değil)
-::  ► Site: www.technopat.net\Sosyal (Yeni bir konu açıp yada hazırladığım konularda @OgnitorenKs yazarak etiketleyebilirsiniz) 
 :: ==============================================================================================================================
 ::  PROJEYE KATKIDA BULUNANLAR;
 ::  ---------------------------
-::  ► Eray Türkay [470650]
+::  ► Eray Türkay
 ::  ----------------------
 ::    • Sistem Hakkında - RAM soket yapısının eklenmesi.
 ::    •	Sistem Hakkında - Sistem format tarihinin eklenmesi.
@@ -40,6 +38,19 @@
 ::  ---------
 :: 	  • Wifi Crack çalışmasının toolbox'a eklenmesi. 
 ::
+:: ==============================================================================================================================
+-----------------
+ ► Versiyon 2.3 -
+-----------------
+Yayınlanma Tarihi: 
+
+ • İndirme linkleriyle ilgili bilgi güncellemesi artık yapılmayacaktır. Linkler düzenli olarak güncellenecektir.
+ • Windows Düzenleme > ISO oluşturma bölümünde komutlar düzenlendi. Sanal makinalarda oluşan hata giderildi.
+ • Windows Düzenleme > Katılımsız program ve ayar ekle > Bcdedit bölümüne Aygıt yöneticisinden "Yüksek duyarlılıklı olay süre ölçeri" kapatan parametre eklendi.
+ • Windows Düzenleme > Regedit kayıt bölümlerine eklemeler yapıldı.
+ • All in One Runtimes bölümüne yükleme işlemi öncesi eski sürümleri silme işlemi eklendi. 
+ • All in One Runtimes bölümüne Net Framework 3.5/4.8/DirectPlay hizmetlerini aktifleştirmesi için komutlar eklendi.
+
 :: ==============================================================================================================================
 -----------------
  ► Versiyon 2.2 -
@@ -125,7 +136,7 @@ Yayınlanma Tarihi: 08.01.2022
 
  • Wifi Crack bölümü eklendi.
 	• Bu bölümde sisteme girdiğiniz Wifi liste ve şifrelerini görebilirsiniz.
-	• Çalışmasını toolbox'a eklediği için Archley'e teşekkür ederim.
+	• Çalışmasını toolbox'a eklediği için [Archley]'e teşekkür ederim.
  • Simge hatasını düzelt bölümüne yeni parametre eklendi.
  • Explorer Resetten sonra Explorer'ın açılmama hatası giderildi.
  • FAT32 to NTFS bölümü ana ekrandan ayrıldı. Yeni bölümde artık diskleri ve isimlerini görerek rahat bir şekilde işlem yapabilirsiniz.
