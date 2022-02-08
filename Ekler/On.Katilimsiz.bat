@@ -175,7 +175,7 @@ echo :netkontrol
 echo ping -n 1 www.google.com.tr -w 20000 ^> NUL
 echo 	if %%errorlevel%%==1 ^(echo INTERNET BAGLANTINIZ YOK BAGLANTIYI SAGLAYIP HERHANGI BIR TUSA BASINIZ.^&pause ^> NUL^&goto netkontrol^)
 echo echo Guncel linkler indiriliyor...
-echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "https://docs.google.com/uc?export=download&id=1SVnxu_dORL4XZfLW20CjFU-5mUuCOnvZ" -O %%konum%%\Download\Links.zip
+echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "https://docs.google.com/uc?export=download&id=1BNmQ1JSes4hiFu3mPR4mJP10FNX68NxV" -O %%konum%%\Download\Links.zip
 echo :: Link.zip dosyasi temp klasorune cikarilir.
 echo powershell -command "Expand-Archive -Force '%%konum%%\Download\Links.zip' '%%konum%%\Ekler'" 
 echo cls
@@ -227,14 +227,14 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> C++ 2005
 echo echo  C++ 2005 kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "05x86.exe" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "05x86.exe" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\05x86.exe 
 echo "%%konum%%\Download\05x86ATL.exe" /Q
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
 
 (
 echo.
-echo FOR /F "tokens=1" %%%%i in ^('FIND "05x64.exe" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "05x64.exe" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\05x64.exe 
 echo "%%konum%%\Download\05x64ATL.exe" /Q
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
@@ -244,14 +244,14 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> C++ 2008
 echo echo  C++ 2008 kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "08x86.exe" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "08x86.exe" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\08x86.exe
 echo "%%konum%%\Download\08x86ATL.exe" /q
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
 
 (
 echo.
-echo FOR /F "tokens=1" %%%%i in ^('FIND "08x64.exe" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "08x64.exe" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\08x64.exe
 echo "%%konum%%\Download\08x64ATL.exe" /q
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
@@ -261,14 +261,14 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> C++ 2010
 echo echo  C++ 2010 kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "10x86.exe" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "10x86.exe" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\10x86.exe
 echo "%%konum%%\Download\10x86.exe" /q /norestart
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
 
 (
 echo.
-echo FOR /F "tokens=1" %%%%i in ^('FIND "10x64.exe" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "10x64.exe" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\10x64.exe
 echo "%%konum%%\Download\10x64.exe" /q /norestart
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
@@ -278,14 +278,14 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> C++ 2012
 echo echo  C++ 2012 kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "12x86.exe" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "12x86.exe" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\12x86.exe
 echo "%%konum%%\Download\12x86.exe" /install /quiet /norestart
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
 
 (
 echo.
-echo FOR /F "tokens=1" %%%%i in ^('FIND "12x64.exe" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "12x64.exe" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\12x64.exe
 echo "%%konum%%\Download\12x64.exe" /install /quiet /norestart
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
@@ -295,14 +295,14 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> C++ 2013
 echo echo  C++ 2013 kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "13x86.exe" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "13x86.exe" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\13x86.exe
 echo "%%konum%%\Download\13x86.exe" /install /quiet /norestart
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
 
 (
 echo.
-echo FOR /F "tokens=1" %%%%i in ^('FIND "13x64.exe" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "13x64.exe" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\13x64.exe
 echo "%%konum%%\Download\13x64.exe" /install /quiet /norestart
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
@@ -312,14 +312,14 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> C++ 2015-2022
 echo echo  C++ 2015-2022 kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "15x86.exe" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "15x86.exe" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\15x86.exe
 echo "%%konum%%\Download\15x86.exe" /install /quiet /norestart
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
 
 (
 echo.
-echo FOR /F "tokens=1" %%%%i in ^('FIND "15x64" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "15x64" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\15x64.exe
 echo "%%konum%%\Download\15x64.exe" /install /quiet /norestart
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
@@ -329,7 +329,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> Java kuruluyor...
 echo echo Java kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "javax64" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "javax64" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\javax64.exe
 echo "%%konum%%\Download\javax64.exe" INSTALL_SILENT=Enable SPONSORS=Disable WEB_ANALYTICS=Disable REBOOT=Disable WEB_JAVA=Disable
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
@@ -339,7 +339,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> XNA Framework 4.0 kuruluyor...
 echo echo XNA Framework 4.0 kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "xnafx40" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "xnafx40" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\xnafx40.msi
 echo "%%konum%%\Download\xnafx40.msi" /qn
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
@@ -349,7 +349,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> OpenAL kuruluyor...
 echo echo OpenAL kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "oal.zip" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "oal.zip" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\oal.zip
 echo powershell -command "Expand-Archive -Force '%%konum%%\Download\oal.zip' '%%konum%%\Download\oal'" 
 echo "%%konum%%\Download\oal\oalinst.exe" /SILENT
@@ -360,14 +360,14 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> Desktop Runtime 5 kuruluyor...
 echo echo Desktop Runtime 5 kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Desktop5x64" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "Desktop5x64" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\Desktop5x64.exe
 echo "%%konum%%\Download\Desktop5x64.exe" /q /norestart
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
 
 (
 echo.
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Desktop5x86" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "Desktop5x86" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\Desktop5x86.exe
 echo "%%konum%%\Download\Desktop5x86.exe" /q /norestart
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
@@ -376,7 +376,7 @@ echo "%%konum%%\Download\Desktop5x86.exe" /q /norestart
 echo.
 echo :: -----------------------------------------------------------------------------------
 echo echo DirectX kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "DirectX" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "DirectX" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\DirectX.exe
 echo %%konum%%\Download\DirectX.exe /Q /C /T:"%%konum%%\Download\DirectX\"
 echo "%%konum%%\Download\DirectX\DXSETUP.exe" /silent
@@ -392,7 +392,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> Discord
 echo echo  Discord kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Discord" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "Discord" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\Discord.exe
 echo "%%konum%%\Download\Discord.exe" -s
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
@@ -407,7 +407,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> WhatsApp
 echo echo  WhatsApp kuruluyor..
-echo FOR /F "tokens=1" %%%%i in ^('FIND "WhatsApp" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "WhatsApp" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\WhatsApp.exe
 echo "%%konum%%\Download\WhatsApp.exe" --silent
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
@@ -422,7 +422,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> Signal
 echo echo  Signal kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Signal" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "Signal" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\Signal.exe
 echo "%%konum%%\Download\Signal.exe" /S
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
@@ -437,7 +437,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> Telegram
 echo echo  Telegram kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Telegram" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "Telegram" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\Telegram.exe
 echo "%%konum%%\Download\Telegram.exe" /VERYSILENT /NORESTART
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
@@ -452,7 +452,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> Teams
 echo echo  Microsoft Teams kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Teams" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "Teams" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\Teams.exe
 echo "%%konum%%\Download\Teams.exe" -s
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
@@ -467,7 +467,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> Zoom
 echo echo  Zoom kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Zoom" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "Zoom" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\Zoom.exe
 echo "%%konum%%\Download\Zoom.exe" /qn
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
@@ -482,7 +482,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> EpicGames
 echo echo  EpicGames kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "EpicGames" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "EpicGames" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\EpicGames.msi
 echo "%%konum%%\Download\EpicGames.msi" /qn /norestart
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
@@ -497,7 +497,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> Steam
 echo echo  Steam kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Steam" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "Steam" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\Steam.exe
 echo "%%konum%%\Download\Steam.exe" /S
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
@@ -512,7 +512,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> GOG
 echo echo  GOG kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "GOG.exe" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "GOG.exe" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\GOG.exe
 echo "%%konum%%\Download\GOG.exe" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
@@ -527,7 +527,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> Uplay
 echo echo  Uplay kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Uplay" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "Uplay" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\Uplay.exe
 echo "%%konum%%\Download\Uplay.exe" /S
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
@@ -542,7 +542,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> Origin
 echo echo  Origin kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Origin" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "Origin" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\Origin.exe
 echo "%%konum%%\Download\Origin.exe" /SILENT
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
@@ -557,7 +557,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> CheatEngine
 echo echo  CheatEngine kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "CheatEngine" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "CheatEngine" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\CheatEngine.exe
 echo "%%konum%%\Download\CheatEngine.exe" /SILENT
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
@@ -572,7 +572,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> Wemod
 echo echo  Wemod kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Wemod" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "Wemod" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\Wemod.exe
 echo "%%konum%%\Download\Wemod.exe" --silent
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
@@ -587,7 +587,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> League.Of.Legends
 echo echo  League.Of.Legends kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "LeagueOfLegends" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "LeagueOfLegends" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O C:\Users\%%username%%\Desktop\League.Of.Legends.exe
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
 goto :eof
@@ -601,7 +601,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> Blitz
 echo echo  Blitz kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Blitz" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "Blitz" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\Blitz.exe
 echo "%%konum%%\Download\Blitz.exe" /S
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
@@ -616,7 +616,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> Google Chrome
 echo echo  Google Chrome kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Chrome" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "Chrome" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\Chrome.zip
 echo powershell -command "Expand-Archive -Force '%%konum%%\Download\Chrome.zip' '%%konum%%\Download\Chrome'" 
 echo "%%konum%%\Download\Chrome\Installers\GoogleChromeStandaloneEnterprise64.msi" /qn
@@ -638,7 +638,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> Firefox
 echo echo  Mozilla Firefox kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Firefox" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "Firefox" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\Firefox.exe
 echo "%%konum%%\Download\Firefox.exe" /S
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
@@ -653,7 +653,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> Brave
 echo echo  Brave kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Brave" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "Brave" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\Brave.exe
 echo "%%konum%%\Download\Brave.exe" --install --silent --system-level
 echo :: UBlock Origin
@@ -674,7 +674,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> Edge
 echo echo  Edge kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "edge.msi" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "edge.msi" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\Edge.msi
 echo "%%konum%%\Download\Edge.msi" /qn
 echo :: UBlock Origin
@@ -695,7 +695,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> LibreOffice
 echo echo  LibreOffice kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "LibreOffice" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "LibreOffice" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\LibreOffice.msi
 echo "%%konum%%\Download\LibreOffice.msi" /qn /norestart ALLUSERS=1 CREATEDESKTOPLINK=0 REGISTER_ALL_MSO_TYPES=0 REGISTER_NO_MSO_TYPES=1 ISCHECKFORPRODUCTUPDATES=0 QUICKSTART=1 ADDLOCAL=ALL
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
@@ -710,7 +710,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> PDF-XChange
 echo echo  PDF-XChange kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "PdfXchange.msi" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "PdfXchange.msi" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\PdfXchange.msi
 echo "%%konum%%\Download\PdfXchange.msi" "/quiet /norestart"
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
@@ -725,7 +725,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> Notepad
 echo echo  Notepad kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Notepad" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "Notepad" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\Notepad.exe
 echo "%%konum%%\Download\Notepad.exe" /S
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
@@ -740,7 +740,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> Calibre
 echo echo  Calibre kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Calibre" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "Calibre" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\Calibre.msi
 echo "%%konum%%\Download\Calibre.msi" /qn
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
@@ -755,7 +755,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> 7-Zip
 echo echo  7-Zip kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "7-Zip" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "7-Zip" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\7-Zip.msi
 echo "%%konum%%\Download\7-Zip.msi" /qn
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
@@ -770,7 +770,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> Winrar
 echo echo  Winrar kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Winrar" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "Winrar" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\Winrar.exe
 echo "%%konum%%\Download\Winrar.exe" /S
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
@@ -785,7 +785,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> Kdenlive
 echo echo  Kdenlive kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Kdenlive" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "Kdenlive" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\Kdenlive.exe
 echo "%%konum%%\Download\Kdenlive.exe" /S
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
@@ -800,7 +800,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> Krita
 echo echo  Krita kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Krita" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "Krita" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\Krita.exe
 echo "%%konum%%\Download\Krita.exe" /S
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
@@ -815,7 +815,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> Gimp
 echo echo  Gimp kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Gimp" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "Gimp" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\Gimp.exe
 echo "%%konum%%\Download\Gimp.exe" /VERYSILENT /NORESTART /MERGETASKS=desktopicon /ALLUSERS
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
@@ -830,7 +830,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> OBS
 echo echo  OBS Studio kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "OBS" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "OBS" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\OBS.exe
 echo "%%konum%%\Download\OBS.exe" /S
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
@@ -845,7 +845,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> ShareX
 echo echo  ShareX kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "ShareX" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "ShareX" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\ShareX.exe
 echo "%%konum%%\Download\ShareX.exe" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
@@ -860,7 +860,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> Audacity
 echo echo  Audacity kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Audacity" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "Audacity" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\Audacity.exe
 echo "%%konum%%\Download\Audacity.exe" /VERYSILENT /NORESTART
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
@@ -875,7 +875,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> K-lite Codec
 echo echo  K-lite Codec kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Klite" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "Klite" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\Klite.exe
 echo "%%konum%%\Download\Klite.exe" /verysilent
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
@@ -890,7 +890,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> VLCMediaPlayer
 echo echo  VLC Media Player kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "VLCMediaPlayer" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "VLCMediaPlayer" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\VLCMediaPlayer.exe
 echo "%%konum%%\Download\VLCMediaPlayer.exe" /L=1055 /S
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
@@ -905,7 +905,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> Aimp
 echo echo  Aimp kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Aimp" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "Aimp" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\Aimp.exe
 echo "%%konum%%\Download\Aimp.exe" /AUTO /SILENT
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
@@ -920,7 +920,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> FreeDownloadManager
 echo echo  Free Download Manager kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "FreeDownloadManager" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "FreeDownloadManager" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\FreeDownloadManager.exe
 echo "%%konum%%\Download\FreeDownloadManager.exe" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
@@ -935,7 +935,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> ByClickDownloader
 echo echo  ByClick Downloader kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "ByClick" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "ByClick" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\ByClick.exe
 echo "%%konum%%\Download\ByClick.exe" /q
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
@@ -950,7 +950,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> Utorrent
 echo echo  Utorrent kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Utorrent" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "Utorrent" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\Utorrent.exe
 echo "%%konum%%\Download\Utorrent.exe" /S
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
@@ -965,7 +965,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> GlassWire
 echo echo  GlassWire kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "GlassWire" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "GlassWire" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\GlassWire.exe
 echo "%%konum%%\Download\GlassWire.exe" /S
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
@@ -980,7 +980,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> TeamViewer
 echo echo  TeamViewer kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "TeamViewer" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "TeamViewer" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\TeamViewer.exe
 echo "%%konum%%\Download\TeamViewer.exe" /S
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
@@ -995,7 +995,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> Hamachi
 echo echo  Hamachi kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Hamachi" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "Hamachi" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\Hamachi.exe
 echo "%%konum%%\Download\Hamachi.exe" /q
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
@@ -1010,7 +1010,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> Stremio
 echo echo  Stremio kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Stremio" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "Stremio" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\Stremio.exe
 echo "%%konum%%\Download\Stremio.exe" /S
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
@@ -1038,7 +1038,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> MSIAfterburner
 echo echo  MSI Afterburner kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "MSIAfterburner" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "MSIAfterburner" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\MSIAfterburner.zip
 echo powershell -command "Expand-Archive -Force '%%konum%%\Download\MSIAfterburner.zip' '%%konum%%\Download\MSIAfterburner'" 
 echo for /f %%%%i in ^('"dir /b %%konum%%\Download\MSIAfterburner\*.exe"'^) do "%%konum%%\Download\MSIAfterburner\%%%%i" /S
@@ -1054,7 +1054,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> Hibit Uninstaller
 echo echo  Hibit Uninstaller kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Hibit" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "Hibit" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\Hibit.exe
 echo "%%konum%%\Download\Hibit.exe" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
@@ -1069,7 +1069,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> Unlocker
 echo echo  Unlocker kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Unlocker" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "Unlocker" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\Unlocker.exe
 echo "%%konum%%\Download\Unlocker.exe" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
@@ -1084,7 +1084,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> OpenShell
 echo echo  OpenShell kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "OpenShell" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "OpenShell" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\OpenShell.exe
 echo "%%konum%%\Download\OpenShell.exe" /quiet /norestart ADDLOCAL=StartMenu
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
@@ -1099,7 +1099,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> SSDBooster
 echo echo  SSDBooster kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "SSDBooster" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "SSDBooster" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O C:\users\%%username%%\Desktop\SSDBooster.exe
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
 goto :eof
@@ -1113,7 +1113,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> Everything
 echo echo  Everything kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Everything" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "Everything" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\Everything.exe
 echo "%%konum%%\Download\Everything.exe" /S
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
@@ -1128,7 +1128,7 @@ echo.
 echo :: -----------------------------------------------------------------------------------
 echo :: ^>^>^> TaskbarX
 echo echo  TaskbarX kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "TaskbarX" %%konum%%\Ekler\Links.bat^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "TaskbarX" %%konum%%\Ekler\Links.bat'^) do set link=%%%%i
 echo %%konum%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%konum%%\Download\TaskbarX.zip
 echo powershell -command "Expand-Archive -Force '%%konum%%\Download\TaskbarX.zip' 'C:\Users\%%username%%\Desktop\TaskbarX'" 
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
