@@ -42,7 +42,7 @@
 -----------------
  ► Versiyon 2.3 -
 -----------------
-Yayınlanma Tarihi: 
+Yayınlanma Tarihi: 08.02.2022
 
  • İndirme linkleriyle ilgili bilgi güncellemesi artık yapılmayacaktır. Linkler düzenli olarak güncellenecektir.
  • Windows Düzenleme > ISO oluşturma bölümünde komutlar düzenlendi. Sanal makinalarda oluşan hata giderildi.
@@ -50,6 +50,7 @@ Yayınlanma Tarihi:
  • Windows Düzenleme > Regedit kayıt bölümlerine eklemeler yapıldı.
  • All in One Runtimes bölümüne yükleme işlemi öncesi eski sürümleri silme işlemi eklendi. 
  • All in One Runtimes bölümüne Net Framework 3.5/4.8/DirectPlay hizmetlerini aktifleştirmesi için komutlar eklendi.
+ • Windows Düzenleme > Katılımsız program ve ayar ekle [Online] bölümündeki komut hatası giderildi.
 
 :: ==============================================================================================================================
 -----------------

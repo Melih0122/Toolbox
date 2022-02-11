@@ -72,7 +72,7 @@ https://web.whatsapp.com/desktop/windows/release/x64/WhatsAppSetup.exe WhatsApp.
 
 :04
 :: https://signal.org/download/
-https://updates.signal.org/desktop/signal-desktop-win-5.29.1.exe Signal.exe 
+https://updates.signal.org/desktop/signal-desktop-win-5.31.0.exe Signal.exe 
 
 :05
 :: https://desktop.telegram.org/
@@ -106,7 +106,7 @@ https://www.dm.origin.com/download Origin.exe
 
 :13
 :: https://www.cheatengine.org/ 
-https://d1tvmj3dyb0q0v.cloudfront.net/installer/260073092516468167/74653034 CheatEngine.exe
+https://d1tvmj3dyb0q0v.cloudfront.net/installer/799798376243562/95788616 CheatEngine.exe
 
 :14
 https://api.wemod.com/client/download Wemod.exe 
@@ -123,7 +123,7 @@ https://brave-browser-downloads.s3.brave.com/latest/brave_installer-x64.exe Brav
 
 :18
 :: https://www.microsoft.com/en-us/edge/business/download
-https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/dbdd4903-2893-48c6-bd53-a3f03a424e01/MicrosoftEdgeEnterpriseX64.msi edge.msi
+https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/6f9560fe-6261-4d62-92ad-8468042e5438/MicrosoftEdgeEnterpriseX64.msi edge.msi
 
 :19
 ::ISLC
@@ -135,7 +135,7 @@ https://github.com/henrypp/memreduct/releases/download/v.3.4/memreduct-3.4-setup
 
 :21
 :: https://tr.libreoffice.org/indir/libreoffice-taze-surum/
-https://ftp.gwdg.de/pub/tdf/libreoffice/stable/7.2.5/win/x86_64/LibreOffice_7.2.5_Win_x64.msi LibreOffice.msi
+https://ftp.linux.org.tr/tdf/libreoffice/stable/7.3.0/win/x86_64/LibreOffice_7.3.0_Win_x64.msi LibreOffice.msi
 
 :22
 :: get.adobe.com/tr/reader/enterprise/
@@ -155,11 +155,11 @@ https://www.7-zip.org/a/7z2107-x64.msi 7-Zip.msi
 
 :26
 :: https://www.win-rar.com/predownload.html?&L=5
-https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-602tr.exe Winrar.exe  
+https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-610tr.exe Winrar.exe  
 
 :27
 :: https://kdenlive.org/en/download/
-https://download.kde.org/stable/kdenlive/21.12/windows/kdenlive-21.12.1.exe Kdenlive.exe
+https://download.kde.org/stable/kdenlive/21.12/windows/kdenlive-21.12.2.exe Kdenlive.exe
 
 :28
 :: https://www.openshot.org/tr/download/
@@ -289,11 +289,11 @@ https://download-cdn.jetbrains.com/python/pycharm-professional-2021.3.2.exe PyCh
 
 :60
 :: https://notepad-plus-plus.org/downloads/
-https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.2.1/npp.8.2.1.Installer.x64.exe Notepad.exe 
+https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.3/npp.8.3.Installer.x64.exe Notepad.exe 
 
 :61
 :: https://code.visualstudio.com/
-https://az764295.vo.msecnd.net/stable/899d46d82c4c95423fb7e10e68eba52050e30ba3/VSCodeUserSetup-x64-1.63.2.exe VisualStudioCode.exe
+https://az764295.vo.msecnd.net/stable/f80445acd5a3dadef24aa209168452a3d97cc326/VSCodeUserSetup-x64-1.64.2.exe VisualStudioCode.exe
 
 :62
 :: https://desktop.github.com/
