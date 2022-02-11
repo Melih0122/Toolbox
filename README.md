@@ -18,7 +18,7 @@
 ### İstek ve önerileriniz olursa, iletişim;
 - ► Discord: OgnitorenKs#2737 
 - ► Mail: ognitorenks@gmail.com
-- ► Site: ognitorenks.blogspot.com (Bu bölüm şu an aktif değil)
+- ► Site: ognitorenks.blogspot.com
 
 ### Projeye katkıda bulunanlar;
 
@@ -365,7 +365,7 @@ SLMGR.VBS komutlarını içermektedir. Crack tarzı işlemler bulunmamaktadır.
 ![SistemHakkında](https://user-images.githubusercontent.com/93199689/148984034-bcafa477-5e34-4fe5-8723-09c16225dcee.png)
 
 ### • 67 - Wifi Crack:	 
-	• Bu bölümde sisteme girdiğiniz Wifi liste ve şifrelerini görebilirsiniz.
+	• Bu bölümde sisteme girdiğiniz Wifi isim ve şifrelerini görebilirsiniz.
 	• Çalışmasını toolbox'a eklediği için Archley'e teşekkür ederim.
 ### • 97 - Toolbox Rehber:
 	• Toolbox kullanımı hakkında tüm bilgileri verir
