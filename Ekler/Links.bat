@@ -56,8 +56,8 @@ https://download.microsoft.com/download/A/C/2/AC2C903B-E6E8-42C2-9FD7-BEBAC362A9
 https://openal.org/downloads/oalinst.zip oal.zip 
 
 :: https://dotnet.microsoft.com/download/dotnet/5.0
-https://download.visualstudio.microsoft.com/download/pr/2bfb80f2-b8f2-44b0-90c1-d3c8c1c8eac8/409dd3d3367feeeda048f4ff34b32e82/windowsdesktop-runtime-5.0.13-win-x64.exe Desktop5x64.exe  
-https://download.visualstudio.microsoft.com/download/pr/c8125c6b-d399-4be3-b201-8f1394fc3b25/724758f754fc7b67daba74db8d6d91d9/windowsdesktop-runtime-5.0.13-win-x86.exe Desktop5x86.exe 
+https://download.visualstudio.microsoft.com/download/pr/2887cb40-178c-4c1c-8fc1-ad5b8a29075b/33b8f9d6bbcf1b8bef4170ff101e85d0/windowsdesktop-runtime-5.0.14-win-x64.exe Desktop5x64.exe  
+https://download.visualstudio.microsoft.com/download/pr/5bc3f97a-fef2-49cc-8320-eb0910beb9d4/bf0980b7fd0e599cd862db7ab109c2f4/windowsdesktop-runtime-5.0.14-win-x86.exe Desktop5x86.exe 
 
 ::
 https://download.microsoft.com/download/8/4/A/84A35BF1-DAFE-4AE8-82AF-AD2AE20B6B14/directx_Jun2010_redist.exe DirectX.exe
@@ -72,7 +72,7 @@ https://web.whatsapp.com/desktop/windows/release/x64/WhatsAppSetup.exe WhatsApp.
 
 :04
 :: https://signal.org/download/
-https://updates.signal.org/desktop/signal-desktop-win-5.31.0.exe Signal.exe 
+https://updates.signal.org/desktop/signal-desktop-win-5.33.0.exe Signal.exe 
 
 :05
 :: https://desktop.telegram.org/
@@ -123,7 +123,7 @@ https://brave-browser-downloads.s3.brave.com/latest/brave_installer-x64.exe Brav
 
 :18
 :: https://www.microsoft.com/en-us/edge/business/download
-https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/6f9560fe-6261-4d62-92ad-8468042e5438/MicrosoftEdgeEnterpriseX64.msi edge.msi
+https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/e43fb5c1-9521-485e-ac9f-44a06ee99b08/MicrosoftEdgeEnterpriseX64.msi edge.msi
 
 :19
 ::ISLC
@@ -131,7 +131,6 @@ https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/6f9560
 :20
 :: https://github.com/henrypp/memreduct/releases
 https://github.com/henrypp/memreduct/releases/download/v.3.4/memreduct-3.4-setup.exe MemReduct.exe
-
 
 :21
 :: https://tr.libreoffice.org/indir/libreoffice-taze-surum/
@@ -179,7 +178,7 @@ https://download.gimp.org/mirror/pub/gimp/v2.10/windows/gimp-2.10.30-setup.exe G
 
 :32
 :: https://obsproject.com/tr/download
-https://cdn-fastly.obsproject.com/downloads/OBS-Studio-27.1.3-Full-Installer-x64.exe OBS.exe
+https://cdn-fastly.obsproject.com/downloads/OBS-Studio-27.2.1-Full-Installer-x64.exe OBS.exe
 
 :33
 ::https://github.com/ShareX/ShareX/releases
@@ -211,7 +210,7 @@ https://dn3.freedownloadmanager.org/6/latest/fdm_x64_setup.exe FreeDownloadManag
 
 :40
 :: https://www.internetdownloadmanager.com/
-https://mirror2.internetdownloadmanager.com/idman640build7.exe?v=lt&filename=idman640build7.exe idm.exe
+https://mirror2.internetdownloadmanager.com/idman640build8.exe?v=lt&filename=idman640build8.exe idm.exe
 
 :41
 :: https://www.byclickdownloader.com/tr/
@@ -289,7 +288,7 @@ https://download-cdn.jetbrains.com/python/pycharm-professional-2021.3.2.exe PyCh
 
 :60
 :: https://notepad-plus-plus.org/downloads/
-https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.3/npp.8.3.Installer.x64.exe Notepad.exe 
+https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.3.1/npp.8.3.1.Installer.x64.exe Notepad.exe 
 
 :61
 :: https://code.visualstudio.com/

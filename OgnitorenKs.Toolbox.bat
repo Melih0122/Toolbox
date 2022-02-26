@@ -68,7 +68,7 @@ echo 
 echo 
 echo 
 echo 
-echo  %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+echo  %ESC%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%ESC%[0m
 echo  %ESC%[90mº                                                         º%ESC%[0m
 echo  %ESC%[90mº%ESC%[1;97m%ESC%%ESC%[41m               ! UYARI !           ! UYARI !             %ESC%[0m%ESC%[90mº%ESC%[0m
 echo  %ESC%[90mº                                                         º%ESC%[0m
@@ -2116,7 +2116,7 @@ dir /b %konum%\Files\Oldico.zip > NUL 2>&1
 	if %errorlevel%==1 (Call :oldicodown)
 title ICO Ayarlar yaplyor / OgnitorenKs
 taskkill /f /im "explorer.exe" > NUL 2>&1
-echo %ESC%[92m Simgeler ykleniyor...%ESC%[0m
+echo %ESC%%ESC%[1;97m%ESC%%ESC%[42m %1 simgeler ykleniyor...%ESC%[0m
 %PowerRun% Powershell -command "Expand-Archive -Force '%konum%\Files\%~1.zip' 'C:\'"
 timeout /t 20 /nobreak > NUL
 DEL /F /Q /A %userprofile%\AppData\Local\Microsoft\Windows\Explorer\*.* > NUL 2>&1
@@ -2465,7 +2465,6 @@ Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection"
 Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /v "DisableRealtimeMonitoring" /t REG_DWORD /d "1" /f >nul 2>&1
 Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /v "DisableRoutinelyTakingAction" /t REG_DWORD /d "1" /f >nul 2>&1
 Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /v "DisableScanOnRealtimeEnable" /t REG_DWORD /d "1" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /v "DisableScriptScanning" /t REG_DWORD /d "1" /f >nul 2>&1
 Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Remediation" /v "Scan_ScheduleDay" /t REG_DWORD /d "8" /f >nul 2>&1
 Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Remediation" /v "Scan_ScheduleTime" /t REG_DWORD /d 0 /f >nul 2>&1
 Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Reporting" /v "AdditionalActionTimeOut" /t REG_DWORD /d 0 /f >nul 2>&1
@@ -2497,11 +2496,12 @@ Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet" /v "SpyNetRep
 Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet" /v "SubmitSamplesConsent" /t REG_DWORD /d "2" /f >nul 2>&1
 timeout /t 2 /nobreak > NUL
 :: SmartScreen
-::for /f "tokens=* USEBACKQ" %%i in (`%konum%\Files\wmic.exe useraccount where "name="%username%"" get sid ^| findstr "S-"`) do set currentusername=%%i
+::for /f "tokens=* USEBACKQ" %i in (`wmic.exe useraccount where "name="%username%"" get sid ^| findstr "S-"`) do set currentusername=%i
 ::set currentusername=%currentusername:~0,-3%
-::Reg add "HKU\%currentusername%\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" /v "EnableWebContentEvaluation" /t REG_DWORD /d 0 /f >nul 2>&1
-::Reg add "HKU\%currentusername%\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" /v "PreventOverride" /t REG_DWORD /d 0 /f >nul 2>&1
-::Reg add "HKU\%currentusername%\SOFTWARE\Policies\Microsoft\Edge" /v "SmartScreenEnabled" /t REG_DWORD /d 0 /f >nul 2>&1
+For /f "tokens=2" %%a in ('Powershell -command "Get-CimInstance -ClassName Win32_UserAccount | Select-Object -Property Name,SID" ^| Find "%username%"') do set currentusername=%%a
+Reg add "HKU\%currentusername%\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" /v "EnableWebContentEvaluation" /t REG_DWORD /d 0 /f >nul 2>&1
+Reg add "HKU\%currentusername%\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" /v "PreventOverride" /t REG_DWORD /d 0 /f >nul 2>&1
+Reg add "HKU\%currentusername%\SOFTWARE\Policies\Microsoft\Edge" /v "SmartScreenEnabled" /t REG_DWORD /d 0 /f >nul 2>&1
 Reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" /v "EnableWebContentEvaluation" /t REG_DWORD /d 0 /f >nul 2>&1
 Reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" /v "PreventOverride" /t REG_DWORD /d 0 /f >nul 2>&1
 Reg add "HKCU\SOFTWARE\Policies\Microsoft\Edge" /v "SmartScreenEnabled" /t REG_DWORD /d 0 /f >nul 2>&1
@@ -2768,6 +2768,11 @@ reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" 
 :: Market otomatik gncelleŸtirme kapatr.
 reg add "HKLM\SOFTWARE\Policies\Microsoft\WindowsStore" /v "AutoDownload" /t REG_DWORD /d 2 /f > NUL 2>&1
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\CloudContent" /f /v "DisableWindowsConsumerFeatures" /t REG_DWORD /d 1 > NUL 2>&1
+
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\HandwritingErrorReports" "PreventHandwritingErrorReports" 1 & :: El yazs hata raporlarnn paylaŸmn devre dŸ brak 
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\TabletPC" "PreventHandwritingDataSharing" 1 & :: El yazs verilerinin paylaŸmn devre dŸ brak
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\AppCompat" "DisableInventory" 1 & :: Envanter Toplaycy Devre DŸ Brak 
+
 bcdedit /deletevalue useplatformclock
 bcdedit /set {current} recoveryenabled no
 powercfg /h off
@@ -2942,6 +2947,48 @@ ping -n 1 www.google.com.tr -w 20000 > NUL
 						echo [%date% - %time%] ^| wgetyok ^| HATA! ˜nternet ba§lants olmad§ i‡in wget.exe indirilemedi. >> %konum%\Logs
 						timeout /t 5 /nobreak > NUL
 						goto :eof)
+goto :eof
+
+:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+
+:key
+reg add "%~1" /f > NUL 2>&1
+	if %errorlevel%==1 (%PowerRun% reg add "%~1" /f)
+goto :eof
+
+:dword
+reg add "%~1" /v "%~2" /t REG_DWORD /d "%~3" /f > NUL 2>&1
+	if %errorlevel%==1 (%PowerRun% reg add "%~1" /v "%~2" /t REG_DWORD /d "%~3" /f)
+goto :eof
+
+:binary
+reg add "%~1" /v "%~2" /t REG_BINARY /d "%~3" /f > NUL 2>&1
+	if %errorlevel%==1 (%PowerRun% reg add "%~1" /v "%~2" /t REG_BINARY /d "%~3" /f)
+goto :eof
+
+:sz
+reg add "%~1" /v "%~2" /t REG_SZ /d "%~3" /f > NUL 2>&1
+	if %errorlevel%==1 (%PowerRun% reg add "%~1" /v "%~2" /t REG_SZ /d "%~3" /f)
+goto :eof
+
+:vesz
+reg add "%~1" /ve /t REG_SZ /d "%~2" /f > NUL 2>&1
+	if %errorlevel%==1 (%PowerRun% reg add "%~1" /ve /t REG_SZ /d "%~2" /f)
+goto :eof
+
+:multisz
+reg add "%~1" /v "%~2" /t REG_MULTI_SZ /d "%~3" /f > NUL 2>&1
+	if %errorlevel%==1 (%PowerRun% reg add "%~1" /v "%~2" /t REG_MULTI_SZ /d "%~3" /f)
+goto :eof
+
+:delete
+reg delete "%~1" /f > NUL 2>&1
+	if %errorlevel%==1 (%PowerRun% reg delete "%~1" /f)
+goto :eof
+
+:delete2
+reg delete "%~1" /v "%~2" /f > NUL 2>&1
+	if %errorlevel%==1 (%PowerRun% reg delete "%~1" /v "%~2" /f)
 goto :eof
 
 :: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
