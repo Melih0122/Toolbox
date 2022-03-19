@@ -305,7 +305,7 @@ Mavi renkli işlem numaraları 26 numaralı işlem ile alakalıdır.
 	• -------------------------------------------------------------------------------------------------------------------------
 	• 24 - Katılımsız program ve ayar ekle [Offline]: Offline sisteme katılımsız program entegre eder.
 	     • 51 numaralı işlem [Çoklu Seçim] bölümü 1 - 50 işlemlerini kapsamaktadır.
-![cmd_GkxOczJV0D](https://user-images.githubusercontent.com/93199689/149943609-de7cf7d2-37eb-4080-9b2c-bc8650c7e87c.png)
+![cmd_WftVIm7Vzb](https://user-images.githubusercontent.com/93199689/159128905-b14faa62-73c6-4562-b6c7-fbbe7e32a390.png)
 
 	• 25 - Katılımsız program ve ayar ekle [Online]: Offline sisteme indir, kur, sil olarak program entegre eder.
 	     • Yazacaklarım 25 ve 26. bölümleri kapsamaktadır.
@@ -315,7 +315,7 @@ Mavi renkli işlem numaraları 26 numaralı işlem ile alakalıdır.
 	     • 99 numaralı işlem [Yedekten ekle] ile yedeklediğiniz .zip dosyasının yolunu tanımlayarak offline sisteme entegre edebilirsiniz.
 	     • Offline ve online bölümleri aynı anda kullanabilirsiniz. Ancak bu tarz bir durumda 53 numaralı işlemi [Online] bölümünden uygulayın.
 	     • Online bölümü ekleme işleminde indirme olmadığı için çoklu seçim bölümü yoktur.
-![cmd_GTPUe3pUKN](https://user-images.githubusercontent.com/93199689/149943587-8d0c7b9b-5fdb-4466-9da0-6824834442f2.png)
+![cmd_gUm2O3BPO5](https://user-images.githubusercontent.com/93199689/159128945-bc435a7d-43a9-4a4b-86a2-5d384991f03b.png)
 
 	• -------------------------------------------------------------------------------------------------------------------------
 	• 26 - Mount yol tanımla: Bu bölüm 9 - 12 - 13 - 16 - 18 - 19 - 20 - 21 - 22 - 23 - 24 -25 bölümleriyle bağlantılıdır. 
