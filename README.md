@@ -203,7 +203,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip daha sonra aç / kapat baş harflerini eklemek gerekiyor.
 
 Örnek: 1a / 2k / 4A / 10K / 23a / 24k  
-![cmd_KCT6s7tWfQ](https://user-images.githubusercontent.com/93199689/159128469-5e4e7e6e-6e52-4ae9-b9d2-81ca71a9abb7.png)
+![cmd_pgBcYq0H1r](https://user-images.githubusercontent.com/93199689/159128820-0b1a70bb-af86-4b6d-9d19-1f83c9706af4.png)
 
 	• 1 [A/K]- Bluetooth hizmeti : Bluetooth hizmetlerini kapatır açar.
 	• 2 [A/K]- Yazıcı hizmeti : Yazıcı hizmetlerini kapatır açar.
