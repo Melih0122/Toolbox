@@ -3,8 +3,8 @@
 - Toolbox Windows 10 - 11 sürümlerinin x64 mimarilerinde açılmaktadır. Farklı sürümler için desteği yoktur. En güncel olan sürüm ile senkronize olarak gelişmektedir.
 - Windows ekran ölçeklendirme ayarı Toolbox'ın pencere ayarını bozabiliyor. Sorunsuz kullanım için Toolbox'ı kullanırken ölçeklendirme etkileri kapatılmalıdır.
 
-![cmd_k7kLkoB9Ha](https://user-images.githubusercontent.com/93199689/152683972-467e259e-004e-4ffd-b3de-fd03a3ea6fde.png)
-![cmd_4kkFAVjdTu](https://user-images.githubusercontent.com/93199689/152683973-311e3316-3684-4d2f-ad03-6bab3eff2030.png)
+![cmd_PwMyMdogfU](https://user-images.githubusercontent.com/93199689/159128312-4e01b306-c2ac-4984-a9bd-a5eab7fb21c8.png)
+![cmd_ENIRH867xw](https://user-images.githubusercontent.com/93199689/159128335-df60d74f-4a2b-485b-aae9-705b3ffbb76e.png)
 
 ### Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
 
@@ -97,7 +97,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	• 39 - Free Download Manager: İndirme işlemlerinde kullanılacak yardımcı program. Torrent indirme desteğide bulunmaktadır.
 	• 40 - Internet Download Manager: Free Download Manager ile hemen hemen aynı işlevlere sahiptir.
 	• 41 - ByClick Downloader: Youtube'dan video indirmeye yarayan uygulamadır.
-	• 42 - Utorrent: Torrent indirme yazılımıdır.
+	• 42 - Qbittorrent: Torrent indirme yazılımıdır.
 #### ► Diğer Uygulamalar
 	• 43 - GlassWire: İnternet takip programı. Bilgisayarınızda hangi program nereye ne göndermiş ne almış hepsini görebilirsiniz.
 	• 44 - TeamViewer: Bilgisayarlar arası uzaktan bağlantı sağlar.
@@ -122,20 +122,22 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	• 62 - Github Desktop: Grafik arayüzlü bir git istemcisidir.
 	• 63 - Git: Dağıtım takip sistemidir.
 #### ► 3D Uygulamalar	
-	• 64 - Blender: Ücretsiz, açık kaynaklı bir çalışmadır. 3D tasarımlarda kullanılacak mükemmel uygulama. 
+	• 64 - Blender: Ücretsiz, açık kaynaklı bir çalışmadır. 3D tasarımlarda kullanılacak mükemmel uygulama.
+	• 65 - Process Hacker 2: Görev Yöneticisi
 #### ► Oyunlar
-    • 73 - OSU!: Müzik video oyunduur.
-    • 74 - World Of Tanks: Online tank oyunu.
-    • 75 - Genshin Impact: Online oyundur.
-    • 76 - League Of Legends: Riot Games'in oyunudur. 5 vs 5 şeklinde karşılaşma yapılır. Sıkıntılı insanlarla oynandığında klavye kırdırabilir. (Sorumlusu ben değilim :D)
+    • 72 - OSU!: Müzik video oyunduur.
+    • 73 - World Of Tanks: Online tank oyunu.
+    • 74 - Genshin Impact: Online oyundur.
+    • 75 - League Of Legends[TR]: Riot Games'in oyunudur. 5 vs 5 şeklinde karşılaşma yapılır.
+    • 76 - League Of Legends[EUW]: Riot Games'in oyunudur. 5 vs 5 şeklinde karşılaşma yapılır.
     • 77 - Blitz: League Of Legends oyununun yardımcı uygulamasıdır. Hile değildir, ban yeme riski yoktur. Oyun içi rehber görevi görür.
     • 78 - Valorant: Riot Games'in CS:GO tarzı oyunudur.
 # BONUS
 	• 53. - Bu bölüm işletim sistemine göre değişiklik göstermektedir. Windows 11 ve Windows 10 için iki ayrı bölüme ayrılmıştır.
 ### • 53 - Windows 10 Düzenleme
-![cmd_fqQX7gF94V](https://user-images.githubusercontent.com/93199689/150528025-d02fcc25-66f3-485f-af46-765b53406b4c.png)
+![cmd_TrKSpQ64Hw](https://user-images.githubusercontent.com/93199689/159128454-421398b2-9019-42e9-ba8c-3aa17f8a93f0.png)
 
-	• 1 - Saat yanı simgeler [GÖSTER/GİZLE]: 
+	• 1 - Taskbar saat yanı simge ayarı [GÖSTER/GİZLE]: 
 	     •[Göster]: 0 - Saat yanında yer alan tüm simgeleri gösterir.
 	     •[Gizle]: 1 - Saat yanında yer alan simgelerden ağ ve ses dışındaki simgeleri "▲" içine alır
 		
@@ -201,20 +203,20 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip daha sonra aç / kapat baş harflerini eklemek gerekiyor.
 
 Örnek: 1a / 2k / 4A / 10K / 23a / 24k  
-![cmd_QzboAOTK6v](https://user-images.githubusercontent.com/93199689/150527971-8c3bcd83-b282-4b54-8647-da835df6b9e2.png)
+![cmd_KCT6s7tWfQ](https://user-images.githubusercontent.com/93199689/159128469-5e4e7e6e-6e52-4ae9-b9d2-81ca71a9abb7.png)
 
-	• 1 [A/K]- Bluetooth hizmetini : Bluetooth hizmetlerini kapatır açar.
-	• 2 [A/K]- Yazıcı hizmetini : Yazıcı hizmetlerini kapatır açar.
-	• 3 [A/K]- Baskı hizmetini: Baskı cihazınız var ise kapatıp açar.
-	• 4 [A/K]- Telefon hizmetini : Telefon uygulamasına ait hizmetleri kapatır açar.
+	• 1 [A/K]- Bluetooth hizmeti : Bluetooth hizmetlerini kapatır açar.
+	• 2 [A/K]- Yazıcı hizmeti : Yazıcı hizmetlerini kapatır açar.
+	• 3 [A/K]- Baskı hizmeti: Baskı cihazınız var ise kapatıp açar.
+	• 4 [A/K]- Telefon hizmeti : Telefon uygulamasına ait hizmetleri kapatır açar.
 	• 5 [A/K]- Tarifeli ağları : Kotalı internetiniz var, kota aşımını önlemek için bu hizmeti kullanabilirsiniz. (Nasıl oluyor hiç bilmiyorum, yalnızca hizmeti açıyorum :D)
 	• 6 [A/K]- IP Yardımcısı (IPv6) : IPv6 destekli internet hizmetiniz var ise bu hizmeti açın.
 	• 7 [A/K]- Mobil Etkin Nokta (Hotspot) : Kullandığınız cihazdan interneti paylaşmanızı sağlayayacak donanım var ise buradan hizmeti açabilirsiniz.
 	• 8 [A/K]- Radyo ve Uçak modu hizmeti : Laptoplarda kullanılacak hizmettir. Windows 11'de bu hizmet kapalı olunca ağ simgesi görünmüyor. 
 	• 9 [A/K]- Uzak Masaüstü/Akış/Ağ hizmetleri : Aynı ağı kullanan cihazları görmek ve ekrana yansıtma, aktarma, uzak masaüstü hizmetleri için gerekli hizmetleri kapatır, açar.
 	• 10 [A/K]- Windows Şimdi Bağlan (WPS) : WPS özelliğini kullanmanızı sağlayan hizmeti açar.
-	• 11 [A/K]- Tarayıcı hizmetlerini : Tarayıcı cihazınızı sorunsuz kullanmanız için hizmetleri açar.
-	• 12 [A/K]- Kamera hizmetlerini : Kamera cihazınızı sorunsuz kullanmanız için hizmetleri açar.
+	• 11 [A/K]- Tarayıcı hizmetleri : Tarayıcı cihazınızı sorunsuz kullanmanız için hizmetleri açar.
+	• 12 [A/K]- Kamera hizmetleri : Kamera cihazınızı sorunsuz kullanmanız için hizmetleri açar.
 	• 13 [A/K]- Insider hizmeti : Windows ön sürümlerini erkenden deneyimleyip hataları bulup bildirmek gibi bir koca yüreğiniz var ise bu servisi aktif ederek. Insider sürüme kayıt olunuz.
 	• 14 [A/K]- Biyometrik Hizmeti : Kullanıdığınız cihazda parmak okuyucu tarzı cihazlar var ise sorunsuz kullanmanız için açar.
 	• 15 [A/K]- Kalem ve Dokunmatik Klavye hizmetini : Dokunmatik destekli cihazınız var ise sorunsuz kullanmanız için hizmetleri açar.
@@ -230,9 +232,9 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 ### • 55 - Simge Hatasını Düzelt: 
 	• Simgeleri değiştirdikten sonra oluşacak sorunları giderir.
 ### • 56 - Windows Düzenleme:
-Mavi renkli işlem numaraları 27 numaralı işlem ile alakalıdır.
+Mavi renkli işlem numaraları 26 numaralı işlem ile alakalıdır.
 
-![cmd_ny6Aqy4yKG](https://user-images.githubusercontent.com/93199689/150528537-55f9eb5d-c0a1-4207-86ec-d4ac4822bba7.png)
+![cmd_KCT6s7tWfQ](https://user-images.githubusercontent.com/93199689/159128571-d938bcfd-5bc3-4684-8708-db73f0ba85ba.png)
  
 	• 1 - WIM / ESD Okuyucu: install.wim ve install.esd dosyalarının içeriği hakkında bilgi verir.
 	• 2 - AIO Windows Hazırla: İnstall.wim sürümlerini birleştirmeye yarar. "X" tuşu burada çalışmaz.
@@ -281,34 +283,31 @@ Mavi renkli işlem numaraları 27 numaralı işlem ile alakalıdır.
 	     • [Entegre edilmiş hali]: "HKLM\OG_SYSTEM\ControlSet001\Control\FileSystem" /v "LongPathsEnabled" /t REG_DWORD /d 1 /f
 	     • -------------------------------------------------------------------------------
 	• 10 - Regedit [Topla]: Yüklenilen regedit kayıtlarını toplar. Regedit kayıtlarını yüklerseniz toplamayı unutmayın. Yoksa diğer programlarda hata alırsınız.
-	• 11 - Win10 Hazır Regedit Kayıtları: Windows 10 için hazırladığım hazır reg kayıtlarıdır. Offline sisteme entegre edilir.
-	• 12 - Win11 Hazır Regedit Kayıtları: Windows 11 için hazırladığım hazır reg kayıtlarıdır. Offline sisteme entegre edilir.
-	• 13 - Dism Update [Online]: Windows update dosyalarını yüklü sisteme yükler. Update dosyalarını "Edit\Update" içine atınız.
-	• 14 - Dism Update [Offline]: Windows update dosyalarını offline sisteme yükler. Update dosyalarını "Edit\Update" içine atınız.
+	• 11 - Dism Update [Online]: Windows update dosyalarını yüklü sisteme yükler. Update dosyalarını "Edit\Update" içine atınız.
+	• 12 - Dism Update [Offline]: Windows update dosyalarını offline sisteme yükler. Update dosyalarını "Edit\Update" içine atınız.
 	     • Sisteme güncelleme kurmak için Microsoft Update Catalog sitesinden Windows sürümünüzü yazarak arama yapın.
 		• Çıkan arama sonuçlarında "Cumulative" yazan son güncelleştirmeyi indirip yükleyin. Önceki sürümleri de kapsamaktadır. 
 		• Güncelleme dosyalarını indirmek için: 
 		  • ► https://www.catalog.update.microsoft.com/
-	• 15 - Appx Yükleyici [Offline]: Market uygulama paketlerini offline sisteme yükler. Yükleme dosyalarını "Edit\Appx" içine atınız
-	• 16 - Appx Yükleyici [Online]: Market uygulama paketlerini online sisteme yükler. Yükleme dosyalarını "Edit\Appx" içine atınız
+	• 13 - Appx Yükleyici [Offline]: Market uygulama paketlerini offline sisteme yükler. Yükleme dosyalarını "Edit\Appx" içine atınız
+	• 14 - Appx Yükleyici [Online]: Market uygulama paketlerini online sisteme yükler. Yükleme dosyalarını "Edit\Appx" içine atınız
 	     • Appx dosyalarının indirmek için; 
 		• ► https://store.rg-adguard.net/
-	• 17 - Driver Yedekle [Online]: Yüklü sistemden Driverları yedekler. Yedeklediği konum "Edit\Driver\Yedek"
-	• 18 - Driver Yedekle [Offline]: Offline sisteme driver entegre eder. Driver dosyalarını "Edit\Driver" klasörü içine atın. Yedek aldıktan sonra bu bölümü seçerseniz, yedekleri imaja yükler.
-	• 19 - Setup Düzenle [Offline]: Windows yükleme dosyalarını özelleştirir. İlk girişte "Files\setup10.zip" dosyasını indirir. Kendinize özel bölüm oluşturmak istiyorsanız. Aşağıdaki linke bakınız.
-	• 20 - Yeni simgeleri yükle [Offline]: Yeni simgeleri imaja entegre eder. İlk girişte "Files\Newico.zip" dosyasını indirir. 
-	• 21 - Walpaper değiştir [Offline]: Varsayılan duvar kağıtlarını değiştirir. Seçtiğiniz resimleri yüklemek istiyorsanız "Files\Walpaper.zip" dosyasını düzenleyin.
-	• 22 - Telemetri engelle (Host) [Offline]: Offline sistemden hosts dosyasını değiştirir içerisinde telemetri servislerini engelleyen parametreler vardır.
-	• 23 - OneDrive Sil [Offline]: Offline sistemden OneDrive siler.
-	• 24 - Gpedit.msc ekle [Offline]: Offline sistemden Windows Home ve Home Single Language sürümlerine ekleyebilirsiniz.
-	• 25 - Hyper-V ekle: Home ve HomeSingle Language sürümlerinin imajlarına Hyper-V ekler.
-	• 26 - Silinmesi gerekenler: Defender hizmetine bağlı servisleri siler.
+	• 15 - Driver Yedekle [Online]: Yüklü sistemden Driverları yedekler. Yedeklediği konum "Edit\Driver\Yedek"
+	• 16 - Driver Yedekle [Offline]: Offline sisteme driver entegre eder. Driver dosyalarını "Edit\Driver" klasörü içine atın. Yedek aldıktan sonra bu bölümü seçerseniz, yedekleri imaja yükler.
+	• 17 - Setup Düzenle [Offline]: Windows yükleme dosyalarını özelleştirir. İlk girişte "Files\setup10.zip" dosyasını indirir. Kendinize özel bölüm oluşturmak istiyorsanız. Aşağıdaki linke bakınız.
+	• 18 - Yeni simgeleri yükle [Offline]: Yeni simgeleri imaja entegre eder. İlk girişte "Files\Newico.zip" dosyasını indirir. 
+	• 19 - Walpaper değiştir [Offline]: Varsayılan duvar kağıtlarını değiştirir. Seçtiğiniz resimleri yüklemek istiyorsanız "Files\Walpaper.zip" dosyasını düzenleyin.
+	• 20 - Telemetri engelle (Host) [Offline]: Offline sistemden hosts dosyasını değiştirir içerisinde telemetri servislerini engelleyen parametreler vardır.
+	• 21 - OneDrive Sil [Offline]: Offline sistemden OneDrive siler.
+	• 22 - Gpedit.msc ekle [Offline]: Offline sistemden Windows Home ve Home Single Language sürümlerine ekleyebilirsiniz.
+	• 23 - Hyper-V ekle: Home ve HomeSingle Language sürümlerinin imajlarına Hyper-V ekler.
 	• -------------------------------------------------------------------------------------------------------------------------
-	• 27 - Katılımsız program ve ayar ekle [Offline]: Offline sisteme katılımsız program entegre eder.
+	• 24 - Katılımsız program ve ayar ekle [Offline]: Offline sisteme katılımsız program entegre eder.
 	     • 51 numaralı işlem [Çoklu Seçim] bölümü 1 - 50 işlemlerini kapsamaktadır.
 ![cmd_GkxOczJV0D](https://user-images.githubusercontent.com/93199689/149943609-de7cf7d2-37eb-4080-9b2c-bc8650c7e87c.png)
 
-	• 28 - Katılımsız program ve ayar ekle [Online]: Offline sisteme indir, kur, sil olarak program entegre eder.
+	• 25 - Katılımsız program ve ayar ekle [Online]: Offline sisteme indir, kur, sil olarak program entegre eder.
 	     • Yazacaklarım 25 ve 26. bölümleri kapsamaktadır.
 	     • Bu bölümde program eklemek isterseniz öncelikle 53 numaralı işlemi [Katılımsız kurulum dosyası oluştur] uygulayın. Ondan sonra dilediğinizi ekleyin.
 	     • Program ve ayar ekleme işlemi bittikten sonra 54 numaralı işlemi [Katılımsız kurulum dosyasını tamamla] uygulayın. 
@@ -319,7 +318,7 @@ Mavi renkli işlem numaraları 27 numaralı işlem ile alakalıdır.
 ![cmd_GTPUe3pUKN](https://user-images.githubusercontent.com/93199689/149943587-8d0c7b9b-5fdb-4466-9da0-6824834442f2.png)
 
 	• -------------------------------------------------------------------------------------------------------------------------
-	• 29 - Mount yol tanımla: Bu bölüm 9 - 11 - 12 - 14 - 15 - 18 - 20 - 21	- 22 - 23 - 24 - 25 - 26 bölümlerle bağlantılıdır. 
+	• 26 - Mount yol tanımla: Bu bölüm 9 - 12 - 13 - 16 - 18 - 19 - 20 - 21 - 22 - 23 - 24 -25 bölümleriyle bağlantılıdır. 
 	     • Burada tanımlanan klasör yolu ile işlem yapılmaktadır.
 	     • Bu bölüm ilk girişte "Edit\Mount" klasör yolunu alır. Mount dosyaları farklı bir klasörde ise 27 numaralı işlem ile değiştirin.
 ### • 57 - Güncelleme Sonrası Temizlik:
@@ -367,9 +366,13 @@ SLMGR.VBS komutlarını içermektedir. Crack tarzı işlemler bulunmamaktadır.
 ### • 67 - Wifi Crack:	 
 	• Bu bölümde sisteme girdiğiniz Wifi isim ve şifrelerini görebilirsiniz.
 	• Çalışmasını toolbox'a eklediği için Archley'e teşekkür ederim.
+### • 68 - Zaman Ayarlı PC Kapat:
+	• Seçilen belirli bir süreden sonra PC otomatik kapatır.
+![cmd_ScVQsUrVYT](https://user-images.githubusercontent.com/93199689/159128693-a8d1d252-5649-42db-8610-e9df435e6952.png)
+
 ### • 97 - Toolbox Rehber:
 	• Toolbox kullanımı hakkında tüm bilgileri verir
 ### • 98 - Toolbox Güncelle:
 	• Toolbox sürümünüzü buradan tek tıkla güncelleyebilirsiniz. Toolbox konumunu değiştirdiyseniz yeniden "C:\OgnitorenKs.Toolbox" klasörüne kuracaktır.	
-### • 99 - Sürüm Notları: 
-	• Toolbox sürümleri hakkında bilgi alabilirsiniz. Yeni bir sürüm çıkıp çıkmadığını buradan öğrenebilirsiniz.
+### • 99 - Toolbox Link Güncelle
+	• Toolbox'ta yer alan programların güncel linklerini indirir. Linkleri aylık olarak güncelliyorum. Güncellemeyle ilgili notları paylaşacağım.
