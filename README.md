@@ -234,7 +234,7 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 ### • 56 - Windows Düzenleme:
 Mavi renkli işlem numaraları 26 numaralı işlem ile alakalıdır.
 
-![cmd_KCT6s7tWfQ](https://user-images.githubusercontent.com/93199689/159128571-d938bcfd-5bc3-4684-8708-db73f0ba85ba.png)
+![cmd_JYJK1y1ORS](https://user-images.githubusercontent.com/93199689/159128857-9da9fe52-e515-48b2-a49b-5d3c8fa607b3.png)
  
 	• 1 - WIM / ESD Okuyucu: install.wim ve install.esd dosyalarının içeriği hakkında bilgi verir.
 	• 2 - AIO Windows Hazırla: İnstall.wim sürümlerini birleştirmeye yarar. "X" tuşu burada çalışmaz.
