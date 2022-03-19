@@ -1065,7 +1065,7 @@ mode con cols=55 lines=32
 Call :PowerRun
 title Kapatlan Servisler Y”netimi / OgnitorenKs
 echo  %R%[90mษอออออออออออออออออออออออออออออออออออออออออออออออออออป%R%[0m
-echo  %R%[90mบ%R%[1;97m%R%[100m           Kapatlan Servisler Y”netimi            %R%[0m%R%[90mบ%R%[0m
+echo  %R%[90mบ%R%[1;97m%R%[100m                  Servis Y”netimi                  %R%[0m%R%[90mบ%R%[0m
 echo  %R%[90mฬอออออออออออออออออออออออออออออออออออออออออออออออออออน%R%[0m
 echo  %R%[90mบ%R%[0m   %R%[32m 1%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Bluetooth hizmeti%C%[0m                      %R%[90mบ%R%[0m
 echo  %R%[90mบ%R%[0m   %R%[32m 2%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Yazc hizmeti%C%[0m                         %R%[90mบ%R%[0m
