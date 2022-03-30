@@ -35,6 +35,10 @@
    	• ► Archley
    	• ---------
 	  • Wifi Crack çalışmasının toolbox'a eklenmesi.
+    • ----------
+      ► maskem76
+    • ----------
+ 	  • Hyper-V bölümündeki hatanın giderilmesi.
 
 # OGNİTORENKS TOOLBOX İÇERİĞİ
 ## 1 - Online Katılımsız Bölümü;
@@ -166,6 +170,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	• 8 - Simgeleri Değiştir [Eski/Yeni]: 21H2 beta sürümünde gelen ancak iptal edilen simgeleri sisteme yükler. Bu bölüme ilk girişinizde simge dosyalarını indirecektir!
 	     •[Eski]: 1 - Windows 10 eski (Varsayılan) simgeleri yükler.
 	     •[Yeni]: 2 - Windows 10 yeni simgeleri yükler.
+	• 9 - Güncellemeleri 2050 yılına kadar ertele: Windows Update hizmetini 2050 yılına kadar etkisiz hale getirir.
 ### • 53 - Windows 11 Düzenleme
 ![Win11](https://user-images.githubusercontent.com/93199689/147974749-a9d0f0ce-7dd9-4bd2-8a1c-8b972871e09f.png)
 
@@ -199,6 +204,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	     •[Kapat]: 2 - Windows sistem dosyalarını sıkıştırmayı kapatır.
 		
 	• 8 - Gpedit.msc (Yerel Grup ilkesi) [Ekle]: Windows Home ve Home Single Language sürümlerine "Gpedit.msc" ekler.
+	• 9 - Güncellemeleri 2050 yılına kadar ertele: Windows Update hizmetini 2050 yılına kadar etkisiz hale getirir.
 ### • 54 - Kapatılan Servisleri Yönet
 Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip daha sonra aç / kapat baş harflerini eklemek gerekiyor.
 
@@ -229,6 +235,11 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 	• 22 [A/K]- Xbox hizmetini: Xbox servislerini kapatıp, açar.
 	• 23 [A/K]- Bitlocker Sürücü şifreleme hizmeti: Sürücü şifreleme hizmetini kapatır açar.
 	• 24 [A/K]- Karma Gerçeklik hizmeti (VR): Karma gerçeklik kapatır açar.
+	• 25 [A/K]- Driver Yükle / Güncelle (Update): Windows Update üzerinden Driver güncellemesini açıp, kapatmanızı sağlar.
+	• 26 [A/K]- Bellek Sıkıştırma hizmeti: Bellek içindeki verinin belli bir bölümünü sıkıştıran hizmeti kapatır ve açar. Gecikme düşürmek için hizmet kapalı tutulabilir.
+	• 27 [A/K]- Core Parking: İşlemci çekirdeklerinin sürekli tam yükte çalışmasını istiyorsanız hizmeti kapatabilirsiniz. Tam tersi durum için açık hale getirebilirsiniz.
+	• 28 - GPU optimizasyon: AMD ve NVDIA için gerekli olan performans ayarlamalarını sisteme entegre eder.
+	
 ### • 55 - Simge Hatasını Düzelt: 
 	• Simgeleri değiştirdikten sonra oluşacak sorunları giderir.
 ### • 56 - Windows Düzenleme:
