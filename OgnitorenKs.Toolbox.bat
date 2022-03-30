@@ -34,6 +34,7 @@
 ::   KaanBeyhan [DOGGEST]
 ::  ----------------------
 ::     ˜ndirme iŸlemlerinde ilerleme ‡ubu§unun eklenmesi.
+::     Oyun ve GPU optimizasyon b”lmnn eklenmesi. 
 ::  ---------
 ::   Archley
 ::  ---------
@@ -159,7 +160,7 @@ echo %caption2% > NUL
 	if %caption2%==10 (set editmenugo=Win10SettingsMenu) 
 	if %caption2%==11 (set editmenugo=Win11SettingsMenu)
 
-set version=2.4
+set version=2.5
 
 ::set editmenu=Windows 11 Edit
 ::set editmenugo=Win11SettingsMenu
@@ -188,31 +189,31 @@ echo   %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
 echo   %R%[90mº%R%[1;97m%R%[100m OGNITORENKS TOOLBOX %version% %R%[0m%R%[90m ^|%R%[32m USER:%R%[37m%registereduser% %R%[90m^|%R%[32m PC-Name:%R%[37m%pcname%%R%[0m	
 echo   %R%[90mº%R%[32m OS:%R%[37m %caption% %R%[90m^|%R%[37m x%osarch% %R%[90m^|%R%[37m %ImageBuild% %R%[0m%R%[90m^|%R%[37m %isderleme% %R%[90m^|%R%[32m G‡:%R%[37m %gucc% %R%[0m	
 echo   %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
-echo   %R%[90mº%R%[32m  1.%C%[37m All In One Runtimes%C%[0m  %R%[90mº%R%[0m %R%[32m 27.%C%[36m Kdenlive%C%[0m               %R%[90mº%R%[0m          %R%[92m BONUS%R%[0m               %R%[90mº%R%[0m  
-echo   %R%[90mº%R%[32m  2.%C%[33m Discord%C%[0m              %R%[90mº%R%[0m %R%[32m 28.%C%[36m OpenShot%C%[0m               %R%[90mº%R%[32m 53.%C%[36m %editmenu%%R%[0m             %R%[90mº%R%[0m 
-echo   %R%[90mº%R%[32m  3.%C%[33m Whatsapp%C%[0m             %R%[90mº%R%[0m %R%[32m 29.%C%[36m Shotcut%C%[0m                %R%[90mº%R%[32m 54.%C%[33m Hizmetleri Y”net%C%[0m            %R%[90mº%R%[0m 
-echo   %R%[90mº%R%[32m  4.%C%[33m Signal%C%[0m               %R%[90mº%R%[0m %R%[32m 30.%C%[36m Krita%C%[0m                  %R%[90mº%R%[32m 55.%C%[33m ICO Fix%C%[0m                     %R%[90mº%R%[0m 
-echo   %R%[90mº%R%[32m  5.%C%[33m Telegram%C%[0m             %R%[90mº%R%[0m %R%[32m 31.%C%[36m Gimp%C%[0m                   %R%[90mº%R%[32m 56.%C%[37m Windows Edit”r%C%[0m              %R%[90mº%R%[0m 
-echo   %R%[90mº%R%[32m  6.%C%[33m Microsoft Teams%C%[0m      %R%[90mº%R%[0m %R%[32m 32.%C%[36m OBS Studio%C%[0m             %R%[90mº%R%[32m 57.%C%[33m Gncelleme Sonras Temizlik%C%[0m %R%[90mº%R%[0m 
-echo   %R%[90mº%R%[32m  7.%C%[33m Zoom%C%[0m                 %R%[90mº%R%[0m %R%[32m 33.%C%[36m ShareX%C%[0m                 %R%[90mº%R%[32m 58.%C%[33m Sistem / Market Onar%C%[0m        %R%[90mº%R%[0m 
-echo   %R%[90mº%R%[32m  8.%C%[36m EpicGames%C%[0m            %R%[90mº%R%[0m %R%[32m 34.%C%[36m Audacity%C%[0m               %R%[90mº%R%[32m 59.%C%[33m PC Temizle%C%[0m                  %R%[90mº%R%[0m 
-echo   %R%[90mº%R%[32m  9.%C%[36m Steam%C%[0m                %R%[90mº%R%[0m %R%[32m 35.%C%[36m K-Lite Codec%C%[0m           %R%[90mº%R%[32m 60.%C%[36m Appx Y”netici%C%[0m               %R%[90mº%R%[0m 
-echo   %R%[90mº%R%[32m 10.%C%[36m GOG Galaxy%C%[0m           %R%[90mº%R%[0m %R%[32m 36.%C%[36m VLC Media Player%C%[0m       %R%[90mº%R%[32m 61.%C%[36m Folder to ISO%C%[0m               %R%[90mº%R%[0m 
-echo   %R%[90mº%R%[32m 11.%C%[36m Uplay%C%[0m                %R%[90mº%R%[0m %R%[32m 37.%C%[36m Aimp%C%[0m                   %R%[90mº%R%[32m 62.%C%[33m Fat32 to NTFS%C%[0m               %R%[90mº%R%[0m 
-echo   %R%[90mº%R%[32m 12.%C%[36m Origin%C%[0m               %R%[90mº%R%[0m %R%[32m 38.%C%[36m Any Video Converter%C%[0m    %R%[90mº%R%[32m 63.%C%[33m Ping ™l‡er%C%[0m                  %R%[90mº%R%[0m  
+echo   %R%[90mº%R%[32m  1.%C%[37m All In One Runtimes%C%[0m  %R%[90mº%R%[0m %R%[32m 27.%C%[36m Kdenlive%C%[0m               %R%[90mº%R%[0m          %R%[92m BONUS%R%[0m               %R%[90mº%R%[0m
+echo   %R%[90mº%R%[32m  2.%C%[33m Discord%C%[0m              %R%[90mº%R%[0m %R%[32m 28.%C%[36m OpenShot%C%[0m               %R%[90mº%R%[32m 53.%C%[36m %editmenu%%R%[0m             %R%[90mº%R%[0m
+echo   %R%[90mº%R%[32m  3.%C%[33m Whatsapp%C%[0m             %R%[90mº%R%[0m %R%[32m 29.%C%[36m Shotcut%C%[0m                %R%[90mº%R%[32m 54.%C%[33m Hizmetleri Y”net%C%[0m            %R%[90mº%R%[0m
+echo   %R%[90mº%R%[32m  4.%C%[33m Signal%C%[0m               %R%[90mº%R%[0m %R%[32m 30.%C%[36m Krita%C%[0m                  %R%[90mº%R%[32m 55.%C%[33m ICO Fix%C%[0m                     %R%[90mº%R%[0m
+echo   %R%[90mº%R%[32m  5.%C%[33m Telegram%C%[0m             %R%[90mº%R%[0m %R%[32m 31.%C%[36m Gimp%C%[0m                   %R%[90mº%R%[32m 56.%C%[37m Windows Edit”r%C%[0m              %R%[90mº%R%[0m
+echo   %R%[90mº%R%[32m  6.%C%[33m Microsoft Teams%C%[0m      %R%[90mº%R%[0m %R%[32m 32.%C%[36m OBS Studio%C%[0m             %R%[90mº%R%[32m 57.%C%[33m Gncelleme Sonras Temizlik%C%[0m %R%[90mº%R%[0m
+echo   %R%[90mº%R%[32m  7.%C%[33m Zoom%C%[0m                 %R%[90mº%R%[0m %R%[32m 33.%C%[36m ShareX%C%[0m                 %R%[90mº%R%[32m 58.%C%[33m Sistem / Market Onar%C%[0m        %R%[90mº%R%[0m
+echo   %R%[90mº%R%[32m  8.%C%[36m EpicGames%C%[0m            %R%[90mº%R%[0m %R%[32m 34.%C%[36m Audacity%C%[0m               %R%[90mº%R%[32m 59.%C%[33m PC Temizle%C%[0m                  %R%[90mº%R%[0m
+echo   %R%[90mº%R%[32m  9.%C%[36m Steam%C%[0m                %R%[90mº%R%[0m %R%[32m 35.%C%[36m K-Lite Codec%C%[0m           %R%[90mº%R%[32m 60.%C%[36m Appx Y”netici%C%[0m               %R%[90mº%R%[0m
+echo   %R%[90mº%R%[32m 10.%C%[36m GOG Galaxy%C%[0m           %R%[90mº%R%[0m %R%[32m 36.%C%[36m VLC Media Player%C%[0m       %R%[90mº%R%[32m 61.%C%[36m Folder to ISO%C%[0m               %R%[90mº%R%[0m
+echo   %R%[90mº%R%[32m 11.%C%[36m Uplay%C%[0m                %R%[90mº%R%[0m %R%[32m 37.%C%[36m Aimp%C%[0m                   %R%[90mº%R%[32m 62.%C%[33m Fat32 to NTFS%C%[0m               %R%[90mº%R%[0m
+echo   %R%[90mº%R%[32m 12.%C%[36m Origin%C%[0m               %R%[90mº%R%[0m %R%[32m 38.%C%[36m Any Video Converter%C%[0m    %R%[90mº%R%[32m 63.%C%[33m Ping ™l‡er%C%[0m                  %R%[90mº%R%[0m
 echo   %R%[90mº%R%[32m 13.%C%[36m Cheat Engine%C%[0m         %R%[90mº%R%[0m %R%[32m 39.%C%[33m Free Download Manager%C%[0m  %R%[90mº%R%[32m 64.%C%[33m Lisans Y”netimi%C%[0m             %R%[90mº%R%[0m
 echo   %R%[90mº%R%[32m 14.%C%[36m Wemod%C%[0m                %R%[90mº%R%[0m %R%[32m 40.%C%[33m ˜nt Download Manager%C%[0m   %R%[90mº%R%[32m 65.%C%[33m Kullanc Hesap Y”netimi%C%[0m     %R%[90mº%R%[0m
-echo   %R%[90mº%R%[32m 15.%C%[33m Google Chrome%C%[0m        %R%[90mº%R%[0m %R%[32m 41.%C%[33m ByClick Downloader%C%[0m     %R%[90mº%R%[32m 66.%C%[33m Sistem Hakknda%C%[0m             %R%[90mº%R%[0m 
+echo   %R%[90mº%R%[32m 15.%C%[33m Google Chrome%C%[0m        %R%[90mº%R%[0m %R%[32m 41.%C%[33m ByClick Downloader%C%[0m     %R%[90mº%R%[32m 66.%C%[33m Sistem Hakknda%C%[0m             %R%[90mº%R%[0m
 echo   %R%[90mº%R%[32m 16.%C%[33m Mozilla Firefox%C%[0m      %R%[90mº%R%[0m %R%[32m 42.%C%[33m QbitTorrent%C%[0m            %R%[90mº%R%[32m 67.%C%[33m Wifi Crack%C%[0m                  %R%[90mº%R%[0m
-echo   %R%[90mº%R%[32m 17.%C%[33m Brave%C%[0m                %R%[90mº%R%[0m %R%[32m 43.%C%[33m GlassWire%C%[0m              %R%[90mº%R%[32m 68.%C%[33m Zaman Ayarl PC Kapat%C%[0m       %R%[90mº%R%[0m  
-echo   %R%[90mº%R%[32m 18.%C%[33m Microsoft Edge%C%[0m       %R%[90mº%R%[0m %R%[32m 44.%C%[33m TeamViewer%C%[0m             %R%[90mº%R%[0m                                 %R%[90mº%R%[0m 
+echo   %R%[90mº%R%[32m 17.%C%[33m Brave%C%[0m                %R%[90mº%R%[0m %R%[32m 43.%C%[33m GlassWire%C%[0m              %R%[90mº%R%[32m 68.%C%[33m Zaman Ayarl PC Kapat%C%[0m       %R%[90mº%R%[0m
+echo   %R%[90mº%R%[32m 18.%C%[33m Microsoft Edge%C%[0m       %R%[90mº%R%[0m %R%[32m 44.%C%[33m TeamViewer%C%[0m             %R%[90mº%R%[0m                                 %R%[90mº%R%[0m
 echo   %R%[90mº%R%[32m 19.%C%[37m ISLC%C%[0m                 %R%[90mº%R%[0m %R%[32m 45.%C%[33m Hamachi%C%[0m                %R%[90mº%R%[0m                                 %R%[90mº%R%[0m 
 echo   %R%[90mº%R%[32m 20.%C%[37m MemReduct%C%[0m            %R%[90mº%R%[0m %R%[32m 46.%C%[33m Stremio%C%[0m                %R%[90mº%R%[0m                                 %R%[90mº%R%[0m 
 echo   %R%[90mº%R%[32m 21.%C%[36m Libre Office%C%[0m         %R%[90mº%R%[0m %R%[32m 47.%C%[36m MSI Afterburner%C%[0m        %R%[90mº%R%[0m                                 %R%[90mº%R%[0m 
 echo   %R%[90mº%R%[32m 22.%C%[36m Adobe Reader%C%[0m         %R%[90mº%R%[0m %R%[32m 48.%C%[36m Hibit Uninstaller%C%[0m      %R%[90mº%R%[0m                                 %R%[90mº%R%[0m 
 echo   %R%[90mº%R%[32m 23.%C%[36m PDF-XChange Edit”r%C%[0m   %R%[90mº%R%[0m %R%[32m 49.%C%[36m Wise Care 365%C%[0m          %R%[90mº%R%[0m                                 %R%[90mº%R%[0m 
-echo   %R%[90mº%R%[32m 24.%C%[36m Calibre%C%[0m              %R%[90mº%R%[0m %R%[32m 50.%C%[36m Unlocker%C%[0m               %R%[90mº%R%[32m 97.%C%[36m Toolbox Rehber%C%[0m              %R%[90mº%R%[0m 
-echo   %R%[90mº%R%[32m 25.%C%[33m 7 - Zip%C%[0m              %R%[90mº%R%[0m %R%[32m 51.%C%[36m SSD Booster%C%[0m            %R%[90mº%R%[32m 98.%C%[36m Toolbox Gncelle%C%[0m            %R%[90mº%R%[0m 
+echo   %R%[90mº%R%[32m 24.%C%[36m Calibre%C%[0m              %R%[90mº%R%[0m %R%[32m 50.%C%[36m Unlocker%C%[0m               %R%[90mº%R%[32m 97.%C%[36m Toolbox Rehber%C%[0m              %R%[90mº%R%[0m
+echo   %R%[90mº%R%[32m 25.%C%[33m 7 - Zip%C%[0m              %R%[90mº%R%[0m %R%[32m 51.%C%[36m SSD Booster%C%[0m            %R%[90mº%R%[32m 98.%C%[36m Toolbox Gncelle%C%[0m            %R%[90mº%R%[0m
 echo   %R%[90mº%R%[32m 26.%C%[33m WinRAR%C%[0m               %R%[90mº%R%[0m %R%[32m 52.%C%[36m OpenShell%C%[0m              %R%[90mº%R%[32m 99.%C%[36m Toolbox Link Gncelle%C%[0m       %R%[90mº%R%[0m
 echo   %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
 echo   %R%[90mº%R%[0m %R%[32m X.%R%[37m Temizle ve Kapat%R%[0m       [%R%[1;97m%R%[100mognitorenks.blogspot.com%R%[0m]   %R%[32m  Z.%C%[37m Listeyi GeniŸlet ^>^>^>%R%[0m        %R%[90mº%R%[0m
@@ -539,12 +540,9 @@ FOR /F "tokens=1" %%i in ('FIND "Chrome" %Location%\Extra\Links.bat') do set lin
 Call :wget2 "%link%" Chrome.zip /qn
 Call :ZipExport Chrome.zip
 "%download%\Chrome\Installers\GoogleChromeStandaloneEnterprise64.msi" /qn
-REM UBlock Origin
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\cjpalhdlnbpafiamejdnhcphjbkeiagm" /v "update_url" /t REG_SZ /d "https://clients2.google.com/service/update2/crx" /f > NUL 2>&1
-REM HTTPS Everywhere
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\gcbommkclmclpchllfjekcdonpmejbdp" /v "update_url" /t REG_SZ /d "https://clients2.google.com/service/update2/crx" /f > NUL 2>&1
-REM Clear URL's
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\lckanjgmijmafbedllaakclkaicjfmnk" /v "update_url" /t REG_SZ /d "https://clients2.google.com/service/update2/crx" /f > NUL 2>&1
+reg add "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\cjpalhdlnbpafiamejdnhcphjbkeiagm" "update_url" "https://clients2.google.com/service/update2/crx" & :: UBlock Origin
+reg add "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\gcbommkclmclpchllfjekcdonpmejbdp" "update_url" "https://clients2.google.com/service/update2/crx" & :: HTTPS Everywhere 
+reg add "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\lckanjgmijmafbedllaakclkaicjfmnk" "update_url" "https://clients2.google.com/service/update2/crx" & :: Clear URL's
 goto :eof 
 
 :Download16
@@ -555,17 +553,17 @@ goto :eof
 :Download17
 FOR /F "tokens=1" %%i in ('FIND "Brave" %Location%\Extra\Links.bat') do set link=%%i
 Call :wget "%link%" Brave.exe "--install --silent --system-level"
-REM UBlock Origin
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\cjpalhdlnbpafiamejdnhcphjbkeiagm" /v "update_url" /t REG_SZ /d "https://clients2.google.com/service/update2/crx" /f > NUL 2>&1
-REM HTTPS Everywhere
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\gcbommkclmclpchllfjekcdonpmejbdp" /v "update_url" /t REG_SZ /d "https://clients2.google.com/service/update2/crx" /f > NUL 2>&1
-REM Clear URL's
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\lckanjgmijmafbedllaakclkaicjfmnk" /v "update_url" /t REG_SZ /d "https://clients2.google.com/service/update2/crx" /f > NUL 2>&1
+reg add "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\cjpalhdlnbpafiamejdnhcphjbkeiagm" "update_url" "https://clients2.google.com/service/update2/crx" & :: UBlock Origin
+reg add "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\gcbommkclmclpchllfjekcdonpmejbdp" "update_url" "https://clients2.google.com/service/update2/crx" & :: HTTPS Everywhere 
+reg add "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\lckanjgmijmafbedllaakclkaicjfmnk" "update_url" "https://clients2.google.com/service/update2/crx" & :: Clear URL's
 goto :eof 
 
 :Download18
 FOR /F "tokens=1" %%i in ('FIND "edge.msi" %Location%\Extra\Links.bat') do set link=%%i
 Call :wget "%link%" edge.msi /qn
+Call :sz "HKLM\SOFTWARE\WOW6432Node\Microsoft\Edge\Extensions\cjpalhdlnbpafiamejdnhcphjbkeiagm" "update_url" "https://clients2.google.com/service/update2/crx" & :: UBlock Origin 
+Call :sz "HKLM\SOFTWARE\WOW6432Node\Microsoft\Edge\Extensions\gcbommkclmclpchllfjekcdonpmejbdp" "update_url" "https://clients2.google.com/service/update2/crx" & :: HTTPS Everywhere 
+Call :sz "HKLM\SOFTWARE\WOW6432Node\Microsoft\Edge\Extensions\lckanjgmijmafbedllaakclkaicjfmnk" "update_url" "https://clients2.google.com/service/update2/crx" & :: Clear URL's
 goto :eof
 
 :Download19
@@ -1061,7 +1059,7 @@ goto menu
 :stop
 :servicesmanagement
 cls
-mode con cols=55 lines=32
+mode con cols=55 lines=35
 Call :PowerRun
 title Kapatlan Servisler Y”netimi / OgnitorenKs
 echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
@@ -1069,7 +1067,7 @@ echo  %R%[90mº%R%[1;97m%R%[100m                  Servis Y”netimi                
 echo  %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
 echo  %R%[90mº%R%[0m   %R%[32m 1%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Bluetooth hizmeti%C%[0m                      %R%[90mº%R%[0m
 echo  %R%[90mº%R%[0m   %R%[32m 2%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Yazc hizmeti%C%[0m                         %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m   %R%[32m 3%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Bask hizmetini %C%[0m                       %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m   %R%[32m 3%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Bask hizmeti%C%[0m                          %R%[90mº%R%[0m
 echo  %R%[90mº%R%[0m   %R%[32m 4%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Telefon hizmeti%C%[0m                        %R%[90mº%R%[0m
 echo  %R%[90mº%R%[0m   %R%[32m 5%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Tarifeli a§lar hizmeti%C%[0m                 %R%[90mº%R%[0m
 echo  %R%[90mº%R%[0m   %R%[32m 6%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m IP yardmcs (IPv6)%C%[0m                   %R%[90mº%R%[0m
@@ -1077,20 +1075,23 @@ echo  %R%[90mº%R%[0m   %R%[32m 7%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.
 echo  %R%[90mº%R%[0m   %R%[32m 8%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Radyo ve U‡ak modu hizmeti%C%[0m             %R%[90mº%R%[0m
 echo  %R%[90mº%R%[0m   %R%[32m 9%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Uzak Masast/AkŸ/A§ hizmetleri%C%[0m       %R%[90mº%R%[0m
 echo  %R%[90mº%R%[0m  %R%[32m 10%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Windows žimdi Ba§lan(WPS) hizmeti%C%[0m      %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 11%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Tarayc hizmetleri%C%[0m                    %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 12%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Kamera hizmetleri%C%[0m                      %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 13%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Insider hizmeti%C%[0m                        %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 14%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Biyometrik hizmeti%C%[0m                     %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 15%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Kalem ve Dokunmatik hizmeti%C%[0m            %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 16%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Sistem Geri ykleme hizmeti%C%[0m            %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 17%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Sysmain (Hzl Getir)%C%[0m                  %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 18%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Hzl BaŸlat (Hibernate)%C%[0m               %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 19%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Konum hizmeti%C%[0m                          %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 20%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Windows Media Player%C%[0m                   %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 21%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Hyper-V hizmeti%C%[0m                        %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 22%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Xbox hizmetini%C%[0m                         %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 23%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Bitlocker Src Ÿifreleme hizmeti%C%[0m     %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 24%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Karma Ger‡eklik hizmeti (VR)%C%[0m           %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 11%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Tarayc ve Kamera hizmetleri%C%[0m          %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 12%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Insider hizmeti%C%[0m                        %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 13%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Biyometrik hizmeti%C%[0m                     %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 14%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Kalem ve Dokunmatik hizmeti%C%[0m            %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 15%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Sistem Geri ykleme hizmeti%C%[0m            %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 16%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Sysmain (Hzl Getir)%C%[0m                  %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 17%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Hzl BaŸlat (Hibernate)%C%[0m               %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 18%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Konum hizmeti%C%[0m                          %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 19%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Windows Media Player%C%[0m                   %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 20%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Hyper-V hizmeti%C%[0m                        %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 21%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Xbox hizmeti%C%[0m                           %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 22%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Bitlocker Src Ÿifreleme hizmeti%C%[0m     %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 23%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Karma Ger‡eklik hizmeti (VR)%C%[0m           %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 24%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Driver Ykle/Gncelle (Update)%C%[0m         %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 25%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Bellek SkŸtrma hizmeti%C%[0m              %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 26%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Core Parking%C%[0m                           %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 27%R%[32m.%C%[33m GPU Optimizasyonu%C%[0m                           %R%[90mº%R%[0m
 echo  %R%[90mº%R%[0m        %R%[32m X.%R%[36m Men%R%[0m                                   %R%[90mº%R%[0m
 echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
 set /p value= %C%[92m ˜Ÿlem : %C%[0m
@@ -1134,69 +1135,78 @@ set /p value= %C%[92m ˜Ÿlem : %C%[0m
 	if %value%==10A (Call :serv.10.wps start demand a‡lyor)
 	if %value%==10K (Call :serv.10.wps stop disabled kapatlyor)
 	if %value%==10k (Call :serv.10.wps stop disabled kapatlyor)
-	if %value%==11a (Call :serv.11.tarayici start demand a‡lyor)
-	if %value%==11A (Call :serv.11.tarayici start demand a‡lyor)
-	if %value%==11K (Call :serv.11.tarayici stop disabled kapatlyor)
-	if %value%==11k (Call :serv.11.tarayici stop disabled kapatlyor)
-	if %value%==12a (Call :serv.12.camera start demand a‡lyor)
-	if %value%==12A (Call :serv.12.camera start demand a‡lyor)
-	if %value%==12K (Call :serv.12.camera stop disabled kapatlyor)
-	if %value%==12k (Call :serv.12.camera stop disabled kapatlyor)
-	if %value%==13a (Call :serv.13.insider start demand a‡lyor)
-	if %value%==13A (Call :serv.13.insider start demand a‡lyor)
-	if %value%==13K (Call :serv.13.insider stop disabled kapatlyor)
-	if %value%==13k (Call :serv.13.insider stop disabled kapatlyor)
-	if %value%==14a (Call :serv.14.biyometrik start demand a‡lyor)
-	if %value%==14A (Call :serv.14.biyometrik start demand a‡lyor)
-	if %value%==14K (Call :serv.14.biyometrik stop disabled kapatlyor)
-	if %value%==14k (Call :serv.14.biyometrik stop disabled kapatlyor)
-	if %value%==15a (Call :serv.15.dokunmatik start demand a‡lyor)
-	if %value%==15A (Call :serv.15.dokunmatik start demand a‡lyor)
-	if %value%==15K (Call :serv.15.dokunmatik stop disabled kapatlyor)
-	if %value%==15k (Call :serv.15.dokunmatik stop disabled kapatlyor)
-	if %value%==16a (Call :serv.16.sistemgeriyukleme start demand ENABLE 0 a‡lyor)
-	if %value%==16A (Call :serv.16.sistemgeriyukleme start demand ENABLE 0 a‡lyor)
-	if %value%==16K (Call :serv.16.sistemgeriyukleme stop disabled DISABLE 1 kapatlyor)
-	if %value%==16k (Call :serv.16.sistemgeriyukleme stop disabled DISABLE 1 kapatlyor)
-	if %value%==17a (Call :serv.17.sysmain start auto a‡lyor)
-	if %value%==17A (Call :serv.17.sysmain start auto a‡lyor)
-	if %value%==17K (Call :serv.17.sysmain stop disabled kapatlyor)
-	if %value%==17k (Call :serv.17.sysmain stop disabled kapatlyor)
-	if %value%==18a (Call :serv.18.hibernate on 1 a‡lyor)
-	if %value%==18A (Call :serv.18.hibernate on 1 a‡lyor)
-	if %value%==18K (Call :serv.18.hibernate off 0 kapatlyor)
-	if %value%==18k (Call :serv.18.hibernate off 0 kapatlyor)
-	if %value%==19a (Call :serv.19.Location start demand Allow 1 delete "/v "DisableLocation" /f" a‡lyor)
-	if %value%==19A (Call :serv.19.Location start demand Allow 1 delete "/v "DisableLocation" /f" a‡lyor)
-	if %value%==19K (Call :serv.19.Location stop disabled Deny 0 add "/v "DisableLocation" /t REG_DWORD /d 1 /f" kaptlyor)
-	if %value%==19k (Call :serv.19.Location stop disabled Deny 0 add "/v "DisableLocation" /t REG_DWORD /d 1 /f" kaptlyor)
-	if %value%==20a (Call :serv.20.mediaplayer start demand ENABLE a‡lyor)
-	if %value%==20A (Call :serv.20.mediaplayer start demand ENABLE a‡lyor)
-	if %value%==20K (Call :serv.20.mediaplayer stop disabled DISABLE kapatlyor)
-	if %value%==20k (Call :serv.20.mediaplayer stop disabled DISABLE kapatlyor)
-	if %value%==21a (Call :serv.21.hyperv demand Enable For a‡lyor)
-	if %value%==21A (Call :serv.21.hyperv demand Enable For a‡lyor)
-	if %value%==21K (Call :serv.21.hyperv disabled Disable "::" kapatlyor)
-	if %value%==21k (Call :serv.21.hyperv disabled Disable "::" kapatlyor)
-	if %value%==22a (Call :serv.22.xbox start demand 1 0 delete "/v "AllowGameDVR" /f" a‡lyor)
-	if %value%==22A (Call :serv.22.xbox start demand 1 0 delete "/v "AllowGameDVR" /f" a‡lyor)
-	if %value%==22K (Call :serv.22.xbox stop disabled 0 2 add "/v "AllowGameDVR" /t REG_DWORD /d 0 /f" kapatlyor)
-	if %value%==22k (Call :serv.22.xbox stop disabled 0 2 add "/v "AllowGameDVR" /t REG_DWORD /d 0 /f" kapatlyor)
-	if %value%==23a (Call :serv.23.bitlocker start demand a‡lyor)
-	if %value%==23A (Call :serv.23.bitlocker start demand a‡lyor)
-	if %value%==23K (Call :serv.23.bitlocker stop disabled kapatlyor)
-	if %value%==23k (Call :serv.23.bitlocker stop disabled kapatlyor)
-	if %value%==24a (Call :serv.24.mixedreality demand a‡lyor)
-	if %value%==24A (Call :serv.24.mixedreality demand a‡lyor)
-	if %value%==24K (Call :serv.24.mixedreality disabled kapatlyor)
-	if %value%==24k (Call :serv.24.mixedreality disabled kapatlyor)
+	if %value%==11a (Call :serv.11.camera start demand a‡lyor)
+	if %value%==11A (Call :serv.11.camera start demand a‡lyor)
+	if %value%==11K (Call :serv.11.camera stop disabled kapatlyor)
+	if %value%==11k (Call :serv.11.camera stop disabled kapatlyor)
+	if %value%==12a (Call :serv.12.insider start demand a‡lyor)
+	if %value%==12A (Call :serv.12.insider start demand a‡lyor)
+	if %value%==12K (Call :serv.12.insider stop disabled kapatlyor)
+	if %value%==12k (Call :serv.12.insider stop disabled kapatlyor)
+	if %value%==13a (Call :serv.13.biyometrik start demand a‡lyor)
+	if %value%==13A (Call :serv.13.biyometrik start demand a‡lyor)
+	if %value%==13K (Call :serv.13.biyometrik stop disabled kapatlyor)
+	if %value%==13k (Call :serv.13.biyometrik stop disabled kapatlyor)
+	if %value%==14a (Call :serv.14.dokunmatik start demand a‡lyor)
+	if %value%==14A (Call :serv.14.dokunmatik start demand a‡lyor)
+	if %value%==14K (Call :serv.14.dokunmatik stop disabled kapatlyor)
+	if %value%==14k (Call :serv.14.dokunmatik stop disabled kapatlyor)
+	if %value%==15a (Call :serv.15.sistemgeriyukleme start demand ENABLE 0 a‡lyor)
+	if %value%==15A (Call :serv.15.sistemgeriyukleme start demand ENABLE 0 a‡lyor)
+	if %value%==15K (Call :serv.15.sistemgeriyukleme stop disabled DISABLE 1 kapatlyor)
+	if %value%==15k (Call :serv.15.sistemgeriyukleme stop disabled DISABLE 1 kapatlyor)
+	if %value%==16a (Call :serv.16.sysmain start auto a‡lyor)
+	if %value%==16A (Call :serv.16.sysmain start auto a‡lyor)
+	if %value%==16K (Call :serv.16.sysmain stop disabled kapatlyor)
+	if %value%==16k (Call :serv.16.sysmain stop disabled kapatlyor)
+	if %value%==17a (Call :serv.17.hibernate on 1 a‡lyor)
+	if %value%==17A (Call :serv.17.hibernate on 1 a‡lyor)
+	if %value%==17K (Call :serv.17.hibernate off 0 kapatlyor)
+	if %value%==17k (Call :serv.17.hibernate off 0 kapatlyor)
+	if %value%==18a (Call :serv.18.Location start demand Allow 1 delete "/v "DisableLocation" /f" a‡lyor)
+	if %value%==18A (Call :serv.18.Location start demand Allow 1 delete "/v "DisableLocation" /f" a‡lyor)
+	if %value%==18K (Call :serv.18.Location stop disabled Deny 0 add "/v "DisableLocation" /t REG_DWORD /d 1 /f" kaptlyor)
+	if %value%==18k (Call :serv.18.Location stop disabled Deny 0 add "/v "DisableLocation" /t REG_DWORD /d 1 /f" kaptlyor)
+	if %value%==19a (Call :serv.19.mediaplayer start demand ENABLE a‡lyor)
+	if %value%==19A (Call :serv.19.mediaplayer start demand ENABLE a‡lyor)
+	if %value%==19K (Call :serv.19.mediaplayer stop disabled DISABLE kapatlyor)
+	if %value%==19k (Call :serv.19.mediaplayer stop disabled DISABLE kapatlyor)
+	if %value%==20a (Call :serv.20.hyperv demand Enable For a‡lyor)
+	if %value%==20A (Call :serv.20.hyperv demand Enable For a‡lyor)
+	if %value%==20K (Call :serv.20.hyperv disabled Disable "::" kapatlyor)
+	if %value%==20k (Call :serv.20.hyperv disabled Disable "::" kapatlyor)
+	if %value%==21a (Call :serv.21.xbox start demand 1 0 delete "/v "AllowGameDVR" /f" a‡lyor)
+	if %value%==21A (Call :serv.21.xbox start demand 1 0 delete "/v "AllowGameDVR" /f" a‡lyor)
+	if %value%==21K (Call :serv.21.xbox stop disabled 0 2 add "/v "AllowGameDVR" /t REG_DWORD /d 0 /f" kapatlyor)
+	if %value%==21k (Call :serv.21.xbox stop disabled 0 2 add "/v "AllowGameDVR" /t REG_DWORD /d 0 /f" kapatlyor)
+	if %value%==22a (Call :serv.22.bitlocker start demand a‡lyor)
+	if %value%==22A (Call :serv.22.bitlocker start demand a‡lyor)
+	if %value%==22K (Call :serv.22.bitlocker stop disabled kapatlyor)
+	if %value%==22k (Call :serv.22.bitlocker stop disabled kapatlyor)
+	if %value%==23a (Call :serv.23.mixedreality demand a‡lyor)
+	if %value%==23A (Call :serv.23.mixedreality demand a‡lyor)
+	if %value%==23K (Call :serv.23.mixedreality disabled kapatlyor)
+	if %value%==23k (Call :serv.23.mixedreality disabled kapatlyor)
+	if %value%==24a (Call :serv.24.driverupdate 0 1 a‡lyor)
+	if %value%==24A (Call :serv.24.driverupdate 0 1 a‡lyor)
+	if %value%==24K (Call :serv.24.driverupdate 1 0 kapatlyor)
+	if %value%==24k (Call :serv.24.driverupdate 1 0 kapatlyor)
+	if %value%==25a (Call :serv.25.memorycompression Enable A‡lyor)
+	if %value%==25A (Call :serv.25.memorycompression Enable A‡lyor)
+	if %value%==25K (Call :serv.25.memorycompression Disable Kapatlyor)
+	if %value%==25k (Call :serv.25.memorycompression Disable Kapatlyor)
+	if %value%==26a (Call :serv.26.coreparking 100 "Call :delete" "Call :delete2" a‡lyor)
+	if %value%==26A (Call :serv.26.coreparking 100 "Call :delete" "Call :delete2" a‡lyor)
+	if %value%==26K (Call :serv.26.coreparking 0 "Call :dword" "Call :dword" kapatlyor)
+	if %value%==26k (Call :serv.26.coreparking 0 "Call :dword" "Call :dword" kapatlyor)
+	if %value%==27 (Call :serv.27.gpuoptimization)
 	if %value%==x goto menu
 	if %value%==X goto menu
 ) else 
 	goto servicesmanagement
 
 :serv.1.bluetooth
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Bluetooth hizmeti %3. >> %Location%\Logs
+echo [%date% - %time%] ^| Hizmetleri Y”net ^| Bluetooth hizmeti %3. >> %Location%\Logs
 echo   %C%[96mBluetooth hizmeti %3 ...%C%[0m
 :: Bluetooth (AVCTP hizmeti) 
 ::  Ses, video denetim aktarm protokoldr.
@@ -1221,7 +1231,7 @@ echo   %C%[96mBluetooth hizmeti %3 ...%C%[0m
 goto :eof
 
 :serv.2.yazici
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Yazc hizmeti %4. >> %Location%\Logs
+echo [%date% - %time%] ^| Hizmetleri Y”net ^| Yazc hizmeti %4. >> %Location%\Logs
 echo   %C%[96mYazc hizmetleri %4 ...%C%[0m
 %PowerRun% sc config "Spooler" start= %3
 %PowerRun% net %1 Spooler
@@ -1236,7 +1246,7 @@ DEL /F /Q /A %windir%\System32\spool\PRINTERS\*
 goto :eof
 
 :serv.3.baski
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Yazc hizmeti %3. >> %Location%\Logs
+echo [%date% - %time%] ^| Hizmetleri Y”net ^| Yazc hizmeti %3. >> %Location%\Logs
 echo   %C%[96mBask hizmetleri %3 ...%C%[0m 
 ::PrintWorkFlow (iŸ akŸ hizmeti)
 %PowerRun% sc config McpManagementService start= %2
@@ -1250,7 +1260,7 @@ echo   %C%[96mBask hizmetleri %3 ...%C%[0m
 goto :eof
 
 :serv.4.phone
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Telefon hizmeti %3. >> %Location%\Logs
+echo [%date% - %time%] ^| Hizmetleri Y”net ^| Telefon hizmeti %3. >> %Location%\Logs
 echo   %C%[96mTelefon hizmeti %3 ...%C%[0m 
 :: Telefon
 %PowerRun% sc config TapiSrv start= %2
@@ -1281,7 +1291,7 @@ echo   %C%[96mTelefon hizmeti %3 ...%C%[0m
 goto :eof
 
 :serv.5.tarifeli
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Tarifeli a§lar hizmeti %3. >> %Location%\Logs
+echo [%date% - %time%] ^| Hizmetleri Y”net ^| Tarifeli a§lar hizmeti %3. >> %Location%\Logs
 echo   %C%[96mTarifeli a§lar hizmeti %3 ...%C%[0m
 :: Veri kullanm
 ::  Arkaplan verilierni ve a§ kullanmn snrlar
@@ -1294,7 +1304,7 @@ echo   %C%[96mTarifeli a§lar hizmeti %3 ...%C%[0m
 goto :eof
 
 :serv.6.ipyardmci
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| IP yardmc hizmeti %4. >> %Location%\Logs
+echo [%date% - %time%] ^| Hizmetleri Y”net ^| IP yardmc hizmeti %4. >> %Location%\Logs
 echo   %C%[96mIP yardmcs hizmeti %4 ...%C%[0m
 ::  IPv6 ge‡iŸ teknolojileri ve IP-HTTPS kullanarak tnel ba§lants sa§lar.
 %PowerRun% sc config iphlpsvc start= %3
@@ -1309,7 +1319,7 @@ echo   %C%[96mIP yardmcs hizmeti %4 ...%C%[0m
 goto :eof
 
 :serv.7.hotspot
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Mobil Etkin Nokta hizmeti %3. >> %Location%\Logs
+echo [%date% - %time%] ^| Hizmetleri Y”net ^| Mobil Etkin Nokta hizmeti %3. >> %Location%\Logs
 echo   %C%[96mMobil etkin nokta hizmeti %3 ...%C%[0m
 ::  Veri ba§lantsnn baŸka bir cihazla paylaŸlmasn sa§lar
 %PowerRun% sc config icssvc start= %2
@@ -1327,7 +1337,7 @@ echo   %C%[96mMobil etkin nokta hizmeti %3 ...%C%[0m
 goto :eof
 
 :serv.8.ucakmodu
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Radyo ve U‡ak Modu hizmeti %3. >> %Location%\Logs
+echo [%date% - %time%] ^| Hizmetleri Y”net ^| Radyo ve U‡ak Modu hizmeti %3. >> %Location%\Logs
 echo   %C%[96mRadyo y”netim ve u‡ak modu hizmeti %3 ...%C%[0m
 ::  Radyo y”netimi ve u‡ak modu hizmeti
 %PowerRun% sc config RMSvc start= %2
@@ -1339,7 +1349,7 @@ echo   %C%[96mRadyo y”netim ve u‡ak modu hizmeti %3 ...%C%[0m
 goto :eof
 
 :serv.9.akis
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| AkŸ deneyimi hizmeti %3. >> %Location%\Logs
+echo [%date% - %time%] ^| Hizmetleri Y”net ^| AkŸ deneyimi hizmeti %3. >> %Location%\Logs
 echo   %C%[96mUzak Masast/AkŸ hizmetleri %3 ...%C%[0m
 :: ConsentUx kullanc hizmeti 
 %PowerRun% sc config ConsentUxUserSvc start= %2
@@ -1387,7 +1397,7 @@ echo   %C%[96mUzak Masast/AkŸ hizmetleri %3 ...%C%[0m
 goto :eof
 
 :serv.10.wps
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| WPS hizmeti %3. >> %Location%\Logs
+echo [%date% - %time%] ^| Hizmetleri Y”net ^| WPS hizmeti %3. >> %Location%\Logs
 echo   %C%[96mWindows žimdi Ba§lan hizmeti %3 ...%C%[0m
 :: Windows žimdi Ba§lan - Yaplandrma Dosyas Kaydedici
 ::  WPS protokolnn uygulanmasn sa§lar.
@@ -1399,9 +1409,15 @@ echo   %C%[96mWindows žimdi Ba§lan hizmeti %3 ...%C%[0m
 ::-------------------------------------------------------
 goto :eof
 
-:serv.11.tarayici
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Tarayc hizmeti %3. >> %Location%\Logs
-echo   %C%[96mTarayc hizmetleri %3 ...%C%[0m
+:serv.11.camera
+echo [%date% - %time%] ^| Hizmetleri Y”net ^| Taraycs ve Kamera hizmeti %3. >> %Location%\Logs
+echo   %C%[96mTarayc ve Kamera hizmetleri %3 ...%C%[0m
+:: Windows Kamera ‡er‡eve sunucusu
+%PowerRun% sc config FrameServer start= %2
+%PowerRun% net %1 FrameServer
+:: Windows Kamera €er‡eve Sunucusu
+%PowerRun% sc config FrameServerMonitor start= %2
+%PowerRun% net %1 FrameServerMonitor
 :: Resim alma olaylar (Windows G”rnt Alma-WIA)
 %PowerRun% sc config WiaRpc start= %2
 %PowerRun% net %1 WiaRpc
@@ -1414,23 +1430,8 @@ echo   %C%[96mTarayc hizmetleri %3 ...%C%[0m
 ::-------------------------------------------------------
 goto :eof
 
-:serv.12.camera
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Kamera hizmeti %3. >> %Location%\Logs
-echo   %C%[96mWindows Kamera hizmetleri %3 ...%C%[0m
-:: Windows Kamera ‡er‡eve sunucusu
-%PowerRun% sc config FrameServer start= %2
-%PowerRun% net %1 FrameServer
-:: Windows Kamera €er‡eve Sunucusu
-%PowerRun% sc config FrameServerMonitor start= %2
-%PowerRun% net %1 FrameServerMonitor
-::-------------------------------------------------------
-::    A‡ = %1 : start | %2 : demand   | %3 : a‡lyor
-:: Kapat = %1 : stop  | %2 : disabled | %3 : kapatlyor
-::-------------------------------------------------------
-goto :eof
-
-:serv.13.insider
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Insider hizmeti %3. >> %Location%\Logs
+:serv.12.insider
+echo [%date% - %time%] ^| Hizmetleri Y”net ^| Insider hizmeti %3. >> %Location%\Logs
 echo   %C%[96mWindows Insider hizmeti %3 ...%C%[0m
 :: Windows Insider Hizmeti
 %PowerRun% sc config wisvc start= %2
@@ -1441,8 +1442,8 @@ echo   %C%[96mWindows Insider hizmeti %3 ...%C%[0m
 ::-------------------------------------------------------
 goto :eof
 
-:serv.14.biyometrik
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Biyometrik hizmeti %3. >> %Location%\Logs
+:serv.13.biyometrik
+echo [%date% - %time%] ^| Hizmetleri Y”net ^| Biyometrik hizmeti %3. >> %Location%\Logs
 echo   %C%[96mWindows Biyometrik hizmeti %3 ...%C%[0m
 :: Windows Biyometrik Hizmeti
 %PowerRun% sc config WbioSrvc start= %2
@@ -1453,8 +1454,8 @@ echo   %C%[96mWindows Biyometrik hizmeti %3 ...%C%[0m
 ::-------------------------------------------------------
 goto :eof
 
-:serv.15.dokunmatik
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Dokunmatik Klavye ve Kalem hizmeti %3. >> %Location%\Logs
+:serv.14.dokunmatik
+echo [%date% - %time%] ^| Hizmetleri Y”net ^| Dokunmatik Klavye ve Kalem hizmeti %3. >> %Location%\Logs
 echo   %C%[96mDokunmatik Klavye ve Kalem hizmeti %3 ...%C%[0m
 :: Kalem servisi
 %PowerRun% sc config PenService start= %2
@@ -1468,8 +1469,8 @@ echo   %C%[96mDokunmatik Klavye ve Kalem hizmeti %3 ...%C%[0m
 ::-------------------------------------------------------
 goto :eof
 
-:serv.16.sistemgeriyukleme
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Sistem Geri ykleme hizmeti a‡ld. hizmeti %5. >> %Location%\Logs
+:serv.15.sistemgeriyukleme
+echo [%date% - %time%] ^| Hizmetleri Y”net ^| Sistem Geri ykleme hizmeti a‡ld. hizmeti %5. >> %Location%\Logs
 echo   %C%[96mSistem geri ykleme hizmeti %5 ...%C%[0m
 :: Windows Yedekleme ve Geri Ykleme hizmeti
 %PowerRun% sc config SDRSVC start= %2
@@ -1494,8 +1495,8 @@ reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore" /f /v "Disab
 ::-------------------------------------------------------------------------------
 goto :eof
 
-:serv.17.sysmain
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Hzl Getir^(Sysmain^) hizmeti %3. >> %Location%\Logs
+:serv.16.sysmain
+echo [%date% - %time%] ^| Hizmetleri Y”net ^| Hzl Getir^(Sysmain^) hizmeti %3. >> %Location%\Logs
 echo   %C%[96mHzl Getir hizmeti %3 ...%C%[0m
 %PowerRun% sc config SysMain start= %2
 %PowerRun% net %1 SysMain
@@ -1505,9 +1506,9 @@ echo   %C%[96mHzl Getir hizmeti %3 ...%C%[0m
 ::-------------------------------------------------------
 goto :eof
 
-:serv.18.hibernate
+:serv.17.hibernate
 ::Hzl baŸlang‡
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Hzl baŸlang‡^(Hibernate^) hizmeti %3. >> %Location%\Logs
+echo [%date% - %time%] ^| Hizmetleri Y”net ^| Hzl baŸlang‡^(Hibernate^) hizmeti %3. >> %Location%\Logs
 echo   %C%[96mHzl baŸlat %3 ...%C%[0m
 powercfg /hibernate %1
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\Power" /v "HibernateEnabled" /t REG_DWORD /d %2 /f > NUL 2>&1
@@ -1518,8 +1519,8 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /v "Hiberb
 ::-------------------------------------------------------
 goto :eof
 
-:serv.19.Location
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Konum hizmeti %7. >> %Location%\Logs
+:serv.18.Location
+echo [%date% - %time%] ^| Hizmetleri Y”net ^| Konum hizmeti %7. >> %Location%\Logs
 echo   %C%[96mKonum hizmeti %7 ...%C%[0m
 reg %5 "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\LocationAndSensors" %~6 > NUL 2>&1
 reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\Location" /v "Value" /t REG_SZ /d "%3" /f > NUL 2>&1
@@ -1536,8 +1537,8 @@ reg add "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\System" /v "AllowL
 ::----------------------------------------------------------------------------------------------------------------------------------------------
 goto :eof
 
-:serv.20.mediaplayer
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| MediaPlayer hizmeti %4. >> %Location%\Logs
+:serv.19.mediaplayer
+echo [%date% - %time%] ^| Hizmetleri Y”net ^| MediaPlayer hizmeti %4. >> %Location%\Logs
 :: Windows Media Player
 echo   %C%[96mWindows Media Player %4 ...%C%[0m
 Dism /Online /%3-Feature /FeatureName:MediaPlayback /Quiet /NoRestart
@@ -1550,8 +1551,8 @@ Dism /Online /%3-Feature /FeatureName:MediaPlayback /Quiet /NoRestart
 ::---------------------------------------------------------------------
 goto :eof
 
-:serv.21.hyperv
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Hyper-V hizmeti %4. >> %Location%\Logs
+:serv.20.hyperv
+echo [%date% - %time%] ^| Hizmetleri Y”net ^| Hyper-V hizmeti %4. >> %Location%\Logs
 echo   %C%[96mHyper-V hizmeti %4 ...%C%[0m
 :: HV Ana Bilgisayar Hizmeti
 %PowerRun% sc config HvHost start= %1
@@ -1577,20 +1578,20 @@ echo   %C%[96mHyper-V hizmeti %4 ...%C%[0m
 %PowerRun% sc config vmcompute start= %1
 %~3 /f %%a IN ('"dir /b %SystemRoot%\servicing\Packages\Microsoft-Hyper-V*.mum"') DO (DISM /Online /NoRestart /Add-Package:"%SystemRoot%\servicing\Packages\%%a" > NUL 2>&1)
 DISM /Online /%2-Feature /FeatureName:Microsoft-Hyper-V-All /Quiet /NoRestart
-DISM /Online /%2-Feature /FeatureName:Microsoft-Hyper-V /Quiet /NoRestart
-DISM /Online /%2-Feature /FeatureName:Microsoft-Hyper-V-Tools-All /Quiet /NoRestart
-DISM /Online /%2-Feature /FeatureName:Microsoft-Hyper-V-Management-PowerShell /Quiet /NoRestart
-DISM /Online /%2-Feature /FeatureName:Microsoft-Hyper-V-Hypervisor /Quiet /NoRestart
-DISM /Online /%2-Feature /FeatureName:Microsoft-Hyper-V-Services /Quiet /NoRestart
-DISM /Online /%2-Feature /FeatureName:Microsoft-Hyper-V-Management-Clients /Quiet /NoRestart
+:: DISM /Online /%2-Feature /FeatureName:Microsoft-Hyper-V /Quiet /NoRestart
+:: DISM /Online /%2-Feature /FeatureName:Microsoft-Hyper-V-Tools-All /Quiet /NoRestart
+:: DISM /Online /%2-Feature /FeatureName:Microsoft-Hyper-V-Management-PowerShell /Quiet /NoRestart
+:: DISM /Online /%2-Feature /FeatureName:Microsoft-Hyper-V-Hypervisor /Quiet /NoRestart
+:: DISM /Online /%2-Feature /FeatureName:Microsoft-Hyper-V-Services /Quiet /NoRestart
+:: DISM /Online /%2-Feature /FeatureName:Microsoft-Hyper-V-Management-Clients /Quiet /NoRestart
 ::------------------------------------------
 ::    A‡ = %1 : demand    | %2 : Enable  | %~3 : For | %4 : a‡lyor   
 :: Kapat = %1 : disabled  | %2 : Disable | %~3 : ::  | %4 : kapatlyor
 ::------------------------------------------
 goto :eof
 
-:serv.22.xbox
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Xbox hizmeti %7. >> %Location%\Logs
+:serv.21.xbox
+echo [%date% - %time%] ^| Hizmetleri Y”net ^| Xbox hizmeti %7. >> %Location%\Logs
 echo   %C%[96mXbox hizmeti %7 ...%C%[0m
 :: Oyun DVR ve Yayn kullanc hizmeti
 %PowerRun% sc config BcastDVRUserService start= %2
@@ -1619,8 +1620,8 @@ reg %5 "HKLM\SOFTWARE\Policies\Microsoft\Windows\GameDVR" %6 > NUL 2>&1
 ::----------------------------------------------------------------------------------------------------------------------------------------------
 goto :eof
 
-:serv.23.bitlocker
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Bitlocker hizmeti %3. >> %Location%\Logs
+:serv.22.bitlocker
+echo [%date% - %time%] ^| Hizmetleri Y”net ^| Bitlocker hizmeti %3. >> %Location%\Logs
 echo   %C%[96mBitlocker hizmeti %3 ...%C%[0m
 :: Bitlocker src Ÿifreleme hizmeti
 %PowerRun% sc config BDESVC start= %2
@@ -1631,8 +1632,8 @@ echo   %C%[96mBitlocker hizmeti %3 ...%C%[0m
 ::------------------------------------------------------
 goto :eof
 
-:serv.24.mixedreality
-echo [%date% - %time%] ^| Kapatlan Hizmetleri Y”net ^| Karma Ger‡eklik hizmeti %2. >> %Location%\Logs
+:serv.23.mixedreality
+echo [%date% - %time%] ^| Hizmetleri Y”net ^| Karma Ger‡eklik hizmeti %2. >> %Location%\Logs
 echo   %C%[96mKarma Ger‡eklik hizmeti %2 ...%C%[0m
 :: Uzlamsal veri hizmeti
 %PowerRun% sc config SharedRealitySvc start= %1
@@ -1649,6 +1650,129 @@ echo   %C%[96mKarma Ger‡eklik hizmeti %2 ...%C%[0m
 :: Kapat = %1 : disabled  | %2 : kapatlyor
 ::------------------------------------------
 goto :eof
+
+:serv.24.driverupdate
+echo [%date% - %time%] ^| Hizmetleri Y”net ^| Driver Gncelle / Ykle %3. >> %Location%\Logs
+echo   %C%[96mDriver Ykle/Gncelle hizmeti %3 ...%C%[0m
+Call :dword "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\Update" "ExcludeWUDriversInQualityUpdate" "%~1"
+Call :dword "HKLM\SOFTWARE\Microsoft\PolicyManager\default\Update" "ExcludeWUDriversInQualityUpdate" "%~1"
+Call :dword "HKLM\SOFTWARE\Microsoft\PolicyManager\default\Update\ExcludeWUDriversInQualityUpdate" "value" "%~1"
+Call :dword "HKLM\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" "ExcludeWUDriversInQualityUpdate" "%~1"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" "ExcludeWUDriversInQualityUpdate" "%~1"
+Call :dword "HKLM\Software\Policies\Microsoft\Windows\DriverSearching" "SearchOrderConfig" "%~2"
+::-------------------------------------
+::    A‡ = %~1 : 0  | %~2: 1  | %3 : a‡lyor   
+:: Kapat = %~1 : 1  | %~2: 0  | %3 : kapatlyor
+::-------------------------------------
+goto :eof
+
+:serv.25.memorycompression
+echo [%date% - %time%] ^| Hizmetleri Y”net ^| Bellek skŸtrma %2. >> %Location%\Logs
+echo   %C%[96mBellek skŸtrma hizmeti %2 ...%C%[0m
+%PowerRun% sc config SysMain start= auto
+%PowerRun% sc start SysMain
+%PowerRun% powershell "%1-MMAgent -MemoryCompression"
+%PowerRun% powershell "%1-MMAgent -PageCombining"
+%PowerRun% sc stop SysMain
+%PowerRun% sc config SysMain start= disabled
+::-------------------------------------
+::    A‡ = %~1 : Enable   | %~2: a‡lyor   
+:: Kapat = %~1 : Disable  | %~2: kapatlyor
+::-------------------------------------
+goto :eof
+
+:serv.26.coreparking
+echo [%date% - %time%] ^| Hizmetleri Y”net ^| ˜Ÿlemci ‡ekirdek bekleme hizmeti %4. >> %Location%\Logs
+echo   %C%[96m˜Ÿlemci ‡ekirdek bekleme hizmeti %4 ...%C%[0m
+Call :dword "HKLM\SYSTEM\ControlSet001\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\0cc5b647-c1df-4637-891a-dec35c318583" "ValueMax" "%~1"
+Call :dword "HKLM\SYSTEM\ControlSet001\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\0cc5b647-c1df-4637-891a-dec35c318583" "ValueMin" "0"
+%~2 "HKLM\SYSTEM\ControlSet002\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\0cc5b647-c1df-4637-891a-dec35c318583" "ValueMax" "%~1"
+%~2 "HKLM\SYSTEM\ControlSet002\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\0cc5b647-c1df-4637-891a-dec35c318583" "ValueMin" "0"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\0cc5b647-c1df-4637-891a-dec35c318583" "ValueMax" "%~1"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\0cc5b647-c1df-4637-891a-dec35c318583" "ValueMin" "0"
+%~3 "HKLM\SYSTEM\CurrentControlSet\Control\Power" "CoreParkingDisabled" "0"
+::-------------------------------------
+::    A‡ = %~1 : 100  |  %~2: Call :delete |  %~3: Call :delete2  | %4: a‡lyor
+:: Kapat = %~1 : 0    |  %~2: Call :dword  |  %~3: Call :dword    | %4: kapatlyor
+::-------------------------------------
+goto :eof
+
+
+:serv.27.gpuoptimization
+set /p value=%R%[1;97m%R%[42m GPU Optimizasyonu%R%[0m %C%[90m[%C%[1;91mAMD: 1%C%[90m /%C%[1;92m NVIDIA: 2%C%[90m /%C%[1;96m Men: X%C%[90m]%C%[0m :
+	if %value%==1 (Call :amd.optimization)
+	if %value%==2 (Call :nvidia.optimization)
+	if %value%==x goto servicesmanagement
+	if %value%==X goto servicesmanagement
+) else
+	goto servicesmanagement
+goto :eof
+
+:amd.optimization
+echo [%date% - %time%] ^| Optimizasyon ^| AMD GPU optimize edildi. >> %Location%\Logs
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "EnableUlps" "0"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "DisableDMACopy" "1"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "DisableBlockWrite" "0"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "StutterMode" "0"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "PP_SclkDeepSleepDisable" "1"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "PP_ThermalAutoThrottlingEnable" "0"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "DisableDrmdmaPowerGating" "1"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "KMD_EnableComputePreemption" "0"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "KMD_DeLagEnabled" "0"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "EnableVceSwClockGating" "1"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "EnableUvdClockGating" "1"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "DisableVCEPowerGating" "1"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "DisableUVDPowerGatingDynamic" "1"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "DisablePowerGating" "0"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "DisableSAMUPowerGating" "1"
+Call :sz "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "DisableFBCForFullScreenApp" "0"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "DisableFBCSupport" "0"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "DisableEarlySamuInit" "1"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "PP_GPUPowerDownEnabled" "1"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "PP_ActivityTarget" "30"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "PP_ODNFeatureEnable" "1"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "EnableUlps" "0"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "GCOOPTION_DisableGPIOPowerSaveMode" "1"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "PP_AllGraphicLevel_DownHyst" "20"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "PP_AllGraphicLevel_UpHyst" "0"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "KMD_FRTEnabled" "0"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "KMD_MaxUVDSessions" "32"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "DalAllowDirectMemoryAccessTrig" "1"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "DalAllowDPrefSwitchingForGLSync" "0"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "WmAgpMaxIdleClk" "32"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "PP_MCLKStutterModeThreshold" "4096"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "TVEnableOverscan" "0"
+goto servicesmanagement
+
+:nvidia.optimization
+echo [%date% - %time%] ^| Optimizasyon ^| Nvidia GPU optimize edildi. >> %Location%\Logs
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\GraphicsDrivers" "RmGpsPsEnablePerCpuCoreDpc" "1"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Power" "RmGpsPsEnablePerCpuCoreDpc" "1"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm" "RmGpsPsEnablePerCpuCoreDpc" "1"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm\NVAPI" "RmGpsPsEnablePerCpuCoreDpc" "1"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm\Global\NVTweak" "RmGpsPsEnablePerCpuCoreDpc" "1"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm\Parameters" "ThreadPriority" "31"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm\FTS" "EnableRID61684" "1"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm" "DisablePreemption" "1"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm" "DisablePreemptionOnS3S4" "1"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm" "EnableCEPreemption" "0"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm" "ComputePreemption" "0"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm" "DisableCudaContextPreemption" "1"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm" "EnableTiledDisplay" "0"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" "TCCSupported" "0"
+Call :dword "HKCU\SOFTWARE\NVIDIA Corporation\Global\NVTweak\Devices\509901423-0\Color" "NvCplUseColorCorrection" "0"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\GraphicsDrivers" "PlatformSupportMiracast" "0"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm\FTS" "EnableRID73779"  "1"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm\FTS" "EnableRID73780"  "1"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm\FTS" "EnableRID74361"  "1"
+Call :dword "HKLM\SOFTWARE\NVIDIA Corporation\Global\FTS" "EnableRID44231"  "0"
+Call :dword "HKLM\SOFTWARE\NVIDIA Corporation\Global\FTS" "EnableRID64640"  "0"
+Call :dword "HKLM\SOFTWARE\NVIDIA Corporation\Global\FTS" "EnableRID66610"  "0"
+Call :dword "HKLM\SOFTWARE\NVIDIA Corporation\NvControlPanel2\Client" "OptInOrOutPreference" "0"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\services\NvTelemetryContainer" "Start" "4"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm\Global\Startup" "SendTelemetryData" "0"
+Call :dword "HKLM\SOFTWARE\NVIDIA Corporation\Global\Startup\SendTelemetryData" "0" "0"
+goto servicesmanagement
 
 :stop
 :: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
@@ -1758,6 +1882,22 @@ FOR /f %%a IN ('"dir /b %SystemRoot%\servicing\Packages\Microsoft-Windows-GroupP
 goto :eof
 
 :: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+
+:update2050
+echo %C%[96m GncelleŸtirmeler 2050 ylna erteleniyor...%C%[0m
+echo [%date% - %time%] ^| update2050 ^| GncelleŸtirmeler 2050 ylna ertelendi. >> %Location%\Logs
+for /f "tokens=2" %%a in ('echo %date%') do set timeupdate=%%a
+set tuyil=%timeupdate:~6%
+set tuay=%timeupdate:~3,-5%
+set tugun=%timeupdate:~0,-8%
+Call :sz "HKLM\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" "PauseFeatureUpdatesStartTime" "%tuyil%-%tuay%-%tugun%T11:05:27Z"
+Call :sz "HKLM\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" "PauseQualityUpdatesStartTime" "%tuyil%-%tuay%-%tugun%T11:05:27Z"
+Call :sz "HKLM\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" "PauseUpdatesExpiryTime" "2050-12-29T11:05:30Z"
+Call :sz "HKLM\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" "PauseFeatureUpdatesEndTime" "2050-12-29T11:05:30Z"
+Call :sz "HKLM\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" "PauseQualityUpdatesEndTime" "2050-12-29T11:05:30Z"
+goto kontroll
+
+:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
 ::  W˜NDOWS 11 B™LšMš 
 
 :stop
@@ -1765,7 +1905,7 @@ goto :eof
 cls
 call :Location
 call :PowerRun
-mode con cols=55 lines=17
+mode con cols=55 lines=18
 title Windows 11 ™zelleŸtir / OgnitorenKs
 echo 
 echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
@@ -1779,6 +1919,7 @@ echo  %R%[90mº%R%[0m   %R%[32m 5.%C%[33m Sa§-Tk Terminal %C%[90m[EKLE/KALDIR]%C
 echo  %R%[90mº%R%[0m   %R%[32m 6.%C%[33m Sahiplik Al %C%[90m[EKLE/KALDIR]%C%[0m                   %R%[90mº%R%[0m
 echo  %R%[90mº%R%[0m   %R%[32m 7.%C%[33m Compact OS (Windows SkŸtrma) %C%[90m[A€/KAPAT]%C%[0m  %R%[90mº%R%[0m
 echo  %R%[90mº%R%[0m   %R%[32m 8.%C%[33m Gpedit.msc (Yerel Grup ilkesi)%C%[90m[EKLE]%C%[0m        %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m   %R%[32m 9.%C%[33m GncelleŸtirmeleri 2050 ylna ertele%C%[0m       %R%[90mº%R%[0m
 echo  %R%[90mº%R%[0m   %R%[32m X.%R%[36m Men%R%[0m                                        %R%[90mº%R%[0m
 echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
 set /p value=%C%[92m  ˜Ÿlem : %C%[0m
@@ -1790,6 +1931,8 @@ set /p value=%C%[92m  ˜Ÿlem : %C%[0m
 	if %value%==6 (Call :WinSahiplik)
 	if %value%==7 (Call :WinCompactOS)
 	if %value%==8 (Call :gpedit)
+	if %value%==8 (Call :gpedit)
+	if %value%==9 goto update2050
 	if %value%==x GOTO menu
 	if %value%==X GOTO menu
 ) else
@@ -1922,7 +2065,7 @@ set /p value= %C%[92m ˜Ÿlem : %C%[0m
 :stop
 :Win10SettingsMenu
 cls
-mode con cols=55 lines=17
+mode con cols=55 lines=18
 title Windows 10 ™zelleŸtir / OgnitorenKs
 echo 
 echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
@@ -1936,6 +2079,7 @@ echo  %R%[90mº%R%[0m   %R%[32m 5.%C%[33m Microsoft Store%C%[90m [YšKLE/KALDIR]%C
 echo  %R%[90mº%R%[0m   %R%[32m 6.%C%[33m Compact OS (Windows SkŸtrma)%C%[90m [A€/KAPAT]%C%[0m  %R%[90mº%R%[0m
 echo  %R%[90mº%R%[0m   %R%[32m 7.%C%[33m Gpedit.msc (Yerel Grup ilkesi)%C%[90m [EKLE]%C%[0m       %R%[90mº%R%[0m
 echo  %R%[90mº%R%[0m   %R%[32m 8.%C%[33m Simgeleri De§iŸtir%C%[90m [ESK˜/YEN˜]%C%[0m              %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m   %R%[32m 9.%C%[33m GncelleŸtirmeleri 2050 ylna ertele%C%[0m       %R%[90mº%R%[0m
 echo  %R%[90mº%R%[0m   %R%[32m X.%R%[36m Men%R%[0m                                        %R%[90mº%R%[0m
 echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
 set /p value=%C%[92m  ˜Ÿlem : %C%[0m
@@ -1947,6 +2091,7 @@ set /p value=%C%[92m  ˜Ÿlem : %C%[0m
 	if %value%==6 (Call :WinCompactOS)
 	if %value%==7 (Call :gpedit)
 	if %value%==8 GOTO icochangemenu
+	if %value%==9 goto update2050
 	if %value%==x GOTO menu
 	if %value%==X GOTO menu
 ) else
@@ -2454,8 +2599,10 @@ echo %R%[92m Hizmetler ilk haline getiriliyor...%R%[0m
 :: Edge gncelleme hizmeti
 %PowerRun% net stop edgeupdate
 %PowerRun% net stop edgeupdatem
+%PowerRun% net stop MicrosoftEdgeElevationService
 %PowerRun% sc config edgeupdate start= disabled
 %PowerRun% sc config edgeupdatem start= disabled
+%PowerRun% sc config MicrosoftEdgeElevationService start= disabled
 :: Parekende G”steri hizmeti
 %PowerRun% sc config RetailDemo start= disabled
 %PowerRun% net stop RetailDemo
@@ -2517,348 +2664,276 @@ echo %R%[92m Hizmetler ilk haline getiriliyor...%R%[0m
 %PowerRun% sc config workfolderssvc start= disabled
 :: ˜kincil oturum a‡ma 
 %PowerRun% sc config seclogon start= disabled
-timeout /t 5 /nobreak > NUL
 echo %R%[92m Regedit kaytlar yeniden dzenleniyor.%R%[0m
 :: Defender
-Reg add "HKLM\SOFTWARE\Microsoft\Windows Defender Security Center\Notifications" /v "DisableNotifications" /t REG_DWORD /d "1" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Microsoft\Windows Defender Security Center\Notifications" /v "DisableEnhancedNotifications" /t REG_DWORD /d "1" /f >nul 2>&1
-Reg add "HKCU\SOFTWARE\Microsoft\Windows Security Health\State" /v "AccountProtection_MicrosoftAccount_Disconnected" /t REG_DWORD /d "0" /f >nul 2>&1
-%PowerRun% Reg add "HKLM\SOFTWARE\Microsoft\Windows Defender" /v "DisableAntiSpyware" /t REG_DWORD /d "1" /f
-%PowerRun% Reg add "HKLM\SOFTWARE\Microsoft\Windows Defender" /v "DisableAntiVirus" /t REG_DWORD /d "1" /f
-%PowerRun% Reg add "HKLM\SOFTWARE\Microsoft\Windows Defender\Features" /v "TamperProtection" /t REG_DWORD /d "0" /f
-%PowerRun% Reg add "HKLM\SOFTWARE\Microsoft\Windows Defender\Features" /v "TamperProtectionSource" /t REG_DWORD /d "2" /f
-%PowerRun% Reg add "HKLM\SOFTWARE\Microsoft\Windows Defender\Signature Updates" /v "FirstAuGracePeriod" /t REG_DWORD /d "0" /f
-%PowerRun% Reg add "HKLM\SOFTWARE\Microsoft\Windows Defender\UX Configuration" /v "DisablePrivacyMode" /t REG_DWORD /d "1" /f
-Reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\StartupApproved\Run" /v "SecurityHealth" /t REG_BINARY /d "030000000000000000000000" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\MRT" /v "DontOfferThroughWUAU" /t REG_DWORD /d "1" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\MRT" /v "DontReportInfectionInformation" /t REG_DWORD /d "1" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Systray" /v "HideSystray" /t REG_DWORD /d "1" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v "DisableAntiSpyware" /t REG_DWORD /d "1" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v "PUAProtection" /t REG_DWORD /d "0" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v "RandomizeScheduleTaskTimes" /t REG_DWORD /d "0" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Exclusions" /v "DisableAutoExclusions" /t REG_DWORD /d "1" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\MpEngine" /v "MpEnablePus" /t REG_DWORD /d "0" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Quarantine" /v "LocalSettingOverridePurgeItemsAfterDelay" /t REG_DWORD /d "0" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Quarantine" /v "PurgeItemsAfterDelay" /t REG_DWORD /d "0" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /v "DisableBehaviorMonitoring" /t REG_DWORD /d "1" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /v "DisableIOAVProtection" /t REG_DWORD /d "1" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /v "DisableOnAccessProtection" /t REG_DWORD /d "1" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /v "DisableRealtimeMonitoring" /t REG_DWORD /d "1" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /v "DisableRoutinelyTakingAction" /t REG_DWORD /d "1" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /v "DisableScanOnRealtimeEnable" /t REG_DWORD /d "1" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Remediation" /v "Scan_ScheduleDay" /t REG_DWORD /d "8" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Remediation" /v "Scan_ScheduleTime" /t REG_DWORD /d 0 /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Reporting" /v "AdditionalActionTimeOut" /t REG_DWORD /d 0 /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Reporting" /v "CriticalFailureTimeOut" /t REG_DWORD /d 0 /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Reporting" /v "DisableEnhancedNotifications" /t REG_DWORD /d "1" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Reporting" /v "DisableGenericRePorts" /t REG_DWORD /d 1 /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Reporting" /v "NonCriticalTimeOut" /t REG_DWORD /d 0 /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Scan" /v "AvgCPULoadFactor" /t REG_DWORD /d "10" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Scan" /v "DisableArchiveScanning" /t REG_DWORD /d "1" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Scan" /v "DisableCatchupFullScan" /t REG_DWORD /d "1" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Scan" /v "DisableCatchupQuickScan" /t REG_DWORD /d "1" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Scan" /v "DisableRemovableDriveScanning" /t REG_DWORD /d "1" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Scan" /v "DisableRestorePoint" /t REG_DWORD /d "1" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Scan" /v "DisableScanningMappedNetworkDrivesForFullScan" /t REG_DWORD /d "1" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Scan" /v "DisableScanningNetworkFiles" /t REG_DWORD /d "1" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Scan" /v "PurgeItemsAfterDelay" /t REG_DWORD /d 0 /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Scan" /v "ScanOnlyIfIdle" /t REG_DWORD /d 0 /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Scan" /v "ScanParameters" /t REG_DWORD /d 0 /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Scan" /v "ScheduleDay" /t REG_DWORD /d 8 /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Scan" /v "ScheduleTime" /t REG_DWORD /d 0 /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Signature Updates" /v "DisableUpdateOnStartupWithoutEngine" /t REG_DWORD /d 1 /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Signature Updates" /v "ScheduleDay" /t REG_DWORD /d 8 /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Signature Updates" /v "ScheduleTime" /t REG_DWORD /d 0 /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Signature Updates" /v "SignatureUpdateCatchupInterval" /t REG_DWORD /d 0 /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\SpyNet" /v "DisableBlockAtFirstSeen" /t REG_DWORD /d "1" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet" /v "LocalSettingOverrideSpynetReporting" /t REG_DWORD /d 0 /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet" /v "SpyNetReporting" /t REG_DWORD /d "0" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet" /v "SpyNetReportingLocation" /t REG_MULTI_SZ /d "0" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet" /v "SubmitSamplesConsent" /t REG_DWORD /d "2" /f >nul 2>&1
-timeout /t 2 /nobreak > NUL
+Call :dword "HKLM\SOFTWARE\Microsoft\Windows Defender Security Center\Notifications" "DisableNotifications" "1"
+Call :dword "HKLM\SOFTWARE\Microsoft\Windows Defender Security Center\Notifications" "DisableEnhancedNotifications" "1"
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows Security Health\State" "AccountProtection_MicrosoftAccount_Disconnected" "0"
+Call :dword "HKLM\SOFTWARE\Microsoft\Windows Defender" "DisableAntiSpyware" "1"
+Call :dword "HKLM\SOFTWARE\Microsoft\Windows Defender" "DisableAntiVirus" "1"
+Call :dword "HKLM\SOFTWARE\Microsoft\Windows Defender\Features" "TamperProtection" "0"
+Call :dword "HKLM\SOFTWARE\Microsoft\Windows Defender\Features" "TamperProtectionSource" "2"
+Call :dword "HKLM\SOFTWARE\Microsoft\Windows Defender\Signature Updates" "FirstAuGracePeriod" "0"
+Call :dword "HKLM\SOFTWARE\Microsoft\Windows Defender\UX Configuration" "DisablePrivacyMode" "1"
+Call :dword "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\StartupApproved\Run" "SecurityHealth" /t REG_BINARY /d "030000000000000000000000"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\MRT" "DontOfferThroughWUAU" "1"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\MRT" "DontReportInfectionInformation" "1"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Systray" "HideSystray" "1"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" "DisableAntiSpyware" "1"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" "PUAProtection" "0"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" "RandomizeScheduleTaskTimes" "0"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Exclusions" "DisableAutoExclusions" "1"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\MpEngine" "MpEnablePus" "0"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Quarantine" "LocalSettingOverridePurgeItemsAfterDelay" "0"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Quarantine" "PurgeItemsAfterDelay" "0"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" "DisableBehaviorMonitoring" "1"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" "DisableIOAVProtection" "1"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" "DisableOnAccessProtection" "1"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" "DisableRealtimeMonitoring" "1"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" "DisableRoutinelyTakingAction" "1"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" "DisableScanOnRealtimeEnable" "1"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Remediation" "Scan_ScheduleDay" "8"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Remediation" "Scan_ScheduleTime" 0
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Reporting" "AdditionalActionTimeOut" 0
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Reporting" "CriticalFailureTimeOut" 0
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Reporting" "DisableEnhancedNotifications" "1"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Reporting" "DisableGenericRePorts" 1
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Reporting" "NonCriticalTimeOut" 0
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Scan" "AvgCPULoadFactor" "10"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Scan" "DisableArchiveScanning" "1"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Scan" "DisableCatchupFullScan" "1"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Scan" "DisableCatchupQuickScan" "1"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Scan" "DisableRemovableDriveScanning" "1"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Scan" "DisableRestorePoint" "1"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Scan" "DisableScanningMappedNetworkDrivesForFullScan" "1"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Scan" "DisableScanningNetworkFiles" "1"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Scan" "PurgeItemsAfterDelay" 0
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Scan" "ScanOnlyIfIdle" 0
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Scan" "ScanParameters" 0
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Scan" "ScheduleDay" 8
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Scan" "ScheduleTime" 0
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Signature Updates" "DisableUpdateOnStartupWithoutEngine" 1
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Signature Updates" "ScheduleDay" 8
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Signature Updates" "ScheduleTime" 0
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Signature Updates" "SignatureUpdateCatchupInterval" 0
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\SpyNet" "DisableBlockAtFirstSeen" "1"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet" "LocalSettingOverrideSpynetReporting" 0
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet" "SpyNetReporting" "0"
+Call :multisz "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet" "SpyNetReportingLocation" "0"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet" "SubmitSamplesConsent" "2"
 :: SmartScreen
-::for /f "tokens=* USEBACKQ" %i in (`wmic.exe useraccount where "name="%username%"" get sid ^| findstr "S-"`) do set currentusername=%i
+::for "tokens=* USEBACKQ" %i in (`wmic.exe useraccount where "name="%username%"" get sid ^| findstr "S-"`) do set currentusername=%i
 ::set currentusername=%currentusername:~0,-3%
-For /f "tokens=2" %%a in ('Powershell -command "Get-CimInstance -ClassName Win32_UserAccount | Select-Object -Property Name,SID" ^| Find "%username%"') do set currentusername=%%a
-Reg add "HKU\%currentusername%\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" /v "EnableWebContentEvaluation" /t REG_DWORD /d 0 /f >nul 2>&1
-Reg add "HKU\%currentusername%\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" /v "PreventOverride" /t REG_DWORD /d 0 /f >nul 2>&1
-Reg add "HKU\%currentusername%\SOFTWARE\Policies\Microsoft\Edge" /v "SmartScreenEnabled" /t REG_DWORD /d 0 /f >nul 2>&1
-Reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" /v "EnableWebContentEvaluation" /t REG_DWORD /d 0 /f >nul 2>&1
-Reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" /v "PreventOverride" /t REG_DWORD /d 0 /f >nul 2>&1
-Reg add "HKCU\SOFTWARE\Policies\Microsoft\Edge" /v "SmartScreenEnabled" /t REG_DWORD /d 0 /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Microsoft\Windows Security Health\State" /v "AppAndBrowser_StoreAppsSmartScreenOff" /t REG_DWORD /d 0 /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" /v "SmartScreenEnabled" /t REG_SZ /d "Off" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /v "SmartScreenEnabled" /t REG_SZ /d "Off" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Internet Explorer\PhishingFilter" /v "EnabledV9" /t REG_DWORD /d 0 /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Internet Explorer\PhishingFilter" /v "PreventOverride" /t REG_DWORD /d 0 /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\MicrosoftEdge\PhishingFilter" /v "EnabledV9" /t REG_DWORD /d 0 /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\MicrosoftEdge\PhishingFilter" /v "PreventOverride" /t REG_DWORD /d 0 /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\System" /v "EnableSmartScreen" /t REG_DWORD /d "0" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\SmartScreen" /v "ConfigureAppInstallControl" /t REG_SZ /d "Anywhere" /f >nul 2>&1
-Reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\SmartScreen" /v "ConfigureAppInstallControlEnabled" /t REG_DWORD /d "0" /f >nul 2>&1
-reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" /f /v "ContentEvaluation" /t REG_DWORD /d 0 > NUL 2>&1
-::Di§er
-:: Gncellemenin yklenmesi gerekti§inde bilgisayar mmkn olan en ksa srede devre dŸ brak
-reg add "HKLM\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" /f /v "IsExpedited" /t REG_DWORD /d 0 > NUL 2>&1
-:: Gncelleme sonras yeniden baŸlatma bildirimi devre dŸ braklyor...
-reg add "HKLM\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" /f /v "RestartNotificationsAllowed2" /t REG_DWORD /d 0 > NUL 2>&1
-:: KonuŸma modellerinin gnceleŸtirmeleri devre dŸ braklyor...
-reg add "HKLM\SOFTWARE\Microsoft\Speech_OneCore\Preferences" /f /v "ModelDownloadAllowed" /t REG_DWORD /d 0 > NUL 2>&1
-:: Teslimat Optimizasyonu BITS hizmeti olarak ayarlanyor...
-reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Config" /f /v "DODownloadMode" /t REG_DWORD /d "100" > NUL 2>&1
-:: Driverlar kurulu de§il ise kurulmas i‡in ayarlanyor...
-reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\DriverSearching" /f /v "SearchOrderConfig" /t REG_DWORD /d 2 > NUL 2>&1
-:: GncelleŸtirmeler Manuel yaplyor...
-reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU" /f /v "NoAutoUpdate" /t REG_DWORD /d "0" > NUL 2>&1
-reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU" /f /v "AUOptions" /t REG_DWORD /d "2" > NUL 2>&1
-:: Explorer "Bu Bilgisayar" olarak ayarlanyor...
-reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /f /v "LaunchTo" /t REG_DWORD /d 1 > NUL 2>&1
-:: Dosya kopyalama iletiŸim kutusuda daha fazla detay g”ster olarak ayarlanyor...
-reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\OperationStatusManager" /f /v "EnthusiastMode" /t REG_DWORD /d 1 > NUL 2>&1
-:: G”rev G”rnm Simgesi Kaldrlyor...
-reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /f /v "ShowTaskViewButton" /t REG_DWORD /d 0 > NUL 2>&1
-:: Dosya uzantlar aktifleŸtiriliyor...
-reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /f /v "HideFileExt" /t REG_DWORD /d 0 > NUL 2>&1
-:: Otomatik oynatma kapatlyor...
-reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers" /f /v "DisableAutoplay" /t REG_DWORD /d 1 > NUL 2>&1
-:: Son a‡lan belgelerin ge‡miŸi kapatlyor...
-reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer" /f /v "NoRecentDocsHistory" /t REG_DWORD /d 0 > NUL 2>&1
-:: Windows'u kapatrken yeni a‡lan belgelerin ge‡miŸini temizle aktifleŸtiriliyor...
-reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer" /v "ClearRecentDocsOnExit" /t REG_DWORD /d 1 /f > NUL 2>&1
-:: Son kullanlan dosyalarn hzl eriŸimde g”rntlenmesi engelleniyor...
-reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /f /v "ShowRecent" /t REG_DWORD /d 0 > NUL 2>&1
-:: Hzl EriŸimden Sk Kullanlan klas”rler kaldrlyor
-reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /f /v "ShowFrequent" /t REG_DWORD /d 0 > NUL 2>&1
-:: G”rev €ubu§u ve btn simgeleri tm monit”rlerde g”ster
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /f /v "MMTaskbarEnabled" /t REG_DWORD /d 1 > NUL 2>&1
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /f /v "MMTaskbarMode" /t REG_DWORD /d 0 > NUL 2>&1
-:: Ksayol yazs kaldrlyor...
-reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /f /v "Link" /t REG_BINARY /d "00000000" > NUL 2>&1
-:: Birlikte a‡ se‡ene§inden internette ara se‡ene§i kaldrlyor...
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /f /v "NoInternetOpenWith" /t REG_DWORD /d 1 > NUL 2>&1
-:: G”rev ‡ubu§u transparan ”zelli§i devre dŸ braklyor...
-reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize" /f /v "EnableTransparency" /t REG_DWORD /d 0 > NUL 2>&1
-:: Arama b”lm simge haline getiriliyor
-:: reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" /f /v "SearchboxTaskbarMode" /t REG_DWORD /d 1 > NUL 2>&1
-:: Web aramas kapatlyor.
-reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" /f /v "DisableWebSearch" /t REG_DWORD /d 1 > NUL 2>&1
-:: Web'de arama yapmayn veya Arama'da web sonu‡larn g”rntlemeyin
-reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" /f /v "ConnectedSearchUseWeb" /t REG_DWORD /d 0 > NUL 2>&1
-:: žifrelenmiŸ dosyalarn indekslenme izni kaldrlyor.
-reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" /f /v "AllowIndexingEncryptedStoresOrItems" /t REG_DWORD /d 0 > NUL 2>&1
-:: Arama ve Cortana'nn Locationu kullanma izni kapatlyor.
-reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" /f /v "AllowSearchToUseLocation" /t REG_DWORD /d 0 > NUL 2>&1
-:: ˜‡eri§i ve ”zellikleri dizine eklerken her zaman otomatik dil alglamay kullann kapatlyor.
-reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" /f /v "AlwaysUseAutoLangDetection" /t REG_DWORD /d 0 > NUL 2>&1
-:: Cortana izni kapatlyor.
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Search" /f /v "CortanaConsent" /t REG_DWORD /d 0 > NUL 2>&1
-:: Cortana Ortam modu kapatlyor.
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Search" /f /v "CortanaInAmbientMode" /t REG_DWORD /d 0 > NUL 2>&1
-:: Arama b”lmnn Locationu kullanmas engelleniyor.
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Search" /f /v "AllowSearchToUseLocation" /t REG_DWORD /d 0 > NUL 2>&1
-:: Gvenli arama modu kapatlyor.
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\SearchSettings" /f /v "SafeSearchMode" /t REG_DWORD /d 0 > NUL 2>&1
-:: Dosya Gezgini arama kutusundaki son arama giriŸlerinin g”rntlenmesini kapatn
-reg add "HKCU\Software\Policies\Microsoft\Windows\Explorer" /f /v "DisableSearchBoxSuggestions" /t REG_DWORD /d 1 > NUL 2>&1
-:: Web aramas kapatlyor.
-reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" /f /v "DisableWebSearch" /t REG_DWORD /d 1 > NUL 2>&1
-:: Tarifeli ba§lantlar zerinden aramada web'de arama yapmayn veya web sonu‡larn g”rntlemeyin
-reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" /f /v "ConnectedSearchUseWebOverMeteredConnections" /t REG_DWORD /d 0 > NUL 2>&1
-:: Bulut arama kapatlyor.
-reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" /f /v "AllowCloudSearch" /t REG_DWORD /d 0 > NUL 2>&1
-:: Gizlilik politikas devre dŸ braklyor.
-reg add "HKCU\Software\Microsoft\InputPersonalization\TrainedDataStore" /f /v "AcceptedPrivacyPolicy" /t REG_DWORD /d 0 > NUL 2>&1
-:: Sesle etkinleŸtirme kapatlyor.
-reg add "HKLM\SOFTWARE\Microsoft\Speech_OneCore\Preferences" /f /v "VoiceActivationDefaultOn" /t REG_DWORD /d 0 > NUL 2>&1
-:: Kilit Ekrannn šstnde Sesle EtkinleŸtirme kapatlyor.
-reg add "HKLM\SOFTWARE\Microsoft\Speech_OneCore\Preferences" /f /v "VoiceActivationEnableAboveLockscreen" /t REG_DWORD /d 0 > NUL 2>&1
-:: Ses etkinleŸtirme kapatlyor.
-reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE" /f /v "DisableVoice" /t REG_DWORD /d 1 > NUL 2>&1
-:: Arama - Bing web sonu‡larn dahil et kapatlyor...
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Search" /f /v "BingSearchEnabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: Ayarlar uygulamasn ”nerilen i‡eri§i g”stermesi kapatlyor...
-reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "SubscribedContent-338393Enabled" /t REG_DWORD /d 0 > NUL 2>&1
-reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "SubscribedContent-353694Enabled" /t REG_DWORD /d 0 > NUL 2>&1
-reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "SubscribedContent-353696Enabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: Ba§lanmak i‡in Hotspot 2.0 €evrimi‡i kaydolmay kullann kapatlyor
-reg add "HKLM\SOFTWARE\Microsoft\WlanSvc\AnqpCache" /f /v "OsuRegistrationStatus" /t REG_DWORD /d 0 > NUL 2>&1
-:: BaŸlang‡ ve arama sonu‡larn iyileŸtirmek i‡in Windows izleme uygulamasnn baŸlatlmasna izin verin kapatlyor
-reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /f /v "Start_TrackProgs" /t REG_DWORD /d 0 > NUL 2>&1
-:: BaŸlang‡taki ara sra ”neriler kapatlyor...
-reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "SystemPaneSuggestionsEnabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: Cihazmn kurulumunu ‡evrimi‡i olarak tamamlayabilece§im yollar ”ner kapatlyor.
-reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\UserProfileEngagement" /f /v "ScoobeSystemSettingEnabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: Programlanabilir G”rev €ubu§u ”zelli§i devre dŸ braklyor.
-reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\CloudContent" /f /v "DisableCloudOptimizedContent" /t REG_DWORD /d 1 > NUL 2>&1
+FOR "tokens=2" %%a in ('Powershell -command "Get-CimInstance -ClassName Win32_UserAccount | Select-Object -Property Name,SID" ^| Find "%username%"') do set currentusername=%%a
+Call :dword "HKU\%currentusername%\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" "EnableWebContentEvaluation" 0
+Call :dword "HKU\%currentusername%\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" "PreventOverride" 0
+Call :dword "HKU\%currentusername%\SOFTWARE\Policies\Microsoft\Edge" "SmartScreenEnabled" 0
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" "EnableWebContentEvaluation" 0
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" "PreventOverride" 0
+Call :dword "HKCU\SOFTWARE\Policies\Microsoft\Edge" "SmartScreenEnabled" 0
+Call :dword "HKLM\SOFTWARE\Microsoft\Windows Security Health\State" "AppAndBrowser_StoreAppsSmartScreenOff" 0
+Call :dword "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" "SmartScreenEnabled" /t REG_SZ /d "Off"
+Call :dword "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" "SmartScreenEnabled" /t REG_SZ /d "Off"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Internet Explorer\PhishingFilter" "EnabledV9" 0
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Internet Explorer\PhishingFilter" "PreventOverride" 0
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\MicrosoftEdge\PhishingFilter" "EnabledV9" 0
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\MicrosoftEdge\PhishingFilter" "PreventOverride" 0
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\System" "EnableSmartScreen" "0"
+Call :sz "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\SmartScreen" "ConfigureAppInstallControl" "Anywhere"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\SmartScreen" "ConfigureAppInstallControlEnabled" "0"
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" "ContentEvaluation" 0
+:: Update
+Call :dword "HKLM\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" "IsExpedited" 0 & :: Gncellemenin yklenmesi gerekti§inde bilgisayar mmkn olan en ksa srede devre dŸ brak
+Call :dword "HKLM\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" "RestartNotificationsAllowed2" 0 & :: Gncelleme sonras yeniden baŸlatma bildirimi devre dŸ braklyor...
+Call :dword "HKLM\SOFTWARE\Microsoft\Speech_OneCore\Preferences" "ModelDownloadAllowed" 0 & :: KonuŸma modellerinin gnceleŸtirmeleri devre dŸ braklyor...
+Call :dword "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Config" "DODownloadMode" "100" & :: Teslimat Optimizasyonu BITS hizmeti olarak ayarlanyor...
+:: Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\DriverSearching" "SearchOrderConfig" 2 & :: Driverlar kurulu de§il ise kurulmas i‡in ayarlanyor...
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU" "NoAutoUpdate" "0" & :: Update Manuel
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU" "AUOptions" "2" & :: Update Manuel
 :: Cortana
-reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" /f /v "AllowCortana" /t REG_DWORD /d 0 > NUL 2>&1
-reg add "HKLM\SOFTWARE\Policies\Wow6432Node\Microsoft\Windows\Windows Search" /f /v "AllowCortana" /t REG_DWORD /d 0 > NUL 2>&1
-:: Cortana - Cihaz de§iŸtirirken etkinlik ”nerileri
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Search" /f /v "HistoryViewEnabled" /t REG_DWORD 0 > NUL 2>&1
-:: Cortana - Oturum a‡t§m cihazlar ge‡miŸimi kullan
-reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" /f /v "DeviceHistoryEnabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: Cortana Butonu kaldrlyor...
-reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /f /v "ShowCortanaButton" /t REG_DWORD /d 0 > NUL 2>&1
-:: Deneyim geliŸtirme programna izin ver(NVIDIA Srcs) kapatlyor...
-reg add "HKCU\SOFTWARE\NVIDIA Corporation\NVControlPanel2\Client" /f /v "OptInOrOutPreference" /t REG_DWORD /d 0 > NUL 2>&1
-:: Deneylere izin ver kapatlyor
-reg add "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\System" /f /v "AllowExperimentation" /t REG_DWORD /d 0 > NUL 2>&1
-:: Gelecekte yazmay iyileŸtirmenize yardmc olmas i‡in nasl yazd§m hakknda Microsoft'a bilgi g”nderme kapatlyor.
-reg add "HKCU\SOFTWARE\Microsoft\Input\TIPC" /f /v "Enabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: Geri Bildirim frekans kapatlyor.
-reg add "HKCU\SOFTWARE\Microsoft\Siuf\Rules" /f /v "NumberOfSIUFInPeriod" /t REG_DWORD /d 0 > NUL 2>&1
-:: GiriŸ verilerinizi Microsoft'a g”ndererek konuŸma, yazma ve mrekkepleme giriŸinizi kiŸiselleŸtirin kapatlyor
-reg add "HKCU\Software\Microsoft\Personalization\Settings" /f /v "AcceptedPrivacyPolicy" /t REG_DWORD /d 0 > NUL 2>&1
-reg add "HKCU\Software\Microsoft\InputPersonalization\TrainedDataStore" /f /v "HarvestContacts " /t REG_DWORD /d 0 > NUL 2>&1
-:: Konum Hizmetlerini kapatlyor...
-reg add "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\System" /f /v "AllowLocation" /t REG_DWORD /d 0 > NUL 2>&1
-:: Kullanc dil listesine eriŸerek web sitelerinin yerel olarak alakal i‡erik sa§lamas engelleniyor.
-reg add "HKCU\Control Panel\International\User Profile" /f /v "HttpAcceptLanguageOptOut" /t REG_DWORD /d 1 > NUL 2>&1
-:: Kullancnn di§er cihazlardaki uygulamalarn uygulamalar a‡mas engelleniyor...
-reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\SmartGlass" /f /v "UserAuthPolicy" /t REG_DWORD /d 0 > NUL 2>&1
-:: Okumay iyileŸtirmek, taramay hzlandrmak i‡in sayfa tahminini kullann. G”z Atma Verilerinin Microsoft'a G”nderilmesi engelleniyor...
-reg add "HKLM\SOFTWARE\Microsoft\Internet Explorer\FlipAhead" /f /v "FPEnabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: Skype KiŸiler ba§lants devre dŸ braklyor...
-reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE\AppSettings" /f /v "Skype-UserConsentAccepted" /t REG_DWORD /d 0 > NUL 2>&1
-:: Sponsorlu uygulamalarn otomatik kurulumu (Tketici Deneyimi)
-reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\CloudContent" /f /v "DisableWindowsConsumerFeatures" /t REG_DWORD /d 1 > NUL 2>&1
-reg add "HKLM\SOFTWARE\WOW6432Node\Policies\Microsoft\Windows\CloudContent" /f /v "DisableWindowsConsumerFeatures" /t REG_DWORD /d 1 > NUL 2>&1
-:: Tanlama verilerinizi kullanarak Microsoft'un ilgili ipu‡lar ve ”nerilerle daha ”zel deneyimler sunmasna izin verin.
-reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Privacy" /f /v "TailoredExperiencesWithDiagnosticDataEnabled" /t REG_DWORD /d 0 > NUL 2>&1
-reg add "HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Privacy" /f /v "TailoredExperiencesWithDiagnosticDataEnabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: Telemetry Devre DŸ braklyor...
-reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\DataCollection" /f /v "AllowTelemetry" /t REG_DWORD /d 0 > NUL 2>&1
-:: Uygulamalarn arka planda ‡alŸmas engelleniyor...
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications" /f /v "Migrated" /t REG_DWORD /d 4 > NUL 2>&1
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications" /f /v "GlobalUserDisabled" /t REG_DWORD /d 1 > NUL 2>&1
-:: Uygulamalarn uygulamalardaki deneyimler i‡in kullanc reklam kimli§ini kullanmas engelleniyor.
-reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\AdvertisingInfo" /f /v "DisabledByGroupPolicy" /t REG_DWORD /d 1 > NUL 2>&1
-:: Windows ve Cortana'nn sizi daha iyi anlamasna izin vermek i‡in kiŸileri toplama kapatlyor.
-reg add "HKCU\Software\Microsoft\InputPersonalization\TrainedDataStore" /f /v "HarvestContacts" /t REG_DWORD /d 0 > NUL 2>&1
-:: Windows ve Cortana'nn sizi daha iyi anlamasna izin vermek i‡in yazl metin (mrekkep) toplayn kapatlyor.
-reg add "HKCU\Software\Microsoft\InputPersonalization" /f /v "RestrictImplicitInkCollection" /t REG_DWORD /d 1 > NUL 2>&1
-:: Windows ve Cortana'nn sizi daha iyi anlamasna izin vermek i‡in yazl metni toplayn.
-reg add "HKCU\Software\Microsoft\InputPersonalization" /f /v "RestrictImplicitTextCollection" /t REG_DWORD /d 1 > NUL 2>&1
-:: Windows'un bu bilgisayardan etkinliklerimi toplamasna izin ver (Zaman ‡izelgesi)
-reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\System" /f /v "EnableActivityFeed" /t REG_DWORD /d 0 > NUL 2>&1
-:: Windows'un s‡rama listelerini doldurmak i‡in a‡lan belgeleri izlemesi kapatlyor.
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /f /v "Start_TrackDocs" /t REG_DWORD /d 0 > NUL 2>&1
-:: €evrimi‡i konuŸma hizmetleri devre dŸ braklyor...
-reg add "HKLM\SOFTWARE\Policies\Microsoft\InputPersonalization" /f /v "AllowInputPersonalization" /t REG_DWORD /d 0 > NUL 2>&1
-:: ™nerilen a‡k scak noktalara otomatik ba§lan kapatlyor.
-reg add "HKLM\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\features" /f /v "WiFiSenseOpen" /t REG_DWORD /d 0 > NUL 2>&1
-reg add "HKLM\SOFTWARE\Microsoft\PolicyManager\default\Wifi\AllowAutoConnectToWiFiSenseHotspots" /f /v "value" /t REG_DWORD /d 0 > NUL 2>&1
-:: šcretli a§ hizmetlerinin mevcut olup olmad§n g”rmek i‡in ge‡ici olarak eriŸim noktalarna otomatik olarak ba§lanma kapatlyor.
-reg add "HKLM\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\features" /f /v "PaidWifi" /t REG_DWORD /d 0 > NUL 2>&1
-:: ˜‡g”rsel yazma engelleniyor...
-reg add "HKCU\SOFTWARE\Microsoft\Input\Settings" /f /v "InsightsEnabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: OneDrive EŸitlemesi devre dŸ braklyor...
-reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\OneDrive" /f /v "DisableFileSyncNGSC" /t REG_DWORD /d 1 > NUL 2>&1
-:: AutoLogger devre dŸ braklyor...
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\WMI\Autologger\SQMLogger" /v "Start" /t REG_DWORD /d 0 /f > NUL 2>&1
-:: Windows Hata Raporlama devre dŸ braklyor...
-reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting" /f /v "DontSendAdditionalData" /t REG_DWORD /d 1 > NUL 2>&1
-:: Wifi Hotspot Raporlama devre dŸ braklyor...
-reg add "HKLM\SOFTWARE\Microsoft\PolicyManager\default\Wifi\AllowWiFiHotSpotReporting" /f /v "value" /t REG_DWORD /d 0 > NUL 2>&1
-:: Windows Reklam Kimli§ini devre dŸ braklyor...
-reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\AdvertisingInfo" /f /v "Enabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: MŸteri Deneyim Program devre dŸ brakrlyor...
-reg add "HKLM\SOFTWARE\Microsoft\SQMClient\Windows" /f /v "CEIPEnable" /t REG_DWORD /d 0 > NUL 2>&1
-::Metadata izleme dosyalar kaldrlyor...
-reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Device Metadata" /f > NUL 2>&1
-:: Windows'un bilgisayardaki etkinlikleri toplamas engelleniyor...
-reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\System" /f /v "PublishUserActivities" /t REG_DWORD /d 0 > NUL 2>&1
-reg add "HKLM\Software\Policies\Microsoft\Windows\System" /f /v "EnableActivityFeed" /t REG_DWORD /d 0 > NUL 2>&1
-:: Atlama Listelerinde en son a‡lan ”§eler engelleniyor...
-reg add "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\Start" /f /v "HideRecentJumplists" /t REG_DWORD /d 1 > NUL 2>&1
-:: ™zellik reklam balonu bildirimlerini kapatlyor...
-reg add "HKCU\Software\Policies\Microsoft\Windows\Explorer\NoBalloonFeatureAdvertisements" /f /v "NoBalloonFeatureAdvertisements" /t REG_DWORD /d 1 > NUL 2>&1
-:: Hiberboot Devre DŸ braklyor
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /f /v "HiberbootEnabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: Hazrda bekletme ”zelli§i devre dŸ braklyor...
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Power" /f /v "HibernateEnabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: Kapatma mens - Hibernate kapatlyor.
-reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FlyoutMenuSettings" /f /v "ShowHibernateOption" /t REG_DWORD /d 0 > NUL 2>&1
-:: AyrlmŸ depolama alan devre dŸ braklyor...
-reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\ReserveManager" /f /v "ShippedWithReserves" /t REG_DWORD /d 0 > NUL 2>&1
-:: Prefetch devre dŸ braklyor...
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters" /f /v "EnablePrefetcher" /t REG_DWORD /d 0 > NUL 2>&1
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters" /f /v "EnableSuperFetch" /t REG_DWORD /d 0 > NUL 2>&1
-:: Startup Delay (BaŸlang‡ Gecikmesi) devre dŸ braklyor...
-reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Serialize" /f /v "StartupDelayInMSec" /t REG_DWORD /d 0 > NUL 2>&1
-:: Qos Limiti Devre DŸ braklyor...
-reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Psched" /f /v "NonBestEffortLimit" /t REG_DWORD /d 0 > NUL 2>&1
-:: Windows 255 Karakter Snr devre dŸ braklyor...
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\FileSystem" /f /v "LongPathsEnabled" /t REG_DWORD /d 1 > NUL 2>&1
-:: DiagTrack Devre DŸ braklyor...
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\WMI\Autologger\AutoLogger-Diagtrack-Listener" /f /v "Start" /t REG_DWORD /d 0 > NUL 2>&1
-:: Narrator QuickStart kapatlyor.
-reg add "HKEY_CURRENT_USER\Software\Microsoft\Narrator\QuickStart" /f /v "SkipQuickStart" /t REG_DWORD /d 1 > NUL 2>&1
-:: Windows ”nerileri devre dŸ braklyor...
-reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "SoftLandingEnabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: Windows karŸlama deneyimi kapatlyor...
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "SubscribedContent-310093Enabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: Program uyumluluk yardmcs devre dŸ braklyor...
-reg add "HKCU\SOFTWARE\Policies\Microsoft\Windows\AppCompat" /f /v "DisablePCA" /t REG_DWORD /d 1 > NUL 2>&1
-:: Donanm hzlandrmal GPU Planlamas aktifleŸtiriliyor...
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\GraphicsDrivers" /f /v "HwSchMode" /t REG_DWORD /d 2 > NUL 2>&1
-:: ˜Ÿaret‡i hassasiyeti devre dŸ braklyor...
-:: reg add "HKCU\Control Panel\Mouse" /f /v "MouseSpeed" /t REG_SZ /d 0 > NUL 2>&1
-:: Kapatma iŸleminde uygulamalar a‡k ise otomatik kapat ve bekleme sresi azaltlyor
-reg add "HKCU\Control Panel\Desktop" /f /v "AutoEndTasks" /t REG_SZ /d 1 > NUL 2>&1
-:: :: Uygulamalar cevap vermedi§i zaman g”revi sonlandr se‡ene§ine baslmadan ”nceki bekleme sresini ksaltr.
-reg add "HKCU\Control Panel\Desktop" /f /v "HungAppTimeout" /t REG_SZ /d "1000" > NUL 2>&1
-:: Bilgisayar kapatlrken ya da oturumdan ‡klrken kullanc uygulamalarnn kapatlmas i‡in sistem bekleme sresini ksaltr.
-reg add "HKCU\Control Panel\Desktop" /f /v "WaitToKillAppTime" /t REG_SZ /d "2000" > NUL 2>&1
-:: Cevap vermeyen hizmetlerin kapatlmasndan ”nceki sistem bekleme sresini ksaltr.
-reg add "HKCU\Control Panel\Desktop" /f /v "LowLevelHooksTimeout" /t REG_SZ /d "1000" > NUL 2>&1
-:: Bilgisayarn kapatlmas srasnda durdurulacak hizmetler uyars geldi§inde, uygulamalarn kapanmas i‡in beklenen sreyi ksaltr.
-reg add "HKLM\SYSTEM\CurrentControlSet\Control" /f /v "WaitToKillServiceTimeout" /t REG_SZ /d "2000" > NUL 2>&1
-:: Men g”sterimi bekleme sresini azaltr. B”ylelikle tkland§ zaman menler daha hzl gelecek.
-reg add "HKCU\Control Panel\Desktop" /f /v "MenuShowDelay" /t REG_SZ /d "8" > NUL 2>&1
-:: DŸk Depolama alan uyars devre dŸ braklyor...
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /f /v "NoLowDiskSpaceChecks" /t REG_DWORD /d 1 > NUL 2>&1
-:: :: Farenizle birlikte bir nesnenin zerine geldi§inizde g”rlen a‡klamann ‡kŸ sresini ksaltr
-reg add "HKCU\Control Panel\Mouse" /f /v "MouseHoverTime" /t REG_SZ /d 8 > NUL 2>&1
-:: Bilgisayarnzda mevcut olmayan programlara ait ksayollarn ba§lantsnn Windows tarafndan boŸa vakit harcanarak aranmasn ”nler
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /f /v "LinkResolveIgnoreLinkInfo" /t REG_DWORD /d 1 > NUL 2>&1
-:: Ksayol ba§lant sorununu ‡”zmek i‡in Windows'un diski aramasn ”nler
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /f /v "NoResolveSearch" /t REG_DWORD /d 1 > NUL 2>&1
-:: Ksayol ba§lant sorununu ‡”zmek i‡in Windows'un NTFS dosya sisteminin izleme ”zelli§ini kullanmasn engeller
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /f /v "NoResolveTrack" /t REG_DWORD /d 1 > NUL 2>&1
-:: Odak Yardm aktifleŸtiriliyor
-reg add "HKCU\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\QuietHours" /f /v "Enable" /t REG_DWORD /d 1 > NUL 2>&1
-
-:: 3.Parti Market uygulamalarnn yeniden yklenmesi engelleyen b”lm
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "ContentDeliveryAllowed" /t REG_DWORD /d 0 > NUL 2>&1
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "FeatureManagementEnabled" /t REG_DWORD /d 0 > NUL 2>&1
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "PreInstalledAppsEverEnabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: ™nceden yklenmiŸ OEM uygulamalar devre dŸ braklyor...
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "OemPreInstalledAppsEnabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: ™nceden yklenmiŸ OEM uygulamalar (Minecraft, CandyCrush, Flipboard) kapatlyor.
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "PreInstalledAppsEnabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: ™nerilen uygulamalar otomatik olarak ykleyin kapatlyor.
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "SilentInstalledAppsEnabled" /t REG_DWORD /d 0 > NUL 2>&1
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "SubscribedContent-314559Enabled" /t REG_DWORD /d 0 > NUL 2>&1
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "SubscribedContent-338387Enabled" /t REG_DWORD /d 0 > NUL 2>&1
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "SubscribedContent-338388Enabled" /t REG_DWORD /d 0 > NUL 2>&1
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "SubscribedContent-338389Enabled" /t REG_DWORD /d 0 > NUL 2>&1
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "SubscribedContent-338393Enabled" /t REG_DWORD /d 0 > NUL 2>&1
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "SubscribedContentEnabled" /t REG_DWORD /d 0 > NUL 2>&1
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v "SystemPane RecommendionsEnabled" /t REG_DWORD /d 0 > NUL 2>&1
-:: Market otomatik gncelleŸtirme kapatr.
-reg add "HKLM\SOFTWARE\Policies\Microsoft\WindowsStore" /v "AutoDownload" /t REG_DWORD /d 2 /f > NUL 2>&1
-reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\CloudContent" /f /v "DisableWindowsConsumerFeatures" /t REG_DWORD /d 1 > NUL 2>&1
-
+Call :dword "HKU\.DEFAULT\SOFTWARE\Microsoft\InputPersonalization\TrainedDataStore" "HarvestContacts" "0"
+Call :dword "HKU\.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" "DeviceHistoryEnabled" "0" & :: Cortana - Oturum a‡t§m cihazlar ge‡miŸimi kullan
+Call :dword "HKU\.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" "HistoryViewEnabled" "0" & :: Cortana - Cihaz de§iŸtirirken etkinlik ”nerileri
+Call :dword "HKU\.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Windows Search" "CortanaConsent" "0"
+Call :dword "HKU\.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Windows Search" "CortanaIsReplaceable" "1"
+Call :dword "HKU\.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Windows Search" "CortanaIsReplaced" "1"
+Call :dword "HKU\.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Windows Search" "SearchboxTaskbarMode" "0"
+Call :dword "HKU\.DEFAULT\SOFTWARE\Policies\Microsoft\InputPersonalization" "RestrictImplicitInkCollection" "1"
+Call :dword "HKU\.DEFAULT\SOFTWARE\Policies\Microsoft\InputPersonalization" "RestrictImplicitTextCollection" "1"
+Call :dword "HKCU\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\MicrosoftEdge\ServiceUI" "EnableCortana" "0"
+Call :dword "HKCU\SOFTWARE\Microsoft\InputPersonalization" "RestrictImplicitInkCollection" "1"
+Call :dword "HKCU\SOFTWARE\Microsoft\InputPersonalization" "RestrictImplicitTextCollection" "1"
+Call :dword "HKCU\SOFTWARE\Microsoft\InputPersonalization\TrainedDataStore" "HarvestContacts" "0"
+Call :dword "HKCU\SOFTWARE\Microsoft\Personalization\Settings" "AcceptedPrivacyPolicy" "0"
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" "DeviceHistoryEnabled" "0"
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" "HistoryViewEnabled" "0"
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Windows Search" "CortanaConsent" "0"
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Windows Search" "CortanaIsReplaceable" "1"
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Windows Search" "CortanaIsReplaced" "1"
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Windows Search" "SearchboxTaskbarMode" "0"
+Call :dword "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\AboveLock" "AllowCortanaAboveLock" "0"
+Call :dword "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\Experience" "AllowCortana" "0"
+Call :dword "HKLM\SOFTWARE\Microsoft\Speech_OneCore\Preferences" "ModelDownloadAllowed" "0"
+Call :dword "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" "SearchboxTaskbarMode" "1"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\InputPersonalization" "AllowInputPersonalization" "0"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" "AllowCloudSearch" "0"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" "AllowCortana" "0"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" "AllowCortanaAboveLock" "0"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" "AllowSearchToUseLocation" "0"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" "ConnectedSearchPrivacy" "3"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" "ConnectedSearchSafeSearch" "3"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" "ConnectedSearchUseWeb" "0"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" "ConnectedSearchUseWebOverMeteredConnections" "0"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" "DisableWebSearch" "1"
+Call :dword "HKLM\SOFTWARE\Policies\Wow6432Node\Microsoft\Windows\Windows Search" "AllowCortana" "0"
+Call :dword "HKLM\SOFTWARE\Policies\Wow6432Node\Microsoft\Windows\Windows Search" "AllowCortanaAboveLock" "0"
+:: Taskbar
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "ShowTaskViewButton" 0 & :: G”rev G”rnm Simgesi Kaldrlyor...
+Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "MMTaskbarEnabled" 1 & :: G”rev €ubu§u ve btn simgeleri tm monit”rlerde g”ster
+Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "MMTaskbarMode" 0 & :: G”rev €ubu§u ve btn simgeleri tm monit”rlerde g”ster
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize" "EnableTransparency" 0 & :: G”rev ‡ubu§u transparan ”zelli§i devre dŸ braklyor...
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "ShowCortanaButton" 0 & :: Cortana Butonu kaldrlyor...
+:: Explorer
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "LaunchTo" 1 & :: Explorer "Bu Bilgisayar" olarak ayarlanyor...
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\OperationStatusManager" "EnthusiastMode" 1 & :: Dosya kopyalama iletiŸim kutusuda daha fazla detay g”ster olarak ayarlanyor...
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "HideFileExt" 0 & :: Dosya uzantlar aktifleŸtiriliyor...
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers" "DisableAutoplay" 1 & :: Otomatik oynatma kapatlyor...
+Call :dword "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer" "NoRecentDocsHistory" 0 & :: Son a‡lan belgelerin ge‡miŸi kapatlyor...
+:: Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer" "ClearRecentDocsOnExit" 1 & :: Windows'u kapatrken yeni a‡lan belgelerin ge‡miŸini temizle aktifleŸtiriliyor...
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" "ShowRecent" 0 & :: Son kullanlan dosyalarn hzl eriŸimde g”rntlenmesi engelleniyor...
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" "ShowFrequent" 0 & :: Hzl EriŸimden Sk Kullanlan klas”rler kaldrlyor
+Call :binary "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" "Link" "00000000" & :: Ksayol yazs kaldrlyor...
+Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" "NoInternetOpenWith" 1 & :: Birlikte a‡ se‡ene§inden internette ara se‡ene§i kaldrlyor...
+:: Search
+:: Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" "SearchboxTaskbarMode" 1 & :: Arama b”lm simge haline getiriliyor
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" "DisableWebSearch" 1 & :: Web aramas kapatlyor.
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" "ConnectedSearchUseWeb" 0 & :: Web'de arama yapmayn veya Arama'da web sonu‡larn g”rntlemeyin
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" "AllowIndexingEncryptedStoresOrItems" 0 & :: žifrelenmiŸ dosyalarn indekslenme izni kaldrlyor.
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" "AllowSearchToUseLocation" 0 & :: Arama ve Cortana'nn Locationu kullanma izni kapatlyor.
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" "AlwaysUseAutoLangDetection" 0 & :: ˜‡eri§i ve ”zellikleri dizine eklerken her zaman otomatik dil alglamay kullann kapatlyor.
+Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\Search" "CortanaConsent" 0 & :: Cortana izni kapatlyor.
+Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\Search" "CortanaInAmbientMode" 0 & :: Cortana Ortam modu kapatlyor.
+Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\Search" "AllowSearchToUseLocation" 0 & :: Arama b”lmnn Locationu kullanmas engelleniyor.
+Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\SearchSettings" "SafeSearchMode" 0 & :: Gvenli arama modu kapatlyor.
+Call :dword "HKCU\Software\Policies\Microsoft\Windows\Explorer" "DisableSearchBoxSuggestions" 1 & :: Dosya Gezgini arama kutusundaki son arama giriŸlerinin g”rntlenmesini kapatn
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" "DisableWebSearch" 1 & :: Web aramas kapatlyor.
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" "ConnectedSearchUseWebOverMeteredConnections" 0 & :: Tarifeli ba§lantlar zerinden aramada web'de arama yapmayn veya web sonu‡larn g”rntlemeyin
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" "AllowCloudSearch" 0 & :: Bulut arama kapatlyor.
+Call :dword "HKCU\Software\Microsoft\InputPersonalization\TrainedDataStore" "AcceptedPrivacyPolicy" 0 & :: Gizlilik politikas devre dŸ braklyor.
+Call :dword "HKLM\SOFTWARE\Microsoft\Speech_OneCore\Preferences" "VoiceActivationDefaultOn" 0 & :: Sesle etkinleŸtirme kapatlyor.
+Call :dword "HKLM\SOFTWARE\Microsoft\Speech_OneCore\Preferences" "VoiceActivationEnableAboveLockscreen" 0 & :: Kilit Ekrannn šstnde Sesle EtkinleŸtirme kapatlyor.
+Call :dword "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE" "DisableVoice" 1 & :: Ses etkinleŸtirme kapatlyor.
+Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\Search" "BingSearchEnabled" 0 & :: Arama - Bing web sonu‡larn dahil et kapatlyor...
+:: Optimizasyon
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power" "HiberbootEnabled" 0 & :: Hiberboot Devre DŸ braklyor
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Power" "HibernateEnabled" 0 & :: Hazrda bekletme ”zelli§i devre dŸ braklyor...
+Call :dword "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FlyoutMenuSettings" "ShowHibernateOption" 0 & :: Kapatma mens - Hibernate kapatlyor.
+Call :dword "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\ReserveManager" "ShippedWithReserves" 0 & :: AyrlmŸ depolama alan devre dŸ braklyor...
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters" "EnablePrefetcher" 0 & :: Prefetch devre dŸ braklyor...
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters" "EnableSuperFetch" 0 & :: Prefetch devre dŸ braklyor...
+Call :dword "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Serialize" "StartupDelayInMSec" 0 & :: Startup Delay (BaŸlang‡ Gecikmesi) devre dŸ braklyor...
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\Psched" "NonBestEffortLimit" 0 & :: Qos Limiti Devre DŸ braklyor...
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\FileSystem" "LongPathsEnabled" 1 & :: Windows 255 Karakter Snr devre dŸ braklyor...
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\WMI\Autologger\AutoLogger-Diagtrack-Listener" "Start" 0 & :: DiagTrack Devre DŸ braklyor...
+Call :dword "HKEY_CURRENT_USER\Software\Microsoft\Narrator\QuickStart" "SkipQuickStart" 1 & :: Narrator QuickStart kapatlyor.
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "SoftLandingEnabled" 0 & :: Windows ”nerileri devre dŸ braklyor...
+Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "SubscribedContent-310093Enabled" 0 & :: Windows karŸlama deneyimi kapatlyor...
+Call :dword "HKCU\SOFTWARE\Policies\Microsoft\Windows\AppCompat" "DisablePCA" 1 & :: Program uyumluluk yardmcs devre dŸ braklyor...
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\GraphicsDrivers" "HwSchMode" 2 & :: Donanm hzlandrmal GPU Planlamas aktifleŸtiriliyor...
+:: Call :sz "HKCU\Control Panel\Mouse" "MouseSpeed" 0 & :: ˜Ÿaret‡i hassasiyeti devre dŸ braklyor...
+Call :sz "HKCU\Control Panel\Desktop" "AutoEndTasks" 1 & :: Kapatma iŸleminde uygulamalar a‡k ise otomatik kapat ve bekleme sresi azaltlyor
+Call :sz "HKCU\Control Panel\Desktop" "HungAppTimeout" "1000" & :: Uygulamalar cevap vermedi§i zaman g”revi sonlandr se‡ene§ine baslmadan ”nceki bekleme sresini ksaltr.
+Call :sz "HKCU\Control Panel\Desktop" "WaitToKillAppTime" "2000" & :: Bilgisayar kapatlrken ya da oturumdan ‡klrken kullanc uygulamalarnn kapatlmas i‡in sistem bekleme sresini ksaltr.
+Call :sz "HKCU\Control Panel\Desktop" "LowLevelHooksTimeout" "1000" & :: Cevap vermeyen hizmetlerin kapatlmasndan ”nceki sistem bekleme sresini ksaltr.
+Call :sz "HKLM\SYSTEM\CurrentControlSet\Control" "WaitToKillServiceTimeout" "2000" & :: Bilgisayarn kapatlmas srasnda durdurulacak hizmetler uyars geldi§inde, uygulamalarn kapanmas i‡in beklenen sreyi ksaltr.
+Call :sz "HKCU\Control Panel\Desktop" "MenuShowDelay" "8" & :: Men g”sterimi bekleme sresini azaltr. B”ylelikle tkland§ zaman menler daha hzl gelecek.
+Call :sz "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" "NoLowDiskSpaceChecks" 1 & :: DŸk Depolama alan uyars devre dŸ braklyor...
+Call :sz "HKCU\Control Panel\Mouse" "MouseHoverTime" 8 & :: Farenizle birlikte bir nesnenin zerine geldi§inizde g”rlen a‡klamann ‡kŸ sresini ksaltr
+Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" "LinkResolveIgnoreLinkInfo" 1 & :: Bilgisayarnzda mevcut olmayan programlara ait ksayollarn ba§lantsnn Windows tarafndan boŸa vakit harcanarak aranmasn ”nler
+Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" "NoResolveSearch" 1 & :: Ksayol ba§lant sorununu ‡”zmek i‡in Windows'un diski aramasn ”nler
+Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" "NoResolveTrack" 1 & :: Ksayol ba§lant sorununu ‡”zmek i‡in Windows'un NTFS dosya sisteminin izleme ”zelli§ini kullanmasn engeller
+Call :dword "HKCU\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\QuietHours" "Enable" 1 & :: Odak Yardm aktifleŸtiriliyor
+:: Store
+Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "ContentDeliveryAllowed" 0 & :: 3.Parti Market uygulamalarnn yeniden yklenmesi engelleyen b”lm
+Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "FeatureManagementEnabled" 0 & :: 3.Parti Market uygulamalarnn yeniden yklenmesi engelleyen b”lm
+Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "PreInstalledAppsEverEnabled" 0 & :: 3.Parti Market uygulamalarnn yeniden yklenmesi engelleyen b”lm
+Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "OemPreInstalledAppsEnabled" 0 & :: ™nceden yklenmiŸ OEM uygulamalar devre dŸ braklyor...
+Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "PreInstalledAppsEnabled" 0 & :: ™nceden yklenmiŸ OEM uygulamalar (Minecraft, CandyCrush, Flipboard) kapatlyor.
+Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "SilentInstalledAppsEnabled" 0 & :: ™nerilen uygulamalar otomatik olarak ykleyin kapatlyor.
+Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "SubscribedContent-314559Enabled" 0 & :: ™nerilen uygulamalar otomatik olarak ykleyin kapatlyor.
+Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "SubscribedContent-338387Enabled" 0 & :: ™nerilen uygulamalar otomatik olarak ykleyin kapatlyor.
+Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "SubscribedContent-338388Enabled" 0 & :: ™nerilen uygulamalar otomatik olarak ykleyin kapatlyor.
+Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "SubscribedContent-338389Enabled" 0 & :: ™nerilen uygulamalar otomatik olarak ykleyin kapatlyor.
+Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "SubscribedContent-338393Enabled" 0 & :: ™nerilen uygulamalar otomatik olarak ykleyin kapatlyor.
+Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "SubscribedContentEnabled" 0 & :: ™nerilen uygulamalar otomatik olarak ykleyin kapatlyor.
+Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "SystemPane RecommendionsEnabled" 0 & :: ™nerilen uygulamalar otomatik olarak ykleyin kapatlyor.
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\WindowsStore" "AutoDownload" 2 & :: Market otomatik gncelleŸtirme kapatr.
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\CloudContent" "DisableWindowsConsumerFeatures" 1 & :: Market otomatik gncelleŸtirme kapatr.
+Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications" "Migrated" 4 & :: Uygulamalarn arka planda ‡alŸmas engelleniyor...
+Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications" "GlobalUserDisabled" 1 & :: Uygulamalarn arka planda ‡alŸmas engelleniyor...
+:: Gizlilik
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "SubscribedContent-338393Enabled" 0 & :: Ayarlar uygulamasn ”nerilen i‡eri§i g”stermesi kapatlyor...
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "SubscribedContent-353694Enabled" 0 & :: Ayarlar uygulamasn ”nerilen i‡eri§i g”stermesi kapatlyor...
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "SubscribedContent-353696Enabled" 0 & :: Ayarlar uygulamasn ”nerilen i‡eri§i g”stermesi kapatlyor...
+Call :dword "HKLM\SOFTWARE\Microsoft\WlanSvc\AnqpCache" "OsuRegistrationStatus" 0 & :: Ba§lanmak i‡in Hotspot 2.0 €evrimi‡i kaydolmay kullann kapatlyor
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "Start_TrackProgs" 0 & :: BaŸlang‡ ve arama sonu‡larn iyileŸtirmek i‡in Windows izleme uygulamasnn baŸlatlmasna izin verin kapatlyor
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "SystemPaneSuggestionsEnabled" 0 & :: BaŸlang‡taki ara sra ”neriler kapatlyor...
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\UserProfileEngagement" "ScoobeSystemSettingEnabled" 0 & :: Cihazmn kurulumunu ‡evrimi‡i olarak tamamlayabilece§im yollar ”ner kapatlyor.
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\CloudContent" "DisableCloudOptimizedContent" 1 & :: Programlanabilir G”rev €ubu§u ”zelli§i devre dŸ braklyor.
+Call :dword "HKCU\SOFTWARE\NVIDIA Corporation\NVControlPanel2\Client" "OptInOrOutPreference" 0 & :: Deneyim geliŸtirme programna izin ver(NVIDIA Srcs) kapatlyor...
+Call :dword "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\System" "AllowExperimentation" 0 & :: Deneylere izin ver kapatlyor
+Call :dword "HKCU\SOFTWARE\Microsoft\Input\TIPC" "Enabled" 0 & :: Gelecekte yazmay iyileŸtirmenize yardmc olmas i‡in nasl yazd§m hakknda Microsoft'a bilgi g”nderme kapatlyor.
+Call :dword "HKCU\SOFTWARE\Microsoft\Siuf\Rules" "NumberOfSIUFInPeriod" 0 & :: Geri Bildirim frekans kapatlyor.
+Call :dword "HKCU\Software\Microsoft\Personalization\Settings" "AcceptedPrivacyPolicy" 0 & :: GiriŸ verilerinizi Microsoft'a g”ndererek konuŸma, yazma ve mrekkepleme giriŸinizi kiŸiselleŸtirin kapatlyor
+Call :dword "HKCU\Software\Microsoft\InputPersonalization\TrainedDataStore" "HarvestContacts " 0 & :: GiriŸ verilerinizi Microsoft'a g”ndererek konuŸma, yazma ve mrekkepleme giriŸinizi kiŸiselleŸtirin kapatlyor
+Call :dword "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\System" "AllowLocation" 0 & :: Konum Hizmetlerini kapatlyor...
+Call :dword "HKCU\Control Panel\International\User Profile" "HttpAcceptLanguageOptOut" 1 & :: Kullanc dil listesine eriŸerek web sitelerinin yerel olarak alakal i‡erik sa§lamas engelleniyor.
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\SmartGlass" "UserAuthPolicy" 0 & :: Kullancnn di§er cihazlardaki uygulamalar a‡mas engelleniyor...
+Call :dword "HKLM\SOFTWARE\Microsoft\Internet Explorer\FlipAhead" "FPEnabled" 0 & :: Okumay iyileŸtirmek, taramay hzlandrmak i‡in sayfa tahminini kullann. G”z Atma Verilerinin Microsoft'a G”nderilmesi engelleniyor...
+Call :dword "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE\AppSettings" "Skype-UserConsentAccepted" 0 & :: Skype KiŸiler ba§lants devre dŸ braklyor...
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\CloudContent" "DisableWindowsConsumerFeatures" 1 & :: Sponsorlu uygulamalarn otomatik kurulumu (Tketici Deneyimi)
+Call :dword "HKLM\SOFTWARE\WOW6432Node\Policies\Microsoft\Windows\CloudContent" "DisableWindowsConsumerFeatures" 1 & :: Sponsorlu uygulamalarn otomatik kurulumu (Tketici Deneyimi)
+Call :dword "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Privacy" "TailoredExperiencesWithDiagnosticDataEnabled" 0 & :: Tanlama verilerinizi kullanarak Microsoft'un ilgili ipu‡lar ve ”nerilerle daha ”zel deneyimler sunmasna izin verin.
+Call :dword "HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Privacy" "TailoredExperiencesWithDiagnosticDataEnabled" 0 & :: Tanlama verilerinizi kullanarak Microsoft'un ilgili ipu‡lar ve ”nerilerle daha ”zel deneyimler sunmasna izin verin.
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\DataCollection" "AllowTelemetry" 0 & :: Telemetry Devre DŸ braklyor...
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\AdvertisingInfo" "DisabledByGroupPolicy" 1 & :: Uygulamalarn uygulamalardaki deneyimler i‡in kullanc reklam kimli§ini kullanmas engelleniyor.
+Call :dword "HKCU\Software\Microsoft\InputPersonalization\TrainedDataStore" "HarvestContacts" 0 & :: Windows ve Cortana'nn sizi daha iyi anlamasna izin vermek i‡in kiŸileri toplama kapatlyor.
+Call :dword "HKCU\Software\Microsoft\InputPersonalization" "RestrictImplicitInkCollection" 1 & :: Windows ve Cortana'nn sizi daha iyi anlamasna izin vermek i‡in yazl metin (mrekkep) toplayn kapatlyor.
+Call :dword "HKCU\Software\Microsoft\InputPersonalization" "RestrictImplicitTextCollection" 1 & :: Windows ve Cortana'nn sizi daha iyi anlamasna izin vermek i‡in yazl metni toplayn.
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\System" "EnableActivityFeed" 0 & :: Windows'un bu bilgisayardan etkinliklerimi toplamasna izin ver (Zaman ‡izelgesi)
+Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "Start_TrackDocs" 0 & :: Windows'un s‡rama listelerini doldurmak i‡in a‡lan belgeleri izlemesi kapatlyor.
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\InputPersonalization" "AllowInputPersonalization" 0 & :: €evrimi‡i konuŸma hizmetleri devre dŸ braklyor...
+Call :dword "HKLM\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\features" "WiFiSenseOpen" 0 & :: ™nerilen a‡k scak noktalara otomatik ba§lan kapatlyor.
+Call :dword "HKLM\SOFTWARE\Microsoft\PolicyManager\default\Wifi\AllowAutoConnectToWiFiSenseHotspots" "value" 0 :: ™nerilen a‡k scak noktalara otomatik ba§lan kapatlyor.
+Call :dword "HKLM\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\features" "PaidWifi" 0 & :: šcretli a§ hizmetlerinin mevcut olup olmad§n g”rmek i‡in ge‡ici olarak eriŸim noktalarna otomatik olarak ba§lanma kapatlyor.
+Call :dword "HKCU\SOFTWARE\Microsoft\Input\Settings" "InsightsEnabled" 0 & :: ˜‡g”rsel yazma engelleniyor...
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\OneDrive" "DisableFileSyncNGSC" 1 & :: OneDrive EŸitlemesi devre dŸ braklyor...
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\WMI\Autologger\SQMLogger" "Start" 0 & :: AutoLogger devre dŸ braklyor...
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting" "DontSendAdditionalData" 1 & :: Windows Hata Raporlama devre dŸ braklyor...
+Call :dword "HKLM\SOFTWARE\Microsoft\PolicyManager\default\Wifi\AllowWiFiHotSpotReporting" "value" 0 & :: Wifi Hotspot Raporlama devre dŸ braklyor...
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\AdvertisingInfo" "Enabled" 0 & :: Windows Reklam Kimli§ini devre dŸ braklyor...
+Call :dword "HKLM\SOFTWARE\Microsoft\SQMClient\Windows" "CEIPEnable" 0 & :: MŸteri Deneyim Program devre dŸ brakrlyor...
+Call :delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Device Metadata" & ::Metadata izleme dosyalar kaldrlyor...
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\System" "PublishUserActivities" 0 & :: Windows'un bilgisayardaki etkinlikleri toplamas engelleniyor...
+Call :dword "HKLM\Software\Policies\Microsoft\Windows\System" "EnableActivityFeed" 0 & :: Windows'un bilgisayardaki etkinlikleri toplamas engelleniyor...
+Call :dword "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\Start" "HideRecentJumplists" 1 & :: Atlama Listelerinde en son a‡lan ”§eler engelleniyor...
+Call :dword "HKCU\Software\Policies\Microsoft\Windows\Explorer\NoBalloonFeatureAdvertisements" "NoBalloonFeatureAdvertisements" 1 & :: ™zellik reklam balonu bildirimlerini kapatlyor...
 Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\HandwritingErrorReports" "PreventHandwritingErrorReports" 1 & :: El yazs hata raporlarnn paylaŸmn devre dŸ brak 
 Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\TabletPC" "PreventHandwritingDataSharing" 1 & :: El yazs verilerinin paylaŸmn devre dŸ brak
-Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\AppCompat" "DisableInventory" 1 & :: Envanter Toplaycy Devre DŸ Brak 
+:: Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\AppCompat" "DisableInventory" 1 & :: Envanter Toplaycy Devre DŸ Brak
 
-bcdedit /deletevalue useplatformclock
-bcdedit /set {current} recoveryenabled no
-powercfg /h off
-bcdedit /set useplatformtick yes
-bcdedit /set disabledynamictick yes
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\StorageSense\Parameters\StoragePolicy" "01" "0" & :: Depolama algs
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\StorageSense\Parameters\StoragePolicy" "04" "0" & :: Depolama algs - Uygulamalarn kullanmad§ ge‡ici dosyalar sil
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\StorageSense\Parameters\StoragePolicy" "256" "0" & :: Geri d”nŸm kutusu uzun sre doluysa temizle
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\StorageSense\Parameters\StoragePolicy" "512" "0" & :: Depolama algs
+Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\StorageSense\Parameters\StoragePolicy" "2048" "0" & :: ˜ndirilen klas”rnde uzun sre duran dosyalar sil
+
+
+bcdedit /deletevalue useplatformclock > NUL 2>&1
+bcdedit /set {current} recoveryenabled no > NUL 2>&1
+powercfg /h off > NUL 2>&1
+bcdedit /set useplatformtick yes > NUL 2>&1
+bcdedit /set disabledynamictick yes > NUL 2>&1
 echo %R%[92m G”rev zamanlaycsnda dzenlemeler yaplyor.%R%[0m
 schtasks /change /TN "\Microsoft\Windows\Windows Defender\Windows Defender Cache Maintenance" /DISABLE > NUL 2>&1
 schtasks /change /TN "\Microsoft\Windows\Windows Defender\Windows Defender Cleanup" /DISABLE > NUL 2>&1
@@ -2951,12 +3026,11 @@ goto :EOF
 
 :kontroll
 cls
-FOR /F "tokens=3" %%i in ('FIND "Caption" %Logs%\OS.txt') do SET caption3=%%i
-	if %caption3%==11 GOTO Win11settingsmenu
-	if %caption3%==10 GOTO Win10settingsmenu
+FOR /F "tokens=5" %%i in ('FIND "Caption" %Logs%\OS.txt') do SET caption3=%%i
+	if %caption3%==11 GOTO Win11SettingsMenu
+	if %caption3%==10 GOTO Win10SettingsMenu
 ) else
 	exit
-
 :: --------------------------------------------------------------------------------------------	
 :Logss
 echo [%date% - %time%] ^| %~1 ^| %~2 >> %Location%\Logs

@@ -33,11 +33,31 @@
 ::  ► KaanBeyhan [DOGGEST]
 ::  ----------------------
 ::    • İndirme işlemlerinde ilerleme çubuğunun eklenmesi.
+::    • Oyun ve GPU optimizasyon bölümünün eklenmesi. 
 ::  ---------
 ::  ► Archley
 ::  ---------
 :: 	  • Wifi Crack çalışmasının toolbox'a eklenmesi. 
 ::
+:: ==============================================================================================================================
+-----------------
+ ► Versiyon 2.5 -
+-----------------
+Yayınlanma Tarihi: 30.03.2022
+
+ • Güncelleme sonrası temizlik bölümündeki regedit kayıtları düzenlendi. 
+   • Kilitlenme sorununa neden olan regedit kayıtları kaldırıldı.
+ • Hizmetleri Yönet > Bellek sıkıştırma aç-kapat bölümü eklendi.
+ • Hizmetleri Yönet > Hyper-V bölümündeki komutlar düzenlendi.
+ • Hizmetleri Yönet > Driver güncelleme aç-kapat bölümü eklendi.
+ • Hizmetleri Yönet > İşlemci çekirdek park hizmeti aç-kapat bölümü eklendi. (Core Parking)
+ • Hizmetleri Yönet > Tarayıcı ve Kamera hizmetleri bölümü birleştirildi.
+ • Hizmetleri Yönet > GPU optimizasyon bölümü eklendi.
+ • Microsoft Edge bölümüne reklam engelleyiciler engellendi.
+ • "Windows 10-11 Edit" bölümünde yer alan yönlendirme hatası giderildi.
+ • "Windows 10-11 Edit" bölümüne "Güncelleştirmeleri 2050 yılına kadar ertele bölümü eklendi"
+ •
+
 :: ==============================================================================================================================
 -----------------
  ► Versiyon 2.4 -

@@ -1,4 +1,4 @@
-::                               NOTEPAD++ > Kodlama > Karakter Takçmç > TÅrkáe > OEM857
+::                               NOTEPAD++ > Encoding > Character Set > Turkish > OEM857
 :: ==============================================================================================================================
 ::
 ::       ˛˛˛˛˛˛˛   ˛˛˛˛˛˛   ˛˛    ˛˛ ˛˛˛˛ ˛˛˛˛˛˛˛˛  ˛˛˛˛˛˛˛  ˛˛˛˛˛˛˛˛  ˛˛˛˛˛˛˛˛ ˛˛    ˛˛ ˛˛    ˛˛  ˛˛˛˛˛˛
@@ -9,13 +9,10 @@
 ::      ˛˛     ˛˛ ˛˛    ˛˛  ˛˛   ˛˛˛  ˛˛     ˛˛    ˛˛     ˛˛ ˛˛    ˛˛  ˛˛       ˛˛   ˛˛˛ ˛˛   ˛˛  ˛˛    ˛˛
 ::       ˛˛˛˛˛˛˛   ˛˛˛˛˛˛   ˛˛    ˛˛ ˛˛˛˛    ˛˛     ˛˛˛˛˛˛˛  ˛˛     ˛˛ ˛˛˛˛˛˛˛˛ ˛˛    ˛˛ ˛˛    ˛˛  ˛˛˛˛˛˛ 
 ::
-::  Hazçrlayan: HÅseyin UZUNYAYLA / OgnitorenKs
-::  Toolbox'ç hazçrladçßçm sistemlerde temel programlarç indirip, basit bir üekilde sistem Åzerinde dÅzenleme yapmasç iáin hazçrladçm.
-::  SÅrekli olarak gÅncellenecektir. Toolbox'ç indirmek iáin aüaßçdaki linkleri kullanabilirsiniz.
-::
-::  òstek ve înerileriniz olursa, iletiüim;
-::   Discord: OgnitorenKs#2737 
-::   Mail: ognitorenks@gmail.com
+::  Created: Huseyin UZUNYAYLA / OgnitorenKs
+::  Contact;
+::  >> Discord: OgnitorenKs#2737 
+::  >>    Mail: ognitorenks@gmail.com
 ::                                                >>   WEB PAGE   <<
 ::                                         --------------------------------
 ::                                         >>  ognitorenks.blogspot.com  <<
@@ -24,8 +21,8 @@
 echo off
 cls
 
-echo Bu bat dosyasç indirme linklerini barçndçrmaktadçr.
-echo Kapatmak iáin herhangi bir tuüa basçnçz...
+echo This bat file contains download links. 
+echo Press any key to turn it off. 
 
 pause > NUL
 exit
@@ -353,20 +350,20 @@ https://valorant.secure.dyn.riotcdn.net/channels/public/x/installer/current/live
 
 
 
-:Kaldçrçlanlar
-:k1
+:Removed
+:r1
 :: EagleGet
 http://dl.eagleget.com/latest/eagleget_setup.exe EagleGet.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
 
-:k2
+:r2
 :: https://app.prntscr.com/tr/download.html
 https://app.prntscr.com/build/setup-lightshot.exe LightShoot.exe
 
-:k3
+:r3
 :: http://www.pcfreetime.com/formatfactory/index.php?language=en
 http://public.pcfreetime.com/FFSetup5.9.0.0.exe FormatFactory.exe
 
-:k4
+:r4
 :: https://www.utorrent.com/intl/tr/desktop/compare/
 https://download-hr.utorrent.com/track/stable/endpoint/utorrent/os/windows Utorrent.exe
 
