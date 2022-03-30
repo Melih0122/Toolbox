@@ -3,8 +3,8 @@
 - Toolbox Windows 10 - 11 sürümlerinin x64 mimarilerinde açılmaktadır. Farklı sürümler için desteği yoktur. En güncel olan sürüm ile senkronize olarak gelişmektedir.
 - Windows ekran ölçeklendirme ayarı Toolbox'ın pencere ayarını bozabiliyor. Sorunsuz kullanım için Toolbox'ı kullanırken ölçeklendirme etkileri kapatılmalıdır.
 
-![cmd_PwMyMdogfU](https://user-images.githubusercontent.com/93199689/159128312-4e01b306-c2ac-4984-a9bd-a5eab7fb21c8.png)
-![cmd_ENIRH867xw](https://user-images.githubusercontent.com/93199689/159128335-df60d74f-4a2b-485b-aae9-705b3ffbb76e.png)
+![cmd_zHNc6ovL8r](https://user-images.githubusercontent.com/93199689/160884744-e08fcf0b-cf04-4f1b-bc5b-f1d846188b35.png)
+![cmd_KdavkEoR5N](https://user-images.githubusercontent.com/93199689/160884818-d9b037d9-89c7-450e-bf62-193b43c6c54f.png)
 
 ### Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
 
@@ -35,9 +35,9 @@
    	• ► Archley
    	• ---------
 	  • Wifi Crack çalışmasının toolbox'a eklenmesi.
-    • ----------
-      ► maskem76
-    • ----------
+        • ----------
+        • ► maskem76
+        • ----------
  	  • Hyper-V bölümündeki hatanın giderilmesi.
 
 # OGNİTORENKS TOOLBOX İÇERİĞİ
@@ -139,7 +139,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 # BONUS
 	• 53. - Bu bölüm işletim sistemine göre değişiklik göstermektedir. Windows 11 ve Windows 10 için iki ayrı bölüme ayrılmıştır.
 ### • 53 - Windows 10 Düzenleme
-![cmd_TrKSpQ64Hw](https://user-images.githubusercontent.com/93199689/159128454-421398b2-9019-42e9-ba8c-3aa17f8a93f0.png)
+![explorer_1SrOAqZP9Q](https://user-images.githubusercontent.com/93199689/160884988-ec36351b-11d1-449f-a5fa-3c162accc7e0.png)
 
 	• 1 - Taskbar saat yanı simge ayarı [GÖSTER/GİZLE]: 
 	     •[Göster]: 0 - Saat yanında yer alan tüm simgeleri gösterir.
@@ -172,7 +172,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	     •[Yeni]: 2 - Windows 10 yeni simgeleri yükler.
 	• 9 - Güncellemeleri 2050 yılına kadar ertele: Windows Update hizmetini 2050 yılına kadar etkisiz hale getirir.
 ### • 53 - Windows 11 Düzenleme
-![Win11](https://user-images.githubusercontent.com/93199689/147974749-a9d0f0ce-7dd9-4bd2-8a1c-8b972871e09f.png)
+![cmd_ZsZUD6Foll](https://user-images.githubusercontent.com/93199689/160885045-b7edf8bb-d765-42aa-8393-89d774affbfc.png)
 
 	• 1 - Taskbar Boyut [Küçük/Orta/Büyük]: 
 	     •[Küçük]: 0 - Görev çubuğunu küçük yapar.
@@ -209,7 +209,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip daha sonra aç / kapat baş harflerini eklemek gerekiyor.
 
 Örnek: 1a / 2k / 4A / 10K / 23a / 24k  
-![cmd_pgBcYq0H1r](https://user-images.githubusercontent.com/93199689/159128820-0b1a70bb-af86-4b6d-9d19-1f83c9706af4.png)
+![cmd_cmf6hCRxwH](https://user-images.githubusercontent.com/93199689/160884943-80ea57ef-e195-4a5e-8e19-4af79fb46fe4.png)
 
 	• 1 [A/K]- Bluetooth hizmeti : Bluetooth hizmetlerini kapatır açar.
 	• 2 [A/K]- Yazıcı hizmeti : Yazıcı hizmetlerini kapatır açar.
