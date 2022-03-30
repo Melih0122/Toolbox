@@ -39,6 +39,10 @@
 ::   Archley
 ::  ---------
 :: 	   Wifi Crack áalçümasçnçn toolbox'a eklenmesi. 
+::  ----------
+::   maskem76
+::  ----------
+:: 	   Hyper-V bîlÅmÅndeki hatançn giderilmesi.
 ::
 :: ==============================================================================================================================
 echo off
@@ -148,7 +152,6 @@ set isderleme=%isderleme:~5%
 FOR /F "tokens=3 delims= " %%f in ('reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v "DisplayVersion"') do set ImageBuild=%%f
 for /f "tokens=2 delims='('" %%f in ('powercfg -list ^| findstr /C:"*"') do set gucc=%%f
 set gucc=%gucc:~0,-3%
-
 
 :: MenÅ iáinde sisteme gîre ayarlama yapçyorum
 FOR /F "tokens=5" %%a in ('FIND "Caption" %Logs%\OS.txt') do set caption2=%%a 
@@ -1171,10 +1174,10 @@ set /p value= %C%[92m òülem : %C%[0m
 	if %value%==19A (Call :serv.19.mediaplayer start demand ENABLE aáçlçyor)
 	if %value%==19K (Call :serv.19.mediaplayer stop disabled DISABLE kapatçlçyor)
 	if %value%==19k (Call :serv.19.mediaplayer stop disabled DISABLE kapatçlçyor)
-	if %value%==20a (Call :serv.20.hyperv demand Enable For aáçlçyor)
-	if %value%==20A (Call :serv.20.hyperv demand Enable For aáçlçyor)
-	if %value%==20K (Call :serv.20.hyperv disabled Disable "::" kapatçlçyor)
-	if %value%==20k (Call :serv.20.hyperv disabled Disable "::" kapatçlçyor)
+	if %value%==20a (Call :serv.20.hyperv demand Enable For 1 aáçlçyor)
+	if %value%==20A (Call :serv.20.hyperv demand Enable For 1 aáçlçyor)
+	if %value%==20K (Call :serv.20.hyperv disabled Disable "::" 0 kapatçlçyor)
+	if %value%==20k (Call :serv.20.hyperv disabled Disable "::" 0 kapatçlçyor)
 	if %value%==21a (Call :serv.21.xbox start demand 1 0 delete "/v "AllowGameDVR" /f" aáçlçyor)
 	if %value%==21A (Call :serv.21.xbox start demand 1 0 delete "/v "AllowGameDVR" /f" aáçlçyor)
 	if %value%==21K (Call :serv.21.xbox stop disabled 0 2 add "/v "AllowGameDVR" /t REG_DWORD /d 0 /f" kapatçlçyor)
@@ -1584,9 +1587,10 @@ DISM /Online /%2-Feature /FeatureName:Microsoft-Hyper-V-All /Quiet /NoRestart
 :: DISM /Online /%2-Feature /FeatureName:Microsoft-Hyper-V-Hypervisor /Quiet /NoRestart
 :: DISM /Online /%2-Feature /FeatureName:Microsoft-Hyper-V-Services /Quiet /NoRestart
 :: DISM /Online /%2-Feature /FeatureName:Microsoft-Hyper-V-Management-Clients /Quiet /NoRestart
+Call :dword "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" "Enabled" "%~4"
 ::------------------------------------------
-::    Aá = %1 : demand    | %2 : Enable  | %~3 : For | %4 : aáçlçyor   
-:: Kapat = %1 : disabled  | %2 : Disable | %~3 : ::  | %4 : kapatçlçyor
+::    Aá = %1 : demand    | %2 : Enable  | %~3 : For  | %~4: 1   | %5 : aáçlçyor   
+:: Kapat = %1 : disabled  | %2 : Disable | %~3 : ::   | %~4: 0   | %5 : kapatçlçyor
 ::------------------------------------------
 goto :eof
 

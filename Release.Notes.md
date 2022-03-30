@@ -29,15 +29,19 @@
 ::  ----------------------
 ::    • Sistem Hakkında - RAM soket yapısının eklenmesi.
 ::    •	Sistem Hakkında - Sistem format tarihinin eklenmesi.
-::  ----------------------
-::  ► KaanBeyhan [DOGGEST]
-::  ----------------------
+::  -----------------------
+::  ► KaanBeyhan [Denizlili]
+::  -----------------------
 ::    • İndirme işlemlerinde ilerleme çubuğunun eklenmesi.
 ::    • Oyun ve GPU optimizasyon bölümünün eklenmesi. 
 ::  ---------
 ::  ► Archley
 ::  ---------
-:: 	  • Wifi Crack çalışmasının toolbox'a eklenmesi. 
+:: 	  • Wifi Crack çalışmasının toolbox'a eklenmesi.
+::  ----------
+::  ► maskem76
+::  ----------
+:: 	  • Hyper-V bölümündeki hatanın giderilmesi.
 ::
 :: ==============================================================================================================================
 -----------------
@@ -49,14 +53,14 @@ Yayınlanma Tarihi: 30.03.2022
    • Kilitlenme sorununa neden olan regedit kayıtları kaldırıldı.
  • Hizmetleri Yönet > Bellek sıkıştırma aç-kapat bölümü eklendi.
  • Hizmetleri Yönet > Hyper-V bölümündeki komutlar düzenlendi.
+   • Hata düzenlemesiyle ilgili düzenlemeyi paylaşan "maskem76"a teşekkür ederim.
  • Hizmetleri Yönet > Driver güncelleme aç-kapat bölümü eklendi.
  • Hizmetleri Yönet > İşlemci çekirdek park hizmeti aç-kapat bölümü eklendi. (Core Parking)
  • Hizmetleri Yönet > Tarayıcı ve Kamera hizmetleri bölümü birleştirildi.
  • Hizmetleri Yönet > GPU optimizasyon bölümü eklendi.
  • Microsoft Edge bölümüne reklam engelleyiciler engellendi.
  • "Windows 10-11 Edit" bölümünde yer alan yönlendirme hatası giderildi.
- • "Windows 10-11 Edit" bölümüne "Güncelleştirmeleri 2050 yılına kadar ertele bölümü eklendi"
- •
+ • "Windows 10-11 Edit" bölümüne "Güncelleştirmeleri 2050 yılına kadar ertele" bölümü eklendi.
 
 :: ==============================================================================================================================
 -----------------
