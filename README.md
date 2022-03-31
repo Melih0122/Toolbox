@@ -35,7 +35,7 @@
    	• ► Archley
    	• ---------
 	  • Wifi Crack çalışmasının toolbox'a eklenmesi.
-        • ----------
+	• ----------
         • ► maskem76
         • ----------
  	  • Hyper-V bölümündeki hatanın giderilmesi.
@@ -330,7 +330,7 @@ Mavi renkli işlem numaraları 26 numaralı işlem ile alakalıdır.
 	• -------------------------------------------------------------------------------------------------------------------------
 	• 26 - Mount yol tanımla: Bu bölüm 9 - 12 - 13 - 16 - 18 - 19 - 20 - 21 - 22 - 23 - 24 -25 bölümleriyle bağlantılıdır. 
 	     • Burada tanımlanan klasör yolu ile işlem yapılmaktadır.
-	     • Bu bölüm ilk girişte "Edit\Mount" klasör yolunu alır. Mount dosyaları farklı bir klasörde ise 27 numaralı işlem ile değiştirin.
+	     • Bu bölüm ilk girişte "Edit\Mount" klasör yolunu alır. Mount dosyaları farklı bir klasörde ise 26 numaralı işlem ile değiştirin.
 ### • 57 - Güncelleme Sonrası Temizlik:
 	• Güncelleme sonrası yüklenen Defender, Telemetri, Diagtrack gibi hizmetleri yeniden kapatır.	
 ### • 58 - Sistem / Market Onar:
