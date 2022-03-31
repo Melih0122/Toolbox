@@ -22,22 +22,22 @@
 
 ### Projeye katkıda bulunanlar;
 
-	• ----------------------
-	• ► Eray Türkay 
-	• ----------------------
+	  ----------------------
+	  ► Eray Türkay 
+	  ----------------------
 	  • Sistem Hakkında - RAM soket yapısının eklenmesi.
 	  • Sistem Hakkında - Sistem format tarihinin eklenmesi.
-	• ----------------------
-	• ► KaanBeyhan [DOGGEST]
-	• ----------------------
+	  ----------------------
+	  ► KaanBeyhan [DOGGEST]
+	  ----------------------
 	  • İndirme işlemlerinde ilerleme çubuğunun eklenmesi.
-	• ---------
-   	• ► Archley
-   	• ---------
+	  ---------
+   	  ► Archley
+   	  ---------
 	  • Wifi Crack çalışmasının toolbox'a eklenmesi.
-	• ----------
-	• ► maskem76
-	• ----------
+	  ----------
+	  ► maskem76
+	  ----------
 	  • Hyper-V bölümündeki hatanın giderilmesi.
 
 # OGNİTORENKS TOOLBOX İÇERİĞİ
