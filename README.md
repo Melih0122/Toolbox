@@ -36,9 +36,9 @@
    	• ---------
 	  • Wifi Crack çalışmasının toolbox'a eklenmesi.
 	• ----------
-        • ► maskem76
-        • ----------
- 	  • Hyper-V bölümündeki hatanın giderilmesi.
+	• ► maskem76
+	• ----------
+	  • Hyper-V bölümündeki hatanın giderilmesi.
 
 # OGNİTORENKS TOOLBOX İÇERİĞİ
 ## 1 - Online Katılımsız Bölümü;
