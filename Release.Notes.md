@@ -52,8 +52,7 @@ Yayınlanma Tarihi: 01.04.2022
  • Toolbox içindeki regedit komutlarında düzenleme yapıldı.
  • Blitz uygulaması kurulum sorunlarından dolayı kaldırıldı.
  • Hizmetleri Yönet > Hyper-V bölümünde bilgi ekranındaki değişken hatası giderildi. Yeni parametre eklendi.
- • 
-
+ • Taraycı eklentileri bölümündeki kod hatası giderildi.
 
 :: ==============================================================================================================================
 -----------------

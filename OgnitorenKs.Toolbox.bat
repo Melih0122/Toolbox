@@ -782,7 +782,7 @@ goto :eof
 
 :Download59
 FOR /F "tokens=1" %%i in ('FIND "PyCharm.exe" %Location%\Extra\Links.bat') do set link=%%i
-Call :wget "%link%" PyCharm.exe "/S /CONFIG=%download%\silent.config /D=C:\PyCharm
+Call :wget "%link%" PyCharm.exe /S
 goto :eof
 
 :Download60
