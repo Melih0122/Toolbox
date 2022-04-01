@@ -75,7 +75,7 @@ https://web.whatsapp.com/desktop/windows/release/x64/WhatsAppSetup.exe WhatsApp.
 
 :04
 :: https://signal.org/download/
-https://updates.signal.org/desktop/signal-desktop-win-5.35.0.exe Signal.exe 
+https://updates.signal.org/desktop/signal-desktop-win-5.37.0.exe Signal.exe 
 
 :05
 :: https://desktop.telegram.org/
@@ -126,7 +126,7 @@ https://brave-browser-downloads.s3.brave.com/latest/brave_installer-x64.exe Brav
 
 :18
 :: https://www.microsoft.com/en-us/edge/business/download
-https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/83788acd-5a05-4a45-975b-b1338831a73c/MicrosoftEdgeEnterpriseX64.msi edge.msi
+https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/18e7a93d-4393-4d72-9611-ec93904acc83/MicrosoftEdgeEnterpriseX64.msi edge.msi
 
 :19
 ::ISLC
@@ -137,7 +137,7 @@ https://github.com/henrypp/memreduct/releases/download/v.3.4/memreduct-3.4-setup
 
 :21
 :: https://tr.libreoffice.org/indir/libreoffice-taze-surum/
-https://ftp.linux.org.tr/tdf/libreoffice/stable/7.3.1/win/x86_64/LibreOffice_7.3.1_Win_x64.msi LibreOffice.msi
+https://ftp.linux.org.tr/tdf/libreoffice/stable/7.3.2/win/x86_64/LibreOffice_7.3.2_Win_x64.msi LibreOffice.msi
 
 :22
 :: get.adobe.com/tr/reader/enterprise/
@@ -169,7 +169,7 @@ https://github.com/OpenShot/openshot-qt/releases/download/v2.6.1/OpenShot-v2.6.1
 
 :29
 :: https://shotcut.org/download/
-https://github.com/mltframework/shotcut/releases/download/v22.01.30/shotcut-win64-220130.exe Shotcut.exe
+https://github.com/mltframework/shotcut/releases/download/v22.03.30/shotcut-win64-220330.exe Shotcut.exe
 
 :30
 :: https://krita.org/en/download/krita-desktop/
@@ -181,7 +181,7 @@ https://download.gimp.org/mirror/pub/gimp/v2.10/windows/gimp-2.10.30-setup.exe G
 
 :32
 :: https://obsproject.com/tr/download
-https://cdn-fastly.obsproject.com/downloads/OBS-Studio-27.2.3-Full-Installer-x64.exe OBS.exe
+https://cdn-fastly.obsproject.com/downloads/OBS-Studio-27.2.4-Full-Installer-x64.exe OBS.exe
 
 :33
 ::https://github.com/ShareX/ShareX/releases
@@ -213,7 +213,7 @@ https://dn3.freedownloadmanager.org/6/latest/fdm_x64_setup.exe FreeDownloadManag
 
 :40
 :: https://www.internetdownloadmanager.com/
-https://mirror2.internetdownloadmanager.com/idman640build9.exe?v=lt&filename=idman640build9.exe idm.exe
+https://mirror2.internetdownloadmanager.com/idman640build11.exe?v=lt&filename=idman640build11.exe idm.exe
 
 :41
 :: https://www.byclickdownloader.com/tr/
@@ -221,7 +221,7 @@ https://proxy.byclickdownloader.com/ExternalSetup/InstallPage/ByClickDownloader-
 
 :42
 ::https://www.qbittorrent.org/download.php
-https://netix.dl.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-4.4.1/qbittorrent_4.4.1_x64_setup.exe qbittorrent.exe
+https://netix.dl.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-4.4.2/qbittorrent_4.4.2_x64_setup.exe qbittorrent.exe
 
 :43
 :: https://www.glasswire.com/
@@ -271,7 +271,7 @@ https://github.com/ChrisAnd1998/TaskbarX/releases/download/1.7.6.0/TaskbarX_1.7.
 
 :55
 :: https://stellarium.org/
-https://github.com/Stellarium/stellarium/releases/download/v0.21.3/stellarium-0.21.3-win64.exe Stellarium.exe
+https://github.com/Stellarium/stellarium/releases/download/v0.22.0/stellarium-0.22.0-win64.exe Stellarium.exe
 
 :56
 :: Recuva
@@ -283,7 +283,7 @@ https://www2.aomeisoftware.com/download/pa/PAssist_Std.exe AOMEI.exe
 
 :58
 :: https://www.python.org
-https://www.python.org/ftp/python/3.10.3/python-3.10.3-amd64.exe Python.exe
+https://www.python.org/ftp/python/3.10.4/python-3.10.4-amd64.exe Python.exe
 
 :59
 :: https://www.jetbrains.com/pycharm/download/#section=windows
@@ -295,7 +295,7 @@ https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.3.3/
 
 :61
 :: https://code.visualstudio.com/
-https://az764295.vo.msecnd.net/stable/c722ca6c7eed3d7987c0d5c3df5c45f6b15e77d1/VSCodeUserSetup-x64-1.65.2.exe VisualStudioCode.exe
+https://az764295.vo.msecnd.net/stable/e18005f0f1b33c29e81d732535d8c0e47cafb0b5/VSCodeUserSetup-x64-1.66.0.exe VisualStudioCode.exe
 
 :62
 :: https://desktop.github.com/
@@ -310,7 +310,7 @@ https://github.com/git-for-windows/git/releases/download/v2.35.1.windows.1/Git-2
 https://www.blender.org/download/release/Blender3.0/blender-3.0.1-windows-x64.msi/ Blender.msi
 
 :65
-::
+:: https://processhacker.sourceforge.io/downloads.php
 https://github.com/processhacker/processhacker/releases/download/v2.39/processhacker-2.39-setup.exe Processhacker.exe
 
 :66

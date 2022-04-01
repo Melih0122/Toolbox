@@ -163,7 +163,7 @@ echo %caption2% > NUL
 	if %caption2%==10 (set editmenugo=Win10SettingsMenu) 
 	if %caption2%==11 (set editmenugo=Win11SettingsMenu)
 
-set version=2.5
+set version=2.5.1
 
 ::set editmenu=Windows 11 Edit
 ::set editmenugo=Win11SettingsMenu
@@ -207,7 +207,7 @@ echo   %R%[90m∫%R%[32m 12.%C%[36m Origin%C%[0m               %R%[90m∫%R%[0m %R%[
 echo   %R%[90m∫%R%[32m 13.%C%[36m Cheat Engine%C%[0m         %R%[90m∫%R%[0m %R%[32m 39.%C%[33m Free Download Manager%C%[0m  %R%[90m∫%R%[32m 64.%C%[33m Lisans Yînetimi%C%[0m             %R%[90m∫%R%[0m
 echo   %R%[90m∫%R%[32m 14.%C%[36m Wemod%C%[0m                %R%[90m∫%R%[0m %R%[32m 40.%C%[33m ònt Download Manager%C%[0m   %R%[90m∫%R%[32m 65.%C%[33m Kullancç Hesap Yînetimi%C%[0m     %R%[90m∫%R%[0m
 echo   %R%[90m∫%R%[32m 15.%C%[33m Google Chrome%C%[0m        %R%[90m∫%R%[0m %R%[32m 41.%C%[33m ByClick Downloader%C%[0m     %R%[90m∫%R%[32m 66.%C%[33m Sistem Hakkçnda%C%[0m             %R%[90m∫%R%[0m
-echo   %R%[90m∫%R%[32m 16.%C%[33m Mozilla Firefox%C%[0m      %R%[90m∫%R%[0m %R%[32m 42.%C%[33m QbitTorrent%C%[0m            %R%[90m∫%R%[32m 67.%C%[33m Wifi Crack%C%[0m                  %R%[90m∫%R%[0m
+echo   %R%[90m∫%R%[32m 16.%C%[33m Mozilla Firefox%C%[0m      %R%[90m∫%R%[0m %R%[32m 42.%C%[33m Qbittorrent%C%[0m            %R%[90m∫%R%[32m 67.%C%[33m Wifi Crack%C%[0m                  %R%[90m∫%R%[0m
 echo   %R%[90m∫%R%[32m 17.%C%[33m Brave%C%[0m                %R%[90m∫%R%[0m %R%[32m 43.%C%[33m GlassWire%C%[0m              %R%[90m∫%R%[32m 68.%C%[33m Zaman Ayarlç PC Kapat%C%[0m       %R%[90m∫%R%[0m
 echo   %R%[90m∫%R%[32m 18.%C%[33m Microsoft Edge%C%[0m       %R%[90m∫%R%[0m %R%[32m 44.%C%[33m TeamViewer%C%[0m             %R%[90m∫%R%[0m                                 %R%[90m∫%R%[0m
 echo   %R%[90m∫%R%[32m 19.%C%[37m ISLC%C%[0m                 %R%[90m∫%R%[0m %R%[32m 45.%C%[33m Hamachi%C%[0m                %R%[90m∫%R%[0m                                 %R%[90m∫%R%[0m 
@@ -334,16 +334,16 @@ echo   %R%[90m∫%R%[32m 12.%C%[36m Origin%C%[0m               %R%[90m∫%R%[0m %R%[
 echo   %R%[90m∫%R%[32m 13.%C%[36m Cheat Engine%C%[0m         %R%[90m∫%R%[0m %R%[32m 39.%C%[33m Free Download Manager%C%[0m  %R%[90m∫%R%[32m 65.%C%[36m Process Hacker 2%C%[0m            %R%[90m∫%R%[0m
 echo   %R%[90m∫%R%[32m 14.%C%[36m Wemod%C%[0m                %R%[90m∫%R%[0m %R%[32m 40.%C%[33m ònt Download Manager%C%[0m   %R%[90m∫%R%[32m 66.%C%[36m %C%[0m                            %R%[90m∫%R%[0m
 echo   %R%[90m∫%R%[32m 15.%C%[33m Google Chrome%C%[0m        %R%[90m∫%R%[0m %R%[32m 41.%C%[33m ByClick Downloader%C%[0m     %R%[90m∫%R%[32m 67.%C%[36m %C%[0m                            %R%[90m∫%R%[0m 
-echo   %R%[90m∫%R%[32m 16.%C%[33m Mozilla Firefox%C%[0m      %R%[90m∫%R%[0m %R%[32m 42.%C%[33m Utorrent%C%[0m               %R%[90m∫%R%[32m 68.%C%[36m %C%[0m                            %R%[90m∫%R%[0m
+echo   %R%[90m∫%R%[32m 16.%C%[33m Mozilla Firefox%C%[0m      %R%[90m∫%R%[0m %R%[32m 42.%C%[33m Qbittorent%C%[0m             %R%[90m∫%R%[32m 68.%C%[36m %C%[0m                            %R%[90m∫%R%[0m
 echo   %R%[90m∫%R%[32m 17.%C%[33m Brave%C%[0m                %R%[90m∫%R%[0m %R%[32m 43.%C%[33m GlassWire%C%[0m              %R%[90m∫%R%[32m 69.%C%[36m %C%[0m                            %R%[90m∫%R%[0m  
 echo   %R%[90m∫%R%[32m 18.%C%[33m Microsoft Edge%C%[0m       %R%[90m∫%R%[0m %R%[32m 44.%C%[33m TeamViewer%C%[0m             %R%[90m∫%R%[32m 70.%C%[36m %C%[0m                            %R%[90m∫%R%[0m 
 echo   %R%[90m∫%R%[32m 19.%C%[37m ISLC%C%[0m                 %R%[90m∫%R%[0m %R%[32m 45.%C%[33m Hamachi%C%[0m                %R%[90m∫%R%[32m 71.%C%[36m %C%[0m                            %R%[90m∫%R%[0m 
-echo   %R%[90m∫%R%[32m 20.%C%[37m MemReduct%C%[0m            %R%[90m∫%R%[0m %R%[32m 46.%C%[33m Stremio%C%[0m                %R%[90m∫%R%[32m 72.%C%[37m OSU! %C%[0m                       %R%[90m∫%R%[0m 
-echo   %R%[90m∫%R%[32m 21.%C%[36m Libre Office%C%[0m         %R%[90m∫%R%[0m %R%[32m 47.%C%[36m MSI Afterburner%C%[0m        %R%[90m∫%R%[32m 73.%C%[37m World Of Tanks %C%[0m             %R%[90m∫%R%[0m 
-echo   %R%[90m∫%R%[32m 22.%C%[36m Adobe Reader%C%[0m         %R%[90m∫%R%[0m %R%[32m 48.%C%[36m Hibit Uninstaller%C%[0m      %R%[90m∫%R%[32m 74.%C%[37m Genshin Impact%C%[0m              %R%[90m∫%R%[0m 
-echo   %R%[90m∫%R%[32m 23.%C%[36m PDF-XChange Editîr%C%[0m   %R%[90m∫%R%[0m %R%[32m 49.%C%[36m Wise Care 365%C%[0m          %R%[90m∫%R%[32m 75.%C%[37m League Of Legends%C%[90m[TR]%C%[0m       %R%[90m∫%R%[0m 
-echo   %R%[90m∫%R%[32m 24.%C%[36m Calibre%C%[0m              %R%[90m∫%R%[0m %R%[32m 50.%C%[36m Unlocker%C%[0m               %R%[90m∫%R%[32m 76.%C%[37m League Of Legends%C%[90m[EUW]%C%[0m      %R%[90m∫%R%[0m 
-echo   %R%[90m∫%R%[32m 25.%C%[33m 7 - Zip%C%[0m              %R%[90m∫%R%[0m %R%[32m 51.%C%[36m SSD Booster%C%[0m            %R%[90m∫%R%[32m 77.%C%[37m Blitz%C%[0m                       %R%[90m∫%R%[0m 
+echo   %R%[90m∫%R%[32m 20.%C%[37m MemReduct%C%[0m            %R%[90m∫%R%[0m %R%[32m 46.%C%[33m Stremio%C%[0m                %R%[90m∫%R%[32m 72.%C%[36m %C%[0m                            %R%[90m∫%R%[0m  
+echo   %R%[90m∫%R%[32m 21.%C%[36m Libre Office%C%[0m         %R%[90m∫%R%[0m %R%[32m 47.%C%[36m MSI Afterburner%C%[0m        %R%[90m∫%R%[32m 73.%C%[37m OSU! %C%[0m                       %R%[90m∫%R%[0m 
+echo   %R%[90m∫%R%[32m 22.%C%[36m Adobe Reader%C%[0m         %R%[90m∫%R%[0m %R%[32m 48.%C%[36m Hibit Uninstaller%C%[0m      %R%[90m∫%R%[32m 74.%C%[37m World Of Tanks %C%[0m             %R%[90m∫%R%[0m 
+echo   %R%[90m∫%R%[32m 23.%C%[36m PDF-XChange Editîr%C%[0m   %R%[90m∫%R%[0m %R%[32m 49.%C%[36m Wise Care 365%C%[0m          %R%[90m∫%R%[32m 75.%C%[37m Genshin Impact%C%[0m              %R%[90m∫%R%[0m 
+echo   %R%[90m∫%R%[32m 24.%C%[36m Calibre%C%[0m              %R%[90m∫%R%[0m %R%[32m 50.%C%[36m Unlocker%C%[0m               %R%[90m∫%R%[32m 76.%C%[37m League Of Legends%C%[90m[TR]%C%[0m       %R%[90m∫%R%[0m 
+echo   %R%[90m∫%R%[32m 25.%C%[33m 7 - Zip%C%[0m              %R%[90m∫%R%[0m %R%[32m 51.%C%[36m SSD Booster%C%[0m            %R%[90m∫%R%[32m 77.%C%[37m League Of Legends%C%[90m[EUW]%C%[0m      %R%[90m∫%R%[0m 
 echo   %R%[90m∫%R%[32m 26.%C%[33m WinRAR%C%[0m               %R%[90m∫%R%[0m %R%[32m 52.%C%[36m OpenShell%C%[0m              %R%[90m∫%R%[32m 78.%C%[37m Valorant%C%[0m                    %R%[90m∫%R%[0m
 echo   %R%[90mÃÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕ ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕ ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕπ%R%[0m
 echo   %R%[90m∫%R%[0m                             %R%[32m X.%R%[33m ^<^<^< Listeyi Daralt%R%[0m                                       %R%[90m∫%R%[0m
@@ -543,9 +543,9 @@ FOR /F "tokens=1" %%i in ('FIND "Chrome" %Location%\Extra\Links.bat') do set lin
 Call :wget2 "%link%" Chrome.zip /qn
 Call :ZipExport Chrome.zip
 "%download%\Chrome\Installers\GoogleChromeStandaloneEnterprise64.msi" /qn
-reg add "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\cjpalhdlnbpafiamejdnhcphjbkeiagm" "update_url" "https://clients2.google.com/service/update2/crx" & :: UBlock Origin
-reg add "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\gcbommkclmclpchllfjekcdonpmejbdp" "update_url" "https://clients2.google.com/service/update2/crx" & :: HTTPS Everywhere 
-reg add "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\lckanjgmijmafbedllaakclkaicjfmnk" "update_url" "https://clients2.google.com/service/update2/crx" & :: Clear URL's
+Call :sz "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\cjpalhdlnbpafiamejdnhcphjbkeiagm" "update_url" "https://clients2.google.com/service/update2/crx" & :: UBlock Origin
+Call :sz "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\gcbommkclmclpchllfjekcdonpmejbdp" "update_url" "https://clients2.google.com/service/update2/crx" & :: HTTPS Everywhere 
+Call :sz "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\lckanjgmijmafbedllaakclkaicjfmnk" "update_url" "https://clients2.google.com/service/update2/crx" & :: Clear URL's
 goto :eof 
 
 :Download16
@@ -556,9 +556,9 @@ goto :eof
 :Download17
 FOR /F "tokens=1" %%i in ('FIND "Brave" %Location%\Extra\Links.bat') do set link=%%i
 Call :wget "%link%" Brave.exe "--install --silent --system-level"
-reg add "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\cjpalhdlnbpafiamejdnhcphjbkeiagm" "update_url" "https://clients2.google.com/service/update2/crx" & :: UBlock Origin
-reg add "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\gcbommkclmclpchllfjekcdonpmejbdp" "update_url" "https://clients2.google.com/service/update2/crx" & :: HTTPS Everywhere 
-reg add "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\lckanjgmijmafbedllaakclkaicjfmnk" "update_url" "https://clients2.google.com/service/update2/crx" & :: Clear URL's
+Call :sz "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\cjpalhdlnbpafiamejdnhcphjbkeiagm" "update_url" "https://clients2.google.com/service/update2/crx" & :: UBlock Origin
+Call :sz "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\gcbommkclmclpchllfjekcdonpmejbdp" "update_url" "https://clients2.google.com/service/update2/crx" & :: HTTPS Everywhere 
+Call :sz "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\lckanjgmijmafbedllaakclkaicjfmnk" "update_url" "https://clients2.google.com/service/update2/crx" & :: Clear URL's
 goto :eof 
 
 :Download18
@@ -815,34 +815,29 @@ FOR /F "tokens=1" %%i in ('FIND "Processhacker.exe" %Location%\Extra\Links.bat')
 Call :wget "%link%" Processhacker.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
 goto :eof
 
-:Download72
+:Download73
 FOR /F "tokens=1" %%i in ('FIND "osu.exe" %Location%\Extra\Links.bat') do set link=%%i
 Call :wget3 "%link%" "C:\users\%username%\Desktop\osu.exe" 
 goto :eof
 
-:Download73
+:Download74
 FOR /F "tokens=1" %%i in ('FIND "WorldOfTanks.exe" %Location%\Extra\Links.bat') do set link=%%i
 Call :wget3 "%link%" "C:\users\%username%\Desktop\WorldOfTanks.exe" 
 goto :eof
 
-:Download74
+:Download75
 FOR /F "tokens=1" %%i in ('FIND "GenshinImpact.exe" %Location%\Extra\Links.bat') do set link=%%i
 Call :wget3 "%link%" "C:\users\%username%\Desktop\GenshinImpact.exe" 
 goto :eof
 
-:Download75
+:Download76
 FOR /F "tokens=1" %%i in ('FIND "LeagueOfLegendsTR.exe" %Location%\Extra\Links.bat') do set link=%%i
 Call :wget3 "%link%" "C:\users\%username%\Desktop\LeagueOfLegendsTR.exe" 
 goto :eof
 
-:Download76
+:Download77
 FOR /F "tokens=1" %%i in ('FIND "LeagueOfLegendsEUW.exe" %Location%\Extra\Links.bat') do set link=%%i
 Call :wget3 "%link%" "C:\users\%username%\Desktop\LeagueOfLegendsEUW.exe" 
-goto :eof
-
-:Download77
-FOR /F "tokens=1" %%i in ('FIND "Blitz" %Location%\Extra\Links.bat') do set link=%%i
-Call :wget "%link%" Blitz.exe /S
 goto :eof
 
 :Download78
@@ -869,7 +864,7 @@ RD /S /Q  %windir%\SoftwareDistribution > NUL 2>&1
 net start wuauserv > NUL 2>&1
 echo %R%[92m   Market Regedit kayçtlarç dÅzenleniyor...%R%[0m
 :: Market bîlÅmÅnÅnÅn sorunsuz áalçümasç iáin reg kayçtlarçnç dÅzenler
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsStore" /f /v "RemoveWindowsStore" /t REG_DWORD /d 0 > NUL 2>&1
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\WindowsStore" "RemoveWindowsStore" "0"
 :: Market iáin gerekli hizmetleri baülatçr.
 echo %R%[92m   Market uygulamasç iáin servisler áalçütçrçlçyor...%R%[0m
 :: AppX Deployment Service (Daßçtçm Hizmeti)
@@ -1166,22 +1161,22 @@ set /p value= %C%[92m òülem : %C%[0m
 	if %value%==17A (Call :serv.17.hibernate on 1 aáçlçyor)
 	if %value%==17K (Call :serv.17.hibernate off 0 kapatçlçyor)
 	if %value%==17k (Call :serv.17.hibernate off 0 kapatçlçyor)
-	if %value%==18a (Call :serv.18.Location start demand Allow 1 delete "/v "DisableLocation" /f" aáçlçyor)
-	if %value%==18A (Call :serv.18.Location start demand Allow 1 delete "/v "DisableLocation" /f" aáçlçyor)
-	if %value%==18K (Call :serv.18.Location stop disabled Deny 0 add "/v "DisableLocation" /t REG_DWORD /d 1 /f" kapçtçlçyor)
-	if %value%==18k (Call :serv.18.Location stop disabled Deny 0 add "/v "DisableLocation" /t REG_DWORD /d 1 /f" kapçtçlçyor)
+	if %value%==18a (Call :serv.18.Location start demand Allow 1 "Call :delete2" "DisableLocation" aáçlçyor)
+	if %value%==18A (Call :serv.18.Location start demand Allow 1 "Call :delete2" "DisableLocation" aáçlçyor)
+	if %value%==18K (Call :serv.18.Location stop disabled Deny 0 "Call :dword" "DisableLocation 1" kapçtçlçyor)
+	if %value%==18k (Call :serv.18.Location stop disabled Deny 0 "Call :dword" "DisableLocation 1" kapçtçlçyor)
 	if %value%==19a (Call :serv.19.mediaplayer start demand ENABLE aáçlçyor)
 	if %value%==19A (Call :serv.19.mediaplayer start demand ENABLE aáçlçyor)
 	if %value%==19K (Call :serv.19.mediaplayer stop disabled DISABLE kapatçlçyor)
 	if %value%==19k (Call :serv.19.mediaplayer stop disabled DISABLE kapatçlçyor)
-	if %value%==20a (Call :serv.20.hyperv demand Enable For 1 aáçlçyor)
-	if %value%==20A (Call :serv.20.hyperv demand Enable For 1 aáçlçyor)
+	if %value%==20a (Call :serv.20.hyperv demand Enable For 1 on aáçlçyor)
+	if %value%==20A (Call :serv.20.hyperv demand Enable For 1 off aáçlçyor)
 	if %value%==20K (Call :serv.20.hyperv disabled Disable "::" 0 kapatçlçyor)
 	if %value%==20k (Call :serv.20.hyperv disabled Disable "::" 0 kapatçlçyor)
-	if %value%==21a (Call :serv.21.xbox start demand 1 0 delete "/v "AllowGameDVR" /f" aáçlçyor)
-	if %value%==21A (Call :serv.21.xbox start demand 1 0 delete "/v "AllowGameDVR" /f" aáçlçyor)
-	if %value%==21K (Call :serv.21.xbox stop disabled 0 2 add "/v "AllowGameDVR" /t REG_DWORD /d 0 /f" kapatçlçyor)
-	if %value%==21k (Call :serv.21.xbox stop disabled 0 2 add "/v "AllowGameDVR" /t REG_DWORD /d 0 /f" kapatçlçyor)
+	if %value%==21a (Call :serv.21.xbox start demand 1 0 "Call :delete2" "AllowGameDVR" aáçlçyor)
+	if %value%==21A (Call :serv.21.xbox start demand 1 0 "Call :delete2" "AllowGameDVR" aáçlçyor)
+	if %value%==21K (Call :serv.21.xbox stop disabled 0 2 "Call :dword" "AllowGameDVR 0" kapatçlçyor)
+	if %value%==21k (Call :serv.21.xbox stop disabled 0 2 "Call :dword" "AllowGameDVR 0" kapatçlçyor)
 	if %value%==22a (Call :serv.22.bitlocker start demand aáçlçyor)
 	if %value%==22A (Call :serv.22.bitlocker start demand aáçlçyor)
 	if %value%==22K (Call :serv.22.bitlocker stop disabled kapatçlçyor)
@@ -1473,7 +1468,7 @@ echo   %C%[96mDokunmatik Klavye ve Kalem hizmeti %3 ...%C%[0m
 goto :eof
 
 :serv.15.sistemgeriyukleme
-echo [%date% - %time%] ^| Hizmetleri Yînet ^| Sistem Geri yÅkleme hizmeti aáçldç. hizmeti %5. >> %Location%\Logs
+echo [%date% - %time%] ^| Hizmetleri Yînet ^| Sistem Geri yÅkleme hizmeti %5. >> %Location%\Logs
 echo   %C%[96mSistem geri yÅkleme hizmeti %5 ...%C%[0m
 :: Windows Yedekleme ve Geri YÅkleme hizmeti
 %PowerRun% sc config SDRSVC start= %2
@@ -1491,10 +1486,10 @@ echo   %C%[96mSistem geri yÅkleme hizmeti %5 ...%C%[0m
 %PowerRun% sc config fhsvc start= %2
 %PowerRun% net %1 fhsvc
 schtasks /change /TN "\Microsoft\Windows\SystemRestore\SR" /%3 > NUL 2>&1
-reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore" /f /v "DisableSR" /t REG_DWORD /d %4 > NUL 2>&1
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore" "DisableSR" "%~4"
 ::-------------------------------------------------------------------------------
-::    Aá = %1 : start | %2 : demand   | %3 : ENABLE  | %4 : 0 | %5 : aáçlçyor
-:: Kapat = %1 : stop  | %2 : disabled | %3 : DISABLE | %4 : 1 | %5 : kapatçlçyor
+::    Aá = %1 : start | %2 : demand   | %3 : ENABLE  | %~4 : 0 | %5 : aáçlçyor
+:: Kapat = %1 : stop  | %2 : disabled | %3 : DISABLE | %~4 : 1 | %5 : kapatçlçyor
 ::-------------------------------------------------------------------------------
 goto :eof
 
@@ -1514,20 +1509,20 @@ goto :eof
 echo [%date% - %time%] ^| Hizmetleri Yînet ^| Hçzlç baülangçá^(Hibernate^) hizmeti %3. >> %Location%\Logs
 echo   %C%[96mHçzlç baülat %3 ...%C%[0m
 powercfg /hibernate %1
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Power" /v "HibernateEnabled" /t REG_DWORD /d %2 /f > NUL 2>&1
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /v "HiberbootEnabled" /t REG_DWORD /d %2 /f > NUL 2>&1
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Power" "HibernateEnabled" "%~2"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power" "HiberbootEnabled" "%~2"
 ::-------------------------------------------------------
-::    Aá = %1 : On  | %2 : 1  | %3 : aáçlçyor
-:: Kapat = %1 : Off | %2 : 0  | %3 : kapatçlçyor
+::    Aá = %1 : On  | %~2 : 1  | %3 : aáçlçyor
+:: Kapat = %1 : Off | %~2 : 0  | %3 : kapatçlçyor
 ::-------------------------------------------------------
 goto :eof
 
 :serv.18.Location
 echo [%date% - %time%] ^| Hizmetleri Yînet ^| Konum hizmeti %7. >> %Location%\Logs
 echo   %C%[96mKonum hizmeti %7 ...%C%[0m
-reg %5 "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\LocationAndSensors" %~6 > NUL 2>&1
-reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\Location" /v "Value" /t REG_SZ /d "%3" /f > NUL 2>&1
-reg add "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\System" /v "AllowLocation" /t REG_DWORD /d %4 /f > NUL 2>&1
+%~5 "HKLM\SOFTWARE\Policies\Microsoft\Windows\LocationAndSensors" %~6 > NUL 2>&1
+Call :sz "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\Location" "Value" "%~3"
+Call :dword "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\System" "AllowLocation" "%~4" 
 :: Natural Kimlik Doßrulama
 %PowerRun% sc config NaturalAuthentication start= %2
 %PowerRun% net %1 NaturalAuthentication
@@ -1535,8 +1530,8 @@ reg add "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\System" /v "AllowL
 %PowerRun% sc config lfsvc start= %2
 %PowerRun% net %1 lfsvc
 ::----------------------------------------------------------------------------------------------------------------------------------------------
-::    Aá = %1 : start  | %2 : demand    | %3 : Allow |  %4 : 1 | %5 : delete | %6 : /v "DisableLocation" /f                   | %7 : aáçlçyor
-:: Kapat = %1 : stop   | %2 : disabled  | %3 : Deny  |  %4 : 0 | %5 : add    | %6 : /v "DisableLocation" /t REG_DWORD /d 1 /f | %7 : kapatçlçyor
+::    Aá = %1 : start  | %2 : demand    | %~3 : Allow |  %~4 : 1 | %5 : Call :delete2  | %~6 : "DisableLocation"     | %7 : aáçlçyor
+:: Kapat = %1 : stop   | %2 : disabled  | %~3 : Deny  |  %~4 : 0 | %5 : Call :dword    | %~6 : "DisableLocation 1"   | %7 : kapatçlçyor
 ::----------------------------------------------------------------------------------------------------------------------------------------------
 goto :eof
 
@@ -1555,8 +1550,8 @@ Dism /Online /%3-Feature /FeatureName:MediaPlayback /Quiet /NoRestart
 goto :eof
 
 :serv.20.hyperv
-echo [%date% - %time%] ^| Hizmetleri Yînet ^| Hyper-V hizmeti %4. >> %Location%\Logs
-echo   %C%[96mHyper-V hizmeti %4 ...%C%[0m
+echo [%date% - %time%] ^| Hizmetleri Yînet ^| Hyper-V hizmeti %6. >> %Location%\Logs
+echo   %C%[96mHyper-V hizmeti %6 ...%C%[0m
 :: HV Ana Bilgisayar Hizmeti
 %PowerRun% sc config HvHost start= %1
 :: Hyper-V Birim Gîlge Kopyasç òsteyicisi
@@ -1587,10 +1582,11 @@ DISM /Online /%2-Feature /FeatureName:Microsoft-Hyper-V-All /Quiet /NoRestart
 :: DISM /Online /%2-Feature /FeatureName:Microsoft-Hyper-V-Hypervisor /Quiet /NoRestart
 :: DISM /Online /%2-Feature /FeatureName:Microsoft-Hyper-V-Services /Quiet /NoRestart
 :: DISM /Online /%2-Feature /FeatureName:Microsoft-Hyper-V-Management-Clients /Quiet /NoRestart
-Call :dword "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" "Enabled" "%~4"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" "Enabled" "%~4"
+bcdedit /set hypervisorlaunchtype %5
 ::------------------------------------------
-::    Aá = %1 : demand    | %2 : Enable  | %~3 : For  | %~4: 1   | %5 : aáçlçyor   
-:: Kapat = %1 : disabled  | %2 : Disable | %~3 : ::   | %~4: 0   | %5 : kapatçlçyor
+::    Aá = %1 : demand    | %2 : Enable  | %~3 : For  | %~4: 1  | %5 : on   | %6 : aáçlçyor   
+:: Kapat = %1 : disabled  | %2 : Disable | %~3 : ::   | %~4: 0  | %5 : off  | %6 : kapatçlçyor
 ::------------------------------------------
 goto :eof
 
@@ -1615,12 +1611,12 @@ echo   %C%[96mXbox hizmeti %7 ...%C%[0m
 :: Teslimat optimizasyonu
 %PowerRun% sc config DoSvc start= %2
 %PowerRun% net %1 DoSvc
-reg add "HKCU\System\GameConfigStore" /v "GameDVR_Enabled" /t REG_SZ /d "%3" /f > NUL 2>&1
-reg add "HKCU\System\GameConfigStore" /v "GameDVR_FSEBehavior" /t REG_SZ /d "%4" /f > NUL 2>&1
-reg %5 "HKLM\SOFTWARE\Policies\Microsoft\Windows\GameDVR" %6 > NUL 2>&1
+Call :sz "HKCU\System\GameConfigStore" "GameDVR_Enabled" "%3"
+Call :sz "HKCU\System\GameConfigStore" "GameDVR_FSEBehavior" "%4"
+%~5 "HKLM\SOFTWARE\Policies\Microsoft\Windows\GameDVR" %6 
 ::----------------------------------------------------------------------------------------------------------------------------------------------
-::    Aá = %1 : start  | %2 : demand    | %3 : 1  |  %4 : 0 | %5 : delete | %6 : /v "AllowGameDVR" /f                     | %7 : aáçlçyor
-:: Kapat = %1 : stop   | %2 : disabled  | %3 : 0  |  %4 : 2 | %5 : add    | %6 : /v "AllowGameDVR" /t REG_DWORD /d 0 /f   | %7 : kapatçlçyor
+::    Aá = %1 : start  | %2 : demand    | %3 : 1  |  %4 : 0  | %~5 : Call :delete2  | %~6 : AllowGameDVR     | %7 : aáçlçyor
+:: Kapat = %1 : stop   | %2 : disabled  | %3 : 0  |  %4 : 2  | %~5 : Call :dword    | %~6 : AllowGameDVR 0   | %7 : kapatçlçyor
 ::----------------------------------------------------------------------------------------------------------------------------------------------
 goto :eof
 
@@ -1815,23 +1811,23 @@ echo  %R%[90m»ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕº%R%[0m
 set /p value= %R%[92m  òülem : %R%[0m
 	if %value%==1 (title Sahiplik al ekleniyor... / OgnitorenKs
 				   echo [%date% - %time%] ^| WinSahiplik ^| Saß-tçk "Sahiplik Al" eklendi. >> %Location%\Logs
-				   reg add "HKCR\*\shell\runas" /f /ve /t REG_SZ /d "Sahiplißi Al" > NUL 2>&1
-				   reg add "HKCR\*\shell\runas" /f /v "Icon" /t REG_SZ /d "imageres.dll,73" > NUL 2>&1
-				   reg add "HKCR\*\shell\runas" /f /v "NoWorkingDirectory" /t REG_SZ /d "" > NUL 2>&1
-				   reg add "HKCR\*\shell\runas\command" /f /ve /t REG_SZ /d "cmd.exe /c takeown /f \"%%^1\" && ica \"%%^1\" /grant administrators:F" > NUL 2>&1
-				   reg add "HKCR\*\shell\runas\command" /f /v "IsolatedCommand" /t REG_SZ /d "cmd.exe /c takeown /f \"%%^1\" && ica \"%%^1\" /grant administrators:F" > NUL 2>&1
-				   reg add "HKCR\Directory\shell\runas" /f /ve /t REG_SZ /d "Sahiplißi Al" > NUL 2>&1
-				   reg add "HKCR\Directory\shell\runas" /f /v "Icon" /t REG_SZ /d "imageres.dll,73" > NUL 2>&1
-				   reg add "HKCR\Directory\shell\runas" /f /v "NoWorkingDirectory" /t REG_SZ /d "" > NUL 2>&1
-				   reg add "HKCR\Directory\shell\runas\command" /f /ve /t REG_SZ /d "cmd.exe /c takeown /f \"%%^1\" /r /d y && ica \"%%^1\" /grant administrators:F /t" > NUL 2>&1
-				   reg add "HKCR\Directory\shell\runas\command" /f /v "IsolatedCommand" /t REG_SZ /d "cmd.exe /c takeown /f \"%%^1\" /r /d y && ica \"%%^1\" /grant administrators:F /t" > NUL 2>&1
+				   Call :vesz "HKCR\*\shell\runas" "Sahiplißi Al" 
+				   Call :sz "HKCR\*\shell\runas" "Icon" "imageres.dll,73" 
+				   Call :sz "HKCR\*\shell\runas" "NoWorkingDirectory" "" 
+				   Call :vesz "HKCR\*\shell\runas\command" "cmd.exe /c takeown /f \"%%%%1\" && ica \"%%%%1\" /grant administrators:F" 
+				   Call :sz "HKCR\*\shell\runas\command" "IsolatedCommand" "cmd.exe /c takeown /f \"%%%%1\" && ica \"%%%%1\" /grant administrators:F" 
+				   Call :vesz "HKCR\Directory\shell\runas" "Sahiplißi Al" 
+				   Call :sz "HKCR\Directory\shell\runas" "Icon" "imageres.dll,73" 
+				   Call :sz "HKCR\Directory\shell\runas" "NoWorkingDirectory" "" 
+				   Call :vesz "HKCR\Directory\shell\runas\command" "cmd.exe /c takeown /f \"%%%%1\" /r /d y && ica \"%%%%1\" /grant administrators:F /t" 
+				   Call :sz "HKCR\Directory\shell\runas\command" "IsolatedCommand" "cmd.exe /c takeown /f \"%%%%1\" /r /d y && ica \"%%%%1\" /grant administrators:F /t" 
 				   echo %R%[92m òülem tamamlandç.%R%[0m
 				   timeout /t 1 /nobreak > NUL
 				   goto :eof)
 	if %value%==2 (title Sahiplik al kaldçrçlçyor... / OgnitorenKs
 				   echo [%date% - %time%] ^| WinSahiplik ^| Saß-tçk "Sahiplik Al" kaldçrçldç. >> %Location%\Logs
-				   reg delete "HKCR\*\shell\runas" /f > NUL 2>&1
-				   reg delete "HKCR\Directory\shell\runas" /f > NUL 2>&1
+				   Call :delete "HKCR\*\shell\runas"
+				   Call :delete "HKCR\Directory\shell\runas"
 				   echo %R%[92m òülem tamamlandç.%R%[0m
 				   timeout /t 1 /nobreak > NUL
 				   goto :eof)
@@ -1962,7 +1958,7 @@ set /p value= %C%[92m òülem : %C%[0m
 	if %value%==X goto Win11SettingsMenu
 
 echo [%date% - %time%] ^| Win11MenuChange ^| Taskbar boyut ayarç "%value%" olarak ayarlandç. >> %Location%\Logs	
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /f /v "TaskbarSi" /t REG_DWORD /d %value%
+Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "TaskbarSi" "%value%"
 Call :ExplorerReset
 echo %R%[92m òülem tamamlandç.%R%[0m
 timeout /t 2 /nobreak > NUL
@@ -1986,7 +1982,7 @@ set /p value= %C%[92m òülem : %C%[0m
 	if %value%==X goto win11settingsmenu
 
 echo [%date% - %time%] ^| Win11MenuLocation ^| Taskbar Location ayarç "%value%" olarak ayarlandç. >> %Location%\Logs
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\StuckRects3" /v "Settings" /t REG_BINARY /d "30000000feffffff7af400000%value%0000003000000030000000000000000804000080070000380400006000000001000000" /f
+Call :binary "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\StuckRects3" "Settings" "30000000feffffff7af400000%value%0000003000000030000000000000000804000080070000380400006000000001000000"
 Call :ExplorerReset
 echo %R%[92m òülem tamamlandç.%R%[0m
 timeout /t 2 /nobreak > NUL
@@ -2011,7 +2007,7 @@ set /p value= %C%[92m òülem : %C%[0m
 	if %value%==X goto Win11SettingsMenu
 
 echo [%date% - %time%] ^| Win11MenuOld ^| Taskbar simge Locationu "%value%" olarak ayarlandç. >> %Location%\Logs
-reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /f /v "TaskbarAl" /t REG_DWORD /d %value%
+Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "TaskbarAl" "%value%"
 Call :ExplorerReset
 echo %R%[92m òülem tamamlandç.%R%[0m
 timeout /t 2 /nobreak > NUL
@@ -2032,13 +2028,15 @@ echo  %R%[90m∫%R%[0m   %R%[32m X.%R%[36m MenÅ%R%[0m                             
 echo  %R%[90m»ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕº%R%[0m
 set /p value= %C%[92m òülem : %C%[0m
 	if %value%==1 (echo [%date% - %time%] ^| Win11RightClick ^| Windows 11 saß-tçk ayarç eski haline getirildi.. >> %Location%\Logs
-				   reg add "HKEY_CURRENT_USER\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f&taskkill /f /im explorer.exe&start explorer.exe&goto :eof)
+				   Call :key "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32"
+				   Call :ExplorerReset)
 	if %value%==2 (echo [%date% - %time%] ^| Win11RightClick ^| Windows 11 saß-tçk ayarç yeni haline getirildi.. >> %Location%\Logs
-				   reg delete "HKEY_CURRENT_USER\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f&goto :eof)
+				   Call :delete "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f)
 	if %value%==x goto Win11SettingsMenu
 	if %value%==X goto Win11SettingsMenu
 ) else
-	goto Win11SettingsMenu	
+	goto Win11SettingsMenu
+goto Win11RightClick
 
 :Win11RightMenuTerminal
 cls
@@ -2055,13 +2053,15 @@ echo  %R%[90m∫%R%[0m   %R%[32m X.%R%[36m MenÅ%R%[0m                             
 echo  %R%[90m»ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕº%R%[0m
 set /p value= %C%[92m òülem : %C%[0m
 	if %value%==1 (echo [%date% - %time%] ^| Win11RightMenuTerminal ^| Windows 11 saß-tçk bîlÅmÅnden terminal kaldçrçldç. >> %Location%\Logs
-				   reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked" /v "{9F156763-7844-4DC4-B2B1-901F640F5155}" /t REG_SZ /d "" /f&taskkill /f /im "explorer.exe"&start explorer.exe&goto :eof)
+				   Call :sz "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked" "{9F156763-7844-4DC4-B2B1-901F640F5155}" ""
+				   Call :ExplorerReset)
 	if %value%==2 (echo [%date% - %time%] ^| Win11RightMenuTerminal ^| Windows 11 saß-tçk bîlÅmÅne terminal eklendi. >> %Location%\Logs
-				   reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked" /f&goto :eof)
+				   Call :delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked")
 	if %value%==x goto Win11SettingsMenu
 	if %value%==X goto Win11SettingsMenu
 ) else
 	goto Win11SettingsMenu
+goto Win11RightMenuTerminal
 
 :: ˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛
 
@@ -2121,7 +2121,7 @@ set /p value=%C%[92m  òülem : %C%[0m
 	if %value%==X goto Win10SettingsMenu
 
 echo [%date% - %time%] ^| Win10EkranTepsi ^| Windows 10 Saat yanç simgeri ayarç "%value%" olarak ayarlandç. >> %Location%\Logs
-reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer" /f /v "EnableAutoTray" /t REG_DWORD /d %value% > NUL 2>&1
+Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer" "EnableAutoTray" "%value%"
 Call :ExplorerReset
 echo %R%[92m òülem tamamlandç.%R%[0m
 timeout /t 2 /nobreak > NUL
@@ -2147,8 +2147,8 @@ set /p value= %C%[92m  òülem : %C%[0m
 	if %value%==X goto Win10SettingsMenu
 
 echo [%date% - %time%] ^| Win10Bildirim ^| Windows 10 Bildirim alanç ayarç "%value%" olarak ayarlandç. >> %Location%\Logs
-reg add "HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer" /f /v "DisableNotificationCenter" /t REG_DWORD /d %value% > NUL 2>&1
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer" /f /v "DisableNotificationCenter" /t REG_DWORD /d %value% > NUL 2>&1
+Call :dword "HKCU\SOFTWARE\Policies\Microsoft\Windows\Explorer" "DisableNotificationCenter" "%value%"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\Explorer" "DisableNotificationCenter" "%value%"
 Call :ExplorerReset
 echo %R%[92m òülem tamamlandç.%R%[0m
 timeout /t 2 /nobreak > NUL
@@ -2173,7 +2173,7 @@ set /p value= %C%[92m  òülem : %C%[0m
 	if %value%==x goto Win10SettingsMenu
 	if %value%==X goto Win10SettingsMenu
 	
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Feeds" /v "EnableFeeds" /t REG_DWORD /d %value% /f 
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Feeds" "EnableFeeds" "%value%"
 Call :ExplorerReset
 echo %R%[92m òülem tamamlandç.%R%[0m
 timeout /t 2 /nobreak > NUL
@@ -2240,13 +2240,13 @@ echo [%date% - %time%] ^| Win10StoreDelIns ^| Windows 10 Market uygulamasç yenid
 echo %R%[92m Microsoft Store yÅkleniyor...%R%[0m
 powershell -command "Add-AppxPackage -DisableDevelopmentMode -Register $Env:%windir%\SystemApps\*\AppxManifest.xml"
 
-reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ClipSVC\Parameters" /v "DisableSubscription" /t REG_DWORD /d 0 /f
-reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ClipSVC\Parameters" /v "InactivityShutdownDelay" /t REG_DWORD /d 0x0000012c /f
-reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ClipSVC\Parameters" /v "ProcessBiosKey" /t REG_DWORD /d 1 /f
-reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ClipSVC\Parameters" /v "RefreshRequired" /t REG_DWORD /d 1 /f
-reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ClipSVC\Parameters" /v "ServiceDll" /t REG_EXPAND_SZ /d "%SystemRoot%\System32\ClipSVC.dll" /f
-reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ClipSVC\Parameters" /v "ServiceDllUnloadOnStop" /t REG_DWORD /d 1 /f
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsStore" /v "RemoveWindowsStore" /t REG_DWORD /d 0 /f
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Services\ClipSVC\Parameters" "DisableSubscription" "0"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Services\ClipSVC\Parameters" "InactivityShutdownDelay" "0x0000012c"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Services\ClipSVC\Parameters" "ProcessBiosKey" "1
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Services\ClipSVC\Parameters" RefreshRequired" "1"
+Call :expandsz "HKLM\SYSTEM\CurrentControlSet\Services\ClipSVC\Parameters" "ServiceDll" "%SystemRoot%\System32\ClipSVC.dll"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Services\ClipSVC\Parameters" "ServiceDllUnloadOnStop" "1"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\WindowsStore" "RemoveWindowsStore" "0"
 :: echo %R%[92m Hizmetler baülatçlçyor...%R%[0m
 %PowerRun% sc config AppXSvc start= demand
 %PowerRun% net start AppXSvc
@@ -2265,11 +2265,12 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsStore" /v "Remove
 %PowerRun% sc config ClipSVC start= demand
 %PowerRun% net start ClipSVC
 net stop wuauserv > NUL 2>&1
-RD /S /Q "%windir%\SoftwareDistribution"
+RD /S /Q "%windir%\SoftwareDistribution" > NUL 2>&1
 net start wuauserv > NUL 2>&1
 :: echo %R%[92m DLL dosyalarç kontrol ediliyor...%R%[0m
 regsvr32  softpub.dll /s&regsvr32  wintrust.dll /s&regsvr32  initpki.dll /s&regsvr32  dssenh.dll /s&regsvr32  rsaenh.dll /s&regsvr32  gpkcsp.dll /s&regsvr32  sccbase.dll /s&regsvr32  slbcsp.dll /s&regsvr32  mssip32.dll /s&regsvr32  cryptdlg.dll /s&regsvr32  msxml3.dll /s&regsvr32  comcat.dll /s&Regsvr32  Msxml.dll /s&Regsvr32  Msxml2.dll /s&regsvr32  mshtml.dll /s&regsvr32  shdocvw.dll /s&regsvr32  browseui.dll /s&regsvr32  msjava.dll /s&regsvr32  shdoc401.dll /s&regsvr32  cdm.dll /s&regsvr32  shdoc401.dll /i /s&regsvr32  gpkcsp.dll /s&regsvr32  sccbase.dll /s&regsvr32  asctrls.ocx /s&regsvr32  wintrust.dll /s&regsvr32  initpki.dll /s&regsvr32  softpub.dll /s&regsvr32  oleaut32.dll /s&regsvr32  shdocvw.dll /I /s&regsvr32  Shell32.dll /s&regsvr32  browseui.dll /s&regsvr32  browseui.dll /I /s&regsvr32  msrating.dll /s&regsvr32  mlang.dll /s&regsvr32  hlink.dll /s&regsvr32  mshtmled.dll /s&regsvr32  urlmon.dll /s&regsvr32  urlmon.dll /i /s&regsvr32  plugin.ocx /s&regsvr32  sendmail.dll /s&regsvr32  scrobj.dll /s&regsvr32  mmefxe.ocx /s&regsvr32  corpol.dll /s&regsvr32  jscript.dll /s&regsvr32  imgutil.dll /s&regsvr32  thumbvw.dll /s&regsvr32  cryptext.dll /s&regsvr32  rsabase.dll /s&regsvr32  inseng.dll /s&regsvr32  iesetup.dll /i /s&regsvr32  actxprxy.dll /s&regsvr32  dispex.dll /s&regsvr32  occache.dll /s&regsvr32  occache.dll /i /s&regsvr32  iepeers.dll /s&regsvr32  cdfview.dll /s&regsvr32  webcheck.dll /s&regsvr32  mobsync.dll /s&regsvr32  pngfilt.dll /s&regsvr32  licmgr10.dll /s
 regsvr32  icmfilter.dll /s&regsvr32  hhctrl.ocx /s&regsvr32  inetcfg.dll /s&regsvr32  tdc.ocx /s&regsvr32  MSR2C.DLL /s&regsvr32  msident.dll /s&regsvr32  msieftp.dll /s&regsvr32  xmsconf.ocx /s&regsvr32  ils.dll /s&regsvr32  msoeacct.dll /s&regsvr32  inetcomm.dll /s&regsvr32  msdxm.ocx /s&regsvr32  dxmasf.dll /s&regsvr32  l3codecx.ax /s&regsvr32  acelpdec.ax /s&regsvr32  mpg4ds32.ax /s&regsvr32  voxmsdec.ax /s&regsvr32  danim.dll /s&regsvr32  Daxctle.ocx /s&regsvr32  lmrt.dll /s&regsvr32  datime.dll /s&regsvr32  dxtrans.dll /s&regsvr32  dxtmsft.dll /s&regsvr32  WEBPOST.DLL /s&regsvr32  WPWIZDLL.DLL /s&regsvr32  POSTWPP.DLL /s&regsvr32  CRSWPP.DLL /s&regsvr32  FTPWPP.DLL /s&regsvr32  FPWPP.DLL /s&regsvr32  WUAPI.DLL /s&regsvr32  wups2.dll /S&regsvr32  WUAUENG.DLL /s&regsvr32  ATL.DLL /s&regsvr32  WUCLTUI.DLL /s&regsvr32  WUPS.DLL /s&regsvr32  WUWEB.DLL /s&regsvr32  wshom.ocx /s&regsvr32  wshext.dll /s&regsvr32  vbscript.dll /s&regsvr32  scrrun.dll mstinit.exe /setup /s&regsvr32  msnsspc.dll /SspcCreateSspiReg /s&regsvr32  msapsspc.dll /SspcCreateSspiReg /s
+:: Store reset
 wsreset
 echo %R%[92m òülem tamamlandç. MenÅye aktarçlçyorsunuz...%R%[0m
 timeout /t 3 /nobreak
@@ -2839,7 +2840,7 @@ Call :dword "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Serialize" 
 Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\Psched" "NonBestEffortLimit" 0 & :: Qos Limiti Devre Dçüç bçrakçlçyor...
 Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\FileSystem" "LongPathsEnabled" 1 & :: Windows 255 Karakter Sçnçrç devre dçüç bçrakçlçyor...
 Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\WMI\Autologger\AutoLogger-Diagtrack-Listener" "Start" 0 & :: DiagTrack Devre Dçüç bçrakçlçyor...
-Call :dword "HKEY_CURRENT_USER\Software\Microsoft\Narrator\QuickStart" "SkipQuickStart" 1 & :: Narrator QuickStart kapatçlçyor.
+Call :dword "HKCU\Software\Microsoft\Narrator\QuickStart" "SkipQuickStart" 1 & :: Narrator QuickStart kapatçlçyor.
 Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "SoftLandingEnabled" 0 & :: Windows înerileri devre dçüç bçrakçlçyor...
 Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "SubscribedContent-310093Enabled" 0 & :: Windows karüçlama deneyimi kapatçlçyor...
 Call :dword "HKCU\SOFTWARE\Policies\Microsoft\Windows\AppCompat" "DisablePCA" 1 & :: Program uyumluluk yardçmcçsç devre dçüç bçrakçlçyor...
@@ -2925,7 +2926,6 @@ Call :dword "HKCU\Software\Policies\Microsoft\Windows\Explorer\NoBalloonFeatureA
 Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\HandwritingErrorReports" "PreventHandwritingErrorReports" 1 & :: El yazçsç hata raporlarçnçn paylaüçmçnç devre dçüç bçrak 
 Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\TabletPC" "PreventHandwritingDataSharing" 1 & :: El yazçsç verilerinin paylaüçmçnç devre dçüç bçrak
 :: Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\AppCompat" "DisableInventory" 1 & :: Envanter Toplayçcçyç Devre Dçüç Bçrak
-
 Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\StorageSense\Parameters\StoragePolicy" "01" "0" & :: Depolama algçsç
 Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\StorageSense\Parameters\StoragePolicy" "04" "0" & :: Depolama algçsç - Uygulamalarçn kullanmadçßç geáici dosyalarç sil
 Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\StorageSense\Parameters\StoragePolicy" "256" "0" & :: Geri dînÅüÅm kutusu uzun sÅre doluysa temizle
@@ -3138,6 +3138,11 @@ goto :eof
 :multisz
 reg add "%~1" /v "%~2" /t REG_MULTI_SZ /d "%~3" /f > NUL 2>&1
 	if %errorlevel%==1 (%PowerRun% reg add "%~1" /v "%~2" /t REG_MULTI_SZ /d "%~3" /f)
+goto :eof
+
+:expandsz
+reg add "%~1" /v "%~2" /t REG_EXPAND_SZ /d "%~3" /f > NUL 2>&1
+	if %errorlevel%==1 (%PowerRun% reg add "%~1" /v "%~2" /t REG_EXPAND_SZ /d "%~3" /f)
 goto :eof
 
 :delete

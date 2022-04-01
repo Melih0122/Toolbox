@@ -44,6 +44,18 @@
 :: 	  • Hyper-V bölümündeki hatanın giderilmesi.
 ::
 :: ==============================================================================================================================
+------------------
+ ► Versiyon 2.5.1 - Ara güncelleme
+------------------
+Yayınlanma Tarihi: 01.04.2022
+
+ • Toolbox içindeki regedit komutlarında düzenleme yapıldı.
+ • Blitz uygulaması kurulum sorunlarından dolayı kaldırıldı.
+ • Hizmetleri Yönet > Hyper-V bölümünde bilgi ekranındaki değişken hatası giderildi. Yeni parametre eklendi.
+ • 
+
+
+:: ==============================================================================================================================
 -----------------
  ► Versiyon 2.5 -
 -----------------
