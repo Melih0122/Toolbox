@@ -220,24 +220,25 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 	• 7 [A/K]- Mobil Etkin Nokta (Hotspot) : Kullandığınız cihazdan interneti paylaşmanızı sağlayayacak donanım var ise buradan hizmeti açabilirsiniz.
 	• 8 [A/K]- Radyo ve Uçak modu hizmeti : Laptoplarda kullanılacak hizmettir. Windows 11'de bu hizmet kapalı olunca ağ simgesi görünmüyor. 
 	• 9 [A/K]- Uzak Masaüstü/Akış/Ağ hizmetleri : Aynı ağı kullanan cihazları görmek ve ekrana yansıtma, aktarma, uzak masaüstü hizmetleri için gerekli hizmetleri kapatır, açar.
-	• 10 [A/K]- Windows Şimdi Bağlan (WPS) : WPS özelliğini kullanmanızı sağlayan hizmeti açar.
-	• 11 [A/K]- Tarayıcı ve Kamera hizmetleri : Tarayıcı ve Kamera cihazlarını için gerekli olan hizmetleri açıp kapatır.
-	• 12 [A/K]- Insider hizmeti : Windows ön sürümlerini erkenden deneyimleyip hataları bulup bildirmek gibi bir koca yüreğiniz var ise bu servisi aktif ederek. Insider sürüme kayıt olunuz.
-	• 13 [A/K]- Biyometrik Hizmeti : Kullanıdığınız cihazda parmak okuyucu tarzı cihazlar var ise sorunsuz kullanmanız için açar.
-	• 14 [A/K]- Kalem ve Dokunmatik Klavye hizmetini : Dokunmatik destekli cihazınız var ise sorunsuz kullanmanız için hizmetleri açar.
-	• 15 [A/K]- Sistem geri yükleme hizmeti : Sistem geri yükleme hizmetini açar.
-	• 16 [A/K]- Sysmain (Hızlı Getir) : Windows daha hızlı deneyim sunması için diski daha fazla kullanır. Yüksek disk kullanımına sebebiyet verir. SSD varsa gereksizdir. Kullanırsanız hizmeti açar.
-	• 17 [A/K]- Hızlı Başlat (Hibernate) : Sistem önbellekleme yaparak hızlı açılmasını sağlar. Ancak kapanmama gibi sorunlara neden olmaktadır. Kullanmak isterseniz hizmeti açar.
-	• 18 [A/K]- Konum hizmetini : Bilgisayarlarda bu özelliği hep gereksiz bulmuşumdur. Laptop cihazınız konumunuzu tam olarak tespit edebiliyorsa açın. Yoksa hiç açmayın.
-	• 19 [A/K]- Windows Media Player : Windows Media Player'ı yeniden açmanızı sağlar.
-	• 20 [A/K]- Hyper-V hizmetini: Home ve Home Single Language sistemlerde bile Hyper-V açıp kapatmanızı sağlar.
-	• 21 [A/K]- Xbox hizmetini: Xbox servislerini kapatıp, açar.
-	• 22 [A/K]- Bitlocker Sürücü şifreleme hizmeti: Sürücü şifreleme hizmetini kapatır açar.
-	• 23 [A/K]- Karma Gerçeklik hizmeti (VR): Karma gerçeklik kapatır açar.
-	• 24 [A/K]- Driver Yükle / Güncelle (Update): Windows Update üzerinden Driver güncellemesini açıp, kapatmanızı sağlar.
-	• 25 [A/K]- Bellek Sıkıştırma hizmeti: Bellek içindeki verinin belli bir bölümünü sıkıştıran hizmeti kapatır ve açar. Gecikme düşürmek için hizmet kapalı tutulabilir.
-	• 26 [A/K]- Core Parking: İşlemci çekirdeklerinin sürekli tam yükte çalışmasını istiyorsanız hizmeti kapatabilirsiniz. Tam tersi durum için açık hale getirebilirsiniz.
-	• 27 - GPU optimizasyon: AMD ve NVDIA için gerekli olan performans ayarlamalarını sisteme entegre eder.
+	• 10 [A/K]- Windows Search: Indexleme hizmetini açar.
+	• 11 [A/K]- Windows Şimdi Bağlan (WPS) : WPS özelliğini kullanmanızı sağlayan hizmeti açar.
+	• 12 [A/K]- Tarayıcı ve Kamera hizmetleri : Tarayıcı ve Kamera cihazlarını için gerekli olan hizmetleri açıp kapatır.
+	• 13 [A/K]- Insider hizmeti : Windows ön sürümlerini erkenden deneyimleyip hataları bulup bildirmek gibi bir koca yüreğiniz var ise bu servisi aktif ederek. Insider sürüme kayıt olunuz.
+	• 14 [A/K]- Biyometrik Hizmeti : Kullanıdığınız cihazda parmak okuyucu tarzı cihazlar var ise sorunsuz kullanmanız için açar.
+	• 15 [A/K]- Kalem ve Dokunmatik Klavye hizmetini : Dokunmatik destekli cihazınız var ise sorunsuz kullanmanız için hizmetleri açar.
+	• 16 [A/K]- Sistem geri yükleme hizmeti : Sistem geri yükleme hizmetini açar.
+	• 17 [A/K]- Sysmain (Hızlı Getir) : Windows daha hızlı deneyim sunması için diski daha fazla kullanır. Yüksek disk kullanımına sebebiyet verir. SSD varsa gereksizdir. Kullanırsanız hizmeti açar.
+	• 18 [A/K]- Hızlı Başlat (Hibernate) : Sistem önbellekleme yaparak hızlı açılmasını sağlar. Ancak kapanmama gibi sorunlara neden olmaktadır. Kullanmak isterseniz hizmeti açar.
+	• 19 [A/K]- Konum hizmetini : Bilgisayarlarda bu özelliği hep gereksiz bulmuşumdur. Laptop cihazınız konumunuzu tam olarak tespit edebiliyorsa açın. Yoksa hiç açmayın.
+	• 20 [A/K]- Windows Media Player : Windows Media Player'ı yeniden açmanızı sağlar.
+	• 21 [A/K]- Hyper-V hizmetini: Home ve Home Single Language sistemlerde bile Hyper-V açıp kapatmanızı sağlar.
+	• 22 [A/K]- Xbox hizmetini: Xbox servislerini kapatıp, açar.
+	• 23 [A/K]- Bitlocker Sürücü şifreleme hizmeti: Sürücü şifreleme hizmetini kapatır açar.
+	• 24 [A/K]- Karma Gerçeklik hizmeti (VR): Karma gerçeklik kapatır açar.
+	• 25 [A/K]- Driver Yükle / Güncelle (Update): Windows Update üzerinden Driver güncellemesini açıp, kapatmanızı sağlar.
+	• 26 [A/K]- Bellek Sıkıştırma hizmeti: Bellek içindeki verinin belli bir bölümünü sıkıştıran hizmeti kapatır ve açar. Gecikme düşürmek için hizmet kapalı tutulabilir.
+	• 27 [A/K]- Core Parking: İşlemci çekirdeklerinin sürekli tam yükte çalışmasını istiyorsanız hizmeti kapatabilirsiniz. Tam tersi durum için açık hale getirebilirsiniz.
+	• 28 - GPU optimizasyon: AMD ve NVDIA için gerekli olan performans ayarlamalarını sisteme entegre eder.
 	
 ### • 55 - Simge Hatasını Düzelt: 
 	• Simgeleri değiştirdikten sonra oluşacak sorunları giderir.

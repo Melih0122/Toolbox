@@ -102,6 +102,21 @@ call :Logs
 set download=%Location%\Download
 
 :: ==============================================================================================================================
+Powershell -command "Get-CimInstance Win32_OperatingSystem | Select-Object Caption,InstallDate,OSArchitecture,RegisteredUser,CSName | FL" > %Logs%\OS.txt
+Findstr /C:"64 bit" %Logs%\OS.txt > NUL 2>&1
+	if %errorlevel%==1 (echo 
+						echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
+						echo  %R%[90mº                                                         º%R%[0m
+						echo  %R%[90mº%R%[1;97m%R%[41m               ! UYARI !           ! UYARI !             %R%[0m%R%[90mº%R%[0m
+						echo  %R%[90mº                                                         º%R%[0m
+						echo  %R%[90mº%R%[1;97m%R%[41m            Sisteminiz x64 mimariye sahip de§il          %R%[0m%R%[90mº%R%[0m
+						echo  %R%[90mº                                                         º%R%[0m
+						echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
+						echo 
+						timeout /t 5 /nobreak > NUL
+						exit)
+
+:: ==============================================================================================================================
 :: Toolbox i‡in gerekli klas”rler oluŸturuluyor.
 mkdir "%Location%\Download" > NUL 2>&1
 mkdir "%Location%\Edit\Appx" > NUL 2>&1
@@ -125,7 +140,7 @@ dir /b "%Location%\Files\wget.exe" > NUL 2>&1
 
 :: ==============================================================================================================================
 
-:: Wmic.exe Windows 11 yeni srmlerinde silindi§i i‡in PowerShell zerinden bilgi alnacak. Buras eski komutlardr.
+:: Wmic.exe'li eski komutlar
 ::wmic os get RegisteredUser, CSName, Caption, OSArchitecture, BuildNumber /value > %Logs%\OS.txt
 ::FOR /F "tokens=2 delims='='" %%a in ('FIND "Caption" %Logs%\OS.txt') do set caption=%%a 
 ::set caption=%caption:~10%
@@ -139,7 +154,7 @@ dir /b "%Location%\Files\wget.exe" > NUL 2>&1
 :: ==============================================================================================================================
 
 :: Ana ekranda yer alan Kullanc ad, iŸletim sistemi gibi bilgiler alnr. 
-Powershell -command "Get-CimInstance Win32_OperatingSystem | Select-Object Caption,InstallDate,OSArchitecture,RegisteredUser,CSName | FL" > %Logs%\OS.txt
+:: x64 sistem kontrol i‡in st b”lm yerleŸtirdim: Powershell -command "Get-CimInstance Win32_OperatingSystem | Select-Object Caption,InstallDate,OSArchitecture,RegisteredUser,CSName | FL" > %Logs%\OS.txt
 FOR /F "tokens=2 delims=':'" %%a in ('FIND "Caption" %Logs%\OS.txt') do set caption=%%a
 set caption=%caption:~11%
 FOR /F "tokens=2 delims=':'" %%b in ('FIND "RegisteredUser" %Logs%\OS.txt') do set registereduser=%%b
@@ -150,8 +165,8 @@ FOR /F "tokens=3" %%d in ('FIND "OSArchitecture" %Logs%\OS.txt') do set osarch=%
 FOR /F "tokens=3 delims= " %%f in ('reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Update\TargetingInfo\Installed\Client.OS.rs2.amd64" /v "Version"') do set isderleme=%%f
 set isderleme=%isderleme:~5%
 FOR /F "tokens=3 delims= " %%f in ('reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v "DisplayVersion"') do set ImageBuild=%%f
-for /f "tokens=2 delims='('" %%f in ('powercfg -list ^| findstr /C:"*"') do set gucc=%%f
-set gucc=%gucc:~0,-3%
+for /f "tokens=2 delims='('" %%f in ('powercfg -list ^| findstr /C:"*"') do set powerr=%%f
+set powerr=%powerr:~0,-3%
 
 :: Men i‡inde sisteme g”re ayarlama yapyorum
 FOR /F "tokens=5" %%a in ('FIND "Caption" %Logs%\OS.txt') do set caption2=%%a 
@@ -163,7 +178,7 @@ echo %caption2% > NUL
 	if %caption2%==10 (set editmenugo=Win10SettingsMenu) 
 	if %caption2%==11 (set editmenugo=Win11SettingsMenu)
 
-set version=2.5.1
+set version=2.5.2
 
 ::set editmenu=Windows 11 Edit
 ::set editmenugo=Win11SettingsMenu
@@ -176,7 +191,7 @@ Find "OGNITORENKS TOOLBOX %version%" %Location%\Logs > NUL 2>&1
 						echo [%date% - %time%] OgnitorenKs Toolbox baŸlatld.
 						echo  ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
 						echo  º OGNITORENKS TOOLBOX %version% ^| USER:%registereduser% ^| PC-Name:%pcname%
-						echo  º OS: %caption% ^| x%osarch% ^| %ImageBuild% ^| %isderleme% ^| G‡: %gucc%
+						echo  º OS: %caption% ^| x%osarch% ^| %ImageBuild% ^| %isderleme% ^| G‡: %powerr%
 						echo  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
 						echo ---------------------------------------------------------------------------------------------------------------------------
 						) >> %Location%\Logs
@@ -190,7 +205,7 @@ mode con cols=96 lines=37
 title          O  G  N  I  T  O  R  E  N  K  S     ^|    OGNITORENKS TOOLBOX    ^|       T   O   O   L   B   O   X       
 echo   %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
 echo   %R%[90mº%R%[1;97m%R%[100m OGNITORENKS TOOLBOX %version% %R%[0m%R%[90m ^|%R%[32m USER:%R%[37m%registereduser% %R%[90m^|%R%[32m PC-Name:%R%[37m%pcname%%R%[0m	
-echo   %R%[90mº%R%[32m OS:%R%[37m %caption% %R%[90m^|%R%[37m x%osarch% %R%[90m^|%R%[37m %ImageBuild% %R%[0m%R%[90m^|%R%[37m %isderleme% %R%[90m^|%R%[32m G‡:%R%[37m %gucc% %R%[0m	
+echo   %R%[90mº%R%[32m OS:%R%[37m %caption% %R%[90m^|%R%[37m x%osarch% %R%[90m^|%R%[37m %ImageBuild% %R%[0m%R%[90m^|%R%[37m %isderleme% %R%[90m^|%R%[32m G‡:%R%[37m %powerr% %R%[0m	
 echo   %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
 echo   %R%[90mº%R%[32m  1.%C%[37m All In One Runtimes%C%[0m  %R%[90mº%R%[0m %R%[32m 27.%C%[36m Kdenlive%C%[0m               %R%[90mº%R%[0m          %R%[92m BONUS%R%[0m               %R%[90mº%R%[0m
 echo   %R%[90mº%R%[32m  2.%C%[33m Discord%C%[0m              %R%[90mº%R%[0m %R%[32m 28.%C%[36m OpenShot%C%[0m               %R%[90mº%R%[32m 53.%C%[36m %editmenu%%R%[0m             %R%[90mº%R%[0m
@@ -317,7 +332,7 @@ mode con cols=96 lines=37
 title          O  G  N  I  T  O  R  E  N  K  S     ^|    OGNITORENKS TOOLBOX    ^|       T   O   O   L   B   O   X       
 echo   %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
 echo   %R%[90mº%R%[1;97m%R%[100m OGNITORENKS TOOLBOX %version% %R%[0m%R%[90m ^|%R%[32m USER:%R%[37m%registereduser% %R%[90m^|%R%[32m PC-Name:%R%[37m%pcname%%R%[0m	
-echo   %R%[90mº%R%[32m OS:%R%[37m %caption% %R%[90m^|%R%[37m x%osarch% %R%[90m^|%R%[37m %ImageBuild% %R%[0m%R%[90m^|%R%[37m %isderleme% %R%[90m^|%R%[32m G‡:%R%[37m %gucc% %R%[0m	
+echo   %R%[90mº%R%[32m OS:%R%[37m %caption% %R%[90m^|%R%[37m x%osarch% %R%[90m^|%R%[37m %ImageBuild% %R%[0m%R%[90m^|%R%[37m %isderleme% %R%[90m^|%R%[32m G‡:%R%[37m %powerr% %R%[0m	
 echo   %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
 echo   %R%[90mº%R%[32m  1.%C%[37m All In One Runtimes%C%[0m  %R%[90mº%R%[0m %R%[32m 27.%C%[36m Kdenlive%C%[0m               %R%[90mº%R%[32m 53.%C%[36m Everything%C%[0m                  %R%[90mº%R%[0m  
 echo   %R%[90mº%R%[32m  2.%C%[33m Discord%C%[0m              %R%[90mº%R%[0m %R%[32m 28.%C%[36m OpenShot%C%[0m               %R%[90mº%R%[32m 54.%C%[36m TaskbarX%C%[0m                    %R%[90mº%R%[0m 
@@ -357,18 +372,18 @@ echo %$multi% | find "X" > NUL 2>&1
 (
 echo ---------------------------------------------------------------------------------------------------------------------------
 echo [%date% - %time%] ^| MultiSelect ^| Se‡ilenler:"%$multi%"
+echo ---------------------------------------------------------------------------------------------------------------------------
 ) >> %Location%\Logs
 cls
 echo   %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
 echo   %R%[90mº%R%[1;97m%R%[100m OGNITORENKS TOOLBOX %R%[0m%R%[90m ^|%R%[32m USER:%R%[37m%registereduser% %R%[90m^|%R%[32m PC-Name:%R%[37m%pcname%%R%[0m	
-echo   %R%[90mº%R%[32m OS:%R%[37m %caption% %R%[90m^|%R%[37m x%osarch% %R%[90m^|%R%[37m %ImageBuild% %R%[0m%R%[90m^|%R%[37m %isderleme% %R%[90m^|%R%[32m G‡:%R%[37m %gucc% %R%[0m
+echo   %R%[90mº%R%[32m OS:%R%[37m %caption% %R%[90m^|%R%[37m x%osarch% %R%[90m^|%R%[37m %ImageBuild% %R%[0m%R%[90m^|%R%[37m %isderleme% %R%[90m^|%R%[32m G‡:%R%[37m %powerr% %R%[0m
 echo   %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
 echo                                         %R%[92m €OKLU ˜ND˜RME%R%[0m 
 echo   %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
 echo    %C%[96m Se‡ilenler: %$multi%%C%[0m
 :MultiSelect
 FOR %%a in (%$multi%) do (Call :Download%%a)
-echo --------------------------------------------------------------------------------------------------------------------------- >> %Location%\Logs
 goto menu2
 
 :: ==============================================================================================================================
@@ -1003,7 +1018,7 @@ echo   %R%[90mº%R%[0m  %R%[32m 3.%C%[33m Lisans Durumu Detayl %C%[90m[dlv]%C%[0
 echo   %R%[90mº%R%[0m  %R%[32m 4.%C%[33m Lisans Sresini ™§ren %C%[90m[xpr]%C%[0m                %R%[90mº%R%[0m
 echo   %R%[90mº%R%[0m  %R%[32m 5.%C%[33m Lisans Sil %C%[90m[upk]%C%[0m                           %R%[90mº%R%[0m
 echo   %R%[90mº%R%[0m  %R%[32m 6.%C%[33m Lisans Sre Sfrla %C%[90m[rearm]%C%[0m                %R%[90mº%R%[0m
-echo   %R%[90mº%R%[0m  %R%[32m X.%R%[36m Ana Men%R%[0m                                   %R%[90mº%R%[0m
+echo   %R%[90mº%R%[0m  %R%[32m X.%R%[36m Men%R%[0m                                       %R%[90mº%R%[0m
 echo   %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
 set /p value=%C%[92m  Yapmak istedi§iniz iŸlem : %C%[0m
 	if %value%==1 (Call :slmgrlisans)
@@ -1036,6 +1051,7 @@ slmgr /ipk %value%
 echo %R%[92m ˜Ÿlem tamamland.%R%[0m
 timeout /t 2 /nobreak > NUL
 goto :eof
+
 :stop
 :: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
 
@@ -1057,7 +1073,7 @@ goto menu
 :stop
 :servicesmanagement
 cls
-mode con cols=55 lines=35
+mode con cols=55 lines=36
 Call :PowerRun
 title Kapatlan Servisler Y”netimi / OgnitorenKs
 echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
@@ -1072,24 +1088,25 @@ echo  %R%[90mº%R%[0m   %R%[32m 6%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.
 echo  %R%[90mº%R%[0m   %R%[32m 7%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Mobil Etkin Nokta (Hotspot)%C%[0m            %R%[90mº%R%[0m
 echo  %R%[90mº%R%[0m   %R%[32m 8%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Radyo ve U‡ak modu hizmeti%C%[0m             %R%[90mº%R%[0m
 echo  %R%[90mº%R%[0m   %R%[32m 9%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Uzak Masast/AkŸ/A§ hizmetleri%C%[0m       %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 10%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Windows žimdi Ba§lan(WPS) hizmeti%C%[0m      %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 11%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Tarayc ve Kamera hizmetleri%C%[0m          %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 12%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Insider hizmeti%C%[0m                        %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 13%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Biyometrik hizmeti%C%[0m                     %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 14%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Kalem ve Dokunmatik hizmeti%C%[0m            %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 15%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Sistem Geri ykleme hizmeti%C%[0m            %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 16%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Sysmain (Hzl Getir)%C%[0m                  %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 17%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Hzl BaŸlat (Hibernate)%C%[0m               %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 18%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Konum hizmeti%C%[0m                          %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 19%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Windows Media Player%C%[0m                   %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 20%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Hyper-V hizmeti%C%[0m                        %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 21%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Xbox hizmeti%C%[0m                           %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 22%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Bitlocker Src Ÿifreleme hizmeti%C%[0m     %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 23%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Karma Ger‡eklik hizmeti (VR)%C%[0m           %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 24%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Driver Ykle/Gncelle (Update)%C%[0m         %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 25%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Bellek SkŸtrma hizmeti%C%[0m              %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 26%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Core Parking%C%[0m                           %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 27%R%[32m.%C%[33m GPU Optimizasyonu%C%[0m                           %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 10%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Windows Search%C%[0m                         %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 11%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Windows žimdi Ba§lan(WPS) hizmeti%C%[0m      %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 12%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Tarayc ve Kamera hizmetleri%C%[0m          %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 13%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Insider hizmeti%C%[0m                        %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 14%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Biyometrik hizmeti%C%[0m                     %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 15%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Kalem ve Dokunmatik hizmeti%C%[0m            %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 16%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Sistem Geri ykleme hizmeti%C%[0m            %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 17%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Sysmain (Hzl Getir)%C%[0m                  %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 18%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Hzl BaŸlat (Hibernate)%C%[0m               %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 19%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Konum hizmeti%C%[0m                          %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 20%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Windows Media Player%C%[0m                   %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 21%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Hyper-V hizmeti%C%[0m                        %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 22%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Xbox hizmeti%C%[0m                           %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 23%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Bitlocker Src Ÿifreleme hizmeti%C%[0m     %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 24%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Karma Ger‡eklik hizmeti (VR)%C%[0m           %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 25%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Driver Ykle/Gncelle (Update)%C%[0m         %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 26%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Bellek SkŸtrma hizmeti%C%[0m              %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 27%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Core Parking%C%[0m                           %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 28%R%[32m.%C%[33m GPU Optimizasyonu%C%[0m                           %R%[90mº%R%[0m
 echo  %R%[90mº%R%[0m        %R%[32m X.%R%[36m Men%R%[0m                                   %R%[90mº%R%[0m
 echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
 set /p value= %C%[92m ˜Ÿlem : %C%[0m
@@ -1125,79 +1142,83 @@ set /p value= %C%[92m ˜Ÿlem : %C%[0m
 	if %value%==8A (Call :serv.8.ucakmodu start demand a‡lyor)
 	if %value%==8K (Call :serv.8.ucakmodu stop disabled kapatlyor)
 	if %value%==8k (Call :serv.8.ucakmodu stop disabled kapatlyor)
-	if %value%==9a (Call :serv.9.akis start demand a‡lyor)
-	if %value%==9A (Call :serv.9.akis start demand a‡lyor)
-	if %value%==9K (Call :serv.9.akis stop disabled kapatlyor)
-	if %value%==9k (Call :serv.9.akis stop disabled kapatlyor)
-	if %value%==10a (Call :serv.10.wps start demand a‡lyor)
-	if %value%==10A (Call :serv.10.wps start demand a‡lyor)
-	if %value%==10K (Call :serv.10.wps stop disabled kapatlyor)
-	if %value%==10k (Call :serv.10.wps stop disabled kapatlyor)
-	if %value%==11a (Call :serv.11.camera start demand a‡lyor)
-	if %value%==11A (Call :serv.11.camera start demand a‡lyor)
-	if %value%==11K (Call :serv.11.camera stop disabled kapatlyor)
-	if %value%==11k (Call :serv.11.camera stop disabled kapatlyor)
-	if %value%==12a (Call :serv.12.insider start demand a‡lyor)
-	if %value%==12A (Call :serv.12.insider start demand a‡lyor)
-	if %value%==12K (Call :serv.12.insider stop disabled kapatlyor)
-	if %value%==12k (Call :serv.12.insider stop disabled kapatlyor)
-	if %value%==13a (Call :serv.13.biyometrik start demand a‡lyor)
-	if %value%==13A (Call :serv.13.biyometrik start demand a‡lyor)
-	if %value%==13K (Call :serv.13.biyometrik stop disabled kapatlyor)
-	if %value%==13k (Call :serv.13.biyometrik stop disabled kapatlyor)
-	if %value%==14a (Call :serv.14.dokunmatik start demand a‡lyor)
-	if %value%==14A (Call :serv.14.dokunmatik start demand a‡lyor)
-	if %value%==14K (Call :serv.14.dokunmatik stop disabled kapatlyor)
-	if %value%==14k (Call :serv.14.dokunmatik stop disabled kapatlyor)
-	if %value%==15a (Call :serv.15.sistemgeriyukleme start demand ENABLE 0 a‡lyor)
-	if %value%==15A (Call :serv.15.sistemgeriyukleme start demand ENABLE 0 a‡lyor)
-	if %value%==15K (Call :serv.15.sistemgeriyukleme stop disabled DISABLE 1 kapatlyor)
-	if %value%==15k (Call :serv.15.sistemgeriyukleme stop disabled DISABLE 1 kapatlyor)
-	if %value%==16a (Call :serv.16.sysmain start auto a‡lyor)
-	if %value%==16A (Call :serv.16.sysmain start auto a‡lyor)
-	if %value%==16K (Call :serv.16.sysmain stop disabled kapatlyor)
-	if %value%==16k (Call :serv.16.sysmain stop disabled kapatlyor)
-	if %value%==17a (Call :serv.17.hibernate on 1 a‡lyor)
-	if %value%==17A (Call :serv.17.hibernate on 1 a‡lyor)
-	if %value%==17K (Call :serv.17.hibernate off 0 kapatlyor)
-	if %value%==17k (Call :serv.17.hibernate off 0 kapatlyor)
-	if %value%==18a (Call :serv.18.Location start demand Allow 1 "Call :delete2" "DisableLocation" a‡lyor)
-	if %value%==18A (Call :serv.18.Location start demand Allow 1 "Call :delete2" "DisableLocation" a‡lyor)
-	if %value%==18K (Call :serv.18.Location stop disabled Deny 0 "Call :dword" "DisableLocation 1" kaptlyor)
-	if %value%==18k (Call :serv.18.Location stop disabled Deny 0 "Call :dword" "DisableLocation 1" kaptlyor)
-	if %value%==19a (Call :serv.19.mediaplayer start demand ENABLE a‡lyor)
-	if %value%==19A (Call :serv.19.mediaplayer start demand ENABLE a‡lyor)
-	if %value%==19K (Call :serv.19.mediaplayer stop disabled DISABLE kapatlyor)
-	if %value%==19k (Call :serv.19.mediaplayer stop disabled DISABLE kapatlyor)
-	if %value%==20a (Call :serv.20.hyperv demand Enable For 1 on a‡lyor)
-	if %value%==20A (Call :serv.20.hyperv demand Enable For 1 off a‡lyor)
-	if %value%==20K (Call :serv.20.hyperv disabled Disable "::" 0 kapatlyor)
-	if %value%==20k (Call :serv.20.hyperv disabled Disable "::" 0 kapatlyor)
-	if %value%==21a (Call :serv.21.xbox start demand 1 0 "Call :delete2" "AllowGameDVR" a‡lyor)
-	if %value%==21A (Call :serv.21.xbox start demand 1 0 "Call :delete2" "AllowGameDVR" a‡lyor)
-	if %value%==21K (Call :serv.21.xbox stop disabled 0 2 "Call :dword" "AllowGameDVR 0" kapatlyor)
-	if %value%==21k (Call :serv.21.xbox stop disabled 0 2 "Call :dword" "AllowGameDVR 0" kapatlyor)
-	if %value%==22a (Call :serv.22.bitlocker start demand a‡lyor)
-	if %value%==22A (Call :serv.22.bitlocker start demand a‡lyor)
-	if %value%==22K (Call :serv.22.bitlocker stop disabled kapatlyor)
-	if %value%==22k (Call :serv.22.bitlocker stop disabled kapatlyor)
-	if %value%==23a (Call :serv.23.mixedreality demand a‡lyor)
-	if %value%==23A (Call :serv.23.mixedreality demand a‡lyor)
-	if %value%==23K (Call :serv.23.mixedreality disabled kapatlyor)
-	if %value%==23k (Call :serv.23.mixedreality disabled kapatlyor)
-	if %value%==24a (Call :serv.24.driverupdate 0 1 a‡lyor)
-	if %value%==24A (Call :serv.24.driverupdate 0 1 a‡lyor)
-	if %value%==24K (Call :serv.24.driverupdate 1 0 kapatlyor)
-	if %value%==24k (Call :serv.24.driverupdate 1 0 kapatlyor)
-	if %value%==25a (Call :serv.25.memorycompression Enable A‡lyor)
-	if %value%==25A (Call :serv.25.memorycompression Enable A‡lyor)
-	if %value%==25K (Call :serv.25.memorycompression Disable Kapatlyor)
-	if %value%==25k (Call :serv.25.memorycompression Disable Kapatlyor)
-	if %value%==26a (Call :serv.26.coreparking 100 "Call :delete" "Call :delete2" a‡lyor)
-	if %value%==26A (Call :serv.26.coreparking 100 "Call :delete" "Call :delete2" a‡lyor)
-	if %value%==26K (Call :serv.26.coreparking 0 "Call :dword" "Call :dword" kapatlyor)
-	if %value%==26k (Call :serv.26.coreparking 0 "Call :dword" "Call :dword" kapatlyor)
-	if %value%==27 (Call :serv.27.gpuoptimization)
+	if %value%==9a (Call :serv.9.akis start demand auto a‡lyor)
+	if %value%==9A (Call :serv.9.akis start demand auto a‡lyor)
+	if %value%==9K (Call :serv.9.akis stop disabled disabled kapatlyor)
+	if %value%==9k (Call :serv.9.akis stop disabled disabled kapatlyor)
+	if %value%==10a (Call :serv.10.wsearch start auto a‡lyor)
+	if %value%==10A (Call :serv.10.wsearch start auto a‡lyor)
+	if %value%==10K (Call :serv.10.wsearch stop disabled kapatlyor)
+	if %value%==10k (Call :serv.10.wsearch stop disabled kapatlyor)
+	if %value%==11a (Call :serv.11.wps start demand a‡lyor)
+	if %value%==11A (Call :serv.11.wps start demand a‡lyor)
+	if %value%==11K (Call :serv.11.wps stop disabled kapatlyor)
+	if %value%==11k (Call :serv.11.wps stop disabled kapatlyor)
+	if %value%==12a (Call :serv.12.camera start demand a‡lyor)
+	if %value%==12A (Call :serv.12.camera start demand a‡lyor)
+	if %value%==12K (Call :serv.12.camera stop disabled kapatlyor)
+	if %value%==12k (Call :serv.12.camera stop disabled kapatlyor)
+	if %value%==13a (Call :serv.13.insider start demand a‡lyor)
+	if %value%==13A (Call :serv.13.insider start demand a‡lyor)
+	if %value%==13K (Call :serv.13.insider stop disabled kapatlyor)
+	if %value%==13k (Call :serv.13.insider stop disabled kapatlyor)
+	if %value%==14a (Call :serv.14.biyometrik start demand a‡lyor)
+	if %value%==14A (Call :serv.14.biyometrik start demand a‡lyor)
+	if %value%==14K (Call :serv.14.biyometrik stop disabled kapatlyor)
+	if %value%==14k (Call :serv.14.biyometrik stop disabled kapatlyor)
+	if %value%==15a (Call :serv.15.dokunmatik start demand a‡lyor)
+	if %value%==15A (Call :serv.15.dokunmatik start demand a‡lyor)
+	if %value%==15K (Call :serv.15.dokunmatik stop disabled kapatlyor)
+	if %value%==15k (Call :serv.15.dokunmatik stop disabled kapatlyor)
+	if %value%==16a (Call :serv.16.sistemgeriyukleme start demand ENABLE 0 a‡lyor)
+	if %value%==16A (Call :serv.16.sistemgeriyukleme start demand ENABLE 0 a‡lyor)
+	if %value%==16K (Call :serv.16.sistemgeriyukleme stop disabled DISABLE 1 kapatlyor)
+	if %value%==16k (Call :serv.16.sistemgeriyukleme stop disabled DISABLE 1 kapatlyor)
+	if %value%==17a (Call :serv.17.sysmain start auto a‡lyor)
+	if %value%==17A (Call :serv.17.sysmain start auto a‡lyor)
+	if %value%==17K (Call :serv.17.sysmain stop disabled kapatlyor)
+	if %value%==17k (Call :serv.17.sysmain stop disabled kapatlyor)
+	if %value%==18a (Call :serv.18.hibernate on 1 a‡lyor)
+	if %value%==18A (Call :serv.18.hibernate on 1 a‡lyor)
+	if %value%==18K (Call :serv.18.hibernate off 0 kapatlyor)
+	if %value%==18k (Call :serv.18.hibernate off 0 kapatlyor)
+	if %value%==19a (Call :serv.19.Location start demand Allow 1 "Call :delete2" "DisableLocation" a‡lyor)
+	if %value%==19A (Call :serv.19.Location start demand Allow 1 "Call :delete2" "DisableLocation" a‡lyor)
+	if %value%==19K (Call :serv.19.Location stop disabled Deny 0 "Call :dword" "DisableLocation 1" kaptlyor)
+	if %value%==19k (Call :serv.19.Location stop disabled Deny 0 "Call :dword" "DisableLocation 1" kaptlyor)
+	if %value%==20a (Call :serv.20.mediaplayer start demand ENABLE a‡lyor)
+	if %value%==20A (Call :serv.20.mediaplayer start demand ENABLE a‡lyor)
+	if %value%==20K (Call :serv.20.mediaplayer stop disabled DISABLE kapatlyor)
+	if %value%==20k (Call :serv.20.mediaplayer stop disabled DISABLE kapatlyor)
+	if %value%==21a (Call :serv.21.hyperv demand Enable For 1 on a‡lyor)
+	if %value%==21A (Call :serv.21.hyperv demand Enable For 1 off a‡lyor)
+	if %value%==21K (Call :serv.21.hyperv disabled Disable "::" 0 kapatlyor)
+	if %value%==21k (Call :serv.21.hyperv disabled Disable "::" 0 kapatlyor)
+	if %value%==22a (Call :serv.22.xbox start demand 1 0 "Call :delete2" "AllowGameDVR" a‡lyor)
+	if %value%==22A (Call :serv.22.xbox start demand 1 0 "Call :delete2" "AllowGameDVR" a‡lyor)
+	if %value%==22K (Call :serv.22.xbox stop disabled 0 2 "Call :dword" "AllowGameDVR 0" kapatlyor)
+	if %value%==22k (Call :serv.22.xbox stop disabled 0 2 "Call :dword" "AllowGameDVR 0" kapatlyor)
+	if %value%==23a (Call :serv.23.bitlocker start demand a‡lyor)
+	if %value%==23A (Call :serv.23.bitlocker start demand a‡lyor)
+	if %value%==23K (Call :serv.23.bitlocker stop disabled kapatlyor)
+	if %value%==23k (Call :serv.23.bitlocker stop disabled kapatlyor)
+	if %value%==24a (Call :serv.24.mixedreality demand a‡lyor)
+	if %value%==24A (Call :serv.24.mixedreality demand a‡lyor)
+	if %value%==24K (Call :serv.24.mixedreality disabled kapatlyor)
+	if %value%==24k (Call :serv.24.mixedreality disabled kapatlyor)
+	if %value%==25a (Call :serv.25.driverupdate 0 1 a‡lyor)
+	if %value%==25A (Call :serv.25.driverupdate 0 1 a‡lyor)
+	if %value%==25K (Call :serv.25.driverupdate 1 0 kapatlyor)
+	if %value%==25k (Call :serv.25.driverupdate 1 0 kapatlyor)
+	if %value%==26a (Call :serv.26.memorycompression Enable A‡lyor)
+	if %value%==26A (Call :serv.26.memorycompression Enable A‡lyor)
+	if %value%==26K (Call :serv.26.memorycompression Disable Kapatlyor)
+	if %value%==26k (Call :serv.26.memorycompression Disable Kapatlyor)
+	if %value%==27a (Call :serv.27.coreparking 100 "Call :delete" "Call :delete2" a‡lyor)
+	if %value%==27A (Call :serv.27.coreparking 100 "Call :delete" "Call :delete2" a‡lyor)
+	if %value%==27K (Call :serv.27.coreparking 0 "Call :dword" "Call :dword" kapatlyor)
+	if %value%==27k (Call :serv.27.coreparking 0 "Call :dword" "Call :dword" kapatlyor)
+	if %value%==28 (Call :serv.28.gpuoptimization)
 	if %value%==x goto menu
 	if %value%==X goto menu
 ) else 
@@ -1347,8 +1368,8 @@ echo   %C%[96mRadyo y”netim ve u‡ak modu hizmeti %3 ...%C%[0m
 goto :eof
 
 :serv.9.akis
-echo [%date% - %time%] ^| Hizmetleri Y”net ^| AkŸ deneyimi hizmeti %3. >> %Location%\Logs
-echo   %C%[96mUzak Masast/AkŸ hizmetleri %3 ...%C%[0m
+echo [%date% - %time%] ^| Hizmetleri Y”net ^| AkŸ deneyimi hizmeti %4. >> %Location%\Logs
+echo   %C%[96mUzak Masast/AkŸ hizmetleri %4 ...%C%[0m
 :: ConsentUx kullanc hizmeti 
 %PowerRun% sc config ConsentUxUserSvc start= %2
 %PowerRun% net %1 ConsentUxUserSvc
@@ -1388,13 +1409,29 @@ echo   %C%[96mUzak Masast/AkŸ hizmetleri %3 ...%C%[0m
 :: Uzak Masast Yaplandrmas
 %PowerRun% sc config SessionEnv start= %2
 %PowerRun% net %1 SessionEnv
+:: Windows Search
+%PowerRun% sc config WSearch start= %3
+%PowerRun% net %1 WSearch
+%PowerRun% DEL /F /Q /A %localappdata%\Microsoft\Media Player\*.wmdb
 ::-------------------------------------------------------
-::    A‡ = %1 : start | %2 : demand   | %3 : a‡lyor
-:: Kapat = %1 : stop  | %2 : disabled | %3 : kapatlyor
+::    A‡ = %1 : start | %2 : demand    | %3 : auto     | %4 : a‡lyor
+:: Kapat = %1 : stop  | %2 : disabled  | %3 : disabled | %4 : kapatlyor
 ::-------------------------------------------------------
 goto :eof
 
-:serv.10.wps
+:serv.10.wsearch
+echo [%date% - %time%] ^| Hizmetleri Y”net ^| Wsearch hizmeti %3. >> %Location%\Logs
+echo   %C%[96mWindows Search hizmeti %3 ...%C%[0m
+:: Windows Search
+%PowerRun% sc config WSearch start= %2
+%PowerRun% net %1 WSearch
+::-------------------------------------------------------
+::    A‡ = %1 : start | %2 : auto     | %3 : a‡lyor
+:: Kapat = %1 : stop  | %2 : disabled | %3 : kapatlyor
+::-------------------------------------------------------
+
+
+:serv.11.wps
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| WPS hizmeti %3. >> %Location%\Logs
 echo   %C%[96mWindows žimdi Ba§lan hizmeti %3 ...%C%[0m
 :: Windows žimdi Ba§lan - Yaplandrma Dosyas Kaydedici
@@ -1407,7 +1444,7 @@ echo   %C%[96mWindows žimdi Ba§lan hizmeti %3 ...%C%[0m
 ::-------------------------------------------------------
 goto :eof
 
-:serv.11.camera
+:serv.12.camera
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Taraycs ve Kamera hizmeti %3. >> %Location%\Logs
 echo   %C%[96mTarayc ve Kamera hizmetleri %3 ...%C%[0m
 :: Windows Kamera ‡er‡eve sunucusu
@@ -1428,7 +1465,7 @@ echo   %C%[96mTarayc ve Kamera hizmetleri %3 ...%C%[0m
 ::-------------------------------------------------------
 goto :eof
 
-:serv.12.insider
+:serv.13.insider
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Insider hizmeti %3. >> %Location%\Logs
 echo   %C%[96mWindows Insider hizmeti %3 ...%C%[0m
 :: Windows Insider Hizmeti
@@ -1440,7 +1477,7 @@ echo   %C%[96mWindows Insider hizmeti %3 ...%C%[0m
 ::-------------------------------------------------------
 goto :eof
 
-:serv.13.biyometrik
+:serv.14.biyometrik
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Biyometrik hizmeti %3. >> %Location%\Logs
 echo   %C%[96mWindows Biyometrik hizmeti %3 ...%C%[0m
 :: Windows Biyometrik Hizmeti
@@ -1452,7 +1489,7 @@ echo   %C%[96mWindows Biyometrik hizmeti %3 ...%C%[0m
 ::-------------------------------------------------------
 goto :eof
 
-:serv.14.dokunmatik
+:serv.15.dokunmatik
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Dokunmatik Klavye ve Kalem hizmeti %3. >> %Location%\Logs
 echo   %C%[96mDokunmatik Klavye ve Kalem hizmeti %3 ...%C%[0m
 :: Kalem servisi
@@ -1467,7 +1504,7 @@ echo   %C%[96mDokunmatik Klavye ve Kalem hizmeti %3 ...%C%[0m
 ::-------------------------------------------------------
 goto :eof
 
-:serv.15.sistemgeriyukleme
+:serv.16.sistemgeriyukleme
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Sistem Geri ykleme hizmeti %5. >> %Location%\Logs
 echo   %C%[96mSistem geri ykleme hizmeti %5 ...%C%[0m
 :: Windows Yedekleme ve Geri Ykleme hizmeti
@@ -1493,7 +1530,7 @@ Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore" "Disable
 ::-------------------------------------------------------------------------------
 goto :eof
 
-:serv.16.sysmain
+:serv.17.sysmain
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Hzl Getir^(Sysmain^) hizmeti %3. >> %Location%\Logs
 echo   %C%[96mHzl Getir hizmeti %3 ...%C%[0m
 %PowerRun% sc config SysMain start= %2
@@ -1504,7 +1541,7 @@ echo   %C%[96mHzl Getir hizmeti %3 ...%C%[0m
 ::-------------------------------------------------------
 goto :eof
 
-:serv.17.hibernate
+:serv.18.hibernate
 ::Hzl baŸlang‡
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Hzl baŸlang‡^(Hibernate^) hizmeti %3. >> %Location%\Logs
 echo   %C%[96mHzl baŸlat %3 ...%C%[0m
@@ -1517,7 +1554,7 @@ Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power" "Hiber
 ::-------------------------------------------------------
 goto :eof
 
-:serv.18.Location
+:serv.19.Location
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Konum hizmeti %7. >> %Location%\Logs
 echo   %C%[96mKonum hizmeti %7 ...%C%[0m
 %~5 "HKLM\SOFTWARE\Policies\Microsoft\Windows\LocationAndSensors" %~6 > NUL 2>&1
@@ -1535,7 +1572,7 @@ Call :dword "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\System" "Allow
 ::----------------------------------------------------------------------------------------------------------------------------------------------
 goto :eof
 
-:serv.19.mediaplayer
+:serv.20.mediaplayer
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| MediaPlayer hizmeti %4. >> %Location%\Logs
 :: Windows Media Player
 echo   %C%[96mWindows Media Player %4 ...%C%[0m
@@ -1549,7 +1586,7 @@ Dism /Online /%3-Feature /FeatureName:MediaPlayback /Quiet /NoRestart
 ::---------------------------------------------------------------------
 goto :eof
 
-:serv.20.hyperv
+:serv.21.hyperv
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Hyper-V hizmeti %6. >> %Location%\Logs
 echo   %C%[96mHyper-V hizmeti %6 ...%C%[0m
 :: HV Ana Bilgisayar Hizmeti
@@ -1590,7 +1627,7 @@ bcdedit /set hypervisorlaunchtype %5
 ::------------------------------------------
 goto :eof
 
-:serv.21.xbox
+:serv.22.xbox
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Xbox hizmeti %7. >> %Location%\Logs
 echo   %C%[96mXbox hizmeti %7 ...%C%[0m
 :: Oyun DVR ve Yayn kullanc hizmeti
@@ -1620,7 +1657,7 @@ Call :sz "HKCU\System\GameConfigStore" "GameDVR_FSEBehavior" "%4"
 ::----------------------------------------------------------------------------------------------------------------------------------------------
 goto :eof
 
-:serv.22.bitlocker
+:serv.23.bitlocker
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Bitlocker hizmeti %3. >> %Location%\Logs
 echo   %C%[96mBitlocker hizmeti %3 ...%C%[0m
 :: Bitlocker src Ÿifreleme hizmeti
@@ -1632,7 +1669,7 @@ echo   %C%[96mBitlocker hizmeti %3 ...%C%[0m
 ::------------------------------------------------------
 goto :eof
 
-:serv.23.mixedreality
+:serv.24.mixedreality
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Karma Ger‡eklik hizmeti %2. >> %Location%\Logs
 echo   %C%[96mKarma Ger‡eklik hizmeti %2 ...%C%[0m
 :: Uzlamsal veri hizmeti
@@ -1651,7 +1688,7 @@ echo   %C%[96mKarma Ger‡eklik hizmeti %2 ...%C%[0m
 ::------------------------------------------
 goto :eof
 
-:serv.24.driverupdate
+:serv.25.driverupdate
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Driver Gncelle / Ykle %3. >> %Location%\Logs
 echo   %C%[96mDriver Ykle/Gncelle hizmeti %3 ...%C%[0m
 Call :dword "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\Update" "ExcludeWUDriversInQualityUpdate" "%~1"
@@ -1666,7 +1703,7 @@ Call :dword "HKLM\Software\Policies\Microsoft\Windows\DriverSearching" "SearchOr
 ::-------------------------------------
 goto :eof
 
-:serv.25.memorycompression
+:serv.26.memorycompression
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Bellek skŸtrma %2. >> %Location%\Logs
 echo   %C%[96mBellek skŸtrma hizmeti %2 ...%C%[0m
 %PowerRun% sc config SysMain start= auto
@@ -1681,7 +1718,7 @@ echo   %C%[96mBellek skŸtrma hizmeti %2 ...%C%[0m
 ::-------------------------------------
 goto :eof
 
-:serv.26.coreparking
+:serv.27.coreparking
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| ˜Ÿlemci ‡ekirdek bekleme hizmeti %4. >> %Location%\Logs
 echo   %C%[96m˜Ÿlemci ‡ekirdek bekleme hizmeti %4 ...%C%[0m
 Call :dword "HKLM\SYSTEM\ControlSet001\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\0cc5b647-c1df-4637-891a-dec35c318583" "ValueMax" "%~1"
@@ -1698,7 +1735,7 @@ Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-
 goto :eof
 
 
-:serv.27.gpuoptimization
+:serv.28.gpuoptimization
 set /p value=%R%[1;97m%R%[42m GPU Optimizasyonu%R%[0m %C%[90m[%C%[1;91mAMD: 1%C%[90m /%C%[1;92m NVIDIA: 2%C%[90m /%C%[1;96m Men: X%C%[90m]%C%[0m :
 	if %value%==1 (Call :amd.optimization)
 	if %value%==2 (Call :nvidia.optimization)
@@ -1895,6 +1932,8 @@ Call :sz "HKLM\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" "PauseQualityUpdate
 Call :sz "HKLM\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" "PauseUpdatesExpiryTime" "2050-12-29T11:05:30Z"
 Call :sz "HKLM\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" "PauseFeatureUpdatesEndTime" "2050-12-29T11:05:30Z"
 Call :sz "HKLM\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" "PauseQualityUpdatesEndTime" "2050-12-29T11:05:30Z"
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU" "NoAutoUpdate" "0" & :: Update Manuel
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU" "AUOptions" "2" & :: Update Manuel
 goto kontroll
 
 :: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
@@ -2511,7 +2550,7 @@ cls
 Call :PowerRun
 echo [%date% - %time%] ^| UpdateAfter ^| Gncelleme sonras temizlik b”lm ‡alŸtrld. >> %Location%\Logs
 echo %R%[92m Gncelleme sonras temizlik iŸlemi yaplyor.%R%[0m
-echo %R%[92m Defender dosyalar siliniyor.%R%[0m
+echo %R%[92m Defender kalntlar temizleniyor.%R%[0m
 %PowerRun% DEL /F /Q /A "%windir%\System32\CompatTelRunner.exe"
 %PowerRun% DEL /F /Q /A "%windir%\System32\drivers\MsSecFlt.sys"
 %PowerRun% DEL /F /Q /A "%windir%\System32\drivers\WdBoot.sys"
@@ -2532,7 +2571,7 @@ echo %R%[92m Defender dosyalar siliniyor.%R%[0m
 %PowerRun% DEL /F /Q /A "%programdata%\Microsoft\Windows Defender Advanced Threat Protection"
 %PowerRun% DEL /F /Q /A "%programdata%\Microsoft\Windows Defender"
 %PowerRun% DEL /F /Q /A "%windir%\SystemApps\Microsoft.Windows.SecHealthUI_cw5n1h2txyewy"
-echo %R%[92m Defender hizmetler kapatlyor.%R%[0m
+:: Servisler
 %PowerRun% net stop SecurityHealthService
 %PowerRun% sc delete SecurityHealthService
 %PowerRun% net stop Sense
@@ -2545,7 +2584,7 @@ echo %R%[92m Defender hizmetler kapatlyor.%R%[0m
 %PowerRun% sc delete WinDefend 
 %PowerRun% net stop wscsvc
 %PowerRun% sc delete wscsvc 
-echo %R%[92m Hizmetler ilk haline getiriliyor...%R%[0m
+echo %R%[92m Hizmetler dzenleniyor...%R%[0m
 :: Akll kart
 %PowerRun% sc config SCardSvr start= disabled
 %PowerRun% net stop SCardSvr
@@ -2565,11 +2604,11 @@ echo %R%[92m Hizmetler ilk haline getiriliyor...%R%[0m
 %PowerRun% sc config PeerDistSvc start= disabled
 %PowerRun% net stop PeerDistSvc
 :: Co§rafi Location hizmeti
-%PowerRun% sc config Ifsvc start= disabled
-%PowerRun% net stop Ifsvc
+:: %PowerRun% sc config Ifsvc start= disabled
+:: %PowerRun% net stop Ifsvc
 :: Czdan Hizmeti
-%PowerRun% sc config WalletService start= disabled
-%PowerRun% net stop WalletService
+:: %PowerRun% sc config WalletService start= disabled
+:: %PowerRun% net stop WalletService
 :: Da§tlmŸ ba§lant izleme istemcisi
 %PowerRun% sc config TrkWks start= disabled
 %PowerRun% net stop TrkWks
@@ -2584,17 +2623,14 @@ echo %R%[92m Hizmetler ilk haline getiriliyor...%R%[0m
 %PowerRun% net stop diagsvc
 %PowerRun% sc delete diagsvc
 :: Dosya Ge‡miŸi Hizmeti
-%PowerRun% sc config fhsvc start= disabled
-%PowerRun% net stop fhsvc
-:: Czdan Hizmeti
-%PowerRun% sc config WalletService start= disabled
-%PowerRun% net stop WalletService
+:: %PowerRun% sc config fhsvc start= disabled
+:: %PowerRun% net stop fhsvc
 :: Ebeveyn Kontrolleri
-%PowerRun% sc config WpcMonSvc start= disabled
-%PowerRun% net stop WpcMonSvc
+:: %PowerRun% sc config WpcMonSvc start= disabled
+:: %PowerRun% net stop WpcMonSvc
 :: Fax
-%PowerRun% sc config fax start= disabled
-%PowerRun% net stop fax
+:: %PowerRun% sc config fax start= disabled
+:: %PowerRun% net stop fax
 :: KiŸi hizmeti
 %PowerRun% sc config PimIndexMaintenanceSvc start= disabled
 %PowerRun% net stop PimIndexMaintenanceSvc
@@ -2615,8 +2651,8 @@ echo %R%[92m Hizmetler ilk haline getiriliyor...%R%[0m
 %PowerRun% sc config PcaSvc start= disabled
 %PowerRun% net stop PcaSvc
 :: Tanlama ˜lkesi Hizmeti
-%PowerRun% sc config DPS start= disabled
-%PowerRun% net stop DPS
+:: %PowerRun% sc config DPS start= disabled
+:: %PowerRun% net stop DPS
 :: Karma Ger‡eklik
 %PowerRun% sc config SharedRealitySvc start= disabled
 %PowerRun% net stop SharedRealitySvc
@@ -2632,8 +2668,8 @@ echo %R%[92m Hizmetler ilk haline getiriliyor...%R%[0m
 %PowerRun% sc config WerSvc start= disabled
 %PowerRun% net stop WerSvc
 :: Windows Search
-%PowerRun% net stop WSearch
-%PowerRun% sc config WSearch start= disabled
+:: %PowerRun% net stop WSearch
+:: %PowerRun% sc config WSearch start= disabled
 :: €evrimdŸ dosyalar
 %PowerRun% sc config CscService start= disabled
 %PowerRun% net stop CscService
@@ -2650,17 +2686,17 @@ echo %R%[92m Hizmetler ilk haline getiriliyor...%R%[0m
 %PowerRun% net stop PimIndexMainteanceSvc
 %PowerRun% sc config PimIndexMainteanceSvc start= disabled
 :: Natural Kimlik Do§rulamas
-%PowerRun% net stop NaturalAuthentication
-%PowerRun% sc config NaturalAuthentication start= disabled
+:: %PowerRun% net stop NaturalAuthentication
+:: %PowerRun% sc config NaturalAuthentication start= disabled
 :: Perakende g”steri hizmeti
 %PowerRun% net stop RetailDemo
 %PowerRun% sc config RetailDemo start= disabled
 :: Resim alma olaylar
-%PowerRun% net stop WiaRpc
-%PowerRun% sc config WiaRpc start= disabled
+:: %PowerRun% net stop WiaRpc
+:: %PowerRun% sc config WiaRpc start= disabled
 :: Windows resim alma (WIA) 
-%PowerRun% net stop StiSvc
-%PowerRun% sc config StiSvc start= disabled
+:: %PowerRun% net stop StiSvc
+:: %PowerRun% sc config StiSvc start= disabled
 :: Temalar
 %PowerRun% net stop Themes
 %PowerRun% sc config Themes start= disabled
@@ -2668,8 +2704,8 @@ echo %R%[92m Hizmetler ilk haline getiriliyor...%R%[0m
 %PowerRun% net stop workfolderssvc
 %PowerRun% sc config workfolderssvc start= disabled
 :: ˜kincil oturum a‡ma 
-%PowerRun% sc config seclogon start= disabled
-echo %R%[92m Regedit kaytlar yeniden dzenleniyor.%R%[0m
+:: %PowerRun% sc config seclogon start= disabled
+echo %R%[92m Regedit kaytlar dzenleniyor.%R%[0m
 :: Defender
 Call :dword "HKLM\SOFTWARE\Microsoft\Windows Defender Security Center\Notifications" "DisableNotifications" "1"
 Call :dword "HKLM\SOFTWARE\Microsoft\Windows Defender Security Center\Notifications" "DisableEnhancedNotifications" "1"
@@ -2799,15 +2835,15 @@ Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "
 Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize" "EnableTransparency" 0 & :: G”rev ‡ubu§u transparan ”zelli§i devre dŸ braklyor...
 Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "ShowCortanaButton" 0 & :: Cortana Butonu kaldrlyor...
 :: Explorer
-Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "LaunchTo" 1 & :: Explorer "Bu Bilgisayar" olarak ayarlanyor...
-Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\OperationStatusManager" "EnthusiastMode" 1 & :: Dosya kopyalama iletiŸim kutusuda daha fazla detay g”ster olarak ayarlanyor...
-Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "HideFileExt" 0 & :: Dosya uzantlar aktifleŸtiriliyor...
+:: Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "LaunchTo" 1 & :: Explorer "Bu Bilgisayar" olarak ayarlanyor...
+:: Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\OperationStatusManager" "EnthusiastMode" 1 & :: Dosya kopyalama iletiŸim kutusuda daha fazla detay g”ster olarak ayarlanyor...
+:: Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "HideFileExt" 0 & :: Dosya uzantlar aktifleŸtiriliyor...
 Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers" "DisableAutoplay" 1 & :: Otomatik oynatma kapatlyor...
 Call :dword "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer" "NoRecentDocsHistory" 0 & :: Son a‡lan belgelerin ge‡miŸi kapatlyor...
 :: Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer" "ClearRecentDocsOnExit" 1 & :: Windows'u kapatrken yeni a‡lan belgelerin ge‡miŸini temizle aktifleŸtiriliyor...
 Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" "ShowRecent" 0 & :: Son kullanlan dosyalarn hzl eriŸimde g”rntlenmesi engelleniyor...
 Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" "ShowFrequent" 0 & :: Hzl EriŸimden Sk Kullanlan klas”rler kaldrlyor
-Call :binary "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" "Link" "00000000" & :: Ksayol yazs kaldrlyor...
+:: Call :binary "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" "Link" "00000000" & :: Ksayol yazs kaldrlyor...
 Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" "NoInternetOpenWith" 1 & :: Birlikte a‡ se‡ene§inden internette ara se‡ene§i kaldrlyor...
 :: Search
 :: Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" "SearchboxTaskbarMode" 1 & :: Arama b”lm simge haline getiriliyor
@@ -2840,7 +2876,7 @@ Call :dword "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Serialize" 
 Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\Psched" "NonBestEffortLimit" 0 & :: Qos Limiti Devre DŸ braklyor...
 Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\FileSystem" "LongPathsEnabled" 1 & :: Windows 255 Karakter Snr devre dŸ braklyor...
 Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\WMI\Autologger\AutoLogger-Diagtrack-Listener" "Start" 0 & :: DiagTrack Devre DŸ braklyor...
-Call :dword "HKCU\Software\Microsoft\Narrator\QuickStart" "SkipQuickStart" 1 & :: Narrator QuickStart kapatlyor.
+:: Call :dword "HKCU\Software\Microsoft\Narrator\QuickStart" "SkipQuickStart" 1 & :: Narrator QuickStart kapatlyor.
 Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "SoftLandingEnabled" 0 & :: Windows ”nerileri devre dŸ braklyor...
 Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "SubscribedContent-310093Enabled" 0 & :: Windows karŸlama deneyimi kapatlyor...
 Call :dword "HKCU\SOFTWARE\Policies\Microsoft\Windows\AppCompat" "DisablePCA" 1 & :: Program uyumluluk yardmcs devre dŸ braklyor...
@@ -2857,7 +2893,7 @@ Call :sz "HKCU\Control Panel\Mouse" "MouseHoverTime" 8 & :: Farenizle birlikte b
 Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" "LinkResolveIgnoreLinkInfo" 1 & :: Bilgisayarnzda mevcut olmayan programlara ait ksayollarn ba§lantsnn Windows tarafndan boŸa vakit harcanarak aranmasn ”nler
 Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" "NoResolveSearch" 1 & :: Ksayol ba§lant sorununu ‡”zmek i‡in Windows'un diski aramasn ”nler
 Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" "NoResolveTrack" 1 & :: Ksayol ba§lant sorununu ‡”zmek i‡in Windows'un NTFS dosya sisteminin izleme ”zelli§ini kullanmasn engeller
-Call :dword "HKCU\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\QuietHours" "Enable" 1 & :: Odak Yardm aktifleŸtiriliyor
+:: Call :dword "HKCU\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\QuietHours" "Enable" 1 & :: Odak Yardm aktifleŸtiriliyor
 :: Store
 Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "ContentDeliveryAllowed" 0 & :: 3.Parti Market uygulamalarnn yeniden yklenmesi engelleyen b”lm
 Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "FeatureManagementEnabled" 0 & :: 3.Parti Market uygulamalarnn yeniden yklenmesi engelleyen b”lm
@@ -3050,48 +3086,48 @@ goto :eof
 :wget
 ping -n 1 www.google.com.tr -w 20000 > NUL
 	if %errorlevel%==1 (echo   %R%[1;97m%R%[41m                                  ˜nternet ba§lants yok                                   %R%[0m
-						echo [%date% - %time%] ^| wget ^| HATA! ˜nternet ba§lants bulunamad. ˜sim:%~2 Link:"%~1" Download:%download% >> %Location%\Logs
+						echo [%date% - %time%] ^| wget ^| HATA! ˜nternet ba§lants yok. "%~2" / "%~1" / "%download%" >> %Location%\Logs
 						timeout /t 4 /nobreak > NUL
 						goto :eof)
-echo [%date% - %time%] ^| wget ^| %~2 program indirildi. Link:"%~1" Download:%download% >> %Location%\Logs
+echo [%date% - %time%] ^| wget ^| "%~2" indirildi. "%~1" / "%download%" >> %Location%\Logs
 Files\wget.exe -c -q --no-check-certificate --show-progress "%~1" -O %download%\%~2"
 "%download%\%~2" %~3
 goto :eof
 
 :: ========================================================================================================
-:: %1= Link | %~2= ˜ndirme ismi  | %~3= Sessiz kurulum parametresi
+:: %~1= Link | %~2= ˜ndirme ismi  | %~3= Sessiz kurulum parametresi
 :: ========================================================================================================
 
 :wget2
 ping -n 1 www.google.com.tr -w 20000 > NUL
 	if %errorlevel%==1 (echo   %R%[1;97m%R%[41m                                  ˜nternet ba§lants yok                                   %R%[0m
-						echo [%date% - %time%] ^| wget2 ^| HATA! ˜nternet ba§lants bulunamad. ˜sim:%~2 Link:"%~1" Download:%download% >> %Location%\Logs
+						echo [%date% - %time%] ^| wget2 ^| HATA! ˜nternet ba§lants yok. "%~2" / "%~1" / "%download%" >> %Location%\Logs
 						timeout /t 4 /nobreak > NUL
 						goto :eof)
-echo [%date% - %time%] ^| wget2 ^| %~2 program indirildi. Link:"%~1" Download:%download% >> %Location%\Logs
-Files\wget.exe -c -q --no-check-certificate --show-progress %1 -O %download%\%~2
+echo [%date% - %time%] ^| wget2 ^| "%~2" indirildi. "%~1" / "%download%" >> %Location%\Logs
+Files\wget.exe -c -q --no-check-certificate --show-progress "%~1" -O %download%\%~2
 goto :eof
 
 :: ========================================================================================================
-:: %1= Link | %~2= ˜ndirme ismi 
+:: %~1= Link | %~2= ˜ndirme ismi 
 :: ========================================================================================================
 
 :wget3
 ping -n 1 www.google.com.tr -w 20000 > NUL
 	if %errorlevel%==1 (echo   %R%[1;97m%R%[41m                                  ˜nternet ba§lants yok                                   %R%[0m
-						echo [%date% - %time%] ^| wget3 ^| HATA! ˜nternet ba§lants bulunamad. ˜sim:"%~2" Link:"%~1" >> %Location%\Logs
+						echo [%date% - %time%] ^| wget3 ^| HATA! ˜nternet ba§lants yok. "%~2" / "%~1" >> %Location%\Logs
 						timeout /t 4 /nobreak > NUL
 						goto :eof)
-echo [%date% - %time%] ^| wget3 ^| Masstne "%~2" program indirildi. Link:"%~1" >> %Location%\Logs
-Files\wget -c -q --no-check-certificate --show-progress %1 -O %~2
+echo [%date% - %time%] ^| wget3 ^| "%~2" indirildi. "%~1" >> %Location%\Logs
+Files\wget -c -q --no-check-certificate --show-progress "%~1" -O %~2
 goto :eof
 
 :: ========================================================================================================
-:: %1= Link | %~2= Masast Locationu ve ismi
+:: %~1= Link | %~2= Masast Locationu ve ismi
 :: ========================================================================================================
 
 :ZipExport
-echo [%date% - %time%] ^| ZipExport ^| %~1 dosyas "%download%\%~n1"  >> %Location%\Logs
+echo [%date% - %time%] ^| ZipExport ^| "%~1" dosyas "%download%\%~n1" ‡karld.  >> %Location%\Logs
 powershell -command "Expand-Archive -Force '%download%\%~1' '%download%\%~n1'" 
 goto :eof
 

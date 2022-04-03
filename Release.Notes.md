@@ -45,6 +45,15 @@
 ::
 :: ==============================================================================================================================
 ------------------
+ ► Versiyon 2.5.2 - Ara güncelleme
+------------------
+Yayınlanma Tarihi: 03.04.2022
+
+ • Hizmetleri Yönet > Uzak Masaüstü/Akış/Ağ hizmetleri bölümüne Windows Search hizmetini açmak için parametre eklendi.
+ • Hizmetleri Yönet > Windows Search hizmetini açıp kapatmaya yarayacak bölüm eklendi.
+ • "Güncelleme Sonrası Temizlik" bölümünde düzenlemeler yapıldı. "Hizmetleri Yönet" bölümünde açılacak hizmetleri tekrar kapatmaması için düzenlendi.
+
+------------------
  ► Versiyon 2.5.1 - Ara güncelleme
 ------------------
 Yayınlanma Tarihi: 01.04.2022
