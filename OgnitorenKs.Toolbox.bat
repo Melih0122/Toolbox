@@ -102,21 +102,6 @@ call :Logs
 set download=%Location%\Download
 
 :: ==============================================================================================================================
-Powershell -command "Get-CimInstance Win32_OperatingSystem | Select-Object Caption,InstallDate,OSArchitecture,RegisteredUser,CSName | FL" > %Logs%\OS.txt
-Findstr /C:"64 bit" %Logs%\OS.txt > NUL 2>&1
-	if %errorlevel%==1 (echo 
-						echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-						echo  %R%[90mº                                                         º%R%[0m
-						echo  %R%[90mº%R%[1;97m%R%[41m               ! UYARI !           ! UYARI !             %R%[0m%R%[90mº%R%[0m
-						echo  %R%[90mº                                                         º%R%[0m
-						echo  %R%[90mº%R%[1;97m%R%[41m            Sisteminiz x64 mimariye sahip de§il          %R%[0m%R%[90mº%R%[0m
-						echo  %R%[90mº                                                         º%R%[0m
-						echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
-						echo 
-						timeout /t 5 /nobreak > NUL
-						exit)
-
-:: ==============================================================================================================================
 :: Toolbox i‡in gerekli klas”rler oluŸturuluyor.
 mkdir "%Location%\Download" > NUL 2>&1
 mkdir "%Location%\Edit\Appx" > NUL 2>&1
@@ -154,7 +139,7 @@ dir /b "%Location%\Files\wget.exe" > NUL 2>&1
 :: ==============================================================================================================================
 
 :: Ana ekranda yer alan Kullanc ad, iŸletim sistemi gibi bilgiler alnr. 
-:: x64 sistem kontrol i‡in st b”lm yerleŸtirdim: Powershell -command "Get-CimInstance Win32_OperatingSystem | Select-Object Caption,InstallDate,OSArchitecture,RegisteredUser,CSName | FL" > %Logs%\OS.txt
+Powershell -command "Get-CimInstance Win32_OperatingSystem | Select-Object Caption,InstallDate,OSArchitecture,RegisteredUser,CSName | FL" > %Logs%\OS.txt
 FOR /F "tokens=2 delims=':'" %%a in ('FIND "Caption" %Logs%\OS.txt') do set caption=%%a
 set caption=%caption:~11%
 FOR /F "tokens=2 delims=':'" %%b in ('FIND "RegisteredUser" %Logs%\OS.txt') do set registereduser=%%b
