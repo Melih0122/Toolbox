@@ -1,8 +1,0 @@
-# HSTS 1.0 Known Hosts database for GNU Wget.
-# Edit at your own risk.
-# <hostname>	<port>	<incl. subdomains>	<created>	<max-age>
-openal.org	0	0	1649336105	31536000
-blitz.gg	0	1	1648819521	63072000
-aka.ms	0	1	1649336012	31536000
-docs.google.com	0	0	1649530219	31536000
-github.com	0	1	1649592150	31536000
