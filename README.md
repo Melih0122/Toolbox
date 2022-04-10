@@ -342,10 +342,10 @@ Mavi renkli işlem numaraları 26 numaralı işlem ile alakalıdır.
 ![WindowsAppBoss_3nsDKdhQNq](https://user-images.githubusercontent.com/93199689/162618838-dd97c0a4-37a4-41d8-9932-ec88f8f67e90.png)
 	
 ### • 61 - Folder to ISO: 
-![Folder2Iso_1FDJViSHXt](https://user-images.githubusercontent.com/93199689/162618820-6233dc42-31d4-471f-8ad9-a0bf44e2faab.png)
-
 	• Folder to ISO uygulamasını açar. Klasör içindeki verileri ISO dosyasını çevirir.
 	• Resmi sayfası: https://www.trustfm.net/software/utilities/Folder2Iso.php
+![Folder2Iso_1FDJViSHXt](https://user-images.githubusercontent.com/93199689/162618820-6233dc42-31d4-471f-8ad9-a0bf44e2faab.png)	
+	
 ### • 62 - Fat32 to NTFS: 
 	• Fat32 olarak formatlanmış USB diskleri veri kaybı olmadan NTFS'ye çevirir. Disk harfini girmeniz gerekmektedir.
 ![cmd_tokNcw69mr](https://user-images.githubusercontent.com/93199689/162618533-9f18c20e-165e-4ef7-bdf9-3e6b590591cb.png)
