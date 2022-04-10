@@ -3,8 +3,8 @@
 - Toolbox Windows 10 - 11 sürümlerinin x64 mimarilerinde açılmaktadır. Windows 8.1 için hazırladığım kısıtlı bir sürümü mevcuttur. En güncel olan Windows sürümü ile senkronize olarak gelişmektedir.
 - Windows ekran ölçeklendirme ayarı Toolbox'ın pencere ayarını bozabiliyor. Sorunsuz kullanım için Toolbox'ı kullanırken ölçeklendirme etkileri kapatılmalıdır.
 
-![cmd_zHNc6ovL8r](https://user-images.githubusercontent.com/93199689/160884744-e08fcf0b-cf04-4f1b-bc5b-f1d846188b35.png)
-![cmd_KdavkEoR5N](https://user-images.githubusercontent.com/93199689/160884818-d9b037d9-89c7-450e-bf62-193b43c6c54f.png)
+![cmd_Ov68PsJv65](https://user-images.githubusercontent.com/93199689/162618420-443386c9-5d5e-47ab-a2d1-04c9d6a0ed86.png)
+![cmd_qdI4ybuRUo](https://user-images.githubusercontent.com/93199689/162618425-0d1f1fa4-366b-4651-b0dc-5066e0ee9112.png)
 
 ### Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
 
@@ -51,83 +51,82 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	• 3 - Whatsapp: Telefondaki uygulamayı bilgisayarınıza senkronize etmeyi sağlar.
 	• 4 - Signal: Telefondaki uygulamayı bilgisayarınıza senkronize etmeyi sağlar.
 	• 5 - Telegram: Telefondaki uygulamayı bilgisayarınıza senkronize etmeyi sağlar.
-	• 6 - Microsoft Teams: Discord uygulaması gibidir. Ancak genelde eğitim amaçlı kullanılır.
-	• 7 - Zoom: Skype benzeri uygulamadır. Eğitim amaçlı kullanılır. 
+	• 6 - Zoom: Skype benzeri uygulamadır. Eğitim amaçlı kullanılır. 
 #### ► Oyun Uygulamaları 
-	• 8 - EpicGames: Oyun kütüphanesi. Her hafta verdiği ücretsiz oyunlarla piyasada tanınır.
-	• 9 - Steam: Oyun kütüphanesi. Bu kategorideki en popüler uygulamadır. 
-	• 10 - GOG Galaxy= CD Project şirketine aittir. Eski birçok oyunu buradan satın alarak oynayabilirsiniz. Diğer oyun kütüphanelerini uygulamaya entegre edebiliyorsunuz.
-	• 11 - Uplay: Ubisoft şirketinin oyun kütüphane uygulamasıdır.
-	• 12 - Origin: EA Games şirketinin oyun kütühane uygulamasıdır.
+	• 7 - EpicGames: Oyun kütüphanesi. Her hafta verdiği ücretsiz oyunlarla piyasada tanınır.
+	• 8 - Steam: Oyun kütüphanesi. Bu kategorideki en popüler uygulamadır. 
+	• 9 - GOG Galaxy= CD Project şirketine aittir. Eski birçok oyunu buradan satın alarak oynayabilirsiniz. Diğer oyun kütüphanelerini uygulamaya entegre edebiliyorsunuz.
+	• 10 - Uplay: Ubisoft şirketinin oyun kütüphane uygulamasıdır.
+	• 11 - Origin: EA Games şirketinin oyun kütühane uygulamasıdır.
 #### ► Hile Uygulamaları 
 	Online oyunlar için değil :)
-	• 13 - Cheat Engine: Hile motorudur. Online oyunlarda denemeyin ban yeme ihtimaliniz yüksek. Hikayeli oyunlarda kullanılabilir. (Hileye hayır) 
-	• 14 - Wemod: Hile kütüphanesidir. Yalnızca hikayeli oyunlarda işe yarar.
+	• 12 - Cheat Engine: Hile motorudur. Online oyunlarda denemeyin ban yeme ihtimaliniz yüksek. Hikayeli oyunlarda kullanılabilir. (Hileye hayır) 
+	• 13 - Wemod: Hile kütüphanesidir. Yalnızca hikayeli oyunlarda işe yarar.
 #### ► Tarayıcı Uygulamaları
-	• 15 - Google Chrome: En çok kullanılan tarayıcıdır. 
-	• 16 - Mozilla Firefox: Genellikle Linux sistemlerde kullanılır. Windows sürümünde de çok güzel özellik bulunmaktadır.
-	• 17 - Brave: Chromium tabanlı tarayıcıdır. Entegre reklam engelleyicisi vardır. Google web mağazasından uygulama indirebilir. Cripto para cüzdanı gibi özellikleri var.
-	• 18 - Microsoft Edge: Microsoft herkes kullansın diye Windows'un her yerine mayın gibi döşediği tarayıcıdır. Chromuim tabanlıdır. Hızlı bir tarayıcıdır. Google web mağazasına bağlanabilir.
+	• 14 - Google Chrome: En çok kullanılan tarayıcıdır. 
+	• 15 - Mozilla Firefox: Genellikle Linux sistemlerde kullanılır. Windows sürümünde de çok güzel özellik bulunmaktadır.
+	• 16 - Brave: Chromium tabanlı tarayıcıdır. Entegre reklam engelleyicisi vardır. Google web mağazasından uygulama indirebilir. Cripto para cüzdanı gibi özellikleri var.
+	• 17 - Microsoft Edge: Microsoft herkes kullansın diye Windows'un her yerine mayın gibi döşediği tarayıcıdır. Chromuim tabanlıdır. Hızlı bir tarayıcıdır. Google web mağazasına bağlanabilir.
 #### ► Ram Temizleme Uygulamaları
-	• 19 - ISLC: RamStandby(bekleme) listesini temizlemeye yarayan uygulamadır.
-	• 20 - Mem Reduct: Ram içinde boşta bekleyen tüm işlemleri kapatır. Oyunlarda bu temizleme işleminde kasma yaşanabilir.
+	• 18 - ISLC: RamStandby(bekleme) listesini temizlemeye yarayan uygulamadır.
+	• 19 - Mem Reduct: Ram içinde boşta bekleyen tüm işlemleri kapatır. Oyunlarda bu temizleme işleminde kasma yaşanabilir.
 #### ► Office Uygulamaları
-	• 21 - LibreOffice: Microsoft Office uygulamasının ücretsiz alternatifidir. 
-	• 22 - Adobe Reader: PDF dosyalarını açar.
-	• 23 - PDF-XChange Editör: PDF dosyalarını düzenleyip, okuyabilirsiniz. Adobe Reader alternatifidir. Ücretsiz özellikleri bakımından Adobe Reader'den daha iyi bir uygulamadır.
-	• 24 - Calibre: E-kitap formundaki dosyaları açıp, okumanızı sağlar.
+	• 20 - LibreOffice: Microsoft Office uygulamasının ücretsiz alternatifidir. 
+	• 21 - Adobe Reader: PDF dosyalarını açar.
+	• 22 - PDF-XChange Editör: PDF dosyalarını düzenleyip, okuyabilirsiniz. Adobe Reader alternatifidir. Ücretsiz özellikleri bakımından Adobe Reader'den daha iyi bir uygulamadır.
+	• 23 - Calibre: E-kitap formundaki dosyaları açıp, okumanızı sağlar.
 #### ► Sıkıştırma Uygulamaları 
-	• 25 - 7-Zip: Kullanıcılar genellikle WinRaR uygulamasını kullanır ancak 7-Zip yabana atılacak bir uygulama değildir.
-	• 26 - WinRaR: Ücretli ama ücretsizdir! 
+	• 24 - 7-Zip: Kullanıcılar genellikle WinRaR uygulamasını kullanır ancak 7-Zip yabana atılacak bir uygulama değildir.
+	• 25 - WinRaR: Ücretli ama ücretsizdir! 
 #### ► Video Düzenleme Uygulamaları
-	• 27 - Kdenlive: Ücretsizdir. 92 MB civarında bir uygulamadır. Kullanımı çok basittir. Çıktı işlemlerinde ekran kartını kullanmama sorunu halledilirse çok iyi uygulamadır.
-	• 28 - Openshot: Ücretsiz video düzenleme uygulamasıdır.
-	• 29 - Shotcut: Ücretsiz video düzenleme uygulamasıdır.
+	• 26 - Kdenlive: Ücretsizdir. 92 MB civarında bir uygulamadır. Kullanımı çok basittir. Çıktı işlemlerinde ekran kartını kullanmama sorunu halledilirse çok iyi uygulamadır.
+	• 27 - Openshot: Ücretsiz video düzenleme uygulamasıdır.
+	• 28 - Shotcut: Ücretsiz video düzenleme uygulamasıdır.
 #### ► Resim Düzenleme Uygulamaları
-	• 30 - Krita: Adobe Photoshop uygulamasının ücretsiz alternatifidir. Steam uygulamasından satın alarak destekte olabilirsiniz. 
-	• 31 - Gimp: Adobe Photoshop uygulamasının ücretsiz alternatifidir.
+	• 29 - Krita: Adobe Photoshop uygulamasının ücretsiz alternatifidir. Steam uygulamasından satın alarak destekte olabilirsiniz. 
+	• 30 - Gimp: Adobe Photoshop uygulamasının ücretsiz alternatifidir.
 #### ► Ekran Kayıt (SS) Uygulamaları
-	• 32 - OBS Studio: Ekran kaydı alma işlemi dışında canlı yayınlar içinde kullanılır. Kayıtlarınıza marka logosu atmaz.
-	• 33 - ShareX: Ekran görüntüsü (SS) alma yazılımıdır. Ses kaydı almadan ekran kaydedebilir. GIF oluştabilir. Daha sayısız özellik bulunur.
+	• 31 - OBS Studio: Ekran kaydı alma işlemi dışında canlı yayınlar içinde kullanılır. Kayıtlarınıza marka logosu atmaz.
+	• 32 - ShareX: Ekran görüntüsü (SS) alma yazılımıdır. Ses kaydı almadan ekran kaydedebilir. GIF oluştabilir. Daha sayısız özellik bulunur.
 #### ► Ses Düzeltme Uygulamaları
-	• 34 - Audacity: Ses düzeltme uygulamasıdır. 
+	• 33 - Audacity: Ses düzeltme uygulamasıdır. 
 #### ► Multimedia Uygulamaları
-	• 35 - K-Lite Codec: Video izleme uygulamasıdır. Açamayacağı video dosyası yoktur. 
-	• 36 - VLC Media Player: Video izleme uygulamasıdır. Açamayacağı video dosyası yoktur. Videolarla ilgili çok fazla özelliğe sahiptir.
-	• 37 - Aimp: Ses dosyalarını açmaya yarayan uygulamadır. Tasarım ve özellikle olarak çok beğendiğimi belirtmek isterim.
+	• 34 - K-Lite Codec: Video izleme uygulamasıdır. Açamayacağı video dosyası yoktur. 
+	• 35 - VLC Media Player: Video izleme uygulamasıdır. Açamayacağı video dosyası yoktur. Videolarla ilgili çok fazla özelliğe sahiptir.
+	• 36 - Aimp: Ses dosyalarını açmaya yarayan uygulamadır. Tasarım ve özellikle olarak çok beğendiğimi belirtmek isterim.
 #### ► Dönüştürücü Uygulamaları
-	• 38 - Any Video Converter: Video ses dönüştürme uygulamasıdır.
+	• 37 - Any Video Converter: Video ses dönüştürme uygulamasıdır.
 #### ► İndirme Uygulamaları
-	• 39 - Free Download Manager: İndirme işlemlerinde kullanılacak yardımcı program. Torrent indirme desteğide bulunmaktadır.
-	• 40 - Internet Download Manager: Free Download Manager ile hemen hemen aynı işlevlere sahiptir.
-	• 41 - ByClick Downloader: Youtube'dan video indirmeye yarayan uygulamadır.
-	• 42 - Qbittorrent: Torrent indirme yazılımıdır.
+	• 38 - Free Download Manager: İndirme işlemlerinde kullanılacak yardımcı program. Torrent indirme desteğide bulunmaktadır.
+	• 39 - Internet Download Manager: Free Download Manager ile hemen hemen aynı işlevlere sahiptir.
+	• 40 - ByClick Downloader: Youtube'dan video indirmeye yarayan uygulamadır.
+	• 41 - Qbittorrent: Torrent indirme yazılımıdır.
 #### ► Diğer Uygulamalar
-	• 43 - GlassWire: İnternet takip programı. Bilgisayarınızda hangi program nereye ne göndermiş ne almış hepsini görebilirsiniz.
-	• 44 - TeamViewer: Bilgisayarlar arası uzaktan bağlantı sağlar.
-	• 45 - Hamachi: Ortak bir ağ kurmaya yarayan yazılımdır. Online oyunlarda arkadaşlarınızla oyun kurmak için ortak bir ağ gerektiğinde hayat kurtaran bir programdır.
-	• 46 - Stremio: Torrent üzerinden film izleyebilirsiniz. İzlediğiniz veya izlemek istediğiniz filmeleri kütüphanenize ekleyebilirsiniz. 
-	• 47 - MSI Afterburner: GPU fan ayarı yapar, SS alır, Video kaydı alır, oyunlarda donanımların kullanım değerlerini gösterir, voltaj değerlerini değiştirebilirsiniz.
-	• 48 - Hibit Uninstaller: Kalıntı bırakmadan program kaldırmayı sağlar. Ayrıca çöp dosya temizler. Market uygulamalarını da kaldırabilir.
-	• 49 - Wise Care 365: PC temizlik uygulamasıdır. Tek sürüme verilen ücretsiz pro sürümüdür.
-	• 50 - Unlocker: Silinmeyen dosyaları silmeyi sağlar.
-	• 51 - SSD Booster: SSD için sistemi optimize eder.
-	• 52 - OpenShell: Alternatif başlat menüsüdür.
-	• 53 - Everything: Sistemdeki dosyaları arayıp bulmanızı sağlar. Çok kullanışlı bir programdır.
-	• 54 - TaskbarX: Başlat çubuğunu özelleştirmenizi sağlar.
-	• 55 - Stellarium: Uzay bilgi uygulaması. Muazzam.
-	• 56 - Recuva: Silinen dosyaları kurtarır.
-	• 57 - AOMEI Partition Assistans: Disk yardımcı uygulaması.
+	• 42 - GlassWire: İnternet takip programı. Bilgisayarınızda hangi program nereye ne göndermiş ne almış hepsini görebilirsiniz.
+	• 43 - TeamViewer: Bilgisayarlar arası uzaktan bağlantı sağlar.
+	• 44 - Hamachi: Ortak bir ağ kurmaya yarayan yazılımdır. Online oyunlarda arkadaşlarınızla oyun kurmak için ortak bir ağ gerektiğinde hayat kurtaran bir programdır.
+	• 45 - Stremio: Torrent üzerinden film izleyebilirsiniz. İzlediğiniz veya izlemek istediğiniz filmeleri kütüphanenize ekleyebilirsiniz. 
+	• 46 - MSI Afterburner: GPU fan ayarı yapar, SS alır, Video kaydı alır, oyunlarda donanımların kullanım değerlerini gösterir, voltaj değerlerini değiştirebilirsiniz.
+	• 47 - Hibit Uninstaller: Kalıntı bırakmadan program kaldırmayı sağlar. Ayrıca çöp dosya temizler. Market uygulamalarını da kaldırabilir.
+	• 48 - Wise Care 365: PC temizlik uygulamasıdır. Tek sürüme verilen ücretsiz pro sürümüdür.
+	• 49 - Unlocker: Silinmeyen dosyaları silmeyi sağlar.
+	• 50 - SSD Booster: SSD için sistemi optimize eder.
+	• 51 - OpenShell: Alternatif başlat menüsüdür.
+	• 52 - Everything: Sistemdeki dosyaları arayıp bulmanızı sağlar. Çok kullanışlı bir programdır.
+	• 53 - TaskbarX: Başlat çubuğunu özelleştirmenizi sağlar.
+	• 54 - Stellarium: Uzay bilgi uygulaması. Muazzam.
+	• 55 - Recuva: Silinen dosyaları kurtarır.
+	• 56 - AOMEI Partition Assistans: Disk yardımcı uygulaması.
 #### ► IDE, Kod Editörleri ve Diğer Geliştirme Araçları
-	• 58 - Python: Programlama dilidir.
-	• 59 - PhyCharm: Python kod editörüdür.
-	• 60 - Notepad++: Bilmeyen için not defteri uygulamasıdır. Yazılımcılar için kod editörüdür.
-	• 61 - Visual Studio Code: Visual Studio'nun editör halidir. Genelde web geliştirme için kullanılır.
-	• 62 - Github Desktop: Grafik arayüzlü bir git istemcisidir.
-	• 63 - Git: Dağıtım takip sistemidir.
+	• 57 - Python: Programlama dilidir.
+	• 58 - PhyCharm: Python kod editörüdür.
+	• 59 - Notepad++: Bilmeyen için not defteri uygulamasıdır. Yazılımcılar için kod editörüdür.
+	• 60 - Visual Studio Code: Visual Studio'nun editör halidir. Genelde web geliştirme için kullanılır.
+	• 61 - Github Desktop: Grafik arayüzlü bir git istemcisidir.
+	• 62 - Git: Dağıtım takip sistemidir.
 #### ► 3D Uygulamalar	
-	• 64 - Blender: Ücretsiz, açık kaynaklı bir çalışmadır. 3D tasarımlarda kullanılacak mükemmel uygulama.
-	• 65 - Process Hacker 2: Görev Yöneticisi
+	• 63 - Blender: Ücretsiz, açık kaynaklı bir çalışmadır. 3D tasarımlarda kullanılacak mükemmel uygulama.
+	• 64 - Process Hacker 2: Görev Yöneticisi
 #### ► Oyunlar
     • 72 - OSU!: Müzik video oyunduur.
     • 73 - World Of Tanks: Online tank oyunu.
@@ -209,7 +208,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip daha sonra aç / kapat baş harflerini eklemek gerekiyor.
 
 Örnek: 1a / 2k / 4A / 10K / 23a / 24k  
-![cmd_cmf6hCRxwH](https://user-images.githubusercontent.com/93199689/160884943-80ea57ef-e195-4a5e-8e19-4af79fb46fe4.png)
+![cmd_IVnJjYKL2W](https://user-images.githubusercontent.com/93199689/162618482-433f4af4-1122-4cab-baaa-c32fa328e254.png)
 
 	• 1 [A/K]- Bluetooth hizmeti : Bluetooth hizmetlerini kapatır açar.
 	• 2 [A/K]- Yazıcı hizmeti : Yazıcı hizmetlerini kapatır açar.
@@ -237,8 +236,7 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 	• 24 [A/K]- Karma Gerçeklik hizmeti (VR): Karma gerçeklik kapatır açar.
 	• 25 [A/K]- Driver Yükle / Güncelle (Update): Windows Update üzerinden Driver güncellemesini açıp, kapatmanızı sağlar.
 	• 26 [A/K]- Bellek Sıkıştırma hizmeti: Bellek içindeki verinin belli bir bölümünü sıkıştıran hizmeti kapatır ve açar. Gecikme düşürmek için hizmet kapalı tutulabilir.
-	• 27 [A/K]- Core Parking: İşlemci çekirdeklerinin sürekli tam yükte çalışmasını istiyorsanız hizmeti kapatabilirsiniz. Tam tersi durum için açık hale getirebilirsiniz.
-	• 28 - GPU optimizasyon: AMD ve NVDIA için gerekli olan performans ayarlamalarını sisteme entegre eder.
+	• 27 [A/K]- Core Parking (CPU Çekirdek Uyku Modu): İşlemci çekirdeklerinin sürekli tam yükte çalışmasını istiyorsanız hizmeti kapatabilirsiniz. Tam tersi durum için açık hale getirebilirsiniz.
 	
 ### • 55 - Simge Hatasını Düzelt: 
 	• Simgeleri değiştirdikten sonra oluşacak sorunları giderir.
@@ -346,9 +344,13 @@ Mavi renkli işlem numaraları 26 numaralı işlem ile alakalıdır.
 	• Folder to ISO uygulamasını açar. Klasör içindeki verileri ISO dosyasını çevirir.
 	• Resmi sayfası: https://www.trustfm.net/software/utilities/Folder2Iso.php
 ### • 62 - Fat32 to NTFS: 
-	• Fat32 olarak formatlanmış USB diskleri veri kaybı olmadan NTFS'ye çevirir. Disk harfini girmeniz gerekmektedir.	
+	• Fat32 olarak formatlanmış USB diskleri veri kaybı olmadan NTFS'ye çevirir. Disk harfini girmeniz gerekmektedir.
+![cmd_tokNcw69mr](https://user-images.githubusercontent.com/93199689/162618533-9f18c20e-165e-4ef7-bdf9-3e6b590591cb.png)
+
 ### • 63 - Ping Ölçer: 
 	• İçerisinde belirli sitelerin ping durumlarını otomatik gösterir. Alt bölümde yer alan "Ping ölç" bölümüyle istediğiniz site ve IP'nin pingini ölçebilirsiniz.
+![cmd_MBrlUEjJp8](https://user-images.githubusercontent.com/93199689/162618549-62169dab-05d1-4c1f-9404-a4f616b7936f.png)
+
 ### • 64 - Lisans Yönetimi: 
 SLMGR.VBS komutlarını içermektedir. Crack tarzı işlemler bulunmamaktadır.
 
@@ -365,14 +367,14 @@ SLMGR.VBS komutlarını içermektedir. Crack tarzı işlemler bulunmamaktadır.
 
 	• 1 - Administrator [AKTİF]: Administrator hesabını açar.
 	• 2 - Administrator [PASİF]: Administrator hesabını kapatır.
-	• 3 - Admin grubuna Kullanıcı ekle: Admin grubuna kullanıcı eklersiniz.
+	• 3 - Admin grubuna kullanıcı ekle: Admin grubuna kullanıcı eklersiniz.
 	• 4 - Kullanıcı [EKLE]: Yeni kullanıcı oluşturabilirsiniz.
 	• 5 - Kullanıcı [SİL]: Mevcut bir kullanıcıyı silebilirsiniz.
 	• 6 - Şifremi unuttum: Şifre değiştirmek veya şifre oluşturmak için bu bölüm kullanılabilir.
 	• 7 - Mevcut Kullanıcıları Göster: Sistemde kayıtlı kullanıcıları gösterir.
 ### • 66 - Sistem Hakkında:
 - Sistem ve donanım hakkında bilgi verir.
-![SistemHakkında](https://user-images.githubusercontent.com/93199689/148984034-bcafa477-5e34-4fe5-8723-09c16225dcee.png)
+![cmd_a013zdbIKc](https://user-images.githubusercontent.com/93199689/162618566-48b7bcd6-2bad-4b85-893d-5ef16cc655e6.png)
 
 ### • 67 - Wifi Crack:	 
 	• Bu bölümde sisteme girdiğiniz Wifi isim ve şifrelerini görebilirsiniz.
