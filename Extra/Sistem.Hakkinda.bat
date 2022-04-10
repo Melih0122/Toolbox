@@ -58,16 +58,18 @@ echo 
 echo 
 echo 
 echo 
-echo                              %R%[92mSistem ve donanm bilgisi alnyor%R%[0m
+echo                                %R%[92mSistem ve donanm bilgisi alnyor%R%[0m
 echo 
-echo                                    %R%[92m Ltfen bekleyiniz...%R%[0m
+echo                                      %R%[92m Ltfen bekleyiniz...%R%[0m
 echo 
 echo 
 echo             	      %R%[33mþþ  þþþþ þ   þ þ þþþ  þþ  þþþþ  þþþ þ   þ   þ þþþþ%R%[0m
 echo             	     %R%[33mþ  þ þ    þþ  þ þ  þ  þ  þ þ  þ  þ   þþ  þ  þ  þ   %R%[0m
 echo             	     %R%[33mþ  þ þ þþ þ þ þ þ  þ  þ  þ þ þ   þþ  þ þ þ þ   þþþþ%R%[0m
 echo             	     %R%[33mþ  þ þ  þ þ  þþ þ  þ  þ  þ þ  þ  þ   þ  þþ  þ     þ%R%[0m
-echo             	      %R%[33mþþ  þþþþ þ   þ þ  þ   þþ  þ   þ þþþ þ   þ   þ þþþþ%R%[0m 
+echo             	      %R%[33mþþ  þþþþ þ   þ þ  þ   þþ  þ   þ þþþ þ   þ   þ þþþþ%R%[0m
+
+:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
 
 :Information
 bcdedit > %Logs%\Bcdedit.txt
@@ -79,6 +81,8 @@ Powershell -command "Get-CimInstance -ClassName CIM_VideoController | Select-Obj
 Powershell -command "Get-CimInstance -ClassName Win32_DesktopMonitor | Select-Object -Property Name | format-list" > %Logs%\Monitor.txt
 Powershell -command "Get-CimInstance -ClassName Win32_PhysicalMemory | Select-Object -Property Speed,SMBIOSMemoryType | format-list" > %Logs%\Ram.txt
 Powershell -command "Get-CimInstance -ClassName Win32_TimeZone | Select-Object -Property Caption | format-list" > %Logs%\utc.txt
+
+:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
 
 :Arayuz
 cls
@@ -92,11 +96,22 @@ FOR /F "tokens=3" %%a in ('FIND "RegisteredUser" %Logs%\OS.txt') do (
 		)
 	)
 )
+
+:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+
 echo  %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
 :: Format tarih verisi alnr
 FOR /F "tokens=3" %%a in ('FIND "InstallDate" %Logs%\OS.txt') do set format=%%a
 FOR /F "tokens=3" %%c in ('FIND "Caption" %Logs%\utc.txt') do set utcc=%%c
-echo   %R%[32m Format Tarihi:%R%[37m %format%%R%[0m %R%[90m / %R%[32mSaat Dilimi:%R%[37m %utcc%%R%[0m
+set utcc=%utcc:~1,-4%
+for /f "tokens=2" %%a in ('echo %date%') do set Time1=%%a
+for /f "tokens=1" %%b in ('echo %time%') do set Time2=%%b
+set Time2=%Time2:~0,-3%
+
+echo   %R%[32m Format Tarihi:%R%[37m %format%%R%[90m / %R%[32mSaat Dilimi:%R%[37m %utcc%%R%[90m /%R%[37m %Time1% - %Time2%%R%[0m
+
+:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+
 echo  %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
 :: ˜Ÿletim sistemi bulunur
 FOR /F "tokens=2 delims=':'" %%a in ('FIND "Caption" %Logs%\OS.txt') do set caption=%%a
@@ -113,9 +128,12 @@ FOR /F "tokens=3 delims= " %%e in ('reg query "HKLM\SOFTWARE\Microsoft\Windows N
 FIND /C /I "winload.efi" %Logs%\Bcdedit.txt > NUL
 	if %errorlevel%==0 set uefi=UEFI-GPT
 	if %errorlevel%==1 set uefi=BIOS-MBR
+
 :: Tm de§erler komut ekranna yazdrlr.
 echo   %R%[32m Sistem:%R%[37m %caption%%R%[90m / %R%[37mx%osarch%%R%[90m / %R%[37m%ImageBuild%%R%[90m / %R%[37m%isderleme%%R%[90m / %R%[37m%uefi%%R%[0m
-REM  þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+
+
+:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
 
 :: Anakart markas bulunur
 FOR /F "tokens=3" %%a in ('FIND "Manufacturer" %Logs%\ComputerSystem.txt') do set boardmarka=%%a
@@ -125,9 +143,12 @@ FOR /F "tokens=2 delims=':'" %%c in ('FIND "Model" %Logs%\ComputerSystem.txt') d
 FOR /F "tokens=2 delims=':'" %%d in ('FIND "SocketDesignation" %Logs%\CPU.txt') do set boardsoket=%%d
 :: Anakart bios srm ”§renilir.
 FOR /F "tokens=2 delims=':'" %%e in ('FIND "Name" %Logs%\Bios.txt') do set bios=%%e
+
 :: Tm de§erler komut ekranna yazdrlr.
 echo   %R%[32m Anakart:%R%[37m %boardmarka%%board%%R%[90m / %R%[32mSoket:%R%[37m%boardsoket%%R%[90m / %R%[32mBios:%R%[37m%bios%%R%[0m
-REM  þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+
+:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+
 :: ˜Ÿlemci modeli ”§renilir.
 FOR /F "tokens=2 delims=':'" %%a in ('FIND "Name" %Logs%\CPU.txt') do set cpu=%%a
 :: ˜Ÿlemci ‡ekirdek says ”§renilir.
@@ -144,10 +165,13 @@ FOR /F "tokens=2 delims=':'" %%e in ('FIND "L3CacheSize" %Logs%\CPU.txt') do set
 set cpuL3=%cpuL3:~0,-3%
 :: ˜Ÿlemci saat hz bulunur.
 FOR /F "tokens=2 delims=':'" %%e in ('FIND "CurrentClockSpeed" %Logs%\CPU.txt') do set cpuclock=%%e
+
 :: Tm de§erler komut ekranna yazdrlr.
 echo   %R%[32m CPU:%R%[37m%cpu% %R%[0m
 echo   %R%[32m CPU €ekirdek:%R%[37m%cpucekirdek% %R%[90m/%R%[32m Threads:%R%[37m%cpusanalcekirdek% %R%[90m/%R%[32m L2:%R%[37m%cpuL2%%R%[36m MB%R%[90m /%R%[32m L3:%R%[37m%cpuL3%%R%[36m MB%R%[90m /%R%[32m CPU MHZ:%R%[37m%cpuclock%%R%[0m
-REM  þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+
+:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+
 :: Ekran kart modeli tespit edilir.
 FOR /F "tokens=2 delims=':'" %%a in ('FIND "Name" %Logs%\GPU.txt') do set gpu=%%a
 :: VRAM miktar ”§renilir.
@@ -158,10 +182,13 @@ set gpuram=%gpuram:~0,-9%
 FOR /F "tokens=2 delims=':'" %%c in ('FIND "DriverVersion" %Logs%\GPU.txt') do set gpudriver=%%c
 :: Driver srmnn tarihi ”§renilir.
 FOR /F "tokens=3" %%d in ('FIND "DriverDate" %Logs%\GPU.txt') do set gpudate=%%d
+
 :: Tm de§erler komut ekranna yazdrlr.
 echo   %R%[32m GPU:%R%[37m %gpu%%R%[90m /%R%[32m VRAM:%R%[37m%gpuram%%R%[36m GB%R%[0m 
 echo   %R%[32m GPU Driver:%R%[37m %gpudriver%%R%[90m / %R%[32mDriver Tarih :%R%[37m %gpudate%%R%[0m
-REM  þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+
+:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+
 :: Monit”r modeli ”§renilir.
 FOR /F "tokens=2 delims=':'" %%a in ('FIND "Name" %Logs%\Monitor.txt') do set monitorr=%%a
 :: Monit”r ‡”znrl§ ”§renilir.
@@ -169,9 +196,12 @@ FOR /F "tokens=2 delims=':'" %%b in ('FIND "CurrentHorizontalResolution" %Logs%\
 FOR /F "tokens=2 delims=':'" %%c in ('FIND "CurrentVerticalResolution" %Logs%\GPU.txt') do set yatayc=%%c
 :: Monit”r HZ de§eri ”§renilir.
 FOR /F "tokens=2 delims=':'" %%d in ('FIND "CurrentRefreshRate" %Logs%\GPU.txt') do set refresh=%%d
+
 :: Tm de§erler komut ekranna yazdrlr.
 echo   %R%[32m Monit”r:%R%[37m%monitorr% %R%[90m/%R%[37m%refresh% %R%[36mHZ%R%[90m / %R%[37m%dikeyc% %R%[36mx%R%[37m%yatayc%%R%[0m
-REM  þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ	
+
+:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+
 :: ------------------------------------------------------------------------------------------------------------
 :: Ram soket yapsn eklememde yardmc olan TECHNOPAT/SOSYAL'den Eray Trkay'a [@470650] ‡ok teŸekkr ederim.
 :: ------------------------------------------------------------------------------------------------------------
@@ -210,17 +240,27 @@ set ramtotal=%ramtotal:~0,-3%
 set /a ramtotal=(%ramtotal%/1024/1024)
 :: RAM MHZ hz ”§renilir.
 FOR /F "tokens=2 delims=':'" %%a in ('FIND "Speed" %Logs%\Ram.txt') do set ramspeed=%%a
+
 :: Tm de§erler komut ekranna yazdrlr.
 echo   %R%[32m RAM:%R%[37m %ramtotal% %R%[36mGB%R%[90m / %R%[37m%ramspeed% %R%[36m MHZ%R%[90m / %R%[32m Soket:%R%[37m %RamType% %R%[0m
+
+:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+
 echo  %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
 For /f "skip=3 tokens=*" %%a in ('PowerShell "Get-PhysicalDisk | Select-Object -Property MediaType,FriendlyName,Size | Format-Table"') do (
 	echo    %%a)
+	
+:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+
 echo  %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
 :: RAM ile ilgili b”lm daha detayl hale getirilir.
 echo          %R%[32m Marka            Model            Kapasite    MHZ%R%[0m
 FOR /F "skip=3 tokens=*" %%a IN ('Powershell -command "Get-CimInstance -ClassName Win32_PhysicalMemory | Select-Object -Property Manufacturer,PartNumber,Capacity,Speed"') DO (
 	echo.  %R%[32m RAM:%R%[0m%R%[37m %%a%R%[0m
 )
+
+:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+
 echo  %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
 :: Ekran kart b”lm daha detayl hale getirilir.
 echo         %R%[32m      Model              VRAM         Driver%R%[0m
@@ -230,10 +270,14 @@ FOR /F "skip=3 tokens=*" %%a IN ('Powershell -command "Get-CimInstance -ClassNam
 )
 echo  %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
 
+:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+
 echo 
 echo                           %R%[92m Kapatmak i‡in herhangi bir tuŸa basnz.%R%[0m
 pause > NUL
 exit
+
+:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
 
 :ColorEnd
 for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do rem"') do (
@@ -243,7 +287,7 @@ for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1)
 exit /B 0
 
 
-
+:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
 
 
 :v1
@@ -319,6 +363,8 @@ echo  %R%[90mþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
 echo              %R%[32m Ekran kapatmak i‡in herhangi bir tuŸa basnz.%R%[0m
 pause > NUL
 exit
+
+:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
 
 :v2
 

@@ -61,7 +61,7 @@ echo   %R%[90mº%R%[32m  2.%R%[33m Discord%R%[0m              %R%[90mº%R%[0m %R%[
 echo   %R%[90mº%R%[32m  3.%R%[33m Whatsapp%R%[0m             %R%[90mº%R%[0m %R%[32m 29.%R%[36m Gimp%R%[0m                   %R%[90mº%R%[32m 54.%R%[36m Katlmsz dosyasn tamamla%R%[0m%R%[90mº%R%[0m 
 echo   %R%[90mº%R%[32m  4.%R%[33m Signal%R%[0m               %R%[90mº%R%[0m %R%[32m 30.%R%[36m OBS Studio%R%[0m             %R%[90mº%R%[32m 55.%R%[33m OgnitorenKs Toolbox ekle%R%[0m    %R%[90mº%R%[0m 
 echo   %R%[90mº%R%[32m  5.%R%[33m Telegram%R%[0m             %R%[90mº%R%[0m %R%[32m 31.%R%[36m ShareX%R%[0m                 %R%[90mº%R%[32m 56.%R%[33m Masastne Dosya ekle%R%[0m       %R%[90mº%R%[0m 
-echo   %R%[90mº%R%[32m  6.%R%[33m Microsoft Teams%R%[0m      %R%[90mº%R%[0m %R%[32m 32.%R%[36m Audacity%R%[0m               %R%[90mº%R%[32m 57.%R%[33m Gorev Zamanlayc ayarlar%R%[0m  %R%[90mº%R%[0m 
+echo   %R%[90mº%R%[32m  6.%R%[33m %R%[0m                     %R%[90mº%R%[0m %R%[32m 32.%R%[36m Audacity%R%[0m               %R%[90mº%R%[32m 57.%R%[33m Gorev Zamanlayc ayarlar%R%[0m  %R%[90mº%R%[0m 
 echo   %R%[90mº%R%[32m  7.%R%[33m Zoom%R%[0m                 %R%[90mº%R%[0m %R%[32m 33.%R%[36m K-Lite Codec%R%[0m           %R%[90mº%R%[32m 58.%R%[33m Nihai Performans ekle%R%[0m       %R%[90mº%R%[0m 
 echo   %R%[90mº%R%[32m  8.%R%[36m EpicGames%R%[0m            %R%[90mº%R%[0m %R%[32m 34.%R%[36m VLC Media Player%R%[0m       %R%[90mº%R%[32m 59.%R%[33m Bcdedit Ayarlarn ekle%R%[0m     %R%[90mº%R%[0m 
 echo   %R%[90mº%R%[32m  9.%R%[36m Steam%R%[0m                %R%[90mº%R%[0m %R%[32m 35.%R%[36m Aimp%R%[0m                   %R%[90mº%R%[32m 60.%R%[33m SVCHost Optimizasyon ekle%R%[0m   %R%[90mº%R%[0m 
@@ -89,7 +89,7 @@ set /p menu= %R%[92m  ˜Ÿlem : %R%[0m
 	if %menu%==3 (Call :Download3)    
 	if %menu%==4 (Call :Download4)          
 	if %menu%==5 (Call :Download5)       
-	if %menu%==6 (Call :Download6)  
+	if %menu%==6 goto menu  
 	if %menu%==7 (Call :Download7) 
 	if %menu%==8 (Call :Download8)
 	if %menu%==9 (Call :Download9)
@@ -444,21 +444,6 @@ echo echo  Telegram kuruluyor...
 echo FOR /F "tokens=1" %%%%i in ^('FIND "Telegram" %%Location%%\Extra\Links.bat'^) do set link=%%%%i
 echo %%Location%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%Location%%\Download\Telegram.exe
 echo "%%Location%%\Download\Telegram.exe" /VERYSILENT /NORESTART
-) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
-goto :eof
-
-:Download6
-Find "Teams" %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat > NUL 2>&1
-	if %errorlevel%==0 (goto :eof)
-echo [%date% - %time%] ^| OnKatlmsz ^| Microsoft Teams eklendi. >> %Location%\Logs
-(
-echo.
-echo :: -----------------------------------------------------------------------------------
-echo :: ^>^>^> Teams
-echo echo  Microsoft Teams kuruluyor...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Teams" %%Location%%\Extra\Links.bat'^) do set link=%%%%i
-echo %%Location%%\Files\wget -c -q --no-check-certificate --show-progress "%%link%%" -O %%Location%%\Download\Teams.exe
-echo "%%Location%%\Download\Teams.exe" -s
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
 goto :eof
 
@@ -1216,9 +1201,9 @@ echo echo  Nihai Performans ekleniyor ve varsayilan hale getiriliyor...
 echo powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
 echo echo. 
 echo powercfg -list ^| findstr /C:"G‡"
-echo 	if %%errorlevel%%==1 (powercfg -duplicatescheme a1841308-3541-4fab-bc81-f71556f20b4a)
+echo 	if %%errorlevel%%==1 ^(powercfg -duplicatescheme a1841308-3541-4fab-bc81-f71556f20b4a^)
 echo echo.
-echo for /f "tokens=4" %%%%f in ^('powercfg -list ^^^| findstr /C:"Nihai"'^) do (powercfg -setactive %%%%F)
+echo for /f "tokens=4" %%%%f in ^('powercfg -list ^^^| findstr /C:"Nihai"'^) do ^(powercfg -setactive %%%%f^)
 echo echo.
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat 
 goto :eof

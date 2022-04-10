@@ -33,9 +33,9 @@ https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D6
  
 https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x86.exe 08x86.exe  
 https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x64.exe 08x64.exe 
- 
-https://download.microsoft.com/download/C/6/D/C6D0FD4E-9E53-4897-9B91-836EBA2AACD3/vcredist_x86.exe 10x86.exe 
-https://download.microsoft.com/download/A/8/0/A80747C3-41BD-45DF-B505-E9710D2744E0/vcredist_x64.exe 10x64.exe 
+
+https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x86.exe 10x86.exe
+https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x64.exe 10x64.exe
 
 https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x86.exe 12x86.exe 
 https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe 12x64.exe
@@ -75,7 +75,7 @@ https://web.whatsapp.com/desktop/windows/release/x64/WhatsAppSetup.exe WhatsApp.
 
 :04
 :: https://signal.org/download/
-https://updates.signal.org/desktop/signal-desktop-win-5.37.0.exe Signal.exe 
+https://updates.signal.org/desktop/signal-desktop-win-5.38.0.exe Signal.exe 
 
 :05
 :: https://desktop.telegram.org/
@@ -108,8 +108,8 @@ https://ubi.li/4vxt9 Uplay.exe
 https://www.dm.origin.com/download Origin.exe 
 
 :13
-:: https://www.cheatengine.org/ 
-https://d1tvmj3dyb0q0v.cloudfront.net/installer/164380130951/918459 CheatEngine.exe
+:: https://www.cheatengine.org/
+https://d1tvmj3dyb0q0v.cloudfront.net/installer/8275591961/49233274 CheatEngine.exe
 
 :14
 https://api.wemod.com/client/download Wemod.exe 
@@ -126,7 +126,7 @@ https://brave-browser-downloads.s3.brave.com/latest/brave_installer-x64.exe Brav
 
 :18
 :: https://www.microsoft.com/en-us/edge/business/download
-https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/18e7a93d-4393-4d72-9611-ec93904acc83/MicrosoftEdgeEnterpriseX64.msi edge.msi
+https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/8beaa4da-9e68-4e9c-94d8-1a67395985b7/MicrosoftEdgeEnterpriseX64.msi edge.msi
 
 :19
 ::ISLC
@@ -193,7 +193,7 @@ https://github.com/audacity/audacity/releases/download/Audacity-3.1.3/audacity-w
 
 :35
 :: https://codecguide.com/download_k-lite_codec_pack_mega.htm
-https://files2.codecguide.com/K-Lite_Codec_Pack_1690_Mega.exe Klite.exe
+https://files2.codecguide.com/K-Lite_Codec_Pack_1695_Mega.exe Klite.exe
 
 :36
 :: https://www.videolan.org/index.tr.html
@@ -245,7 +245,7 @@ https://ftp.nluug.nl/pub/games/PC/guru3d/afterburner/[Guru3D.com]-MSIAfterburner
 
 :48
 :: http://www.hibitsoft.ir/Uninstaller.html
-http://www.hibitsoft.ir/HiBitUninstaller/HiBitUninstaller-setup-2.7.47.exe Hibit.exe
+http://www.hibitsoft.ir/HiBitUninstaller/HiBitUninstaller-setup-2.7.60.exe Hibit.exe
 
 :49
 https://docs.google.com/uc?export=download&id=1N_twp3rHSmIEfpZrg6RUalHA0AuJDtwa WiseCare365.zip
@@ -295,7 +295,7 @@ https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.3.3/
 
 :61
 :: https://code.visualstudio.com/
-https://az764295.vo.msecnd.net/stable/e18005f0f1b33c29e81d732535d8c0e47cafb0b5/VSCodeUserSetup-x64-1.66.0.exe VisualStudioCode.exe
+https://az764295.vo.msecnd.net/stable/8dfae7a5cd50421d10cd99cb873990460525a898/VSCodeUserSetup-x64-1.66.1.exe VisualStudioCode.exe
 
 :62
 :: https://desktop.github.com/
@@ -307,7 +307,7 @@ https://github.com/git-for-windows/git/releases/download/v2.35.1.windows.1/Git-2
 
 :64
 :: https://www.blender.org/download/
-https://www.blender.org/download/release/Blender3.0/blender-3.0.1-windows-x64.msi/ Blender.msi
+https://www.blender.org/download/release/Blender3.1/blender-3.1.2-windows-x64.msi/ Blender.msi
 
 :65
 :: https://processhacker.sourceforge.io/downloads.php
@@ -349,6 +349,18 @@ https://blitz.gg/download/win Blitz.exe
 https://valorant.secure.dyn.riotcdn.net/channels/public/x/installer/current/live.live.eu.exe Valorant.exe
 
 
+:GoogleDrive
+:G1
+https://docs.google.com/uc?export=download&id=1BNmQ1JSes4hiFu3mPR4mJP10FNX68NxV Links.zip
+
+:G2
+https://docs.google.com/uc?export=download&id=18kwIyPhIpk0wS-LbwMhsi4ocXJk0R-rG Oldico.zip
+
+:G3
+https://docs.google.com/uc?export=download&id=1D6TR20HEo6diHH_g53GxPL5Tpdg3cT2m Newico.zip
+
+:G4
+https://docs.google.com/uc?export=download&id=1Fw7Z61gQ9gw6KX4F1tWZtZlrk45JMrLe Setup.zip
 
 :Removed
 :r1
