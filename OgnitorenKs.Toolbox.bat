@@ -15,6 +15,7 @@
 ::  Srekli olarak gncellenecektir. Toolbox' indirmek i‡in aŸa§daki linkleri kullanabilirsiniz.
 ::
 ::  ˜stek ve ”nerileriniz olursa, iletiŸim;
+::  Contact;
 ::  --------------------------------------
 ::  >> Discord: OgnitorenKs#2737 
 ::  >>    Mail: ognitorenks@gmail.com
@@ -162,7 +163,7 @@ echo %caption2% > NUL
 	if %caption2%==10 (set editmenugo=Win10SettingsMenu) 
 	if %caption2%==11 (set editmenugo=Win11SettingsMenu)
 
-set version=2.6
+set version=2.6.1
 
 ::set editmenu=Windows 11 Edit
 ::set editmenugo=Win11SettingsMenu
@@ -1080,37 +1081,89 @@ goto :eof
 cls
 mode con cols=55 lines=35
 Call :PowerRun
-title Kapatlan Servisler Y”netimi / OgnitorenKs
+title Hizmet Y”netimi / OgnitorenKs
+Dism /Online /Get-Features /format:table > %Logs%\servvalue.txt
 echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
 echo  %R%[90mº%R%[1;97m%R%[100m                  Hizmet Y”netimi                  %R%[0m%R%[90mº%R%[0m
 echo  %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
-echo  %R%[90mº%R%[0m   %R%[32m 1%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Bluetooth hizmeti%C%[0m                      %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m   %R%[32m 2%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Yazc hizmeti%C%[0m                         %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m   %R%[32m 3%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Bask hizmeti%C%[0m                          %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m   %R%[32m 4%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Telefon hizmeti%C%[0m                        %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m   %R%[32m 5%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Tarifeli a§lar hizmeti%C%[0m                 %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m   %R%[32m 6%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m IP yardmcs (IPv6)%C%[0m                   %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m   %R%[32m 7%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Mobil Etkin Nokta (Hotspot)%C%[0m            %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m   %R%[32m 8%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Radyo ve U‡ak modu hizmeti%C%[0m             %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m   %R%[32m 9%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Uzak Masast/AkŸ/A§ hizmetleri%C%[0m       %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 10%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Windows Search%C%[0m                         %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 11%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Windows žimdi Ba§lan(WPS) hizmeti%C%[0m      %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 12%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Tarayc ve Kamera hizmetleri%C%[0m          %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 13%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Insider hizmeti%C%[0m                        %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 14%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Biyometrik hizmeti%C%[0m                     %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 15%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Kalem ve Dokunmatik hizmeti%C%[0m            %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 16%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Sistem Geri ykleme hizmeti%C%[0m            %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 17%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Sysmain (Hzl Getir)%C%[0m                  %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 18%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Hzl BaŸlat (Hibernate)%C%[0m               %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 19%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Konum hizmeti%C%[0m                          %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 20%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Windows Media Player%C%[0m                   %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 21%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Hyper-V hizmeti%C%[0m                        %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 22%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Xbox hizmeti%C%[0m                           %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 23%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Bitlocker Src Ÿifreleme hizmeti%C%[0m     %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 24%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Karma Ger‡eklik hizmeti (VR)%C%[0m           %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 25%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Driver Ykle/Gncelle hizmeti%C%[0m          %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 26%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Bellek SkŸtrma hizmeti%C%[0m              %R%[90mº%R%[0m
-echo  %R%[90mº%R%[0m  %R%[32m 27%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[32m.%C%[33m Core Parking (CPU €ekirdek Uyku Modu)%C%[0m  %R%[90mº%R%[0m
+Call :serv.check "BthAvctpSvc bthserv BluetoothUserService BTAGService"
+echo  %R%[90mº%R%[0m   %R%[32m 1%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Bluetooth hizmeti%C%[0m                    %R%[90mº%R%[0m
+Call :serv.check "Spooler"
+echo  %R%[90mº%R%[0m   %R%[32m 2%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Yazc hizmeti%C%[0m                       %R%[90mº%R%[0m
+Call :serv.check "TapiSrv PhoneSvc"
+echo  %R%[90mº%R%[0m   %R%[32m 3%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Telefon hizmeti%C%[0m                      %R%[90mº%R%[0m
+Call :serv.check "DusmSvc"
+echo  %R%[90mº%R%[0m   %R%[32m 4%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Tarifeli a§lar hizmeti%C%[0m               %R%[90mº%R%[0m
+Call :serv.check "iphlpsvc IpxlatCfgSvc"
+echo  %R%[90mº%R%[0m   %R%[32m 5%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m IP yardmcs (IPv6)%C%[0m                 %R%[90mº%R%[0m
+Call :serv.check "icssvc SharedAccess ALG"
+echo  %R%[90mº%R%[0m   %R%[32m 6%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Mobil Etkin Nokta (Hotspot)%C%[0m          %R%[90mº%R%[0m
+Call :serv.check "RMSvc"
+echo  %R%[90mº%R%[0m   %R%[32m 7%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Radyo ve U‡ak modu hizmeti%C%[0m           %R%[90mº%R%[0m
+Call :serv.check "WSearch ConsentUxUserSvc DevicePickerUserSvc DevicesFlowUserSvc PNRPAutoReg PNRPsvc p2psvc p2pimsvc upnphost SSDPSRV TermService UmRdpService SessionEnv"
+echo  %R%[90mº%R%[0m   %R%[32m 8%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Uzak Masast/AkŸ/A§ hizmetleri%C%[0m     %R%[90mº%R%[0m
+Call :serv.check "WSearch"
+echo  %R%[90mº%R%[0m   %R%[32m 9%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Windows Search%C%[0m                       %R%[90mº%R%[0m
+Call :serv.check "wcncsvc"
+echo  %R%[90mº%R%[0m  %R%[32m 10%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Windows žimdi Ba§lan(WPS) hizmeti%C%[0m    %R%[90mº%R%[0m
+Call :serv.check "FrameServer WiaRpc StiSvc"
+echo  %R%[90mº%R%[0m  %R%[32m 11%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Tarayc ve Kamera hizmetleri%C%[0m        %R%[90mº%R%[0m
+Call :serv.check "wisvc"
+echo  %R%[90mº%R%[0m  %R%[32m 12%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Insider hizmeti%C%[0m                      %R%[90mº%R%[0m
+Call :serv.check "WbioSrvc"
+echo  %R%[90mº%R%[0m  %R%[32m 13%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Biyometrik hizmeti%C%[0m                   %R%[90mº%R%[0m
+Call :serv.check "TabletInputService"
+echo  %R%[90mº%R%[0m  %R%[32m 14%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Kalem ve Dokunmatik hizmeti%C%[0m          %R%[90mº%R%[0m
+Call :serv.check "SDRSVC VSS swprv wbengine fhsvc"
+echo  %R%[90mº%R%[0m  %R%[32m 15%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Sistem Geri ykleme hizmeti%C%[0m          %R%[90mº%R%[0m
+Call :serv.check "SysMain"
+echo  %R%[90mº%R%[0m  %R%[32m 16%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Sysmain (Hzl Getir)%C%[0m                %R%[90mº%R%[0m
+set servalue=%R%[42m %R%[0m
+reg query "HKLM\SYSTEM\CurrentControlSet\Control\Power" /v "HibernateEnabled" | findstr /i 0x0 > NUL 2>&1
+	if %errorlevel%==0 (set servalue=%R%[100m %R%[0m)
+reg query "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /v  "HiberbootEnabled" | findstr /i 0x0 > NUL 2>&1
+	if %errorlevel%==0 (set servalue=%R%[100m %R%[0m)
+echo  %R%[90mº%R%[0m  %R%[32m 17%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Hzl BaŸlat (Hibernate)%C%[0m             %R%[90mº%R%[0m
+Call :serv.check "lfsvc NaturalAuthentication"
+echo  %R%[90mº%R%[0m  %R%[32m 18%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Konum hizmeti%C%[0m                        %R%[90mº%R%[0m
+set servalue=%R%[42m %R%[0m
+findstr /i "WindowsMediaPlayer" %Logs%\servvalue.txt | findstr /i "Disabled" > NUL 2>&1
+	if %errorlevel%==0 (set servalue=%R%[100m %R%[0m)
+echo  %R%[90mº%R%[0m  %R%[32m 19%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Windows Media Player%C%[0m                 %R%[90mº%R%[0m
+findstr /i "Hyper-V" %Logs%\servvalue.txt | findstr /i "Disabled" > NUL 2>&1
+	if %errorlevel%==0 (set servalue=%R%[100m %R%[0m)
+	if %errorlevel%==1 (set servalue=%R%[42m %R%[0m)
+echo  %R%[90mº%R%[0m  %R%[32m 20%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Hyper-V hizmeti%C%[0m                      %R%[90mº%R%[0m
+Call :serv.check "BcastDVRUserService XboxGipSvc XboxNetApiSvc XblAuthManager XblGameSave DoSvc"
+echo  %R%[90mº%R%[0m  %R%[32m 21%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Xbox hizmeti%C%[0m                         %R%[90mº%R%[0m
+Call :serv.check "BDESVC"
+echo  %R%[90mº%R%[0m  %R%[32m 22%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Bitlocker Src Ÿifreleme hizmeti%C%[0m   %R%[90mº%R%[0m
+Call :serv.check "SharedRealitySvc VacSvc perceptionsimulation spectrum MixedRealityOpenXRSvc"
+echo  %R%[90mº%R%[0m  %R%[32m 23%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Karma Ger‡eklik hizmeti (VR)%C%[0m         %R%[90mº%R%[0m
+set servalue=%R%[42m %R%[0m
+reg query "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\Update" /v "ExcludeWUDriversInQualityUpdate" | findstr /i 0x1 > NUL 2>&1
+	if %errorlevel%==0 (set servalue=%R%[100m %R%[0m)
+reg query "HKLM\SOFTWARE\Microsoft\PolicyManager\default\Update" /v "ExcludeWUDriversInQualityUpdate" | findstr /i 0x1 > NUL 2>&1
+	if %errorlevel%==0 (set servalue=%R%[100m %R%[0m)
+reg query "HKLM\SOFTWARE\Microsoft\PolicyManager\default\Update\ExcludeWUDriversInQualityUpdate" /v "value" | findstr /i 0x1 > NUL 2>&1
+	if %errorlevel%==0 (set servalue=%R%[100m %R%[0m)
+reg query "HKLM\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" /v "ExcludeWUDriversInQualityUpdate" | findstr /i 0x1 > NUL 2>&1
+	if %errorlevel%==0 (set servalue=%R%[100m %R%[0m)
+reg query "HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /v "ExcludeWUDriversInQualityUpdate" | findstr /i 0x1 > NUL 2>&1
+	if %errorlevel%==0 (set servalue=%R%[100m %R%[0m)
+reg query "HKLM\Software\Policies\Microsoft\Windows\DriverSearching" /v "SearchOrderConfig" | findstr /i 0x0 > NUL 2>&1
+	if %errorlevel%==0 (set servalue=%R%[100m %R%[0m)
+echo  %R%[90mº%R%[0m  %R%[32m 24%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Driver Ykle/Gncelle hizmeti%C%[0m        %R%[90mº%R%[0m
+set servalue=%R%[42m %R%[0m
+Powershell -command "Get-MMAgent" | findstr /i MemoryCompression | findstr /i False > NUL 2>&1
+	if %errorlevel%==0 (set servalue=%R%[100m %R%[0m)
+echo  %R%[90mº%R%[0m  %R%[32m 25%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Bellek SkŸtrma hizmeti%C%[0m            %R%[90mº%R%[0m
+set servalue=%R%[42m %R%[0m
+reg query "HKLM\SYSTEM\ControlSet001\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\0cc5b647-c1df-4637-891a-dec35c318583" /v "ValueMax" | findstr /i 0x0 > NUL 2>&1
+	if %errorlevel%==0 (set servalue=%R%[100m %R%[0m)
+reg query "HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\0cc5b647-c1df-4637-891a-dec35c318583" /v  "ValueMax" | findstr /i 0x0 > NUL 2>&1
+	if %errorlevel%==0 (set servalue=%R%[100m %R%[0m)
+echo  %R%[90mº%R%[0m  %R%[32m 26%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Core Parking (CPU €ekirdek Uyku Modu)%C%[0m%R%[90mº%R%[0m
 echo  %R%[90mº%R%[0m        %R%[32m X.%R%[36m Men%R%[0m                                   %R%[90mº%R%[0m
 echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
 set /p value= %C%[92m ˜Ÿlem : %C%[0m
@@ -1122,110 +1175,112 @@ set /p value= %C%[92m ˜Ÿlem : %C%[0m
 	if %value%==2A (Call :serv.2.yazici start demand auto a‡lyor)
 	if %value%==2K (Call :serv.2.yazici stop disabled disabled kapatlyor)
 	if %value%==2k (Call :serv.2.yazici stop disabled disabled kapatlyor)
-	if %value%==3a (Call :serv.3.baski start demand a‡lyor)
-	if %value%==3A (Call :serv.3.baski start demand a‡lyor)
-	if %value%==3K (Call :serv.3.baski stop disabled kapatlyor)
-	if %value%==3k (Call :serv.3.baski stop disabled kapatlyor)
-	if %value%==4a (Call :serv.4.phone start demand demand a‡lyor)
-	if %value%==4A (Call :serv.4.phone start demand demand a‡lyor)
-	if %value%==4K (Call :serv.4.phone stop disabled demand kapatlyor)
-	if %value%==4k (Call :serv.4.phone stop disabled demand kapatlyor)
-	if %value%==5a (Call :serv.5.tarifeli start auto a‡lyor)
-	if %value%==5A (Call :serv.5.tarifeli start auto a‡lyor)
-	if %value%==5K (Call :serv.5.tarifeli stop disabled kapatlyor)
-	if %value%==5k (Call :serv.5.tarifeli stop disabled kapatlyor)
-	if %value%==6a (Call :serv.6.ipyardimci start demand auto a‡lyor)
-	if %value%==6A (Call :serv.6.ipyardimci start demand auto a‡lyor)
-	if %value%==6K (Call :serv.6.ipyardimci stop disabled disabled kapatlyor)
-	if %value%==6k (Call :serv.6.ipyardimci stop disabled disabled kapatlyor)
-	if %value%==7a (Call :serv.7.hotspot start demand a‡lyor)
-	if %value%==7A (Call :serv.7.hotspot start demand a‡lyor)
-	if %value%==7K (Call :serv.7.hotspot stop disabled kapatlyor)
-	if %value%==7k (Call :serv.7.hotspot stop disabled kapatlyor)
-	if %value%==8a (Call :serv.8.ucakmodu start demand a‡lyor)
-	if %value%==8A (Call :serv.8.ucakmodu start demand a‡lyor)
-	if %value%==8K (Call :serv.8.ucakmodu stop disabled kapatlyor)
-	if %value%==8k (Call :serv.8.ucakmodu stop disabled kapatlyor)
-	if %value%==9a (Call :serv.9.akis start demand auto a‡lyor)
-	if %value%==9A (Call :serv.9.akis start demand auto a‡lyor)
-	if %value%==9K (Call :serv.9.akis stop disabled disabled kapatlyor)
-	if %value%==9k (Call :serv.9.akis stop disabled disabled kapatlyor)
-	if %value%==10a (Call :serv.10.wsearch start auto a‡lyor)
-	if %value%==10A (Call :serv.10.wsearch start auto a‡lyor)
-	if %value%==10K (Call :serv.10.wsearch stop disabled kapatlyor)
-	if %value%==10k (Call :serv.10.wsearch stop disabled kapatlyor)
-	if %value%==11a (Call :serv.11.wps start demand a‡lyor)
-	if %value%==11A (Call :serv.11.wps start demand a‡lyor)
-	if %value%==11K (Call :serv.11.wps stop disabled kapatlyor)
-	if %value%==11k (Call :serv.11.wps stop disabled kapatlyor)
-	if %value%==12a (Call :serv.12.camera start demand a‡lyor)
-	if %value%==12A (Call :serv.12.camera start demand a‡lyor)
-	if %value%==12K (Call :serv.12.camera stop disabled kapatlyor)
-	if %value%==12k (Call :serv.12.camera stop disabled kapatlyor)
-	if %value%==13a (Call :serv.13.insider start demand a‡lyor)
-	if %value%==13A (Call :serv.13.insider start demand a‡lyor)
-	if %value%==13K (Call :serv.13.insider stop disabled kapatlyor)
-	if %value%==13k (Call :serv.13.insider stop disabled kapatlyor)
-	if %value%==14a (Call :serv.14.biyometrik start demand a‡lyor)
-	if %value%==14A (Call :serv.14.biyometrik start demand a‡lyor)
-	if %value%==14K (Call :serv.14.biyometrik stop disabled kapatlyor)
-	if %value%==14k (Call :serv.14.biyometrik stop disabled kapatlyor)
-	if %value%==15a (Call :serv.15.dokunmatik start demand a‡lyor)
-	if %value%==15A (Call :serv.15.dokunmatik start demand a‡lyor)
-	if %value%==15K (Call :serv.15.dokunmatik stop disabled kapatlyor)
-	if %value%==15k (Call :serv.15.dokunmatik stop disabled kapatlyor)
-	if %value%==16a (Call :serv.16.sistemgeriyukleme start demand ENABLE 0 a‡lyor)
-	if %value%==16A (Call :serv.16.sistemgeriyukleme start demand ENABLE 0 a‡lyor)
-	if %value%==16K (Call :serv.16.sistemgeriyukleme stop disabled DISABLE 1 kapatlyor)
-	if %value%==16k (Call :serv.16.sistemgeriyukleme stop disabled DISABLE 1 kapatlyor)
-	if %value%==17a (Call :serv.17.sysmain start auto a‡lyor)
-	if %value%==17A (Call :serv.17.sysmain start auto a‡lyor)
-	if %value%==17K (Call :serv.17.sysmain stop disabled kapatlyor)
-	if %value%==17k (Call :serv.17.sysmain stop disabled kapatlyor)
-	if %value%==18a (Call :serv.18.hibernate on 1 a‡lyor)
-	if %value%==18A (Call :serv.18.hibernate on 1 a‡lyor)
-	if %value%==18K (Call :serv.18.hibernate off 0 kapatlyor)
-	if %value%==18k (Call :serv.18.hibernate off 0 kapatlyor)
-	if %value%==19a (Call :serv.19.Location start demand Allow 1 "Call :delete2" "DisableLocation" a‡lyor)
-	if %value%==19A (Call :serv.19.Location start demand Allow 1 "Call :delete2" "DisableLocation" a‡lyor)
-	if %value%==19K (Call :serv.19.Location stop disabled Deny 0 "Call :dword" "DisableLocation 1" kaptlyor)
-	if %value%==19k (Call :serv.19.Location stop disabled Deny 0 "Call :dword" "DisableLocation 1" kaptlyor)
-	if %value%==20a (Call :serv.20.mediaplayer start demand ENABLE a‡lyor)
-	if %value%==20A (Call :serv.20.mediaplayer start demand ENABLE a‡lyor)
-	if %value%==20K (Call :serv.20.mediaplayer stop disabled DISABLE kapatlyor)
-	if %value%==20k (Call :serv.20.mediaplayer stop disabled DISABLE kapatlyor)
-	if %value%==21a (Call :serv.21.hyperv demand Enable For 1 on a‡lyor)
-	if %value%==21A (Call :serv.21.hyperv demand Enable For 1 off a‡lyor)
-	if %value%==21K (Call :serv.21.hyperv disabled Disable "::" 0 kapatlyor)
-	if %value%==21k (Call :serv.21.hyperv disabled Disable "::" 0 kapatlyor)
-	if %value%==22a (Call :serv.22.xbox start demand 1 0 "Call :delete2" "AllowGameDVR" a‡lyor)
-	if %value%==22A (Call :serv.22.xbox start demand 1 0 "Call :delete2" "AllowGameDVR" a‡lyor)
-	if %value%==22K (Call :serv.22.xbox stop disabled 0 2 "Call :dword" "AllowGameDVR 0" kapatlyor)
-	if %value%==22k (Call :serv.22.xbox stop disabled 0 2 "Call :dword" "AllowGameDVR 0" kapatlyor)
-	if %value%==23a (Call :serv.23.bitlocker start demand a‡lyor)
-	if %value%==23A (Call :serv.23.bitlocker start demand a‡lyor)
-	if %value%==23K (Call :serv.23.bitlocker stop disabled kapatlyor)
-	if %value%==23k (Call :serv.23.bitlocker stop disabled kapatlyor)
-	if %value%==24a (Call :serv.24.mixedreality demand a‡lyor)
-	if %value%==24A (Call :serv.24.mixedreality demand a‡lyor)
-	if %value%==24K (Call :serv.24.mixedreality disabled kapatlyor)
-	if %value%==24k (Call :serv.24.mixedreality disabled kapatlyor)
-	if %value%==25a (Call :serv.25.driverupdate 0 1 a‡lyor)
-	if %value%==25A (Call :serv.25.driverupdate 0 1 a‡lyor)
-	if %value%==25K (Call :serv.25.driverupdate 1 0 kapatlyor)
-	if %value%==25k (Call :serv.25.driverupdate 1 0 kapatlyor)
-	if %value%==26a (Call :serv.26.memorycompression Enable A‡lyor)
-	if %value%==26A (Call :serv.26.memorycompression Enable A‡lyor)
-	if %value%==26K (Call :serv.26.memorycompression Disable Kapatlyor)
-	if %value%==26k (Call :serv.26.memorycompression Disable Kapatlyor)
-	if %value%==27a (Call :serv.27.coreparking 100 "Call :delete" "Call :delete2" a‡lyor)
-	if %value%==27A (Call :serv.27.coreparking 100 "Call :delete" "Call :delete2" a‡lyor)
-	if %value%==27K (Call :serv.27.coreparking 0 "Call :dword" "Call :dword" kapatlyor)
-	if %value%==27k (Call :serv.27.coreparking 0 "Call :dword" "Call :dword" kapatlyor)
+	if %value%==3a (Call :serv.3.phone start demand demand a‡lyor)
+	if %value%==3A (Call :serv.3.phone start demand demand a‡lyor)
+	if %value%==3K (Call :serv.3.phone stop disabled demand kapatlyor)
+	if %value%==3k (Call :serv.3.phone stop disabled demand kapatlyor)
+	if %value%==4a (Call :serv.4.tarifeli start auto a‡lyor)
+	if %value%==4A (Call :serv.4.tarifeli start auto a‡lyor)
+	if %value%==4K (Call :serv.4.tarifeli stop disabled kapatlyor)
+	if %value%==4k (Call :serv.4.tarifeli stop disabled kapatlyor)
+	if %value%==5a (Call :serv.5.ipyardimci start demand auto a‡lyor)
+	if %value%==5A (Call :serv.5.ipyardimci start demand auto a‡lyor)
+	if %value%==5K (Call :serv.5.ipyardimci stop disabled disabled kapatlyor)
+	if %value%==5k (Call :serv.5.ipyardimci stop disabled disabled kapatlyor)
+	if %value%==6a (Call :serv.6.hotspot start demand a‡lyor)
+	if %value%==6A (Call :serv.6.hotspot start demand a‡lyor)
+	if %value%==6K (Call :serv.6.hotspot stop disabled kapatlyor)
+	if %value%==6k (Call :serv.6.hotspot stop disabled kapatlyor)
+	if %value%==7a (Call :serv.7.ucakmodu start demand a‡lyor)
+	if %value%==7A (Call :serv.7.ucakmodu start demand a‡lyor)
+	if %value%==7K (Call :serv.7.ucakmodu stop disabled kapatlyor)
+	if %value%==7k (Call :serv.7.ucakmodu stop disabled kapatlyor)
+	if %value%==8a (Call :serv.8.akis start demand auto a‡lyor)
+	if %value%==8A (Call :serv.8.akis start demand auto a‡lyor)
+	if %value%==8K (Call :serv.8.akis stop disabled disabled kapatlyor)
+	if %value%==8k (Call :serv.8.akis stop disabled disabled kapatlyor)
+	if %value%==9a (Call :serv.9.wsearch start auto a‡lyor)
+	if %value%==9A (Call :serv.9.wsearch start auto a‡lyor)
+	if %value%==9K (Call :serv.9.wsearch stop disabled kapatlyor)
+	if %value%==9k (Call :serv.9.wsearch stop disabled kapatlyor)
+	if %value%==10a (Call :serv.10.wps start demand a‡lyor)
+	if %value%==10A (Call :serv.10.wps start demand a‡lyor)
+	if %value%==10K (Call :serv.10.wps stop disabled kapatlyor)
+	if %value%==10k (Call :serv.10.wps stop disabled kapatlyor)
+	if %value%==11a (Call :serv.11.camera start demand a‡lyor)
+	if %value%==11A (Call :serv.11.camera start demand a‡lyor)
+	if %value%==11K (Call :serv.11.camera stop disabled kapatlyor)
+	if %value%==11k (Call :serv.11.camera stop disabled kapatlyor)
+	if %value%==12a (Call :serv.12.insider start demand a‡lyor)
+	if %value%==12A (Call :serv.12.insider start demand a‡lyor)
+	if %value%==12K (Call :serv.12.insider stop disabled kapatlyor)
+	if %value%==12k (Call :serv.12.insider stop disabled kapatlyor)
+	if %value%==13a (Call :serv.13.biyometrik start demand a‡lyor)
+	if %value%==13A (Call :serv.13.biyometrik start demand a‡lyor)
+	if %value%==13K (Call :serv.13.biyometrik stop disabled kapatlyor)
+	if %value%==13k (Call :serv.13.biyometrik stop disabled kapatlyor)
+	if %value%==14a (Call :serv.14.dokunmatik start demand a‡lyor)
+	if %value%==14A (Call :serv.14.dokunmatik start demand a‡lyor)
+	if %value%==14K (Call :serv.14.dokunmatik stop disabled kapatlyor)
+	if %value%==14k (Call :serv.14.dokunmatik stop disabled kapatlyor)
+	if %value%==15a (Call :serv.15.sistemgeriyukleme start demand ENABLE 0 a‡lyor)
+	if %value%==15A (Call :serv.15.sistemgeriyukleme start demand ENABLE 0 a‡lyor)
+	if %value%==15K (Call :serv.15.sistemgeriyukleme stop disabled DISABLE 1 kapatlyor)
+	if %value%==15k (Call :serv.15.sistemgeriyukleme stop disabled DISABLE 1 kapatlyor)
+	if %value%==16a (Call :serv.16.sysmain start auto a‡lyor)
+	if %value%==16A (Call :serv.16.sysmain start auto a‡lyor)
+	if %value%==16K (Call :serv.16.sysmain stop disabled kapatlyor)
+	if %value%==16k (Call :serv.16.sysmain stop disabled kapatlyor)
+	if %value%==17a (Call :serv.17.hibernate on 1 a‡lyor)
+	if %value%==17A (Call :serv.17.hibernate on 1 a‡lyor)
+	if %value%==17K (Call :serv.17.hibernate off 0 kapatlyor)
+	if %value%==17k (Call :serv.17.hibernate off 0 kapatlyor)
+	if %value%==18a (Call :serv.18.Location start demand Allow 1 "Call :delete2" "DisableLocation" a‡lyor)
+	if %value%==18A (Call :serv.18.Location start demand Allow 1 "Call :delete2" "DisableLocation" a‡lyor)
+	if %value%==18K (Call :serv.18.Location stop disabled Deny 0 "Call :dword" "DisableLocation 1" kaptlyor)
+	if %value%==18k (Call :serv.18.Location stop disabled Deny 0 "Call :dword" "DisableLocation 1" kaptlyor)
+	if %value%==19a (Call :serv.19.mediaplayer start demand ENABLE a‡lyor)
+	if %value%==19A (Call :serv.19.mediaplayer start demand ENABLE a‡lyor)
+	if %value%==19K (Call :serv.19.mediaplayer stop disabled DISABLE kapatlyor)
+	if %value%==19k (Call :serv.19.mediaplayer stop disabled DISABLE kapatlyor)
+	if %value%==20a (Call :serv.20.hyperv demand Enable For 1 on a‡lyor)
+	if %value%==20A (Call :serv.20.hyperv demand Enable For 1 on a‡lyor)
+	if %value%==20K (Call :serv.20.hyperv disabled Disable "::" 0 off kapatlyor)
+	if %value%==20k (Call :serv.20.hyperv disabled Disable "::" 0 off kapatlyor)
+	if %value%==21a (Call :serv.21.xbox start demand 1 0 "Call :delete2" "AllowGameDVR" a‡lyor)
+	if %value%==21A (Call :serv.21.xbox start demand 1 0 "Call :delete2" "AllowGameDVR" a‡lyor)
+	if %value%==21K (Call :serv.21.xbox stop disabled 0 2 "Call :dword" "AllowGameDVR 0" kapatlyor)
+	if %value%==21k (Call :serv.21.xbox stop disabled 0 2 "Call :dword" "AllowGameDVR 0" kapatlyor)
+	if %value%==22a (Call :serv.22.bitlocker start demand a‡lyor)
+	if %value%==22A (Call :serv.22.bitlocker start demand a‡lyor)
+	if %value%==22K (Call :serv.22.bitlocker stop disabled kapatlyor)
+	if %value%==22k (Call :serv.22.bitlocker stop disabled kapatlyor)
+	if %value%==23a (Call :serv.23.mixedreality demand a‡lyor)
+	if %value%==23A (Call :serv.23.mixedreality demand a‡lyor)
+	if %value%==23K (Call :serv.23.mixedreality disabled kapatlyor)
+	if %value%==23k (Call :serv.23.mixedreality disabled kapatlyor)
+	if %value%==24a (Call :serv.24.driverupdate 0 1 a‡lyor)
+	if %value%==24A (Call :serv.24.driverupdate 0 1 a‡lyor)
+	if %value%==24K (Call :serv.24.driverupdate 1 0 kapatlyor)
+	if %value%==24k (Call :serv.24.driverupdate 1 0 kapatlyor)
+	if %value%==25a (Call :serv.25.memorycompression Enable A‡lyor)
+	if %value%==25A (Call :serv.25.memorycompression Enable A‡lyor)
+	if %value%==25K (Call :serv.25.memorycompression Disable Kapatlyor)
+	if %value%==25k (Call :serv.25.memorycompression Disable Kapatlyor)
+	if %value%==26a (Call :serv.26.coreparking 100 "Call :delete" "Call :delete2" a‡lyor)
+	if %value%==26A (Call :serv.26.coreparking 100 "Call :delete" "Call :delete2" a‡lyor)
+	if %value%==26K (Call :serv.26.coreparking 0 "Call :dword" "Call :dword" kapatlyor)
+	if %value%==26k (Call :serv.26.coreparking 0 "Call :dword" "Call :dword" kapatlyor)
 	if %value%==x goto menu
 	if %value%==X goto menu
 ) else 
 	goto servicesmanagement
+	
+:serv.check
+set servalue=%R%[42m %R%[0m
+FOR %%a in (%~1) do (reg query "HKLM\SYSTEM\CurrentControlSet\Services\%%a" /v "Start" | Findstr /i 4 > NUL 2>&1)
+	if %errorlevel%==0 (set servalue=%R%[100m %R%[0m)
+goto :eof
 
 :serv.1.bluetooth
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Bluetooth hizmeti %3. >> %Location%\Logs
@@ -1267,21 +1322,7 @@ DEL /F /Q /A %windir%\System32\spool\PRINTERS\* > NUL 2>&1
 ::----------------------------------------------------------------------
 goto :eof
 
-:serv.3.baski
-echo [%date% - %time%] ^| Hizmetleri Y”net ^| Yazc hizmeti %3. >> %Location%\Logs
-echo   %C%[96mBask hizmetleri %3 ...%C%[0m 
-::PrintWorkFlow (iŸ akŸ hizmeti)
-%PowerRun% sc config McpManagementService start= %2
-%PowerRun% net %1 McpManagementService
-%PowerRun% sc config PrintWorkflowUserSvc start= %2
-%PowerRun% net %1 PrintWorkflowUserSvc
-::-------------------------------------------------------
-::    A‡ = %1 : start | %2 : demand   | %3 : a‡lyor
-:: Kapat = %1 : stop  | %2 : disabled | %3 : kapatlyor
-::-------------------------------------------------------
-goto :eof
-
-:serv.4.phone
+:serv.3.phone
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Telefon hizmeti %4. >> %Location%\Logs
 echo   %C%[96mTelefon hizmeti %4 ...%C%[0m 
 :: Telefon
@@ -1312,7 +1353,7 @@ echo   %C%[96mTelefon hizmeti %4 ...%C%[0m
 ::-------------------------------------------------------
 goto :eof
 
-:serv.5.tarifeli
+:serv.4.tarifeli
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Tarifeli a§lar hizmeti %3. >> %Location%\Logs
 echo   %C%[96mTarifeli a§lar hizmeti %3 ...%C%[0m
 :: Veri kullanm
@@ -1325,7 +1366,7 @@ echo   %C%[96mTarifeli a§lar hizmeti %3 ...%C%[0m
 ::-------------------------------------------------------
 goto :eof
 
-:serv.6.ipyardmci
+:serv.5.ipyardimci
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| IP yardmc hizmeti %4. >> %Location%\Logs
 echo   %C%[96mIP yardmcs hizmeti %4 ...%C%[0m
 ::  IPv6 ge‡iŸ teknolojileri ve IP-HTTPS kullanarak tnel ba§lants sa§lar.
@@ -1340,7 +1381,7 @@ echo   %C%[96mIP yardmcs hizmeti %4 ...%C%[0m
 ::----------------------------------------------------------------------
 goto :eof
 
-:serv.7.hotspot
+:serv.6.hotspot
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Mobil Etkin Nokta hizmeti %3. >> %Location%\Logs
 echo   %C%[96mMobil etkin nokta hizmeti %3 ...%C%[0m
 ::  Veri ba§lantsnn baŸka bir cihazla paylaŸlmasn sa§lar
@@ -1358,10 +1399,12 @@ echo   %C%[96mMobil etkin nokta hizmeti %3 ...%C%[0m
 ::-------------------------------------------------------
 goto :eof
 
-:serv.8.ucakmodu
+:serv.7.ucakmodu
 :: Windows 11'de a§ simgesinde sorun yaŸanmamas i‡in hizmetin kapatlmas engellendi.
 echo %value% | Findstr /i "d" > NUL 2>&1
 	if %errorlevel%==0 (FOR /F "tokens=5" %%i in ('FIND "Caption" %Logs%\OS.txt') do SET caption3=%%i)
+	if %errorlevel%==1 (set caption3=10)
+
 echo %caption3% > NUL 2>&1
 	if %caption3%==11 (echo   %C%[91Windows 11'de bu hizmet kapatlamaz.%C%[0m
 					   timeout /t 3 /nobreak > NUL
@@ -1378,7 +1421,7 @@ echo   %C%[96mRadyo y”netim ve u‡ak modu hizmeti %3 ...%C%[0m
 ::-------------------------------------------------------
 goto :eof
 
-:serv.9.akis
+:serv.8.akis
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| AkŸ deneyimi hizmeti %4. >> %Location%\Logs
 echo   %C%[96mUzak Masast/AkŸ hizmetleri %4 ...%C%[0m
 :: ConsentUx kullanc hizmeti 
@@ -1430,7 +1473,7 @@ echo   %C%[96mUzak Masast/AkŸ hizmetleri %4 ...%C%[0m
 ::-------------------------------------------------------
 goto :eof
 
-:serv.10.wsearch
+:serv.9.wsearch
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Wsearch hizmeti %3. >> %Location%\Logs
 echo   %C%[96mWindows Search hizmeti %3 ...%C%[0m
 :: Windows Search
@@ -1440,9 +1483,9 @@ echo   %C%[96mWindows Search hizmeti %3 ...%C%[0m
 ::    A‡ = %1 : start | %2 : auto     | %3 : a‡lyor
 :: Kapat = %1 : stop  | %2 : disabled | %3 : kapatlyor
 ::-------------------------------------------------------
+goto :eof
 
-
-:serv.11.wps
+:serv.10.wps
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| WPS hizmeti %3. >> %Location%\Logs
 echo   %C%[96mWindows žimdi Ba§lan hizmeti %3 ...%C%[0m
 :: Windows žimdi Ba§lan - Yaplandrma Dosyas Kaydedici
@@ -1455,7 +1498,7 @@ echo   %C%[96mWindows žimdi Ba§lan hizmeti %3 ...%C%[0m
 ::-------------------------------------------------------
 goto :eof
 
-:serv.12.camera
+:serv.11.camera
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Taraycs ve Kamera hizmeti %3. >> %Location%\Logs
 echo   %C%[96mTarayc ve Kamera hizmetleri %3 ...%C%[0m
 :: Windows Kamera ‡er‡eve sunucusu
@@ -1476,7 +1519,7 @@ echo   %C%[96mTarayc ve Kamera hizmetleri %3 ...%C%[0m
 ::-------------------------------------------------------
 goto :eof
 
-:serv.13.insider
+:serv.12.insider
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Insider hizmeti %3. >> %Location%\Logs
 echo   %C%[96mWindows Insider hizmeti %3 ...%C%[0m
 :: Windows Insider Hizmeti
@@ -1488,7 +1531,7 @@ echo   %C%[96mWindows Insider hizmeti %3 ...%C%[0m
 ::-------------------------------------------------------
 goto :eof
 
-:serv.14.biyometrik
+:serv.13.biyometrik
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Biyometrik hizmeti %3. >> %Location%\Logs
 echo   %C%[96mWindows Biyometrik hizmeti %3 ...%C%[0m
 :: Windows Biyometrik Hizmeti
@@ -1500,7 +1543,7 @@ echo   %C%[96mWindows Biyometrik hizmeti %3 ...%C%[0m
 ::-------------------------------------------------------
 goto :eof
 
-:serv.15.dokunmatik
+:serv.14.dokunmatik
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Dokunmatik Klavye ve Kalem hizmeti %3. >> %Location%\Logs
 echo   %C%[96mDokunmatik Klavye ve Kalem hizmeti %3 ...%C%[0m
 :: Kalem servisi
@@ -1515,7 +1558,7 @@ echo   %C%[96mDokunmatik Klavye ve Kalem hizmeti %3 ...%C%[0m
 ::-------------------------------------------------------
 goto :eof
 
-:serv.16.sistemgeriyukleme
+:serv.15.sistemgeriyukleme
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Sistem Geri ykleme hizmeti %5. >> %Location%\Logs
 echo   %C%[96mSistem geri ykleme hizmeti %5 ...%C%[0m
 :: Windows Yedekleme ve Geri Ykleme hizmeti
@@ -1541,7 +1584,7 @@ Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore" "Disable
 ::-------------------------------------------------------------------------------
 goto :eof
 
-:serv.17.sysmain
+:serv.16.sysmain
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Hzl Getir^(Sysmain^) hizmeti %3. >> %Location%\Logs
 echo   %C%[96mHzl Getir hizmeti %3 ...%C%[0m
 %PowerRun% sc config SysMain start= %2
@@ -1552,7 +1595,7 @@ echo   %C%[96mHzl Getir hizmeti %3 ...%C%[0m
 ::-------------------------------------------------------
 goto :eof
 
-:serv.18.hibernate
+:serv.17.hibernate
 ::Hzl baŸlang‡
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Hzl baŸlang‡^(Hibernate^) hizmeti %3. >> %Location%\Logs
 echo   %C%[96mHzl baŸlat %3 ...%C%[0m
@@ -1565,7 +1608,7 @@ Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power" "Hiber
 ::-------------------------------------------------------
 goto :eof
 
-:serv.19.Location
+:serv.18.Location
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Konum hizmeti %7. >> %Location%\Logs
 echo   %C%[96mKonum hizmeti %7 ...%C%[0m
 %~5 "HKLM\SOFTWARE\Policies\Microsoft\Windows\LocationAndSensors" %~6 > NUL 2>&1
@@ -1583,7 +1626,7 @@ Call :dword "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\System" "Allow
 ::----------------------------------------------------------------------------------------------------------------------------------------------
 goto :eof
 
-:serv.20.mediaplayer
+:serv.19.mediaplayer
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| MediaPlayer hizmeti %4. >> %Location%\Logs
 :: Windows Media Player
 echo   %C%[96mWindows Media Player %4 ...%C%[0m
@@ -1597,7 +1640,7 @@ Dism /Online /%3-Feature /FeatureName:MediaPlayback /Quiet /NoRestart
 ::---------------------------------------------------------------------
 goto :eof
 
-:serv.21.hyperv
+:serv.20.hyperv
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Hyper-V hizmeti %6. >> %Location%\Logs
 echo   %C%[96mHyper-V hizmeti %6 ...%C%[0m
 %~3 /f %%a IN ('"dir /b %SystemRoot%\servicing\Packages\Microsoft-Hyper-V*.mum"') DO (DISM /Online /NoRestart /Add-Package:"%SystemRoot%\servicing\Packages\%%a" > NUL 2>&1)
@@ -1638,7 +1681,7 @@ bcdedit /set hypervisorlaunchtype %5
 ::------------------------------------------
 goto :eof
 
-:serv.22.xbox
+:serv.21.xbox
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Xbox hizmeti %7. >> %Location%\Logs
 echo   %C%[96mXbox hizmeti %7 ...%C%[0m
 :: Oyun DVR ve Yayn kullanc hizmeti
@@ -1668,7 +1711,7 @@ Call :sz "HKCU\System\GameConfigStore" "GameDVR_FSEBehavior" "%4"
 ::----------------------------------------------------------------------------------------------------------------------------------------------
 goto :eof
 
-:serv.23.bitlocker
+:serv.22.bitlocker
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Bitlocker hizmeti %3. >> %Location%\Logs
 echo   %C%[96mBitlocker hizmeti %3 ...%C%[0m
 :: Bitlocker src Ÿifreleme hizmeti
@@ -1680,7 +1723,7 @@ echo   %C%[96mBitlocker hizmeti %3 ...%C%[0m
 ::------------------------------------------------------
 goto :eof
 
-:serv.24.mixedreality
+:serv.23.mixedreality
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Karma Ger‡eklik hizmeti %2. >> %Location%\Logs
 echo   %C%[96mKarma Ger‡eklik hizmeti %2 ...%C%[0m
 :: Uzlamsal veri hizmeti
@@ -1699,7 +1742,7 @@ echo   %C%[96mKarma Ger‡eklik hizmeti %2 ...%C%[0m
 ::------------------------------------------
 goto :eof
 
-:serv.25.driverupdate
+:serv.24.driverupdate
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Driver Gncelle / Ykle %3. >> %Location%\Logs
 echo   %C%[96mDriver Ykle/Gncelle hizmeti %3 ...%C%[0m
 Call :dword "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\Update" "ExcludeWUDriversInQualityUpdate" "%~1"
@@ -1714,7 +1757,7 @@ Call :dword "HKLM\Software\Policies\Microsoft\Windows\DriverSearching" "SearchOr
 ::-------------------------------------
 goto :eof
 
-:serv.26.memorycompression
+:serv.25.memorycompression
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Bellek skŸtrma %2. >> %Location%\Logs
 echo   %C%[96mBellek skŸtrma hizmeti %2 ...%C%[0m
 %PowerRun% sc config SysMain start= auto
@@ -1729,7 +1772,7 @@ echo   %C%[96mBellek skŸtrma hizmeti %2 ...%C%[0m
 ::-------------------------------------
 goto :eof
 
-:serv.27.coreparking
+:serv.26.coreparking
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| ˜Ÿlemci ‡ekirdek bekleme hizmeti %4. >> %Location%\Logs
 echo   %C%[96m˜Ÿlemci ‡ekirdek bekleme hizmeti %4 ...%C%[0m
 Call :dword "HKLM\SYSTEM\ControlSet001\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\0cc5b647-c1df-4637-891a-dec35c318583" "ValueMax" "%~1"
@@ -3024,10 +3067,10 @@ goto :eof
 :PowerRun
 Call :Location
 dir /b "%Location%\Files\PowerRun.exe" > NUL 2>&1
-	if %errorlevel%==1 (echo %R%[1;97m%R%[41m HATA! PowerRun.exe dosyas bulunamad. Yeniden indiriliyor... %R%[0m
+	if %errorlevel%==1 (:: echo %R%[1;97m%R%[41m HATA! PowerRun.exe dosyas bulunamad. Yeniden indiriliyor... %R%[0m
 						Call :Logss "PowerRun indiriliyor" "PowerRun.exe dosyas bulunamad. Yeniden indirildi."
 						Call :wget3 "https://docs.google.com/uc?export=download&id=10UikjZGEvcnB9j6gDYmURZhmhruiKbfK" "%Location%\Download\PowerRun.zip"
-						powershell -command "Expand-Archive -Force '%Location%\Download\PowerRun.zip' '%Location%\Files"
+						powershell -command "Expand-Archive -Force '%Location%\Download\PowerRun.zip' '%Location%\Files'"
 						timeout /t 2 /nobreak > NUL)
 						
 set PowerRun=%Location%\Files\PowerRun.exe /SW:0 %SystemRoot%\system32\cmd.exe /c

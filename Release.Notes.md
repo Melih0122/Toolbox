@@ -44,6 +44,20 @@
 :: 	  • Hyper-V bölümündeki hatanın giderilmesi.
 ::  
 :: ==============================================================================================================================
+-------------------
+ ► Versiyon 2.6.1 - Ara güncelleme
+-------------------
+Yayınlanma Tarihi: 12.04.2022
+
+ • Hizmetleri Yönet > Hizmetlerin açık veya kapalı olma durumları menü içinde belirtildi.
+ • Hizmetleri Yönet > Baskı hizmetini aç kapat kaldırıldı.
+ • Hizmetleri Yönet > Ip yardımcı bölümündeki yönlendirme hatası giderildi. 
+ • Hizmetleri Yönet > Radyo ve uçak modu hizmeti bölümünde Windows 10 sistemlerdeki kapanma hatası giderildi.
+ • Hizmetleri Yönet > Windows Search yönlendirme hatası giderildi.
+ • Hizmetleri Yönet > Hyper - V kapat bölümündeki komut hatası giderildi.
+ • PowerRun yazılımının yeninden indirme bölümünde yer alan komut hatası giderildi.
+   • Hizmetleri Yönet bölümünde fazla işlem yapılınca antivirüs programı PowerRun yazılımdan huylanabiliyor. 
+
 -----------------
  ► Versiyon 2.6 -
 -----------------
@@ -78,6 +92,8 @@ Yayınlanma Tarihi: 10.04.2022
    • İşlem sonunda reset seçeneği bırakıldı.
  • Ping Ölçer bölümünün teması düzenlendi. Değişken bölümüne bilgilendirici metinler bırakıldı.
    • Yeni site ve dns adressleri eklendi.
+
+:: ==============================================================================================================================
 
 ------------------
  ► Versiyon 2.5.2 - Ara güncelleme
