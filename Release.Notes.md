@@ -45,6 +45,21 @@
 ::  
 :: ==============================================================================================================================
 -------------------
+ ► Versiyon 2.6.2 - Ara güncelleme
+-------------------
+Yayınlanma Tarihi: 13.04.2022
+
+ • Güncelleme sonrası temizlik bölümündeki hata giderildi.
+ • Toolbox İngilizce sürümü Türkçe sürümü ile senkronize gelişecek şekilde yeniden düzenlendi.
+ • Windows 8.1 Toolbox sürümü için Güncelleme ve katılımsız kurulum araçları eklendi.
+ • Github'daki proje tek bir bölümde toplandı. TR / ENG / 8.1 sürüm dosya ve katılımsız araçları tek bir senden sunulanacak.
+   • Toolbox hakkında detayları öğrenmek için "Google Translate" kullanılması gerekmektedir.
+ • Güncelleştirme sonrası temizlik bölümündeki hizmetler "Extra\Update.After.bat" dosyasından toplandı.
+   • PowerRun yazılımıyla tek bir işlem yapmak için tek bir .bat dosyasında topladım. 
+
+
+:: ==============================================================================================================================
+-------------------
  ► Versiyon 2.6.1 - Ara güncelleme
 -------------------
 Yayınlanma Tarihi: 12.04.2022

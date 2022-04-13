@@ -1,3 +1,4 @@
+:: ==============================================================================================================================
 ::                               NOTEPAD++ > Kodlama > Karakter Takm > Trke > OEM857
 :: ==============================================================================================================================
 ::
@@ -23,14 +24,14 @@
 ::                                                >>   WEB PAGE   <<
 ::                                         --------------------------------
 ::                                         >>  ognitorenks.blogspot.com  <<
-
+::
 :: ==============================================================================================================================
 ::  Projeye katkda bulunanlar;
 ::  ---------------------------
 ::   Eray Trkay
 ::  ----------------------
 ::     Sistem Hakknda - RAM soket yapsnn eklenmesi.
-::    	Sistem Hakknda - Sistem format tarihinin eklenmesi.
+::     Sistem Hakknda - Sistem format tarihinin eklenmesi.
 ::  ----------------------
 ::   KaanBeyhan [DOGGEST]
 ::  ----------------------
@@ -43,6 +44,27 @@
 ::   maskem76
 ::  ----------
 :: 	   Hyper-V b”lmndeki hatann giderilmesi.
+::
+:: ==============================================================================================================================
+:: Toolbox iinde kullanlan yazlmlar;
+:: ------------------------------------
+:: >> WindowsAppBoss > https://github.com/jason-grimme/WindowsAppBoss
+::    Microsoft Store ykl uygulamalar kaldrp yklemeye yarayan yazlm. 
+::
+:: >> Folder2ISO     > https://www.trustfm.net/software/utilities/Folder2Iso.php
+::    Klas”r iindeki verileri ISO evirmeye yarayan kk boyutlu bir yazlm.
+::
+:: >> wget           > https://eternallybored.org/misc/wget/
+::    Download ilemlerinin yapldง uygulamadr. Komut istemiyle alr.
+::
+:: >> PowerRun       > https://www.sordum.org/9416/powerrun-v1-6-run-with-highest-privileges/
+::    st dzey yetki ile ilem yapma izni veren yazlm. 
+::
+:: >> oscdimg        > https://api.256file.com/oscdimg.exe/tr-download-87465.html
+::    ISO dosyas oluturmaya yarayan yazlm.
+::
+:: >> ReIconCache    > https://www.sordum.org/9194/rebuild-shell-icon-cache-v1-3/
+::    Icon ”nbelliงini temizlemeye yarayan yazlm
 ::
 :: ==============================================================================================================================
 echo off
@@ -80,13 +102,13 @@ echo 
 echo 
 echo  %R%[90mษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออป%R%[0m
 echo  %R%[90mบ                                                         บ%R%[0m
-echo  %R%[90mบ%R%[1;97m%R%[41m               ! UYARI !           ! UYARI !             %R%[0m%R%[90mบ%R%[0m
+echo  %R%[90mบ%R%[1;97m%R%[41m               ! UYARI !          ! UYARI !              %R%[0m%R%[90mบ%R%[0m
 echo  %R%[90mบ                                                         บ%R%[0m
-echo  %R%[90mบ%R%[1;97m%R%[41m           Saง-Tk Y”netici olarak altrnz          %R%[0m%R%[90mบ%R%[0m
+echo  %R%[90mบ%R%[1;97m%R%[42m            Saง-Tk Y”netici olarak altrn           %R%[0m%R%[90mบ%R%[0m
 echo  %R%[90mบ                                                         บ%R%[0m
 echo  %R%[90mศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ%R%[0m
 echo 
-echo             %R%[92mKapatmak iin herhangi bir tua basnz.%R%[0m 
+echo              %R%[92mKapatmak iin herhangi bir tua basnz%R%[0m
 pause > nul
 exit
 )
@@ -98,7 +120,7 @@ mode con cols=96 lines=37
 ::   set download= eittirden sonra klas”r yolunu yazn.
 ::   Varsaylan olarak Toolbox klas”r iine ykler.
 
-call :Logs
+Call :Logs
 set download=%Location%\Download
 
 :: ==============================================================================================================================
@@ -163,7 +185,7 @@ echo %caption2% > NUL
 	if %caption2%==10 (set editmenugo=Win10SettingsMenu) 
 	if %caption2%==11 (set editmenugo=Win11SettingsMenu)
 
-set version=2.6.1
+set version=2.6.2
 
 ::set editmenu=Windows 11 Edit
 ::set editmenugo=Win11SettingsMenu
@@ -176,48 +198,47 @@ Find "OGNITORENKS TOOLBOX %version%" %Location%\Logs > NUL 2>&1
 						echo [%date% - %time%] OgnitorenKs Toolbox balatld.
 						echo  ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
 						echo  บ OGNITORENKS TOOLBOX %version% ^| USER:%registereduser% ^| PC-Name:%pcname%
-						echo  บ OS: %caption% ^| x%osarch% ^| %ImageBuild% ^| %isderleme% ^| G: %powerr%
+						echo  บ OS: %caption% ^| x%osarch% ^| %ImageBuild% ^| %isderleme% ^| Power: %powerr%
 						echo  ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
 						echo ---------------------------------------------------------------------------------------------------------------------------
 						) >> %Location%\Logs
 						)
 
 :: ==============================================================================================================================
-
 :menu
 cls
 mode con cols=96 lines=37 
 title          O  G  N  I  T  O  R  E  N  K  S     ^|    OGNITORENKS TOOLBOX    ^|       T   O   O   L   B   O   X       
 echo   %R%[90mษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป%R%[0m
 echo   %R%[90mบ%R%[1;97m%R%[100m OGNITORENKS TOOLBOX %version% %R%[0m%R%[90m ^|%R%[32m USER:%R%[37m%registereduser% %R%[90m^|%R%[32m PC-Name:%R%[37m%pcname%%R%[0m	
-echo   %R%[90mบ%R%[32m OS:%R%[37m %caption% %R%[90m^|%R%[37m x%osarch% %R%[90m^|%R%[37m %ImageBuild% %R%[0m%R%[90m^|%R%[37m %isderleme% %R%[90m^|%R%[32m G:%R%[37m %powerr% %R%[0m	
+echo   %R%[90mบ%R%[32m OS:%R%[37m %caption% %R%[90m^|%R%[37m x%osarch% %R%[90m^|%R%[37m %ImageBuild% %R%[0m%R%[90m^|%R%[37m %isderleme% %R%[90m^|%R%[32m Power:%R%[37m %powerr%%R%[0m	
 echo   %R%[90mฬออออออออออออออออออออออออออหอออออออออออออออออออออออออออออหอออออออออออออออออออออออออออออออออน%R%[0m
-echo   %R%[90mบ%R%[32m  1.%C%[37m All In One Runtimes%C%[0m  %R%[90mบ%R%[0m %R%[32m 27.%C%[36m OpenShot%C%[0m               %R%[90mบ%R%[0m          %R%[92m BONUS%R%[0m               %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m  2.%C%[33m Discord%C%[0m              %R%[90mบ%R%[0m %R%[32m 28.%C%[36m Shotcut%C%[0m                %R%[90mบ%R%[32m 53.%C%[36m %editmenu%%C%[90m [M]%R%[0m         %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m  3.%C%[33m Whatsapp%C%[0m             %R%[90mบ%R%[0m %R%[32m 29.%C%[36m Krita%C%[0m                  %R%[90mบ%R%[32m 54.%C%[33m Hizmetleri Y”net%C%[90m [M]%C%[0m        %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m  4.%C%[33m Signal%C%[0m               %R%[90mบ%R%[0m %R%[32m 30.%C%[36m Gimp%C%[0m                   %R%[90mบ%R%[32m 55.%C%[33m ICO Fix%C%[0m                     %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m  5.%C%[33m Telegram%C%[0m             %R%[90mบ%R%[0m %R%[32m 31.%C%[36m OBS Studio%C%[0m             %R%[90mบ%R%[32m 56.%C%[37m Windows Edit”r%C%[90m [M]%C%[0m          %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m  6.%C%[33m Zoom%C%[0m                 %R%[90mบ%R%[0m %R%[32m 32.%C%[36m ShareX%C%[0m                 %R%[90mบ%R%[32m 57.%C%[33m Gncelleme Sonras Temizlik%C%[0m %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m  7.%C%[36m EpicGames%C%[0m            %R%[90mบ%R%[0m %R%[32m 33.%C%[36m Audacity%C%[0m               %R%[90mบ%R%[32m 58.%C%[33m Sistem / Market Onar%C%[0m        %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m  8.%C%[36m Steam%C%[0m                %R%[90mบ%R%[0m %R%[32m 34.%C%[36m K-Lite Codec%C%[0m           %R%[90mบ%R%[32m 59.%C%[33m PC Temizle%C%[0m                  %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m  9.%C%[36m GOG Galaxy%C%[0m           %R%[90mบ%R%[0m %R%[32m 35.%C%[36m VLC Media Player%C%[0m       %R%[90mบ%R%[32m 60.%C%[36m Appx Y”netici%C%[90m [APP]%C%[0m         %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m 10.%C%[36m Uplay%C%[0m                %R%[90mบ%R%[0m %R%[32m 36.%C%[36m Aimp%C%[0m                   %R%[90mบ%R%[32m 61.%C%[36m Folder to ISO%C%[90m [APP]%C%[0m         %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m 11.%C%[36m Origin%C%[0m               %R%[90mบ%R%[0m %R%[32m 37.%C%[36m Any Video Converter%C%[0m    %R%[90mบ%R%[32m 62.%C%[33m Fat32 to NTFS%C%[0m               %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m 12.%C%[36m Cheat Engine%C%[0m         %R%[90mบ%R%[0m %R%[32m 38.%C%[33m Free Download Manager%C%[0m  %R%[90mบ%R%[32m 63.%C%[33m Ping ler%C%[90m [*]%C%[0m              %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m 13.%C%[36m Wemod%C%[0m                %R%[90mบ%R%[0m %R%[32m 39.%C%[33m nt Download Manager%C%[0m   %R%[90mบ%R%[32m 64.%C%[33m Lisans Y”netimi%C%[90m [M]%C%[0m         %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m 14.%C%[33m Google Chrome%C%[0m        %R%[90mบ%R%[0m %R%[32m 40.%C%[33m ByClick Downloader%C%[0m     %R%[90mบ%R%[32m 65.%C%[33m Kullanc Hesap Y”netimi%C%[90m [M]%C%[0m %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m 15.%C%[33m Mozilla Firefox%C%[0m      %R%[90mบ%R%[0m %R%[32m 41.%C%[33m Qbittorrent%C%[0m            %R%[90mบ%R%[32m 66.%C%[33m Sistem Hakknda%C%[90m [*]%C%[0m         %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m 16.%C%[33m Brave%C%[0m                %R%[90mบ%R%[0m %R%[32m 42.%C%[33m GlassWire%C%[0m              %R%[90mบ%R%[32m 67.%C%[33m Wifi Crack%C%[0m                  %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m 17.%C%[33m Microsoft Edge%C%[0m       %R%[90mบ%R%[0m %R%[32m 43.%C%[33m TeamViewer%C%[0m             %R%[90mบ%R%[32m 68.%C%[33m Zaman Ayarl PC Kapat%C%[90m [M]%C%[0m   %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m 18.%C%[37m ISLC%C%[0m                 %R%[90mบ%R%[0m %R%[32m 44.%C%[33m Hamachi%C%[0m                %R%[90mบ%R%[0m                                 %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m 19.%C%[37m MemReduct%C%[0m            %R%[90mบ%R%[0m %R%[32m 45.%C%[33m Stremio%C%[0m                %R%[90mบ%R%[0m                                 %R%[90mบ%R%[0m 
-echo   %R%[90mบ%R%[32m 20.%C%[36m Libre Office%C%[0m         %R%[90mบ%R%[0m %R%[32m 46.%C%[36m MSI Afterburner%C%[0m        %R%[90mบ%R%[0m                                 %R%[90mบ%R%[0m 
-echo   %R%[90mบ%R%[32m 21.%C%[36m Adobe Reader%C%[0m         %R%[90mบ%R%[0m %R%[32m 47.%C%[36m Hibit Uninstaller%C%[0m      %R%[90mบ%R%[0m                                 %R%[90mบ%R%[0m 
-echo   %R%[90mบ%R%[32m 22.%C%[36m PDF-XChange Edit”r%C%[0m   %R%[90mบ%R%[0m %R%[32m 48.%C%[36m Wise Care 365%C%[0m          %R%[90mบ%R%[0m                                 %R%[90mบ%R%[0m 
-echo   %R%[90mบ%R%[32m 23.%C%[36m Calibre%C%[0m              %R%[90mบ%R%[0m %R%[32m 49.%C%[36m Unlocker%C%[0m               %R%[90mบ%R%[0m                                 %R%[90mบ%R%[0m 
-echo   %R%[90mบ%R%[32m 24.%C%[33m 7 - Zip%C%[0m              %R%[90mบ%R%[0m %R%[32m 50.%C%[36m SSD Booster%C%[0m            %R%[90mบ%R%[32m 97.%C%[36m Toolbox Rehber%C%[0m              %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m 25.%C%[33m WinRAR%C%[0m               %R%[90mบ%R%[0m %R%[32m 51.%C%[36m OpenShell%C%[0m              %R%[90mบ%R%[32m 98.%C%[36m Toolbox Gncelle%C%[0m            %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m 26.%C%[36m Kdenlive%C%[0m             %R%[90mบ%R%[0m %R%[32m 52.%C%[36m Everything%C%[0m             %R%[90mบ%R%[32m 99.%C%[36m Toolbox Link Gncelle%C%[0m       %R%[90mบ%R%[0m
+echo   %R%[90mบ%R%[32m  1.%C%[37m All In One Runtimes  %R%[90mบ%R%[32m  27.%C%[36m OpenShot               %R%[90mบ%R%[0m          %R%[92m BONUS%R%[0m               %R%[90mบ%R%[0m
+echo   %R%[90mบ%R%[32m  2.%C%[33m Discord              %R%[90mบ%R%[32m  28.%C%[36m Shotcut                %R%[90mบ%R%[32m 53.%C%[36m %editmenu%%C%[90m [M]         บ%R%[0m
+echo   %R%[90mบ%R%[32m  3.%C%[33m Whatsapp             %R%[90mบ%R%[32m  29.%C%[36m Krita                  %R%[90mบ%R%[32m 54.%C%[33m Hizmetleri Y”net%C%[90m [M]        บ%R%[0m
+echo   %R%[90mบ%R%[32m  4.%C%[33m Signal               %R%[90mบ%R%[32m  30.%C%[36m Gimp                   %R%[90mบ%R%[32m 55.%C%[33m Icon Fix                    %R%[90mบ%R%[0m
+echo   %R%[90mบ%R%[32m  5.%C%[33m Telegram             %R%[90mบ%R%[32m  31.%C%[36m OBS Studio             %R%[90mบ%R%[32m 56.%C%[37m Windows Edit”r%C%[90m [M]          บ%R%[0m
+echo   %R%[90mบ%R%[32m  6.%C%[33m Zoom                 %R%[90mบ%R%[32m  32.%C%[36m ShareX                 %R%[90mบ%R%[32m 57.%C%[33m Gncelleme Sonras Temizlik %R%[90mบ%R%[0m
+echo   %R%[90mบ%R%[32m  7.%C%[36m EpicGames            %R%[90mบ%R%[32m  33.%C%[36m Audacity               %R%[90mบ%R%[32m 58.%C%[33m Windows-Market Onar         %R%[90mบ%R%[0m
+echo   %R%[90mบ%R%[32m  8.%C%[36m Steam                %R%[90mบ%R%[32m  34.%C%[36m K-Lite Codec           %R%[90mบ%R%[32m 59.%C%[33m PC Temizle                  %R%[90mบ%R%[0m
+echo   %R%[90mบ%R%[32m  9.%C%[36m GOG Galaxy           %R%[90mบ%R%[32m  35.%C%[36m VLC Media Player       %R%[90mบ%R%[32m 60.%C%[36m Windows App Boss%C%[90m [APP]      บ%R%[0m
+echo   %R%[90mบ%R%[32m 10.%C%[36m Uplay                %R%[90mบ%R%[32m  36.%C%[36m Aimp                   %R%[90mบ%R%[32m 61.%C%[36m Folder2ISO%C%[90m [APP]            บ%R%[0m
+echo   %R%[90mบ%R%[32m 11.%C%[36m Origin               %R%[90mบ%R%[32m  37.%C%[36m Any Video Converter    %R%[90mบ%R%[32m 62.%C%[33m Fat32 to NTFS               %R%[90mบ%R%[0m
+echo   %R%[90mบ%R%[32m 12.%C%[36m Cheat Engine         %R%[90mบ%R%[32m  38.%C%[33m Free Download Manager  %R%[90mบ%R%[32m 63.%C%[33m Ping ler%C%[90m [*]              บ%R%[0m
+echo   %R%[90mบ%R%[32m 13.%C%[36m Wemod                %R%[90mบ%R%[32m  39.%C%[33m nt Download Manager   %R%[90mบ%R%[32m 64.%C%[33m Lisans Y”netimi%C%[90m [M]         บ%R%[0m
+echo   %R%[90mบ%R%[32m 14.%C%[33m Google Chrome        %R%[90mบ%R%[32m  40.%C%[33m ByClick Downloader     %R%[90mบ%R%[32m 65.%C%[33m Kullanc Hesap Y”netimi%C%[90m [M] บ%R%[0m
+echo   %R%[90mบ%R%[32m 15.%C%[33m Mozilla Firefox      %R%[90mบ%R%[32m  41.%C%[33m Qbittorrent            %R%[90mบ%R%[32m 66.%C%[33m Sistem Hakknda%C%[90m [*]         บ%R%[0m
+echo   %R%[90mบ%R%[32m 16.%C%[33m Brave                %R%[90mบ%R%[32m  42.%C%[33m GlassWire              %R%[90mบ%R%[32m 67.%C%[33m Wifi Crack                  %R%[90mบ%R%[0m
+echo   %R%[90mบ%R%[32m 17.%C%[33m Microsoft Edge       %R%[90mบ%R%[32m  43.%C%[33m TeamViewer             %R%[90mบ%R%[32m 68.%C%[33m Zaman Ayarl PC Kapat%C%[90m [M]   บ%R%[0m
+echo   %R%[90mบ%R%[32m 18.%C%[37m ISLC                 %R%[90mบ%R%[32m  44.%C%[33m Hamachi                %R%[90mบ%R%[0m                                 %R%[90mบ%R%[0m
+echo   %R%[90mบ%R%[32m 19.%C%[37m MemReduct            %R%[90mบ%R%[32m  45.%C%[33m Stremio                %R%[90mบ%R%[0m                                 %R%[90mบ%R%[0m 
+echo   %R%[90mบ%R%[32m 20.%C%[36m Libre Office         %R%[90mบ%R%[32m  46.%C%[36m MSI Afterburner        %R%[90mบ%R%[0m                                 %R%[90mบ%R%[0m 
+echo   %R%[90mบ%R%[32m 21.%C%[36m Adobe Reader         %R%[90mบ%R%[32m  47.%C%[36m Hibit Uninstaller      %R%[90mบ%R%[0m                                 %R%[90mบ%R%[0m 
+echo   %R%[90mบ%R%[32m 22.%C%[36m PDF-XChange Edit”r   %R%[90mบ%R%[32m  48.%C%[36m Wise Care 365          %R%[90mบ%R%[0m                                 %R%[90mบ%R%[0m 
+echo   %R%[90mบ%R%[32m 23.%C%[36m Calibre              %R%[90mบ%R%[32m  49.%C%[36m Unlocker               %R%[90mบ%R%[0m                                 %R%[90mบ%R%[0m 
+echo   %R%[90mบ%R%[32m 24.%C%[33m 7 - Zip              %R%[90mบ%R%[32m  50.%C%[36m SSD Booster            %R%[90mบ%R%[32m 97.%C%[36m Toolbox Rehber              %R%[90mบ%R%[0m
+echo   %R%[90mบ%R%[32m 25.%C%[33m WinRAR               %R%[90mบ%R%[32m  51.%C%[36m OpenShell              %R%[90mบ%R%[32m 98.%C%[36m Toolbox Gncelle            %R%[90mบ%R%[0m
+echo   %R%[90mบ%R%[32m 26.%C%[36m Kdenlive             %R%[90mบ%R%[32m  52.%C%[36m Everything             %R%[90mบ%R%[32m 99.%C%[36m Toolbox Link Gncelle       %R%[90mบ%R%[0m
 echo   %R%[90mฬออออออออออออออออออออออออออสอออออออออออออออออออออออออออออสอออออออออออออออออออออออออออออออออน%R%[0m
 echo   %R%[90mบ%R%[0m %R%[32m X.%R%[37m Temizle ve Kapat%R%[0m       [%R%[1;97m%R%[100mognitorenks.blogspot.com%R%[0m]   %R%[32m  Z.%C%[37m Listeyi Genilet ^>^>^>%R%[0m        %R%[90mบ%R%[0m
 echo   %R%[90mศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ%R%[0m
@@ -311,34 +332,34 @@ mode con cols=96 lines=37
 title          O  G  N  I  T  O  R  E  N  K  S     ^|    OGNITORENKS TOOLBOX    ^|       T   O   O   L   B   O   X       
 echo   %R%[90mษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป%R%[0m
 echo   %R%[90mบ%R%[1;97m%R%[100m OGNITORENKS TOOLBOX %version% %R%[0m%R%[90m ^|%R%[32m USER:%R%[37m%registereduser% %R%[90m^|%R%[32m PC-Name:%R%[37m%pcname%%R%[0m	
-echo   %R%[90mบ%R%[32m OS:%R%[37m %caption% %R%[90m^|%R%[37m x%osarch% %R%[90m^|%R%[37m %ImageBuild% %R%[0m%R%[90m^|%R%[37m %isderleme% %R%[90m^|%R%[32m G:%R%[37m %powerr% %R%[0m	
+echo   %R%[90mบ%R%[32m OS:%R%[37m %caption% %R%[90m^|%R%[37m x%osarch% %R%[90m^|%R%[37m %ImageBuild% %R%[0m%R%[90m^|%R%[37m %isderleme% %R%[90m^|%R%[32m Power:%R%[37m %powerr% %R%[0m	
 echo   %R%[90mฬออออออออออออออออออออออออออหอออออออออออออออออออออออออออออหอออออออออออออออออออออออออออออออออน%R%[0m
-echo   %R%[90mบ%R%[32m  1.%C%[37m All In One Runtimes%C%[0m  %R%[90mบ%R%[0m %R%[32m 27.%C%[36m OpenShot%C%[0m               %R%[90mบ%R%[32m 53.%C%[36m TaskbarX%C%[0m                    %R%[90mบ%R%[0m 
-echo   %R%[90mบ%R%[32m  2.%C%[33m Discord%C%[0m              %R%[90mบ%R%[0m %R%[32m 28.%C%[36m Shotcut%C%[0m                %R%[90mบ%R%[32m 54.%C%[36m Stellarium%C%[0m                  %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m  3.%C%[33m Whatsapp%C%[0m             %R%[90mบ%R%[0m %R%[32m 29.%C%[36m Krita%C%[0m                  %R%[90mบ%R%[32m 55.%C%[36m Recuva%C%[0m                      %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m  4.%C%[33m Signal%C%[0m               %R%[90mบ%R%[0m %R%[32m 30.%C%[36m Gimp%C%[0m                   %R%[90mบ%R%[32m 56.%C%[36m AOMEI Partiton Assistans%C%[0m    %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m  5.%C%[33m Telegram%C%[0m             %R%[90mบ%R%[0m %R%[32m 31.%C%[36m OBS Studio%C%[0m             %R%[90mบ%R%[32m 57.%C%[33m Python%C%[0m                      %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m  6.%C%[33m Zoom%C%[0m                 %R%[90mบ%R%[0m %R%[32m 32.%C%[36m ShareX%C%[0m                 %R%[90mบ%R%[32m 58.%C%[33m Phycharm%C%[0m                    %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m  7.%C%[36m EpicGames%C%[0m            %R%[90mบ%R%[0m %R%[32m 33.%C%[36m Audacity%C%[0m               %R%[90mบ%R%[32m 59.%C%[33m Notepad++%C%[0m                   %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m  8.%C%[36m Steam%C%[0m                %R%[90mบ%R%[0m %R%[32m 34.%C%[36m K-Lite Codec%C%[0m           %R%[90mบ%R%[32m 60.%C%[33m Visual Studio Code%C%[0m          %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m  9.%C%[36m GOG Galaxy%C%[0m           %R%[90mบ%R%[0m %R%[32m 35.%C%[36m VLC Media Player%C%[0m       %R%[90mบ%R%[32m 61.%C%[33m Github%C%[0m                      %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m 10.%C%[36m Uplay%C%[0m                %R%[90mบ%R%[0m %R%[32m 36.%C%[36m Aimp%C%[0m                   %R%[90mบ%R%[32m 62.%C%[33m Git%C%[0m                         %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m 11.%C%[36m Origin%C%[0m               %R%[90mบ%R%[0m %R%[32m 37.%C%[36m Any Video Converter%C%[0m    %R%[90mบ%R%[32m 63.%C%[33m Blender%C%[0m                     %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m 12.%C%[36m Cheat Engine%C%[0m         %R%[90mบ%R%[0m %R%[32m 38.%C%[33m Free Download Manager%C%[0m  %R%[90mบ%R%[32m 64.%C%[36m Process Hacker 2%C%[0m            %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m 13.%C%[36m Wemod%C%[0m                %R%[90mบ%R%[0m %R%[32m 39.%C%[33m nt Download Manager%C%[0m   %R%[90mบ%R%[32m 65.%C%[36m %C%[0m                            %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m 14.%C%[33m Google Chrome%C%[0m        %R%[90mบ%R%[0m %R%[32m 40.%C%[33m ByClick Downloader%C%[0m     %R%[90mบ%R%[32m 66.%C%[36m %C%[0m                            %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m 15.%C%[33m Mozilla Firefox%C%[0m      %R%[90mบ%R%[0m %R%[32m 41.%C%[33m Qbittorrent%C%[0m            %R%[90mบ%R%[32m 67.%C%[36m %C%[0m                            %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m 16.%C%[33m Brave%C%[0m                %R%[90mบ%R%[0m %R%[32m 42.%C%[33m GlassWire%C%[0m              %R%[90mบ%R%[32m 68.%C%[36m %C%[0m                            %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m 17.%C%[33m Microsoft Edge%C%[0m       %R%[90mบ%R%[0m %R%[32m 43.%C%[33m TeamViewer%C%[0m             %R%[90mบ%R%[32m 69.%C%[36m %C%[0m                            %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m 18.%C%[37m ISLC%C%[0m                 %R%[90mบ%R%[0m %R%[32m 44.%C%[33m Hamachi%C%[0m                %R%[90mบ%R%[32m 70.%C%[36m %C%[0m                            %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m 19.%C%[37m MemReduct%C%[0m            %R%[90mบ%R%[0m %R%[32m 45.%C%[33m Stremio%C%[0m                %R%[90mบ%R%[32m 71.%C%[36m %C%[0m                            %R%[90mบ%R%[0m 
-echo   %R%[90mบ%R%[32m 20.%C%[36m Libre Office%C%[0m         %R%[90mบ%R%[0m %R%[32m 46.%C%[36m MSI Afterburner%C%[0m        %R%[90mบ%R%[32m 72.%C%[36m %C%[0m                            %R%[90mบ%R%[0m 
-echo   %R%[90mบ%R%[32m 21.%C%[36m Adobe Reader%C%[0m         %R%[90mบ%R%[0m %R%[32m 47.%C%[36m Hibit Uninstaller%C%[0m      %R%[90mบ%R%[32m 73.%C%[37m OSU! %C%[0m                       %R%[90mบ%R%[0m 
-echo   %R%[90mบ%R%[32m 22.%C%[36m PDF-XChange Edit”r%C%[0m   %R%[90mบ%R%[0m %R%[32m 48.%C%[36m Wise Care 365%C%[0m          %R%[90mบ%R%[32m 74.%C%[37m World Of Tanks %C%[0m             %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m 23.%C%[36m Calibre%C%[0m              %R%[90mบ%R%[0m %R%[32m 49.%C%[36m Unlocker%C%[0m               %R%[90mบ%R%[32m 75.%C%[37m Genshin Impact%C%[0m              %R%[90mบ%R%[0m 
-echo   %R%[90mบ%R%[32m 24.%C%[33m 7 - Zip%C%[0m              %R%[90mบ%R%[0m %R%[32m 50.%C%[36m SSD Booster%C%[0m            %R%[90mบ%R%[32m 76.%C%[37m League Of Legends%C%[90m[TR]%C%[0m       %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m 25.%C%[33m WinRAR%C%[0m               %R%[90mบ%R%[0m %R%[32m 51.%C%[36m OpenShell%C%[0m              %R%[90mบ%R%[32m 77.%C%[37m League Of Legends%C%[90m[EUW]%C%[0m      %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[32m 26.%C%[36m Kdenlive%C%[0m             %R%[90mบ%R%[0m %R%[32m 52.%C%[36m Everything%C%[0m             %R%[90mบ%R%[32m 78.%C%[37m Valorant%C%[0m                    %R%[90mบ%R%[0m
+echo   %R%[90mบ%R%[32m  1.%C%[37m All In One Runtimes  %R%[90mบ%R%[32m  27.%C%[36m OpenShot               %R%[90mบ%R%[32m 53.%C%[36m TaskbarX                    %R%[90mบ%R%[0m 
+echo   %R%[90mบ%R%[32m  2.%C%[33m Discord              %R%[90mบ%R%[32m  28.%C%[36m Shotcut                %R%[90mบ%R%[32m 54.%C%[36m Stellarium                  %R%[90mบ%R%[0m
+echo   %R%[90mบ%R%[32m  3.%C%[33m Whatsapp             %R%[90mบ%R%[32m  29.%C%[36m Krita                  %R%[90mบ%R%[32m 55.%C%[36m Recuva                      %R%[90mบ%R%[0m
+echo   %R%[90mบ%R%[32m  4.%C%[33m Signal               %R%[90mบ%R%[32m  30.%C%[36m Gimp                   %R%[90mบ%R%[32m 56.%C%[36m AOMEI Partiton Assistans    %R%[90mบ%R%[0m
+echo   %R%[90mบ%R%[32m  5.%C%[33m Telegram             %R%[90mบ%R%[32m  31.%C%[36m OBS Studio             %R%[90mบ%R%[32m 57.%C%[33m Python                      %R%[90mบ%R%[0m
+echo   %R%[90mบ%R%[32m  6.%C%[33m Zoom                 %R%[90mบ%R%[32m  32.%C%[36m ShareX                 %R%[90mบ%R%[32m 58.%C%[33m Phycharm                    %R%[90mบ%R%[0m
+echo   %R%[90mบ%R%[32m  7.%C%[36m EpicGames            %R%[90mบ%R%[32m  33.%C%[36m Audacity               %R%[90mบ%R%[32m 59.%C%[33m Notepad++                   %R%[90mบ%R%[0m
+echo   %R%[90mบ%R%[32m  8.%C%[36m Steam                %R%[90mบ%R%[32m  34.%C%[36m K-Lite Codec           %R%[90mบ%R%[32m 60.%C%[33m Visual Studio Code          %R%[90mบ%R%[0m
+echo   %R%[90mบ%R%[32m  9.%C%[36m GOG Galaxy           %R%[90mบ%R%[32m  35.%C%[36m VLC Media Player       %R%[90mบ%R%[32m 61.%C%[33m Github                      %R%[90mบ%R%[0m
+echo   %R%[90mบ%R%[32m 10.%C%[36m Uplay                %R%[90mบ%R%[32m  36.%C%[36m Aimp                   %R%[90mบ%R%[32m 62.%C%[33m Git                         %R%[90mบ%R%[0m
+echo   %R%[90mบ%R%[32m 11.%C%[36m Origin               %R%[90mบ%R%[32m  37.%C%[36m Any Video Converter    %R%[90mบ%R%[32m 63.%C%[33m Blender                     %R%[90mบ%R%[0m
+echo   %R%[90mบ%R%[32m 12.%C%[36m Cheat Engine         %R%[90mบ%R%[32m  38.%C%[33m Free Download Manager  %R%[90mบ%R%[32m 64.%C%[36m Process Hacker 2            %R%[90mบ%R%[0m
+echo   %R%[90mบ%R%[32m 13.%C%[36m Wemod                %R%[90mบ%R%[32m  39.%C%[33m nt Download Manager   %R%[90mบ%R%[32m 65.%C%[36m                             %R%[90mบ%R%[0m
+echo   %R%[90mบ%R%[32m 14.%C%[33m Google Chrome        %R%[90mบ%R%[32m  40.%C%[33m ByClick Downloader     %R%[90mบ%R%[32m 66.%C%[36m                             %R%[90mบ%R%[0m
+echo   %R%[90mบ%R%[32m 15.%C%[33m Mozilla Firefox      %R%[90mบ%R%[32m  41.%C%[33m Qbittorrent            %R%[90mบ%R%[32m 67.%C%[36m                             %R%[90mบ%R%[0m
+echo   %R%[90mบ%R%[32m 16.%C%[33m Brave                %R%[90mบ%R%[32m  42.%C%[33m GlassWire              %R%[90mบ%R%[32m 68.%C%[36m                             %R%[90mบ%R%[0m
+echo   %R%[90mบ%R%[32m 17.%C%[33m Microsoft Edge       %R%[90mบ%R%[32m  43.%C%[33m TeamViewer             %R%[90mบ%R%[32m 69.%C%[36m                             %R%[90mบ%R%[0m
+echo   %R%[90mบ%R%[32m 18.%C%[37m ISLC                 %R%[90mบ%R%[32m  44.%C%[33m Hamachi                %R%[90mบ%R%[32m 70.%C%[36m                             %R%[90mบ%R%[0m
+echo   %R%[90mบ%R%[32m 19.%C%[37m MemReduct            %R%[90mบ%R%[32m  45.%C%[33m Stremio                %R%[90mบ%R%[32m 71.%C%[36m                             %R%[90mบ%R%[0m 
+echo   %R%[90mบ%R%[32m 20.%C%[36m Libre Office         %R%[90mบ%R%[32m  46.%C%[36m MSI Afterburner        %R%[90mบ%R%[32m 72.%C%[36m                             %R%[90mบ%R%[0m 
+echo   %R%[90mบ%R%[32m 21.%C%[36m Adobe Reader         %R%[90mบ%R%[32m  47.%C%[36m Hibit Uninstaller      %R%[90mบ%R%[32m 73.%C%[37m OSU!                        %R%[90mบ%R%[0m 
+echo   %R%[90mบ%R%[32m 22.%C%[36m PDF-XChange Edit”r   %R%[90mบ%R%[32m  48.%C%[36m Wise Care 365          %R%[90mบ%R%[32m 74.%C%[37m World Of Tanks              %R%[90mบ%R%[0m
+echo   %R%[90mบ%R%[32m 23.%C%[36m Calibre              %R%[90mบ%R%[32m  49.%C%[36m Unlocker               %R%[90mบ%R%[32m 75.%C%[37m Genshin Impact              %R%[90mบ%R%[0m 
+echo   %R%[90mบ%R%[32m 24.%C%[33m 7 - Zip              %R%[90mบ%R%[32m  50.%C%[36m SSD Booster            %R%[90mบ%R%[32m 76.%C%[37m League Of Legends%C%[90m[TR]       บ%R%[0m
+echo   %R%[90mบ%R%[32m 25.%C%[33m WinRAR               %R%[90mบ%R%[32m  51.%C%[36m OpenShell              %R%[90mบ%R%[32m 77.%C%[37m League Of Legends%C%[90m[EUW]      บ%R%[0m
+echo   %R%[90mบ%R%[32m 26.%C%[36m Kdenlive             %R%[90mบ%R%[32m  52.%C%[36m Everything             %R%[90mบ%R%[32m 78.%C%[37m Valorant                    %R%[90mบ%R%[0m
 echo   %R%[90mฬออออออออออออออออออออออออออสอออออออออออออออออออออออออออออสอออออออออออออออออออออออออออออออออน%R%[0m
 echo   %R%[90mบ%R%[0m                             %R%[32m X.%R%[33m ^<^<^< Listeyi Daralt%R%[0m                                       %R%[90mบ%R%[0m
 echo   %R%[90mศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ%R%[0m
@@ -350,17 +371,16 @@ echo %$multi% | find "X" > NUL 2>&1
 	if %errorlevel%==0 goto menu	
 (
 echo ---------------------------------------------------------------------------------------------------------------------------
-echo [%date% - %time%] ^| MultiSelect ^| Seilenler:"%$multi%"
+echo [%date% - %time%] ^| MultiSelect ^| Seilenler : "%$multi%"
 echo ---------------------------------------------------------------------------------------------------------------------------
 ) >> %Location%\Logs
 cls
 echo   %R%[90mษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป%R%[0m
 echo   %R%[90mบ%R%[1;97m%R%[100m OGNITORENKS TOOLBOX %version% %R%[0m%R%[90m ^|%R%[32m USER:%R%[37m%registereduser% %R%[90m^|%R%[32m PC-Name:%R%[37m%pcname%%R%[0m	
-echo   %R%[90mบ%R%[32m OS:%R%[37m %caption% %R%[90m^|%R%[37m x%osarch% %R%[90m^|%R%[37m %ImageBuild% %R%[0m%R%[90m^|%R%[37m %isderleme% %R%[90m^|%R%[32m G:%R%[37m %powerr% %R%[0m
-echo   %R%[90mฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน%R%[0m
-echo                                         %R%[92m €OKLU NDRME%R%[0m 
+echo   %R%[90mบ%R%[32m OS:%R%[37m %caption% %R%[90m^|%R%[37m x%osarch% %R%[90m^|%R%[37m %ImageBuild% %R%[0m%R%[90m^|%R%[37m %isderleme% %R%[90m^|%R%[32m Power:%R%[37m %powerr% %R%[0m
 echo   %R%[90mศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ%R%[0m
 echo    %C%[96m Seilenler: %$multi%%C%[0m
+echo 
 :MultiSelect
 FOR %%a in (%$multi%) do (Call :Download%%a)
 goto menu2
@@ -370,8 +390,7 @@ goto menu2
 Call :Logss "Toolbox.Link.Update" "Toolbox linkler gncellendi."
 FOR /F "tokens=1" %%i in ('FIND "Links.zip" %Location%\Extra\Links.bat') do set link=%%i
 Call :wget2 "%link%" "Links.zip"
-DEL /F /Q /A "%Location%\Extra\Links.bat" > NUL 2>&1
-Powershell -command "Expand-Archive -Force '%Download%\Links.zip' '%Location%\Extra'"
+%PowerRun% Powershell -command "Expand-Archive -Force '%download%\Links.zip' '%Location%\Extra'"
 echo   %R%[1;97m%R%[42m                                    Linkler gncellendi                                     %R%[0m
 timeout /t 2 /nobreak > NUL
 goto :eof
@@ -382,7 +401,7 @@ goto :eof
 cls
 echo   %R%[90mษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป%R%[0m
 echo   %R%[90mบ%R%[1;97m%R%[100m OGNITORENKS TOOLBOX %version% %R%[0m%R%[90m ^|%R%[32m USER:%R%[37m%registereduser% %R%[90m^|%R%[32m PC-Name:%R%[37m%pcname%%R%[0m	
-echo   %R%[90mบ%R%[32m OS:%R%[37m %caption% %R%[90m^|%R%[37m x%osarch% %R%[90m^|%R%[37m %ImageBuild% %R%[0m%R%[90m^|%R%[37m %isderleme% %R%[90m^|%R%[32m G:%R%[37m %powerr% %R%[0m
+echo   %R%[90mบ%R%[32m OS:%R%[37m %caption% %R%[90m^|%R%[37m x%osarch% %R%[90m^|%R%[37m %ImageBuild% %R%[0m%R%[90m^|%R%[37m %isderleme% %R%[90m^|%R%[32m Power:%R%[37m %powerr% %R%[0m
 echo   %R%[90mฬออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออน%R%[0m
 :: Aaงdaki FOR d”ngsyle link.bat dosyas iinden programlara ait linkleri alyorum.
 :: Link sistemini katlmsz program hazrlama b”lmnde kullandงm iin ortak bir sistem olarak hazrladm.
@@ -425,13 +444,14 @@ echo   %R%[90mฬอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
 ::-----------------------
 :Download1
 echo    %R%[1;97m%R%[42m All in One Runtimes ykleniyor... %R%[0m
-Dism /Online /Get-Capabilities /format:table | findstr /i "NetFX3~~~~" | findstr /i "installed" > NUL 2>&1
+Dism /Online /Get-Capabilities /format:table > %Logs%\Capabilities.aio.txt 
+findstr /i "NetFX3~~~~" %Logs%\Capabilities.aio.txt | findstr /i "installed" > NUL 2>&1
 	if %errorlevel%==1 (Dism /Online /Enable-Feature /Featurename:NetFx3 /All /Quiet /NoRestart)
 
-Dism /Online /Get-Features /format:table | findstr /i "IIS-ASPNET45" | findstr /i "Enabled" > NUL 2>&1
+findstr /i "IIS-ASPNET45" %Logs%\Capabilities.aio.txt | findstr /i "Enabled" > NUL 2>&1
 	if %errorlevel%==1 (Dism /Online /Enable-Feature /FeatureName:IIS-ASPNET45 /All /Quiet /NoRestart)
 
-Dism /Online /Get-Features /format:table | findstr /i "DirectPlay" | findstr /i "Enabled" > NUL 2>&1
+findstr /i "DirectPlay" %Logs%\Capabilities.aio.txt | findstr /i "Enabled" > NUL 2>&1
 	if %errorlevel%==1 (Dism /Online /Enable-Feature /FeatureName:DirectPlay /All /Quiet /NoRestart)
 
 ::-----------------------
@@ -924,7 +944,7 @@ regsvr32 msapsspc.dll /SspcCreateSspiReg /s
 
 wsreset
 
-echo %R%[92m lem tamamland.%R%[0m
+echo %R%[92m lem tamamland%R%[0m
 set /p value=%R%[92m Menu iin%R%[96m "X"%R%[92m Yeniden balatmak iin%R%[96m "R"%R%[92m tulayn : %R%[0m
 	if %value%==R (shutdown -r -f -t 0)
 	if %value%==r (shutdown -r -f -t 0)
@@ -985,7 +1005,7 @@ Dism /Online /Cleanup-Image /StartComponentCleanup
 :: echo %R%[92m   Disk temizleme ilemi yaplyor...%R%[0m
 :: cleanmgr /verylowdisk /sagerun:5
 
-echo %R%[92m   lem tamamland. Ana menye aktarlyorsunuz...%R%[0m
+echo %R%[92m   lem tamamland%R%[0m
 timeout /t 1 /nobreak > NUL
 goto :eof
 
@@ -1019,12 +1039,12 @@ echo 
 echo   %R%[90mษอออออออออออออออออออออออออออออออออออออออออออออออออป%R%[0m
 echo   %R%[90mบ%R%[1;97m%R%[100m          Lisans Y”netimi / SLMGR.VBS            %R%[0m%R%[90mบ%R%[0m
 echo   %R%[90mฬอออออออออออออออออออออออออออออออออออออออออออออออออน%R%[0m
-echo   %R%[90mบ%R%[0m  %R%[32m 1.%C%[33m Lisans Gir %C%[90m[ipk]%C%[0m                           %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[0m  %R%[32m 2.%C%[33m Lisans Durumu %C%[90m[dli]%C%[0m                        %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[0m  %R%[32m 3.%C%[33m Lisans Durumu Detayl %C%[90m[dlv]%C%[0m                %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[0m  %R%[32m 4.%C%[33m Lisans Sresini งren %C%[90m[xpr]%C%[0m                %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[0m  %R%[32m 5.%C%[33m Lisans Sil %C%[90m[upk]%C%[0m                           %R%[90mบ%R%[0m
-echo   %R%[90mบ%R%[0m  %R%[32m 6.%C%[33m Lisans Sre Sfrla %C%[90m[rearm]%C%[0m                %R%[90mบ%R%[0m
+echo   %R%[90mบ%R%[0m  %R%[32m 1.%C%[33m Lisans Gir %C%[90m[ipk]                           บ%R%[0m
+echo   %R%[90mบ%R%[0m  %R%[32m 2.%C%[33m Lisans Durumu %C%[90m[dli]                        บ%R%[0m
+echo   %R%[90mบ%R%[0m  %R%[32m 3.%C%[33m Lisans Durumu Detayl %C%[90m[dlv]                บ%R%[0m
+echo   %R%[90mบ%R%[0m  %R%[32m 4.%C%[33m Lisans Sresini งren %C%[90m[xpr]                บ%R%[0m
+echo   %R%[90mบ%R%[0m  %R%[32m 5.%C%[33m Lisans Sil %C%[90m[upk]                           บ%R%[0m
+echo   %R%[90mบ%R%[0m  %R%[32m 6.%C%[33m Lisans Sre Sfrla %C%[90m[rearm]                บ%R%[0m
 echo   %R%[90mบ%R%[0m  %R%[32m X.%R%[36m Men%R%[0m                                       %R%[90mบ%R%[0m
 echo   %R%[90mศอออออออออออออออออออออออออออออออออออออออออออออออออผ%R%[0m
 set /p value=%C%[92m  lem : %C%[0m
@@ -1055,8 +1075,6 @@ set /p value= %R%[92m   Lisans : %R%[0m
 echo [%date% - %time%] ^| Slmgr.vbs ^| Slmgr Lisans(ipk), Windows lisansland >> %Location%\Logs
 slmgr /ipk %value%
 
-echo %R%[92m lem tamamland.%R%[0m
-timeout /t 2 /nobreak > NUL
 goto :eof
 
 :stop
@@ -1064,7 +1082,7 @@ goto :eof
 
 :icofix
 echo [%date% - %time%] ^| icofix ^| Simge sorunu giderildi. >> %Location%\Logs
-echo   %R%[1;97m%R%[42m                                 Simge hatas onarlyor...                                 %R%[0m
+echo   %R%[1;97m%R%[42m                                        ICON FIX                                            %R%[0m
 ie4uinit.exe -show
 taskkill /f /im explorer.exe > NUL 2>&1
 DEL /F /Q /A "%localappdata%\IconCache.db" > NUL 2>&1
@@ -1079,12 +1097,14 @@ goto :eof
 :stop
 :servicesmanagement
 cls
-mode con cols=55 lines=35
+mode con cols=55 lines=37
 Call :PowerRun
 title Hizmet Y”netimi / OgnitorenKs
 Dism /Online /Get-Features /format:table > %Logs%\servvalue.txt
 echo  %R%[90mษอออออออออออออออออออออออออออออออออออออออออออออออออออป%R%[0m
 echo  %R%[90mบ%R%[1;97m%R%[100m                  Hizmet Y”netimi                  %R%[0m%R%[90mบ%R%[0m
+echo  %R%[90mฬอออออออออออออออออออออออออออออออออออออออออออออออออออน%R%[0m
+echo  %R%[90mบ             %R%[42m %R%[0m:%R%[36m Ak        %R%[100m %R%[0m:%R%[36m Kapal              %R%[90mบ%R%[0m
 echo  %R%[90mฬอออออออออออออออออออออออออออออออออออออออออออออออออออน%R%[0m
 Call :serv.check "BthAvctpSvc bthserv BluetoothUserService BTAGService"
 echo  %R%[90mบ%R%[0m   %R%[32m 1%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Bluetooth hizmeti%C%[0m                    %R%[90mบ%R%[0m
@@ -1836,14 +1856,14 @@ set /p value= %R%[92m  lem : %R%[0m
 				   Call :sz "HKCR\Directory\shell\runas" "NoWorkingDirectory" "" 
 				   Call :vesz "HKCR\Directory\shell\runas\command" "cmd.exe /c takeown /f \"%%%%1\" /r /d y && ica \"%%%%1\" /grant administrators:F /t" 
 				   Call :sz "HKCR\Directory\shell\runas\command" "IsolatedCommand" "cmd.exe /c takeown /f \"%%%%1\" /r /d y && ica \"%%%%1\" /grant administrators:F /t" 
-				   echo %R%[92m lem tamamland.%R%[0m
+				   echo %R%[92m lem tamamland%R%[0m
 				   timeout /t 1 /nobreak > NUL
 				   goto :eof)
 	if %value%==2 (title Sahiplik al kaldrlyor... / OgnitorenKs
 				   echo [%date% - %time%] ^| WinSahiplik ^| Saง-tk "Sahiplik Al" kaldrld. >> %Location%\Logs
 				   Call :delete "HKCR\*\shell\runas"
 				   Call :delete "HKCR\Directory\shell\runas"
-				   echo %R%[92m lem tamamland.%R%[0m
+				   echo %R%[92m lem tamamland%R%[0m
 				   timeout /t 1 /nobreak > NUL
 				   goto :eof)
 	if %value%==x GOTO kontroll
@@ -1861,8 +1881,8 @@ echo 
 echo  %R%[90mษอออออออออออออออออออออออออออออออออออออออออออออออออออป%R%[0m
 echo  %R%[90mบ%R%[1;97m%R%[100m           CompactOS (Windows Sktrma)          %R%[0m%R%[90mบ%R%[0m
 echo  %R%[90mฬอออออออออออออออออออออออออออออออออออออออออออออออออออน%R%[0m
-echo  %R%[90mบ%R%[0m   %R%[32m 1.%C%[33m CompactOS %C%[90m[A€]%C%[0m                              %R%[0mบ%R%[0m
-echo  %R%[90mบ%R%[0m   %R%[32m 2.%C%[33m CompactOS %C%[90m[KAPAT]%C%[0m                           %R%[0mบ%R%[0m
+echo  %R%[90mบ%R%[0m   %R%[32m 1.%C%[33m CompactOS %C%[90m[A€]                              บ%R%[0m
+echo  %R%[90mบ%R%[0m   %R%[32m 2.%C%[33m CompactOS %C%[90m[KAPAT]                           บ%R%[0m
 echo  %R%[90mบ%R%[0m   %R%[32m X.%R%[36m Men%R%[0m                                        %R%[90mบ%R%[0m
 echo  %R%[90mศอออออออออออออออออออออออออออออออออออออออออออออออออออผ%R%[0m
 set /p value= %C%[92m lem :%C%[0m
@@ -1981,7 +2001,7 @@ set /p value= %C%[92m lem : %C%[0m
 echo [%date% - %time%] ^| Win11MenuChange ^| Taskbar boyut ayar "%value%" olarak ayarland. >> %Location%\Logs	
 Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "TaskbarSi" "%value%"
 Call :ExplorerReset
-echo %R%[92m lem tamamland.%R%[0m
+echo %R%[92m lem tamamland%R%[0m
 timeout /t 2 /nobreak > NUL
 goto :eof
 
@@ -2005,7 +2025,7 @@ set /p value= %C%[92m lem : %C%[0m
 echo [%date% - %time%] ^| Win11MenuLocation ^| Taskbar Location ayar "%value%" olarak ayarland. >> %Location%\Logs
 Call :binary "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\StuckRects3" "Settings" "30000000feffffff7af400000%value%0000003000000030000000000000000804000080070000380400006000000001000000"
 Call :ExplorerReset
-echo %R%[92m lem tamamland.%R%[0m
+echo %R%[92m lem tamamland%R%[0m
 timeout /t 2 /nobreak > NUL
 goto :eof
 
@@ -2030,7 +2050,7 @@ set /p value= %C%[92m lem : %C%[0m
 echo [%date% - %time%] ^| Win11MenuOld ^| Taskbar simge Locationu "%value%" olarak ayarland. >> %Location%\Logs
 Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "TaskbarAl" "%value%"
 Call :ExplorerReset
-echo %R%[92m lem tamamland.%R%[0m
+echo %R%[92m lem tamamland%R%[0m
 timeout /t 2 /nobreak > NUL
 goto :eof
 
@@ -2144,7 +2164,7 @@ set /p value=%C%[92m  lem : %C%[0m
 echo [%date% - %time%] ^| Win10EkranTepsi ^| Windows 10 Saat yan simgeri ayar "%value%" olarak ayarland. >> %Location%\Logs
 Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer" "EnableAutoTray" "%value%"
 Call :ExplorerReset
-echo %R%[92m lem tamamland.%R%[0m
+echo %R%[92m lem tamamland%R%[0m
 timeout /t 2 /nobreak > NUL
 goto :eof
 
@@ -2171,7 +2191,7 @@ echo [%date% - %time%] ^| Win10Bildirim ^| Windows 10 Bildirim alan ayar "%val
 Call :dword "HKCU\SOFTWARE\Policies\Microsoft\Windows\Explorer" "DisableNotificationCenter" "%value%"
 Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\Explorer" "DisableNotificationCenter" "%value%"
 Call :ExplorerReset
-echo %R%[92m lem tamamland.%R%[0m
+echo %R%[92m lem tamamland%R%[0m
 timeout /t 2 /nobreak > NUL
 goto :eof
 
@@ -2196,7 +2216,7 @@ set /p value= %C%[92m  lem : %C%[0m
 	
 Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Feeds" "EnableFeeds" "%value%"
 Call :ExplorerReset
-echo %R%[92m lem tamamland.%R%[0m
+echo %R%[92m lem tamamland%R%[0m
 timeout /t 2 /nobreak > NUL
 goto :eof
 
@@ -2261,7 +2281,7 @@ net start wuauserv > NUL 2>&1
 %PowerRun% sc config ClipSVC start= disabled
 %PowerRun% net stop ClipSVC
 
-echo %R%[92m lem tamamland. Menye aktarlyorsunuz...%R%[0m
+echo %R%[92m lem tamamland%R%[0m
 timeout /t 3 /nobreak
 goto :eof
 
@@ -2318,7 +2338,7 @@ regsvr32 msapsspc.dll /SspcCreateSspiReg /s
 
 :: Store reset
 wsreset
-echo %R%[92m lem tamamland. Menye aktarlyorsunuz...%R%[0m
+echo %R%[92m lem tamamland%R%[0m
 timeout /t 3 /nobreak
 goto :eof
 
@@ -2434,7 +2454,7 @@ echo   %R%[90mศอออออออออออออออออออออออออออออออออออออออออออออออออผ%R%[0m
 echo [%date% - %time%] ^| AdminMenu ^| Administrator aktifletirildi. >> %Location%\Logs
 net user administrator /active:yes
 net user administrator *
-echo %R%[92m lem tamamland. Menye aktarlyorsunuz...%R%[0m
+echo %R%[92m lem tamamland%R%[0m
 timeout /t 1 /nobreak > NUL
 goto AdminMenu
 
@@ -2448,7 +2468,7 @@ echo   %R%[90mบ%R%[1;97m%R%[100m           Administrator Kapatlyor...         
 echo   %R%[90mศอออออออออออออออออออออออออออออออออออออออออออออออออผ%R%[0m
 echo [%date% - %time%] ^| AdminMenu ^| Administrator kapatld. >> %Location%\Logs
 net user Administrator /active:no
-echo %R%[92m lem tamamland. Menye aktarlyorsunuz...%R%[0m
+echo %R%[92m lem tamamland%R%[0m
 timeout /t 1 /nobreak > NUL
 goto AdminMenu
 
@@ -2465,7 +2485,7 @@ set /p value=%C%[92m  Kullanc Ad : %C%[0m
 	if %value%==X GOTO AdminMenu
 echo [%date% - %time%] ^| AdminMenu ^| Admin grubuna %value% kullancs eklendi. >> %Location%\Logs
 net localgroup Administrators %value% /add 
-echo %R%[92m lem tamamland. Menye aktarlyorsunuz...%R%[0m
+echo %R%[92m lem tamamland%R%[0m
 timeout /t 2 /nobreak > NUL
 goto AdminMenu
 
@@ -2483,7 +2503,7 @@ set /p value=%C%[92m  Kullanc Ad : %C%[0m
 echo [%date% - %time%] ^| AdminMenu ^| Yeni kullanc "%value%" oluturuldu. >> %Location%\Logs
 net user %value% * /add
 
-echo %R%[92m lem tamamland. Menye aktarlyorsunuz...%R%[0m
+echo %R%[92m lem tamamland%R%[0m
 timeout /t 2 /nobreak > NUL
 goto AdminMenu
 
@@ -2501,7 +2521,7 @@ set /p value=%C%[92m  Kullanc Ad : %C%[0m
 echo [%date% - %time%] ^| AdminMenu ^| Kullanc "%value%" silindi. >> %Location%\Logs
 net user %value% /delete
 
-echo %R%[92m lem tamamland. Menye aktarlyorsunuz...%R%[0m
+echo %R%[92m lem tamamland%R%[0m
 timeout /t 2 /nobreak > NUL
 goto AdminMenu
 
@@ -2519,7 +2539,7 @@ set /p value=%C%[92m  Kullanc Ad : %C%[0m
 echo [%date% - %time%] ^| AdminMenu ^| Kullanc "%value%" ifre deงitirildi. >> %Location%\Logs
 net user %value% *
 
-echo %R%[92m lem tamamland. Menye aktarlyorsunuz...%R%[0m
+echo %R%[92m lem tamamland%R%[0m
 timeout /t 2 /nobreak > NUL
 goto AdminMenu
 
@@ -2567,162 +2587,14 @@ goto shutdownpc
 cls
 Call :PowerRun
 echo [%date% - %time%] ^| UpdateAfter ^| Gncelleme sonras temizlik b”lm altrld. >> %Location%\Logs
+
 echo %R%[92m Gncelleme sonras temizlik ilemi yaplyor.%R%[0m
 echo %R%[92m Defender kalntlar temizleniyor.%R%[0m
-%PowerRun% DEL /F /Q /A "%windir%\System32\CompatTelRunner.exe"
-%PowerRun% DEL /F /Q /A "%windir%\System32\drivers\MsSecFlt.sys"
-%PowerRun% DEL /F /Q /A "%windir%\System32\drivers\WdBoot.sys"
-%PowerRun% DEL /F /Q /A "%windir%\System32\drivers\WdFilter.sys"
-%PowerRun% DEL /F /Q /A "%windir%\System32\drivers\WdNisDrv.sys"
-%PowerRun% DEL /F /Q /A "%windir%\System32\smartscreen.exe"
-%PowerRun% DEL /F /Q /A "%windir%\System32\securityhealthhost.exe"
-%PowerRun% DEL /F /Q /A "%windir%\System32\securityhealthservice.exe"
-%PowerRun% DEL /F /Q /A "%windir%\System32\securityhealthsystray.exe"
-%PowerRun% DEL /F /Q /A "%windir%\System32\SgrmBroker.exe"
-%PowerRun% RD /S /Q "%programfiles%\Windows Defender Advanced Threat Protection"
-%PowerRun% RD /S /Q "%programfiles%\Windows Defender"
-%PowerRun% RD /S /Q "%programfiles%\Windows Security"
-%PowerRun% RD /S /Q "%programfiles(x86)%\Windows Security"
-%PowerRun% RD /S /Q "%programfiles(x86)%\Windows Defender"
-%PowerRun% RD /S /Q "%programfiles(x86)%\Windows Defender Advanced Threat Protection"
-%PowerRun% RD /S /Q "%programdata%\Microsoft\Windows Security Health"
-%PowerRun% RD /S /Q "%programdata%\Microsoft\Windows Defender Advanced Threat Protection"
-%PowerRun% RD /S /Q "%programdata%\Microsoft\Windows Defender"
-%PowerRun% RD /S /Q "%windir%\SystemApps\Microsoft.Windows.SecHealthUI_cw5n1h2txyewy"
-:: Servisler
-%PowerRun% net stop SecurityHealthService
-%PowerRun% sc delete SecurityHealthService
-%PowerRun% net stop Sense
-%PowerRun% sc delete Sense
-%PowerRun% net stop SgrmBroker
-%PowerRun% sc delete SgrmBroker
-%PowerRun% net stop WdNisSvc
-%PowerRun% sc delete WdNisSvc
-%PowerRun% net stop WinDefend
-%PowerRun% sc delete WinDefend 
-%PowerRun% net stop wscsvc
-%PowerRun% sc delete wscsvc 
 echo %R%[92m Hizmetler dzenleniyor...%R%[0m
-:: Akll kart
-%PowerRun% sc config SCardSvr start= disabled
-%PowerRun% net stop SCardSvr
-:: Akll kart cihaz numaralandrma hizmeti
-%PowerRun% sc config ScDeviceEnum start= disabled
-%PowerRun% net stop ScDeviceEnum
-:: Akll kart kaldrma ilkesi
-%PowerRun% sc config SCPolicySvc start= disabled
-%PowerRun% net stop SCPolicySvc
-:: Sertifika yayma (Akll Kart)
-%PowerRun% sc config CertPropSvc start= disabled
-%PowerRun% net stop CertPropSvc
-:: All joyn y”nlendirici hizmeti
-%PowerRun% sc config AJRouter start= disabled
-%PowerRun% net stop AJRouter
-:: BrancCache istemcisi
-%PowerRun% sc config PeerDistSvc start= disabled
-%PowerRun% net stop PeerDistSvc
-:: Coงrafi Location hizmeti
-:: %PowerRun% sc config Ifsvc start= disabled
-:: %PowerRun% net stop Ifsvc
-:: Czdan Hizmeti
-:: %PowerRun% sc config WalletService start= disabled
-:: %PowerRun% net stop WalletService
-:: Daงtlm baงlant izleme istemcisi
-%PowerRun% sc config TrkWks start= disabled
-%PowerRun% net stop TrkWks
-:: Baงl kullanc deneyimleri ve Telemetrisi
-%PowerRun% net stop DiagTrack
-%PowerRun% sc delete DiagTrack
-%PowerRun% net stop dmwappushservice
-%PowerRun% sc delete dmwappushservice
-%PowerRun% net stop diagnosticshub.standartcollector.service
-%PowerRun% sc delete diagnosticshub.standartcollector.service
-:: Diagnostic Execution Service (Tehis ve Sorun Giderme)
-%PowerRun% net stop diagsvc
-%PowerRun% sc delete diagsvc
-:: Dosya Gemii Hizmeti
-:: %PowerRun% sc config fhsvc start= disabled
-:: %PowerRun% net stop fhsvc
-:: Ebeveyn Kontrolleri
-:: %PowerRun% sc config WpcMonSvc start= disabled
-:: %PowerRun% net stop WpcMonSvc
-:: Fax
-:: %PowerRun% sc config fax start= disabled
-:: %PowerRun% net stop fax
-:: Kii hizmeti
-%PowerRun% sc config PimIndexMaintenanceSvc start= disabled
-%PowerRun% net stop PimIndexMaintenanceSvc
-:: Kurumsal uygulama y”netimi hizmeti
-%PowerRun% sc config EntAppSvc start= disabled
-%PowerRun% net stop EntAppSvc
-:: Edge gncelleme hizmeti
-%PowerRun% net stop edgeupdate
-%PowerRun% net stop edgeupdatem
-%PowerRun% net stop MicrosoftEdgeElevationService
-%PowerRun% sc config edgeupdate start= disabled
-%PowerRun% sc config edgeupdatem start= disabled
-%PowerRun% sc config MicrosoftEdgeElevationService start= disabled
-:: Parekende G”steri hizmeti
-%PowerRun% sc config RetailDemo start= disabled
-%PowerRun% net stop RetailDemo
-:: Program Uyumluluk Yardmcs Hizmeti
-%PowerRun% sc config PcaSvc start= disabled
-%PowerRun% net stop PcaSvc
-:: Tanlama lkesi Hizmeti
-:: %PowerRun% sc config DPS start= disabled
-:: %PowerRun% net stop DPS
-:: Karma Gereklik
-%PowerRun% sc config SharedRealitySvc start= disabled
-%PowerRun% net stop SharedRealitySvc
-%PowerRun% sc config VacSvc start= disabled
-%PowerRun% net stop VacSvc
-%PowerRun% sc config perceptionsimulation start= disabled
-%PowerRun% net stop perceptionsimulation
-%PowerRun% sc config spectrum start= disabled
-%PowerRun% net stop spectrum
-%PowerRun% net stop MixedRealityOpenXRSvc
-%PowerRun% sc config MixedRealityOpenXRSvc start= disabled
-:: Windows Hata Raporlama
-%PowerRun% sc config WerSvc start= disabled
-%PowerRun% net stop WerSvc
-:: Windows Search
-:: %PowerRun% net stop WSearch
-:: %PowerRun% sc config WSearch start= disabled
-:: €evrimd dosyalar
-%PowerRun% sc config CscService start= disabled
-%PowerRun% net stop CscService
-:: NFC/SE hizmeti
-%PowerRun% sc config SEMgrSvc start= disabled
-%PowerRun% net stop SEMgrSvc
-:: nerilen Sorun giderme hizmeti
-%PowerRun% net stop TroubleshootingSvc
-%PowerRun% sc config TroubleshootingSvc start= disabled
-:: ndirilen haritalar y”neticisi
-%PowerRun% net stop MapsBroker
-%PowerRun% sc config MapsBroker start= disabled
-:: Kii verileri
-%PowerRun% net stop PimIndexMainteanceSvc
-%PowerRun% sc config PimIndexMainteanceSvc start= disabled
-:: Natural Kimlik Doงrulamas
-:: %PowerRun% net stop NaturalAuthentication
-:: %PowerRun% sc config NaturalAuthentication start= disabled
-:: Perakende g”steri hizmeti
-%PowerRun% net stop RetailDemo
-%PowerRun% sc config RetailDemo start= disabled
-:: Resim alma olaylar
-:: %PowerRun% net stop WiaRpc
-:: %PowerRun% sc config WiaRpc start= disabled
-:: Windows resim alma (WIA) 
-:: %PowerRun% net stop StiSvc
-:: %PowerRun% sc config StiSvc start= disabled
-:: Temalar
-%PowerRun% net stop Themes
-%PowerRun% sc config Themes start= disabled
-:: €alma klas”rleri istemcisi
-%PowerRun% net stop workfolderssvc
-%PowerRun% sc config workfolderssvc start= disabled
-:: kincil oturum ama 
-:: %PowerRun% sc config seclogon start= disabled
+
+%PowerRun% %Location%\Extra\Update.After.bat
+timeout /t 7 /nobreak > NUL
+
 echo %R%[92m Regedit kaytlar dzenleniyor.%R%[0m
 :: Defender
 Call :dword "HKLM\SOFTWARE\Microsoft\Windows Defender Security Center\Notifications" "DisableNotifications" "1"
@@ -2734,7 +2606,7 @@ Call :dword "HKLM\SOFTWARE\Microsoft\Windows Defender\Features" "TamperProtectio
 Call :dword "HKLM\SOFTWARE\Microsoft\Windows Defender\Features" "TamperProtectionSource" "2"
 Call :dword "HKLM\SOFTWARE\Microsoft\Windows Defender\Signature Updates" "FirstAuGracePeriod" "0"
 Call :dword "HKLM\SOFTWARE\Microsoft\Windows Defender\UX Configuration" "DisablePrivacyMode" "1"
-Call :dword "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\StartupApproved\Run" "SecurityHealth" /t REG_BINARY /d "030000000000000000000000"
+Call :binary "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\StartupApproved\Run" "SecurityHealth" "030000000000000000000000"
 Call :dword "HKLM\SOFTWARE\Policies\Microsoft\MRT" "DontOfferThroughWUAU" "1"
 Call :dword "HKLM\SOFTWARE\Policies\Microsoft\MRT" "DontReportInfectionInformation" "1"
 Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Systray" "HideSystray" "1"
@@ -2783,7 +2655,7 @@ Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet" "SubmitSa
 :: SmartScreen
 ::for "tokens=* USEBACKQ" %i in (`wmic.exe useraccount where "name="%username%"" get sid ^| findstr "S-"`) do set currentusername=%i
 ::set currentusername=%currentusername:~0,-3%
-FOR "tokens=2" %%a in ('Powershell -command "Get-CimInstance -ClassName Win32_UserAccount | Select-Object -Property Name,SID" ^| Find "%username%"') do set currentusername=%%a
+FOR /F "tokens=2" %%a in ('Powershell -command "Get-CimInstance -ClassName Win32_UserAccount | Select-Object -Property Name,SID" ^| Find "%username%"') do set currentusername=%%a
 Call :dword "HKU\%currentusername%\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" "EnableWebContentEvaluation" 0
 Call :dword "HKU\%currentusername%\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" "PreventOverride" 0
 Call :dword "HKU\%currentusername%\SOFTWARE\Policies\Microsoft\Edge" "SmartScreenEnabled" 0
@@ -2986,7 +2858,6 @@ Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\TabletPC" "PreventHandwrit
 :: Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\StorageSense\Parameters\StoragePolicy" "512" "0" & :: Depolama algs
 :: Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\StorageSense\Parameters\StoragePolicy" "2048" "0" & :: ndirilen klas”rnde uzun sre duran dosyalar sil
 
-
 bcdedit /deletevalue useplatformclock > NUL 2>&1
 bcdedit /set {current} recoveryenabled no > NUL 2>&1
 powercfg /h off > NUL 2>&1
@@ -3018,7 +2889,7 @@ schtasks /change /TN "\Microsoft\Windows\UpdateOrchestrator\Schedule Scan" /DISA
 schtasks /change /TN "\Microsoft\Windows\UpdateOrchestrator\Schedule Scan Static Task" /DISABLE > NUL 2>&1
 schtasks /change /TN "\Microsoft\Windows\UpdateOrchestrator\UpdateModelTask" /DISABLE > NUL 2>&1
 schtasks /change /TN "\Microsoft\Windows\WaaSMedic\PerformRemediation" /DISABLE > NUL 2>&1
-echo %R%[92m lem tamamland.%R%[0m
+echo %R%[92m lem tamamland%R%[0m
 timeout /t 2 /nobreak > NUL
 goto menu
 
@@ -3069,9 +2940,9 @@ Call :Location
 dir /b "%Location%\Files\PowerRun.exe" > NUL 2>&1
 	if %errorlevel%==1 (:: echo %R%[1;97m%R%[41m HATA! PowerRun.exe dosyas bulunamad. Yeniden indiriliyor... %R%[0m
 						Call :Logss "PowerRun indiriliyor" "PowerRun.exe dosyas bulunamad. Yeniden indirildi."
-						Call :wget3 "https://docs.google.com/uc?export=download&id=10UikjZGEvcnB9j6gDYmURZhmhruiKbfK" "%Location%\Download\PowerRun.zip"
+						%Location%\Files\wget.exe --no-check-certificate "https://docs.google.com/uc?export=download&id=10UikjZGEvcnB9j6gDYmURZhmhruiKbfK" -O "%Location%\Download\PowerRun.zip" > NUL 2>&1
 						powershell -command "Expand-Archive -Force '%Location%\Download\PowerRun.zip' '%Location%\Files'"
-						timeout /t 2 /nobreak > NUL)
+						timeout /t 1 /nobreak > NUL)
 						
 set PowerRun=%Location%\Files\PowerRun.exe /SW:0 %SystemRoot%\system32\cmd.exe /c
 goto :EOF
@@ -3127,7 +2998,7 @@ ping -n 1 www.google.com.tr -w 20000 > NUL
 						timeout /t 4 /nobreak > NUL
 						goto :eof)
 echo [%date% - %time%] ^| wget ^| "%~2" indirildi. "%~1" / "%download%" >> %Location%\Logs
-Files\wget.exe -c -q --no-check-certificate --show-progress "%~1" -O %download%\%~2"
+%Location%\Files\wget.exe -c -q --no-check-certificate --show-progress "%~1" -O %download%\%~2"
 "%download%\%~2" %~3
 goto :eof
 
@@ -3144,7 +3015,7 @@ ping -n 1 www.google.com.tr -w 20000 > NUL
 						timeout /t 4 /nobreak > NUL
 						goto :eof)
 echo [%date% - %time%] ^| wget2 ^| "%~2" indirildi. "%~1" / "%download%" >> %Location%\Logs
-Files\wget.exe -c -q --no-check-certificate --show-progress "%~1" -O %download%\%~2
+%Location%\Files\wget.exe -c -q --no-check-certificate --show-progress "%~1" -O %download%\%~2
 goto :eof
 
 :: ========================================================================================================
@@ -3160,7 +3031,7 @@ ping -n 1 www.google.com.tr -w 20000 > NUL
 						timeout /t 4 /nobreak > NUL
 						goto :eof)
 echo [%date% - %time%] ^| wget3 ^| "%~2" indirildi. "%~1" >> %Location%\Logs
-Files\wget -c -q --no-check-certificate --show-progress "%~1" -O %~2
+%Location%\Files\wget -c -q --no-check-certificate --show-progress "%~1" -O %~2
 goto :eof
 
 :: ========================================================================================================

@@ -1,3 +1,4 @@
+:: ==============================================================================================================================
 ::                               NOTEPAD++ > Kodlama > Karakter Takm > Trk‡e > OEM857
 :: ==============================================================================================================================
 ::
@@ -57,17 +58,19 @@ set Mount=%Location%\Edit\Mount
 :AdminKontrol
 mode con cols=61 lines=20
 %windir%\system32\reg.exe query "HKU\S-1-5-19" >nul 2>&1 || (
-echo  ___________________________________________________________
 echo 
-echo                           -------
-echo                       %R%[91m***  UYARI ***%R%[0m
-echo                           -------
 echo 
-echo              %R%[92mSa§-Tk Y”netici olarak ‡alŸtrnz...%R%[0m 
 echo 
-echo  ___________________________________________________________
 echo 
-echo             %R%[92mKapatmak i‡in herhangi bir tuŸa basnz.%R%[0m 
+echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
+echo  %R%[90mº                                                         º%R%[0m
+echo  %R%[90mº%R%[1;97m%R%[41m               ! UYARI !          ! UYARI !              %R%[0m%R%[90mº%R%[0m
+echo  %R%[90mº                                                         º%R%[0m
+echo  %R%[90mº%R%[1;97m%R%[42m            Sa§-Tk Y”netici olarak ‡alŸtrn           %R%[0m%R%[90mº%R%[0m
+echo  %R%[90mº                                                         º%R%[0m
+echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
+echo 
+echo              %R%[92mKapatmak i‡in herhangi bir tuŸa basnz%R%[0m
 pause > nul
 exit
 )
@@ -550,8 +553,8 @@ echo  %R%[90mº%R%[1;97m%R%[100m                        Driver Ykle Offline     
 echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
 echo [%date% - %time%] ^| DriverYukle ^| Driver yklendi. Mount=%Mount% >> %Location%\Logs
 Dism /Image:%Mount% /Add-Driver /Driver:%Location%\Edit\Driver /Recurse
-	if %errorlevel%==1 (RD /S /Q "%Location%\Edit\Driver"
-						mkdir "%Location%\Edit\Driver"
+	if %errorlevel%==1 (RD /S /Q "%Location%\Edit\Driver" > NUL 2>&1
+						mkdir "%Location%\Edit\Driver" > NUL 2>&1
 						echo [%date% - %time%] ^| DriverYukle ^| HATA! Driver yklenirken hata oluŸtu. Mount=%Mount% >> %Location%\Logs
 						goto DriverYukle)
 
@@ -854,8 +857,8 @@ set /p MerkezWim=%C%[97m  %C%[92m Klas”r veya Dosya yolu : %C%[0m
 	
 echo %MerkezWim%\ > %Location%\Edit\Logs\Slash.txt
 Find /C /I "\\" %Location%\Edit\Logs\Slash.txt > NUL
-	if %errorlevel%==0 (echo %R%[91m HATA! ISO dosyas ba§lanamaz.
-						echo %R%[92m Klas”re ‡karp deneyiniz.
+	if %errorlevel%==0 (echo %R%[91m HATA! ISO dosyas ba§lanamaz.%R%[0m
+						echo %R%[92m Klas”re ‡karp deneyiniz.%R%[0m
 						echo [%date% - %time%] ^| degisken4 ^| HATA! ^> ISO kalb ba§lanmaya ‡alŸt. "%MerkezWim%" >> %Location%\logs
 						timeout /t 5 /nobreak > NUL
 						goto WindowsEditMenu)
@@ -891,7 +894,6 @@ echo [%date% - %time%] ^| SetupDownload ^| Setup.zip dosyas indirildi >> %Locat
 goto :eof
 
 :icodownload
-echo
 FOR /F "tokens=1" %%i in ('FIND "Newico.zip" %Location%\Extra\Links.bat') do set link=%%i
 %Location%\Files\wget -q --no-check-certificate --show-progress "%link%" -O %Location%\Files\Newico.zip
 echo [%date% - %time%] ^| icodownload ^|  Newico.zip dosyas indirildi >> %Location%\logs

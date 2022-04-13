@@ -1,3 +1,4 @@
+:: ==============================================================================================================================
 ::                               NOTEPAD++ > Kodlama > Karakter Takm > Trk‡e > OEM857
 :: ==============================================================================================================================
 ::
@@ -1038,7 +1039,6 @@ echo powershell -command "Expand-Archive -Force 'C:\OgnitorenKs.Toolbox\Katilims
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
 goto :eof
 
-
 ::------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 :OgnitorenKsToolbox
@@ -1146,7 +1146,6 @@ echo sc delete dmwappushservice ^> NUL
 copy /y "%Location%\Files\DevManView.exe" "%Mount%\OgnitorenKs.Toolbox\Files"
 goto :eof
 
-
 :Svchost
 Find "SVCHost" %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat > NUL 2>&1
 	if %errorlevel%==0 (goto :eof)
@@ -1213,7 +1212,6 @@ Call :RegYukle
 reg add "HKLM\OG_SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /v "Katilimsiz" /t REG_SZ /d "C:\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat" /f
 Call :RegTopla
 goto :eof
-
 
 :: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
 

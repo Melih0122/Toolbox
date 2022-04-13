@@ -1,4 +1,6 @@
+:: ==============================================================================================================================
 ::                               NOTEPAD++ > Encoding > Character Set > Turkish > OEM857
+::                               NOTEPAD++ > Kodlama  > Karekter Set  > Turkce  > OEM857
 :: ==============================================================================================================================
 ::
 ::       þþþþþþþ   þþþþþþ   þþ    þþ þþþþ þþþþþþþþ  þþþþþþþ  þþþþþþþþ  þþþþþþþþ þþ    þþ þþ    þþ  þþþþþþ
@@ -117,6 +119,7 @@ https://api.wemod.com/client/download Wemod.exe
 :15
 :: https://support.google.com/chrome/a/answer/7650032?hl=tr
 https://dl.google.com/tag/s/appguid%253D%257B8A69D345-D564-463C-AFF1-A69D9E530F96%257D%2526iid%253D%257BBEF3DB5A-5C0B-4098-B932-87EC614379B7%257D%2526lang%253Den%2526browser%253D4%2526usagestats%253D1%2526appname%253DGoogle%252520Chrome%2526needsadmin%253Dtrue%2526ap%253Dx64-stable-statsdef_1%2526brand%253DGCEB/dl/chrome/install/GoogleChromeEnterpriseBundle64.zip?_ga%3D2.8891187.708273100.1528207374-1188218225.1527264447 Chrome.zip
+https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B97D4FC08-015B-7BC4-F774-D9C821FA4479%7D%26lang%3Den%26browser%3D4%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dtrue%26ap%3Dx64-stable-statsdef_0%26brand%3DGCEA/dl/chrome/install/googlechromestandaloneenterprise64.msi Chrom.msi
 
 :16
 https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=tr Firefox.exe
@@ -242,6 +245,7 @@ https://www.strem.io/download?platform=windows&four=true Stremio.exe
 :47
 :: https://www.msi.com/Landing/afterburner/graphics-cards
 https://ftp.nluug.nl/pub/games/PC/guru3d/afterburner/[Guru3D.com]-MSIAfterburner.zip MSIAfterburner.zip
+https://files01.tchspt.com/temp/MSIAfterburnerSetup464.exe Afterburne.exe
 
 :48
 :: http://www.hibitsoft.ir/Uninstaller.html

@@ -43,6 +43,18 @@ echo [%date% - %time%] ^| ToolboxUpdate ^| OgnitorenKs.Toolbox.bat gÅncelleütirm
 ping -n 1 www.google.com.tr -w 20000 > NUL
 	if %errorlevel%==1 (Call :netkontrol&exit)
 	
+DEL /F /Q /A "C:\OgnitorenKs.Toolbox\OgnitorenKs.Toolbox.bat" > NUL 2>&1
+RD /S /Q "C:\OgnitorenKs.Toolbox\Download" > NUL 2>&1
+RD /S /Q "C:\OgnitorenKs.Toolbox\Edit" > NUL 2>&1
+RD /S /Q "C:\OgnitorenKs.Toolbox\Files" > NUL 2>&1
+DEL /F /Q /A "C:\OgnitorenKs.Toolbox\Extra\Links.bat" > NUL 2>&1
+DEL /F /Q /A "C:\OgnitorenKs.Toolbox\Extra\Sistem.Hakkinda.bat" > NUL 2>&1
+DEL /F /Q /A "C:\OgnitorenKs.Toolbox\Extra\Pingolc.bat" > NUL 2>&1
+DEL /F /Q /A "C:\OgnitorenKs.Toolbox\Extra\Off.Katilimsiz.bat" > NUL 2>&1
+DEL /F /Q /A "C:\OgnitorenKs.Toolbox\Extra\On.Katilimsiz.bat" > NUL 2>&1
+DEL /F /Q /A "C:\OgnitorenKs.Toolbox\Extra\Windows.Editor.bat" > NUL 2>&1
+DEL /F /Q /A "C:\OgnitorenKs.Toolbox\Extra\PowerChoice.bat" > NUL 2>&1
+	
 :: wget.exe dosyasç kontrol edilir.	
 dir /b C:\OgnitorenKs.Toolbox\Files\wget.exe > NUL 2>&1
 	if %errorlevel%==1 (Call :wget)	
@@ -65,8 +77,8 @@ Call :ogni
 :: òndirilen OgnitorenKs.Toolbox.zip dosyasç C:\OgnitorenKs.Toolbox klasîrÅ iáerisine áçkarçlçr.
 powershell -command "Expand-Archive -Force 'C:\OgnitorenKs.Toolbox\OgnitorenKs.Toolbox.zip' 'C:\OgnitorenKs.Toolbox'"
 :: Kçsayollar masaÅstÅne gînderilir.
-move /y "C:\OgnitorenKs.Toolbox\OgnitorenKs.Toolbox.lnk" "C:\Users\%username%\Desktop"
-move /y "C:\OgnitorenKs.Toolbox\PowerChoice.lnk" "C:\Users\%username%\Desktop"
+move /y "C:\OgnitorenKs.Toolbox\OgnitorenKs.Toolbox.lnk" "C:\Users\%username%\Desktop" > NUL 2>&1
+move /y "C:\OgnitorenKs.Toolbox\PowerChoice.lnk" "C:\Users\%username%\Desktop" > NUL 2>&1
 cls
 Call :bosluk
 echo                     %R%[92m OgnitorenKs Toolbox GÅncelleniyor...%R%[0m

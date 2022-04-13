@@ -1,3 +1,4 @@
+:: ==============================================================================================================================
 ::                               NOTEPAD++ > Kodlama > Karakter Takm > Trk‡e > OEM857
 :: ==============================================================================================================================
 ::
@@ -39,7 +40,9 @@ call :ColorEnd
 :: %R%[37m > Men i‡i beyaz renk
 :: %R%[90m > €er‡eve gri rengi
 :: %R%[93m > Men i‡i yedek al ksm. Parlak sar
-
+:: %ESC%[96m > Multiple choice text color 
+:: %ESC%[1;97m > Color of text inside header padding
+:: %ESC%[100m > Title fill color 
 :: ==============================================================================================================================
 
 mkdir "%Mount%\OgnitorenKs.Toolbox\Katilimsiz" > NUL 2>&1
