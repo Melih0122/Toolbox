@@ -10,11 +10,16 @@
 
 - Toolbox'ı hazırladığım sistemlerde temel programları indirip, basit bir şekilde sistem üzerinde düzenleme yapması için hazırladım.
 - Sürekli olarak güncellenecektir. Toolbox'ı indirmek için aşağıdaki linkleri kullanabilirsiniz.
-- ► https://docs.google.com/uc?export=download&id=19uNjxzHFY5A6g4mFg8FirFTnyL2R0HZ3
+- ► Toolbox.TR  = https://docs.google.com/uc?export=download&id=19uNjxzHFY5A6g4mFg8FirFTnyL2R0HZ3
+- ► Toolbox.ENG = https://docs.google.com/uc?export=download&id=1vIa4FYNI6YS5l53Awusw4zS2IRvd6VFf
+- ► Toolbox.8.1 = https://docs.google.com/uc?export=download&id=1k1Z3c1TE8a7K-lqKlozg6MJu_SPh3fmb
 	
 - OgnitorenKs.Toolbox katılımsız kurulum dosyasını indirmek için aşağıdaki "Toolbox.Update.bat" dosyasını indirip yönetici olarak çalıştırın.
-- ► https://docs.google.com/uc?export=download&id=19uNjxzHFY5A6g4mFg8FirFTnyL2R0HZ3
-	
+- ► Toolbox.TR  = https://docs.google.com/uc?export=download&id=19uNjxzHFY5A6g4mFg8FirFTnyL2R0HZ3
+- ► Toolbox.ENG = https://docs.google.com/uc?export=download&id=1wTOKKhNr0JkpYaEM50KKJpRD3PTRL09e
+- ► Toolbox.8.1 = https://docs.google.com/uc?export=download&id=12podfFYq5NujVr3mCHtMlyaa2nAFt-Em
+
+
 ### İstek ve önerileriniz olursa, iletişim;
 - ► Discord: OgnitorenKs#2737 
 - ► Mail: ognitorenks@gmail.com
