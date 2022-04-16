@@ -33,7 +33,7 @@
 ::     Sistem Hakkçnda - RAM soket yapçsçnçn eklenmesi.
 ::     Sistem Hakkçnda - Sistem format tarihinin eklenmesi.
 ::  ----------------------
-::   KaanBeyhan [DOGGEST]
+::   KaanBeyhan [Denizlili]
 ::  ----------------------
 ::     òndirme iülemlerinde ilerleme áubußunun eklenmesi.
 ::  ---------
@@ -48,9 +48,6 @@
 :: ==============================================================================================================================
 :: Toolbox iáinde kullançlan yazçlçmlar;
 :: ------------------------------------
-:: >> WindowsAppBoss > https://github.com/jason-grimme/WindowsAppBoss
-::    Microsoft Store yÅklÅ uygulamalarç kaldçrçp yÅklemeye yarayan yazçlçm. 
-::
 :: >> Folder2ISO     > https://www.trustfm.net/software/utilities/Folder2Iso.php
 ::    Klasîr iáindeki verileri ISO áevirmeye yarayan kÅáÅk boyutlu bir yazçlçm.
 ::
@@ -62,9 +59,6 @@
 ::
 :: >> oscdimg        > https://api.256file.com/oscdimg.exe/tr-download-87465.html
 ::    ISO dosyasç oluüturmaya yarayan yazçlççm.
-::
-:: >> ReIconCache    > https://www.sordum.org/9194/rebuild-shell-icon-cache-v1-3/
-::    Icon înbellißini temizlemeye yarayan yazçlçm
 ::
 :: ==============================================================================================================================
 echo off
@@ -143,7 +137,7 @@ dir /b "%Location%\Files\wget.exe" > NUL 2>&1
 						echo   %R%[1;97m%R%[41m                                Wget.exe dosyasç bulunamadç                                 %R%[0m
 						echo   %R%[1;97m%R%[42m                                    Yeniden indiriliyor                                     %R%[0m
 						Call :netkontrol
-						powershell -command "& { iwr https://eternallybored.org/misc/wget/1.21.2/64/wget.exe -OutFile %Location%\Files\wget.exe }")
+						powershell -command "& { iwr https://eternallybored.org/misc/wget/1.21.3/64/wget.exe -OutFile %Location%\Files\wget.exe }")
 
 :: ==============================================================================================================================
 
@@ -185,7 +179,7 @@ echo %caption2% > NUL
 	if %caption2%==10 (set editmenugo=Win10SettingsMenu) 
 	if %caption2%==11 (set editmenugo=Win11SettingsMenu)
 
-set version=2.6.2
+set version=2.6.3
 
 ::set editmenu=Windows 11 Edit
 ::set editmenugo=Win11SettingsMenu
@@ -221,15 +215,15 @@ echo   %R%[90m∫%R%[32m  5.%C%[33m Telegram             %R%[90m∫%R%[32m  31.%C%[3
 echo   %R%[90m∫%R%[32m  6.%C%[33m Zoom                 %R%[90m∫%R%[32m  32.%C%[36m ShareX                 %R%[90m∫%R%[32m 57.%C%[33m GÅncelleme Sonrasç Temizlik %R%[90m∫%R%[0m
 echo   %R%[90m∫%R%[32m  7.%C%[36m EpicGames            %R%[90m∫%R%[32m  33.%C%[36m Audacity               %R%[90m∫%R%[32m 58.%C%[33m Windows-Market Onar         %R%[90m∫%R%[0m
 echo   %R%[90m∫%R%[32m  8.%C%[36m Steam                %R%[90m∫%R%[32m  34.%C%[36m K-Lite Codec           %R%[90m∫%R%[32m 59.%C%[33m PC Temizle                  %R%[90m∫%R%[0m
-echo   %R%[90m∫%R%[32m  9.%C%[36m GOG Galaxy           %R%[90m∫%R%[32m  35.%C%[36m VLC Media Player       %R%[90m∫%R%[32m 60.%C%[36m Windows App Boss%C%[90m [APP]      ∫%R%[0m
-echo   %R%[90m∫%R%[32m 10.%C%[36m Uplay                %R%[90m∫%R%[32m  36.%C%[36m Aimp                   %R%[90m∫%R%[32m 61.%C%[36m Folder2ISO%C%[90m [APP]            ∫%R%[0m
-echo   %R%[90m∫%R%[32m 11.%C%[36m Origin               %R%[90m∫%R%[32m  37.%C%[36m Any Video Converter    %R%[90m∫%R%[32m 62.%C%[33m Fat32 to NTFS               %R%[90m∫%R%[0m
-echo   %R%[90m∫%R%[32m 12.%C%[36m Cheat Engine         %R%[90m∫%R%[32m  38.%C%[33m Free Download Manager  %R%[90m∫%R%[32m 63.%C%[33m Ping ôláer%C%[90m [*]              ∫%R%[0m
-echo   %R%[90m∫%R%[32m 13.%C%[36m Wemod                %R%[90m∫%R%[32m  39.%C%[33m ònt Download Manager   %R%[90m∫%R%[32m 64.%C%[33m Lisans Yînetimi%C%[90m [M]         ∫%R%[0m
-echo   %R%[90m∫%R%[32m 14.%C%[33m Google Chrome        %R%[90m∫%R%[32m  40.%C%[33m ByClick Downloader     %R%[90m∫%R%[32m 65.%C%[33m Kullancç Hesap Yînetimi%C%[90m [M] ∫%R%[0m
-echo   %R%[90m∫%R%[32m 15.%C%[33m Mozilla Firefox      %R%[90m∫%R%[32m  41.%C%[33m Qbittorrent            %R%[90m∫%R%[32m 66.%C%[33m Sistem Hakkçnda%C%[90m [*]         ∫%R%[0m
-echo   %R%[90m∫%R%[32m 16.%C%[33m Brave                %R%[90m∫%R%[32m  42.%C%[33m GlassWire              %R%[90m∫%R%[32m 67.%C%[33m Wifi Crack                  %R%[90m∫%R%[0m
-echo   %R%[90m∫%R%[32m 17.%C%[33m Microsoft Edge       %R%[90m∫%R%[32m  43.%C%[33m TeamViewer             %R%[90m∫%R%[32m 68.%C%[33m Zaman Ayarlç PC Kapat%C%[90m [M]   ∫%R%[0m
+echo   %R%[90m∫%R%[32m  9.%C%[36m GOG Galaxy           %R%[90m∫%R%[32m  35.%C%[36m VLC Media Player       %R%[90m∫%R%[32m 60.%C%[36m Folder2ISO%C%[90m [APP]            ∫%R%[0m
+echo   %R%[90m∫%R%[32m 10.%C%[36m Uplay                %R%[90m∫%R%[32m  36.%C%[36m Aimp                   %R%[90m∫%R%[32m 61.%C%[36m Fat32 to NTFS               %R%[90m∫%R%[0m
+echo   %R%[90m∫%R%[32m 11.%C%[36m Origin               %R%[90m∫%R%[32m  37.%C%[36m Any Video Converter    %R%[90m∫%R%[32m 62.%C%[33m Ping ôláer%C%[90m [*]              ∫%R%[0m
+echo   %R%[90m∫%R%[32m 12.%C%[36m Cheat Engine         %R%[90m∫%R%[32m  38.%C%[33m Free Download Manager  %R%[90m∫%R%[32m 63.%C%[33m Lisans Yînetimi%C%[90m [M]         ∫%R%[0m
+echo   %R%[90m∫%R%[32m 13.%C%[36m Wemod                %R%[90m∫%R%[32m  39.%C%[33m ònt Download Manager   %R%[90m∫%R%[32m 64.%C%[33m Kullancç Hesap Yînetimi%C%[90m [M] ∫%R%[0m
+echo   %R%[90m∫%R%[32m 14.%C%[33m Google Chrome        %R%[90m∫%R%[32m  40.%C%[33m ByClick Downloader     %R%[90m∫%R%[32m 65.%C%[33m Sistem Hakkçnda%C%[90m [*]         ∫%R%[0m
+echo   %R%[90m∫%R%[32m 15.%C%[33m Mozilla Firefox      %R%[90m∫%R%[32m  41.%C%[33m Qbittorrent            %R%[90m∫%R%[32m 66.%C%[33m Wifi Crack                  %R%[90m∫%R%[0m
+echo   %R%[90m∫%R%[32m 16.%C%[33m Brave                %R%[90m∫%R%[32m  42.%C%[33m GlassWire              %R%[90m∫%R%[32m 67.%C%[33m Zaman Ayarlç PC Kapat%C%[90m [M]   ∫%R%[0m
+echo   %R%[90m∫%R%[32m 17.%C%[33m Microsoft Edge       %R%[90m∫%R%[32m  43.%C%[33m TeamViewer             %R%[90m∫%R%[0m                                 %R%[90m∫%R%[0m 
 echo   %R%[90m∫%R%[32m 18.%C%[37m ISLC                 %R%[90m∫%R%[32m  44.%C%[33m Hamachi                %R%[90m∫%R%[0m                                 %R%[90m∫%R%[0m
 echo   %R%[90m∫%R%[32m 19.%C%[37m MemReduct            %R%[90m∫%R%[32m  45.%C%[33m Stremio                %R%[90m∫%R%[0m                                 %R%[90m∫%R%[0m 
 echo   %R%[90m∫%R%[32m 20.%C%[36m Libre Office         %R%[90m∫%R%[32m  46.%C%[36m MSI Afterburner        %R%[90m∫%R%[0m                                 %R%[90m∫%R%[0m 
@@ -304,15 +298,14 @@ set /p menu= %C%[92m  òülem : %C%[0m
 	if %menu%==57 GOTO UpdateAfter
 	if %menu%==58 (Call :WindowsRepair)
 	if %menu%==59 (Call :PCTemizle)
-	if %menu%==60 (Call :AppxManager)
-	if %menu%==61 (Call :FoldertoISO)
-	if %menu%==62 (Call :Fat32toNTFS)
-	if %menu%==63 (Call :PingMeter)
-	if %menu%==64 GOTO Slmgrvbs
-	if %menu%==65 GOTO AdminMenu
-	if %menu%==66 (Call :SistemHakkinda)
-	if %menu%==67 (Call :wificrackarchley)
-	if %menu%==68 goto shutdownpc
+	if %menu%==60 (Call :FoldertoISO)
+	if %menu%==61 (Call :Fat32toNTFS)
+	if %menu%==62 (Call :PingMeter)
+	if %menu%==63 GOTO Slmgrvbs
+	if %menu%==64 GOTO AdminMenu
+	if %menu%==65 (Call :SistemHakkinda)
+	if %menu%==66 (Call :wificrackarchley)
+	if %menu%==67 goto shutdownpc
 	if %menu%==97 (start https://github.com/OgnitorenKs/OgnitorenKs.Toolbox&goto menu)
 	if %menu%==98 (Call :Logss "Toolbox.Update" "Toolbox gÅncelleme aracç áalçütçrçldç."
 				   Powershell -command "Start-Process '%Location%\Extra\Toolbox.Update.bat'"&exit)
@@ -569,10 +562,8 @@ Call :wget "%link%" Wemod.exe --silent
 goto :eof
 
 :Download14
-FOR /F "tokens=1" %%i in ('FIND "Chrome" %Location%\Extra\Links.bat') do set link=%%i
-Call :wget2 "%link%" Chrome.zip /qn
-Call :ZipExport Chrome.zip
-"%download%\Chrome\Installers\GoogleChromeStandaloneEnterprise64.msi" /qn
+FOR /F "tokens=1" %%i in ('FIND "GoogleChrome" %Location%\Extra\Links.bat') do set link=%%i
+Call :wget "%link%" GoogleChrome.msi /qn
 Call :sz "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\cjpalhdlnbpafiamejdnhcphjbkeiagm" "update_url" "https://clients2.google.com/service/update2/crx" & :: UBlock Origin
 Call :sz "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\gcbommkclmclpchllfjekcdonpmejbdp" "update_url" "https://clients2.google.com/service/update2/crx" & :: HTTPS Everywhere 
 Call :sz "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\lckanjgmijmafbedllaakclkaicjfmnk" "update_url" "https://clients2.google.com/service/update2/crx" & :: Clear URL's
@@ -592,16 +583,18 @@ Call :sz "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\lckanjgmijmafbedlla
 goto :eof 
 
 :Download17
-FOR /F "tokens=1" %%i in ('FIND "edge.msi" %Location%\Extra\Links.bat') do set link=%%i
-Call :wget "%link%" edge.msi /qn
+FOR /F "tokens=1" %%i in ('FIND "Edge.msi" %Location%\Extra\Links.bat') do set link=%%i
+Call :wget "%link%" Edge.msi /qn
 Call :sz "HKLM\SOFTWARE\WOW6432Node\Microsoft\Edge\Extensions\cjpalhdlnbpafiamejdnhcphjbkeiagm" "update_url" "https://clients2.google.com/service/update2/crx" & :: UBlock Origin 
 Call :sz "HKLM\SOFTWARE\WOW6432Node\Microsoft\Edge\Extensions\gcbommkclmclpchllfjekcdonpmejbdp" "update_url" "https://clients2.google.com/service/update2/crx" & :: HTTPS Everywhere 
 Call :sz "HKLM\SOFTWARE\WOW6432Node\Microsoft\Edge\Extensions\lckanjgmijmafbedllaakclkaicjfmnk" "update_url" "https://clients2.google.com/service/update2/crx" & :: Clear URL's
 goto :eof
 
 :Download18
+FOR /F "tokens=1" %%i in ('FIND "ISLC.zip" %Location%\Extra\Links.bat') do set link=%%i
+Call :wget3 "%link%" "%Location%\Files\ISLC.zip"
 Powershell -command "Expand-Archive -Force '%Location%\Files\ISLC.zip' 'C:\'"
-Powershell -command "New-Item -ItemType SymbolicLink -Path 'C:\Users\%username%\Desktop' -Name 'ISLC' -Value 'C:\ISLC\Intelligent standby list cleaner ISLC.exe'"
+Powershell -command "New-Item -ItemType SymbolicLink -Path 'C:\Users\%username%\Desktop' -Name 'ISLC' -Value 'C:\ISLC\ISLC.exe'"
 goto :eof
 
 :Download19
@@ -646,7 +639,7 @@ Call :wget "%link%" Kdenlive.exe /S
 goto :eof
 
 :Download27
-FOR /F "tokens=1" %%i in ('FIND "Openshot.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Openshot" %Location%\Extra\Links.bat') do set link=%%i
 Call :wget "%link%" Openshot.exe /VERYSILENT /NORESTART
 goto :eof
 
@@ -707,8 +700,8 @@ Call :wget "%link%" FreeDownloadManager.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORE
 goto :eof
 
 :Download39
-FOR /F "tokens=1" %%i in ('FIND "idm.exe" %Location%\Extra\Links.bat') do set link=%%i
-Call :wget "%link%" idm.exe /skipdlgs
+FOR /F "tokens=1" %%i in ('FIND "InternetDownloadManager" %Location%\Extra\Links.bat') do set link=%%i
+Call :wget "%link%" InternetDownloadManager.exe /skipdlgs
 goto :eof
 
 :Download40
@@ -717,8 +710,8 @@ Call :wget "%link%" ByClick.exe /q
 goto :eof
 
 :Download41
-FOR /F "tokens=1" %%i in ('FIND "qbittorrent.exe" %Location%\Extra\Links.bat') do set link=%%i
-Call :wget "%link%" qbittorrent.exe /S
+FOR /F "tokens=1" %%i in ('FIND "Qbittorrent.exe" %Location%\Extra\Links.bat') do set link=%%i
+Call :wget "%link%" Qbittorrent.exe /S
 goto :eof
 
 :Download42
@@ -743,14 +736,12 @@ goto :eof
 
 :Download46
 FOR /F "tokens=1" %%i in ('FIND "MSIAfterburner" %Location%\Extra\Links.bat') do set link=%%i
-Call :wget2 "%link%" MSIAfterburner.zip /S
-Call :ZipExport MSIAfterburner.zip 
-for /f %%i in ('"dir /b %download%\MSIAfterburner\*.exe"') do "%download%\MSIAfterburner\%%i" /S
+Call :wget "%link%" MSIAfterburner.exe /S
 goto :eof
 
 :Download47
-FOR /F "tokens=1" %%i in ('FIND "Hibit" %Location%\Extra\Links.bat') do set link=%%i
-Call :wget "%link%" Hibit.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
+FOR /F "tokens=1" %%i in ('FIND "HibitUninstaller" %Location%\Extra\Links.bat') do set link=%%i
+Call :wget "%link%" HibitUninstaller.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
 goto :eof
 
 :Download48
@@ -925,6 +916,8 @@ sc config trustedinstaller start= demand > NUL 2>&1
 net start trustedinstaller > NUL 2>&1
 net start ClipSVC > NUL 2>&1
 
+Call :delete2 "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Config" "DODownloadMode" & :: Teslimat Optimizasyonu BITS hizmeti olarak ayarlançyor...
+
 echo %R%[92m   DLL dosyalarç kontrol ediliyor...%R%[0m
 
 FOR %%a in (softpub.dll wintrust.dll initpki.dll dssenh.dll rsaenh.dll gpkcsp.dll sccbase.dll slbcsp.dll mssip32.dll cryptdlg.dll
@@ -1088,7 +1081,6 @@ taskkill /f /im explorer.exe > NUL 2>&1
 DEL /F /Q /A "%localappdata%\IconCache.db" > NUL 2>&1
 DEL /F /Q /A %userprofile%\AppData\Local\Microsoft\Windows\Explorer\*.* > NUL 2>&1
 del /f /s /q /a %LocalAppData%\Microsoft\Windows\Explorer\thumbcache_*.db > NUL 2>&1
-"%Location%\Files\ReIconCache.exe"
 powershell -command "Start-Process 'C:\Windows\explorer.exe'"
 timeout /t 1 /nobreak > NUL
 goto :eof
@@ -1169,9 +1161,9 @@ reg query "HKLM\SOFTWARE\Microsoft\PolicyManager\default\Update\ExcludeWUDrivers
 	if %errorlevel%==0 (set servalue=%R%[100m %R%[0m)
 reg query "HKLM\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" /v "ExcludeWUDriversInQualityUpdate" | findstr /i 0x1 > NUL 2>&1
 	if %errorlevel%==0 (set servalue=%R%[100m %R%[0m)
-reg query "HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /v "ExcludeWUDriversInQualityUpdate" | findstr /i 0x1 > NUL 2>&1
-	if %errorlevel%==0 (set servalue=%R%[100m %R%[0m)
 reg query "HKLM\Software\Policies\Microsoft\Windows\DriverSearching" /v "SearchOrderConfig" | findstr /i 0x0 > NUL 2>&1
+	if %errorlevel%==0 (set servalue=%R%[100m %R%[0m)
+reg query "HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /v "ExcludeWUDriversInQualityUpdate" | findstr /i 0x1 > NUL 2>&1
 	if %errorlevel%==0 (set servalue=%R%[100m %R%[0m)
 echo  %R%[90m∫%R%[0m  %R%[32m 24%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Driver YÅkle/GÅncelle hizmeti%C%[0m        %R%[90m∫%R%[0m
 set servalue=%R%[42m %R%[0m
@@ -1267,10 +1259,10 @@ set /p value= %C%[92m òülem : %C%[0m
 	if %value%==20A (Call :serv.20.hyperv demand Enable For 1 on aáçlçyor)
 	if %value%==20K (Call :serv.20.hyperv disabled Disable "::" 0 off kapatçlçyor)
 	if %value%==20k (Call :serv.20.hyperv disabled Disable "::" 0 off kapatçlçyor)
-	if %value%==21a (Call :serv.21.xbox start demand 1 0 "Call :delete2" "AllowGameDVR" aáçlçyor)
-	if %value%==21A (Call :serv.21.xbox start demand 1 0 "Call :delete2" "AllowGameDVR" aáçlçyor)
-	if %value%==21K (Call :serv.21.xbox stop disabled 0 2 "Call :dword" "AllowGameDVR 0" kapatçlçyor)
-	if %value%==21k (Call :serv.21.xbox stop disabled 0 2 "Call :dword" "AllowGameDVR 0" kapatçlçyor)
+	if %value%==21a (Call :serv.21.xbox start demand 1 0 "Call :delete2" aáçlçyor)
+	if %value%==21A (Call :serv.21.xbox start demand 1 0 "Call :delete2" aáçlçyor)
+	if %value%==21K (Call :serv.21.xbox stop disabled 0 2 "Call :dword" kapatçlçyor)
+	if %value%==21k (Call :serv.21.xbox stop disabled 0 2 "Call :dword" kapatçlçyor)
 	if %value%==22a (Call :serv.22.bitlocker start demand aáçlçyor)
 	if %value%==22A (Call :serv.22.bitlocker start demand aáçlçyor)
 	if %value%==22K (Call :serv.22.bitlocker stop disabled kapatçlçyor)
@@ -1650,6 +1642,7 @@ goto :eof
 echo [%date% - %time%] ^| Hizmetleri Yînet ^| MediaPlayer hizmeti %4. >> %Location%\Logs
 :: Windows Media Player
 echo   %C%[96mWindows Media Player %4 ...%C%[0m
+Dism /online /%3-Feature /FeatureName:WindowsMediaPlayer /Quiet /NoRestart
 Dism /Online /%3-Feature /FeatureName:MediaPlayback /Quiet /NoRestart
 :: Windows Media Player Aß Paylaüçm Hizmeti
 %PowerRun% sc config WMPNetworkSvc start= %2
@@ -1702,8 +1695,8 @@ bcdedit /set hypervisorlaunchtype %5
 goto :eof
 
 :serv.21.xbox
-echo [%date% - %time%] ^| Hizmetleri Yînet ^| Xbox hizmeti %7. >> %Location%\Logs
-echo   %C%[96mXbox hizmeti %7 ...%C%[0m
+echo [%date% - %time%] ^| Hizmetleri Yînet ^| Xbox hizmeti %6. >> %Location%\Logs
+echo   %C%[96mXbox hizmeti %6 ...%C%[0m
 :: Oyun DVR ve Yayçn kullançcç hizmeti
 %PowerRun% sc config BcastDVRUserService start= %2
 %PowerRun% net %1 BcastDVRUserService
@@ -1724,10 +1717,12 @@ echo   %C%[96mXbox hizmeti %7 ...%C%[0m
 %PowerRun% net %1 DoSvc
 Call :sz "HKCU\System\GameConfigStore" "GameDVR_Enabled" "%3"
 Call :sz "HKCU\System\GameConfigStore" "GameDVR_FSEBehavior" "%4"
-%~5 "HKLM\SOFTWARE\Policies\Microsoft\Windows\GameDVR" %6 
+%~5 "HKLM\SOFTWARE\Policies\Microsoft\Windows\GameDVR" "AllowGameDVR" "0"
+%~5 "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "DisabledHotkeys" "G"
+Call :ExplorerReset
 ::----------------------------------------------------------------------------------------------------------------------------------------------
-::    Aá = %1 : start  | %2 : demand    | %3 : 1  |  %4 : 0  | %~5 : Call :delete2  | %~6 : AllowGameDVR     | %7 : aáçlçyor
-:: Kapat = %1 : stop   | %2 : disabled  | %3 : 0  |  %4 : 2  | %~5 : Call :dword    | %~6 : AllowGameDVR 0   | %7 : kapatçlçyor
+::    Aá = %1 : start  | %2 : demand    | %3 : 1  |  %4 : 0  | %~5 : Call :delete2 | %6 : aáçlçyor
+:: Kapat = %1 : stop   | %2 : disabled  | %3 : 0  |  %4 : 2  | %~5 : Call :dword   | %6 : kapatçlçyor
 ::----------------------------------------------------------------------------------------------------------------------------------------------
 goto :eof
 
@@ -2397,7 +2392,6 @@ timeout /t 2 /nobreak > NUL
 
 DEL /F /Q /A %userprofile%\AppData\Local\Microsoft\Windows\Explorer\*.* > NUL 2>&1
 DEL /F /Q /A %LocalAppData%\Microsoft\Windows\Explorer\thumbcache_*.db > NUL 2>&1
-"%Location%\Files\ReIconCache.exe"
 
 powershell -command "Start-Process 'C:\Windows\explorer.exe'"
 goto Win10SettingsMenu
@@ -2677,7 +2671,7 @@ Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" "ContentEva
 Call :dword "HKLM\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" "IsExpedited" 0 & :: GÅncellemenin yÅklenmesi gerektißinde bilgisayarç mÅmkÅn olan en kçsa sÅrede devre dçüç bçrak
 Call :dword "HKLM\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" "RestartNotificationsAllowed2" 0 & :: GÅncelleme sonrasç yeniden baülatma bildirimi devre dçüç bçrakçlçyor...
 Call :dword "HKLM\SOFTWARE\Microsoft\Speech_OneCore\Preferences" "ModelDownloadAllowed" 0 & :: Konuüma modellerinin gÅnceleütirmeleri devre dçüç bçrakçlçyor...
-Call :dword "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Config" "DODownloadMode" "100" & :: Teslimat Optimizasyonu BITS hizmeti olarak ayarlançyor...
+:: Call :dword "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Config" "DODownloadMode" "100" & :: Teslimat Optimizasyonu BITS hizmeti olarak ayarlançyor...
 :: Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\DriverSearching" "SearchOrderConfig" 2 & :: Driverlar kurulu deßil ise kurulmasç iáin ayarlançyor...
 Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU" "NoAutoUpdate" "0" & :: Update Manuel
 Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU" "AUOptions" "2" & :: Update Manuel

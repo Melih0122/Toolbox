@@ -45,6 +45,24 @@
 ::  
 :: ==============================================================================================================================
 -------------------
+ ► Versiyon 2.6.3 - Ara güncelleme
+-------------------
+Yayınlanma Tarihi: 16.04.2022
+
+ • Windows Editör > 24 - Katılımsız Program/Ayar ekle [Offline] bölümü kaldırıldı.
+   • [Online] bölümü içindeki tüm komutlar yenilendi. Toolbox içindeki tüm programlar eklendi.
+   • Masaüstüne dosya ekle bölümünü çalıştırdığınızda klasör penceresi otomatik açılacak şekilde ayarlandı.
+   • Bilgilendirici mesajlar katılımsız aracın her bölümüne yerleştirildi.
+   • Performans ile alakalı ayarlar tek bir bölümde toplandı.
+ • Link sistemindeki bazı isimlerde değişiklik yapıldı. Bundan dolayı sorun yaşamamak için mutlaka toolbox'ı güncelleyin.
+ • Wget yazılmı güncellendi.
+ • Toolbox İngilizce ve 8.1 sürümlerine yeni toolbox simgesi eklendi.
+ • Güncelleme sonrası temizlik bölümünden teslimat optimizasyonuyla alakalı bölüm çıkarıldı. Hataya sebep oluyordu.
+ • Windows App Boss uygulaması kaldırıldı. Program çok uzun zamandır güncelleme almıyordu. Bu uygulama yerine Hibit Uninstaller kullanabilirsiniz.
+ • Reiconcache yazılımı toolbox'tan kaldırıldı.
+ • ISLC yazılımı indir - kur şeklinde düzenlendi.
+
+-------------------
  ► Versiyon 2.6.2 - Ara güncelleme
 -------------------
 Yayınlanma Tarihi: 13.04.2022
@@ -52,13 +70,11 @@ Yayınlanma Tarihi: 13.04.2022
  • Güncelleme sonrası temizlik bölümündeki hata giderildi.
  • Toolbox İngilizce sürümü Türkçe sürümü ile senkronize gelişecek şekilde yeniden düzenlendi.
  • Windows 8.1 Toolbox sürümü için Güncelleme ve katılımsız kurulum araçları eklendi.
- • Github'daki proje tek bir bölümde toplandı. TR / ENG / 8.1 sürüm dosya ve katılımsız araçları tek bir senden sunulanacak.
-   • Toolbox hakkında detayları öğrenmek için "Google Translate" kullanılması gerekmektedir.
+ • Github'daki proje tek bir bölümde toplandı. TR / ENG / 8.1 sürüm dosya ve katılımsız araçları tek bir yerden sunulanacak.
+   • İniglizce Toolbox hakkında detayları öğrenmek için "Google Translate" kullanılması gerekmektedir.
  • Güncelleştirme sonrası temizlik bölümündeki hizmetler "Extra\Update.After.bat" dosyasından toplandı.
    • PowerRun yazılımıyla tek bir işlem yapmak için tek bir .bat dosyasında topladım. 
 
-
-:: ==============================================================================================================================
 -------------------
  ► Versiyon 2.6.1 - Ara güncelleme
 -------------------
@@ -128,8 +144,7 @@ Yayınlanma Tarihi: 01.04.2022
  • Blitz uygulaması kurulum sorunlarından dolayı kaldırıldı.
  • Hizmetleri Yönet > Hyper-V bölümünde bilgi ekranındaki değişken hatası giderildi. Yeni parametre eklendi.
  • Taraycı eklentileri bölümündeki kod hatası giderildi.
-
-:: ==============================================================================================================================
+ 
 -----------------
  ► Versiyon 2.5 -
 -----------------

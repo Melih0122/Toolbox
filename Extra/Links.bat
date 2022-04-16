@@ -77,7 +77,7 @@ https://web.whatsapp.com/desktop/windows/release/x64/WhatsAppSetup.exe WhatsApp.
 
 :04
 :: https://signal.org/download/
-https://updates.signal.org/desktop/signal-desktop-win-5.38.0.exe Signal.exe 
+https://updates.signal.org/desktop/signal-desktop-win-5.39.0.exe Signal.exe 
 
 :05
 :: https://desktop.telegram.org/
@@ -118,8 +118,7 @@ https://api.wemod.com/client/download Wemod.exe
 
 :15
 :: https://support.google.com/chrome/a/answer/7650032?hl=tr
-https://dl.google.com/tag/s/appguid%253D%257B8A69D345-D564-463C-AFF1-A69D9E530F96%257D%2526iid%253D%257BBEF3DB5A-5C0B-4098-B932-87EC614379B7%257D%2526lang%253Den%2526browser%253D4%2526usagestats%253D1%2526appname%253DGoogle%252520Chrome%2526needsadmin%253Dtrue%2526ap%253Dx64-stable-statsdef_1%2526brand%253DGCEB/dl/chrome/install/GoogleChromeEnterpriseBundle64.zip?_ga%3D2.8891187.708273100.1528207374-1188218225.1527264447 Chrome.zip
-https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B97D4FC08-015B-7BC4-F774-D9C821FA4479%7D%26lang%3Den%26browser%3D4%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dtrue%26ap%3Dx64-stable-statsdef_0%26brand%3DGCEA/dl/chrome/install/googlechromestandaloneenterprise64.msi Chrom.msi
+https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7BC22FF819-B50E-FD3A-6B30-DA65F8B57B2D%7D%26lang%3Den%26browser%3D4%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dtrue%26ap%3Dx64-stable-statsdef_0%26brand%3DGCEA/dl/chrome/install/googlechromestandaloneenterprise64.msi GoogleChrome.msi
 
 :16
 https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=tr Firefox.exe
@@ -129,7 +128,7 @@ https://brave-browser-downloads.s3.brave.com/latest/brave_installer-x64.exe Brav
 
 :18
 :: https://www.microsoft.com/en-us/edge/business/download
-https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/8beaa4da-9e68-4e9c-94d8-1a67395985b7/MicrosoftEdgeEnterpriseX64.msi edge.msi
+https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/b3ed8b52-ee6b-401e-aa19-85b6f3dbfa0e/MicrosoftEdgeEnterpriseX64.msi Edge.msi
 
 :19
 ::ISLC
@@ -188,7 +187,7 @@ https://cdn-fastly.obsproject.com/downloads/OBS-Studio-27.2.4-Full-Installer-x64
 
 :33
 ::https://github.com/ShareX/ShareX/releases
-https://github.com/ShareX/ShareX/releases/download/v13.7.0/ShareX-13.7.0-setup.exe ShareX.exe
+https://github.com/ShareX/ShareX/releases/download/v13.6.1/ShareX-13.6.1-setup.exe ShareX.exe
 
 :34
 :: https://www.audacityteam.org/download/
@@ -196,7 +195,7 @@ https://github.com/audacity/audacity/releases/download/Audacity-3.1.3/audacity-w
 
 :35
 :: https://codecguide.com/download_k-lite_codec_pack_mega.htm
-https://files2.codecguide.com/K-Lite_Codec_Pack_1695_Mega.exe Klite.exe
+https://files2.codecguide.com/K-Lite_Codec_Pack_1698_Mega.exe Klite.exe
 
 :36
 :: https://www.videolan.org/index.tr.html
@@ -216,7 +215,7 @@ https://dn3.freedownloadmanager.org/6/latest/fdm_x64_setup.exe FreeDownloadManag
 
 :40
 :: https://www.internetdownloadmanager.com/
-https://mirror2.internetdownloadmanager.com/idman640build11.exe?v=lt&filename=idman640build11.exe idm.exe
+https://mirror2.internetdownloadmanager.com/idman640build11.exe?v=lt&filename=idman640build11.exe InternetDownloadManager.exe
 
 :41
 :: https://www.byclickdownloader.com/tr/
@@ -224,7 +223,7 @@ https://proxy.byclickdownloader.com/ExternalSetup/InstallPage/ByClickDownloader-
 
 :42
 ::https://www.qbittorrent.org/download.php
-https://netix.dl.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-4.4.2/qbittorrent_4.4.2_x64_setup.exe qbittorrent.exe
+https://netix.dl.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-4.4.2/qbittorrent_4.4.2_x64_setup.exe Qbittorrent.exe
 
 :43
 :: https://www.glasswire.com/
@@ -244,12 +243,11 @@ https://www.strem.io/download?platform=windows&four=true Stremio.exe
 
 :47
 :: https://www.msi.com/Landing/afterburner/graphics-cards
-https://ftp.nluug.nl/pub/games/PC/guru3d/afterburner/[Guru3D.com]-MSIAfterburner.zip MSIAfterburner.zip
-https://files01.tchspt.com/temp/MSIAfterburnerSetup464.exe Afterburne.exe
+https://files01.tchspt.com/temp/MSIAfterburnerSetup464.exe MSIAfterburner.exe
 
 :48
 :: http://www.hibitsoft.ir/Uninstaller.html
-http://www.hibitsoft.ir/HiBitUninstaller/HiBitUninstaller-setup-2.7.60.exe Hibit.exe
+http://www.hibitsoft.ir/HiBitUninstaller/HiBitUninstaller-setup-2.7.62.exe HibitUninstaller.exe
 
 :49
 https://docs.google.com/uc?export=download&id=1N_twp3rHSmIEfpZrg6RUalHA0AuJDtwa WiseCare365.zip
@@ -275,7 +273,7 @@ https://github.com/ChrisAnd1998/TaskbarX/releases/download/1.7.6.0/TaskbarX_1.7.
 
 :55
 :: https://stellarium.org/
-https://github.com/Stellarium/stellarium/releases/download/v0.22.0/stellarium-0.22.0-win64.exe Stellarium.exe
+https://github.com/Stellarium/stellarium/releases/download/v0.22.1/stellarium-0.22.1-win64.exe Stellarium.exe
 
 :56
 :: Recuva
@@ -291,7 +289,7 @@ https://www.python.org/ftp/python/3.10.4/python-3.10.4-amd64.exe Python.exe
 
 :59
 :: https://www.jetbrains.com/pycharm/download/#section=windows
-https://download-cdn.jetbrains.com/python/pycharm-professional-2021.3.3.exe PyCharm.exe
+https://download-cdn.jetbrains.com/python/pycharm-professional-2022.1.exe PyCharm.exe
 
 :60
 :: https://notepad-plus-plus.org/downloads/
@@ -299,7 +297,7 @@ https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.3.3/
 
 :61
 :: https://code.visualstudio.com/
-https://az764295.vo.msecnd.net/stable/8dfae7a5cd50421d10cd99cb873990460525a898/VSCodeUserSetup-x64-1.66.1.exe VisualStudioCode.exe
+https://az764295.vo.msecnd.net/stable/dfd34e8260c270da74b5c2d86d61aee4b6d56977/VSCodeUserSetup-x64-1.66.2.exe VisualStudioCode.exe
 
 :62
 :: https://desktop.github.com/
@@ -365,6 +363,9 @@ https://docs.google.com/uc?export=download&id=1D6TR20HEo6diHH_g53GxPL5Tpdg3cT2m 
 
 :G4
 https://docs.google.com/uc?export=download&id=1Fw7Z61gQ9gw6KX4F1tWZtZlrk45JMrLe Setup.zip
+
+:G5
+https://docs.google.com/uc?export=download&id=1UwWfsuVhuj_KJKbCC5_4rVFWZGMD7_um ISLC.zip
 
 :Removed
 :r1

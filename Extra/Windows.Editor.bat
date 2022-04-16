@@ -77,11 +77,11 @@ exit
 
 :WindowsEditMenu
 cls
-mode con cols=53 lines=41
+mode con cols=53 lines=36
 echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
 echo  %R%[90mº%R%[1;97m%R%[100m            OgnitorenKs Windows Edit”r           %R%[0m%R%[90mº%R%[0m
 echo  %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
-echo  %R%[90mº   %R%[32m 1.%C%[33m WIM / ESD Okuyucu%C%[0m                         %R%[90mº%R%[0m
+echo  %R%[90mº   %R%[32m 1.%C%[33m WIM / ESD Okuyucu                         %R%[90mº%R%[0m
 echo  %R%[90mº   %R%[32m 2.%C%[33m AIO Windows Hazrla%C%[0m                       %R%[90mº%R%[0m
 echo  %R%[90mº   %R%[32m 3.%C%[33m ISO Hazrla%C%[0m                               %R%[90mº%R%[0m
 echo  %R%[90mº   %R%[32m 4.%C%[33m ESD to WIM%C%[90m [D™NšžTšR]%C%[0m                     %R%[90mº%R%[0m
@@ -104,16 +104,12 @@ echo  %R%[90mº  %R%[36m 16.%C%[33m Driver Ykle%C%[90m [OFFLINE]%C%[0m          
 echo  %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
 echo  %R%[90mº  %R%[32m 17.%C%[33m Setup Dzenle%C%[90m [OFFLINE]%C%[0m                   %R%[90mº%R%[0m
 echo  %R%[90mº  %R%[36m 18.%C%[33m Yeni Simgeleri ykle%C%[90m [OFFLINE]%C%[0m            %R%[90mº%R%[0m
-echo  %R%[90mº  %R%[36m 19.%C%[33m Walpaper De§iŸtir%C%[90m [OFFLINE]%C%[0m               %R%[90mº%R%[0m
-echo  %R%[90mº  %R%[36m 20.%C%[33m Telemetry engelle (Hosts)%C%[90m[OFFLINE]%C%[0m        %R%[90mº%R%[0m
-echo  %R%[90mº  %R%[36m 21.%C%[33m OneDrive Sil %C%[90m[OFFLINE]%C%[0m                    %R%[90mº%R%[0m
-echo  %R%[90mº  %R%[36m 22.%C%[33m Gpedit.msc ekle%C%[90m[OFFLINE]%C%[0m                  %R%[90mº%R%[0m
-echo  %R%[90mº  %R%[36m 23.%C%[33m Hyper-V ekle%C%[90m[OFFLINE]%C%[0m                     %R%[90mº%R%[0m
+echo  %R%[90mº  %R%[36m 19.%C%[33m Gpedit.msc ekle%C%[90m[OFFLINE]%C%[0m                  %R%[90mº%R%[0m
+echo  %R%[90mº  %R%[36m 20.%C%[33m Hyper-V ekle%C%[90m[OFFLINE]%C%[0m                     %R%[90mº%R%[0m
 echo  %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
-echo  %R%[90mº  %R%[36m 24.%C%[90m [M]%C%[33m Katlmsz Program/Ayar ekle %C%[90m[OFFLINE]%C%[0m%R%[90mº%R%[0m
-echo  %R%[90mº  %R%[36m 25.%C%[90m [M]%C%[33m Katlmsz Program/Ayar ekle %C%[90m[ONLINE]%C%[0m %R%[90mº%R%[0m
+echo  %R%[90mº  %R%[36m 21.%C%[90m [M]%C%[33m Katlmsz Program / Ayar ekle        %R%[90mº%R%[0m
 echo  %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
-echo  %R%[90mº  %R%[36m 26.%R%[36m Mount yol tanmla%R%[0m                         %R%[90mº%R%[0m
+echo  %R%[90mº  %R%[36m 22.%R%[36m Mount yol tanmla%R%[0m                         %R%[90mº%R%[0m
 echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
 set /p WindowsEditMenu= %R%[92m ˜Ÿlem : %R%[0m
 	if %WindowsEditMenu%==1 (Call :WimReader)
@@ -134,14 +130,10 @@ set /p WindowsEditMenu= %R%[92m ˜Ÿlem : %R%[0m
 	if %WindowsEditMenu%==16 (Call :Driveryukle)
 	if %WindowsEditMenu%==17 (Call :SetupEdit)
 	if %WindowsEditMenu%==18 (Call :Newico)
-	if %WindowsEditMenu%==19 (Call :walpaper)
-	if %WindowsEditMenu%==20 (Call :Hosts)
-	if %WindowsEditMenu%==21 (Call :OneDrivedel)
-	if %WindowsEditMenu%==22 (Call :gpeditmsc)
-	if %WindowsEditMenu%==23 (Call :HyperV)
-	if %WindowsEditMenu%==24 (Call :katilimsizoffline)
-	if %WindowsEditMenu%==25 (Call :katilimsizonline)
-	if %WindowsEditMenu%==26 (Call :degisken3)
+	if %WindowsEditMenu%==19 (Call :gpeditmsc)
+	if %WindowsEditMenu%==20 (Call :HyperV)
+	if %WindowsEditMenu%==21 (Call :katilimsiz)
+	if %WindowsEditMenu%==22 (Call :degisken3)
 ) else
 	goto WindowsEditMenu
 
@@ -236,7 +228,6 @@ goto :eof
 :stop
 
 :: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
-
 
 :ISOMaker
 cls
@@ -676,48 +667,6 @@ goto :eof
 
 :: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
 
-:walpaper
-cls
-mode con cols=70 lines=40
-Call :RegTopla
-echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-echo  %R%[90mº%R%[1;97m%R%[100m                     Walpaper De§iŸtir Offline                   %R%[0m%R%[90mº%R%[0m
-echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
-Call :PowerRun
-echo [%date% - %time%] ^| Walpaper ^| Yeni duvar ka§tlar yklendi. Mount=%Mount% >> %Location%\Logs
-%PowerRun% Powershell -command "Expand-Archive -Force '%Location%\Files\Walpaper.zip' '%Mount%\Windows\Web'"
-
-echo  %R%[92m ˜Ÿlem tamamland. %R%[0m 
-timeout /t 2 /nobreak > NUL
-goto :eof
-
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
-
-:Hosts
-echo [%date% - %time%] ^| Hosts ^| Yeni simgeler entegre edildi. Mount=%Mount% >> %Location%\Logs
-%PowerRun% copy /y "%Location%\Files\Hosts" "%Mount%\Windows\System32\Drivers\etc"
-goto :eof
-
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
-
-:OneDrivedel
-cls
-mode con cols=70 lines=40
-echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-echo  %R%[90mº%R%[1;97m%R%[100m                       OneDrive Sil Offline                       %R%[0m%R%[90mº%R%[0m
-echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
-Call :RegTopla
-echo [%date% - %time%] ^| OneDrive ^| OneDrive silindi. Mount=%Mount% >> %Location%\Logs
-%PowerRun% DEL /F /Q /A "%Mount%\Windows\SysWOW64\OneDriveSetup.exe"
-%PowerRun% DEL /F /Q /A "%Mount%\Windows\SysWOW64\OneDriveSettingSyncProvider.dll"
-%PowerRun% DEL /F /Q /A "%Mount%\Windows\SysWOW64\OneDrive.ico"
-Call :Offreg
-reg delete "HKLM\OG_SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /v "OneDriveSetup" /f >nul 2>&1
-Call :RegTopla
-goto :eof
-
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
-
 :gpeditmsc
 mode con cols=70 lines=40
 echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
@@ -748,12 +697,8 @@ goto :eof
 
 :: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
 
-:katilimsizonline
-powershell -command "Start-Process '%Location%\Extra\On.Katilimsiz.bat'
-goto :eof
-
-:katilimsizoffline
-powershell -command "Start-Process '%Location%\Extra\Off.Katilimsiz.bat'
+:katilimsiz
+powershell -command "Start-Process '%Location%\Extra\Katilimsiz.bat'
 goto :eof
 
 :: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
@@ -983,278 +928,3 @@ for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1)
   exit /B 0
 )
 exit /B 0
-
-
-::---------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-:PasifeAlinanlar
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
-
-:: delhard
-Call :PowerRun
-::%PowerRun% DEL /F /Q /A "%Mount%\Windows\System32\drivers\MsSecFlt.sys" > NUL 
-REM System Guard Runtime Monitor Agent (Sistem korumas)
-::%PowerRun% DEL "%Mount%\Windows\System32\drivers\SgrmAgent.sys" > NUL 
-REM Windows Defender
-::%PowerRun% DEL /F /Q /A "%Mount%\Windows\System32\drivers\WdBoot.sys" > NUL 
-REM Windows Defender
-::%PowerRun% DEL /F /Q /A "%Mount%\Windows\System32\drivers\WdFilter.sys" > NUL 
-REM Windows Defender
-::%PowerRun% DEL /F /Q /A "%Mount%\Windows\System32\drivers\WdNisDrv.sys" > NUL 
-%PowerRun% DEL /F /Q /A "%Mount%\Windows\System32\smartscreen.exe" > NUL 
-%PowerRun% DEL /F /Q /A "%Mount%\Windows\System32\CompatTelRunner.exe" > NUL 
-%PowerRun% DEL /F /Q /A "%Mount%\Windows\System32\securityhealthhost.exe" > NUL 
-%PowerRun% DEL /F /Q /A "%Mount%\Windows\System32\securityhealthservice.exe" > NUL  
-%PowerRun% DEL /F /Q /A "%Mount%\Windows\System32\securityhealthsystray.exe" > NUL 2>&1
-%PowerRun% DEL /F /Q /A "%Mount%\Windows\System32\SgrmBroker.exe" > NUL 2>&1
-::Dism /Image:"%Mount%" /Remove-Capability /CapabilityName:App.Support.QuickAssist~~~~0.0.1.0 > NUL 2>&1
-::Dism /Image:"%Mount%" /Remove-Capability /CapabilityName:Print.Fax.Scan~~~~0.0.1.0 > NUL 2>&1
-goto :eof
-
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
-
-::Windows10regedit
-echo [%date% - %time%] ^| Win10regedit ^| Windows 10 hazr regedit kaytlar eklendi. Mount=%Mount% >> %Location%\Logs
-Call :PowerRun
-Call :RegTopla
-Call :Offreg
-Call :sz "HKLM\OG_NTUSER\System\GameConfigStore" "GameDVR_Enabled" "0" & :: Oyun modu devre dŸ braklyor... 
-Call :dword "HKLM\OG_NTUSER\System\GameConfigStore" "GameDVR_FSEBehavior" "2" & :: Tam ekran iyileŸtirmeleri devre dŸ braklyor...
-goto RegeditOrtak
-
-::Windows11regedit
-echo [%date% - %time%] ^| Win11regedit ^| Windows 11 hazr regedit kaytlar eklendi. Mount=%Mount% >> %Location%\Logs
-Call :PowerRun
-Call :RegTopla
-Call :Offreg
-Call :delete "HKLM\OG_SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked" & :: Terminal sa§ tktan kaldrlyor...
-Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications" "GlobalUserDisabled" "1" & :: Arka planda uygulamalarn ‡alŸmasn engelleniyor... 
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\AppPrivacy" "LetAppsRunInBackground" "2" & :: Arka planda uygulamalarn ‡alŸmasn engelleniyor... 
-Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "SeparateProcess" "0" & :: Windows 11 Explorer Ram kullanm sorun dzeltiliyor...
-Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "TaskbarMn" "0" & :: Sohbet ikonu kaldrlyor...
-Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "TaskbarDa" "0" & :: Widget ikonu kaldrlyor...
-Call :dword "HKLM\OG_NTUSER\Microsoft\Windows\CurrentVersion\Search" "SearchboxTaskbarMode" "1" & :: Arama ‡ubu§u g”rev ‡ubu§undan kaldrlyor.
-Call :dword "HKLM\OG_SOFTWARE\Microsoft\MdmCommon\SettingValues" "LocationSyncEnabled" 0 & :: Cihazm bul ”zelli§i kapatlyor.
-Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Windows\CurrentVersion\AdvertisingInfo" "Enabled" 0 & :: Reklam kimli§i kapatlyor
-Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Windows\DWM" "ColorPrevalence" 1 & :: BaŸlk ‡ubuklarnda ve pencere kenarlarnda vurgu rengi g”sterilsin.
-goto RegeditOrtak
-
-::RegeditOrtak
-:: Cortana 
-Call :dword "HKLM\OG_DEFAULT\SOFTWARE\Microsoft\InputPersonalization\TrainedDataStore" "HarvestContacts" "0" 
-Call :dword "HKLM\OG_DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" "DeviceHistoryEnabled" "0"
-Call :dword "HKLM\OG_DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" "HistoryViewEnabled" "0"
-Call :dword "HKLM\OG_DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Windows Search" "CortanaConsent" "0"
-Call :dword "HKLM\OG_DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Windows Search" "CortanaIsReplaceable" "1"
-Call :dword "HKLM\OG_DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Windows Search" "CortanaIsReplaced" "1"
-Call :dword "HKLM\OG_DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Windows Search" "SearchboxTaskbarMode" "0"
-Call :dword "HKLM\OG_DEFAULT\SOFTWARE\Policies\Microsoft\InputPersonalization" "RestrictImplicitInkCollection" "1"
-Call :dword "HKLM\OG_DEFAULT\SOFTWARE\Policies\Microsoft\InputPersonalization" "RestrictImplicitTextCollection" "1"
-Call :dword "HKLM\OG_NTUSER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\MicrosoftEdge\ServiceUI" "EnableCortana" "0"
-Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\InputPersonalization" "RestrictImplicitInkCollection" "1"
-Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\InputPersonalization" "RestrictImplicitTextCollection" "1"
-Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\InputPersonalization\TrainedDataStore" "HarvestContacts" "0"
-Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Personalization\Settings" "AcceptedPrivacyPolicy" "0"
-Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" "DeviceHistoryEnabled" "0"
-Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" "HistoryViewEnabled" "0"
-Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\Windows Search" "CortanaConsent" "0"
-Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\Windows Search" "CortanaIsReplaceable" "1"
-Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\Windows Search" "CortanaIsReplaced" "1"
-Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\Windows Search" "SearchboxTaskbarMode" "0"
-Call :dword "HKLM\OG_SOFTWARE\Microsoft\PolicyManager\current\device\AboveLock" "AllowCortanaAboveLock" "0"
-Call :dword "HKLM\OG_SOFTWARE\Microsoft\PolicyManager\current\device\Experience" "AllowCortana" "0"
-Call :dword "HKLM\OG_SOFTWARE\Microsoft\Speech_OneCore\Preferences" "ModelDownloadAllowed" "0"
-Call :dword "HKLM\OG_SOFTWARE\Microsoft\Windows\CurrentVersion\Search" "SearchboxTaskbarMode" "1"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\InputPersonalization" "AllowInputPersonalization" "0"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\Windows Search" "AllowCloudSearch" "0"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\Windows Search" "AllowCortana" "0"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\Windows Search" "AllowCortanaAboveLock" "0"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\Windows Search" "AllowSearchToUseLocation" "0"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\Windows Search" "ConnectedSearchPrivacy" "3"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\Windows Search" "ConnectedSearchSafeSearch" "3"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\Windows Search" "ConnectedSearchUseWeb" "0"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\Windows Search" "ConnectedSearchUseWebOverMeteredConnections" "0"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\Windows Search" "DisableWebSearch" "1"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Wow6432Node\Microsoft\Windows\Windows Search" "AllowCortana" "0"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Wow6432Node\Microsoft\Windows\Windows Search" "AllowCortanaAboveLock" "0"
-Call :sz "HKLM\OG_SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules" "Block Cortana ActionUriServer.exe" "v2.26|Action=Block|Active=TRUE|Dir=Out|RA42=IntErnet|RA62=IntErnet|App=C:\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy\ActionUriServer.exe|Name=Block Cortana ActionUriServer.exe|Desc=Block Cortana Outbound UDP/TCP Traffic|"
-Call :sz "HKLM\OG_SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules" "Block Cortana Package" "v2.26|Action=Block|Active=TRUE|Dir=Out|RA42=IntErnet|RA62=IntErnet|Name=Block Cortana Package|Desc=Block Cortana Outbound UDP/TCP Traffic|AppPkgId=S-1-15-2-1861897761-1695161497-2927542615-642690995-327840285-2659745135-2630312742|Platform=2:6:2|Platform2=GTEQ|"
-Call :sz "HKLM\OG_SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules" "Block Cortana PlacesServer.exe" "v2.26|Action=Block|Active=TRUE|Dir=Out|RA42=IntErnet|RA62=IntErnet|App=C:\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy\PlacesServer.exe|Name=Block Cortana PlacesServer.exe|Desc=Block Cortana Outbound UDP/TCP Traffic|"
-Call :sz "HKLM\OG_SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules" "Block Cortana RemindersServer.exe" "v2.26|Action=Block|Active=TRUE|Dir=Out|RA42=IntErnet|RA62=IntErnet|App=C:\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy\RemindersServer.exe|Name=Block Cortana RemindersServer.exe|Desc=Block Cortana Outbound UDP/TCP Traffic|"
-Call :sz "HKLM\OG_SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules" "Block Cortana RemindersShareTargetApp.exe" "v2.26|Action=Block|Active=TRUE|Dir=Out|RA42=IntErnet|RA62=IntErnet|App=C:\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy\RemindersShareTargetApp.exe|Name=Block Cortana RemindersShareTargetApp.exe|Desc=Block Cortana Outbound UDP/TCP Traffic|"
-Call :sz "HKLM\OG_SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules" "Block Cortana SearchUI.exe" "v2.26|Action=Block|Active=TRUE|Dir=Out|RA42=IntErnet|RA62=IntErnet|App=C:\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy\SearchUI.exe|Name=Block Cortana SearchUI.exe|Desc=Block Cortana Outbound UDP/TCP Traffic|"
-Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Narrator\QuickStart" "SkipQuickStart" 1 &  :: Narrator QuickStart kapatlyor
-:: 3.Parti programlarn yklenmesini engelle
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\CloudContent" "DisableWindowsConsumerFeatures" "1"
-Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "ContentDeliveryAllowed" 0
-Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "FeatureManagementEnabled" 0 
-Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "PreInstalledAppsEverEnabled" 0
-Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "OemPreInstalledAppsEnabled" 0 
-Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "PreInstalledAppsEnabled" 0
-Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "SilentInstalledAppsEnabled" 0
-Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "SubscribedContent-314559Enabled" 0 
-Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "SubscribedContent-338387Enabled" 0
-Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "SubscribedContent-338388Enabled" 0
-Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "SubscribedContent-338389Enabled" 0 
-Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "SubscribedContent-338393Enabled" 0
-Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "SubscribedContentEnabled" 0
-Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "SystemPane RecommendionsEnabled" 0
-:: Microsoft Store otomatik gncelleŸtirmeler devre dŸ braklyor...
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\WindowsStore" "AutoDownload" "2"
-:: ™nerilen uygulamalarn yeniden yklenmesi engelleniyor
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\CloudContent" "DisableWindowsConsumerFeatures" "1"
-:: Windows Defender
-Call :dword "HKLM\OG_DEFAULT\SOFTWARE\Microsoft\Windows Security Health\State" "AccountProtection_MicrosoftAccount_Disconnected" "0"
-Call :dword "HKLM\OG_SOFTWARE\Microsoft\Windows Defender Security Center\Notifications" "DisableNotifications" "1"
-Call :dword "HKLM\OG_SOFTWARE\Microsoft\Windows Defender Security Center\Notifications" "DisableEnhancedNotifications" "1"
-Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows Security Health\State" "AccountProtection_MicrosoftAccount_Disconnected" "0"
-Call :dword "HKLM\OG_SOFTWARE\Microsoft\Windows Defender" "DisableAntiSpyware" "1"
-Call :dword "HKLM\OG_SOFTWARE\Microsoft\Windows Defender" "DisableAntiVirus" "1"
-Call :dword "HKLM\OG_SOFTWARE\Microsoft\Windows Defender\Features" "TamperProtection" "0"
-Call :dword "HKLM\OG_SOFTWARE\Microsoft\Windows Defender\Features" "TamperProtectionSource" "2"
-Call :dword "HKLM\OG_SOFTWARE\Microsoft\Windows Defender\Signature Updates" "FirstAuGracePeriod" "0"
-Call :dword "HKLM\OG_SOFTWARE\Microsoft\Windows Defender\UX Configuration" "DisablePrivacyMode" "1"
-Call :binary "HKLM\OG_SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\StartupApproved\Run" "SecurityHealth" "030000000000000000000000"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\MRT" "DontOfferThroughWUAU" "1"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\MRT" "DontReportInfectionInformation" "1"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Systray" "HideSystray" "1"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender" "DisableAntiSpyware" "1"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender" "PUAProtection" "0"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender" "RandomizeScheduleTaskTimes" "0"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Exclusions" "DisableAutoExclusions" "1"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\MpEngine" "MpEnablePus" "0"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Quarantine" "LocalSettingOverridePurgeItemsAfterDelay" "0"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Quarantine" "PurgeItemsAfterDelay" "0"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" "DisableBehaviorMonitoring" "1"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" "DisableIOAVProtection" "1"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" "DisableOnAccessProtection" "1"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" "DisableRealtimeMonitoring" "1"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" "DisableRoutinelyTakingAction" "1"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" "DisableScanOnRealtimeEnable" "1"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" "DisableScriptScanning" "1"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Remediation" "Scan_ScheduleDay" "8"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Remediation" "Scan_ScheduleTime" 0
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Reporting" "AdditionalActionTimeOut" 0
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Reporting" "CriticalFailureTimeOut" 0
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Reporting" "DisableEnhancedNotifications" "1"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Reporting" "DisableGenericRePorts" 1
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Reporting" "NonCriticalTimeOut" 0
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Scan" "AvgCPULoadFactor" "10"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Scan" "DisableArchiveScanning" "1"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Scan" "DisableCatchupFullScan" "1"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Scan" "DisableCatchupQuickScan" "1"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Scan" "DisableRemovableDriveScanning" "1"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Scan" "DisableRestorePoint" "1"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Scan" "DisableScanningMappedNetworkDrivesForFullScan" "1"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Scan" "DisableScanningNetworkFiles" "1"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Scan" "PurgeItemsAfterDelay" 0
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Scan" "ScanOnlyIfIdle" 0
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Scan" "ScanParameters" 0
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Scan" "ScheduleDay" 8
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Scan" "ScheduleTime" 0
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Signature Updates" "DisableUpdateOnStartupWithoutEngine" 1
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Signature Updates" "ScheduleDay" 8
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Signature Updates" "ScheduleTime" 0
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Signature Updates" "SignatureUpdateCatchupInterval" 0
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\SpyNet" "DisableBlockAtFirstSeen" "1"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Spynet" "LocalSettingOverrideSpynetReporting" 0
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Spynet" "SpyNetReporting" "0"
-Call :multisz "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Spynet" "SpyNetReportingLocation" "0"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\Spynet" "SubmitSamplesConsent" "2"
-Call :dword "HKLM\OG_SYSTEM\ControlSet001\Control\WMI\Autologger\DefenderApiLogger" "Start" "0"
-Call :dword "HKLM\OG_SYSTEM\ControlSet001\Control\WMI\Autologger\DefenderAuditLogger" "Start" "0"
-:: SmartScreen
-Call :dword "HKLM\OG_DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" "EnableWebContentEvaluation" 0
-Call :dword "HKLM\OG_DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" "PreventOverride" 0
-Call :dword "HKLM\OG_DEFAULT\SOFTWARE\Policies\Microsoft\Edge" "SmartScreenEnabled" 0
-Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" "EnableWebContentEvaluation" 0
-Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" "PreventOverride" 0
-Call :dword "HKLM\OG_NTUSER\SOFTWARE\Policies\Microsoft\Edge" "SmartScreenEnabled" 0
-Call :dword "HKLM\OG_SOFTWARE\Microsoft\Windows Security Health\State" "AppAndBrowser_StoreAppsSmartScreenOff" 0
-Call :sz "HKLM\OG_SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" "SmartScreenEnabled" "Off"
-Call :sz "HKLM\OG_SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" "SmartScreenEnabled" "Off"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Internet Explorer\PhishingFilter" "EnabledV9" 0
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Internet Explorer\PhishingFilter" "PreventOverride" 0
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\MicrosoftEdge\PhishingFilter" "EnabledV9" 0
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\MicrosoftEdge\PhishingFilter" "PreventOverride" 0
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\System" "EnableSmartScreen" "0"
-Call :sz "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\SmartScreen" "ConfigureAppInstallControl" "Anywhere"
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows Defender\SmartScreen" "ConfigureAppInstallControlEnabled" "0"
-:: Toplu REgler
-Call :sz "HKLM\OG_NTUSER\Control Panel\Desktop" "AutoEndTasks" 1 & :: Kapatma iŸleminde uygulamalar a‡k ise otomatik kapat ve bekleme sresi azaltlyor
-Call :sz "HKLM\OG_NTUSER\Control Panel\Desktop" "HungAppTimeout" "1000" & :: Uygulamalar cevap vermedi§i zaman g”revi sonlandr se‡ene§ine baslmadan ”nceki bekleme sresini ksaltr.
-Call :sz "HKLM\OG_NTUSER\Control Panel\Desktop" "WaitToKillAppTime" "2000" & :: Bilgisayar kapatlrken ya da oturumdan ‡klrken kullanc uygulamalarnn kapatlmas i‡in sistem bekleme sresini ksaltr.
-Call :sz "HKLM\OG_NTUSER\Control Panel\Desktop" "LowLevelHooksTimeout" "1000" & :: Cevap vermeyen hizmetlerin kapatlmasndan ”nceki sistem bekleme sresini ksaltr.
-Call :sz "HKLM\OG_SYSTEM\ControlSet001\Control" "WaitToKillServiceTimeout" "2000" & :: Bilgisayarn kapatlmas srasnda durdurulacak hizmetler uyars geldi§inde, uygulamalarn kapanmas i‡in beklenen sreyi ksaltr.
-Call :sz "HKLM\OG_NTUSER\Control Panel\Desktop" "MenuShowDelay" "8" & :: Men g”sterimi bekleme sresini azaltr
-Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" "NoLowDiskSpaceChecks" 1 & :: DŸk Depolama alan uyars devre dŸ braklyor... 
-Call :sz "HKLM\OG_NTUSER\Control Panel\Mouse" "MouseHoverTime" 8 & :: Farenizle birlikte bir nesnenin zerine geldi§inizde g”rlen a‡klamann ‡kŸ sresini ksaltr
-Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" "LinkResolveIgnoreLinkInfo" 1 & :: Bilgisayarnzda mevcut olmayan programlara ait ksayollarn ba§lantsnn Windows tarafndan boŸa vakit harcanarak aranmasn ”nler
-Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" "NoResolveSearch" 1 & :: Ksayol ba§lant sorununu ‡”zmek i‡in Windows'un diski aramasn ”nler
-Call :dword "HKLM\OG_NTUSER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" "NoResolveTrack" 1 & :: Ksayol ba§lant sorununu ‡”zmek i‡in Windows'un NTFS dosya sisteminin izleme ”zelli§ini kullanmasn engeller
-Call :dword "HKLM\OG_SYSTEM\ControlSet001\Control\Session Manager\Power" "HiberbootEnabled" 0 & :: Hiberboot Devre DŸ braklyor
-Call :dword "HKLM\OG_SYSTEM\ControlSet001\Control\Session Manager\Memory Management\PrefetchParameters" "EnablePrefetcher" 0 & :: Prefetch devre dŸ braklyor...
-Call :dword "HKLM\OG_SYSTEM\ControlSet001\Control\Session Manager\Memory Management\PrefetchParameters" "EnableSuperFetch" 0 & :: Prefetch devre dŸ braklyor...
-Call :dword "HKLM\OG_SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Serialize" "StartupDelayInMSec" 0 & :: Startup Delay (BaŸlang‡ Gecikmesi) devre dŸ braklyor...
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\Psched" "NonBestEffortLimit" 0 & :: Qos Limiti Devre DŸ braklyor...
-Call :dword "HKLM\OG_SYSTEM\ControlSet001\Services\LanmanServer\Parameters" "SMB1" 0 & :: SMB 1-2 Devre DŸ braklyor...
-Call :dword "HKLM\OG_SYSTEM\ControlSet001\Services\LanmanServer\Parameters" "SMB2" 0 & :: SMB 1-2 Devre DŸ braklyor...
-Call :dword "HKLM\OG_SYSTEM\ControlSet001\Control\FileSystem" "LongPathsEnabled" 1 & :: Windows 255 Karakter Snr devre dŸ braklyor...
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore" "DisableSR" 1 & :: Sistem geri ykleme kapatlyor...
-Call :dword "HKLM\OG_SYSTEM\ControlSet001\Control\WMI\Autologger\AutoLogger-Diagtrack-Listener" "Start" 0 & :: Automatic Diagnostic Logger (Otomatik TeŸhis Kaydedici) devre dŸ 
-Call :dword "HKLM\OG_SYSTEM\ControlSet001\Control\Session Manager\Memory Management" "ClearPageFileAtShutdown" "1" & :: Kapatma srasnda Pagefile dosyalarn temizle
-Call :dword "HKLM\OG_SYSTEM\ControlSet001\Services\NlaSvc\Parameters\Internet" "EnableActiveProbing" "0" & :: Kapatma srasnda Pagefile dosyalarn temizle
-Call :dword "HKLM\OG_SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Serialize" "StartupDelayInMSec" "0" & :: :: Disabled Startup Delay
-Call :dword "HKLM\OG_SYSTEM\ControlSet001\Control\Session Manager\Memory Management\PrefetchParameters" "EnablePrefetcher" "0" & :: Prefetch Kapat
-Call :dword "HKLM\OG_SYSTEM\ControlSet001\Control\Session Manager\Memory Management\PrefetchParameters" "EnableSuperFetch" "0" & :: Prefetch Kapat
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\Psched" "NonBestEffortLimit" "0" & :: Qos Limit Kaldr
-Call :dword "HKLM\OG_SYSTEM\ControlSet001\Services\LanmanServer\Parameters" "SMB1" "0" & :: SMB1-2 Kapatma
-Call :dword "HKLM\OG_SYSTEM\ControlSet001\Services\LanmanServer\Parameters" "SMB2" "0" & :: SMB1-2 Kapatma
-Call :dword "HKLM\OG_SYSTEM\ControlSet001\Control\FileSystem" "LongPathsEnabled" "1" & :: Windows 255 Karakter Snrn Kaldrma
-Call :sz "HKLM\OG_SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Associations" "ModRiskFileTypes" ".bat;.exe;.reg;.vbs;.chm;.msi;.js;.cmd" & :: Uygulamalar a‡lrken gvenlik uyarlar devre dŸ braklsn
-Call :delete "HKLM\OG_SOFTWARE\Microsoft\Windows\CurrentVersion\Device Metadata" & :: Metadata Tracking delete
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\System" "EnableActivityFeed" "0" & :: Timeline Kapat
-Call :dword "HKLM\OG_SYSTEM\ControlSet001\Control\WMI\Autologger\AutoLogger-Diagtrack-Listener" "Start" "0" & :: Automatic Diagnostic Logger (Otomatik TeŸhis Kaydedici) devre dŸ 
-Call :dword "HKLM\OG_SYSTEM\ControlSet001\Control\WMI\Autologger\SQMLogger" "Start" "0" & :: ˜Ÿletim sistemi ”nykleme iŸleminde meydana gelen olaylar kaydeder.
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\AdvertisingInfo" "DisabledByGroupPolicy" "1" & :: Reklam kimli§i etkinli§i kapatlyor...
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\EnhancedStorageDevices" "TCGSecurityActivationDisabled" "0" & :: Windows'un GeliŸmiŸ Depolama aygtlarn etkinleŸtirmesine izin verme
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting" "DontSendAdditionalData" "1" & :: Windows Hata Raporlama devre dŸ braklyor...
-Call :dword "HKLM\OG_SOFTWARE\Microsoft\PolicyManager\default\Wifi\AllowWiFiHotSpotReporting" "value" "0" & :: Wifi Hotspot Raporlama devre dŸ braklyor...
-Call :dword "HKLM\OG_SOFTWARE\Microsoft\PolicyManager\default\Wifi\AllowAutoConnectToWiFiSenseHotspots" "value" "0" & :: Gvenli Wifi noktalarna otomatik ba§lan devre dŸ braklyor..
-Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\AdvertisingInfo" "Enabled" "0" & :: Windows Reklam Kimli§ini devre dŸ braklyor...
-Call :dword "HKLM\OG_SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer" "HideSCAHealth" "1" & :: Gvenlik ve Bakm simgesi devre dŸ braklyor...
-Call :dword "HKLM\OG_SYSTEM\ControlSet001\Control\Session Manager\Power" "HiberbootEnabled" "0" & :: Hiberboot Devre DŸ 
-Call :dword "HKLM\OG_SYSTEM\ControlSet001\Control\Power" "HibernateEnabled" "0" & :: Hazrda bekletme ”zelli§i Devre DŸ
-Call :dword "HKLM\OG_SOFTWARE\Microsoft\SQMClient\Windows" "CEIPEnable" "0" & :: MŸteri Deneyim Programn devre dŸ brakr
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\SQMClient\Windows" "CEIPEnable" "0" & :: MŸteri Deneyim Programn devre dŸ brakr
-Call :binary "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" "Link" "00000000" & :: Ksayol yazs kaldrlyor...
-Call :dword "HKLM\OG_SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore" "DisableSR" "1" & :: Sistem geri ykleme kapatr
-::Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.Photos.8wekyb3d8bbwe" Disabled 1 & ::Foto§raflar uygulamas arka planda ‡alŸmaz
-::Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.Photos.8wekyb3d8bbwe" SleepDisabled 1 & ::Foto§raflar uygulamas arka planda ‡alŸmaz
-::Call :dword "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications\Microsoft.Photos.8wekyb3d8bbwe" DisabledByUser 1 & :: Foto§raflar uygulamas arka planda ‡alŸmaz
-:: eklentiler
-Call :sz "HKLM\OG_SOFTWARE\WOW6432Node\Microsoft\Edge\Extensions\cjpalhdlnbpafiamejdnhcphjbkeiagm" "update_url" "https://clients2.google.com/service/update2/crx" & :: UBlock Origin
-Call :sz "HKLM\OG_SOFTWARE\WOW6432Node\Microsoft\Edge\Extensions\gcbommkclmclpchllfjekcdonpmejbdp" "update_url" "https://clients2.google.com/service/update2/crx" & :: HTTPS Everywhere 
-Call :sz "HKLM\OG_SOFTWARE\WOW6432Node\Microsoft\Edge\Extensions\lckanjgmijmafbedllaakclkaicjfmnk" "update_url" "https://clients2.google.com/service/update2/crx" & :: Clear URL's
-:: Sahipli§i al
-Call :vesz "HKLM\OG_SOFTWARE\Classes\*\shell\runas" "Sahipli§i Al" 
-Call :sz "HKLM\OG_SOFTWARE\Classes\*\shell\runas" "Icon" "imageres.dll,73" 
-Call :sz "HKLM\OG_SOFTWARE\Classes\*\shell\runas" "NoWorkingDirectory" "" 
-Call :vesz "HKLM\OG_SOFTWARE\Classes\*\shell\runas\command" "cmd.exe /c takeown /f \"%%%%1\" && ica \"%%%%1\" /grant administrators:F" 
-Call :sz "HKLM\OG_SOFTWARE\Classes\*\shell\runas\command" "IsolatedCommand" "cmd.exe /c takeown /f \"%%%%1\" && ica \"%%%%1\" /grant administrators:F"
-Call :vesz "HKLM\OG_SOFTWARE\Classes\Directory\shell\runas" "Sahipli§i Al"
-Call :sz "HKLM\OG_SOFTWARE\Classes\Directory\shell\runas" "Icon" "imageres.dll,73"
-Call :sz "HKLM\OG_SOFTWARE\Classes\Directory\shell\runas" "NoWorkingDirectory" ""
-Call :vesz "HKLM\OG_SOFTWARE\Classes\Directory\shell\runas\command" "cmd.exe /c takeown /f \"%%%%1\" /r /d y && ica \"%%%%1\" /grant administrators:F /t"
-Call :sz "HKLM\OG_SOFTWARE\Classes\Directory\shell\runas\command" "IsolatedCommand" "cmd.exe /c takeown /f \"%%%%1\" /r /d y && ica \"%%%%1\" /grant administrators:F /t"
-Call :sz "HKLM\OG_SOFTWARE\Classes\.bat\ShellNew" "NullFile" "" & :: Sa§ tk Yeni b”lmne Bat dosyas oluŸturma ekle
-::3D Nesneler
-::Call :delete "HKLM\OG_SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}"
-::Call :delete "HKLM\OG_SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}"
-Call :sz "HKLM\OG_NTUSER\System\GameConfigStore" "GameDVR_Enabled" "0" & :: Oyun modu devre dŸ braklyor... 
-Call :dword "HKLM\OG_NTUSER\System\GameConfigStore" "GameDVR_FSEBehavior" "2" & :: Tam ekran iyileŸtirmeleri devre dŸ braklyor...
-Call :sz "HKLM\OG_NTUSER\Control Panel\Accessibility\StickyKeys" "Flags" 506 & :: YapŸkan tuŸlar kapatr
-timeout /t 7 /nobreak > NUL
-Call :RegTopla
-goto WindowsEditMenu
