@@ -3,8 +3,8 @@
 - Toolbox Windows 10 - 11 sürümlerinin x64 mimarilerinde açılmaktadır. Windows 8.1 için hazırladığım kısıtlı bir sürümü mevcuttur. En güncel olan Windows sürümü ile senkronize olarak gelişmektedir.
 - Windows ekran ölçeklendirme ayarı Toolbox'ın pencere ayarını bozabiliyor. Sorunsuz kullanım için Toolbox'ı kullanırken ölçeklendirme etkileri kapatılmalıdır.
 
-![cmd_Ov68PsJv65](https://user-images.githubusercontent.com/93199689/162618420-443386c9-5d5e-47ab-a2d1-04c9d6a0ed86.png)
-![cmd_qdI4ybuRUo](https://user-images.githubusercontent.com/93199689/162618425-0d1f1fa4-366b-4651-b0dc-5066e0ee9112.png)
+![cmd_aZdxr8EWQl](https://user-images.githubusercontent.com/93199689/163687876-b8ab7f37-538f-4e5b-9afe-d35a37a0c78a.png)
+![cmd_ZphvLjqGIQ](https://user-images.githubusercontent.com/93199689/163687883-cef393e4-745e-4ab1-a513-21ae7fcc5a5b.png)
 
 ### Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
 
@@ -247,8 +247,8 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 ### • 56 - Windows Düzenleme:
 Mavi renkli işlem numaraları 26 numaralı işlem ile alakalıdır.
 
-![cmd_JYJK1y1ORS](https://user-images.githubusercontent.com/93199689/159128857-9da9fe52-e515-48b2-a49b-5d3c8fa607b3.png)
- 
+![cmd_gjMiAPFnpU](https://user-images.githubusercontent.com/93199689/163688060-ee63fdaa-a327-493f-9ad5-0b9746c855fd.png)
+
 	• 1 - WIM / ESD Okuyucu: install.wim ve install.esd dosyalarının içeriği hakkında bilgi verir.
 	• 2 - AIO Windows Hazırla: İnstall.wim sürümlerini birleştirmeye yarar. "X" tuşu burada çalışmaz.
 	• 3 - ISO Hazırla: Windows format dosyalarını ISO'ya dönüştürür. "Edit" klasörü içerisinde .iso dosyanızı bulabilirsiniz. "X" tuşu burada çalışmaz.
@@ -310,55 +310,42 @@ Mavi renkli işlem numaraları 26 numaralı işlem ile alakalıdır.
 	• 16 - Driver Yedekle [Offline]: Offline sisteme driver entegre eder. Driver dosyalarını "Edit\Driver" klasörü içine atın. Yedek aldıktan sonra bu bölümü seçerseniz, yedekleri imaja yükler.
 	• 17 - Setup Düzenle [Offline]: Windows yükleme dosyalarını özelleştirir. İlk girişte "Files\setup10.zip" dosyasını indirir. Kendinize özel bölüm oluşturmak istiyorsanız. Aşağıdaki linke bakınız.
 	• 18 - Yeni simgeleri yükle [Offline]: Yeni simgeleri imaja entegre eder. İlk girişte "Files\Newico.zip" dosyasını indirir. 
-	• 19 - Walpaper değiştir [Offline]: Varsayılan duvar kağıtlarını değiştirir. Seçtiğiniz resimleri yüklemek istiyorsanız "Files\Walpaper.zip" dosyasını düzenleyin.
-	• 20 - Telemetri engelle (Host) [Offline]: Offline sistemden hosts dosyasını değiştirir içerisinde telemetri servislerini engelleyen parametreler vardır.
-	• 21 - OneDrive Sil [Offline]: Offline sistemden OneDrive siler.
-	• 22 - Gpedit.msc ekle [Offline]: Offline sistemden Windows Home ve Home Single Language sürümlerine ekleyebilirsiniz.
-	• 23 - Hyper-V ekle: Home ve HomeSingle Language sürümlerinin imajlarına Hyper-V ekler.
+	• 19 - Gpedit.msc ekle [Offline]: Offline sistemden Windows Home ve Home Single Language sürümlerine ekleyebilirsiniz.
+	• 20 - Hyper-V ekle: Home ve HomeSingle Language sürümlerinin imajlarına Hyper-V ekler.
 	• -------------------------------------------------------------------------------------------------------------------------
-	• 24 - Katılımsız program ve ayar ekle [Offline]: Offline sisteme katılımsız program entegre eder.
-	     • 51 numaralı işlem [Çoklu Seçim] bölümü 1 - 50 işlemlerini kapsamaktadır.
-![cmd_ZrtIiT9rs9](https://user-images.githubusercontent.com/93199689/162618635-d3361708-9f0f-47ef-bcb2-a6baa62f4caa.png)
-
-	• 25 - Katılımsız program ve ayar ekle [Online]: Offline sisteme indir, kur, sil olarak program entegre eder.
-	     • Yazacaklarım 25 ve 26. bölümleri kapsamaktadır.
-	     • Bu bölümde program eklemek isterseniz öncelikle 53 numaralı işlemi [Katılımsız kurulum dosyası oluştur] uygulayın. Ondan sonra dilediğinizi ekleyin.
-	     • Program ve ayar ekleme işlemi bittikten sonra 54 numaralı işlemi [Katılımsız kurulum dosyasını tamamla] uygulayın. 
-	     • 54 numaralı işlemi uyguladıktan sonra yedek almak isterseniz. 98 numaralı işlemi [Katılımsız Yedekle] uygulayın. Yedek dosyasını masaüstüne atacaktır.
-	     • 99 numaralı işlem [Yedekten ekle] ile yedeklediğiniz .zip dosyasının yolunu tanımlayarak offline sisteme entegre edebilirsiniz.
-	     • Offline ve online bölümleri aynı anda kullanabilirsiniz. Ancak bu tarz bir durumda 53 numaralı işlemi [Online] bölümünden uygulayın.
-	     • Online bölümü ekleme işleminde indirme olmadığı için çoklu seçim bölümü yoktur.
-![cmd_Yv9QplsT2p](https://user-images.githubusercontent.com/93199689/162618651-0b4b44de-c327-4305-91da-60ce9acddc51.png)
-
+	• 21 - Katılımsız program ve ayar ekle : Offline sisteme indir, kur, sil olarak program entegre eder.
+	     • Bu bölümde program eklemek isterseniz öncelikle 74 -Katılımsız dosyası oluştur uygulayın. Ondan sonra dilediğiniz programı ekleyin.
+	     • Program ve ayar ekleme işlemi bittikten sonra 75 - Katılımsız dosyasını tamamla uygulayın. 
+	     • 75 numaralı işlemi uyguladıktan sonra yedek almak isterseniz. 76 - Katılımsız Yedekle uygulayın. Yedek dosyasını masaüstüne atacaktır.
+	     • 77 - Yedekten ekle ile yedeklediğiniz .zip dosyasının yolunu tanımlayarak offline sisteme entegre edebilirsiniz.
+	     • Çoklu seçim özelliği yoktur. Görsel aşağıda
 	• -------------------------------------------------------------------------------------------------------------------------
-	• 26 - Mount yol tanımla: Bu bölüm 9 - 12 - 13 - 16 - 18 - 19 - 20 - 21 - 22 - 23 - 24 -25 bölümleriyle bağlantılıdır. 
+	• 22 - Mount yol tanımla: Bu bölüm 9 - 12 - 13 - 16 - 18 - 19 - 20 - 21 bölümleriyle bağlantılıdır. 
 	     • Burada tanımlanan klasör yolu ile işlem yapılmaktadır.
 	     • Bu bölüm ilk girişte "Edit\Mount" klasör yolunu alır. Mount dosyaları farklı bir klasörde ise 26 numaralı işlem ile değiştirin.
+	     
+	![cmd_gAsBVf0Vow](https://user-images.githubusercontent.com/93199689/163688053-e0b7d94d-3744-4e16-bca2-d5f09ce5c6dc.png)
+
 ### • 57 - Güncelleme Sonrası Temizlik:
 	• Güncelleme sonrası yüklenen Defender, Telemetri, Diagtrack gibi hizmetleri yeniden kapatır.	
 ### • 58 - Sistem / Market Onar:
 	• Microsoft'un önerdiği bütün onarma seçeneklerini uygular.
 ### • 59 - PC Temizle:
-	• Sistemde biriken çöp dosyaları temizler.
-### • 60 - Appx Yönetici: 
-	• Windows App Boss uygulamasını açar. Sistemde yüklü olan market uygulamalarını kaldırabilirsiniz. Kaldırılamayan uygulamaları silemez.
-	• Resmi sayfası: https://github.com/jason-grimme/WindowsAppBoss
-![WindowsAppBoss_3nsDKdhQNq](https://user-images.githubusercontent.com/93199689/162618838-dd97c0a4-37a4-41d8-9932-ec88f8f67e90.png)
-	
-### • 61 - Folder to ISO: 
+	• Sistemde biriken çöp dosyaları temizler.	
+### • 60 - Folder to ISO: 
 	• Folder to ISO uygulamasını açar. Klasör içindeki verileri ISO dosyasını çevirir.
 	• Resmi sayfası: https://www.trustfm.net/software/utilities/Folder2Iso.php
 ![Folder2Iso_1FDJViSHXt](https://user-images.githubusercontent.com/93199689/162618820-6233dc42-31d4-471f-8ad9-a0bf44e2faab.png)	
 	
-### • 62 - Fat32 to NTFS: 
+### • 61 - Fat32 to NTFS: 
 	• Fat32 olarak formatlanmış USB diskleri veri kaybı olmadan NTFS'ye çevirir. Disk harfini girmeniz gerekmektedir.
 ![cmd_tokNcw69mr](https://user-images.githubusercontent.com/93199689/162618533-9f18c20e-165e-4ef7-bdf9-3e6b590591cb.png)
 
-### • 63 - Ping Ölçer: 
+### • 62 - Ping Ölçer: 
 	• İçerisinde belirli sitelerin ping durumlarını otomatik gösterir. Alt bölümde yer alan "Ping ölç" bölümüyle istediğiniz site ve IP'nin pingini ölçebilirsiniz.
 ![cmd_MBrlUEjJp8](https://user-images.githubusercontent.com/93199689/162618549-62169dab-05d1-4c1f-9404-a4f616b7936f.png)
 
-### • 64 - Lisans Yönetimi: 
+### • 63 - Lisans Yönetimi: 
 SLMGR.VBS komutlarını içermektedir. Crack tarzı işlemler bulunmamaktadır.
 
 ![LisansYonetimi](https://user-images.githubusercontent.com/93199689/148984026-2f91e49b-5fd0-4a14-85b0-aeab3ffa1d48.png)
@@ -369,7 +356,7 @@ SLMGR.VBS komutlarını içermektedir. Crack tarzı işlemler bulunmamaktadır.
 	• 4 - Lisans Süresini Öğren [xpr]: Lisans süresi hakkında detaylı bilgi verir.
 	• 5 - Lisans Sil [upk]: Sistem kullandığınız lisansı siler.
 	• 6 - Lisans Süre Sıfırla [rearm]: Windows 30 günlük deneme sürümü süresini 3 defa uzatabilirsiniz. 
-### • 65 - Kullancı Hesap Yönetimi: 
+### • 64 - Kullancı Hesap Yönetimi: 
 ![KullanıcıHesabı](https://user-images.githubusercontent.com/93199689/148984022-2d26e786-5d72-4941-9753-c7ff7e923927.png)
 
 	• 1 - Administrator [AKTİF]: Administrator hesabını açar.
@@ -379,14 +366,14 @@ SLMGR.VBS komutlarını içermektedir. Crack tarzı işlemler bulunmamaktadır.
 	• 5 - Kullanıcı [SİL]: Mevcut bir kullanıcıyı silebilirsiniz.
 	• 6 - Şifremi unuttum: Şifre değiştirmek veya şifre oluşturmak için bu bölüm kullanılabilir.
 	• 7 - Mevcut Kullanıcıları Göster: Sistemde kayıtlı kullanıcıları gösterir.
-### • 66 - Sistem Hakkında:
+### • 65 - Sistem Hakkında:
 - Sistem ve donanım hakkında bilgi verir.
 ![cmd_a013zdbIKc](https://user-images.githubusercontent.com/93199689/162618566-48b7bcd6-2bad-4b85-893d-5ef16cc655e6.png)
 
-### • 67 - Wifi Crack:	 
+### • 66 - Wifi Crack:	 
 	• Bu bölümde sisteme girdiğiniz Wifi isim ve şifrelerini görebilirsiniz.
 	• Çalışmasını toolbox'a eklediği için Archley'e teşekkür ederim.
-### • 68 - Zaman Ayarlı PC Kapat:
+### • 67 - Zaman Ayarlı PC Kapat:
 	• Seçilen belirli bir süreden sonra PC otomatik kapatır.
 ![cmd_ScVQsUrVYT](https://user-images.githubusercontent.com/93199689/159128693-a8d1d252-5649-42db-8610-e9df435e6952.png)
 
