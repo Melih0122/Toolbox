@@ -324,7 +324,7 @@ Mavi renkli işlem numaraları 26 numaralı işlem ile alakalıdır.
 	     • Burada tanımlanan klasör yolu ile işlem yapılmaktadır.
 	     • Bu bölüm ilk girişte "Edit\Mount" klasör yolunu alır. Mount dosyaları farklı bir klasörde ise 26 numaralı işlem ile değiştirin.
 	     
-	![cmd_gAsBVf0Vow](https://user-images.githubusercontent.com/93199689/163688053-e0b7d94d-3744-4e16-bca2-d5f09ce5c6dc.png)
+![cmd_gAsBVf0Vow](https://user-images.githubusercontent.com/93199689/163688053-e0b7d94d-3744-4e16-bca2-d5f09ce5c6dc.png)
 
 ### • 57 - Güncelleme Sonrası Temizlik:
 	• Güncelleme sonrası yüklenen Defender, Telemetri, Diagtrack gibi hizmetleri yeniden kapatır.	
