@@ -18,16 +18,11 @@
 ::                                                >>   WEB PAGE   <<
 ::                                         --------------------------------
 ::                                         >>  ognitorenks.blogspot.com  <<
-
 :: ==============================================================================================================================
-echo off
-cls
 
-echo This bat file contains download links. 
-echo Press any key to turn it off. 
+VersionCheck:2.7
+Version8Check:2.6
 
-pause > NUL
-exit
 :01
 :: https://docs.microsoft.com/tr-TR/cpp/windows/latest-supported-vc-redist?view=msvc-170
 https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x86.EXE 05x86.exe
@@ -354,6 +349,7 @@ https://valorant.secure.dyn.riotcdn.net/channels/public/x/installer/current/live
 :GoogleDrive
 :G1
 https://docs.google.com/uc?export=download&id=1BNmQ1JSes4hiFu3mPR4mJP10FNX68NxV Links.zip
+https://docs.google.com/uc?export=download&id=1aCBwYuFCoj3uMy2BsTgJc5vKYjtOJd0b Links.txt
 
 :G2
 https://docs.google.com/uc?export=download&id=18kwIyPhIpk0wS-LbwMhsi4ocXJk0R-rG Oldico.zip
@@ -366,6 +362,9 @@ https://docs.google.com/uc?export=download&id=1Fw7Z61gQ9gw6KX4F1tWZtZlrk45JMrLe 
 
 :G5
 https://docs.google.com/uc?export=download&id=1UwWfsuVhuj_KJKbCC5_4rVFWZGMD7_um ISLC.zip
+
+:G6
+https://docs.google.com/uc?export=download^&id=1EmNVzyXjEO1mYW0hFG4ZdGYNIzj1_lCN Versioncheck.txt
 
 :Removed
 :r1

@@ -141,6 +141,52 @@ dir /b "%Location%\Files\wget.exe" > NUL 2>&1
 
 :: ==============================================================================================================================
 
+set version=2.7
+
+:: ==============================================================================================================================
+:NetCheck
+ping -n 1 www.google.com.tr -w 20000 > NUL
+	if %errorlevel%==1 goto NoInternet
+
+:AutoToolboxUpdate
+FOR /F "delims=':' tokens=2" %%a in ('Find "AutoUpdate" %Location%\Update.ini') do set autoupdate=%%a
+	if %autoupdate%==0 goto AutoUpdate
+	if %autoupdate%==1 goto NoInternet
+) else
+	goto AutoUpdate
+	
+:AutoUpdate
+mode con cols=80 lines=30
+echo 
+echo 
+echo 
+echo 
+echo 
+echo 
+echo 
+echo                     %R%[92m GncelleŸtirmeler kontrol ediliyor...%R%[0m
+echo 
+echo               %R%[33mþþ  þþþþ þ   þ þ þþþ  þþ  þþþþ  þþþ þ   þ   þ þþþþ%R%[0m
+echo              %R%[33mþ  þ þ    þþ  þ þ  þ  þ  þ þ  þ  þ   þþ  þ  þ  þ   %R%[0m
+echo              %R%[33mþ  þ þ þþ þ þ þ þ  þ  þ  þ þ þ   þþ  þ þ þ þ   þþþþ%R%[0m
+echo              %R%[33mþ  þ þ  þ þ  þþ þ  þ  þ  þ þ  þ  þ   þ  þþ  þ     þ%R%[0m
+echo               %R%[33mþþ  þþþþ þ   þ þ  þ   þþ  þ   þ þþþ þ   þ   þ þþþþ%R%[0m 
+
+FOR /F "tokens=1" %%i in ('FIND "Links.txt" %Location%\Extra\Links.txt') do set link=%%i
+
+%Location%\Files\wget --no-check-certificate  "%link%" -O %Location%\Extra\Links.txt > NUL 2>&1
+
+FOR /F "delims=':' tokens=2" %%b in ('Find "VersionCheck" %Location%\Extra\Links.txt') do set versioncheck=%%b
+if %versioncheck% equ %version% (
+  goto NoInternet
+) else (
+	Powershell -command "Start-Process '%Location%\Extra\Toolbox.Update.bat'
+	exit
+)
+
+:NoInternet
+:: ==============================================================================================================================
+
 :: Wmic.exe'li eski komutlar
 ::wmic os get RegisteredUser, CSName, Caption, OSArchitecture, BuildNumber /value > %Logs%\OS.txt
 ::FOR /F "tokens=2 delims='='" %%a in ('FIND "Caption" %Logs%\OS.txt') do set caption=%%a 
@@ -178,8 +224,6 @@ FOR /F "tokens=5" %%a in ('FIND "Caption" %Logs%\OS.txt') do set caption2=%%a
 echo %caption2% > NUL
 	if %caption2%==10 (set editmenugo=Win10SettingsMenu) 
 	if %caption2%==11 (set editmenugo=Win11SettingsMenu)
-
-set version=2.6.3
 
 ::set editmenu=Windows 11 Edit
 ::set editmenugo=Win11SettingsMenu
@@ -230,9 +274,9 @@ echo   %R%[90mº%R%[32m 20.%C%[36m Libre Office         %R%[90mº%R%[32m  46.%C%[3
 echo   %R%[90mº%R%[32m 21.%C%[36m Adobe Reader         %R%[90mº%R%[32m  47.%C%[36m Hibit Uninstaller      %R%[90mº%R%[0m                                 %R%[90mº%R%[0m 
 echo   %R%[90mº%R%[32m 22.%C%[36m PDF-XChange Edit”r   %R%[90mº%R%[32m  48.%C%[36m Wise Care 365          %R%[90mº%R%[0m                                 %R%[90mº%R%[0m 
 echo   %R%[90mº%R%[32m 23.%C%[36m Calibre              %R%[90mº%R%[32m  49.%C%[36m Unlocker               %R%[90mº%R%[0m                                 %R%[90mº%R%[0m 
-echo   %R%[90mº%R%[32m 24.%C%[33m 7 - Zip              %R%[90mº%R%[32m  50.%C%[36m SSD Booster            %R%[90mº%R%[32m 97.%C%[36m Toolbox Rehber              %R%[90mº%R%[0m
-echo   %R%[90mº%R%[32m 25.%C%[33m WinRAR               %R%[90mº%R%[32m  51.%C%[36m OpenShell              %R%[90mº%R%[32m 98.%C%[36m Toolbox Gncelle            %R%[90mº%R%[0m
-echo   %R%[90mº%R%[32m 26.%C%[36m Kdenlive             %R%[90mº%R%[32m  52.%C%[36m Everything             %R%[90mº%R%[32m 99.%C%[36m Toolbox Link Gncelle       %R%[90mº%R%[0m
+echo   %R%[90mº%R%[32m 24.%C%[33m 7 - Zip              %R%[90mº%R%[32m  50.%C%[36m SSD Booster            %R%[90mº%R%[0m                                 %R%[90mº%R%[0m 
+echo   %R%[90mº%R%[32m 25.%C%[33m WinRAR               %R%[90mº%R%[32m  51.%C%[36m OpenShell              %R%[90mº%R%[32m 98.%C%[36m Toolbox Rehber              %R%[90mº%R%[0m
+echo   %R%[90mº%R%[32m 26.%C%[36m Kdenlive             %R%[90mº%R%[32m  52.%C%[36m Everything             %R%[90mº%R%[32m 99.%C%[36m Toolbox Gncelle            %R%[90mº%R%[0m
 echo   %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
 echo   %R%[90mº%R%[0m %R%[32m X.%R%[37m Temizle ve Kapat%R%[0m       [%R%[1;97m%R%[100mognitorenks.blogspot.com%R%[0m]   %R%[32m  Z.%C%[37m Listeyi GeniŸlet ^>^>^>%R%[0m        %R%[90mº%R%[0m
 echo   %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
@@ -306,10 +350,8 @@ set /p menu= %C%[92m  ˜Ÿlem : %C%[0m
 	if %menu%==65 (Call :SistemHakkinda)
 	if %menu%==66 (Call :wificrackarchley)
 	if %menu%==67 goto shutdownpc
-	if %menu%==97 (start https://github.com/OgnitorenKs/OgnitorenKs.Toolbox&goto menu)
-	if %menu%==98 (Call :Logss "Toolbox.Update" "Toolbox gncelleme arac ‡alŸtrld."
-				   Powershell -command "Start-Process '%Location%\Extra\Toolbox.Update.bat'"&exit)
-	if %menu%==99 (Call :linksupdate&goto menu)
+	if %menu%==98 (start https://github.com/OgnitorenKs/OgnitorenKs.Toolbox&goto menu)
+	if %menu%==99 goto AutoUpdate	   
 	if %menu%==x (Call :Logss "Kalntlar.Temizle" "Download klas”r temizlendi."
 				  cls&DEL /F /Q /A %download%\*&RD /S /Q %download%\*&goto exit)
 	if %menu%==X (Call :Logss "Kalntlar.Temizle" "Download klas”r temizlendi."
@@ -379,16 +421,6 @@ FOR %%a in (%$multi%) do (Call :Download%%a)
 goto menu2
 
 :: ==============================================================================================================================
-:linksupdate
-Call :Logss "Toolbox.Link.Update" "Toolbox linkler gncellendi."
-FOR /F "tokens=1" %%i in ('FIND "Links.zip" %Location%\Extra\Links.bat') do set link=%%i
-Call :wget2 "%link%" "Links.zip"
-%PowerRun% Powershell -command "Expand-Archive -Force '%download%\Links.zip' '%Location%\Extra'"
-echo   %R%[1;97m%R%[42m                                    Linkler gncellendi                                     %R%[0m
-timeout /t 2 /nobreak > NUL
-goto :eof
-
-:: ==============================================================================================================================
 
 :Downloadd1
 cls
@@ -449,120 +481,120 @@ findstr /i "DirectPlay" %Logs%\Capabilities.aio.txt | findstr /i "Enabled" > NUL
 
 ::-----------------------
 :: Ykleme b”lm
-FOR /F "tokens=1" %%i in ('FIND "05x86.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "05x86.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" 05x86.exe /Q
-FOR /F "tokens=1" %%i in ('FIND "05x64.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "05x64.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" 05x64.exe /Q
 
-FOR /F "tokens=1" %%i in ('FIND "08x86.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "08x86.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" 08x86.exe /q
-FOR /F "tokens=1" %%i in ('FIND "08x64.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "08x64.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" 08x64.exe /q
 
-FOR /F "tokens=1" %%i in ('FIND "10x86.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "10x86.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" 10x86.exe "/q /norestart"
-FOR /F "tokens=1" %%i in ('FIND "10x64.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "10x64.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" 10x64.exe "/q /norestart"
 
-FOR /F "tokens=1" %%i in ('FIND "12x86.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "12x86.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" 12x86.exe "/install /quiet /norestart"
-FOR /F "tokens=1" %%i in ('FIND "12x64.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "12x64.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" 12x64.exe "/install /quiet /norestart"
 
-FOR /F "tokens=1" %%i in ('FIND "13x86.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "13x86.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" 13x86.exe "/install /quiet /norestart"
-FOR /F "tokens=1" %%i in ('FIND "13x64.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "13x64.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" 13x64.exe "/install /quiet /norestart"
 
-FOR /F "tokens=1" %%i in ('FIND "15x86.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "15x86.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" 15x86.exe "/install /quiet /norestart"
-FOR /F "tokens=1" %%i in ('FIND "15x64.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "15x64.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" 15x64.exe "/install /quiet /norestart" 
 
-FOR /F "tokens=1" %%i in ('FIND "javax64" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "javax64" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" javax64.exe "INSTALL_SILENT=Enable SPONSORS=Disable WEB_ANALYTICS=Disable REBOOT=Disable WEB_JAVA=Disable REMOVEOUTOFDATEJRES=1"
 
-FOR /F "tokens=1" %%i in ('FIND "xnafx40" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "xnafx40" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" xnafx40.msi /qn
 
-FOR /F "tokens=1" %%i in ('FIND "oal.zip" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "oal.zip" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget2 "%link%" oal.zip
 Call :ZipExport oal.zip
 "%download%\oal\oalinst.exe" /SILENT
 
-FOR /F "tokens=1" %%i in ('FIND "Desktop5x64" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Desktop5x64" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Desktop5x64.exe "/q /norestart"
-FOR /F "tokens=1" %%i in ('FIND "Desktop5x86" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Desktop5x86" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Desktop5x86.exe "/q /norestart"
 
-FOR /F "tokens=1" %%i in ('FIND "DirectX" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "DirectX" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget2 "%link%" DirectX.exe
 %Location%\Download\DirectX.exe /Q /C /T:"%Location%\Download\DirectX\"
 "%Location%\Download\DirectX\DXSETUP.exe" /silent
 goto :eof
 
 :Download2
-FOR /F "tokens=1" %%i in ('FIND "Discord" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Discord" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Discord.exe -s
 goto :eof
 
 :Download3
-FOR /F "tokens=1" %%i in ('FIND "WhatsApp" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "WhatsApp" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" WhatsApp.exe --silent 
 goto :eof
 
 :Download4
-FOR /F "tokens=1" %%i in ('FIND "Signal" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Signal" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Signal.exe /S
 goto :eof
 
 :Download5
-FOR /F "tokens=1" %%i in ('FIND "Telegram" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Telegram" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Telegram.exe "/VERYSILENT /NORESTART"
 goto :eof
 
 :Download6
-FOR /F "tokens=1" %%i in ('FIND "Zoom" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Zoom" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Zoom.msi /qn
 goto :eof
 
 :Download7
-FOR /F "tokens=1" %%i in ('FIND "EpicGames" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "EpicGames" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" EpicGames.msi "/qn /norestart"
 goto :eof
 
 :Download8
-FOR /F "tokens=1" %%i in ('FIND "Steam" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Steam" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Steam.exe /S
 goto :eof
 
 :Download9
-FOR /F "tokens=1" %%i in ('FIND "GOG.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "GOG.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" GOG.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
 goto :eof
 
 :Download10
-FOR /F "tokens=1" %%i in ('FIND "Uplay" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Uplay" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Uplay.exe /S
 goto :eof
 
 :Download11
-FOR /F "tokens=1" %%i in ('FIND "Origin" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Origin" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Origin.exe /SILENT
 goto :eof
 
 :Download12
-FOR /F "tokens=1" %%i in ('FIND "CheatEngine" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "CheatEngine" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" CheatEngine.exe /SILENT
 goto :eof
 
 :Download13
-FOR /F "tokens=1" %%i in ('FIND "Wemod" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Wemod" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Wemod.exe --silent
 goto :eof
 
 :Download14
-FOR /F "tokens=1" %%i in ('FIND "GoogleChrome" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "GoogleChrome" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" GoogleChrome.msi /qn
 Call :sz "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\cjpalhdlnbpafiamejdnhcphjbkeiagm" "update_url" "https://clients2.google.com/service/update2/crx" & :: UBlock Origin
 Call :sz "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\gcbommkclmclpchllfjekcdonpmejbdp" "update_url" "https://clients2.google.com/service/update2/crx" & :: HTTPS Everywhere 
@@ -570,12 +602,12 @@ Call :sz "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\lckanjgmijmafbedlla
 goto :eof 
 
 :Download15
-FOR /F "tokens=1" %%i in ('FIND "Firefox" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Firefox" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Firefox.exe /S
 goto :eof
 
 :Download16
-FOR /F "tokens=1" %%i in ('FIND "Brave" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Brave" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Brave.exe "--install --silent --system-level"
 Call :sz "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\cjpalhdlnbpafiamejdnhcphjbkeiagm" "update_url" "https://clients2.google.com/service/update2/crx" & :: UBlock Origin
 Call :sz "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\gcbommkclmclpchllfjekcdonpmejbdp" "update_url" "https://clients2.google.com/service/update2/crx" & :: HTTPS Everywhere 
@@ -583,7 +615,7 @@ Call :sz "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\lckanjgmijmafbedlla
 goto :eof 
 
 :Download17
-FOR /F "tokens=1" %%i in ('FIND "Edge.msi" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Edge.msi" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Edge.msi /qn
 Call :sz "HKLM\SOFTWARE\WOW6432Node\Microsoft\Edge\Extensions\cjpalhdlnbpafiamejdnhcphjbkeiagm" "update_url" "https://clients2.google.com/service/update2/crx" & :: UBlock Origin 
 Call :sz "HKLM\SOFTWARE\WOW6432Node\Microsoft\Edge\Extensions\gcbommkclmclpchllfjekcdonpmejbdp" "update_url" "https://clients2.google.com/service/update2/crx" & :: HTTPS Everywhere 
@@ -591,161 +623,161 @@ Call :sz "HKLM\SOFTWARE\WOW6432Node\Microsoft\Edge\Extensions\lckanjgmijmafbedll
 goto :eof
 
 :Download18
-FOR /F "tokens=1" %%i in ('FIND "ISLC.zip" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "ISLC.zip" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget3 "%link%" "%Location%\Files\ISLC.zip"
 Powershell -command "Expand-Archive -Force '%Location%\Files\ISLC.zip' 'C:\'"
 Powershell -command "New-Item -ItemType SymbolicLink -Path 'C:\Users\%username%\Desktop' -Name 'ISLC' -Value 'C:\ISLC\ISLC.exe'"
 goto :eof
 
 :Download19
-FOR /F "tokens=1" %%i in ('FIND "MemReduct.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "MemReduct.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" MemReduct.exe /S
 goto :eof
 
 :Download20
-FOR /F "tokens=1" %%i in ('FIND "LibreOffice.msi" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "LibreOffice.msi" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" LibreOffice.msi "/qn /norestart ALLUSERS=1 CREATEDESKTOPLINK=0 REGISTER_ALL_MSO_TYPES=0 REGISTER_NO_MSO_TYPES=1 ISCHECKFORPRODUCTUPDATES=0 QUICKSTART=1 ADDLOCAL=ALL"
 goto :eof
 
 :Download21
-FOR /F "tokens=1" %%i in ('FIND "AdobeReader.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "AdobeReader.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" "AdobeReader.exe" "/sPB /rs /msi"
 goto :eof
 
 :Download22
-FOR /F "tokens=1" %%i in ('FIND "PdfXchange.msi" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "PdfXchange.msi" %Location%\Extra\Links.txt') do set link=%%i
 ::Call :wget "%link%" AdobeReader.exe "/sPB /rs /msi"
 Call :wget "%link%" PdfXchange.msi "/quiet /norestart"
 goto :eof
 
 :Download23
-FOR /F "tokens=1" %%i in ('FIND "Calibre" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Calibre" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Calibre.msi /qn
 goto :eof
 
 :Download24
-FOR /F "tokens=1" %%i in ('FIND "7-Zip" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "7-Zip" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" 7-Zip.msi /qn
 goto :eof
 
 :Download25
-FOR /F "tokens=1" %%i in ('FIND "Winrar" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Winrar" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Winrar.exe /S
 goto :eof
 
 :Download26
-FOR /F "tokens=1" %%i in ('FIND "Kdenlive" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Kdenlive" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Kdenlive.exe /S
 goto :eof
 
 :Download27
-FOR /F "tokens=1" %%i in ('FIND "Openshot" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Openshot" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Openshot.exe /VERYSILENT /NORESTART
 goto :eof
 
 :Download28
-FOR /F "tokens=1" %%i in ('FIND "Shotcut.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Shotcut.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Shotcut.exe /S
 goto :eof
 
 :Download29
-FOR /F "tokens=1" %%i in ('FIND "Krita" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Krita" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Krita.exe /S
 goto :eof
 
 :Download30
-FOR /F "tokens=1" %%i in ('FIND "Gimp" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Gimp" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Gimp.exe "/VERYSILENT /NORESTART /MERGETASKS=desktopicon /ALLUSERS"
 goto :eof
 
 :Download31
-FOR /F "tokens=1" %%i in ('FIND "OBS" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "OBS" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" OBS.exe /S
 goto :eof
 
 :Download32
-FOR /F "tokens=1" %%i in ('FIND "ShareX" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "ShareX" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" ShareX.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
 goto :eof
 
 :Download33
-FOR /F "tokens=1" %%i in ('FIND "Audacity" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Audacity" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Audacity.exe "/VERYSILENT /NORESTART"
 goto :eof
 
 :Download34
-FOR /F "tokens=1" %%i in ('FIND "Klite" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Klite" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Klite.exe /verysilent
 goto :eof
 
 :Download35
-FOR /F "tokens=1" %%i in ('FIND "VLCMediaPlayer" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "VLCMediaPlayer" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" VLCMediaPlayer.exe "/L=1055 /S"
 goto :eof
 
 :Download36
-FOR /F "tokens=1" %%i in ('FIND "Aimp" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Aimp" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Aimp.exe "/AUTO /SILENT"
 goto :eof
 
 :Download37
-FOR /F "tokens=1" %%i in ('FIND "AnyVideoConverter" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "AnyVideoConverter" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" AnyVideoConverter.exe /S
-Powershell -command "New-Item -ItemType SymbolicLink -Path 'C:\Users\OgnitorenKs\Desktop' -Name 'Any Video Converter' -Value 'C:\Program Files (x86)\Anvsoft\Any Video Converter\AVCFree.exe'"
+Powershell -command "New-Item -ItemType SymbolicLink -Path 'C:\Users\%username%\Desktop' -Name 'Any Video Converter' -Value 'C:\Program Files (x86)\Anvsoft\Any Video Converter\AVCFree.exe'"
 goto :eof
 
 :Download38
-FOR /F "tokens=1" %%i in ('FIND "FreeDownloadManager" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "FreeDownloadManager" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" FreeDownloadManager.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
 goto :eof
 
 :Download39
-FOR /F "tokens=1" %%i in ('FIND "InternetDownloadManager" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "InternetDownloadManager" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" InternetDownloadManager.exe /skipdlgs
 goto :eof
 
 :Download40
-FOR /F "tokens=1" %%i in ('FIND "ByClick" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "ByClick" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" ByClick.exe /q
 goto :eof
 
 :Download41
-FOR /F "tokens=1" %%i in ('FIND "Qbittorrent.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Qbittorrent.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Qbittorrent.exe /S
 goto :eof
 
 :Download42
-FOR /F "tokens=1" %%i in ('FIND "GlassWire" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "GlassWire" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" GlassWire.exe /S
 goto :eof
 
 :Download43
-FOR /F "tokens=1" %%i in ('FIND "TeamViewer" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "TeamViewer" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" TeamViewer.exe /S
 goto :eof
 
 :Download44
-FOR /F "tokens=1" %%i in ('FIND "Hamachi" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Hamachi" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Hamachi.msi /q
 goto :eof
 
 :Download45
-FOR /F "tokens=1" %%i in ('FIND "Stremio" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Stremio" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Stremio.exe /S
 goto :eof
 
 :Download46
-FOR /F "tokens=1" %%i in ('FIND "MSIAfterburner" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "MSIAfterburner" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" MSIAfterburner.exe /S
 goto :eof
 
 :Download47
-FOR /F "tokens=1" %%i in ('FIND "HibitUninstaller" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "HibitUninstaller" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" HibitUninstaller.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
 goto :eof
 
 :Download48
-FOR /F "tokens=1" %%i in ('FIND "WiseCare365.zip" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "WiseCare365.zip" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget2 "%link%" WiseCare365.zip
 powershell -command "Expand-Archive -Force '%download%\WiseCare365.zip' '%download%'"
 "%download%\WiseCare365.exe" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-
@@ -753,28 +785,28 @@ DEL /F /Q /A "%download%\WiseCare365.zip"
 goto :eof
 
 :Download49
-FOR /F "tokens=1" %%i in ('FIND "Unlocker.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Unlocker.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Unlocker.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
 goto :eof
 
 :Download50
-FOR /F "tokens=1" %%i in ('FIND "SSDBooster" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "SSDBooster" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget3 "%link%" "C:\users\%username%\Desktop\SSDBooster.exe"
 powershell -command "Start-Process 'C:\Users\%username%\Desktop\SSDBooster.exe'"
 goto :eof
 
 :Download51
-FOR /F "tokens=1" %%i in ('FIND "OpenShell" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "OpenShell" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" OpenShell.exe "/quiet /norestart ADDLOCAL=StartMenu"
 goto :eof
 
 :Download52
-FOR /F "tokens=1" %%i in ('FIND "Everything" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Everything" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Everything.exe /S
 goto :eof
 
 :Download53
-FOR /F "tokens=1" %%i in ('FIND "TaskbarX" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "TaskbarX" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget2 "%link%" TaskbarX.zip 
 powershell -command "Expand-Archive -Force '%download%\TaskbarX.zip' 'C:\Users\%username%\Desktop\TaskbarX'"
 powershell -command "Start-Process 'C:\Users\%username%\Desktop\TaskbarX\TaskbarX Configurator.exe'"
@@ -782,87 +814,87 @@ powershell -command "Start-Process 'C:\Users\%username%\Desktop\TaskbarX\Taskbar
 goto :eof
 
 :Download54
-FOR /F "tokens=1" %%i in ('FIND "Stellarium.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Stellarium.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Stellarium.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
 goto :eof
 
 :Download55
-FOR /F "tokens=1" %%i in ('FIND "Recuva.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Recuva.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Recuva.exe /S
 goto :eof
 
 :Download56
-FOR /F "tokens=1" %%i in ('FIND "AOMEI.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "AOMEI.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" AOMEI.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
 goto :eof
 
 :Download57
-FOR /F "tokens=1" %%i in ('FIND "Python.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Python.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Python.exe "/quiet InstallAllUsers=1 PrependPath=1"
 goto :eof
 
 :Download58
-FOR /F "tokens=1" %%i in ('FIND "PyCharm.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "PyCharm.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" PyCharm.exe /S
 goto :eof
 
 :Download59
-FOR /F "tokens=1" %%i in ('FIND "Notepad" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Notepad" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Notepad.exe /S
 goto :eof
 
 :Download60
-FOR /F "tokens=1" %%i in ('FIND "VisualStudioCode.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "VisualStudioCode.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" VisualStudioCode.exe "/VERYSILENT /NORESTART /MERGETASKS=!runcode"
 goto :eof
 
 :Download61
-FOR /F "tokens=1" %%i in ('FIND "Github.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Github.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Github.exe -s
 goto :eof
 
 :Download62
-FOR /F "tokens=1" %%i in ('FIND "Git.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Git.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Git.exe "/VERYSILENT /NORESTART"
 goto :eof
 
 :Download63
-FOR /F "tokens=1" %%i in ('FIND "Blender.msi" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Blender.msi" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Blender.msi "ALLUSERS=1 /qn"
 goto :eof
 
 :Download64
-FOR /F "tokens=1" %%i in ('FIND "Processhacker.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Processhacker.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget "%link%" Processhacker.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
 goto :eof
 
 :Download73
-FOR /F "tokens=1" %%i in ('FIND "osu.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "osu.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget3 "%link%" "C:\users\%username%\Desktop\osu.exe" 
 goto :eof
 
 :Download74
-FOR /F "tokens=1" %%i in ('FIND "WorldOfTanks.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "WorldOfTanks.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget3 "%link%" "C:\users\%username%\Desktop\WorldOfTanks.exe" 
 goto :eof
 
 :Download75
-FOR /F "tokens=1" %%i in ('FIND "GenshinImpact.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "GenshinImpact.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget3 "%link%" "C:\users\%username%\Desktop\GenshinImpact.exe" 
 goto :eof
 
 :Download76
-FOR /F "tokens=1" %%i in ('FIND "LeagueOfLegendsTR.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "LeagueOfLegendsTR.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget3 "%link%" "C:\users\%username%\Desktop\LeagueOfLegendsTR.exe" 
 goto :eof
 
 :Download77
-FOR /F "tokens=1" %%i in ('FIND "LeagueOfLegendsEUW.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "LeagueOfLegendsEUW.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget3 "%link%" "C:\users\%username%\Desktop\LeagueOfLegendsEUW.exe" 
 goto :eof
 
 :Download78
-FOR /F "tokens=1" %%i in ('FIND "Valorant.exe" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Valorant.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget3 "%link%" "C:\users\%username%\Desktop\Valorant.exe" 
 goto :eof
 
@@ -1089,7 +1121,7 @@ goto :eof
 :stop
 :servicesmanagement
 cls
-mode con cols=55 lines=37
+mode con cols=55 lines=36
 Call :PowerRun
 title Hizmet Y”netimi / OgnitorenKs
 Dism /Online /Get-Features /format:table > %Logs%\servvalue.txt
@@ -1138,44 +1170,30 @@ reg query "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /v  "Hib
 echo  %R%[90mº%R%[0m  %R%[32m 17%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Hzl BaŸlat (Hibernate)%C%[0m             %R%[90mº%R%[0m
 Call :serv.check "lfsvc NaturalAuthentication"
 echo  %R%[90mº%R%[0m  %R%[32m 18%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Konum hizmeti%C%[0m                        %R%[90mº%R%[0m
-set servalue=%R%[42m %R%[0m
-findstr /i "WindowsMediaPlayer" %Logs%\servvalue.txt | findstr /i "Disabled" > NUL 2>&1
-	if %errorlevel%==0 (set servalue=%R%[100m %R%[0m)
-echo  %R%[90mº%R%[0m  %R%[32m 19%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Windows Media Player%C%[0m                 %R%[90mº%R%[0m
 findstr /i "Hyper-V" %Logs%\servvalue.txt | findstr /i "Disabled" > NUL 2>&1
 	if %errorlevel%==0 (set servalue=%R%[100m %R%[0m)
 	if %errorlevel%==1 (set servalue=%R%[42m %R%[0m)
-echo  %R%[90mº%R%[0m  %R%[32m 20%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Hyper-V hizmeti%C%[0m                      %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 19%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Hyper-V hizmeti%C%[0m                      %R%[90mº%R%[0m
 Call :serv.check "BcastDVRUserService XboxGipSvc XboxNetApiSvc XblAuthManager XblGameSave DoSvc"
-echo  %R%[90mº%R%[0m  %R%[32m 21%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Xbox hizmeti%C%[0m                         %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 20%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Xbox hizmeti%C%[0m                         %R%[90mº%R%[0m
 Call :serv.check "BDESVC"
-echo  %R%[90mº%R%[0m  %R%[32m 22%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Bitlocker Src Ÿifreleme hizmeti%C%[0m   %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 21%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Bitlocker Src Ÿifreleme hizmeti%C%[0m   %R%[90mº%R%[0m
 Call :serv.check "SharedRealitySvc VacSvc perceptionsimulation spectrum MixedRealityOpenXRSvc"
-echo  %R%[90mº%R%[0m  %R%[32m 23%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Karma Ger‡eklik hizmeti (VR)%C%[0m         %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 22%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Karma Ger‡eklik hizmeti (VR)%C%[0m         %R%[90mº%R%[0m
 set servalue=%R%[42m %R%[0m
-reg query "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\Update" /v "ExcludeWUDriversInQualityUpdate" | findstr /i 0x1 > NUL 2>&1
-	if %errorlevel%==0 (set servalue=%R%[100m %R%[0m)
-reg query "HKLM\SOFTWARE\Microsoft\PolicyManager\default\Update" /v "ExcludeWUDriversInQualityUpdate" | findstr /i 0x1 > NUL 2>&1
-	if %errorlevel%==0 (set servalue=%R%[100m %R%[0m)
-reg query "HKLM\SOFTWARE\Microsoft\PolicyManager\default\Update\ExcludeWUDriversInQualityUpdate" /v "value" | findstr /i 0x1 > NUL 2>&1
-	if %errorlevel%==0 (set servalue=%R%[100m %R%[0m)
-reg query "HKLM\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" /v "ExcludeWUDriversInQualityUpdate" | findstr /i 0x1 > NUL 2>&1
-	if %errorlevel%==0 (set servalue=%R%[100m %R%[0m)
 reg query "HKLM\Software\Policies\Microsoft\Windows\DriverSearching" /v "SearchOrderConfig" | findstr /i 0x0 > NUL 2>&1
 	if %errorlevel%==0 (set servalue=%R%[100m %R%[0m)
-reg query "HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /v "ExcludeWUDriversInQualityUpdate" | findstr /i 0x1 > NUL 2>&1
-	if %errorlevel%==0 (set servalue=%R%[100m %R%[0m)
-echo  %R%[90mº%R%[0m  %R%[32m 24%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Driver Ykle/Gncelle hizmeti%C%[0m        %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 23%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Driver Ykle/Gncelle hizmeti%C%[0m        %R%[90mº%R%[0m
 set servalue=%R%[42m %R%[0m
 Powershell -command "Get-MMAgent" | findstr /i MemoryCompression | findstr /i False > NUL 2>&1
 	if %errorlevel%==0 (set servalue=%R%[100m %R%[0m)
-echo  %R%[90mº%R%[0m  %R%[32m 25%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Bellek SkŸtrma hizmeti%C%[0m            %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 24%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Bellek SkŸtrma hizmeti%C%[0m            %R%[90mº%R%[0m
 set servalue=%R%[42m %R%[0m
 reg query "HKLM\SYSTEM\ControlSet001\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\0cc5b647-c1df-4637-891a-dec35c318583" /v "ValueMax" | findstr /i 0x0 > NUL 2>&1
 	if %errorlevel%==0 (set servalue=%R%[100m %R%[0m)
 reg query "HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\0cc5b647-c1df-4637-891a-dec35c318583" /v  "ValueMax" | findstr /i 0x0 > NUL 2>&1
 	if %errorlevel%==0 (set servalue=%R%[100m %R%[0m)
-echo  %R%[90mº%R%[0m  %R%[32m 26%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Core Parking (CPU €ekirdek Uyku Modu)%C%[0m%R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 25%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Core Parking (CPU €ekirdek Uyku Modu)%C%[0m%R%[90mº%R%[0m
 echo  %R%[90mº%R%[0m        %R%[32m X.%R%[36m Men%R%[0m                                   %R%[90mº%R%[0m
 echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
 set /p value= %C%[92m ˜Ÿlem : %C%[0m
@@ -1251,38 +1269,34 @@ set /p value= %C%[92m ˜Ÿlem : %C%[0m
 	if %value%==18A (Call :serv.18.Location start demand Allow 1 "Call :delete2" "DisableLocation" a‡lyor)
 	if %value%==18K (Call :serv.18.Location stop disabled Deny 0 "Call :dword" "DisableLocation 1" kaptlyor)
 	if %value%==18k (Call :serv.18.Location stop disabled Deny 0 "Call :dword" "DisableLocation 1" kaptlyor)
-	if %value%==19a (Call :serv.19.mediaplayer start demand ENABLE a‡lyor)
-	if %value%==19A (Call :serv.19.mediaplayer start demand ENABLE a‡lyor)
-	if %value%==19K (Call :serv.19.mediaplayer stop disabled DISABLE kapatlyor)
-	if %value%==19k (Call :serv.19.mediaplayer stop disabled DISABLE kapatlyor)
-	if %value%==20a (Call :serv.20.hyperv demand Enable For 1 on a‡lyor)
-	if %value%==20A (Call :serv.20.hyperv demand Enable For 1 on a‡lyor)
-	if %value%==20K (Call :serv.20.hyperv disabled Disable "::" 0 off kapatlyor)
-	if %value%==20k (Call :serv.20.hyperv disabled Disable "::" 0 off kapatlyor)
-	if %value%==21a (Call :serv.21.xbox start demand 1 0 "Call :delete2" a‡lyor)
-	if %value%==21A (Call :serv.21.xbox start demand 1 0 "Call :delete2" a‡lyor)
-	if %value%==21K (Call :serv.21.xbox stop disabled 0 2 "Call :dword" kapatlyor)
-	if %value%==21k (Call :serv.21.xbox stop disabled 0 2 "Call :dword" kapatlyor)
-	if %value%==22a (Call :serv.22.bitlocker start demand a‡lyor)
-	if %value%==22A (Call :serv.22.bitlocker start demand a‡lyor)
-	if %value%==22K (Call :serv.22.bitlocker stop disabled kapatlyor)
-	if %value%==22k (Call :serv.22.bitlocker stop disabled kapatlyor)
-	if %value%==23a (Call :serv.23.mixedreality demand a‡lyor)
-	if %value%==23A (Call :serv.23.mixedreality demand a‡lyor)
-	if %value%==23K (Call :serv.23.mixedreality disabled kapatlyor)
-	if %value%==23k (Call :serv.23.mixedreality disabled kapatlyor)
-	if %value%==24a (Call :serv.24.driverupdate 0 1 a‡lyor)
-	if %value%==24A (Call :serv.24.driverupdate 0 1 a‡lyor)
-	if %value%==24K (Call :serv.24.driverupdate 1 0 kapatlyor)
-	if %value%==24k (Call :serv.24.driverupdate 1 0 kapatlyor)
-	if %value%==25a (Call :serv.25.memorycompression Enable A‡lyor)
-	if %value%==25A (Call :serv.25.memorycompression Enable A‡lyor)
-	if %value%==25K (Call :serv.25.memorycompression Disable Kapatlyor)
-	if %value%==25k (Call :serv.25.memorycompression Disable Kapatlyor)
-	if %value%==26a (Call :serv.26.coreparking 100 "Call :delete" "Call :delete2" a‡lyor)
-	if %value%==26A (Call :serv.26.coreparking 100 "Call :delete" "Call :delete2" a‡lyor)
-	if %value%==26K (Call :serv.26.coreparking 0 "Call :dword" "Call :dword" kapatlyor)
-	if %value%==26k (Call :serv.26.coreparking 0 "Call :dword" "Call :dword" kapatlyor)
+	if %value%==19a (Call :serv.19.hyperv demand Enable For 1 on a‡lyor)
+	if %value%==19A (Call :serv.19.hyperv demand Enable For 1 on a‡lyor)
+	if %value%==19K (Call :serv.19.hyperv disabled Disable "::" 0 off kapatlyor)
+	if %value%==19k (Call :serv.19.hyperv disabled Disable "::" 0 off kapatlyor)
+	if %value%==20a (Call :serv.20.xbox start demand 1 0 "Call :delete2" a‡lyor)
+	if %value%==20A (Call :serv.20.xbox start demand 1 0 "Call :delete2" a‡lyor)
+	if %value%==20K (Call :serv.20.xbox stop disabled 0 2 "Call :dword" kapatlyor)
+	if %value%==20k (Call :serv.20.xbox stop disabled 0 2 "Call :dword" kapatlyor)
+	if %value%==21a (Call :serv.21.bitlocker start demand a‡lyor)
+	if %value%==21A (Call :serv.21.bitlocker start demand a‡lyor)
+	if %value%==21K (Call :serv.21.bitlocker stop disabled kapatlyor)
+	if %value%==21k (Call :serv.21.bitlocker stop disabled kapatlyor)
+	if %value%==22a (Call :serv.22.mixedreality demand a‡lyor)
+	if %value%==22A (Call :serv.22.mixedreality demand a‡lyor)
+	if %value%==22K (Call :serv.22.mixedreality disabled kapatlyor)
+	if %value%==22k (Call :serv.22.mixedreality disabled kapatlyor)
+	if %value%==23a (Call :serv.23.driverupdate 0 1 a‡lyor)
+	if %value%==23A (Call :serv.23.driverupdate 0 1 a‡lyor)
+	if %value%==23K (Call :serv.23.driverupdate 1 0 kapatlyor)
+	if %value%==23k (Call :serv.23.driverupdate 1 0 kapatlyor)
+	if %value%==24a (Call :serv.24.memorycompression Enable A‡lyor)
+	if %value%==24A (Call :serv.24.memorycompression Enable A‡lyor)
+	if %value%==24K (Call :serv.24.memorycompression Disable Kapatlyor)
+	if %value%==24k (Call :serv.24.memorycompression Disable Kapatlyor)
+	if %value%==25a (Call :serv.25.coreparking 100 "Call :delete" "Call :delete2" a‡lyor)
+	if %value%==25A (Call :serv.25.coreparking 100 "Call :delete" "Call :delete2" a‡lyor)
+	if %value%==25K (Call :serv.25.coreparking 0 "Call :dword" "Call :dword" kapatlyor)
+	if %value%==25k (Call :serv.25.coreparking 0 "Call :dword" "Call :dword" kapatlyor)
 	if %value%==x goto menu
 	if %value%==X goto menu
 ) else 
@@ -1638,7 +1652,7 @@ Call :dword "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\System" "Allow
 ::----------------------------------------------------------------------------------------------------------------------------------------------
 goto :eof
 
-:serv.19.mediaplayer
+::serv.19.mediaplayer
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| MediaPlayer hizmeti %4. >> %Location%\Logs
 :: Windows Media Player
 echo   %C%[96mWindows Media Player %4 ...%C%[0m
@@ -1653,7 +1667,7 @@ Dism /Online /%3-Feature /FeatureName:MediaPlayback /Quiet /NoRestart
 ::---------------------------------------------------------------------
 goto :eof
 
-:serv.20.hyperv
+:serv.19.hyperv
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Hyper-V hizmeti %6. >> %Location%\Logs
 echo   %C%[96mHyper-V hizmeti %6 ...%C%[0m
 %~3 /f %%a IN ('"dir /b %SystemRoot%\servicing\Packages\Microsoft-Hyper-V*.mum"') DO (DISM /Online /NoRestart /Add-Package:"%SystemRoot%\servicing\Packages\%%a" > NUL 2>&1)
@@ -1694,7 +1708,7 @@ bcdedit /set hypervisorlaunchtype %5
 ::------------------------------------------
 goto :eof
 
-:serv.21.xbox
+:serv.20.xbox
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Xbox hizmeti %6. >> %Location%\Logs
 echo   %C%[96mXbox hizmeti %6 ...%C%[0m
 :: Oyun DVR ve Yayn kullanc hizmeti
@@ -1726,7 +1740,7 @@ Call :ExplorerReset
 ::----------------------------------------------------------------------------------------------------------------------------------------------
 goto :eof
 
-:serv.22.bitlocker
+:serv.21.bitlocker
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Bitlocker hizmeti %3. >> %Location%\Logs
 echo   %C%[96mBitlocker hizmeti %3 ...%C%[0m
 :: Bitlocker src Ÿifreleme hizmeti
@@ -1738,7 +1752,7 @@ echo   %C%[96mBitlocker hizmeti %3 ...%C%[0m
 ::------------------------------------------------------
 goto :eof
 
-:serv.23.mixedreality
+:serv.22.mixedreality
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Karma Ger‡eklik hizmeti %2. >> %Location%\Logs
 echo   %C%[96mKarma Ger‡eklik hizmeti %2 ...%C%[0m
 :: Uzlamsal veri hizmeti
@@ -1757,7 +1771,7 @@ echo   %C%[96mKarma Ger‡eklik hizmeti %2 ...%C%[0m
 ::------------------------------------------
 goto :eof
 
-:serv.24.driverupdate
+:serv.23.driverupdate
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Driver Gncelle / Ykle %3. >> %Location%\Logs
 echo   %C%[96mDriver Ykle/Gncelle hizmeti %3 ...%C%[0m
 Call :dword "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\Update" "ExcludeWUDriversInQualityUpdate" "%~1"
@@ -1766,13 +1780,14 @@ Call :dword "HKLM\SOFTWARE\Microsoft\PolicyManager\default\Update\ExcludeWUDrive
 Call :dword "HKLM\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" "ExcludeWUDriversInQualityUpdate" "%~1"
 Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" "ExcludeWUDriversInQualityUpdate" "%~1"
 Call :dword "HKLM\Software\Policies\Microsoft\Windows\DriverSearching" "SearchOrderConfig" "%~2"
+gpupdate /force > NUL 2>&1
 ::-------------------------------------
 ::    A‡ = %~1 : 0  | %~2: 1  | %3 : a‡lyor   
 :: Kapat = %~1 : 1  | %~2: 0  | %3 : kapatlyor
 ::-------------------------------------
 goto :eof
 
-:serv.25.memorycompression
+:serv.24.memorycompression
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| Bellek skŸtrma %2. >> %Location%\Logs
 echo   %C%[96mBellek skŸtrma hizmeti %2 ...%C%[0m
 %PowerRun% sc config SysMain start= auto
@@ -1787,7 +1802,7 @@ echo   %C%[96mBellek skŸtrma hizmeti %2 ...%C%[0m
 ::-------------------------------------
 goto :eof
 
-:serv.26.coreparking
+:serv.25.coreparking
 echo [%date% - %time%] ^| Hizmetleri Y”net ^| ˜Ÿlemci ‡ekirdek bekleme hizmeti %4. >> %Location%\Logs
 echo   %C%[96m˜Ÿlemci ‡ekirdek bekleme hizmeti %4 ...%C%[0m
 Call :dword "HKLM\SYSTEM\ControlSet001\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\0cc5b647-c1df-4637-891a-dec35c318583" "ValueMax" "%~1"
@@ -2101,7 +2116,6 @@ goto Win11RightMenuTerminal
 
 :: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
 
-
 :stop
 :Win10SettingsMenu
 cls
@@ -2398,9 +2412,9 @@ goto Win10SettingsMenu
 
 :oldicodown
 echo %R%[96m Simge dosyalar indiriliyor...%R%[0m
-FOR /F "tokens=1" %%i in ('FIND "Oldico.zip" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Oldico.zip" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget3 "%link%" "%Location%\Files\Oldico.zip"
-FOR /F "tokens=1" %%i in ('FIND "Newico.zip" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Newico.zip" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget3 "%link%" "%Location%\Files\Newico.zip"
 goto :eof
 
@@ -2909,14 +2923,6 @@ goto :eof
 Call :Location
 echo [%date% - %time%] ^| FoldertoISO ^| Folder to ISO yazlm ‡alŸtrld. >> %Location%\Logs
 powershell -command "Start-Process '%Location%\Files\Folder2Iso\Folder2Iso.exe'"
-goto :eof
-
-:: ========================================================================================================
-
-:AppxManager
-Call :Location
-echo [%date% - %time%] ^| AppxManager ^| Appx Manager uygulamas ‡alŸtrld. >> %Location%\Logs
-powershell -command "Start-Process '%Location%\Files\WindowsAppBoss.exe'
 goto :eof
 
 :: ========================================================================================================

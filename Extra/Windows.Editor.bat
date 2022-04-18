@@ -832,14 +832,14 @@ goto :EOF
 
 
 :SetupDownload
-FOR /F "tokens=1" %%i in ('FIND "Setup.zip" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Setup.zip" %Location%\Extra\Links.txt') do set link=%%i
 %Location%\Files\wget -q --no-check-certificate --show-progress "%link%" -O %Location%\Download\Setup.zip
 powershell -command "Expand-Archive -Force '%Location%\Download\Setup.zip' '%Location%\Files'"
 echo [%date% - %time%] ^| SetupDownload ^| Setup.zip dosyas indirildi >> %Location%\logs
 goto :eof
 
 :icodownload
-FOR /F "tokens=1" %%i in ('FIND "Newico.zip" %Location%\Extra\Links.bat') do set link=%%i
+FOR /F "tokens=1" %%i in ('FIND "Newico.zip" %Location%\Extra\Links.txt') do set link=%%i
 %Location%\Files\wget -q --no-check-certificate --show-progress "%link%" -O %Location%\Files\Newico.zip
 echo [%date% - %time%] ^| icodownload ^|  Newico.zip dosyas indirildi >> %Location%\logs
 goto :eof

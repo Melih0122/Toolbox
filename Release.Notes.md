@@ -6,7 +6,7 @@
 ::      ■■     ■■ ■■   ■■■■ ■■ ■■ ■■  ■■     ■■    ■■     ■■ ■■■■■■■■  ■■■■■■   ■■ ■■ ■■ ■■■■■      ■■■■■■ 
 ::      ■■     ■■ ■■    ■■  ■■  ■■■■  ■■     ■■    ■■     ■■ ■■   ■■   ■■       ■■  ■■■■ ■■  ■■         ■■
 ::      ■■     ■■ ■■    ■■  ■■   ■■■  ■■     ■■    ■■     ■■ ■■    ■■  ■■       ■■   ■■■ ■■   ■■  ■■    ■■
-::       ■■■■■■■   ■■■■■■   ■■    ■■ ■■■■    ■■     ■■■■■■■  ■■     ■■ ■■■■■■■■ ■■    ■■ ■■    ■■  ■■■■■■ 
+::       ■■■■■■   ■■■■■■   ■■    ■■ ■■■■    ■■     ■■■■■■■  ■■     ■■ ■■■■■■■■ ■■    ■■ ■■    ■■  ■■■■■■ 
 ::
 ::  Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
 ::  -------------------------------------------
@@ -44,6 +44,18 @@
 :: 	  • Hyper-V bölümündeki hatanın giderilmesi.
 ::  
 :: ==============================================================================================================================
+-----------------
+ ► Versiyon 2.7 -
+-----------------
+Yayınlanma Tarihi: 18.04.2022
+
+ • Hizmetleri Yönet > Windows Media Player yaşanan sorunlardan dolayı kaldırıldı.
+ • Toolbox oto güncelleme sistemi getirildi. Bu özelliği OgnitorenKs.Toolbox klasörü içinde yer alan Update.ini'den kapatabilirsiniz.
+ • Links.bat dosyası Links.txt olarak değiştirildi. Güncelleme işlemini hızlıca gerçekleştirmek için.
+ • PowerChoice simgesi değiştirildi.
+
+
+:: ==============================================================================================================================
 -------------------
  ► Versiyon 2.6.3 - Ara güncelleme
 -------------------
@@ -61,6 +73,8 @@ Yayınlanma Tarihi: 16.04.2022
  • Windows App Boss uygulaması kaldırıldı. Program çok uzun zamandır güncelleme almıyordu. Bu uygulama yerine Hibit Uninstaller kullanabilirsiniz.
  • Reiconcache yazılımı toolbox'tan kaldırıldı.
  • ISLC yazılımı indir - kur şeklinde düzenlendi.
+ • Hizmet Yönetimi > Xbox bölümüne kısayol engelleyici parametre eklendi.
+ • Hizmet Yönetimi > Windows Media player bölümüne yeni parametre eklendi.
 
 -------------------
  ► Versiyon 2.6.2 - Ara güncelleme

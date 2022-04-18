@@ -32,14 +32,9 @@ title OgnitorenKs Toolbox Gncelleyici
 setlocal
 call :ColorEnd
 
-:: Konum bilgisi alnr.
 cd /d "%~dp0"
-for /f %%a in ('"cd"') do set konum=%%a
+for /f %%a in ('"cd"') do set Location=%%a
 
-:: Log dosyasna gncelleme iŸlemi yapld§ yazlr.
-echo [%date% - %time%] ^| ToolboxUpdate ^| OgnitorenKs.Toolbox.bat gncelleŸtirme arac ‡alŸtrld. Konum="%konum%" >> %konum%\Logs
-
-:: ˜nternet ba§lant durumu kontrol edilir.
 ping -n 1 www.google.com.tr -w 20000 > NUL
 	if %errorlevel%==1 (Call :netkontrol&exit)
 	
@@ -47,6 +42,7 @@ DEL /F /Q /A "C:\OgnitorenKs.Toolbox\OgnitorenKs.Toolbox.bat" > NUL 2>&1
 RD /S /Q "C:\OgnitorenKs.Toolbox\Download" > NUL 2>&1
 RD /S /Q "C:\OgnitorenKs.Toolbox\Edit" > NUL 2>&1
 RD /S /Q "C:\OgnitorenKs.Toolbox\Files" > NUL 2>&1
+DEL /F /Q /A "C:\OgnitorenKs.Toolbox\Extra\Links.txt" > NUL 2>&1
 DEL /F /Q /A "C:\OgnitorenKs.Toolbox\Extra\Links.bat" > NUL 2>&1
 DEL /F /Q /A "C:\OgnitorenKs.Toolbox\Extra\Sistem.Hakkinda.bat" > NUL 2>&1
 DEL /F /Q /A "C:\OgnitorenKs.Toolbox\Extra\Pingolc.bat" > NUL 2>&1
@@ -55,18 +51,15 @@ DEL /F /Q /A "C:\OgnitorenKs.Toolbox\Extra\On.Katilimsiz.bat" > NUL 2>&1
 DEL /F /Q /A "C:\OgnitorenKs.Toolbox\Extra\Windows.Editor.bat" > NUL 2>&1
 DEL /F /Q /A "C:\OgnitorenKs.Toolbox\Extra\PowerChoice.bat" > NUL 2>&1
 	
-:: wget.exe dosyas kontrol edilir.	
 dir /b C:\OgnitorenKs.Toolbox\Files\wget.exe > NUL 2>&1
 	if %errorlevel%==1 (Call :wget)	
 
-:: C diski i‡inde OgnitorenKs.Toolbox klas”r a‡lr	
 mkdir C:\OgnitorenKs.Toolbox > NUL 2>&1
 Call :bosluk
 echo                     %R%[92m OgnitorenKs Toolbox Gncelleniyor...%R%[0m
 echo             
 echo               [þþþþþþþþþþþþ                                    ]
 Call :ogni
-:: OgnitorenKs.Toolbox dosyalar indirilir.
 C:\OgnitorenKs.Toolbox\Files\wget --no-check-certificate "https://docs.google.com/uc?export=download&id=1g8mbmzrFcXSZT7r5Oiwdqfs9wGNS2xWl" -O C:\OgnitorenKs.Toolbox\OgnitorenKs.Toolbox.zip > NUL 2>&1
 cls
 Call :bosluk
@@ -74,9 +67,7 @@ echo                     %R%[92m OgnitorenKs Toolbox Gncelleniyor...%R%[0m
 echo             
 echo               [þþþþþþþþþþþþþþþþþþþþþþþþ                        ]
 Call :ogni
-:: ˜ndirilen OgnitorenKs.Toolbox.zip dosyas C:\OgnitorenKs.Toolbox klas”r i‡erisine ‡karlr.
 powershell -command "Expand-Archive -Force 'C:\OgnitorenKs.Toolbox\OgnitorenKs.Toolbox.zip' 'C:\OgnitorenKs.Toolbox'"
-:: Ksayollar masastne g”nderilir.
 move /y "C:\OgnitorenKs.Toolbox\OgnitorenKs.Toolbox.lnk" "C:\Users\%username%\Desktop" > NUL 2>&1
 move /y "C:\OgnitorenKs.Toolbox\PowerChoice.lnk" "C:\Users\%username%\Desktop" > NUL 2>&1
 cls
@@ -85,7 +76,6 @@ echo                     %R%[92m OgnitorenKs Toolbox Gncelleniyor...%R%[0m
 echo             
 echo               [þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ            ]
 Call :ogni
-:: ˜ndirilen gncelleŸtirme dosya art§ silinir.
 DEL /F /Q /A "C:\OgnitorenKs.Toolbox\OgnitorenKs.Toolbox.zip" > NUL 2>&1
 cls
 Call :bosluk
@@ -93,7 +83,7 @@ echo       %R%[92m OgnitorenKs Toolbox gncelleme iŸlemi baŸaryla tamamlanmŸt
 echo 
 echo               [þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ]
 Call :ogni
-timeout /t 5 /nobreak > NUL
+timeout /t 4 /nobreak > NUL
 exit
 
 :bosluk
@@ -114,7 +104,6 @@ echo              %R%[33mþ  þ þ  þ þ  þþ þ  þ  þ  þ þ  þ  þ   þ  þþ  þ     þ%R%[
 echo               %R%[33mþþ  þþþþ þ   þ þ  þ   þþ  þ   þ þþþ þ   þ   þ þþþþ%R%[0m 
 goto :eof
 :netkontrol
-echo [%date% - %time%] ^| ToolboxUpdate ^| HATA! ˜nternet ba§lants yok. Konum="%konum%" >> %konum%\Logs
 Call :bosluk
 echo                        %R%[91m INTERNET BAGLANTISI SA¦LANAMADI%R%[0m
 echo  
@@ -123,18 +112,16 @@ Call :ogni
 timeout /t 7 /nobreak > NUL
 goto :eof
 :wget
-echo [%date% - %time%] ^| ToolboxUpdate ^| Wget.exe dosyas yeniden indirildi. Konum="%konum%" >> %konum%\Logs
 Call :bosluk
 echo                  %R%[92m Wget dosyas bulunamad yeniden indiriliyor%R%[0m
 echo  
 echo               [##################### HATA #####################]  
 Call :ogni
 mkdir C:\OgnitorenKs.Toolbox\Files > NUL
-powershell -command "& { iwr https://eternallybored.org/misc/wget/1.21.2/64/wget.exe -OutFile C:\OgnitorenKs.Toolbox\Files\wget.exe }"
+powershell -command "& { iwr https://eternallybored.org/misc/wget/1.21.3/64/wget.exe -OutFile C:\OgnitorenKs.Toolbox\Files\wget.exe }"
 timeout /t 1 /nobreak > NUL
 cls
 goto :eof
-
 
 :ColorEnd
 for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do rem"') do (
@@ -142,4 +129,3 @@ for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1)
   exit /B 0
 )
 exit /B 0
-

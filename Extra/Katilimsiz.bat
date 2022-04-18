@@ -204,8 +204,7 @@ echo ping -n 1 www.bing.com -w 20000 ^> NUL
 echo 	if %%errorlevel%%==1 ^(echo INTERNET BAGLANTINIZ YOK BAGLANTIYI SAGLAYIP HERHANGI BIR TUSA BASINIZ.^&pause ^> NUL^&goto netkontrol^)
 echo :: -----------------------------------------------------------------------------------
 echo echo Guncel linkler indiriliyor...
-echo Call :wget2 "https://docs.google.com/uc?export=download&id=1BNmQ1JSes4hiFu3mPR4mJP10FNX68NxV" Links.zip
-echo powershell -command "Expand-Archive -Force '%%Location%%\Download\Links.zip' '%%Location%%\Extra'" 
+echo Call :wget3 "https://docs.google.com/uc?export=download&id=1aCBwYuFCoj3uMy2BsTgJc5vKYjtOJd0b" %%Location%%\Extra\Links.txt
 echo cls
 echo :: ===================================================================================
 echo :: ===================================================================================
@@ -282,7 +281,7 @@ echo [%date% - %time%] ^| Katlmsz ^| "%~n1" eklendi / added. >> %Location%\Lo
 echo.
 echo :: -----------------------------------------------------------------------------------
 echo echo  %~n1 kuruluyor/installing...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "%~n1" %%Location%%\Extra\Links.bat'^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "%~n1" %%Location%%\Extra\Links.txt'^) do set link=%%%%i
 echo Call :wget "%%link%%" "%~1" "%~2"
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
 echo   %R%[96m %~n1 eklendi / added%R%[0m
@@ -301,7 +300,7 @@ echo [%date% - %time%] ^| Katlmsz ^| "%~n1" eklendi / added. >> %Location%\Lo
 echo.
 echo :: -----------------------------------------------------------------------------------
 echo echo  "%~n1" kuruluyor/installing...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "%~n1" %%Location%%\Extra\Links.bat'^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "%~n1" %%Location%%\Extra\Links.txt'^) do set link=%%%%i
 echo Call :wget3 "%%link%%" "C:\Users\%%username%%\Desktop\%~1"
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
 echo   %R%[96m %~n1 eklendi / added%R%[0m
@@ -320,80 +319,80 @@ echo [%date% - %time%] ^| Katlmsz ^| All IN ONE RUNTIMES eklendi / added. >> 
 echo.
 echo :: -----------------------------------------------------------------------------------
 echo echo  C++ 2005 kuruluyor/installing...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "05x86.exe" %%Location%%\Extra\Links.bat'^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "05x86.exe" %%Location%%\Extra\Links.txt'^) do set link=%%%%i
 echo Call :wget "%%link%%" 05x86.exe /Q
 echo.
-echo FOR /F "tokens=1" %%%%i in ^('FIND "05x64.exe" %%Location%%\Extra\Links.bat'^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "05x64.exe" %%Location%%\Extra\Links.txt'^) do set link=%%%%i
 echo Call :wget "%%link%%" 05x64.exe /Q
 echo.
 echo :: -----------------------------------------------------------------------------------
 echo echo  C++ 2008 kuruluyor/installing...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "08x86.exe" %%Location%%\Extra\Links.bat'^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "08x86.exe" %%Location%%\Extra\Links.txt'^) do set link=%%%%i
 echo Call :wget "%%link%%" 08x86.exe /q
 echo.
-echo FOR /F "tokens=1" %%%%i in ^('FIND "08x64.exe" %%Location%%\Extra\Links.bat'^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "08x64.exe" %%Location%%\Extra\Links.txt'^) do set link=%%%%i
 echo Call :wget "%%link%%" 08x64.exe /q
 echo.
 echo :: -----------------------------------------------------------------------------------
 echo echo  C++ 2010 kuruluyor/installing...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "10x86.exe" %%Location%%\Extra\Links.bat'^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "10x86.exe" %%Location%%\Extra\Links.txt'^) do set link=%%%%i
 echo Call :wget "%%link%%" 10x86.exe "/q /norestart"
 echo.
-echo FOR /F "tokens=1" %%%%i in ^('FIND "10x64.exe" %%Location%%\Extra\Links.bat'^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "10x64.exe" %%Location%%\Extra\Links.txt'^) do set link=%%%%i
 echo Call :wget "%%link%%" 10x64.exe "/q /norestart"
 echo.
 echo :: -----------------------------------------------------------------------------------
 echo echo  C++ 2012 kuruluyor/installing...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "12x86.exe" %%Location%%\Extra\Links.bat'^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "12x86.exe" %%Location%%\Extra\Links.txt'^) do set link=%%%%i
 echo Call :wget "%%link%%" 12x86.exe "/install /quiet /norestart"
 echo.
-echo FOR /F "tokens=1" %%%%i in ^('FIND "12x64.exe" %%Location%%\Extra\Links.bat'^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "12x64.exe" %%Location%%\Extra\Links.txt'^) do set link=%%%%i
 echo Call :wget "%%link%%" 12x64.exe "/install /quiet /norestart"
 echo.
 echo :: -----------------------------------------------------------------------------------
 echo echo  C++ 2013 kuruluyor/installing...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "13x86.exe" %%Location%%\Extra\Links.bat'^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "13x86.exe" %%Location%%\Extra\Links.txt'^) do set link=%%%%i
 echo Call :wget "%%link%%" 13x86.exe "/install /quiet /norestart"
 echo.
-echo FOR /F "tokens=1" %%%%i in ^('FIND "13x64.exe" %%Location%%\Extra\Links.bat'^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "13x64.exe" %%Location%%\Extra\Links.txt'^) do set link=%%%%i
 echo Call :wget "%%link%%" 13x64.exe "/install /quiet /norestart"
 echo.
 echo :: -----------------------------------------------------------------------------------
 echo echo  C++ 2015-2022 kuruluyor/installing...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "15x86.exe" %%Location%%\Extra\Links.bat'^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "15x86.exe" %%Location%%\Extra\Links.txt'^) do set link=%%%%i
 echo Call :wget "%%link%%" 15x86.exe "/install /quiet /norestart"
 echo.
-echo FOR /F "tokens=1" %%%%i in ^('FIND "15x64" %%Location%%\Extra\Links.bat'^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "15x64" %%Location%%\Extra\Links.txt'^) do set link=%%%%i
 echo Call :wget "%%link%%" 15x64.exe "/install /quiet /norestart"
 echo.
 echo :: -----------------------------------------------------------------------------------
 echo echo Java kuruluyor/installing...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "javax64" %%Location%%\Extra\Links.bat'^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "javax64" %%Location%%\Extra\Links.txt'^) do set link=%%%%i
 echo Call :wget "%%link%%" javax64.exe "INSTALL_SILENT=Enable SPONSORS=Disable WEB_ANALYTICS=Disable REBOOT=Disable WEB_JAVA=Disable"
 echo.
 echo :: -----------------------------------------------------------------------------------
 echo echo XNA Framework 4.0 kuruluyor/installing...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "xnafx40" %%Location%%\Extra\Links.bat'^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "xnafx40" %%Location%%\Extra\Links.txt'^) do set link=%%%%i
 echo Call :wget "%%link%%" xnafx40.msi /qn
 echo.
 echo :: -----------------------------------------------------------------------------------
 echo echo OpenAL kuruluyor/installing...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "oal.zip" %%Location%%\Extra\Links.bat'^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "oal.zip" %%Location%%\Extra\Links.txt'^) do set link=%%%%i
 echo Call :wget2 "%%link%%" oal.zip
 echo powershell -command "Expand-Archive -Force '%%Location%%\Download\oal.zip' '%%Location%%\Download\oal'" 
 echo "%%Location%%\Download\oal\oalinst.exe" /SILENT
 echo.
 echo :: -----------------------------------------------------------------------------------
 echo echo Desktop Runtime 5 kuruluyor/installing...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Desktop5x64" %%Location%%\Extra\Links.bat'^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "Desktop5x64" %%Location%%\Extra\Links.txt'^) do set link=%%%%i
 echo Call :wget "%%link%%" Desktop5x64.exe "/q /norestart"
 echo.
-echo FOR /F "tokens=1" %%%%i in ^('FIND "Desktop5x86" %%Location%%\Extra\Links.bat'^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "Desktop5x86" %%Location%%\Extra\Links.txt'^) do set link=%%%%i
 echo Call :wget "%%link%%" Desktop5x86.exe "/q /norestart"
 echo.
 echo :: -----------------------------------------------------------------------------------
 echo echo DirectX kuruluyor/installing...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "DirectX" %%Location%%\Extra\Links.bat'^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "DirectX" %%Location%%\Extra\Links.txt'^) do set link=%%%%i
 echo Call :wget2 "%%link%%" DirectX.exe
 echo %%Location%%\Download\DirectX.exe /Q /C /T:"%%Location%%\Download\DirectX\"
 echo "%%Location%%\Download\DirectX\DXSETUP.exe" /silent
@@ -434,7 +433,7 @@ echo [%date% - %time%] ^| Katlmsz ^| AnyVideoConverter eklendi / added. >> %L
 echo.
 echo :: -----------------------------------------------------------------------------------
 echo echo AnyVideoConverter kuruluyor/installing...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "AnyVideoConverter" %%Location%%\Extra\Links.bat'^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "AnyVideoConverter" %%Location%%\Extra\Links.txt'^) do set link=%%%%i
 echo Call :wget "%%link%%" AnyVideoConverter.exe /S
 echo Powershell -command "New-Item -ItemType SymbolicLink -Path 'C:\Users\OgnitorenKs\Desktop' -Name 'Any Video Converter' -Value 'C:\Program Files ^(x86^)\Anvsoft\Any Video Converter\AVCFree.exe'"
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
@@ -454,7 +453,7 @@ echo [%date% - %time%] ^| Katlmsz ^| WiseCare365 eklendi / added. >> %Locatio
 echo.
 echo :: -----------------------------------------------------------------------------------
 echo echo WiseCare365 kuruluyor/installing...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "WiseCare365.zip" %%Location%%\Extra\Links.bat'^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "WiseCare365.zip" %%Location%%\Extra\Links.txt'^) do set link=%%%%i
 echo Call :wget2 "%%link%%" WiseCare365.zip
 echo powershell -command "Expand-Archive -Force '%%Location%%\Download\WiseCare365.zip' '%%Location%%\Download'"
 echo "%%Location%%\Download\WiseCare365.exe" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-
@@ -475,7 +474,7 @@ echo [%date% - %time%] ^| Katlmsz ^| TaskbarX eklendi / added. >> %Location%\
 echo.
 echo :: -----------------------------------------------------------------------------------
 echo echo  TaskbarX kuruluyor/installing...
-echo FOR /F "tokens=1" %%%%i in ^('FIND "TaskbarX" %%Location%%\Extra\Links.bat'^) do set link=%%%%i
+echo FOR /F "tokens=1" %%%%i in ^('FIND "TaskbarX" %%Location%%\Extra\Links.txt'^) do set link=%%%%i
 echo Call :wget2 "%%link%%" TaskbarX.zip 
 echo powershell -command "Expand-Archive -Force '%%Location%%\Download\TaskbarX.zip' 'C:\Users\%%username%%\Desktop\TaskbarX'" 
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\OgnitorenKs.Katilimsiz.bat
