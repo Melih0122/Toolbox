@@ -44,6 +44,10 @@
 ::   maskem76
 ::  ----------
 :: 	   Hyper-V b”lmndeki hatann giderilmesi.
+::  ----------
+::   Legnica
+::  ----------
+:: 	   Windows Search ”nbelli§inin temizlenmesiyle ilgili komutlarn eklenmesi.
 ::
 :: ==============================================================================================================================
 :: Toolbox i‡inde kullanlan yazlmlar;
@@ -141,7 +145,7 @@ dir /b "%Location%\Files\wget.exe" > NUL 2>&1
 
 :: ==============================================================================================================================
 
-set version=2.7
+set version=2.7.1
 
 :: ==============================================================================================================================
 :NetCheck
@@ -174,7 +178,7 @@ echo               %R%[33mþþ  þþþþ þ   þ þ  þ   þþ  þ   þ þþþ þ   þ   þ þþþþ%R%[
 
 FOR /F "tokens=1" %%i in ('FIND "Links.txt" %Location%\Extra\Links.txt') do set link=%%i
 
-%Location%\Files\wget --no-check-certificate  "%link%" -O %Location%\Extra\Links.txt > NUL 2>&1
+%Location%\Files\wget --no-check-certificate "%link%" -O %Location%\Extra\Links.txt > NUL 2>&1
 
 FOR /F "delims=':' tokens=2" %%b in ('Find "VersionCheck" %Location%\Extra\Links.txt') do set versioncheck=%%b
 if %versioncheck% equ %version% (
@@ -381,7 +385,7 @@ echo   %R%[90mº%R%[32m  9.%C%[36m GOG Galaxy           %R%[90mº%R%[32m  35.%C%[3
 echo   %R%[90mº%R%[32m 10.%C%[36m Uplay                %R%[90mº%R%[32m  36.%C%[36m Aimp                   %R%[90mº%R%[32m 62.%C%[33m Git                         %R%[90mº%R%[0m
 echo   %R%[90mº%R%[32m 11.%C%[36m Origin               %R%[90mº%R%[32m  37.%C%[36m Any Video Converter    %R%[90mº%R%[32m 63.%C%[33m Blender                     %R%[90mº%R%[0m
 echo   %R%[90mº%R%[32m 12.%C%[36m Cheat Engine         %R%[90mº%R%[32m  38.%C%[33m Free Download Manager  %R%[90mº%R%[32m 64.%C%[36m Process Hacker 2            %R%[90mº%R%[0m
-echo   %R%[90mº%R%[32m 13.%C%[36m Wemod                %R%[90mº%R%[32m  39.%C%[33m ˜nt Download Manager   %R%[90mº%R%[32m 65.%C%[36m                             %R%[90mº%R%[0m
+echo   %R%[90mº%R%[32m 13.%C%[36m Wemod                %R%[90mº%R%[32m  39.%C%[33m ˜nt Download Manager   %R%[90mº%R%[32m 65.%C%[36m AnyDesk                     %R%[90mº%R%[0m
 echo   %R%[90mº%R%[32m 14.%C%[33m Google Chrome        %R%[90mº%R%[32m  40.%C%[33m ByClick Downloader     %R%[90mº%R%[32m 66.%C%[36m                             %R%[90mº%R%[0m
 echo   %R%[90mº%R%[32m 15.%C%[33m Mozilla Firefox      %R%[90mº%R%[32m  41.%C%[33m Qbittorrent            %R%[90mº%R%[32m 67.%C%[36m                             %R%[90mº%R%[0m
 echo   %R%[90mº%R%[32m 16.%C%[33m Brave                %R%[90mº%R%[32m  42.%C%[33m GlassWire              %R%[90mº%R%[32m 68.%C%[36m                             %R%[90mº%R%[0m
@@ -868,6 +872,11 @@ FOR /F "tokens=1" %%i in ('FIND "Processhacker.exe" %Location%\Extra\Links.txt')
 Call :wget "%link%" Processhacker.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
 goto :eof
 
+:Download65
+FOR /F "tokens=1" %%i in ('FIND "AnyDesk.exe" %Location%\Extra\Links.txt') do set link=%%i
+Call :wget "%link%" AnyDesk.exe "--install %programfiles(x86)%\AnyDesk --start-with-win --create-shortcuts --create-desktop-icon --silent"
+goto :eof
+
 :Download73
 FOR /F "tokens=1" %%i in ('FIND "osu.exe" %Location%\Extra\Links.txt') do set link=%%i
 Call :wget3 "%link%" "C:\users\%username%\Desktop\osu.exe" 
@@ -1113,6 +1122,8 @@ taskkill /f /im explorer.exe > NUL 2>&1
 DEL /F /Q /A "%localappdata%\IconCache.db" > NUL 2>&1
 DEL /F /Q /A %userprofile%\AppData\Local\Microsoft\Windows\Explorer\*.* > NUL 2>&1
 del /f /s /q /a %LocalAppData%\Microsoft\Windows\Explorer\thumbcache_*.db > NUL 2>&1
+RD /S /Q "%localappdata%\Packages\Microsoft.Windows.Search_cw5n1h2txyewy\LocalState\AppIconCache" > NUL 2>&1
+mkdir "%localappdata%\Packages\Microsoft.Windows.Search_cw5n1h2txyewy\LocalState\AppIconCache" > NUL 2>&1
 powershell -command "Start-Process 'C:\Windows\explorer.exe'"
 timeout /t 1 /nobreak > NUL
 goto :eof

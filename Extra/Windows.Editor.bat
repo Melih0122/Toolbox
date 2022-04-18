@@ -478,7 +478,7 @@ echo  %R%[90mศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
 :OffDism
 for /f %%i in ('"dir /b %Location%\Edit\Update\*"') do (
 	echo [%date% - %time%] ^| OfflineDismYukle ^| "%Location%\Edit\Update\%%i" update dosyas yklendi. Mount=%Mount% >> %Location%\Logs 
-	DISM /Image:%Mount% /add-package /packagepath="%Location%\Edit\Update\%%i"
+	DISM /Image:%Mount% /add-package /packagepath=%Location%\Edit\Update\%%i
 )
 echo %R%[92m WinSxS temizleniyor...%R%[0m
 DISM /Image:%Mount% /Cleanup-Image /StartComponentCleanup
@@ -503,7 +503,7 @@ echo  %R%[90mบ%R%[1;97m%R%[100m                         DISM Update Online      
 echo  %R%[90mศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ%R%[0m
 for /f %%i in ('"dir /b %Location%\Edit\Update\*"') do (
 	echo [%date% - %time%] ^| OnlineDismYukle ^| "%Location%\Edit\Update\%%i" update dosyas yklendi >> %Location%\Logs 
-	DISM /Online /add-package /packagepath="%Location%\Edit\Update\%%i"
+	DISM /Online /add-package /packagepath=%Location%\Edit\Update\%%i /norestart
 )
 echo %R%[92m WinSxS temizleniyor...%R%[0m
 DISM /Online /Cleanup-Image /StartComponentCleanup

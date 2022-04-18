@@ -44,6 +44,17 @@
 :: 	  • Hyper-V bölümündeki hatanın giderilmesi.
 ::  
 :: ==============================================================================================================================
+------------------
+ ► Versiyon 2.7.1 - Ara güncelleme
+------------------
+Yayınlanma Tarihi: 18.04.2022
+
+ • Icon Fix bölümüne Search App önbelliğini temizleyen komutlar eklendi. Bu komut ile arama bölümünde oluşan simge hataları giderilebilecek
+   • Bu konuda tüm çözüm önerilerini deneyip çözümü bulan; "Legnica" ya teşekkür ederim.
+   • Ayrıca; Yağız Murat Köse | Kaan Beyhan | Uğur 'a teşekkür ederim. 
+ • AnyDesk uygulaması toolbox'a eklendi.
+ • Windows Editör > Dism Update Online bölümünde güncelleme sonrası restart sorgusunu iptal etmek için parametre eklendi.
+
 -----------------
  ► Versiyon 2.7 -
 -----------------
@@ -53,7 +64,6 @@ Yayınlanma Tarihi: 18.04.2022
  • Toolbox oto güncelleme sistemi getirildi. Bu özelliği OgnitorenKs.Toolbox klasörü içinde yer alan Update.ini'den kapatabilirsiniz.
  • Links.bat dosyası Links.txt olarak değiştirildi. Güncelleme işlemini hızlıca gerçekleştirmek için.
  • PowerChoice simgesi değiştirildi.
-
 
 :: ==============================================================================================================================
 -------------------

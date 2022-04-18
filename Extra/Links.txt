@@ -20,7 +20,7 @@
 ::                                         >>  ognitorenks.blogspot.com  <<
 :: ==============================================================================================================================
 
-VersionCheck:2.7
+VersionCheck:2.7.1
 Version8Check:2.6
 
 :01
@@ -311,6 +311,8 @@ https://www.blender.org/download/release/Blender3.1/blender-3.1.2-windows-x64.ms
 https://github.com/processhacker/processhacker/releases/download/v2.39/processhacker-2.39-setup.exe Processhacker.exe
 
 :66
+https://download.anydesk.com/AnyDesk.exe AnyDesk.exe
+
 :67
 :68
 :69
