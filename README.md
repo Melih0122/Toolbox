@@ -3,8 +3,8 @@
 - Toolbox Windows 10 - 11 sürümlerinin x64 mimarilerinde açılmaktadır. Windows 8.1 için hazırladığım kısıtlı bir sürümü mevcuttur. En güncel olan Windows sürümü ile senkronize olarak gelişmektedir.
 - Windows ekran ölçeklendirme ayarı Toolbox'ın pencere ayarını bozabiliyor. Sorunsuz kullanım için Toolbox'ı kullanırken ölçeklendirme etkileri kapatılmalıdır.
 
-![cmd_aZdxr8EWQl](https://user-images.githubusercontent.com/93199689/163687876-b8ab7f37-538f-4e5b-9afe-d35a37a0c78a.png)
-![cmd_ZphvLjqGIQ](https://user-images.githubusercontent.com/93199689/163687883-cef393e4-745e-4ab1-a513-21ae7fcc5a5b.png)
+![cmd_XxojblKGIJ](https://user-images.githubusercontent.com/93199689/163825761-889899b1-c1cc-4ffc-8bb7-66d114bd49f7.png)
+![cmd_dUyW5z0xdU](https://user-images.githubusercontent.com/93199689/163825769-ca4393b5-6898-4a52-b8af-09ceab54b911.png)
 
 ### Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
 
@@ -19,6 +19,10 @@
 - ► Toolbox.ENG = https://docs.google.com/uc?export=download&id=1wTOKKhNr0JkpYaEM50KKJpRD3PTRL09e
 - ► Toolbox.8.1 = https://docs.google.com/uc?export=download&id=12podfFYq5NujVr3mCHtMlyaa2nAFt-Em
 
+### Toolbox Otomatik Güncelleme Sistemi
+OgnitorenKs.Toolbox klasörü içerisinde yer alan Update.ini dosyasını not defteriyle düzenleyerek otomatik güncelleştirmeleri kapatabilirsiniz. Varsayılan olarak 0 yani güncelleştirmeler açık olarak düzenlenmiştir.
+- 0 : Otomatik güncelleştirmeler açık
+- 1 : Otomatik güncelleştirmeler kapalı
 
 ### İstek ve önerileriniz olursa, iletişim;
 - ► Discord: OgnitorenKs#2737 
@@ -213,7 +217,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip daha sonra aç / kapat baş harflerini eklemek gerekiyor.
 
 Örnek: 1a / 2k / 4A / 10K / 23a / 24k  
-![cmd_3C2BTifwfX](https://user-images.githubusercontent.com/93199689/162835565-1b0bc3a5-7861-4091-a58e-16f1912090c0.png)
+![cmd_1QI8T2qqGU](https://user-images.githubusercontent.com/93199689/163825836-9c300dac-cebb-4b56-8e42-c2608662c62a.png)
 
 	• 1 [A/K]- Bluetooth hizmeti : Bluetooth hizmetlerini kapatır açar.
 	• 2 [A/K]- Yazıcı hizmeti : Yazıcı hizmetlerini kapatır açar.
@@ -233,14 +237,13 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 	• 16 [A/K]- Sysmain (Hızlı Getir) : Windows daha hızlı deneyim sunması için diski daha fazla kullanır. Yüksek disk kullanımına sebebiyet verir. SSD varsa gereksizdir. Kullanırsanız hizmeti açar.
 	• 17 [A/K]- Hızlı Başlat (Hibernate) : Sistem önbellekleme yaparak hızlı açılmasını sağlar. Ancak kapanmama gibi sorunlara neden olmaktadır. Kullanmak isterseniz hizmeti açar.
 	• 18 [A/K]- Konum hizmetini : Bilgisayarlarda bu özelliği hep gereksiz bulmuşumdur. Laptop cihazınız konumunuzu tam olarak tespit edebiliyorsa açın. Yoksa hiç açmayın.
-	• 19 [A/K]- Windows Media Player : Windows Media Player'ı yeniden açmanızı sağlar.
-	• 20 [A/K]- Hyper-V hizmetini: Home ve Home Single Language sistemlerde bile Hyper-V açıp kapatmanızı sağlar.
-	• 21 [A/K]- Xbox hizmetini: Xbox servislerini kapatıp, açar.
-	• 22 [A/K]- Bitlocker Sürücü şifreleme hizmeti: Sürücü şifreleme hizmetini kapatır açar.
-	• 23 [A/K]- Karma Gerçeklik hizmeti (VR): Karma gerçeklik kapatır açar.
-	• 24 [A/K]- Driver Yükle / Güncelle (Update): Windows Update üzerinden Driver güncellemesini açıp, kapatmanızı sağlar.
-	• 25 [A/K]- Bellek Sıkıştırma hizmeti: Bellek içindeki verinin belli bir bölümünü sıkıştıran hizmeti kapatır ve açar. Gecikme düşürmek için hizmet kapalı tutulabilir.
-	• 26 [A/K]- Core Parking (CPU Çekirdek Uyku Modu): İşlemci çekirdeklerinin sürekli tam yükte çalışmasını istiyorsanız hizmeti kapatabilirsiniz. Tam tersi durum için açık hale getirebilirsiniz.
+	• 19 [A/K]- Hyper-V hizmetini: Home ve Home Single Language sistemlerde bile Hyper-V açıp kapatmanızı sağlar.
+	• 20 [A/K]- Xbox hizmetini: Xbox servislerini kapatıp, açar.
+	• 21 [A/K]- Bitlocker Sürücü şifreleme hizmeti: Sürücü şifreleme hizmetini kapatır açar.
+	• 22 [A/K]- Karma Gerçeklik hizmeti (VR): Karma gerçeklik kapatır açar.
+	• 23 [A/K]- Driver Yükle / Güncelle (Update): Windows Update üzerinden Driver güncellemesini açıp, kapatmanızı sağlar.
+	• 24 [A/K]- Bellek Sıkıştırma hizmeti: Bellek içindeki verinin belli bir bölümünü sıkıştıran hizmeti kapatır ve açar. Gecikme düşürmek için hizmet kapalı tutulabilir.
+	• 25 [A/K]- Core Parking (CPU Çekirdek Uyku Modu): İşlemci çekirdeklerinin sürekli tam yükte çalışmasını istiyorsanız hizmeti kapatabilirsiniz. Tam tersi durum için açık hale getirebilirsiniz.
 	
 ### • 55 - Simge Hatasını Düzelt: 
 	• Simgeleri değiştirdikten sonra oluşacak sorunları giderir.
@@ -377,9 +380,7 @@ SLMGR.VBS komutlarını içermektedir. Crack tarzı işlemler bulunmamaktadır.
 	• Seçilen belirli bir süreden sonra PC otomatik kapatır.
 ![cmd_ScVQsUrVYT](https://user-images.githubusercontent.com/93199689/159128693-a8d1d252-5649-42db-8610-e9df435e6952.png)
 
-### • 97 - Toolbox Rehber:
+### • 98 - Toolbox Rehber:
 	• Toolbox kullanımı hakkında tüm bilgileri verir
-### • 98 - Toolbox Güncelle:
+### • 99 - Toolbox Güncelle:
 	• Toolbox sürümünüzü buradan tek tıkla güncelleyebilirsiniz. Toolbox konumunu değiştirdiyseniz yeniden "C:\OgnitorenKs.Toolbox" klasörüne kuracaktır.	
-### • 99 - Toolbox Link Güncelle
-	• Toolbox'ta yer alan programların güncel linklerini indirir. Linkleri aylık olarak güncelliyorum. Güncellemeyle ilgili notları paylaşacağım.
