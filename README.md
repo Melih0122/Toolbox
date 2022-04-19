@@ -4,7 +4,6 @@
 - Windows ekran ölçeklendirme ayarı Toolbox'ın pencere ayarını bozabiliyor. Sorunsuz kullanım için Toolbox'ı kullanırken ölçeklendirme etkileri kapatılmalıdır.
 
 ### Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
-### İletişim;
 - ► Discord: OgnitorenKs#2737 
 - ► Mail: ognitorenks@gmail.com
 - ► Site: ognitorenks.blogspot.com
