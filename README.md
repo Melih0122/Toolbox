@@ -8,8 +8,8 @@
 - ► Mail: ognitorenks@gmail.com
 - ► Site: https://ognitorenks.blogspot.com/
 
-![cmd_XxojblKGIJ](https://user-images.githubusercontent.com/93199689/163825761-889899b1-c1cc-4ffc-8bb7-66d114bd49f7.png)
-![cmd_dUyW5z0xdU](https://user-images.githubusercontent.com/93199689/163825769-ca4393b5-6898-4a52-b8af-09ceab54b911.png)
+![cmd_4qcwRPifGv](https://user-images.githubusercontent.com/93199689/164048523-b4d40698-e20f-4326-8168-d4f6c69aaa29.png)
+![cmd_uVCv9TxstE](https://user-images.githubusercontent.com/93199689/164048536-241b7950-0208-47b5-8490-5d269f9ac444.png)
 
 ### Güncelleme Notları
 - ► Toolbox TR/ENG : https://drive.google.com/file/d/1Le61P_h-O3R0F9KsMRR0dikvQxnQaPCC/view?usp=sharing
