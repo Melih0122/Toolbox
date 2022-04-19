@@ -8,13 +8,16 @@
 
 ### Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
 
-- Toolbox'ı hazırladığım sistemlerde temel programları indirip, basit bir şekilde sistem üzerinde düzenleme yapması için hazırladım.
-- Sürekli olarak güncellenecektir. Toolbox'ı indirmek için aşağıdaki linkleri kullanabilirsiniz.
+### Güncelleme Notları
+- ► Toolbox TR/ENG : https://drive.google.com/file/d/1Le61P_h-O3R0F9KsMRR0dikvQxnQaPCC/view?usp=sharing
+- ►    Toolbox 8.1 : https://drive.google.com/file/d/1pd3Ge7R1M9OlKP9qDMVObXLVmzm6kmxp/view?usp=sharing
+
+### OgnitorenKs.Toolbox.zip dosyaları
 - ► Toolbox.TR  = https://docs.google.com/uc?export=download&id=19uNjxzHFY5A6g4mFg8FirFTnyL2R0HZ3
 - ► Toolbox.ENG = https://docs.google.com/uc?export=download&id=1vIa4FYNI6YS5l53Awusw4zS2IRvd6VFf
 - ► Toolbox.8.1 = https://docs.google.com/uc?export=download&id=1k1Z3c1TE8a7K-lqKlozg6MJu_SPh3fmb
 	
-- OgnitorenKs.Toolbox katılımsız kurulum dosyasını indirmek için aşağıdaki "Toolbox.Update.bat" dosyasını indirip yönetici olarak çalıştırın.
+### OgnitorenKs.Toolbox katılımsız kurulum dosyaları
 - ► Toolbox.TR  = https://docs.google.com/uc?export=download&id=19uNjxzHFY5A6g4mFg8FirFTnyL2R0HZ3
 - ► Toolbox.ENG = https://docs.google.com/uc?export=download&id=1wTOKKhNr0JkpYaEM50KKJpRD3PTRL09e
 - ► Toolbox.8.1 = https://docs.google.com/uc?export=download&id=12podfFYq5NujVr3mCHtMlyaa2nAFt-Em
