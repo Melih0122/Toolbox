@@ -3,18 +3,24 @@
 - Toolbox Windows 10 - 11 sürümlerinin x64 mimarilerinde açılmaktadır. Windows 8.1 için hazırladığım kısıtlı bir sürümü mevcuttur. En güncel olan Windows sürümü ile senkronize olarak gelişmektedir.
 - Windows ekran ölçeklendirme ayarı Toolbox'ın pencere ayarını bozabiliyor. Sorunsuz kullanım için Toolbox'ı kullanırken ölçeklendirme etkileri kapatılmalıdır.
 
+### Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
+- ► Discord: OgnitorenKs#2737 
+- ► Mail: ognitorenks@gmail.com
+- ► Site: https://ognitorenks.blogspot.com/
+
 ![cmd_XxojblKGIJ](https://user-images.githubusercontent.com/93199689/163825761-889899b1-c1cc-4ffc-8bb7-66d114bd49f7.png)
 ![cmd_dUyW5z0xdU](https://user-images.githubusercontent.com/93199689/163825769-ca4393b5-6898-4a52-b8af-09ceab54b911.png)
 
-### Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
+### Güncelleme Notları
+- ► Toolbox TR/ENG : https://drive.google.com/file/d/1Le61P_h-O3R0F9KsMRR0dikvQxnQaPCC/view?usp=sharing
+- ►    Toolbox 8.1 : https://drive.google.com/file/d/1pd3Ge7R1M9OlKP9qDMVObXLVmzm6kmxp/view?usp=sharing
 
-- Toolbox'ı hazırladığım sistemlerde temel programları indirip, basit bir şekilde sistem üzerinde düzenleme yapması için hazırladım.
-- Sürekli olarak güncellenecektir. Toolbox'ı indirmek için aşağıdaki linkleri kullanabilirsiniz.
+### OgnitorenKs.Toolbox.zip dosyaları
 - ► Toolbox.TR  = https://docs.google.com/uc?export=download&id=19uNjxzHFY5A6g4mFg8FirFTnyL2R0HZ3
 - ► Toolbox.ENG = https://docs.google.com/uc?export=download&id=1vIa4FYNI6YS5l53Awusw4zS2IRvd6VFf
 - ► Toolbox.8.1 = https://docs.google.com/uc?export=download&id=1k1Z3c1TE8a7K-lqKlozg6MJu_SPh3fmb
 	
-- OgnitorenKs.Toolbox katılımsız kurulum dosyasını indirmek için aşağıdaki "Toolbox.Update.bat" dosyasını indirip yönetici olarak çalıştırın.
+### OgnitorenKs.Toolbox katılımsız kurulum dosyaları
 - ► Toolbox.TR  = https://docs.google.com/uc?export=download&id=19uNjxzHFY5A6g4mFg8FirFTnyL2R0HZ3
 - ► Toolbox.ENG = https://docs.google.com/uc?export=download&id=1wTOKKhNr0JkpYaEM50KKJpRD3PTRL09e
 - ► Toolbox.8.1 = https://docs.google.com/uc?export=download&id=12podfFYq5NujVr3mCHtMlyaa2nAFt-Em
@@ -23,11 +29,6 @@
 OgnitorenKs.Toolbox klasörü içerisinde yer alan Update.ini dosyasını not defteriyle düzenleyerek otomatik güncelleştirmeleri kapatabilirsiniz. Varsayılan olarak 0 yani güncelleştirmeler açık olarak düzenlenmiştir.
 - 0 : Otomatik güncelleştirmeler açık
 - 1 : Otomatik güncelleştirmeler kapalı
-
-### İstek ve önerileriniz olursa, iletişim;
-- ► Discord: OgnitorenKs#2737 
-- ► Mail: ognitorenks@gmail.com
-- ► Site: ognitorenks.blogspot.com
 
 ### Projeye katkıda bulunanlar;
 
@@ -48,6 +49,10 @@ OgnitorenKs.Toolbox klasörü içerisinde yer alan Update.ini dosyasını not de
 	  ► maskem76
 	  ----------
 	  • Hyper-V bölümündeki hatanın giderilmesi.
+	  ----------
+	  ► Legnica
+	  ----------
+	  • Windows Search önbelliğinin temizlenmesiyle ilgili komutların eklenmesi.
 
 # OGNİTORENKS TOOLBOX İÇERİĞİ
 ## 1 - Online Katılımsız Bölümü;
