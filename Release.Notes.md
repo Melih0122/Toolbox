@@ -42,6 +42,10 @@
 ::  ► maskem76
 ::  ----------
 :: 	  • Hyper-V bölümündeki hatanın giderilmesi.
+::  ----------
+::  ► Legnica
+::  ----------
+:: 	  • Windows Search önbelliğinin temizlenmesiyle ilgili komutların eklenmesi.
 ::  
 :: ==============================================================================================================================
 ------------------
