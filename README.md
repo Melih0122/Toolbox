@@ -4,6 +4,10 @@
 - Windows ekran ölçeklendirme ayarı Toolbox'ın pencere ayarını bozabiliyor. Sorunsuz kullanım için Toolbox'ı kullanırken ölçeklendirme etkileri kapatılmalıdır.
 
 ### Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
+### İletişim;
+- ► Discord: OgnitorenKs#2737 
+- ► Mail: ognitorenks@gmail.com
+- ► Site: ognitorenks.blogspot.com
 
 ![cmd_XxojblKGIJ](https://user-images.githubusercontent.com/93199689/163825761-889899b1-c1cc-4ffc-8bb7-66d114bd49f7.png)
 ![cmd_dUyW5z0xdU](https://user-images.githubusercontent.com/93199689/163825769-ca4393b5-6898-4a52-b8af-09ceab54b911.png)
@@ -26,11 +30,6 @@
 OgnitorenKs.Toolbox klasörü içerisinde yer alan Update.ini dosyasını not defteriyle düzenleyerek otomatik güncelleştirmeleri kapatabilirsiniz. Varsayılan olarak 0 yani güncelleştirmeler açık olarak düzenlenmiştir.
 - 0 : Otomatik güncelleştirmeler açık
 - 1 : Otomatik güncelleştirmeler kapalı
-
-### İstek ve önerileriniz olursa, iletişim;
-- ► Discord: OgnitorenKs#2737 
-- ► Mail: ognitorenks@gmail.com
-- ► Site: ognitorenks.blogspot.com
 
 ### Projeye katkıda bulunanlar;
 
