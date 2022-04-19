@@ -141,6 +141,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 #### ► 3D Uygulamalar	
 	• 63 - Blender: Ücretsiz, açık kaynaklı bir çalışmadır. 3D tasarımlarda kullanılacak mükemmel uygulama.
 	• 64 - Process Hacker 2: Görev Yöneticisi
+	• 65 - AnyDesk: Bilgisayarlar arası bağlantı kurulmasını sağlar.
 #### ► Oyunlar
     • 72 - OSU!: Müzik video oyunduur.
     • 73 - World Of Tanks: Online tank oyunu.
