@@ -48,6 +48,10 @@ OgnitorenKs.Toolbox klasörü içerisinde yer alan Update.ini dosyasını not de
 	  ► maskem76
 	  ----------
 	  • Hyper-V bölümündeki hatanın giderilmesi.
+	  ----------
+          ► Legnica
+          ----------
+ 	  • Windows Search önbelliğinin temizlenmesiyle ilgili komutların eklenmesi.
 
 # OGNİTORENKS TOOLBOX İÇERİĞİ
 ## 1 - Online Katılımsız Bölümü;
