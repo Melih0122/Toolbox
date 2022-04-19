@@ -53,6 +53,11 @@ OgnitorenKs.Toolbox klasörü içerisinde yer alan Update.ini dosyasını not de
 	  ► Legnica
 	  ----------
 	  • Windows Search önbelliğinin temizlenmesiyle ilgili komutların eklenmesi.
+	  -----------
+	  ► Athenaus
+	  -----------
+	  • PowerChoice'un sigemsinin değiştirilmesine katkı sundu.
+	  
 
 # OGNİTORENKS TOOLBOX İÇERİĞİ
 ## 1 - Online Katılımsız Bölümü;
