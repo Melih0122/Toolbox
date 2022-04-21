@@ -78,10 +78,6 @@ https://updates.signal.org/desktop/signal-desktop-win-5.39.0.exe Signal.exe
 :: https://desktop.telegram.org/
 https://telegram.org/dl/desktop/win64 Telegram.exe 
 
-:06
-:: https://www.microsoft.com/tr-tr/microsoft-teams/download-app#desktopAppDownloadregion
-https://go.microsoft.com/fwlink/p/?LinkID=869426&clcid=0x41f&culture=tr-tr&country=TR&lm=deeplink&lmsrc=groupChatMarketingPageWeb&cmpid=directDownloadWin64 Teams.exe 
-
 :07
 https://zoom.us/client/latest/ZoomInstallerFull.msi Zoom.msi 
 
@@ -113,13 +109,16 @@ https://api.wemod.com/client/download Wemod.exe
 
 :15
 :: https://support.google.com/chrome/a/answer/7650032?hl=tr
-https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7BC22FF819-B50E-FD3A-6B30-DA65F8B57B2D%7D%26lang%3Den%26browser%3D4%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dtrue%26ap%3Dx64-stable-statsdef_0%26brand%3DGCEA/dl/chrome/install/googlechromestandaloneenterprise64.msi GoogleChrome.msi
+https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B582A9412-2612-3ECB-7E89-140ED751BA49%7D%26lang%3Den%26browser%3D4%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dtrue%26ap%3Dx64-stable-statsdef_0%26brand%3DGCEA/dl/chrome/install/googlechromestandaloneenterprise64.msi GoogleChrome.msi
 
 :16
 https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=tr Firefox.exe
 
 :17
 https://brave-browser-downloads.s3.brave.com/latest/brave_installer-x64.exe Brave.exe
+
+:18
+https://net.geo.opera.com/opera_gx/stable/windows OperaGX.exe
 
 :18
 :: https://www.microsoft.com/en-us/edge/business/download
@@ -170,7 +169,7 @@ https://github.com/mltframework/shotcut/releases/download/v22.03.30/shotcut-win6
 
 :30
 :: https://krita.org/en/download/krita-desktop/
-https://download.kde.org/stable/krita/5.0.2/krita-x64-5.0.2-setup.exe Krita.exe 
+https://download.kde.org/stable/krita/5.0.5/krita-x64-5.0.5-setup.exe Krita.exe 
 
 :31
 :: https://www.gimp.org/downloads/
@@ -182,7 +181,7 @@ https://cdn-fastly.obsproject.com/downloads/OBS-Studio-27.2.4-Full-Installer-x64
 
 :33
 ::https://github.com/ShareX/ShareX/releases
-https://github.com/ShareX/ShareX/releases/download/v13.6.1/ShareX-13.6.1-setup.exe ShareX.exe
+https://github.com/ShareX/ShareX/releases/download/v13.7.0/ShareX-13.7.0-setup.exe ShareX.exe
 
 :34
 :: https://www.audacityteam.org/download/
@@ -194,7 +193,7 @@ https://files2.codecguide.com/K-Lite_Codec_Pack_1698_Mega.exe Klite.exe
 
 :36
 :: https://www.videolan.org/index.tr.html
-https://ftp.linux.org.tr/videolan/vlc/3.0.16/win64/vlc-3.0.16-win64.exe VLCMediaPlayer.exe
+https://ftp.linux.org.tr/videolan/vlc/3.0.17.4/win64/vlc-3.0.17.4-win64.exe VLCMediaPlayer.exe
 
 :37
 :: https://www.aimp.ru/?do=download&os=windows
@@ -346,10 +345,6 @@ https://blitz.gg/download/win Blitz.exe
 :78
 :: https://playvalorant.com/tr-tr/download/
 https://valorant.secure.dyn.riotcdn.net/channels/public/x/installer/current/live.live.eu.exe Valorant.exe
-
-:98
-:: https://help.opera.com/en/latest/
-https://net.geo.opera.com/opera_gx/stable/windows OperaGXSetup.exe
 
 
 :GoogleDrive
