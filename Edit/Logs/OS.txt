@@ -1,0 +1,10 @@
+
+
+Caption        : Microsoft Windows 10 Home Single Language
+InstallDate    : 24.11.2020 23:41:57
+OSArchitecture : 64 bit
+RegisteredUser : Acer
+CSName         : LAPTOP-ENIX
+
+
+

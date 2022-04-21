@@ -271,7 +271,7 @@ echo   %R%[90m∫%R%[32m 13.%C%[36m Wemod                %R%[90m∫%R%[32m  39.%C%[3
 echo   %R%[90m∫%R%[32m 14.%C%[33m Google Chrome        %R%[90m∫%R%[32m  40.%C%[33m ByClick Downloader     %R%[90m∫%R%[32m 65.%C%[33m Sistem Hakkçnda%C%[90m [*]         ∫%R%[0m
 echo   %R%[90m∫%R%[32m 15.%C%[33m Mozilla Firefox      %R%[90m∫%R%[32m  41.%C%[33m Qbittorrent            %R%[90m∫%R%[32m 66.%C%[33m Wifi Crack                  %R%[90m∫%R%[0m
 echo   %R%[90m∫%R%[32m 16.%C%[33m Brave                %R%[90m∫%R%[32m  42.%C%[33m GlassWire              %R%[90m∫%R%[32m 67.%C%[33m Zaman Ayarlç PC Kapat%C%[90m [M]   ∫%R%[0m
-echo   %R%[90m∫%R%[32m 17.%C%[33m Microsoft Edge       %R%[90m∫%R%[32m  43.%C%[33m TeamViewer             %R%[90m∫%R%[0m                                 %R%[90m∫%R%[0m 
+echo   %R%[90m∫%R%[32m 17.%C%[33m Microsoft Edge       %R%[90m∫%R%[32m  43.%C%[33m TeamViewer             %R%[90m∫%R%[32m 98.%C%[33m OperaGX YÅkle        %C%[90m [M]   ∫%R%[0m
 echo   %R%[90m∫%R%[32m 18.%C%[37m ISLC                 %R%[90m∫%R%[32m  44.%C%[33m Hamachi                %R%[90m∫%R%[0m                                 %R%[90m∫%R%[0m
 echo   %R%[90m∫%R%[32m 19.%C%[37m MemReduct            %R%[90m∫%R%[32m  45.%C%[33m Stremio                %R%[90m∫%R%[0m                                 %R%[90m∫%R%[0m 
 echo   %R%[90m∫%R%[32m 20.%C%[36m Libre Office         %R%[90m∫%R%[32m  46.%C%[36m MSI Afterburner        %R%[90m∫%R%[0m                                 %R%[90m∫%R%[0m 
@@ -337,6 +337,7 @@ set /p menu= %C%[92m  òülem : %C%[0m
 	if %menu%==50 (Call :Download50)
 	if %menu%==51 (Call :Download51)
 	if %menu%==52 (Call :Download52)
+	if %menu%==98 (Call :Download98)
 	if %menu%==z GOTO menu2
 	if %menu%==Z GOTO menu2
 	if %menu%==53 GOTO %editmenugo%
@@ -603,6 +604,11 @@ Call :wget "%link%" GoogleChrome.msi /qn
 Call :sz "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\cjpalhdlnbpafiamejdnhcphjbkeiagm" "update_url" "https://clients2.google.com/service/update2/crx" & :: UBlock Origin
 Call :sz "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\gcbommkclmclpchllfjekcdonpmejbdp" "update_url" "https://clients2.google.com/service/update2/crx" & :: HTTPS Everywhere 
 Call :sz "HKLM\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\lckanjgmijmafbedllaakclkaicjfmnk" "update_url" "https://clients2.google.com/service/update2/crx" & :: Clear URL's
+goto :eof 
+
+:Download98
+FOR /F "tokens=1" %%i in ('FIND "OperaGX" %Location%\Extra\Links.txt') do set link=%%i
+Call :wget "%link%" OperaGXSetup.exe /silent
 goto :eof 
 
 :Download15

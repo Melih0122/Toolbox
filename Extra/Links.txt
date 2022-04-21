@@ -347,6 +347,10 @@ https://blitz.gg/download/win Blitz.exe
 :: https://playvalorant.com/tr-tr/download/
 https://valorant.secure.dyn.riotcdn.net/channels/public/x/installer/current/live.live.eu.exe Valorant.exe
 
+:98
+:: https://help.opera.com/en/latest/
+https://net.geo.opera.com/opera_gx/stable/windows OperaGXSetup.exe
+
 
 :GoogleDrive
 :G1
