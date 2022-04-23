@@ -56,7 +56,7 @@ OgnitorenKs.Toolbox klasörü içerisinde yer alan Update.ini dosyasını not de
 	  -----------
 	  ► Athenaus
 	  -----------
-	  • PowerChoice'un sigemsinin değiştirilmesine katkı sundu.
+	  • PowerChoice simgesinin değiştirilmesine katkı sundu.
 	  -------------
 	  ► EnixYazılım
 	  -------------
