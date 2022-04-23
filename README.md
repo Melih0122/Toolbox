@@ -90,7 +90,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	• 15 - Mozilla Firefox: Genellikle Linux sistemlerde kullanılır. Windows sürümünde de çok güzel özellik bulunmaktadır.
 	• 16 - Brave: Chromium tabanlı tarayıcıdır. Entegre reklam engelleyicisi vardır. Google web mağazasından uygulama indirebilir. Cripto para cüzdanı gibi özellikleri var.
 	• 17 - Microsoft Edge: Microsoft herkes kullansın diye Windows'un her yerine mayın gibi döşediği tarayıcıdır. Chromuim tabanlıdır. Hızlı bir tarayıcıdır. Google web mağazasına bağlanabilir.
-	• 18 - OperaGX: Sunduğu kapsamlı özellikler ile çok güzel bir yazılım
+	• 18 - OperaGX: Özel bir kullanıcı deneyimi sağlayan tarayıcı.
 #### ► Ram Temizleme Uygulamaları
 	• 19 - ISLC: RamStandby(bekleme) listesini temizlemeye yarayan uygulamadır.
 	• 20 - Mem Reduct: Ram içinde boşta bekleyen tüm işlemleri kapatır. Oyunlarda bu temizleme işleminde kasma yaşanabilir.
