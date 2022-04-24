@@ -198,12 +198,12 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 ### • 53 - Windows 11 Düzenleme
 ![cmd_ZsZUD6Foll](https://user-images.githubusercontent.com/93199689/160885045-b7edf8bb-d765-42aa-8393-89d774affbfc.png)
 
-	• 1 - Taskbar Boyut [Küçük/Orta/Büyük]: 
+	• 1 - Taskbar Boyut [Küçük/Orta/Büyük]: 22H2'de çalışmıyor.
 	     •[Küçük]: 0 - Görev çubuğunu küçük yapar.
 	     •[Orta]: 1 - Görev çubuğunu varsayılan haline getirir.
 	     •[Büyük]: 2 - Görev çubuğunu büyük yapar.
 		
-	• 2 - Taskbar Konumu [Alt/Üst]: 
+	• 2 - Taskbar Konumu [Alt/Üst]: 22H2'de çalışmıyor.
 	     •[Alt]: 1 - Görev çubuğunu alt bölüme alır.
 	     •[Üst]: 3 - Görev çubuğunu üst bölüme alır
 		
