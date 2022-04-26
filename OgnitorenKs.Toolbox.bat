@@ -48,10 +48,6 @@
 ::   Legnica
 ::  ----------
 :: 	   Windows Search ”nbelli§inin temizlenmesiyle ilgili komutlarn eklenmesi.
-::  ----------
-::   Athenaus
-::  ----------
-:: 	   PowerChoice'un yeni simgesinin geliŸtirilmesi.
 ::
 :: ==============================================================================================================================
 :: Toolbox i‡inde kullanlan yazlmlar;
@@ -149,7 +145,7 @@ dir /b "%Location%\Files\wget.exe" > NUL 2>&1
 
 :: ==============================================================================================================================
 
-set version=2.8
+set version=2.9
 
 :: ==============================================================================================================================
 :NetCheck
@@ -178,12 +174,33 @@ echo               %R%[33mşş  şşşş ş   ş ş şşş  şş  şşşş  şşş ş   ş   ş şşşş%R%[
 echo              %R%[33mş  ş ş    şş  ş ş  ş  ş  ş ş  ş  ş   şş  ş  ş  ş   %R%[0m
 echo              %R%[33mş  ş ş şş ş ş ş ş  ş  ş  ş ş ş   şş  ş ş ş ş   şşşş%R%[0m
 echo              %R%[33mş  ş ş  ş ş  şş ş  ş  ş  ş ş  ş  ş   ş  şş  ş     ş%R%[0m
-echo               %R%[33mşş  şşşş ş   ş ş  ş   şş  ş   ş şşş ş   ş   ş şşşş%R%[0m 
+echo               %R%[33mşş  şşşş ş   ş ş  ş   şş  ş   ş şşş ş   ş   ş şşşş%R%[0m
 
+:: Tarih bilgisi alnr
+for /f "tokens=2" %%a in ('echo %date%') do set timeupdate=%%a
+set tugun=%timeupdate:~0,-8%
+set tuyil=%timeupdate:~6%
+set tuay=%timeupdate:~3,-5%
+set TimeUpdateDate=%tugun%.%tuay%.%tuyil%
+
+:: Update.ini dosyasna kaydedilen tarih ile gncel tarih verisi karŸlaŸtrlr. Tarihler farkl ise gncellemeler kontrol edilir.
+For /f "tokens=2" %%b in ('findstr /i "TimeUpdate" %Location%\Update.ini') do set logstime=%%b
+if %logstime% equ %TimeUpdateDate% (
+  goto NoInternet
+) else (
+	goto AU2
+)
+
+:AU2
+:: Gncel tarih verisi Update.ini dosyasn iŸlenir.
+for /f "tokens=2" %%a in ('findstr /i "TimeUpdate" %Location%\Update.ini') do (
+	powershell -Command "(Get-Content %Location%\Update.ini) | ForEach-Object { $_ -replace '%%a', '%TimeUpdateDate%' } | Set-Content '%Location%\Update.ini'"
+)
+:: Links.txt dosyasnn indirme linki alnr.
 FOR /F "tokens=1" %%i in ('FIND "Links.txt" %Location%\Extra\Links.txt') do set link=%%i
-
+:: Links.txt dosyas indirilir.
 %Location%\Files\wget --no-check-certificate "%link%" -O %Location%\Extra\Links.txt > NUL 2>&1
-
+:: ˜ndirilen Links.txt dosyasndan version durumlar karŸlaŸtrlr. Farkl ise Toolbox.Update.bat ‡alŸtrlr.
 FOR /F "delims=':' tokens=2" %%b in ('Find "VersionCheck" %Location%\Extra\Links.txt') do set versioncheck=%%b
 if %versioncheck% equ %version% (
   goto NoInternet
@@ -232,10 +249,19 @@ FOR /F "tokens=5" %%a in ('FIND "Caption" %Logs%\OS.txt') do set caption2=%%a
 echo %caption2% > NUL
 	if %caption2%==10 (set editmenugo=Win10SettingsMenu) 
 	if %caption2%==11 (set editmenugo=Win11SettingsMenu)
+goto Winmenu
 
-::set editmenu=Windows 11 Edit
-::set editmenugo=Win11SettingsMenu
+:Windows11
+set editmenu=Windows 11 Edit
+set editmenugo=Win11SettingsMenu
+goto Winmenu
 
+:Windows10
+set editmenu=Windows 10 Edit
+set editmenugo=Win10SettingsMenu
+goto Winmenu
+
+:Winmenu
 :: ==============================================================================================================================
 Find "OGNITORENKS TOOLBOX %version%" %Location%\Logs > NUL 2>&1
 	if %errorlevel%==1 ((
@@ -270,7 +296,7 @@ echo   %R%[90mº%R%[32m  8.%C%[36m Steam                %R%[90mº%R%[32m  34.%C%[3
 echo   %R%[90mº%R%[32m  9.%C%[36m GOG Galaxy           %R%[90mº%R%[32m  35.%C%[36m K-Lite Codec           %R%[90mº%R%[32m 60.%C%[36m Folder to ISO%C%[90m [APP]         º%R%[0m
 echo   %R%[90mº%R%[32m 10.%C%[36m Uplay                %R%[90mº%R%[32m  36.%C%[36m VLC Media Player       %R%[90mº%R%[32m 61.%C%[36m Fat32 to NTFS               %R%[90mº%R%[0m
 echo   %R%[90mº%R%[32m 11.%C%[36m Origin               %R%[90mº%R%[32m  37.%C%[36m Aimp                   %R%[90mº%R%[32m 62.%C%[33m Ping ™l‡er%C%[90m [*]              º%R%[0m
-echo   %R%[90mº%R%[32m 12.%C%[36m Cheat Engine         %R%[90mº%R%[32m  38.%C%[36m Any Video Converter    %R%[90mº%R%[32m 63.%C%[33m Lisans Y”netimi%C%[90m [M]         º%R%[0m
+echo   %R%[90mº%R%[32m 12.%C%[36m Cheat Engine         %R%[90mº%R%[32m  38.%C%[36m File Converter         %R%[90mº%R%[32m 63.%C%[33m Lisans Y”netimi%C%[90m [M]         º%R%[0m
 echo   %R%[90mº%R%[32m 13.%C%[36m Wemod                %R%[90mº%R%[32m  39.%C%[33m Free Download Manager  %R%[90mº%R%[32m 64.%C%[33m Kullanc Hesap Y”netimi%C%[90m [M] º%R%[0m
 echo   %R%[90mº%R%[32m 14.%C%[33m Google Chrome        %R%[90mº%R%[32m  40.%C%[33m ˜nt Download Manager   %R%[90mº%R%[32m 65.%C%[33m Sistem Hakknda%C%[90m [*]         º%R%[0m
 echo   %R%[90mº%R%[32m 15.%C%[33m Mozilla Firefox      %R%[90mº%R%[32m  41.%C%[33m ByClick Downloader     %R%[90mº%R%[32m 66.%C%[33m Wifi Crack                  %R%[90mº%R%[0m
@@ -359,7 +385,15 @@ set /p menu= %C%[92m  ˜Ÿlem : %C%[0m
 	if %menu%==66 (Call :wificrackarchley)
 	if %menu%==67 goto shutdownpc
 	if %menu%==98 (start https://github.com/OgnitorenKs/OgnitorenKs.Toolbox&goto menu)
-	if %menu%==99 goto AutoUpdate	   
+	if %menu%==99 goto AutoUpdate   
+	if %menu%==Win11 goto Windows11
+	if %menu%==win11 goto Windows11
+	if %menu%==Win10 goto Windows10
+	if %menu%==win10 goto Windows10
+	if %menu%==Res goto NoInternet
+	if %menu%==res goto NoInternet
+	if %menu%==reset goto NoInternet
+	if %menu%==Reset goto NoInternet
 	if %menu%==x (Call :Logss "Kalntlar.Temizle" "Download klas”r temizlendi."
 				  cls&DEL /F /Q /A %download%\*&RD /S /Q %download%\*&goto exit)
 	if %menu%==X (Call :Logss "Kalntlar.Temizle" "Download klas”r temizlendi."
@@ -388,7 +422,7 @@ echo   %R%[90mº%R%[32m  8.%C%[36m Steam                %R%[90mº%R%[32m  34.%C%[3
 echo   %R%[90mº%R%[32m  9.%C%[36m GOG Galaxy           %R%[90mº%R%[32m  35.%C%[36m K-Lite Codec           %R%[90mº%R%[32m 61.%C%[33m Notepad++                   %R%[90mº%R%[0m
 echo   %R%[90mº%R%[32m 10.%C%[36m Uplay                %R%[90mº%R%[32m  36.%C%[36m VLC Media Player       %R%[90mº%R%[32m 62.%C%[33m Visual Studio Code          %R%[90mº%R%[0m
 echo   %R%[90mº%R%[32m 11.%C%[36m Origin               %R%[90mº%R%[32m  37.%C%[36m Aimp                   %R%[90mº%R%[32m 63.%C%[33m Github                      %R%[90mº%R%[0m
-echo   %R%[90mº%R%[32m 12.%C%[36m Cheat Engine         %R%[90mº%R%[32m  38.%C%[36m Any Video Converter    %R%[90mº%R%[32m 64.%C%[33m Git                         %R%[90mº%R%[0m
+echo   %R%[90mº%R%[32m 12.%C%[36m Cheat Engine         %R%[90mº%R%[32m  38.%C%[36m File Converter         %R%[90mº%R%[32m 64.%C%[33m Git                         %R%[90mº%R%[0m
 echo   %R%[90mº%R%[32m 13.%C%[36m Wemod                %R%[90mº%R%[32m  39.%C%[33m Free Download Manager  %R%[90mº%R%[32m 65.%C%[33m Blender                     %R%[90mº%R%[0m
 echo   %R%[90mº%R%[32m 14.%C%[33m Google Chrome        %R%[90mº%R%[32m  40.%C%[33m ˜nt Download Manager   %R%[90mº%R%[32m 66.%C%[36m Process Hacker 2            %R%[90mº%R%[0m
 echo   %R%[90mº%R%[32m 15.%C%[33m Mozilla Firefox      %R%[90mº%R%[32m  41.%C%[33m ByClick Downloader     %R%[90mº%R%[32m 67.%C%[36m                             %R%[90mº%R%[0m
@@ -734,9 +768,8 @@ Call :wget "%link%" Aimp.exe "/AUTO /SILENT"
 goto :eof
 
 :Download38
-FOR /F "tokens=1" %%i in ('FIND "AnyVideoConverter" %Location%\Extra\Links.txt') do set link=%%i
-Call :wget "%link%" AnyVideoConverter.exe /S
-Powershell -command "New-Item -ItemType SymbolicLink -Path 'C:\Users\%username%\Desktop' -Name 'Any Video Converter' -Value 'C:\Program Files (x86)\Anvsoft\Any Video Converter\AVCFree.exe'"
+FOR /F "tokens=1" %%i in ('FIND "FileConverter" %Location%\Extra\Links.txt') do set link=%%i
+Call :wget "%link%" FileConverter.msi /qn
 goto :eof
 
 :Download39
@@ -1139,8 +1172,8 @@ DEL /F /Q /A %localappdata%\Microsoft\Windows\Explorer\NotifyIcon\* > NUL 2>&1
 RD /S /Q "%localappdata%\Packages\Microsoft.Windows.Search_cw5n1h2txyewy\LocalState\AppIconCache" > NUL 2>&1
 mkdir "%localappdata%\Packages\Microsoft.Windows.Search_cw5n1h2txyewy\LocalState\AppIconCache" > NUL 2>&1
 DEL /F /Q /A %localappdata%\Packages\Microsoft.Windows.Search_cw5n1h2txyewy\TempState\* > NUL 2>&1
-Call :delet2 "HKCU\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\TrayNotify" IconStreams
-Call :delet2 "HKCU\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\TrayNotify" PastIconsStream
+Call :delete2 "HKCU\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\TrayNotify" IconStreams
+Call :delete2 "HKCU\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\TrayNotify" PastIconsStream
 powershell -command "Start-Process 'C:\Windows\explorer.exe'"
 powershell -command "Start-Process 'C:\Windows\System32\dllhost.exe'"
 timeout /t 1 /nobreak > NUL
@@ -1154,6 +1187,10 @@ mode con cols=55 lines=36
 Call :PowerRun
 title Hizmet Y”netimi / OgnitorenKs
 Dism /Online /Get-Features /format:table > %Logs%\servvalue.txt
+reg query "HKLM\SYSTEM\CurrentControlSet\Control\Power" /v "HibernateEnabled" > NUL 2>&1
+	if %errorlevel%==1 (Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Power" HibernateEnabled 1)
+reg query "HKLM\Software\Policies\Microsoft\Windows\DriverSearching" /v "SearchOrderConfig" > NUL 2>&1
+	if %errorlevel%==1 (Call :dword "HKLM\Software\Policies\Microsoft\Windows\DriverSearching" "SearchOrderConfig" 1)
 echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
 echo  %R%[90mº%R%[1;97m%R%[100m                  Hizmet Y”netimi                  %R%[0m%R%[90mº%R%[0m
 echo  %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
@@ -1161,90 +1198,91 @@ echo  %R%[90mº             %R%[32m%R%[0m:%R%[36m A‡k        %R%[100m %R%[0m:%R
 echo  %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
 ::
 set servalue=%R%[100m %R%[0m&FOR %%b in (BthAvctpSvc bthserv BluetoothUserService BTAGService) do (Call :serv.check "%%b")
-echo  %R%[90mº%R%[0m   %R%[32m 1%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Bluetooth hizmeti%C%[0m                    %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m   %R%[32m 1%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Bluetooth hizmeti%C%[0m                    %R%[90mº%R%[0m
 ::
 set servalue=%R%[100m %R%[0m&Call :serv.check "Spooler"
-echo  %R%[90mº%R%[0m   %R%[32m 2%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Yazc hizmeti%C%[0m                       %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m   %R%[32m 2%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Yazc hizmeti%C%[0m                       %R%[90mº%R%[0m
 ::
 set servalue=%R%[100m %R%[0m&FOR %%b in (TapiSrv PhoneSvc) do (Call :serv.check "%%b")
-echo  %R%[90mº%R%[0m   %R%[32m 3%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Telefon hizmeti%C%[0m                      %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m   %R%[32m 3%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Telefon hizmeti%C%[0m                      %R%[90mº%R%[0m
 ::
 set servalue=%R%[100m %R%[0m&Call :serv.check "DusmSvc"
-echo  %R%[90mº%R%[0m   %R%[32m 4%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Tarifeli a§lar hizmeti%C%[0m               %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m   %R%[32m 4%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Tarifeli a§lar hizmeti%C%[0m               %R%[90mº%R%[0m
 ::
 set servalue=%R%[100m %R%[0m&FOR %%b in (iphlpsvc IpxlatCfgSvc) do (Call :serv.check "%%b")
-echo  %R%[90mº%R%[0m   %R%[32m 5%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m IP yardmcs (IPv6)%C%[0m                 %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m   %R%[32m 5%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m IP yardmcs (IPv6)%C%[0m                 %R%[90mº%R%[0m
 ::
 set servalue=%R%[100m %R%[0m&FOR %%b in (icssvc SharedAccess ALG) do (Call :serv.check "%%b")
-echo  %R%[90mº%R%[0m   %R%[32m 6%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Mobil Etkin Nokta (Hotspot)%C%[0m          %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m   %R%[32m 6%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Mobil Etkin Nokta (Hotspot)%C%[0m          %R%[90mº%R%[0m
 ::
 set servalue=%R%[100m %R%[0m&Call :serv.check "RMSvc"
-echo  %R%[90mº%R%[0m   %R%[32m 7%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Radyo ve U‡ak modu hizmeti%C%[0m           %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m   %R%[32m 7%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Radyo ve U‡ak modu hizmeti%C%[0m           %R%[90mº%R%[0m
 ::
 set servalue=%R%[100m %R%[0m&FOR %%b in (WSearch ConsentUxUserSvc DevicePickerUserSvc DevicesFlowUserSvc PNRPAutoReg PNRPsvc p2psvc p2pimsvc upnphost SSDPSRV TermService UmRdpService SessionEnv) do (Call :serv.check "%%b")
-echo  %R%[90mº%R%[0m   %R%[32m 8%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Uzak Masast/AkŸ/A§ hizmetleri%C%[0m     %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m   %R%[32m 8%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Uzak Masast/AkŸ/A§ hizmetleri%C%[0m     %R%[90mº%R%[0m
 ::
 set servalue=%R%[100m %R%[0m&Call :serv.check "WSearch"
-echo  %R%[90mº%R%[0m   %R%[32m 9%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Windows Search%C%[0m                       %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m   %R%[32m 9%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Windows Search%C%[0m                       %R%[90mº%R%[0m
 ::
 set servalue=%R%[100m %R%[0m&Call :serv.check "wcncsvc"
-echo  %R%[90mº%R%[0m  %R%[32m 10%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Windows imdi Ba§lan(WPS) hizmeti%C%[0m    %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 10%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Windows imdi Ba§lan(WPS) hizmeti%C%[0m    %R%[90mº%R%[0m
 ::
 set servalue=%R%[100m %R%[0m&FOR %%b in (FrameServer WiaRpc StiSvc) do (Call :serv.check "%%b")
-echo  %R%[90mº%R%[0m  %R%[32m 11%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Tarayc ve Kamera hizmetleri%C%[0m        %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 11%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Tarayc ve Kamera hizmetleri%C%[0m        %R%[90mº%R%[0m
 ::
 set servalue=%R%[100m %R%[0m&Call :serv.check "wisvc"
-echo  %R%[90mº%R%[0m  %R%[32m 12%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Insider hizmeti%C%[0m                      %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 12%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Insider hizmeti%C%[0m                      %R%[90mº%R%[0m
 ::
 set servalue=%R%[100m %R%[0m&Call :serv.check "WbioSrvc"
-echo  %R%[90mº%R%[0m  %R%[32m 13%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Biyometrik hizmeti%C%[0m                   %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 13%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Biyometrik hizmeti%C%[0m                   %R%[90mº%R%[0m
 ::
-set servalue=%R%[100m %R%[0m&Call :serv.check "TabletInputService"
-echo  %R%[90mº%R%[0m  %R%[32m 14%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Kalem ve Dokunmatik hizmeti%C%[0m          %R%[90mº%R%[0m
+set servalue=%R%[100m %R%[0m
+FOR /F "tokens=5" %%i in ('FIND "Caption" %Logs%\OS.txt') do SET caption3=%%i
+	if %caption3%==11 (Call :serv.check "PenService")
+	if %caption3%==10 (Call :serv.check "TabletInputService")
+echo  %R%[90mº%R%[0m  %R%[32m 14%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Kalem ve Dokunmatik hizmeti%C%[0m          %R%[90mº%R%[0m
 ::
 set servalue=%R%[100m %R%[0m&FOR %%b in (SDRSVC VSS swprv wbengine fhsvc) do (Call :serv.check "%%b")
-echo  %R%[90mº%R%[0m  %R%[32m 15%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Sistem Geri ykleme hizmeti%C%[0m          %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 15%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Sistem Geri ykleme hizmeti%C%[0m          %R%[90mº%R%[0m
 ::
 set servalue=%R%[100m %R%[0m&Call :serv.check "SysMain"
-echo  %R%[90mº%R%[0m  %R%[32m 16%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Sysmain (Hzl Getir)%C%[0m                %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 16%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Sysmain (Hzl Getir)%C%[0m                %R%[90mº%R%[0m
 ::
 set servalue=%R%[100m %R%[0m
 reg query "HKLM\SYSTEM\CurrentControlSet\Control\Power" /v "HibernateEnabled" | findstr /i 0x0 > NUL 2>&1
 	if %errorlevel%==1 (set servalue=%R%[32m%R%[0m)
-reg query "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /v  "HiberbootEnabled" | findstr /i 0x0 > NUL 2>&1
-	if %errorlevel%==1 (set servalue=%R%[32m%R%[0m)
-echo  %R%[90mº%R%[0m  %R%[32m 17%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Hzl BaŸlat (Hibernate)%C%[0m             %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 17%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Hzl BaŸlat (Hibernate)%C%[0m             %R%[90mº%R%[0m
 ::
 set servalue=%R%[100m %R%[0m&FOR %%b in (lfsvc NaturalAuthentication) do (Call :serv.check "%%b")
-echo  %R%[90mº%R%[0m  %R%[32m 18%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Konum hizmeti%C%[0m                        %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 18%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Konum hizmeti%C%[0m                        %R%[90mº%R%[0m
 ::
 set servalue=%R%[100m %R%[0m&findstr /i "Hyper-V" %Logs%\servvalue.txt | findstr /i "Disabled" > NUL 2>&1
 	if %errorlevel%==1 (set servalue=%R%[32m%R%[0m)
-echo  %R%[90mº%R%[0m  %R%[32m 19%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Hyper-V hizmeti%C%[0m                      %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 19%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Hyper-V hizmeti%C%[0m                      %R%[90mº%R%[0m
 ::
 set servalue=%R%[100m %R%[0m&FOR %%b in (BcastDVRUserService XboxGipSvc XboxNetApiSvc XblAuthManager XblGameSave DoSvc) do (Call :serv.check "%%b")
-echo  %R%[90mº%R%[0m  %R%[32m 20%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Xbox hizmeti%C%[0m                         %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 20%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Xbox hizmeti%C%[0m                         %R%[90mº%R%[0m
 ::
 set servalue=%R%[100m %R%[0m&Call :serv.check "BDESVC"
-echo  %R%[90mº%R%[0m  %R%[32m 21%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Bitlocker Src Ÿifreleme hizmeti%C%[0m   %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 21%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Bitlocker Src Ÿifreleme hizmeti%C%[0m   %R%[90mº%R%[0m
 ::
 set servalue=%R%[100m %R%[0m&FOR %%b in (SharedRealitySvc VacSvc perceptionsimulation spectrum MixedRealityOpenXRSvc) do (Call :serv.check "%%b")
-echo  %R%[90mº%R%[0m  %R%[32m 22%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Karma Ger‡eklik hizmeti (VR)%C%[0m         %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 22%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Karma Ger‡eklik hizmeti (VR)%C%[0m         %R%[90mº%R%[0m
 ::
 set servalue=%R%[100m %R%[0m&reg query "HKLM\Software\Policies\Microsoft\Windows\DriverSearching" /v "SearchOrderConfig" | findstr /i 0x0 > NUL 2>&1
 	if %errorlevel%==1 (set servalue=%R%[32m%R%[0m)
-echo  %R%[90mº%R%[0m  %R%[32m 23%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Driver Ykle/Gncelle hizmeti%C%[0m        %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 23%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Driver Ykle/Gncelle hizmeti%C%[0m        %R%[90mº%R%[0m
 ::
 set servalue=%R%[100m %R%[0m&Powershell -command "Get-MMAgent | Select-Object MemoryCompression| FL" | findstr /i False > NUL 2>&1
 	if %errorlevel%==1 (set servalue=%R%[32m%R%[0m)
-echo  %R%[90mº%R%[0m  %R%[32m 24%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Bellek SkŸtrma hizmeti%C%[0m            %R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 24%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Bellek SkŸtrma hizmeti%C%[0m            %R%[90mº%R%[0m
 ::
 set servalue=%R%[100m %R%[0m
 reg query "HKLM\SYSTEM\ControlSet001\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\0cc5b647-c1df-4637-891a-dec35c318583" /v "ValueMax" | findstr /i 0x0 > NUL 2>&1
 	if %errorlevel%==1 (set servalue=%R%[32m%R%[0m)
 reg query "HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\0cc5b647-c1df-4637-891a-dec35c318583" /v  "ValueMax" | findstr /i 0x0 > NUL 2>&1
 	if %errorlevel%==1 (set servalue=%R%[32m%R%[0m)
-echo  %R%[90mº%R%[0m  %R%[32m 25%C%[90m[%C%[36mA%C%[90m/%C%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Core Parking (CPU €ekirdek Uyku Modu)%C%[0m%R%[90mº%R%[0m
+echo  %R%[90mº%R%[0m  %R%[32m 25%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Core Parking (CPU €ekirdek Uyku Modu)%C%[0m%R%[90mº%R%[0m
 echo  %R%[90mº%R%[0m        %R%[32m X.%R%[36m Men%R%[0m                                   %R%[90mº%R%[0m
 echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
 set /p value= %C%[92m ˜Ÿlem : %C%[0m
@@ -1340,10 +1378,10 @@ set /p value= %C%[92m ˜Ÿlem : %C%[0m
 	if %value%==23A (Call :serv.23.driverupdate 0 1 a‡lyor)
 	if %value%==23K (Call :serv.23.driverupdate 1 0 kapatlyor)
 	if %value%==23k (Call :serv.23.driverupdate 1 0 kapatlyor)
-	if %value%==24a (Call :serv.24.memorycompression Enable A‡lyor)
-	if %value%==24A (Call :serv.24.memorycompression Enable A‡lyor)
-	if %value%==24K (Call :serv.24.memorycompression Disable Kapatlyor)
-	if %value%==24k (Call :serv.24.memorycompression Disable Kapatlyor)
+	if %value%==24a (Call :serv.24.memorycompression Enable a‡lyor)
+	if %value%==24A (Call :serv.24.memorycompression Enable a‡lyor)
+	if %value%==24K (Call :serv.24.memorycompression Disable kapatlyor)
+	if %value%==24k (Call :serv.24.memorycompression Disable kapatlyor)
 	if %value%==25a (Call :serv.25.coreparking 100 "Call :delete" "Call :delete2" a‡lyor)
 	if %value%==25A (Call :serv.25.coreparking 100 "Call :delete" "Call :delete2" a‡lyor)
 	if %value%==25K (Call :serv.25.coreparking 0 "Call :dword" "Call :dword" kapatlyor)

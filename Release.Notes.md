@@ -6,7 +6,7 @@
 ::      ■■     ■■ ■■   ■■■■ ■■ ■■ ■■  ■■     ■■    ■■     ■■ ■■■■■■■■  ■■■■■■   ■■ ■■ ■■ ■■■■■      ■■■■■■ 
 ::      ■■     ■■ ■■    ■■  ■■  ■■■■  ■■     ■■    ■■     ■■ ■■   ■■   ■■       ■■  ■■■■ ■■  ■■         ■■
 ::      ■■     ■■ ■■    ■■  ■■   ■■■  ■■     ■■    ■■     ■■ ■■    ■■  ■■       ■■   ■■■ ■■   ■■  ■■    ■■
-::       ■■■■■■   ■■■■■■   ■■    ■■ ■■■■    ■■     ■■■■■■■  ■■     ■■ ■■■■■■■■ ■■    ■■ ■■    ■■  ■■■■■■ 
+::        ■■■■■■   ■■■■■■   ■■    ■■ ■■■■    ■■     ■■■■■■■  ■■     ■■ ■■■■■■■■ ■■    ■■ ■■    ■■  ■■■■■■ 
 ::
 ::  Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
 ::  -------------------------------------------
@@ -48,6 +48,21 @@
 :: 	  • Windows Search önbelliğinin temizlenmesiyle ilgili komutların eklenmesi.
 ::  
 :: ==============================================================================================================================
+-----------------
+ ► Versiyon 2.9 -
+-----------------
+Yayınlanma Tarihi: 26.04.2022
+
+ • Hizmetler Yönetimi > Dokunmatik servis bölümünde Windows 10 / 11 için ayrı servis bölümleri oluşturuldu.
+ • Hizmetler Yönetimi > Hizmetlerin durumu hakkında bilgi alırken olası hata mesajlarının engellenmesi için yeni parametreler eklendi.
+ • Simge önbelleğini temizle bölümünde hatalı komutlar düzeltildi.
+ • Otomatik güncelleme sistemi düzenlendi. Güncelleştirme işlemi gün içinde tek bir kez kontrol edilecek şekilde düzenlendi.
+ • Any Video Converter yazılımı kaldırıldı.
+   • [YMuratK] tavsiyesiyle FileConverter programı eklendi.
+ • Toolbox İngilizce > Hizmetleri yönet bölümündeki dil hatası giderildi.
+
+:: ==============================================================================================================================
+
 -----------------
  ► Versiyon 2.8 -
 -----------------
@@ -255,7 +270,7 @@ Yayınlanma Tarihi: 08.02.2022
 Yayınlanma Tarihi: 26.01.2022
 
  • Windows Düzenleme > Setup düzenleme bölümünde Windows 11 Bypass aracında bilgi vermeden kapanma sorunu giderildi.
- • ISLC bölümündeki yol hatası giderildi. (Kick Furkanowski'e geri bildirimi için teşekkür ederim)
+ • ISLC bölümündeki yol hatası giderildi. [Kick Furkanowski'e geri bildirimi için teşekkür ederim]
  • Signal indirme linki yenilendi. (5.28.0 > 5.29.0)
  • 7-Zip indirme linki yenilendi. (21.06 > 21.07)
  • Notepad++ indirme linki yenilendi. (8.2 > 8.2.1)

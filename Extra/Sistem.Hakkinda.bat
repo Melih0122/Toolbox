@@ -109,7 +109,7 @@ for /f "tokens=2" %%a in ('echo %date%') do set Time1=%%a
 for /f "tokens=1" %%b in ('echo %time%') do set Time2=%%b
 set Time2=%Time2:~0,-3%
 
-echo   %R%[32m Format Tarihi:%R%[37m %format%%R%[90m / %R%[32mSaat Dilimi:%R%[37m %utcc%%R%[90m /%R%[37m %Time1% - %Time2%%R%[0m
+echo   %R%[32m Format Tarihi:%R%[37m %format%%R%[90m ^| %R%[32mSaat Dilimi:%R%[37m %utcc%%R%[90m ^|%R%[37m %Time1% - %Time2%%R%[0m
 
 :: şşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşş
 
@@ -131,7 +131,7 @@ FIND /C /I "winload.efi" %Logs%\Bcdedit.txt > NUL
 	if %errorlevel%==1 set uefi=BIOS-MBR
 
 :: Tm de§erler komut ekranna yazdrlr.
-echo   %R%[32m Sistem:%R%[37m %caption%%R%[90m / %R%[37mx%osarch%%R%[90m / %R%[37m%ImageBuild%%R%[90m / %R%[37m%isderleme%%R%[90m / %R%[37m%uefi%%R%[0m
+echo   %R%[32m Sistem:%R%[37m %caption%%R%[90m ^| %R%[37mx%osarch%%R%[90m ^| %R%[37m%ImageBuild%%R%[90m ^| %R%[37m%isderleme%%R%[90m ^| %R%[37m%uefi%%R%[0m
 
 
 :: şşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşş
@@ -146,7 +146,7 @@ FOR /F "tokens=2 delims=':'" %%d in ('FIND "SocketDesignation" %Logs%\CPU.txt') 
 FOR /F "tokens=2 delims=':'" %%e in ('FIND "Name" %Logs%\Bios.txt') do set bios=%%e
 
 :: Tm de§erler komut ekranna yazdrlr.
-echo   %R%[32m Anakart:%R%[37m %boardmarka%%board%%R%[90m / %R%[32mSoket:%R%[37m%boardsoket%%R%[90m / %R%[32mBios:%R%[37m%bios%%R%[0m
+echo   %R%[32m Anakart:%R%[37m %boardmarka%%board%%R%[90m ^| %R%[32mSoket:%R%[37m%boardsoket%%R%[90m ^| %R%[32mBios:%R%[37m%bios%%R%[0m
 
 :: şşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşş
 
@@ -169,7 +169,7 @@ FOR /F "tokens=2 delims=':'" %%e in ('FIND "CurrentClockSpeed" %Logs%\CPU.txt') 
 
 :: Tm de§erler komut ekranna yazdrlr.
 echo   %R%[32m CPU:%R%[37m%cpu% %R%[0m
-echo   %R%[32m CPU €ekirdek:%R%[37m%cpucekirdek% %R%[90m/%R%[32m Threads:%R%[37m%cpusanalcekirdek% %R%[90m/%R%[32m L2:%R%[37m%cpuL2%%R%[36m MB%R%[90m /%R%[32m L3:%R%[37m%cpuL3%%R%[36m MB%R%[90m /%R%[32m CPU MHZ:%R%[37m%cpuclock%%R%[0m
+echo   %R%[32m CPU €ekirdek:%R%[37m%cpucekirdek% %R%[90m^|%R%[32m Threads:%R%[37m%cpusanalcekirdek% %R%[90m^|%R%[32m L2:%R%[37m%cpuL2%%R%[36m MB%R%[90m ^|%R%[32m L3:%R%[37m%cpuL3%%R%[36m MB%R%[90m ^|%R%[32m CPU MHZ:%R%[37m%cpuclock%%R%[0m
 
 :: şşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşş
 
@@ -185,8 +185,8 @@ FOR /F "tokens=2 delims=':'" %%c in ('FIND "DriverVersion" %Logs%\GPU.txt') do s
 FOR /F "tokens=3" %%d in ('FIND "DriverDate" %Logs%\GPU.txt') do set gpudate=%%d
 
 :: Tm de§erler komut ekranna yazdrlr.
-echo   %R%[32m GPU:%R%[37m %gpu%%R%[90m /%R%[32m VRAM:%R%[37m%gpuram%%R%[36m GB%R%[0m 
-echo   %R%[32m GPU Driver:%R%[37m %gpudriver%%R%[90m / %R%[32mDriver Tarih :%R%[37m %gpudate%%R%[0m
+echo   %R%[32m GPU:%R%[37m%gpu%%R%[90m ^|%R%[32m VRAM:%R%[37m%gpuram%%R%[36m GB%R%[0m 
+echo   %R%[32m GPU Driver:%R%[37m%gpudriver%%R%[90m ^| %R%[32mDriver Tarih:%R%[37m %gpudate%%R%[0m
 
 :: şşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşş
 
@@ -199,7 +199,7 @@ FOR /F "tokens=2 delims=':'" %%c in ('FIND "CurrentVerticalResolution" %Logs%\GP
 FOR /F "tokens=2 delims=':'" %%d in ('FIND "CurrentRefreshRate" %Logs%\GPU.txt') do set refresh=%%d
 
 :: Tm de§erler komut ekranna yazdrlr.
-echo   %R%[32m Monit”r:%R%[37m%monitorr% %R%[90m/%R%[37m%refresh% %R%[36mHZ%R%[90m / %R%[37m%dikeyc% %R%[36mx%R%[37m%yatayc%%R%[0m
+echo   %R%[32m Monit”r:%R%[37m%monitorr% %R%[90m^|%R%[37m%refresh% %R%[36mHZ%R%[90m ^|%R%[37m%dikeyc% %R%[36mx%R%[37m%yatayc%%R%[0m
 
 :: şşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşş
 
@@ -243,7 +243,7 @@ set /a ramtotal=(%ramtotal%/1024/1024)
 FOR /F "tokens=2 delims=':'" %%a in ('FIND "Speed" %Logs%\Ram.txt') do set ramspeed=%%a
 
 :: Tm de§erler komut ekranna yazdrlr.
-echo   %R%[32m RAM:%R%[37m %ramtotal% %R%[36mGB%R%[90m / %R%[37m%ramspeed% %R%[36m MHZ%R%[90m / %R%[32m Soket:%R%[37m %RamType% %R%[0m
+echo   %R%[32m RAM:%R%[37m %ramtotal% %R%[36mGB%R%[90m ^|%R%[37m%ramspeed% %R%[36m MHZ%R%[90m ^|%R%[32m Soket:%R%[37m %RamType% %R%[0m
 
 :: şşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşşş
 

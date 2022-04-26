@@ -3,14 +3,14 @@
 ::                               NOTEPAD++ > Kodlama  > Karekter Set  > Turkce  > OEM857
 :: ==============================================================================================================================
 ::
-::       þþþþþþþ   þþþþþþ   þþ    þþ þþþþ þþþþþþþþ  þþþþþþþ  þþþþþþþþ  þþþþþþþþ þþ    þþ þþ    þþ  þþþþþþ
-::      þþ     þþ þþ    þþ  þþþ   þþ  þþ     þþ    þþ     þþ þþ     þþ þþ       þþþ   þþ þþ   þþ  þþ    þ
-::      þþ     þþ þþ        þþþþ  þþ  þþ     þþ    þþ     þþ þþ     þþ þþ       þþþþ  þþ þþ  þþ   þþ
-::      þþ     þþ þþ   þþþþ þþ þþ þþ  þþ     þþ    þþ     þþ þþþþþþþþ  þþþþþþ   þþ þþ þþ þþþþþ      þþþþþþ 
-::      þþ     þþ þþ    þþ  þþ  þþþþ  þþ     þþ    þþ     þþ þþ   þþ   þþ       þþ  þþþþ þþ  þþ         þþ
-::      þþ     þþ þþ    þþ  þþ   þþþ  þþ     þþ    þþ     þþ þþ    þþ  þþ       þþ   þþþ þþ   þþ  þþ    þþ
-::       þþþþþþþ   þþþþþþ   þþ    þþ þþþþ    þþ     þþþþþþþ  þþ     þþ þþþþþþþþ þþ    þþ þþ    þþ  þþþþþþ 
-::
+::       â– â– â– â– â– â– â–    â– â– â– â– â– â–    â– â–     â– â–  â– â– â– â–  â– â– â– â– â– â– â– â–   â– â– â– â– â– â– â–   â– â– â– â– â– â– â– â–   â– â– â– â– â– â– â– â–  â– â–     â– â–  â– â–     â– â–   â– â– â– â– â– â– 
+::      â– â–      â– â–  â– â–     â– â–   â– â– â–    â– â–   â– â–      â– â–     â– â–      â– â–  â– â–      â– â–  â– â–        â– â– â–    â– â–  â– â–    â– â–   â– â–     â– 
+::      â– â–      â– â–  â– â–         â– â– â– â–   â– â–   â– â–      â– â–     â– â–      â– â–  â– â–      â– â–  â– â–        â– â– â– â–   â– â–  â– â–   â– â–    â– â– 
+::      â– â–      â– â–  â– â–    â– â– â– â–  â– â–  â– â–  â– â–   â– â–      â– â–     â– â–      â– â–  â– â– â– â– â– â– â– â–   â– â– â– â– â– â–    â– â–  â– â–  â– â–  â– â– â– â– â–       â– â– â– â– â– â–  
+::      â– â–      â– â–  â– â–     â– â–   â– â–   â– â– â– â–   â– â–      â– â–     â– â–      â– â–  â– â–    â– â–    â– â–        â– â–   â– â– â– â–  â– â–   â– â–          â– â– 
+::      â– â–      â– â–  â– â–     â– â–   â– â–    â– â– â–   â– â–      â– â–     â– â–      â– â–  â– â–     â– â–   â– â–        â– â–    â– â– â–  â– â–    â– â–   â– â–     â– â– 
+::        â– â– â– â– â– â–    â– â– â– â– â– â–    â– â–     â– â–  â– â– â– â–     â– â–      â– â– â– â– â– â– â–   â– â–      â– â–  â– â– â– â– â– â– â– â–  â– â–     â– â–  â– â–     â– â–   â– â– â– â– â– â–  
+
 ::  Created: Huseyin UZUNYAYLA / OgnitorenKs
 ::  Contact;
 ::  >> Discord: OgnitorenKs#2737 
@@ -20,8 +20,8 @@
 ::                                         >>  ognitorenks.blogspot.com  <<
 :: ==============================================================================================================================
 
-VersionCheck:2.7.1
-Version8Check:2.6
+VersionCheck:2.9
+Version8Check:2.7
 
 :01
 :: https://docs.microsoft.com/tr-TR/cpp/windows/latest-supported-vc-redist?view=msvc-170
@@ -34,7 +34,7 @@ https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8
 https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x86.exe 10x86.exe
 https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x64.exe 10x64.exe
 
-https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x86.exe 12x86.exe 
+https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x86.exe 12x86.exe
 https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe 12x64.exe
 
 https://aka.ms/highdpimfc2013x86trk 13x86.exe
@@ -47,17 +47,17 @@ https://download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B
 https://download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B00/vc_redist.x64.exe 15.8x64
 
 :: https://www.java.com/tr/download/manual.jsp
-https://javadl.oracle.com/webapps/download/AutoDL?BundleId=245479_4d5417147a92418ea8b615e228bb6935 javax64.exe
+https://javadl.oracle.com/webapps/download/AutoDL?BundleId=246265_165374ff4ea84ef0bbd821706e29b123 javax64.exe
 
 :: https://www.microsoft.com/en-us/download/details.aspx?id=20914
-https://download.microsoft.com/download/5/3/A/53A804C8-EC78-43CD-A0F0-2FB4D45603D3/xnafx40_redist.msi xnafx40.msi
+https://download.microsoft.com/download/A/C/2/AC2C903B-E6E8-42C2-9FD7-BEBAC362A930/xnafx40_redist.msi xnafx40.msi
 
 :: https://www.openal.org/downloads/
 https://openal.org/downloads/oalinst.zip oal.zip 
 
 :: https://dotnet.microsoft.com/download/dotnet/5.0
-https://download.visualstudio.microsoft.com/download/pr/b1902c77-e022-4b3e-a01a-e8830df936ff/09d0957435bf8c37eae11b4962d4221b/windowsdesktop-runtime-5.0.15-win-x64.exe Desktop5x64.exe  
-https://download.visualstudio.microsoft.com/download/pr/51b9e073-e0db-4c82-bdb8-47a9c39896e2/d676baa1bbb643f50c6b41ca64110d2f/windowsdesktop-runtime-5.0.15-win-x86.exe Desktop5x86.exe 
+https://download.visualstudio.microsoft.com/download/pr/a0fafe9b-958d-4bce-8ba4-6c67bd621644/a30d69b829fa1ad2312c7a75c111d821/windowsdesktop-runtime-5.0.16-win-x64.exe Desktop5x64.exe
+https://download.visualstudio.microsoft.com/download/pr/426c1ce7-52d0-4002-af0c-76274a9be4b8/4c84f606549482e43b390122f12b291b/windowsdesktop-runtime-5.0.16-win-x86.exe Desktop5x86.exe 
 
 ::
 https://download.microsoft.com/download/8/4/A/84A35BF1-DAFE-4AE8-82AF-AD2AE20B6B14/directx_Jun2010_redist.exe DirectX.exe
@@ -72,7 +72,7 @@ https://web.whatsapp.com/desktop/windows/release/x64/WhatsAppSetup.exe WhatsApp.
 
 :04
 :: https://signal.org/download/
-https://updates.signal.org/desktop/signal-desktop-win-5.39.0.exe Signal.exe 
+https://updates.signal.org/desktop/signal-desktop-win-5.40.1.exe Signal.exe 
 
 :05
 :: https://desktop.telegram.org/
@@ -109,7 +109,7 @@ https://api.wemod.com/client/download Wemod.exe
 
 :15
 :: https://support.google.com/chrome/a/answer/7650032?hl=tr
-https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B582A9412-2612-3ECB-7E89-140ED751BA49%7D%26lang%3Den%26browser%3D4%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dtrue%26ap%3Dx64-stable-statsdef_0%26brand%3DGCEA/dl/chrome/install/googlechromestandaloneenterprise64.msi GoogleChrome.msi
+https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7BC1EEF5AA-2E5F-6440-0452-2DFFC3AB016F%7D%26lang%3Den%26browser%3D4%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dtrue%26ap%3Dx64-stable-statsdef_0%26brand%3DGCEA/dl/chrome/install/googlechromestandaloneenterprise64.msi GoogleChrome.msi
 
 :16
 https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=tr Firefox.exe
@@ -122,7 +122,7 @@ https://net.geo.opera.com/opera_gx/stable/windows OperaGX.exe
 
 :18
 :: https://www.microsoft.com/en-us/edge/business/download
-https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/b3ed8b52-ee6b-401e-aa19-85b6f3dbfa0e/MicrosoftEdgeEnterpriseX64.msi Edge.msi
+https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/502292d2-eb78-4ef3-84bd-56394537153c/MicrosoftEdgeEnterpriseX64.msi Edge.msi
 
 :19
 ::ISLC
@@ -165,7 +165,7 @@ https://github.com/OpenShot/openshot-qt/releases/download/v2.6.1/OpenShot-v2.6.1
 
 :29
 :: https://shotcut.org/download/
-https://github.com/mltframework/shotcut/releases/download/v22.03.30/shotcut-win64-220330.exe Shotcut.exe
+https://github.com/mltframework/shotcut/releases/download/v22.04.25/shotcut-win64-220425.exe Shotcut.exe
 
 :30
 :: https://krita.org/en/download/krita-desktop/
@@ -200,6 +200,9 @@ https://ftp.linux.org.tr/videolan/vlc/3.0.17.4/win64/vlc-3.0.17.4-win64.exe VLCM
 https://www.aimp.ru/?do=download.file&id=4 Aimp.exe
 
 :38
+:: https://github.com/Tichau/FileConverter/releases/
+https://github.com/Tichau/FileConverter/releases/download/v1.2.3/FileConverter-1.2.3-x64-setup.msi FileConverter.msi
+
 ::https://www.any-video-converter.com/en3/for_video_free/
 https://www.any-video-converter.com/avc-free.exe AnyVideoConverter.exe
 
@@ -287,7 +290,7 @@ https://download-cdn.jetbrains.com/python/pycharm-professional-2022.1.exe PyChar
 
 :60
 :: https://notepad-plus-plus.org/downloads/
-https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.3.3/npp.8.3.3.Installer.x64.exe Notepad.exe 
+https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.4/npp.8.4.Installer.x64.exe Notepad.exe
 
 :61
 :: https://code.visualstudio.com/
@@ -299,7 +302,7 @@ https://central.github.com/deployments/desktop/desktop/latest/win32 Github.exe
 
 :63
 :: https://git-scm.com/download/win
-https://github.com/git-for-windows/git/releases/download/v2.35.1.windows.1/Git-2.35.1-64-bit.exe Git.exe
+https://github.com/git-for-windows/git/releases/download/v2.36.0.windows.1/Git-2.36.0-64-bit.exe Git.exe
 
 :64
 :: https://www.blender.org/download/
