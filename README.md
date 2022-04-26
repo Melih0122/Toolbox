@@ -221,7 +221,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 		
 	• 6 - Sahiplik Al [Ekle/Kaldır]: Bazı sistem dosyalarında yetki sorunu yaşadığınızda imdadınıza yetişecek bölümdür.
 	     •[Ekle]: 1 - Sağ-tık bölümüne "Sahiplik Al" butonunu ekler.
-	     •[Kaldır]: 2 - Sağ-tık bölümünden "Sahipli Al" butonunu kaldırır.
+	     •[Kaldır]: 2 - Sağ-tık bölümünden "Sahiplik Al" butonunu kaldırır.
 	
 	• 7 - CompactOS (Windows Sıkıştırma) [Aç/Kapat]: Windows sistem dosyalarını sıkıştırarak 3 - 4 GB'lık bir alan kazanmanızı sağlar. Performans kaybı yaratmaz.
 	     •[Aç]: 1 - Windows sistem dosyalarını sıkıştırmayı açar.
