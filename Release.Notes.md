@@ -18,32 +18,31 @@
 -   Site: ognitorenks.blogspot.com
 
 ### Projeye katkıda bulunanlar;
-
-	  ----------------------
-	  ► Eray Türkay 
-	  ----------------------
-	  • Sistem Hakkında - RAM soket yapısının eklenmesi.
-	  • Sistem Hakkında - Sistem format tarihinin eklenmesi.
-	  ----------------------
-	  ► KaanBeyhan [DOGGEST]
-	  ----------------------
-	  • İndirme işlemlerinde ilerleme çubuğunun eklenmesi.
-	  ---------
-   	  ► Archley
-   	  ---------
-	  • Wifi Crack çalışmasının toolbox'a eklenmesi.
-	  ----------
-	  ► maskem76
-	  ----------
-	  • Hyper-V bölümündeki hatanın giderilmesi.
-	  ----------
-	  ► Legnica
-	  ----------
-	  • Windows Search önbelliğinin temizlenmesiyle ilgili komutların eklenmesi.
-	  -------------
-	  ► EnixYazılım
-	  -------------
-	  • OperaGX yazılımının indirme bölümüne eklenmesi.
+	----------------------
+	► Eray Türkay 
+	----------------------
+	• Sistem Hakkında - RAM soket yapısının eklenmesi.
+	• Sistem Hakkında - Sistem format tarihinin eklenmesi.
+	----------------------
+	► KaanBeyhan [DOGGEST]
+	----------------------
+	• İndirme işlemlerinde ilerleme çubuğunun eklenmesi.
+	---------
+	► Archley
+	---------
+	• Wifi Crack çalışmasının toolbox'a eklenmesi.
+	----------
+	► maskem76
+	----------
+	• Hyper-V bölümündeki hatanın giderilmesi.
+	----------
+	► Legnica
+	----------
+	• Windows Search önbelliğinin temizlenmesiyle ilgili komutların eklenmesi.
+	-------------
+	► EnixYazılım
+	-------------
+	• OperaGX yazılımının indirme bölümüne eklenmesi.
 -----------------
  ► Versiyon 2.9 -
 -----------------
@@ -107,71 +106,66 @@ Yayınlanma Tarihi: 16.04.2022
 	• ISLC yazılımı indir - kur şeklinde düzenlendi.
 	• Hizmet Yönetimi > Xbox bölümüne kısayol engelleyici parametre eklendi.
 	• Hizmet Yönetimi > Windows Media player bölümüne yeni parametre eklendi.
-
 -------------------
  ► Versiyon 2.6.2 - Ara güncelleme
 -------------------
 Yayınlanma Tarihi: 13.04.2022
 
- • Güncelleme sonrası temizlik bölümündeki hata giderildi.
- • Toolbox İngilizce sürümü Türkçe sürümü ile senkronize gelişecek şekilde yeniden düzenlendi.
- • Windows 8.1 Toolbox sürümü için Güncelleme ve katılımsız kurulum araçları eklendi.
- • Github'daki proje tek bir bölümde toplandı. TR / ENG / 8.1 sürüm dosya ve katılımsız araçları tek bir yerden sunulanacak.
-   • İniglizce Toolbox hakkında detayları öğrenmek için "Google Translate" kullanılması gerekmektedir.
- • Güncelleştirme sonrası temizlik bölümündeki hizmetler "Extra\Update.After.bat" dosyasından toplandı.
-   • PowerRun yazılımıyla tek bir işlem yapmak için tek bir .bat dosyasında topladım. 
+	• Güncelleme sonrası temizlik bölümündeki hata giderildi.
+	• Toolbox İngilizce sürümü Türkçe sürümü ile senkronize gelişecek şekilde yeniden düzenlendi.
+	•  Windows 8.1 Toolbox sürümü için Güncelleme ve katılımsız kurulum araçları eklendi.
+	• Github'daki proje tek bir bölümde toplandı. TR / ENG / 8.1 sürüm dosya ve katılımsız araçları tek bir yerden sunulanacak.
+ 	  • İniglizce Toolbox hakkında detayları öğrenmek için "Google Translate" kullanılması gerekmektedir.
+	• Güncelleştirme sonrası temizlik bölümündeki hizmetler "Extra\Update.After.bat" dosyasından toplandı.
+ 	  • PowerRun yazılımıyla tek bir işlem yapmak için tek bir .bat dosyasında topladım. 
 
 -------------------
  ► Versiyon 2.6.1 - Ara güncelleme
 -------------------
 Yayınlanma Tarihi: 12.04.2022
 
- • Hizmetleri Yönet > Hizmetlerin açık veya kapalı olma durumları menü içinde belirtildi.
- • Hizmetleri Yönet > Baskı hizmetini aç kapat kaldırıldı.
- • Hizmetleri Yönet > Ip yardımcı bölümündeki yönlendirme hatası giderildi. 
- • Hizmetleri Yönet > Radyo ve uçak modu hizmeti bölümünde Windows 10 sistemlerdeki kapanma hatası giderildi.
- • Hizmetleri Yönet > Windows Search yönlendirme hatası giderildi.
- • Hizmetleri Yönet > Hyper - V kapat bölümündeki komut hatası giderildi.
- • PowerRun yazılımının yeninden indirme bölümünde yer alan komut hatası giderildi.
-   • Hizmetleri Yönet bölümünde fazla işlem yapılınca antivirüs programı PowerRun yazılımdan huylanabiliyor. 
-
+	• Hizmetleri Yönet > Hizmetlerin açık veya kapalı olma durumları menü içinde belirtildi.
+	• Hizmetleri Yönet > Baskı hizmetini aç kapat kaldırıldı.
+	• Hizmetleri Yönet > Ip yardımcı bölümündeki yönlendirme hatası giderildi. 
+	• Hizmetleri Yönet > Radyo ve uçak modu hizmeti bölümünde Windows 10 sistemlerdeki kapanma hatası giderildi.
+	• Hizmetleri Yönet > Windows Search yönlendirme hatası giderildi.
+	• Hizmetleri Yönet > Hyper - V kapat bölümündeki komut hatası giderildi.
+	• PowerRun yazılımının yeninden indirme bölümünde yer alan komut hatası giderildi.
+ 	  • Hizmetleri Yönet bölümünde fazla işlem yapılınca antivirüs programı PowerRun yazılımdan huylanabiliyor. 
 -----------------
  ► Versiyon 2.6 -
 -----------------
 Yayınlanma Tarihi: 10.04.2022
 
- • Ana menüde ve bazı iç bölümlerde farklı bölümlere açılan kısımlar için ifadeler yerleştirildi.
-   • Menü bölümlerine [M] / Uygulama olarak açılan bölüme [APP] / ayrı pencere olarak açılacak bölüme [*] işareti bıraktım
-   • "quanqx"a önerisi için teşekkür ediyorum.
- • Toolbox'ın bazı bölümlerinde yer alan linkler karmaşıklığı azaltmak için Links.bat dosyasına eklendi.
-   • Links.bat / Setup.zip / ICO.zip dosyalarını drive linkleridir.
- • Güncelleme sonrası temizlik bölümnde Defender klasör artıklarını silme komutlarındaki parametre hatası giderildi.
- • "Hizmetleri yönet" > "GPU optimizasyon" bölümü kaldırıldı.
-   • Bu tarz optimizasyonların GPU uygulamaları üzerinden kullanıcının kendi isteklerine göre düzenlemesini daha sağlıklı bulduğum için kaldırdım.
- • All in One Runtimes bölümündeki eski sürümleri kaldırmaya yarayan komutlar kaldırıldı. Yeniden yüklemelerde hataya sebep oluyordu.
-   • Net Framework 3.5 / 4.5 / DirectPlay bölümleri önce kontrol edilip, yüklü olmaması durumunda komutlar çalışıp yükleme işlemini gerçekleştirecek.
-   • All in One Runtimes yükleme bölümü arayüzü düzenlendi.
- • Toolbox simgesi değiştirildi.
- • Windows 10 Edit > Microsoft Store kaldırma bölümüne uyarı mesajı eklendi.
- • Hizmet yönetimi > "Radyo ve Uçak modu hizmeti" bölümü için Windows 11 kısıtlaması getirildi.
-   • Bu servis kapatılınca ağ simgesi kaybolduğu için kısıtlama getirildi.
- • Sistem hakkında > Tarih ve saat bilgisi eklendi. (Archley'e katkısından ötürü teşekkür ederim.)
- • Hizmetleri Yönet > Telefon hizmeti bölümünde kapanma durumunda bluetooth hizmetlerinin kapatılması engellendi.
- • Hizmetleri Yönet > Hyper-V bölümünün işlem öncelikleri değiştirildi. Hyper-V bölümündeki bazı Dism komutları iptal edildi.
- • Windows Editör > Yeni Simgeleri yükle bölümündeki yol hatası giderildi.
- • Pc Temizle bölümündeki komutlar yenilendi. Başlık bölümü eklendi.
- • Windows / Store onar bölümüne başlık bölümü eklendi.
- • Windows Editör > Katılımsız Program/Ayar ekle [Online] - [Offline] bölümünde Nihai performans kısmında kod hatası giderildi.
- • Microsoft Teams indirme linklerinde yaşanan sorundan dolayı toolbox'tan kaldırıldı.
-   • Katılımsız bölümünden de kaldırıldı.
- • Windows 10 Edit > Simge değiştir bölümündeki simge değişmeme sorunu tamamen çözüldü.
- • Windows / Market onar bölümündeki dll kayıt bölümündeki komutların okunması kolaylaştırıldı. For döngüsü içine alındı.
-   • İşlem sonunda reset seçeneği bırakıldı.
- • Ping Ölçer bölümünün teması düzenlendi. Değişken bölümüne bilgilendirici metinler bırakıldı.
-   • Yeni site ve dns adressleri eklendi.
-
-:: ==============================================================================================================================
-
+	• Ana menüde ve bazı iç bölümlerde farklı bölümlere açılan kısımlar için ifadeler yerleştirildi.
+ 	  • Menü bölümlerine [M] / Uygulama olarak açılan bölüme [APP] / ayrı pencere olarak açılacak bölüme [*] işareti bıraktım
+ 	  • "quanqx"a önerisi için teşekkür ediyorum.
+	• Toolbox'ın bazı bölümlerinde yer alan linkler karmaşıklığı azaltmak için Links.bat dosyasına eklendi.
+ 	  • Links.bat / Setup.zip / ICO.zip dosyalarını drive linkleridir.
+	• Güncelleme sonrası temizlik bölümnde Defender klasör artıklarını silme komutlarındaki parametre hatası giderildi.
+	• "Hizmetleri yönet" > "GPU optimizasyon" bölümü kaldırıldı.
+ 	  • Bu tarz optimizasyonların GPU uygulamaları üzerinden kullanıcının kendi isteklerine göre düzenlemesini daha sağlıklı bulduğum için kaldırdım.
+	• All in One Runtimes bölümündeki eski sürümleri kaldırmaya yarayan komutlar kaldırıldı. Yeniden yüklemelerde hataya sebep oluyordu.
+ 	  • Net Framework 3.5 / 4.5 / DirectPlay bölümleri önce kontrol edilip, yüklü olmaması durumunda komutlar çalışıp yükleme işlemini gerçekleştirecek.
+ 	  • All in One Runtimes yükleme bölümü arayüzü düzenlendi.
+	• Toolbox simgesi değiştirildi.
+	• Windows 10 Edit > Microsoft Store kaldırma bölümüne uyarı mesajı eklendi.
+	• Hizmet yönetimi > "Radyo ve Uçak modu hizmeti" bölümü için Windows 11 kısıtlaması getirildi.
+ 	  • Bu servis kapatılınca ağ simgesi kaybolduğu için kısıtlama getirildi.
+	• Sistem hakkında > Tarih ve saat bilgisi eklendi. (Archley'e katkısından ötürü teşekkür ederim.)
+	• Hizmetleri Yönet > Telefon hizmeti bölümünde kapanma durumunda bluetooth hizmetlerinin kapatılması engellendi.
+	• Hizmetleri Yönet > Hyper-V bölümünün işlem öncelikleri değiştirildi. Hyper-V bölümündeki bazı Dism komutları iptal edildi.
+	• Windows Editör > Yeni Simgeleri yükle bölümündeki yol hatası giderildi.
+	• Pc Temizle bölümündeki komutlar yenilendi. Başlık bölümü eklendi.
+	• Windows / Store onar bölümüne başlık bölümü eklendi.
+	• Windows Editör > Katılımsız Program/Ayar ekle [Online] - [Offline] bölümünde Nihai performans kısmında kod hatası giderildi.
+	• Microsoft Teams indirme linklerinde yaşanan sorundan dolayı toolbox'tan kaldırıldı.
+ 	  • Katılımsız bölümünden de kaldırıldı.
+	• Windows 10 Edit > Simge değiştir bölümündeki simge değişmeme sorunu tamamen çözüldü.
+	• Windows / Market onar bölümündeki dll kayıt bölümündeki komutların okunması kolaylaştırıldı. For döngüsü içine alındı.
+ 	  • İşlem sonunda reset seçeneği bırakıldı.
+	• Ping Ölçer bölümünün teması düzenlendi. Değişken bölümüne bilgilendirici metinler bırakıldı.
+ 	  • Yeni site ve dns adressleri eklendi.
 ------------------
  ► Versiyon 2.5.2 - Ara güncelleme
 ------------------
