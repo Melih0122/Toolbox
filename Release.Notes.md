@@ -17,21 +17,33 @@
 -   Mail: ognitorenks@gmail.com
 -   Site: ognitorenks.blogspot.com
 
-###  PROJEYE KATKIDA BULUNANLAR;
-####  ► Eray Türkay
--   Sistem Hakkında - RAM soket yapısının eklenmesi.
--   Sistem Hakkında - Sistem format tarihinin eklenmesi.
-####  ► KaanBeyhan [Denizlili]
--   İndirme işlemlerinde ilerleme çubuğunun eklenmesi. 
-####  ► Archley
--   Wifi Crack çalışmasının toolbox'a eklenmesi.
--   Sistem Hakkında bölümüne tarih eklenmesi.
-####  ► maskem76
--   Hyper-V bölümündeki hatanın giderilmesi.
-####  ► Legnica
--  Windows Search önbelliğinin temizlenmesiyle ilgili komutların eklenmesi.
-::  
-:: ==============================================================================================================================
+### Projeye katkıda bulunanlar;
+
+	  ----------------------
+	  ► Eray Türkay 
+	  ----------------------
+	  • Sistem Hakkında - RAM soket yapısının eklenmesi.
+	  • Sistem Hakkında - Sistem format tarihinin eklenmesi.
+	  ----------------------
+	  ► KaanBeyhan [DOGGEST]
+	  ----------------------
+	  • İndirme işlemlerinde ilerleme çubuğunun eklenmesi.
+	  ---------
+   	  ► Archley
+   	  ---------
+	  • Wifi Crack çalışmasının toolbox'a eklenmesi.
+	  ----------
+	  ► maskem76
+	  ----------
+	  • Hyper-V bölümündeki hatanın giderilmesi.
+	  ----------
+	  ► Legnica
+	  ----------
+	  • Windows Search önbelliğinin temizlenmesiyle ilgili komutların eklenmesi.
+	  -------------
+	  ► EnixYazılım
+	  -------------
+	  • OperaGX yazılımının indirme bölümüne eklenmesi.
 -----------------
  ► Versiyon 2.9 -
 -----------------
