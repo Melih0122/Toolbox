@@ -18,7 +18,7 @@
 -   Site: ognitorenks.blogspot.com
 
 ###  PROJEYE KATKIDA BULUNANLAR;
--  ► Eray Türkay
+####  ► Eray Türkay
 -   • Sistem Hakkında - RAM soket yapısının eklenmesi.
 -   •	Sistem Hakkında - Sistem format tarihinin eklenmesi.
 -  ► KaanBeyhan [Denizlili]
