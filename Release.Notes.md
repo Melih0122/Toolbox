@@ -56,63 +56,57 @@ Yayınlanma Tarihi: 26.04.2022
 	 • Any Video Converter yazılımı kaldırıldı.
   		 • [YMuratK] tavsiyesiyle FileConverter programı eklendi.
 	 • Toolbox İngilizce > Hizmetleri yönet bölümündeki dil hatası giderildi.
-====
 -----------------
  ► Versiyon 2.8 -
 -----------------
 Yayınlanma Tarihi: 21.04.2022
 
- • Icon fix bölümüne yeni parametreler eklendi.
- • Icon fix bölümü "Simge Önbelleğini Temizle" olarak değiştirildi.
- • Hizmet Yönetimi > Hizmetlerin durumunu gösteren paneldeki komutlar yenilendi. Tek bir servisin açık kalması halinde ayar
- • Hizmet Yönetimi > Bellek sıkıştma hizmetindeki komutlar düzenlendi.
- • Hizmet Yönetimi > Hizmet kontrol bölümüdeki komutlar yenilendi. Kapsamlı şekilde hizmetleri tarayıp durumunu yansıtacak şekilde ayarlamalar yapıldı.
- • OperaGX indirme bölümüne eklendi. 
- • AnyDesk uygulaması, Teamviewer altına alındı.
- • Windows Editör > Dism Update Online bölümünde güncelleme yükleme sonrası gelen restart sorgusu kaldırıldı.
-
-:: ==============================================================================================================================
+	 • Icon fix bölümüne yeni parametreler eklendi.
+	 • Icon fix bölümü "Simge Önbelleğini Temizle" olarak değiştirildi.
+	 • Hizmet Yönetimi > Hizmetlerin durumunu gösteren paneldeki komutlar yenilendi. Tek bir servisin açık kalması halinde ayar
+ 	• Hizmet Yönetimi > Bellek sıkıştma hizmetindeki komutlar düzenlendi.
+ 	• Hizmet Yönetimi > Hizmet kontrol bölümüdeki komutlar yenilendi. Kapsamlı şekilde hizmetleri tarayıp durumunu yansıtacak şekilde ayarlamalar yapıldı.
+ 	• OperaGX indirme bölümüne eklendi. 
+ 	• AnyDesk uygulaması, Teamviewer altına alındı.
+ 	• Windows Editör > Dism Update Online bölümünde güncelleme yükleme sonrası gelen restart sorgusu kaldırıldı.
 ------------------
  ► Versiyon 2.7.1 - Ara güncelleme
 ------------------
 Yayınlanma Tarihi: 18.04.2022
 
- • Icon Fix bölümüne Search App önbelliğini temizleyen komutlar eklendi. Bu komut ile arama bölümünde oluşan simge hataları giderilebilecek
-   • Bu konuda tüm çözüm önerilerini deneyip çözümü bulan; "Legnica" ya teşekkür ederim.
-   • Ayrıca; Yağız Murat Köse | Kaan Beyhan | Uğur 'a teşekkür ederim. 
- • AnyDesk uygulaması toolbox'a eklendi.
- • Windows Editör > Dism Update Online bölümünde güncelleme sonrası restart sorgusunu iptal etmek için parametre eklendi.
-
+	 • Icon Fix bölümüne Search App önbelliğini temizleyen komutlar eklendi. Bu komut ile arama bölümünde oluşan simge hataları giderilebilecek
+ 	  • Bu konuda tüm çözüm önerilerini deneyip çözümü bulan; "Legnica" ya teşekkür ederim.
+ 	  • Ayrıca; Yağız Murat Köse | Kaan Beyhan | Uğur 'a teşekkür ederim. 
+ 	• AnyDesk uygulaması toolbox'a eklendi.
+	 • Windows Editör > Dism Update Online bölümünde güncelleme sonrası restart sorgusunu iptal etmek için parametre eklendi.
 -----------------
  ► Versiyon 2.7 -
 -----------------
 Yayınlanma Tarihi: 18.04.2022
 
- • Hizmetleri Yönet > Windows Media Player yaşanan sorunlardan dolayı kaldırıldı.
- • Toolbox oto güncelleme sistemi getirildi. Bu özelliği OgnitorenKs.Toolbox klasörü içinde yer alan Update.ini'den kapatabilirsiniz.
- • Links.bat dosyası Links.txt olarak değiştirildi. Güncelleme işlemini hızlıca gerçekleştirmek için.
- • PowerChoice simgesi değiştirildi.
-
-:: ==============================================================================================================================
+	 • Hizmetleri Yönet > Windows Media Player yaşanan sorunlardan dolayı kaldırıldı.
+	 • Toolbox oto güncelleme sistemi getirildi. Bu özelliği OgnitorenKs.Toolbox klasörü içinde yer alan Update.ini'den kapatabilirsiniz.
+	 • Links.bat dosyası Links.txt olarak değiştirildi. Güncelleme işlemini hızlıca gerçekleştirmek için.
+	 • PowerChoice simgesi değiştirildi.
 -------------------
  ► Versiyon 2.6.3 - Ara güncelleme
 -------------------
 Yayınlanma Tarihi: 16.04.2022
 
- • Windows Editör > 24 - Katılımsız Program/Ayar ekle [Offline] bölümü kaldırıldı.
-   • [Online] bölümü içindeki tüm komutlar yenilendi. Toolbox içindeki tüm programlar eklendi.
-   • Masaüstüne dosya ekle bölümünü çalıştırdığınızda klasör penceresi otomatik açılacak şekilde ayarlandı.
-   • Bilgilendirici mesajlar katılımsız aracın her bölümüne yerleştirildi.
-   • Performans ile alakalı ayarlar tek bir bölümde toplandı.
- • Link sistemindeki bazı isimlerde değişiklik yapıldı. Bundan dolayı sorun yaşamamak için mutlaka toolbox'ı güncelleyin.
- • Wget yazılmı güncellendi.
- • Toolbox İngilizce ve 8.1 sürümlerine yeni toolbox simgesi eklendi.
- • Güncelleme sonrası temizlik bölümünden teslimat optimizasyonuyla alakalı bölüm çıkarıldı. Hataya sebep oluyordu.
- • Windows App Boss uygulaması kaldırıldı. Program çok uzun zamandır güncelleme almıyordu. Bu uygulama yerine Hibit Uninstaller kullanabilirsiniz.
- • Reiconcache yazılımı toolbox'tan kaldırıldı.
- • ISLC yazılımı indir - kur şeklinde düzenlendi.
- • Hizmet Yönetimi > Xbox bölümüne kısayol engelleyici parametre eklendi.
- • Hizmet Yönetimi > Windows Media player bölümüne yeni parametre eklendi.
+	• Windows Editör > 24 - Katılımsız Program/Ayar ekle [Offline] bölümü kaldırıldı.
+ 	  • [Online] bölümü içindeki tüm komutlar yenilendi. Toolbox içindeki tüm programlar eklendi.
+  	  • Masaüstüne dosya ekle bölümünü çalıştırdığınızda klasör penceresi otomatik açılacak şekilde ayarlandı.
+  	  • Bilgilendirici mesajlar katılımsız aracın her bölümüne yerleştirildi.
+  	  • Performans ile alakalı ayarlar tek bir bölümde toplandı.
+	• Link sistemindeki bazı isimlerde değişiklik yapıldı. Bundan dolayı sorun yaşamamak için mutlaka toolbox'ı güncelleyin.
+	• Wget yazılmı güncellendi.
+	• Toolbox İngilizce ve 8.1 sürümlerine yeni toolbox simgesi eklendi.
+	• Güncelleme sonrası temizlik bölümünden teslimat optimizasyonuyla alakalı bölüm çıkarıldı. Hataya sebep oluyordu.
+	• Windows App Boss uygulaması kaldırıldı. Program çok uzun zamandır güncelleme almıyordu. Bu uygulama yerine Hibit Uninstaller kullanabilirsiniz.
+	• Reiconcache yazılımı toolbox'tan kaldırıldı.
+	• ISLC yazılımı indir - kur şeklinde düzenlendi.
+	• Hizmet Yönetimi > Xbox bölümüne kısayol engelleyici parametre eklendi.
+	• Hizmet Yönetimi > Windows Media player bölümüne yeni parametre eklendi.
 
 -------------------
  ► Versiyon 2.6.2 - Ara güncelleme
