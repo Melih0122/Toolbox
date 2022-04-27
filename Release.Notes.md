@@ -13,9 +13,8 @@
   Sürekli olarak güncellenecektir. Toolbox'ı indirmek için aşağıdaki linkleri kullanabilirsiniz.
 
 ###  İstek ve önerileriniz olursa, iletişim;
--   --------------------------------------
--  • >> Discord: OgnitorenKs#2737 
--  • >>    Mail: ognitorenks@gmail.com
+-   Discord: OgnitorenKs#2737 
+-      Mail: ognitorenks@gmail.com
 
 ::                                                >>   WEB PAGE   <<
 ::                                         --------------------------------
