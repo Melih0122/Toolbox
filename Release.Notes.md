@@ -49,13 +49,13 @@
 -----------------
 Yayınlanma Tarihi: 26.04.2022
 
- • Hizmetler Yönetimi > Dokunmatik servis bölümünde Windows 10 / 11 için ayrı servis bölümleri oluşturuldu.
- • Hizmetler Yönetimi > Hizmetlerin durumu hakkında bilgi alırken olası hata mesajlarının engellenmesi için yeni parametreler eklendi.
- • Simge önbelleğini temizle bölümünde hatalı komutlar düzeltildi.
- • Otomatik güncelleme sistemi düzenlendi. Güncelleştirme işlemi gün içinde tek bir kez kontrol edilecek şekilde düzenlendi.
- • Any Video Converter yazılımı kaldırıldı.
-   • [YMuratK] tavsiyesiyle FileConverter programı eklendi.
- • Toolbox İngilizce > Hizmetleri yönet bölümündeki dil hatası giderildi.
+	 • Hizmetler Yönetimi > Dokunmatik servis bölümünde Windows 10 / 11 için ayrı servis bölümleri oluşturuldu.
+	 • Hizmetler Yönetimi > Hizmetlerin durumu hakkında bilgi alırken olası hata mesajlarının engellenmesi için yeni parametreler eklendi.
+	 • Simge önbelleğini temizle bölümünde hatalı komutlar düzeltildi.
+	 • Otomatik güncelleme sistemi düzenlendi. Güncelleştirme işlemi gün içinde tek bir kez kontrol edilecek şekilde düzenlendi.
+	 • Any Video Converter yazılımı kaldırıldı.
+  		 • [YMuratK] tavsiyesiyle FileConverter programı eklendi.
+	 • Toolbox İngilizce > Hizmetleri yönet bölümündeki dil hatası giderildi.
 
 :: ==============================================================================================================================
 
