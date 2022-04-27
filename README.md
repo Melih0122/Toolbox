@@ -53,10 +53,6 @@ OgnitorenKs.Toolbox klasörü içerisinde yer alan Update.ini dosyasını not de
 	  ► Legnica
 	  ----------
 	  • Windows Search önbelliğinin temizlenmesiyle ilgili komutların eklenmesi.
-	  -----------
-	  ► Athenaus
-	  -----------
-	  • PowerChoice simgesinin değiştirilmesine katkı sundu.
 	  -------------
 	  ► EnixYazılım
 	  -------------
