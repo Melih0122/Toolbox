@@ -9,15 +9,14 @@
         ■■■■■■   ■■■■■■   ■■    ■■ ■■■■    ■■     ■■■■■■■  ■■     ■■ ■■■■■■■■ ■■    ■■ ■■    ■■  ■■■■■■ 
 
 #  Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
-::  -------------------------------------------
-::  Toolbox'ı hazırladığım sistemlerde temel programları indirip, basit bir şekilde sistem üzerinde düzenleme yapması için hazırladım.
-::  Sürekli olarak güncellenecektir. Toolbox'ı indirmek için aşağıdaki linkleri kullanabilirsiniz.
-::
-::  İstek ve önerileriniz olursa, iletişim;
-::  --------------------------------------
-::  >> Discord: OgnitorenKs#2737 
-::  >>    Mail: ognitorenks@gmail.com
-::
+  Toolbox'ı hazırladığım sistemlerde temel programları indirip, basit bir şekilde sistem üzerinde düzenleme yapması için hazırladım.
+  Sürekli olarak güncellenecektir. Toolbox'ı indirmek için aşağıdaki linkleri kullanabilirsiniz.
+
+###  İstek ve önerileriniz olursa, iletişim;
+  • --------------------------------------
+  • >> Discord: OgnitorenKs#2737 
+  • >>    Mail: ognitorenks@gmail.com
+
 ::                                                >>   WEB PAGE   <<
 ::                                         --------------------------------
 ::                                         >>  ognitorenks.blogspot.com  <<
