@@ -56,9 +56,7 @@ Yayınlanma Tarihi: 26.04.2022
 	 • Any Video Converter yazılımı kaldırıldı.
   		 • [YMuratK] tavsiyesiyle FileConverter programı eklendi.
 	 • Toolbox İngilizce > Hizmetleri yönet bölümündeki dil hatası giderildi.
-
-:: ==============================================================================================================================
-
+===
 -----------------
  ► Versiyon 2.8 -
 -----------------
