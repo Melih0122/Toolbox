@@ -131,120 +131,109 @@ Yayınlanma Tarihi: 10.04.2022
 ------------------
 Yayınlanma Tarihi: 03.04.2022
 
- • Hizmetleri Yönet > Uzak Masaüstü/Akış/Ağ hizmetleri bölümüne Windows Search hizmetini açmak için parametre eklendi.
- • Hizmetleri Yönet > Windows Search hizmetini açıp kapatmaya yarayacak bölüm eklendi.
- • "Güncelleme Sonrası Temizlik" bölümünde düzenlemeler yapıldı. "Hizmetleri Yönet" bölümünde açılacak hizmetleri tekrar kapatmaması için düzenlendi.
+	• Hizmetleri Yönet > Uzak Masaüstü/Akış/Ağ hizmetleri bölümüne Windows Search hizmetini açmak için parametre eklendi.
+	• Hizmetleri Yönet > Windows Search hizmetini açıp kapatmaya yarayacak bölüm eklendi.
+	• "Güncelleme Sonrası Temizlik" bölümünde düzenlemeler yapıldı. "Hizmetleri Yönet" bölümünde açılacak hizmetleri tekrar kapatmaması için düzenlendi.
 
 ------------------
  ► Versiyon 2.5.1 - Ara güncelleme
 ------------------
 Yayınlanma Tarihi: 01.04.2022
 
- • Toolbox içindeki regedit komutlarında düzenleme yapıldı.
- • Blitz uygulaması kurulum sorunlarından dolayı kaldırıldı.
- • Hizmetleri Yönet > Hyper-V bölümünde bilgi ekranındaki değişken hatası giderildi. Yeni parametre eklendi.
- • Taraycı eklentileri bölümündeki kod hatası giderildi.
+	• Toolbox içindeki regedit komutlarında düzenleme yapıldı.
+	• Blitz uygulaması kurulum sorunlarından dolayı kaldırıldı.
+	• Hizmetleri Yönet > Hyper-V bölümünde bilgi ekranındaki değişken hatası giderildi. Yeni parametre eklendi.
+	• Taraycı eklentileri bölümündeki kod hatası giderildi.
  
 -----------------
  ► Versiyon 2.5 -
 -----------------
 Yayınlanma Tarihi: 30.03.2022
 
- • Güncelleme sonrası temizlik bölümündeki regedit kayıtları düzenlendi. 
-   • Kilitlenme sorununa neden olan regedit kayıtları kaldırıldı.
- • Hizmetleri Yönet > Bellek sıkıştırma aç-kapat bölümü eklendi.
- • Hizmetleri Yönet > Hyper-V bölümündeki komutlar düzenlendi.
-   • Hata düzenlemesiyle ilgili düzenlemeyi paylaşan "maskem76"a teşekkür ederim.
- • Hizmetleri Yönet > Driver güncelleme aç-kapat bölümü eklendi.
- • Hizmetleri Yönet > İşlemci çekirdek park hizmeti aç-kapat bölümü eklendi. (Core Parking)
- • Hizmetleri Yönet > Tarayıcı ve Kamera hizmetleri bölümü birleştirildi.
- • Hizmetleri Yönet > GPU optimizasyon bölümü eklendi.
- • Microsoft Edge bölümüne reklam engelleyiciler engellendi.
- • "Windows 10-11 Edit" bölümünde yer alan yönlendirme hatası giderildi.
- • "Windows 10-11 Edit" bölümüne "Güncelleştirmeleri 2050 yılına kadar ertele" bölümü eklendi.
-
-:: ==============================================================================================================================
+	• Güncelleme sonrası temizlik bölümündeki regedit kayıtları düzenlendi. 
+ 	  • Kilitlenme sorununa neden olan regedit kayıtları kaldırıldı.
+	• Hizmetleri Yönet > Bellek sıkıştırma aç-kapat bölümü eklendi.
+	• Hizmetleri Yönet > Hyper-V bölümündeki komutlar düzenlendi.
+ 	  • Hata düzenlemesiyle ilgili düzenlemeyi paylaşan "maskem76"a teşekkür ederim.
+	• Hizmetleri Yönet > Driver güncelleme aç-kapat bölümü eklendi.
+	• Hizmetleri Yönet > İşlemci çekirdek park hizmeti aç-kapat bölümü eklendi. (Core Parking)
+	• Hizmetleri Yönet > Tarayıcı ve Kamera hizmetleri bölümü birleştirildi.
+	• Hizmetleri Yönet > GPU optimizasyon bölümü eklendi.
+	• Microsoft Edge bölümüne reklam engelleyiciler engellendi.
+	• "Windows 10-11 Edit" bölümünde yer alan yönlendirme hatası giderildi.
+	• "Windows 10-11 Edit" bölümüne "Güncelleştirmeleri 2050 yılına kadar ertele" bölümü eklendi.
 -----------------
  ► Versiyon 2.4 -
 -----------------
 Yayınlanma Tarihi: 19.03.2022
 
- • Zaman ayarlı PC kapat bölümü eklendi.
- • Windows düzenleme bölümünden kaldırılanlar.
-   • Silinmesi gerekenler
-   • Windows 10 Hazır Regedit kayıtları
-   • Windows 11 Hazır Regedit kayıtları 
- • Utorrent programı kaldırıldı. 
-   • Yerine Qbittorrent programı eklendi.
- • Ana menü, alt bölümünde tasarım değişikliği yapıldı.
- • İngilizce dil destekli toolbox hazırlandı.
- • Windows 8.1 sürümü için toolbox hazırlandı.
- • Renk kodları basitleştirildi. Gereksiz kodlar kaldırıldı.
- • %konum% değişkeni %Location%, %deger% değişkeni %value% olarak değiştirildi.
- • Ekler klasörünün ismi Extra olarka değiştirildi.
- • Çoklu seçim yapılacak bölümler belirtildi.
- • Toolbox'ın her açılışta sürüm ve donanım bilgisi hakkında Log kaydı oluşturma sorunu giderildi.
-   • Yapılan düzenleme ile sürüm farkı oluştuktan sonra yeni bir log kaydı tutulacak.
- • Powerchoice.bat, Extra klasörüne taşındı.
- • Process Hacker 2 sisteme eklendi.
- • Windows 10 Edit > Simge değiştir bölümündeki hata giderildi. Simgeler sorunsuz bir şekilde değiştirilebiliyor.
-   • Komutlar optimize edildi. Değişim esnasında bekleme süresi azaltıldı.
- • Fat32 to NTFS bölümünde, X tuşu geri dönüş olarak belirtildi.
-
-:: ==============================================================================================================================
+	• Zaman ayarlı PC kapat bölümü eklendi.
+	• Windows düzenleme bölümünden kaldırılanlar.
+ 	  • Silinmesi gerekenler
+ 	  • Windows 10 Hazır Regedit kayıtları
+ 	  • Windows 11 Hazır Regedit kayıtları 
+	• Utorrent programı kaldırıldı. 
+ 	  • Yerine Qbittorrent programı eklendi.
+	• Ana menü, alt bölümünde tasarım değişikliği yapıldı.
+	• İngilizce dil destekli toolbox hazırlandı.
+	• Windows 8.1 sürümü için toolbox hazırlandı.
+	• Renk kodları basitleştirildi. Gereksiz kodlar kaldırıldı.
+	• %konum% değişkeni %Location%, %deger% değişkeni %value% olarak değiştirildi.
+	• Ekler klasörünün ismi Extra olarka değiştirildi.
+	• Çoklu seçim yapılacak bölümler belirtildi.
+	• Toolbox'ın her açılışta sürüm ve donanım bilgisi hakkında Log kaydı oluşturma sorunu giderildi.
+ 	  • Yapılan düzenleme ile sürüm farkı oluştuktan sonra yeni bir log kaydı tutulacak.
+	• Powerchoice.bat, Extra klasörüne taşındı.
+	• Process Hacker 2 sisteme eklendi.
+	• Windows 10 Edit > Simge değiştir bölümündeki hata giderildi. Simgeler sorunsuz bir şekilde değiştirilebiliyor.
+ 	  • Komutlar optimize edildi. Değişim esnasında bekleme süresi azaltıldı.
+	• Fat32 to NTFS bölümünde, X tuşu geri dönüş olarak belirtildi.
 -----------------
  ► Versiyon 2.3 -
 -----------------
 Yayınlanma Tarihi: 08.02.2022
 
- • İndirme linkleriyle ilgili bilgi güncellemesi artık yapılmayacaktır. Linkler düzenli olarak güncellenecektir.
- • Windows Düzenleme > ISO oluşturma bölümünde komutlar düzenlendi. Sanal makinalarda oluşan hata giderildi.
- • Windows Düzenleme > Katılımsız program ve ayar ekle > Bcdedit bölümüne Aygıt yöneticisinden "Yüksek duyarlılıklı olay süre ölçeri" kapatan parametre eklendi.
- • Windows Düzenleme > Regedit kayıt bölümlerine eklemeler yapıldı.
- • All in One Runtimes bölümüne yükleme işlemi öncesi eski sürümleri silme işlemi eklendi. 
- • All in One Runtimes bölümüne Net Framework 3.5/4.8/DirectPlay hizmetlerini aktifleştirmesi için komutlar eklendi.
- • Windows Düzenleme > Katılımsız program ve ayar ekle [Online] bölümündeki komut hatası giderildi.
-
-:: ==============================================================================================================================
+	• İndirme linkleriyle ilgili bilgi güncellemesi artık yapılmayacaktır. Linkler düzenli olarak güncellenecektir.
+	• Windows Düzenleme > ISO oluşturma bölümünde komutlar düzenlendi. Sanal makinalarda oluşan hata giderildi.
+	• Windows Düzenleme > Katılımsız program ve ayar ekle > Bcdedit bölümüne Aygıt yöneticisinden "Yüksek duyarlılıklı olay süre ölçeri" kapatan parametre eklendi.
+	• Windows Düzenleme > Regedit kayıt bölümlerine eklemeler yapıldı.
+	• All in One Runtimes bölümüne yükleme işlemi öncesi eski sürümleri silme işlemi eklendi. 
+	• All in One Runtimes bölümüne Net Framework 3.5/4.8/DirectPlay hizmetlerini aktifleştirmesi için komutlar eklendi.
+	• Windows Düzenleme > Katılımsız program ve ayar ekle [Online] bölümündeki komut hatası giderildi.
 -----------------
  ► Versiyon 2.2 -
 -----------------
 Yayınlanma Tarihi: 26.01.2022
 
- • Windows Düzenleme > Setup düzenleme bölümünde Windows 11 Bypass aracında bilgi vermeden kapanma sorunu giderildi.
- • ISLC bölümündeki yol hatası giderildi. [Kick Furkanowski'e geri bildirimi için teşekkür ederim]
- • Signal indirme linki yenilendi. (5.28.0 > 5.29.0)
- • 7-Zip indirme linki yenilendi. (21.06 > 21.07)
- • Notepad++ indirme linki yenilendi. (8.2 > 8.2.1)
- • Mem Reduct indirme linki yenilendi. (3.3.5 > 3.4)
- • Hibit Uninstaller indirme linki yenilendi. (2.7.40 > 2.7.45)
- • İndirme bölümüne Blender uygulaması eklendi.
- • İndirme bölümüne Shotcut uygulaması eklendi.
- • İndirme bölümüne Openshot uygulaması eklendi.
-
-
-:: ==============================================================================================================================
+	• Windows Düzenleme > Setup düzenleme bölümünde Windows 11 Bypass aracında bilgi vermeden kapanma sorunu giderildi.
+	• ISLC bölümündeki yol hatası giderildi. [Kick Furkanowski'e geri bildirimi için teşekkür ederim]
+	• Signal indirme linki yenilendi. (5.28.0 > 5.29.0)
+	• 7-Zip indirme linki yenilendi. (21.06 > 21.07)
+	• Notepad++ indirme linki yenilendi. (8.2 > 8.2.1)
+	• Mem Reduct indirme linki yenilendi. (3.3.5 > 3.4)
+	• Hibit Uninstaller indirme linki yenilendi. (2.7.40 > 2.7.45)
+	• İndirme bölümüne Blender uygulaması eklendi.
+	• İndirme bölümüne Shotcut uygulaması eklendi.
+	• İndirme bölümüne Openshot uygulaması eklendi.
 -----------------
  ► Versiyon 2.1 -
 -----------------
 Yayınlanma Tarihi: 21.01.2022
 
- • "Kapatılan Servisleri Yönet" bölümünde değişiklikler yapıldı.
-   • Kod okunaklığını arttırmak için yorum satırları eklendi.
-   • Sistem geri yükleme bölümüne bazı bağlı servisler eklendi.
-   • Hyper-V hizmetini [Aç/Kapat] eklendi. 
-     • Bu bölüm ile Home ve Home Single Language sistemlerde Hyper-V açmanız mümkün olacak.
-   • Xbox hizmeti [Aç/Kapat] eklendi.
-   • Bitlocker Sürücü şifreleme hizmeti [Aç/Kapat] eklendi.
-   • Karma Gerçeklik hizmeti (VR) [Aç/Kapat] eklendi.
- • Windows Düzenleme > "Hyper-V ekle [Offline]" bölümü eklendi. 
-   • Home ve Home Single Language sürümlerine Hyper-V ekleyebilirsiniz.
- • Windows 10 Edit > "Taskbar Hava Durumu [Aç/Kapat]" eklendi.
- • Windows 10 Edit > "Market [Yükle/Sil]" bölümünde düzenlemeler yapıldı.
- • "Güncelleme sonrası temizlik" bölümünde yorum satırları arttırıldı. Bazı eklemeler yapıldı.
- • Yeni simge dosyaları güncellendi. Windows 11 sürümü içindeki dosyalar alındı.
-
-:: ==============================================================================================================================
+	• "Kapatılan Servisleri Yönet" bölümünde değişiklikler yapıldı.
+ 	  • Kod okunaklığını arttırmak için yorum satırları eklendi.
+ 	  • Sistem geri yükleme bölümüne bazı bağlı servisler eklendi.
+ 	  • Hyper-V hizmetini [Aç/Kapat] eklendi. 
+ 	    • Bu bölüm ile Home ve Home Single Language sistemlerde Hyper-V açmanız mümkün olacak.
+ 	  • Xbox hizmeti [Aç/Kapat] eklendi.
+ 	  • Bitlocker Sürücü şifreleme hizmeti [Aç/Kapat] eklendi.
+ 	  • Karma Gerçeklik hizmeti (VR) [Aç/Kapat] eklendi.
+	• Windows Düzenleme > "Hyper-V ekle [Offline]" bölümü eklendi. 
+ 	  • Home ve Home Single Language sürümlerine Hyper-V ekleyebilirsiniz.
+	• Windows 10 Edit > "Taskbar Hava Durumu [Aç/Kapat]" eklendi.
+	• Windows 10 Edit > "Market [Yükle/Sil]" bölümünde düzenlemeler yapıldı.
+	• "Güncelleme sonrası temizlik" bölümünde yorum satırları arttırıldı. Bazı eklemeler yapıldı.
+	• Yeni simge dosyaları güncellendi. Windows 11 sürümü içindeki dosyalar alındı.
 -----------------
  ► Versiyon 2.0 -
 -----------------
