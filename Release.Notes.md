@@ -1,48 +1,9 @@
-
-
-       ■■■■■■■   ■■■■■■   ■■    ■■ ■■■■ ■■■■■■■■  ■■■■■■■  ■■■■■■■■  ■■■■■■■■ ■■    ■■ ■■    ■■  ■■■■■■
-      ■■     ■■ ■■    ■■  ■■■   ■■  ■■     ■■    ■■     ■■ ■■     ■■ ■■       ■■■   ■■ ■■   ■■  ■■    ■
-      ■■     ■■ ■■        ■■■■  ■■  ■■     ■■    ■■     ■■ ■■     ■■ ■■       ■■■■  ■■ ■■  ■■   ■■
-      ■■     ■■ ■■   ■■■■ ■■ ■■ ■■  ■■     ■■    ■■     ■■ ■■■■■■■■  ■■■■■■   ■■ ■■ ■■ ■■■■■      ■■■■■■ 
-      ■■     ■■ ■■    ■■  ■■  ■■■■  ■■     ■■    ■■     ■■ ■■   ■■   ■■       ■■  ■■■■ ■■  ■■         ■■
-      ■■     ■■ ■■    ■■  ■■   ■■■  ■■     ■■    ■■     ■■ ■■    ■■  ■■       ■■   ■■■ ■■   ■■  ■■    ■■
-        ■■■■■■   ■■■■■■   ■■    ■■ ■■■■    ■■     ■■■■■■■  ■■     ■■ ■■■■■■■■ ■■    ■■ ■■    ■■  ■■■■■■ 
-
 #  Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
-  Toolbox'ı hazırladığım sistemlerde temel programları indirip, basit bir şekilde sistem üzerinde düzenleme yapması için hazırladım.
-  Sürekli olarak güncellenecektir. Toolbox'ı indirmek için aşağıdaki linkleri kullanabilirsiniz.
-
 ###  İstek ve önerileriniz olursa, iletişim;
 -   Discord: OgnitorenKs#2737 
 -   Mail: ognitorenks@gmail.com
--   Site: ognitorenks.blogspot.com
-
-### Projeye katkıda bulunanlar;
-	----------------------
-	► Eray Türkay 
-	----------------------
-	• Sistem Hakkında - RAM soket yapısının eklenmesi.
-	• Sistem Hakkında - Sistem format tarihinin eklenmesi.
-	----------------------
-	► KaanBeyhan [DOGGEST]
-	----------------------
-	• İndirme işlemlerinde ilerleme çubuğunun eklenmesi.
-	---------
-	► Archley
-	---------
-	• Wifi Crack çalışmasının toolbox'a eklenmesi.
-	----------
-	► maskem76
-	----------
-	• Hyper-V bölümündeki hatanın giderilmesi.
-	----------
-	► Legnica
-	----------
-	• Windows Search önbelliğinin temizlenmesiyle ilgili komutların eklenmesi.
-	-------------
-	► EnixYazılım
-	-------------
-	• OperaGX yazılımının indirme bölümüne eklenmesi.
+-   Site: https://ognitorenks.blogspot.com/
+-   
 -----------------
  ► Versiyon 2.9 -
 -----------------
