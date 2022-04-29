@@ -3,7 +3,7 @@
 -   Discord: OgnitorenKs#2737 
 -   Mail: ognitorenks@gmail.com
 -   Site: https://ognitorenks.blogspot.com/
--   
+
 -----------------
  ► Versiyon 2.9 -
 -----------------
