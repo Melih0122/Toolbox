@@ -20,9 +20,9 @@ Yayınlanma Tarihi: 26.04.2022
 -----------------
 Yayınlanma Tarihi: 21.04.2022
 
-	 • Icon fix bölümüne yeni parametreler eklendi.
-	 • Icon fix bölümü "Simge Önbelleğini Temizle" olarak değiştirildi.
-	 • Hizmet Yönetimi > Hizmetlerin durumunu gösteren paneldeki komutlar yenilendi. Tek bir servisin açık kalması halinde ayar
+	• Icon fix bölümüne yeni parametreler eklendi.
+	  • Icon fix bölümü "Simge Önbelleğini Temizle" olarak değiştirildi.
+	• Hizmet Yönetimi > Hizmetlerin durumunu gösteren paneldeki komutlar yenilendi. Tek bir servisin açık kalması halinde ayar
  	• Hizmet Yönetimi > Bellek sıkıştma hizmetindeki komutlar düzenlendi.
  	• Hizmet Yönetimi > Hizmet kontrol bölümüdeki komutlar yenilendi. Kapsamlı şekilde hizmetleri tarayıp durumunu yansıtacak şekilde ayarlamalar yapıldı.
  	• OperaGX indirme bölümüne eklendi. 
