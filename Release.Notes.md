@@ -3,8 +3,9 @@
 -   Discord: OgnitorenKs#2737 
 -   Mail: ognitorenks@gmail.com
 -   Site: https://ognitorenks.blogspot.com/
-
-### ► Versiyon 2.9 -
+-----------------
+ ► Versiyon 2.9 -
+-----------------
 Yayınlanma Tarihi: 26.04.2022
 
 	 • Hizmetler Yönetimi > Dokunmatik servis bölümünde Windows 10 / 11 için ayrı servis bölümleri oluşturuldu.
