@@ -1,5 +1,5 @@
 #  Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
-###  İstek ve önerileriniz olursa, iletişim;
+###  İletişim;
 -   Discord: OgnitorenKs#2737 
 -   Mail: ognitorenks@gmail.com
 -   Site: https://ognitorenks.blogspot.com/
