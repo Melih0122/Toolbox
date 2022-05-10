@@ -359,7 +359,7 @@ SLMGR.VBS komutlarını içermektedir. Crack tarzı işlemler bulunmamaktadır.
 
 ### • 7 - Sistem Hakkında:
 - Sistem ve donanım hakkında bilgi verir.
-- 
+
 ![cmd_mDH1JvgaDM](https://user-images.githubusercontent.com/93199689/167623663-1d3cde57-4f54-48fb-bbce-a33a8e8f220c.png)
 
 ### • 8 - Güç Seçenekleri [PowerChoice]:  
