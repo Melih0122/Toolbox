@@ -2,33 +2,23 @@
 # OGNİTORENKS TOOLBOX
 - Toolbox Windows 10 - 11 sürümlerinin x64 mimarilerinde açılmaktadır. Windows 8.1 için hazırladığım kısıtlı bir sürümü mevcuttur. En güncel olan Windows sürümü ile senkronize olarak gelişmektedir.
 - Windows ekran ölçeklendirme ayarı Toolbox'ın pencere ayarını bozabiliyor. Sorunsuz kullanım için Toolbox'ı kullanırken ölçeklendirme etkileri kapatılmalıdır.
+- Toolbox'ı antivirüsler zararlı olarak işaretlemektedir. Sorunsuz kullanım için beyaz listeye alınması gerekmektedir. 
+- Geliştirme sürecinde iki ayrı sürüm üzerinde çalışmak zor olduğu için İngilizce dil desteği kaldırılmıştır. Tek bir dosya üzerinden çoklu dil desteği ekleyebilirsem ilerleyen süreçte yeniden eklenecektir :(
 
 ### Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
 - ► Discord: OgnitorenKs#2737 
 - ► Mail: ognitorenks@gmail.com
 - ► Site: https://ognitorenks.blogspot.com/
 
-![cmd_dqKt51jpOu](https://user-images.githubusercontent.com/93199689/165261666-69d60eaf-506d-4ce2-adc6-8e8f8ec9c20e.png)
-![cmd_BbUuFhKN0l](https://user-images.githubusercontent.com/93199689/165261683-9a486357-3c00-4eb5-9248-dedf3b432677.png)
-
-### Güncelleme Notları
-- ► Toolbox TR/ENG : https://drive.google.com/file/d/1Le61P_h-O3R0F9KsMRR0dikvQxnQaPCC/view?usp=sharing
-- ►    Toolbox 8.1 : https://drive.google.com/file/d/1pd3Ge7R1M9OlKP9qDMVObXLVmzm6kmxp/view?usp=sharing
+![cmd_gUTXKQ6sW7](https://user-images.githubusercontent.com/93199689/167618249-2fd28adc-28e7-4e63-8b9e-ccc59f6b4b5e.png)
 
 ### OgnitorenKs.Toolbox.zip dosyaları
 - ► Toolbox.TR  = https://docs.google.com/uc?export=download&id=19uNjxzHFY5A6g4mFg8FirFTnyL2R0HZ3
-- ► Toolbox.ENG = https://docs.google.com/uc?export=download&id=1vIa4FYNI6YS5l53Awusw4zS2IRvd6VFf
 - ► Toolbox.8.1 = https://docs.google.com/uc?export=download&id=1k1Z3c1TE8a7K-lqKlozg6MJu_SPh3fmb
 	
 ### OgnitorenKs.Toolbox katılımsız kurulum dosyaları
 - ► Toolbox.TR  = https://docs.google.com/uc?export=download&id=19uNjxzHFY5A6g4mFg8FirFTnyL2R0HZ3
-- ► Toolbox.ENG = https://docs.google.com/uc?export=download&id=1wTOKKhNr0JkpYaEM50KKJpRD3PTRL09e
 - ► Toolbox.8.1 = https://docs.google.com/uc?export=download&id=12podfFYq5NujVr3mCHtMlyaa2nAFt-Em
-
-### Toolbox Otomatik Güncelleme Sistemi
-OgnitorenKs.Toolbox klasörü içerisinde yer alan Update.ini dosyasını not defteriyle düzenleyerek otomatik güncelleştirmeleri kapatabilirsiniz. Varsayılan olarak 0 yani güncelleştirmeler açık olarak düzenlenmiştir.
-- 0 : Otomatik güncelleştirmeler açık
-- 1 : Otomatik güncelleştirmeler kapalı
 
 ### Projeye katkıda bulunanlar;
 
@@ -45,6 +35,7 @@ OgnitorenKs.Toolbox klasörü içerisinde yer alan Update.ini dosyasını not de
    	  ► Archley
    	  ---------
 	  • Wifi Crack çalışmasının toolbox'a eklenmesi.
+	  • İşlem tamamlandı ekranının eklenmesi.
 	  ----------
 	  ► maskem76
 	  ----------
@@ -57,12 +48,15 @@ OgnitorenKs.Toolbox klasörü içerisinde yer alan Update.ini dosyasını not de
 	  ► EnixYazılım
 	  -------------
 	  • OperaGX yazılımının indirme bölümüne eklenmesi.
+	  -------
+	  ► Finch
+	  --------
+	  • Yönetici yetkili kısayolun oluşturulması.
 	  
-
 # OGNİTORENKS TOOLBOX İÇERİĞİ
-## 1 - Online Katılımsız Bölümü;
-
-Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar ücretsiz alternatifler arasında seçilmiştir. WinRaR hariç o da ücretli ama ücretsiz bir yazılımdır.	
+## 1 - Online Katılımsız Uygulama Yükleyici;
+Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar ücretsiz alternatifler arasında seçilmiştir. WinRaR hariç o da ücretli ama ücretsiz bir yazılımdır.
+![cmd_NGRMNYtBkI](https://user-images.githubusercontent.com/93199689/167620560-e294b0db-eeb2-490a-ad90-d79a19d7ffe9.png)
    
 	• 1 - All in One Runtimes: C++ 2005-2022 / Java / XNA Framework / OpenAL / DirectX. Bu programlar oyunlar ve bazı uygulamalarda sorun yaşamamanız için mutlaka kurulmalıdır.
 #### ► Mesajlaşma Uygulamaları 
@@ -81,85 +75,85 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	Online oyunlar için değil :)
 	• 12 - Cheat Engine: Hile motorudur. Online oyunlarda denemeyin ban yeme ihtimaliniz yüksek. Hikayeli oyunlarda kullanılabilir. (Hileye hayır) 
 	• 13 - Wemod: Hile kütüphanesidir. Yalnızca hikayeli oyunlarda işe yarar.
-#### ► Tarayıcı Uygulamaları
-	• 14 - Google Chrome: En çok kullanılan tarayıcıdır. 
-	• 15 - Mozilla Firefox: Genellikle Linux sistemlerde kullanılır. Windows sürümünde de çok güzel özellik bulunmaktadır.
-	• 16 - Brave: Chromium tabanlı tarayıcıdır. Entegre reklam engelleyicisi vardır. Google web mağazasından uygulama indirebilir. Cripto para cüzdanı gibi özellikleri var.
-	• 17 - Microsoft Edge: Microsoft herkes kullansın diye Windows'un her yerine mayın gibi döşediği tarayıcıdır. Chromuim tabanlıdır. Hızlı bir tarayıcıdır. Google web mağazasına bağlanabilir.
-	• 18 - OperaGX: Özel bir kullanıcı deneyimi sağlayan tarayıcı.
 #### ► Ram Temizleme Uygulamaları
-	• 19 - ISLC: RamStandby(bekleme) listesini temizlemeye yarayan uygulamadır.
-	• 20 - Mem Reduct: Ram içinde boşta bekleyen tüm işlemleri kapatır. Oyunlarda bu temizleme işleminde kasma yaşanabilir.
-#### ► Office Uygulamaları
-	• 21 - LibreOffice: Microsoft Office uygulamasının ücretsiz alternatifidir. 
-	• 22 - Adobe Reader: PDF dosyalarını açar.
-	• 23 - PDF-XChange Editör: PDF dosyalarını düzenleyip, okuyabilirsiniz. Adobe Reader alternatifidir. Ücretsiz özellikleri bakımından Adobe Reader'den daha iyi bir uygulamdır.
-	• 24 - Calibre: E-kitap formundaki dosyaları açıp, okumanızı sağlar.
-#### ► Sıkıştırma Uygulamaları 
-	• 25 - 7-Zip: Kullanıcılar genellikle WinRaR uygulamasını kullanır ancak 7-Zip yabana atılacak bir uygulama değildir.
-	• 26 - WinRaR: Ücretli ama ücretsizdir! 
-#### ► Video Düzenleme Uygulamaları
-	• 27 - Kdenlive: Ücretsizdir. 92 MB civarında bir uygulamadır. Kullanımı çok basittir. Çıktı işlemlerinde ekran kartını kullanmama sorunu halledilirse çok iyi uygulamadır.
-	• 28 - Openshot: Ücretsiz video düzenleme uygulamasıdır.
-	• 29 - Shotcut: Ücretsiz video düzenleme uygulamasıdır.
-#### ► Resim Düzenleme Uygulamaları
-	• 30 - Krita: Adobe Photoshop uygulamasının ücretsiz alternatifidir. Steam uygulamasından satın alarak destekte olabilirsiniz. 
-	• 31 - Gimp: Adobe Photoshop uygulamasının ücretsiz alternatifidir.
-#### ► Ekran Kayıt (SS) Uygulamaları
-	• 32 - OBS Studio: Ekran kaydı alma işlemi dışında canlı yayınlar içinde kullanılır. Kayıtlarınıza marka logosu atmaz.
-	• 33 - ShareX: Ekran görüntüsü (SS) alma yazılımıdır. Ses kaydı almadan ekran kaydedebilir. GIF oluştabilir. Daha sayısız özellik bulunur.
-#### ► Ses Düzeltme Uygulamaları
-	• 34 - Audacity: Ses düzeltme uygulamasıdır. 
+	• 14 - ISLC: RamStandby(bekleme) listesini temizlemeye yarayan uygulamadır.
+	• 15 - Mem Reduct: Ram içinde boşta bekleyen tüm işlemleri kapatır. Oyunlarda bu temizleme işleminde kasma yaşanabilir.
+#### ► Tarayıcı Uygulamaları
+	• 16 - Google Chrome: En çok kullanılan tarayıcıdır. 
+	• 17 - Mozilla Firefox: Genellikle Linux sistemlerde kullanılır. Windows sürümünde de çok güzel özellik bulunmaktadır.
+	• 18 - Brave: Chromium tabanlı tarayıcıdır. Entegre reklam engelleyicisi vardır. Google web mağazasından uygulama indirebilir. Cripto para cüzdanı gibi özellikleri var.
+	• 19 - Microsoft Edge: Microsoft herkes kullansın diye Windows'un her yerine mayın gibi döşediği tarayıcıdır. Chromuim tabanlıdır. Hızlı bir tarayıcıdır. Google web mağazasına bağlanabilir.
+	• 20 - OperaGX: Özel bir kullanıcı deneyimi sağlayan tarayıcı.
+#### ► Sıkıştırma 
+	• 21 - 7-Zip: Kullanıcılar genellikle WinRaR uygulamasını kullanır ancak 7-Zip yabana atılacak bir uygulama değildir.
+	• 22 - WinRaR: Ücretli ama ücretsizdir!
+### ► MultiMedya
+	• 23 - Kdenlive: Ücretsizdir. 92 MB civarında bir uygulamadır. Kullanımı çok basittir. Çıktı işlemlerinde ekran kartını kullanmama sorunu halledilirse çok iyi uygulamadır.
+	• 24 - Openshot: Ücretsiz video düzenleme uygulamasıdır.
+	• 25 - Shotcut: Ücretsiz video düzenleme uygulamasıdır.
+	• 26 - Krita: Adobe Photoshop uygulamasının ücretsiz alternatifidir. Steam uygulamasından satın alarak destekte olabilirsiniz. 
+	• 27 - Gimp: Adobe Photoshop uygulamasının ücretsiz alternatifidir.
+	• 28 - OBS Studio: Ekran kaydı alma işlemi dışında canlı yayınlar içinde kullanılır. Kayıtlarınıza marka logosu atmaz.
+	• 29 - ShareX: Ekran görüntüsü (SS) alma yazılımıdır. Ses kaydı almadan ekran kaydedebilir. GIF oluştabilir. Daha sayısız özellik bulunur.
+	• 30 - Audacity: Ses düzeltme uygulamasıdır.
 #### ► Multimedia Uygulamaları
-	• 35 - K-Lite Codec: Video izleme uygulamasıdır. Açamayacağı video dosyası yoktur. 
-	• 36 - VLC Media Player: Video izleme uygulamasıdır. Açamayacağı video dosyası yoktur. Videolarla ilgili çok fazla özelliğe sahiptir.
-	• 37 - Aimp: Ses dosyalarını açmaya yarayan uygulamadır. Tasarım ve özellikle olarak çok beğendiğimi belirtmek isterim.
-#### ► Dönüştürücü Uygulamaları
-	• 38 - Any Video Converter: Video ses dönüştürme uygulamasıdır.
-#### ► İndirme Uygulamaları
-	• 39 - Free Download Manager: İndirme işlemlerinde kullanılacak yardımcı program. Torrent indirme desteğide bulunmaktadır.
-	• 40 - Internet Download Manager: Free Download Manager ile hemen hemen aynı işlevlere sahiptir.
-	• 41 - ByClick Downloader: Youtube'dan video indirmeye yarayan uygulamadır.
-	• 42 - Qbittorrent: Torrent indirme yazılımıdır.
-#### ► Diğer Uygulamalar
-	• 43 - GlassWire: İnternet takip programı. Bilgisayarınızda hangi program nereye ne göndermiş ne almış hepsini görebilirsiniz.
-	• 44 - TeamViewer: Bilgisayarlar arası uzaktan bağlantı sağlar.
-	• 45 - AnyDesk: Bilgisayalar arası uzak bağlantı sağlar.
-	• 46 - Hamachi: Ortak bir ağ kurmaya yarayan yazılımdır. Online oyunlarda arkadaşlarınızla oyun kurmak için ortak bir ağ gerektiğinde hayat kurtaran bir programdır.
-	• 47 - Stremio: Torrent üzerinden film izleyebilirsiniz. İzlediğiniz veya izlemek istediğiniz filmeleri kütüphanenize ekleyebilirsiniz. 
-	• 48 - MSI Afterburner: GPU fan ayarı yapar, SS alır, Video kaydı alır, oyunlarda donanımların kullanım değerlerini gösterir, voltaj değerlerini değiştirebilirsiniz.
-	• 49 - Hibit Uninstaller: Kalıntı bırakmadan program kaldırmayı sağlar. Ayrıca çöp dosya temizler. Market uygulamalarını da kaldırabilir.
-	• 50 - Wise Care 365: PC temizlik uygulamasıdır. Tek sürüme verilen ücretsiz pro sürümüdür.
-	• 51 - Unlocker: Silinmeyen dosyaları silmeyi sağlar.
-	• 52 - SSD Booster: SSD için sistemi optimize eder.
-	• 53 - OpenShell: Alternatif başlat menüsüdür.
-	• 54 - Everything: Sistemdeki dosyaları arayıp bulmanızı sağlar. Çok kullanışlı bir programdır.
-	• 55 - TaskbarX: Başlat çubuğunu özelleştirmenizi sağlar.
-	• 56 - Stellarium: Uzay bilgi uygulaması. Muazzam.
-	• 57 - Recuva: Silinen dosyaları kurtarır.
-	• 58 - AOMEI Partition Assistans: Disk yardımcı uygulaması.
-#### ► IDE, Kod Editörleri ve Diğer Geliştirme Araçları
-	• 59 - Python: Programlama dilidir.
-	• 60 - PhyCharm: Python kod editörüdür.
-	• 61 - Notepad++: Bilmeyen için not defteri uygulamasıdır. Yazılımcılar için kod editörüdür.
-	• 62 - Visual Studio Code: Visual Studio'nun editör halidir. Genelde web geliştirme için kullanılır.
-	• 63 - Github Desktop: Grafik arayüzlü bir git istemcisidir.
-	• 64 - Git: Dağıtım takip sistemidir.
-	• 65 - Blender: Ücretsiz, açık kaynaklı bir çalışmadır. 3D tasarımlarda kullanılacak mükemmel uygulama.
-#### ► Diğer
-	• 66 - Process Hacker 2: Görev Yöneticisi
+	• 31 - K-Lite Codec: Video izleme uygulamasıdır. Açamayacağı video dosyası yoktur. 
+	• 32 - VLC Media Player: Video izleme uygulamasıdır. Açamayacağı video dosyası yoktur. Videolarla ilgili çok fazla özelliğe sahiptir.
+	• 33 - PotPlayer: Video izleme uygulamasıdır.
+	• 34 - Aimp: Ses dosyalarını açmaya yarayan uygulamadır. Tasarım ve özellikle olarak çok beğendiğimi belirtmek isterim.
+#### ► İndirme Araçları
+	• 35 - Free Download Manager: İndirme işlemlerinde kullanılacak yardımcı program. Torrent indirme desteğide bulunmaktadır.
+	• 36 - Internet Download Manager: Free Download Manager ile hemen hemen aynı işlevlere sahiptir.
+	• 37 - EagleGet: İndirme yardımcısı.
+	• 38 - ByClick Downloader: Youtube'dan video indirmeye yarayan uygulamadır.
+	• 39 - Qbittorrent: Torrent indirme yazılımıdır.
+#### ► Office Uygulamaları
+	• 40 - LibreOffice: Microsoft Office uygulamasının ücretsiz alternatifidir. 
+	• 41 - Adobe Reader: PDF dosyalarını açar.
+	• 42 - PDF-XChange Editör: PDF dosyalarını düzenleyip, okuyabilirsiniz. Adobe Reader alternatifidir. Ücretsiz özellikleri bakımından Adobe Reader'den daha iyi bir uygulamdır.
+	• 43 - Calibre: E-kitap formundaki dosyaları açıp, okumanızı sağlar.
+#### ► Developer
+	• 44 - Notepad++: Bilmeyen için not defteri uygulamasıdır. Yazılımcılar için kod editörüdür.
+	• 45 - Python: Programlama dilidir.
+	• 46 - PhyCharm: Python kod editörüdür.
+	• 47 - Visual Studio Code: Visual Studio'nun editör halidir. Genelde web geliştirme için kullanılır.
+	• 48 - Github Desktop: Grafik arayüzlü bir git istemcisidir.
+	• 49 - Git: Dağıtım takip sistemidir.
+	• 50 - Blender: Ücretsiz, açık kaynaklı bir çalışmadır. 3D tasarımlarda kullanılacak mükemmel uygulama.
+#### ► Uzak Bağlantı
+	• 51 - TeamViewer: Bilgisayarlar arası uzaktan bağlantı sağlar.
+	• 52 - AnyDesk: Bilgisayalar arası uzak bağlantı sağlar.
 #### ► Oyunlar
-    • 72 - OSU!: Müzik video oyunduur.
-    • 73 - World Of Tanks: Online tank oyunu.
-    • 74 - Genshin Impact: Online oyundur.
-    • 75 - League Of Legends[TR]: Riot Games'in oyunudur. 5 vs 5 şeklinde karşılaşma yapılır.
-    • 76 - League Of Legends[EUW]: Riot Games'in oyunudur. 5 vs 5 şeklinde karşılaşma yapılır.
-    • 77 - Blitz: League Of Legends oyununun yardımcı uygulamasıdır. Hile değildir, ban yeme riski yoktur. Oyun içi rehber görevi görür.
-    • 78 - Valorant: Riot Games'in CS:GO tarzı oyunudur.
-# BONUS
-	• 53. - Bu bölüm işletim sistemine göre değişiklik göstermektedir. Windows 11 ve Windows 10 için iki ayrı bölüme ayrılmıştır.
-### • 53 - Windows 10 Düzenleme
-![explorer_1SrOAqZP9Q](https://user-images.githubusercontent.com/93199689/160884988-ec36351b-11d1-449f-a5fa-3c162accc7e0.png)
+	• 53 - OSU!: Müzik video oyunduur.
+	• 54 - World Of Tanks: Online tank oyunu.
+	• 55 - Genshin Impact: Online oyundur.
+	• 56 - League Of Legends[TR]: Riot Games'in oyunudur. 5 vs 5 şeklinde karşılaşma yapılır.
+	• 57 - League Of Legends[EUW]: Riot Games'in oyunudur. 5 vs 5 şeklinde karşılaşma yapılır.
+	• 58 - Valorant: Riot Games'in CS:GO tarzı oyunudur.
+#### ► Diğer
+	• 59 - MSI Afterburner: GPU fan ayarı yapar, SS alır, Video kaydı alır, oyunlarda donanımların kullanım değerlerini gösterir, voltaj değerlerini değiştirebilirsiniz.
+	• 60 - Hibit Uninstaller: Kalıntı bırakmadan program kaldırmayı sağlar. Ayrıca çöp dosya temizler. Market uygulamalarını da kaldırabilir.
+	• 61 - Wise Care 365: PC temizlik uygulamasıdır. Tek sürüme verilen ücretsiz pro sürümüdür.
+	• 62 - Unlocker: Silinmeyen dosyaları silmeyi sağlar.
+	• 63 - SSD Booster: SSD için sistemi optimize eder.
+	• 64 - OpenShell: Alternatif başlat menüsüdür.
+	• 65 - Everything: Sistemdeki dosyaları arayıp bulmanızı sağlar. Çok kullanışlı bir programdır.
+	• 66 - TaskbarX: Başlat çubuğunu özelleştirmenizi sağlar.
+	• 67 - Recuva: Silinen dosyaları kurtarır.
+	• 68 - AOMEI Partition Assistans: Disk yardımcı uygulaması.
+	• 69 - File Converter: Dosya dönüştürmeye yarayan pratik açık kaynak kodlu çalışma 
+	  • Resmi Sayfası: https://github.com/Tichau/FileConverter
+	• 70 - Process Hacker 2: Görev Yöneticisi
+	• 71 - GlassWire: İnternet takip programı. Bilgisayarınızda hangi program nereye ne göndermiş ne almış hepsini görebilirsiniz.
+	• 72 - Hamachi: Ortak bir ağ kurmaya yarayan yazılımdır. Online oyunlarda arkadaşlarınızla oyun kurmak için ortak bir ağ gerektiğinde hayat kurtaran bir programdır.
+	• 73 - Stremio: Torrent üzerinden film izleyebilirsiniz. İzlediğiniz veya izlemek istediğiniz filmeleri kütüphanenize ekleyebilirsiniz. 
+	• 74 - Stellarium: Uzay bilgi uygulaması. Muazzam.
+	• 75 - Folder2ISO: Klasör içeriklerini ISO dosyasına dönüştürmeye yarayan program.
+
+#### OgnitorenKs Toolbox
+	• 2 - Bu bölüm işletim sistemine göre değişiklik göstermektedir. Windows 11 ve Windows 10 için iki ayrı bölüme ayrılmıştır.
+### • 2 - Windows 10 Düzenleme
+![cmd_kRrG2UwL2l](https://user-images.githubusercontent.com/93199689/167621037-c8742c3f-b6f4-44f9-b64f-d579d6923ca5.png)
 
 	• 1 - Taskbar saat yanı simge ayarı [GÖSTER/GİZLE]: 
 	     •[Göster]: 0 - Saat yanında yer alan tüm simgeleri gösterir.
@@ -175,12 +169,10 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	     
 	• 4 - Taskbar Hava Durumu [Aç/Kapat]:
 	     •[Kapat]: 0 - Görev çubuğundaki hava durumu simgesini kaldırır.
-	     •[Aç]:	1 - Görev çubuğundaki hava durumu simgesini ve ayarlarını geri getirir.
-		
-	• 5 - Market [Yükle/Kaldır]:
-	     •[Kaldır]: 1 - Kaldırılabilir bütün market uygulamalarını siler.
-	     •[Yükle]: 2 - Market uygulamasını yeniden yükler.
-		
+	     •[Aç]:	1 - Görev çubuğundaki hava durumu simgesini ve ayarlarını geri getirir.	
+	     
+	• 5 - Microsoft Store Kaldır: Bu bölüm kullanıldıktan sonra sisteme bir daha Microsoft Store yükleyemezsiniz.
+	
 	• 6 - CompactOS (Windows Sıkıştırma) [Aç/Kapat]: Windows sistem dosyalarını sıkıştırarak 3 - 4 GB'lık bir alan kazanmanızı sağlar. Performans kaybı yaratmaz.
 	     •[Aç]: 1 - Windows sistem dosyalarını sıkıştırmayı açar.
 	     •[Kapat]: 2 - Windows sistem dosyalarını sıkıştırmayı kapatır.
@@ -192,7 +184,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	     •[Yeni]: 2 - Windows 10 yeni simgeleri yükler.
 	• 9 - Güncellemeleri 2050 yılına kadar ertele: Windows Update hizmetini 2050 yılına kadar etkisiz hale getirir.
 ### • 53 - Windows 11 Düzenleme
-![cmd_ZsZUD6Foll](https://user-images.githubusercontent.com/93199689/160885045-b7edf8bb-d765-42aa-8393-89d774affbfc.png)
+![cmd_4yRsA2SSyl](https://user-images.githubusercontent.com/93199689/167621089-ae0c7491-8986-465f-bb2d-4aff40f65c9b.png)
 
 	• 1 - Taskbar Boyut [Küçük/Orta/Büyük]: 22H2'de çalışmıyor.
 	     •[Küçük]: 0 - Görev çubuğunu küçük yapar.
@@ -225,11 +217,11 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 		
 	• 8 - Gpedit.msc (Yerel Grup ilkesi) [Ekle]: Windows Home ve Home Single Language sürümlerine "Gpedit.msc" ekler.
 	• 9 - Güncellemeleri 2050 yılına kadar ertele: Windows Update hizmetini 2050 yılına kadar etkisiz hale getirir.
-### • 54 - Kapatılan Servisleri Yönet
+### • 3 - Kapatılan Servisleri Yönet
 Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip daha sonra aç / kapat baş harflerini eklemek gerekiyor.
 
 Örnek: 1a / 2k / 4A / 10K / 23a / 24k  
-![cmd_vwsKR6Zjrd](https://user-images.githubusercontent.com/93199689/164455235-b5b4211d-ee39-48ce-94b5-11f38e5ffd2b.png)
+![cmd_3A4sdOfn0w](https://user-images.githubusercontent.com/93199689/167621129-cd0f8968-03af-47af-8151-6628d70c8762.png)
 
 	• 1 [A/K]- Bluetooth hizmeti : Bluetooth hizmetlerini kapatır açar.
 	• 2 [A/K]- Yazıcı hizmeti : Yazıcı hizmetlerini kapatır açar.
@@ -257,22 +249,19 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 	• 24 [A/K]- Bellek Sıkıştırma hizmeti: Bellek içindeki verinin belli bir bölümünü sıkıştıran hizmeti kapatır ve açar. Gecikme düşürmek için hizmet kapalı tutulabilir.
 	• 25 [A/K]- Core Parking (CPU Çekirdek Uyku Modu): İşlemci çekirdeklerinin sürekli tam yükte çalışmasını istiyorsanız hizmeti kapatabilirsiniz. Tam tersi durum için açık hale getirebilirsiniz.
 	
-### • 55 - Simge Hatasını Düzelt: 
-	• Simgeleri değiştirdikten sonra oluşacak sorunları giderir.
-### • 56 - Windows Düzenleme:
-Mavi renkli işlem numaraları 26 numaralı işlem ile alakalıdır.
-
-![cmd_gjMiAPFnpU](https://user-images.githubusercontent.com/93199689/163688060-ee63fdaa-a327-493f-9ad5-0b9746c855fd.png)
+### • 4 - Windows Düzenleme:
+Mavi renkli işlem numaraları 20 numaralı işlem ile alakalıdır.
+![cmd_eIUWywol1k](https://user-images.githubusercontent.com/93199689/167622688-b944e52a-a223-4f44-9a62-cba3d9f3a5ca.png)
 
 	• 1 - WIM / ESD Okuyucu: install.wim ve install.esd dosyalarının içeriği hakkında bilgi verir.
 	• 2 - AIO Windows Hazırla: İnstall.wim sürümlerini birleştirmeye yarar. "X" tuşu burada çalışmaz.
 	• 3 - ISO Hazırla: Windows format dosyalarını ISO'ya dönüştürür. "Edit" klasörü içerisinde .iso dosyanızı bulabilirsiniz. "X" tuşu burada çalışmaz.
-	• 4 - ESD to WIM [Dönüştür]: install.esd dosyalarını install.wim olarak dönüştürür. Çoklu seçim yapılabilir. Çoklu seçimlerde seçim arasına virgül koyun. "Örnek; 1,2,3,4" 
-	• 5 - WIM /Delete: install.wim içinde yer alan istemediğiniz sürümleri silebilirsiniz. Çoklu seçim imkanı yoktur.
-	• 6 - WIM Mount: install.wim dosyasını klasöre çıkarır.
-	• 7 - WIM Remount: Mount edilen dosya toplanmadan bilgisayar resetlenirse klasörü toparlamak veya işlem yapmak için yeniden yüklenmesi gerekir.
-	• 8 - WIM Unmount: Mount edilen dosyaları toplar
-	• 9 - Regedit [Yükle]: Offline sistemin regedit kayıtlarını online sisteme entegre ederek değişim yapmanızı sağlar. Detaylı bir konudur. Bu konularda tecrübeniz yoksa bulaşmayın.
+	• 4 - ESD to WIM dönüştürücü: install.esd dosyalarını install.wim olarak dönüştürür. Çoklu seçim yapılabilir. Çoklu seçimlerde seçim arasına virgül koyun. "Örnek; 1,2,3,4" 
+	• 5 - İndex silici: install.wim içinde yer alan istemediğiniz sürümleri silebilirsiniz. Çoklu seçim imkanı yoktur.
+	• 6 - İmaj Yükle: install.wim dosyasını klasöre çıkarır.
+	• 7 - İmaj Yeniden Yükle: Mount edilen dosya toplanmadan bilgisayar resetlenirse klasörü toparlamak veya işlem yapmak için yeniden yüklenmesi gerekir.
+	• 8 - İmaj Topla: Mount edilen dosyaları toplar
+	• 9 - Regedit Yükle [İmaj]: Offline sistemin regedit kayıtlarını online sisteme entegre ederek değişim yapmanızı sağlar. Detaylı bir konudur. Bu konularda tecrübeniz yoksa bulaşmayın.
 	     • Bu bölümü kullanmadan önce sistemi farklı bir program ile mount ettiyseniz programı kapatın. Yoksa hata alırsınız.
 	     • Offline sisteme eklenilen regedit kayıtları online sistemden farklı tepkiler verecektir. Lütfen bu durumu göz önünde bulundurun.
 	     • -------------------------------------------------------------------------------
@@ -310,89 +299,103 @@ Mavi renkli işlem numaraları 26 numaralı işlem ile alakalıdır.
 	     • [Varsayılan Yol]: "HKLM\SYSTEM\CurrentControlSet\Control\FileSystem" /v "LongPathsEnabled" /t REG_DWORD /d 1 /f
 	     • [Entegre edilmiş hali]: "HKLM\OG_SYSTEM\ControlSet001\Control\FileSystem" /v "LongPathsEnabled" /t REG_DWORD /d 1 /f
 	     • -------------------------------------------------------------------------------
-	• 10 - Regedit [Topla]: Yüklenilen regedit kayıtlarını toplar. Regedit kayıtlarını yüklerseniz toplamayı unutmayın. Yoksa diğer programlarda hata alırsınız.
-	• 11 - Dism Update [Online]: Windows update dosyalarını yüklü sisteme yükler. Update dosyalarını "Edit\Update" içine atınız.
-	• 12 - Dism Update [Offline]: Windows update dosyalarını offline sisteme yükler. Update dosyalarını "Edit\Update" içine atınız.
+	• 10 - Regedit Topla [İmaj]: Yüklenilen regedit kayıtlarını toplar. Regedit kayıtlarını yüklerseniz toplamayı unutmayın. Yoksa diğer programlarda hata alırsınız.
+	• 11 - Güncelleme Yükleyici [İmaj]: Windows update dosyalarını offline sisteme yükler. Update dosyalarını "Edit\Update" içine atınız.
 	     • Sisteme güncelleme kurmak için Microsoft Update Catalog sitesinden Windows sürümünüzü yazarak arama yapın.
 		• Çıkan arama sonuçlarında "Cumulative" yazan son güncelleştirmeyi indirip yükleyin. Önceki sürümleri de kapsamaktadır. 
 		• Güncelleme dosyalarını indirmek için: 
 		  • ► https://www.catalog.update.microsoft.com/
-	• 13 - Appx Yükleyici [Offline]: Market uygulama paketlerini offline sisteme yükler. Yükleme dosyalarını "Edit\Appx" içine atınız
-	• 14 - Appx Yükleyici [Online]: Market uygulama paketlerini online sisteme yükler. Yükleme dosyalarını "Edit\Appx" içine atınız
+	• 12 - Appx yükleyici [İmaj]: Market uygulama paketlerini offline sisteme yükler. Yükleme dosyalarını "Edit\Appx" içine atınız
 	     • Appx dosyalarının indirmek için; 
 		• ► https://store.rg-adguard.net/
-	• 15 - Driver Yedekle [Online]: Yüklü sistemden Driverları yedekler. Yedeklediği konum "Edit\Driver\Yedek"
-	• 16 - Driver Yedekle [Offline]: Offline sisteme driver entegre eder. Driver dosyalarını "Edit\Driver" klasörü içine atın. Yedek aldıktan sonra bu bölümü seçerseniz, yedekleri imaja yükler.
-	• 17 - Setup Düzenle [Offline]: Windows yükleme dosyalarını özelleştirir. İlk girişte "Files\setup10.zip" dosyasını indirir. Kendinize özel bölüm oluşturmak istiyorsanız. Aşağıdaki linke bakınız.
-	• 18 - Yeni simgeleri yükle [Offline]: Yeni simgeleri imaja entegre eder. İlk girişte "Files\Newico.zip" dosyasını indirir. 
-	• 19 - Gpedit.msc ekle [Offline]: Offline sistemden Windows Home ve Home Single Language sürümlerine ekleyebilirsiniz.
-	• 20 - Hyper-V ekle: Home ve HomeSingle Language sürümlerinin imajlarına Hyper-V ekler.
+	• 13 - Driver Yedekle [Yüklü Sistem]: Yüklü sistemden Driverları yedekler. Yedeklediği konum "Edit\Driver\Yedek"
+	• 14 - Driver Yükle [İmaj]: Offline sisteme driver entegre eder. Driver dosyalarını "Edit\Driver" klasörü içine atın. Yedek aldıktan sonra bu bölümü seçerseniz, yedekleri imaja yükler.
+	• 15 - Setup Düzenle [İmaj]: Windows yükleme dosyalarını özelleştirir. İlk girişte "Files\setup10.zip" dosyasını indirir. Kendinize özel bölüm oluşturmak istiyorsanız. Aşağıdaki linke bakınız.
+	• 16 - Yeni Simgeleri yükle [İmaj]: Yeni simgeleri imaja entegre eder. İlk girişte "Files\Newico.zip" dosyasını indirir. 
+	• 17 - Gpedit.msc ekle [İmaj]: Offline sistemden Windows Home ve Home Single Language sürümlerine ekleyebilirsiniz.
+	• 18 - Hyper-V ekle [İmaj]: Home ve HomeSingle Language sürümlerinin imajlarına Hyper-V ekler.
 	• -------------------------------------------------------------------------------------------------------------------------
-	• 21 - Katılımsız program ve ayar ekle : Offline sisteme indir, kur, sil olarak program entegre eder.
+	• 19 - [M] Katılımsız Program / Ayar ekle : Offline sisteme indir, kur, sil olarak program entegre eder.
 	     • Bu bölümde program eklemek isterseniz öncelikle 74 -Katılımsız dosyası oluştur uygulayın. Ondan sonra dilediğiniz programı ekleyin.
 	     • Program ve ayar ekleme işlemi bittikten sonra 75 - Katılımsız dosyasını tamamla uygulayın. 
 	     • 75 numaralı işlemi uyguladıktan sonra yedek almak isterseniz. 76 - Katılımsız Yedekle uygulayın. Yedek dosyasını masaüstüne atacaktır.
 	     • 77 - Yedekten ekle ile yedeklediğiniz .zip dosyasının yolunu tanımlayarak offline sisteme entegre edebilirsiniz.
 	     • Çoklu seçim özelliği yoktur. Görsel aşağıda
 	• -------------------------------------------------------------------------------------------------------------------------
-	• 22 - Mount yol tanımla: Bu bölüm 9 - 12 - 13 - 16 - 18 - 19 - 20 - 21 bölümleriyle bağlantılıdır. 
+	• 20 - Mount yol tanımla: Bu bölüm 9 - 11 - 12 - 14 - 16 - 17 - 18 - 19 bölümleriyle bağlantılıdır. 
 	     • Burada tanımlanan klasör yolu ile işlem yapılmaktadır.
 	     • Bu bölüm ilk girişte "Edit\Mount" klasör yolunu alır. Mount dosyaları farklı bir klasörde ise 26 numaralı işlem ile değiştirin.
 	     
-![cmd_gAsBVf0Vow](https://user-images.githubusercontent.com/93199689/163688053-e0b7d94d-3744-4e16-bca2-d5f09ce5c6dc.png)
+![cmd_uyi37mqwQq](https://user-images.githubusercontent.com/93199689/167622767-83009c2d-41b5-42f7-8634-e566e84b02f5.png)
 
-### • 57 - Güncelleme Sonrası Temizlik:
-	• Güncelleme sonrası yüklenen Defender, Telemetri, Diagtrack gibi hizmetleri yeniden kapatır.	
-### • 58 - Sistem / Market Onar:
-	• Microsoft'un önerdiği bütün onarma seçeneklerini uygular.
-### • 59 - PC Temizle:
-	• Sistemde biriken çöp dosyaları temizler.	
-### • 60 - Folder to ISO: 
-	• Folder to ISO uygulamasını açar. Klasör içindeki verileri ISO dosyasını çevirir.
-	• Resmi sayfası: https://www.trustfm.net/software/utilities/Folder2Iso.php
-![Folder2Iso_1FDJViSHXt](https://user-images.githubusercontent.com/93199689/162618820-6233dc42-31d4-471f-8ad9-a0bf44e2faab.png)	
-	
-### • 61 - Fat32 to NTFS: 
-	• Fat32 olarak formatlanmış USB diskleri veri kaybı olmadan NTFS'ye çevirir. Disk harfini girmeniz gerekmektedir.
-![cmd_tokNcw69mr](https://user-images.githubusercontent.com/93199689/162618533-9f18c20e-165e-4ef7-bdf9-3e6b590591cb.png)
+### • 5 - Kullancı Hesap Yönetimi: 
+![cmd_syq0J0s2EV](https://user-images.githubusercontent.com/93199689/167623117-71bfc629-f729-48a4-be7c-561b215cb878.png)
 
-### • 62 - Ping Ölçer: 
-	• İçerisinde belirli sitelerin ping durumlarını otomatik gösterir. Alt bölümde yer alan "Ping ölç" bölümüyle istediğiniz site ve IP'nin pingini ölçebilirsiniz.
-![cmd_MBrlUEjJp8](https://user-images.githubusercontent.com/93199689/162618549-62169dab-05d1-4c1f-9404-a4f616b7936f.png)
+	• 1 - Administrator Aktifleştir: Administrator hesabını açar.
+	• 2 - Administrator Kapat: Administrator hesabını kapatır.
+	• 3 - Admin grubuna kullanıcı ekle: Admin grubuna kullanıcı eklersiniz.
+	• 4 - Yeni Kullanıcı Ekle: Yeni kullanıcı oluşturabilirsiniz.
+	• 5 - Kullanıcı Sil: Mevcut bir kullanıcıyı silebilirsiniz.
+	• 6 - Şifremi unuttum: Şifre değiştirmek veya şifre oluşturmak için bu bölüm kullanılabilir.
+	• 7 - Mevcut Kullanıcıları Göster [*]: Sistemde kayıtlı kullanıcıları gösterir.
 
-### • 63 - Lisans Yönetimi: 
+### • 6 - Lisans Yönetimi: 
 SLMGR.VBS komutlarını içermektedir. Crack tarzı işlemler bulunmamaktadır.
 
-![LisansYonetimi](https://user-images.githubusercontent.com/93199689/148984026-2f91e49b-5fd0-4a14-85b0-aeab3ffa1d48.png)
+![cmd_XbdXB7HxRa](https://user-images.githubusercontent.com/93199689/167623153-126106ea-df07-48e6-bb56-7ac03cb65b19.png)
 
 	• 1 - Lisans Gir [ipk]: Lisans numaranızı girerek sistemi lisanslayabilirsiniz.
 	• 2 - Lisans Durumu [dli]: Lisans durumu hakkında bilgi verir.
 	• 3 - Lisans Durumu Detaylı [dlv]: Lisans durumu hakkında detaylı bilgi verir.
 	• 4 - Lisans Süresini Öğren [xpr]: Lisans süresi hakkında detaylı bilgi verir.
 	• 5 - Lisans Sil [upk]: Sistem kullandığınız lisansı siler.
-	• 6 - Lisans Süre Sıfırla [rearm]: Windows 30 günlük deneme sürümü süresini 3 defa uzatabilirsiniz. 
-### • 64 - Kullancı Hesap Yönetimi: 
-![KullanıcıHesabı](https://user-images.githubusercontent.com/93199689/148984022-2d26e786-5d72-4941-9753-c7ff7e923927.png)
+	• 6 - Lisans Süre Sıfırla [rearm]: Windows 30 günlük deneme sürümü süresini 3 defa uzatabilirsiniz.
 
-	• 1 - Administrator [AKTİF]: Administrator hesabını açar.
-	• 2 - Administrator [PASİF]: Administrator hesabını kapatır.
-	• 3 - Admin grubuna kullanıcı ekle: Admin grubuna kullanıcı eklersiniz.
-	• 4 - Kullanıcı [EKLE]: Yeni kullanıcı oluşturabilirsiniz.
-	• 5 - Kullanıcı [SİL]: Mevcut bir kullanıcıyı silebilirsiniz.
-	• 6 - Şifremi unuttum: Şifre değiştirmek veya şifre oluşturmak için bu bölüm kullanılabilir.
-	• 7 - Mevcut Kullanıcıları Göster: Sistemde kayıtlı kullanıcıları gösterir.
-### • 65 - Sistem Hakkında:
+### • 7 - Sistem Hakkında:
 - Sistem ve donanım hakkında bilgi verir.
-![cmd_a013zdbIKc](https://user-images.githubusercontent.com/93199689/162618566-48b7bcd6-2bad-4b85-893d-5ef16cc655e6.png)
+![cmd_mDH1JvgaDM](https://user-images.githubusercontent.com/93199689/167623663-1d3cde57-4f54-48fb-bbce-a33a8e8f220c.png)
 
-### • 66 - Wifi Crack:	 
+### • 8 - Güç Seçenekleri [PowerChoice]:  
+Güç seçeneklerini hızlıca değiştirmeyi sağlar
+![cmd_EAcvH91Ach](https://user-images.githubusercontent.com/93199689/167623503-db0856af-bffd-4ff0-bd0d-22267cc6d77b.png)
+
+### • 9 - Güncelleme Sonrası Temizlik:
+	• Düzenlediğim sistemleri güncelleme sonrası ilk haline getirmeye yarar.	
+### • 10 - Windows / Market Onar:
+	• Microsoft'un önerdiği bütün onarma seçeneklerini uygular.
+### • 11 - Ping Ölçer: 
+	• İçerisinde belirli sitelerin ping durumlarını otomatik gösterir. Alt bölümde yer alan "Ping ölç" bölümüyle istediğiniz site ve IP'nin pingini ölçebilirsiniz.
+![cmd_RYynOfcKdu](https://user-images.githubusercontent.com/93199689/167626925-b8e56f24-a69a-4b84-b71b-42f91aafcc70.png)
+
+### • 12 - Fat32 to NTFS: 
+	• Fat32 olarak formatlanmış USB diskleri veri kaybı olmadan NTFS'ye çevirir. Disk harfini girmeniz gerekmektedir.
+![cmd_IbpcglgIoZ](https://user-images.githubusercontent.com/93199689/167626995-480e24ba-31b6-4580-ad1d-40fffc936687.png)
+
+### • 13 - Kayıtlı Wifi Bilgileri:	 
 	• Bu bölümde sisteme girdiğiniz Wifi isim ve şifrelerini görebilirsiniz.
 	• Çalışmasını toolbox'a eklediği için Archley'e teşekkür ederim.
-### • 67 - Zaman Ayarlı PC Kapat:
+### • 14 - Zaman Ayarlı PC Kapat:
 	• Seçilen belirli bir süreden sonra PC otomatik kapatır.
-![cmd_ScVQsUrVYT](https://user-images.githubusercontent.com/93199689/159128693-a8d1d252-5649-42db-8610-e9df435e6952.png)
+![cmd_3pp0ccih2b](https://user-images.githubusercontent.com/93199689/167627106-7906eed5-3736-4702-80b1-7fee90cf81a9.png)
 
-### • 98 - Toolbox Rehber:
-	• Toolbox kullanımı hakkında tüm bilgileri verir
-### • 99 - Toolbox Güncelle:
-	• Toolbox sürümünüzü buradan tek tıkla güncelleyebilirsiniz. Toolbox konumunu değiştirdiyseniz yeniden "C:\OgnitorenKs.Toolbox" klasörüne kuracaktır.	
+### • 15 - Appx - Güncelleme Yükleyici:
+Appx ve Update dosyalarını yüklemenizi sağlayan bölümdür. 
+	• Appx dosyalarıyla ilgili detaylı bilgi için bakınız:https://ognitorenks.blogspot.com/2021/11/rehber-powershell-appx-komutlarnn_9.html
+	• Güncelleme dosyalarını indirebileceğiniz site: https://www.catalog.update.microsoft.com/
+
+### • Z - Toolbox Ayarları:
+Toolbox üzerinde ayar yapıp. Bilgi alabileceğiniz bölüm.
+![cmd_0jeB0r9Vzt](https://user-images.githubusercontent.com/93199689/167627787-8c0fb5ca-4a3a-4376-8467-8f8b6824d7a0.png)
+
+	• 1 [A/K] - Otomatik Güncelleme: Güncelleştirmeleri otomatik olarak takip edip etmeyeceğini ayarlayabilirsiniz.
+	• 2 [A/K] - Yönetici Yetkisi: Kısayol üzerinden varsayılan hale getirilse de farklı durumlar için eklenmiştir.
+	• 3 [A/K] - Log Kayıt: Yapılan işlemlerden sonra kayıt ayarını açıp kapatabilirsiniz.
+	• 4 [A/K] - Tarayıcı eklenti ayarı: Tarayıcılar yüklenirken eklenti yüklenip yüklenmeyeceğini ayarlayabilirsiniz.
+	•       5 - Masaüstüne kısayol oluştur.
+	•       6 - Toolbox Rehber
+	•       7 - ognitorenks.blogspot.com
+	•       8 - Github Proje Sayfası
+	•       9 - Güncelleme Notları
+	
+	
+
