@@ -3,6 +3,42 @@
 -   Discord: OgnitorenKs#2737 
 -   Mail: ognitorenks@gmail.com
 -   Site: https://ognitorenks.blogspot.com/
+
+-----------------
+ ► Versiyon 3.0 -
+-----------------
+Yayınlanma Tarihi: 10.05.2022
+
+	 • 'Update.ini' dosyası 'Settings.ini' olarak değiştirildi.
+	 •  Admin yetkili girişi manuel ve otomatik olarak ayarlanması için Settings.ini dosyasına yönetim bölümü eklendi.
+	 • 'Logss' fonksiyonu 'LogSave' olarak değiştirildi.
+	 •  Gereksiz komutlar ayıklandı.
+	 •  Toolbox karekter takımı 'UTF-8' ile yeniden düzenlendi.
+	 •  İndirme komutları optimize edildi.
+	 •  'Icon Fix' ve 'PC Temizle' seçenekleri kaldırıldı.
+	   •  İçerisinde yer alan sistem onarma komutları 'Windows - Market onar' bölümüne ilave edildi.
+	 •  PotPlayer indirme bölümüne eklendi.
+	 •  EagleGet indirme bölümüne yeniden eklendi.
+	 •  Google Chrome / Brave / Edge tarayıcı eklentileri Settings.ini dosyasına eklendi. 
+	   •  Bu bölüme ekleme yapıp çıkarabilirsiniz. Dilerseniz eklentilerin yüklenmesini devre dışı bırakabilirsiniz.
+	 •  İnternet kontrolü için yönlendirme sitesi www.bing.com olarak ayarlandı.
+	 •  İndirme bölümü ayrı bir menü haline getirilip, programlar gruplandırıldı.
+	 •  Ana menü tasarımı tamamen değiştirildi.
+	 •  Windows Editör bölümünden Appx ve Dism Update seçenekleri birleştirilerek ana menüye eklendi.
+	 •  PowerChoice Toolbox içine 'Güç Seçenekleri' olarak eklendi. Dileyenler masaüstündeki kısayolunu silebilir.
+	 •  AIO runtimes Net Framework 3.5 / 4.5 ve DirectPlay kontrol bölümündeki kod hatası düzeltildi.
+	 •  Toolbox Ayarlar bölümü oluşturuldu. Buradan Toolbox üzerinde bazı özellikleri değiştirebilirsiniz.
+	 •  Log kayıt sistemi geliştirildi. Mevcut hatalar giderildi.
+	 •  PowerRun yazılımı yerine NSudo eklendi.
+	 •  İşlem tamamlandı ekranı oluşturuldu. [Archley'e desteği için teşekkür ederim.]
+	 •  Otomatik güncelleme sistemi yeni güncellemeyi tespit ettiğinde sürümler hakkında bilgi vererek işleme devam edecek şekilde düzenlendi.
+	 •  OgnitorenKs Toolbox kısayol simgesi yönetici çalışacak şekilde ayarlandı. [Finch'e desteği için teşekkür ederim]
+	 •  Windows Editör > Genel bir optimizasyon çalışması yapıldı. Gereksiz komutlar kaldırılıp daha düzenli hale getirildi.
+	 •  Windows Editör > İmaj toplama bölümündeki Dism komutu Powershell komutuyla değiştirildi.
+	 •  Windows Editör > ESD dosyasından dolayı işlem hatalarını önlemek için uyarı sistemi eklendi.
+	 •  Windows Editör > ISO hazırlama bölümüne oscdimg.exe dosya kontrolü eklendi.
+	 •  Windows Update dosyası güncellemelerde oluşan sorunları önleme için güncelleme öncesi indirilecek şekilde düzenlendi. Extra klasöründen silindi.
+	 •  Tüm çalışmalar üzerinden yapılan düzenlemelerden sonra Toolbox içerisinden 1000 civarında satır gereksiz komut silinmiştir.
 -----------------
  ► Versiyon 2.9 -
 -----------------
