@@ -38,6 +38,7 @@ Call :ColorEnd2
 cd /d "%~dp0"
 for /f %%a in ('"cd"') do set Location=%%a
 set Location=%Location:~0,-6%
+Call :NSudo
 
 :: Varsayılan Mount klasör yolu
 set Mount=%Location%\Edit\Mount
@@ -326,12 +327,18 @@ goto :eof
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
 :SetupEdit
-Call :ImageRemount ::
+RD /S /Q "%Location%\Edit\Mount" > NUL 2>&1
 Call :RegeditCollet ::
-Call :ImageUnmount ::
+dir /b %Location%\Edit\Mount\* > NUL 2>&1
+	if %errorlevel%==0 (echo %R%[31m Mount klasörü dolu işlem yapılamaz%R%[0m
+						Call :ImageRemount ::
+						Call :ImageUnmount ::)
 RD /S /Q "%Location%\Edit\Mount" > NUL 2>&1
 mkdir "%Location%\Edit\Mount" > NUL 2>&1
 set Mount=%Location%\Edit\Mount
+
+dir /b %Location%\Files\Setup.zip
+	if %errorlevel%==1 (Call :FilesDownloader Setup.zip)
 
 Call :Panel "%R%[100m                           Setup Düzenle                         %R%[0m"
 Call :degisken4
@@ -339,12 +346,12 @@ mode con cols=99 lines=40
 FOR /F "tokens=3" %%b IN ('Dism /Get-WimInfo /WimFile:%MainWim% /Index:%index% ^| FIND "Architecture"') do (set iarc=%%b)
 FOR /F "tokens=2 delims=:" %%c IN ('Dism /Get-WimInfo /WimFile:%MainWim% /Index:%index% ^| FIND "Name"') do ( set iname=%%c)
 Call :Panel2 "%R%[33m %index% %R%[37m►%R%[33m (%iname%)%R%[37m açılıyor...%R%[0m"
-Dism /Mount-Image /ImageFile:"%MainWim%" /MountDir:"%Location%\Edit\Mount" /Index:%index%
+Dism /Mount-Image /ImageFile:%MainWim% /MountDir:"%Location%\Edit\Mount" /Index:%index%
 cls
 Call :Panel2 "%R%[96m İşlem yapılacak Windows sürümünü seçiniz%R%[0m"
 set /p winsetup=%R%[97m  ►%R%[92m [ Windows 10:%R%[1;97m 1 %R%[35m/%R%[92m Windows 11:%R%[1;97m 2 %R%[92m] : %R%[0m
 	if %winsetup%==1 (%NSudo% Powershell -command "Expand-Archive -Force '%Location%\Files\Setup.zip' '%Location%\Edit\Mount'"
-					  %NSudo% DEL /F /Q /A %Mount%\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\BypassToolbox.lnk")
+					  %NSudo% DEL /F /Q /A %Mount%\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\BypassToolbox.lnk)
 	if %winsetup%==2 (%NSudo% Powershell -command "Expand-Archive -Force '%Location%\Files\Setup.zip' '%Location%\Edit\Mount'")
 echo.
 Call :Panel2 "%R%[96m Lerup Launcher menü konumunu seçiniz%R%[0m"
@@ -356,8 +363,9 @@ reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "UseLargeMenus" /t R
 reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "AlwaysOnTop" /t REG_SZ /d 1 /f > NUL 2>&1
 reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "AutoHide" /t REG_SZ /d 0 /f > NUL 2>&1
 reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "Center" /t REG_SZ /d 1 /f > NUL 2>&1
-reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "Buttons" /t REG_SZ /d "" /f > NUL 2>&1
+reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "Buttons" /t REG_SZ /d "Power.lnk;BypassToolbox.lnk;setup.exe.lnk;Explorer++.lnk;Start Menu.lnk;" /f > NUL 2>&1
 Call :RegeditCollet ::
+Call :ImageUnmount ::
 goto :eof
 
 
@@ -465,7 +473,7 @@ dir /b "%Location%\Files\NSudo.exe" > NUL 2>&1
 						Call :Powershell "Expand-Archive -Force '%download%\NSudo.zip' '%Location%\Files'"
 						DEL /F /Q /A "%Location%\Files\NSudo.zip" > NUL 2>&1)
 Call :LogSave "NSudo-TrustedInstaller" "%*"
-set NSudo="%Location%\Files\NSudoLG.exe" -U:T -P:E -Wait -ShowWindowMode:hide cmd /c
+set NSudo="%Location%\Files\NSudo.exe" -U:T -P:E -Wait -ShowWindowMode:hide cmd /c
 goto :eof
 
 :: --------------------------------------------------------------------------------------------------------
@@ -564,7 +572,7 @@ goto :eof
 
 :degisken3
 mode con cols=90 lines=20
-echo 
+echo.
 echo  %C%[96m Örnek:%C%[33m "C:\OgnitorenKs.Toolbox\Edit\Mount"%C%[0m
 set /p Mount=%R%[97m  ►%R%[92m Imaj klasör yolu : %R%[0m
 	if %Mount%==x GOTO WindowsEditMenu
@@ -584,13 +592,14 @@ echo %MainWim%\ | Find /C /I "\\" > NUL 2>&1
 						timeout /t 4 /nobreak > NUL
 						goto WindowsEditMenu)
 						
-echo %AddWim% | Findstr /C:"boot.wim" > NUL 2>&1
+echo %MainWim% | Findstr /C:"boot.wim" > NUL 2>&1
 	if %errorlevel%==0 (Call :LogSave "degisken1" "boot.wim dosyası tanımlandı. '%AddWim%'"
-						goto :eof)
+						goto degisken4index)
 						
 dir /b %MainWim%\sources\boot.wim > NUL 2>&1
 	if %errorlevel%==0 (set MainWim="%MainWim%\sources\boot.wim")
 	if %errorlevel%==1 (set MainWim="%MainWim%\boot.wim")
+:degisken4index
 Dism /Get-WimInfo /WimFile:%MainWim% /Index:1 | Find "Microsoft Windows Setup" > NUL 2>&1
 	if %errorlevel%==0 (set index=1)
 	if %errorlevel%==1 (set index=2)
@@ -602,11 +611,6 @@ goto :eof
 
 :RegeditInstall
 %~1 :Panel "%R%[100m                            Regedit Yükle                         %R%[0m"
-dir /b %Mount%\Windows\System32\config\SOFTWARE > NUL 2>&1
-	if %errorlevel%==1 (echo  %R%[1;97m%R%[41m            Yol hatalı! Regedit kayıtları bulunumadı.               %R%[0m
-						Call :LogSave "RegeditYükle" "HATA! Regedit kayıtları yüklenemedi. '%Mount%'"
-						timeout /t 5 /nobreak > NUL
-						goto :eof)
 reg load HKLM\OG_COMPONENTS "%Mount%\Windows\System32\config\COMPONENTS" > NUL
 reg load HKLM\OG_DEFAULT "%Mount%\Windows\System32\config\default" > NUL
 reg load HKLM\OG_NTUSER "%Mount%\Users\Default\ntuser.dat" > NUL
