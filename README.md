@@ -152,8 +152,8 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	• 75 - Folder2ISO: Klasör içeriklerini ISO dosyasına dönüştürmeye yarayan program.
 
 # OgnitorenKs Toolbox
-	• 2 - Bu bölüm işletim sistemine göre değişiklik göstermektedir. Windows 11 ve Windows 10 için iki ayrı bölüme ayrılmıştır.
-### • 2 - Windows 10 Düzenleme
+2 - Bu bölüm işletim sistemine göre değişiklik göstermektedir. Windows 11 ve Windows 10 için iki ayrı bölüme ayrılmıştır.
+### • 2 - Windows 10 Edit
 
 ![cmd_kRrG2UwL2l](https://user-images.githubusercontent.com/93199689/167621037-c8742c3f-b6f4-44f9-b64f-d579d6923ca5.png)
 
@@ -185,7 +185,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	     •[Eski]: 1 - Windows 10 eski (Varsayılan) simgeleri yükler.
 	     •[Yeni]: 2 - Windows 10 yeni simgeleri yükler.
 	• 9 - Güncellemeleri 2050 yılına kadar ertele: Windows Update hizmetini 2050 yılına kadar etkisiz hale getirir.
-### • 53 - Windows 11 Düzenleme
+### • 53 - Windows 11 Edit
 
 ![cmd_4yRsA2SSyl](https://user-images.githubusercontent.com/93199689/167621089-ae0c7491-8986-465f-bb2d-4aff40f65c9b.png)
 
