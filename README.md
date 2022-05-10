@@ -10,7 +10,7 @@
 - ► Mail: ognitorenks@gmail.com
 - ► Site: https://ognitorenks.blogspot.com/
 
-![cmd_gUTXKQ6sW7](https://user-images.githubusercontent.com/93199689/167618249-2fd28adc-28e7-4e63-8b9e-ccc59f6b4b5e.png)
+![cmd_0SjVn68NFD](https://user-images.githubusercontent.com/93199689/167671847-d1c4d1b9-e00c-4740-910c-ce6385f55531.png)
 
 ### OgnitorenKs.Toolbox.zip dosyaları
 - ► Toolbox.TR  = https://docs.google.com/uc?export=download&id=19uNjxzHFY5A6g4mFg8FirFTnyL2R0HZ3
@@ -371,25 +371,27 @@ Güç seçeneklerini hızlıca değiştirmeyi sağlar
 Düzenlediğim sistemleri güncelleme sonrası ilk haline getirmeye yarar.	
 ### 10 - Windows / Market Onar:
 Microsoft'un önerdiği bütün onarma seçeneklerini uygular.
-### 11 - Ping Ölçer: 
+### 11 - PC Temizle: 
+%Temp% dosyalarını temizler
+### 12 - Ping Ölçer: 
 İçerisinde belirli sitelerin ping durumlarını otomatik gösterir. Alt bölümde yer alan "Ping ölç" bölümüyle istediğiniz site ve IP'nin pingini ölçebilirsiniz.
 	
 ![cmd_RYynOfcKdu](https://user-images.githubusercontent.com/93199689/167626925-b8e56f24-a69a-4b84-b71b-42f91aafcc70.png)
 
-### 12 - Fat32 to NTFS: 
+### 13 - Fat32 to NTFS: 
 Fat32 olarak formatlanmış USB diskleri veri kaybı olmadan NTFS'ye çevirir. Disk harfini girmeniz gerekmektedir.
 	
 ![cmd_IbpcglgIoZ](https://user-images.githubusercontent.com/93199689/167626995-480e24ba-31b6-4580-ad1d-40fffc936687.png)
 
-### 13 - Kayıtlı Wifi Bilgileri [ARCHLEY]:	 
+### 14 - Kayıtlı Wifi Bilgileri [ARCHLEY]:	 
 Bu bölümde sisteme girdiğiniz Wifi isim ve şifrelerini görebilirsiniz. Çalışmasını toolbox'a eklediği için Archley'e teşekkür ederim.
 
-### 14 - Zaman Ayarlı PC Kapat:
+### 15 - Zaman Ayarlı PC Kapat:
 Seçilen belirli bir süreden sonra PC otomatik kapatır.
 	
 ![cmd_3pp0ccih2b](https://user-images.githubusercontent.com/93199689/167627106-7906eed5-3736-4702-80b1-7fee90cf81a9.png)
 
-### 15 - Appx - Güncelleme Yükleyici:
+### 16 - Appx - Güncelleme Yükleyici:
 Appx ve Update dosyalarını yüklemenizi sağlayan bölümdür. 
 	• Appx dosyalarıyla ilgili detaylı bilgi için bakınız:https://ognitorenks.blogspot.com/2021/11/rehber-powershell-appx-komutlarnn_9.html
 	• Güncelleme dosyalarını indirebileceğiniz site: https://www.catalog.update.microsoft.com/
