@@ -4,6 +4,16 @@
 -   Mail: ognitorenks@gmail.com
 -   Site: https://ognitorenks.blogspot.com/
 
+-------------------
+ ► Versiyon 3.0.1 - Ara Güncelleme
+-------------------
+Yayınlanma Tarihi: 10.05.2021
+
+	 • Windows Editör > Setup Edit bölümündeki hata giderildi.
+	 • Windows Editör > Regedit Topla bölümündeki komut hatası giderildi.
+	 • PC Temizle bölümü yeniden eklendi. [Joker'in isteğiyle yeniden eklendi.]
+	 • Temizle ve Kapat bölümündeki hata giderildi. [CadyMeow'a geri bildirimi için teşekkür ederim]
+
 -----------------
  ► Versiyon 3.0 -
 -----------------

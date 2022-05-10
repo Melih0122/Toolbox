@@ -71,7 +71,7 @@ for /f %%a in ('"cd"') do set Location=%%a
 set Logs=%Location%\Edit\Logs
 set download=%Location%\Download
 Call :NSudo
-set version=3.0
+set version=3.0.1
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 :T.Settings
@@ -260,7 +260,7 @@ echo    %R%[90m█  █ █    ██  █  █    █   █  █ █  █ █  
 echo    %R%[90m█  █ █ ██ █ █ █  █    █   █  █ ████ ██  █ █ █ ██   ████    %R%[90m  █   █  █ █  █ █   ███  █  █   █  %R%[0m	
 echo    %R%[90m█  █ █  █ █  ██  █    █   █  █ █ █  █   █  ██ █ █     █    %R%[90m  █   █  █ █  █ █   █  █ █  █  █ █ %R%[0m
 echo    %R%[90m████ ████ █   █ ███   █   ████ █  █ ███ █   █ █  █ ████    %R%[90m  █   ████ ████ ███ ███  ████ █   █%R%[0m
-echo    %R%[90mognitorenks.blogspot.com                                                                   %R%[90m%version%
+echo    %R%[90mognitorenks.blogspot.com                                                                 %R%[90m%version%
 echo.
 echo               %R%[90m %caption% %R%[90m^|%R%[90m x%osarch% %R%[90m^|%R%[90m %ImageBuild% %R%[0m%R%[90m^|%R%[90m %isderleme%%R%[0m
 echo               %R%[90m┌────────────────────────────────────────────────────────────────────┐%R%[0m
@@ -268,13 +268,14 @@ echo                %R%[33m Hoşgeldin,%R%[37m%registereduser%%R%[0m
 echo               %R%[90m├────────────────────────────────────────────────────────────────────┤%R%[0m
 echo               %R%[90m│%R%[32m           1-%R%[33m Online Katılımsız Uygulama Yükleyici%R%[90m [M]              │%R%[0m
 echo               %R%[90m├───────────────────────────────┬────────────────────────────────────┤
-echo               %R%[90m│%R%[32m  2-%R%[33m %editmenu%%R%[90m [M]       %R%[90m│%R%[32m   9-%R%[33m Güncelleme Sonrası Temizlik   %R%[90m│%R%[0m
-echo               %R%[90m│%R%[32m  3-%R%[33m Hizmetleri Yönet%R%[90m [M]      │%R%[32m  10-%R%[33m Windows - Market Onar         %R%[90m│%R%[0m
-echo               %R%[90m│%R%[32m  4-%R%[37m Windows Editör%R%[90m [M]        │%R%[32m  11-%R%[33m Ping Ölçer%R%[90m [*]                │%R%[0m
-echo               %R%[90m│%R%[32m  5-%R%[33m Kullancı Hesap Yönetimi%R%[90m[M]│%R%[32m  12-%R%[33m Fat32 to NTFS%R%[90m [M]             │%R%[0m
-echo               %R%[90m│%R%[32m  6-%R%[33m Lisans Yönetimi%R%[90m [M]       │%R%[32m  13-%R%[33m Kayıtlı Wifi Bilgileri        %R%[90m│%R%[0m
-echo               %R%[90m│%R%[32m  7-%R%[33m Sistem Hakkında%R%[90m [*]       │%R%[32m  14-%R%[33m Zaman Ayarlı PC Kapat%R%[90m [M]     │%R%[0m
-echo               %R%[90m│%R%[32m  8-%R%[33m Güç Seçenekleri%R%[90m [M]       │%R%[32m  15-%R%[33m Appx - Güncelleme Yükleyici   %R%[90m│%R%[0m
+echo               %R%[90m│%R%[32m  2-%R%[33m %editmenu%%R%[90m [M]       %R%[90m│%R%[32m  10-%R%[33m Windows - Market Onar         %R%[90m│%R%[0m
+echo               %R%[90m│%R%[32m  3-%R%[33m Hizmetleri Yönet%R%[90m [M]      │%R%[32m  11-%R%[33m PC Temizle                    %R%[90m│%R%[0m
+echo               %R%[90m│%R%[32m  4-%R%[37m Windows Editör%R%[90m [M]        │%R%[32m  12-%R%[33m Ping Ölçer%R%[90m [*]                │%R%[0m
+echo               %R%[90m│%R%[32m  5-%R%[33m Kullancı Hesap Yönetimi%R%[90m[M]│%R%[32m  13-%R%[33m Fat32 to NTFS%R%[90m [M]             │%R%[0m
+echo               %R%[90m│%R%[32m  6-%R%[33m Lisans Yönetimi%R%[90m [M]       │%R%[32m  14-%R%[33m Kayıtlı Wifi Bilgileri        %R%[90m│%R%[0m
+echo               %R%[90m│%R%[32m  7-%R%[33m Sistem Hakkında%R%[90m [*]       │%R%[32m  15-%R%[33m Zaman Ayarlı PC Kapat%R%[90m [M]     │%R%[0m
+echo               %R%[90m│%R%[32m  8-%R%[33m Güç Seçenekleri%R%[90m [M]       │%R%[32m  16-%R%[33m Appx - Güncelleme Yükleyici   %R%[90m│%R%[0m
+echo               %R%[90m│%R%[32m  9-%R%[33m Güncelleme Sonrası Temizle%R%[90m│%R%[32m%R%[33m                                    %R%[90m│%R%[0m
 echo               %R%[90m├───────────────────────────────┼────────────────────────────────────┤%R%[0m
 echo               %R%[90m│%R%[32m  Z-%R%[37m Toolbox Ayarları          %R%[90m│%R%[32m   X-%R%[37m Temizle ve Kapat              %R%[90m│%R%[0m
 echo               %R%[90m└───────────────────────────────┴────────────────────────────────────┘%R%[0m
@@ -289,11 +290,12 @@ set /p menu=%R%[32m               İşlem: %R%[0m
 	if %menu%==8 (Call :PowerChoice)
 	if %menu%==9 GOTO UpdateAfter
 	if %menu%==10 goto WindowsRepair
-	if %menu%==11 (Call :PingMeter)
-	if %menu%==12 (Call :Fat32toNTFS)
-	if %menu%==13 (Call :wifiinfoarchley)
-	if %menu%==14 goto shutdownpc
-	if %menu%==15 (Call :Update.Appx.Installer)
+	if %menu%==11 (Call :PC.Temizle)
+	if %menu%==12 (Call :PingMeter)
+	if %menu%==13 (Call :Fat32toNTFS)
+	if %menu%==14 (Call :wifiinfoarchley)
+	if %menu%==15 goto shutdownpc
+	if %menu%==16 (Call :Update.Appx.Installer)
 	if %menu%==Win11 goto Windows11
 	if %menu%==win11 goto Windows11
 	if %menu%==Win10 goto Windows10
@@ -305,9 +307,9 @@ set /p menu=%R%[32m               İşlem: %R%[0m
 	if %menu%==Z goto ToolboxSettings
 	if %menu%==z goto ToolboxSettings
 	if %menu%==x (Call :LogSave "Kalıntıları.Temizle" "Download klasörü temizlendi."
-				  cls&DEL /F /Q /A %download%\*&RD /S /Q %download%\*)
+				  cls&DEL /F /Q /A %download%\*&RD /S /Q %download%\*&goto exit)
 	if %menu%==X (Call :LogSave "Kalıntıları.Temizle" "Download klasörü temizlendi."
-				  cls&DEL /F /Q /A %download%\*&RD /S /Q %download%\*)
+				  cls&DEL /F /Q /A %download%\*&RD /S /Q %download%\*&goto exit)
 ) else
 	goto menu
 exit
@@ -505,12 +507,11 @@ goto :eof
 
 :WindowsRepair
 cls
-mode con cols=64 lines=30
-echo  %R%[90m┌────────────────────────────────────────────────────────────┐%R%[0m
-echo  %R%[90m│%R%[1;97m%R%[100m                    Windows / Store Onar                    %R%[0m%R%[90m│%R%[0m
-echo  %R%[90m└────────────────────────────────────────────────────────────┘%R%[0m
+mode con cols=100 lines=45
+echo  %R%[90m┌────────────────────────────────────────────────────────────────────────────────────────────────┐%R%[0m
+echo  %R%[90m│%R%[1;97m%R%[100m                                     Windows / Store Onar                                       %R%[0m%R%[90m│%R%[0m
+echo  %R%[90m└────────────────────────────────────────────────────────────────────────────────────────────────┘%R%[0m
 Call :LogSave "WindowsRepair" "Windows / Store onar çalıştırıldı."
-
 echo %R%[92m   Simge hataları onarılıyor...%R%[0m
 ie4uinit.exe -show
 ie4uinit.exe -ClearIconCache
@@ -544,15 +545,13 @@ net start wuauserv > NUL 2>&1
 
 echo %R%[92m   Microsoft Store onarılıyor...%R%[0m
 :: Market bölümününün sorunsuz çalışması için reg kayıtlarını düzenler
-Call :dword "HKLM\SOFTWARE\Policies\Microsoft\WindowsStore" "RemoveWindowsStore" "0" 
+Call :dword "HKLM\SOFTWARE\Policies\Microsoft\WindowsStore" "RemoveWindowsStore" "0"
 Call :delete2 "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Config" "DODownloadMode" & :: BITS hizmeti varsayılan hale getiriliyor
 Call :dword "HKLM\SYSTEM\CurrentControlSet\Services\ClipSVC\Parameters" "DisableSubscription" "0"
 Call :dword "HKLM\SYSTEM\CurrentControlSet\Services\ClipSVC\Parameters" "InactivityShutdownDelay" "0x0000012c"
-Call :dword "HKLM\SYSTEM\CurrentControlSet\Services\ClipSVC\Parameters" "ProcessBiosKey" "1
-Call :dword "HKLM\SYSTEM\CurrentControlSet\Services\ClipSVC\Parameters" RefreshRequired" "1"
-Call :expandsz "HKLM\SYSTEM\CurrentControlSet\Services\ClipSVC\Parameters" "ServiceDll" "%SystemRoot%\System32\ClipSVC.dll"
+Call :dword "HKLM\SYSTEM\CurrentControlSet\Services\ClipSVC\Parameters" "ProcessBiosKey" "1"
+Call :expandsz "HKLM\SYSTEM\CurrentControlSet\Services\ClipSVC\Parameters" "ServiceDll" "%windir%\System32\ClipSVC.dll"
 Call :dword "HKLM\SYSTEM\CurrentControlSet\Services\ClipSVC\Parameters" "ServiceDllUnloadOnStop" "1"
-
 :: AppX Deployment Service (Dağıtım Hizmeti)
 sc config AppXSvc start= demand > NUL 2>&1
 net start AppXSvc /y > NUL 2>&1
@@ -594,10 +593,59 @@ regsvr32 msapsspc.dll /SspcCreateSspiReg /s
 echo %R%[92m   Mağaza resetleniyor...%R%[0m
 wsreset
 
-
 Call :Powershell "Start-Process '%windir%\System32\ctfmon.exe'"
 Call :ProcessCompletedReset
 goto menu
+
+:PC.Temizle
+cls
+mode con cols=64 lines=30
+echo  %R%[90m┌────────────────────────────────────────────────────────────┐%R%[0m
+echo  %R%[90m│%R%[1;97m%R%[100m                       PC Temizleniyor                      %R%[0m%R%[90m│%R%[0m
+echo  %R%[90m└────────────────────────────────────────────────────────────┘%R%[0m
+Call :LogSave "PCTemizle" "PC Temizle seçeği çalıştırıldı."
+:: echo %R%[92m   Eski tarihli dosya geçmişi temizleniyor...%R%[0m
+:: FhManagew.exe -cleanup 360 -quiet > NUL 2>&1
+
+echo %R%[92m   ico ve küçük resim belleği temizleniyor...%R%[0m
+taskkill /f /IM explorer.exe > NUL 2>&1
+DEL /F /Q /A %userprofile%\AppData\Local\Microsoft\Windows\Explorer\*.* > NUL 2>&1
+DEL /F /Q /A %LocalAppData%\Microsoft\Windows\Explorer\thumbcache_*.db > NUL 2>&1
+Start explorer.exe > NUL 2>&1
+
+echo %R%[92m   Temp dosyası temizleniyor...%R%[0m
+DEL /F /Q /A %temp%\* > NUL 2>&1
+RD /S /Q %temp%\* > NUL 2>&1
+DEL /F /Q /A %localappdata%\Temp\* > NUL 2>&1
+:: %PowerRun% DEL /F /Q /A %windir%\temp\* > NUL 2>&1
+
+echo %R%[92m   SoftwareDistribution temizleniyor...%R%[0m
+net stop wuauserv > NUL 2>&1
+RD /S /Q  %windir%\SoftwareDistribution > NUL 2>&1
+net start wuauserv > NUL 2>&1
+
+echo %R%[92m   Prefetch temizleniyor...%R%[0m
+DEL /F /Q /A %windir%\prefetch\* > NUL 2>&1
+
+:: echo %R%[92m   Hata Raporu Dosyaları temizleniyor...%R%[0m
+:: DEL /F /Q /A %programdata%\Microsoft\Windows\WER\ReportQueue\* > NUL 2>&1
+
+:: echo %R%[92m   Microsoft Edge önbelleği temizleniyor...%R%[0m
+DEL /F /Q /A %localappdata%\Microsoft\Edge\User Data\Default\Service Worker\CacheStorage\* > NUL 2>&1
+
+echo %R%[92m   Ekran Kartı Driver kalıntıları temizleniyor...%R%[0m
+RD /S /Q %systemdrive%\AMD > NUL 2>&1
+RD /S /Q %systemdrive%\NVIDIA > NUL 2>&1
+RD /S /Q %systemdrive%\INTEL > NUL 2>&1
+
+echo %R%[92m   WinSxS temizleniyor...%R%[0m
+Dism /Online /Cleanup-Image /StartComponentCleanup
+
+:: echo %R%[92m   Disk temizleme işlemi yapılıyor...%R%[0m
+:: cleanmgr /verylowdisk /sagerun:5
+
+Call :ProcessCompleted
+goto :eof
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 :Update.Appx.Installer
