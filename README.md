@@ -358,7 +358,7 @@ SLMGR.VBS komutlarını içermektedir. Crack tarzı işlemler bulunmamaktadır.
 	• 6 - Lisans Süre Sıfırla [rearm]: Windows 30 günlük deneme sürümü süresini 3 defa uzatabilirsiniz.
 
 ### • 7 - Sistem Hakkında:
-- Sistem ve donanım hakkında bilgi verir.
+Sistem ve donanım hakkında bilgi verir.
 
 ![cmd_mDH1JvgaDM](https://user-images.githubusercontent.com/93199689/167623663-1d3cde57-4f54-48fb-bbce-a33a8e8f220c.png)
 
@@ -377,15 +377,15 @@ Güç seçeneklerini hızlıca değiştirmeyi sağlar
 ![cmd_RYynOfcKdu](https://user-images.githubusercontent.com/93199689/167626925-b8e56f24-a69a-4b84-b71b-42f91aafcc70.png)
 
 ### • 12 - Fat32 to NTFS: 
-	• Fat32 olarak formatlanmış USB diskleri veri kaybı olmadan NTFS'ye çevirir. Disk harfini girmeniz gerekmektedir.
+Fat32 olarak formatlanmış USB diskleri veri kaybı olmadan NTFS'ye çevirir. Disk harfini girmeniz gerekmektedir.
 	
 ![cmd_IbpcglgIoZ](https://user-images.githubusercontent.com/93199689/167626995-480e24ba-31b6-4580-ad1d-40fffc936687.png)
 
-### • 13 - Kayıtlı Wifi Bilgileri:	 
-	• Bu bölümde sisteme girdiğiniz Wifi isim ve şifrelerini görebilirsiniz.
-	• Çalışmasını toolbox'a eklediği için Archley'e teşekkür ederim.
+### • 13 - Kayıtlı Wifi Bilgileri [ARCHLEY]:	 
+Bu bölümde sisteme girdiğiniz Wifi isim ve şifrelerini görebilirsiniz. Çalışmasını toolbox'a eklediği için Archley'e teşekkür ederim.
+
 ### • 14 - Zaman Ayarlı PC Kapat:
-	• Seçilen belirli bir süreden sonra PC otomatik kapatır.
+Seçilen belirli bir süreden sonra PC otomatik kapatır.
 	
 ![cmd_3pp0ccih2b](https://user-images.githubusercontent.com/93199689/167627106-7906eed5-3736-4702-80b1-7fee90cf81a9.png)
 
