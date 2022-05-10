@@ -151,7 +151,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	• 74 - Stellarium: Uzay bilgi uygulaması. Muazzam.
 	• 75 - Folder2ISO: Klasör içeriklerini ISO dosyasına dönüştürmeye yarayan program.
 
-#### OgnitorenKs Toolbox
+# OgnitorenKs Toolbox
 	• 2 - Bu bölüm işletim sistemine göre değişiklik göstermektedir. Windows 11 ve Windows 10 için iki ayrı bölüme ayrılmıştır.
 ### • 2 - Windows 10 Düzenleme
 
