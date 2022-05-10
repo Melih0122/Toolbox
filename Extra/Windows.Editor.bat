@@ -1,726 +1,448 @@
-:: ==============================================================================================================================
-::                               NOTEPAD++ > Kodlama > Karakter Takm > Trk‡e > OEM857
-:: ==============================================================================================================================
+:: â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– 
 ::
-::       þþþþþþþ   þþþþþþ   þþ    þþ þþþþ þþþþþþþþ  þþþþþþþ  þþþþþþþþ  þþþþþþþþ þþ    þþ þþ    þþ  þþþþþþ
-::      þþ     þþ þþ    þþ  þþþ   þþ  þþ     þþ    þþ     þþ þþ     þþ þþ       þþþ   þþ þþ   þþ  þþ    þ
-::      þþ     þþ þþ        þþþþ  þþ  þþ     þþ    þþ     þþ þþ     þþ þþ       þþþþ  þþ þþ  þþ   þþ
-::      þþ     þþ þþ   þþþþ þþ þþ þþ  þþ     þþ    þþ     þþ þþþþþþþþ  þþþþþþ   þþ þþ þþ þþþþþ      þþþþþþ 
-::      þþ     þþ þþ    þþ  þþ  þþþþ  þþ     þþ    þþ     þþ þþ   þþ   þþ       þþ  þþþþ þþ  þþ         þþ
-::      þþ     þþ þþ    þþ  þþ   þþþ  þþ     þþ    þþ     þþ þþ    þþ  þþ       þþ   þþþ þþ   þþ  þþ    þþ
-::       þþþþþþþ   þþþþþþ   þþ    þþ þþþþ    þþ     þþþþþþþ  þþ     þþ þþþþþþþþ þþ    þþ þþ    þþ  þþþþþþ 
+::       â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ   â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ   â–ˆâ–ˆ    â–ˆâ–ˆ â–ˆâ–ˆâ–ˆâ–ˆ â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ  â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ  â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ  â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ â–ˆâ–ˆ    â–ˆâ–ˆ â–ˆâ–ˆ    â–ˆâ–ˆ  â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ
+::      â–ˆâ–ˆ    â–ˆâ–ˆ â–ˆâ–ˆ    â–ˆâ–ˆ  â–ˆâ–ˆâ–ˆ   â–ˆâ–ˆ  â–ˆâ–ˆ     â–ˆâ–ˆ    â–ˆâ–ˆ    â–ˆâ–ˆ â–ˆâ–ˆ     â–ˆâ–ˆ â–ˆâ–ˆ       â–ˆâ–ˆâ–ˆ   â–ˆâ–ˆ â–ˆâ–ˆ   â–ˆâ–ˆ  â–ˆâ–ˆ    â–ˆ
+::      â–ˆâ–ˆ    â–ˆâ–ˆ â–ˆâ–ˆ        â–ˆâ–ˆâ–ˆâ–ˆ  â–ˆâ–ˆ  â–ˆâ–ˆ     â–ˆâ–ˆ    â–ˆâ–ˆ    â–ˆâ–ˆ â–ˆâ–ˆ     â–ˆâ–ˆ â–ˆâ–ˆ       â–ˆâ–ˆâ–ˆâ–ˆ  â–ˆâ–ˆ â–ˆâ–ˆ  â–ˆâ–ˆ   â–ˆâ–ˆ
+::      â–ˆâ–ˆ    â–ˆâ–ˆ â–ˆâ–ˆ   â–ˆâ–ˆâ–ˆâ–ˆ â–ˆâ–ˆ â–ˆâ–ˆ â–ˆâ–ˆ  â–ˆâ–ˆ     â–ˆâ–ˆ    â–ˆâ–ˆ    â–ˆâ–ˆ â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ  â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ   â–ˆâ–ˆ â–ˆâ–ˆ â–ˆâ–ˆ â–ˆâ–ˆâ–ˆâ–ˆâ–ˆ      â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ 
+::      â–ˆâ–ˆ    â–ˆâ–ˆ â–ˆâ–ˆ    â–ˆâ–ˆ  â–ˆâ–ˆ  â–ˆâ–ˆâ–ˆâ–ˆ  â–ˆâ–ˆ     â–ˆâ–ˆ    â–ˆâ–ˆ    â–ˆâ–ˆ â–ˆâ–ˆ   â–ˆâ–ˆ   â–ˆâ–ˆ       â–ˆâ–ˆ  â–ˆâ–ˆâ–ˆâ–ˆ â–ˆâ–ˆ  â–ˆâ–ˆ         â–ˆâ–ˆ
+::      â–ˆâ–ˆ    â–ˆâ–ˆ â–ˆâ–ˆ    â–ˆâ–ˆ  â–ˆâ–ˆ   â–ˆâ–ˆâ–ˆ  â–ˆâ–ˆ     â–ˆâ–ˆ    â–ˆâ–ˆ    â–ˆâ–ˆ â–ˆâ–ˆ    â–ˆâ–ˆ  â–ˆâ–ˆ       â–ˆâ–ˆ   â–ˆâ–ˆâ–ˆ â–ˆâ–ˆ   â–ˆâ–ˆ  â–ˆâ–ˆ    â–ˆâ–ˆ
+::       â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ   â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ   â–ˆâ–ˆ    â–ˆâ–ˆ â–ˆâ–ˆâ–ˆâ–ˆ    â–ˆâ–ˆ     â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ  â–ˆâ–ˆ     â–ˆâ–ˆ â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ â–ˆâ–ˆ    â–ˆâ–ˆ â–ˆâ–ˆ    â–ˆâ–ˆ  â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ 
 ::
-::  Hazrlayan: Hseyin UZUNYAYLA / OgnitorenKs
-::  -------------------------------------------
-::  Toolbox' hazrlad§m sistemlerde temel programlar indirip, basit bir Ÿekilde sistem zerinde dzenleme yapmas i‡in hazrladm.
-::  Srekli olarak gncellenecektir. Toolbox' indirmek i‡in aŸa§daki linkleri kullanabilirsiniz.
+::                    â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ â–ˆâ–ˆ      â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ  â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ  â–ˆâ–ˆ    â–ˆâ–ˆ
+::                       â–ˆâ–ˆ    â–ˆâ–ˆ   â–ˆâ–ˆ â–ˆâ–ˆ   â–ˆâ–ˆ â–ˆâ–ˆ      â–ˆâ–ˆ   â–ˆâ–ˆ â–ˆâ–ˆ   â–ˆâ–ˆ   â–ˆâ–ˆ  â–ˆâ–ˆ  
+::                       â–ˆâ–ˆ    â–ˆâ–ˆ   â–ˆâ–ˆ â–ˆâ–ˆ   â–ˆâ–ˆ â–ˆâ–ˆ      â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ  â–ˆâ–ˆ   â–ˆâ–ˆ     â–ˆâ–ˆ   
+::                       â–ˆâ–ˆ    â–ˆâ–ˆ   â–ˆâ–ˆ â–ˆâ–ˆ   â–ˆâ–ˆ â–ˆâ–ˆ      â–ˆâ–ˆ   â–ˆâ–ˆ â–ˆâ–ˆ   â–ˆâ–ˆ   â–ˆâ–ˆ  â–ˆâ–ˆ
+::                       â–ˆâ–ˆ    â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ  â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ  â–ˆâ–ˆ    â–ˆâ–ˆ
 ::
-::  ˜stek ve ”nerileriniz olursa, iletiŸim;
+::  HazÄ±rlayan: HÃ¼seyin UZUNYAYLA / OgnitorenKs
+::
+::  Ä°letiÅŸim - Contact;
 ::  --------------------------------------
-::  >> Discord: OgnitorenKs#2737 
-::  >>    Mail: ognitorenks@gmail.com
+::  â€¢ Discord: OgnitorenKs#2737 
+::  â€¢    Mail: ognitorenks@gmail.com
+::  â€¢    Site: https://ognitorenks.blogspot.com/
 ::
-::                                                >>   WEB PAGE   <<
-::                                         --------------------------------
-::                                         >>  ognitorenks.blogspot.com  <<
-
-:: ==============================================================================================================================
+:: â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– 
 echo off
 cls
-title OgnitorenKs Windows Edit”r
+chcp 65001 > NUL 2>&1
+mode con cols=61 lines=20
+title OgnitorenKs Windows EditÃ¶r
 
+:: Renklendirme komutlarÄ± 
 setlocal
 call :ColorEnd
 Call :ColorEnd2
 
-:: ==============================================================================================================================
-::  RENK HAR˜TASI
-::  -------------
-:: %C%^[32m > ISO okuma b”lmlerinde bilgi b”lmlerinde kullanlyor. (YeŸil)
-:: %C%^[33m > Sar renkli b”lmler. Men i‡indeki sar renkli b”lmler
-:: %C%^[36m > Mavi renkli b”lmler. Men i‡indeki mavi renkli b”lmler
-:: %C%^[37m > ISO okuma b”lmlerinde kullanlyor                                                                                                        
-:: %C%^[90m > Gri renkli b”lmler. Men i‡indeki gri renkli b”lmler(€er‡eveler dahil de§il)
-:: %C%^[92m > De§iŸken rengi (YeŸil). Kullancdan bir de§er girmesi istenilen b”lmlere aittir.
-:: %C%^[96m > ˜kinci de§iŸken veya bilgi rengi (A‡k Mavi) | Menye yansyan bilgi mesajlar. Ana ekrana dŸecek olan ikinci de§iŸken b”lmlerine aittir.
-::
-:: %R%^[32m > ˜Ÿlem (yeŸil) numara rengidir. Men i‡indeki iŸlem numaralardr.
-:: %R%^[36m > Mende mavi renkli iŸlem numara rengidir. Ayrca menye d”n renk ayardr.
-:: %R%^[100m > BaŸlk b”lmlerinde arka plan dolduran renktir.
-:: %R%^[1;97m > BaŸlkta dolgu b”lmnn i‡inde yer alan yaz rengidir. 1; b”lm kaln yazmasn sa§lar. 97m beyaz renk yazmasn sa§lar.
-:: %R%^[90m > €er‡eveleri ve | iŸaretlerinin rengini de§iŸir.
-:: 
-:: ==============================================================================================================================
+:: Konum bilgisi alÄ±nÄ±r
+cd /d "%~dp0"
+for /f %%a in ('"cd"') do set Location=%%a
+set Location=%Location:~0,-6%
 
-Call :Location
+:: VarsayÄ±lan Mount klasÃ¶r yolu
 set Mount=%Location%\Edit\Mount
 
-:AdminKontrol
-mode con cols=61 lines=20
-%windir%\system32\reg.exe query "HKU\S-1-5-19" >nul 2>&1 || (
-echo 
-echo 
-echo 
-echo 
-echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-echo  %R%[90mº                                                         º%R%[0m
-echo  %R%[90mº%R%[1;97m%R%[41m               ! UYARI !          ! UYARI !              %R%[0m%R%[90mº%R%[0m
-echo  %R%[90mº                                                         º%R%[0m
-echo  %R%[90mº%R%[1;97m%R%[42m            Sa§-Tk Y”netici olarak ‡alŸtrn           %R%[0m%R%[90mº%R%[0m
-echo  %R%[90mº                                                         º%R%[0m
-echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
-echo 
-echo              %R%[92mKapatmak i‡in herhangi bir tuŸa basnz%R%[0m
-pause > nul
-exit
+set LogsSettings=0&FOR /F "tokens=2" %%a in ('findstr /C:"LogsSettings" %Location%\Settings.ini') do set value=%%a
+	if %value%==1 (set LogsSettings=1)
+
+:: Ä°htiyaÃ§ duyulan dosyalarÄ± indirir.
+echo                   %R%[92m Dosyalar kontrol ediliyor...%R%[0m
+echo     %R%[1;97m%R%[41m Mount klasÃ¶rÃ¼ dolu iÅŸlemlerde hata almanÄ±za neden olabilir %R%[0m
+FOR %%a in (Setup10.zip Setup11.zip Newico.zip Oldico.zip) do (
+	dir /b %Location%\Files\%%a > NUL 2>&1
+		if %errorlevel%==1 (Call :FilesDownloader %%a)
 )
 
 :WindowsEditMenu
 cls
-mode con cols=53 lines=36
-echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-echo  %R%[90mº%R%[1;97m%R%[100m            OgnitorenKs Windows Edit”r           %R%[0m%R%[90mº%R%[0m
-echo  %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
-echo  %R%[90mº   %R%[32m 1.%C%[33m WIM / ESD Okuyucu                         %R%[90mº%R%[0m
-echo  %R%[90mº   %R%[32m 2.%C%[33m AIO Windows Hazrla%C%[0m                       %R%[90mº%R%[0m
-echo  %R%[90mº   %R%[32m 3.%C%[33m ISO Hazrla%C%[0m                               %R%[90mº%R%[0m
-echo  %R%[90mº   %R%[32m 4.%C%[33m ESD to WIM%C%[90m [D™NšžTšR]%C%[0m                     %R%[90mº%R%[0m
-echo  %R%[90mº   %R%[32m 5.%C%[33m WIM /Delete%C%[90m [S˜L]%C%[0m                         %R%[90mº%R%[0m
-echo  %R%[90mº   %R%[32m 6.%C%[33m WIM Mount%C%[90m [YšKLE]%C%[0m                         %R%[90mº%R%[0m
-echo  %R%[90mº   %R%[32m 7.%C%[33m WIM Remount%C%[90m [YEN˜DEN YšKLE]%C%[0m               %R%[90mº%R%[0m
-echo  %R%[90mº   %R%[32m 8.%C%[33m WIM Unmount%C%[90m [TOPLA]%C%[0m                       %R%[90mº%R%[0m
-echo  %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
-echo  %R%[90mº   %R%[36m 9.%C%[33m Regedit%C%[90m [YšKLE]%C%[0m                           %R%[90mº%R%[0m
-echo  %R%[90mº  %R%[32m 10.%C%[33m Regedit%C%[90m [TOPLA]%C%[0m                           %R%[90mº%R%[0m 
-echo  %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
-echo  %R%[90mº  %R%[32m 11.%C%[33m Dism Update%C%[90m [ONLINE]%C%[0m                      %R%[90mº%R%[0m
-echo  %R%[90mº  %R%[36m 12.%C%[33m Dism Update%C%[90m [OFFLINE]%C%[0m                     %R%[90mº%R%[0m
-echo  %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
-echo  %R%[90mº  %R%[36m 13.%C%[33m Appx ykleyici%C%[90m [OFFLINE]%C%[0m                  %R%[90mº%R%[0m
-echo  %R%[90mº  %R%[32m 14.%C%[33m Appx ykleyici%C%[90m [ONLINE]%C%[0m                   %R%[90mº%R%[0m
-echo  %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
-echo  %R%[90mº  %R%[32m 15.%C%[33m Driver Yedekle%C%[90m [ONLINE]%C%[0m                   %R%[90mº%R%[0m
-echo  %R%[90mº  %R%[36m 16.%C%[33m Driver Ykle%C%[90m [OFFLINE]%C%[0m                    %R%[90mº%R%[0m
-echo  %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
-echo  %R%[90mº  %R%[32m 17.%C%[33m Setup Dzenle%C%[90m [OFFLINE]%C%[0m                   %R%[90mº%R%[0m
-echo  %R%[90mº  %R%[36m 18.%C%[33m Yeni Simgeleri ykle%C%[90m [OFFLINE]%C%[0m            %R%[90mº%R%[0m
-echo  %R%[90mº  %R%[36m 19.%C%[33m Gpedit.msc ekle%C%[90m[OFFLINE]%C%[0m                  %R%[90mº%R%[0m
-echo  %R%[90mº  %R%[36m 20.%C%[33m Hyper-V ekle%C%[90m[OFFLINE]%C%[0m                     %R%[90mº%R%[0m
-echo  %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
-echo  %R%[90mº  %R%[36m 21.%C%[90m [M]%C%[33m Katlmsz Program / Ayar ekle        %R%[90mº%R%[0m
-echo  %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
-echo  %R%[90mº  %R%[36m 22.%R%[36m Mount yol tanmla%R%[0m                         %R%[90mº%R%[0m
-echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
-set /p WindowsEditMenu= %R%[92m ˜Ÿlem : %R%[0m
+mode con cols=53 lines=33
+echo  %R%[90mâ”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”%R%[0m
+echo  %R%[90mâ”‚%R%[1;97m%R%[100m            OgnitorenKs Windows EditÃ¶r           %R%[0m%R%[90mâ”‚%R%[0m
+echo  %R%[90mâ”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤%R%[0m
+echo  %R%[90mâ”‚   %R%[32m 1.%C%[33m WIM / ESD Okuyucu                         %R%[90mâ”‚%R%[0m
+echo  %R%[90mâ”‚   %R%[32m 2.%C%[33m AIO Windows HazÄ±rla                       %R%[90mâ”‚%R%[0m
+echo  %R%[90mâ”‚   %R%[32m 3.%C%[33m ISO HazÄ±rla                               %R%[90mâ”‚%R%[0m
+echo  %R%[90mâ”‚   %R%[32m 4.%C%[33m ESD to WIM dÃ¶nÃ¼ÅŸtÃ¼rÃ¼cÃ¼                    %R%[90mâ”‚%R%[0m
+echo  %R%[90mâ”‚   %R%[32m 5.%C%[33m Ä°ndex silici                              %R%[90mâ”‚%R%[0m
+echo  %R%[90mâ”‚   %R%[32m 6.%C%[33m Ä°maj YÃ¼kle                                %R%[90mâ”‚%R%[0m
+echo  %R%[90mâ”‚   %R%[32m 7.%C%[33m Ä°maj Yeniden YÃ¼kle                        %R%[90mâ”‚%R%[0m
+echo  %R%[90mâ”‚   %R%[32m 8.%C%[33m Ä°maj Topla                                %R%[90mâ”‚%R%[0m
+echo  %R%[90mâ”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤%R%[0m
+echo  %R%[90mâ”‚   %R%[36m 9.%C%[33m Regedit yÃ¼kle%R%[90m [Ä°maj]                      â”‚%R%[0m
+echo  %R%[90mâ”‚  %R%[32m 10.%C%[33m Regedit topla%R%[90m [Ä°maj]                      â”‚%R%[0m 
+echo  %R%[90mâ”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤%R%[0m
+echo  %R%[90mâ”‚  %R%[36m 11.%C%[33m GÃ¼ncelleme YÃ¼kleyici%C%[90m [Ä°maj                â”‚%R%[0m
+echo  %R%[90mâ”‚  %R%[36m 12.%C%[33m Appx yÃ¼kleyici%C%[90m [Ä°maj]                     â”‚%R%[0m
+echo  %R%[90mâ”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤%R%[0m
+echo  %R%[90mâ”‚  %R%[32m 13.%C%[33m Driver Yedekle%C%[90m [YÃ¼klÃ¼ Sistem]             â”‚%R%[0m
+echo  %R%[90mâ”‚  %R%[36m 14.%C%[33m Driver YÃ¼kle%C%[90m [Ä°maj]                       â”‚%R%[0m
+echo  %R%[90mâ”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤%R%[0m
+echo  %R%[90mâ”‚  %R%[32m 15.%C%[33m Setup DÃ¼zenle%C%[90m [Ä°maj]                      â”‚%R%[0m
+echo  %R%[90mâ”‚  %R%[36m 16.%C%[33m Yeni Simgeleri yÃ¼kle%C%[90m [Ä°maj]               â”‚%R%[0m
+echo  %R%[90mâ”‚  %R%[36m 17.%C%[33m Gpedit.msc ekle%C%[90m [Ä°maj]                    â”‚%R%[0m
+echo  %R%[90mâ”‚  %R%[36m 18.%C%[33m Hyper-V ekle%C%[90m [Ä°maj]                       â”‚%R%[0m
+echo  %R%[90mâ”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤%R%[0m
+echo  %R%[90mâ”‚  %R%[36m 19.%C%[90m [M]%C%[33m KatÄ±lÄ±msÄ±z Program / Ayar ekle        â”‚%R%[0m
+echo  %R%[90mâ”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤%R%[0m
+echo  %R%[90mâ”‚  %R%[36m 20.%R%[36m Ä°maj yol tanÄ±mla                          %R%[90mâ”‚%R%[0m
+echo  %R%[90mâ””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜%R%[0m
+set /p WindowsEditMenu= %R%[92m Ä°ÅŸlem : %R%[0m
 	if %WindowsEditMenu%==1 (Call :WimReader)
-	if %WindowsEditMenu%==2 (Call :AioImport)
+	if %WindowsEditMenu%==2 (Call :AIO.Maker)
 	if %WindowsEditMenu%==3 (Call :ISOMaker)
-	if %WindowsEditMenu%==4 (Call :esdtowimexport)
-	if %WindowsEditMenu%==5 GOTO WimDelete
+	if %WindowsEditMenu%==4 (Call :esdtowim)
+	if %WindowsEditMenu%==5 (Call :WimDelete)
 	if %WindowsEditMenu%==6 (Call :WimMount)
-	if %WindowsEditMenu%==7 (Call :WimRemount)
-	if %WindowsEditMenu%==8 (Call :WimUnmount)
-	if %WindowsEditMenu%==9 (Call :RegYukle)
-	if %WindowsEditMenu%==10 (Call :RegTopla)
-	if %WindowsEditMenu%==11 (Call :OnDismUpdate)
-	if %WindowsEditMenu%==12 (Call :OffDismUpdate)
-	if %WindowsEditMenu%==13 (Call :OffAppx)
-	if %WindowsEditMenu%==14 (Call :OnAppx)
-	if %WindowsEditMenu%==15 (Call :Driveryedek)
-	if %WindowsEditMenu%==16 (Call :Driveryukle)
-	if %WindowsEditMenu%==17 (Call :SetupEdit)
-	if %WindowsEditMenu%==18 (Call :Newico)
-	if %WindowsEditMenu%==19 (Call :gpeditmsc)
-	if %WindowsEditMenu%==20 (Call :HyperV)
-	if %WindowsEditMenu%==21 (Call :katilimsiz)
-	if %WindowsEditMenu%==22 (Call :degisken3)
+	if %WindowsEditMenu%==7 (Call :ImageRemount Call)
+	if %WindowsEditMenu%==8 (Call :ImageUnmount Call)
+	if %WindowsEditMenu%==9 (Call :RegeditInstall Call)
+	if %WindowsEditMenu%==10 (Call :RegeditCollet Call)
+	if %WindowsEditMenu%==11 (Call :UpdateInstaller)
+	if %WindowsEditMenu%==12 (Call :AppxInstaller)
+	if %WindowsEditMenu%==13 (Call :Driveryedek)
+	if %WindowsEditMenu%==14 (Call :Driveryukle)
+	if %WindowsEditMenu%==15 (Call :SetupEdit)
+	if %WindowsEditMenu%==16 (Call :Newico)
+	if %WindowsEditMenu%==17 (Call :gpeditmsc)
+	if %WindowsEditMenu%==28 (Call :HyperV)
+	if %WindowsEditMenu%==19 (Call :katilimsiz)
+	if %WindowsEditMenu%==20 (Call :degisken3)
 ) else
 	goto WindowsEditMenu
 
 :WimReader
-cls
-mode con cols=70 lines=15
-echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-echo  %R%[90mº%R%[1;97m%R%[100m                        WIM / ESD Okuyucu                         %R%[0m%R%[90mº%R%[0m
-echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
+Call :Panel "%R%[100m                        WIM / ESD Okuyucu                         %R%[0m"
 Call :degisken1
-
-echo [%date% - %time%] ^| WimReader ^| "%MerkezWim%" dosyasnn i‡eri§i okundu. >> %Location%\Logs
-
-mode con cols=99 lines=27
-echo  %R%[90mÉÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-Call :MerkezWim
-echo  %R%[90mÈÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
-echo                      %R%[92m Menye d”nmek i‡in herhangi bir tuŸa basnz.%R%[0m
+mode con cols=99 lines=40
+Call :OgnitorenKs.Reader "%MainWim%" echo :: :: :: :: ::
+echo                      %R%[92m MenÃ¼ye dÃ¶nmek iÃ§in herhangi bir tuÅŸa basÄ±nÄ±z.%R%[0m
+Call :LogSave "WIM/ESD.Okuyucu" ""%MainWim%" dosyasÄ±nÄ±n iÃ§eriÄŸi okundu"
 pause > NUL 
 goto :eof
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– 
 
-:stop
-:AioImport
-mode con cols=70 lines=20
-echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-echo  %R%[90mº%R%[1;97m%R%[100m                       AIO Windows Hazrla                        %R%[0m%R%[90mº%R%[0m
-echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
-echo   %C%[96m Ana Srm%R%[0m 
+:AIO.Maker
+Call :Panel "%R%[100m                       AIO Windows HazÄ±rla                        %R%[0m"
+echo   â–º%C%[96m Ana SÃ¼rÃ¼m%R%[0m â—„
 Call :degisken1
-
-:aioimport2
-echo   %C%[96m Eklenecek Srm%R%[0m 
+echo   â–º%C%[96m Eklenecek SÃ¼rÃ¼m%R%[0m â—„
 Call :degisken2
-
-cls
 mode con cols=99 lines=40
-echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-echo  %R%[90mº%R%[1;97m%R%[100m                                           ANA SšRšM                                         %R%[0m%R%[90mº%R%[0m
-echo  %R%[90mÌÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
-Call :MerkezWim
-echo  %R%[90mÌÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
-echo  %R%[90mº%R%[1;97m%R%[100m                                        EKLENECEK SšRšM                                      %R%[0m%R%[90mº%R%[0m
-echo  %R%[90mÌÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
-echo  %R%[90mº%R%[0m %R%[32mINDEX%R%[0m %R%[90mº%R%[0m %R%[32mM˜MAR˜%R%[0m %R%[90mº%R%[0m %R%[32m   SšRšM%R%[0m    %R%[90mº%R%[0m  %R%[32mD˜L%R%[0m   %R%[90mº%R%[0m    %R%[32mED˜T%R%[0m     %R%[90mº%R%[0m    %R%[32m˜S˜M%R%[0m
-FOR /F "tokens=3" %%a IN ('dism /Get-WimInfo /WimFile:%EkleWim% ^| FIND "Index"') DO (
-	FOR /F "tokens=3" %%b IN ('dism /Get-WimInfo /WimFile:%EkleWim% /Index:%%a ^| FIND "Architecture"') DO (
-		FOR /F "tokens=3" %%c in ('Dism /Get-WimInfo /WimFile:%EkleWim% /Index:%%a ^| Find "Version"') do (
-			FOR /F "tokens=3 delims=." %%d in ('"echo %%c"') do (
-				FOR /F "tokens=4" %%e in ('Dism /Get-WimInfo /WimFile:%EkleWim% /Index:%%a ^| Find "Build"') do (
-					FOR /F "tokens=1" %%f in ('Dism /Get-WimInfo /WimFile:%EkleWim% /Index:%%a ^| findstr /i Default') do (
-						FOR /F "tokens=2 delims=':'" %%g in ('Dism /Get-WimInfo /WimFile:%EkleWim% /Index:%%a ^| findstr /i Name') do (
-							FOR /F "tokens=2 delims='-',':' " %%h in ('Dism /Get-WimInfo /WimFile:%EkleWim% /Index:%%a ^| findstr /i Modified') do (
-								echo  %R%[90mÌÍÍÍÍÍÍÍÎÍÍÍÍÍÍÍÍÎÍÍÍÍÍÍÍÍÍÍÍÍÍÎÍÍÍÍÍÍÍÍÎÍÍÍÍÍÍÍÍÍÍÍÍÍÎÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
-								echo      %R%[32m%%a%R%[0m      %R%[33m%%b%R%[0m    %R%[36m %%d.%%e%R%[0m    %R%[33m%%f%R%[0m    %R%[36m%%h%R%[0m  %R%[37m %%g%R%[0m
-								)
-							)
-						)
-					)
-				)
-			)
-		)
-	)
-)
-echo  %R%[90mÈÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
-set /p $selectindex=%R%[96m  €oklu Se‡im %R%[90mx,y%R%[0m :
-
-echo %$selectindex% | find "x" > NUL 2>&1
-	if %errorlevel%==0 goto WindowsEditMenu
-echo %$selectindex% | find "X" > NUL 2>&1
-	if %errorlevel%==0 goto WindowsEditMenu
-
-FOR %%a in (%$selectindex%) do ( 
-	FOR /F "tokens=3" %%b IN ('Dism /Get-WimInfo /WimFile:%EkleWim% /Index:%%a ^| FIND "Architecture"') do (
-		FOR /F "tokens=2 delims=:" %%c IN ('Dism /Get-WimInfo /WimFile:%EkleWim% /Index:%%a ^| FIND "Name"') do (
-		    Call :imagexexport "%EkleWim%" "%%a" %MerkezWim% "%%c %%b"
-			)
-		)
-	)
-)
-
+Call :OgnitorenKs.Reader "%MainWim%" :: echo "%R%[100m                                          â–º ANA SÃœRÃœM â—„                                        %R%[0m" :: :: ::
+Call :OgnitorenKs.Reader "%AddWim%" :: :: :: echo "%R%[100m                                       â–º EKLENECEK SÃœRÃœM â—„                                     %R%[0m" echo
+echo %AddWim% %MainWim% | find "install.esd" > NUL 2>&1
+	if %errorlevel%==0 (echo  %R%[1;97m%R%[41m ESD dosya tespit edildi. Ä°ÅŸlem yapÄ±lamaz %R%[0m&pause > NUL&goto WindowsEditMenu)
+set /p $index=%R%[96m  Ã‡oklu SeÃ§im %R%[90mx,y%R%[0m :
+	if %$index%==x goto WindowsEditMenu
+	if %$index%==X goto WindowsEditMenu
 cls
-echo  %R%[90mÉÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-Call :MerkezWim
-echo  %R%[90mÈÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
-echo 
-echo %R%[92m BirleŸtirme iŸlemi tamamland%R%[0m
-echo %R%[92m Menye d”nmek i‡in herhangi bir tuŸa basnz.%R%[0m
+FOR %%a in (%$index%) do ( 
+	FOR /F "tokens=3" %%b IN ('Dism /Get-WimInfo /WimFile:%AddWim% /Index:%%a ^| FIND "Architecture"') do (
+		FOR /F "tokens=2 delims=:" %%c IN ('Dism /Get-WimInfo /WimFile:%AddWim% /Index:%%a ^| FIND "Name"') do (
+			Call :Panel2 "â–º%R%[33m (%%c %%b)%R%[32m birleÅŸtirme iÅŸlemi gerÃ§ekleÅŸtiriliyor...%R%[0m"
+			Call :imagexexport %AddWim% "%%a" %MainWim% "%%c" "%%b"
+			)
+		)
+	)
+)
+cls
+Call :OgnitorenKs.Reader "%MainWim%" "echo" :: :: :: :: ::
+echo.
+echo %R%[92m BirleÅŸtirme iÅŸlemi tamamlandÄ±%R%[0m
+echo %R%[92m MenÃ¼ye dÃ¶nmek iÃ§in herhangi bir tuÅŸa basÄ±nÄ±z.%R%[0m
 pause > NUL
 goto :eof
-:stop
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– 
 
 :ISOMaker
-cls
-mode con cols=70 lines=20
-echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-echo  %R%[90mº%R%[1;97m%R%[100m                             ISO MAKER                            %R%[0m%R%[90mº%R%[0m
-echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
-echo  %R%[96m ™rnek:%R%[33m C:\Windows10Pro%R%[0m
-set /p MerkezWim=%C%[92m   ˜maj klas”r yolu : %C%[0m
-	if %MerkezWim%==x GOTO WindowsEditMenu
-	if %MerkezWim%==X GOTO WindowsEditMenu
-echo  %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
+dir /b "%Location%\Files\oscdimg.exe" > NUL 2>&1
+	 if %errorlevel%==1 (echo %R%[1;97m%R%[41m oscdimg.exe dosyasÄ± bulunamadÄ± %R%[0m&timeout /t 4 /nobreak > NUL&goto WindowsEditMenu)
+Call :Panel "%R%[100m                             ISO MAKER                            %R%[0m"
+echo  %R%[96m Ã–rnek:%R%[33m C:\Windows10Pro%R%[0m
+set /p MainWim=%C%[92m   Ä°maj klasÃ¶r yolu : %C%[0m
+	if %MainWim%==x GOTO WindowsEditMenu
+	if %MainWim%==X GOTO WindowsEditMenu
+echo.
 set /p etiket=%C%[92m   Etiket ismi : %C%[0m
-	if %etiket%==x GOTO WindowsEditMenu
-	if %etiket%==X GOTO WindowsEditMenu
-echo  %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
+echo.
 set /p isokayit=%C%[92m   ISO ismi : %C%[0m
-	if %isokayit%==x GOTO WindowsEditMenu
-	if %isokayit%==X GOTO WindowsEditMenu
  
-mode con cols=85 lines=45
-echo [%date% - %time%] ^| ISO Maker ^| ˜maj:"%MerkezWim%" ^| Etiket ismi:"%etiket%" ^| ISO ismi:"%isokayit%" olarak ISO'ya dosyas oluŸturuldu. >> %Location%\Logs
-::%Location%\Files\oscdimg.exe -b%MerkezWim%\boot\etfsboot.com -h -u2 -m -l%etiket% %MerkezWim%\ %Location%\Edit\%isokayit%.iso
-::%Location%\Files\oscdimg.exe -m -o -u2 -udfver102 -bootdata:2#p0,e,bd%MerkezWim%\boot\etfsboot.com#pEF,e,bd%MerkezWim%\efi\microsoft\boot\efisys.bin %etiket% %isokayit%.iso
-%Location%\Files\oscdimg.exe -m -o -u2 -udfver102 -bootdata:2#p0,e,b%MerkezWim%\boot\etfsboot.com#pEF,e,b%MerkezWim%\efi\microsoft\boot\efisys.bin -L%etiket% %MerkezWim%\ %Location%\Edit\%isokayit%.iso
-
-powershell -command "Start-Process '%Location%\Edit'"
-echo %R%[92m ˜Ÿlem tamamland.%R%[0m 
-timeout /t 2 /nobreak > NUL
+mode con cols=99 lines=40
+Call :LogSave "ISOMaker" "Ä°maj:'%MainWim%' -Etiket:'%etiket%' -ISO:'%isokayit%' ISO dosyasÄ± oluÅŸturuldu"
+%Location%\Files\oscdimg.exe -m -o -u2 -udfver102 -bootdata:2#p0,e,b%MainWim%\boot\etfsboot.com#pEF,e,b%MainWim%\efi\microsoft\boot\efisys.bin -L%etiket% %MainWim%\ %Location%\Edit\%isokayit%.iso
+Call :Powershell "Start-Process '%Location%\Edit'"
+Call :ProcessCompleted
 goto :eof
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– 
 
-:esdtowimexport
-cls
-mode con cols=70 lines=20
-echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-echo  %R%[90mº%R%[1;97m%R%[100m                         ESD / WIM D”nŸtr                       %R%[0m%R%[90mº%R%[0m
-echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
+:esdtowim
+Call :Panel "%R%[100m                             ESD to WIM                           %R%[0m"
 Call :degisken1
-mode con cols=99 lines=30
-echo  %R%[90mÉÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-Call :MerkezWim
-echo  %R%[90mÈÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
-set /p $selectindex=%R%[96m  €oklu Se‡im %R%[90mx,y%R%[0m :
-
-echo %$selectindex% | find "x" > NUL 2>&1
-	if %errorlevel%==0 goto WindowsEditMenu
-echo %$selectindex% | find "X" > NUL 2>&1
-	if %errorlevel%==0 goto WindowsEditMenu
-
-FOR %%a in (%$selectindex%) do (
-	FOR /F "tokens=3" %%b IN ('Dism /Get-WimInfo /WimFile:%MerkezWim% /Index:%%a ^| FIND "Architecture"') do (
-		FOR /F "tokens=2 delims=:" %%c IN ('Dism /Get-WimInfo /WimFile:%MerkezWim% /Index:%%a ^| FIND "Name"') do (
-			echo [%date% - %time%] ^| ESDtoWIM ^| %MerkezWim% - %%a - %%c - %%b srm ‡karld >> %Location%\Logs
-			Call :esdtowim "%MerkezWim%" "%%a" "%%c" "%%b"
+mode con cols=99 lines=40
+Call :OgnitorenKs.Reader "%MainWim%" "echo" :: :: :: :: ::
+set /p $index=%R%[96m  Ã‡oklu SeÃ§im %R%[90mx,y%R%[0m :
+	if %$index%==x goto WindowsEditMenu
+	if %$index%==X goto WindowsEditMenu
+cls
+FOR %%a in (%$index%) do (
+	FOR /F "tokens=3" %%b IN ('Dism /Get-WimInfo /WimFile:%MainWim% /Index:%%a ^| FIND "Architecture"') do (
+		FOR /F "tokens=2 delims=:" %%c IN ('Dism /Get-WimInfo /WimFile:%MainWim% /Index:%%a ^| FIND "Name"') do (
+			Call :Panel2 "%R%[33m %%a %R%[37mâ–º%R%[33m (%%c %%b)%R%[37m dÃ¶nÃ¼ÅŸtÃ¼rÃ¼lÃ¼yor...%R%[0m"
+			Call :esdtowim %MainWim% "%%a"
 			)
 		)
 	)
 )
-
-powershell -command "Start-Process '%Location%\Edit\ESDtoWIM'"
-echo %R%[92m ˜Ÿlem tamamland.%R%[0m 
-timeout /t 3 /nobreak > NUL
+Call :Powershell "Start-Process '%Location%\Edit\ESDtoWIM'"
+Call :ProcessCompleted
 goto :eof
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– 
 
 :WimDelete
-cls
-mode con cols=70 lines=20
-echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-echo  %R%[90mº%R%[1;97m%R%[100m                               WIM S˜L                            %R%[0m%R%[90mº%R%[0m
-echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
+Call :Panel "%R%[100m                               WIM SÄ°L                            %R%[0m"
 Call :degisken1
-mode con cols=99 lines=30
-:WimDell
-echo  %R%[90mÉÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-Call :MerkezWim
-echo  %R%[90mÈÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
-set /p selectindex=%C%[92m ˜Ÿlem : %C%[0m
-	if %selectindex%==X goto WindowsEditMenu
-	if %selectindex%==x goto WindowsEditMenu
-echo [%date% - %time%] ^| WimDelete ^| Index="%selectindex%" silindi. "%MerkezWim%" >> %Location%\Logs
-Powershell -command "Remove-WindowsImage -ImagePath '%MerkezWim%' -Index '%selectindex%' -CheckIntegrity"
-:: Kullanlabilecek farkl y”ntemler
-::%Location%\Files\imagex.exe /delete "%MerkezWim%" %selectindex% /check
-::Dism /Delete-Image /ImageFile:%MerkezWim% /Index:%selectindex% /CheckIntegrity
+mode con cols=99 lines=40
+Call :OgnitorenKs.Reader "%MainWim%" echo :: :: :: :: ::
+set /p index=%C%[92m Ä°ÅŸlem : %C%[0m
+	if %index%==x goto WindowsEditMenu
+	if %index%==X goto WindowsEditMenu
 cls
-goto WimDell
+FOR /F "tokens=3" %%b IN ('Dism /Get-WimInfo /WimFile:%MainWim% /Index:%index% ^| FIND "Architecture"') do (set iarch=%%b)
+FOR /F "tokens=2 delims=:" %%c IN ('Dism /Get-WimInfo /WimFile:%MainWim% /Index:%index% ^| FIND "Name"') do (set iname=%%c)
+Call :Panel2 "%R%[33m%index% %R%[37mâ–º%R%[33m (%iname% %iarch%)%R%[37m siliniyor...%R%"
+Call :Powershell "Remove-WindowsImage -ImagePath '%MainWim%' -Index '%index%' -CheckIntegrity"
+Call :LogSave "WimDelete" "Index='%index%' silindi. '%MainWim%'"
+cls
+Call :OgnitorenKs.Reader "%MainWim%" echo :: :: :: :: ::
+echo.
+echo %R%[92m Silme iÅŸlemi tamamlandÄ±%R%[0m
+echo %R%[92m MenÃ¼ye dÃ¶nmek iÃ§in herhangi bir tuÅŸa basÄ±nÄ±z.%R%[0m
+pause > NUL
+goto :eof
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– 
 
 :WimMount
-cls
-mode con cols=70 lines=20
-dir /b %Location%\Edit\Mount\Windows > NUL 2>&1
-	if %errorlevel%==0 (echo %R%[32m Mevcut imaj toplanyor...%R%[0m 
-						Call :WimRemount
-						Call :WimUnmount)
+Call :ImageRemount ::
+Call :RegeditCollect ::
+Call :ImageUnmount ::
 RD /S /Q "%Location%\Edit\Mount" > NUL 2>&1
 mkdir "%Location%\Edit\Mount" > NUL 2>&1
-echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-echo  %R%[90mº%R%[1;97m%R%[100m                              WIM MOUNT                           %R%[0m%R%[90mº%R%[0m
-echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
+cls
+Call :Panel "%R%[100m                              WIM MOUNT                           %R%[0m"
 Call :degisken1
-mode con cols=99 lines=30
-echo  %R%[90mÉÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-Call :MerkezWim
-echo  %R%[90mÈÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
-set /p selectindex= %C%[92m ˜Ÿlem : %C%[0m
-	if %selectindex%==X goto WindowsEditMenu
-	if %selectindex%==x goto WindowsEditMenu
-:: AŸa§daki FOR d”ngleri ile sistem "ismi" ile "mimarisi" alnmaktadr. 
-FOR /F "tokens=3" %%b IN ('Dism /Get-WimInfo /WimFile:%MerkezWim% /Index:%selectindex% ^| FIND "Architecture"') do (set iarc=%%b)
-FOR /F "tokens=2 delims=:" %%c IN ('Dism /Get-WimInfo /WimFile:%MerkezWim% /Index:%selectindex% ^| FIND "Name"') do ( set iname=%%c)
+mode con cols=99 lines=40
+Call :OgnitorenKs.Reader "%MainWim%" echo :: :: :: :: ::
+echo %MainWim% | find "install.esd" > NUL 2>&1
+	if %errorlevel%==0 (echo  %R%[1;97m%R%[41m ESD dosya tespit edildi. Ä°ÅŸlem yapÄ±lamaz %R%[0m&pause > NUL&goto WindowsEditMenu)
+set /p index= %C%[92m Ä°ÅŸlem : %C%[0m
+	if %index%==x goto WindowsEditMenu
+	if %index%==X goto WindowsEditMenu
 cls
-:: Ger‡ekleŸtirilen iŸlemi g”stermektedir.
-echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-echo    %R%[32m Index%R%[33m %selectindex% %R%[32m%R%[33m (%iname% %iarc%)%R%[32m a‡lyor...%R%[0m
-echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
-Dism /Mount-Image /ImageFile:"%MerkezWim%" /MountDir:"%Location%\Edit\Mount" /Index:%selectindex%
-::%Location%\Files\imagex.exe /mountrw %MerkezWim% %selectindex% "%Location%\Edit\Mount"
-echo [%date% - %time%] ^| WimMount ^| "%selectindex%" - "%%c - %%b" srm Mount edildi. "%MerkezWim%" >> %Location%\Logs
-echo %R%[92m ˜Ÿlem tamamland.%R%[0m
-timeout /t 2 /nobreak > NUL
+FOR /F "tokens=3" %%b IN ('Dism /Get-WimInfo /WimFile:%MainWim% /Index:%index% ^| FIND "Architecture"') do (set iarc=%%b)
+FOR /F "tokens=2 delims=:" %%c IN ('Dism /Get-WimInfo /WimFile:%MainWim% /Index:%index% ^| FIND "Name"') do ( set iname=%%c)
+Call :Panel2 "%R%[33m %index% %R%[37mâ–º%R%[33m (%iname% %iarc%)%R%[37m aÃ§Ä±lÄ±yor...%R%"
+Dism /Mount-Image /ImageFile:"%MainWim%" /MountDir:"%Location%\Edit\Mount" /Index:%index%
+Call :LogSave "WimMount" "'%index%' - '%iname%' - '%iarc%' sÃ¼rÃ¼mÃ¼ Mount edildi. '%MainWim%'"
+Call :ProcessCompleted
 goto :eof
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– 
 
-:WimRemount
-mode con cols=70 lines=20
-echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-echo  %R%[90mº%R%[1;97m%R%[100m                             WIM Remount                          %R%[0m%R%[90mº%R%[0m
-echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
-echo [%date% - %time%] ^| WimRemount ^| %Mount% yeniden ykleme iŸlemi yapld >> %Location%\Logs
+:ImageRemount
+%~1 :Panel "%R%[100m                        Ä°maj Yeniden YÃ¼kleniyor                   %R%[0m"
+Call :LogSave ImageRemount "'%Mount%' yeniden yÃ¼kleme iÅŸlemi yapÄ±ldÄ±"
 Dism /Remount-Image /MountDir:"%Location%\Edit\Mount"
-::%Location%\Files\imagex.exe /remount %Location%\Edit\Mount
+%~1 :ProcessCompleted
 goto :eof
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– 
 
-:WimUnmount
-cls
-mode con cols=70 lines=20
-echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-echo  %R%[90mº%R%[1;97m%R%[100m                             WIM Unmount                          %R%[0m%R%[90mº%R%[0m
-echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
-echo [%date% - %time%] ^| WimUnmount ^| %Mount% klas”r topland >> %Location%\Logs
-Dism /UnMount-Image /MountDir:%Location%\Edit\Mount /Commit
-	if %errorlevel%==1 (echo  %R%[91m TOPLAMA ˜žLEM˜ BAžARISIZ! %R%[0m
-						echo [%date% - %time%] ^| WimUnmount ^| HATA! %Mount% klas”r unmount yaplamyor >> %Location%\Logs
-						timeout /t 5 /nobreak > NUL
-						goto WindowsEditMenu)
-						
-::%Location%\Files\imagex.exe /unmount /commit %Location%\Edit\Mount
-echo %R%[92m ˜Ÿlem tamamland.%R%[0m
-timeout /t 3 /nobreak > NUL
+:ImageUnmount
+%~1 :Panel "%R%[100m                            Ä°maj ToplanÄ±yor                       %R%[0m"
+Call :LogSave "ImageUnmount" "'%Mount%' klasÃ¶rÃ¼ toplandÄ±"
+Call :Powershell "Dismount-WindowsImage -Path '%Location%\Edit\Mount' -Save"
+%~1 :ProcessCompleted
 goto :eof
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
 
-:stop
-:RegYukle
-mode con cols=70 lines=20
-echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-echo  %R%[90mº%R%[1;97m%R%[100m                            Regedit Ykle                         %R%[0m%R%[90mº%R%[0m
-echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
+:: â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– 
 
-:Offreg
-dir /b %Mount%\Windows\System32\config\SOFTWARE > NUL 2>&1
-	if %errorlevel%==1 (echo  %R%[1;97m%R%[41m            Yol hatal! Regedit kaytlar bulunumad.               %R%[0m
-						echo [%date% - %time%] ^| RegYukle ^| HATA! Regedit kaytlar yklenemedi. Mount="%Mount%" >> %Location%\Logs
-						timeout /t 5 /nobreak > NUL
-						goto WindowsEditMenu)
-
-echo [%date% - %time%] ^| RegYukle ^| %Mount% klas”rnden regedit kaytlar yklendi >> %Location%\Logs
-reg load HKLM\OG_COMPONENTS "%Mount%\Windows\System32\config\COMPONENTS" >nul
-reg load HKLM\OG_DEFAULT "%Mount%\Windows\System32\config\default" >nul
-reg load HKLM\OG_NTUSER "%Mount%\Users\Default\ntuser.dat" >nul
-reg load HKLM\OG_SOFTWARE "%Mount%\Windows\System32\config\SOFTWARE" >nul
-reg load HKLM\OG_SYSTEM "%Mount%\Windows\System32\config\SYSTEM" >nul
-goto :eof
-
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
-
-:RegTopla
-cls
-echo [%date% - %time%] ^| RegTopla ^| "%Mount%" klas”rnden regedit kaytlar topland >> %Location%\Logs
-for /f "tokens=* delims=" %%a in ('reg query "HKLM" ^| findstr "{"') do (
-	reg unload "%%a" >nul 2>&1
-)
-reg delete "HKLM\OG_SYSTEM\CurrentControlSet" /f >nul 2>&1
-reg unload HKLM\OG_COMPONENTS >nul 2>&1
-reg unload HKLM\OG_DRIVERS >nul 2>&1
-reg unload HKLM\OG_DEFAULT >nul 2>&1
-reg unload HKLM\OG_NTUSER >nul 2>&1
-reg unload HKLM\OG_SCHEMA >nul 2>&1
-reg unload HKLM\OG_SOFTWARE >nul 2>&1
-reg unload HKLM\OG_SYSTEM >nul 2>&1
-goto :eof
-:stop
-
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
-
-:OnAppx
-cls
-mode con cols=70 lines=40
-echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-echo  %R%[90mº%R%[1;97m%R%[100m                        Online Appx Ykleyici                     %R%[0m%R%[90mº%R%[0m
-echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
+:AppxInstaller
+Call :Panel "%R%[100m                           Appx YÃ¼kleyici                         %R%[0m"
 for /f %%i in ('"dir /b %Location%\Edit\Appx\*"') do (
-	echo [%date% - %time%] ^| OnlineAppxYukle ^| "%Location%\Edit\Appx\%%i" appx dosyas yklendi >> %Location%\Logs 
-	PowerShell.exe -Command "Add-AppxPackage -Path %Location%\Edit\Appx\%%i"
-)
-
-echo %R%[92m ˜Ÿlem tamamland.%R%[0m
-timeout /t 3 /nobreak > NUL
-goto :eof
-
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
-
-:OffAppx
-cls
-mode con cols=70 lines=40
-echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-echo  %R%[90mº%R%[1;97m%R%[100m                        Offline Appx Ykleyici                    %R%[0m%R%[90mº%R%[0m
-echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
-
-for /f %%i in ('"dir /b %Location%\Edit\Appx\*"') do (
-	echo [%date% - %time%] ^| OfflineAppxYukle ^| "%Location%\Edit\Appx\%%i" appx dosyas yklendi >> %Location%\Logs 
-	DISM /Image:%Mount% /Add-ProvisionedAppxPackage /PackagePath:%Location%\Edit\Appx\%%i /SkipLicense
+	Call :LogSave "OfflineAppxYukle" "'%Location%\Edit\Appx\%%i' appx dosyasÄ± yÃ¼klendi"
+	Dism /Image:%Mount% /Add-ProvisionedAppxPackage /PackagePath:%Location%\Edit\Appx\%%i /SkipLicense
 )
 Dism /Image:%Mount% /Optimize-ProvisionedAppxPackage
-	if %errorlevel%==1 (echo [%date% - %time%] ^| OfflineAppxYukle ^| HATA! Optimize-ProvisionedAppxPackage iŸlemi hata verdi. Mount=%Mount% >> %Location%\Logs)
+	if %errorlevel%==1 (Call :LogSave "OfflineAppxYukle" "HATA! Optimize-ProvisionedAppxPackage iÅŸlemi hata verdi. '%Mount%'")
+Call :ProcessCompleted
 goto :eof
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– 
 
-:stop
-:OffDismUpdate
-cls
-mode con cols=70 lines=40
-echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-echo  %R%[90mº%R%[1;97m%R%[100m                         DISM Update Offline                      %R%[0m%R%[90mº%R%[0m
-echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
-	
-:OffDism
+:UpdateInstaller
+Call :Panel "%R%[100m                        GÃ¼ncelleme YÃ¼kleyici                      %R%[0m"
 for /f %%i in ('"dir /b %Location%\Edit\Update\*"') do (
-	echo [%date% - %time%] ^| OfflineDismYukle ^| "%Location%\Edit\Update\%%i" update dosyas yklendi. Mount=%Mount% >> %Location%\Logs 
-	DISM /Image:%Mount% /add-package /packagepath=%Location%\Edit\Update\%%i
+	Call :LogSave "OfflineDismYukle" "'%Location%\Edit\Update\%%i' update dosyasÄ± yÃ¼klendi. '%Mount%'" 
+	Dism /Image:%Mount% /add-package /packagepath=%Location%\Edit\Update\%%i
 )
 echo %R%[92m WinSxS temizleniyor...%R%[0m
-DISM /Image:%Mount% /Cleanup-Image /StartComponentCleanup
-	if %errorlevel%==1 (echo %R%[91m TEM˜ZLEME ˜žLEM˜ BAžARISIZ%R%[0m
-						echo [%date% - %time%] ^| OfflineDismYukle ^| WinSxS temizlenirken hata oluŸtu. Mount=%Mount% >> %Location%\Logs
+Dism /Image:%Mount% /Cleanup-Image /StartComponentCleanup
+	if %errorlevel%==1 (echo %R%[91m TEMÄ°ZLEME Ä°ÅžLEMÄ° BAÅžARISIZ%R%[0m
+						Call :LogSave "OfflineDismYukle" "WinSxS temizlenirken hata oluÅŸtu. '%Mount%'"
 						timeout /t 5 /nobreak > NUL
 						goto WindowsEditMenu)
-echo %R%[92m Appx dosyalar optimize ediliyor...%R%[0m
-Dism /Image:%Mount% /Optimize-ProvisionedAppxPackage
-	if %errorlevel%==1 (echo [%date% - %time%] ^| OfflineDismYukle ^| Optimize-ProvisionedAppxPackage iŸleminde hata oluŸtu. Mount=%Mount% >> %Location%\Logs)
-echo %R%[92m ˜Ÿlem tamamland.%R%[0m
-timeout /t 3 /nobreak > NUL
+Call :ProcessCompleted
 goto :eof
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
 
-:OnDismUpdate
-cls
-mode con cols=70 lines=40
-echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-echo  %R%[90mº%R%[1;97m%R%[100m                         DISM Update Online                      %R%[0m%R%[90mº%R%[0m
-echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
-for /f %%i in ('"dir /b %Location%\Edit\Update\*"') do (
-	echo [%date% - %time%] ^| OnlineDismYukle ^| "%Location%\Edit\Update\%%i" update dosyas yklendi >> %Location%\Logs 
-	DISM /Online /add-package /packagepath=%Location%\Edit\Update\%%i /norestart
-)
-echo %R%[92m WinSxS temizleniyor...%R%[0m
-DISM /Online /Cleanup-Image /StartComponentCleanup
-	if %errorlevel%==1 ( echo  %R%[91m TEM˜ZLEME ˜žLEM˜ BAžARISIZ! %R%[0m 
-						 timeout /t 5 /nobreak > NUL
-						 goto WindowsEditMenu)
-
-echo %R%[92m ˜Ÿlem tamamland.%R%[0m
-timeout /t 3 /nobreak > NUL
-goto :eof
-:stop
-
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– 
 
 :DriverYedek
-cls
-mode con cols=70 lines=40
 RD /S /Q "%Location%\Edit\Driver\Yedek" > NUL 2>&1
 mkdir "%Location%\Edit\Driver\Yedek" > NUL 2>&1
-echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-echo  %R%[90mº%R%[1;97m%R%[100m                           Driver Yedekle                        %R%[0m%R%[90mº%R%[0m
-echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
-echo [%date% - %time%] ^| DriverYedek ^| Driverlar yedeklendi >> %Location%\Logs
+Call :Panel "%R%[100m                           Driver Yedekle                        %R%[0m"
 Dism /Online /Export-Driver /Destination:%Location%\Edit\Driver\Yedek
-
-powershell -command "Start-Process '%Location%\Edit\Driver\Yedek'"
-echo %R%[92m ˜Ÿlem tamamland.%R%[0m
-timeout /t 3 /nobreak > NUL
+Call :LogSave "DriverYedek" "Driverlar yedeklendi"
+Call :Powershell "Start-Process '%Location%\Edit\Driver\Yedek'"
+Call :ProcessCompleted
 goto :eof
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– 
 
 :DriverYukle
-cls
-mode con cols=70 lines=40
-echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-echo  %R%[90mº%R%[1;97m%R%[100m                        Driver Ykle Offline                     %R%[0m%R%[90mº%R%[0m
-echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
-echo [%date% - %time%] ^| DriverYukle ^| Driver yklendi. Mount=%Mount% >> %Location%\Logs
+Call :Panel "%R%[100m                            Driver YÃ¼kle                         %R%[0m"
+Call :LogSave "DriverYukle" "Driver yÃ¼klendi. '%Mount%'"
 Dism /Image:%Mount% /Add-Driver /Driver:%Location%\Edit\Driver /Recurse
-	if %errorlevel%==1 (RD /S /Q "%Location%\Edit\Driver" > NUL 2>&1
-						mkdir "%Location%\Edit\Driver" > NUL 2>&1
-						echo [%date% - %time%] ^| DriverYukle ^| HATA! Driver yklenirken hata oluŸtu. Mount=%Mount% >> %Location%\Logs
-						goto DriverYukle)
-
-echo  %R%[92m ˜Ÿlem tamamland. %R%[0m 
-timeout /t 2 /nobreak > NUL
+Call :ProcessCompleted
 goto :eof
-:stop
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+
+:: â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– 
 
 :SetupEdit
-cls
-mode con cols=70 lines=40
-:: Setup dosyas kontrol edilir. Yok ise indirilir.
-dir /b %Location%\Files\Setup10.zip > NUL 2>&1
-	if %errorlevel%==1 (Call :SetupDownload)
-
-:: Mount klas”rnn i‡eri§i kontorl edilir. Klas”r i‡inde eski sisteme ait kalntlar var ise iŸlem iptal edilir.	
-dir /b "%Location%\Edit\Mount\Windows" > NUL 2>&1
-	if %errorlevel%==0 (echo %R%[32m ™ncelikle ykl olan Mount klas”rn toplaynz.%R%[0m
-						echo [%date% - %time%] ^| SetupEdit ^| HATA! Mount klas”rnde ykl sistem var >> %Location%\Logs
-						timeout /t 5 /nobreak > NUL
-						goto WindowsEditMenu)
-
-:: Hata alnmamas i‡in Mount klas”r silinip yeniden oluŸturulur.						
+Call :ImageRemount ::
+Call :RegeditCollet ::
+Call :ImageUnmount ::
 RD /S /Q "%Location%\Edit\Mount" > NUL 2>&1
 mkdir "%Location%\Edit\Mount" > NUL 2>&1
-
-echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-echo  %R%[90mº%R%[1;97m%R%[100m                           Setup Dzenle                         %R%[0m%R%[90mº%R%[0m
-echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
-Call :degisken4
-
-mode con cols=99 lines=30
-FOR /F "tokens=3" %%b IN ('Dism /Get-WimInfo /WimFile:%MerkezWim% /Index:%index% ^| FIND "Architecture"') do (set iarc=%%b)
-FOR /F "tokens=2 delims=:" %%c IN ('Dism /Get-WimInfo /WimFile:%MerkezWim% /Index:%index% ^| FIND "Name"') do ( set iname=%%c)
-echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-echo   %R%[92m Index%R%[33m %index% %R%[92m%R%[33m (%iname%)%R%[92m a‡lyor...%R%[0m
-echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
-echo [%date% - %time%] ^| SetupEdit ^| %MerkezWim% - %iname% ‡karlyor >> %Location%\Logs
-Dism /Mount-Image /ImageFile:"%MerkezWim%" /MountDir:"%Location%\Edit\Mount" /Index:%index%
-:: %Location%\Files\imagex.exe /mountrw %MerkezWim% %index% "%Location%\Edit\Mount"
-
-:: AŸa§daki Mount tanmlamas Reg ykleme b”lm i‡indir. O b”lmde Mount de§iŸkenine setup dosyalarn ‡kard§mz klas”rn yolunu tanmlyoruz
 set Mount=%Location%\Edit\Mount
 
-Call :PowerRun
+Call :Panel "%R%[100m                           Setup DÃ¼zenle                         %R%[0m"
+Call :degisken4
+mode con cols=99 lines=40
+FOR /F "tokens=3" %%b IN ('Dism /Get-WimInfo /WimFile:%MainWim% /Index:%index% ^| FIND "Architecture"') do (set iarc=%%b)
+FOR /F "tokens=2 delims=:" %%c IN ('Dism /Get-WimInfo /WimFile:%MainWim% /Index:%index% ^| FIND "Name"') do ( set iname=%%c)
+Call :Panel2 "%R%[33m %index% %R%[37mâ–º%R%[33m (%iname%)%R%[37m aÃ§Ä±lÄ±yor...%R%[0m"
+Dism /Mount-Image /ImageFile:"%MainWim%" /MountDir:"%Location%\Edit\Mount" /Index:%index%
 cls
-echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-echo    %C%[96m ˜Ÿlem yaplacak Windows srmn se‡iniz%C%[0m
-echo  %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
-set /p windowssetup=%R%[97m  %R%[92m [ Windows 11:%R%[1;97m 1 %R%[35m/%R%[92m Windows 10:%R%[1;97m 2 %R%[92m] : %R%[0m
-	if %windowssetup%==1 (%PowerRun% powershell -command "Expand-Archive -Force '%Location%\Files\Setup10.zip' '%Location%\Edit\Mount'"
-						  %PowerRun% powershell -command "Expand-Archive -Force '%Location%\Files\Setup11.zip' '%Location%\Edit\Mount'"
-						  echo [%date% - %time%] ^| SetupEdit ^| Windows 11 setup dosyalar Setup imajna entegre edildi. >> %Location%\Logs
-						  timeout /t 5 /nobreak > NUL)
-	if %windowssetup%==2 (%PowerRun% powershell -command "Expand-Archive -Force '%Location%\Files\Setup10.zip' '%Location%\Edit\Mount'"
-						  echo [%date% - %time%] ^| SetupEdit ^| Windows 10 setup dosyalar Setup imajna entegre edildi. >> %Location%\Logs
-						  timeout /t 5 /nobreak > NUL)
-echo 
-echo  %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
-echo    %C%[96m Men konumunu se‡iniz%C%[0m
-echo  %R%[90mÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
-set /p barkonum=%R%[97m   %R%[92m[%R%[92m Sol:%R%[1;97m 1 %R%[35m/%R%[92m šst:%R%[1;97m 2 %R%[35m/%R%[92m Sa§:%R%[1;97m 3 %R%[35m/%R%[92m Alt:%R%[1;97m 4 %R%[92m] : %R%[0m 
-	if %barkonum%==1 (Call :SetupBar %barkonum%
-					  Call :setupunmount 
-					  goto WindowsEditMenu)
-	if %barkonum%==2 (Call :SetupBar %barkonum%
-					  Call :setupunmount 
-					  goto WindowsEditMenu)
-	if %barkonum%==3 (Call :SetupBar %barkonum%
-					  Call :setupunmount 
-					  goto WindowsEditMenu)
-	if %barkonum%==4 (Call :SetupBar %barkonum%
-					  Call :setupunmount 
-					  goto WindowsEditMenu)
-:setupunmount
-echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-echo    %R%[92m Setup dosyas toplanyor...%R%[0m
-echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
-Dism /UnMount-Image /MountDir:"%Location%\Edit\Mount" /Commit
-::%Location%\Files\imagex.exe /unmount /commit %Location%\Edit\Mount
-echo  %R%[92m ˜Ÿlem tamamland. %R%[0m 
-timeout /t 2 /nobreak > NUL
-goto :eof
-
-:SetupBar
-echo [%date% - %time%] ^| SetupEdit ^| Lerup Launcher konumu "%~1" se‡ildi >> %Location%\Logs
-Call :RegTopla
-Call :Offreg
-reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "Location" /t REG_SZ /d %~1 /f > NUL 2>&1
+Call :Panel2 "%R%[96m Ä°ÅŸlem yapÄ±lacak Windows sÃ¼rÃ¼mÃ¼nÃ¼ seÃ§iniz%R%[0m"
+set /p winsetup=%R%[97m  â–º%R%[92m [ Windows 10:%R%[1;97m 1 %R%[35m/%R%[92m Windows 11:%R%[1;97m 2 %R%[92m] : %R%[0m
+	if %winsetup%==1 (%NSudo% Powershell -command "Expand-Archive -Force '%Location%\Files\Setup.zip' '%Location%\Edit\Mount'"
+					  %NSudo% DEL /F /Q /A %Mount%\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\BypassToolbox.lnk")
+	if %winsetup%==2 (%NSudo% Powershell -command "Expand-Archive -Force '%Location%\Files\Setup.zip' '%Location%\Edit\Mount'")
+echo.
+Call :Panel2 "%R%[96m Lerup Launcher menÃ¼ konumunu seÃ§iniz%R%[0m"
+set /p barkonum=%R%[97m  â–º %R%[92m[%R%[92m Sol:%R%[1;97m 1 %R%[35m/%R%[92m Ãœst:%R%[1;97m 2 %R%[35m/%R%[92m SaÄŸ:%R%[1;97m 3 %R%[35m/%R%[92m Alt:%R%[1;97m 4 %R%[92m] : %R%[0m 
+Call :RegeditInstall ::
+reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "Location" /t REG_SZ /d %barkonum% /f > NUL 2>&1
 reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "UseLargeIcons" /t REG_SZ /d 1 /f > NUL 2>&1
 reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "UseLargeMenus" /t REG_SZ /d 1 /f > NUL 2>&1
 reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "AlwaysOnTop" /t REG_SZ /d 1 /f > NUL 2>&1
 reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "AutoHide" /t REG_SZ /d 0 /f > NUL 2>&1
 reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "Center" /t REG_SZ /d 1 /f > NUL 2>&1
 reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "Buttons" /t REG_SZ /d "" /f > NUL 2>&1
-Call :RegTopla
+Call :RegeditCollet ::
 goto :eof
-:stop
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+
+:: â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– 
 
 :Newico
-cls
-mode con cols=70 lines=40
-dir /b %Location%\Files\Newico.zip > NUL 2>&1
-	if %errorlevel%==1 (Call :icodownload)
-echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-echo  %R%[90mº%R%[1;97m%R%[100m                    Yeni Simgeleri Ykle Offline                 %R%[0m%R%[90mº%R%[0m
-echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
-Call :PowerRun
-echo [%date% - %time%] ^| Newico ^| Yeni simgeler entegre edildi. Mount=%Mount% >> %Location%\Logs
-%PowerRun% Powershell -command "Expand-Archive -Force '%Location%\Files\Newico.zip' '%Mount%\Windows'"
-
-echo  %R%[92m ˜Ÿlem tamamland. %R%[0m  
-timeout /t 2 /nobreak > NUL
+Call :Panel "%R%[100m                       Yeni Simge YÃ¼kleyici                       %R%[0m"
+Call :LogSave "Newico" "Yeni simgeler entegre edildi. '%Mount%'"
+%NSudo% Powershell -command "Expand-Archive -Force '%Location%\Files\Newico.zip' '%Mount%\Windows'"
+Call :ProcessCompleted
 goto :eof
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
-
+:: â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– 
 :gpeditmsc
-mode con cols=70 lines=40
-echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-echo  %R%[90mº%R%[1;97m%R%[100m                        Gpedit.Msc Offline                        %R%[0m%R%[90mº%R%[0m
-echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
-echo [%date% - %time%] ^| Gpedit.msc ^| Gpedit.msc entegre edildi. Mount=%Mount% >> %Location%\Logs
-FOR /f %%a IN ('"dir /b %Mount%\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~*.mum"') do (Dism /Image:%Mount% /Add-Package:"%SystemRoot%\servicing\Packages\%%a")
-FOR /f %%a IN ('"dir /b %Mount%\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~*.mum") do (Dism /Image:%Mount% /Add-Package:"%SystemRoot%\servicing\Packages\%%a")
+Call :Panel "%R%[100m                       Gpedit.Msc YÃ¼kleyici                       %R%[0m"
+Call :LogSave "Gpedit.msc" "Gpedit.msc entegre edildi. '%Mount%'"
+FOR /f %%a IN ('"dir /b /s %Mount%\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~*.mum"') do (Dism /Image:%Mount% /Add-Package:"%%a")
+FOR /f %%a IN ('"dir /b /s %Mount%\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~*.mum") do (Dism /Image:%Mount% /Add-Package:"%%a")
+Call :ProcessCompleted
 goto :eof
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– 
 
 :HyperV
+Call :Panel "%R%[100m                         Hyper-V YÃ¼kleyici                        %R%[0m"
+Call :LogSave "HyperV" "Hyper-V entegre edildi. '%Mount%'"
+For /f %%a IN ('"dir /b /s %Mount%\Windows\servicing\Packages\Microsoft-Hyper-V*.mum"') DO (Dism /Image:%Mount% /Add-Package:"%%a")
+Dism /Image:%Mount% /Enable-Feature /FeatureName:Microsoft-Hyper-V-All
+goto :eof
+
+:: â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– 
+
+:imagexexport
+Call :LogSave AIO Maker "'%~3' dosyasÄ±na '%~1' dosyasÄ±ndan '%~4 %~5' sÃ¼rÃ¼mÃ¼ entegre edildi"
+Dism /Export-Image /SourceImageFile:%~1 /SourceIndex:%~2 /DestinationImageFile:%~3 /DestinationName:"%~4" /Compress:Max
+goto :eof
+
+:: --------------------------------------------------------------------------------------------------------
+
+:esdtowim
+dir /b %Location%\Edit\install.wim > NUL 2>&1
+	if %errorlevel%==0 (Call :LogSave "ESDtoWIM" "HATA! Mevcut install.wim dosyasÄ± Ã¼zerine ekleme iÅŸlemi gerÃ§ekleÅŸtirildi")
+Dism /Export-Image /SourceImageFile:"%~1" /SourceIndex:%~2 /DestinationImageFile:%Location%\Edit\install.wim /Compress:max /CheckIntegrity
+Call :LogSave "ESDtoWIM" "'%~2'-'%~1' sÃ¼rÃ¼mÃ¼ dÃ¶nÃ¼ÅŸtÃ¼rÃ¼ldÃ¼"
+timeout /t 1 /nobreak > NUL
+goto :eof
+
+:: â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– 
+
+:Panel
 mode con cols=70 lines=40
-echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-echo  %R%[90mº%R%[1;97m%R%[100m                          Hyper-V Offline                         %R%[0m%R%[90mº%R%[0m
-echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
-echo [%date% - %time%] ^| HyperV ^| Hyper-V entegre edildi. Mount=%Mount% >> %Location%\Logs
-For /f %%a IN ('"dir /b %Mount%\Windows\servicing\Packages\Microsoft-Hyper-V*.mum"') DO (DISM /Image:%Mount% /Add-Package:"%Mount%\Windows\servicing\Packages\%%a")
-DISM /Image:%Mount% /Enable-Feature /FeatureName:Microsoft-Hyper-V-All
-::DISM /Image:%Mount% /Enable-Feature /FeatureName:Microsoft-Hyper-V
-::DISM /Image:%Mount% /Enable-Feature /FeatureName:Microsoft-Hyper-V-Tools-All
-::DISM /Image:%Mount% /Enable-Feature /FeatureName:Microsoft-Hyper-V-Management-PowerShell
-::DISM /Image:%Mount% /Enable-Feature /FeatureName:Microsoft-Hyper-V-Hypervisor
-::DISM /Image:%Mount% /Enable-Feature /FeatureName:Microsoft-Hyper-V-Services
-::DISM /Image:%Mount% /Enable-Feature /FeatureName:Microsoft-Hyper-V-Management-Clients
+echo  %R%[90mâ”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”%R%[0m
+echo  %R%[90mâ”‚%R%[1;97m%~1%R%[90mâ”‚%R%[0m
+echo  %R%[90mâ””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜%R%[0m
 goto :eof
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: --------------------------------------------------------------------------------------------------------
 
-:katilimsiz
-powershell -command "Start-Process '%Location%\Extra\Katilimsiz.bat'
+:Panel2
+echo  %R%[90mâ”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”%R%[0m
+echo   %~1
+echo  %R%[90mâ””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜%R%[0m
 goto :eof
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: --------------------------------------------------------------------------------------------------------
 
-:Location
-cd /d "%~dp0"
-for /f %%a in ('"cd"') do set Location=%%a
-set Location=%Location:~0,-6%
-goto :EOF
-
-:MerkezWim
-echo  %R%[90mº%R%[0m %C%[32mINDEX%C%[0m %R%[90mº%R%[0m %C%[32mM˜MAR˜%C%[0m %R%[90mº%R%[0m %C%[32m   SšRšM%C%[0m    %R%[90mº%R%[0m  %C%[32mD˜L%C%[0m   %R%[90mº%R%[0m    %C%[32mED˜T%C%[0m     %R%[90mº%R%[0m    %C%[32m˜S˜M%C%[0m
-FOR /F "tokens=3" %%a IN ('dism /Get-WimInfo /WimFile:%MerkezWim% ^| FIND "Index"') DO (
-	FOR /F "tokens=3" %%b IN ('dism /Get-WimInfo /WimFile:%MerkezWim% /Index:%%a ^| FIND "Architecture"') DO (
-		FOR /F "tokens=3" %%c in ('Dism /Get-WimInfo /WimFile:%MerkezWim% /Index:%%a ^| Find "Version"') do (
+:OgnitorenKs.Reader
+%~3  %R%[90mâ”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”%R%[0m
+%~3  %R%[90mâ”‚%R%[1;97m%~4%R%[90mâ”‚%R%[0m
+%~3  %R%[90mâ”œâ”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤%R%[0m
+%~5  %R%[90mâ”œâ”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤%R%[0m
+%~5  %R%[90mâ”‚%R%[1;97m%~6%R%[90mâ”‚%R%[0m
+%~5  %R%[90mâ”œâ”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤%R%[0m
+%~2  %R%[90mâ”Œâ”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”%R%[0m
+echo  %R%[90mâ”‚%R%[0m %C%[32mINDEX%C%[0m %R%[90mâ”‚%R%[0m %C%[32mMÄ°MARÄ°%C%[0m %R%[90mâ”‚%R%[0m %C%[32m   SÃœRÃœM%C%[0m    %R%[90mâ”‚%R%[0m  %C%[32mDÄ°L%C%[0m   %R%[90mâ”‚%R%[0m    %C%[32mEDÄ°T%C%[0m     %R%[90mâ”‚%R%[0m    %C%[32mÄ°SÄ°M%C%[0m
+FOR /F "tokens=3" %%a IN ('Dism /Get-WimInfo /WimFile:%~1 ^| FIND "Index"') DO (
+	FOR /F "tokens=3" %%b IN ('Dism /Get-WimInfo /WimFile:%~1 /Index:%%a ^| FIND "Architecture"') DO (
+		FOR /F "tokens=3" %%c in ('Dism /Get-WimInfo /WimFile:%~1  /Index:%%a ^| Find "Version"') do (
 			FOR /F "tokens=3 delims=." %%d in ('"echo %%c"') do (
-				FOR /F "tokens=4" %%e in ('Dism /Get-WimInfo /WimFile:%MerkezWim% /Index:%%a ^| Find "Build"') do (
-					FOR /F "tokens=1" %%f in ('Dism /Get-WimInfo /WimFile:%MerkezWim% /Index:%%a ^| findstr /i Default') do (
-						FOR /F "tokens=2 delims=':'" %%g in ('Dism /Get-WimInfo /WimFile:%MerkezWim% /Index:%%a ^| findstr /i Name') do (
-							FOR /F "tokens=2 delims='-',':' " %%h in ('Dism /Get-WimInfo /WimFile:%MerkezWim% /Index:%%a ^| findstr /i Modified') do (
-								echo  %R%[90mÌÍÍÍÍÍÍÍÎÍÍÍÍÍÍÍÍÎÍÍÍÍÍÍÍÍÍÍÍÍÍÎÍÍÍÍÍÍÍÍÎÍÍÍÍÍÍÍÍÍÍÍÍÍÎÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹%R%[0m
-								echo      %C%[92m%%a%C%[0m      %C%[33m%%b%C%[0m    %C%[36m %%d.%%e%C%[0m    %C%[33m%%f%C%[0m    %C%[36m%%h%C%[0m  %C%[37m %%g%C%[0m
+				FOR /F "tokens=4" %%e in ('Dism /Get-WimInfo /WimFile:%~1  /Index:%%a ^| Find "Build"') do (
+					FOR /F "tokens=1" %%f in ('Dism /Get-WimInfo /WimFile:%~1  /Index:%%a ^| findstr /i Default') do (
+						FOR /F "tokens=2 delims=':'" %%g in ('Dism /Get-WimInfo /WimFile:%~1  /Index:%%a ^| findstr /i Name') do (
+							FOR /F "tokens=2 delims='-',':' " %%h in ('Dism /Get-WimInfo /WimFile:%~1  /Index:%%a ^| findstr /i Modified') do (
+								echo  %R%[90mâ”œâ”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤%R%[0m
+								echo      %C%[92m%%a%C%[0m   â–º   %C%[33m%%b%C%[0m    %C%[36m %%d.%%e%C%[0m    %C%[33m%%f%C%[0m    %C%[36m%%h%C%[0m  %C%[37m %%g%C%[0m
 								)
 							)
 						)
@@ -730,190 +452,256 @@ FOR /F "tokens=3" %%a IN ('dism /Get-WimInfo /WimFile:%MerkezWim% ^| FIND "Index
 		)
 	)
 )
+%~2  %R%[90mâ””â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜%R%[0m
+%~7  %R%[90mâ””â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜%R%[0m
 goto :eof
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: --------------------------------------------------------------------------------------------------------
+
+:NSudo
+dir /b "%Location%\Files\NSudo.exe" > NUL 2>&1
+	if %errorlevel%==1 (Call :LogSave "NSudo" "NSudo.exe dosyasÄ± bulunamadÄ±. Yeniden indirildi."
+						Call :FilesDownloader "https://docs.google.com/uc?export=download&id=1u26XInN1baT1zGhL5N4Kz1SUD4pYJys9" "%download%\NSudo.zip"
+						Call :Powershell "Expand-Archive -Force '%download%\NSudo.zip' '%Location%\Files'"
+						DEL /F /Q /A "%Location%\Files\NSudo.zip" > NUL 2>&1)
+Call :LogSave "NSudo-TrustedInstaller" "%*"
+set NSudo="%Location%\Files\NSudoLG.exe" -U:T -P:E -Wait -ShowWindowMode:hide cmd /c
+goto :eof
+
+:: --------------------------------------------------------------------------------------------------------
+
+:FilesDownloader [%~1=Download Name]
+Call :InternetControl
+FOR /F "tokens=1" %%i in ('FIND "%~1" %Location%\Extra\Links.txt') do set link=%%i
+Call :LogSave "FilesDownloader" "'%~1' indirildi. '%link%'"
+%Location%\Files\wget.exe -c -q --no-check-certificate --show-progress "%link%" -O %Location%\Files\%~1
+goto :eof
+
+:: --------------------------------------------------------------------------------------------------------
+
+:InternetControl
+ping -n 1 www.bing.com -w 20000 > NUL
+	if %errorlevel%==1 (echo   %R%[1;97m%R%[41m Internet yok %R%[0m
+						Call :LogSave "InternetControl" "HATA! Ä°nternet baÄŸlantÄ±sÄ± yok."
+						timeout /t 4 /nobreak > NUL
+						goto :eof)
+goto :eof
+
+:: --------------------------------------------------------------------------------------------------------
+
+:LogSave
+:: %~1: BÃ¶lÃ¼m adÄ± | %~2: Bilgi kÄ±smÄ±
+echo %LogsSettings% > NUL 2>&1
+	if %LogsSettings%==1 (goto :eof)
+echo [%date% - %time%] ^| %~1 ^| %~2 >> %Location%\Logs
+goto :eof
+
+:: --------------------------------------------------------------------------------------------------------
+
+:Powershell
+chcp 437 > NUL 2>&1
+Powershell -command %*
+chcp 65001 > NUL 2>&1
+goto :eof
+
+:: --------------------------------------------------------------------------------------------------------
+
+:katilimsiz
+Call :Powershell "Start-Process '%Location%\Extra\Katilimsiz.bat'
+goto :eof
+
+:: â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– 
 
 :degisken1
-set /p MerkezWim=%C%[97m  %C%[92m Klas”r veya Dosya yolu : %C%[0m
-	if %MerkezWim%==x GOTO menu
-	if %MerkezWim%==X GOTO menu
+set /p MainWim=%C%[97m  â–º%C%[92m KlasÃ¶r veya Dosya yolu : %C%[0m
+	if %MainWim%==x GOTO menu
+	if %MainWim%==X GOTO menu
 
-echo %MerkezWim%\ > %Location%\Edit\Logs\Slash.txt
-Find /C /I "\\" %Location%\Edit\Logs\Slash.txt > NUL
-	if %errorlevel%==0 (set MerkezWim=%MerkezWim:~0,-1%
-						echo [%date% - %time%] ^| degisken1 ^| ISO kalbndan yol verildi. %MerkezWim% >> %Location%\Logs
-						DEL /F /Q /A "%Location%\Edit\Logs\Slash.txt" > NUL)
-Find "boot.wim" %Location%\Edit\Logs\Slash.txt > NUL
-	if %errorlevel%==0 (DEL /F /Q /A "%Location%\Edit\Logs\Slash.txt" > NUL
-						echo [%date% - %time%] ^| degisken1 ^| boot.wim dosyas tanmland. %MerkezWim% >> %Location%\Logs
+echo %MainWim%\ | Find /C /I "\\" > NUL 2>&1
+	if %errorlevel%==0 (set MainWim=%MainWim:~0,-1%
+						Call :LogSave "degisken1" "ISO kalÄ±bÄ±ndan yol verildi. '%MainWim%'")
+
+echo %MainWim% | Findstr /C:"boot.wim" > NUL 2>&1
+	if %errorlevel%==0 (Call :LogSave "degisken1" "boot.wim dosyasÄ± tanÄ±mlandÄ±. '%MainWim%'"
 						goto :eof)
-Find "install" %Location%\Edit\Logs\Slash.txt > NUL
-	if %errorlevel%==0 (DEL /F /Q /A "%Location%\Edit\Logs\Slash.txt" > NUL
-						echo [%date% - %time%] ^| degisken1 ^| install.wim dosya yolu direkt tanmland. %MerkezWim% >> %Location%\Logs
+						
+echo %MainWim% | Findstr /C:"install." > NUL 2>&1
+	if %errorlevel%==0 (Call :LogSave "degisken1" "install.wim/esd dosya yolu direkt tanÄ±mlandÄ±. '%MainWim%'"
 						goto :eof)
-dir /b %MerkezWim%\sources\install.wim > NUL 2>&1
-	if %errorlevel%==0 (set MerkezWim="%MerkezWim%\sources\install.wim")
-	if %errorlevel%==1 (set MerkezWim="%MerkezWim%\sources\install.esd")
-echo [%date% - %time%] ^| degisken1 ^| ˜maj klas”r yolu verildi. %MerkezWim% >> %Location%\Logs
+						
+dir /b %MainWim%\sources\install.wim > NUL 2>&1
+	if %errorlevel%==0 (set MainWim="%MainWim%\sources\install.wim")
+	if %errorlevel%==1 (set MainWim="%MainWim%\sources\install.esd")
+Call :LogSave "degisken1" "Ä°maj klasÃ¶r yolu verildi. '%MainWim%'"
 goto :eof
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: --------------------------------------------------------------------------------------------------------
 
 :degisken2
-set /p EkleWim=%C%[97m  %C%[92m Klas”r veya Dosya yolu : %C%[0m
-	if %EkleWim%==x GOTO menu
-	if %EkleWim%==X GOTO menu
+set /p AddWim=%C%[97m  â–º%C%[92m KlasÃ¶r veya Dosya yolu : %C%[0m
+	if %AddWim%==x GOTO menu
+	if %AddWim%==X GOTO menu
 
-echo %EkleWim%\ > %Location%\Edit\Logs\Slash.txt
-Find /C /I "\\" %Location%\Edit\Logs\Slash.txt > NUL
-	if %errorlevel%==0 (set EkleWim=%EkleWim:~0,-1%
-						echo [%date% - %time%] ^| degisken2 ^| ISO kalbndan yol verildi. %EkleWim% >> %Location%\Logs
-						DEL /F /Q /A "%Location%\Edit\Logs\Slash.txt" > NUL)
-Find "install" %Location%\Edit\Logs\Slash.txt > NUL
-	if %errorlevel%==0 (set EkleWim=%EkleWim%
-						echo [%date% - %time%] ^| degisken2 ^| install.wim dosya yolu direkt tanmland. %EkleWim% >> %Location%\Logs
-						DEL /F /Q /A "%Location%\Edit\Logs\Slash.txt" > NUL
+echo %AddWim%\ | Find /C /I "\\" > NUL 2>&1
+	if %errorlevel%==0 (set AddWim=%AddWim:~0,-1%
+						Call :LogSave "degisken2" "ISO kalÄ±bÄ±ndan yol verildi. '%AddWim%'")
+
+echo %AddWim% | Findstr /C:"boot.wim" > NUL 2>&1
+	if %errorlevel%==0 (Call :LogSave "degisken2" "boot.wim dosyasÄ± tanÄ±mlandÄ±. '%AddWim%'"
 						goto :eof)
-dir /b %EkleWim%\sources\install.wim > NUL 2>&1
-	if %errorlevel%==0 (set EkleWim="%EkleWim%\sources\install.wim")
-	if %errorlevel%==1 (set EkleWim="%EkleWim%\sources\install.esd")
-echo [%date% - %time%] ^| degisken2 ^| ˜maj klas”r yolu verildi. %EkleWim% >> %Location%\Logs
+						
+echo %AddWim% | Findstr /C:"install." > NUL 2>&1
+	if %errorlevel%==0 (Call :LogSave "degisken2" "install.wim/esd dosya yolu direkt tanÄ±mlandÄ±. '%AddWim%'"
+						goto :eof)
+						
+dir /b %AddWim%\sources\install.wim > NUL 2>&1
+	if %errorlevel%==0 (set AddWim="%AddWim%\sources\install.wim")
+	if %errorlevel%==1 (set AddWim="%AddWim%\sources\install.esd")
+Call :LogSave "degisken2" "Ä°maj klasÃ¶r yolu verildi. '%AddWim%'"
 goto :eof
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: --------------------------------------------------------------------------------------------------------
 
 :degisken3
 mode con cols=90 lines=20
 echo 
-echo  %C%[96m ™rnek:%C%[33m "C:\OgnitorenKs.Toolbox\Edit\Mount"%C%[0m
-set /p Mount=%R%[97m  %R%[92m Imaj klas”r yolu : %R%[0m
+echo  %C%[96m Ã–rnek:%C%[33m "C:\OgnitorenKs.Toolbox\Edit\Mount"%C%[0m
+set /p Mount=%R%[97m  â–º%R%[92m Imaj klasÃ¶r yolu : %R%[0m
 	if %Mount%==x GOTO WindowsEditMenu
 	if %Mount%==X GOTO WindowsEditMenu
-echo [%date% - %time%] ^| degisken3 ^| Mount klas”r yolu tanmland. Mount=%Mount% >> %Location%\Logs
+Call :LogSave "degisken3" "Mount klasÃ¶r yolu tanÄ±mlandÄ±. '%Mount%'"
 goto :eof
-
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: --------------------------------------------------------------------------------------------------------
 
 :degisken4
-set /p MerkezWim=%C%[97m  %C%[92m Klas”r veya Dosya yolu : %C%[0m
-	if %MerkezWim%==x GOTO menu
-	if %MerkezWim%==X GOTO menu
+set /p MainWim=%C%[97m  â–º%C%[92m KlasÃ¶r veya Dosya yolu : %C%[0m
+	if %MainWim%==x GOTO menu
+	if %MainWim%==X GOTO menu
 	
-echo %MerkezWim%\ > %Location%\Edit\Logs\Slash.txt
-Find /C /I "\\" %Location%\Edit\Logs\Slash.txt > NUL
-	if %errorlevel%==0 (echo %R%[91m HATA! ISO dosyas ba§lanamaz.%R%[0m
-						echo %R%[92m Klas”re ‡karp deneyiniz.%R%[0m
-						echo [%date% - %time%] ^| degisken4 ^| HATA! ^> ISO kalb ba§lanmaya ‡alŸt. "%MerkezWim%" >> %Location%\logs
-						timeout /t 5 /nobreak > NUL
+echo %MainWim%\ | Find /C /I "\\" > NUL 2>&1
+	if %errorlevel%==0 (echo %R%[91m HATA! ISO dosyasÄ± baÄŸlanamaz.%R%[0m
+						Call :LogSave "degisken4" "HATA! ^> ISO kalÄ±bÄ± baÄŸlanmaya Ã§alÄ±ÅŸtÄ±. '%MainWim%'"
+						timeout /t 4 /nobreak > NUL
 						goto WindowsEditMenu)
-Find "boot.wim" %Location%\Edit\Logs\Slash.txt > NUL
-	if %errorlevel%==0 (DEL /F /Q /A "%Location%\Edit\Logs\Slash.txt" > NUL
-						echo [%date% - %time%] ^| degisken4 ^| boot.wim dosya yolu tanmland. "%MerkezWim%" >> %Location%\logs
+						
+echo %AddWim% | Findstr /C:"boot.wim" > NUL 2>&1
+	if %errorlevel%==0 (Call :LogSave "degisken1" "boot.wim dosyasÄ± tanÄ±mlandÄ±. '%AddWim%'"
 						goto :eof)
-dir /b %MerkezWim%\sources\boot.wim > NUL 2>&1
-	if %errorlevel%==0 (set MerkezWim="%MerkezWim%\sources\boot.wim")
-	if %errorlevel%==1 (set MerkezWim="%MerkezWim%\boot.wim")
-echo [%date% - %time%] ^| degisken4 ^| ˜maj klas”r yolu verildi. "%MerkezWim%" >> %Location%\logs
-Dism /Get-WimInfo /WimFile:%MerkezWim% /Index:1 > %Location%\Edit\Logs\setupindex.txt
-FIND "Setup" %Location%\Edit\Logs\setupindex.txt > NUL 2>&1
+						
+dir /b %MainWim%\sources\boot.wim > NUL 2>&1
+	if %errorlevel%==0 (set MainWim="%MainWim%\sources\boot.wim")
+	if %errorlevel%==1 (set MainWim="%MainWim%\boot.wim")
+Dism /Get-WimInfo /WimFile:%MainWim% /Index:1 | Find "Microsoft Windows Setup" > NUL 2>&1
 	if %errorlevel%==0 (set index=1)
 	if %errorlevel%==1 (set index=2)
-echo [%date% - %time%] ^| degisken4 ^| Setup index numaras "%index%" tespit edildi. "%MerkezWim%" >> %Location%\logs
-DEL /F /Q /A "%Location%\Edit\Logs\setupindex.txt" > NUL 2>&1
+Call :LogSave "degisken4" "Setup '%index%' index tespit edildi. '%MainWim%'"
 cls
 goto :eof
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– 
 
-:PowerRun
-set PowerRun=%Location%\Files\PowerRun.exe /SW:0 %SystemRoot%\system32\cmd.exe /c
-goto :EOF
-
-
-:SetupDownload
-FOR /F "tokens=1" %%i in ('FIND "Setup.zip" %Location%\Extra\Links.txt') do set link=%%i
-%Location%\Files\wget -q --no-check-certificate --show-progress "%link%" -O %Location%\Download\Setup.zip
-powershell -command "Expand-Archive -Force '%Location%\Download\Setup.zip' '%Location%\Files'"
-echo [%date% - %time%] ^| SetupDownload ^| Setup.zip dosyas indirildi >> %Location%\logs
+:RegeditInstall
+%~1 :Panel "%R%[100m                            Regedit YÃ¼kle                         %R%[0m"
+dir /b %Mount%\Windows\System32\config\SOFTWARE > NUL 2>&1
+	if %errorlevel%==1 (echo  %R%[1;97m%R%[41m            Yol hatalÄ±! Regedit kayÄ±tlarÄ± bulunumadÄ±.               %R%[0m
+						Call :LogSave "RegeditYÃ¼kle" "HATA! Regedit kayÄ±tlarÄ± yÃ¼klenemedi. '%Mount%'"
+						timeout /t 5 /nobreak > NUL
+						goto :eof)
+reg load HKLM\OG_COMPONENTS "%Mount%\Windows\System32\config\COMPONENTS" > NUL
+reg load HKLM\OG_DEFAULT "%Mount%\Windows\System32\config\default" > NUL
+reg load HKLM\OG_NTUSER "%Mount%\Users\Default\ntuser.dat" > NUL
+reg load HKLM\OG_SOFTWARE "%Mount%\Windows\System32\config\SOFTWARE" > NUL
+reg load HKLM\OG_SYSTEM "%Mount%\Windows\System32\config\SYSTEM" > NUL
+Call :LogSave "RegeditInstall" "'%Mount%' klasÃ¶rÃ¼nden regedit kayÄ±tlarÄ± yÃ¼klendi"
+%~1 :ProcessCompleted
 goto :eof
 
-:icodownload
-FOR /F "tokens=1" %%i in ('FIND "Newico.zip" %Location%\Extra\Links.txt') do set link=%%i
-%Location%\Files\wget -q --no-check-certificate --show-progress "%link%" -O %Location%\Files\Newico.zip
-echo [%date% - %time%] ^| icodownload ^|  Newico.zip dosyas indirildi >> %Location%\logs
+:: --------------------------------------------------------------------------------------------------------
+
+:RegeditCollet
+%~1 :Panel "%R%[100m                            Regedit Topla                         %R%[0m"
+for /f "tokens=* delims=" %%a in ('reg query "HKLM" ^| findstr "{"') do (
+	reg unload "%%a" >nul 2>&1
+)
+reg delete "HKLM\OG_SYSTEM\CurrentControlSet" /f >nul 2>&1
+reg unload HKLM\OG_COMPONENTS > NUL 2>&1
+reg unload HKLM\OG_DRIVERS > NUL 2>&1
+reg unload HKLM\OG_DEFAULT > NUL 2>&1
+reg unload HKLM\OG_NTUSER > NUL 2>&1
+reg unload HKLM\OG_SCHEMA > NUL 2>&1
+reg unload HKLM\OG_SOFTWARE > NUL 2>&1
+reg unload HKLM\OG_SYSTEM > NUL 2>&1
+Call :LogSave "RegeditCollet" "'%Mount%' klasÃ¶rÃ¼nden regedit kayÄ±tlarÄ± toplandÄ±"
+%~1 :ProcessCompleted
 goto :eof
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
-
-:imagexexport
-mode con cols=99 lines=30
-echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-echo    %R%[33m (%~4 %~5)%R%[32m birleŸtirme iŸlemi ger‡ekleŸtiriliyor...%R%[0m
-echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
-echo [%date% - %time%] ^| AIO Maker ^| "%~3" dosyasna "%~1" dosyasndan "%~4 %~5" srm entegre edildi >> %Location%\Logs
-Dism /Export-Image /SourceImageFile:%~1 /SourceIndex:%~2 /DestinationImageFile:%~3 /DestinationName:"%~4" /Compress:Max
-::%Location%\Files\imagex.exe /export "%~1" %~2 "%~3" "%~4 %~5"
-goto :eof
-
-::---------------------------------------------------------------------------------------------------------------------------------------------------------
-::  %~1: Eklewim | %~2: %%a(indexnumaralar) | %~3: (MerkezWim) | %~4: %%c(Srm ismi) | %~5: %%b(Srm mimarisi)" |
-:: ========================================================================================================================================================
-
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
-
-:esdtowim
-cls
-echo  %R%[90mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»%R%[0m
-echo    %R%[32m Index%R%[33m %~2 %R%[32m%R%[33m (%~3 %~4)%R%[32m d”nŸtrlyor...%R%[0m
-echo  %R%[90mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼%R%[0m
-dir /b %Location%\Edit\ESDtoWIM\install.wim > NUL 2>&1
-	if %errorlevel%==0 (echo ESDtoWIM ^| HATA! Mevcut install.wim dosyas zerine ekleme iŸlemi ger‡ekleŸtirildi %~1 %~2 %~3 %~4 >> %Location%\logs)
-Dism /Export-Image /SourceImageFile:"%~1" /SourceIndex:%~2 /DestinationImageFile:%Location%\Edit\ESDtoWIM\install.wim /Compress:max /CheckIntegrity
-timeout /t 1 /nobreak > NUL
-goto :eof
-::---------------------------------------------------------------------------------------------------------------------------------------------------------
-::  %~1: MerkezWim | %~2: %%a(indexnumaralar) | %~3: %%c(Srm ismi) | %~4: %%b(Srm mimarisi)" |
-:: ========================================================================================================================================================
-
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:: â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– 
 
 :key
-reg add "%~1" /f
-	if %errorlevel%==1 (%PowerRun% reg add "%~1" /f)
+reg add "%~1" /f > NUL 2>&1
+	if %errorlevel%==1 (%NSudo% reg add "%~1" /f)
 goto :eof
 
 :dword
-reg add "%~1" /v "%~2" /t REG_DWORD /d "%~3" /f
-	if %errorlevel%==1 (%PowerRun% reg add "%~1" /v "%~2" /t REG_DWORD /d "%~3" /f)
+reg add "%~1" /v "%~2" /t REG_DWORD /d "%~3" /f > NUL 2>&1
+	if %errorlevel%==1 (%NSudo% reg add "%~1" /v "%~2" /t REG_DWORD /d "%~3" /f)
 goto :eof
 
 :binary
-reg add "%~1" /v "%~2" /t REG_BINARY /d "%~3" /f
-	if %errorlevel%==1 (%PowerRun% reg add "%~1" /v "%~2" /t REG_BINARY /d "%~3" /f)
+reg add "%~1" /v "%~2" /t REG_BINARY /d "%~3" /f > NUL 2>&1
+	if %errorlevel%==1 (%NSudo% reg add "%~1" /v "%~2" /t REG_BINARY /d "%~3" /f)
 goto :eof
 
 :sz
-reg add "%~1" /v "%~2" /t REG_SZ /d "%~3" /f
-	if %errorlevel%==1 (%PowerRun% reg add "%~1" /v "%~2" /t REG_SZ /d "%~3" /f)
+reg add "%~1" /v "%~2" /t REG_SZ /d "%~3" /f > NUL 2>&1
+	if %errorlevel%==1 (%NSudo% reg add "%~1" /v "%~2" /t REG_SZ /d "%~3" /f)
 goto :eof
 
 :vesz
-reg add "%~1" /ve /t REG_SZ /d "%~2" /f
-	if %errorlevel%==1 (%PowerRun% reg add "%~1" /ve /t REG_SZ /d "%~2" /f)
+reg add "%~1" /ve /t REG_SZ /d "%~2" /f > NUL 2>&1
+	if %errorlevel%==1 (%NSudo% reg add "%~1" /ve /t REG_SZ /d "%~2" /f)
 goto :eof
 
 :multisz
-reg add "%~1" /v "%~2" /t REG_MULTI_SZ /d "%~3" /f
-	if %errorlevel%==1 (%PowerRun% reg add "%~1" /v "%~2" /t REG_MULTI_SZ /d "%~3" /f)
+reg add "%~1" /v "%~2" /t REG_MULTI_SZ /d "%~3" /f > NUL 2>&1
+	if %errorlevel%==1 (%NSudo% reg add "%~1" /v "%~2" /t REG_MULTI_SZ /d "%~3" /f)
+goto :eof
+
+:expandsz
+reg add "%~1" /v "%~2" /t REG_EXPAND_SZ /d "%~3" /f > NUL 2>&1
+	if %errorlevel%==1 (%NSudo% reg add "%~1" /v "%~2" /t REG_EXPAND_SZ /d "%~3" /f)
 goto :eof
 
 :delete
-reg delete "%~1" /f
-	if %errorlevel%==1 (%PowerRun% reg delete "%~1" /f)
+reg delete "%~1" /f > NUL 2>&1
+	if %errorlevel%==1 (%NSudo% reg delete "%~1" /f)
 goto :eof
 
-:: þþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþþ
+:delete2
+reg delete "%~1" /v "%~2" /f > NUL 2>&1
+	if %errorlevel%==1 (%NSudo% reg delete "%~1" /v "%~2" /f)
+goto :eof
+
+:: â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– 
+
+:ProcessCompleted
+mode con cols=39 lines=20
+echo.
+echo            %R%[90mâ”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”%R%[0m
+echo            %R%[90mâ”‚%R%[32m               %R%[90mâ”‚%R%[0m
+echo            %R%[90mâ”‚%R%[32m          â–ˆâ–ˆ   %R%[90mâ”‚%R%[0m
+echo            %R%[90mâ”‚%R%[32m         â–ˆâ–ˆ    %R%[90mâ”‚%R%[0m
+echo            %R%[90mâ”‚%R%[32m   â–ˆâ–ˆ   â–ˆâ–ˆ     %R%[90mâ”‚%R%[0m
+echo            %R%[90mâ”‚%R%[32m    â–ˆâ–ˆ â–ˆâ–ˆ      %R%[90mâ”‚%R%[0m
+echo            %R%[90mâ”‚%R%[32m     â–ˆâ–ˆâ–ˆ       %R%[90mâ”‚%R%[0m
+echo            %R%[90mâ”‚               %R%[90mâ”‚%R%[0m
+echo            %R%[90mâ””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜%R%[0m
+echo.
+echo            %R%[37m Ä°ÅŸlem tamamlandÄ±%R%[0m
+timeout /t 2 /nobreak > NUL
+goto :eof
+
+:: â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– â– 
 
 :ColorEnd
 for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do rem"') do (

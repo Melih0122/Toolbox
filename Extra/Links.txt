@@ -1,29 +1,35 @@
-:: ==============================================================================================================================
-::                               NOTEPAD++ > Encoding > Character Set > Turkish > OEM857
-::                               NOTEPAD++ > Kodlama  > Karekter Set  > Turkce  > OEM857
-:: ==============================================================================================================================
+:: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ::
-::       ■■■■■■■   ■■■■■■   ■■    ■■ ■■■■ ■■■■■■■■  ■■■■■■■  ■■■■■■■■  ■■■■■■■■ ■■    ■■ ■■    ■■  ■■■■■■
-::      ■■     ■■ ■■    ■■  ■■■   ■■  ■■     ■■    ■■     ■■ ■■     ■■ ■■       ■■■   ■■ ■■   ■■  ■■    ■
-::      ■■     ■■ ■■        ■■■■  ■■  ■■     ■■    ■■     ■■ ■■     ■■ ■■       ■■■■  ■■ ■■  ■■   ■■
-::      ■■     ■■ ■■   ■■■■ ■■ ■■ ■■  ■■     ■■    ■■     ■■ ■■■■■■■■  ■■■■■■   ■■ ■■ ■■ ■■■■■      ■■■■■■ 
-::      ■■     ■■ ■■    ■■  ■■  ■■■■  ■■     ■■    ■■     ■■ ■■   ■■   ■■       ■■  ■■■■ ■■  ■■         ■■
-::      ■■     ■■ ■■    ■■  ■■   ■■■  ■■     ■■    ■■     ■■ ■■    ■■  ■■       ■■   ■■■ ■■   ■■  ■■    ■■
-::        ■■■■■■   ■■■■■■   ■■    ■■ ■■■■    ■■     ■■■■■■■  ■■     ■■ ■■■■■■■■ ■■    ■■ ■■    ■■  ■■■■■■ 
+::       ██████   ██████   ██    ██ ████ ████████  ██████  ████████  ████████ ██    ██ ██    ██  ██████
+::      ██    ██ ██    ██  ███   ██  ██     ██    ██    ██ ██     ██ ██       ███   ██ ██   ██  ██    █
+::      ██    ██ ██        ████  ██  ██     ██    ██    ██ ██     ██ ██       ████  ██ ██  ██   ██
+::      ██    ██ ██   ████ ██ ██ ██  ██     ██    ██    ██ ████████  ██████   ██ ██ ██ █████      ██████ 
+::      ██    ██ ██    ██  ██  ████  ██     ██    ██    ██ ██   ██   ██       ██  ████ ██  ██         ██
+::      ██    ██ ██    ██  ██   ███  ██     ██    ██    ██ ██    ██  ██       ██   ███ ██   ██  ██    ██
+::       ██████   ██████   ██    ██ ████    ██     ██████  ██     ██ ████████ ██    ██ ██    ██  ██████ 
+::
+::                    ████████ ███████ ███████ ██      ██████  ███████  ██    ██
+::                       ██    ██   ██ ██   ██ ██      ██   ██ ██   ██   ██  ██  
+::                       ██    ██   ██ ██   ██ ██      ██████  ██   ██     ██   
+::                       ██    ██   ██ ██   ██ ██      ██   ██ ██   ██   ██  ██
+::                       ██    ███████ ███████ ███████ ██████  ███████  ██    ██
+::
+::  Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
+::
+::  İletişim - Contact;
+::  --------------------------------------
+::  • Discord: OgnitorenKs#2737 
+::  •    Mail: ognitorenks@gmail.com
+::  •    Site: https://ognitorenks.blogspot.com/
+::
+:: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
-::  Created: Huseyin UZUNYAYLA / OgnitorenKs
-::  Contact;
-::  >> Discord: OgnitorenKs#2737 
-::  >>    Mail: ognitorenks@gmail.com
-::                                                >>   WEB PAGE   <<
-::                                         --------------------------------
-::                                         >>  ognitorenks.blogspot.com  <<
-:: ==============================================================================================================================
-
-VersionCheck:2.9
+VersionCheck:3.0
 Version8Check:2.7
 
-:01
+
+:: ------------------------------------------------------------------------------------------------------------------------------
+
 :: https://docs.microsoft.com/tr-TR/cpp/windows/latest-supported-vc-redist?view=msvc-170
 https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x86.EXE 05x86.exe
 https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x64.EXE 05x64.exe  
@@ -47,7 +53,7 @@ https://download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B
 https://download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B00/vc_redist.x64.exe 15.8x64
 
 :: https://www.java.com/tr/download/manual.jsp
-https://javadl.oracle.com/webapps/download/AutoDL?BundleId=246265_165374ff4ea84ef0bbd821706e29b123 javax64.exe
+https://javadl.oracle.com/webapps/download/AutoDL?BundleId=246474_2dee051a5d0647d5be72a7c0abff270e javax64.exe
 
 :: https://www.microsoft.com/en-us/download/details.aspx?id=20914
 https://download.microsoft.com/download/A/C/2/AC2C903B-E6E8-42C2-9FD7-BEBAC362A930/xnafx40_redist.msi xnafx40.msi
@@ -62,328 +68,168 @@ https://download.visualstudio.microsoft.com/download/pr/426c1ce7-52d0-4002-af0c-
 ::
 https://download.microsoft.com/download/8/4/A/84A35BF1-DAFE-4AE8-82AF-AD2AE20B6B14/directx_Jun2010_redist.exe DirectX.exe
 
-:02
-:: https://discord.com/
-https://discord.com/api/download?platform=win Discord.exe 
+:: ------------------------------------------------------------------------------------------------------------------------------
 
-:03
-:: https://www.whatsapp.com/download
-https://web.whatsapp.com/desktop/windows/release/x64/WhatsAppSetup.exe WhatsApp.exe 
+https://discord.com/api/download?platform=win Discord.exe https://discord.com/
 
-:04
-:: https://signal.org/download/
-https://updates.signal.org/desktop/signal-desktop-win-5.40.1.exe Signal.exe 
+https://web.whatsapp.com/desktop/windows/release/x64/WhatsAppSetup.exe WhatsApp.exe https://www.whatsapp.com/download
 
-:05
-:: https://desktop.telegram.org/
-https://telegram.org/dl/desktop/win64 Telegram.exe 
+https://updates.signal.org/desktop/signal-desktop-win-5.42.0.exe Signal.exe https://signal.org/download/
 
-:07
+https://telegram.org/dl/desktop/win64 Telegram.exe https://desktop.telegram.org/
+
 https://zoom.us/client/latest/ZoomInstallerFull.msi Zoom.msi 
 
-:08
-:: https://www.epicgames.com/store/tr/
-https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi EpicGames.msi
+https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi EpicGames.msi https://www.epicgames.com/store/tr/
+ 
+https://cdn.akamai.steamstatic.com/client/installer/SteamSetup.exe Steam.exe https://store.steampowered.com/about/
 
-:9
-:: https://store.steampowered.com/about/
-https://cdn.akamai.steamstatic.com/client/installer/SteamSetup.exe Steam.exe 
-
-:10
 https://cdn.gog.com/open/galaxy/client/2.0.37.384/setup_galaxy_2.0.37.384.exe GOG.exe 
 
-:11
-:: https://ubisoftconnect.com/tr-TR/
-https://ubi.li/4vxt9 Uplay.exe
+https://ubi.li/4vxt9 Uplay.exe https://ubisoftconnect.com/tr-TR/
 
-:12
-:: https://www.origin.com/tur/en-us/store/download
-https://www.dm.origin.com/download Origin.exe 
+https://www.dm.origin.com/download Origin.exe https://www.origin.com/tur/en-us/store/download
 
-:13
-:: https://www.cheatengine.org/
-https://d1tvmj3dyb0q0v.cloudfront.net/installer/8275591961/49233274 CheatEngine.exe
+https://d1tvmj3dyb0q0v.cloudfront.net/installer/27407828/382012985567 CheatEngine.exe https://www.cheatengine.org/
 
-:14
 https://api.wemod.com/client/download Wemod.exe 
 
-:15
-:: https://support.google.com/chrome/a/answer/7650032?hl=tr
-https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7BC1EEF5AA-2E5F-6440-0452-2DFFC3AB016F%7D%26lang%3Den%26browser%3D4%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dtrue%26ap%3Dx64-stable-statsdef_0%26brand%3DGCEA/dl/chrome/install/googlechromestandaloneenterprise64.msi GoogleChrome.msi
+:: https://chromeenterprise.google/browser/download/thank-you/?platform=WIN64_MSI&channel=stable&usagestats=0
+https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B8CF3A584-EC0E-D269-68F8-8F1B37310606%7D%26lang%3Den%26browser%3D4%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dtrue%26ap%3Dx64-stable-statsdef_0%26brand%3DGCEA/dl/chrome/install/googlechromestandaloneenterprise64.msi GoogleChrome.msi
 
-:16
 https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=tr Firefox.exe
 
-:17
 https://brave-browser-downloads.s3.brave.com/latest/brave_installer-x64.exe Brave.exe
 
-:18
 https://net.geo.opera.com/opera_gx/stable/windows OperaGX.exe
 
-:18
-:: https://www.microsoft.com/en-us/edge/business/download
-https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/502292d2-eb78-4ef3-84bd-56394537153c/MicrosoftEdgeEnterpriseX64.msi Edge.msi
+https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/71c25d04-9596-4481-90c5-a1070a31c64b/MicrosoftEdgeEnterpriseX64.msi Edge.msi https://www.microsoft.com/en-us/edge/business/download
 
-:19
-::ISLC
+https://github.com/henrypp/memreduct/releases/download/v.3.4/memreduct-3.4-setup.exe MemReduct.exe https://github.com/henrypp/memreduct/releases
 
-:20
-:: https://github.com/henrypp/memreduct/releases
-https://github.com/henrypp/memreduct/releases/download/v.3.4/memreduct-3.4-setup.exe MemReduct.exe
+https://ftp.linux.org.tr/tdf/libreoffice/stable/7.3.3/win/x86_64/LibreOffice_7.3.3_Win_x64.msi LibreOffice.msi https://tr.libreoffice.org/indir/libreoffice-taze-surum/
+ 
+https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/1900820071/AcroRdrDC1900820071_tr_TR.exe AdobeReader.exe https://get.adobe.com/tr/reader/enterprise/
 
-:21
-:: https://tr.libreoffice.org/indir/libreoffice-taze-surum/
-https://ftp.linux.org.tr/tdf/libreoffice/stable/7.3.2/win/x86_64/LibreOffice_7.3.2_Win_x64.msi LibreOffice.msi
+https://www.pdf-xchange.de/DL/tracker9/editor-msi64-tracker.php PdfXchange.msi https://pdf-xchange.eu/DL/pdf-xchange-editor.htm
 
-:22
-:: get.adobe.com/tr/reader/enterprise/
-https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/1900820071/AcroRdrDC1900820071_tr_TR.exe AdobeReader.exe
+https://calibre-ebook.com/dist/win64 Calibre.msi https://calibre-ebook.com/download_windows64
 
-:23
-:: https://pdf-xchange.eu/DL/pdf-xchange-editor.htm
-https://www.pdf-xchange.de/DL/tracker9/editor-msi64-tracker.php PdfXchange.msi
+https://www.7-zip.org/a/7z2107-x64.msi 7-Zip.msi https://www.7-zip.org/download.html
 
-:24
-:: https://calibre-ebook.com/download_windows64 
-https://calibre-ebook.com/dist/win64 Calibre.msi 
+https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-611tr.exe Winrar.exe https://www.win-rar.com/predownload.html?&L=5
 
-:25
-:: https://www.7-zip.org/download.html
-https://www.7-zip.org/a/7z2107-x64.msi 7-Zip.msi 
+https://download.kde.org/stable/kdenlive/22.04/windows/kdenlive-22.04.0-1.exe Kdenlive.exe https://kdenlive.org/en/download/
 
-:26
-:: https://www.win-rar.com/predownload.html?&L=5
-https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-611tr.exe Winrar.exe  
+https://github.com/OpenShot/openshot-qt/releases/download/v2.6.1/OpenShot-v2.6.1-x86_64.exe Openshot.exe https://www.openshot.org/tr/download/
 
-:27
-:: https://kdenlive.org/en/download/
-https://download.kde.org/stable/kdenlive/21.12/windows/kdenlive-21.12.3.exe Kdenlive.exe
+https://github.com/mltframework/shotcut/releases/download/v22.04.25/shotcut-win64-220425.exe Shotcut.exe https://shotcut.org/download/
 
-:28
-:: https://www.openshot.org/tr/download/
-https://github.com/OpenShot/openshot-qt/releases/download/v2.6.1/OpenShot-v2.6.1-x86_64.exe Openshot.exe
+https://download.kde.org/stable/krita/5.0.6/krita-x64-5.0.6-setup.exe Krita.exe https://krita.org/en/download/krita-desktop/
 
-:29
-:: https://shotcut.org/download/
-https://github.com/mltframework/shotcut/releases/download/v22.04.25/shotcut-win64-220425.exe Shotcut.exe
+https://download.gimp.org/mirror/pub/gimp/v2.10/windows/gimp-2.10.30-setup.exe Gimp.exe https://www.gimp.org/downloads/
 
-:30
-:: https://krita.org/en/download/krita-desktop/
-https://download.kde.org/stable/krita/5.0.5/krita-x64-5.0.5-setup.exe Krita.exe 
+https://cdn-fastly.obsproject.com/downloads/OBS-Studio-27.2.4-Full-Installer-x64.exe OBS.exe https://obsproject.com/tr/download
 
-:31
-:: https://www.gimp.org/downloads/
-https://download.gimp.org/mirror/pub/gimp/v2.10/windows/gimp-2.10.30-setup.exe Gimp.exe
+https://github.com/ShareX/ShareX/releases/download/v13.7.0/ShareX-13.7.0-setup.exe ShareX.exe https://github.com/ShareX/ShareX/releases
 
-:32
-:: https://obsproject.com/tr/download
-https://cdn-fastly.obsproject.com/downloads/OBS-Studio-27.2.4-Full-Installer-x64.exe OBS.exe
+https://github.com/audacity/audacity/releases/download/Audacity-3.1.3/audacity-win-3.1.3-64bit.exe Audacity.exe https://www.audacityteam.org/download/
 
-:33
-::https://github.com/ShareX/ShareX/releases
-https://github.com/ShareX/ShareX/releases/download/v13.7.0/ShareX-13.7.0-setup.exe ShareX.exe
+https://files2.codecguide.com/K-Lite_Codec_Pack_1698_Mega.exe Klite.exe https://codecguide.com/download_k-lite_codec_pack_mega.htm
 
-:34
-:: https://www.audacityteam.org/download/
-https://github.com/audacity/audacity/releases/download/Audacity-3.1.3/audacity-win-3.1.3-64bit.exe Audacity.exe
+https://ftp.linux.org.tr/videolan/vlc/3.0.17.4/win64/vlc-3.0.17.4-win64.exe VLCMediaPlayer.exe https://www.videolan.org/index.tr.html
 
-:35
-:: https://codecguide.com/download_k-lite_codec_pack_mega.htm
-https://files2.codecguide.com/K-Lite_Codec_Pack_1698_Mega.exe Klite.exe
+https://t1.daumcdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe PotPlayer.exe https://potplayer.daum.net/
 
-:36
-:: https://www.videolan.org/index.tr.html
-https://ftp.linux.org.tr/videolan/vlc/3.0.17.4/win64/vlc-3.0.17.4-win64.exe VLCMediaPlayer.exe
+https://www.aimp.ru/?do=download.file&id=4 Aimp.exe https://www.aimp.ru/?do=download&os=windows
+ 
+https://github.com/Tichau/FileConverter/releases/download/v1.2.3/FileConverter-1.2.3-x64-setup.msi FileConverter.msi https://github.com/Tichau/FileConverter/releases/
 
-:37
-:: https://www.aimp.ru/?do=download&os=windows
-https://www.aimp.ru/?do=download.file&id=4 Aimp.exe
+https://dn3.freedownloadmanager.org/6/latest/fdm_x64_setup.exe FreeDownloadManager.exe https://www.freedownloadmanager.org/
 
-:38
-:: https://github.com/Tichau/FileConverter/releases/
-https://github.com/Tichau/FileConverter/releases/download/v1.2.3/FileConverter-1.2.3-x64-setup.msi FileConverter.msi
+https://mirror2.internetdownloadmanager.com/idman640build11.exe?v=lt&filename=idman640build11.exe InternetDownloadManager.exe https://www.internetdownloadmanager.com/
 
-::https://www.any-video-converter.com/en3/for_video_free/
-https://www.any-video-converter.com/avc-free.exe AnyVideoConverter.exe
+https://proxy.byclickdownloader.com/ExternalSetup/InstallPage/ByClickDownloader-Setup.exe ByClick.exe https://www.byclickdownloader.com/tr/
 
-:39
-:: https://www.freedownloadmanager.org/
-https://dn3.freedownloadmanager.org/6/latest/fdm_x64_setup.exe FreeDownloadManager.exe
+https://netix.dl.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-4.4.2/qbittorrent_4.4.2_x64_setup.exe Qbittorrent.exe https://www.qbittorrent.org/download.php
 
-:40
-:: https://www.internetdownloadmanager.com/
-https://mirror2.internetdownloadmanager.com/idman640build11.exe?v=lt&filename=idman640build11.exe InternetDownloadManager.exe
+https://download.glasswire.com/GlassWireSetup.exe GlassWire.exe https://www.glasswire.com/
 
-:41
-:: https://www.byclickdownloader.com/tr/
-https://proxy.byclickdownloader.com/ExternalSetup/InstallPage/ByClickDownloader-Setup.exe ByClick.exe
+https://download.teamviewer.com/download/TeamViewer_Setup_x64.exe TeamViewer.exe https://www.teamviewer.com/tr/yukleme/windows/
 
-:42
-::https://www.qbittorrent.org/download.php
-https://netix.dl.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-4.4.2/qbittorrent_4.4.2_x64_setup.exe Qbittorrent.exe
+https://secure.logmein.com/hamachi.msi Hamachi.msi https://www.vpn.net/
 
-:43
-:: https://www.glasswire.com/
-https://download.glasswire.com/GlassWireSetup.exe GlassWire.exe
+https://www.strem.io/download?platform=windows&four=true Stremio.exe https://www.stremio.com/downloads
 
-:44
-:: https://www.teamviewer.com/tr/yukleme/windows/
-https://download.teamviewer.com/download/TeamViewer_Setup_x64.exe TeamViewer.exe
+https://files01.tchspt.com/temp/MSIAfterburnerSetup464.exe MSIAfterburner.exe https://www.msi.com/Landing/afterburner/graphics-cards
 
-:45
-:: https://www.vpn.net/
-https://secure.logmein.com/hamachi.msi Hamachi.msi
+http://www.hibitsoft.ir/HiBitUninstaller/HiBitUninstaller-setup-2.7.62.exe HibitUninstaller.exe http://www.hibitsoft.ir/Uninstaller.html
 
-:46
-:: https://www.stremio.com/downloads
-https://www.strem.io/download?platform=windows&four=true Stremio.exe
-
-:47
-:: https://www.msi.com/Landing/afterburner/graphics-cards
-https://files01.tchspt.com/temp/MSIAfterburnerSetup464.exe MSIAfterburner.exe
-
-:48
-:: http://www.hibitsoft.ir/Uninstaller.html
-http://www.hibitsoft.ir/HiBitUninstaller/HiBitUninstaller-setup-2.7.62.exe HibitUninstaller.exe
-
-:49
 https://docs.google.com/uc?export=download&id=1N_twp3rHSmIEfpZrg6RUalHA0AuJDtwa WiseCare365.zip
 
-:50
-:: https://www.iobit.com/en/iobit-unlocker.php#
-https://cdn.iobit.com/dl/unlocker-setup.exe Unlocker.exe
+https://cdn.iobit.com/dl/unlocker-setup.exe Unlocker.exe https://www.iobit.com/en/iobit-unlocker.php#
 
-:51
 http://www.omidsoft.com/download-ssd/setup.exe SSDBooster.exe 
 
-:52
-:: https://github.com/Open-Shell/Open-Shell-Menu/releases
-https://github.com/Open-Shell/Open-Shell-Menu/releases/download/v4.4.160/OpenShellSetup_4_4_160.exe OpenShell.exe
+https://github.com/Open-Shell/Open-Shell-Menu/releases/download/v4.4.160/OpenShellSetup_4_4_160.exe OpenShell.exe https://github.com/Open-Shell/Open-Shell-Menu/releases
 
-:53
-:: https://www.voidtools.com/tr-tr/
-https://www.voidtools.com/Everything-1.4.1.1015.x64-Setup.exe Everything.exe
+https://www.voidtools.com/Everything-1.4.1.1015.x64-Setup.exe Everything.exe https://www.voidtools.com/tr-tr/
 
-:54
-:: https://github.com/ChrisAnd1998/TaskbarX/releases
-https://github.com/ChrisAnd1998/TaskbarX/releases/download/1.7.6.0/TaskbarX_1.7.6.0_x64.zip TaskbarX.zip  
+https://github.com/ChrisAnd1998/TaskbarX/releases/download/1.7.6.0/TaskbarX_1.7.6.0_x64.zip TaskbarX.zip https://github.com/ChrisAnd1998/TaskbarX/releases
 
-:55
-:: https://stellarium.org/
-https://github.com/Stellarium/stellarium/releases/download/v0.22.1/stellarium-0.22.1-win64.exe Stellarium.exe
+https://github.com/Stellarium/stellarium/releases/download/v0.22.1/stellarium-0.22.1-win64.exe Stellarium.exe https://stellarium.org/
 
-:56
-:: Recuva
 https://download.ccleaner.com/rcsetup153.exe Recuva.exe
 
-:57
-:: AOMEI Partition Assistan
-https://www2.aomeisoftware.com/download/pa/PAssist_Std.exe AOMEI.exe
+https://www2.aomeisoftware.com/download/pa/PAssist_Std.exe AOMEI.exe 
 
-:58
-:: https://www.python.org
-https://www.python.org/ftp/python/3.10.4/python-3.10.4-amd64.exe Python.exe
+https://www.python.org/ftp/python/3.10.4/python-3.10.4-amd64.exe Python.exe https://www.python.org
 
-:59
-:: https://www.jetbrains.com/pycharm/download/#section=windows
-https://download-cdn.jetbrains.com/python/pycharm-professional-2022.1.exe PyCharm.exe
+https://download-cdn.jetbrains.com/python/pycharm-professional-2022.1.exe PyCharm.exe https://www.jetbrains.com/pycharm/download/#section=windows
 
-:60
-:: https://notepad-plus-plus.org/downloads/
-https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.4/npp.8.4.Installer.x64.exe Notepad.exe
+https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.4/npp.8.4.Installer.x64.exe Notepad.exe https://notepad-plus-plus.org/downloads/
 
-:61
-:: https://code.visualstudio.com/
-https://az764295.vo.msecnd.net/stable/dfd34e8260c270da74b5c2d86d61aee4b6d56977/VSCodeUserSetup-x64-1.66.2.exe VisualStudioCode.exe
+https://az764295.vo.msecnd.net/stable/dfd34e8260c270da74b5c2d86d61aee4b6d56977/VSCodeUserSetup-x64-1.66.2.exe VisualStudioCode.exe https://code.visualstudio.com/
 
-:62
-:: https://desktop.github.com/
-https://central.github.com/deployments/desktop/desktop/latest/win32 Github.exe
+https://central.github.com/deployments/desktop/desktop/latest/win32 Github.exe https://desktop.github.com/
 
-:63
-:: https://git-scm.com/download/win
-https://github.com/git-for-windows/git/releases/download/v2.36.0.windows.1/Git-2.36.0-64-bit.exe Git.exe
+https://github.com/git-for-windows/git/releases/download/v2.36.1.windows.1/Git-2.36.1-64-bit.exe Git.exe https://git-scm.com/download/win
 
-:64
-:: https://www.blender.org/download/
-https://www.blender.org/download/release/Blender3.1/blender-3.1.2-windows-x64.msi/ Blender.msi
+https://www.blender.org/download/release/Blender3.1/blender-3.1.2-windows-x64.msi/ Blender.msi https://www.blender.org/download/
 
-:65
-:: https://processhacker.sourceforge.io/downloads.php
-https://github.com/processhacker/processhacker/releases/download/v2.39/processhacker-2.39-setup.exe Processhacker.exe
+https://github.com/processhacker/processhacker/releases/download/v2.39/processhacker-2.39-setup.exe Processhacker.exe https://processhacker.sourceforge.io/downloads.php
 
-:66
 https://download.anydesk.com/AnyDesk.exe AnyDesk.exe
 
-:67
-:68
-:69
-:70
-:71
+https://m1.ppy.sh/r/osu!install.exe osu.exe https://osu.ppy.sh/home/download
 
-:72
-::https://osu.ppy.sh/home/download
-https://m1.ppy.sh/r/osu!install.exe osu.exe
+https://redirect.wargaming.net/WoT/latest_web_install_eu WorldOfTanks.exe https://worldoftanks.eu/tr/game/download/
 
-:73
-:: https://worldoftanks.eu/tr/game/download/
-https://redirect.wargaming.net/WoT/latest_web_install_eu WorldOfTanks.exe
-
-:74
-::
 https://ys-api-os.mihoyo.com/event/download_porter/link/ys_global/genshinimpactpc/default GenshinImpact.exe
 
-:75
-:: https://signup.tr.leagueoflegends.com/tr/signup/redownload?page_referrer=index
-https://lol.secure.dyn.riotcdn.net/channels/public/x/installer/current/live.tr.exe LeagueOfLegendsTR.exe
+https://lol.secure.dyn.riotcdn.net/channels/public/x/installer/current/live.tr.exe LeagueOfLegendsTR.exe https://signup.tr.leagueoflegends.com/tr/signup/redownload?page_referrer=index
 
-:76
-:: https://signup.euw.leagueoflegends.com/en/signup/redownload?page_referrer=index
-https://lol.secure.dyn.riotcdn.net/channels/public/x/installer/current/live.euw.exe LeagueOfLegendsEUW.exe
+https://lol.secure.dyn.riotcdn.net/channels/public/x/installer/current/live.euw.exe LeagueOfLegendsEUW.exe https://signup.euw.leagueoflegends.com/en/signup/redownload?page_referrer=index
 
-:77
-:: https://blitz.gg/download
-https://blitz.gg/download/win Blitz.exe
-
-:78
-:: https://playvalorant.com/tr-tr/download/
-https://valorant.secure.dyn.riotcdn.net/channels/public/x/installer/current/live.live.eu.exe Valorant.exe
-
+https://valorant.secure.dyn.riotcdn.net/channels/public/x/installer/current/live.live.eu.exe Valorant.exe https://playvalorant.com/tr-tr/download/
 
 :GoogleDrive
-:G1
-https://docs.google.com/uc?export=download&id=1BNmQ1JSes4hiFu3mPR4mJP10FNX68NxV Links.zip
+
 https://docs.google.com/uc?export=download&id=1aCBwYuFCoj3uMy2BsTgJc5vKYjtOJd0b Links.txt
 
-:G2
 https://docs.google.com/uc?export=download&id=18kwIyPhIpk0wS-LbwMhsi4ocXJk0R-rG Oldico.zip
 
-:G3
 https://docs.google.com/uc?export=download&id=1D6TR20HEo6diHH_g53GxPL5Tpdg3cT2m Newico.zip
 
-:G4
 https://docs.google.com/uc?export=download&id=1Fw7Z61gQ9gw6KX4F1tWZtZlrk45JMrLe Setup.zip
 
-:G5
 https://docs.google.com/uc?export=download&id=1UwWfsuVhuj_KJKbCC5_4rVFWZGMD7_um ISLC.zip
 
-:G6
-https://docs.google.com/uc?export=download^&id=1EmNVzyXjEO1mYW0hFG4ZdGYNIzj1_lCN Versioncheck.txt
+https://docs.google.com/uc?export=download&id=1z7u4XZQVNDWN3mflWZBW6C6nIf0lbuUo EagleGet.zip
 
-:Removed
-:r1
-:: EagleGet
-http://dl.eagleget.com/latest/eagleget_setup.exe EagleGet.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
+https://docs.google.com/uc?export=download&id=1ZyAtr2evEfqbnnd1F8GOUCcW2fqJhsNi Folder2ISO.zip
 
-:r2
-:: https://app.prntscr.com/tr/download.html
-https://app.prntscr.com/build/setup-lightshot.exe LightShoot.exe
 
-:r3
-:: http://www.pcfreetime.com/formatfactory/index.php?language=en
-http://public.pcfreetime.com/FFSetup5.9.0.0.exe FormatFactory.exe
 
-:r4
-:: https://www.utorrent.com/intl/tr/desktop/compare/
-https://download-hr.utorrent.com/track/stable/endpoint/utorrent/os/windows Utorrent.exe
+
 
