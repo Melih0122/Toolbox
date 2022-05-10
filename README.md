@@ -56,6 +56,7 @@
 # OGNİTORENKS TOOLBOX İÇERİĞİ
 ## 1 - Online Katılımsız Uygulama Yükleyici;
 Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar ücretsiz alternatifler arasında seçilmiştir. WinRaR hariç o da ücretli ama ücretsiz bir yazılımdır.
+
 ![cmd_NGRMNYtBkI](https://user-images.githubusercontent.com/93199689/167620560-e294b0db-eeb2-490a-ad90-d79a19d7ffe9.png)
    
 	• 1 - All in One Runtimes: C++ 2005-2022 / Java / XNA Framework / OpenAL / DirectX. Bu programlar oyunlar ve bazı uygulamalarda sorun yaşamamanız için mutlaka kurulmalıdır.
@@ -153,6 +154,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 #### OgnitorenKs Toolbox
 	• 2 - Bu bölüm işletim sistemine göre değişiklik göstermektedir. Windows 11 ve Windows 10 için iki ayrı bölüme ayrılmıştır.
 ### • 2 - Windows 10 Düzenleme
+
 ![cmd_kRrG2UwL2l](https://user-images.githubusercontent.com/93199689/167621037-c8742c3f-b6f4-44f9-b64f-d579d6923ca5.png)
 
 	• 1 - Taskbar saat yanı simge ayarı [GÖSTER/GİZLE]: 
@@ -184,6 +186,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	     •[Yeni]: 2 - Windows 10 yeni simgeleri yükler.
 	• 9 - Güncellemeleri 2050 yılına kadar ertele: Windows Update hizmetini 2050 yılına kadar etkisiz hale getirir.
 ### • 53 - Windows 11 Düzenleme
+
 ![cmd_4yRsA2SSyl](https://user-images.githubusercontent.com/93199689/167621089-ae0c7491-8986-465f-bb2d-4aff40f65c9b.png)
 
 	• 1 - Taskbar Boyut [Küçük/Orta/Büyük]: 22H2'de çalışmıyor.
@@ -221,6 +224,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip daha sonra aç / kapat baş harflerini eklemek gerekiyor.
 
 Örnek: 1a / 2k / 4A / 10K / 23a / 24k  
+
 ![cmd_3A4sdOfn0w](https://user-images.githubusercontent.com/93199689/167621129-cd0f8968-03af-47af-8151-6628d70c8762.png)
 
 	• 1 [A/K]- Bluetooth hizmeti : Bluetooth hizmetlerini kapatır açar.
@@ -251,6 +255,7 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 	
 ### • 4 - Windows Düzenleme:
 Mavi renkli işlem numaraları 20 numaralı işlem ile alakalıdır.
+
 ![cmd_eIUWywol1k](https://user-images.githubusercontent.com/93199689/167622688-b944e52a-a223-4f44-9a62-cba3d9f3a5ca.png)
 
 	• 1 - WIM / ESD Okuyucu: install.wim ve install.esd dosyalarının içeriği hakkında bilgi verir.
@@ -329,6 +334,7 @@ Mavi renkli işlem numaraları 20 numaralı işlem ile alakalıdır.
 ![cmd_uyi37mqwQq](https://user-images.githubusercontent.com/93199689/167622767-83009c2d-41b5-42f7-8634-e566e84b02f5.png)
 
 ### • 5 - Kullancı Hesap Yönetimi: 
+
 ![cmd_syq0J0s2EV](https://user-images.githubusercontent.com/93199689/167623117-71bfc629-f729-48a4-be7c-561b215cb878.png)
 
 	• 1 - Administrator Aktifleştir: Administrator hesabını açar.
@@ -353,10 +359,12 @@ SLMGR.VBS komutlarını içermektedir. Crack tarzı işlemler bulunmamaktadır.
 
 ### • 7 - Sistem Hakkında:
 - Sistem ve donanım hakkında bilgi verir.
+- 
 ![cmd_mDH1JvgaDM](https://user-images.githubusercontent.com/93199689/167623663-1d3cde57-4f54-48fb-bbce-a33a8e8f220c.png)
 
 ### • 8 - Güç Seçenekleri [PowerChoice]:  
 Güç seçeneklerini hızlıca değiştirmeyi sağlar
+
 ![cmd_EAcvH91Ach](https://user-images.githubusercontent.com/93199689/167623503-db0856af-bffd-4ff0-bd0d-22267cc6d77b.png)
 
 ### • 9 - Güncelleme Sonrası Temizlik:
@@ -364,11 +372,13 @@ Güç seçeneklerini hızlıca değiştirmeyi sağlar
 ### • 10 - Windows / Market Onar:
 	• Microsoft'un önerdiği bütün onarma seçeneklerini uygular.
 ### • 11 - Ping Ölçer: 
-	• İçerisinde belirli sitelerin ping durumlarını otomatik gösterir. Alt bölümde yer alan "Ping ölç" bölümüyle istediğiniz site ve IP'nin pingini ölçebilirsiniz.
+İçerisinde belirli sitelerin ping durumlarını otomatik gösterir. Alt bölümde yer alan "Ping ölç" bölümüyle istediğiniz site ve IP'nin pingini ölçebilirsiniz.
+	
 ![cmd_RYynOfcKdu](https://user-images.githubusercontent.com/93199689/167626925-b8e56f24-a69a-4b84-b71b-42f91aafcc70.png)
 
 ### • 12 - Fat32 to NTFS: 
 	• Fat32 olarak formatlanmış USB diskleri veri kaybı olmadan NTFS'ye çevirir. Disk harfini girmeniz gerekmektedir.
+	
 ![cmd_IbpcglgIoZ](https://user-images.githubusercontent.com/93199689/167626995-480e24ba-31b6-4580-ad1d-40fffc936687.png)
 
 ### • 13 - Kayıtlı Wifi Bilgileri:	 
@@ -376,6 +386,7 @@ Güç seçeneklerini hızlıca değiştirmeyi sağlar
 	• Çalışmasını toolbox'a eklediği için Archley'e teşekkür ederim.
 ### • 14 - Zaman Ayarlı PC Kapat:
 	• Seçilen belirli bir süreden sonra PC otomatik kapatır.
+	
 ![cmd_3pp0ccih2b](https://user-images.githubusercontent.com/93199689/167627106-7906eed5-3736-4702-80b1-7fee90cf81a9.png)
 
 ### • 15 - Appx - Güncelleme Yükleyici:
@@ -385,6 +396,7 @@ Appx ve Update dosyalarını yüklemenizi sağlayan bölümdür.
 
 ### • Z - Toolbox Ayarları:
 Toolbox üzerinde ayar yapıp. Bilgi alabileceğiniz bölüm.
+
 ![cmd_0jeB0r9Vzt](https://user-images.githubusercontent.com/93199689/167627787-8c0fb5ca-4a3a-4376-8467-8f8b6824d7a0.png)
 
 	• 1 [A/K] - Otomatik Güncelleme: Güncelleştirmeleri otomatik olarak takip edip etmeyeceğini ayarlayabilirsiniz.
@@ -397,5 +409,3 @@ Toolbox üzerinde ayar yapıp. Bilgi alabileceğiniz bölüm.
 	•       8 - Github Proje Sayfası
 	•       9 - Güncelleme Notları
 	
-	
-
