@@ -153,7 +153,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 
 # OgnitorenKs Toolbox
 2 - Bu bölüm işletim sistemine göre değişiklik göstermektedir. Windows 11 ve Windows 10 için iki ayrı bölüme ayrılmıştır.
-### • 2 - Windows 10 Edit
+### 2 - Windows 10 Edit
 
 ![cmd_kRrG2UwL2l](https://user-images.githubusercontent.com/93199689/167621037-c8742c3f-b6f4-44f9-b64f-d579d6923ca5.png)
 
@@ -185,7 +185,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	     •[Eski]: 1 - Windows 10 eski (Varsayılan) simgeleri yükler.
 	     •[Yeni]: 2 - Windows 10 yeni simgeleri yükler.
 	• 9 - Güncellemeleri 2050 yılına kadar ertele: Windows Update hizmetini 2050 yılına kadar etkisiz hale getirir.
-### • 53 - Windows 11 Edit
+### 2 - Windows 11 Edit
 
 ![cmd_4yRsA2SSyl](https://user-images.githubusercontent.com/93199689/167621089-ae0c7491-8986-465f-bb2d-4aff40f65c9b.png)
 
@@ -220,7 +220,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 		
 	• 8 - Gpedit.msc (Yerel Grup ilkesi) [Ekle]: Windows Home ve Home Single Language sürümlerine "Gpedit.msc" ekler.
 	• 9 - Güncellemeleri 2050 yılına kadar ertele: Windows Update hizmetini 2050 yılına kadar etkisiz hale getirir.
-### • 3 - Kapatılan Servisleri Yönet
+### 3 - Kapatılan Servisleri Yönet
 Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip daha sonra aç / kapat baş harflerini eklemek gerekiyor.
 
 Örnek: 1a / 2k / 4A / 10K / 23a / 24k  
@@ -253,7 +253,7 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 	• 24 [A/K]- Bellek Sıkıştırma hizmeti: Bellek içindeki verinin belli bir bölümünü sıkıştıran hizmeti kapatır ve açar. Gecikme düşürmek için hizmet kapalı tutulabilir.
 	• 25 [A/K]- Core Parking (CPU Çekirdek Uyku Modu): İşlemci çekirdeklerinin sürekli tam yükte çalışmasını istiyorsanız hizmeti kapatabilirsiniz. Tam tersi durum için açık hale getirebilirsiniz.
 	
-### • 4 - Windows Düzenleme:
+### 4 - Windows Düzenleme:
 Mavi renkli işlem numaraları 20 numaralı işlem ile alakalıdır.
 
 ![cmd_eIUWywol1k](https://user-images.githubusercontent.com/93199689/167622688-b944e52a-a223-4f44-9a62-cba3d9f3a5ca.png)
@@ -333,7 +333,7 @@ Mavi renkli işlem numaraları 20 numaralı işlem ile alakalıdır.
 	     
 ![cmd_uyi37mqwQq](https://user-images.githubusercontent.com/93199689/167622767-83009c2d-41b5-42f7-8634-e566e84b02f5.png)
 
-### • 5 - Kullancı Hesap Yönetimi: 
+### 5 - Kullancı Hesap Yönetimi: 
 
 ![cmd_syq0J0s2EV](https://user-images.githubusercontent.com/93199689/167623117-71bfc629-f729-48a4-be7c-561b215cb878.png)
 
@@ -345,7 +345,7 @@ Mavi renkli işlem numaraları 20 numaralı işlem ile alakalıdır.
 	• 6 - Şifremi unuttum: Şifre değiştirmek veya şifre oluşturmak için bu bölüm kullanılabilir.
 	• 7 - Mevcut Kullanıcıları Göster [*]: Sistemde kayıtlı kullanıcıları gösterir.
 
-### • 6 - Lisans Yönetimi: 
+### 6 - Lisans Yönetimi: 
 SLMGR.VBS komutlarını içermektedir. Crack tarzı işlemler bulunmamaktadır.
 
 ![cmd_XbdXB7HxRa](https://user-images.githubusercontent.com/93199689/167623153-126106ea-df07-48e6-bb56-7ac03cb65b19.png)
@@ -357,44 +357,44 @@ SLMGR.VBS komutlarını içermektedir. Crack tarzı işlemler bulunmamaktadır.
 	• 5 - Lisans Sil [upk]: Sistem kullandığınız lisansı siler.
 	• 6 - Lisans Süre Sıfırla [rearm]: Windows 30 günlük deneme sürümü süresini 3 defa uzatabilirsiniz.
 
-### • 7 - Sistem Hakkında:
+### 7 - Sistem Hakkında:
 Sistem ve donanım hakkında bilgi verir.
 
 ![cmd_mDH1JvgaDM](https://user-images.githubusercontent.com/93199689/167623663-1d3cde57-4f54-48fb-bbce-a33a8e8f220c.png)
 
-### • 8 - Güç Seçenekleri [PowerChoice]:  
+### 8 - Güç Seçenekleri [PowerChoice]:  
 Güç seçeneklerini hızlıca değiştirmeyi sağlar
 
 ![cmd_EAcvH91Ach](https://user-images.githubusercontent.com/93199689/167623503-db0856af-bffd-4ff0-bd0d-22267cc6d77b.png)
 
-### • 9 - Güncelleme Sonrası Temizlik:
-	• Düzenlediğim sistemleri güncelleme sonrası ilk haline getirmeye yarar.	
-### • 10 - Windows / Market Onar:
-	• Microsoft'un önerdiği bütün onarma seçeneklerini uygular.
-### • 11 - Ping Ölçer: 
+### 9 - Güncelleme Sonrası Temizlik:
+Düzenlediğim sistemleri güncelleme sonrası ilk haline getirmeye yarar.	
+### 10 - Windows / Market Onar:
+Microsoft'un önerdiği bütün onarma seçeneklerini uygular.
+### 11 - Ping Ölçer: 
 İçerisinde belirli sitelerin ping durumlarını otomatik gösterir. Alt bölümde yer alan "Ping ölç" bölümüyle istediğiniz site ve IP'nin pingini ölçebilirsiniz.
 	
 ![cmd_RYynOfcKdu](https://user-images.githubusercontent.com/93199689/167626925-b8e56f24-a69a-4b84-b71b-42f91aafcc70.png)
 
-### • 12 - Fat32 to NTFS: 
+### 12 - Fat32 to NTFS: 
 Fat32 olarak formatlanmış USB diskleri veri kaybı olmadan NTFS'ye çevirir. Disk harfini girmeniz gerekmektedir.
 	
 ![cmd_IbpcglgIoZ](https://user-images.githubusercontent.com/93199689/167626995-480e24ba-31b6-4580-ad1d-40fffc936687.png)
 
-### • 13 - Kayıtlı Wifi Bilgileri [ARCHLEY]:	 
+### 13 - Kayıtlı Wifi Bilgileri [ARCHLEY]:	 
 Bu bölümde sisteme girdiğiniz Wifi isim ve şifrelerini görebilirsiniz. Çalışmasını toolbox'a eklediği için Archley'e teşekkür ederim.
 
-### • 14 - Zaman Ayarlı PC Kapat:
+### 14 - Zaman Ayarlı PC Kapat:
 Seçilen belirli bir süreden sonra PC otomatik kapatır.
 	
 ![cmd_3pp0ccih2b](https://user-images.githubusercontent.com/93199689/167627106-7906eed5-3736-4702-80b1-7fee90cf81a9.png)
 
-### • 15 - Appx - Güncelleme Yükleyici:
+### 15 - Appx - Güncelleme Yükleyici:
 Appx ve Update dosyalarını yüklemenizi sağlayan bölümdür. 
 	• Appx dosyalarıyla ilgili detaylı bilgi için bakınız:https://ognitorenks.blogspot.com/2021/11/rehber-powershell-appx-komutlarnn_9.html
 	• Güncelleme dosyalarını indirebileceğiniz site: https://www.catalog.update.microsoft.com/
 
-### • Z - Toolbox Ayarları:
+### Z - Toolbox Ayarları:
 Toolbox üzerinde ayar yapıp. Bilgi alabileceğiniz bölüm.
 
 ![cmd_0jeB0r9Vzt](https://user-images.githubusercontent.com/93199689/167627787-8c0fb5ca-4a3a-4376-8467-8f8b6824d7a0.png)
