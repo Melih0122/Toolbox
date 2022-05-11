@@ -7,14 +7,14 @@
 -------------------
  ► Versiyon 3.0.2 - Ara Güncelleme
 -------------------
-Yayınlanma Tarihi: 11.05.2021
+Yayınlanma Tarihi: 11.05.2022
 
 	• Simge hatalarını onar bölümü yeniden eklendi. [Legnica'nın isteğiyle]
 
 -------------------
  ► Versiyon 3.0.1 - Ara Güncelleme
 -------------------
-Yayınlanma Tarihi: 10.05.2021
+Yayınlanma Tarihi: 10.05.2022
 
 	 • Windows Editör > Setup Edit bölümündeki hata giderildi.
 	 • Windows Editör > Regedit Topla bölümündeki komut hatası giderildi.
