@@ -10,7 +10,7 @@
 - ► Mail: ognitorenks@gmail.com
 - ► Site: https://ognitorenks.blogspot.com/
 
-![cmd_0SjVn68NFD](https://user-images.githubusercontent.com/93199689/167671847-d1c4d1b9-e00c-4740-910c-ce6385f55531.png)
+![cmd_JujarHcRcq](https://user-images.githubusercontent.com/93199689/170891954-badb7072-656f-4e38-a862-c7cffe54a54b.png)
 
 ### OgnitorenKs.Toolbox.zip dosyaları
 - ► Toolbox.TR  = https://docs.google.com/uc?export=download&id=19uNjxzHFY5A6g4mFg8FirFTnyL2R0HZ3
@@ -415,7 +415,7 @@ Performans ile ilgili ayarları uygular. İşlem öncesi değiştirilecek veya e
 ### Z - Toolbox Ayarları:
 Toolbox üzerinde ayar yapıp. Bilgi alabileceğiniz bölüm.
 
-![cmd_0jeB0r9Vzt](https://user-images.githubusercontent.com/93199689/167627787-8c0fb5ca-4a3a-4376-8467-8f8b6824d7a0.png)
+![cmd_gs9r3NZI6k](https://user-images.githubusercontent.com/93199689/170891940-52449342-b2fe-4fbb-8e8a-c90fadc8b95f.png)
 
 	• 1 [A/K] - Otomatik Güncelleme: Güncelleştirmeleri otomatik olarak takip edip etmeyeceğini ayarlayabilirsiniz.
 	• 2 [A/K] - Yönetici Yetkisi: Kısayol üzerinden varsayılan hale getirilse de farklı durumlar için eklenmiştir.
