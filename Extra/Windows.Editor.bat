@@ -108,9 +108,10 @@ set /p WindowsEditMenu= %R%[92m İşlem : %R%[0m
 	if %WindowsEditMenu%==28 (Call :HyperV)
 	if %WindowsEditMenu%==19 (Call :katilimsiz)
 	if %WindowsEditMenu%==20 (Call :degisken3)
+	if %WindowsEditMenu%==01 (Call :manuel)
 ) else
 	goto WindowsEditMenu
-
+	
 :WimReader
 Call :Panel "%R%[100m                        WIM / ESD Okuyucu                         %R%[0m"
 Call :degisken1
@@ -337,8 +338,12 @@ RD /S /Q "%Location%\Edit\Mount" > NUL 2>&1
 mkdir "%Location%\Edit\Mount" > NUL 2>&1
 set Mount=%Location%\Edit\Mount
 
-dir /b %Location%\Files\Setup.zip
-	if %errorlevel%==1 (Call :FilesDownloader Setup.zip)
+dir /b %Location%\Files\Setup10.zip > NUL 2>&1
+	if %errorlevel%==1 (Call :FilesDownloader Setup.zip
+						Call :Powershell "Expand-Archive -Force '%Location%\Files\Setup.zip' '%Location%\Files'")
+dir /b %Location%\Files\Setup11.zip > NUL 2>&1
+	if %errorlevel%==1 (Call :FilesDownloader Setup.zip
+						Call :Powershell "Expand-Archive -Force '%Location%\Files\Setup.zip' '%Location%\Files'")
 
 Call :Panel "%R%[100m                           Setup Düzenle                         %R%[0m"
 Call :degisken4
@@ -350,9 +355,9 @@ Dism /Mount-Image /ImageFile:%MainWim% /MountDir:"%Location%\Edit\Mount" /Index:
 cls
 Call :Panel2 "%R%[96m İşlem yapılacak Windows sürümünü seçiniz%R%[0m"
 set /p winsetup=%R%[97m  ►%R%[92m [ Windows 10:%R%[1;97m 1 %R%[35m/%R%[92m Windows 11:%R%[1;97m 2 %R%[92m] : %R%[0m
-	if %winsetup%==1 (%NSudo% Powershell -command "Expand-Archive -Force '%Location%\Files\Setup.zip' '%Location%\Edit\Mount'"
-					  %NSudo% DEL /F /Q /A %Mount%\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\BypassToolbox.lnk)
-	if %winsetup%==2 (%NSudo% Powershell -command "Expand-Archive -Force '%Location%\Files\Setup.zip' '%Location%\Edit\Mount'")
+	if %winsetup%==1 (%NSudo% Powershell -command "Expand-Archive -Force '%Location%\Files\Setup10.zip' '%Location%\Edit\Mount'")
+	if %winsetup%==2 (%NSudo% Powershell -command "Expand-Archive -Force '%Location%\Files\Setup10.zip' '%Location%\Edit\Mount'")
+					  %NSudo% Powershell -command "Expand-Archive -Force '%Location%\Files\Setup11.zip' '%Location%\Edit\Mount'")
 echo.
 Call :Panel2 "%R%[96m Lerup Launcher menü konumunu seçiniz%R%[0m"
 set /p barkonum=%R%[97m  ► %R%[92m[%R%[92m Sol:%R%[1;97m 1 %R%[35m/%R%[92m Üst:%R%[1;97m 2 %R%[35m/%R%[92m Sağ:%R%[1;97m 3 %R%[35m/%R%[92m Alt:%R%[1;97m 4 %R%[92m] : %R%[0m 
@@ -363,7 +368,9 @@ reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "UseLargeMenus" /t R
 reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "AlwaysOnTop" /t REG_SZ /d 1 /f > NUL 2>&1
 reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "AutoHide" /t REG_SZ /d 0 /f > NUL 2>&1
 reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "Center" /t REG_SZ /d 1 /f > NUL 2>&1
-reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "Buttons" /t REG_SZ /d "Power.lnk;BypassToolbox.lnk;setup.exe.lnk;Explorer++.lnk;Start Menu.lnk;" /f > NUL 2>&1
+echo %winsetup% > NUL 2>&1
+	if %winsetup%==1 (reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "Buttons" /t REG_SZ /d "Power.lnk;setup.exe.lnk;Explorer++.lnk;Start Menu.lnk;" /f > NUL 2>&1)
+	if %winsetup%==2 (reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "Buttons" /t REG_SZ /d "Power.lnk;BypassToolbox.lnk;setup.exe.lnk;Explorer++.lnk;Start Menu.lnk;" /f > NUL 2>&1)
 Call :RegeditCollet ::
 Call :ImageUnmount ::
 goto :eof
