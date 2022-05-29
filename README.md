@@ -422,8 +422,9 @@ Toolbox üzerinde ayar yapıp. Bilgi alabileceğiniz bölüm.
 	• 3 [A/K] - Log Kayıt: Yapılan işlemlerden sonra kayıt ayarını açıp kapatabilirsiniz.
 	• 4 [A/K] - Tarayıcı eklenti ayarı: Tarayıcılar yüklenirken eklenti yüklenip yüklenmeyeceğini ayarlayabilirsiniz.
 	•       5 - Masaüstüne kısayol oluştur.
-	•       6 - Toolbox Rehber
-	•       7 - ognitorenks.blogspot.com
-	•       8 - Github Proje Sayfası
-	•       9 - Güncelleme Notları
+	•       6 - Güncelleme Sıfırla
+	•       7 - Toolbox Rehber
+	•       8 - ognitorenks.blogspot.com
+	•       9 - Github Proje Sayfası
+	•      10 - Güncelleme Notları
 	
