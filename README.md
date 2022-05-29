@@ -404,10 +404,12 @@ SHA-256 değerlerini karşılaştırmayı sağlar.
 
 ### 19 - Kaldırılamayan Uygulamalar: 
 Kaldırılması Microsoft tarafından engellenen bazı uygulamaları kaldırmayı sağlar.
+
 ![cmd_BAUX3GKM8L](https://user-images.githubusercontent.com/93199689/170891816-105ab12a-b99d-41a5-89e4-2bb344b5efde.png)
 
 ### 20 - Performans Optimizasyonu:
 Performans ile ilgili ayarları uygular. İşlem öncesi değiştirilecek veya eklenecek regedit kayıtları tespit edilir ve yedekleri alınır.
+
 ![cmd_CN3buz2O03](https://user-images.githubusercontent.com/93199689/170891881-ba7eb450-2627-4722-aaed-58a1fe011fc7.png)
 
 ### Z - Toolbox Ayarları:
