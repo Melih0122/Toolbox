@@ -9,15 +9,16 @@
 -------------------
 Yayınlanma Tarihi: 29.05.2022
 
- • Optimizasyon aracındaki NVIDA ekran kartı bölümündeki yedekleme hatası giderildi.
- • Kaldırılamayan uygulamalar bölümünde Python yükleme ekranı düzeltildi.
+	• Optimizasyon aracındaki NVIDA ekran kartı bölümündeki yedekleme hatası giderildi.
+ 	• Kaldırılamayan uygulamalar bölümünde Python yükleme ekranı düzeltildi.
+
 
 -------------------
  ► Versiyon 3.1.1 - Ara Güncelleme
 -------------------
 Yayınlanma Tarihi: 29.05.2022
 
- 	  	  • Güncelleme sonrası bölümündeki bazı uygulama kaldırma komutları iptal edildi.
+	• Güncelleme sonrası bölümündeki bazı uygulama kaldırma komutları iptal edildi.
 
 -----------------
  ► Versiyon 3.1 -
