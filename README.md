@@ -57,7 +57,7 @@
 ## 1 - Online Katılımsız Uygulama Yükleyici;
 Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar ücretsiz alternatifler arasında seçilmiştir. WinRaR hariç o da ücretli ama ücretsiz bir yazılımdır.
 
-![cmd_NGRMNYtBkI](https://user-images.githubusercontent.com/93199689/167620560-e294b0db-eeb2-490a-ad90-d79a19d7ffe9.png)
+![cmd_jTG2I6aiRN](https://user-images.githubusercontent.com/93199689/170891582-a12acabd-d861-4ed2-a30d-896546b0699d.png)
    
 	• 1 - All in One Runtimes: C++ 2005-2022 / Java / XNA Framework / OpenAL / DirectX. Bu programlar oyunlar ve bazı uygulamalarda sorun yaşamamanız için mutlaka kurulmalıdır.
 #### ► Mesajlaşma Uygulamaları 
@@ -74,7 +74,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	• 11 - Origin: EA Games şirketinin oyun kütühane uygulamasıdır.
 #### ► Hile Uygulamaları 
 	Online oyunlar için değil :)
-	• 12 - Cheat Engine: Hile motorudur. Online oyunlarda denemeyin ban yeme ihtimaliniz yüksek. Hikayeli oyunlarda kullanılabilir. (Hileye hayır) 
+	• 12 - HATALI: Cheat Engine: Hile motorudur. Online oyunlarda denemeyin ban yeme ihtimaliniz yüksek. Hikayeli oyunlarda kullanılabilir. (Hileye hayır) 
 	• 13 - Wemod: Hile kütüphanesidir. Yalnızca hikayeli oyunlarda işe yarar.
 #### ► Ram Temizleme Uygulamaları
 	• 14 - ISLC: RamStandby(bekleme) listesini temizlemeye yarayan uygulamadır.
@@ -97,59 +97,60 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	• 28 - OBS Studio: Ekran kaydı alma işlemi dışında canlı yayınlar içinde kullanılır. Kayıtlarınıza marka logosu atmaz.
 	• 29 - ShareX: Ekran görüntüsü (SS) alma yazılımıdır. Ses kaydı almadan ekran kaydedebilir. GIF oluştabilir. Daha sayısız özellik bulunur.
 	• 30 - Audacity: Ses düzeltme uygulamasıdır.
+	• 31 - JpegView: Görsel açma uygulaması.
 #### ► Multimedia Uygulamaları
-	• 31 - K-Lite Codec: Video izleme uygulamasıdır. Açamayacağı video dosyası yoktur. 
-	• 32 - VLC Media Player: Video izleme uygulamasıdır. Açamayacağı video dosyası yoktur. Videolarla ilgili çok fazla özelliğe sahiptir.
-	• 33 - PotPlayer: Video izleme uygulamasıdır.
-	• 34 - Aimp: Ses dosyalarını açmaya yarayan uygulamadır. Tasarım ve özellikle olarak çok beğendiğimi belirtmek isterim.
+	• 32 - K-Lite Codec: Video izleme uygulamasıdır. Açamayacağı video dosyası yoktur. 
+	• 33 - VLC Media Player: Video izleme uygulamasıdır. Açamayacağı video dosyası yoktur. Videolarla ilgili çok fazla özelliğe sahiptir.
+	• 34 - PotPlayer: Video izleme uygulamasıdır.
+	• 35 - Aimp: Ses dosyalarını açmaya yarayan uygulamadır. Tasarım ve özellikle olarak çok beğendiğimi belirtmek isterim.
 #### ► İndirme Araçları
-	• 35 - Free Download Manager: İndirme işlemlerinde kullanılacak yardımcı program. Torrent indirme desteğide bulunmaktadır.
-	• 36 - Internet Download Manager: Free Download Manager ile hemen hemen aynı işlevlere sahiptir.
-	• 37 - EagleGet: İndirme yardımcısı.
-	• 38 - ByClick Downloader: Youtube'dan video indirmeye yarayan uygulamadır.
-	• 39 - Qbittorrent: Torrent indirme yazılımıdır.
+	• 36 - Free Download Manager: İndirme işlemlerinde kullanılacak yardımcı program. Torrent indirme desteğide bulunmaktadır.
+	• 37 - Internet Download Manager: Free Download Manager ile hemen hemen aynı işlevlere sahiptir.
+	• 38 - EagleGet: İndirme yardımcısı.
+	• 39 - ByClick Downloader: Youtube'dan video indirmeye yarayan uygulamadır.
+	• 40 - Qbittorrent: Torrent indirme yazılımıdır.
 #### ► Office Uygulamaları
-	• 40 - LibreOffice: Microsoft Office uygulamasının ücretsiz alternatifidir. 
-	• 41 - Adobe Reader: PDF dosyalarını açar.
-	• 42 - PDF-XChange Editör: PDF dosyalarını düzenleyip, okuyabilirsiniz. Adobe Reader alternatifidir. Ücretsiz özellikleri bakımından Adobe Reader'den daha iyi bir uygulamdır.
-	• 43 - Calibre: E-kitap formundaki dosyaları açıp, okumanızı sağlar.
+	• 41 - LibreOffice: Microsoft Office uygulamasının ücretsiz alternatifidir. 
+	• 42 - Adobe Reader: PDF dosyalarını açar.
+	• 43 - PDF-XChange Editör: PDF dosyalarını düzenleyip, okuyabilirsiniz. Adobe Reader alternatifidir. Ücretsiz özellikleri bakımından Adobe Reader'den daha iyi bir uygulamdır.
+	• 44 - Calibre: E-kitap formundaki dosyaları açıp, okumanızı sağlar.
 #### ► Developer
-	• 44 - Notepad++: Bilmeyen için not defteri uygulamasıdır. Yazılımcılar için kod editörüdür.
-	• 45 - Python: Programlama dilidir.
-	• 46 - PhyCharm: Python kod editörüdür.
-	• 47 - Visual Studio Code: Visual Studio'nun editör halidir. Genelde web geliştirme için kullanılır.
-	• 48 - Github Desktop: Grafik arayüzlü bir git istemcisidir.
-	• 49 - Git: Dağıtım takip sistemidir.
-	• 50 - Blender: Ücretsiz, açık kaynaklı bir çalışmadır. 3D tasarımlarda kullanılacak mükemmel uygulama.
+	• 45 - Notepad++: Bilmeyen için not defteri uygulamasıdır. Yazılımcılar için kod editörüdür.
+	• 46 - Python: Programlama dilidir.
+	• 47 - PhyCharm: Python kod editörüdür.
+	• 48 - Visual Studio Code: Visual Studio'nun editör halidir. Genelde web geliştirme için kullanılır.
+	• 49 - Github Desktop: Grafik arayüzlü bir git istemcisidir.
+	• 50 - Git: Dağıtım takip sistemidir.
+	• 51 - Blender: Ücretsiz, açık kaynaklı bir çalışmadır. 3D tasarımlarda kullanılacak mükemmel uygulama.
 #### ► Uzak Bağlantı
-	• 51 - TeamViewer: Bilgisayarlar arası uzaktan bağlantı sağlar.
-	• 52 - AnyDesk: Bilgisayalar arası uzak bağlantı sağlar.
+	• 52 - TeamViewer: Bilgisayarlar arası uzaktan bağlantı sağlar.
+	• 53 - AnyDesk: Bilgisayalar arası uzak bağlantı sağlar.
 #### ► Oyunlar
-	• 53 - OSU!: Müzik video oyunduur.
-	• 54 - World Of Tanks: Online tank oyunu.
-	• 55 - Genshin Impact: Online oyundur.
-	• 56 - League Of Legends[TR]: Riot Games'in oyunudur. 5 vs 5 şeklinde karşılaşma yapılır.
-	• 57 - League Of Legends[EUW]: Riot Games'in oyunudur. 5 vs 5 şeklinde karşılaşma yapılır.
-	• 58 - Valorant: Riot Games'in CS:GO tarzı oyunudur.
+	• 54 - OSU!: Müzik video oyunduur.
+	• 55 - World Of Tanks: Online tank oyunu.
+	• 56 - Genshin Impact: Online oyundur.
+	• 57 - League Of Legends[TR]: Riot Games'in oyunudur. 5 vs 5 şeklinde karşılaşma yapılır.
+	• 58 - League Of Legends[EUW]: Riot Games'in oyunudur. 5 vs 5 şeklinde karşılaşma yapılır.
+	• 59 - Valorant: Riot Games'in CS:GO tarzı oyunudur.
 #### ► Diğer
-	• 59 - MSI Afterburner: GPU fan ayarı yapar, SS alır, Video kaydı alır, oyunlarda donanımların kullanım değerlerini gösterir, voltaj değerlerini değiştirebilirsiniz.
-	• 60 - Hibit Uninstaller: Kalıntı bırakmadan program kaldırmayı sağlar. Ayrıca çöp dosya temizler. Market uygulamalarını da kaldırabilir.
-	• 61 - Wise Care 365: PC temizlik uygulamasıdır. Tek sürüme verilen ücretsiz pro sürümüdür.
-	• 62 - Unlocker: Silinmeyen dosyaları silmeyi sağlar.
-	• 63 - SSD Booster: SSD için sistemi optimize eder.
-	• 64 - OpenShell: Alternatif başlat menüsüdür.
-	• 65 - Everything: Sistemdeki dosyaları arayıp bulmanızı sağlar. Çok kullanışlı bir programdır.
-	• 66 - TaskbarX: Başlat çubuğunu özelleştirmenizi sağlar.
-	• 67 - Recuva: Silinen dosyaları kurtarır.
-	• 68 - AOMEI Partition Assistans: Disk yardımcı uygulaması.
-	• 69 - File Converter: Dosya dönüştürmeye yarayan pratik açık kaynak kodlu çalışma 
+	• 60 - MSI Afterburner: GPU fan ayarı yapar, SS alır, Video kaydı alır, oyunlarda donanımların kullanım değerlerini gösterir, voltaj değerlerini değiştirebilirsiniz.
+	• 61 - Hibit Uninstaller: Kalıntı bırakmadan program kaldırmayı sağlar. Ayrıca çöp dosya temizler. Market uygulamalarını da kaldırabilir.
+	• 62 - Wise Care 365: PC temizlik uygulamasıdır. Tek sürüme verilen ücretsiz pro sürümüdür.
+	• 63 - Unlocker: Silinmeyen dosyaları silmeyi sağlar.
+	• 64 - SSD Booster: SSD için sistemi optimize eder.
+	• 65 - OpenShell: Alternatif başlat menüsüdür.
+	• 66 - Everything: Sistemdeki dosyaları arayıp bulmanızı sağlar. Çok kullanışlı bir programdır.
+	• 67 - TaskbarX: Başlat çubuğunu özelleştirmenizi sağlar.
+	• 68 - Recuva: Silinen dosyaları kurtarır.
+	• 69 - AOMEI Partition Assistans: Disk yardımcı uygulaması.
+	• 70 - File Converter: Dosya dönüştürmeye yarayan pratik açık kaynak kodlu çalışma 
 	  • Resmi Sayfası: https://github.com/Tichau/FileConverter
-	• 70 - Process Hacker 2: Görev Yöneticisi
-	• 71 - GlassWire: İnternet takip programı. Bilgisayarınızda hangi program nereye ne göndermiş ne almış hepsini görebilirsiniz.
-	• 72 - Hamachi: Ortak bir ağ kurmaya yarayan yazılımdır. Online oyunlarda arkadaşlarınızla oyun kurmak için ortak bir ağ gerektiğinde hayat kurtaran bir programdır.
-	• 73 - Stremio: Torrent üzerinden film izleyebilirsiniz. İzlediğiniz veya izlemek istediğiniz filmeleri kütüphanenize ekleyebilirsiniz. 
-	• 74 - Stellarium: Uzay bilgi uygulaması. Muazzam.
-	• 75 - Folder2ISO: Klasör içeriklerini ISO dosyasına dönüştürmeye yarayan program.
+	• 71 - Process Hacker 2: Görev Yöneticisi
+	• 72 - GlassWire: İnternet takip programı. Bilgisayarınızda hangi program nereye ne göndermiş ne almış hepsini görebilirsiniz.
+	• 73 - Hamachi: Ortak bir ağ kurmaya yarayan yazılımdır. Online oyunlarda arkadaşlarınızla oyun kurmak için ortak bir ağ gerektiğinde hayat kurtaran bir programdır.
+	• 74 - Stremio: Torrent üzerinden film izleyebilirsiniz. İzlediğiniz veya izlemek istediğiniz filmeleri kütüphanenize ekleyebilirsiniz. 
+	• 75 - Stellarium: Uzay bilgi uygulaması. Muazzam.
+	• 76 - Folder2ISO: Klasör içeriklerini ISO dosyasına dönüştürmeye yarayan program.
 
 # OgnitorenKs Toolbox
 2 - Bu bölüm işletim sistemine göre değişiklik göstermektedir. Windows 11 ve Windows 10 için iki ayrı bölüme ayrılmıştır.
@@ -373,28 +374,41 @@ Düzenlediğim sistemleri güncelleme sonrası ilk haline getirmeye yarar.
 Microsoft'un önerdiği bütün onarma seçeneklerini uygular.
 ### 11 - PC Temizle: 
 %Temp% dosyalarını temizler
-### 12 - Ping Ölçer: 
+### 12 - Simge Hatalarını Onar:
+Simge hatalarını onarır.
+### 13 - Ping Ölçer: 
 İçerisinde belirli sitelerin ping durumlarını otomatik gösterir. Alt bölümde yer alan "Ping ölç" bölümüyle istediğiniz site ve IP'nin pingini ölçebilirsiniz.
 	
 ![cmd_RYynOfcKdu](https://user-images.githubusercontent.com/93199689/167626925-b8e56f24-a69a-4b84-b71b-42f91aafcc70.png)
 
-### 13 - Fat32 to NTFS: 
+### 14 - Fat32 to NTFS: 
 Fat32 olarak formatlanmış USB diskleri veri kaybı olmadan NTFS'ye çevirir. Disk harfini girmeniz gerekmektedir.
 	
 ![cmd_IbpcglgIoZ](https://user-images.githubusercontent.com/93199689/167626995-480e24ba-31b6-4580-ad1d-40fffc936687.png)
 
-### 14 - Kayıtlı Wifi Bilgileri [ARCHLEY]:	 
+### 15 - Kayıtlı Wifi Bilgileri [ARCHLEY]:	 
 Bu bölümde sisteme girdiğiniz Wifi isim ve şifrelerini görebilirsiniz. Çalışmasını toolbox'a eklediği için Archley'e teşekkür ederim.
 
-### 15 - Zaman Ayarlı PC Kapat:
+### 16 - Zaman Ayarlı PC Kapat:
 Seçilen belirli bir süreden sonra PC otomatik kapatır.
 	
 ![cmd_3pp0ccih2b](https://user-images.githubusercontent.com/93199689/167627106-7906eed5-3736-4702-80b1-7fee90cf81a9.png)
 
-### 16 - Appx - Güncelleme Yükleyici:
+### 17 - Appx - Güncelleme Yükleyici:
 Appx ve Update dosyalarını yüklemenizi sağlayan bölümdür. 
 	• Appx dosyalarıyla ilgili detaylı bilgi için bakınız:https://ognitorenks.blogspot.com/2021/11/rehber-powershell-appx-komutlarnn_9.html
 	• Güncelleme dosyalarını indirebileceğiniz site: https://www.catalog.update.microsoft.com/
+	
+### 18 - Hash Kontrol [SHA-256]: 
+SHA-256 değerlerini karşılaştırmayı sağlar.
+
+### 19 - Kaldırılamayan Uygulamalar: 
+Kaldırılması Microsoft tarafından engellenen bazı uygulamaları kaldırmayı sağlar.
+![cmd_BAUX3GKM8L](https://user-images.githubusercontent.com/93199689/170891816-105ab12a-b99d-41a5-89e4-2bb344b5efde.png)
+
+### 20 - Performans Optimizasyonu:
+Performans ile ilgili ayarları uygular. İşlem öncesi değiştirilecek veya eklenecek regedit kayıtları tespit edilir ve yedekleri alınır.
+![cmd_CN3buz2O03](https://user-images.githubusercontent.com/93199689/170891881-ba7eb450-2627-4722-aaed-58a1fe011fc7.png)
 
 ### Z - Toolbox Ayarları:
 Toolbox üzerinde ayar yapıp. Bilgi alabileceğiniz bölüm.
