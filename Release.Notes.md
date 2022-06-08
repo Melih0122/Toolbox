@@ -25,8 +25,6 @@ Yayınlanma Tarihi: 08.06.2022
 	• Setup bölümünde Windows 10 ve 11 dosyaları birleştirildi.
 	  • İşlem sonunda driver ve imaj toplanmasıyla ilgili kullanıcı yönlendirme soruları eklendi.
 	• Hizmet Yönetimi > Wifi hizmeti bölümündeki komut hatası giderildi. 
-	• Toolbox'ı görev çubuğuna sabitlemek isteyenler için OgnitorenKs.Toolbox.exe dosyası oluşturuldu. Kısayol bunun üzerinde verilecek.
-	  • Bat to Exe Converter ile hazırlandı.
 	• Log kayıtları düzenlendi.
 	• İnternet önbelliği temizle bölümü eklendi.
 	• İndirme bölümünde indirilen programların isimlerini göstermesi için düzenleme yapıldı.
