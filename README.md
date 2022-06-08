@@ -12,13 +12,9 @@
 
 ![cmd_JujarHcRcq](https://user-images.githubusercontent.com/93199689/170891954-badb7072-656f-4e38-a862-c7cffe54a54b.png)
 
-### OgnitorenKs.Toolbox.zip dosyaları
-- ► Toolbox.TR  = https://docs.google.com/uc?export=download&id=19uNjxzHFY5A6g4mFg8FirFTnyL2R0HZ3
-- ► Toolbox.8.1 = https://docs.google.com/uc?export=download&id=1k1Z3c1TE8a7K-lqKlozg6MJu_SPh3fmb
-	
-### OgnitorenKs.Toolbox katılımsız kurulum dosyaları
-- ► Toolbox.TR  = https://docs.google.com/uc?export=download&id=19uNjxzHFY5A6g4mFg8FirFTnyL2R0HZ3
-- ► Toolbox.8.1 = https://docs.google.com/uc?export=download&id=12podfFYq5NujVr3mCHtMlyaa2nAFt-Em
+### OgnitorenKs.Toolbox dosyaları
+- ► OgnitorenKs.Toolbox.zip  = https://docs.google.com/uc?export=download&id=19uNjxzHFY5A6g4mFg8FirFTnyL2R0HZ3	
+- ► OgnitorenKs.Toolbox Katılımsız Kurulum Aracı  = https://docs.google.com/uc?export=download&id=19uNjxzHFY5A6g4mFg8FirFTnyL2R0HZ3
 
 ### Projeye katkıda bulunanlar;
 
