@@ -79,13 +79,6 @@ set version=3.2
 set LogsSettings=0&FOR /F "tokens=2" %%a in ('findstr /C:"LogsSettings" %Location%\Settings.ini') do set value=%%a
 	if %value%==1 (set LogsSettings=1)
 
-:: Admin yetki durumu kontrol ediliyor.
-FOR /F "tokens=2" %%a in ('findstr /C:"AdminLogin" %Location%\Settings.ini') do set value=%%a
-	if %value%==0 goto AdminAuto
-	if %value%==1 goto AdminManuel
-) else
-	goto AdminManuel
-
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
 :AdminManuel
@@ -106,12 +99,6 @@ echo              %R%[97mKapatmak için herhangi bir tuşa basınız%R%[0m
 pause > nul
 exit
 )
-goto NeedFiles
-
-:AdminAuto
-net session >NUL 2>&1|| (
-Call :Powershell Start-Process '%0' -Verb RunAs&& (
-exit /b|| exit /b))
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
