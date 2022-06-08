@@ -344,7 +344,7 @@ Sistem ve donanım hakkında bilgi verir.
 ![cmd_mDH1JvgaDM](https://user-images.githubusercontent.com/93199689/167623663-1d3cde57-4f54-48fb-bbce-a33a8e8f220c.png)
 
 ### 8 - Güç Seçenekleri [PowerChoice]:  
-Güç seçeneklerini hızlıca değiştirmeyi sağlar
+Güç seçeneklerini hızlıca değiştirmeyi sağlar. Sistem dili Türkçe değilse çalışmaz.
 
 ![cmd_EAcvH91Ach](https://user-images.githubusercontent.com/93199689/167623503-db0856af-bffd-4ff0-bd0d-22267cc6d77b.png)
 
