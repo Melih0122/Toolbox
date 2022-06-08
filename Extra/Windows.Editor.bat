@@ -48,15 +48,14 @@ set LogsSettings=0&FOR /F "tokens=2" %%a in ('findstr /C:"LogsSettings" %Locatio
 
 :: İhtiyaç duyulan dosyaları indirir.
 echo                   %R%[92m Dosyalar kontrol ediliyor...%R%[0m
-echo     %R%[1;97m%R%[41m Mount klasörü dolu işlemlerde hata almanıza neden olabilir %R%[0m
-FOR %%a in (Setup10.zip Setup11.zip Newico.zip Oldico.zip) do (
+FOR %%a in (Setup.zip Newico.zip Oldico.zip) do (
 	dir /b %Location%\Files\%%a > NUL 2>&1
 		if %errorlevel%==1 (Call :FilesDownloader %%a)
 )
 
 :WindowsEditMenu
 cls
-mode con cols=53 lines=33
+mode con cols=53 lines=31
 echo  %R%[90m┌─────────────────────────────────────────────────┐%R%[0m
 echo  %R%[90m│%R%[1;97m%R%[100m            OgnitorenKs Windows Editör           %R%[0m%R%[90m│%R%[0m
 echo  %R%[90m├─────────────────────────────────────────────────┤%R%[0m
@@ -83,9 +82,7 @@ echo  %R%[90m│  %R%[36m 16.%C%[33m Yeni Simgeleri yükle%C%[90m [İmaj]       
 echo  %R%[90m│  %R%[36m 17.%C%[33m Gpedit.msc ekle%C%[90m [İmaj]                    │%R%[0m
 echo  %R%[90m│  %R%[36m 18.%C%[33m Hyper-V ekle%C%[90m [İmaj]                       │%R%[0m
 echo  %R%[90m├─────────────────────────────────────────────────┤%R%[0m
-echo  %R%[90m│  %R%[36m 19.%C%[90m [M]%C%[33m Katılımsız Program / Ayar ekle        │%R%[0m
-echo  %R%[90m├─────────────────────────────────────────────────┤%R%[0m
-echo  %R%[90m│  %R%[36m 20.%R%[36m İmaj yol tanımla                          %R%[90m│%R%[0m
+echo  %R%[90m│  %R%[36m 19.%R%[36m İmaj yol tanımla                          %R%[90m│%R%[0m
 echo  %R%[90m└─────────────────────────────────────────────────┘%R%[0m
 set /p WindowsEditMenu= %R%[92m İşlem : %R%[0m
 	if %WindowsEditMenu%==1 (Call :WimReader)
@@ -100,15 +97,13 @@ set /p WindowsEditMenu= %R%[92m İşlem : %R%[0m
 	if %WindowsEditMenu%==10 (Call :RegeditCollet Call)
 	if %WindowsEditMenu%==11 (Call :UpdateInstaller)
 	if %WindowsEditMenu%==12 (Call :AppxInstaller)
-	if %WindowsEditMenu%==13 (Call :Driveryedek)
-	if %WindowsEditMenu%==14 (Call :Driveryukle)
+	if %WindowsEditMenu%==13 (Call :DriverYedek)
+	if %WindowsEditMenu%==14 (Call :DriverYukle)
 	if %WindowsEditMenu%==15 (Call :SetupEdit)
 	if %WindowsEditMenu%==16 (Call :Newico)
 	if %WindowsEditMenu%==17 (Call :gpeditmsc)
-	if %WindowsEditMenu%==28 (Call :HyperV)
-	if %WindowsEditMenu%==19 (Call :katilimsiz)
-	if %WindowsEditMenu%==20 (Call :degisken3)
-	if %WindowsEditMenu%==01 (Call :manuel)
+	if %WindowsEditMenu%==18 (Call :HyperV)
+	if %WindowsEditMenu%==19 (Call :degisken3)
 ) else
 	goto WindowsEditMenu
 	
@@ -173,6 +168,7 @@ set /p isokayit=%C%[92m   ISO ismi : %C%[0m
  
 mode con cols=99 lines=40
 Call :LogSave "ISOMaker" "İmaj:'%MainWim%' -Etiket:'%etiket%' -ISO:'%isokayit%' ISO dosyası oluşturuldu"
+echo ►%R%[33m ISO dosyası hazırlanıyor...%C%[0m
 %Location%\Files\oscdimg.exe -m -o -u2 -udfver102 -bootdata:2#p0,e,b%MainWim%\boot\etfsboot.com#pEF,e,b%MainWim%\efi\microsoft\boot\efisys.bin -L%etiket% %MainWim%\ %Location%\Edit\%isokayit%.iso
 Call :Powershell "Start-Process '%Location%\Edit'"
 Call :ProcessCompleted
@@ -338,12 +334,8 @@ RD /S /Q "%Location%\Edit\Mount" > NUL 2>&1
 mkdir "%Location%\Edit\Mount" > NUL 2>&1
 set Mount=%Location%\Edit\Mount
 
-dir /b %Location%\Files\Setup10.zip > NUL 2>&1
-	if %errorlevel%==1 (Call :FilesDownloader Setup.zip
-						Call :Powershell "Expand-Archive -Force '%Location%\Files\Setup.zip' '%Location%\Files'")
-dir /b %Location%\Files\Setup11.zip > NUL 2>&1
-	if %errorlevel%==1 (Call :FilesDownloader Setup.zip
-						Call :Powershell "Expand-Archive -Force '%Location%\Files\Setup.zip' '%Location%\Files'")
+dir /b %Location%\Files\Setup.zip > NUL 2>&1
+	if %errorlevel%==1 (Call :FilesDownloader Setup.zip)
 
 Call :Panel "%R%[100m                           Setup Düzenle                         %R%[0m"
 Call :degisken4
@@ -353,12 +345,9 @@ FOR /F "tokens=2 delims=:" %%c IN ('Dism /Get-WimInfo /WimFile:%MainWim% /Index:
 Call :Panel2 "%R%[33m %index% %R%[37m►%R%[33m (%iname%)%R%[37m açılıyor...%R%[0m"
 Dism /Mount-Image /ImageFile:%MainWim% /MountDir:"%Location%\Edit\Mount" /Index:%index%
 cls
-Call :Panel2 "%R%[96m İşlem yapılacak Windows sürümünü seçiniz%R%[0m"
-set /p winsetup=%R%[97m  ►%R%[92m [ Windows 10:%R%[1;97m 1 %R%[35m/%R%[92m Windows 11:%R%[1;97m 2 %R%[92m] : %R%[0m
-	if %winsetup%==1 (%NSudo% Powershell -command "Expand-Archive -Force '%Location%\Files\Setup10.zip' '%Location%\Edit\Mount'")
-	if %winsetup%==2 (%NSudo% Powershell -command "Expand-Archive -Force '%Location%\Files\Setup10.zip' '%Location%\Edit\Mount'")
-					  %NSudo% Powershell -command "Expand-Archive -Force '%Location%\Files\Setup11.zip' '%Location%\Edit\Mount'")
-echo.
+echo ►%R%[33m Dosyalar imaja ekleniyor...%R%[0m
+%NSudo% Powershell -command "Expand-Archive -Force '%Location%\Files\Setup.zip' '%Location%\Edit\Mount'"
+cls
 Call :Panel2 "%R%[96m Lerup Launcher menü konumunu seçiniz%R%[0m"
 set /p barkonum=%R%[97m  ► %R%[92m[%R%[92m Sol:%R%[1;97m 1 %R%[35m/%R%[92m Üst:%R%[1;97m 2 %R%[35m/%R%[92m Sağ:%R%[1;97m 3 %R%[35m/%R%[92m Alt:%R%[1;97m 4 %R%[92m] : %R%[0m 
 Call :RegeditInstall ::
@@ -368,11 +357,15 @@ reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "UseLargeMenus" /t R
 reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "AlwaysOnTop" /t REG_SZ /d 1 /f > NUL 2>&1
 reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "AutoHide" /t REG_SZ /d 0 /f > NUL 2>&1
 reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "Center" /t REG_SZ /d 1 /f > NUL 2>&1
-echo %winsetup% > NUL 2>&1
-	if %winsetup%==1 (reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "Buttons" /t REG_SZ /d "Power.lnk;setup.exe.lnk;Explorer++.lnk;Start Menu.lnk;" /f > NUL 2>&1)
-	if %winsetup%==2 (reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "Buttons" /t REG_SZ /d "Power.lnk;BypassToolbox.lnk;setup.exe.lnk;Explorer++.lnk;Start Menu.lnk;" /f > NUL 2>&1)
+reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "Buttons" /t REG_SZ /d "Power.lnk;BypassToolbox.lnk;setup.exe.lnk;Explorer++.lnk;Start Menu.lnk;" /f > NUL 2>&1
 Call :RegeditCollet ::
-Call :ImageUnmount ::
+cls
+set /p value=►%C%[92m Driver yüklensin mi? [E/H]: %C%[0m
+	if %value%==E (Call :DriverYukle)
+	if %value%==e (Call :DriverYukle)
+set /p value=►%C%[92m İmaj toplansın mı? [E/H]: %C%[0m
+	if %value%==E (Call :ImageUnmount ::)
+	if %value%==e (Call :ImageUnmount ::)
 goto :eof
 
 
@@ -517,12 +510,6 @@ goto :eof
 chcp 437 > NUL 2>&1
 Powershell -command %*
 chcp 65001 > NUL 2>&1
-goto :eof
-
-:: --------------------------------------------------------------------------------------------------------
-
-:katilimsiz
-Call :Powershell "Start-Process '%Location%\Extra\Katilimsiz.bat'
 goto :eof
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■

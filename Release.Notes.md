@@ -4,6 +4,37 @@
 -   Mail: ognitorenks@gmail.com
 -   Site: https://ognitorenks.blogspot.com/
 
+-----------------
+ ► Versiyon 3.2 -
+-----------------
+Yayınlanma Tarihi: 08.06.2022
+
+	• Online Katılımsız bölümündeki değişiklikler;
+	  • Recuva kaldırıldı
+	  • AOEMI Partition kaldırıldı
+	  • Folder2ISO kaldırıldı
+	  • SSDBooster kaldırıldı
+	  • Stremio kaldırıldı [Yükleme işlemi gerçekleşmiyordu]
+	  • Stellarium kaldırıldı 
+	  • ProcessHacker2 kaldırıldı
+	  • Cheat Engine kaldırıldı [Yükleme işleminde birden fazla programı izin almadan kurduğu için]
+	  • Phycharm kaldırıldı 
+	  • HandBrake eklendi
+	  • Spotify eklendi
+	  • Diğer bölümündeki bazı programlar gruplandırıldı.
+	• Setup bölümünde Windows 10 ve 11 dosyaları birleştirildi.
+	  • İşlem sonunda driver ve imaj toplanmasıyla ilgili kullanıcı yönlendirme soruları eklendi.
+	• Hizmet Yönetimi > Wifi hizmeti bölümündeki komut hatası giderildi. 
+	• Toolbox'ı görev çubuğuna sabitlemek isteyenler için OgnitorenKs.Toolbox.exe dosyası oluşturuldu. Kısayol bunun üzerinde verilecek.
+	  • Bat to Exe Converter ile hazırlandı.
+	• Log kayıtları düzenlendi.
+	• İnternet önbelliği temizle bölümü eklendi.
+	• İndirme bölümünde indirilen programların isimlerini göstermesi için düzenleme yapıldı.
+	• Gimp indirme linkindeki sorun giderildi.
+	• Windows Editör > Hyper-V bölümündeki yönlendirme hatası giderildi.
+	• Windows Editör > Katılımsız Program/Ayar Ekle kaldırıldı.
+	  • Güncelleme, hata giderme durumlarını sürekli takip edemediğim için kaldırdım.
+
 -------------------
  ► Versiyon 3.1.2 - Ara Güncelleme
 -------------------
@@ -11,7 +42,6 @@ Yayınlanma Tarihi: 29.05.2022
 
 	• Optimizasyon aracındaki NVIDA ekran kartı bölümündeki yedekleme hatası giderildi.
  	• Kaldırılamayan uygulamalar bölümünde Python yükleme ekranı düzeltildi.
-
 
 -------------------
  ► Versiyon 3.1.1 - Ara Güncelleme
