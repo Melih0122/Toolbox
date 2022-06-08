@@ -215,7 +215,7 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 
 Örnek: 1a / 2k / 4A / 10K / 23a / 24k  
 
-![cmd_3A4sdOfn0w](https://user-images.githubusercontent.com/93199689/167621129-cd0f8968-03af-47af-8151-6628d70c8762.png)
+![cmd_tbjfMpwnMM](https://user-images.githubusercontent.com/93199689/172700153-b69a2b08-6717-4e4d-b2f8-34d7de7b990d.png)
 
 	• 1 [A/K]- Bluetooth hizmeti : Bluetooth hizmetlerini kapatır açar.
 	• 2 [A/K]- Yazıcı hizmeti : Yazıcı hizmetlerini kapatır açar.
