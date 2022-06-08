@@ -1,6 +1,6 @@
 
 # OGNİTORENKS TOOLBOX
-- Toolbox Windows 10 - 11 sürümlerinin x64 mimarilerinde açılmaktadır. Windows 8.1 için hazırladığım kısıtlı bir sürümü mevcuttur. En güncel olan Windows sürümü ile senkronize olarak gelişmektedir.
+- Toolbox Windows 10 - 11 sürümlerinin x64 mimarilerinde açılmaktadır. En güncel olan Windows sürümü ile senkronize olarak gelişmektedir.
 - Windows ekran ölçeklendirme ayarı Toolbox'ın pencere ayarını bozabiliyor. Sorunsuz kullanım için Toolbox'ı kullanırken ölçeklendirme etkileri kapatılmalıdır.
 - Toolbox'ı antivirüsler zararlı olarak işaretlemektedir. Sorunsuz kullanım için beyaz listeye alınması gerekmektedir. 
 - Geliştirme sürecinde iki ayrı sürüm üzerinde çalışmak zor olduğu için İngilizce dil desteği kaldırılmıştır. Tek bir dosya üzerinden çoklu dil desteği ekleyebilirsem ilerleyen süreçte yeniden eklenecektir :(
