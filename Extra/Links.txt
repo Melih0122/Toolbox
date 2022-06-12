@@ -24,7 +24,7 @@
 ::
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
-VersionCheck:3.2
+VersionCheck:3.2.2
 Version8Check:2.7
 
 ►►► All in One Runtimes ◄◄◄
@@ -47,8 +47,6 @@ https://download.microsoft.com/download/A/C/2/AC2C903B-E6E8-42C2-9FD7-BEBAC362A9
 https://openal.org/downloads/oalinst.zip OpenAL.zip https://www.openal.org/downloads/
 https://download.visualstudio.microsoft.com/download/pr/3aa4e942-42cd-4bf5-afe7-fc23bd9c69c5/64da54c8864e473c19a7d3de15790418/windowsdesktop-runtime-5.0.17-win-x64.exe DesktopRuntime.5-x64.exe https://dotnet.microsoft.com/download/dotnet/5.0
 https://download.visualstudio.microsoft.com/download/pr/b6fe5f2a-95f4-46f1-9824-f5994f10bc69/db5ec9b47ec877b5276f83a185fdb6a0/windowsdesktop-runtime-5.0.17-win-x86.exe DesktopRuntime.5-x86.exe https://dotnet.microsoft.com/download/dotnet/5.0
-https://download.visualstudio.microsoft.com/download/pr/5681bdf9-0a48-45ac-b7bf-21b7b61657aa/bbdc43bc7bf0d15b97c1a98ae2e82ec0/windowsdesktop-runtime-6.0.5-win-x64.exe DesktopRuntime.6-x64.exe https://dotnet.microsoft.com/en-us/download/dotnet/6.0
-https://download.visualstudio.microsoft.com/download/pr/68b75eff-3cee-41e0-b993-88a3e063eaee/3aa76cd11da04e2126a3fb7a6ee16e23/windowsdesktop-runtime-6.0.5-win-x86.exe DesktopRuntime.6-x86.exe https://dotnet.microsoft.com/en-us/download/dotnet/6.0
 https://download.microsoft.com/download/8/4/A/84A35BF1-DAFE-4AE8-82AF-AD2AE20B6B14/directx_Jun2010_redist.exe DirectX.exe
 
 ►►► Mesaj ◄◄◄

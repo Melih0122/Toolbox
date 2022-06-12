@@ -72,7 +72,7 @@ for /f %%a in ('"cd"') do set Location=%%a
 set Logs=%Location%\Edit\Logs
 set download=%Location%\Download
 Call :NSudo
-set version=3.2
+set version=3.2.2
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 :T.Settings
@@ -248,7 +248,7 @@ echo    %R%[90m█  █ █    ██  █  █    █   █  █ █  █ █  
 echo    %R%[90m█  █ █ ██ █ █ █  █    █   █  █ ████ ██  █ █ █ ██   ████    %R%[90m  █   █  █ █  █ █   ███  █  █   █  %R%[0m	
 echo    %R%[90m█  █ █  █ █  ██  █    █   █  █ █ █  █   █  ██ █ █     █    %R%[90m  █   █  █ █  █ █   █  █ █  █  █ █ %R%[0m
 echo    %R%[90m████ ████ █   █ ███   █   ████ █  █ ███ █   █ █  █ ████    %R%[90m  █   ████ ████ ███ ███  ████ █   █%R%[0m
-echo    %R%[90mognitorenks.blogspot.com                                                                   %R%[90m%version%%R%[0m
+echo    %R%[90mognitorenks.blogspot.com                                                                 %R%[90m%version%%R%[0m
 echo.
 echo               %R%[90m %caption% %R%[90m^|%R%[90m x%osarch% %R%[90m^|%R%[90m %ImageBuild% %R%[0m%R%[90m^|%R%[90m %isderleme%%R%[0m
 echo               %R%[90m┌──────────────────────────────────────────────────────────────────────┐%R%[0m
@@ -491,8 +491,6 @@ Call :wget1 Java.exe "INSTALL_SILENT=Enable SPONSORS=Disable WEB_ANALYTICS=Disab
 Call :wget1 XNA.Framework.4.0.msi /qn
 Call :wget1 DesktopRuntime.5-x64.exe "/q /norestart"
 Call :wget1 DesktopRuntime.5-x86.exe "/q /norestart"
-Call :wget1 DesktopRuntime.6-x64.exe "/install /quiet /norestart"
-Call :wget1 DesktopRuntime.6-x86.exe "/install /quiet /norestart"
 ::
 Call :wget2 OpenAL.zip 
 Call :Powershell "Expand-Archive -Force '%download%\OpenAL.zip' '%download%\OpenAL'"
@@ -1346,7 +1344,7 @@ goto :eof
 :serv.19.hyperv
 Call :LogSave "Hizmetleri Yönet" "Hyper-V hizmeti %6"
 echo  ► %C%[96mHyper-V hizmeti %6 ...%C%[0m
-%~3 /f %%a IN ('"dir /b %SystemRoot%\servicing\Packages\Microsoft-Hyper-V*.mum"') DO (DISM /Online /NoRestart /Add-Package:"%SystemRoot%\servicing\Packages\%%a" > NUL 2>&1)
+:: %~3 /f %%a IN ('"dir /b %SystemRoot%\servicing\Packages\Microsoft-Hyper-V*.mum"') DO (DISM /Online /NoRestart /Add-Package:"%SystemRoot%\servicing\Packages\%%a" > NUL 2>&1)
 DISM /Online /%2-Feature /FeatureName:Microsoft-Hyper-V-All /Quiet /NoRestart
 FOR %%a in (HvHost vmicvss vmicguestinterface vmicshutdown vmicvmsession vmicheartbeat vmicrdv vmickvpexchange vmictimesync vmms vmcompute) do (
 	sc config %%a start= %1 > NUL 2>&1)
@@ -1366,8 +1364,8 @@ echo  ► %C%[96mXbox hizmeti %6 ...%C%[0m
 FOR %%a in (BcastDVRUserService XboxGipSvc XboxNetApiSvc XblAuthManager XblGameSave) do (
 	sc config %%a start= %2 > NUL 2>&1
 	net %1 %%a /y > NUL 2>&1)
-%NSudo% sc config DoSvc start= %2
-%NSudo% net %1 DoSvc /y
+sc config DoSvc start= %2
+net %1 DoSvc /y
 Call :sz "HKCU\System\GameConfigStore" "GameDVR_Enabled" "%3"
 Call :sz "HKCU\System\GameConfigStore" "GameDVR_FSEBehavior" "%4"
 %~5 "HKLM\SOFTWARE\Policies\Microsoft\Windows\GameDVR" "AllowGameDVR" "0"
@@ -1912,29 +1910,22 @@ set /p value=%C%[92m  İşlem : %C%[0m
 
 :icochange
 cls
-Call :LogSave icochangemenu "%~1 simge dosyası yüklendi"
+set IconName=%~1
+Call :LogSave icochangemenu "%IconName% simge dosyası yüklendi"
 
 dir /b %Location%\Files\Oldico.zip > NUL 2>&1
-	if %errorlevel%==1 (Call :ico.download)
+	if %errorlevel%==1 (Call :wget3 "%Location%\Files\Oldico.zip")
 
 dir /b %Location%\Files\Newico.zip > NUL 2>&1
-	if %errorlevel%==1 (Call :ico.download)
-
-title ICO Ayarları yapılıyor / OgnitorenKs
-echo %R%[1;97m%R%[42m %1 simgeler yükleniyor...%R%[0m
+	if %errorlevel%==1 (Call :wget3 "%Location%\Files\Newico.zip")
+cls
+title Icon Change / OgnitorenKs
+echo %R%[1;97m%R%[42m %IconName% simgeler yükleniyor...%R%[0m
 
 taskkill /f /im explorer.exe > NUL 2>&1
 taskkill /f /im RuntimeBroker.exe > NUL 2>&1
 
-takeown /f "%windir%\SystemResources\shell32.dll.mun" > NUL 2>&1
-takeown /f "%windir%\SystemResources\zipfldr.dll.mun" > NUL 2>&1
-takeown /f "%windir%\SystemResources\imageres.dll.mun" > NUL 2>&1
-takeown /f "%windir%\SystemResources\imagesp1.dll.mun" > NUL 2>&1
-%NSudo% DEL /F /Q /A "%windir%\SystemResources\imagesp1.dll.mun"
-%NSudo% DEL /F /Q /A "%windir%\SystemResources\imageres.dll.mun"
-%NSudo% DEL /F /Q /A "%windir%\SystemResources\zipfldr.dll.mun"
-%NSudo% DEL /F /Q /A "%windir%\SystemResources\shell32.dll.mun"
-%NSudo% PowerShell -command "Expand-Archive -Force '%Location%\Files\%~1.zip' '%windir%'"
+%NSudo% PowerShell -command "Expand-Archive -Force '%Location%\Files\%IconName%.zip' '%windir%'"
 
 DEL /F /Q /A %userprofile%\AppData\Local\Microsoft\Windows\Explorer\*.* > NUL 2>&1
 DEL /F /Q /A %LocalAppData%\Microsoft\Windows\Explorer\thumbcache_*.db > NUL 2>&1
@@ -1942,13 +1933,6 @@ DEL /F /Q /A %LocalAppData%\Microsoft\Windows\Explorer\thumbcache_*.db > NUL 2>&
 Call :Powershell "Start-Process 'C:\Windows\explorer.exe'"
 Call :ProcessCompletedReset
 goto Win10SettingsMenu
-
-:ico.download
-echo %R%[96m Simge dosyaları indiriliyor...%R%[0m
-Call :wget3 "Oldico.zip" "%Location%\Files\Oldico.zip"
-Call :wget3 "Newico.zip" "%Location%\Files\Newico.zip"
-goto :eof
-
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
@@ -2211,7 +2195,7 @@ set /p value=%R%[36m  Kaldır: %R%[0m
 	if %value%==10 (Call :NonRemoval Microsoft.Windows.SecureAssessmentBrowser SecureAssessmentBrowser)
 	if %value%==11 (Call :NonRemoval Microsoft.Windows.StartMenuExperienceHost StartMenuExperienceHost)
 	if %value%==12 (Call :NonRemoval Microsoft.Windows.Search Search)
-	if %value%==13 (Call :NonRemoval Microsoft.CBSPreview CBSPreview)
+	if %value%==13 (Call :NonRemoval Windows.CBSPreview CBSPreview)
 	if %value%==x goto menu
 	if %value%==X goto menu
 ) else
@@ -2625,6 +2609,17 @@ for /f "tokens=2" %%a in ('findstr /i "TimeUpdate" %Location%\Settings.ini') do 
 goto :eof
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+
+:Chocolatey
+if not exist "%ProgramData%\chocolatey" (
+    call:POWERSHELL "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && set "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+    call "%ProgramData%\chocolatey\bin\RefreshEnv.cmd"
+)
+choco install -y --limit-output --ignore-checksums %*
+goto:eof
+
+
+:: --------------------------------------------------------------------------------------------------------
 
 :wget1 [%~1=Download Name] [%~2=Silent Install]
 Call :InternetControl

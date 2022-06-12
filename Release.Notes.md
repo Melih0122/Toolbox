@@ -4,6 +4,24 @@
 -   Mail: ognitorenks@gmail.com
 -   Site: https://ognitorenks.blogspot.com/
 
+-------------------
+ ► Versiyon 3.2.2 -
+-------------------
+Yayınlanma Tarihi: 12.06.2022
+
+	• Hizmet Yönetimi > Xbox hizmeti için üst düzey yetki kaldırıldı.
+	• Hizmet Yönetimi > Hyper-V'nin Home sürümlerine kurulmasını sağlayan komutlar kaldırıldı. 
+	  • Pro sürüm için aç/kapat olacak şekilde düzenlendi.
+	• Windows 10 Edit > Simge değiştir bölümündeki komut hatası giderildi.
+	• Desktop Runtime 6 sürümü AIO bölümünden kaldırıldı.
+
+-------------------
+ ► Versiyon 3.2.1 -
+-------------------
+Yayınlanma Tarihi: 10.06.2022
+
+	• Hizmet Yönetimi > Xbox hizmeti için üst düzey yetki verildi.
+
 -----------------
  ► Versiyon 3.2 -
 -----------------
