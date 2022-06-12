@@ -27,6 +27,7 @@
 	  ► KaanBeyhan [DOGGEST]
 	  ----------------------
 	  • İndirme işlemlerinde ilerleme çubuğunun eklenmesi.
+	  • Performans optimizasyonun eklenmesi.
 	  ---------
    	  ► Archley
    	  ---------
