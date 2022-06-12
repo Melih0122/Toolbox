@@ -5,7 +5,7 @@
 -   Site: https://ognitorenks.blogspot.com/
 
 -------------------
- ► Versiyon 3.2.2 -
+ ► Versiyon 3.2.2 - Ara Güncelleme
 -------------------
 Yayınlanma Tarihi: 12.06.2022
 
@@ -16,7 +16,7 @@ Yayınlanma Tarihi: 12.06.2022
 	• Desktop Runtime 6 sürümü AIO bölümünden kaldırıldı.
 
 -------------------
- ► Versiyon 3.2.1 -
+ ► Versiyon 3.2.1 - Ara Güncelleme
 -------------------
 Yayınlanma Tarihi: 10.06.2022
 
