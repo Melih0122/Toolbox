@@ -72,12 +72,12 @@ for /f %%a in ('"cd"') do set Location=%%a
 set Logs=%Location%\Edit\Logs
 set download=%Location%\Download
 Call :NSudo
-set version=3.2.2
+set version=3.3
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 :T.Settings
-set LogsSettings=0&FOR /F "tokens=2" %%a in ('findstr /C:"LogsSettings" %Location%\Settings.ini') do set value=%%a
-	if %value%==1 (set LogsSettings=1)
+FOR /F "tokens=2" %%a in ('findstr /C:"LogsSettings" %Location%\Settings.ini') do set LogsSettings=%%a
+FOR /F "tokens=2" %%a in ('findstr /C:"Chocolatey" %Location%\Settings.ini') do set Chocolatey=%%a
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
@@ -121,7 +121,7 @@ dir /b "%Location%\Files\wget.exe" > NUL 2>&1
 						
 
 :NetCheck
-ping -n 1 www.bing.com -w 20000 > NUL
+ping -n 1 google.com > NUL
 	if %errorlevel%==1 goto NoInternet
 	
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
@@ -248,49 +248,50 @@ echo    %R%[90m█  █ █    ██  █  █    █   █  █ █  █ █  
 echo    %R%[90m█  █ █ ██ █ █ █  █    █   █  █ ████ ██  █ █ █ ██   ████    %R%[90m  █   █  █ █  █ █   ███  █  █   █  %R%[0m	
 echo    %R%[90m█  █ █  █ █  ██  █    █   █  █ █ █  █   █  ██ █ █     █    %R%[90m  █   █  █ █  █ █   █  █ █  █  █ █ %R%[0m
 echo    %R%[90m████ ████ █   █ ███   █   ████ █  █ ███ █   █ █  █ ████    %R%[90m  █   ████ ████ ███ ███  ████ █   █%R%[0m
-echo    %R%[90mognitorenks.blogspot.com                                                                 %R%[90m%version%%R%[0m
+echo    %R%[90mognitorenks.blogspot.com                                                                   %R%[90m%version%%R%[0m
 echo.
 echo               %R%[90m %caption% %R%[90m^|%R%[90m x%osarch% %R%[90m^|%R%[90m %ImageBuild% %R%[0m%R%[90m^|%R%[90m %isderleme%%R%[0m
 echo               %R%[90m┌──────────────────────────────────────────────────────────────────────┐%R%[0m
 echo                %R%[33m Hoşgeldin,%R%[90m%registereduser%%R%[0m
 echo               %R%[90m├──────────────────────────────────────────────────────────────────────┤%R%[0m
-echo               %R%[90m│%R%[32m           1-%R%[33m Online Katılımsız Uygulama Yükleyici%R%[90m [M]                │%R%[0m
+echo               %R%[90m│%R%[32m  1-%R%[36m Uygulama Yükleyici %R%[90m[M]      │%R%[32m   2-%R%[36m Araç Yükleyici%R%[90m [M]            │%R%[0m
 echo               %R%[90m├─────────────────────────────────┬────────────────────────────────────┤
-echo               %R%[90m│%R%[32m  2-%R%[33m %xxxxxeditmenu%%R%[90m [M]         │%R%[32m  12-%R%[33m İnternet Önbellek Temizle     %R%[90m│%R%[0m
-echo               %R%[90m│%R%[32m  3-%R%[33m Hizmetleri Yönet%R%[90m [M]        │%R%[32m  13-%R%[33m Simge Hatalarını Onar         %R%[90m│%R%[0m
-echo               %R%[90m│%R%[32m  4-%R%[37m Windows Editör%R%[90m [M]          │%R%[32m  14-%R%[33m Ping Ölçer %R%[90m [*]               │%R%[0m
-echo               %R%[90m│%R%[32m  5-%R%[33m Kullancı Hesap Yönetimi%R%[90m[M]  │%R%[32m  15-%R%[33m Fat32 to NTFS%R%[90m [M]             │%R%[0m
-echo               %R%[90m│%R%[32m  6-%R%[33m Lisans Yönetimi%R%[90m [M]         │%R%[32m  16-%R%[33m Kayıtlı Wifi Bilgileri        %R%[90m│%R%[0m
-echo               %R%[90m│%R%[32m  7-%R%[33m Sistem Hakkında%R%[90m [*]         │%R%[32m  17-%R%[33m Zaman Ayarlı PC Kapat%R%[90m [M]     │%R%[0m
-echo               %R%[90m│%R%[32m  8-%R%[33m Güç Seçenekleri%R%[90m [M]         │%R%[32m  18-%R%[33m Appx - Güncelleme Yükleyici   %R%[90m│%R%[0m
-echo               %R%[90m│%R%[32m  9-%R%[33m Güncelleme Sonrası Temizlik %R%[90m│%R%[32m  19-%R%[33m Hash Kontrol%R%[90m [SHA-256]        │%R%[0m
-echo               %R%[90m│%R%[32m 10-%R%[33m Windows - Market Onar       %R%[90m│%R%[32m  20-%R%[33m Kaldırılamayan Uygulamalar%R%[90m [M]│%R%[0m
-echo               %R%[90m│%R%[32m 11-%R%[33m PC Temizle                  %R%[90m│%R%[32m  21-%R%[37m Performans Optimizasyonu%R%[90m [M]  │%R%[0m
+echo               %R%[90m│%R%[32m  3-%R%[33m %xxxxxeditmenu%%R%[90m [M]         │%R%[32m  13-%R%[33m İnternet Önbellek Temizle     %R%[90m│%R%[0m
+echo               %R%[90m│%R%[32m  4-%R%[33m Hizmetleri Yönet%R%[90m [M]        │%R%[32m  14-%R%[33m Simge Hatalarını Onar         %R%[90m│%R%[0m
+echo               %R%[90m│%R%[32m  5-%R%[37m Windows Editör%R%[90m [M]          │%R%[32m  15-%R%[33m Ping Ölçer %R%[90m [*]               │%R%[0m
+echo               %R%[90m│%R%[32m  6-%R%[33m Kullancı Hesap Yönetimi%R%[90m[M]  │%R%[32m  16-%R%[33m Fat32 to NTFS%R%[90m [M]             │%R%[0m
+echo               %R%[90m│%R%[32m  7-%R%[33m Lisans Yönetimi%R%[90m [M]         │%R%[32m  17-%R%[33m Kayıtlı Wifi Bilgileri        %R%[90m│%R%[0m
+echo               %R%[90m│%R%[32m  8-%R%[33m Sistem Hakkında%R%[90m [*]         │%R%[32m  18-%R%[33m Zaman Ayarlı PC Kapat%R%[90m [M]     │%R%[0m
+echo               %R%[90m│%R%[32m  9-%R%[33m Güç Seçenekleri%R%[90m [M]         │%R%[32m  19-%R%[33m Appx - Güncelleme Yükleyici   %R%[90m│%R%[0m
+echo               %R%[90m│%R%[32m 10-%R%[33m Güncelleme Sonrası Temizlik %R%[90m│%R%[32m  20-%R%[33m Hash Karşılaştırıcı%R%[90m [SHA-256] │%R%[0m
+echo               %R%[90m│%R%[32m 11-%R%[33m Windows - Market Onar       %R%[90m│%R%[32m  21-%R%[33m Kaldırılamayan Uygulamalar%R%[90m [M]│%R%[0m
+echo               %R%[90m│%R%[32m 12-%R%[33m PC Temizle                  %R%[90m│%R%[32m  22-%R%[37m Performans Optimizasyonu%R%[90m [M]  │%R%[0m
 echo               %R%[90m├─────────────────────────────────┼────────────────────────────────────┤%R%[0m
 echo               %R%[90m│%R%[32m  Z-%R%[37m Toolbox Ayarları            %R%[90m│%R%[32m   X-%R%[37m Temizle ve Kapat              %R%[90m│%R%[0m
 echo               %R%[90m└─────────────────────────────────┴────────────────────────────────────┘%R%[0m
 set /p menu=%R%[32m               İşlem: %R%[0m
 	if %menu%==1 goto menu2
-	if %menu%==2 goto %editmenugo%
-	if %menu%==3 goto servicesmanagement
-	if %menu%==4 (Call :WindowsEditor)
-	if %menu%==5 goto AdminMenu
-	if %menu%==6 goto Slmgrvbs
-	if %menu%==7 (Call :SistemHakkinda)
-	if %menu%==8 (Call :PowerChoice)
-	if %menu%==9 goto UpdateAfter
-	if %menu%==10 goto WindowsRepair
-	if %menu%==11 (Call :PC.Temizle)
-	if %menu%==12 (Call :InternetCacheClear)
-	if %menu%==13 (Call :IconFix)
-	if %menu%==14 (Call :PingMeter)
-	if %menu%==15 (Call :Fat32toNTFS)
-	if %menu%==16 (Call :wifiinfoarchley)
-	if %menu%==17 goto shutdownpc
-	if %menu%==18 (Call :Update.Appx.Installer)
-	if %menu%==19 (Call :HashChecker)
-	if %menu%==20 goto NonRemovalMenu
-	if %menu%==21 (Call :Optimizer)
+	if %menu%==2 goto menu3
+	if %menu%==3 goto %editmenugo%
+	if %menu%==4 goto servicesmanagement
+	if %menu%==5 (Call :WindowsEditor)
+	if %menu%==6 goto AdminMenu
+	if %menu%==7 goto Slmgrvbs
+	if %menu%==8 (Call :SistemHakkinda)
+	if %menu%==9 (Call :PowerChoice)
+	if %menu%==10 goto UpdateAfter
+	if %menu%==11 goto WindowsRepair
+	if %menu%==12 (Call :PC.Temizle)
+	if %menu%==13 (Call :InternetCacheClear)
+	if %menu%==14 (Call :IconFix)
+	if %menu%==15 (Call :PingMeter)
+	if %menu%==16 (Call :Fat32toNTFS)
+	if %menu%==17 (Call :wifiinfoarchley)
+	if %menu%==18 goto shutdownpc
+	if %menu%==19 (Call :Update.Appx.Installer)
+	if %menu%==20 (Call :HashChecker)
+	if %menu%==21 goto NonRemovalMenu
+	if %menu%==22 (Call :Optimizer)
 	if %menu%==Win11 goto Windows11
 	if %menu%==win11 goto Windows11
 	if %menu%==Win10 goto Windows10
@@ -364,95 +365,213 @@ echo.
 :: https://silentinstallhq.com/
 FOR %%a in (%$multi%) do (
 	if %%a==1 (Call :AIO.Runtimes)
-	if %%a==2 (Call :wget1 Discord.exe -s)
-	if %%a==3 (Call :wget1 WhatsApp.exe --silent)
-	if %%a==4 (Call :wget1 Signal.exe /S)
-	if %%a==5 (Call :wget1 Telegram.exe "/VERYSILENT /NORESTART")
-	if %%a==6 (Call :wget1 Zoom.msi /qn)
-	if %%a==7 (Call :wget1 EpicGames.msi "/qn /norestart")
-	if %%a==8 (Call :wget1 Steam.exe /S)
-	if %%a==9 (Call :wget1 GOG.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-")
-	if %%a==10 (Call :wget1 Uplay.exe /S)
-	if %%a==11 (Call :wget1 Origin.exe /SILENT)
+	if %%a==2 if %Chocolatey%==0 (Call :Choco discord) else (Call :wget1 Discord.exe -s)
+	if %%a==3 if %Chocolatey%==0 (Call :Choco whatsapp) else (Call :wget1 WhatsApp.exe --silent)
+	if %%a==4 if %Chocolatey%==0 (Call :Choco signal) else (Call :wget1 Signal.exe /S)
+	if %%a==5 if %Chocolatey%==0 (Call :Choco telegram) else (Call :wget1 Telegram.exe "/VERYSILENT /NORESTART")
+	if %%a==6 if %Chocolatey%==0 (Call :Choco zoom) else (Call :wget1 Zoom.msi /qn)
+	if %%a==7 if %Chocolatey%==0 (Call :Choco epicgameslauncher) else (Call :wget1 EpicGames.msi "/qn /norestart")
+	if %%a==8 if %Chocolatey%==0 (Call :Choco steam) else (Call :wget1 Steam.exe /S)
+	if %%a==9 if %Chocolatey%==0 (Call :Choco goggalaxy) else (Call :wget1 GOG.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-")
+	if %%a==10 if %Chocolatey%==0 (Call :Choco uplay) else (Call :wget1 Uplay.exe /S)
+	if %%a==11 if %Chocolatey%==0 (Call :Choco origin) else (Call :wget1 Origin.exe /SILENT)
 	if %%a==12 (Call :wget1 Wemod.exe --silent)
 	if %%a==13 (Call :wget2 ISLC.zip
 				Call :Powershell "Expand-Archive -Force '%download%\ISLC.zip' 'C:\'"
 				copy /y "C:\ISLC\ISLC.lnk" "C:\Users\%username%\Desktop" > NUL 2>&1)
-	if %%a==14 (Call :wget1 MemReduct.exe /S)
-	if %%a==15 (Call :wget1 GoogleChrome.msi /qn
-				Call :Plugins "Google\Chrome")
-	if %%a==16 (Call :wget1 Firefox.exe /S)
-	if %%a==17 (Call :wget1 Brave.exe "--install --silent --system-level"
-				Call :Plugins "Google\Chrome")
-	if %%a==18 (Call :wget1 Edge.msi /qn
-				Call :Plugins "Microsoft\Edge"
+	if %%a==14 if %Chocolatey%==0 (Call :Choco memreduct) else (Call :wget1 MemReduct.exe /S)
+	if %%a==15 if %Chocolatey%==0 (Call :Choco googlechrome&Call :Plugins "Google\Chrome") else (Call :wget1 GoogleChrome.msi /qn&Call :Plugins "Google\Chrome")
+	if %%a==16 if %Chocolatey%==0 (Call :Choco firefox) else (Call :wget1 Firefox.exe /S)
+	if %%a==17 if %Chocolatey%==0 (Call :Choco brave&Call :Plugins "Google\Chrome") else (Call :wget1 Brave.exe "--install --silent --system-level"&Call :Plugins "Google\Chrome")			
+	if %%a==18 if %Chocolatey%==0 (Call :Choco microsoft-edge&Call :Plugins "Microsoft\Edge") else (Call :wget1 Edge.msi /qn&Call :Plugins "Microsoft\Edge"
 				Call :Powershell "Start-Process '%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe'")
-	if %%a==19 (Call :wget1 OperaGX.exe "/silent /allusers=1 /launchopera=0 /setdefaultbrowser=0")
-	if %%a==20 (Call :wget1 7-Zip.msi /qn)
-	if %%a==21 (Call :wget1 Winrar.exe /S)
-	if %%a==22 (Call :wget1 Kdenlive.exe /S)
-	if %%a==23 (Call :wget1 Openshot.exe "/VERYSILENT /NORESTART")
-	if %%a==24 (Call :wget1 Shotcut.exe /S)
-	if %%a==25 (Call :wget1 Krita.exe /S)
-	if %%a==26 (Call :wget1 Gimp.exe "/VERYSILENT /NORESTART /MERGETASKS=desktopicon /ALLUSERS")
-	if %%a==27 (Call :wget1 OBS.exe /S)
-	if %%a==28 (Call :wget1 ShareX.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-")
-	if %%a==29 (Call :wget1 Audacity.exe "/VERYSILENT /NORESTART")
-	if %%a==30 (Call :wget1 JPEGView.msi /qn
-				mkdir "%AppData%\JPEGView" > NUL 2>&1
-				Call :wget3 "%AppData%\JPEGView\JPEGView.txt"
-				rename "%AppData%\JPEGView\JPEGView.txt" "JPEGView.ini")
-	if %%a==31 (Call :wget1 HandBrake.exe /S)
-	if %%a==32 (Call :wget1 FileConverter.msi /qn)
-	if %%a==33 (Call :wget1 Klite.exe /verysilent)
-	if %%a==34 (Call :wget1 VLCMediaPlayer.exe "/L=1055 /S")
-	if %%a==35 (Call :wget1 PotPlayer.exe /S)
-	if %%a==36 (Call :wget1 Aimp.exe "/AUTO /SILENT")
-	if %%a==37 (Call :wget2 Spotify.exe 
-				%NSudo2% "%download%\Spotify.exe" /silent)
-	if %%a==38 (Call :wget1 InternetDownloadManager.exe /skipdlgs)
-	if %%a==39 (Call :wget1 FreeDownloadManager.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-")
-	if %%a==40 (Call :wget2 EagleGet.zip
+	if %%a==19 if %Chocolatey%==0 (Call :Choco opera-gx) else (Call :wget1 OperaGX.exe "/silent /allusers=1 /launchopera=0 /setdefaultbrowser=0")
+	if %%a==20 if %Chocolatey%==0 (Call :Choco 7zip) else (Call :wget1 7-Zip.msi /qn)
+	if %%a==21 if %Chocolatey%==0 (Call :Choco winrar) else (Call :wget1 Winrar.exe /S)
+	if %%a==22 if %Chocolatey%==0 (Call :Choco kdenlive) else (Call :wget1 Kdenlive.exe /S)
+	if %%a==23 if %Chocolatey%==0 (Call :Choco openshot) else (Call :wget1 Openshot.exe "/VERYSILENT /NORESTART")
+	if %%a==24 if %Chocolatey%==0 (Call :Choco shotcut) else (Call :wget1 Shotcut.exe /S)
+	if %%a==25 if %Chocolatey%==0 (Call :Choco krita) else (Call :wget1 Krita.exe /S)
+	if %%a==26 if %Chocolatey%==0 (Call :Choco gimp) else (Call :wget1 Gimp.exe "/VERYSILENT /NORESTART /MERGETASKS=desktopicon /ALLUSERS")
+	if %%a==27 if %Chocolatey%==0 (Call :Choco obs-studio) else (Call :wget1 OBS.exe /S)
+	if %%a==28 if %Chocolatey%==0 (Call :Choco sharex) else (Call :wget1 ShareX.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-")
+	if %%a==29 if %Chocolatey%==0 (Call :Choco audacity) else (Call :wget1 Audacity.exe "/VERYSILENT /NORESTART")
+	if %%a==30 if %Chocolatey%==0 (Call :Choco jpegview&mkdir "%AppData%\JPEGView" > NUL 2>&1&Call :wget3 "%AppData%\JPEGView\JPEGView.ini") else (Call :wget1 JPEGView.msi /qn&mkdir "%AppData%\JPEGView" > NUL 2>&1&Call :wget3 "%AppData%\JPEGView\JPEGView.ini")
+	if %%a==31 if %Chocolatey%==0 (Call :Choco handbrake) else (Call :wget1 HandBrake.exe /S)
+	if %%a==32 if %Chocolatey%==0 (Call :Choco file-converter) else (Call :wget1 FileConverter.msi /qn)
+	if %%a==33 if %Chocolatey%==0 (Call :Choco k-litecodecpackmega) else (Call :wget1 Klite.exe /verysilent)
+	if %%a==34 if %Chocolatey%==0 (Call :Choco vlc) else (Call :wget1 VLCMediaPlayer.exe "/L=1055 /S")
+	if %%a==35 if %Chocolatey%==0 (Call :Choco potplayer) else (Call :wget1 PotPlayer.exe /S)
+	if %%a==36 if %Chocolatey%==0 (Call :Choco aimp) else (Call :wget1 Aimp.exe "/AUTO /SILENT")
+	if %%a==37 (Call :wget2 Spotify.exe&%NSudo2% "%download%\Spotify.exe" /silent)	
+	if %%a==38 if %Chocolatey%==0 (Call :Choco internet-download-manager) else (Call :wget1 InternetDownloadManager.exe /skipdlgs)
+	if %%a==39 if %Chocolatey%==0 (Call :Choco freedownloadmanager) else (Call :wget1 FreeDownloadManager.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-")
+	if %%a==40 if %Chocolatey%==0 (Call :Choco eagleget) else (Call :wget2 EagleGet.zip
 			    Call :Powershell "Expand-Archive -Force '%download%\EagleGet.zip' '%download%'"
 				"%download%\EagleGet.exe" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-)
 	if %%a==41 (Call :wget1 ByClick.exe /q)
-	if %%a==42 (Call :wget1 Qbittorrent.exe /S)
-	if %%a==43 (Call :wget1 LibreOffice.msi "/qn /norestart ALLUSERS=1 CREATEDESKTOPLINK=0 REGISTER_ALL_MSO_TYPES=0 REGISTER_NO_MSO_TYPES=1 ISCHECKFORPRODUCTUPDATES=0 QUICKSTART=1 ADDLOCAL=ALL")
-	if %%a==44 (Call :wget1 AdobeReader.exe "/sPB /rs /msi")
-	if %%a==45 (Call :wget1 PdfXchange.msi "/quiet /norestart")
-	if %%a==46 (Call :wget1 Calibre.msi /qn)
-	if %%a==47 (Call :wget1 Notepad.exe /S)
-	if %%a==48 (Call :wget1 Python.exe "/quiet InstallAllUsers=1 PrependPath=1")
-	if %%a==49 (Call :wget1 VisualStudioCode.exe "/VERYSILENT /NORESTART /MERGETASKS=!runcode")
-	if %%a==50 (Call :wget1 Github.exe -s)
-	if %%a==51 (Call :wget1 Git.exe "/VERYSILENT /NORESTART")
-	if %%a==52 (Call :wget1 Blender.msi "ALLUSERS=1 /qn")
-	if %%a==53 (Call :wget1 TeamViewer.exe /S)
-	if %%a==54 (Call :wget1 AnyDesk.exe "--install %programfiles(x86)%\AnyDesk --start-with-win --create-shortcuts --create-desktop-icon --silent")
+	if %%a==42 if %Chocolatey%==0 (Call :Choco qbittorrent) else (Call :wget1 Qbittorrent.exe /S)
+	if %%a==43 if %Chocolatey%==0 (Call :Choco libreoffice-fresh) else (Call :wget1 LibreOffice.msi "/qn /norestart ALLUSERS=1 CREATEDESKTOPLINK=0 REGISTER_ALL_MSO_TYPES=0 REGISTER_NO_MSO_TYPES=1 ISCHECKFORPRODUCTUPDATES=0 QUICKSTART=1 ADDLOCAL=ALL")
+	if %%a==44 if %Chocolatey%==0 (Call :Choco adobereader) else (Call :wget1 AdobeReader.exe "/sPB /rs /msi")
+	if %%a==45 if %Chocolatey%==0 (Call :Choco pdfxchangeeditor) else (Call :wget1 PdfXchange.msi "/quiet /norestart")
+	if %%a==46 if %Chocolatey%==0 (Call :Choco calibre) else (Call :wget1 Calibre.msi /qn)
+	if %%a==47 if %Chocolatey%==0 (Call :Choco notepadplusplus) else (Call :wget1 Notepad.exe /S)
+	if %%a==48 if %Chocolatey%==0 (Call :Choco python) else (Call :wget1 Python.exe "/quiet InstallAllUsers=1 PrependPath=1")
+	if %%a==49 if %Chocolatey%==0 (Call :Choco visualstudiocode) else (Call :wget1 VisualStudioCode.exe "/VERYSILENT /NORESTART /MERGETASKS=!runcode")
+	if %%a==50 if %Chocolatey%==0 (Call :Choco github-desktop) else (Call :wget1 Github.exe -s)
+	if %%a==51 if %Chocolatey%==0 (Call :Choco git) else (Call :wget1 Git.exe "/VERYSILENT /NORESTART")
+	if %%a==52 if %Chocolatey%==0 (Call :Choco blender) else (Call :wget1 Blender.msi "ALLUSERS=1 /qn")
+	if %%a==53 if %Chocolatey%==0 (Call :Choco teamviewer) else (Call :wget1 TeamViewer.exe /S)
+	if %%a==54 if %Chocolatey%==0 (Call :Choco anydesk) else (Call :wget1 AnyDesk.exe "--install %programfiles(x86)%\AnyDesk --start-with-win --create-shortcuts --create-desktop-icon --silent")
 	if %%a==55 (Call :wget1 HibitUninstaller.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-")
-	if %%a==56 (Call :wget1 RevoUninstaller.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-")
+	if %%a==56 if %Chocolatey%==0 (Call :Choco revo-uninstaller) else (Call :wget1 RevoUninstaller.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-")
 	if %%a==57 (Call :wget2 WiseCare365.zip
 			    Call :Powershell "Expand-Archive -Force '%download%\WiseCare365.zip' '%download%'"
 				"%download%\WiseCare365.exe" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-)
-	if %%a==58 (Call :wget1 Unlocker.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-")
+	if %%a==58 if %Chocolatey%==0 (Call :Choco io-unlocker) else (Call :wget1 Unlocker.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-")
 	if %%a==59 (Call :wget3 "C:\users\%username%\Desktop\osu.exe")
 	if %%a==60 (Call :wget3 "C:\users\%username%\Desktop\WorldOfTanks.exe")
 	if %%a==61 (Call :wget3 "C:\users\%username%\Desktop\GenshinImpact.exe")
 	if %%a==62 (Call :wget3 "C:\users\%username%\Desktop\LeagueOfLegendsTR.exe")
 	if %%a==63 (Call :wget3 "C:\users\%username%\Desktop\LeagueOfLegendsEUW.exe")
 	if %%a==64 (Call :wget3 "C:\users\%username%\Desktop\Valorant.exe")
-	if %%a==65 (Call :wget1 OpenShell.exe "/quiet /norestart ADDLOCAL=StartMenu")
-	if %%a==66 (Call :wget2 TaskbarX.zip
+	if %%a==65 if %Chocolatey%==0 (Call :Choco open-shell) else (Call :wget1 OpenShell.exe "/quiet /norestart ADDLOCAL=StartMenu")
+	if %%a==66 if %Chocolatey%==0 (Call :Choco taskbarx) else (Call :wget2 TaskbarX.zip
 				Call :Powershell "Expand-Archive -Force '%download%\TaskbarX.zip' 'C:\Users\%username%\Desktop\TaskbarX'"
 				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\TaskbarX\TaskbarX Configurator.exe'"
 				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\TaskbarX\TaskbarX.exe'")
-	if %%a==67 (Call :wget1 MSIAfterburner.exe /S)
-	if %%a==68 (Call :wget1 Everything.exe /S)
-	if %%a==69 (Call :wget1 GlassWire.exe /S)
-	if %%a==70 (Call :wget1 Hamachi.msi /q)
+	if %%a==67 if %Chocolatey%==0 (Call :Choco msiafterburner) else (Call :wget1 MSIAfterburner.exe /S)
+	if %%a==68 if %Chocolatey%==0 (Call :Choco everything) else (Call :wget1 Everything.exe /S)
+	if %%a==69 if %Chocolatey%==0 (Call :Choco glasswire) else (Call :wget1 GlassWire.exe /S)
+	if %%a==70 if %Chocolatey%==0 (Call :Choco hamachi) else (Call :wget1 Hamachi.msi /q)
 )
 goto menu2
 
+:: ==============================================================================================================================
+
+:menu3
+mode con cols=69 lines=36
+title               O  G  N  I  T  O  R  E  N  K  S     ^|    OGNITORENKS TOOLBOX    ^|       T   O   O   L   B   O   X
+set xognitorenksx=%R%[90m►
+echo   %R%[90m┌───────────────────────────────────────────────────────────────┐%R%[0m
+echo   %R%[90m│%R%[1;97m%R%[100m                  Araçlar Katılımsız Yükleyici                 %R%[0m%R%[90m│%R%[0m
+echo   %R%[90m├────────────────────────────┬──────────────────────────────────┤%R%[0m
+echo   %R%[90m│%xognitorenksx% Windows Düzenleme         %R%[90m│%xognitorenksx% GPU / Driver Araçları           %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    1-%R%[33m NTLite               %R%[90m│%R%[32m   23-%R%[36m Display Driver Uninstaller %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    2-%R%[33m Dism++               %R%[90m│%R%[32m   24-%R%[36m Nvidia Profile Inspector   %R%[90m│%R%[0m
+echo   %R%[90m│%xognitorenksx% USB Hazırlayıcı           %R%[90m│%R%[32m   25-%R%[36m RadeonMod                  %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    3-%R%[36m Rufus                %R%[90m│%R%[32m   26-%R%[36m Radeon Software Slimmer    %R%[90m│%R%[0m
+echo   %R%[90m│%xognitorenksx% Donanım Bilgisi           %R%[90m│%R%[32m   27-%R%[36m NVCleanstall               %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    4-%R%[33m Aida64               %R%[90m│%xognitorenksx% Diğer                           %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    5-%R%[33m CPU-Z                %R%[90m│%R%[32m   28-%R%[33m SSD Booster                %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    6-%R%[33m GPU-Z                %R%[90m│%R%[32m   29-%R%[33m Folder2ISO                 %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    7-%R%[33m HW Info              %R%[90m│%R%[32m   30-%R%[33m Process Monitor            %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    8-%R%[33m CrystalDiskInfo      %R%[90m│%R%[32m   31-%R%[33m AOMEI Partition Assistans  %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    9-%R%[33m HD Sentinel          %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m 
+echo   %R%[90m│%R%[32m   10-%R%[33m Core Temp            %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
+echo   %R%[90m│%xognitorenksx% Test Araçları             %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   11-%R%[36m CrystalDiskMark      %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   12-%R%[36m Prime95              %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   13-%R%[36m OCCT                 %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   14-%R%[36m FurMark              %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
+echo   %R%[90m│%xognitorenksx% Sanal Makina              %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   15-%R%[33m Virtual Box          %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   16-%R%[33m VMWare               %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
+echo   %R%[90m│%xognitorenksx% Simge Düzenleme           %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   17-%R%[36m GreenFish            %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   18-%R%[36m Thumbico             %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   19-%R%[36m Quick Any 2 Ico      %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   20-%R%[36m Resource Hacker      %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
+echo   %R%[90m│%xognitorenksx% Sistem Araçları           %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   21-%R%[33m NSudo                %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   22-%R%[33m Explorer++           %R%[90m│%R%[32m    X-%R%[33m Menü                       %R%[90m│%R%[0m 
+echo   %R%[90m└────────────────────────────┴──────────────────────────────────┘
+set /p $multi=%R%[32m  Çoklu Seçim %R%[90mx,y: %R%[0m 
+
+echo %$multi% | find "x" > NUL 2>&1
+	if %errorlevel%==0 goto menu
+echo %$multi% | find "X" > NUL 2>&1
+	if %errorlevel%==0 goto menu	
+	if %errorlevel%==0 goto menu	
+
+Call :LostMenu
+echo    →%C%[96m Seçilenler: %$multi%%C%[0m
+echo.
+mkdir C:\Users\%username%\Desktop\OgnitorenKs > NUL 2>&1
+FOR %%a in (%$multi%) do (
+	if %%a==1 if %Chocolatey%==0 (Call :Choco ntlite-free) else (Call :wget1 NTLite.exe /S)
+	if %%a==2 if %Chocolatey%==0 (Call :Choco dismplusplus) else (Call :wget2 Dism++.zip
+				Call :Powershell "Expand-Archive -Force '%download%\Dism++.zip' 'C:\Users\%username%\Desktop\OgnitorenKs\Dism++'"
+				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\Dism++\Dism++x64.exe'")
+	if %%a==3 if %Chocolatey%==0 (Call :Choco rufus) else (Call :wget3 "C:\Users\%username%\Desktop\OgnitorenKs\Rufus.exe"
+				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\Rufus.exe'")
+	if %%a==4 if %Chocolatey%==0 (Call :Choco aida64-extreme) else (Call :wget2 AIDA64.zip
+				Call :Powershell "Expand-Archive -Force '%download%\AIDA64.zip' 'C:\Users\%username%\Desktop\OgnitorenKs\AIDA64'"
+				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\AIDA64\aida64.exe'")
+	if %%a==5 if %Chocolatey%==0 (Call :Choco cpu-z) else (Call :wget2 CPU-Z.zip
+				Call :Powershell "Expand-Archive -Force '%download%\CPU-Z.zip' 'C:\Users\%username%\Desktop\OgnitorenKs\CPU-Z'"
+				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\CPU-Z\cpuz_x64.exe'")
+	if %%a==6 if %Chocolatey%==0 (Call :Choco gpu-z) else (Call :wget3 "C:\Users\%username%\Desktop\OgnitorenKs\GPU-Z.exe"
+				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\GPU-Z.exe'")
+	if %%a==7 if %Chocolatey%==0 (Call :Choco hwinfo) else (Call :wget2 HWInfo.zip
+				Call :Powershell "Expand-Archive -Force '%download%\HWInfo.zip' 'C:\Users\%username%\Desktop\OgnitorenKs\HWInfo'"
+				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\HWInfo\HWiNFO64.exe'")
+	if %%a==8 if %Chocolatey%==0 (Call :Choco crystaldiskinfo) else (Call :wget2 CrystalDiskInfo.zip
+				Call :Powershell "Expand-Archive -Force '%download%\CrystalDiskInfo.zip' 'C:\Users\%username%\Desktop\OgnitorenKs\CrystalDiskInfo'"
+				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\CrystalDiskInfo\DiskInfo64.exe'")
+	if %%a==9 if %Chocolatey%==0 (Call :Choco hdsentinel) else (Call :wget2 HDSentinel.zip
+				Call :Powershell "Expand-Archive -Force '%download%\HDSentinel.zip' 'C:\Users\%username%\Desktop\OgnitorenKs\HDSentinel'"
+				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\HDSentinel\HDSentinel.exe'")
+	if %%a==10 if %Chocolatey%==0 (Call :Choco coretemp) else (Call :wget2 CoreTemp.zip
+				Call :Powershell "Expand-Archive -Force '%download%\CoreTemp.zip' 'C:\Users\%username%\Desktop\OgnitorenKs\CoreTemp'"
+				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\CoreTemp\Core Temp.exe'")
+	if %%a==11 if %Chocolatey%==0 (Call :Choco crystaldiskmark) else (Call :wget2 CrystalDiskMark.zip
+				Call :Powershell "Expand-Archive -Force '%download%\CrystalDiskMark.zip' 'C:\Users\%username%\Desktop\OgnitorenKs\CrystalDiskMark'"
+				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\CrystalDiskMark\DiskMark64.exe'")
+	if %%a==12 if %Chocolatey%==0 (Call :Choco prime95) else (Call :wget2 Prime95.zip
+				Call :Powershell "Expand-Archive -Force '%download%\Prime95.zip' 'C:\Users\%username%\Desktop\OgnitorenKs\Prime95'"
+				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\Prime95\prime95.exe'")
+	if %%a==13 if %Chocolatey%==0 (Call :Choco occt) else (Call :wget3 "C:\Users\%username%\Desktop\OgnitorenKs\OCCT.exe"
+				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\OCCT.exe'")
+	if %%a==14 if %Chocolatey%==0 (Call :Choco furmark) else (Call :wget1 FurMark.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-")
+	if %%a==15 if %Chocolatey%==0 (Call :Choco virtualbox) else (Call :wget1 VirtualBox.exe "--silent --ignore-reboot")
+	if %%a==16 if %Chocolatey%==0 (Call :Choco vmwareworkstation) else (Call :wget1 VMWare "/s /v/qn EULAS_AGREED=1 AUTOSOFTWAREUPDATE=0 DATACOLLECTION=0 ADDLOCAL=ALL REBOOT=ReallySuppress")
+	if %%a==17 (Call :wget1 GreenFish.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-")
+	if %%a==18 if %Chocolatey%==0 (Call :Choco thumbico) else (Call :wget1 Thumbico.exe /S)
+	if %%a==19 if %Chocolatey%==0 (Call :Choco any2ico) else (Call :wget3 "C:\Users\%username%\Desktop\OgnitorenKs\Quick_Any2Ico.exe"
+				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\Quick_Any2Ico.exe'")
+	if %%a==20 if %Chocolatey%==0 (Call :Choco reshack) else (Call :wget2 ResourceHacker.zip
+				Call :Powershell "Expand-Archive -Force '%download%\ResourceHacker.zip' 'C:\Users\%username%\Desktop\OgnitorenKs\ResourceHacker'"
+				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\ResourceHacker\ResourceHacker.exe'")
+	if %%a==21 (Call :Powershell "Start-Process '%Location%\Files\NSudo.exe'")
+	if %%a==22 if %Chocolatey%==0 (Call :Choco explorerplusplus) else (Call :wget2 Explorer++.zip
+				Call :Powershell "Expand-Archive -Force '%download%\Explorer++.zip' 'C:\Users\%username%\Desktop\OgnitorenKs\Explorer++'"
+				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\Explorer++\Explorer++.exe'")
+	if %%a==23 if %Chocolatey%==0 (Call :Choco ddu) else (Call :wget2 DDU.zip
+				Call :Powershell "Expand-Archive -Force '%download%\DDU.zip' 'C:\Users\%username%\Desktop\OgnitorenKs\DDU'"
+				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\DDU\Display Driver Uninstaller.exe'")
+	if %%a==24 if %Chocolatey%==0 (Call :Choco nvidia-profile-inspector) else (Call :wget2 NvidiaProfileInspector.zip
+				Call :Powershell "Expand-Archive -Force '%download%\NvidiaProfileInspector.zip' 'C:\Users\%username%\Desktop\OgnitorenKs\NvidiaProfileInspector'"
+				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\NvidiaProfileInspector\nvidiaProfileInspector.exe'")
+	if %%a==25 (Call :wget2 RadeonMod.zip
+				Call :Powershell "Expand-Archive -Force '%download%\RadeonMod.zip' 'C:\Users\%username%\Desktop\OgnitorenKs\RadeonMod'"
+				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\RadeonMod\RadeonMod.exe'")
+	if %%a==26 (Call :wget2 RadeonSoftwareSlimmer.zip
+				Call :Powershell "Expand-Archive -Force '%download%\RadeonSoftwareSlimmer.zip' 'C:\Users\%username%\Desktop\OgnitorenKs\RadeonSoftwareSlimmer'"
+				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\RadeonSoftwareSlimmer\RadeonSoftwareSlimmer.exe'")
+	if %%a==27 (Call :wget3 C:\Users\%username%\Desktop\OgnitorenKs\NVCleanstall.exe
+				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\NVCleanstall.exe'")
+	if %%a==28 (Call :wget3 "C:\Users\%username%\Desktop\OgnitorenKs\SSDBooster.exe"
+				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\SSDBooster.exe'")
+	if %%a==29 (Call :wget2 Folder2ISO.zip
+				Call :Powershell "Expand-Archive -Force '%download%\Folder2ISO.zip' 'C:\Users\%username%\Desktop\OgnitorenKs'"
+				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\Folder2ISO\Folder2Iso.exe'")
+	if %%a==30 if %Chocolatey%==0 (Call :Choco procmon) else (Call :wget2 ProcessMonitor.zip
+				Call :Powershell "Expand-Archive -Force '%download%\ProcessMonitor.zip' 'C:\Users\%username%\Desktop\OgnitorenKs\ProcessMonitor'"
+				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\ProcessMonitor\Procmon64.exe'")
+	if %%a==31 if %Chocolatey%==0 (Call :Choco partition-assistant-standard) else (Call :wget1 AOEMI.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-")
+)
+goto menu3
 :: ==============================================================================================================================
 
 :AIO.Runtimes
@@ -489,8 +608,8 @@ Call :wget1 M.Visual.C++2015-x86.exe "/install /quiet /norestart"
 Call :wget1 M.Visual.C++2015-x64.exe "/install /quiet /norestart" 
 Call :wget1 Java.exe "INSTALL_SILENT=Enable SPONSORS=Disable WEB_ANALYTICS=Disable REBOOT=Disable WEB_JAVA=Disable REMOVEOUTOFDATEJRES=1"
 Call :wget1 XNA.Framework.4.0.msi /qn
-Call :wget1 DesktopRuntime.5-x64.exe "/q /norestart"
-Call :wget1 DesktopRuntime.5-x86.exe "/q /norestart"
+Call :wget1 DesktopRuntime.6-x64.exe "/install /quiet /norestart"
+Call :wget1 DesktopRuntime.6-x86.exe "/install /quiet /norestart"
 ::
 Call :wget2 OpenAL.zip 
 Call :Powershell "Expand-Archive -Force '%download%\OpenAL.zip' '%download%\OpenAL'"
@@ -2560,13 +2679,16 @@ echo  %R%[90m│   %R%[32m 2%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%serva
 set servalue=%R%[100m %R%[0m&FOR /F "tokens=2" %%a in ('findstr /C:"PluginSetting" %Location%\Settings.ini') do set value=%%a
 	if %value%==0 (set servalue=%R%[32m♦%R%[0m)
 echo  %R%[90m│   %R%[32m 3%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%servalue%%C%[90m -%C%[33m Tarayıcı eklenti ayarı               %R%[90m│%R%[0m
-echo  %R%[90m│         %R%[32m 4%R%[90m -%R%[33m Masaüstünde kısayol oluştur          %R%[90m│%R%[0m
-echo  %R%[90m│         %R%[32m 5%R%[90m -%R%[33m Güncellemeleri Kontrol Et            %R%[90m│%R%[0m
+set servalue=%R%[100m %R%[0m&FOR /F "tokens=2" %%a in ('findstr /C:"Chocolatey" %Location%\Settings.ini') do set value=%%a
+	if %value%==0 (set servalue=%R%[32m♦%R%[0m)
+echo  %R%[90m│   %R%[32m 4%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%servalue%%C%[90m -%C%[33m Chocolatey yükleme sistemi           %R%[90m│%R%[0m
+echo  %R%[90m│         %R%[32m 5%R%[90m -%R%[33m Masaüstünde kısayol oluştur          %R%[90m│%R%[0m
+echo  %R%[90m│         %R%[32m 6%R%[90m -%R%[33m Güncellemeleri Kontrol Et            %R%[90m│%R%[0m
 echo  %R%[90m├───────────────────────────────────────────────────┤%R%[0m
-echo  %R%[90m│         %R%[32m 6%R%[90m -%R%[33m Toolbox Rehber                       %R%[90m│%R%[0m
-echo  %R%[90m│         %R%[32m 7%R%[90m -%R%[33m ognitorenks.blogspot.com             %R%[90m│%R%[0m
-echo  %R%[90m│         %R%[32m 8%R%[90m -%R%[33m Github Proje Sayfası                 %R%[90m│%R%[0m
-echo  %R%[90m│         %R%[32m 9%R%[90m -%R%[33m Güncelleme Notları                   %R%[90m│%R%[0m
+echo  %R%[90m│         %R%[32m 7%R%[90m -%R%[33m Toolbox Rehber                       %R%[90m│%R%[0m
+echo  %R%[90m│         %R%[32m 8%R%[90m -%R%[33m ognitorenks.blogspot.com             %R%[90m│%R%[0m
+echo  %R%[90m│         %R%[32m 9%R%[90m -%R%[33m Github Proje Sayfası                 %R%[90m│%R%[0m
+echo  %R%[90m│        %R%[32m 10%R%[90m -%R%[33m Güncelleme Notları                   %R%[90m│%R%[0m
 echo  %R%[90m│         %R%[32m X%R%[90m -%R%[36m Menü                                 %R%[90m│%R%[0m
 echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
 set /p value=%C%[92m  İşlem : %C%[0m
@@ -2582,13 +2704,21 @@ set /p value=%C%[92m  İşlem : %C%[0m
 	if %value%==3A (Call :ToolboxSettingsChange PluginSetting 0)
 	if %value%==3K (Call :ToolboxSettingsChange PluginSetting 1)
 	if %value%==3k (Call :ToolboxSettingsChange PluginSetting 1)
-	if %value%==4 (Call :Powershell "Expand-Archive -Force '%Location%\Files\lnk.zip' 'C:\users\%username%\Desktop'")
-	if %value%==5 (Call :UpdateReset
+	if %value%==4a (Call :ToolboxSettingsChange Chocolatey 0
+				    %NSudo% Powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && set "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin")
+	if %value%==4A (Call :ToolboxSettingsChange Chocolatey 0
+					%NSudo% Powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && set "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin")
+	if %value%==4K (Call :ToolboxSettingsChange Chocolatey 1
+					RD /S /Q "%ProgramData%\chocolatey" > NUL 2>&1)
+	if %value%==4k (Call :ToolboxSettingsChange Chocolatey 1
+					RD /S /Q "%ProgramData%\chocolatey" > NUL 2>&1)
+	if %value%==5 (Call :Powershell "Expand-Archive -Force '%Location%\Files\lnk.zip' 'C:\users\%username%\Desktop'")
+	if %value%==6 (Call :UpdateReset
 				   goto T.Settings)
-	if %value%==6 (start https://ognitorenks.blogspot.com/2022/04/ognitorenks-toolbox.html)
-	if %value%==7 (start https://ognitorenks.blogspot.com/)
-	if %value%==8 (start https://github.com/OgnitorenKs/OgnitorenKs.Toolbox)
-	if %value%==9 (start https://github.com/OgnitorenKs/OgnitorenKs.Toolbox/blob/main/Release.Notes.md)
+	if %value%==7 (start https://ognitorenks.blogspot.com/2022/04/ognitorenks-toolbox.html)
+	if %value%==8 (start https://ognitorenks.blogspot.com/)
+	if %value%==9 (start https://github.com/OgnitorenKs/OgnitorenKs.Toolbox)
+	if %value%==10 (start https://github.com/OgnitorenKs/OgnitorenKs.Toolbox/blob/main/Release.Notes.md)
 	if %value%==x goto T.Settings
 	if %value%==X goto T.Settings
 ) else
@@ -2610,45 +2740,53 @@ goto :eof
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
-:Chocolatey
-if not exist "%ProgramData%\chocolatey" (
-    call:POWERSHELL "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && set "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
-    call "%ProgramData%\chocolatey\bin\RefreshEnv.cmd"
-)
-choco install -y --limit-output --ignore-checksums %*
-goto:eof
-
+:Choco
+:: [%~1=Download Name]
+Call :InternetControl
+Call :LogSave "Choco" "%~1 indirildi."
+dir /b "%ProgramData%\chocolatey" > NUL 2>&1
+	if %errorlevel%==1 (Call :LogSave "Choco" "Chocolatey indirildi."
+						echo  ► %R%[33m Chocolatey yükleniyor...%R%[0m
+						%NSudo% Powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && set "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin")
+echo    %R%[90m[Chocolatey]%R%[0m ►%R%[33m %~1%R%[0m indiriliyor %R%[90m/%R%[0m yükleniyor...
+choco install -y --force --limit-output --cache-location=%download% --ignore-checksums %~1 > NUL
+goto :eof
 
 :: --------------------------------------------------------------------------------------------------------
 
-:wget1 [%~1=Download Name] [%~2=Silent Install]
+:wget1
+:: [%~1=Download Name] [%~2=Silent Install]
 Call :InternetControl
 FOR /F "tokens=1" %%i in ('FIND "%~1" %Location%\Extra\Links.txt') do set link=%%i
 Call :LogSave "wget" "%~1 indirildi."
-echo    ►%R%[33m %~n1%R%[0m indiriliyor/yükleniyor...
+echo    %R%[90m[Wget]%R%[0m ►%R%[33m %~n1%R%[0m indiriliyor %R%[90m/%R%[0m yükleniyor...
 %Location%\Files\wget.exe -c -q --no-check-certificate --show-progress "%link%" -t 10 -O %download%\%~1
 "%download%\%~1" %~2
 goto :eof
 
 :: --------------------------------------------------------------------------------------------------------
 
-:wget2 [%~1=Download Name]
+:wget2
+:: [%~1=Download Name]
 Call :InternetControl
 FOR /F "tokens=1" %%i in ('FIND "%~1" %Location%\Extra\Links.txt') do set link=%%i
 Call :LogSave "wget2" "%~1 indirildi."
-echo    ►%R%[33m %~n1%R%[0m indiriliyor/yükleniyor...
+echo    %R%[90m[Wget]%R%[0m ►%R%[33m %~n1%R%[0m indiriliyor %R%[90m/%R%[0m yükleniyor...
 %Location%\Files\wget.exe -c -q --no-check-certificate --show-progress "%link%" -t 10 -O %download%\%~1
 goto :eof
 
 :: --------------------------------------------------------------------------------------------------------
 
-:wget3 [%~1=Download Name] [%~2=Download Location]
+:wget3
+:: [%~1=Download Location] [%~n1: Download Name] [%~x1: İndirme uzantısı]
 Call :InternetControl
 FOR /F "tokens=1" %%i in ('FIND "%~n1%~x1" %Location%\Extra\Links.txt') do set link=%%i
 Call :LogSave "wget3" "%~n1 indirildi."
-echo    ►%R%[33m %~n1%R%[0m indiriliyor...
+echo    %R%[90m[Wget]%R%[0m ►%R%[33m %~n1%R%[0m indiriliyor...
 %Location%\Files\wget -c -q --no-check-certificate --show-progress "%link%" -t 10 -O %~1
 goto :eof
+
+:: --------------------------------------------------------------------------------------------------------
 
 :wget4 [%~1=Download Name] [%~2=Silent Install]
 Call :InternetControl
@@ -2657,7 +2795,6 @@ Call :LogSave "wget4" "%~1 indirildi."
 %Location%\Files\wget.exe --no-check-certificate "%link%" -O %download%\%~1 > NUL 2>&1
 "%download%\%~1" %~2
 goto :eof
-
 
 :: --------------------------------------------------------------------------------------------------------
 
@@ -2670,7 +2807,7 @@ goto :eof
 :: --------------------------------------------------------------------------------------------------------
  
 :InternetControl
-ping -n 1 www.bing.com -w 20000 > NUL
+ping -n 1 google.com > NUL
 	if %errorlevel%==1 (echo   %R%[1;97m%R%[41m                                İnternet bağlantısı yok                                    %R%[0m
 						Call :LogSave "InternetControl" "HATA! İnternet bağlantısı yok."
 						timeout /t 4 /nobreak > NUL
@@ -2691,7 +2828,7 @@ goto :eof
 :NSudo
 dir /b "%Location%\Files\NSudo.exe" > NUL 2>&1
 	if %errorlevel%==1 (Call :LogSave "NSudo" "NSudo.exe dosyası bulunamadı. Yeniden indirildi."
-						Call :wget3 "https://docs.google.com/uc?export=download&id=1u26XInN1baT1zGhL5N4Kz1SUD4pYJys9" "%download%\NSudo.zip"
+						Call :wget3 "%download%\NSudo.zip"
 						Call :Powershell "Expand-Archive -Force '%download%\NSudo.zip' '%Location%\Files'")
 :: Üst düzey yetki
 set NSudo="%Location%\Files\NSudo.exe" -U:T -P:E -Wait -ShowWindowMode:hide cmd /c

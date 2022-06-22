@@ -194,7 +194,7 @@ FOR %%a in (%$index%) do (
 		)
 	)
 )
-Call :Powershell "Start-Process '%Location%\Edit\ESDtoWIM'"
+Call :Powershell "Start-Process '%Location%\Edit'"
 Call :ProcessCompleted
 goto :eof
 
@@ -406,11 +406,11 @@ goto :eof
 :: --------------------------------------------------------------------------------------------------------
 
 :esdtowim
-dir /b %Location%\Edit\install.wim > NUL 2>&1
-	if %errorlevel%==0 (Call :LogSave "ESDtoWIM" "HATA! Mevcut install.wim dosyası üzerine ekleme işlemi gerçekleştirildi")
-Dism /Export-Image /SourceImageFile:"%~1" /SourceIndex:%~2 /DestinationImageFile:%Location%\Edit\install.wim /Compress:max /CheckIntegrity
 Call :LogSave "ESDtoWIM" "'%~2'-'%~1' sürümü dönüştürüldü"
-timeout /t 1 /nobreak > NUL
+dir /b %Location%\Edit\install.wim > NUL 2>&1
+	if %errorlevel%==0 (Call :LogSave "ESDtoWIM" "HATA! Mevcut install.wim dosyası üzerine ekleme işlemi gerçekleştirildi"
+						Dism /Export-Image /SourceImageFile:"%~1" /SourceIndex:%~2 /DestinationImageFile:%Location%\Edit\install.wim /Compress:max /CheckIntegrity
+						timeout /t 1 /nobreak > NUL)
 goto :eof
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
@@ -488,7 +488,7 @@ goto :eof
 :: --------------------------------------------------------------------------------------------------------
 
 :InternetControl
-ping -n 1 www.bing.com -w 20000 > NUL
+ping -n 1 google.com > NUL
 	if %errorlevel%==1 (echo   %R%[1;97m%R%[41m Internet yok %R%[0m
 						Call :LogSave "InternetControl" "HATA! İnternet bağlantısı yok."
 						timeout /t 4 /nobreak > NUL

@@ -1,0 +1,9 @@
+# HSTS 1.0 Known Hosts database for GNU Wget.
+# Edit at your own risk.
+# <hostname>	<port>	<incl. subdomains>	<created>	<max-age>
+ubi.li	0	1	1655066698	15552000
+www.fosshub.com	0	1	1655853241	15552000
+geeks3d.com	0	0	1655852183	16000000
+docs.google.com	0	0	1655890818	31536000
+github.com	0	1	1655886245	31536000
+www.geeks3d.com	0	0	1655852184	16000000

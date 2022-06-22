@@ -45,8 +45,8 @@ https://aka.ms/vs/17/release/vc_redist.x64.exe M.Visual.C++2015-x64.exe
 https://javadl.oracle.com/webapps/download/AutoDL?BundleId=246474_2dee051a5d0647d5be72a7c0abff270e Java.exe https://www.java.com/tr/download/manual.jsp
 https://download.microsoft.com/download/A/C/2/AC2C903B-E6E8-42C2-9FD7-BEBAC362A930/xnafx40_redist.msi XNA.Framework.4.0.msi https://www.microsoft.com/en-us/download/details.aspx?id=20914
 https://openal.org/downloads/oalinst.zip OpenAL.zip https://www.openal.org/downloads/
-https://download.visualstudio.microsoft.com/download/pr/3aa4e942-42cd-4bf5-afe7-fc23bd9c69c5/64da54c8864e473c19a7d3de15790418/windowsdesktop-runtime-5.0.17-win-x64.exe DesktopRuntime.5-x64.exe https://dotnet.microsoft.com/download/dotnet/5.0
-https://download.visualstudio.microsoft.com/download/pr/b6fe5f2a-95f4-46f1-9824-f5994f10bc69/db5ec9b47ec877b5276f83a185fdb6a0/windowsdesktop-runtime-5.0.17-win-x86.exe DesktopRuntime.5-x86.exe https://dotnet.microsoft.com/download/dotnet/5.0
+https://download.visualstudio.microsoft.com/download/pr/5681bdf9-0a48-45ac-b7bf-21b7b61657aa/bbdc43bc7bf0d15b97c1a98ae2e82ec0/windowsdesktop-runtime-6.0.5-win-x64.exe DesktopRuntime.6-x64.exe https://dotnet.microsoft.com/en-us/download/dotnet/6.0
+https://download.visualstudio.microsoft.com/download/pr/68b75eff-3cee-41e0-b993-88a3e063eaee/3aa76cd11da04e2126a3fb7a6ee16e23/windowsdesktop-runtime-6.0.5-win-x86.exe DesktopRuntime.6-x86.exe https://dotnet.microsoft.com/en-us/download/dotnet/6.0
 https://download.microsoft.com/download/8/4/A/84A35BF1-DAFE-4AE8-82AF-AD2AE20B6B14/directx_Jun2010_redist.exe DirectX.exe
 
 ►►► Mesaj ◄◄◄
@@ -117,7 +117,7 @@ https://jztkft.dl.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorr
 
 ►►► BELGELER ◄◄◄
 
-https://ftp.linux.org.tr/tdf/libreoffice/stable/7.3.3/win/x86_64/LibreOffice_7.3.3_Win_x64.msi LibreOffice.msi https://tr.libreoffice.org/indir/libreoffice-taze-surum/
+https://ftp.linux.org.tr/tdf/libreoffice/stable/7.3.4/win/x86_64/LibreOffice_7.3.4_Win_x64.msi LibreOffice.msi https://tr.libreoffice.org/indir/libreoffice-taze-surum/
 https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/1900820071/AcroRdrDC1900820071_tr_TR.exe AdobeReader.exe https://get.adobe.com/tr/reader/enterprise/
 https://www.pdf-xchange.de/DL/tracker9/editor-msi64-tracker.php PdfXchange.msi https://pdf-xchange.eu/DL/pdf-xchange-editor.htm
 https://calibre-ebook.com/dist/win64 Calibre.msi https://calibre-ebook.com/download_windows64
@@ -170,10 +170,47 @@ https://docs.google.com/uc?export=download&id=1aCBwYuFCoj3uMy2BsTgJc5vKYjtOJd0b 
 https://docs.google.com/uc?export=download&id=18kwIyPhIpk0wS-LbwMhsi4ocXJk0R-rG Oldico.zip
 https://docs.google.com/uc?export=download&id=1D6TR20HEo6diHH_g53GxPL5Tpdg3cT2m Newico.zip
 https://docs.google.com/uc?export=download&id=1Fw7Z61gQ9gw6KX4F1tWZtZlrk45JMrLe Setup.zip
-https://docs.google.com/uc?export=download&id=13QzP9CtEdAoasUxsrpJ7zAI5Pgq9BpIr JPEGView.txt
+https://docs.google.com/uc?export=download&id=1trY2VWOSPWERBA1zffsiVlxMEiDp19g2 JPEGView.ini
+https://docs.google.com/uc?export=download&id=1u26XInN1baT1zGhL5N4Kz1SUD4pYJys9 NSudo.zip
+https://docs.google.com/uc?export=download&id=1JvYqy1zFxv2QY4nVsQIh_cTCEkqzrhvf DDU.zip
+https://docs.google.com/uc?export=download&id=1ZyAtr2evEfqbnnd1F8GOUCcW2fqJhsNi Folder2ISO.zip
+
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+
+►►► Araçlar Katılımsız Bölümü ◄◄◄
+https://downloads.ntlite.com/files/NTLite_setup_x64.exe NTLite.exe https://www.ntlite.com/download/
+https://github.com/Chuyu-Team/Dism-Multi-language/releases/download/v10.1.1002.1/Dism++10.1.1002.1.zip Dism++.zip https://github.com/Chuyu-Team/Dism-Multi-language/releases
+https://github.com/pbatard/rufus/releases/download/v3.18/rufus-3.18p.exe Rufus.exe https://github.com/pbatard/rufus/releases
+https://download.aida64.com/aida64extreme670.zip AIDA64.zip https://www.aida64.com/downloads
+https://download.cpuid.com/cpu-z/cpu-z_2.01-en.zip CPU-Z.zip https://www.cpuid.com/softwares/cpu-z.html
+https://dw27.uptodown.com/dwn/UvOXJlYHnTjXQ5m6QhP9VNyTGaMmMcVYkJI1sCwb_nCap4XBW62lmgNi4V5r9teFdhbkBYnsmtyKfDjtZyathtwB1T3tx5iItv1eRptShQRMSZkmJn5CJijDdN_zL6aL/R7uqJ27iprx8POsFZcNp3BkMlVdF3kjRp7bxFvD6LaTtT5ihX8JrLsZwyXci15OYZBRhP56dLH5KmxJ09QqESX2MBsX41pvFLD5kQkEaj1eWqS7cz2HQSpbtM2no_CUp/G4d6kQzhW4Xmtbz_P9Q0DdYFWR527bNWUKYyExlPSSGdcMrfbSohtXARSFpJ45qQ/gpu-z-2-46-0.exe GPU-Z.exe https://www.techpowerup.com/gpuz/
+https://www.sac.sk/download/utildiag/hwi_726.zip HWInfo.zip https://www.hwinfo.com/download/
+https://osdn.net/frs/redir.php?m=nchc&f=crystaldiskinfo%2F77469%2FCrystalDiskInfo8_17_2.zip CrystalDiskInfo.zip https://osdn.net/projects/crystaldiskinfo/releases/
+https://www.hdsentinel.com/hdsentinel_pro_portable.zip HDSentinel.zip https://www.hdsentinel.com/download.php
+https://www.alcpu.com/CoreTemp/CoreTemp64.zip CoreTemp.zip https://www.alcpu.com/CoreTemp/
+https://free.nchc.org.tw/osdn//crystaldiskmark/75540/CrystalDiskMark8_0_4a.zip CrystalDiskMark.zip https://crystalmark.info/en/download/#CrystalDiskMark
+https://www.mersenne.org/ftp_root/gimps/p95v307b9.win64.zip Prime95.zip https://www.mersenne.org/download/
+https://dl.ocbase.com/per/stable/OCCT.exe OCCT.exe https://www.ocbase.com/download
+https://dw28.uptodown.com/dwn/UvOXJlYHnTjXQ5m6QhP9VNyTGaMmMcVYkJI1sCwb_nD-6hBU6Ll25tMX9e3DqjbgrVq2XRB_Sxexvu0HRiPe_PFXoz8XxzX2MUxK8PZaKV44gqpSut2YmNjrS0j3DkWC/cWgrfNEaMdKiPMdOnieHidq87W_uYeXVDop0xTd634DF4kYUd6dyK8Ok2JQ-GAUHFI5f5kJmJgcJO-sG6KNB8_urXjMXt7lWFhqMm3-p90s9KHTR4LxMkMvwsywE9p3d/YWT1pu8bUTdhbYTFvETpxcu_a2CLWVM8SYCniyy_SmwO1Q8iaBZC2tqDCGlLsT3jAsHncwoY153bPLXXsH8CzQ==/furmark-1-30-0-0.exe FurMark.exe https://geeks3d.com/furmark/
+https://download.virtualbox.org/virtualbox/6.1.34/VirtualBox-6.1.34a-150636-Win.exe VirtualBox.exe https://www.virtualbox.org/wiki/Downloads
+https://download3.vmware.com/software/WKST-1623-WIN-New/VMware-workstation-full-16.2.3-19376536.exe VMWare.exe https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html
+http://greenfishsoftware.org/dl.php?filename=gfie_setup_3.6.exe GreenFish.exe http://greenfishsoftware.org/gfie.php#apage
+https://download.aurelitec.com/thumbico/windows/thumbico-install.exe Thumbico.exe https://www.aurelitec.com/thumbico/windows/
+https://www.carifred.com/quick_any2ico/Quick_Any2Ico.exe Quick_Any2Ico.exe https://www.carifred.com/quick_any2ico/
+http://www.angusj.com/resourcehacker/resource_hacker.zip ResourceHacker.zip http://www.angusj.com/resourcehacker/
+https://explorerplusplus.com/software/explorer++_1.3.5_x64.zip Explorer++.zip https://explorerplusplus.com/download
+https://github.com/Orbmu2k/nvidiaProfileInspector/releases/download/2.3.0.10/nvidiaProfileInspector.zip NvidiaProfileInspector.zip https://github.com/Orbmu2k/nvidiaProfileInspector/releases
+https://ftp.nluug.nl/pub/games/PC/guru3d/tweak/[Guru3D.com]-RadeonMod.zip RadeonMod.zip https://www.guru3d.com/files-details/amd-registry-editor-download.html
+https://github.com/GSDragoon/RadeonSoftwareSlimmer/releases/download/1.6.0/RadeonSoftwareSlimmer_1.6.0_net60.zip RadeonSoftwareSlimmer.zip https://github.com/GSDragoon/RadeonSoftwareSlimmer/releases
+https://de1-dl.techpowerup.com/files/PxRjSUYhG05Pm3L3AY4eOQ/1655887096/NVCleanstall_1.13.0.exe NVCleanstall.exe https://www.techpowerup.com/nvcleanstall/
+https://files1.majorgeeks.com/10afebdbffcd4742c81a3cb0f6ce4092156b4375/drives/SSD%20Booster%20Setup.exe SSDBooster.exe https://www.majorgeeks.com/files/details/ssd_booster.html
+https://download.sysinternals.com/files/ProcessMonitor.zip ProcessMonitor.zip https://www.majorgeeks.com/files/details/process_monitor_portable.html
+https://www2.aomeisoftware.com/download/pa/PAssist_Std.exe AOEMI.exe https://www.aomeitech.com/download.html
 
 
 
+
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
 Silinecek
 ►►► All in One Runtimes ◄◄◄
@@ -196,6 +233,4 @@ https://download.microsoft.com/download/A/C/2/AC2C903B-E6E8-42C2-9FD7-BEBAC362A9
 https://openal.org/downloads/oalinst.zip oal.zip https://www.openal.org/downloads/
 https://download.visualstudio.microsoft.com/download/pr/3aa4e942-42cd-4bf5-afe7-fc23bd9c69c5/64da54c8864e473c19a7d3de15790418/windowsdesktop-runtime-5.0.17-win-x64.exe Desktop5x64.exe https://dotnet.microsoft.com/download/dotnet/5.0
 https://download.visualstudio.microsoft.com/download/pr/b6fe5f2a-95f4-46f1-9824-f5994f10bc69/db5ec9b47ec877b5276f83a185fdb6a0/windowsdesktop-runtime-5.0.17-win-x86.exe Desktop5x86.exe https://dotnet.microsoft.com/download/dotnet/5.0
-https://download.visualstudio.microsoft.com/download/pr/5681bdf9-0a48-45ac-b7bf-21b7b61657aa/bbdc43bc7bf0d15b97c1a98ae2e82ec0/windowsdesktop-runtime-6.0.5-win-x64.exe Desktop6x64.exe https://dotnet.microsoft.com/en-us/download/dotnet/6.0
-https://download.visualstudio.microsoft.com/download/pr/68b75eff-3cee-41e0-b993-88a3e063eaee/3aa76cd11da04e2126a3fb7a6ee16e23/windowsdesktop-runtime-6.0.5-win-x86.exe Desktop6x86.exe https://dotnet.microsoft.com/en-us/download/dotnet/6.0
 https://download.microsoft.com/download/8/4/A/84A35BF1-DAFE-4AE8-82AF-AD2AE20B6B14/directx_Jun2010_redist.exe DirectX.exe

@@ -14,145 +14,127 @@ Call :ColorEnd2
 
 :Optimizer
 break
-title OgnitorenKs Optimizasyon
+title Denizlili Performans Optimizasyonu
 mode con cols=55 lines=16
 echo  %R%[90m┌───────────────────────────────────────────────────┐%R%[0m
 echo  %R%[90m│%R%[1;97m%R%[100m          Denizlili Performans Optimizasyonu       %R%[0m%R%[90m│%R%[0m
 echo  %R%[90m├───────────────────────────────────────────────────┤%R%[0m
-Call :SaveCheck Game.bat
-echo  %R%[90m│%R%[0m   %R%[32m 1%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%optvalue%%R%[90m -%R%[33m Oyun işlem önceliği                  %R%[90m│%R%[0m
 reg query "HKLM\System\CurrentControlSet\Control" /v "SvcHostSplitThresholdInKB" | findstr /i "0x380000" > NUL 2>&1
 	if %errorlevel%==0 (set optvalue=%R%[100m %R%[0m)
 	if %errorlevel%==1 (set optvalue=%R%[32m♦%R%[0m)
-echo  %R%[90m│%R%[0m   %R%[32m 2%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%optvalue%%R%[90m -%R%[33m Svchost Ram Optimizasyonu            %R%[90m│%R%[0m
+echo  %R%[90m│%R%[0m   %R%[32m 1%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%optvalue%%R%[90m -%R%[33m Svchost Ram Optimizasyonu            %R%[90m│%R%[0m
 Call :SaveCheck Internet.bat
-echo  %R%[90m│%R%[0m   %R%[32m 3%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%optvalue%%R%[90m -%R%[33m İnternet Optimizasyonu               %R%[90m│%R%[0m
+echo  %R%[90m│%R%[0m   %R%[32m 2%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%optvalue%%R%[90m -%R%[33m İnternet Optimizasyonu               %R%[90m│%R%[0m
 Call :SaveCheck CPU.bat
-echo  %R%[90m│%R%[0m   %R%[32m 4%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%optvalue%%R%[90m -%R%[33m İşlemci Optimizasyonu                %R%[90m│%R%[0m
+echo  %R%[90m│%R%[0m   %R%[32m 3%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%optvalue%%R%[90m -%R%[33m İşlemci Optimizasyonu                %R%[90m│%R%[0m
 Call :SaveCheck AMD.GPU.bat
-echo  %R%[90m│%R%[0m   %R%[32m 5%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%optvalue%%R%[90m -%R%[33m AMD ekran kartı optimizasyon         %R%[90m│%R%[0m
+echo  %R%[90m│%R%[0m   %R%[32m 4%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%optvalue%%R%[90m -%R%[33m AMD ekran kartı optimizasyon         %R%[90m│%R%[0m
 Call :SaveCheck Nvidia.GPU.bat
-echo  %R%[90m│%R%[0m   %R%[32m 6%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%optvalue%%R%[90m -%R%[33m NVIDIA ekran kartı optimizasyon      %R%[90m│%R%[0m
+echo  %R%[90m│%R%[0m   %R%[32m 5%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%optvalue%%R%[90m -%R%[33m NVIDIA ekran kartı optimizasyon      %R%[90m│%R%[0m
 Call :SaveCheck Genel.bat
-echo  %R%[90m│%R%[0m   %R%[32m 7%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%optvalue%%R%[90m -%R%[33m Genel Optimizasyon                   %R%[90m│%R%[0m
+echo  %R%[90m│%R%[0m   %R%[32m 6%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%optvalue%%R%[90m -%R%[33m Genel Optimizasyon                   %R%[90m│%R%[0m
 echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
 set /p value= %C%[92m İşlem :%C%[0m
-	if %value%==1a (Call :Block Game.bat
-					echo  ►%R%[96m Ayarlar yedekleniyor...%R%[0m
-					Call :Game RegSave RegSave3 Game
+	if %value%==1a (Call :Warning1
 					echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
-				    Call :Game RegLogin RegLogin Game
-					Call :ProcessCompletedReset)
-	if %value%==1A (Call :Block Game.bat
-					echo  ►%R%[96m Ayarlar yedekleniyor...%R%[0m
-					Call :Game RegSave Game
-					echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
-				    Call :Game RegLogin Game
-					Call :ProcessCompletedReset)
-	if %value%==1K (Call :FindSave Game.bat
-					DEL /F /Q /A "%Yedek%\Game.bat" > NUL 2>&1
-					Call :ProcessCompletedReset)
-	if %value%==1k (Call :FindSave Game.bat
-					DEL /F /Q /A "%Yedek%\Game.bat" > NUL 2>&1
-					Call :ProcessCompletedReset)
-	if %value%==2a (echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
 					Call :Svchost RegLogin
 					Call :ProcessCompletedReset)
-	if %value%==2A (echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
+	if %value%==1A (Call :Warning1
+					echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
 					Call :Svchost RegLogin
 					Call :ProcessCompletedReset)
-	if %value%==2K (Call :RegLogin "HKLM\System\CurrentControlSet\Control" "SvcHostSplitThresholdInKB" REG_DWORD "0x380000"
+	if %value%==1K (Call :RegLogin "HKLM\System\CurrentControlSet\Control" "SvcHostSplitThresholdInKB" REG_DWORD "0x380000"
 					Call :ProcessCompletedReset)
-	if %value%==2k (Call :RegLogin "HKLM\System\CurrentControlSet\Control" "SvcHostSplitThresholdInKB" REG_DWORD "0x380000"
+	if %value%==1k (Call :RegLogin "HKLM\System\CurrentControlSet\Control" "SvcHostSplitThresholdInKB" REG_DWORD "0x380000"
 					Call :ProcessCompletedReset)
-	if %value%==3a (Call :Block Internet.bat
+	if %value%==2a (Call :Block Internet.bat
 					echo  ►%R%[96m Ayarlar yedekleniyor...%R%[0m
 					Call :Internet RegSave Internet
 					echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
 					Call :Internet RegLogin Internet
 					Call :ProcessCompletedReset)
-	if %value%==3A (Call :Block Internet.bat
+	if %value%==2A (Call :Block Internet.bat
 					echo  ►%R%[96m Ayarlar yedekleniyor...%R%[0m
 					Call :Internet RegSave Internet
 					echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
 					Call :Internet RegLogin Internet
 					Call :ProcessCompletedReset)
-	if %value%==3K (Call :FindSave Internet.bat
+	if %value%==2K (Call :FindSave Internet.bat
 					DEL /F /Q /A "%Yedek%\Internet.bat" > NUL 2>&1
 					Call :ProcessCompletedReset)
-	if %value%==3k (Call :FindSave Internet.bat
+	if %value%==2k (Call :FindSave Internet.bat
 					DEL /F /Q /A "%Yedek%\Internet.bat" > NUL 2>&1
 					Call :ProcessCompletedReset)
-	if %value%==4a (Call :Block CPU.bat
+	if %value%==3a (Call :Block CPU.bat
 					echo  ►%R%[96m Ayarlar yedekleniyor...%R%[0m
 					Call :CPU RegSave CPU
 					echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
 					Call :CPU RegLogin CPU
 					Call :ProcessCompletedReset)
-	if %value%==4A (Call :Block CPU.bat
+	if %value%==3A (Call :Block CPU.bat
 					echo  ►%R%[96m Ayarlar yedekleniyor...%R%[0m
 					Call :CPU RegSave CPU
 					echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
 					Call :CPU RegLogin CPU
 					Call :ProcessCompletedReset)
-	if %value%==4K (Call :FindSave CPU.bat
+	if %value%==3K (Call :FindSave CPU.bat
 					DEL /F /Q /A "%Yedek%\CPU.bat" > NUL 2>&1
 					Call :ProcessCompletedReset)
-	if %value%==4k (Call :FindSave CPU.bat
+	if %value%==3k (Call :FindSave CPU.bat
 					DEL /F /Q /A "%Yedek%\CPU.bat" > NUL 2>&1
 					Call :ProcessCompletedReset)
-	if %value%==5a (Call :Block AMD.bat
+	if %value%==4a (Call :Block AMD.bat
 					echo  ►%R%[96m Ayarlar yedekleniyor...%R%[0m
 					Call :AMD.GPU RegSave AMD.GPU
 					echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
 				    Call :AMD.GPU RegLogin AMD.GPU
 					Call :ProcessCompletedReset)
-	if %value%==5A (Call :Block AMD.bat
+	if %value%==4A (Call :Block AMD.bat
 					echo  ►%R%[96m Ayarlar yedekleniyor...%R%[0m
 					Call :AMD.GPU RegSave AMD.GPU
 					echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
 				    Call :AMD.GPU RegLogin AMD.GPU
 					Call :ProcessCompletedReset)
-	if %value%==5K (Call :FindSave AMD.GPU.bat
+	if %value%==4K (Call :FindSave AMD.GPU.bat
 					DEL /F /Q /A "%Yedek%\AMD.GPU.bat" > NUL 2>&1
 					Call :ProcessCompletedReset)
-	if %value%==5k (Call :FindSave AMD.GPU.bat
+	if %value%==4k (Call :FindSave AMD.GPU.bat
 					DEL /F /Q /A "%Yedek%\AMD.GPU.bat" > NUL 2>&1
 					Call :ProcessCompletedReset)
-	if %value%==6a (Call :Block Nvidia.GPU.bat
+	if %value%==5a (Call :Block Nvidia.GPU.bat
 					echo  ►%R%[96m Ayarlar yedekleniyor...%R%[0m
 					Call :NVIDIA.GPU RegSave RegSave3 Nvidia.GPU
 					echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
 				    Call :NVIDIA.GPU RegLogin RegLogin Nvidia.GPU
 					Call :ProcessCompletedReset)
-	if %value%==6A (Call :Block Nvidia.GPU.bat
+	if %value%==5A (Call :Block Nvidia.GPU.bat
 					echo  ►%R%[96m Ayarlar yedekleniyor...%R%[0m
 					Call :NVIDIA.GPU RegSave RegSave3 Nvidia.GPU
 					echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
 				    Call :NVIDIA.GPU RegLogin RegLogin Nvidia.GPU
 					Call :ProcessCompletedReset)
-	if %value%==6K (Call :FindSave Nvidia.GPU.bat
+	if %value%==5K (Call :FindSave Nvidia.GPU.bat
 					DEL /F /Q /A "%Yedek%\Nvidia.GPU.bat" > NUL 2>&1
 					Call :ProcessCompletedReset)
-	if %value%==6k (Call :FindSave Nvidia.GPU.bat
+	if %value%==5k (Call :FindSave Nvidia.GPU.bat
 					DEL /F /Q /A "%Yedek%\Nvidia.GPU.bat" > NUL 2>&1
 					Call :ProcessCompletedReset)
-	if %value%==7a (Call :Block Genel.bat
+	if %value%==6a (Call :Block Genel.bat
 					echo  ►%R%[96m Ayarlar yedekleniyor...%R%[0m
 					Call :Optimizer RegSave RegSave Genel
 					echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
 					Call :Optimizer RegLogin RegDelete2 Genel
 					Call :ProcessCompletedReset)
-	if %value%==7A (Call :Block Genel.bat
+	if %value%==6A (Call :Block Genel.bat
 					echo  ►%R%[96m Ayarlar yedekleniyor...%R%[0m
 					Call :Optimizer RegSave RegSave Genel
 					echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
 					Call :Optimizer RegLogin RegDelete2 Genel
 					Call :ProcessCompletedReset)
-	if %value%==7K (Call :FindSave Genel.bat
+	if %value%==6K (Call :FindSave Genel.bat
 					DEL /F /Q /A "%Yedek%\Genel.bat" > NUL 2>&1
 					Call :ProcessCompletedReset)
-	if %value%==7k (Call :FindSave Genel.bat
+	if %value%==6k (Call :FindSave Genel.bat
 					DEL /F /Q /A "%Yedek%\Genel.bat" > NUL 2>&1
 					Call :ProcessCompletedReset)
 ) else
@@ -181,6 +163,10 @@ dir /b "%Yedek%\%~1" > NUL 2>&1
 goto :eof
 
 :Game
+:: ------------------------------------------------------
+:: Regedit yedek alınırken değerler= %~1: RegSave | %~2: RegSave3 | %~3: Game - Yedek regedit.bat dosya ismi
+:: Regedit kayıtları uygulanırken değerler= %~1: RegLogin | %~2: RegLogin | %~3: Game - Yedek regedit.bat dosya ismi
+:: ------------------------------------------------------
 Call :%~1 "HKLM\SYSTEM\CurrentControlSet\Control\PriorityControl" "Win32PrioritySeparation" REG_DWORD "0x26" %~3
 Call :%~1 "HKLM\SYSTEM\CurrentControlSet\Control\PriorityControl" "IRQ8Priority" REG_DWORD "0x1" %~3
 Call :%~1 "HKLM\SYSTEM\CurrentControlSet\Control\PriorityControl" "IRQ16Priority" REG_DWORD "0x2" %~3 
@@ -226,14 +212,21 @@ Call :%~2 "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemPr
 Call :%~2 "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Audio" "SFIO Priority" REG_SZ "Normal" %~3
 goto :eof
 
-:Svchost
+:Svchost [%~1: RegLogin]
+::Toplam Ram değeri öğrenilir.
 FOR /F "tokens=2" %%a in ('systeminfo ^| find "Total Physical Memory"') do set Svchost=%%a
+:: GB olarak görünmesi için son dört değer silinir.
 set Svchost=%Svchost:~0,-4%
+:: Svchost Ram optimizasyonu için hesaplama yapılır.
 set /a Svchost=%Svchost%*1024*1024+1024000
 Call :%~1 "HKLM\System\CurrentControlSet\Control" "SvcHostSplitThresholdInKB" REG_DWORD "0x%Svchost%"
 goto :eof
 
 :Internet
+:: ------------------------------------------------------
+:: Regedit yedek alınırken değerler= %~1: RegSave | %~2: Internet - Yedek regedit.bat dosya ismi
+:: Regedit kayıtları uygulanırken değerler= %~1: RegLogin | %~2: Internet - Yedek regedit.bat dosya ismi
+:: ------------------------------------------------------
 Call :%~1 HKLM\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters NegativeCacheTime REG_DWORD 0x0 %~2
 Call :%~1 HKLM\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters NegativeSOACacheTime REG_DWORD 0x0 %~2
 Call :%~1 HKLM\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters NetFailureCacheTime REG_DWORD 0x0 %~2
@@ -291,6 +284,10 @@ netsh winsock reset > NUL 2>&1
 goto :eof
 
 :CPU
+:: ------------------------------------------------------
+:: Regedit yedek alınırken değerler= %~1: RegSave | %~2: CPU - Yedek regedit.bat dosya ismi
+:: Regedit kayıtları uygulanırken değerler= %~1: RegLogin | %~2: CPU - Yedek regedit.bat dosya ismi
+:: ------------------------------------------------------
 Call :%~1 "HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\0012ee47-9041-4b5d-9b77-535fba8b1442\80e3c60e-bb94-4ad8-bbe0-0d3195efc663" "Attributes" REG_DWORD "0x2" %~2
 Call :%~1 "HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\2a737441-1930-4402-8d77-b2bebba308a3\d4e98f31-5ffe-4ce1-be31-1b38b384c009" "Attributes" REG_DWORD "0x2" %~2
 Call :%~1 "HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\9596FB26-9850-41fd-AC3E-F7C3C00AFD4B\03680956-93BC-4294-BBA6-4E0F09BB717F" "Attributes" REG_DWORD "0x2" %~2
@@ -308,6 +305,10 @@ Call :%~1 "HKLM\SYSTEM\CurrentControlSet\Control\PriorityControl" "Win32Priority
 goto :eof
 
 :AMD.GPU
+:: ------------------------------------------------------
+:: Regedit yedek alınırken değerler= %~1: RegSave | %~2: AMD.GPU - Yedek regedit.bat dosya ismi
+:: Regedit kayıtları uygulanırken değerler= %~1: RegLogin | %~2: AMD.GPU  - Yedek regedit.bat dosya ismi
+:: ------------------------------------------------------
 Call :%~1 "HKLM\SYSTEM\CurrentControlSet\Control\GraphicsDrivers" "HwSchMode" REG_DWORD "2" %~2
 Call :%~1 "HKLM\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Scheduler" "EnablePreemption" REG_DWORD "1" %~2
 Call :%~1 "HKLM\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Scheduler" "VsyncIdleTimeout" REG_DWORD "0" %~2
@@ -362,6 +363,10 @@ Call :%~1 "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-
 goto :eof
 
 :NVIDIA.GPU
+:: ------------------------------------------------------
+:: Regedit yedek alınırken değerler= %~1: RegSave | %~2: RegSave3 | %~3: Nvidia.GPU - Yedek regedit.bat dosya ismi
+:: Regedit kayıtları uygulanırken değerler= %~1: RegLogin | %~2: RegLogin | %~3: Nvidia.GPU  - Yedek regedit.bat dosya ismi
+:: ------------------------------------------------------
 Call :%~1 "HKLM\SYSTEM\CurrentControlSet\Control\GraphicsDrivers" "HwSchMode" REG_DWORD "2" %~3
 Call :%~1 "HKLM\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Scheduler" "EnablePreemption" REG_DWORD "1" %~3
 Call :%~1 "HKLM\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Scheduler" "VsyncIdleTimeout" REG_DWORD "0" %~3
@@ -403,6 +408,10 @@ RD /S /Q "%ProgramFiles(x86)%\NVIDIA Corporation\NvTelemetry" > NUL 2>&1
 goto :eof
 
 :Optimizer
+:: ------------------------------------------------------
+:: Regedit yedek alınırken değerler= %~1: RegSave | %~2: RegSave | %~3: Genel - Yedek regedit.bat dosya ismi
+:: Regedit kayıtları uygulanırken değerler= %~1: RegLogin | %~2: RegDelete2 | %~3: Genel - Yedek regedit.bat dosya ismi
+:: ------------------------------------------------------
 Call :%~1 "HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\943c8cb6-6f93-4227-ad87-e9a3feec08d1" "Attributes" REG_SZ "2" %~3
 Call :%~1 "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile" "SystemResponsiveness" REG_DWORD "0x1" %~3
 Call :%~1 "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile" "NetworkThrottlingIndex" REG_SZ "fffffff" %~3
@@ -668,6 +677,7 @@ goto :eof
 :: --------------------------------------------------------------------------------------------------------
 
 :RegSave
+:: Alttaki özel durumlar dışındaki regedit kayıtlarının yedekleri bu bölümden alınır.
 for /f "skip=2 tokens=2" %%a in ('reg query "%~1" /v "%~2" 2^> NUL') do set regtur=%%a
 for /f "skip=2 tokens=3" %%a in ('reg query "%~1" /v "%~2" 2^> NUL') do set deger=%%a
 reg query "%~1" /v "%~2" /s > NUL 2>&1
@@ -676,6 +686,7 @@ reg query "%~1" /v "%~2" /s > NUL 2>&1
 goto :eof
 
 :RegSave2
+:: Varsayılan regedit değerleri için kullanılır.
 for /f "skip=2 tokens=2" %%a in ('reg query "%~1" /ve 2^> NUL') do set regtur=%%a
 for /f "skip=2 tokens=3" %%a in ('reg query "%~1" /ve 2^> NUL') do set deger=%%a
 reg query "%~1" /ve > NUL 2>&1
@@ -684,6 +695,7 @@ reg query "%~1" /ve > NUL 2>&1
 goto :eof
 
 :RegSave3
+:: Regedit kaydında %~2 değerinde boşluk olduğunda bu bölüm kullanılır.
 for /f "skip=2 tokens=3" %%a in ('reg query "%~1" /v "%~2" 2^> NUL') do set regtur=%%a
 for /f "skip=2 tokens=4" %%a in ('reg query "%~1" /v "%~2" 2^> NUL') do set deger=%%a
 reg query "%~1" /v "%~2" /s > NUL 2>&1
@@ -694,23 +706,41 @@ goto :eof
 :: --------------------------------------------------------------------------------------------------------
 
 :RegLogin
+:: Varsayılan değerler hariç tüm regedit kayıtları buraya yönlendirilir.
 reg add "%~1" /v "%~2" /t %~3 /d "%~4" /f > NUL 2>&1
 	if %errorlevel%==1 (%NSudo% reg add "%~1" /v "%~2" /t %~3 /d "%~4" /f)
 goto :eof
 
 :RegLoginV
+:: Varsayılan regedit kayıtları buraya yönlendirilir.
 reg add "%~1" /ve /t %~2 /d "%~3" /f > NUL 2>&1
 	if %errorlevel%==1 (%NSudo% reg add "%~1" /ve /t %~2 /d "%~3" /f)
 goto :eof
 
 :RegDelete
+:: Regedit Key(Genel) silme işlemleri buraya yönlendirilir.
 reg delete "%~1" /f > NUL 2>&1
 	if %errorlevel%==1 (%NSudo% reg delete "%~1" /f)
 goto :eof
 
 :RegDelete2
+:: Tekli silmeler buraya yönlendirilir.
 reg delete "%~1" /v "%~2" /f > NUL 2>&1
 	if %errorlevel%==1 (%NSudo% reg delete "%~1" /v "%~2" /f)
+goto :eof
+
+:: --------------------------------------------------------------------------------------------------------
+
+:Warning1
+echo.
+echo  ► Aşağıdaki sorun yaşanabilir;
+echo   •%R%[33m Mikrofon veya ses ayarlarına girerken,%R%[0m
+echo   •%R%[33m yığın bellek taşma hatası alabilirsiniz.%R%[0m
+echo  ► Sorun yaşarsanız bu işlemi kapatınız.
+echo.
+set /p Warning=%R%[37m Devam etmek için%R%[36m 'E'%R%[37m, çıkış için%R%[36m 'H'%R%[37m tuşlayın%R%[0m
+	if %Warning%==h exit
+	if %Warning%==H exit
 goto :eof
 
 :: --------------------------------------------------------------------------------------------------------
