@@ -4,6 +4,36 @@
 -   Mail: ognitorenks@gmail.com
 -   Site: https://ognitorenks.blogspot.com/
 
+-----------------
+ ► Versiyon 3.3 -
+-----------------
+Yayınlanma Tarihi: .06.2022
+
+	• Chocolatey indirme sistemi alternatif olarak eklendi.
+	  • Varsayılan olarak kapalı gelir. Toolbox ayarlarından açılıp, kapatılabilir.
+	  • İndirme işlemlerinin hangi istemci üzerinden yapıldığının anlaşılması için [Chocolatey] / [Wget] ibareleri yerleştirildi.
+	  • All in One Runtimes | Wemod | ISLC | ByClickDownloader | Hibit Uninstaller | Wise Care 365 | Oyunlar | Spotify işlemleri Chocolatey seçilse dahi Wget üzerinden yapılacaktır.
+	• NSudo kontrol bölümünde indirme komutu düzenlendi.
+	• Internet bağlantı kontrol komutları düzenlendi.
+	  • 'www.bing.com' adresi yerine 'google.com' kullanıldı.
+	• All in One Runtimes bölümünde '.Net Desktop Runtime 5' sürümü yerine 6 sürümü eklendi.
+	• Optimizer bölümünde sorun yaratacak bölümlere uyarı mesajları eklendi.
+	• Optimizer bölümünde işlem ve yönlendirmelerin daha rahat anlaşılması için yorum satırları eklendi.
+	• Optimizer bölümünde Oyun İşlem Önceliği kaldırıldı.
+	• PC yönetimi için gerekli araçlar 'Araç Yükleyici' bölümü oluşturulup eklendi.
+	  • NTLite
+	  • Dism++
+	  • Rufus
+	  • Aida64
+	  • CPU-Z
+	  • GPU-Z
+	  • HW Info
+	  • CrystalDiskInfo
+	  • HD Sentinel
+	  • Core Temp
+	  •
+	  •
+
 -------------------
  ► Versiyon 3.2.2 - Ara Güncelleme
 -------------------
