@@ -10,7 +10,7 @@
 - ► Mail: ognitorenks@gmail.com
 - ► Site: https://ognitorenks.blogspot.com/
 
-![OgnitorenKs Toolbox_BajYCGCpEh](https://user-images.githubusercontent.com/93199689/172697424-0d641b39-709b-4f73-89ec-02f099ea7086.png)
+![cmd_Y7aoKLzMQ9](https://user-images.githubusercontent.com/93199689/176909932-68bb45db-038a-4573-9021-6d8d3aa59b03.png)
 
 ### OgnitorenKs.Toolbox dosyaları
 - ► OgnitorenKs.Toolbox.zip  = https://docs.google.com/uc?export=download&id=19uNjxzHFY5A6g4mFg8FirFTnyL2R0HZ3	
@@ -51,10 +51,10 @@
 	  • Yönetici yetkili kısayolun oluşturulması.
 	  
 # OGNİTORENKS TOOLBOX İÇERİĞİ
-## 1 - Online Katılımsız Uygulama Yükleyici;
+## 1 - Uygulama Yükleyici
 Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar ücretsiz alternatifler arasında seçilmiştir. WinRaR hariç o da ücretli ama ücretsiz bir yazılımdır.
 
-![OgnitorenKs Toolbox_K9PHSz9WhN](https://user-images.githubusercontent.com/93199689/172697469-157b67c9-24cc-467d-b348-70f37328c986.png)
+![cmd_OphAIXSy6A](https://user-images.githubusercontent.com/93199689/176909987-69cfdb85-dfb6-4862-a105-650f7bb8c6a0.png)
    
 	• 1 - All in One Runtimes: C++ 2005-2022 / Java / XNA Framework / OpenAL / DirectX. Bu programlar oyunlar ve bazı uygulamalarda sorun yaşamamanız için mutlaka kurulmalıdır.
 #### ► Mesajlaşma Uygulamaları 
@@ -142,9 +142,54 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	• 69 - GlassWire: İnternet takip programı. Bilgisayarınızda hangi program nereye ne göndermiş ne almış hepsini görebilirsiniz.
 	• 70 - Hamachi: Ortak bir ağ kurmaya yarayan yazılımdır. Online oyunlarda arkadaşlarınızla oyun kurmak için ortak bir ağ gerektiğinde hayat kurtaran bir programdır.
 
+## 2 - Araç Yükleyici
+
+![cmd_pGj1oZ5Nm0](https://user-images.githubusercontent.com/93199689/176914949-6e6b094b-471f-48a8-a7df-80343c19eb19.png)
+
+#### ► Windows Düzenleme
+	• 1 - NTLite: Sistem düzenleme işleminde kullanılır. En kullanışlı ve kapsamlı yazılımlardandır. Ücretsiz özellikleriyle performans sürüm düzenlemesi yapılabilir.
+	• 2 - Dism++: Sistem düzenleme uygulamasıdır. Açık kaynaktır. Arayüzü çok kullanışlıdır. NTLite göre daha basittir.
+#### ► USB Hazırlayıcı
+	• 3 - Rufus: Windows kurulum diski oluşturmanızı sağlar.
+#### ► Donanım Bilgisi
+	• 4 - AIDA64: Donanımınız hakkında bilgi alabileceğiniz program.
+	• 5 - CPU-Z: İşlemci ve Ram hakkında bilgi verir.
+	• 6 - GPU-Z: Ekran kartı hakkında bilgi verir. 
+	• 7 - HW Info: Donanım ve kullanım değerleri hakkında bilgi alabilirsiniz.
+	• 8 - CrystalDiskInfo: HDD ve SSD sağlık durumu hakkında bilgi verir.
+	• 9 - HD Sentinel: HDD ve SSD sağlık durumu hakkında bilgi verir.
+	• 10 - Core Temp: İşlemci sıcaklığını öğrenebilirsiniz.
+#### ► Test Araçları
+	• 11 - CrystalDiskMark: HDD ve SSD'leri test edip okuma/yazma değerlerini öğrenbilirsiniz.
+	• 12 - Prime95: İşlemciyi yük altına sokarak test etmenizi sağlar. Overclock işlemlerinin vazgeçilmezidir.
+	• 13 - OCCT: CPU / GPU / PSU stress test uygulaması
+	• 14 - Furmark: GPU stress test uygulaması
+#### ► Sanal Makine
+	• 15 - VirtualBox: Sanal makina uygulaması. Tüm Windows sürümleri ve Linux sistemleri kurabilirsiniz.
+	• 16 - VMWare: Sanal makina uygulaması. Tüm Windows sürümleri ve Linux sistemleri kurabilirsiniz.
+#### ► Sanal Makine
+	• 15 - GreenFish: Simge hazırlayıp, simge dosyalarının içeriğine bakabileceğiniz uygulamadır.
+	• 18 - Thumbico: Programların .exe dosyasından simge almayı sağlar.
+	• 19 - Quick Any 2 ICO: Görsel dosyaları Icon dosyasına çevirmeyi sağlar.
+	• 20 - Resource Hacker: .dll .exe gibi dosyaları editleyebileceğiniz kapsamlı bir yazılım.
+#### ► Sanal Makine
+	• 21 - NSudo: Dosyaları yüksek yetkili(Trusted Installer) olarak çalıştırmayı sağlayan uygulama.
+	• 22 - Explorer++: Alternatif Explorer yazılımıdır. Kritik durumlarda hayat kurtarabilir.
+#### ► Sanal Makine
+	• 23 - Display Driver Uninstaller (DDU): Ekran kartı driverını kaldırıp sorunsuz temiz kurulum yapmayı sağlar.
+	• 24 - Nvidia Profile Inspector: NVIDIA sürücüleri hakkında detaylı bilgi, performans takibi ve ayarlarda düzenleme yapma imkanı veren başarılı bir uygulama.
+	• 25 - RadeonMod: AMD ekran kartı driverıyla ilgili detaylı değişiklikler yapmanızı sağlayan yazılım.
+	• 26 - Radeon Software Slimmer: Ekran kartı kurulumuyla ilgili çok fazla seçenek sunarak ihtiyaç dışı özellikleri devre dışı bırakmanızı sağlar.
+	• 27 - NVCCleanstall: NVIDIA ekran kartı driver kurulumunda fazla seçenek sunarak ihtiyaç dışı özellikleri yüklememenizi sağlar.
+#### ► Sanal Makine
+	• 28 - SSD Booster: SSD sağlığının uzaması için bazı indexleme ve SSD'ler için gereksiz hızlandırma servislerini devre dışı bırakmanızı sağlar. SSD'ye harici olarak hız vermez.
+	• 29 - Folder2ISO: Klasörleri ISO'ya dönüştürebileceğiniz basit, küçük bir uygulama.
+	• 30 - Process Monitor: Olası sorunlarda analiz yapabilmek için log dosyası oluşturmanızı sağlar.
+	• 31 - AOMEI Partition Assistans: Disk yönetimi uygulamasıdır.
+
 # OgnitorenKs Toolbox
-2 - Bu bölüm işletim sistemine göre değişiklik göstermektedir. Windows 11 ve Windows 10 için iki ayrı bölüme ayrılmıştır.
-### 2 - Windows 10 Edit
+3 - Bu bölüm işletim sistemine göre değişiklik göstermektedir. Windows 11 ve Windows 10 için iki ayrı bölüme ayrılmıştır.
+### 3 - Windows 10 Edit
 
 ![cmd_kRrG2UwL2l](https://user-images.githubusercontent.com/93199689/167621037-c8742c3f-b6f4-44f9-b64f-d579d6923ca5.png)
 
@@ -176,7 +221,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	     •[Eski]: 1 - Windows 10 eski (Varsayılan) simgeleri yükler.
 	     •[Yeni]: 2 - Windows 10 yeni simgeleri yükler.
 	• 9 - Güncellemeleri 2050 yılına kadar ertele: Windows Update hizmetini 2050 yılına kadar etkisiz hale getirir.
-### 2 - Windows 11 Edit
+### 3 - Windows 11 Edit
 
 ![cmd_4yRsA2SSyl](https://user-images.githubusercontent.com/93199689/167621089-ae0c7491-8986-465f-bb2d-4aff40f65c9b.png)
 
@@ -211,7 +256,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 		
 	• 8 - Gpedit.msc (Yerel Grup ilkesi) [Ekle]: Windows Home ve Home Single Language sürümlerine "Gpedit.msc" ekler.
 	• 9 - Güncellemeleri 2050 yılına kadar ertele: Windows Update hizmetini 2050 yılına kadar etkisiz hale getirir.
-### 3 - Kapatılan Servisleri Yönet
+### 4 - Hizmetleri Yönet
 Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip daha sonra aç / kapat baş harflerini eklemek gerekiyor.
 
 Örnek: 1a / 2k / 4A / 10K / 23a / 24k  
@@ -245,7 +290,7 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 	• 25 [A/K]- Core Parking (CPU Çekirdek Uyku Modu): İşlemci çekirdeklerinin sürekli tam yükte çalışmasını istiyorsanız hizmeti kapatabilirsiniz. Tam tersi durum için açık hale getirebilirsiniz.
 	• 26 [A/K]- Wifi hizmeti: Wifi hizmetlerini açıp kapatmaya yarar.
 	
-### 4 - Windows Düzenleme:
+### 5 - Windows Düzenleme:
 Mavi renkli işlem numaraları 19 numaralı işlem ile alakalıdır.
 
 ![cmd_CYShydSkCH](https://user-images.githubusercontent.com/93199689/172699814-00070e10-8d67-42fe-ac4e-ad7eba681c3f.png)
@@ -261,40 +306,41 @@ Mavi renkli işlem numaraları 19 numaralı işlem ile alakalıdır.
 	• 9 - Regedit Yükle [İmaj]: Offline sistemin regedit kayıtlarını online sisteme entegre ederek değişim yapmanızı sağlar. Detaylı bir konudur. Bu konularda tecrübeniz yoksa bulaşmayın.
 	     • Bu bölümü kullanmadan önce sistemi farklı bir program ile mount ettiyseniz programı kapatın. Yoksa hata alırsınız.
 	     • Offline sisteme eklenilen regedit kayıtları online sistemden farklı tepkiler verecektir. Lütfen bu durumu göz önünde bulundurun.
+	     • Ekleme yapmadan önce aşağıdaki gibi Regedit kayıtlarını düzenlemeniz gerekmektedir.
 	     • -------------------------------------------------------------------------------
 	     •                 Varsayılan Yol       Entegre edilmiş hali
 	     •                ---------------       --------------------
-	     •                 [HKLM\SOFTWARE]  ► ► [HKLM\OG_SOFTWARE]
-	     •                          [HKCR]  ► ► [HKLM\OG_SOFTWARE\Classes]
-	     •                   [HKLM\SYSTEM]  ► ► [HKLM\OG_SYSTEM]
-	     •                          [HKCU]  ► ► [HKLM\OG_NTUSER]
-	     •                  [HKU\.Default]  ► ► [HKLM\OG_DEFAULT]
-	     • [HKLM\SYSTEM\CurrentControlSet]  ► ► [HKLM\OG_SYSTEM\ControlSet001]
+	     •                 [HKLM\SOFTWARE]  ► ► [HKLM\OFF_SOFTWARE]
+	     •                          [HKCR]  ► ► [HKLM\OFF_SOFTWARE\Classes]
+	     •                   [HKLM\SYSTEM]  ► ► [HKLM\OFF_SYSTEM]
+	     •                          [HKCU]  ► ► [HKLM\OFF_HKCU]
+	     •                  [HKU\.Default]  ► ► [HKLM\OFF_HKU]
+	     • [HKLM\SYSTEM\CurrentControlSet]  ► ► [HKLM\OFF_SYSTEM\ControlSet001]
 	     • -------------------------------------------------------------------------------
 	     • ► Örnek 1:
 	     • ----------
 	     • [Varsayılan Yol]: reg add "HKLM\SOFTWARE\Microsoft\Speech_OneCore\Preferences" /v "ModelDownloadAllowed" /t REG_DWORD /d 0 /f
-	     • [Entegre edilmiş hali]: reg add "HKLM\OG_SOFTWARE\Microsoft\Speech_OneCore\Preferences" /v "ModelDownloadAllowed" /t REG_DWORD /d 0 /f
+	     • [Entegre edilmiş hali]: reg add "HKLM\OFF_SOFTWARE\Microsoft\Speech_OneCore\Preferences" /v "ModelDownloadAllowed" /t REG_DWORD /d 0 /f
 	     • ----------
 	     • ► Örnek 2:
 	     • ----------
 	     • [Varsayılan Yol]: Reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" /v "EnableWebContentEvaluation" /t REG_DWORD /d 0 /f
-	     • [Entegre edilmiş hali]: Reg add "HKLM\OG_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" /v "EnableWebContentEvaluation" /t REG_DWORD /d 0 /f
+	     • [Entegre edilmiş hali]: Reg add "HKLM\OFF_HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" /v "EnableWebContentEvaluation" /t REG_DWORD /d 0 /f
 	     • ----------
 	     • ► Örnek 3:
 	     • ----------
 	     • [Varsayılan Yol]: Reg add "HKU\.Default\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" /v "PreventOverride" /t REG_DWORD /d 0 /f
-	     • [Entegre edilmiş hali]: Reg add "HKLM\OG_DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" /v "PreventOverride" /t REG_DWORD /d 0 /f
+	     • [Entegre edilmiş hali]: Reg add "HKLM\OFF_HKU\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" /v "PreventOverride" /t REG_DWORD /d 0 /f
 	     • ----------
 	     • ► Örnek 4:
 	     • ----------
 	     • [Varsayılan Yol]: reg add "HKCR\*\shell\runas" /ve /t REG_SZ /d "Sahipliği Al" /f 
-	     • [Entegre edilmiş hali]: reg add "HKLM\OG_SOFTWARE\Classes\*\shell\runas" /ve /t REG_SZ /d "Sahipliği Al" /f 
+	     • [Entegre edilmiş hali]: reg add "HKLM\OFF_SOFTWARE\Classes\*\shell\runas" /ve /t REG_SZ /d "Sahipliği Al" /f 
 	     • ----------
 	     • ► Örnek 5:
 	     • ----------
 	     • [Varsayılan Yol]: "HKLM\SYSTEM\CurrentControlSet\Control\FileSystem" /v "LongPathsEnabled" /t REG_DWORD /d 1 /f
-	     • [Entegre edilmiş hali]: "HKLM\OG_SYSTEM\ControlSet001\Control\FileSystem" /v "LongPathsEnabled" /t REG_DWORD /d 1 /f
+	     • [Entegre edilmiş hali]: "HKLM\OFF_SYSTEM\ControlSet001\Control\FileSystem" /v "LongPathsEnabled" /t REG_DWORD /d 1 /f
 	     • -------------------------------------------------------------------------------
 	• 10 - Regedit Topla [İmaj]: Yüklenilen regedit kayıtlarını toplar. Regedit kayıtlarını yüklerseniz toplamayı unutmayın. Yoksa diğer programlarda hata alırsınız.
 	• 11 - Güncelleme Yükleyici [İmaj]: Windows update dosyalarını offline sisteme yükler. Update dosyalarını "Edit\Update" içine atınız.
@@ -315,7 +361,7 @@ Mavi renkli işlem numaraları 19 numaralı işlem ile alakalıdır.
 	     • Burada tanımlanan klasör yolu ile işlem yapılmaktadır.
 	     • Bu bölüm ilk girişte "Edit\Mount" klasör yolunu alır. Mount dosyaları farklı bir klasörde ise 26 numaralı işlem ile değiştirin.
 
-### 5 - Kullancı Hesap Yönetimi: 
+### 6 - Kullancı Hesap Yönetimi: 
 
 ![cmd_syq0J0s2EV](https://user-images.githubusercontent.com/93199689/167623117-71bfc629-f729-48a4-be7c-561b215cb878.png)
 
@@ -327,7 +373,7 @@ Mavi renkli işlem numaraları 19 numaralı işlem ile alakalıdır.
 	• 6 - Şifremi unuttum: Şifre değiştirmek veya şifre oluşturmak için bu bölüm kullanılabilir.
 	• 7 - Mevcut Kullanıcıları Göster [*]: Sistemde kayıtlı kullanıcıları gösterir.
 
-### 6 - Lisans Yönetimi: 
+### 7 - Lisans Yönetimi: 
 SLMGR.VBS komutlarını içermektedir. Crack tarzı işlemler bulunmamaktadır.
 
 ![cmd_XbdXB7HxRa](https://user-images.githubusercontent.com/93199689/167623153-126106ea-df07-48e6-bb56-7ac03cb65b19.png)
@@ -339,61 +385,67 @@ SLMGR.VBS komutlarını içermektedir. Crack tarzı işlemler bulunmamaktadır.
 	• 5 - Lisans Sil [upk]: Sistem kullandığınız lisansı siler.
 	• 6 - Lisans Süre Sıfırla [rearm]: Windows 30 günlük deneme sürümü süresini 3 defa uzatabilirsiniz.
 
-### 7 - Sistem Hakkında:
+### 8 - Sistem Hakkında:
 Sistem ve donanım hakkında bilgi verir.
 
 ![cmd_mDH1JvgaDM](https://user-images.githubusercontent.com/93199689/167623663-1d3cde57-4f54-48fb-bbce-a33a8e8f220c.png)
 
-### 8 - Güç Seçenekleri [PowerChoice]:  
+### 9 - Güç Seçenekleri [PowerChoice]:  
 Güç seçeneklerini hızlıca değiştirmeyi sağlar. Sistem dili Türkçe değilse çalışmaz.
 
 ![cmd_EAcvH91Ach](https://user-images.githubusercontent.com/93199689/167623503-db0856af-bffd-4ff0-bd0d-22267cc6d77b.png)
 
-### 9 - Güncelleme Sonrası Temizlik:
+### 10 - Güncelleme Sonrası Temizlik:
 Düzenlediğim sistemleri güncelleme sonrası ilk haline getirmeye yarar.	
-### 10 - Windows / Market Onar:
+### 11 - Windows / Market Onar:
 Microsoft'un önerdiği bütün onarma seçeneklerini uygular.
-### 11 - PC Temizle: 
+### 12 - PC Temizle: 
 %Temp% dosyalarını temizler
-### 12 - İnternet Önbellek Temizle:
+### 13 - İnternet Önbellek Temizle:
 Olası internet arızalarında bu bölümü kullanabilirsiniz. Güvenlik duvarını da sıfırlamaktadır. 2-3 haftada bir kullanabilirsiniz.
-### 13 - Simge Hatalarını Onar:
+### 14 - Simge Hatalarını Onar:
 Simge hatalarını onarır.
-### 14 - Ping Ölçer: 
+### 15 - Ping Ölçer: 
 İçerisinde belirli sitelerin ping durumlarını otomatik gösterir. Alt bölümde yer alan "Ping ölç" bölümüyle istediğiniz site ve IP'nin pingini ölçebilirsiniz.
 	
 ![cmd_RYynOfcKdu](https://user-images.githubusercontent.com/93199689/167626925-b8e56f24-a69a-4b84-b71b-42f91aafcc70.png)
 
-### 15 - Fat32 to NTFS: 
+### 16 - Fat32 to NTFS: 
 Fat32 olarak formatlanmış USB diskleri veri kaybı olmadan NTFS'ye çevirir. Disk harfini girmeniz gerekmektedir.
 	
 ![cmd_IbpcglgIoZ](https://user-images.githubusercontent.com/93199689/167626995-480e24ba-31b6-4580-ad1d-40fffc936687.png)
 
-### 16 - Kayıtlı Wifi Bilgileri [ARCHLEY]:	 
+### 17 - Kayıtlı Wifi Bilgileri [ARCHLEY]:	 
 Bu bölümde sisteme girdiğiniz Wifi isim ve şifrelerini görebilirsiniz. Çalışmasını toolbox'a eklediği için Archley'e teşekkür ederim.
 
-### 17 - Zaman Ayarlı PC Kapat:
+### 18 - Zaman Ayarlı PC Kapat:
 Seçilen belirli bir süreden sonra PC otomatik kapatır.
 	
 ![cmd_3pp0ccih2b](https://user-images.githubusercontent.com/93199689/167627106-7906eed5-3736-4702-80b1-7fee90cf81a9.png)
 
-### 18 - Appx - Güncelleme Yükleyici:
+### 19 - Appx - Güncelleme Yükleyici:
 Appx ve Update dosyalarını yüklemenizi sağlayan bölümdür. 
 	• Appx dosyalarıyla ilgili detaylı bilgi için bakınız:https://ognitorenks.blogspot.com/2021/11/rehber-powershell-appx-komutlarnn_9.html
 	• Güncelleme dosyalarını indirebileceğiniz site: https://www.catalog.update.microsoft.com/
 	
-### 19 - Hash Kontrol [SHA-256]: 
+### 20 - Hash Kontrol [SHA-256]: 
 SHA-256 değerlerini karşılaştırmayı sağlar.
 
-### 20 - Kaldırılamayan Uygulamalar: 
+### 21 - Kaldırılamayan Uygulamalar: 
 Kaldırılması Microsoft tarafından engellenen bazı uygulamaları kaldırmayı sağlar.
 
 ![cmd_BAUX3GKM8L](https://user-images.githubusercontent.com/93199689/170891816-105ab12a-b99d-41a5-89e4-2bb344b5efde.png)
 
-### 21 - Performans Optimizasyonu:
-Performans ile ilgili ayarları uygular. İşlem öncesi değiştirilecek veya eklenecek regedit kayıtları tespit edilir ve yedekleri alınır.
+### 22 - Performans Optimizasyonu:
+Performans ile ilgili ayarları uygular. İşlem öncesi değiştirilecek veya eklenecek regedit kayıtları tespit edilir ve yedekleri alınır. Kullanmak için istediğiniz işlemi ve Aç veya kapatın baş harflerini yazmanız lazım. 
+Örnek;
+1a / 2k / 3A / 4K 
 
-![cmd_CN3buz2O03](https://user-images.githubusercontent.com/93199689/170891881-ba7eb450-2627-4722-aaed-58a1fe011fc7.png)
+![cmd_Z4VP2rFPbM](https://user-images.githubusercontent.com/93199689/176915502-42e8db60-7a40-4cff-b2ff-fe59fd03470e.png)
+
+	• 1[A/K] - Svchost Ram Optimizasyonu: Svchost hizmetini sistemdeki Ram miktarınıza göre düzenler ve parçalar halindeki Svchost işlemlerini tüm hale getirerek Ram kullanımı düşürür. Bazı durumlarda ses ve mikrofon ayarlarına girerken bellek taşma hatası yapabilir. Böyle bir hata alırsanız kapatabilirsiniz.
+	• 2[A/K] - 
+
 
 ### Z - Toolbox Ayarları:
 Toolbox üzerinde ayar yapıp. Bilgi alabileceğiniz bölüm.
@@ -404,7 +456,7 @@ Toolbox üzerinde ayar yapıp. Bilgi alabileceğiniz bölüm.
 	• 2 [A/K] - Log Kayıt: Yapılan işlemlerden sonra kayıt ayarını açıp kapatabilirsiniz.
 	• 3 [A/K] - Tarayıcı eklenti ayarı: Tarayıcılar yüklenirken eklenti yüklenip yüklenmeyeceğini ayarlayabilirsiniz.
 	•       4 - Masaüstüne kısayol oluştur.
-	•       5 - Güncelleme Sıfırla
+	•       5 - Güncelleme Kontrol Et
 	•       6 - Toolbox Rehber
 	•       7 - ognitorenks.blogspot.com
 	•       8 - Github Proje Sayfası
