@@ -167,21 +167,21 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 #### ► Sanal Makine
 	• 15 - VirtualBox: Sanal makina uygulaması. Tüm Windows sürümleri ve Linux sistemleri kurabilirsiniz.
 	• 16 - VMWare: Sanal makina uygulaması. Tüm Windows sürümleri ve Linux sistemleri kurabilirsiniz.
-#### ► Sanal Makine
+#### ► Simge Düzenleme
 	• 15 - GreenFish: Simge hazırlayıp, simge dosyalarının içeriğine bakabileceğiniz uygulamadır.
 	• 18 - Thumbico: Programların .exe dosyasından simge almayı sağlar.
 	• 19 - Quick Any 2 ICO: Görsel dosyaları Icon dosyasına çevirmeyi sağlar.
 	• 20 - Resource Hacker: .dll .exe gibi dosyaları editleyebileceğiniz kapsamlı bir yazılım.
-#### ► Sanal Makine
+#### ► Sistem Araçları
 	• 21 - NSudo: Dosyaları yüksek yetkili(Trusted Installer) olarak çalıştırmayı sağlayan uygulama.
 	• 22 - Explorer++: Alternatif Explorer yazılımıdır. Kritik durumlarda hayat kurtarabilir.
-#### ► Sanal Makine
+#### ► GPU / Driver Araçları
 	• 23 - Display Driver Uninstaller (DDU): Ekran kartı driverını kaldırıp sorunsuz temiz kurulum yapmayı sağlar.
 	• 24 - Nvidia Profile Inspector: NVIDIA sürücüleri hakkında detaylı bilgi, performans takibi ve ayarlarda düzenleme yapma imkanı veren başarılı bir uygulama.
 	• 25 - RadeonMod: AMD ekran kartı driverıyla ilgili detaylı değişiklikler yapmanızı sağlayan yazılım.
 	• 26 - Radeon Software Slimmer: Ekran kartı kurulumuyla ilgili çok fazla seçenek sunarak ihtiyaç dışı özellikleri devre dışı bırakmanızı sağlar.
 	• 27 - NVCCleanstall: NVIDIA ekran kartı driver kurulumunda fazla seçenek sunarak ihtiyaç dışı özellikleri yüklememenizi sağlar.
-#### ► Sanal Makine
+#### ► Diğer
 	• 28 - SSD Booster: SSD sağlığının uzaması için bazı indexleme ve SSD'ler için gereksiz hızlandırma servislerini devre dışı bırakmanızı sağlar. SSD'ye harici olarak hız vermez.
 	• 29 - Folder2ISO: Klasörleri ISO'ya dönüştürebileceğiniz basit, küçük bir uygulama.
 	• 30 - Process Monitor: Olası sorunlarda analiz yapabilmek için log dosyası oluşturmanızı sağlar.
@@ -441,11 +441,15 @@ Performans ile ilgili ayarları uygular. İşlem öncesi değiştirilecek veya e
 Örnek;
 1a / 2k / 3A / 4K 
 
-![cmd_Z4VP2rFPbM](https://user-images.githubusercontent.com/93199689/176915502-42e8db60-7a40-4cff-b2ff-fe59fd03470e.png)
+![cmd_qKWS61U6XY](https://user-images.githubusercontent.com/93199689/176938552-33a0a36b-3149-479c-97e8-f1636914ba4a.png)
 
 	• 1[A/K] - Svchost Ram Optimizasyonu: Svchost hizmetini sistemdeki Ram miktarınıza göre düzenler ve parçalar halindeki Svchost işlemlerini tüm hale getirerek Ram kullanımı düşürür. Bazı durumlarda ses ve mikrofon ayarlarına girerken bellek taşma hatası yapabilir. Böyle bir hata alırsanız kapatabilirsiniz.
-	• 2[A/K] - 
-
+	• 2[A/K] - İnternet Optimizasyonu: İnternet bağlantısında bazı iyileştirmeler yapar.
+	• 3[A/K] - AMD Ekran Kartı Optimizasyonu: Akıcı ve yüksek FPS almanız için performans odaklı düzenlemeler yapar.
+	• 4[A/K] - NVIDIA Ekran Kartı Optimizasyonu: Akıcı ve yüksek FPS almanız için performans odaklı düzenlemeler yapar.
+	• 5[A/K] - Genel Optimizasyon: Genel olarak derlenen performans düzenlemelerini uygular.
+	• 6[A/K] - Aygıt Optimizasyonu: Bazı aygıt servislerini devre dışı bırakarak gecikmeyi düşürmeyi sağlar.
+	• 7      - Uygulama işlem önceliği düzenleme: Görev Yöneticisi Ayrıntılar bölümünde yer alan uygulamaların çalışma önceliklerini bu bölümden sürekli olarak değiştirebilirsiniz.
 
 ### Z - Toolbox Ayarları:
 Toolbox üzerinde ayar yapıp. Bilgi alabileceğiniz bölüm.
