@@ -411,6 +411,9 @@ dir /b %Location%\Edit\install.wim > NUL 2>&1
 	if %errorlevel%==0 (Call :LogSave "ESDtoWIM" "HATA! Mevcut install.wim dosyası üzerine ekleme işlemi gerçekleştirildi"
 						Dism /Export-Image /SourceImageFile:"%~1" /SourceIndex:%~2 /DestinationImageFile:%Location%\Edit\install.wim /Compress:max /CheckIntegrity
 						timeout /t 1 /nobreak > NUL)
+	if %errorlevel%==1 (Call :LogSave "ESDtoWIM" "Dönüştürme işlemi yapıldı"
+						Dism /Export-Image /SourceImageFile:"%~1" /SourceIndex:%~2 /DestinationImageFile:%Location%\Edit\install.wim /Compress:max /CheckIntegrity
+						timeout /t 1 /nobreak > NUL)
 goto :eof
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
@@ -605,11 +608,11 @@ goto :eof
 
 :RegeditInstall
 %~1 :Panel "%R%[100m                            Regedit Yükle                         %R%[0m"
-reg load HKLM\OG_COMPONENTS "%Mount%\Windows\System32\config\COMPONENTS" > NUL
-reg load HKLM\OG_DEFAULT "%Mount%\Windows\System32\config\default" > NUL
-reg load HKLM\OG_NTUSER "%Mount%\Users\Default\ntuser.dat" > NUL
-reg load HKLM\OG_SOFTWARE "%Mount%\Windows\System32\config\SOFTWARE" > NUL
-reg load HKLM\OG_SYSTEM "%Mount%\Windows\System32\config\SYSTEM" > NUL
+reg load HKLM\OFF_COMPONENTS "%Mount%\Windows\System32\config\COMPONENTS" > NUL
+reg load HKLM\OFF_HKU "%Mount%\Windows\System32\config\default" > NUL
+reg load HKLM\OFF_HKCU "%Mount%\Users\Default\ntuser.dat" > NUL
+reg load HKLM\OFF_SOFTWARE "%Mount%\Windows\System32\config\SOFTWARE" > NUL
+reg load HKLM\OFF_SYSTEM "%Mount%\Windows\System32\config\SYSTEM" > NUL
 Call :LogSave "RegeditInstall" "'%Mount%' klasöründen regedit kayıtları yüklendi"
 %~1 :ProcessCompleted
 goto :eof
@@ -621,14 +624,14 @@ goto :eof
 for /f "tokens=* delims=" %%a in ('reg query "HKLM" ^| findstr "{"') do (
 	reg unload "%%a" >nul 2>&1
 )
-reg delete "HKLM\OG_SYSTEM\CurrentControlSet" /f >nul 2>&1
-reg unload HKLM\OG_COMPONENTS > NUL 2>&1
-reg unload HKLM\OG_DRIVERS > NUL 2>&1
-reg unload HKLM\OG_DEFAULT > NUL 2>&1
-reg unload HKLM\OG_NTUSER > NUL 2>&1
-reg unload HKLM\OG_SCHEMA > NUL 2>&1
-reg unload HKLM\OG_SOFTWARE > NUL 2>&1
-reg unload HKLM\OG_SYSTEM > NUL 2>&1
+reg delete "HKLM\OFF_SYSTEM\CurrentControlSet" /f >nul 2>&1
+reg unload HKLM\OFF_COMPONENTS > NUL 2>&1
+reg unload HKLM\OFF_DRIVERS > NUL 2>&1
+reg unload HKLM\OFF_HKU > NUL 2>&1
+reg unload HKLM\OFF_HKCU > NUL 2>&1
+reg unload HKLM\OFF_SCHEMA > NUL 2>&1
+reg unload HKLM\OFF_SOFTWARE > NUL 2>&1
+reg unload HKLM\OFF_SYSTEM > NUL 2>&1
 Call :LogSave "RegeditCollet" "'%Mount%' klasöründen regedit kayıtları toplandı"
 %~1 :ProcessCompleted
 goto :eof

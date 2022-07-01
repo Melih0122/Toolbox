@@ -24,7 +24,7 @@
 ::
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
-VersionCheck:3.2.2
+VersionCheck:3.3
 Version8Check:2.7
 
 ►►► All in One Runtimes ◄◄◄
@@ -53,7 +53,7 @@ https://download.microsoft.com/download/8/4/A/84A35BF1-DAFE-4AE8-82AF-AD2AE20B6B
 
 https://discord.com/api/download?platform=win Discord.exe https://discord.com/
 https://web.whatsapp.com/desktop/windows/release/x64/WhatsAppSetup.exe WhatsApp.exe https://www.whatsapp.com/download
-https://updates.signal.org/desktop/signal-desktop-win-5.45.0.exe Signal.exe https://signal.org/download/
+https://updates.signal.org/desktop/signal-desktop-win-5.47.0.exe Signal.exe https://signal.org/download/
 https://telegram.org/dl/desktop/win64 Telegram.exe https://desktop.telegram.org/
 https://zoom.us/client/latest/ZoomInstallerFull.msi Zoom.msi
 
@@ -74,24 +74,24 @@ https://github.com/henrypp/memreduct/releases/download/v.3.4/memreduct-3.4-setup
 ►►► TARAYICI ◄◄◄
 
 :: https://chromeenterprise.google/browser/download/thank-you/?platform=WIN64_MSI&channel=stable&usagestats=0
-https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7BB33E5C6E-2CE6-06A0-1201-69205A8E4A24%7D%26lang%3Den%26browser%3D4%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dtrue%26ap%3Dx64-stable-statsdef_0%26brand%3DGCEA/dl/chrome/install/googlechromestandaloneenterprise64.msi GoogleChrome.msi
+https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7BC2CC526D-E173-B5C5-4A6B-6D0C91E59E63%7D%26lang%3Den%26browser%3D5%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dtrue%26ap%3Dx64-stable-statsdef_0%26brand%3DGCEA/dl/chrome/install/googlechromestandaloneenterprise64.msi GoogleChrome.msi
 https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=tr Firefox.exe
 https://brave-browser-downloads.s3.brave.com/latest/brave_installer-x64.exe Brave.exe
-https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/deca85f5-369c-4c01-933d-f1b544563b31/MicrosoftEdgeEnterpriseX64.msi Edge.msi https://www.microsoft.com/en-us/edge/business/download
+https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/c96b75fd-157d-4494-9ffd-d299a0b9dd9d/MicrosoftEdgeEnterpriseX64.msi Edge.msi https://www.microsoft.com/en-us/edge/business/download
 https://net.geo.opera.com/opera_gx/stable/windows OperaGX.exe
 
 ►►► SIKIŞTIRMA ◄◄◄
 
-https://www.7-zip.org/a/7z2107-x64.msi 7-Zip.msi https://www.7-zip.org/download.html
+https://www.7-zip.org/a/7z2200-x64.msi 7-Zip.msi https://www.7-zip.org/download.html
 https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-611tr.exe Winrar.exe https://www.win-rar.com/predownload.html?&L=5
 
 ►►► MULTİMEDYA ◄◄◄
 
-https://download.kde.org/stable/kdenlive/22.04/windows/kdenlive-22.04.0-1.exe Kdenlive.exe https://kdenlive.org/en/download/
+https://download.kde.org/stable/kdenlive/22.04/windows/kdenlive-22.04.2.exe Kdenlive.exe https://kdenlive.org/en/download/
 https://github.com/OpenShot/openshot-qt/releases/download/v2.6.1/OpenShot-v2.6.1-x86_64.exe Openshot.exe https://www.openshot.org/tr/download/
-https://github.com/mltframework/shotcut/releases/download/v22.04.25/shotcut-win64-220425.exe Shotcut.exe https://shotcut.org/download/
+https://github.com/mltframework/shotcut/releases/download/v22.06.23/shotcut-win64-220623.exe Shotcut.exe https://shotcut.org/download/
 https://download.kde.org/stable/krita/5.0.6/krita-x64-5.0.6-setup.exe Krita.exe https://krita.org/en/download/krita-desktop/
-https://dw85.uptodown.com/dwn/sOQDgkJ-1JXJWUnAPUetwOkyk6lB-8uFjrRORcb2xArcNgOCAofZWNso7UhEPqmVuok0XV7gYC6GX4RpjWpsiHeFr1kO55u8LRIdib9mRWJCw4p5cX3M2HhiZqvqcN3k/wdWcfkpcdu94iiiqlunFLetEHyKIsfp5_oIo9IPTBWtqaqRE9yyg_zYOC7WlJtBKn3UQVVuUiaDC8HKGbcl8a767LBACsE3g684UjCcinTsUaGIHHFgbh_ThMHWC-M6W/r6i2c232-ENj2a-mBR8W3mTOw3-Jp4E2sP62fK7QWC8dqcI6OP5BThIKqmS2HwlH/gimp-2-10-30.exe Gimp.exe https://www.gimp.org/downloads/ https://download.gimp.org/mirror/pub/gimp/v2.10/windows/gimp-2.10.30-setup.exe 
+https://dw.uptodown.com/dwn/lQ4w8fuvUkUEPXsItJOzgRHatqgUyy3wvUi08HW4I0fIg1pvLspa5TcE4K4qZRQ1z3U1zFlILa7s-f8G1cL_4CnOe_sKoHl07HJVqSs8MjkpIuXRv8M7UapZhHODLHJz/HuHjr204hvqBnbgKYQsM5M8nSe1mbkiQcrSmOTB9dpjjsGGM5da9M4VQzVnu3tid1YvnFNuFNQ-6cNN8qlFtgQrBAQs4q2ScpYL1SdXUNVUgN5_ckEQ7SOj30sBvNVzd/TgzTM4YDJMW1514w_fFaWa8k3Ojwb7TzdWzzFyb_eVlcC89BUUbwBYBpXJs-kg5H/ Gimp.exe https://www.gimp.org/downloads/ https://download.gimp.org/mirror/pub/gimp/v2.10/windows/gimp-2.10.30-setup.exe 
 https://cdn-fastly.obsproject.com/downloads/OBS-Studio-27.2.4-Full-Installer-x64.exe OBS.exe https://obsproject.com/tr/download
 https://github.com/ShareX/ShareX/releases/download/v13.7.0/ShareX-13.7.0-setup.exe ShareX.exe https://github.com/ShareX/ShareX/releases
 https://github.com/audacity/audacity/releases/download/Audacity-3.1.3/audacity-win-3.1.3-64bit.exe Audacity.exe https://www.audacityteam.org/download/
@@ -101,8 +101,8 @@ https://github.com/Tichau/FileConverter/releases/download/v1.2.3/FileConverter-1
 
 ►►► VİDEO-SES OYNATICI ◄◄◄
 
-https://files2.codecguide.com/K-Lite_Codec_Pack_1700_Mega.exe Klite.exe https://codecguide.com/download_k-lite_codec_pack_mega.htm
-https://ftp.linux.org.tr/videolan/vlc/3.0.17.4/win64/vlc-3.0.17.4-win64.exe VLCMediaPlayer.exe https://www.videolan.org/index.tr.html
+https://files3.codecguide.com/K-Lite_Codec_Pack_1710_Mega.exe Klite.exe https://codecguide.com/download_k-lite_codec_pack_mega.htm
+https://mirrors.netix.net/vlc/vlc/3.0.17.4/win64/vlc-3.0.17.4-win64.exe VLCMediaPlayer.exe https://www.videolan.org/index.tr.html
 https://t1.daumcdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe PotPlayer.exe https://potplayer.daum.net/
 https://www.aimp.ru/?do=download.file&id=4 Aimp.exe https://www.aimp.ru/?do=download&os=windows
 https://download.spotify.com/SpotifyFullSetup.exe Spotify.exe
@@ -126,10 +126,10 @@ https://calibre-ebook.com/dist/win64 Calibre.msi https://calibre-ebook.com/downl
 
 https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.4.2/npp.8.4.2.Installer.x64.exe Notepad.exe https://notepad-plus-plus.org/downloads/
 https://www.python.org/ftp/python/3.10.5/python-3.10.5-amd64.exe Python.exe https://www.python.org
-https://az764295.vo.msecnd.net/stable/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5/VSCodeUserSetup-x64-1.67.2.exe VisualStudioCode.exe https://code.visualstudio.com/
+https://az764295.vo.msecnd.net/stable/30d9c6cd9483b2cc586687151bcbcd635f373630/VSCodeUserSetup-x64-1.68.1.exe VisualStudioCode.exe https://code.visualstudio.com/
 https://central.github.com/deployments/desktop/desktop/latest/win32 Github.exe https://desktop.github.com/
-https://github.com/git-for-windows/git/releases/download/v2.36.1.windows.1/Git-2.36.1-64-bit.exe Git.exe https://git-scm.com/download/win
-https://www.blender.org/download/release/Blender3.1/blender-3.1.2-windows-x64.msi/ Blender.msi https://www.blender.org/download/
+https://github.com/git-for-windows/git/releases/download/v2.37.0.windows.1/Git-2.37.0-64-bit.exe Git.exe https://git-scm.com/download/win
+https://ftp.halifax.rwth-aachen.de/blender/release/Blender3.2/blender-3.2.0-windows-x64.msi Blender.msi https://www.blender.org/download/
 
 ►►► UZAK BAĞLANTI ◄◄◄
 
@@ -178,9 +178,14 @@ https://docs.google.com/uc?export=download&id=1ZyAtr2evEfqbnnd1F8GOUCcW2fqJhsNi 
 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
 ►►► Araçlar Katılımsız Bölümü ◄◄◄
+►►► Windows Düzenleme ◄◄◄
 https://downloads.ntlite.com/files/NTLite_setup_x64.exe NTLite.exe https://www.ntlite.com/download/
 https://github.com/Chuyu-Team/Dism-Multi-language/releases/download/v10.1.1002.1/Dism++10.1.1002.1.zip Dism++.zip https://github.com/Chuyu-Team/Dism-Multi-language/releases
+
+►►► USB Hazırlayıcı ◄◄◄
 https://github.com/pbatard/rufus/releases/download/v3.18/rufus-3.18p.exe Rufus.exe https://github.com/pbatard/rufus/releases
+
+►►► Donanım Bilgisi ◄◄◄
 https://download.aida64.com/aida64extreme670.zip AIDA64.zip https://www.aida64.com/downloads
 https://download.cpuid.com/cpu-z/cpu-z_2.01-en.zip CPU-Z.zip https://www.cpuid.com/softwares/cpu-z.html
 https://dw27.uptodown.com/dwn/UvOXJlYHnTjXQ5m6QhP9VNyTGaMmMcVYkJI1sCwb_nCap4XBW62lmgNi4V5r9teFdhbkBYnsmtyKfDjtZyathtwB1T3tx5iItv1eRptShQRMSZkmJn5CJijDdN_zL6aL/R7uqJ27iprx8POsFZcNp3BkMlVdF3kjRp7bxFvD6LaTtT5ihX8JrLsZwyXci15OYZBRhP56dLH5KmxJ09QqESX2MBsX41pvFLD5kQkEaj1eWqS7cz2HQSpbtM2no_CUp/G4d6kQzhW4Xmtbz_P9Q0DdYFWR527bNWUKYyExlPSSGdcMrfbSohtXARSFpJ45qQ/gpu-z-2-46-0.exe GPU-Z.exe https://www.techpowerup.com/gpuz/
@@ -188,26 +193,36 @@ https://www.sac.sk/download/utildiag/hwi_726.zip HWInfo.zip https://www.hwinfo.c
 https://osdn.net/frs/redir.php?m=nchc&f=crystaldiskinfo%2F77469%2FCrystalDiskInfo8_17_2.zip CrystalDiskInfo.zip https://osdn.net/projects/crystaldiskinfo/releases/
 https://www.hdsentinel.com/hdsentinel_pro_portable.zip HDSentinel.zip https://www.hdsentinel.com/download.php
 https://www.alcpu.com/CoreTemp/CoreTemp64.zip CoreTemp.zip https://www.alcpu.com/CoreTemp/
+
+►►► Test Araçları ◄◄◄
 https://free.nchc.org.tw/osdn//crystaldiskmark/75540/CrystalDiskMark8_0_4a.zip CrystalDiskMark.zip https://crystalmark.info/en/download/#CrystalDiskMark
 https://www.mersenne.org/ftp_root/gimps/p95v307b9.win64.zip Prime95.zip https://www.mersenne.org/download/
 https://dl.ocbase.com/per/stable/OCCT.exe OCCT.exe https://www.ocbase.com/download
 https://dw28.uptodown.com/dwn/UvOXJlYHnTjXQ5m6QhP9VNyTGaMmMcVYkJI1sCwb_nD-6hBU6Ll25tMX9e3DqjbgrVq2XRB_Sxexvu0HRiPe_PFXoz8XxzX2MUxK8PZaKV44gqpSut2YmNjrS0j3DkWC/cWgrfNEaMdKiPMdOnieHidq87W_uYeXVDop0xTd634DF4kYUd6dyK8Ok2JQ-GAUHFI5f5kJmJgcJO-sG6KNB8_urXjMXt7lWFhqMm3-p90s9KHTR4LxMkMvwsywE9p3d/YWT1pu8bUTdhbYTFvETpxcu_a2CLWVM8SYCniyy_SmwO1Q8iaBZC2tqDCGlLsT3jAsHncwoY153bPLXXsH8CzQ==/furmark-1-30-0-0.exe FurMark.exe https://geeks3d.com/furmark/
+
+►►► Sanal Makine ◄◄◄
 https://download.virtualbox.org/virtualbox/6.1.34/VirtualBox-6.1.34a-150636-Win.exe VirtualBox.exe https://www.virtualbox.org/wiki/Downloads
 https://download3.vmware.com/software/WKST-1623-WIN-New/VMware-workstation-full-16.2.3-19376536.exe VMWare.exe https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html
+
+►►► Simge Düzenleme ◄◄◄
 http://greenfishsoftware.org/dl.php?filename=gfie_setup_3.6.exe GreenFish.exe http://greenfishsoftware.org/gfie.php#apage
 https://download.aurelitec.com/thumbico/windows/thumbico-install.exe Thumbico.exe https://www.aurelitec.com/thumbico/windows/
 https://www.carifred.com/quick_any2ico/Quick_Any2Ico.exe Quick_Any2Ico.exe https://www.carifred.com/quick_any2ico/
 http://www.angusj.com/resourcehacker/resource_hacker.zip ResourceHacker.zip http://www.angusj.com/resourcehacker/
+
+►►► Sistem Araçları ◄◄◄
 https://explorerplusplus.com/software/explorer++_1.3.5_x64.zip Explorer++.zip https://explorerplusplus.com/download
+
+►►► GPU / Driver Araçları ◄◄◄
 https://github.com/Orbmu2k/nvidiaProfileInspector/releases/download/2.3.0.10/nvidiaProfileInspector.zip NvidiaProfileInspector.zip https://github.com/Orbmu2k/nvidiaProfileInspector/releases
 https://ftp.nluug.nl/pub/games/PC/guru3d/tweak/[Guru3D.com]-RadeonMod.zip RadeonMod.zip https://www.guru3d.com/files-details/amd-registry-editor-download.html
 https://github.com/GSDragoon/RadeonSoftwareSlimmer/releases/download/1.6.0/RadeonSoftwareSlimmer_1.6.0_net60.zip RadeonSoftwareSlimmer.zip https://github.com/GSDragoon/RadeonSoftwareSlimmer/releases
 https://de1-dl.techpowerup.com/files/PxRjSUYhG05Pm3L3AY4eOQ/1655887096/NVCleanstall_1.13.0.exe NVCleanstall.exe https://www.techpowerup.com/nvcleanstall/
+
+►►► Diğer  ◄◄◄
 https://files1.majorgeeks.com/10afebdbffcd4742c81a3cb0f6ce4092156b4375/drives/SSD%20Booster%20Setup.exe SSDBooster.exe https://www.majorgeeks.com/files/details/ssd_booster.html
 https://download.sysinternals.com/files/ProcessMonitor.zip ProcessMonitor.zip https://www.majorgeeks.com/files/details/process_monitor_portable.html
 https://www2.aomeisoftware.com/download/pa/PAssist_Std.exe AOEMI.exe https://www.aomeitech.com/download.html
-
-
 
 
 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■

@@ -34,7 +34,7 @@
 ::  ---------
 ::  ► Archley
 :: 	  • Kayıtlı Wifi Bilgileri çalışmasının toolbox'a eklenmesi.
-::    • 
+::    • İşlem tamamlandı ekranının eklenmesi.
 ::  ----------
 ::  ► maskem76
 :: 	  • Hyper-V bölümündeki hatanın giderilmesi.
@@ -474,7 +474,7 @@ echo   %R%[90m│%R%[32m   11-%R%[36m CrystalDiskMark      %R%[90m│%R%[32m%R%[
 echo   %R%[90m│%R%[32m   12-%R%[36m Prime95              %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
 echo   %R%[90m│%R%[32m   13-%R%[36m OCCT                 %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
 echo   %R%[90m│%R%[32m   14-%R%[36m FurMark              %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
-echo   %R%[90m│%xognitorenksx% Sanal Makina              %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
+echo   %R%[90m│%xognitorenksx% Sanal Makine              %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
 echo   %R%[90m│%R%[32m   15-%R%[33m Virtual Box          %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
 echo   %R%[90m│%R%[32m   16-%R%[33m VMWare               %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
 echo   %R%[90m│%xognitorenksx% Simge Düzenleme           %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
@@ -499,7 +499,7 @@ echo    →%C%[96m Seçilenler: %$multi%%C%[0m
 echo.
 mkdir C:\Users\%username%\Desktop\OgnitorenKs > NUL 2>&1
 FOR %%a in (%$multi%) do (
-	if %%a==1 if %Chocolatey%==0 (Call :Choco ntlite-free) else (Call :wget1 NTLite.exe /S)
+	if %%a==1 if %Chocolatey%==0 (Call :Choco ntlite-free) else (Call :wget1 NTLite.exe "/S")
 	if %%a==2 if %Chocolatey%==0 (Call :Choco dismplusplus) else (Call :wget2 Dism++.zip
 				Call :Powershell "Expand-Archive -Force '%download%\Dism++.zip' 'C:\Users\%username%\Desktop\OgnitorenKs\Dism++'"
 				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\Dism++\Dism++x64.exe'")
@@ -668,8 +668,8 @@ echo %R%[92m   Simge hataları onarılıyor...%R%[0m
 ie4uinit.exe -show
 ie4uinit.exe -ClearIconCache
 taskkill /f /im explorer.exe > NUL 2>&1
-Call :sz "HKCU\Control Panel\Desktop" "WaitToKillAppTimeout" "20000"
-Call :sz "HKCU\Control Panel\Desktop" "HungAppTimeout" "10000"
+Call :sz "HKCU\Control Panel\Desktop" "WaitToKillAppTimeout" "10000"
+Call :sz "HKCU\Control Panel\Desktop" "HungAppTimeout" "3000"
 DEL /F /Q /A "%localappdata%\IconCache.db" > NUL 2>&1
 DEL /F /Q /A %localappdata%\Microsoft\Windows\Explorer\* > NUL 2>&1
 DEL /F /Q /A %localappdata%\Microsoft\Windows\Explorer\IconCacheToDelete\* > NUL 2>&1
@@ -1075,10 +1075,10 @@ set /p value= %C%[92m İşlem : %C%[0m
 	if %value%==14A (Call :serv.14.dokunmatik start demand açılıyor)
 	if %value%==14K (Call :serv.14.dokunmatik stop disabled kapatılıyor)
 	if %value%==14k (Call :serv.14.dokunmatik stop disabled kapatılıyor)
-	if %value%==15a (Call :serv.15.sistemgeriyukleme start demand ENABLE 0 açılıyor)
-	if %value%==15A (Call :serv.15.sistemgeriyukleme start demand ENABLE 0 açılıyor)
-	if %value%==15K (Call :serv.15.sistemgeriyukleme stop disabled DISABLE 1 kapatılıyor)
-	if %value%==15k (Call :serv.15.sistemgeriyukleme stop disabled DISABLE 1 kapatılıyor)
+	if %value%==15a (Call :serv.15.sistemgeriyukleme start demand ENABLE 0 boot açılıyor)
+	if %value%==15A (Call :serv.15.sistemgeriyukleme start demand ENABLE 0 boot açılıyor)
+	if %value%==15K (Call :serv.15.sistemgeriyukleme stop disabled DISABLE 1 disabled kapatılıyor)
+	if %value%==15k (Call :serv.15.sistemgeriyukleme stop disabled DISABLE 1 disabled kapatılıyor)
 	if %value%==16a (Call :serv.16.sysmain start auto açılıyor)
 	if %value%==16A (Call :serv.16.sysmain start auto açılıyor)
 	if %value%==16K (Call :serv.16.sysmain stop disabled kapatılıyor)
@@ -1099,10 +1099,10 @@ set /p value= %C%[92m İşlem : %C%[0m
 	if %value%==20A (Call :serv.20.xbox start demand 1 0 "Call :delete2" açılıyor)
 	if %value%==20K (Call :serv.20.xbox stop disabled 0 2 "Call :dword" kapatılıyor)
 	if %value%==20k (Call :serv.20.xbox stop disabled 0 2 "Call :dword" kapatılıyor)
-	if %value%==21a (Call :serv.21.bitlocker start demand açılıyor)
-	if %value%==21A (Call :serv.21.bitlocker start demand açılıyor)
-	if %value%==21K (Call :serv.21.bitlocker stop disabled kapatılıyor)
-	if %value%==21k (Call :serv.21.bitlocker stop disabled kapatılıyor)
+	if %value%==21a (Call :serv.21.bitlocker start demand boot açılıyor)
+	if %value%==21A (Call :serv.21.bitlocker start demand boot açılıyor)
+	if %value%==21K (Call :serv.21.bitlocker stop disabled disabled kapatılıyor)
+	if %value%==21k (Call :serv.21.bitlocker stop disabled disabled kapatılıyor)
 	if %value%==22a (Call :serv.22.mixedreality demand açılıyor)
 	if %value%==22A (Call :serv.22.mixedreality demand açılıyor)
 	if %value%==22K (Call :serv.22.mixedreality disabled kapatılıyor)
@@ -1288,6 +1288,15 @@ net %1 UmRdpService /y > NUL 2>&1
 :: Uzak Masaüstü Yapılandırması
 sc config SessionEnv start= %2 > NUL 2>&1
 net %1 SessionEnv /y > NUL 2>&1
+:: Uzaktan Erişim Otomatik Bağlantı Yöneticisi
+sc config RasAuto start= %2 > NUL 2>&1
+net %1 RasAuto /y > NUL 2>&1
+:: Uzaktan Erişim Bağlantı Yöneticisi
+sc config RasMan start= %2 > NUL 2>&1
+net %1 RasMan /y > NUL 2>&1
+:: Uzaktan yordam çağrısı (RPC) bulucu
+sc config RpcLocator start= %2 > NUL 2>&1
+net %1 RpcLocator /y > NUL 2>&1
 :: Windows Search
 sc config WSearch start= %3 > NUL 2>&1
 net %1 WSearch /y > NUL 2>&1
@@ -1389,13 +1398,15 @@ echo  ► %C%[96mSistem geri yükleme hizmeti %5 ...%C%[0m
 FOR %%a in (SDRSVC VSS swprv wbengine fhsvc) do (
 	sc config %%a start= %2 > NUL 2>&1
 	net %1 %%a /y > NUL 2>&1)
+sc config volsnap start= %~5 > NUL 2>&1
+net %1 volsnap /y > NUL 2>&1)
 schtasks /change /TN "\Microsoft\Windows\SystemRestore\SR" /%3 > NUL 2>&1
 Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore" "DisableConfig" "%~4"
 Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore" "DisableSR" "%~4"
 Call :ProcessCompleted
 ::-------------------------------------------------------------------------------
-::    Aç = %1 : start | %2 : demand   | %3 : ENABLE  | %~4 : 0 | %5 : açılıyor
-:: Kapat = %1 : stop  | %2 : disabled | %3 : DISABLE | %~4 : 1 | %5 : kapatılıyor
+::    Aç = %1 : start | %2 : demand   | %3 : ENABLE  | %~4 : 0  | %5 : boot      | %~6: açılıyor
+:: Kapat = %1 : stop  | %2 : disabled | %3 : DISABLE | %~4 : 1  | %5 : disabled  | %~6: kapatılıyor
 ::-------------------------------------------------------------------------------
 goto :eof
 
@@ -1498,15 +1509,17 @@ Call :ProcessCompleted
 goto :eof
 
 :serv.21.bitlocker
-Call :LogSave "Hizmetleri Yönet" "Bitlocker hizmeti %3"
-echo  ► %C%[96mBitlocker hizmeti %3 ...%C%[0m
+Call :LogSave "Hizmetleri Yönet" "Bitlocker hizmeti %4"
+echo  ► %C%[96mBitlocker hizmeti %4 ...%C%[0m
 :: Bitlocker sürücü şifreleme hizmeti
 sc config BDESVC start= %2 > NUL 2>&1
 net %1 BDESVC /y > NUL 2>&1
+sc config fvevol start= %3 > NUL 2>&1
+net %1 fvevol /y > NUL 2>&1
 Call :ProcessCompleted
 ::-------------------------------------------------------
-::    Aç = %1 : start | %2 : demand   | %3 : açılıyor
-:: Kapat = %1 : stop  | %2 : disabled | %3 : kapatılıyor
+::    Aç = %1 : start | %2 : demand   | %3 : boot      | %4 : açılıyor
+:: Kapat = %1 : stop  | %2 : disabled | %3 : disabled  | %4 : kapatılıyor
 ::------------------------------------------------------
 goto :eof
 
@@ -2356,7 +2369,8 @@ Call :NonRemoval Microsoft.Windows.NarratorQuickStart NarratorQuickStart
 Call :NonRemoval Microsoft.Windows.ParentalControls ParentalControls
 Call :NonRemoval Microsoft.Windows.PeopleExperienceHost PeopleExperienceHost
 Call :NonRemoval Microsoft.Windows.SecHealthUI SecHealthUI
-
+cls
+echo %R%[92m Güncelleme sonrası temizlik işlemi yapılıyor.%R%[0m
 echo %R%[92m Hizmetler düzenleniyor...%R%[0m
 %NSudo% %Location%\Extra\Update.After.bat
 
@@ -2659,6 +2673,8 @@ schtasks /change /TN "\Microsoft\Windows\UpdateOrchestrator\Schedule Scan" /DISA
 schtasks /change /TN "\Microsoft\Windows\UpdateOrchestrator\Schedule Scan Static Task" /DISABLE > NUL 2>&1
 schtasks /change /TN "\Microsoft\Windows\UpdateOrchestrator\UpdateModelTask" /DISABLE > NUL 2>&1
 schtasks /change /TN "\Microsoft\Windows\WaaSMedic\PerformRemediation" /DISABLE > NUL 2>&1
+schtasks /change /TN "\Microsoft\Windows\Customer Experience Improvement Program\Consolidator" /DISABLE > NUL 2>&1
+schtasks /change /TN "\Microsoft\Windows\Customer Experience Improvement Program\USBCeip" /DISABLE > NUL 2>&1
 Call :ProcessCompletedReset
 goto menu
 

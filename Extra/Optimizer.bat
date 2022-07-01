@@ -33,6 +33,7 @@ Call :SaveCheck Nvidia.GPU.bat
 echo  %R%[90m│%R%[0m   %R%[32m 5%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%optvalue%%R%[90m -%R%[33m NVIDIA ekran kartı optimizasyon      %R%[90m│%R%[0m
 Call :SaveCheck Genel.bat
 echo  %R%[90m│%R%[0m   %R%[32m 6%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%optvalue%%R%[90m -%R%[33m Genel Optimizasyon                   %R%[90m│%R%[0m
+echo  %R%[90m│%R%[0m         %R%[32m 7%C%[90m -%R%[33m Uygulama İşlem Önceliği Düzenleme    %R%[90m│%R%[0m
 echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
 set /p value= %C%[92m İşlem :%C%[0m
 	if %value%==1a (Call :Warning1
@@ -137,6 +138,7 @@ set /p value= %C%[92m İşlem :%C%[0m
 	if %value%==6k (Call :FindSave Genel.bat
 					DEL /F /Q /A "%Yedek%\Genel.bat" > NUL 2>&1
 					Call :ProcessCompletedReset)
+	if %value%==7 goto RuntimeLevel
 ) else
 	goto Optimizer
 goto Optimizer
@@ -161,6 +163,36 @@ dir /b "%Yedek%\%~1" > NUL 2>&1
 						timeout /t 3 /nobreak > NUL
 						exit)
 goto :eof
+
+:RuntimeLevel
+title OgnitorenKs
+mode con cols=55 lines=17
+echo  %R%[90m┌───────────────────────────────────────────────────┐%R%[0m
+echo  %R%[90m│%R%[1;97m%R%[100m             Çalışma Öncelik Planlayıcı            %R%[0m%R%[90m│%R%[0m
+echo  %R%[90m├───────────────────────────────────────────────────┤%R%[0m
+echo  %R%[90m│   %R%[32m 1.%C%[33m Yüksek                                      %R%[90m│%R%[0m
+echo  %R%[90m│   %R%[32m 2.%C%[33m Normal Üstü                                 %R%[90m│%R%[0m
+echo  %R%[90m│   %R%[32m 3.%C%[33m Normal Altı                                 %R%[90m│%R%[0m
+echo  %R%[90m│   %R%[32m 4.%C%[33m Düşük                                       %R%[90m│%R%[0m
+echo  %R%[90m│   %R%[32m X.%R%[36m Menü                                        %R%[90m│%R%[0m
+echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
+set /p value2=%R%[32m  İşlem :%R%[0m
+	if %value2%==1 (set value2=3)
+	if %value2%==2 (set value2=6)
+	if %value2%==3 (set value2=5)
+	if %value2%==4 (set value2=1)
+	if %value2%==x goto Optimizer
+	if %value2%==X goto Optimizer
+echo.
+echo %R%[90m  Görev Yöneticisi - Ayrıntılar 
+echo %R%[90m  bölümünden uygulama isimlerini öğrenebilirsiniz.
+set /p value=%R%[96m  ► Uygulama ismi%R%[90m steam.exe :%R%[0m
+
+for %%a in (%value%) do (
+	reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\%%a\PerfOptions" /v "CpuPriorityClass" /t REG_DWORD /d "%value2%" /f
+)
+Call :ProcessCompleted
+goto RuntimeLevel
 
 :Game
 :: ------------------------------------------------------
@@ -744,6 +776,23 @@ set /p Warning=%R%[37m Devam etmek için%R%[36m 'E'%R%[37m, çıkış için%R%[3
 goto :eof
 
 :: --------------------------------------------------------------------------------------------------------
+
+:ProcessCompleted
+mode con cols=39 lines=20
+echo.
+echo            %R%[90m┌───────────────┐%R%[0m
+echo            %R%[90m│%R%[32m               %R%[90m│%R%[0m
+echo            %R%[90m│%R%[32m          ██   %R%[90m│%R%[0m
+echo            %R%[90m│%R%[32m         ██    %R%[90m│%R%[0m
+echo            %R%[90m│%R%[32m   ██   ██     %R%[90m│%R%[0m
+echo            %R%[90m│%R%[32m    ██ ██      %R%[90m│%R%[0m
+echo            %R%[90m│%R%[32m     ███       %R%[90m│%R%[0m
+echo            %R%[90m│               %R%[90m│%R%[0m
+echo            %R%[90m└───────────────┘%R%[0m
+echo.
+echo            %R%[37m İşlem tamamlandı%R%[0m
+timeout /t 2 /nobreak > NUL
+goto :eof
 
 :ProcessCompletedReset
 mode con cols=39 lines=20
