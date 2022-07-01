@@ -20,6 +20,7 @@ Yayınlanma Tarihi: 01.07.2022
 	• Windows Edit > Regedit Yükle bölümündeki kayıtların isimleri değiştirildi. Detaylar Github Proje sayfasında
 	• Windows Edit > ESD to WIM bölümündeki komut hatası giderildi. 
 	• Optimizer bölümünde sorun yaratacak bölümlere uyarı mesajları eklendi.
+	• Optimizer bölümünde İşlemci Optimizasyonu bölümü kaldırıldı.
 	• Optimizer bölümüne Aygıt Optimizasyonu eklendi.
 	• Hizmet Yönetimi > Sistem Geri Yükleme bölümüne ekleme yapıldı.
 	• Optimizer bölümünde işlem ve yönlendirmelerin daha rahat anlaşılması için yorum satırları eklendi.

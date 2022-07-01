@@ -25,16 +25,14 @@ reg query "HKLM\System\CurrentControlSet\Control" /v "SvcHostSplitThresholdInKB"
 echo  %R%[90m│%R%[0m   %R%[32m 1%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%optvalue%%R%[90m -%R%[33m Svchost Ram Optimizasyonu            %R%[90m│%R%[0m
 Call :SaveCheck Internet.bat
 echo  %R%[90m│%R%[0m   %R%[32m 2%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%optvalue%%R%[90m -%R%[33m İnternet Optimizasyonu               %R%[90m│%R%[0m
-Call :SaveCheck CPU.bat
-echo  %R%[90m│%R%[0m   %R%[32m 3%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%optvalue%%R%[90m -%R%[33m İşlemci Optimizasyonu                %R%[90m│%R%[0m
 Call :SaveCheck AMD.GPU.bat
-echo  %R%[90m│%R%[0m   %R%[32m 4%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%optvalue%%R%[90m -%R%[33m AMD ekran kartı optimizasyon         %R%[90m│%R%[0m
+echo  %R%[90m│%R%[0m   %R%[32m 3%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%optvalue%%R%[90m -%R%[33m AMD ekran kartı optimizasyon         %R%[90m│%R%[0m
 Call :SaveCheck Nvidia.GPU.bat
-echo  %R%[90m│%R%[0m   %R%[32m 5%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%optvalue%%R%[90m -%R%[33m NVIDIA ekran kartı optimizasyon      %R%[90m│%R%[0m
+echo  %R%[90m│%R%[0m   %R%[32m 4%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%optvalue%%R%[90m -%R%[33m NVIDIA ekran kartı optimizasyon      %R%[90m│%R%[0m
 Call :SaveCheck Genel.bat
-echo  %R%[90m│%R%[0m   %R%[32m 6%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%optvalue%%R%[90m -%R%[33m Genel Optimizasyon                   %R%[90m│%R%[0m
-echo  %R%[90m│%R%[0m   %R%[32m 7%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]  -%R%[33m Aygıt Optimizasyonu                  %R%[90m│%R%[0m
-echo  %R%[90m│%R%[0m   %R%[32m 8%C%[90m       -%R%[33m Uygulama İşlem Önceliği Düzenleme    %R%[90m│%R%[0m
+echo  %R%[90m│%R%[0m   %R%[32m 5%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%optvalue%%R%[90m -%R%[33m Genel Optimizasyon                   %R%[90m│%R%[0m
+echo  %R%[90m│%R%[0m   %R%[32m 6%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]  -%R%[33m Aygıt Optimizasyonu                  %R%[90m│%R%[0m
+echo  %R%[90m│%R%[0m   %R%[32m 7%C%[90m       -%R%[33m Uygulama İşlem Önceliği Düzenleme    %R%[90m│%R%[0m
 echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
 set /p value= %C%[92m İşlem :%C%[0m
 	if %value%==1a (cls
@@ -69,95 +67,77 @@ set /p value= %C%[92m İşlem :%C%[0m
 	if %value%==2k (Call :FindSave Internet.bat
 					DEL /F /Q /A "%Yedek%\Internet.bat" > NUL 2>&1
 					Call :ProcessCompletedReset)
-	if %value%==3a (Call :Block CPU.bat
-					echo  ►%R%[96m Ayarlar yedekleniyor...%R%[0m
-					Call :CPU RegSave CPU
-					echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
-					Call :CPU RegLogin CPU
-					Call :ProcessCompletedReset)
-	if %value%==3A (Call :Block CPU.bat
-					echo  ►%R%[96m Ayarlar yedekleniyor...%R%[0m
-					Call :CPU RegSave CPU
-					echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
-					Call :CPU RegLogin CPU
-					Call :ProcessCompletedReset)
-	if %value%==3K (Call :FindSave CPU.bat
-					DEL /F /Q /A "%Yedek%\CPU.bat" > NUL 2>&1
-					Call :ProcessCompletedReset)
-	if %value%==3k (Call :FindSave CPU.bat
-					DEL /F /Q /A "%Yedek%\CPU.bat" > NUL 2>&1
-					Call :ProcessCompletedReset)
-	if %value%==4a (Call :Block AMD.bat
+	if %value%==3a (Call :Block AMD.bat
 					echo  ►%R%[96m Ayarlar yedekleniyor...%R%[0m
 					Call :AMD.GPU RegSave AMD.GPU
 					echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
 				    Call :AMD.GPU RegLogin AMD.GPU
 					Call :ProcessCompletedReset)
-	if %value%==4A (Call :Block AMD.bat
+	if %value%==3A (Call :Block AMD.bat
 					echo  ►%R%[96m Ayarlar yedekleniyor...%R%[0m
 					Call :AMD.GPU RegSave AMD.GPU
 					echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
 				    Call :AMD.GPU RegLogin AMD.GPU
 					Call :ProcessCompletedReset)
-	if %value%==4K (Call :FindSave AMD.GPU.bat
+	if %value%==3K (Call :FindSave AMD.GPU.bat
 					DEL /F /Q /A "%Yedek%\AMD.GPU.bat" > NUL 2>&1
 					Call :ProcessCompletedReset)
-	if %value%==4k (Call :FindSave AMD.GPU.bat
+	if %value%==3k (Call :FindSave AMD.GPU.bat
 					DEL /F /Q /A "%Yedek%\AMD.GPU.bat" > NUL 2>&1
 					Call :ProcessCompletedReset)
-	if %value%==5a (Call :Block Nvidia.GPU.bat
+	if %value%==4a (Call :Block Nvidia.GPU.bat
 					echo  ►%R%[96m Ayarlar yedekleniyor...%R%[0m
 					Call :NVIDIA.GPU RegSave RegSave3 Nvidia.GPU
 					echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
 				    Call :NVIDIA.GPU RegLogin RegLogin Nvidia.GPU
 					Call :ProcessCompletedReset)
-	if %value%==5A (Call :Block Nvidia.GPU.bat
+	if %value%==4A (Call :Block Nvidia.GPU.bat
 					echo  ►%R%[96m Ayarlar yedekleniyor...%R%[0m
 					Call :NVIDIA.GPU RegSave RegSave3 Nvidia.GPU
 					echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
 				    Call :NVIDIA.GPU RegLogin RegLogin Nvidia.GPU
 					Call :ProcessCompletedReset)
-	if %value%==5K (Call :FindSave Nvidia.GPU.bat
+	if %value%==4K (Call :FindSave Nvidia.GPU.bat
 					DEL /F /Q /A "%Yedek%\Nvidia.GPU.bat" > NUL 2>&1
 					Call :ProcessCompletedReset)
-	if %value%==5k (Call :FindSave Nvidia.GPU.bat
+	if %value%==4k (Call :FindSave Nvidia.GPU.bat
 					DEL /F /Q /A "%Yedek%\Nvidia.GPU.bat" > NUL 2>&1
 					Call :ProcessCompletedReset)
-	if %value%==6a (Call :Block Genel.bat
+	if %value%==5a (Call :Block Genel.bat
 					echo  ►%R%[96m Ayarlar yedekleniyor...%R%[0m
 					Call :Optimizer RegSave RegSave Genel
 					echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
 					Call :Optimizer RegLogin RegDelete2 Genel
 					Call :ProcessCompletedReset)
-	if %value%==6A (Call :Block Genel.bat
+	if %value%==5A (Call :Block Genel.bat
 					echo  ►%R%[96m Ayarlar yedekleniyor...%R%[0m
 					Call :Optimizer RegSave RegSave Genel
 					echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
 					Call :Optimizer RegLogin RegDelete2 Genel
 					Call :ProcessCompletedReset)
-	if %value%==6K (Call :FindSave Genel.bat
+	if %value%==5K (Call :FindSave Genel.bat
 					DEL /F /Q /A "%Yedek%\Genel.bat" > NUL 2>&1
 					Call :ProcessCompletedReset)
-	if %value%==6k (Call :FindSave Genel.bat
+	if %value%==5k (Call :FindSave Genel.bat
 					DEL /F /Q /A "%Yedek%\Genel.bat" > NUL 2>&1
 					Call :ProcessCompletedReset)
-	if %value%==7a (cls
+	if %value%==6a (cls
 					Call :Warning2
 					echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
 					Call :DonanımOptimizer enable
 					Call :ProcessCompletedReset)	
-	if %value%==7A (cls
+	if %value%==6A (cls
 					Call :Warning2
 					echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
 					Call :DonanımOptimizer enable
 					Call :ProcessCompletedReset)
-	if %value%==7K (echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
+	if %value%==6K (echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
 					Call :DonanımOptimizer disable
 					Call :ProcessCompletedReset)
-	if %value%==7k (echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
+	if %value%==6k (echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
 					Call :DonanımOptimizer disable
 					Call :ProcessCompletedReset)
-	if %value%==8 goto RuntimeLevel
+	if %value%==7 goto RuntimeLevel
 ) else
 	goto Optimizer
 goto Optimizer
@@ -332,27 +312,6 @@ ipconfig /release > NUL 2>&1
 ipconfig /renew > NUL 2>&1
 ipconfig /flushdns > NUL 2>&1
 netsh winsock reset > NUL 2>&1
-goto :eof
-
-:CPU
-:: ------------------------------------------------------
-:: Regedit yedek alınırken değerler= %~1: RegSave | %~2: CPU - Yedek regedit.bat dosya ismi
-:: Regedit kayıtları uygulanırken değerler= %~1: RegLogin | %~2: CPU - Yedek regedit.bat dosya ismi
-:: ------------------------------------------------------
-Call :%~1 "HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\0012ee47-9041-4b5d-9b77-535fba8b1442\80e3c60e-bb94-4ad8-bbe0-0d3195efc663" "Attributes" REG_DWORD "0x2" %~2
-Call :%~1 "HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\2a737441-1930-4402-8d77-b2bebba308a3\d4e98f31-5ffe-4ce1-be31-1b38b384c009" "Attributes" REG_DWORD "0x2" %~2
-Call :%~1 "HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\9596FB26-9850-41fd-AC3E-F7C3C00AFD4B\03680956-93BC-4294-BBA6-4E0F09BB717F" "Attributes" REG_DWORD "0x2" %~2
-Call :%~1 "HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\0012ee47-9041-4b5d-9b77-535fba8b1442\0b2d69d7-a2a1-449c-9680-f91c70521c60" "Attributes" REG_DWORD "0x2" %~2
-Call :%~1 "HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\0012ee47-9041-4b5d-9b77-535fba8b1442\dab60367-53fe-4fbc-825e-521d069d2456" "Attributes" REG_DWORD "0x2" %~2
-Call :%~1 "HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\943c8cb6-6f93-4227-ad87-e9a3feec08d1" "Attributes" REG_DWORD "0x2" %~2
-Call :%~1 "HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\2a737441-1930-4402-8d77-b2bebba308a3\d4e98f31-5ffe-4ce1-be31-1b38b384c009\DefaultPowerSchemeValues\381b4222-f694-41f0-9685-ff5bb260df2e" "ACSettingIndex" REG_DWORD "0x0" %~2
-Call :%~1 "HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\2a737441-1930-4402-8d77-b2bebba308a3\d4e98f31-5ffe-4ce1-be31-1b38b384c009\DefaultPowerSchemeValues\381b4222-f694-41f0-9685-ff5bb260df2e" "DCSettingIndex" REG_DWORD "0x0" %~2
-Call :%~1 "HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\2a737441-1930-4402-8d77-b2bebba308a3\d4e98f31-5ffe-4ce1-be31-1b38b384c009\DefaultPowerSchemeValues\8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c" "ACSettingIndex" REG_DWORD "0x0" %~2
-Call :%~1 "HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\3b04d4fd-1cc7-4f23-ab1c-d1337819c4bb\DefaultPowerSchemeValues\381b4222-f694-41f0-9685-ff5bb260df2e" "ACSettingIndex" REG_DWORD "0x0" %~2
-Call :%~1 "HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\3b04d4fd-1cc7-4f23-ab1c-d1337819c4bb\DefaultPowerSchemeValues\381b4222-f694-41f0-9685-ff5bb260df2e" "DCSettingIndex" REG_DWORD "0x0" %~2
-Call :%~1 "HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\3b04d4fd-1cc7-4f23-ab1c-d1337819c4bb\DefaultPowerSchemeValues\8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c" "ACSettingIndex" REG_DWORD "0x0" %~2
-Call :%~1 "HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling" "PowerThrottlingOff" REG_DWORD "0x1" %~2
-Call :%~1 "HKLM\SYSTEM\CurrentControlSet\Control\PriorityControl" "Win32PrioritySeparation" REG_DWORD "0x38" %~2
 goto :eof
 
 :AMD.GPU
