@@ -33,14 +33,17 @@ Call :SaveCheck Nvidia.GPU.bat
 echo  %R%[90m│%R%[0m   %R%[32m 5%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%optvalue%%R%[90m -%R%[33m NVIDIA ekran kartı optimizasyon      %R%[90m│%R%[0m
 Call :SaveCheck Genel.bat
 echo  %R%[90m│%R%[0m   %R%[32m 6%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%optvalue%%R%[90m -%R%[33m Genel Optimizasyon                   %R%[90m│%R%[0m
-echo  %R%[90m│%R%[0m         %R%[32m 7%C%[90m -%R%[33m Uygulama İşlem Önceliği Düzenleme    %R%[90m│%R%[0m
+echo  %R%[90m│%R%[0m   %R%[32m 7%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]  -%R%[33m Aygıt Optimizasyonu                  %R%[90m│%R%[0m
+echo  %R%[90m│%R%[0m   %R%[32m 8%C%[90m       -%R%[33m Uygulama İşlem Önceliği Düzenleme    %R%[90m│%R%[0m
 echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
 set /p value= %C%[92m İşlem :%C%[0m
-	if %value%==1a (Call :Warning1
+	if %value%==1a (cls
+					Call :Warning1
 					echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
 					Call :Svchost RegLogin
 					Call :ProcessCompletedReset)
-	if %value%==1A (Call :Warning1
+	if %value%==1A (cls
+					Call :Warning1
 					echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
 					Call :Svchost RegLogin
 					Call :ProcessCompletedReset)
@@ -138,7 +141,23 @@ set /p value= %C%[92m İşlem :%C%[0m
 	if %value%==6k (Call :FindSave Genel.bat
 					DEL /F /Q /A "%Yedek%\Genel.bat" > NUL 2>&1
 					Call :ProcessCompletedReset)
-	if %value%==7 goto RuntimeLevel
+	if %value%==7a (cls
+					Call :Warning2
+					echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
+					Call :DonanımOptimizer enable
+					Call :ProcessCompletedReset)	
+	if %value%==7A (cls
+					Call :Warning2
+					echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
+					Call :DonanımOptimizer enable
+					Call :ProcessCompletedReset)
+	if %value%==7K (echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
+					Call :DonanımOptimizer disable
+					Call :ProcessCompletedReset)
+	if %value%==7k (echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
+					Call :DonanımOptimizer disable
+					Call :ProcessCompletedReset)
+	if %value%==8 goto RuntimeLevel
 ) else
 	goto Optimizer
 goto Optimizer
@@ -706,6 +725,28 @@ net stop LanmanServer /y > NUL 2>&1
 sc config LanmanServer start= disabled > NUL 2>&1
 goto :eof
 
+:DonanımOptimizer
+"%Location%\Files\DevManView.exe" /%~1 "WAN Miniport (IKEv2)"
+"%Location%\Files\DevManView.exe" /%~1 "WAN Miniport (IP)"
+"%Location%\Files\DevManView.exe" /%~1 "WAN Miniport (IPv6)"
+"%Location%\Files\DevManView.exe" /%~1 "WAN Miniport (L2TP)"
+"%Location%\Files\DevManView.exe" /%~1 "WAN Miniport (Network Monitor)"
+"%Location%\Files\DevManView.exe" /%~1 "WAN Miniport (PPPOE)"
+"%Location%\Files\DevManView.exe" /%~1 "WAN Miniport (PPTP)"
+"%Location%\Files\DevManView.exe" /%~1 "WAN Miniport (SSTP)"
+"%Location%\Files\DevManView.exe" /%~1 "NDIS Virtual Network Adapter Enumerator"
+"%Location%\Files\DevManView.exe" /%~1 "Microsoft RRAS Root Enumerator"
+"%Location%\Files\DevManView.exe" /%~1 "High Precision Event Timer"
+"%Location%\Files\DevManView.exe" /%~1 "Composite Bus Enumerator"
+"%Location%\Files\DevManView.exe" /%~1 "UMBus Root Bus Enumerator"
+"%Location%\Files\DevManView.exe" /%~1 "SM Bus Controller"
+"%Location%\Files\DevManView.exe" /%~1 "AMD SMBus"
+"%Location%\Files\DevManView.exe" /%~1 "Intel SMBus"
+"%Location%\Files\DevManView.exe" /%~1 "AMD PSP"
+"%Location%\Files\DevManView.exe" /%~1 "Intel Management Engine"
+"%Location%\Files\DevManView.exe" /%~1 "Microsoft Kernel Debug Network Adapter"
+goto :eof
+
 :: --------------------------------------------------------------------------------------------------------
 
 :RegSave
@@ -768,6 +809,17 @@ echo.
 echo  ► Aşağıdaki sorun yaşanabilir;
 echo   •%R%[33m Mikrofon veya ses ayarlarına girerken,%R%[0m
 echo   •%R%[33m yığın bellek taşma hatası alabilirsiniz.%R%[0m
+echo  ► Sorun yaşarsanız bu işlemi kapatınız.
+echo.
+set /p Warning=%R%[37m Devam etmek için%R%[36m 'E'%R%[37m, çıkış için%R%[36m 'H'%R%[37m tuşlayın%R%[0m
+	if %Warning%==h exit
+	if %Warning%==H exit
+goto :eof
+
+:Warning2
+echo.
+echo  ► Aşağıdaki sorun yaşanabilir;
+echo   •%R%[33m VPN hizmetlerinde sorun yaşanabilir%R%[0m
 echo  ► Sorun yaşarsanız bu işlemi kapatınız.
 echo.
 set /p Warning=%R%[37m Devam etmek için%R%[36m 'E'%R%[37m, çıkış için%R%[36m 'H'%R%[37m tuşlayın%R%[0m
