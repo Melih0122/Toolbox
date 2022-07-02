@@ -1,8 +1,11 @@
 
 # OGNİTORENKS TOOLBOX
+
+![133149924-e6949257-3aa5-4564-9977-f96fe4640967](https://user-images.githubusercontent.com/93199689/177007559-8ff9a779-80ce-4ccd-ac96-5a0e7b9fd423.png)
+
 - Toolbox Windows 10 - 11 sürümlerinin x64 mimarilerinde açılmaktadır. En güncel olan Windows sürümü ile senkronize olarak gelişmektedir.
 - Windows ekran ölçeklendirme ayarı Toolbox'ın pencere ayarını bozabiliyor. Sorunsuz kullanım için Toolbox'ı kullanırken ölçeklendirme etkileri kapatılmalıdır.
-- Toolbox'ı antivirüsler zararlı olarak işaretlemektedir. Sorunsuz kullanım için beyaz listeye alınması gerekmektedir. 
+- Toolbox'ı bazı antivirüsler zararlı olarak işaretlemektedir. Sorunsuz kullanım için beyaz listeye alınması gerekmektedir. 
 - Geliştirme sürecinde iki ayrı sürüm üzerinde çalışmak zor olduğu için İngilizce dil desteği kaldırılmıştır. Tek bir dosya üzerinden çoklu dil desteği ekleyebilirsem ilerleyen süreçte yeniden eklenecektir :(
 
 ### Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
