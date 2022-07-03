@@ -433,7 +433,7 @@ Appx ve Update dosyalarını yüklemenizi sağlayan bölümdür.
 SHA-256 değerlerini karşılaştırmayı sağlar.
 
 ### 21 - Kaldırılamayan Uygulamalar: 
-Kaldırılması Microsoft tarafından engellenen bazı uygulamaları kaldırmayı sağlar.
+Kaldırılması Microsoft tarafından engellenen bazı uygulamaları kaldırmayı sağlar. Yeniden yüklenemez. Kaldırırken dikkatli olun.
 
 ![cmd_BAUX3GKM8L](https://user-images.githubusercontent.com/93199689/170891816-105ab12a-b99d-41a5-89e4-2bb344b5efde.png)
 
