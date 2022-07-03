@@ -182,11 +182,14 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	• 25 - RadeonMod: AMD ekran kartı driverıyla ilgili detaylı değişiklikler yapmanızı sağlayan yazılım.
 	• 26 - Radeon Software Slimmer: Ekran kartı kurulumuyla ilgili çok fazla seçenek sunarak ihtiyaç dışı özellikleri devre dışı bırakmanızı sağlar.
 	• 27 - NVCCleanstall: NVIDIA ekran kartı driver kurulumunda fazla seçenek sunarak ihtiyaç dışı özellikleri yüklememenizi sağlar.
+	• 28 - Snappy Driver Installer: Driver güncelleme, yükleme uygulamasıdır. Ücretsizdir. Herhangi bir kısıtlam söz konusu değildir. Sayfaları üzerinden yapımcılarına destek olabilirsiniz.
 #### ► Diğer
-	• 28 - SSD Booster: SSD sağlığının uzaması için bazı indexleme ve SSD'ler için gereksiz hızlandırma servislerini devre dışı bırakmanızı sağlar. SSD'ye harici olarak hız vermez.
-	• 29 - Folder2ISO: Klasörleri ISO'ya dönüştürebileceğiniz basit, küçük bir uygulama.
-	• 30 - Process Monitor: Olası sorunlarda analiz yapabilmek için log dosyası oluşturmanızı sağlar.
-	• 31 - AOMEI Partition Assistans: Disk yönetimi uygulamasıdır.
+	• 29 - SSD Booster: SSD sağlığının uzaması için bazı indexleme ve SSD'ler için gereksiz hızlandırma servislerini devre dışı bırakmanızı sağlar. SSD'ye harici olarak hız vermez.
+	• 30 - Folder2ISO: Klasörleri ISO'ya dönüştürebileceğiniz basit, küçük bir uygulama.
+	• 31 - Process Monitor: Olası sorunlarda analiz yapabilmek için log dosyası oluşturmanızı sağlar.
+	• 32 - AOMEI Partition Assistans: Disk yönetimi uygulamasıdır.
+	• 33 - Spotify Adblocker: Spotify ücretsiz sürümünde çıkan sesli reklamlar geldiğinde ses sisteminde Spotify'ın sesini kapatır. Böylece reklam dinlemekten kurtulursunuz. Programın yapımcısı 'Mehmet Güdük'tür. Reklam engelleyici çalıştırdığınızda açık değil ise Spotify'da açmaktadır. Böylece her Spotify açtığınızda reklam engelleyici açma derdiniz de bulunmuyor. Ücretsiz sürüm kullananlar programı mutlaka yüklemeli.
+	   ► Resmi Sayfası: https://github.com/mehmetguduk/Spotify-Adblocker
 
 # OgnitorenKs Toolbox
 3 - Bu bölüm işletim sistemine göre değişiklik göstermektedir. Windows 11 ve Windows 10 için iki ayrı bölüme ayrılmıştır.
