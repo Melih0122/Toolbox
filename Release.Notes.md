@@ -4,6 +4,18 @@
 -   Mail: ognitorenks@gmail.com
 -   Site: https://ognitorenks.blogspot.com/
 
+-------------------
+ ► Versiyon 3.3.1 - Ara Güncelleme
+-------------------
+Yayınlanma Tarihi: .07.2022
+
+	• Araç Yükleyici > Snappy Driver Installer eklendi
+	• Araç Yükleyici > Spotify Adblocker eklendi.
+	• Kaldırılamayan Uygulamalar > Kamera Barkod Tarayıcı durumunu gösteren bölümdeki komut hatası giderildi.
+	• Kaldırılamayan Uygulamalar > Microsoft Edge kaldırıldı. Silinince bağlı market uygulamaları sorun çıkarıyor. Örnek; Instagram.
+	• 
+	
+	
 -----------------
  ► Versiyon 3.3 -
 -----------------
