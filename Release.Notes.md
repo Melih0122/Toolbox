@@ -13,7 +13,8 @@ Yayınlanma Tarihi: .07.2022
 	• Araç Yükleyici > Spotify Adblocker eklendi.
 	• Kaldırılamayan Uygulamalar > Kamera Barkod Tarayıcı durumunu gösteren bölümdeki komut hatası giderildi.
 	• Kaldırılamayan Uygulamalar > Microsoft Edge kaldırıldı. Silinince bağlı market uygulamaları sorun çıkarıyor. Örnek; Instagram.
-	• 
+	• Zaman Ayarlı PC Kapat bölümünde 'İptal Et' bölümü otomatik kapatma işlemi var veya uygulanırsa çıkacak şekilde düzenlendi.
+	• Microsoft Store kaldırma bölümüne Runtime Broken hizmetini kapatma parametreleri eklendi.
 	
 	
 -----------------
