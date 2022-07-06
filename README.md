@@ -428,7 +428,7 @@ Fat32 olarak formatlanmış USB diskleri veri kaybı olmadan NTFS'ye çevirir. D
 Bu bölümde sisteme girdiğiniz Wifi isim ve şifrelerini görebilirsiniz. Çalışmasını toolbox'a eklediği için Archley'e teşekkür ederim.
 
 ### 18 - Zaman Ayarlı PC Kapat:
-Seçilen belirli bir süreden sonra PC otomatik kapatır.
+Seçilen belirli bir süreden sonra PC otomatik kapatır. PC üzerinde uygulanmış bir oto kapatma işlemi mevcut değilse 'İptal Et' butonu görünmeyecektir.
 	
 ![cmd_qBHeLUqaMj](https://user-images.githubusercontent.com/93199689/177620977-146cfc29-86e0-4553-a472-b4179a1bfb40.png)
 
@@ -441,9 +441,22 @@ Appx ve Update dosyalarını yüklemenizi sağlayan bölümdür.
 SHA-256 değerlerini karşılaştırmayı sağlar.
 
 ### 21 - Kaldırılamayan Uygulamalar: 
-Kaldırılması Microsoft tarafından engellenen bazı uygulamaları kaldırmayı sağlar. Yeniden yüklenemez. Kaldırırken dikkatli olun.
+Kaldırılması Microsoft tarafından engellenen bazı uygulamaları kaldırmayı sağlar. Yeniden yüklenemez. Kaldırırken dikkatli olun. Bu bölümün çalışması için PC'de Python kurulu olması gerekmektedir. Kurulu değilse otomatik olarak yüklemektedir.
 
 ![cmd_cY92Xi0S1f](https://user-images.githubusercontent.com/93199689/177619102-82d56bcf-3a81-4ea4-9ccf-16ffde40436d.png)
+
+	• 1 - Biometrick hizmeti: Parmak okuyucu cihazlar ve Hello Face için gerekli.
+	• 2 - Ekran Yakalama: Windows'un kendi ekran yakalama hizmetini kullanmıyorsanız bunu kaldırabilirsiniz. Ekran alıntısı uygulaması buna bağlıdır. Xbox ekran yakalama hizmeti SS ve video özelliği çalışmasına devam edecektir. Bu hizmet ile bağlantısı yoktur.
+	• 3 - Cortana: Windows yardımcı uygulamasıdır. Türkçe dil desteği olmadığı için gereksiz bir hizmettir. Ancak dikte gibi hizmetlerle bağlantısı vardır.
+	• 4 - Karma Gerçeklik: VR cihazlar için gerekli hizmet.
+	• 5 - Ekran Okuma: Ekrandaki yazıları okutan hizmettir. Bu konuda herhangi bir engel söz konusu değil.
+	• 6 - Ebeveyn Kontrolleri: Çocuklarınız için PC'de kısıtlama yapabileceğini hizmettir.
+	• 7 - Kişiler: Adından her şey anlaşılıyor. PC'de olmasını gerektiren bir hizmet değil.
+	• 8 - Windows Defender: Windows Defender kullanmıyorsanız kesinlikle kaldırın.
+	• 9 - Güvenli Tarayıcı: E-Sınav sistemleriden kullanılan servis. Sınav sistemi bu hizmete bağlıysa sınav günü sıkıntı yaşarsınız.
+	• 10 - Başlat Menüsü: Alternatif başlat menüsü uygulaması kullanmıyorsanız bunu kaldırmayın. Yoksa kritik hata alırsınız. 
+	• 11 - Search App (Taskbar Search): Görev çubuğunda yer alan arama hizmetini kapatır. 
+	• 12 - Kamera Barkod Tarayıcı: Kamera Barkod tarama hizmetidir. Amacı dışındaki kullanımlarda sorun çıkarıp çıkarmadığı konusunda tespit ettiğim bir durum yok.
 
 ### 22 - Performans Optimizasyonu:
 Performans ile ilgili ayarları uygular. İşlem öncesi değiştirilecek veya eklenecek regedit kayıtları tespit edilir ve yedekleri alınır. Kullanmak için istediğiniz işlemi ve Aç veya kapatın baş harflerini yazmanız lazım. 
