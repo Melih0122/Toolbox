@@ -4,6 +4,14 @@
 -   Mail: ognitorenks@gmail.com
 -   Site: https://ognitorenks.blogspot.com/
 
+-------------------
+ ► Versiyon 3.4.1 - Ara Güncelleme
+-------------------
+Yayınlanma Tarihi: .07.2022
+
+	• Windows 10/11 Edit > Telemetri/Reklam engelli hosts ekle bölümünde veri kaybını önlemek için mevcut dosya hosts.bak olarak değiştirilmesi için komutlar eklendi.
+		• [quanqx]'a geri bildirimi için teşekkür ederim. 
+
 -----------------
  ► Versiyon 3.4 -
 -----------------
