@@ -11,7 +11,7 @@
 - ► Mail: ognitorenks@gmail.com
 - ► Site: https://ognitorenks.blogspot.com/
 
-![cmd_Y7aoKLzMQ9](https://user-images.githubusercontent.com/93199689/176909932-68bb45db-038a-4573-9021-6d8d3aa59b03.png)
+![cmd_biINAwmipL](https://user-images.githubusercontent.com/93199689/177618762-85eb3b57-bc72-409f-95f4-41c626053acd.png)
 
 ### OgnitorenKs.Toolbox dosyaları
 - ► OgnitorenKs.Toolbox.zip  = https://docs.google.com/uc?export=download&id=19uNjxzHFY5A6g4mFg8FirFTnyL2R0HZ3	
@@ -55,7 +55,7 @@
 ## 1 - Uygulama Yükleyici
 Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar ücretsiz alternatifler arasında seçilmiştir. WinRaR hariç o da ücretli ama ücretsiz bir yazılımdır.
 
-![cmd_OphAIXSy6A](https://user-images.githubusercontent.com/93199689/176909987-69cfdb85-dfb6-4862-a105-650f7bb8c6a0.png)
+![cmd_ncjATuxRAi](https://user-images.githubusercontent.com/93199689/177618828-48ac90b3-c420-40c1-bfe0-3d5eb25d0001.png)
    
 	• 1 - All in One Runtimes: C++ 2005-2022 / Java / XNA Framework / OpenAL / DirectX. Bu programlar oyunlar ve bazı uygulamalarda sorun yaşamamanız için mutlaka kurulmalıdır.
 #### ► Mesajlaşma Uygulamaları 
@@ -145,7 +145,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 
 ## 2 - Araç Yükleyici
 
-![cmd_pGj1oZ5Nm0](https://user-images.githubusercontent.com/93199689/176914949-6e6b094b-471f-48a8-a7df-80343c19eb19.png)
+![cmd_tLRrpUgl5E](https://user-images.githubusercontent.com/93199689/177618916-a3863a49-9770-468f-9756-995c5e175dbc.png)
 
 #### ► Windows Düzenleme
 	• 1 - NTLite: Sistem düzenleme işleminde kullanılır. En kullanışlı ve kapsamlı yazılımlardandır. Ücretsiz özellikleriyle performans sürüm düzenlemesi yapılabilir.
@@ -195,7 +195,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 3 - Bu bölüm işletim sistemine göre değişiklik göstermektedir. Windows 11 ve Windows 10 için iki ayrı bölüme ayrılmıştır.
 ### 3 - Windows 10 Edit
 
-![cmd_kRrG2UwL2l](https://user-images.githubusercontent.com/93199689/167621037-c8742c3f-b6f4-44f9-b64f-d579d6923ca5.png)
+![cmd_xt5IgO04f4](https://user-images.githubusercontent.com/93199689/177618964-f46b5d3c-b944-422d-bdf2-0c77f7554f56.png)
 
 	• 1 - Taskbar saat yanı simge ayarı [GÖSTER/GİZLE]: 
 	     •[Göster]: 0 - Saat yanında yer alan tüm simgeleri gösterir.
@@ -227,7 +227,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	• 9 - Güncellemeleri 2050 yılına kadar ertele: Windows Update hizmetini 2050 yılına kadar etkisiz hale getirir.
 ### 3 - Windows 11 Edit
 
-![cmd_4yRsA2SSyl](https://user-images.githubusercontent.com/93199689/167621089-ae0c7491-8986-465f-bb2d-4aff40f65c9b.png)
+![cmd_bjqcmMyWk8](https://user-images.githubusercontent.com/93199689/177618988-fcc9582d-df2f-4d43-92d4-e121c8b7979c.png)
 
 	• 1 - Taskbar Boyut [Küçük/Orta/Büyük]: 22H2'de çalışmıyor.
 	     •[Küçük]: 0 - Görev çubuğunu küçük yapar.
@@ -265,7 +265,7 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 
 Örnek: 1a / 2k / 4A / 10K / 23a / 24k  
 
-![cmd_tbjfMpwnMM](https://user-images.githubusercontent.com/93199689/172700153-b69a2b08-6717-4e4d-b2f8-34d7de7b990d.png)
+![cmd_8RBJ4HWp8k](https://user-images.githubusercontent.com/93199689/177619022-9f83d620-a01b-484e-a36c-df8525ec23c6.png)
 
 	• 1 [A/K]- Bluetooth hizmeti : Bluetooth hizmetlerini kapatır açar.
 	• 2 [A/K]- Yazıcı hizmeti : Yazıcı hizmetlerini kapatır açar.
@@ -438,7 +438,7 @@ SHA-256 değerlerini karşılaştırmayı sağlar.
 ### 21 - Kaldırılamayan Uygulamalar: 
 Kaldırılması Microsoft tarafından engellenen bazı uygulamaları kaldırmayı sağlar. Yeniden yüklenemez. Kaldırırken dikkatli olun.
 
-![cmd_BAUX3GKM8L](https://user-images.githubusercontent.com/93199689/170891816-105ab12a-b99d-41a5-89e4-2bb344b5efde.png)
+![cmd_cY92Xi0S1f](https://user-images.githubusercontent.com/93199689/177619102-82d56bcf-3a81-4ea4-9ccf-16ffde40436d.png)
 
 ### 22 - Performans Optimizasyonu:
 Performans ile ilgili ayarları uygular. İşlem öncesi değiştirilecek veya eklenecek regedit kayıtları tespit edilir ve yedekleri alınır. Kullanmak için istediğiniz işlemi ve Aç veya kapatın baş harflerini yazmanız lazım. 
