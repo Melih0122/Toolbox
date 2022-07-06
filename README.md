@@ -430,7 +430,7 @@ Bu bölümde sisteme girdiğiniz Wifi isim ve şifrelerini görebilirsiniz. Çal
 ### 18 - Zaman Ayarlı PC Kapat:
 Seçilen belirli bir süreden sonra PC otomatik kapatır.
 	
-![cmd_3pp0ccih2b](https://user-images.githubusercontent.com/93199689/167627106-7906eed5-3736-4702-80b1-7fee90cf81a9.png)
+![cmd_qBHeLUqaMj](https://user-images.githubusercontent.com/93199689/177620977-146cfc29-86e0-4553-a472-b4179a1bfb40.png)
 
 ### 19 - Appx - Güncelleme Yükleyici:
 Appx ve Update dosyalarını yüklemenizi sağlayan bölümdür. 
