@@ -142,6 +142,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	• 68 - Everything: Sistemdeki dosyaları arayıp bulmanızı sağlar. Çok kullanışlı bir programdır.
 	• 69 - GlassWire: İnternet takip programı. Bilgisayarınızda hangi program nereye ne göndermiş ne almış hepsini görebilirsiniz.
 	• 70 - Hamachi: Ortak bir ağ kurmaya yarayan yazılımdır. Online oyunlarda arkadaşlarınızla oyun kurmak için ortak bir ağ gerektiğinde hayat kurtaran bir programdır.
+	• 71 - WARP: Cloudflare'in DNS/VPN hizmetidir. Ücretsizdir. 
 
 ## 2 - Araç Yükleyici
 
@@ -167,28 +168,27 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	• 14 - Furmark: GPU stress test uygulaması
 #### ► Sanal Makine
 	• 15 - VirtualBox: Sanal makina uygulaması. Tüm Windows sürümleri ve Linux sistemleri kurabilirsiniz.
-	• 16 - VMWare: Sanal makina uygulaması. Tüm Windows sürümleri ve Linux sistemleri kurabilirsiniz.
 #### ► Simge Düzenleme
-	• 15 - GreenFish: Simge hazırlayıp, simge dosyalarının içeriğine bakabileceğiniz uygulamadır.
-	• 18 - Thumbico: Programların .exe dosyasından simge almayı sağlar.
-	• 19 - Quick Any 2 ICO: Görsel dosyaları Icon dosyasına çevirmeyi sağlar.
-	• 20 - Resource Hacker: .dll .exe gibi dosyaları editleyebileceğiniz kapsamlı bir yazılım.
+	• 16 - GreenFish: Simge hazırlayıp, simge dosyalarının içeriğine bakabileceğiniz uygulamadır.
+	• 17 - Thumbico: Programların .exe dosyasından simge almayı sağlar.
+	• 18 - Quick Any 2 ICO: Görsel dosyaları Icon dosyasına çevirmeyi sağlar.
+	• 19 - Resource Hacker: .dll .exe gibi dosyaları editleyebileceğiniz kapsamlı bir yazılım.
 #### ► Sistem Araçları
-	• 21 - NSudo: Dosyaları yüksek yetkili(Trusted Installer) olarak çalıştırmayı sağlayan uygulama.
-	• 22 - Explorer++: Alternatif Explorer yazılımıdır. Kritik durumlarda hayat kurtarabilir.
+	• 20 - NSudo: Dosyaları yüksek yetkili(Trusted Installer) olarak çalıştırmayı sağlayan uygulama.
+	• 21 - Explorer++: Alternatif Explorer yazılımıdır. Kritik durumlarda hayat kurtarabilir.
 #### ► GPU / Driver Araçları
-	• 23 - Display Driver Uninstaller (DDU): Ekran kartı driverını kaldırıp sorunsuz temiz kurulum yapmayı sağlar.
-	• 24 - Nvidia Profile Inspector: NVIDIA sürücüleri hakkında detaylı bilgi, performans takibi ve ayarlarda düzenleme yapma imkanı veren başarılı bir uygulama.
-	• 25 - RadeonMod: AMD ekran kartı driverıyla ilgili detaylı değişiklikler yapmanızı sağlayan yazılım.
-	• 26 - Radeon Software Slimmer: Ekran kartı kurulumuyla ilgili çok fazla seçenek sunarak ihtiyaç dışı özellikleri devre dışı bırakmanızı sağlar.
-	• 27 - NVCCleanstall: NVIDIA ekran kartı driver kurulumunda fazla seçenek sunarak ihtiyaç dışı özellikleri yüklememenizi sağlar.
-	• 28 - Snappy Driver Installer: Driver güncelleme, yükleme uygulamasıdır. Ücretsizdir. Herhangi bir kısıtlam söz konusu değildir. Sayfaları üzerinden yapımcılarına destek olabilirsiniz.
+	• 22 - Display Driver Uninstaller (DDU): Ekran kartı driverını kaldırıp sorunsuz temiz kurulum yapmayı sağlar.
+	• 23 - Nvidia Profile Inspector: NVIDIA sürücüleri hakkında detaylı bilgi, performans takibi ve ayarlarda düzenleme yapma imkanı veren başarılı bir uygulama.
+	• 24 - RadeonMod: AMD ekran kartı driverıyla ilgili detaylı değişiklikler yapmanızı sağlayan yazılım.
+	• 25 - Radeon Software Slimmer: Ekran kartı kurulumuyla ilgili çok fazla seçenek sunarak ihtiyaç dışı özellikleri devre dışı bırakmanızı sağlar.
+	• 26 - NVCCleanstall: NVIDIA ekran kartı driver kurulumunda fazla seçenek sunarak ihtiyaç dışı özellikleri yüklememenizi sağlar.
+	• 27 - Snappy Driver Installer: Driver güncelleme, yükleme uygulamasıdır. Ücretsizdir. Herhangi bir kısıtlam söz konusu değildir. Sayfaları üzerinden yapımcılarına destek olabilirsiniz.
 #### ► Diğer
-	• 29 - SSD Booster: SSD sağlığının uzaması için bazı indexleme ve SSD'ler için gereksiz hızlandırma servislerini devre dışı bırakmanızı sağlar. SSD'ye harici olarak hız vermez.
-	• 30 - Folder2ISO: Klasörleri ISO'ya dönüştürebileceğiniz basit, küçük bir uygulama.
-	• 31 - Process Monitor: Olası sorunlarda analiz yapabilmek için log dosyası oluşturmanızı sağlar.
-	• 32 - AOMEI Partition Assistans: Disk yönetimi uygulamasıdır.
-	• 33 - Spotify Adblocker: Spotify ücretsiz sürümünde çıkan sesli reklamlar geldiğinde ses sisteminde Spotify'ın sesini kapatır. Böylece reklam dinlemekten kurtulursunuz. Programın yapımcısı 'Mehmet Güdük'tür. Reklam engelleyici çalıştırdığınızda açık değil ise Spotify'da açmaktadır. Böylece her Spotify açtığınızda reklam engelleyici açma derdiniz de bulunmuyor. Ücretsiz sürüm kullananlar programı mutlaka yüklemeli.
+	• 28 - SSD Booster: SSD sağlığının uzaması için bazı indexleme ve SSD'ler için gereksiz hızlandırma servislerini devre dışı bırakmanızı sağlar. SSD'ye harici olarak hız vermez.
+	• 29 - Folder2ISO: Klasörleri ISO'ya dönüştürebileceğiniz basit, küçük bir uygulama.
+	• 30 - Process Monitor: Olası sorunlarda analiz yapabilmek için log dosyası oluşturmanızı sağlar.
+	• 31 - AOMEI Partition Assistans: Disk yönetimi uygulamasıdır.
+	• 32 - Spotify Adblocker: Spotify ücretsiz sürümünde çıkan sesli reklamlar geldiğinde ses sisteminde Spotify'ın sesini kapatır. Böylece reklam dinlemekten kurtulursunuz. Programın yapımcısı 'Mehmet Güdük'tür. Reklam engelleyici çalıştırdığınızda açık değil ise Spotify'da açmaktadır. Böylece her Spotify açtığınızda reklam engelleyici açma derdiniz de bulunmuyor. Ücretsiz sürüm kullananlar programı mutlaka yüklemeli.
 	   ► Resmi Sayfası: https://github.com/mehmetguduk/Spotify-Adblocker
 
 # OgnitorenKs Toolbox
@@ -225,6 +225,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	     •[Eski]: 1 - Windows 10 eski (Varsayılan) simgeleri yükler.
 	     •[Yeni]: 2 - Windows 10 yeni simgeleri yükler.
 	• 9 - Güncellemeleri 2050 yılına kadar ertele: Windows Update hizmetini 2050 yılına kadar etkisiz hale getirir.
+	• 10 - Telemetri/Reklam engelli hosts ekle: Telemetri ve reklam iplerinin engellendiği hosts dosyasını yükler. Spotify, Blitz, Wemod gibi uygulama arayüzünde çıkan reklamlarda engellenir.
 ### 3 - Windows 11 Edit
 
 ![cmd_bjqcmMyWk8](https://user-images.githubusercontent.com/93199689/177618988-fcc9582d-df2f-4d43-92d4-e121c8b7979c.png)
@@ -260,6 +261,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 		
 	• 8 - Gpedit.msc (Yerel Grup ilkesi) [Ekle]: Windows Home ve Home Single Language sürümlerine "Gpedit.msc" ekler.
 	• 9 - Güncellemeleri 2050 yılına kadar ertele: Windows Update hizmetini 2050 yılına kadar etkisiz hale getirir.
+	• 10 - Telemetri/Reklam engelli hosts ekle: Telemetri ve reklam iplerinin engellendiği hosts dosyasını yükler. Spotify, Blitz, Wemod gibi uygulama arayüzünde çıkan reklamlarda engellenir.
 ### 4 - Hizmetleri Yönet
 Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip daha sonra aç / kapat baş harflerini eklemek gerekiyor.
 
@@ -293,6 +295,9 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 	• 24 [A/K]- Bellek Sıkıştırma hizmeti: Bellek içindeki verinin belli bir bölümünü sıkıştıran hizmeti kapatır ve açar. Gecikme düşürmek için hizmet kapalı tutulabilir.
 	• 25 [A/K]- Core Parking (CPU Çekirdek Uyku Modu): İşlemci çekirdeklerinin sürekli tam yükte çalışmasını istiyorsanız hizmeti kapatabilirsiniz. Tam tersi durum için açık hale getirebilirsiniz.
 	• 26 [A/K]- Wifi hizmeti: Wifi hizmetlerini açıp kapatmaya yarar.
+	• 27 [A/K]- Fax hizmeti: Fax hizmetini açıp kapatmaya yarar. Açıp veya kapattıktan sonra reset atınız.
+	• 28 [A/K]- Yazı Tipi Önbelllği hizmeti: Yazı tipi önbelleği hizmetini kapatır. SSD'ler için kapatılması önerilir. Kapatılırsa uygulamaların açılış hızında düşüşe neden olabilir. 
+	• 29 [A/K]- Hızlı Kullanıcı Değiştirme hizmeti: Hızlı kullanıcı değiştirme hizmetini açıp kapatır. "Ctrl + Alt + Delete" ekranında hızlı kullanıcı değiştirme bölümünü açıp kapatır. 
 	
 ### 5 - Windows Düzenleme:
 Mavi renkli işlem numaraları 19 numaralı işlem ile alakalıdır.
