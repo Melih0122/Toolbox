@@ -185,10 +185,10 @@ set /p value2=%R%[32m  İşlem :%R%[0m
 echo.
 echo %R%[90m  Görev Yöneticisi - Ayrıntılar 
 echo %R%[90m  bölümünden uygulama isimlerini öğrenebilirsiniz.
-set /p value=%R%[96m  ► Uygulama ismi%R%[90m steam.exe :%R%[0m
+set /p value=%R%[96m  ► Uygulama adı%R%[90m steam.exe :%R%[0m
 
 for %%a in (%value%) do (
-	reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\%%a\PerfOptions" /v "CpuPriorityClass" /t REG_DWORD /d "%value2%" /f
+	reg add "HKLM\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\%%a\PerfOptions" /v "CpuPriorityClass" /t REG_DWORD /d "%value2%" /f
 )
 Call :ProcessCompleted
 goto RuntimeLevel

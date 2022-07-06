@@ -72,7 +72,7 @@ for /f %%a in ('"cd"') do set Location=%%a
 set Logs=%Location%\Edit\Logs
 set download=%Location%\Download
 Call :NSudo
-set version=3.3
+set version=3.4
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 :T.Settings
@@ -340,9 +340,9 @@ echo   %R%[90m│%xognitorenksx% Tarayıcı                  %R%[90m│%R%[32m  
 echo   %R%[90m│%R%[32m   15-%R%[33m Google Chrome        %R%[90m│%R%[32m   42-%R%[33m Qbittorrent            %R%[90m│%xognitorenksx% Diğer                           %R%[90m│%R%[0m
 echo   %R%[90m│%R%[32m   16-%R%[33m Mozilla Firefox      %R%[90m│%xognitorenksx% Belgeler                    %R%[90m│%R%[32m   67-%R%[33m  MSI Afterburner           %R%[90m│%R%[0m
 echo   %R%[90m│%R%[32m   17-%R%[33m Brave                %R%[90m│%R%[32m   43-%R%[36m Libre Office           %R%[90m│%R%[32m   68-%R%[33m  Everything                %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   18-%R%[33m Microsoft Edge       %R%[90m│%R%[32m   44-%R%[36m Adobe Reader           %R%[90m│%R%[32m   69-%R%[33m  Glasswire                 %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   19-%R%[33m OperaGX              %R%[90m│%R%[32m   45-%R%[36m PDF X-Change           %R%[90m│%R%[32m   70-%R%[33m  Hamachi                   %R%[90m│%R%[0m
-echo   %R%[90m│%xognitorenksx% Sıkıştırma                %R%[90m│%R%[32m   46-%R%[36m Calibre                %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   18-%R%[33m Microsoft Edge       %R%[90m│%R%[32m   44-%R%[36m Adobe Reader           %R%[90m│%R%[32m   69-%R%[33m  Hamachi                   %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   19-%R%[33m OperaGX              %R%[90m│%R%[32m   45-%R%[36m PDF X-Change           %R%[90m│%R%[32m   70-%R%[33m  Glasswire                 %R%[90m│%R%[0m
+echo   %R%[90m│%xognitorenksx% Sıkıştırma                %R%[90m│%R%[32m   46-%R%[36m Calibre                %R%[90m│%R%[32m   71-%R%[33m  WARP                      %R%[90m│%R%[0m
 echo   %R%[90m│%R%[32m   20-%R%[36m 7-Zip                %R%[90m│%xognitorenksx% Geliştirme / Developer      %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
 echo   %R%[90m│%R%[32m   21-%R%[36m Winrar               %R%[90m│%R%[32m   47-%R%[36m Notepad++              %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
 echo   %R%[90m│%xognitorenksx% Multimedya                %R%[90m│%R%[32m   48-%R%[33m Python                 %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
@@ -403,7 +403,7 @@ FOR %%a in (%$multi%) do (
 	if %%a==34 if %Chocolatey%==0 (Call :Choco vlc) else (Call :wget1 VLCMediaPlayer.exe "/L=1055 /S")
 	if %%a==35 if %Chocolatey%==0 (Call :Choco potplayer) else (Call :wget1 PotPlayer.exe /S)
 	if %%a==36 if %Chocolatey%==0 (Call :Choco aimp) else (Call :wget1 Aimp.exe "/AUTO /SILENT")
-	if %%a==37 (Call :wget2 Spotify.exe&%NSudo2% "%download%\Spotify.exe" /silent)	
+	if %%a==37 (Call :wget2 Spotify.exe&%NSudo2% "%download%\Spotify.exe" /silent)
 	if %%a==38 if %Chocolatey%==0 (Call :Choco internet-download-manager) else (Call :wget1 InternetDownloadManager.exe /skipdlgs)
 	if %%a==39 if %Chocolatey%==0 (Call :Choco freedownloadmanager) else (Call :wget1 FreeDownloadManager.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-")
 	if %%a==40 if %Chocolatey%==0 (Call :Choco eagleget) else (Call :wget2 EagleGet.zip
@@ -442,33 +442,34 @@ FOR %%a in (%$multi%) do (
 				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\TaskbarX\TaskbarX.exe'")
 	if %%a==67 if %Chocolatey%==0 (Call :Choco msiafterburner) else (Call :wget1 MSIAfterburner.exe /S)
 	if %%a==68 if %Chocolatey%==0 (Call :Choco everything) else (Call :wget1 Everything.exe /S)
-	if %%a==69 if %Chocolatey%==0 (Call :Choco glasswire) else (Call :wget1 GlassWire.exe /S)
-	if %%a==70 if %Chocolatey%==0 (Call :Choco hamachi) else (Call :wget1 Hamachi.msi /q)
+	if %%a==69 if %Chocolatey%==0 (Call :Choco hamachi) else (Call :wget1 Hamachi.msi /q)
+	if %%a==70 if %Chocolatey%==0 (Call :Choco glasswire) else (Call :wget1 GlassWire.exe /S)
+	if %%a==71 if %Chocolatey%==0 (Call :Choco warp) else (Call :wget1 WARP.msi "/qn /norestart")
 )
 goto menu2
 
 :: ==============================================================================================================================
 
 :menu3
-mode con cols=69 lines=36
+mode con cols=69 lines=35
 title               O  G  N  I  T  O  R  E  N  K  S     ^|    OGNITORENKS TOOLBOX    ^|       T   O   O   L   B   O   X
 set xognitorenksx=%R%[90m►
 echo   %R%[90m┌───────────────────────────────────────────────────────────────┐%R%[0m
 echo   %R%[90m│%R%[1;97m%R%[100m                  Araçlar Katılımsız Yükleyici                 %R%[0m%R%[90m│%R%[0m
 echo   %R%[90m├────────────────────────────┬──────────────────────────────────┤%R%[0m
 echo   %R%[90m│%xognitorenksx% Windows Düzenleme         %R%[90m│%xognitorenksx% GPU / Driver Araçları           %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    1-%R%[33m NTLite               %R%[90m│%R%[32m   23-%R%[36m Display Driver Uninstaller %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    2-%R%[33m Dism++               %R%[90m│%R%[32m   24-%R%[36m Nvidia Profile Inspector   %R%[90m│%R%[0m
-echo   %R%[90m│%xognitorenksx% USB Hazırlayıcı           %R%[90m│%R%[32m   25-%R%[36m RadeonMod                  %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    3-%R%[36m Rufus                %R%[90m│%R%[32m   26-%R%[36m Radeon Software Slimmer    %R%[90m│%R%[0m
-echo   %R%[90m│%xognitorenksx% Donanım Bilgisi           %R%[90m│%R%[32m   27-%R%[36m NVCleanstall               %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    4-%R%[33m Aida64               %R%[90m│%xognitorenksx% Diğer                           %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    5-%R%[33m CPU-Z                %R%[90m│%R%[32m   28-%R%[33m SSD Booster                %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    6-%R%[33m GPU-Z                %R%[90m│%R%[32m   29-%R%[33m Folder2ISO                 %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    7-%R%[33m HW Info              %R%[90m│%R%[32m   30-%R%[33m Process Monitor            %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    8-%R%[33m CrystalDiskInfo      %R%[90m│%R%[32m   31-%R%[33m AOMEI Partition Assistans  %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    9-%R%[33m HD Sentinel          %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m 
-echo   %R%[90m│%R%[32m   10-%R%[33m Core Temp            %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    1-%R%[33m NTLite               %R%[90m│%R%[32m   22-%R%[36m Display Driver Uninstaller %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    2-%R%[33m Dism++               %R%[90m│%R%[32m   23-%R%[36m Nvidia Profile Inspector   %R%[90m│%R%[0m
+echo   %R%[90m│%xognitorenksx% USB Hazırlayıcı           %R%[90m│%R%[32m   24-%R%[36m RadeonMod                  %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    3-%R%[36m Rufus                %R%[90m│%R%[32m   25-%R%[36m Radeon Software Slimmer    %R%[90m│%R%[0m
+echo   %R%[90m│%xognitorenksx% Donanım Bilgisi           %R%[90m│%R%[32m   26-%R%[36m NVCleanstall               %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    4-%R%[33m Aida64               %R%[90m│%R%[32m   27-%R%[36m Snappy Driver Installer    %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    5-%R%[33m CPU-Z                %R%[90m│%xognitorenksx% Diğer                           %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    6-%R%[33m GPU-Z                %R%[90m│%R%[32m   28-%R%[33m SSD Booster                %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    7-%R%[33m HW Info              %R%[90m│%R%[32m   29-%R%[33m Folder2ISO                 %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    8-%R%[33m CrystalDiskInfo      %R%[90m│%R%[32m   30-%R%[33m Process Monitor            %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    9-%R%[33m HD Sentinel          %R%[90m│%R%[32m   31-%R%[33m AOMEI Partition Assistans  %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   10-%R%[33m Core Temp            %R%[90m│%R%[32m   32-%R%[33m Spotify Adblocker          %R%[90m│%R%[0m
 echo   %R%[90m│%xognitorenksx% Test Araçları             %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
 echo   %R%[90m│%R%[32m   11-%R%[36m CrystalDiskMark      %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
 echo   %R%[90m│%R%[32m   12-%R%[36m Prime95              %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
@@ -476,15 +477,14 @@ echo   %R%[90m│%R%[32m   13-%R%[36m OCCT                 %R%[90m│%R%[32m%R%[
 echo   %R%[90m│%R%[32m   14-%R%[36m FurMark              %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
 echo   %R%[90m│%xognitorenksx% Sanal Makine              %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
 echo   %R%[90m│%R%[32m   15-%R%[33m Virtual Box          %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   16-%R%[33m VMWare               %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
 echo   %R%[90m│%xognitorenksx% Simge Düzenleme           %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   17-%R%[36m GreenFish            %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   18-%R%[36m Thumbico             %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   19-%R%[36m Quick Any 2 Ico      %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   20-%R%[36m Resource Hacker      %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   16-%R%[36m GreenFish            %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   17-%R%[36m Thumbico             %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   18-%R%[36m Quick Any 2 Ico      %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   19-%R%[36m Resource Hacker      %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
 echo   %R%[90m│%xognitorenksx% Sistem Araçları           %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   21-%R%[33m NSudo                %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   22-%R%[33m Explorer++           %R%[90m│%R%[32m    X-%R%[33m Menü                       %R%[90m│%R%[0m 
+echo   %R%[90m│%R%[32m   20-%R%[33m NSudo                %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   21-%R%[33m Explorer++           %R%[90m│%R%[32m    X-%R%[33m Menü                       %R%[90m│%R%[0m
 echo   %R%[90m└────────────────────────────┴──────────────────────────────────┘
 set /p $multi=%R%[32m  Çoklu Seçim %R%[90mx,y: %R%[0m 
 
@@ -499,7 +499,7 @@ echo    →%C%[96m Seçilenler: %$multi%%C%[0m
 echo.
 mkdir C:\Users\%username%\Desktop\OgnitorenKs > NUL 2>&1
 FOR %%a in (%$multi%) do (
-	if %%a==1 if %Chocolatey%==0 (Call :Choco ntlite-free) else (Call :wget1 NTLite.exe "/S")
+	if %%a==1 if %Chocolatey%==0 (Call :Choco ntlite-free) else (Call :wget1 NTLite.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-")
 	if %%a==2 if %Chocolatey%==0 (Call :Choco dismplusplus) else (Call :wget2 Dism++.zip
 				Call :Powershell "Expand-Archive -Force '%download%\Dism++.zip' 'C:\Users\%username%\Desktop\OgnitorenKs\Dism++'"
 				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\Dism++\Dism++x64.exe'")
@@ -535,32 +535,34 @@ FOR %%a in (%$multi%) do (
 				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\OCCT.exe'")
 	if %%a==14 if %Chocolatey%==0 (Call :Choco furmark) else (Call :wget1 FurMark.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-")
 	if %%a==15 if %Chocolatey%==0 (Call :Choco virtualbox) else (Call :wget1 VirtualBox.exe "--silent --ignore-reboot")
-	if %%a==16 if %Chocolatey%==0 (Call :Choco vmwareworkstation) else (Call :wget1 VMWare "/s /v/qn EULAS_AGREED=1 AUTOSOFTWAREUPDATE=0 DATACOLLECTION=0 ADDLOCAL=ALL REBOOT=ReallySuppress")
-	if %%a==17 (Call :wget1 GreenFish.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-")
-	if %%a==18 if %Chocolatey%==0 (Call :Choco thumbico) else (Call :wget1 Thumbico.exe /S)
-	if %%a==19 if %Chocolatey%==0 (Call :Choco any2ico) else (Call :wget3 "C:\Users\%username%\Desktop\OgnitorenKs\Quick_Any2Ico.exe"
+	if %%a==16 (Call :wget1 GreenFish.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-")
+	if %%a==17 if %Chocolatey%==0 (Call :Choco thumbico) else (Call :wget1 Thumbico.exe /S)
+	if %%a==18 if %Chocolatey%==0 (Call :Choco any2ico) else (Call :wget3 "C:\Users\%username%\Desktop\OgnitorenKs\Quick_Any2Ico.exe"
 				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\Quick_Any2Ico.exe'")
-	if %%a==20 if %Chocolatey%==0 (Call :Choco reshack) else (Call :wget2 ResourceHacker.zip
+	if %%a==19 if %Chocolatey%==0 (Call :Choco reshack) else (Call :wget2 ResourceHacker.zip
 				Call :Powershell "Expand-Archive -Force '%download%\ResourceHacker.zip' 'C:\Users\%username%\Desktop\OgnitorenKs\ResourceHacker'"
 				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\ResourceHacker\ResourceHacker.exe'")
-	if %%a==21 (Call :Powershell "Start-Process '%Location%\Files\NSudo.exe'")
-	if %%a==22 if %Chocolatey%==0 (Call :Choco explorerplusplus) else (Call :wget2 Explorer++.zip
+	if %%a==20 (Call :Powershell "Start-Process '%Location%\Files\NSudo.exe'")
+	if %%a==21 if %Chocolatey%==0 (Call :Choco explorerplusplus) else (Call :wget2 Explorer++.zip
 				Call :Powershell "Expand-Archive -Force '%download%\Explorer++.zip' 'C:\Users\%username%\Desktop\OgnitorenKs\Explorer++'"
 				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\Explorer++\Explorer++.exe'")
-	if %%a==23 if %Chocolatey%==0 (Call :Choco ddu) else (Call :wget2 DDU.zip
+	if %%a==22 if %Chocolatey%==0 (Call :Choco ddu) else (Call :wget2 DDU.zip
 				Call :Powershell "Expand-Archive -Force '%download%\DDU.zip' 'C:\Users\%username%\Desktop\OgnitorenKs\DDU'"
 				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\DDU\Display Driver Uninstaller.exe'")
-	if %%a==24 if %Chocolatey%==0 (Call :Choco nvidia-profile-inspector) else (Call :wget2 NvidiaProfileInspector.zip
+	if %%a==23 if %Chocolatey%==0 (Call :Choco nvidia-profile-inspector) else (Call :wget2 NvidiaProfileInspector.zip
 				Call :Powershell "Expand-Archive -Force '%download%\NvidiaProfileInspector.zip' 'C:\Users\%username%\Desktop\OgnitorenKs\NvidiaProfileInspector'"
 				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\NvidiaProfileInspector\nvidiaProfileInspector.exe'")
-	if %%a==25 (Call :wget2 RadeonMod.zip
+	if %%a==24 (Call :wget2 RadeonMod.zip
 				Call :Powershell "Expand-Archive -Force '%download%\RadeonMod.zip' 'C:\Users\%username%\Desktop\OgnitorenKs\RadeonMod'"
 				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\RadeonMod\RadeonMod.exe'")
-	if %%a==26 (Call :wget2 RadeonSoftwareSlimmer.zip
+	if %%a==25 (Call :wget2 RadeonSoftwareSlimmer.zip
 				Call :Powershell "Expand-Archive -Force '%download%\RadeonSoftwareSlimmer.zip' 'C:\Users\%username%\Desktop\OgnitorenKs\RadeonSoftwareSlimmer'"
 				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\RadeonSoftwareSlimmer\RadeonSoftwareSlimmer.exe'")
-	if %%a==27 (Call :wget3 C:\Users\%username%\Desktop\OgnitorenKs\NVCleanstall.exe
+	if %%a==26 (Call :wget3 C:\Users\%username%\Desktop\OgnitorenKs\NVCleanstall.exe
 				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\NVCleanstall.exe'")
+	if %%a==27 if %Chocolatey%==0 (Call :Choco sdio) else (Call :wget2 Snappy.Driver.Installer.zip
+				Call :Powershell "Expand-Archive -Force '%download%\Snappy.Driver.Installer.zip' 'C:\Users\%username%\Desktop\OgnitorenKs\Snappy.Driver.Installer'"
+				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\Snappy.Driver.Installer\SDIO_x64.exe'")
 	if %%a==28 (Call :wget3 "C:\Users\%username%\Desktop\OgnitorenKs\SSDBooster.exe"
 				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\SSDBooster.exe'")
 	if %%a==29 (Call :wget2 Folder2ISO.zip
@@ -570,6 +572,8 @@ FOR %%a in (%$multi%) do (
 				Call :Powershell "Expand-Archive -Force '%download%\ProcessMonitor.zip' 'C:\Users\%username%\Desktop\OgnitorenKs\ProcessMonitor'"
 				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\ProcessMonitor\Procmon64.exe'")
 	if %%a==31 if %Chocolatey%==0 (Call :Choco partition-assistant-standard) else (Call :wget1 AOEMI.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-")
+	if %%a==32 (Call :wget3 "C:\Users\%username%\Desktop\OgnitorenKs\Spotify.Adblocker.exe"
+				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\Spotify.Adblocker.exe'")
 )
 goto menu3
 :: ==============================================================================================================================
@@ -914,9 +918,10 @@ goto :eof
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 :servicesmanagement
 cls
-mode con cols=55 lines=36
+mode con cols=55 lines=37
 title Hizmet Yönetimi / OgnitorenKs
 Dism /Online /Get-Features /format:table > %Logs%\servvalue.txt
+DISM /Online /Get-Capabilities /format:table > %Logs%\servvalue2.txt
 reg query "HKLM\SYSTEM\CurrentControlSet\Control\Power" /v "HibernateEnabled" > NUL 2>&1
 	if %errorlevel%==1 (Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Power" HibernateEnabled 1)
 reg query "HKLM\Software\Policies\Microsoft\Windows\DriverSearching" /v "SearchOrderConfig" > NUL 2>&1
@@ -1016,6 +1021,16 @@ echo  %R%[90m│%R%[0m  %R%[32m 25%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m
 ::
 set servalue=%R%[100m %R%[0m&FOR %%b in (WwanSvc WlanSvc wcncsvc lmhosts vwifibus NativeWifiP Ndisuio vwififlt) do (Call :serv.check "%%b")
 echo  %R%[90m│%R%[0m  %R%[32m 26%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Wifi hizmeti                         %R%[90m│%R%[0m
+::
+set servalue=%R%[100m %R%[0m
+findstr /i "fax" %Logs%\servvalue2.txt | findstr /i "installed" > NUL 2>&1
+	if %errorlevel%==0 (set servalue=%R%[32m♦%R%[0m)
+echo  %R%[90m│%R%[0m  %R%[32m 27%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Fax hizmeti                          %R%[90m│%R%[0m
+::
+set servalue=%R%[100m %R%[0m&FOR %%b in (FontCache FontCache3.0.0.0) do (Call :serv.check "%%b")
+echo  %R%[90m│%R%[0m  %R%[32m 28%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Yazı Tipi Önbellek hizmeti           %R%[90m│%R%[0m
+set servalue=%R%[100m %R%[0m&Call :serv.check "seclogon"
+echo  %R%[90m│%R%[0m  %R%[32m 29%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%servalue%%R%[90m -%C%[33m Hızlı Kullanıcı Değiştirme hizmeti   %R%[90m│%R%[0m
 echo  %R%[90m│%R%[0m         %R%[32m X -%R%[36m Menü%R%[0m                                 %R%[90m│%R%[0m
 echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
 set /p value= %C%[92m İşlem : %C%[0m
@@ -1123,6 +1138,18 @@ set /p value= %C%[92m İşlem : %C%[0m
 	if %value%==26A (Call :serv.26.wifi start demand system açılıyor)
 	if %value%==26K (Call :serv.26.wifi stop disabled disabled kapatılıyor)
 	if %value%==26k (Call :serv.26.wifi stop disabled disabled kapatılıyor)
+	if %value%==27a (Call :serv.27.fax start demand add açılıyor)
+	if %value%==27A (Call :serv.27.fax start demand add açılıyor)
+	if %value%==27K (Call :serv.27.fax stop disabled remove kapatılıyor)
+	if %value%==27k (Call :serv.27.fax stop disabled remove kapatılıyor)
+	if %value%==28a (Call :serv.28.fontcache start demand açılıyor)
+	if %value%==28A (Call :serv.28.fontcache start demand açılıyor)
+	if %value%==28K (Call :serv.28.fontcache stop disabled kapatılıyor)
+	if %value%==28k (Call :serv.28.fontcache stop disabled kapatılıyor)
+	if %value%==29a (Call :serv.29.hizlikullanici start demand 0 açılıyor)
+	if %value%==29A (Call :serv.29.hizlikullanici start demand 0 açılıyor)
+	if %value%==29K (Call :serv.29.hizlikullanici stop disabled 1 kapatılıyor)
+	if %value%==29k (Call :serv.29.hizlikullanici stop disabled 1 kapatılıyor)
 	if %value%==x goto menu
 	if %value%==X goto menu
 ) else 
@@ -1392,8 +1419,8 @@ Call :ProcessCompleted
 goto :eof
 
 :serv.15.sistemgeriyukleme
-Call :LogSave "Hizmetleri Yönet" "Sistem Geri yükleme hizmeti %5"
-echo  ► %C%[96mSistem geri yükleme hizmeti %5 ...%C%[0m
+Call :LogSave "Hizmetleri Yönet" "Sistem Geri yükleme hizmeti %6"
+echo  ► %C%[96mSistem geri yükleme hizmeti %6 ...%C%[0m
 :: Windows Yedekleme ve Geri Yükleme hizmeti | Birim Gölge kopyası | Microsoft Yazılımı Gölge Kopya Sağlayıcısı | Blok Düzeyinde Yedekleme Altyapı Hizmeti | Dosya geçmişi hizmeti
 FOR %%a in (SDRSVC VSS swprv wbengine fhsvc) do (
 	sc config %%a start= %2 > NUL 2>&1
@@ -1597,9 +1624,49 @@ Call :ProcessCompleted
 ::---------------------------------------------------------------------
 goto :eof
 
+:serv.27.fax
+Call :LogSave "Hizmetleri Yönet" "Fax hizmeti %4"
+echo  ►%C%[96m Fax hizmeti %4 ...%C%[0m
+Dism /Online /NoRestart /%~3-Capability /CapabilityName:Print.Fax.Scan~~~~0.0.1.0 > NUL 2>&1
+sc config fax start= %~2 > NUL 2>&1
+net %1 fax /y > NUL 2>&1
+Call :ProcessCompletedReset
+::---------------------------------------------------------------------
+::    Aç = %1 : start | %2 : demand   | %3 : Add      | %4 : açılıyor
+:: Kapat = %1 : stop  | %2 : disabled | %3 : Remove   | %4 : kapatılıyor
+::---------------------------------------------------------------------
+goto :eof
+
+:serv.28.fontcache
+Call :LogSave "Hizmetleri Yönet" "FontCache hizmeti %3"
+echo  ►%C%[96m Yazı Tipi Önbellek hizmeti %3 ...%C%[0m
+For %%a in (FontCache FontCache3.0.0.0) do (
+	sc config %%a start= %~2 > NUL 2>&1
+	net %1 %%a /y > NUL 2>&1
+)
+Call :ProcessCompleted
+::---------------------------------------------------------------------
+::    Aç = %1 : start | %2 : demand   | %3 : açılıyor
+:: Kapat = %1 : stop  | %2 : disabled | %3 : kapatılıyor
+::---------------------------------------------------------------------
+goto :eof
+
+:serv.29.hizlikullanici
+Call :LogSave "Hizmetleri Yönet" "Hızlı Kullanıcı değiştirme hizmeti %4"
+echo  ►%C%[96m Hızlı Kullanıcı Değiştirme hizmeti %4 ...%C%[0m
+Call :dword "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" "HideFastUserSwitching" %3
+Call :dword "HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Policies\System" "HideFastUserSwitching" %3
+sc config seclogon start= %2 > NUL 2>&1
+net %1 seclogon /y > NUL 2>&1
+Call :ProcessCompletedReset
+::---------------------------------------------------------------------
+::    Aç = %1 : start | %2 : demand   | %3 : 0  | %4 : açılıyor
+:: Kapat = %1 : stop  | %2 : disabled | %3 : 1  | %4 : kapatılıyor
+::---------------------------------------------------------------------
+
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 :wifiinfoarchley
-:: Bu bölüm "ARCHLEY" kullanıcısı tarafından eklenmiştir. 
+:: Bu bölüm "ARCHLEY" tarafından eklenmiştir. 
 mode con cols=65 lines=45
 title Wifi bilgileri / (Archley)
 Call :LogSave WifiInfo "Wifi Info bölümü açıldı"
@@ -1720,7 +1787,6 @@ goto OSfind
 cls
 mode con cols=55 lines=18
 title Windows 11 Özelleştir / OgnitorenKs
-echo.
 echo  %R%[90m┌───────────────────────────────────────────────────┐%R%[0m
 echo  %R%[90m│%R%[1;97m%R%[100m              Windows 11 Özelleştirme              %R%[0m%R%[90m│%R%[0m
 echo  %R%[90m├───────────────────────────────────────────────────┤%R%[0m
@@ -1733,6 +1799,7 @@ echo  %R%[90m│   %R%[32m 6.%C%[33m Sahiplik Al%C%[90m [EKLE/KALDIR]           
 echo  %R%[90m│   %R%[32m 7.%C%[33m Compact OS (Windows Sıkıştırma)%C%[90m [AÇ/KAPAT]  │%R%[0m
 echo  %R%[90m│   %R%[32m 8.%C%[33m Gpedit.msc(Yerel Grup ilkesi)%C%[90m [EKLE]        │%R%[0m
 echo  %R%[90m│   %R%[32m 9.%C%[33m Güncelleştirmeleri 2050 yılına ertele       %R%[90m│%R%[0m
+echo  %R%[90m│  %R%[32m 10.%C%[33m Telemetri/reklam engelli hosts%C%[90m [EKLE]       │%R%[0m
 echo  %R%[90m│   %R%[32m X.%R%[36m Menü                                        %R%[90m│%R%[0m
 echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
 set /p value=%C%[92m  İşlem : %C%[0m
@@ -1745,6 +1812,8 @@ set /p value=%C%[92m  İşlem : %C%[0m
 	if %value%==7 (Call :WinCompactOS)
 	if %value%==8 (Call :gpedit)
 	if %value%==9 goto update2050
+	if %value%==10 (%NSudo% copy /y "%Location%\Files\hosts" "%windir%\System32\drivers\etc"
+					Call :ProcessCompleted)
 	if %value%==x GOTO menu
 	if %value%==X GOTO menu
 ) else
@@ -1877,7 +1946,6 @@ goto Win11RightMenuTerminal
 cls
 mode con cols=55 lines=18
 title Windows 10 Özelleştir / OgnitorenKs
-echo.
 echo  %R%[90m┌───────────────────────────────────────────────────┐%R%[0m
 echo  %R%[90m│%R%[1;97m%R%[100m              Windows 10 Özelleştirme              %R%[0m%R%[90m│%R%[0m
 echo  %R%[90m├───────────────────────────────────────────────────┤%R%[0m
@@ -1890,6 +1958,7 @@ echo  %R%[90m│   %R%[32m 6.%C%[33m Compact OS (Windows Sıkıştırma)%C%[90m 
 echo  %R%[90m│   %R%[32m 7.%C%[33m Gpedit.msc (Yerel Grup ilkesi)%C%[90m [EKLE]       │%R%[0m
 echo  %R%[90m│   %R%[32m 8.%C%[33m Simgeleri Değiştir%C%[90m [ESKİ/YENİ]              │%R%[0m
 echo  %R%[90m│   %R%[32m 9.%C%[33m Güncelleştirmeleri 2050 yılına ertele       %R%[90m│%R%[0m
+echo  %R%[90m│  %R%[32m 10.%C%[33m Telemetri/reklam engelli hosts%C%[90m [EKLE]       │%R%[0m
 echo  %R%[90m│   %R%[32m X.%R%[36m Menü                                        %R%[90m│%R%[0m
 echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
 set /p value=%C%[92m  İşlem : %C%[0m
@@ -1902,6 +1971,8 @@ set /p value=%C%[92m  İşlem : %C%[0m
 	if %value%==7 (Call :gpedit)
 	if %value%==8 GOTO icochangemenu
 	if %value%==9 goto update2050
+	if %value%==10 (%NSudo% copy /y "%Location%\Files\hosts" "%windir%\System32\drivers\etc"
+					Call :ProcessCompleted)
 	if %value%==x GOTO menu
 	if %value%==X GOTO menu
 ) else
@@ -2010,7 +2081,12 @@ sc config camsvc start= disabled > NUL 2>&1
 net stop camsvc /y > NUL 2>&1
 :: Depolama hizmeti
 sc config StorSvc start= disabled > NUL 2>&1
-net stop StorSvc /y > NUL 2>&1
+net stop StorSvc /y > NUL 2>&1s
+:: Runtime Brooker
+sc config TokenBroker start= disabled > NUL 2>&1
+net stop TokenBroker /y > NUL 2>&1
+taskkill /f /im "RuntimeBroker.exe" > NUL 2>&1
+%NSudo% Ren "%Windir%\System32\RuntimeBroker.exe" "RuntimeBroker.exe.bak"
 :: İstemci Lisans Hizmeti
 %NSudo% sc config ClipSVC start= disabled
 %NSudo% net stop ClipSVC /y
@@ -2194,6 +2270,15 @@ goto AdminMenu
 cls
 mode con cols=55 lines=21
 title ShutDown / OgnitorenKs
+:: Kapatma kontrol
+:: https://superuser.com/questions/1028374/determine-whether-a-shutdown-is-pending
+shutdown -s -f -t 999999 > NUL 2>&1
+if %errorlevel% equ 1190 (
+  set ShutDownTime=%R%[90m│                %R%[32m 10.%R%[31m  İptal Et                     %R%[90m│%R%[0m
+) else (
+  shutdown /a > NUL 2>&1
+  set ShutDownTime=%R%[90m│                                                   %R%[90m│%R%[0m
+)
 echo  %R%[90m┌───────────────────────────────────────────────────┐%R%[0m
 echo  %R%[90m│%R%[1;97m%R%[100m            Otomatik Bilgisayar Kapatma            %R%[0m%R%[90m│%R%[0m
 echo  %R%[90m├───────────────────────────────────────────────────┤%R%[0m
@@ -2207,8 +2292,9 @@ echo  %R%[90m│                 %R%[32m 6.%C%[33m  6%C%[90m [Saat]             
 echo  %R%[90m│                 %R%[32m 7.%C%[33m  7%C%[90m [Saat]                     │%R%[0m
 echo  %R%[90m│                 %R%[32m 8.%C%[33m  8%C%[90m [Saat]                     │%R%[0m
 echo  %R%[90m│                 %R%[32m 9.%C%[33m  Manuel                       %R%[90m│%R%[0m
-echo  %R%[90m│                %R%[32m 10.%R%[33m  İptal et                     %R%[90m│%R%[0m
 echo  %R%[90m│                 %R%[32m X.%R%[36m  Menü                         %R%[90m│%R%[0m
+echo  %R%[90m├───────────────────────────────────────────────────┤%R%[0m
+echo  %ShutDownTime%
 echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
 set /p value=%C%[92m  İşlem : %C%[0m
 	if %value%==0 (shutdown -s -f -t 1800)
@@ -2224,7 +2310,7 @@ set /p value=%C%[92m  İşlem : %C%[0m
 	if %value%==10 (shutdown /a > NUL 2>&1
 				   echo %R%[96m  Oto kapatma iptal edildi%R%[0m
 				   Call :LogSave "shutdownpc" "Oto kapatma iptal edildi"
-				   timeout /t 2 /nobreak > NUL)
+				   timeout /t 1 /nobreak > NUL)
 	if %value%==x goto menu
 	if %value%==X goto menu
 ) else
@@ -2292,42 +2378,39 @@ Call :NonRemovalChecker CapturePicker
 echo   %R%[90m│%R%[36m  2 %servalue% -%R%[33m Ekran Yakalama               %R%[90m│%R%[0m
 Call :NonRemovalChecker Cortana
 echo   %R%[90m│%R%[36m  3 %servalue% -%R%[33m Cortana                      %R%[90m│%R%[0m
-Call :NonRemovalChecker MicrosoftEdge
-echo   %R%[90m│%R%[36m  4 %servalue% -%R%[33m MicrosoftEdge                %R%[90m│%R%[0m
 Call :NonRemovalChecker Holographic
-echo   %R%[90m│%R%[36m  5 %servalue% -%R%[33m Karma Gerçeklik              %R%[90m│%R%[0m
+echo   %R%[90m│%R%[36m  4 %servalue% -%R%[33m Karma Gerçeklik              %R%[90m│%R%[0m
 Call :NonRemovalChecker Narrator
-echo   %R%[90m│%R%[36m  6 %servalue% -%R%[33m Ekran Okuma                  %R%[90m│%R%[0m
+echo   %R%[90m│%R%[36m  5 %servalue% -%R%[33m Ekran Okuma                  %R%[90m│%R%[0m
 Call :NonRemovalChecker ParentalControls
-echo   %R%[90m│%R%[36m  7 %servalue% -%R%[33m Ebeveyn Kontrolleri          %R%[90m│%R%[0m
+echo   %R%[90m│%R%[36m  6 %servalue% -%R%[33m Ebeveyn Kontrolleri          %R%[90m│%R%[0m
 Call :NonRemovalChecker PeopleExperienceHost
-echo   %R%[90m│%R%[36m  8 %servalue% -%R%[33m Kişiler                      %R%[90m│%R%[0m
+echo   %R%[90m│%R%[36m  7 %servalue% -%R%[33m Kişiler                      %R%[90m│%R%[0m
 Call :NonRemovalChecker SecHealthUI
-echo   %R%[90m│%R%[36m  9 %servalue% -%R%[33m Windows Defender             %R%[90m│%R%[0m
+echo   %R%[90m│%R%[36m  8 %servalue% -%R%[33m Windows Defender             %R%[90m│%R%[0m
 Call :NonRemovalChecker SecureAssessmentBrowser
-echo   %R%[90m│%R%[36m 10 %servalue% -%R%[33m Güvenli Tarayıcı             %R%[90m│%R%[0m
+echo   %R%[90m│%R%[36m  9 %servalue% -%R%[33m Güvenli Tarayıcı             %R%[90m│%R%[0m
 Call :NonRemovalChecker StartMenu
-echo   %R%[90m│%R%[36m 11 %servalue% -%R%[33m Başlat Menüsü                %R%[90m│%R%[0m
+echo   %R%[90m│%R%[36m 10 %servalue% -%R%[33m Başlat Menüsü                %R%[90m│%R%[0m
 Call :NonRemovalChecker Search
-echo   %R%[90m│%R%[36m 12 %servalue% -%R%[33m Search App (Taskbar Search)  %R%[90m│%R%[0m
-Call :NonRemovalChecker
-echo   %R%[90m│%R%[36m 13 %servalue% -%R%[33m Kamera Barkod Tarayıcı       %R%[90m│%R%[0m
+echo   %R%[90m│%R%[36m 11 %servalue% -%R%[33m Search App (Taskbar Search)  %R%[90m│%R%[0m
+Call :NonRemovalChecker CBSPreview
+echo   %R%[90m│%R%[36m 12 %servalue% -%R%[33m Kamera Barkod Tarayıcı       %R%[90m│%R%[0m
 echo   %R%[90m│%R%[36m  X -%R%[33m Menü                           %R%[90m│%R%[0m
 echo   %R%[90m└─────────────────────────────────────┘%R%[0m 
 set /p value=%R%[36m  Kaldır: %R%[0m
 	if %value%==1 (Call :NonRemoval Microsoft.BioEnrollment BioEnrollment)
 	if %value%==2 (Call :NonRemoval Microsoft.Windows.CapturePicker CapturePicker)
 	if %value%==3 (Call :NonRemoval Microsoft.549981C3F5F10 549981C3F5F10)
-	if %value%==4 (Call :NonRemoval Microsoft.MicrosoftEdge Edge)
-	if %value%==5 (Call :NonRemoval Microsoft.Windows.HolographicFirstRun Holographic)
-	if %value%==6 (Call :NonRemoval Microsoft.Windows.NarratorQuickStart NarratorQuickStart)
-	if %value%==7 (Call :NonRemoval Microsoft.Windows.ParentalControls ParentalControls)
-	if %value%==8 (Call :NonRemoval Microsoft.Windows.PeopleExperienceHost PeopleExperienceHost)
-	if %value%==9 (Call :NonRemoval Microsoft.Windows.SecHealthUI SecHealthUI)
-	if %value%==10 (Call :NonRemoval Microsoft.Windows.SecureAssessmentBrowser SecureAssessmentBrowser)
-	if %value%==11 (Call :NonRemoval Microsoft.Windows.StartMenuExperienceHost StartMenuExperienceHost)
-	if %value%==12 (Call :NonRemoval Microsoft.Windows.Search Search)
-	if %value%==13 (Call :NonRemoval Windows.CBSPreview CBSPreview)
+	if %value%==4 (Call :NonRemoval Microsoft.Windows.HolographicFirstRun Holographic)
+	if %value%==5 (Call :NonRemoval Microsoft.Windows.NarratorQuickStart NarratorQuickStart)
+	if %value%==6 (Call :NonRemoval Microsoft.Windows.ParentalControls ParentalControls)
+	if %value%==7 (Call :NonRemoval Microsoft.Windows.PeopleExperienceHost PeopleExperienceHost)
+	if %value%==8 (Call :NonRemoval Microsoft.Windows.SecHealthUI SecHealthUI)
+	if %value%==9 (Call :NonRemoval Microsoft.Windows.SecureAssessmentBrowser SecureAssessmentBrowser)
+	if %value%==10 (Call :NonRemoval Microsoft.Windows.StartMenuExperienceHost StartMenuExperienceHost)
+	if %value%==11 (Call :NonRemoval Microsoft.Windows.Search Search)
+	if %value%==12 (Call :NonRemoval Windows.CBSPreview CBSPreview)
 	if %value%==x goto menu
 	if %value%==X goto menu
 ) else
@@ -2740,7 +2823,7 @@ set /p value=%C%[92m  İşlem : %C%[0m
 ) else
 	goto ToolboxSettings
 goto ToolboxSettings
-	
+
 :ToolboxSettingsChange
 FOR /F "tokens=1" %%a in ('findstr /C:"%~1" %Location%\Settings.ini') do (set S1=%%a)
 FOR /F "tokens=2" %%a in ('findstr /C:"%~1" %Location%\Settings.ini') do (set S2= %%a)
@@ -2921,12 +3004,12 @@ goto :eof
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
 :Windows11
-set editmenu=Windows 11 Edit
+set xxxxxeditmenu=Windows 11 Edit
 set editmenugo=Win11SettingsMenu
 goto menu
 
 :Windows10
-set editmenu=Windows 10 Edit
+set xxxxxeditmenu=Windows 10 Edit
 set editmenugo=Win10SettingsMenu
 goto menu
 
@@ -2994,7 +3077,6 @@ echo.
 echo            %R%[37m İşlem tamamlandı%R%[0m
 timeout /t 2 /nobreak > NUL
 goto :eof
-
 
 :ProcessCompletedReset
 mode con cols=39 lines=20

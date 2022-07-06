@@ -1,0 +1,145 @@
+# Copyright (c) 1993-2009 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+# The IP address and the host name should be separated by at least one
+# space.
+#
+# Additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# For example:
+#
+#      102.54.94.97     rhino.acme.com          # source server
+#       38.25.63.10     x.acme.com              # x client host
+
+# localhost name resolution is handled within DNS itself.
+#	127.0.0.1       localhost
+#	::1             localhost
+
+0.0.0.0 telemetry.microsoft.com 
+0.0.0.0 vortex.data.microsoft.com 
+0.0.0.0 vortex-win.data.microsoft.com 
+0.0.0.0 telecommand.telemetry.microsoft.com 
+0.0.0.0 telecommand.telemetry.microsoft.com.nsatc.net 
+0.0.0.0 oca.telemetry.microsoft.com 
+0.0.0.0 oca.telemetry.microsoft.com.nsatc.net 
+0.0.0.0 sqm.telemetry.microsoft.com 
+0.0.0.0 sqm.telemetry.microsoft.com.nsatc.net 
+0.0.0.0 watson.telemetry.microsoft.com 
+0.0.0.0 watson.telemetry.microsoft.com.nsatc.net 
+0.0.0.0 redir.metaservices.microsoft.com 
+0.0.0.0 choice.microsoft.com 
+0.0.0.0 choice.microsoft.com.nsatc.net 
+0.0.0.0 df.telemetry.microsoft.com 
+0.0.0.0 wes.df.telemetry.microsoft.com 
+0.0.0.0 reports.wes.df.telemetry.microsoft.com 
+0.0.0.0 services.wes.df.telemetry.microsoft.com 
+0.0.0.0 sqm.df.telemetry.microsoft.com 
+0.0.0.0 watson.ppe.telemetry.microsoft.com 
+0.0.0.0 telemetry.appex.bing.net 
+0.0.0.0 telemetry.urs.microsoft.com 
+0.0.0.0 telemetry.appex.bing.net:443 
+0.0.0.0 settings-sandbox.data.microsoft.com 
+0.0.0.0 vortex-sandbox.data.microsoft.com 
+0.0.0.0 watson.live.com 
+0.0.0.0 statsfe2.ws.microsoft.com 
+0.0.0.0 corpext.msitadfs.glbdns2.microsoft.com 
+0.0.0.0 compatexchange.cloudapp.net 
+0.0.0.0 cs1.wpc.v0cdn.net 
+0.0.0.0 a-0001.a-msedge.net 
+0.0.0.0 fe2.update.microsoft.com.akadns.net 
+0.0.0.0 statsfe2.update.microsoft.com.akadns.net 
+0.0.0.0 sls.update.microsoft.com.akadns.net 
+0.0.0.0 diagnostics.support.microsoft.com 
+0.0.0.0 corp.sts.microsoft.com 
+0.0.0.0 statsfe1.ws.microsoft.com 
+0.0.0.0 pre.footprintpredict.com 
+0.0.0.0 i1.services.social.microsoft.com 
+0.0.0.0 i1.services.social.microsoft.com.nsatc.net 
+0.0.0.0 feedback.windows.com 
+0.0.0.0 feedback.microsoft-hohm.com 
+0.0.0.0 feedback.search.microsoft.com 
+0.0.0.0 cdn.content.prod.cms.msn.com 
+0.0.0.0 cdn.content.prod.cms.msn.com.edgekey.net 
+0.0.0.0 e10663.g.akamaiedge.net 
+0.0.0.0 dmd.metaservices.microsoft.com 
+0.0.0.0 schemas.microsoft.com 
+0.0.0.0 go.microsoft.com 
+0.0.0.0 40.76.0.0/14 
+0.0.0.0 40.96.0.0/12 
+0.0.0.0 40.124.0.0/16 
+0.0.0.0 40.112.0.0/13 
+0.0.0.0 40.125.0.0/17 
+0.0.0.0 40.74.0.0/15 
+0.0.0.0 40.80.0.0/12 
+0.0.0.0 40.120.0.0/14 
+0.0.0.0 137.116.0.0/16 
+0.0.0.0 23.192.0.0/11 
+0.0.0.0 23.32.0.0/11 
+0.0.0.0 23.64.0.0/14 
+0.0.0.0 23.55.130.182
+0.0.0.0 crashdump.ciqe-gslb.spotify.com
+0.0.0.0 crashdump.spotify.com
+0.0.0.0 adeventtracker.spotify.com
+0.0.0.0 adlab.spotify.com
+0.0.0.0 ads-fa.spotify.com
+0.0.0.0 ads-sp-lon.cdn.spotify.com
+0.0.0.0 ads-akp.spotify.com
+0.0.0.0 adserver.adtechus.com
+0.0.0.0 ads-fa.spotify.com
+0.0.0.0 ads-sp-lon.cdn.spotify.com
+0.0.0.0 partner.googleadservices.com
+0.0.0.0 partnerad.l.doubleclick.net
+0.0.0.0 partner-service.spotify.com
+0.0.0.0 partner-service-testing.spotify.com
+0.0.0.0 log.spotify.com
+0.0.0.0 log2.spotify.com
+0.0.0.0 ads.spotify.com 
+0.0.0.0 ads-fa.spotify.com 
+0.0.0.0 adclick.g.doublecklick.net 
+0.0.0.0 adnxs.com 
+0.0.0.0 adplexmedia.adk2x.com 
+0.0.0.0 b.scorecardresearch.com 
+0.0.0.0 bluekai.com 
+0.0.0.0 bounceexchange.com 
+0.0.0.0 bs.serving-sys.com 
+0.0.0.0 cdn.amplitude.com 
+0.0.0.0 cdn.optimizely.com 
+0.0.0.0 content.bitsontherun.com 
+0.0.0.0 core.insightexpressai.com 
+0.0.0.0 cs126.wpc.edgecastcdn.net 
+0.0.0.0 d2gi7ultltnc2u.cloudfront.net 
+0.0.0.0 d3rt1990lpmkn.cloudfront.net 
+0.0.0.0 doubleclick.net 
+0.0.0.0 ds.serving-sys.com 
+0.0.0.0 googleads.g.doubleclick.net 
+0.0.0.0 googleads4.g.doubleclick.net 
+0.0.0.0 googleadservices.com 
+0.0.0.0 js.moatads.com 
+0.0.0.0 media-match.com 
+0.0.0.0 omaze.com 
+0.0.0.0 pagead2.googlesyndication.com 
+0.0.0.0 pagead46.l.doubleclick.net 
+0.0.0.0 partner.googleadservices.com 
+0.0.0.0 pubads.g.doubleclick.net 
+0.0.0.0 redirector.gvt1.com 
+0.0.0.0 s0.2mdn.net 
+0.0.0.0 sb.scorecardresearch.com 
+0.0.0.0 secure.quantserve.com 
+0.0.0.0 securepubads.g.doubleclick.net 
+0.0.0.0 seen-on-screen.thewhizmarketing.com 
+0.0.0.0 server-54-230-216-203.mrs50.r.cloudfront.net 
+0.0.0.0 tpc.googlesyndication.com 
+0.0.0.0 tracking.tidalhifi.com 
+0.0.0.0 v.jwpcdn.com 
+0.0.0.0 video-ad-stats.googlesyndication.com 
+0.0.0.0 vt.myvisualiq.net 
+0.0.0.0 www.googletagservices.com 
+0.0.0.0 www.omaze.com
+
+
+

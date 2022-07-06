@@ -4,18 +4,24 @@
 -   Mail: ognitorenks@gmail.com
 -   Site: https://ognitorenks.blogspot.com/
 
--------------------
- ► Versiyon 3.3.1 - Ara Güncelleme
--------------------
-Yayınlanma Tarihi: .07.2022
+-----------------
+ ► Versiyon 3.4 -
+-----------------
+Yayınlanma Tarihi: 06.07.2022
 
 	• Araç Yükleyici > Snappy Driver Installer eklendi
 	• Araç Yükleyici > Spotify Adblocker eklendi.
+	• Araç Yükleyici > NTLite katılımsız kurulum parametresindeki komut hatası giderildi.
+	• Araç Yükleyici > VMWare sanal makine programı kurulum sorunlarından dolayı kaldırıldı.
 	• Kaldırılamayan Uygulamalar > Kamera Barkod Tarayıcı durumunu gösteren bölümdeki komut hatası giderildi.
 	• Kaldırılamayan Uygulamalar > Microsoft Edge kaldırıldı. Silinince bağlı market uygulamaları sorun çıkarıyor. Örnek; Instagram.
 	• Zaman Ayarlı PC Kapat bölümünde 'İptal Et' bölümü otomatik kapatma işlemi var veya uygulanırsa çıkacak şekilde düzenlendi.
 	• Microsoft Store kaldırma bölümüne Runtime Broken hizmetini kapatma parametreleri eklendi.
-	
+	• Hizmetleri Yönet > Fax hizmetini aç/kapat bölümü eklendi.
+	• Hizmetleri Yönet > Yazı Tipi Önbellek hizmetini aç/kapat bölümü eklendi.
+	• Hizmetleri Yönet > Hızlı Kullanıcı Değiştirme hizmetini aç/kapat bölümü eklendi.
+	• Hizmetleri Yönet > Sistem Geri Yükleme hizmetindeki komut hatası giderildi.
+	• Windows 10/11 Edit > Telemetri/Reklam engelli hosts dosyası ekle bölümü getirildi.
 	
 -----------------
  ► Versiyon 3.3 -
