@@ -5,9 +5,9 @@
 -   Site: https://ognitorenks.blogspot.com/
 
 -------------------
- ► Versiyon 3.4.1 - Ara Güncelleme
+ ► Versiyon 3.4.1 - Ara Güncelleme - Geliştiriliyor
 -------------------
-Yayınlanma Tarihi: Geliştirme aşamasında
+Yayınlanma Tarihi: xx.xx.xxxx
 
 	• Windows 10/11 Edit > Telemetri/Reklam engelli hosts ekle bölümünde veri kaybını önlemek için mevcut dosya hosts.bak olarak değiştirilmesi için komutlar eklendi.
 		• [quanqx]'a geri bildirimi için teşekkür ederim. 
