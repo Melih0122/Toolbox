@@ -140,8 +140,8 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 #### ► Diğer
 	• 67 - MSI Afterburner: GPU fan ayarı yapar, SS alır, Video kaydı alır, oyunlarda donanımların kullanım değerlerini gösterir, voltaj değerlerini değiştirebilirsiniz.
 	• 68 - Everything: Sistemdeki dosyaları arayıp bulmanızı sağlar. Çok kullanışlı bir programdır.
-	• 69 - GlassWire: İnternet takip programı. Bilgisayarınızda hangi program nereye ne göndermiş ne almış hepsini görebilirsiniz.
-	• 70 - Hamachi: Ortak bir ağ kurmaya yarayan yazılımdır. Online oyunlarda arkadaşlarınızla oyun kurmak için ortak bir ağ gerektiğinde hayat kurtaran bir programdır.
+	• 69 - Hamachi: Ortak bir ağ kurmaya yarayan yazılımdır. Online oyunlarda arkadaşlarınızla oyun kurmak için ortak bir ağ gerektiğinde hayat kurtaran bir programdır.
+	• 70 - GlassWire: İnternet takip programı. Bilgisayarınızda hangi program nereye ne göndermiş ne almış hepsini görebilirsiniz.
 	• 71 - WARP: Cloudflare'in DNS/VPN hizmetidir. Ücretsizdir. 
 
 ## 2 - Araç Yükleyici
@@ -195,7 +195,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 3 - Bu bölüm işletim sistemine göre değişiklik göstermektedir. Windows 11 ve Windows 10 için iki ayrı bölüme ayrılmıştır.
 ### 3 - Windows 10 Edit
 
-![cmd_xt5IgO04f4](https://user-images.githubusercontent.com/93199689/177618964-f46b5d3c-b944-422d-bdf2-0c77f7554f56.png)
+![cmd_9u1bTbNjgd](https://user-images.githubusercontent.com/93199689/177631090-89725efa-3f8d-4d69-8ef7-30a223b5ca15.png)
 
 	• 1 - Taskbar saat yanı simge ayarı [GÖSTER/GİZLE]: 
 	     •[Göster]: 0 - Saat yanında yer alan tüm simgeleri gösterir.
