@@ -72,7 +72,7 @@ for /f %%a in ('"cd"') do set Location=%%a
 set Logs=%Location%\Edit\Logs
 set download=%Location%\Download
 Call :NSudo
-set version=3.4
+set version=3.4.1
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 :T.Settings
@@ -174,7 +174,7 @@ FOR /F "tokens=1" %%i in ('FIND "Links.txt" %Location%\Extra\Links.txt') do set 
 %Location%\Files\wget --no-check-certificate "%link%" -O %Location%\Extra\Links.txt > NUL 2>&1
 :: İndirilen Links.txt dosyasından version durumları karşılaştırılır. Farklı ise Toolbox.Update.bat çalıştırılır.
 FOR /F "delims=':' tokens=2" %%b in ('Find "VersionCheck" %Location%\Extra\Links.txt') do set versioncheck=%%b
-if %versioncheck% equ %version% (
+if %version% equ %versioncheck% (
   goto NoInternet
 ) else (
 	cls
@@ -248,7 +248,7 @@ echo    %R%[90m█  █ █    ██  █  █    █   █  █ █  █ █  
 echo    %R%[90m█  █ █ ██ █ █ █  █    █   █  █ ████ ██  █ █ █ ██   ████    %R%[90m  █   █  █ █  █ █   ███  █  █   █  %R%[0m	
 echo    %R%[90m█  █ █  █ █  ██  █    █   █  █ █ █  █   █  ██ █ █     █    %R%[90m  █   █  █ █  █ █   █  █ █  █  █ █ %R%[0m
 echo    %R%[90m████ ████ █   █ ███   █   ████ █  █ ███ █   █ █  █ ████    %R%[90m  █   ████ ████ ███ ███  ████ █   █%R%[0m
-echo    %R%[90mognitorenks.blogspot.com                                                                   %R%[90m%version%%R%[0m
+echo    %R%[90mognitorenks.blogspot.com                                                                 %R%[90m%version%%R%[0m
 echo.
 echo               %R%[90m %caption% %R%[90m^|%R%[90m x%osarch% %R%[90m^|%R%[90m %ImageBuild% %R%[0m%R%[90m^|%R%[90m %isderleme%%R%[0m
 echo               %R%[90m┌──────────────────────────────────────────────────────────────────────┐%R%[0m
@@ -511,7 +511,8 @@ FOR %%a in (%$multi%) do (
 	if %%a==5 if %Chocolatey%==0 (Call :Choco cpu-z) else (Call :wget2 CPU-Z.zip
 				Call :Powershell "Expand-Archive -Force '%download%\CPU-Z.zip' 'C:\Users\%username%\Desktop\OgnitorenKs\CPU-Z'"
 				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\CPU-Z\cpuz_x64.exe'")
-	if %%a==6 if %Chocolatey%==0 (Call :Choco gpu-z) else (Call :wget3 "C:\Users\%username%\Desktop\OgnitorenKs\GPU-Z.exe"
+	if %%a==6 if %Chocolatey%==0 (Call :Choco gpu-z) else (Call :wget2 GPU-Z.zip
+				Call :Powershell "Expand-Archive -Force '%download%\GPU-Z.zip' 'C:\Users\%username%\Desktop\OgnitorenKs'"
 				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\GPU-Z.exe'")
 	if %%a==7 if %Chocolatey%==0 (Call :Choco hwinfo) else (Call :wget2 HWInfo.zip
 				Call :Powershell "Expand-Archive -Force '%download%\HWInfo.zip' 'C:\Users\%username%\Desktop\OgnitorenKs\HWInfo'"
@@ -533,7 +534,9 @@ FOR %%a in (%$multi%) do (
 				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\Prime95\prime95.exe'")
 	if %%a==13 if %Chocolatey%==0 (Call :Choco occt) else (Call :wget3 "C:\Users\%username%\Desktop\OgnitorenKs\OCCT.exe"
 				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\OCCT.exe'")
-	if %%a==14 if %Chocolatey%==0 (Call :Choco furmark) else (Call :wget1 FurMark.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-")
+	if %%a==14 if %Chocolatey%==0 (Call :Choco furmark) else (Call :wget2 FurMark.zip
+				Call :Powershell "Expand-Archive -Force '%download%\FurMark.zip' '%download%'"
+				"%download%\FurMark.exe" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-)
 	if %%a==15 if %Chocolatey%==0 (Call :Choco virtualbox) else (Call :wget1 VirtualBox.exe "--silent --ignore-reboot")
 	if %%a==16 (Call :wget1 GreenFish.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-")
 	if %%a==17 if %Chocolatey%==0 (Call :Choco thumbico) else (Call :wget1 Thumbico.exe /S)
@@ -558,7 +561,8 @@ FOR %%a in (%$multi%) do (
 	if %%a==25 (Call :wget2 RadeonSoftwareSlimmer.zip
 				Call :Powershell "Expand-Archive -Force '%download%\RadeonSoftwareSlimmer.zip' 'C:\Users\%username%\Desktop\OgnitorenKs\RadeonSoftwareSlimmer'"
 				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\RadeonSoftwareSlimmer\RadeonSoftwareSlimmer.exe'")
-	if %%a==26 (Call :wget3 C:\Users\%username%\Desktop\OgnitorenKs\NVCleanstall.exe
+	if %%a==26 (Call :wget2 NVCleanstall.zip
+				Call :Powershell "Expand-Archive -Force '%download%\NVCleanstall.zip' 'C:\Users\%username%\Desktop\OgnitorenKs'"
 				Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\OgnitorenKs\NVCleanstall.exe'")
 	if %%a==27 if %Chocolatey%==0 (Call :Choco sdio) else (Call :wget2 Snappy.Driver.Installer.zip
 				Call :Powershell "Expand-Archive -Force '%download%\Snappy.Driver.Installer.zip' 'C:\Users\%username%\Desktop\OgnitorenKs\Snappy.Driver.Installer'"
@@ -2809,8 +2813,10 @@ set /p value=%C%[92m  İşlem : %C%[0m
 				    %NSudo% Powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && set "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin")
 	if %value%==4A (Call :ToolboxSettingsChange Chocolatey 0
 					%NSudo% Powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && set "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin")
-	if %value%==4K (Call :ToolboxSettingsChange Chocolatey 1)
-	if %value%==4k (Call :ToolboxSettingsChange Chocolatey 1)
+	if %value%==4K (Call :ToolboxSettingsChange Chocolatey 1
+					RD /S /Q "%ProgramData%\chocolatey" > NUL 2>&1)
+	if %value%==4k (Call :ToolboxSettingsChange Chocolatey 1
+					RD /S /Q "%ProgramData%\chocolatey" > NUL 2>&1)
 	if %value%==5 (Call :Powershell "Expand-Archive -Force '%Location%\Files\lnk.zip' 'C:\users\%username%\Desktop'")
 	if %value%==6 (Call :UpdateReset
 				   goto T.Settings)
