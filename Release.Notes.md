@@ -10,7 +10,11 @@
 Yayınlanma Tarihi: xx.xx.xxxx
 
 	• Windows 10/11 Edit > Telemetri/Reklam engelli hosts ekle bölümünde veri kaybını önlemek için mevcut dosya hosts.bak olarak değiştirilmesi için komutlar eklendi.
-		• [quanqx]'a geri bildirimi için teşekkür ederim. 
+		• [quanqx]'a geri bildirimi için teşekkür ederim.
+	• Araç Yükleyici > GPU-Z indirme hatası giderildi.
+	• Araç Yükleyici > FurMark indirme hatası giderildi.
+	• Araç Yükleyici > NVCleanstall indirme hatası giderildi.
+	• Uygulama Yükleyici > Gimp indirme hatası giderildi.
 
 -----------------
  ► Versiyon 3.4 -

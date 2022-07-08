@@ -1812,7 +1812,8 @@ set /p value=%C%[92m  İşlem : %C%[0m
 	if %value%==7 (Call :WinCompactOS)
 	if %value%==8 (Call :gpedit)
 	if %value%==9 goto update2050
-	if %value%==10 (%NSudo% copy /y "%Location%\Files\hosts" "%windir%\System32\drivers\etc"
+	if %value%==10 (%NSudo% Rename "%windir%\System32\drivers\etc\hosts" "hosts.bak"
+					%NSudo% copy /y "%Location%\Files\hosts" "%windir%\System32\drivers\etc"
 					Call :ProcessCompleted)
 	if %value%==x GOTO menu
 	if %value%==X GOTO menu
@@ -1971,7 +1972,8 @@ set /p value=%C%[92m  İşlem : %C%[0m
 	if %value%==7 (Call :gpedit)
 	if %value%==8 GOTO icochangemenu
 	if %value%==9 goto update2050
-	if %value%==10 (%NSudo% copy /y "%Location%\Files\hosts" "%windir%\System32\drivers\etc"
+	if %value%==10 (%NSudo% Rename "%windir%\System32\drivers\etc\hosts" "hosts.bak"
+					%NSudo% copy /y "%Location%\Files\hosts" "%windir%\System32\drivers\etc"
 					Call :ProcessCompleted)
 	if %value%==x GOTO menu
 	if %value%==X GOTO menu
@@ -2807,10 +2809,8 @@ set /p value=%C%[92m  İşlem : %C%[0m
 				    %NSudo% Powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && set "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin")
 	if %value%==4A (Call :ToolboxSettingsChange Chocolatey 0
 					%NSudo% Powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && set "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin")
-	if %value%==4K (Call :ToolboxSettingsChange Chocolatey 1
-					RD /S /Q "%ProgramData%\chocolatey" > NUL 2>&1)
-	if %value%==4k (Call :ToolboxSettingsChange Chocolatey 1
-					RD /S /Q "%ProgramData%\chocolatey" > NUL 2>&1)
+	if %value%==4K (Call :ToolboxSettingsChange Chocolatey 1)
+	if %value%==4k (Call :ToolboxSettingsChange Chocolatey 1)
 	if %value%==5 (Call :Powershell "Expand-Archive -Force '%Location%\Files\lnk.zip' 'C:\users\%username%\Desktop'")
 	if %value%==6 (Call :UpdateReset
 				   goto T.Settings)
