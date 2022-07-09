@@ -441,7 +441,7 @@ Appx ve Update dosyalarını yüklemenizi sağlayan bölümdür.
 SHA-256 değerlerini karşılaştırmayı sağlar.
 
 ### 21 - Kaldırılamayan Uygulamalar: 
-Kaldırılması Microsoft tarafından engellenen bazı uygulamaları kaldırmayı sağlar. Yeniden yüklenemez. Kaldırırken dikkatli olun. Bu bölümün çalışması için PC'de Python kurulu olması gerekmektedir. Kurulu değilse otomatik olarak yüklemektedir.
+Kaldırılması Microsoft tarafından engellenen bazı uygulamaları kaldırmayı sağlar. Yeniden yüklenemez. Kaldırırken dikkatli olun. Bu bölümün çalışması için PC'de Python kurulu olması gerekmektedir. Kurulu değilse otomatik olarak yüklemektedir. Windows 11'de çalışmamaktadır.
 
 ![cmd_cY92Xi0S1f](https://user-images.githubusercontent.com/93199689/177619102-82d56bcf-3a81-4ea4-9ccf-16ffde40436d.png)
 
