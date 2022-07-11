@@ -12,6 +12,7 @@ Yayınlanma Tarihi: xx.xx.xxxx
 	• Kaldırılamayan Uygulamalar bölümü Windows 11'de çalışmadığı için uyarı mesajı eklendi.
 		• İşlem yapılamayacağı için Windows 11'de Python kurulması engellendi.
 	• Güncelleme sonrası bölümde de 'Kaldırılamayan Uygulamalar' bölümüyle ilgili parametler Windows 10'a özel hale getirildi.
+	• Windows Edit > Setup Edit bölümünde ilk girişte loglama kaydında oluşan hata parametresi kaldırıldı.
 
 
 -------------------
