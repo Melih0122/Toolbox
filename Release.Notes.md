@@ -5,6 +5,16 @@
 -   Site: https://ognitorenks.blogspot.com/
 
 -------------------
+ ► Versiyon 3.4.2 - Ara Güncelleme - GELİŞTİRİLİYOR...
+-------------------
+Yayınlanma Tarihi: xx.xx.xxxx
+
+	• Kaldırılamayan Uygulamalar bölümü Windows 11'de çalışmadığı için uyarı mesajı eklendi.
+		• İşlem yapılamayacağı için Windows 11'de Python kurulması engellendi.
+	• Güncelleme sonrası bölümde de 'Kaldırılamayan Uygulamalar' bölümüyle ilgili parametler Windows 10'a özel hale getirildi.
+
+
+-------------------
  ► Versiyon 3.4.1 - Ara Güncelleme
 -------------------
 Yayınlanma Tarihi: 08.07.2022
