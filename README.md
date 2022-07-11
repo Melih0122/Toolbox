@@ -306,6 +306,7 @@ Mavi renkli işlem numaraları 19 numaralı işlem ile alakalıdır.
 
 	• 1 - WIM / ESD Okuyucu: install.wim ve install.esd dosyalarının içeriği hakkında bilgi verir.
 	• 2 - AIO Windows Hazırla: İnstall.wim sürümlerini birleştirmeye yarar. "X" tuşu burada çalışmaz.
+		► Konu anlatımı için bakınız: https://ognitorenks.blogspot.com/2022/03/toolbox-farkl-windows-surumleri-nasl.html
 	• 3 - ISO Hazırla: Windows format dosyalarını ISO'ya dönüştürür. "Edit" klasörü içerisinde .iso dosyanızı bulabilirsiniz. "X" tuşu burada çalışmaz.
 	• 4 - ESD to WIM dönüştürücü: install.esd dosyalarını install.wim olarak dönüştürür. Çoklu seçim yapılabilir. Çoklu seçimlerde seçim arasına virgül koyun. "Örnek; 1,2,3,4" 
 	• 5 - İndex silici: install.wim içinde yer alan istemediğiniz sürümleri silebilirsiniz. Çoklu seçim imkanı yoktur.
@@ -363,7 +364,8 @@ Mavi renkli işlem numaraları 19 numaralı işlem ile alakalıdır.
 	• 13 - Driver Yedekle [Yüklü Sistem]: Yüklü sistemden Driverları yedekler. Yedeklediği konum "Edit\Driver\Yedek"
 	• 14 - Driver Yükle [İmaj]: Offline sisteme driver entegre eder. Driver dosyalarını "Edit\Driver" klasörü içine atın. Yedek aldıktan sonra bu bölümü seçerseniz, yedekleri imaja yükler.
 	• 15 - Setup Düzenle [İmaj]: Windows yükleme dosyalarını özelleştirir. İlk girişte "Files\setup10.zip" dosyasını indirir. Kendinize özel bölüm oluşturmak istiyorsanız. Aşağıdaki linke bakınız.
-	• 16 - Yeni Simgeleri yükle [İmaj]: Yeni simgeleri imaja entegre eder. İlk girişte "Files\Newico.zip" dosyasını indirir. 
+	• 16 - Yeni Simgeleri yükle [İmaj]: Yeni simgeleri imaja entegre eder. İlk girişte "Files\Newico.zip" dosyasını indirir.
+		► Konu anlatımı için bakınız: https://ognitorenks.blogspot.com/2022/03/windows-setup-bolumu-nasl-duzenlenir.html
 	• 17 - Gpedit.msc ekle [İmaj]: Offline sistemden Windows Home ve Home Single Language sürümlerine ekleyebilirsiniz.
 	• 18 - Hyper-V ekle [İmaj]: Home ve HomeSingle Language sürümlerinin imajlarına Hyper-V ekler.
 	• 19 - Mount yol tanımla: Bu bölüm 9 - 11 - 12 - 14 - 16 - 17 - 18 bölümleriyle bağlantılıdır. 
