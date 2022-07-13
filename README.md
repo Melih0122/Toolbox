@@ -190,10 +190,8 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	   ► Resmi Sayfası: https://github.com/mehmetguduk/Spotify-Adblocker
 </details>
 
-# OgnitorenKs Toolbox
-3 - Bu bölüm işletim sistemine göre değişiklik göstermektedir. Windows 11 ve Windows 10 için iki ayrı bölüme ayrılmıştır.
-### 3 - Windows 10 Edit
-
+<details><summary> 3 - Windows 10 Edit</summary>
+	
 ![cmd_9u1bTbNjgd](https://user-images.githubusercontent.com/93199689/177631090-89725efa-3f8d-4d69-8ef7-30a223b5ca15.png)
 
 	• 1 - Taskbar saat yanı simge ayarı [GÖSTER/GİZLE]: 
@@ -225,7 +223,9 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	     •[Yeni]: 2 - Windows 10 yeni simgeleri yükler.
 	• 9 - Güncellemeleri 2050 yılına kadar ertele: Windows Update hizmetini 2050 yılına kadar etkisiz hale getirir.
 	• 10 - Telemetri/Reklam engelli hosts ekle: Telemetri ve reklam iplerinin engellendiği hosts dosyasını yükler. Spotify, Blitz, Wemod gibi uygulama arayüzünde çıkan reklamlarda engellenir.
-### 3 - Windows 11 Edit
+</details>
+
+<details><summary> 3 - Windows 11 Edit</summary>
 
 ![cmd_bjqcmMyWk8](https://user-images.githubusercontent.com/93199689/177618988-fcc9582d-df2f-4d43-92d4-e121c8b7979c.png)
 
@@ -261,7 +261,10 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	• 8 - Gpedit.msc (Yerel Grup ilkesi) [Ekle]: Windows Home ve Home Single Language sürümlerine "Gpedit.msc" ekler.
 	• 9 - Güncellemeleri 2050 yılına kadar ertele: Windows Update hizmetini 2050 yılına kadar etkisiz hale getirir.
 	• 10 - Telemetri/Reklam engelli hosts ekle: Telemetri ve reklam iplerinin engellendiği hosts dosyasını yükler. Spotify, Blitz, Wemod gibi uygulama arayüzünde çıkan reklamlarda engellenir.
-### 4 - Hizmetleri Yönet
+</details>
+
+<details><summary> 4 - Hizmetleri Yönet</summary>
+
 Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip daha sonra aç / kapat baş harflerini eklemek gerekiyor.
 
 Örnek: 1a / 2k / 4A / 10K / 23a / 24k  
@@ -297,8 +300,9 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 	• 27 [A/K]- Fax hizmeti: Fax hizmetini açıp kapatmaya yarar. Açıp veya kapattıktan sonra reset atınız.
 	• 28 [A/K]- Yazı Tipi Önbelllği hizmeti: Yazı tipi önbelleği hizmetini kapatır. SSD'ler için kapatılması önerilir. Kapatılırsa uygulamaların açılış hızında düşüşe neden olabilir. 
 	• 29 [A/K]- Hızlı Kullanıcı Değiştirme hizmeti: Hızlı kullanıcı değiştirme hizmetini açıp kapatır. "Ctrl + Alt + Delete" ekranında hızlı kullanıcı değiştirme bölümünü açıp kapatır. 
-	
-### 5 - Windows Düzenleme:
+</details>
+
+<details><summary> 5 - Windows Düzenleme</summary>
 Mavi renkli işlem numaraları 19 numaralı işlem ile alakalıdır.
 
 ![cmd_CYShydSkCH](https://user-images.githubusercontent.com/93199689/172699814-00070e10-8d67-42fe-ac4e-ad7eba681c3f.png)
@@ -370,6 +374,7 @@ Mavi renkli işlem numaraları 19 numaralı işlem ile alakalıdır.
 	• 19 - Mount yol tanımla: Bu bölüm 9 - 11 - 12 - 14 - 16 - 17 - 18 bölümleriyle bağlantılıdır. 
 	     • Burada tanımlanan klasör yolu ile işlem yapılmaktadır.
 	     • Bu bölüm ilk girişte "Edit\Mount" klasör yolunu alır. Mount dosyaları farklı bir klasörde ise 26 numaralı işlem ile değiştirin.
+</details>
 
 ### 6 - Kullancı Hesap Yönetimi: 
 
