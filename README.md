@@ -52,7 +52,8 @@
 	  • Yönetici yetkili kısayolun oluşturulması.
 	  
 # OGNİTORENKS TOOLBOX İÇERİĞİ
-## 1 - Uygulama Yükleyici
+
+<details><summary>1 - Uygulama Yükleyici</summary>
 Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar ücretsiz alternatifler arasında seçilmiştir. WinRaR hariç o da ücretli ama ücretsiz bir yazılımdır.
 
 ![cmd_ncjATuxRAi](https://user-images.githubusercontent.com/93199689/177618828-48ac90b3-c420-40c1-bfe0-3d5eb25d0001.png)
@@ -143,8 +144,9 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	• 69 - Hamachi: Ortak bir ağ kurmaya yarayan yazılımdır. Online oyunlarda arkadaşlarınızla oyun kurmak için ortak bir ağ gerektiğinde hayat kurtaran bir programdır.
 	• 70 - GlassWire: İnternet takip programı. Bilgisayarınızda hangi program nereye ne göndermiş ne almış hepsini görebilirsiniz.
 	• 71 - WARP: Cloudflare'in DNS/VPN hizmetidir. Ücretsizdir. 
+</details>
 
-## 2 - Araç Yükleyici
+<details><summary>2 - Araç Yükleyici</summary>
 
 ![cmd_tLRrpUgl5E](https://user-images.githubusercontent.com/93199689/177618916-a3863a49-9770-468f-9756-995c5e175dbc.png)
 
@@ -190,6 +192,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	• 31 - AOMEI Partition Assistans: Disk yönetimi uygulamasıdır.
 	• 32 - Spotify Adblocker: Spotify ücretsiz sürümünde çıkan sesli reklamlar geldiğinde ses sisteminde Spotify'ın sesini kapatır. Böylece reklam dinlemekten kurtulursunuz. Programın yapımcısı 'Mehmet Güdük'tür. Reklam engelleyici çalıştırdığınızda açık değil ise Spotify'da açmaktadır. Böylece her Spotify açtığınızda reklam engelleyici açma derdiniz de bulunmuyor. Ücretsiz sürüm kullananlar programı mutlaka yüklemeli.
 	   ► Resmi Sayfası: https://github.com/mehmetguduk/Spotify-Adblocker
+</details>
 
 # OgnitorenKs Toolbox
 3 - Bu bölüm işletim sistemine göre değişiklik göstermektedir. Windows 11 ve Windows 10 için iki ayrı bölüme ayrılmıştır.
