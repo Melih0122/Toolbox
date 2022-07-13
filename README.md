@@ -3,7 +3,7 @@
 ### Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
 - ► Discord: OgnitorenKs#2737 
 - ► Mail: ognitorenks@gmail.com
-- ► Site:[ognitorenks.blogspot.com](https://ognitorenks.blogspot.com/)
+- ► Site: [ognitorenks.blogspot.com](https://ognitorenks.blogspot.com/)
 	  
 # OGNİTORENKS TOOLBOX
 ![cmd_biINAwmipL](https://user-images.githubusercontent.com/93199689/177618762-85eb3b57-bc72-409f-95f4-41c626053acd.png)
