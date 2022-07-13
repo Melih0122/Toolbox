@@ -5,11 +5,11 @@
 - ► Mail: ognitorenks@gmail.com
 - ► Site: [ognitorenks.blogspot.com](https://ognitorenks.blogspot.com/)
 <details><B><summary> Projeye katkıda bulunanlar</B></summary>
-	  ----------------------
-	  ► Eray Türkay 
-	  ----------------------
-	  • Sistem Hakkında - RAM soket yapısının eklenmesi.
-	  • Sistem Hakkında - Sistem format tarihinin eklenmesi.
+	  *----------------------
+	  *► Eray Türkay 
+	  *----------------------
+	  *• Sistem Hakkında - RAM soket yapısının eklenmesi.
+	  *• Sistem Hakkında - Sistem format tarihinin eklenmesi.
 	  ----------------------
 	  ► KaanBeyhan [DOGGEST]
 	  ----------------------
