@@ -4,7 +4,7 @@
 - ► Discord: OgnitorenKs#2737 
 - ► Mail: ognitorenks@gmail.com
 - ► Site: [ognitorenks.blogspot.com](https://ognitorenks.blogspot.com/)
-- 
+
 # OGNİTORENKS TOOLBOX
 ### [Projeye Katkıda Bulunanlar](https://github.com/OgnitorenKs/OgnitorenKs.Toolbox/blob/main/Projeye-Katk%C4%B1da-Bulunanlar.md)
 
