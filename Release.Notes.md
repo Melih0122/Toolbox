@@ -13,8 +13,9 @@ Yayınlanma Tarihi: xx.xx.xxxx
 		• İşlem yapılamayacağı için Windows 11'de Python kurulması engellendi.
 	• Güncelleme sonrası bölümde de 'Kaldırılamayan Uygulamalar' bölümüyle ilgili parametler Windows 10'a özel hale getirildi.
 	• Windows Edit > Setup Edit bölümünde ilk girişte loglama kaydında oluşan hata parametresi kaldırıldı.
-	• Windows Edit > Çoklu Seçimlerde kapanma sorunu giderildi.
 	• Windows Edit > Setup Edit bölümünde regedit kayıtları düzenlendi.
+	• Windows Edit > Çoklu Seçimlerde kapanma sorunu giderildi.
+
 
 -------------------
  ► Versiyon 3.4.1 - Ara Güncelleme
