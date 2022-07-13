@@ -53,7 +53,7 @@
 	  
 # OGNİTORENKS TOOLBOX İÇERİĞİ
 
-<details><summary>1 - Uygulama Yükleyici</summary>
+<details><summary>###1 - Uygulama Yükleyici</summary>
 Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar ücretsiz alternatifler arasında seçilmiştir. WinRaR hariç o da ücretli ama ücretsiz bir yazılımdır.
 
 ![cmd_ncjATuxRAi](https://user-images.githubusercontent.com/93199689/177618828-48ac90b3-c420-40c1-bfe0-3d5eb25d0001.png)
@@ -146,7 +146,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	• 71 - WARP: Cloudflare'in DNS/VPN hizmetidir. Ücretsizdir. 
 </details>
 
-<details><summary>2 - Araç Yükleyici</summary>
+<details><summary>###2 - Araç Yükleyici</summary>
 
 ![cmd_tLRrpUgl5E](https://user-images.githubusercontent.com/93199689/177618916-a3863a49-9770-468f-9756-995c5e175dbc.png)
 
