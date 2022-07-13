@@ -1,11 +1,11 @@
 ![133149924-e6949257-3aa5-4564-9977-f96fe4640967](https://user-images.githubusercontent.com/93199689/177007559-8ff9a779-80ce-4ccd-ac96-5a0e7b9fd423.png)
 
+![cmd_biINAwmipL](https://user-images.githubusercontent.com/93199689/177618762-85eb3b57-bc72-409f-95f4-41c626053acd.png)
+
 ### Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
 - ► Discord: OgnitorenKs#2737 
 - ► Mail: ognitorenks@gmail.com
 - ► Site: https://ognitorenks.blogspot.com/
-
-![cmd_biINAwmipL](https://user-images.githubusercontent.com/93199689/177618762-85eb3b57-bc72-409f-95f4-41c626053acd.png)
 
 ### Projeye katkıda bulunanlar;
 
