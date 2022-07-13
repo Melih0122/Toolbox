@@ -1,21 +1,11 @@
 ![133149924-e6949257-3aa5-4564-9977-f96fe4640967](https://user-images.githubusercontent.com/93199689/177007559-8ff9a779-80ce-4ccd-ac96-5a0e7b9fd423.png)
 
-- OgnitorenKs Toolbox Windows 10 - 11 sürümlerinin x64 mimarilerinde açılmaktadır. En güncel olan Windows sürümü ile senkronize olarak gelişmektedir.
-- Windows ekran ölçeklendirme ayarı Toolbox'ın pencere ayarını bozabiliyor. Sorunsuz kullanım için Toolbox'ı kullanırken ölçeklendirme etkileri kapatılmalıdır.
-- Toolbox'ı bazı antivirüsler zararlı olarak işaretlemektedir. Sorunsuz kullanım için beyaz listeye alınması gerekmektedir. 
-► https://www.virustotal.com/gui/file/6be9ea220f591dfb5793176d704253d530fbc0d72daabdbaca562ff520fc883a?nocache=1
-- Geliştirme sürecinde iki ayrı sürüm üzerinde çalışmak zor olduğu için İngilizce dil desteği kaldırılmıştır. Tek bir dosya üzerinden çoklu dil desteği ekleyebilirsem ilerleyen süreçte yeniden eklenecektir :(
-
 ### Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
 - ► Discord: OgnitorenKs#2737 
 - ► Mail: ognitorenks@gmail.com
 - ► Site: https://ognitorenks.blogspot.com/
 
 ![cmd_biINAwmipL](https://user-images.githubusercontent.com/93199689/177618762-85eb3b57-bc72-409f-95f4-41c626053acd.png)
-
-### OgnitorenKs.Toolbox dosyaları
-- ► OgnitorenKs.Toolbox.zip  = https://docs.google.com/uc?export=download&id=19uNjxzHFY5A6g4mFg8FirFTnyL2R0HZ3	
-- ► OgnitorenKs.Toolbox Katılımsız Kurulum Aracı  = https://docs.google.com/uc?export=download&id=19uNjxzHFY5A6g4mFg8FirFTnyL2R0HZ3
 
 ### Projeye katkıda bulunanlar;
 
@@ -52,6 +42,11 @@
 	  • Yönetici yetkili kısayolun oluşturulması.
 	  
 # OGNİTORENKS TOOLBOX İÇERİĞİ
+- OgnitorenKs Toolbox Windows 10 - 11 sürümlerinin x64 mimarilerinde açılmaktadır. En güncel olan Windows sürümü ile senkronize olarak gelişmektedir.
+- Windows ekran ölçeklendirme ayarı Toolbox'ın pencere ayarını bozabiliyor. Sorunsuz kullanım için Toolbox'ı kullanırken ölçeklendirme etkileri kapatılmalıdır.
+- Toolbox'ı bazı antivirüsler zararlı olarak işaretlemektedir. Sorunsuz kullanım için beyaz listeye alınması gerekmektedir. 
+► https://www.virustotal.com/gui/file/6be9ea220f591dfb5793176d704253d530fbc0d72daabdbaca562ff520fc883a?nocache=1
+- Geliştirme sürecinde iki ayrı sürüm üzerinde çalışmak zor olduğu için İngilizce dil desteği kaldırılmıştır. Tek bir dosya üzerinden çoklu dil desteği ekleyebilirsem ilerleyen süreçte yeniden eklenecektir :(
 
 <details><summary> 1 - Uygulama Yükleyici</summary>
 Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar ücretsiz alternatifler arasında seçilmiştir. WinRaR hariç o da ücretli ama ücretsiz bir yazılımdır.
