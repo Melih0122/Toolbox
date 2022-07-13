@@ -12,7 +12,7 @@
 - OgnitorenKs Toolbox Windows 10 - 11 sürümlerinin x64 mimarilerinde açılmaktadır. En güncel olan Windows sürümü ile senkronize olarak gelişmektedir.
 - Windows ekran ölçeklendirme ayarı Toolbox'ın pencere ayarını bozabiliyor. Sorunsuz kullanım için Toolbox'ı kullanırken ölçeklendirme etkileri kapatılmalıdır.
 - Toolbox'ı bazı antivirüsler zararlı olarak işaretlemektedir. Sorunsuz kullanım için beyaz listeye alınması gerekmektedir. 
-► https://www.virustotal.com/gui/file/6be9ea220f591dfb5793176d704253d530fbc0d72daabdbaca562ff520fc883a?nocache=1
+-  ► [Virüstotal](https://www.virustotal.com/gui/file/6be9ea220f591dfb5793176d704253d530fbc0d72daabdbaca562ff520fc883a?nocache=1)
 - Geliştirme sürecinde iki ayrı sürüm üzerinde çalışmak zor olduğu için İngilizce dil desteği kaldırılmıştır. Tek bir dosya üzerinden çoklu dil desteği ekleyebilirsem ilerleyen süreçte yeniden eklenecektir :(
 
 # OGNİTORENKS TOOLBOX İÇERİĞİ
