@@ -15,7 +15,7 @@
 - Geliştirme sürecinde iki ayrı sürüm üzerinde çalışmak zor olduğu için İngilizce dil desteği kaldırılmıştır. Tek bir dosya üzerinden çoklu dil desteği ekleyebilirsem ilerleyen süreçte yeniden eklenecektir :(
 
 # OGNİTORENKS TOOLBOX İÇERİĞİ
-<details><summary>1 - Uygulama Yükleyici</summary>
+<details><B><summary> 1 - Uygulama Yükleyici</B></summary>
 Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar ücretsiz alternatifler arasında seçilmiştir. WinRaR hariç o da ücretli ama ücretsiz bir yazılımdır.
 
 ![cmd_ncjATuxRAi](https://user-images.githubusercontent.com/93199689/177618828-48ac90b3-c420-40c1-bfe0-3d5eb25d0001.png)
@@ -108,7 +108,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	• 71 - WARP: Cloudflare'in DNS/VPN hizmetidir. Ücretsizdir. 
 </details>
 
-<details><summary> 2 - Araç Yükleyici</summary>
+<details><B><summary> 2 - Araç Yükleyici</B></summary>
 
 ![cmd_tLRrpUgl5E](https://user-images.githubusercontent.com/93199689/177618916-a3863a49-9770-468f-9756-995c5e175dbc.png)
 
@@ -156,7 +156,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	   ► Resmi Sayfası: https://github.com/mehmetguduk/Spotify-Adblocker
 </details>
 
-<details><summary> 3 - Windows 10 Edit</summary>
+<details><B><summary> 3 - Windows 10 Edit</B></summary>
 	
 ![cmd_9u1bTbNjgd](https://user-images.githubusercontent.com/93199689/177631090-89725efa-3f8d-4d69-8ef7-30a223b5ca15.png)
 
@@ -191,7 +191,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	• 10 - Telemetri/Reklam engelli hosts ekle: Telemetri ve reklam iplerinin engellendiği hosts dosyasını yükler. Spotify, Blitz, Wemod gibi uygulama arayüzünde çıkan reklamlarda engellenir.
 </details>
 
-<details><summary> 3 - Windows 11 Edit</summary>
+<details><B><summary> 3 - Windows 11 Edit</B></summary>
 
 ![cmd_bjqcmMyWk8](https://user-images.githubusercontent.com/93199689/177618988-fcc9582d-df2f-4d43-92d4-e121c8b7979c.png)
 
@@ -229,7 +229,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	• 10 - Telemetri/Reklam engelli hosts ekle: Telemetri ve reklam iplerinin engellendiği hosts dosyasını yükler. Spotify, Blitz, Wemod gibi uygulama arayüzünde çıkan reklamlarda engellenir.
 </details>
 
-<details><summary> 4 - Hizmetleri Yönet</summary>
+<details><B><summary> 4 - Hizmetleri Yönet</B></summary>
 
 Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip daha sonra aç / kapat baş harflerini eklemek gerekiyor.
 
@@ -268,7 +268,7 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 	• 29 [A/K]- Hızlı Kullanıcı Değiştirme hizmeti: Hızlı kullanıcı değiştirme hizmetini açıp kapatır. "Ctrl + Alt + Delete" ekranında hızlı kullanıcı değiştirme bölümünü açıp kapatır. 
 </details>
 
-<details><summary> 5 - Windows Düzenleme</summary>
+<details><B><summary> 5 - Windows Düzenleme</B></summary>
 Mavi renkli işlem numaraları 19 numaralı işlem ile alakalıdır.
 
 ![cmd_CYShydSkCH](https://user-images.githubusercontent.com/93199689/172699814-00070e10-8d67-42fe-ac4e-ad7eba681c3f.png)
@@ -342,7 +342,7 @@ Mavi renkli işlem numaraları 19 numaralı işlem ile alakalıdır.
 	     • Bu bölüm ilk girişte "Edit\Mount" klasör yolunu alır. Mount dosyaları farklı bir klasörde ise 26 numaralı işlem ile değiştirin.
 </details>
 
-<details><summary> 6 - Kullancı Hesap Yönetimi</summary>
+<details><B><summary> 6 - Kullancı Hesap Yönetimi</B></summary>
 
 ![cmd_syq0J0s2EV](https://user-images.githubusercontent.com/93199689/167623117-71bfc629-f729-48a4-be7c-561b215cb878.png)
 
@@ -355,7 +355,7 @@ Mavi renkli işlem numaraları 19 numaralı işlem ile alakalıdır.
 	• 7 - Mevcut Kullanıcıları Göster [*]: Sistemde kayıtlı kullanıcıları gösterir.
 </details>
 	
-<details><summary> 7 - Lisans Yönetimi</summary>
+<details><B><summary> 7 - Lisans Yönetimi</B></summary>
 
 SLMGR.VBS komutlarını içermektedir. Crack tarzı işlemler bulunmamaktadır.
 
@@ -369,78 +369,78 @@ SLMGR.VBS komutlarını içermektedir. Crack tarzı işlemler bulunmamaktadır.
 	• 6 - Lisans Süre Sıfırla [rearm]: Windows 30 günlük deneme sürümü süresini 3 defa uzatabilirsiniz.
 </details>
 	
-<details><summary> 8 - Sistem Hakkında</summary>
+<details><B><summary> 8 - Sistem Hakkında</B></summary>
 Sistem ve donanım hakkında bilgi verir.
 
 ![cmd_mDH1JvgaDM](https://user-images.githubusercontent.com/93199689/167623663-1d3cde57-4f54-48fb-bbce-a33a8e8f220c.png)
 </details>
 	
-<details><summary> 9 - Güç Seçenekleri [PowerChoice]</summary>
+<details><B><summary> 9 - Güç Seçenekleri [PowerChoice]</B></summary>
 Güç seçeneklerini hızlıca değiştirmeyi sağlar. Sistem dili Türkçe değilse çalışmaz.
 
 ![cmd_EAcvH91Ach](https://user-images.githubusercontent.com/93199689/167623503-db0856af-bffd-4ff0-bd0d-22267cc6d77b.png)
 	
 </details>
 	
-<details><summary> 10 - Güncelleme Sonrası Temizlik</summary>
+<details><B><summary> 10 - Güncelleme Sonrası Temizlik</B></summary>
 Düzenlediğim sistemleri güncelleme sonrası ilk haline getirmeye yarar.
 </details>
 	
-<details><summary> 11 - Windows / Market Onar</summary>
+<details><B><summary> 11 - Windows / Market Onar</B></summary>
 Microsoft'un önerdiği bütün onarma seçeneklerini uygular.
 </details>
 	
-<details><summary> 12 - PC Temizle</summary>
+<details><B><summary> 12 - PC Temizle</B></summary>
 %Temp% dosyalarını temizler
 </details>
 	
-<details><summary> 13 - İnternet Önbellek Temizle</summary>
+<details><B><summary> 13 - İnternet Önbellek Temizle</B></summary>
 Olası internet arızalarında bu bölümü kullanabilirsiniz. Güvenlik duvarını da sıfırlamaktadır. 2-3 haftada bir kullanabilirsiniz.
 </details>
 	
-<details><summary> 14 - Simge Hatalarını Onar</summary>
+<details><B><summary> 14 - Simge Hatalarını Onar</B></summary>
 Simge hatalarını onarır.
 </details>
 	
-<details><summary> 15 - Ping Ölçer</summary>
+<details><B><summary> 15 - Ping Ölçer</B></summary>
 İçerisinde belirli sitelerin ping durumlarını otomatik gösterir. Alt bölümde yer alan "Ping ölç" bölümüyle istediğiniz site ve IP'nin pingini ölçebilirsiniz.
 	
 ![cmd_RYynOfcKdu](https://user-images.githubusercontent.com/93199689/167626925-b8e56f24-a69a-4b84-b71b-42f91aafcc70.png)
 
 </details>
 
-<details><summary> 16 - Fat32 to NTFS</summary>
+<details><B><summary> 16 - Fat32 to NTFS</B></summary>
 Fat32 olarak formatlanmış USB diskleri veri kaybı olmadan NTFS'ye çevirir. Disk harfini girmeniz gerekmektedir.
 	
 ![cmd_IbpcglgIoZ](https://user-images.githubusercontent.com/93199689/167626995-480e24ba-31b6-4580-ad1d-40fffc936687.png)
 
 </details>
 
-<details><summary> 17 - Kayıtlı Wifi Bilgileri [ARCHLEY]</summary>
+<details><B><summary> 17 - Kayıtlı Wifi Bilgileri [ARCHLEY]</B></summary>
 Bu bölümde sisteme girdiğiniz Wifi isim ve şifrelerini görebilirsiniz. Çalışmasını toolbox'a eklediği için Archley'e teşekkür ederim.
 
 </details>
 
-<details><summary> 18 - Zaman Ayarlı PC Kapat</summary>
+<details><B><summary> 18 - Zaman Ayarlı PC Kapat</B></summary>
 Seçilen belirli bir süreden sonra PC otomatik kapatır. PC üzerinde uygulanmış bir oto kapatma işlemi mevcut değilse 'İptal Et' butonu görünmeyecektir.
 	
 ![cmd_qBHeLUqaMj](https://user-images.githubusercontent.com/93199689/177620977-146cfc29-86e0-4553-a472-b4179a1bfb40.png)
 
 </details>
 
-<details><summary> 19 - Appx - Güncelleme Yükleyici</summary>
+<details><B><summary> 19 - Appx - Güncelleme Yükleyici</B></summary>
 Appx ve Update dosyalarını yüklemenizi sağlayan bölümdür. 
 	• Appx dosyalarıyla ilgili detaylı bilgi için bakınız:https://ognitorenks.blogspot.com/2021/11/rehber-powershell-appx-komutlarnn_9.html
 	• Güncelleme dosyalarını indirebileceğiniz site: https://www.catalog.update.microsoft.com/
 
 </details>
 
-<details><summary> 20 - Hash Kontrol [SHA-256]</summary>
+<details><B><summary> 20 - Hash Kontrol [SHA-256]</B></summary>
 SHA-256 değerlerini karşılaştırmayı sağlar.
 
 </details>
 
-<details><summary> 21 - Kaldırılamayan Uygulamalar </summary>
+<details><B><summary> 21 - Kaldırılamayan Uygulamalar </B></summary>
 Kaldırılması Microsoft tarafından engellenen bazı uygulamaları kaldırmayı sağlar. Yeniden yüklenemez. Kaldırırken dikkatli olun. Bu bölümün çalışması için PC'de Python kurulu olması gerekmektedir. Kurulu değilse otomatik olarak yüklemektedir. Windows 11'de çalışmamaktadır.
 
 ![cmd_cY92Xi0S1f](https://user-images.githubusercontent.com/93199689/177619102-82d56bcf-3a81-4ea4-9ccf-16ffde40436d.png)
@@ -460,7 +460,7 @@ Kaldırılması Microsoft tarafından engellenen bazı uygulamaları kaldırmay�
 
 </details>
 
-<details><summary> 22 - Performans Optimizasyonu</summary>
+<details><B><summary> 22 - Performans Optimizasyonu</B></summary>
 Performans ile ilgili ayarları uygular. İşlem öncesi değiştirilecek veya eklenecek regedit kayıtları tespit edilir ve yedekleri alınır. Kullanmak için istediğiniz işlemi ve Aç veya kapatın baş harflerini yazmanız lazım. 
 Örnek;
 1a / 2k / 3A / 4K 
@@ -476,7 +476,7 @@ Performans ile ilgili ayarları uygular. İşlem öncesi değiştirilecek veya e
 	• 7      - Uygulama işlem önceliği düzenleme: Görev Yöneticisi Ayrıntılar bölümünde yer alan uygulamaların çalışma önceliklerini bu bölümden sürekli olarak değiştirebilirsiniz.
 </details>
 
-<details><summary> Z - Toolbox Ayarları</summary>
+<details><B><summary> Z - Toolbox Ayarları</B></summary>
 Toolbox üzerinde ayar yapıp. Bilgi alabileceğiniz bölüm.
 
 ![cmd_mojfU6QUZj](https://user-images.githubusercontent.com/93199689/172699746-34cb8dce-bb50-4fa1-abee-4c04a5e02afa.png)
