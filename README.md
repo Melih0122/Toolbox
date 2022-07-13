@@ -376,7 +376,7 @@ Mavi renkli işlem numaraları 19 numaralı işlem ile alakalıdır.
 	     • Bu bölüm ilk girişte "Edit\Mount" klasör yolunu alır. Mount dosyaları farklı bir klasörde ise 26 numaralı işlem ile değiştirin.
 </details>
 
-### 6 - Kullancı Hesap Yönetimi: 
+<details><summary> 6 - Kullancı Hesap Yönetimi</summary>
 
 ![cmd_syq0J0s2EV](https://user-images.githubusercontent.com/93199689/167623117-71bfc629-f729-48a4-be7c-561b215cb878.png)
 
@@ -387,8 +387,10 @@ Mavi renkli işlem numaraları 19 numaralı işlem ile alakalıdır.
 	• 5 - Kullanıcı Sil: Mevcut bir kullanıcıyı silebilirsiniz.
 	• 6 - Şifremi unuttum: Şifre değiştirmek veya şifre oluşturmak için bu bölüm kullanılabilir.
 	• 7 - Mevcut Kullanıcıları Göster [*]: Sistemde kayıtlı kullanıcıları gösterir.
+</details>
+	
+<details><summary> 7 - Lisans Yönetimi</summary>
 
-### 7 - Lisans Yönetimi: 
 SLMGR.VBS komutlarını içermektedir. Crack tarzı işlemler bulunmamaktadır.
 
 ![cmd_XbdXB7HxRa](https://user-images.githubusercontent.com/93199689/167623153-126106ea-df07-48e6-bb56-7ac03cb65b19.png)
@@ -399,54 +401,80 @@ SLMGR.VBS komutlarını içermektedir. Crack tarzı işlemler bulunmamaktadır.
 	• 4 - Lisans Süresini Öğren [xpr]: Lisans süresi hakkında detaylı bilgi verir.
 	• 5 - Lisans Sil [upk]: Sistem kullandığınız lisansı siler.
 	• 6 - Lisans Süre Sıfırla [rearm]: Windows 30 günlük deneme sürümü süresini 3 defa uzatabilirsiniz.
-
-### 8 - Sistem Hakkında:
+</details>
+	
+<details><summary> 8 - Sistem Hakkında</summary>
 Sistem ve donanım hakkında bilgi verir.
 
 ![cmd_mDH1JvgaDM](https://user-images.githubusercontent.com/93199689/167623663-1d3cde57-4f54-48fb-bbce-a33a8e8f220c.png)
-
-### 9 - Güç Seçenekleri [PowerChoice]:  
+</details>
+	
+<details><summary> 9 - Güç Seçenekleri [PowerChoice]</summary>
 Güç seçeneklerini hızlıca değiştirmeyi sağlar. Sistem dili Türkçe değilse çalışmaz.
 
 ![cmd_EAcvH91Ach](https://user-images.githubusercontent.com/93199689/167623503-db0856af-bffd-4ff0-bd0d-22267cc6d77b.png)
-
-### 10 - Güncelleme Sonrası Temizlik:
-Düzenlediğim sistemleri güncelleme sonrası ilk haline getirmeye yarar.	
-### 11 - Windows / Market Onar:
+	
+</details>
+	
+<details><summary> 10 - Güncelleme Sonrası Temizlik</summary>
+Düzenlediğim sistemleri güncelleme sonrası ilk haline getirmeye yarar.
+</details>
+	
+<details><summary> 11 - Windows / Market Onar</summary>
 Microsoft'un önerdiği bütün onarma seçeneklerini uygular.
-### 12 - PC Temizle: 
+</details>
+	
+<details><summary> 12 - PC Temizle</summary>
 %Temp% dosyalarını temizler
-### 13 - İnternet Önbellek Temizle:
+</details>
+	
+<details><summary> 13 - İnternet Önbellek Temizle</summary>
 Olası internet arızalarında bu bölümü kullanabilirsiniz. Güvenlik duvarını da sıfırlamaktadır. 2-3 haftada bir kullanabilirsiniz.
-### 14 - Simge Hatalarını Onar:
+</details>
+	
+<details><summary> 14 - Simge Hatalarını Onar</summary>
 Simge hatalarını onarır.
-### 15 - Ping Ölçer: 
+</details>
+	
+<details><summary> 15 - Ping Ölçer</summary>
 İçerisinde belirli sitelerin ping durumlarını otomatik gösterir. Alt bölümde yer alan "Ping ölç" bölümüyle istediğiniz site ve IP'nin pingini ölçebilirsiniz.
 	
 ![cmd_RYynOfcKdu](https://user-images.githubusercontent.com/93199689/167626925-b8e56f24-a69a-4b84-b71b-42f91aafcc70.png)
 
-### 16 - Fat32 to NTFS: 
+</details>
+
+<details><summary> 16 - Fat32 to NTFS</summary>
 Fat32 olarak formatlanmış USB diskleri veri kaybı olmadan NTFS'ye çevirir. Disk harfini girmeniz gerekmektedir.
 	
 ![cmd_IbpcglgIoZ](https://user-images.githubusercontent.com/93199689/167626995-480e24ba-31b6-4580-ad1d-40fffc936687.png)
 
-### 17 - Kayıtlı Wifi Bilgileri [ARCHLEY]:	 
+</details>
+
+<details><summary> 17 - Kayıtlı Wifi Bilgileri [ARCHLEY]</summary>
 Bu bölümde sisteme girdiğiniz Wifi isim ve şifrelerini görebilirsiniz. Çalışmasını toolbox'a eklediği için Archley'e teşekkür ederim.
 
-### 18 - Zaman Ayarlı PC Kapat:
+</details>
+
+<details><summary> 18 - Zaman Ayarlı PC Kapat</summary>
 Seçilen belirli bir süreden sonra PC otomatik kapatır. PC üzerinde uygulanmış bir oto kapatma işlemi mevcut değilse 'İptal Et' butonu görünmeyecektir.
 	
 ![cmd_qBHeLUqaMj](https://user-images.githubusercontent.com/93199689/177620977-146cfc29-86e0-4553-a472-b4179a1bfb40.png)
 
-### 19 - Appx - Güncelleme Yükleyici:
+</details>
+
+<details><summary> 19 - Appx - Güncelleme Yükleyici</summary>
 Appx ve Update dosyalarını yüklemenizi sağlayan bölümdür. 
 	• Appx dosyalarıyla ilgili detaylı bilgi için bakınız:https://ognitorenks.blogspot.com/2021/11/rehber-powershell-appx-komutlarnn_9.html
 	• Güncelleme dosyalarını indirebileceğiniz site: https://www.catalog.update.microsoft.com/
-	
-### 20 - Hash Kontrol [SHA-256]: 
+
+</details>
+
+<details><summary> 20 - Hash Kontrol [SHA-256]</summary>
 SHA-256 değerlerini karşılaştırmayı sağlar.
 
-### 21 - Kaldırılamayan Uygulamalar: 
+</details>
+
+<details><summary> 21 - Kaldırılamayan Uygulamalar </summary>
 Kaldırılması Microsoft tarafından engellenen bazı uygulamaları kaldırmayı sağlar. Yeniden yüklenemez. Kaldırırken dikkatli olun. Bu bölümün çalışması için PC'de Python kurulu olması gerekmektedir. Kurulu değilse otomatik olarak yüklemektedir. Windows 11'de çalışmamaktadır.
 
 ![cmd_cY92Xi0S1f](https://user-images.githubusercontent.com/93199689/177619102-82d56bcf-3a81-4ea4-9ccf-16ffde40436d.png)
@@ -464,7 +492,9 @@ Kaldırılması Microsoft tarafından engellenen bazı uygulamaları kaldırmay�
 	• 11 - Search App (Taskbar Search): Görev çubuğunda yer alan arama hizmetini kapatır. 
 	• 12 - Kamera Barkod Tarayıcı: Kamera Barkod tarama hizmetidir. Amacı dışındaki kullanımlarda sorun çıkarıp çıkarmadığı konusunda tespit ettiğim bir durum yok.
 
-### 22 - Performans Optimizasyonu:
+</details>
+
+<details><summary> 22 - Performans Optimizasyonu</summary>
 Performans ile ilgili ayarları uygular. İşlem öncesi değiştirilecek veya eklenecek regedit kayıtları tespit edilir ve yedekleri alınır. Kullanmak için istediğiniz işlemi ve Aç veya kapatın baş harflerini yazmanız lazım. 
 Örnek;
 1a / 2k / 3A / 4K 
@@ -478,8 +508,9 @@ Performans ile ilgili ayarları uygular. İşlem öncesi değiştirilecek veya e
 	• 5[A/K] - Genel Optimizasyon: Genel olarak derlenen performans düzenlemelerini uygular.
 	• 6[A/K] - Aygıt Optimizasyonu: Bazı aygıt servislerini devre dışı bırakarak gecikmeyi düşürmeyi sağlar.
 	• 7      - Uygulama işlem önceliği düzenleme: Görev Yöneticisi Ayrıntılar bölümünde yer alan uygulamaların çalışma önceliklerini bu bölümden sürekli olarak değiştirebilirsiniz.
+</details>
 
-### Z - Toolbox Ayarları:
+<details><summary> Z - Toolbox Ayarları</summary>
 Toolbox üzerinde ayar yapıp. Bilgi alabileceğiniz bölüm.
 
 ![cmd_mojfU6QUZj](https://user-images.githubusercontent.com/93199689/172699746-34cb8dce-bb50-4fa1-abee-4c04a5e02afa.png)
@@ -493,4 +524,4 @@ Toolbox üzerinde ayar yapıp. Bilgi alabileceğiniz bölüm.
 	•       7 - ognitorenks.blogspot.com
 	•       8 - Github Proje Sayfası
 	•       9 - Güncelleme Notları
-	
+</details>
