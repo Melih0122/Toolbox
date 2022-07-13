@@ -15,7 +15,7 @@
 - Geliştirme sürecinde iki ayrı sürüm üzerinde çalışmak zor olduğu için İngilizce dil desteği kaldırılmıştır. Tek bir dosya üzerinden çoklu dil desteği ekleyebilirsem ilerleyen süreçte yeniden eklenecektir :(
 
 # OGNİTORENKS TOOLBOX İÇERİĞİ
-<details><B><summary> 1 - Uygulama Yükleyici</B></summary>
+<details><summary>### 1 - Uygulama Yükleyici</summary>
 Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar ücretsiz alternatifler arasında seçilmiştir. WinRaR hariç o da ücretli ama ücretsiz bir yazılımdır.
 
 ![cmd_ncjATuxRAi](https://user-images.githubusercontent.com/93199689/177618828-48ac90b3-c420-40c1-bfe0-3d5eb25d0001.png)
