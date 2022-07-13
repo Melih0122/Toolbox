@@ -16,10 +16,11 @@
 
 # OGNİTORENKS TOOLBOX İÇERİĞİ
 <details><B><summary> 1 - Uygulama Yükleyici</B></summary>
+----
 Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar ücretsiz alternatifler arasında seçilmiştir. WinRaR hariç o da ücretli ama ücretsiz bir yazılımdır.
 
 ![cmd_ncjATuxRAi](https://user-images.githubusercontent.com/93199689/177618828-48ac90b3-c420-40c1-bfe0-3d5eb25d0001.png)
-   
+
 	• 1 - All in One Runtimes: C++ 2005-2022 / Java / XNA Framework / OpenAL / DirectX. Bu programlar oyunlar ve bazı uygulamalarda sorun yaşamamanız için mutlaka kurulmalıdır.
 #### ► Mesajlaşma Uygulamaları 
 	• 2 - Discord: Sunucu kurup arkadaşlarınız sohbet edebileceğiniz bir uygulama. Online oyun oynuyorsanız arkadaşlarınızla iletişim kurmak için birebirdir.
