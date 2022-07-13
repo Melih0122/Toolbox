@@ -4,7 +4,40 @@
 - ► Discord: OgnitorenKs#2737 
 - ► Mail: ognitorenks@gmail.com
 - ► Site: [ognitorenks.blogspot.com](https://ognitorenks.blogspot.com/)
-	  
+<details><B><summary> Projeye katkıda bulunanlar</B></summary>
+	  ----------------------
+	  ► Eray Türkay 
+	  ----------------------
+	  • Sistem Hakkında - RAM soket yapısının eklenmesi.
+	  • Sistem Hakkında - Sistem format tarihinin eklenmesi.
+	  ----------------------
+	  ► KaanBeyhan [DOGGEST]
+	  ----------------------
+	  • İndirme işlemlerinde ilerleme çubuğunun eklenmesi.
+	  • Performans optimizasyonun eklenmesi.
+	  ---------
+   	  ► Archley
+   	  ---------
+	  • Wifi Crack çalışmasının toolbox'a eklenmesi.
+	  • İşlem tamamlandı ekranının eklenmesi.
+	  ----------
+	  ► maskem76
+	  ----------
+	  • Hyper-V bölümündeki hatanın giderilmesi.
+	  ----------
+	  ► Legnica
+	  ----------
+	  • Windows Search önbelliğinin temizlenmesiyle ilgili komutların eklenmesi.
+	  -------------
+	  ► EnixYazılım
+	  -------------
+	  • OperaGX yazılımının indirme bölümüne eklenmesi.
+	  -------
+	  ► Finch
+	  --------
+	  • Yönetici yetkili kısayolun oluşturulması.
+</details>
+
 # OGNİTORENKS TOOLBOX
 ![cmd_biINAwmipL](https://user-images.githubusercontent.com/93199689/177618762-85eb3b57-bc72-409f-95f4-41c626053acd.png)
 
@@ -492,37 +525,3 @@ Toolbox üzerinde ayar yapıp. Bilgi alabileceğiniz bölüm.
 	•       8 - Github Proje Sayfası
 	•       9 - Güncelleme Notları
 </details>
-
-### Projeye katkıda bulunanlar;
-
-	  ----------------------
-	  ► Eray Türkay 
-	  ----------------------
-	  • Sistem Hakkında - RAM soket yapısının eklenmesi.
-	  • Sistem Hakkında - Sistem format tarihinin eklenmesi.
-	  ----------------------
-	  ► KaanBeyhan [DOGGEST]
-	  ----------------------
-	  • İndirme işlemlerinde ilerleme çubuğunun eklenmesi.
-	  • Performans optimizasyonun eklenmesi.
-	  ---------
-   	  ► Archley
-   	  ---------
-	  • Wifi Crack çalışmasının toolbox'a eklenmesi.
-	  • İşlem tamamlandı ekranının eklenmesi.
-	  ----------
-	  ► maskem76
-	  ----------
-	  • Hyper-V bölümündeki hatanın giderilmesi.
-	  ----------
-	  ► Legnica
-	  ----------
-	  • Windows Search önbelliğinin temizlenmesiyle ilgili komutların eklenmesi.
-	  -------------
-	  ► EnixYazılım
-	  -------------
-	  • OperaGX yazılımının indirme bölümüne eklenmesi.
-	  -------
-	  ► Finch
-	  --------
-	  • Yönetici yetkili kısayolun oluşturulması.
