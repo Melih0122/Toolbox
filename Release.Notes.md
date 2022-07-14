@@ -91,10 +91,8 @@
 	    • Radeon Software Slimmer
 	    • NVCleanstall
 
-
 </details>
 <details><B><summary> Versiyon 3.2.2 - 12.06.2022</B></summary>
-Yayınlanma Tarihi: 12.06.2022
 
 	• Hizmet Yönetimi > Xbox hizmeti için üst düzey yetki kaldırıldı.
 	• Hizmet Yönetimi > Hyper-V'nin Home sürümlerine kurulmasını sağlayan komutlar kaldırıldı. 
@@ -102,17 +100,13 @@ Yayınlanma Tarihi: 12.06.2022
 	• Windows 10 Edit > Simge değiştir bölümündeki komut hatası giderildi.
 	• Desktop Runtime 6 sürümü AIO bölümünden kaldırıldı.
 
--------------------
- ► Versiyon 3.2.1 - Ara Güncelleme
--------------------
-Yayınlanma Tarihi: 10.06.2022
+</details>
+<details><B><summary> Versiyon 3.2.1 - 10.06.2022</B></summary>
 
 	• Hizmet Yönetimi > Xbox hizmeti için üst düzey yetki verildi.
 
------------------
- ► Versiyon 3.2 -
------------------
-Yayınlanma Tarihi: 08.06.2022
+</details>
+<details><B><summary> Versiyon 3.2 - 08.06.2022</B></summary>
 
 	• Online Katılımsız bölümündeki değişiklikler;
 	  • Recuva kaldırıldı
@@ -138,25 +132,19 @@ Yayınlanma Tarihi: 08.06.2022
 	• Windows Editör > Katılımsız Program/Ayar Ekle kaldırıldı.
 	  • Güncelleme, hata giderme durumlarını sürekli takip edemediğim için kaldırdım.
 
--------------------
- ► Versiyon 3.1.2 - Ara Güncelleme
--------------------
-Yayınlanma Tarihi: 29.05.2022
+</details>
+<details><B><summary> Versiyon 3.1.2 - 29.05.2022</B></summary>
 
 	• Optimizasyon aracındaki NVIDA ekran kartı bölümündeki yedekleme hatası giderildi.
  	• Kaldırılamayan uygulamalar bölümünde Python yükleme ekranı düzeltildi.
 
--------------------
- ► Versiyon 3.1.1 - Ara Güncelleme
--------------------
-Yayınlanma Tarihi: 29.05.2022
+</details>
+<details><B><summary> Versiyon 3.1.1 - 29.05.2022</B></summary>
 
 	• Güncelleme sonrası bölümündeki bazı uygulama kaldırma komutları iptal edildi.
 
------------------
- ► Versiyon 3.1 -
------------------
-Yayınlanma Tarihi: 28.05.2022
+</details>
+<details><B><summary> Versiyon 3.1 - 28.05.2022</B></summary>
 
 	• Windows Store Onar bölümüne yeni paremetreler eklendi.
 	• Windows Editör > Setup düzenleme > Setup dosyaları yenilendi. 
@@ -174,27 +162,21 @@ Yayınlanma Tarihi: 28.05.2022
 	• Bu bölümün sorunsuz çalışması için sisteme Python kurulması gerekmektedir. Yüklü değil ise katılımsız yükleyecektir.
 	• Bazı regedit kayıtları düzenlendi.
 
--------------------
- ► Versiyon 3.0.2 - Ara Güncelleme
--------------------
-Yayınlanma Tarihi: 11.05.2022
+</details>
+<details><B><summary> Versiyon 3.0.2 - 11.05.2022</B></summary>
 
 	• Simge hatalarını onar bölümü yeniden eklendi. [Legnica'nın isteğiyle]
 
--------------------
- ► Versiyon 3.0.1 - Ara Güncelleme
--------------------
-Yayınlanma Tarihi: 10.05.2022
+</details>
+<details><B><summary> Versiyon 3.0.1 - 10.05.2022</B></summary>
 
 	• Windows Editör > Setup Edit bölümündeki hata giderildi.
 	• Windows Editör > Regedit Topla bölümündeki komut hatası giderildi.
 	• PC Temizle bölümü yeniden eklendi. [Joker'in isteğiyle yeniden eklendi.]
 	• Temizle ve Kapat bölümündeki hata giderildi. [CadyMeow'a geri bildirimi için teşekkür ederim]
 
------------------
- ► Versiyon 3.0 -
------------------
-Yayınlanma Tarihi: 10.05.2022
+</details>
+<details><B><summary> Versiyon 3.0 - 10.05.2022</B></summary>
 
 	• 'Update.ini' dosyası 'Settings.ini' olarak değiştirildi.
 	•  Admin yetkili girişi manuel ve otomatik olarak ayarlanması için Settings.ini dosyasına yönetim bölümü eklendi.
@@ -226,10 +208,9 @@ Yayınlanma Tarihi: 10.05.2022
 	•  Windows Editör > ISO hazırlama bölümüne oscdimg.exe dosya kontrolü eklendi.
 	•  Windows Update dosyası güncellemelerde oluşan sorunları önleme için güncelleme öncesi indirilecek şekilde düzenlendi. Extra klasöründen silindi.
 	•  Tüm çalışmalar üzerinden yapılan düzenlemelerden sonra Toolbox içerisinden 1000 civarında satır gereksiz komut silinmiştir.
------------------
- ► Versiyon 2.9 -
------------------
-Yayınlanma Tarihi: 26.04.2022
+
+</details>
+<details><B><summary> Versiyon 2.9 - 26.04.2022</B></summary>
 
 	• Hizmetler Yönetimi > Dokunmatik servis bölümünde Windows 10 / 11 için ayrı servis bölümleri oluşturuldu.
 	• Hizmetler Yönetimi > Hizmetlerin durumu hakkında bilgi alırken olası hata mesajlarının engellenmesi için yeni parametreler eklendi.
@@ -238,10 +219,9 @@ Yayınlanma Tarihi: 26.04.2022
 	• Any Video Converter yazılımı kaldırıldı.
   		 	  • [YMuratK] tavsiyesiyle FileConverter programı eklendi.
 	• Toolbox İngilizce > Hizmetleri yönet bölümündeki dil hatası giderildi.
------------------
- ► Versiyon 2.8 -
------------------
-Yayınlanma Tarihi: 21.04.2022
+	
+</details>
+<details><B><summary> Versiyon 2.8 - 21.04.2022</B></summary>
 
 	• Icon fix bölümüne yeni parametreler eklendi.
 	• Icon fix bölümü "Simge Önbelleğini Temizle" olarak değiştirildi.
@@ -251,29 +231,26 @@ Yayınlanma Tarihi: 21.04.2022
  	• OperaGX indirme bölümüne eklendi. 
  	• AnyDesk uygulaması, Teamviewer altına alındı.
  	• Windows Editör > Dism Update Online bölümünde güncelleme yükleme sonrası gelen restart sorgusu kaldırıldı.
-------------------
- ► Versiyon 2.7.1 - Ara güncelleme
-------------------
-Yayınlanma Tarihi: 18.04.2022
+
+</details>
+<details><B><summary> Versiyon 2.7.1 - 18.04.2022</B></summary>
 
 	• Icon Fix bölümüne Search App önbelliğini temizleyen komutlar eklendi. Bu komut ile arama bölümünde oluşan simge hataları giderilebilecek
 	• Bu konuda tüm çözüm önerilerini deneyip çözümü bulan; "Legnica" ya teşekkür ederim.
 	• Ayrıca; Yağız Murat Köse | Kaan Beyhan | Uğur 'a teşekkür ederim. 
  	• AnyDesk uygulaması toolbox'a eklendi.
 	• Windows Editör > Dism Update Online bölümünde güncelleme sonrası restart sorgusunu iptal etmek için parametre eklendi.
------------------
- ► Versiyon 2.7 -
------------------
-Yayınlanma Tarihi: 18.04.2022
+	
+</details>
+<details><B><summary> Versiyon 2.7 - 18.04.2022</B></summary>
 
 	• Hizmetleri Yönet > Windows Media Player yaşanan sorunlardan dolayı kaldırıldı.
 	• Toolbox oto güncelleme sistemi getirildi. Bu özelliği OgnitorenKs.Toolbox klasörü içinde yer alan Update.ini'den kapatabilirsiniz.
 	• Links.bat dosyası Links.txt olarak değiştirildi. Güncelleme işlemini hızlıca gerçekleştirmek için.
 	• PowerChoice simgesi değiştirildi.
--------------------
- ► Versiyon 2.6.3 - Ara güncelleme
--------------------
-Yayınlanma Tarihi: 16.04.2022
+
+</details>
+<details><B><summary> Versiyon 2.6.3 - 16.04.2022</B></summary>
 
 	• Windows Editör > 24 - Katılımsız Program/Ayar ekle [Offline] bölümü kaldırıldı.
 	• [Online] bölümü içindeki tüm komutlar yenilendi. Toolbox içindeki tüm programlar eklendi.
@@ -289,10 +266,9 @@ Yayınlanma Tarihi: 16.04.2022
 	• ISLC yazılımı indir - kur şeklinde düzenlendi.
 	• Hizmet Yönetimi > Xbox bölümüne kısayol engelleyici parametre eklendi.
 	• Hizmet Yönetimi > Windows Media player bölümüne yeni parametre eklendi.
--------------------
- ► Versiyon 2.6.2 - Ara güncelleme
--------------------
-Yayınlanma Tarihi: 13.04.2022
+
+</details>
+<details><B><summary> Versiyon 2.6.2 - 13.04.2022</B></summary>
 
 	• Güncelleme sonrası temizlik bölümündeki hata giderildi.
 	• Toolbox İngilizce sürümü Türkçe sürümü ile senkronize gelişecek şekilde yeniden düzenlendi.
@@ -302,10 +278,8 @@ Yayınlanma Tarihi: 13.04.2022
 	• Güncelleştirme sonrası temizlik bölümündeki hizmetler "Extra\Update.After.bat" dosyasından toplandı.
 	• PowerRun yazılımıyla tek bir işlem yapmak için tek bir .bat dosyasında topladım. 
 
--------------------
- ► Versiyon 2.6.1 - Ara güncelleme
--------------------
-Yayınlanma Tarihi: 12.04.2022
+</details>
+<details><B><summary> Versiyon 2.6.1 - 12.04.2022</B></summary>
 
 	• Hizmetleri Yönet > Hizmetlerin açık veya kapalı olma durumları menü içinde belirtildi.
 	• Hizmetleri Yönet > Baskı hizmetini aç kapat kaldırıldı.
@@ -314,11 +288,10 @@ Yayınlanma Tarihi: 12.04.2022
 	• Hizmetleri Yönet > Windows Search yönlendirme hatası giderildi.
 	• Hizmetleri Yönet > Hyper - V kapat bölümündeki komut hatası giderildi.
 	• PowerRun yazılımının yeninden indirme bölümünde yer alan komut hatası giderildi.
-	• Hizmetleri Yönet bölümünde fazla işlem yapılınca antivirüs programı PowerRun yazılımdan huylanabiliyor. 
------------------
- ► Versiyon 2.6 -
------------------
-Yayınlanma Tarihi: 10.04.2022
+	• Hizmetleri Yönet bölümünde fazla işlem yapılınca antivirüs programı PowerRun yazılımdan huylanabiliyor.
+
+</details>
+<details><B><summary> Versiyon 2.6 - 10.04.2022</B></summary>
 
 	• Ana menüde ve bazı iç bölümlerde farklı bölümlere açılan kısımlar için ifadeler yerleştirildi.
 	• Menü bölümlerine [M] / Uygulama olarak açılan bölüme [APP] / ayrı pencere olarak açılacak bölüme [*] işareti bıraktım
@@ -349,29 +322,24 @@ Yayınlanma Tarihi: 10.04.2022
 	• İşlem sonunda reset seçeneği bırakıldı.
 	• Ping Ölçer bölümünün teması düzenlendi. Değişken bölümüne bilgilendirici metinler bırakıldı.
 	• Yeni site ve dns adressleri eklendi.
-------------------
- ► Versiyon 2.5.2 - Ara güncelleme
-------------------
-Yayınlanma Tarihi: 03.04.2022
+
+</details>
+<details><B><summary> Versiyon 2.5.2 - 03.04.2022</B></summary>
 
 	• Hizmetleri Yönet > Uzak Masaüstü/Akış/Ağ hizmetleri bölümüne Windows Search hizmetini açmak için parametre eklendi.
 	• Hizmetleri Yönet > Windows Search hizmetini açıp kapatmaya yarayacak bölüm eklendi.
 	• "Güncelleme Sonrası Temizlik" bölümünde düzenlemeler yapıldı. "Hizmetleri Yönet" bölümünde açılacak hizmetleri tekrar kapatmaması için düzenlendi.
 
-------------------
- ► Versiyon 2.5.1 - Ara güncelleme
-------------------
-Yayınlanma Tarihi: 01.04.2022
+</details>
+<details><B><summary> Versiyon 2.5.1 - 01.04.2022</B></summary>
 
 	• Toolbox içindeki regedit komutlarında düzenleme yapıldı.
 	• Blitz uygulaması kurulum sorunlarından dolayı kaldırıldı.
 	• Hizmetleri Yönet > Hyper-V bölümünde bilgi ekranındaki değişken hatası giderildi. Yeni parametre eklendi.
 	• Taraycı eklentileri bölümündeki kod hatası giderildi.
- 
------------------
- ► Versiyon 2.5 -
------------------
-Yayınlanma Tarihi: 30.03.2022
+
+</details>
+<details><B><summary> Versiyon 2.5 - 30.03.2022</B></summary>
 
 	• Güncelleme sonrası temizlik bölümündeki regedit kayıtları düzenlendi. 
 	• Kilitlenme sorununa neden olan regedit kayıtları kaldırıldı.
@@ -385,10 +353,9 @@ Yayınlanma Tarihi: 30.03.2022
 	• Microsoft Edge bölümüne reklam engelleyiciler engellendi.
 	• "Windows 10-11 Edit" bölümünde yer alan yönlendirme hatası giderildi.
 	• "Windows 10-11 Edit" bölümüne "Güncelleştirmeleri 2050 yılına kadar ertele" bölümü eklendi.
------------------
- ► Versiyon 2.4 -
------------------
-Yayınlanma Tarihi: 19.03.2022
+	
+</details>
+<details><B><summary> Versiyon 2.4 - 19.03.2022</B></summary>
 
 	• Zaman ayarlı PC kapat bölümü eklendi.
 	• Windows düzenleme bölümünden kaldırılanlar.
@@ -411,10 +378,9 @@ Yayınlanma Tarihi: 19.03.2022
 	• Windows 10 Edit > Simge değiştir bölümündeki hata giderildi. Simgeler sorunsuz bir şekilde değiştirilebiliyor.
 	• Komutlar optimize edildi. Değişim esnasında bekleme süresi azaltıldı.
 	• Fat32 to NTFS bölümünde, X tuşu geri dönüş olarak belirtildi.
------------------
- ► Versiyon 2.3 -
------------------
-Yayınlanma Tarihi: 08.02.2022
+
+</details>
+<details><B><summary> Versiyon 2.3 - 08.02.2022</B></summary>
 
 	• İndirme linkleriyle ilgili bilgi güncellemesi artık yapılmayacaktır. Linkler düzenli olarak güncellenecektir.
 	• Windows Düzenleme > ISO oluşturma bölümünde komutlar düzenlendi. Sanal makinalarda oluşan hata giderildi.
@@ -423,10 +389,9 @@ Yayınlanma Tarihi: 08.02.2022
 	• All in One Runtimes bölümüne yükleme işlemi öncesi eski sürümleri silme işlemi eklendi. 
 	• All in One Runtimes bölümüne Net Framework 3.5/4.8/DirectPlay hizmetlerini aktifleştirmesi için komutlar eklendi.
 	• Windows Düzenleme > Katılımsız program ve ayar ekle [Online] bölümündeki komut hatası giderildi.
------------------
- ► Versiyon 2.2 -
------------------
-Yayınlanma Tarihi: 26.01.2022
+	
+</details>
+<details><B><summary> Versiyon 2.2 - 26.01.2022</B></summary>
 
 	• Windows Düzenleme > Setup düzenleme bölümünde Windows 11 Bypass aracında bilgi vermeden kapanma sorunu giderildi.
 	• ISLC bölümündeki yol hatası giderildi. [Kick Furkanowski'e geri bildirimi için teşekkür ederim]
@@ -438,10 +403,9 @@ Yayınlanma Tarihi: 26.01.2022
 	• İndirme bölümüne Blender uygulaması eklendi.
 	• İndirme bölümüne Shotcut uygulaması eklendi.
 	• İndirme bölümüne Openshot uygulaması eklendi.
------------------
- ► Versiyon 2.1 -
------------------
-Yayınlanma Tarihi: 21.01.2022
+
+</details>
+<details><B><summary> Versiyon 2.1 - 21.01.2022</B></summary>
 
 	• "Kapatılan Servisleri Yönet" bölümünde değişiklikler yapıldı.
 	• Kod okunaklığını arttırmak için yorum satırları eklendi.
@@ -457,10 +421,9 @@ Yayınlanma Tarihi: 21.01.2022
 	• Windows 10 Edit > "Market [Yükle/Sil]" bölümünde düzenlemeler yapıldı.
 	• "Güncelleme sonrası temizlik" bölümünde yorum satırları arttırıldı. Bazı eklemeler yapıldı.
 	• Yeni simge dosyaları güncellendi. Windows 11 sürümü içindeki dosyalar alındı.
------------------
- ► Versiyon 2.0 -
------------------
-Yayınlanma Tarihi: 18.01.2022
+
+</details>
+<details><B><summary> Versiyon 2.0 - 18.01.2022</B></summary>
 
 	• Windows Düzenleme > "Yeni simgeleri yükle" bölümündeki yol hatası giderildi. 
 	• Windows Düzenkene > "Katılımsız program ve ayar ekle [Online/Offline]" > Simge önbelleğini temizle seçeneği eklendi.
@@ -473,11 +436,8 @@ Yayınlanma Tarihi: 18.01.2022
 	• Signal indirme linki yenilendi. (5.27.1 > 5.28.0) 
 	• Python indirme linki yenilendi. (3.10.1 > 3.10.2)
 
-
------------------
- ► Versiyon 1.9 -
------------------
-Yayınlanma Tarihi: 11.01.2022
+</details>
+<details><B><summary> Versiyon 1.9 - 11.01.2022</B></summary>
 
 	• Gpedit.msc bölümündeki kod hatası giderildi. (Archley'e geri bildirimi için teşekkür ederim.)
 	• Çoklu seçme bölümlerindeki kod hatası giderildi. (Geri dönüş kodları toolbox'ın kapanmasına neden oluyordu)
@@ -494,11 +454,8 @@ Yayınlanma Tarihi: 11.01.2022
 	• Microsoft Office bölümünde yaşanan sorundan dolayı Office uygulaması kaldırıldı. 
  	 	• Adobe Reader yazılımı tekrar eklendi.
 
-
------------------
- ► Versiyon 1.8 -
------------------
-Yayınlanma Tarihi: 08.01.2022
+</details>
+<details><B><summary> Versiyon 1.8 - 08.01.2022</B></summary>
 
 	• Wifi Crack bölümü eklendi.
  	 	• Bu bölümde sisteme girdiğiniz Wifi liste ve şifrelerini görebilirsiniz.
@@ -530,10 +487,8 @@ Yayınlanma Tarihi: 08.01.2022
 	• K-Lite indirme linki yenilendi. (16.6.5 > 16.7.0)
 	• Hibit Uninstaller indirme linki yenilendi. (2.7.15 > 2.7.35)
 
------------------
- ► Versiyon 1.7 -
------------------
-Yayınlanma Tarihi: 01.01.2022
+</details>
+<details><B><summary> Versiyon 1.7 - 01.01.2022</B></summary>
  
 	• Toolbox Kullanım.md dosyası hazırlandı. (Toolbox'ın kullanımıyla ilgili tüm detaylar içinde yer almaktadır.)
 	• Tekli bilgi mesajları menüden görüntelenecek şekilde düzenlendi.
@@ -551,10 +506,8 @@ Yayınlanma Tarihi: 01.01.2022
 	• Notepad++ indirme linki yenilendi. (8.1.9.3 > 8.2)
 	• TaskbarX indirme linki yenilendi. (1.7.4.0 > 1.7.6.0)
 
------------------
- ► Versiyon 1.6 -
------------------
-Yayınlanma Tarihi: 29.12.2021
+</details>
+<details><B><summary> Versiyon 1.6 - 29.12.2021</B></summary>
 
 	• Windows Düzenleme > "Wim /Delete" çoklu seçme özelliği kaldırıldı. (İndex numaraları kaydığı için ilk silme işleminden sonra hatalı işlem yapıyordu)
 	• Windows Düzenleme > Yol tanımlama bölümlerinde gereksiz komutlar kaldırıldı.
@@ -566,11 +519,9 @@ Yayınlanma Tarihi: 29.12.2021
 	• Olası sorunlarda hızlı hata tespiti için log sistemi eklendi.
 	• İndirme işlemlerinde internet durum kontrolü eklendi.
 	• Toolbox.bat içinde yorum satırları arttırıldı. 
- 
------------------
- ► Versiyon 1.5 -
------------------
-Yayınlanma Tarihi: 27 Aralık 2021
+
+</details>
+<details><B><summary> Versiyon 1.5 - 27.12.2021</B></summary>
 
 	• Windows Düzenleme > ISO hazırlama bölümüne etiket ve ISO isim verme özelliği eklendi.
 	• Setup düzenleme bölümünde duraklamaya neden olan komut kaldırıldı.
@@ -580,10 +531,8 @@ Yayınlanma Tarihi: 27 Aralık 2021
 	• İndirme işlemlerinde ilerleme çubuğu eklendi. [KaanBeyhan'a (DOGGEST) verdiği bilgi için teşekkür ederim]
 	• TaskbarX indirme linki yenilendi. (1.7.3.0 > 1.7.4.0)
 
------------------
- ► Versiyon 1.4 -
------------------
-Yayınlanma Tarihi: 23 Aralık 2021
+</details>
+<details><B><summary> Versiyon 1.4 - 23.12.2021</B></summary>
 
 	• OgnitorenKs Toolbox Update aracına internet ve toolbox dosya kontrol sistemi getitirildi.
 	• Windows edit bölümünde bazı bölümlerde yer alan buglar giderildi.
@@ -595,11 +544,9 @@ Yayınlanma Tarihi: 23 Aralık 2021
 	• Krita indirme linki yenilendi. (4.4.8 > 5.0.0)
 	• Gimp indirme linki yenilendi. (2.10.28 > 2.10.30)
 	• Audacity indirme linki yenilendi. (3.1.2 > 3.1.3)
- 
------------------
- ► Versiyon 1.3 -
------------------
-Yayınlanma Tarihi: 22 Aralık 2021
+
+</details>
+<details><B><summary> Versiyon 1.3 - 22.12.2021</B></summary>
 
 	• İndirmeye devam et özelliği eklendi.
  	 	• Bu özellik ile indirilmiş olan dosyalar tekrar indirilmeyecek. 
@@ -660,11 +607,8 @@ Yayınlanma Tarihi: 22 Aralık 2021
 	• Katılımsız program ve ayar ekle[Offline] eklendi.
 	• Katılımsız program ve ayar ekle[Online] eklendi.
 
-
------------------
- ► Versiyon 1.2 -
------------------
-Yayınlanma Tarihi: 3 Aralık 2021
+</details>
+<details><B><summary> Versiyon 1.2 - 03.12.2021</B></summary>
 
 	• "Sahiplik al" ekleme bölümündeki kod hatası giderildi.
 	• Hibit Uninstaller indirme linki yenilendi. (2.6.25 > 2.7.10)
@@ -678,10 +622,8 @@ Yayınlanma Tarihi: 3 Aralık 2021
 	• Katılımsız güncelleştirme sistemi eklenmiştir.
  	 	• OgnitorenKs.Toolbox klasörü içerisinde yer alan Toolbox.Update.bat dosyasını çalıştırarak güncelleme işlemini yapabilirsiniz.
 
------------------
- ► Versiyon 1.1 -
------------------
-Yayınlanma Tarihi: 26 Kasım 2021
+</details>
+<details><B><summary> Versiyon 1.1 - 26.11.2021</B></summary>
 
 	• Sunduğum diğer sistemlerde kapattığım bazı hizmetlerin yeniden açılması için Windows 10 ve Windows 11 edit bölümlerine eklemeler yaptım.
  	 	• Bu bölüm ilk sürümde yer alan "Laptop hizmetlerini aç" "Yazıcı aktifleştir" bölümlerini de kapsamaktadır.
@@ -701,9 +643,6 @@ Yayınlanma Tarihi: 26 Kasım 2021
  	 	• Alternatif olarak SSDBooster yazılımı eklendi. Portable bir yazılımdır ve masaüstüne indirilmektedir.
 	• Sürüm notları Toolbox içine kısayol olarak eklendi.
  
- -----------------
- ► Versiyon 1.0 -
------------------
-Yayınlanma Tarihi: 23 Kasım 2021
-
- 
+</details>
+<details><B><summary> Versiyon 1.0 - 23.11.2021</B></summary>
+</details>
