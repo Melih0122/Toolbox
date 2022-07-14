@@ -4,39 +4,7 @@
 - ► Discord: OgnitorenKs#2737 
 - ► Mail: ognitorenks@gmail.com
 - ► Site: [ognitorenks.blogspot.com](https://ognitorenks.blogspot.com/)
-<details><B><summary> Projeye katkıda bulunanlar</B></summary>
-	  *----------------------
-	  *► Eray Türkay 
-	  *----------------------
-	  *• Sistem Hakkında - RAM soket yapısının eklenmesi.
-	  *• Sistem Hakkında - Sistem format tarihinin eklenmesi.
-	  ----------------------
-	  ► KaanBeyhan [DOGGEST]
-	  ----------------------
-	  • İndirme işlemlerinde ilerleme çubuğunun eklenmesi.
-	  • Performans optimizasyonun eklenmesi.
-	  ---------
-   	  ► Archley
-   	  ---------
-	  • Wifi Crack çalışmasının toolbox'a eklenmesi.
-	  • İşlem tamamlandı ekranının eklenmesi.
-	  ----------
-	  ► maskem76
-	  ----------
-	  • Hyper-V bölümündeki hatanın giderilmesi.
-	  ----------
-	  ► Legnica
-	  ----------
-	  • Windows Search önbelliğinin temizlenmesiyle ilgili komutların eklenmesi.
-	  -------------
-	  ► EnixYazılım
-	  -------------
-	  • OperaGX yazılımının indirme bölümüne eklenmesi.
-	  -------
-	  ► Finch
-	  --------
-	  • Yönetici yetkili kısayolun oluşturulması.
-</details>
+- ► <B> [Projeye Katkıda Bulunanlar](https://github.com/OgnitorenKs/OgnitorenKs.Toolbox/blob/main/Projeye-Katk%C4%B1da-Bulunanlar.md) </B>
 
 # OGNİTORENKS TOOLBOX
 ![cmd_biINAwmipL](https://user-images.githubusercontent.com/93199689/177618762-85eb3b57-bc72-409f-95f4-41c626053acd.png)
@@ -44,7 +12,7 @@
 - OgnitorenKs Toolbox Windows 10 - 11 sürümlerinin x64 mimarilerinde açılmaktadır. En güncel olan Windows sürümü ile senkronize olarak gelişmektedir.
 - Windows ekran ölçeklendirme ayarı Toolbox'ın pencere ayarını bozabiliyor. Sorunsuz kullanım için Toolbox'ı kullanırken ölçeklendirme etkileri kapatılmalıdır.
 - Toolbox'ı bazı antivirüsler zararlı olarak işaretlemektedir. Sorunsuz kullanım için beyaz listeye alınması gerekmektedir. 
-► https://www.virustotal.com/gui/file/6be9ea220f591dfb5793176d704253d530fbc0d72daabdbaca562ff520fc883a?nocache=1
+-  ► [Virüstotal](https://www.virustotal.com/gui/file/6be9ea220f591dfb5793176d704253d530fbc0d72daabdbaca562ff520fc883a?nocache=1)
 - Geliştirme sürecinde iki ayrı sürüm üzerinde çalışmak zor olduğu için İngilizce dil desteği kaldırılmıştır. Tek bir dosya üzerinden çoklu dil desteği ekleyebilirsem ilerleyen süreçte yeniden eklenecektir :(
 
 # OGNİTORENKS TOOLBOX İÇERİĞİ
