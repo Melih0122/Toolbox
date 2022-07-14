@@ -4,11 +4,8 @@
 -   Mail: ognitorenks@gmail.com
 -   Site: https://ognitorenks.blogspot.com/
 
--------------------
- ► Versiyon 3.4.2 - Ara Güncelleme 
--------------------
-Yayınlanma Tarihi: 14.07.2022
-
+<details><B><summary> Versiyon 3.4.2 - 14.07.2022</B></summary>
+	
 	• Kaldırılamayan Uygulamalar bölümü Windows 11'de çalışmadığı için uyarı mesajı eklendi.
 		• İşlem yapılamayacağı için Windows 11'de Python kurulması engellendi.
 	• Güncelleme sonrası bölümde de 'Kaldırılamayan Uygulamalar' bölümüyle ilgili parametler Windows 10'a özel hale getirildi.
@@ -17,11 +14,8 @@ Yayınlanma Tarihi: 14.07.2022
 	• Windows Edit > Çoklu Seçimlerde kapanma sorunu giderildi.
 	• Hizmetleri Yönet > Sistem geri yükleme bölümünde volsnap hizmeti kaldırıldı.
 	• Hizmetleri Yönet > Bitlocker hizmeti bölümünden fvevol hizmeti kaldırıldı.
-
--------------------
- ► Versiyon 3.4.1 - Ara Güncelleme
--------------------
-Yayınlanma Tarihi: 08.07.2022
+</details>
+<details><B><summary> Versiyon 3.4.1 - 08.07.2022</B></summary>
 
 	• Windows 10/11 Edit > Telemetri/Reklam engelli hosts ekle bölümünde veri kaybını önlemek için mevcut dosya hosts.bak olarak değiştirilmesi için komutlar eklendi.
 		• [quanqx]'a geri bildirimi için teşekkür ederim.
@@ -29,11 +23,8 @@ Yayınlanma Tarihi: 08.07.2022
 	• Araç Yükleyici > FurMark indirme hatası giderildi.
 	• Araç Yükleyici > NVCleanstall indirme hatası giderildi.
 	• Uygulama Yükleyici > Gimp indirme hatası giderildi.
-
------------------
- ► Versiyon 3.4 -
------------------
-Yayınlanma Tarihi: 06.07.2022
+</details>
+<details><B><summary> Versiyon 3.4 - 06.07.2022</B></summary>
 
 	• Araç Yükleyici > Snappy Driver Installer eklendi
 	• Araç Yükleyici > Spotify Adblocker eklendi.
@@ -49,11 +40,9 @@ Yayınlanma Tarihi: 06.07.2022
 	• Hizmetleri Yönet > Sistem Geri Yükleme hizmetindeki komut hatası giderildi.
 	• Windows 10/11 Edit > Telemetri/Reklam engelli hosts dosyası ekle bölümü getirildi.
 	
------------------
- ► Versiyon 3.3 -
------------------
-Yayınlanma Tarihi: 01.07.2022
-
+</details>
+<details><B><summary> Versiyon 3.3 - 01.07.2022</B></summary>
+	
 	• Chocolatey indirme sistemi alternatif olarak eklendi.
 	  • Varsayılan olarak kapalı gelir. Toolbox ayarlarından açılıp, kapatılabilir.
 	  • İndirme işlemlerinin hangi istemci üzerinden yapıldığının anlaşılması için [Chocolatey] / [Wget] yazısı yerleştirildi.
@@ -103,9 +92,8 @@ Yayınlanma Tarihi: 01.07.2022
 	    • NVCleanstall
 
 
--------------------
- ► Versiyon 3.2.2 - Ara Güncelleme
--------------------
+</details>
+<details><B><summary> Versiyon 3.2.2 - 12.06.2022</B></summary>
 Yayınlanma Tarihi: 12.06.2022
 
 	• Hizmet Yönetimi > Xbox hizmeti için üst düzey yetki kaldırıldı.
