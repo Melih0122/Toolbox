@@ -72,7 +72,7 @@ for /f %%a in ('"cd"') do set Location=%%a
 set Logs=%Location%\Edit\Logs
 set download=%Location%\Download
 Call :NSudo
-set version=3.4.1
+set version=3.4.2
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 :T.Settings
@@ -214,6 +214,7 @@ FOR /F "tokens=3 delims= " %%f in ('reg query "HKLM\SOFTWARE\Microsoft\Windows N
 for /f "tokens=2 delims='('" %%f in ('powercfg -list ^| findstr /C:"*"') do set powerr=%%f
 set powerr=%powerr:~0,-3%
 
+FOR /F "tokens=5" %%a in ('FIND "Caption" %Logs%\OS.txt') do set OSCheck=%%a
 :: ------------------------------------------------------------------------------------------------------------------------------
 
 :: Menü içinde sisteme göre ayarlama yapıyorum
@@ -491,8 +492,7 @@ set /p $multi=%R%[32m  Çoklu Seçim %R%[90mx,y: %R%[0m
 echo %$multi% | find "x" > NUL 2>&1
 	if %errorlevel%==0 goto menu
 echo %$multi% | find "X" > NUL 2>&1
-	if %errorlevel%==0 goto menu	
-	if %errorlevel%==0 goto menu	
+	if %errorlevel%==0 goto menu		
 
 Call :LostMenu
 echo    →%C%[96m Seçilenler: %$multi%%C%[0m
@@ -1203,7 +1203,7 @@ echo  ► %C%[96mTelefon hizmeti %4 ...%C%[0m
 FOR %%a in (TapiSrv PhoneSvc) do (
 	sc config %%a start= %2 > NUL 2>&1
 	net %1 %%a /y > NUL 2>&1)
-:: Bluetooth (AVCTP hizmeti) | Bluetooth destek hizmeti | Bluetooth kullanıcı desteği hizmeti \ Ses ağ geçidi hizmeti
+:: Bluetooth (AVCTP hizmeti) | Bluetooth destek hizmeti | Bluetooth kullanıcı desteği hizmeti | Ses ağ geçidi hizmeti
 FOR %%a in (BthAvctpSvc bthserv BluetoothUserService BTAGService) do (sc config %%a start= %3 > NUL 2>&1)
 Call :ProcessCompleted
 ::-------------------------------------------------------
@@ -1429,8 +1429,6 @@ echo  ► %C%[96mSistem geri yükleme hizmeti %6 ...%C%[0m
 FOR %%a in (SDRSVC VSS swprv wbengine fhsvc) do (
 	sc config %%a start= %2 > NUL 2>&1
 	net %1 %%a /y > NUL 2>&1)
-sc config volsnap start= %~5 > NUL 2>&1
-net %1 volsnap /y > NUL 2>&1)
 schtasks /change /TN "\Microsoft\Windows\SystemRestore\SR" /%3 > NUL 2>&1
 Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore" "DisableConfig" "%~4"
 Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore" "DisableSR" "%~4"
@@ -1545,8 +1543,6 @@ echo  ► %C%[96mBitlocker hizmeti %4 ...%C%[0m
 :: Bitlocker sürücü şifreleme hizmeti
 sc config BDESVC start= %2 > NUL 2>&1
 net %1 BDESVC /y > NUL 2>&1
-sc config fvevol start= %3 > NUL 2>&1
-net %1 fvevol /y > NUL 2>&1
 Call :ProcessCompleted
 ::-------------------------------------------------------
 ::    Aç = %1 : start | %2 : demand   | %3 : boot      | %4 : açılıyor
@@ -2367,17 +2363,13 @@ goto :eof
 :NonRemovalMenu
 cls
 mode con cols=43 lines=22
-:: Bilgisayarda yüklü uygulamalar arasında Python aranır. Yüklü değil ise indirip, kurar.
-Call :Powershell "Get-ItemProperty HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\* | Select-Object DisplayName" > %Logs%\InstallApp
-Findstr /i "Python" %Logs%\InstallApp > NUL 2>&1
-	if %errorlevel%==1 (echo ►%R%[33m Python kuruluyor...%R%[0m
-						Call :wget4 Python.exe "/quiet InstallAllUsers=1 PrependPath=1")
-
+:: Bilgisayarda yüklü uygulamalar arasında Python aranır. Yüklü değil ise indirip, kurar. Yalnızca Windows 10 sistemlerde kontrol eder.
+if %OSCheck%==10 (Call :SoftwareCheck Python.exe "/quiet InstallAllUsers=1 PrependPath=1")
 Call :Powershell "get-appxpackage | Select-Object Name,NonRemovable" > %Logs%\NonRemoval
 :: Microsoft.Windows.ContentDeliveryManager ContentDeliveryManager
 echo   %R%[90m┌─────────────────────────────────────┐%R%[0m
 echo   %R%[90m│%R%[1;97m%R%[100m          NonRemoval Menü            %R%[0m%R%[90m│%R%[0m
-echo   %R%[90m├─────────────────────────────────────┤%R%[0m
+echo   %R%[90m├─────────────────────────────────────┤%R%[0ms
 Call :NonRemovalChecker BioEnrollment
 echo   %R%[90m│%R%[36m  1 %servalue% -%R%[33m Biometrick hizmeti           %R%[90m│%R%[0m
 Call :NonRemovalChecker CapturePicker
@@ -2403,7 +2395,11 @@ echo   %R%[90m│%R%[36m 11 %servalue% -%R%[33m Search App (Taskbar Search)  %R%
 Call :NonRemovalChecker CBSPreview
 echo   %R%[90m│%R%[36m 12 %servalue% -%R%[33m Kamera Barkod Tarayıcı       %R%[90m│%R%[0m
 echo   %R%[90m│%R%[36m  X -%R%[33m Menü                           %R%[90m│%R%[0m
-echo   %R%[90m└─────────────────────────────────────┘%R%[0m 
+echo   %R%[90m└─────────────────────────────────────┘%R%[0m
+if %OSCheck%==11 (echo %R%[31m Windows 11 sistemde bu bölüm çalışmaz%R%[0m
+			      echo %R%[31m Ana menü için herhangi bir tuşa basın%R%[0m
+				  pause > NUL
+				  goto menu)
 set /p value=%R%[36m  Kaldır: %R%[0m
 	if %value%==1 (Call :NonRemoval Microsoft.BioEnrollment BioEnrollment)
 	if %value%==2 (Call :NonRemoval Microsoft.Windows.CapturePicker CapturePicker)
@@ -2445,19 +2441,16 @@ goto :eof
 cls
 Call :LogSave "UpdateAfter" "Güncelleme sonrası temizlik bölümü çalıştırıldı"
 
-Call :Powershell "Get-ItemProperty HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\* | Select-Object DisplayName" > %Logs%\InstallApp
-Findstr /i "Python" %Logs%\InstallApp > NUL 2>&1
-	if %errorlevel%==1 (echo ►%R%[33m Python kuruluyor...%R%[0m
-						Call :wget1 Python.exe "/quiet InstallAllUsers=1 PrependPath=1")
-
 echo %R%[92m Güncelleme sonrası temizlik işlemi yapılıyor.%R%[0m
-echo %R%[92m Güncelleme sonrası yüklenen uygulamalar siliniyor...%R%[0m
-Call :NonRemoval Microsoft.549981C3F5F10 549981C3F5F10
-Call :NonRemoval Microsoft.Windows.HolographicFirstRun Holographic
-Call :NonRemoval Microsoft.Windows.NarratorQuickStart NarratorQuickStart
-Call :NonRemoval Microsoft.Windows.ParentalControls ParentalControls
-Call :NonRemoval Microsoft.Windows.PeopleExperienceHost PeopleExperienceHost
-Call :NonRemoval Microsoft.Windows.SecHealthUI SecHealthUI
+if %OSCheck%==10 (echo %R%[92m Güncelleme sonrası yüklenen uygulamalar siliniyor...%R%[0m
+				  Call :SoftwareCheck Python.exe "/quiet InstallAllUsers=1 PrependPath=1"
+				  Call :NonRemoval Microsoft.549981C3F5F10 549981C3F5F10
+				  Call :NonRemoval Microsoft.Windows.HolographicFirstRun Holographic
+				  Call :NonRemoval Microsoft.Windows.NarratorQuickStart NarratorQuickStart
+				  Call :NonRemoval Microsoft.Windows.ParentalControls ParentalControls
+				  Call :NonRemoval Microsoft.Windows.PeopleExperienceHost PeopleExperienceHost
+				  Call :NonRemoval Microsoft.Windows.SecHealthUI SecHealthUI
+)
 cls
 echo %R%[92m Güncelleme sonrası temizlik işlemi yapılıyor.%R%[0m
 echo %R%[92m Hizmetler düzenleniyor...%R%[0m
@@ -2729,7 +2722,7 @@ Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\TabletPC" "PreventHandwrit
 :: Call :dword "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\StorageSense\Parameters\StoragePolicy" "2048" "0" & :: İndirilen klasöründe uzun süre duran dosyaları sil
 Call :dword "HKLM\SOFTWARE\Policies\Microsoft\EdgeUpdate" "InstallDefault" "0" & :: EdgeWebView2'nin kurulmasını engeller
 Call :dword "HKLM\SOFTWARE\Microsoft\EdgeUpdate" "DoNotUpdateToEdgeWithChromium" "1" & :: Microsoft Edge'in otomatik kurulmasını engeller
-Call :dword "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock" "AllowDevelopmentWithoutDevLicense" "1" & Uygulama geliştirme modu aktifleştiriliyor.
+Call :dword "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock" "AllowDevelopmentWithoutDevLicense" "1" & :: Uygulama geliştirme modu aktifleştiriliyor.
 
 bcdedit /deletevalue useplatformclock > NUL 2>&1
 bcdedit /set {current} recoveryenabled no > NUL 2>&1
@@ -2844,6 +2837,13 @@ for /f "tokens=2" %%a in ('findstr /i "TimeUpdate" %Location%\Settings.ini') do 
 goto :eof
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+
+:SoftwareCheck
+Call :Powershell "Get-ItemProperty HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\* | Select-Object DisplayName" > %Logs%\InstallApp
+Findstr /i "%~n1" %Logs%\InstallApp > NUL 2>&1
+	if %errorlevel%==1 (Call :wget1 %~1 "%~2")
+goto :eof
+:: --------------------------------------------------------------------------------------------------------
 
 :Choco
 :: [%~1=Download Name]

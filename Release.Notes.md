@@ -5,9 +5,9 @@
 -   Site: https://ognitorenks.blogspot.com/
 
 -------------------
- ► Versiyon 3.4.2 - Ara Güncelleme - GELİŞTİRİLİYOR...
+ ► Versiyon 3.4.2 - Ara Güncelleme 
 -------------------
-Yayınlanma Tarihi: xx.xx.xxxx
+Yayınlanma Tarihi: 14.07.2022
 
 	• Kaldırılamayan Uygulamalar bölümü Windows 11'de çalışmadığı için uyarı mesajı eklendi.
 		• İşlem yapılamayacağı için Windows 11'de Python kurulması engellendi.
@@ -15,7 +15,8 @@ Yayınlanma Tarihi: xx.xx.xxxx
 	• Windows Edit > Setup Edit bölümünde ilk girişte loglama kaydında oluşan hata parametresi kaldırıldı.
 	• Windows Edit > Setup Edit bölümünde regedit kayıtları düzenlendi.
 	• Windows Edit > Çoklu Seçimlerde kapanma sorunu giderildi.
-
+	• Hizmetleri Yönet > Sistem geri yükleme bölümünde volsnap hizmeti kaldırıldı.
+	• Hizmetleri Yönet > Bitlocker hizmeti bölümünden fvevol hizmeti kaldırıldı.
 
 -------------------
  ► Versiyon 3.4.1 - Ara Güncelleme

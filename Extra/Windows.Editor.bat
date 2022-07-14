@@ -131,8 +131,10 @@ Call :OgnitorenKs.Reader "%AddWim%" :: :: :: echo "%R%[100m                     
 echo %AddWim% %MainWim% | find "install.esd" > NUL 2>&1
 	if %errorlevel%==0 (echo  %R%[1;97m%R%[41m ESD dosya tespit edildi. İşlem yapılamaz %R%[0m&pause > NUL&goto WindowsEditMenu)
 set /p $index=%R%[96m  Çoklu Seçim %R%[90mx,y%R%[0m :
-	if %$index%==x goto WindowsEditMenu
-	if %$index%==X goto WindowsEditMenu
+
+echo %$index% | findstr "x" > NUL 2>&1
+	if %errorlevel%==0 goto WindowsEditMenu
+
 cls
 FOR %%a in (%$index%) do ( 
 	FOR /F "tokens=3" %%b IN ('Dism /Get-WimInfo /WimFile:%AddWim% /Index:%%a ^| FIND "Architecture"') do (
@@ -182,8 +184,9 @@ Call :degisken1
 mode con cols=99 lines=40
 Call :OgnitorenKs.Reader "%MainWim%" "echo" :: :: :: :: ::
 set /p $index=%R%[96m  Çoklu Seçim %R%[90mx,y%R%[0m :
-	if %$index%==x goto WindowsEditMenu
-	if %$index%==X goto WindowsEditMenu
+
+echo %$index% | findstr "x" > NUL 2>&1
+	if %errorlevel%==0 goto WindowsEditMenu
 cls
 FOR %%a in (%$index%) do (
 	FOR /F "tokens=3" %%b IN ('Dism /Get-WimInfo /WimFile:%MainWim% /Index:%%a ^| FIND "Architecture"') do (
@@ -206,8 +209,9 @@ Call :degisken1
 mode con cols=99 lines=40
 Call :OgnitorenKs.Reader "%MainWim%" echo :: :: :: :: ::
 set /p index=%C%[92m İşlem : %C%[0m
-	if %index%==x goto WindowsEditMenu
-	if %index%==X goto WindowsEditMenu
+
+echo %$index% | findstr "x" > NUL 2>&1
+	if %errorlevel%==0 goto WindowsEditMenu
 cls
 FOR /F "tokens=3" %%b IN ('Dism /Get-WimInfo /WimFile:%MainWim% /Index:%index% ^| FIND "Architecture"') do (set iarch=%%b)
 FOR /F "tokens=2 delims=:" %%c IN ('Dism /Get-WimInfo /WimFile:%MainWim% /Index:%index% ^| FIND "Name"') do (set iname=%%c)
@@ -351,13 +355,13 @@ cls
 Call :Panel2 "%R%[96m Lerup Launcher menü konumunu seçiniz%R%[0m"
 set /p barkonum=%R%[97m  ► %R%[92m[%R%[92m Sol:%R%[1;97m 1 %R%[35m/%R%[92m Üst:%R%[1;97m 2 %R%[35m/%R%[92m Sağ:%R%[1;97m 3 %R%[35m/%R%[92m Alt:%R%[1;97m 4 %R%[92m] : %R%[0m 
 Call :RegeditInstall ::
-reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "Location" /t REG_SZ /d %barkonum% /f > NUL 2>&1
-reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "UseLargeIcons" /t REG_SZ /d 1 /f > NUL 2>&1
-reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "UseLargeMenus" /t REG_SZ /d 1 /f > NUL 2>&1
-reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "AlwaysOnTop" /t REG_SZ /d 1 /f > NUL 2>&1
-reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "AutoHide" /t REG_SZ /d 0 /f > NUL 2>&1
-reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "Center" /t REG_SZ /d 1 /f > NUL 2>&1
-reg add "HKLM\OG_DEFAULT\SOFTWARE\Peter Lerup\LaunchBar" /v "Buttons" /t REG_SZ /d "Power.lnk;BypassToolbox.lnk;setup.exe.lnk;Explorer++.lnk;Start Menu.lnk;" /f > NUL 2>&1
+reg add "HKLM\OFF_HKU\SOFTWARE\Peter Lerup\LaunchBar" /v "Location" /t REG_SZ /d %barkonum% /f > NUL 2>&1
+reg add "HKLM\OFF_HKU\SOFTWARE\Peter Lerup\LaunchBar" /v "UseLargeIcons" /t REG_SZ /d 1 /f > NUL 2>&1
+reg add "HKLM\OFF_HKU\SOFTWARE\Peter Lerup\LaunchBar" /v "UseLargeMenus" /t REG_SZ /d 1 /f > NUL 2>&1
+reg add "HKLM\OFF_HKU\SOFTWARE\Peter Lerup\LaunchBar" /v "AlwaysOnTop" /t REG_SZ /d 1 /f > NUL 2>&1
+reg add "HKLM\OFF_HKU\SOFTWARE\Peter Lerup\LaunchBar" /v "AutoHide" /t REG_SZ /d 0 /f > NUL 2>&1
+reg add "HKLM\OFF_HKU\SOFTWARE\Peter Lerup\LaunchBar" /v "Center" /t REG_SZ /d 1 /f > NUL 2>&1
+reg add "HKLM\OFF_HKU\SOFTWARE\Peter Lerup\LaunchBar" /v "Buttons" /t REG_SZ /d "Power.lnk;BypassToolbox.lnk;setup.exe.lnk;Explorer++.lnk;Start Menu.lnk;" /f > NUL 2>&1
 Call :RegeditCollet ::
 cls
 set /p value=►%C%[92m Driver yüklensin mi? [E/H]: %C%[0m
@@ -484,7 +488,6 @@ goto :eof
 :FilesDownloader [%~1=Download Name]
 Call :InternetControl
 FOR /F "tokens=1" %%i in ('FIND "%~1" %Location%\Extra\Links.txt') do set link=%%i
-Call :LogSave "FilesDownloader" "'%~1' indirildi. '%link%'"
 %Location%\Files\wget.exe -c -q --no-check-certificate --show-progress "%link%" -O %Location%\Files\%~1
 goto :eof
 
@@ -607,7 +610,6 @@ goto :eof
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
 :RegeditInstall
-%~1 :Panel "%R%[100m                            Regedit Yükle                         %R%[0m"
 reg load HKLM\OFF_COMPONENTS "%Mount%\Windows\System32\config\COMPONENTS" > NUL
 reg load HKLM\OFF_HKU "%Mount%\Windows\System32\config\default" > NUL
 reg load HKLM\OFF_HKCU "%Mount%\Users\Default\ntuser.dat" > NUL
@@ -620,7 +622,6 @@ goto :eof
 :: --------------------------------------------------------------------------------------------------------
 
 :RegeditCollet
-%~1 :Panel "%R%[100m                            Regedit Topla                         %R%[0m"
 for /f "tokens=* delims=" %%a in ('reg query "HKLM" ^| findstr "{"') do (
 	reg unload "%%a" >nul 2>&1
 )
