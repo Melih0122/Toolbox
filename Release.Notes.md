@@ -297,19 +297,19 @@
 
 	• Ana menüde ve bazı iç bölümlerde farklı bölümlere açılan kısımlar için ifadeler yerleştirildi.
 	• Menü bölümlerine [M] / Uygulama olarak açılan bölüme [APP] / ayrı pencere olarak açılacak bölüme [*] işareti bıraktım
-	• "quanqx"a önerisi için teşekkür ediyorum.
+		• "quanqx"a önerisi için teşekkür ediyorum.
 	• Toolbox'ın bazı bölümlerinde yer alan linkler karmaşıklığı azaltmak için Links.bat dosyasına eklendi.
-	• Links.bat / Setup.zip / ICO.zip dosyalarını drive linkleridir.
+		• Links.bat / Setup.zip / ICO.zip dosyalarını drive linkleridir.
 	• Güncelleme sonrası temizlik bölümnde Defender klasör artıklarını silme komutlarındaki parametre hatası giderildi.
 	• "Hizmetleri yönet" > "GPU optimizasyon" bölümü kaldırıldı.
-	• Bu tarz optimizasyonların GPU uygulamaları üzerinden kullanıcının kendi isteklerine göre düzenlemesini daha sağlıklı bulduğum için kaldırdım.
+		• Bu tarz optimizasyonların GPU uygulamaları üzerinden kullanıcının kendi isteklerine göre düzenlemesini daha sağlıklı bulduğum için kaldırdım.
 	• All in One Runtimes bölümündeki eski sürümleri kaldırmaya yarayan komutlar kaldırıldı. Yeniden yüklemelerde hataya sebep oluyordu.
-	• Net Framework 3.5 / 4.5 / DirectPlay bölümleri önce kontrol edilip, yüklü olmaması durumunda komutlar çalışıp yükleme işlemini gerçekleştirecek.
-	• All in One Runtimes yükleme bölümü arayüzü düzenlendi.
+		• Net Framework 3.5 / 4.5 / DirectPlay bölümleri önce kontrol edilip, yüklü olmaması durumunda komutlar çalışıp yükleme işlemini gerçekleştirecek.
+		• All in One Runtimes yükleme bölümü arayüzü düzenlendi.
 	• Toolbox simgesi değiştirildi.
 	• Windows 10 Edit > Microsoft Store kaldırma bölümüne uyarı mesajı eklendi.
 	• Hizmet yönetimi > "Radyo ve Uçak modu hizmeti" bölümü için Windows 11 kısıtlaması getirildi.
-	• Bu servis kapatılınca ağ simgesi kaybolduğu için kısıtlama getirildi.
+		• Bu servis kapatılınca ağ simgesi kaybolduğu için kısıtlama getirildi.
 	• Sistem hakkında > Tarih ve saat bilgisi eklendi. (Archley'e katkısından ötürü teşekkür ederim.)
 	• Hizmetleri Yönet > Telefon hizmeti bölümünde kapanma durumunda bluetooth hizmetlerinin kapatılması engellendi.
 	• Hizmetleri Yönet > Hyper-V bölümünün işlem öncelikleri değiştirildi. Hyper-V bölümündeki bazı Dism komutları iptal edildi.
@@ -318,12 +318,12 @@
 	• Windows / Store onar bölümüne başlık bölümü eklendi.
 	• Windows Editör > Katılımsız Program/Ayar ekle [Online] - [Offline] bölümünde Nihai performans kısmında kod hatası giderildi.
 	• Microsoft Teams indirme linklerinde yaşanan sorundan dolayı toolbox'tan kaldırıldı.
-	• Katılımsız bölümünden de kaldırıldı.
+		• Katılımsız bölümünden de kaldırıldı.
 	• Windows 10 Edit > Simge değiştir bölümündeki simge değişmeme sorunu tamamen çözüldü.
 	• Windows / Market onar bölümündeki dll kayıt bölümündeki komutların okunması kolaylaştırıldı. For döngüsü içine alındı.
-	• İşlem sonunda reset seçeneği bırakıldı.
+		• İşlem sonunda reset seçeneği bırakıldı.
 	• Ping Ölçer bölümünün teması düzenlendi. Değişken bölümüne bilgilendirici metinler bırakıldı.
-	• Yeni site ve dns adressleri eklendi.
+		• Yeni site ve dns adressleri eklendi.
 
 </details>
 <details><B><summary> Versiyon 2.5.2 ►  03.04.2022</B></summary>
