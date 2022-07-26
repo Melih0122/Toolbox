@@ -11,6 +11,7 @@
 	• Hizmetleri Yönet > Xbox bölümünde Teslimat optimizasyonu hizmetinin kapanmama sorunu giderildi.
 	• Hizmetleri Yönet > Hyper-V hizmeti kaaptılmasına rağmen açık görünmesine neden olan hata giderildi.
 	• Hizmetleri Yönet > Uçak modu hizmetinin Windows 11 ile alakalı kontrol komutları optimize edildi.
+	• Hizmetleri Yönet > Uzak masaüstü/Akış/Ağ hizmetleri ayrı işlemler haline getirildi.
 	• Sistem tespitiyle alakalı komutlar optimize edildi.
 	
 </details>
