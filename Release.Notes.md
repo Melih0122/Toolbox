@@ -4,15 +4,19 @@
 -   Mail: ognitorenks@gmail.com
 -   Site: https://ognitorenks.blogspot.com/
 
-<details><B><summary> Versiyon 3.4.3 ►  GELİŞTİRİLİYOR...</B></summary>
+<details><B><summary> Versiyon 3.5 ►  GELİŞTİRİLİYOR...</B></summary>
 
 	• Güncelleme sonrası temizlik bölümüne yeni parametreler eklendi. EdgeWebView2 engelleme parametresi kaldırıldı.
 	• PowerChoice (Güç Seçenekleri) kaldırıldı.
+	• Hizmetleri Yönet > Çoklu seçim özelliği eklendi.
 	• Hizmetleri Yönet > Xbox bölümünde Teslimat optimizasyonu hizmetinin kapanmama sorunu giderildi.
 	• Hizmetleri Yönet > Hyper-V hizmeti kaaptılmasına rağmen açık görünmesine neden olan hata giderildi.
 	• Hizmetleri Yönet > Uçak modu hizmetinin Windows 11 ile alakalı kontrol komutları optimize edildi.
 	• Hizmetleri Yönet > Uzak masaüstü/Akış/Ağ hizmetleri ayrı işlemler haline getirildi.
 	• Sistem tespitiyle alakalı komutlar optimize edildi.
+	• Optimizasyon bölümündeki yönlendirme hatası giderildi.
+	• Windows 10/11 Edit > Alt + Tab [Eski/Yeni] bölümü eklendi.
+	• Windows 10/11 Edit > Eski Windows Fotoğraf Görüntüleyici [Ekle/Kaldır] bölümü eklendi.
 	
 </details>
 <details><B><summary> Versiyon 3.4.2 ►  14.07.2022</B></summary>
