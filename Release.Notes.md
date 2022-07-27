@@ -13,10 +13,12 @@
 	• Hizmetleri Yönet > Hyper-V hizmeti kaaptılmasına rağmen açık görünmesine neden olan hata giderildi.
 	• Hizmetleri Yönet > Uçak modu hizmetinin Windows 11 ile alakalı kontrol komutları optimize edildi.
 	• Hizmetleri Yönet > Uzak masaüstü/Akış/Ağ hizmetleri ayrı işlemler haline getirildi.
+	• Hizmetleri Yönet > Miracast hizmeti bölümüne Ayarlar/Cihazlar kısmıyla ilgili uyarı mesajı eklendi.
 	• Sistem tespitiyle alakalı komutlar optimize edildi.
 	• Optimizasyon bölümündeki yönlendirme hatası giderildi.
 	• Windows 10/11 Edit > Alt + Tab [Eski/Yeni] bölümü eklendi.
 	• Windows 10/11 Edit > Eski Windows Fotoğraf Görüntüleyici [Ekle/Kaldır] bölümü eklendi.
+	• Windows 11 Edit > 'Taskbar Boyut' ve 'Taskbar Konumu' bölümlerine 22H2 sistemle ilgili uyarı mesajları eklendi.
 	
 </details>
 <details><B><summary> Versiyon 3.4.2 ►  14.07.2022</B></summary>
