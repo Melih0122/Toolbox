@@ -20,6 +20,7 @@
 	• Windows 10/11 Edit > Eski Windows Fotoğraf Görüntüleyici [Ekle/Kaldır] bölümü eklendi.
 	• Windows 11 Edit > 'Taskbar Boyut' ve 'Taskbar Konumu' bölümlerine 22H2 sistemle ilgili uyarı mesajları eklendi.
 	• Windows 10 Edit > Microsoft Store Kaldır bölümünden Runtime Broker hizmeti kaldırıldı. Başlat menüsü ve ayarlarda sorun çıkarıyordu.
+	• Performans Optimizasyonu > OgnitorenKs Güç seçeneği bölümü eklendi.
 	
 </details>
 <details><B><summary> Versiyon 3.4.2 ►  14.07.2022</B></summary>
