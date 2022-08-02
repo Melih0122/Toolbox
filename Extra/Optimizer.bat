@@ -12,7 +12,7 @@ setlocal
 Call :ColorEnd
 Call :ColorEnd2
 
-:Optimizer
+:OptimizerMenu
 break
 title Denizlili Performans Optimizasyonu
 mode con cols=55 lines=16
@@ -31,8 +31,12 @@ Call :SaveCheck Nvidia.GPU.bat
 echo  %R%[90m│%R%[0m   %R%[32m 4%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%optvalue%%R%[90m -%R%[33m NVIDIA ekran kartı optimizasyon      %R%[90m│%R%[0m
 Call :SaveCheck Genel.bat
 echo  %R%[90m│%R%[0m   %R%[32m 5%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m%optvalue%%R%[90m -%R%[33m Genel Optimizasyon                   %R%[90m│%R%[0m
-echo  %R%[90m│%R%[0m   %R%[32m 6%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]  -%R%[33m Aygıt Optimizasyonu                  %R%[90m│%R%[0m
-echo  %R%[90m│%R%[0m   %R%[32m 7%C%[90m       -%R%[33m Uygulama İşlem Önceliği Düzenleme    %R%[90m│%R%[0m
+powercfg -list | findstr /C:"OgnitorenKs" > NUL 2>&1
+	if %errorlevel%==0 (set optvalue=%R%[32m♦%R%[0m)
+	if %errorlevel%==1 (set optvalue=%R%[100m %R%[0m)
+echo  %R%[90m│%R%[0m   %R%[32m 6%C%[90m[%R%[36m A %C%[90m]%R%[0m%optvalue%%R%[90m -%R%[33m OgnitorenKs Güç Seçeneği             %R%[90m│%R%[0m
+echo  %R%[90m│%R%[0m   %R%[32m 7%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]  -%R%[33m Aygıt Optimizasyonu                  %R%[90m│%R%[0m
+echo  %R%[90m│%R%[0m   %R%[32m 8%C%[90m       -%R%[33m Uygulama İşlem Önceliği Düzenleme    %R%[90m│%R%[0m
 echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
 set /p value= %C%[92m İşlem :%C%[0m
 	if %value%==1a (cls
@@ -121,26 +125,27 @@ set /p value= %C%[92m İşlem :%C%[0m
 	if %value%==5k (Call :FindSave Genel.bat
 					DEL /F /Q /A "%Yedek%\Genel.bat" > NUL 2>&1
 					Call :ProcessCompletedReset)
-	if %value%==6a (cls
+	if %value%==6a (Call :OgnitorenKsPow)
+	if %value%==6A (Call :OgnitorenKsPow)
+	if %value%==7a (cls
 					Call :Warning2
 					echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
 					Call :DonanımOptimizer enable
 					Call :ProcessCompletedReset)	
-	if %value%==6A (cls
+	if %value%==7A (cls
 					Call :Warning2
 					echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
 					Call :DonanımOptimizer enable
 					Call :ProcessCompletedReset)
-	if %value%==6K (echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
+	if %value%==7K (echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
 					Call :DonanımOptimizer disable
 					Call :ProcessCompletedReset)
-	if %value%==6k (echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
+	if %value%==7k (echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
 					Call :DonanımOptimizer disable
 					Call :ProcessCompletedReset)
-	if %value%==7 goto RuntimeLevel
-) else
-	goto Optimizer
-goto Optimizer
+	if %value%==8 goto RuntimeLevel
+) 
+goto OptimizerMenu
 	
 :FindSave
 dir /b "%Yedek%\%~1" > NUL 2>&1
@@ -163,6 +168,15 @@ dir /b "%Yedek%\%~1" > NUL 2>&1
 						exit)
 goto :eof
 
+:OgnitorenKsPow
+powercfg -list | findstr /C:"OgnitorenKs" > NUL 2>&1
+	if %errorlevel%==0 (echo  ►%R%[31m Güç seçeneği ekli...%R%[0m
+						timeout /t 2 /nobreak > NUL)
+	if %errorlevel%==1 (echo  ►%R%[96m OgnitorenKs Güç Seçeneği ekleniyor...%R%[0m
+						powercfg -import %Location%\Files\OgnitorenKs.pow > NUL 2>&1)
+FOR /F "tokens=4" %%b in ('powercfg -list ^| findstr /C:"OgnitorenKs"') do (powercfg -setactive %%b > NUL)
+goto :eof
+
 :RuntimeLevel
 title OgnitorenKs
 mode con cols=55 lines=17
@@ -180,8 +194,9 @@ set /p value2=%R%[32m  İşlem :%R%[0m
 	if %value2%==2 (set value2=6)
 	if %value2%==3 (set value2=5)
 	if %value2%==4 (set value2=1)
-	if %value2%==x goto Optimizer
-	if %value2%==X goto Optimizer
+	if %value2%==x goto OptimizerMenu
+	if %value2%==X goto OptimizerMenu
+
 echo.
 echo %R%[90m  Görev Yöneticisi - Ayrıntılar 
 echo %R%[90m  bölümünden uygulama isimlerini öğrenebilirsiniz.
@@ -770,7 +785,7 @@ echo   •%R%[33m Mikrofon veya ses ayarlarına girerken,%R%[0m
 echo   •%R%[33m yığın bellek taşma hatası alabilirsiniz.%R%[0m
 echo  ► Sorun yaşarsanız bu işlemi kapatınız.
 echo.
-set /p Warning=%R%[37m Devam etmek için%R%[36m 'E'%R%[37m, çıkış için%R%[36m 'H'%R%[37m tuşlayın%R%[0m
+set /p Warning=%R%[37m Devam etmek için%R%[36m 'E'%R%[37m, çıkış için%R%[36m 'H'%R%[37m tuşlayın: %R%[0m
 	if %Warning%==h exit
 	if %Warning%==H exit
 goto :eof
@@ -781,7 +796,7 @@ echo  ► Aşağıdaki sorun yaşanabilir;
 echo   •%R%[33m VPN hizmetlerinde sorun yaşanabilir%R%[0m
 echo  ► Sorun yaşarsanız bu işlemi kapatınız.
 echo.
-set /p Warning=%R%[37m Devam etmek için%R%[36m 'E'%R%[37m, çıkış için%R%[36m 'H'%R%[37m tuşlayın%R%[0m
+set /p Warning=%R%[37m Devam etmek için%R%[36m 'E'%R%[37m, çıkış için%R%[36m 'H'%R%[37m tuşlayın: %R%[0m
 	if %Warning%==h exit
 	if %Warning%==H exit
 goto :eof
@@ -826,10 +841,10 @@ echo               %R%[33m tuşlayın%R%[0m
 set /p value=%R%[92m                   %R%[0m
 	if %value%==R (shutdown -r -f -t 0&exit)
 	if %value%==r (shutdown -r -f -t 0&exit)
-	if %value%==x goto Optimizer
-	if %value%==X goto Optimizer
+	if %value%==x goto OptimizerMenu
+	if %value%==X goto OptimizerMenu
 ) else 
-	goto Optimizer
+	goto OptimizerMenu
 goto :eof
 
 :: --------------------------------------------------------------------------------------------------------

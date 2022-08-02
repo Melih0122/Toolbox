@@ -82,8 +82,8 @@ net stop PeerDistSvc
 :: sc config Ifsvc start= disabled
 :: net stop Ifsvc
 :: Cüzdan Hizmeti
-:: sc config WalletService start= disabled
-:: net stop WalletService
+sc config WalletService start= disabled
+net stop WalletService
 :: Dağıtılmış bağlantı izleme istemcisi
 sc config TrkWks start= disabled
 net stop TrkWks
@@ -101,8 +101,8 @@ sc delete diagsvc
 :: sc config fhsvc start= disabled
 :: net stop fhsvc
 :: Ebeveyn Kontrolleri
-:: sc config WpcMonSvc start= disabled
-:: net stop WpcMonSvc
+sc config WpcMonSvc start= disabled
+net stop WpcMonSvc
 :: Fax
 :: sc config fax start= disabled
 :: net stop fax
@@ -126,8 +126,8 @@ net stop RetailDemo
 sc config PcaSvc start= disabled
 net stop PcaSvc
 :: Tanılama İlkesi Hizmeti
-:: sc config DPS start= disabled
-:: net stop DPS
+sc config DPS start= disabled
+net stop DPS
 :: Karma Gerçeklik
 sc config SharedRealitySvc start= disabled
 net stop SharedRealitySvc
@@ -161,8 +161,8 @@ sc config MapsBroker start= disabled
 net stop PimIndexMainteanceSvc
 sc config PimIndexMainteanceSvc start= disabled
 :: Natural Kimlik Doğrulaması
-:: net stop NaturalAuthentication
-:: sc config NaturalAuthentication start= disabled
+net stop NaturalAuthentication
+sc config NaturalAuthentication start= disabled
 :: Perakende gösteri hizmeti
 net stop RetailDemo
 sc config RetailDemo start= disabled

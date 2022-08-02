@@ -3,8 +3,7 @@
 -   Discord: OgnitorenKs#2737 
 -   Mail: ognitorenks@gmail.com
 -   Site: https://ognitorenks.blogspot.com/
-
-<details><B><summary> Versiyon 3.5 ►  GELİŞTİRİLİYOR...</B></summary>
+<details><B><summary> Versiyon 3.5   ►  03.08.2022...</B></summary>
 
 	• Güncelleme sonrası temizlik bölümüne yeni parametreler eklendi. EdgeWebView2 engelleme parametresi kaldırıldı.
 	• PowerChoice (Güç Seçenekleri) kaldırıldı.
@@ -18,9 +17,13 @@
 	• Optimizasyon bölümündeki yönlendirme hatası giderildi.
 	• Windows 10/11 Edit > Alt + Tab [Eski/Yeni] bölümü eklendi.
 	• Windows 10/11 Edit > Eski Windows Fotoğraf Görüntüleyici [Ekle/Kaldır] bölümü eklendi.
+	• Windows 10/11 Edit > Sağ-Tık Yönet bölümü eklendi
 	• Windows 11 Edit > 'Taskbar Boyut' ve 'Taskbar Konumu' bölümlerine 22H2 sistemle ilgili uyarı mesajları eklendi.
 	• Windows 10 Edit > Microsoft Store Kaldır bölümünden Runtime Broker hizmeti kaldırıldı. Başlat menüsü ve ayarlarda sorun çıkarıyordu.
 	• Performans Optimizasyonu > OgnitorenKs Güç seçeneği bölümü eklendi.
+	• Uygulama Yükleyici > All In One Runtimes bölümüne tekli yüklemeler için menü bölümü oluşturuldu.
+		• 1M tuşlayarak bu menüye ulabilirsiniz. 1M ile yapacağınız işlemde diğer çoklu seçmeler iptal olur.
+		• All In One Runtimes bölümünü toplu kurmak istiyorsanız yalnızca 1 tuşlamanız gerekmektedir.
 	
 </details>
 <details><B><summary> Versiyon 3.4.2 ►  14.07.2022</B></summary>
