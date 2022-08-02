@@ -188,7 +188,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 		
 	• 7 - Gpedit.msc (Yerel Grup ilkesi) [Ekle]: Windows Home ve Home Single Language sürümlerine "Gpedit.msc" ekler.
 	
-	• 8 - Simgeleri Değiştir [Eski/Yeni]: 21H2 beta sürümünde gelen ancak iptal edilen simgeleri sisteme yükler. Bu bölüme ilk girişinizde simge dosyalarını indirecektir!
+	• 8 - Simgeleri Değiştir [Eski/Yeni]: 21H2 beta sürümünde gelen ancak iptal edilen simgeleri sisteme yükler. Bu bölüme ilk girişinizde simge dosyalarını indirecektir! Bazı durumlarda simgeleri değişse dahi değişmemiş görünebilir. Bu tarz durumlarda yeniden başlatma işleminden sonra simge değiştirme bölümünü yeniden uygulayınız.
 	     •[Eski]: 1 - Windows 10 eski (Varsayılan) simgeleri yükler.
 	     •[Yeni]: 2 - Windows 10 yeni simgeleri yükler.
 	• 9 - Güncellemeleri 2050 yılına kadar ertele: Windows Update hizmetini 2050 yılına kadar etkisiz hale getirir.
