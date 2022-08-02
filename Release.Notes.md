@@ -3,7 +3,7 @@
 -   Discord: OgnitorenKs#2737 
 -   Mail: ognitorenks@gmail.com
 -   Site: https://ognitorenks.blogspot.com/
-<details><B><summary> Versiyon 3.5   ►  03.08.2022...</B></summary>
+<details><B><summary> Versiyon 3.5   ►  03.08.2022</B></summary>
 
 	• Güncelleme sonrası temizlik bölümüne yeni parametreler eklendi. EdgeWebView2 engelleme parametresi kaldırıldı.
 	• PowerChoice (Güç Seçenekleri) kaldırıldı.
