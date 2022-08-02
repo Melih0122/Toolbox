@@ -259,7 +259,7 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 	• 8 [A/K]- Miracast Hizmeti : Ağ veya WIFI üzerinden cihazlara görüntü aktarma özelliğidir. Kapatılması durumunda Ayarlar/Cihazlar bölümü açılmayacaktır. Bu tarz bir sorunda hizmeti yeniden açmanız gerekmektedir.
 	• 9 [A/K/o]- Akış Hizmeti : Aynı ağdaki cihazları görme ve yayın aktarmak için kullanılır. Bu bölümde özel bir parametre eklenmiştir. '9o'ile yalnızca ana hizmeti açıp yan hizmetleri devre dışı bırakabilirsiniz. Sorun olursa hizmetlerin tamamını açmak için '9a' tuşlamanız gerekmektedir. 
 	• 10 [A/K]- Uzakmasaüstü hizmeti : Uzakmasaüstü hizmetlerini açıp kapatır.
-	• 11 [A/K]- Windows Search: Indexleme hizmetini açar.
+	• 11 [A/K]- Windows Search: Indexleme hizmetini açar. Bazı bilgisayarlarda Miracast ve Akış hizmetlerini çalışması için aktif olması gerekmektedir.
 	• 12 [A/K]- Windows Şimdi Bağlan (WPS) : WPS özelliğini kullanmanızı sağlayan hizmeti açar.
 	• 13 [A/K]- Tarayıcı ve Kamera hizmetleri : Tarayıcı ve Kamera cihazlarını için gerekli olan hizmetleri açıp kapatır.
 	• 14 [A/K]- Insider hizmeti : Windows ön sürümlerini erkenden deneyimleyip hataları bulup bildirmek gibi bir koca yüreğiniz var ise bu servisi aktif ederek. Insider sürüme kayıt olunuz.
