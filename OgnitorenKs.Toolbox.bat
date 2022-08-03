@@ -72,7 +72,7 @@ for /f %%a in ('"cd"') do set Location=%%a
 set Logs=%Location%\Edit\Logs
 set download=%Location%\Download
 Call :NSudo
-set version=3.5
+set version=3.5.1
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 :T.Settings
@@ -504,7 +504,7 @@ FOR %%a in (%$multi%) do (
 															   Call :Powershell "Expand-Archive -Force '%download%\EagleGet.zip' '%download%'"
 															   "%download%\EagleGet.exe" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-)
 	if %%a==41 (Call :wget1 ByClick.exe /q)
-	if %%a==42 if %Choc	olatey%==0 (Call :Choco qbittorrent) else (Call :wget1 Qbittorrent.exe /S)
+	if %%a==42 if %Chocolatey%==0 (Call :Choco qbittorrent) else (Call :wget1 Qbittorrent.exe /S)
 	if %%a==43 if %Chocolatey%==0 (Call :Choco libreoffice-fresh) else (Call :wget1 LibreOffice.msi "/qn /norestart ALLUSERS=1 CREATEDESKTOPLINK=0 REGISTER_ALL_MSO_TYPES=0 REGISTER_NO_MSO_TYPES=1 ISCHECKFORPRODUCTUPDATES=0 QUICKSTART=1 ADDLOCAL=ALL")
 	if %%a==44 if %Chocolatey%==0 (Call :Choco adobereader) else (Call :wget1 AdobeReader.exe "/sPB /rs /msi")
 	if %%a==45 if %Chocolatey%==0 (Call :Choco pdfxchangeeditor) else (Call :wget1 PdfXchange.msi "/quiet /norestart")
