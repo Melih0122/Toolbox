@@ -3,6 +3,13 @@
 -   Discord: OgnitorenKs#2737 
 -   Mail: ognitorenks@gmail.com
 -   Site: https://ognitorenks.blogspot.com/
+
+
+<details><B><summary> Versiyon 3.5.1 ►  03.08.2022 - QuickFix</B></summary>
+
+	• Uygulama indir bölümündeki kapanma sorunu giderildi.
+
+</details>
 <details><B><summary> Versiyon 3.5   ►  03.08.2022</B></summary>
 
 	• Güncelleme sonrası temizlik bölümüne yeni parametreler eklendi. EdgeWebView2 engelleme parametresi kaldırıldı.
