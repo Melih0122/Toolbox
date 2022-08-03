@@ -4,6 +4,10 @@
 -   Mail: ognitorenks@gmail.com
 -   Site: https://ognitorenks.blogspot.com/
 
+<details><B><summary> Versiyon 3.5.2 ►  GELİŞTİRİLİYOR...</B></summary>
+
+	• Hizmetleri Yönet > Windows Search bölümüne yeni paramatre eklendi.
+		• Ayarlar > Gelişmiş arama dizin oluşturma hatası giderildi.
 
 <details><B><summary> Versiyon 3.5.1 ►  03.08.2022 - QuickFix</B></summary>
 
