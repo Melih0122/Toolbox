@@ -8,6 +8,7 @@
 
 	• Hizmetleri Yönet > Windows Search bölümüne yeni paramatre eklendi.
 		• Ayarlar > Gelişmiş arama dizin oluşturma hatası giderildi.
+	• Windows Editör bölümünün açıldığı gibi kapanmasına neden olan hata giderildi.
 
 </details>
 <details><B><summary> Versiyon 3.5.1 ►  03.08.2022 - QuickFix</B></summary>
