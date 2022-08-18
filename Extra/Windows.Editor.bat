@@ -25,7 +25,7 @@
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 echo off
 cls
-chcp 65001 > NUL 2>&1
+chcp 65001 > NUL
 mode con cols=61 lines=20
 title OgnitorenKs Windows Editör
 
@@ -104,8 +104,8 @@ set /p WindowsEditMenu= %R%[92m İşlem : %R%[0m
 	if %WindowsEditMenu%==17 (Call :gpeditmsc)
 	if %WindowsEditMenu%==18 (Call :HyperV)
 	if %WindowsEditMenu%==19 (Call :degisken3)
-) else
-	goto WindowsEditMenu
+)
+goto WindowsEditMenu
 	
 :WimReader
 Call :Panel "%R%[100m                        WIM / ESD Okuyucu                         %R%[0m"
@@ -476,10 +476,10 @@ goto :eof
 :NSudo
 dir /b "%Location%\Files\NSudo.exe" > NUL 2>&1
 	if %errorlevel%==1 (Call :LogSave "NSudo" "NSudo.exe dosyası bulunamadı. Yeniden indirildi."
-						Call :FilesDownloader "https://docs.google.com/uc?export=download&id=1u26XInN1baT1zGhL5N4Kz1SUD4pYJys9" "%download%\NSudo.zip"
-						Call :Powershell "Expand-Archive -Force '%download%\NSudo.zip' '%Location%\Files'"
-						DEL /F /Q /A "%Location%\Files\NSudo.zip" > NUL 2>&1)
-Call :LogSave "NSudo-TrustedInstaller" "%*"
+						Call :FilesDownloader "NSudo.zip"
+						Call :Powershell "Expand-Archive -Force '%Location%\Files\NSudo.zip' '%Location%\Files'"
+						DEL /F /Q /A "%Location%\Files\NSudo.zip" > NUL 2>&1
+)
 set NSudo="%Location%\Files\NSudo.exe" -U:T -P:E -Wait -ShowWindowMode:hide cmd /c
 goto :eof
 

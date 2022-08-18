@@ -4,12 +4,13 @@
 -   Mail: ognitorenks@gmail.com
 -   Site: https://ognitorenks.blogspot.com/
 
-<details><B><summary> Versiyon 3.5.2 ►  GELİŞTİRİLİYOR...</B></summary>
+<details><B><summary> Versiyon 3.5.2 ►  18.08.2022</B></summary>
 
 	• Hizmetleri Yönet > Windows Search bölümüne yeni paramatre eklendi.
 		• Ayarlar > Gelişmiş arama dizin oluşturma hatası giderildi.
 	• Windows Editör bölümünün açıldığı gibi kapanmasına neden olan hata giderildi.
 	• Ana menüye tarih bilgisi eklendi.
+	• Discord sessiz kurulum sonrası uygulamanın açılmama hatası giderildi.
 
 </details>
 <details><B><summary> Versiyon 3.5.1 ►  03.08.2022 - QuickFix</B></summary>
