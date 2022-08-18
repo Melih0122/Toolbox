@@ -4,6 +4,16 @@
 -   Mail: ognitorenks@gmail.com
 -   Site: https://ognitorenks.blogspot.com/
 
+<details><B><summary> Versiyon 3.5.3 ►  GELİŞTİRİLİYOR...</B></summary>
+
+	• Toolbox, internet kontrol durumunu kapatacak ayarlama yapıldı.
+		• Bazı durumlarda internet olmasına rağmen bağlantı olmadığına dair uyarı verdiği için eklendi.
+	• Chocolatey ana indirme sistemi olarak tanımlandı.
+		• Benim hazırladığım indirme sistemini kullanmak isteyenler toolbox ayarlarından değiştirebilir.
+	
+	
+	
+</details>
 <details><B><summary> Versiyon 3.5.2 ►  18.08.2022</B></summary>
 
 	• Hizmetleri Yönet > Windows Search bölümüne yeni paramatre eklendi.
