@@ -71,12 +71,13 @@ for /f %%a in ('"cd"') do set Location=%%a
 set Logs=%Location%\Edit\Logs
 set download=%Location%\Download
 Call :NSudo
-set version=3.5.2
+set version=3.5.3
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 :T.Settings
-FOR /F "tokens=2" %%a in ('findstr /C:"LogsSettings" %Location%\Settings.ini') do set LogsSettings=%%a
-FOR /F "tokens=2" %%a in ('findstr /C:"Chocolatey" %Location%\Settings.ini') do set Chocolatey=%%a
+FOR /F "tokens=2" %%a in ('findstr /C:"LogsSettings" %Location%\Settings.ini') do (set LogsSettings=%%a)
+FOR /F "tokens=2" %%a in ('findstr /C:"Chocolatey" %Location%\Settings.ini') do (set Chocolatey=%%a)
+FOR /F "tokens=2" %%a in ('findstr /C:"InternetCheck" %Location%\Settings.ini') do (set InternetCheck=%%a)
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
@@ -102,6 +103,11 @@ exit
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
 :NeedFiles
+:: Chocolatey indirme sisteminin yüklü olup olmadığını kontrol eder. Yüklü değilse kurulum işlemini gerçekleştirir.
+dir /b "%ProgramData%\chocolatey" > NUL 2>&1
+	if %errorlevel%==1 (Call :LogSave "Choco" "Chocolatey indirildi."
+						echo  ► %R%[33m Chocolatey yükleniyor...%R%[0m
+						%NSudo% Powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && set "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin")
 :: Toolbox için gerekli klasörler oluşturuluyor.
 FOR %%a in (Download Files\Yedek Edit\Appx Edit\Desktop Edit\Driver Edit\Logs Edit\Mount Edit\Update) do (
 	mkdir "%Location%\%%a" > NUL 2>&1
@@ -114,18 +120,22 @@ dir /b "%Location%\Files\wget.exe" > NUL 2>&1
 						Call :Powershell "& { iwr https://eternallybored.org/misc/wget/1.21.3/64/wget.exe -OutFile %Location%\Files\wget.exe }"
 )
 :NetCheck
+cls
+:: İnternet bağlantı durumunun kontrol edilmesi kapatılmışsa bu bölümü atlar.
+if %InternetCheck% EQU 1 (goto AutoToolboxUpdate)
+:: İnternet bağlantısını kontrol eder
 ping -n 1 google.com > NUL
 	if %errorlevel%==1 goto NoInternet
 	
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
 :AutoToolboxUpdate
-FOR /F "tokens=2" %%a in ('findstr /C:"AutoUpdate" %Location%\Settings.ini') do set autoupdate=%%a
-	if %autoupdate%==0 goto AutoUpdate
-	if %autoupdate%==1 goto NoInternet
-) else
-	goto AutoUpdate
-	
+:: Toolbox otomatik güncelleme işleminin durumunu kontrol eder ve yönlendirir.
+FOR /F "tokens=2" %%a in ('findstr /C:"AutoUpdate" %Location%\Settings.ini') do (
+	if %%a EQU 0 goto AutoUpdate
+	if %%a EQU 1 goto NoInternet
+)
+
 :AutoUpdate
 mode con cols=80 lines=30
 echo.
@@ -165,7 +175,7 @@ for /f "tokens=2" %%a in ('findstr /i "TimeUpdate" %Location%\Settings.ini') do 
 FOR /F "tokens=1" %%i in ('Findstr /C:"Links.txt" %Location%\Extra\Links.txt') do set link=%%i
 :: Links.txt dosyası indirilir.
 %Location%\Files\wget --no-check-certificate "%link%" -O %Location%\Extra\Links.txt > NUL 2>&1
-:: İndirilen Links.txt dosyasından version durumları karşılaştırılır. Farklı ise Toolbox.Update.bat çalıştırılır.
+:: İndirilen Links.txt dosyasından version durumları karşılaştırılır. Farklı ise Toolbox.Update.bat indirilir ve çalıştırılır.
 FOR /F "delims=':' tokens=2" %%b in ('Findstr /C:"VersionCheck" %Location%\Extra\Links.txt') do set versioncheck=%%b
 if %version% equ %versioncheck% (
   goto NoInternet
@@ -218,7 +228,9 @@ if %OSCheck%==11 (set xxxxxeditmenu=Windows 11 Edit
 			      set editmenugo=Win11SettingsMenu)
 	
 :: ==============================================================================================================================
+:: Log kayıt işlemi kapatılmışsa bu bölümü atlar.
 if %LogsSettings%==1 goto menu
+:: Log kaydı oluşturulur.
 Find "OGNITORENKS TOOLBOX %version%" %Location%\Logs > NUL 2>&1
 	if %errorlevel%==1 ((
 					    echo.
@@ -304,6 +316,7 @@ goto menu
 :: ==============================================================================================================================
 
 :aiomenu
+:: All in One Runtimes içerisinde yer alan yazılımları tek tek yüklemenizi sağlayacak menü.
 cls
 mode con cols=55 lines=22
 title All In One Runtimes \ OgnitorenKs
@@ -401,41 +414,42 @@ goto aiomenu
 mode con cols=100 lines=39
 title               O  G  N  I  T  O  R  E  N  K  S     ^|    OGNITORENKS TOOLBOX    ^|       T   O   O   L   B   O   X
 set xognitorenksx=%R%[90m►
-set yognitorenksyyyyyyy=%R%[32m    1%R%[37mM%R%[90m-%R%[36m
+set yognitorenksyyyyyyy=%R%[32m    1%R%[37mM%R%[37m-%R%[36m
+set W=%R%[90m ø 
 echo   %R%[90m┌──────────────────────────────────────────────────────────────────────────────────────────────┐%R%[0m
 echo   %R%[90m│%R%[1;97m%R%[100m                             Online Katılımsız Uygulama Yükleyici                             %R%[0m%R%[90m│%R%[0m
 echo   %R%[90m├────────────────────────────┬──────────────────────────────┬──────────────────────────────────┤%R%[0m
-echo   %R%[90m│%yognitorenksyyyyyyy% All in One Runtimes %R%[90m│%R%[32m   26-%R%[33m Gimp                   %R%[90m│%xognitorenksx% Uzak Bağlantı                   %R%[90m│%R%[0m
-echo   %R%[90m│%xognitorenksx% Mesaj                     %R%[90m│%R%[32m   27-%R%[33m OBS Studio             %R%[90m│%R%[32m   53-%R%[36m  Teamviewer                %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    2-%R%[33m Discord              %R%[90m│%R%[32m   28-%R%[33m ShareX                 %R%[90m│%R%[32m   54-%R%[36m  AnyDesk                   %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    3-%R%[33m Whatsapp             %R%[90m│%R%[32m   29-%R%[33m Audacity               %R%[90m│%xognitorenksx% Temizlik                        %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    4-%R%[33m Signal               %R%[90m│%R%[32m   30-%R%[33m JPEGView               %R%[90m│%R%[32m   55-%R%[33m  Hibit Uninstaller         %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    5-%R%[33m Telegram             %R%[90m│%R%[32m   31-%R%[33m HandBrake              %R%[90m│%R%[32m   56-%R%[33m  Revo Uninstaller          %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    6-%R%[33m Zoom                 %R%[90m│%R%[32m   32-%R%[33m FileConverter          %R%[90m│%R%[32m   57-%R%[33m  Wise Care 365             %R%[90m│%R%[0m
-echo   %R%[90m│%xognitorenksx% Oyun Kütüphane            %R%[90m│%xognitorenksx% Video-Ses Oynatıcı          %R%[90m│%R%[32m   58-%R%[33m  Unlocker                  %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    7-%R%[36m Epic Games           %R%[90m│%R%[32m   33-%R%[36m K-Lite Codec           %R%[90m│%xognitorenksx% Oyunlar                         %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    8-%R%[36m Steam                %R%[90m│%R%[32m   34-%R%[36m VLC Media Player       %R%[90m│%R%[32m   59-%R%[37m  OSU!                      %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    9-%R%[36m GOG Galaxy           %R%[90m│%R%[32m   35-%R%[36m PotPlayer              %R%[90m│%R%[32m   60-%R%[37m  World Of Tanks            %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   10-%R%[36m Uplay                %R%[90m│%R%[32m   36-%R%[36m Aimp                   %R%[90m│%R%[32m   61-%R%[37m  Genshin Impact            %R%[90m│%R%[0m 
-echo   %R%[90m│%R%[32m   11-%R%[36m Origin               %R%[90m│%R%[32m   37-%R%[36m Spotify                %R%[90m│%R%[32m   62-%R%[37m  League of Legends%R%[90m TR      │%R%[0m
-echo   %R%[90m│%R%[32m   12-%R%[33m Wemod                %R%[90m│%xognitorenksx% İndirme Araçları            %R%[90m│%R%[32m   63-%R%[37m  League of Legends%R%[90m EUW     │%R%[0m
-echo   %R%[90m│%xognitorenksx% Ram Temizleyici           %R%[90m│%R%[32m   38-%R%[33m Internet Download Man. %R%[90m│%R%[32m   64-%R%[37m  Valorant                  %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   13-%R%[37m ISLC                 %R%[90m│%R%[32m   39-%R%[33m Free Download Manager  %R%[90m│%xognitorenksx% Görev Çubuğu / Başlat Menüsü    %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   14-%R%[37m Mem Reduct           %R%[90m│%R%[32m   40-%R%[33m EagleGet               %R%[90m│%R%[32m   65-%R%[36m  OpenShell                 %R%[90m│%R%[0m
-echo   %R%[90m│%xognitorenksx% Tarayıcı                  %R%[90m│%R%[32m   41-%R%[33m ByClick Downloader     %R%[90m│%R%[32m   66-%R%[36m  TaskbarX                  %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   15-%R%[33m Google Chrome        %R%[90m│%R%[32m   42-%R%[33m Qbittorrent            %R%[90m│%xognitorenksx% Diğer                           %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   16-%R%[33m Mozilla Firefox      %R%[90m│%xognitorenksx% Belgeler                    %R%[90m│%R%[32m   67-%R%[33m  MSI Afterburner           %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   17-%R%[33m Brave                %R%[90m│%R%[32m   43-%R%[36m Libre Office           %R%[90m│%R%[32m   68-%R%[33m  Everything                %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   18-%R%[33m Microsoft Edge       %R%[90m│%R%[32m   44-%R%[36m Adobe Reader           %R%[90m│%R%[32m   69-%R%[33m  Hamachi                   %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   19-%R%[33m OperaGX              %R%[90m│%R%[32m   45-%R%[36m PDF X-Change           %R%[90m│%R%[32m   70-%R%[33m  Glasswire                 %R%[90m│%R%[0m
-echo   %R%[90m│%xognitorenksx% Sıkıştırma                %R%[90m│%R%[32m   46-%R%[36m Calibre                %R%[90m│%R%[32m   71-%R%[33m  WARP                      %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   20-%R%[36m 7-Zip                %R%[90m│%xognitorenksx% Geliştirme / Developer      %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   21-%R%[36m Winrar               %R%[90m│%R%[32m   47-%R%[36m Notepad++              %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
+echo   %R%[90m│%yognitorenksyyyyyyy% All in One Runtimes %R%[90m│%R%[32m   26-%R%[33m Gimp                   %R%[90m│%R%[32m   53-%R%[33m Unity Hub                  %R%[90m│%R%[0m
+echo   %R%[90m│%xognitorenksx% Mesaj                     %R%[90m│%R%[32m   27-%R%[33m OBS Studio             %R%[90m│%R%[32m   54-%R%[33m Blender                    %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    2-%R%[33m Discord              %R%[90m│%R%[32m   28-%R%[33m ShareX                 %R%[90m│%xognitorenksx% Uzak Bağlantı                   %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    3-%R%[33m Whatsapp             %R%[90m│%R%[32m   29-%R%[33m Audacity               %R%[90m│%R%[32m   55-%R%[36m Teamviewer                 %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    4-%R%[33m Signal               %R%[90m│%R%[32m   30-%R%[33m JPEGView               %R%[90m│%R%[32m   56-%R%[36m AnyDesk                    %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    5-%R%[33m Telegram             %R%[90m│%R%[32m   31-%R%[33m HandBrake              %R%[90m│%xognitorenksx% Temizlik                        %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    6-%R%[33m Zoom                 %R%[90m│%R%[32m   32-%R%[33m FileConverter          %R%[90m│%R%[32m   57-%R%[33m Hibit Uninstaller%W%       %R%[90m│%R%[0m
+echo   %R%[90m│%xognitorenksx% Oyun Kütüphane            %R%[90m│%xognitorenksx% Video-Ses Oynatıcı          %R%[90m│%R%[32m   58-%R%[33m Revo Uninstaller           %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    7-%R%[36m Epic Games           %R%[90m│%R%[32m   33-%R%[36m K-Lite Codec           %R%[90m│%R%[32m   59-%R%[33m Wise Care 365%W%           %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    8-%R%[36m Steam                %R%[90m│%R%[32m   34-%R%[36m VLC Media Player       %R%[90m│%R%[32m   60-%R%[33m Unlocker                   %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    9-%R%[36m GOG Galaxy           %R%[90m│%R%[32m   35-%R%[36m PotPlayer              %R%[90m│%xognitorenksx% Oyunlar                         %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   10-%R%[36m Uplay                %R%[90m│%R%[32m   36-%R%[36m Aimp                   %R%[90m│%R%[32m   61-%R%[37m OSU!%W%                    %R%[90m│%R%[0m 
+echo   %R%[90m│%R%[32m   11-%R%[36m Origin               %R%[90m│%R%[32m   37-%R%[36m Spotify%W%             %R%[90m│%R%[32m   62-%R%[37m World Of Tanks%W%          %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   12-%R%[33m Wemod%W%             %R%[90m│%xognitorenksx% İndirme Araçları            %R%[90m│%R%[32m   63-%R%[37m Genshin Impact%W%          %R%[90m│%R%[0m
+echo   %R%[90m│%xognitorenksx% Ram Temizleyici           %R%[90m│%R%[32m   38-%R%[33m Internet Download Man. %R%[90m│%R%[32m   64-%R%[37m League of Legends%R%[90m TR ø     │%R%[0m
+echo   %R%[90m│%R%[32m   13-%R%[37m ISLC%W%              %R%[90m│%R%[32m   39-%R%[33m Free Download Manager  %R%[90m│%R%[32m   65-%R%[37m League of Legends%R%[90m EUW ø    │%R%[0m
+echo   %R%[90m│%R%[32m   14-%R%[37m Mem Reduct           %R%[90m│%R%[32m   40-%R%[33m EagleGet               %R%[90m│%R%[32m   66-%R%[37m Valorant                   %R%[90m│%R%[0m
+echo   %R%[90m│%xognitorenksx% Tarayıcı                  %R%[90m│%R%[32m   41-%R%[33m ByClick Downloader%W%  %R%[90m│%xognitorenksx% Görev Çubuğu / Başlat Menüsü    %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   15-%R%[33m Google Chrome        %R%[90m│%R%[32m   42-%R%[33m Qbittorrent            %R%[90m│%R%[32m   67-%R%[36m OpenShell                  %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   16-%R%[33m Mozilla Firefox      %R%[90m│%xognitorenksx% Belgeler                    %R%[90m│%R%[32m   68-%R%[36m TaskbarX                   %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   17-%R%[33m Brave                %R%[90m│%R%[32m   43-%R%[36m Libre Office           %R%[90m│%xognitorenksx% Diğer                           %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   18-%R%[33m Microsoft Edge       %R%[90m│%R%[32m   44-%R%[36m Adobe Reader           %R%[90m│%R%[32m   69-%R%[33m MSI Afterburner            %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   19-%R%[33m OperaGX              %R%[90m│%R%[32m   45-%R%[36m PDF X-Change           %R%[90m│%R%[32m   70-%R%[33m Everything                 %R%[90m│%R%[0m
+echo   %R%[90m│%xognitorenksx% Sıkıştırma                %R%[90m│%R%[32m   46-%R%[36m Calibre                %R%[90m│%R%[32m   71-%R%[33m Hamachi                    %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   20-%R%[36m 7-Zip                %R%[90m│%xognitorenksx% Geliştirme / Developer      %R%[90m│%R%[32m   72-%R%[33m Glasswire                  %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   21-%R%[36m Winrar               %R%[90m│%R%[32m   47-%R%[36m Notepad++              %R%[90m│%R%[32m   73-%R%[33m WARP                       %R%[90m│%R%[0m
 echo   %R%[90m│%xognitorenksx% Multimedya                %R%[90m│%R%[32m   48-%R%[33m Python                 %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
 echo   %R%[90m│%R%[32m   22-%R%[33m Kdenlive             %R%[90m│%R%[32m   49-%R%[33m Visual Studio Code     %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
 echo   %R%[90m│%R%[32m   23-%R%[33m Openshout            %R%[90m│%R%[32m   50-%R%[33m Github                 %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m 
 echo   %R%[90m│%R%[32m   24-%R%[33m Shoutcut             %R%[90m│%R%[32m   51-%R%[33m Git                    %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   25-%R%[33m Krita                %R%[90m│%R%[32m   52-%R%[33m Blender                %R%[90m│%R%[32m    X-%R%[37m  Menü                      %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   25-%R%[33m Krita                %R%[90m│%R%[32m   52-%R%[33m Node.JS                %R%[90m│%R%[32m    X-%R%[37m Menü                       %R%[90m│%R%[0m
 echo   %R%[90m└────────────────────────────┴──────────────────────────────┴──────────────────────────────────┘
 set /p $multi=%R%[32m  Çoklu Seçim %R%[90mx,y: %R%[0m 
 
@@ -506,31 +520,33 @@ FOR %%a in (%$multi%) do (
 	if %%a==49 if %Chocolatey%==0 (Call :Choco visualstudiocode) else (Call :wget1 VisualStudioCode.exe "/VERYSILENT /NORESTART /MERGETASKS=!runcode")
 	if %%a==50 if %Chocolatey%==0 (Call :Choco github-desktop) else (Call :wget1 Github.exe -s)
 	if %%a==51 if %Chocolatey%==0 (Call :Choco git) else (Call :wget1 Git.exe "/VERYSILENT /NORESTART")
-	if %%a==52 if %Chocolatey%==0 (Call :Choco blender) else (Call :wget1 Blender.msi "ALLUSERS=1 /qn")
-	if %%a==53 if %Chocolatey%==0 (Call :Choco teamviewer) else (Call :wget1 TeamViewer.exe /S)
-	if %%a==54 if %Chocolatey%==0 (Call :Choco anydesk) else (Call :wget1 AnyDesk.exe "--install %programfiles(x86)%\AnyDesk --start-with-win --create-shortcuts --create-desktop-icon --silent")
-	if %%a==55 (Call :wget1 HibitUninstaller.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-")
-	if %%a==56 if %Chocolatey%==0 (Call :Choco revo-uninstaller) else (Call :wget1 RevoUninstaller.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-")
-	if %%a==57 (Call :wget2 WiseCare365.zip
+	if %%a==52 if %Chocolatey%==0 (Call :Choco nodejs-lts) else (Call :wget1 NodeJS.msi /qn)
+	if %%a==53 if %Chocolatey%==0 (Call :Choco unity-hub) else (Call :wget1 UnityHub.exe "/allusers /S")
+	if %%a==54 if %Chocolatey%==0 (Call :Choco blender) else (Call :wget1 Blender.msi "ALLUSERS=1 /qn")
+	if %%a==55 if %Chocolatey%==0 (Call :Choco teamviewer) else (Call :wget1 TeamViewer.exe /S)
+	if %%a==56 if %Chocolatey%==0 (Call :Choco anydesk) else (Call :wget1 AnyDesk.exe "--install %programfiles(x86)%\AnyDesk --start-with-win --create-shortcuts --create-desktop-icon --silent")
+	if %%a==57 (Call :wget1 HibitUninstaller.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-")
+	if %%a==58 if %Chocolatey%==0 (Call :Choco revo-uninstaller) else (Call :wget1 RevoUninstaller.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-")
+	if %%a==59 (Call :wget2 WiseCare365.zip
 			    Call :Powershell "Expand-Archive -Force '%download%\WiseCare365.zip' '%download%'"
 				"%download%\WiseCare365.exe" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-)
-	if %%a==58 if %Chocolatey%==0 (Call :Choco io-unlocker) else (Call :wget1 Unlocker.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-")
-	if %%a==59 (Call :wget3 "C:\users\%username%\Desktop\osu.exe")
-	if %%a==60 (Call :wget3 "C:\users\%username%\Desktop\WorldOfTanks.exe")
-	if %%a==61 (Call :wget3 "C:\users\%username%\Desktop\GenshinImpact.exe")
-	if %%a==62 (Call :wget3 "C:\users\%username%\Desktop\LeagueOfLegendsTR.exe")
-	if %%a==63 (Call :wget3 "C:\users\%username%\Desktop\LeagueOfLegendsEUW.exe")
-	if %%a==64 (Call :wget3 "C:\users\%username%\Desktop\Valorant.exe")
-	if %%a==65 if %Chocolatey%==0 (Call :Choco open-shell) else (Call :wget1 OpenShell.exe "/quiet /norestart ADDLOCAL=StartMenu")
-	if %%a==66 if %Chocolatey%==0 (Call :Choco taskbarx) else (Call :wget2 TaskbarX.zip
+	if %%a==60 if %Chocolatey%==0 (Call :Choco io-unlocker) else (Call :wget1 Unlocker.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-")
+	if %%a==61 (Call :wget3 "C:\users\%username%\Desktop\osu.exe")
+	if %%a==62 (Call :wget3 "C:\users\%username%\Desktop\WorldOfTanks.exe")
+	if %%a==63 (Call :wget3 "C:\users\%username%\Desktop\GenshinImpact.exe")
+	if %%a==64 (Call :wget3 "C:\users\%username%\Desktop\LeagueOfLegendsTR.exe")
+	if %%a==65 (Call :wget3 "C:\users\%username%\Desktop\LeagueOfLegendsEUW.exe")
+	if %%a==66 (Call :wget3 "C:\users\%username%\Desktop\Valorant.exe")
+	if %%a==67 if %Chocolatey%==0 (Call :Choco open-shell) else (Call :wget1 OpenShell.exe "/quiet /norestart ADDLOCAL=StartMenu")
+	if %%a==68 if %Chocolatey%==0 (Call :Choco taskbarx) else (Call :wget2 TaskbarX.zip
 															   Call :Powershell "Expand-Archive -Force '%download%\TaskbarX.zip' 'C:\Users\%username%\Desktop\TaskbarX'"
 															   Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\TaskbarX\TaskbarX Configurator.exe'"
 															   Call :Powershell "Start-Process 'C:\Users\%username%\Desktop\TaskbarX\TaskbarX.exe'")
-	if %%a==67 if %Chocolatey%==0 (Call :Choco msiafterburner) else (Call :wget1 MSIAfterburner.exe /S)
-	if %%a==68 if %Chocolatey%==0 (Call :Choco everything) else (Call :wget1 Everything.exe /S)
-	if %%a==69 if %Chocolatey%==0 (Call :Choco hamachi) else (Call :wget1 Hamachi.msi /q)
-	if %%a==70 if %Chocolatey%==0 (Call :Choco glasswire) else (Call :wget1 GlassWire.exe /S)
-	if %%a==71 if %Chocolatey%==0 (Call :Choco warp) else (Call :wget1 WARP.msi "/qn /norestart")
+	if %%a==69 if %Chocolatey%==0 (Call :Choco msiafterburner) else (Call :wget1 MSIAfterburner.exe /S)
+	if %%a==70 if %Chocolatey%==0 (Call :Choco everything) else (Call :wget1 Everything.exe /S)
+	if %%a==71 if %Chocolatey%==0 (Call :Choco hamachi) else (Call :wget1 Hamachi.msi /q)
+	if %%a==72 if %Chocolatey%==0 (Call :Choco glasswire) else (Call :wget1 GlassWire.exe /S)
+	if %%a==73 if %Chocolatey%==0 (Call :Choco warp) else (Call :wget1 WARP.msi "/qn /norestart")
 )
 goto menu2
 
@@ -540,22 +556,23 @@ goto menu2
 mode con cols=69 lines=35
 title               O  G  N  I  T  O  R  E  N  K  S     ^|    OGNITORENKS TOOLBOX    ^|       T   O   O   L   B   O   X
 set xognitorenksx=%R%[90m►
+set W=%R%[90m ø 
 echo   %R%[90m┌───────────────────────────────────────────────────────────────┐%R%[0m
 echo   %R%[90m│%R%[1;97m%R%[100m                  Araçlar Katılımsız Yükleyici                 %R%[0m%R%[90m│%R%[0m
 echo   %R%[90m├────────────────────────────┬──────────────────────────────────┤%R%[0m
 echo   %R%[90m│%xognitorenksx% Windows Düzenleme         %R%[90m│%xognitorenksx% GPU / Driver Araçları           %R%[90m│%R%[0m
 echo   %R%[90m│%R%[32m    1-%R%[33m NTLite               %R%[90m│%R%[32m   22-%R%[36m Display Driver Uninstaller %R%[90m│%R%[0m
 echo   %R%[90m│%R%[32m    2-%R%[33m Dism++               %R%[90m│%R%[32m   23-%R%[36m Nvidia Profile Inspector   %R%[90m│%R%[0m
-echo   %R%[90m│%xognitorenksx% USB Hazırlayıcı           %R%[90m│%R%[32m   24-%R%[36m RadeonMod                  %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    3-%R%[36m Rufus                %R%[90m│%R%[32m   25-%R%[36m Radeon Software Slimmer    %R%[90m│%R%[0m
-echo   %R%[90m│%xognitorenksx% Donanım Bilgisi           %R%[90m│%R%[32m   26-%R%[36m NVCleanstall               %R%[90m│%R%[0m
+echo   %R%[90m│%xognitorenksx% USB Hazırlayıcı           %R%[90m│%R%[32m   24-%R%[36m RadeonMod%W%               %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    3-%R%[36m Rufus                %R%[90m│%R%[32m   25-%R%[36m Radeon Software Slimmer%W% %R%[90m│%R%[0m
+echo   %R%[90m│%xognitorenksx% Donanım Bilgisi           %R%[90m│%R%[32m   26-%R%[36m NVCleanstall%W%            %R%[90m│%R%[0m
 echo   %R%[90m│%R%[32m    4-%R%[33m Aida64               %R%[90m│%R%[32m   27-%R%[36m Snappy Driver Installer    %R%[90m│%R%[0m
 echo   %R%[90m│%R%[32m    5-%R%[33m CPU-Z                %R%[90m│%xognitorenksx% Diğer                           %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    6-%R%[33m GPU-Z                %R%[90m│%R%[32m   28-%R%[33m SSD Booster                %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    7-%R%[33m HW Info              %R%[90m│%R%[32m   29-%R%[33m Folder2ISO                 %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    6-%R%[33m GPU-Z                %R%[90m│%R%[32m   28-%R%[33m SSD Booster%W%             %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    7-%R%[33m HW Info              %R%[90m│%R%[32m   29-%R%[33m Folder2ISO%W%              %R%[90m│%R%[0m
 echo   %R%[90m│%R%[32m    8-%R%[33m CrystalDiskInfo      %R%[90m│%R%[32m   30-%R%[33m Process Monitor            %R%[90m│%R%[0m
 echo   %R%[90m│%R%[32m    9-%R%[33m HD Sentinel          %R%[90m│%R%[32m   31-%R%[33m AOMEI Partition Assistans  %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   10-%R%[33m Core Temp            %R%[90m│%R%[32m   32-%R%[33m Spotify Adblocker          %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   10-%R%[33m Core Temp            %R%[90m│%R%[32m   32-%R%[33m Spotify Adblocker%W%       %R%[90m│%R%[0m
 echo   %R%[90m│%xognitorenksx% Test Araçları             %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
 echo   %R%[90m│%R%[32m   11-%R%[36m CrystalDiskMark      %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
 echo   %R%[90m│%R%[32m   12-%R%[36m Prime95              %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
@@ -3039,29 +3056,27 @@ goto menu
 
 :ToolboxSettings
 cls
-mode con cols=55 lines=19
+mode con cols=55 lines=21
 echo  %R%[90m┌───────────────────────────────────────────────────┐%R%[0m
 echo  %R%[90m│%R%[1;97m%R%[100m                 Toolbox Ayarları                  %R%[0m%R%[90m│%R%[0m
 echo  %R%[90m├───────────────────────────────────────────────────┤%R%[0m
-set servalue=%R%[100m %R%[0m&FOR /F "tokens=2" %%a in ('findstr /C:"AutoUpdate" %Location%\Settings.ini') do set value=%%a
-	if %value%==0 (set servalue=%R%[32m♦%R%[0m)
+set servalue=%R%[100m %R%[0m&FOR /F "tokens=2" %%a in ('findstr /C:"AutoUpdate" %Location%\Settings.ini') do (if %%a EQU 0 (set servalue=%R%[32m♦%R%[0m))
 echo  %R%[90m│   %R%[32m 1%R%[90m[%R%[36mA%R%[90m/%R%[36mK%R%[90m]%R%[0m%servalue%%R%[90m -%R%[33m Otomatik Güncelleme                  %R%[90m│%R%[0m
-set servalue=%R%[100m %R%[0m&FOR /F "tokens=2" %%a in ('findstr /C:"LogsSettings" %Location%\Settings.ini') do set value=%%a
-	if %value%==0 (set servalue=%R%[32m♦%R%[0m)
+set servalue=%R%[100m %R%[0m&FOR /F "tokens=2" %%a in ('findstr /C:"LogsSettings" %Location%\Settings.ini') do (if %%a EQU 0 (set servalue=%R%[32m♦%R%[0m))
 echo  %R%[90m│   %R%[32m 2%R%[90m[%R%[36mA%R%[90m/%R%[36mK%R%[90m]%R%[0m%servalue%%R%[90m -%R%[33m Log Kayıt                            %R%[90m│%R%[0m
-set servalue=%R%[100m %R%[0m&FOR /F "tokens=2" %%a in ('findstr /C:"PluginSetting" %Location%\Settings.ini') do set value=%%a
-	if %value%==0 (set servalue=%R%[32m♦%R%[0m)
+set servalue=%R%[100m %R%[0m&FOR /F "tokens=2" %%a in ('findstr /C:"PluginSetting" %Location%\Settings.ini') do (if %%a EQU 0 (set servalue=%R%[32m♦%R%[0m))
 echo  %R%[90m│   %R%[32m 3%R%[90m[%R%[36mA%R%[90m/%R%[36mK%R%[90m]%R%[0m%servalue%%R%[90m -%R%[33m Tarayıcı eklenti ayarı               %R%[90m│%R%[0m
-set servalue=%R%[100m %R%[0m&FOR /F "tokens=2" %%a in ('findstr /C:"Chocolatey" %Location%\Settings.ini') do set value=%%a
-	if %value%==0 (set servalue=%R%[32m♦%R%[0m)
+set servalue=%R%[100m %R%[0m&FOR /F "tokens=2" %%a in ('findstr /C:"Chocolatey" %Location%\Settings.ini') do (if %%a EQU 0 (set servalue=%R%[32m♦%R%[0m))
 echo  %R%[90m│   %R%[32m 4%R%[90m[%R%[36mA%R%[90m/%R%[36mK%R%[90m]%R%[0m%servalue%%R%[90m -%R%[33m Chocolatey yükleme sistemi           %R%[90m│%R%[0m
-echo  %R%[90m│         %R%[32m 5%R%[90m -%R%[33m Masaüstünde kısayol oluştur          %R%[90m│%R%[0m
-echo  %R%[90m│         %R%[32m 6%R%[90m -%R%[33m Güncellemeleri Kontrol Et            %R%[90m│%R%[0m
+set servalue=%R%[100m %R%[0m&FOR /F "tokens=2" %%a in ('findstr /C:"InternetCheck" %Location%\Settings.ini') do (if %%a EQU 0 (set servalue=%R%[32m♦%R%[0m))
+echo  %R%[90m│   %R%[32m 5%R%[90m[%R%[36mA%R%[90m/%R%[36mK%R%[90m]%R%[0m%servalue%%R%[90m -%R%[33m İnternet bağlantı kontrolü           %R%[90m│%R%[0m
+echo  %R%[90m│         %R%[32m 6%R%[90m -%R%[33m Masaüstünde kısayol oluştur          %R%[90m│%R%[0m
+echo  %R%[90m│         %R%[32m 7%R%[90m -%R%[33m Güncellemeleri Kontrol Et            %R%[90m│%R%[0m
 echo  %R%[90m├───────────────────────────────────────────────────┤%R%[0m
-echo  %R%[90m│         %R%[32m 7%R%[90m -%R%[33m Toolbox Rehber                       %R%[90m│%R%[0m
-echo  %R%[90m│         %R%[32m 8%R%[90m -%R%[33m ognitorenks.blogspot.com             %R%[90m│%R%[0m
-echo  %R%[90m│         %R%[32m 9%R%[90m -%R%[33m Github Proje Sayfası                 %R%[90m│%R%[0m
-echo  %R%[90m│        %R%[32m 10%R%[90m -%R%[33m Güncelleme Notları                   %R%[90m│%R%[0m
+echo  %R%[90m│         %R%[32m 8%R%[90m -%R%[33m Toolbox Rehber                       %R%[90m│%R%[0m
+echo  %R%[90m│         %R%[32m 9%R%[90m -%R%[33m ognitorenks.blogspot.com             %R%[90m│%R%[0m
+echo  %R%[90m│        %R%[32m 10%R%[90m -%R%[33m Github Proje Sayfası                 %R%[90m│%R%[0m
+echo  %R%[90m│        %R%[32m 11%R%[90m -%R%[33m Güncelleme Notları                   %R%[90m│%R%[0m
 echo  %R%[90m│         %R%[32m X%R%[90m -%R%[36m Menü                                 %R%[90m│%R%[0m
 echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
 set /p value=%R%[92m  İşlem : %R%[0m
@@ -3085,13 +3100,17 @@ set /p value=%R%[92m  İşlem : %R%[0m
 					RD /S /Q "%ProgramData%\chocolatey" > NUL 2>&1)
 	if %value%==4k (Call :ToolboxSettingsChange Chocolatey 1
 					RD /S /Q "%ProgramData%\chocolatey" > NUL 2>&1)
-	if %value%==5 (Call :Powershell "Expand-Archive -Force '%Location%\Files\lnk.zip' 'C:\users\%username%\Desktop'")
-	if %value%==6 (Call :UpdateReset
+	if %value%==5a (Call :ToolboxSettingsChange InternetCheck 0)
+	if %value%==5A (Call :ToolboxSettingsChange InternetCheck 0)
+	if %value%==5K (Call :ToolboxSettingsChange InternetCheck 1)
+	if %value%==5k (Call :ToolboxSettingsChange InternetCheck 1)
+	if %value%==6 (Call :Powershell "Expand-Archive -Force '%Location%\Files\lnk.zip' 'C:\users\%username%\Desktop'")
+	if %value%==7 (Call :UpdateReset
 				   goto T.Settings)
-	if %value%==7 (start https://ognitorenks.blogspot.com/2022/04/ognitorenks-toolbox.html)
-	if %value%==8 (start https://ognitorenks.blogspot.com/)
-	if %value%==9 (start https://github.com/OgnitorenKs/OgnitorenKs.Toolbox)
-	if %value%==10 (start https://github.com/OgnitorenKs/OgnitorenKs.Toolbox/blob/main/Release.Notes.md)
+	if %value%==8 (start https://ognitorenks.blogspot.com/2022/04/ognitorenks-toolbox.html)
+	if %value%==9 (start https://ognitorenks.blogspot.com/)
+	if %value%==10 (start https://github.com/OgnitorenKs/OgnitorenKs.Toolbox)
+	if %value%==11 (start https://github.com/OgnitorenKs/OgnitorenKs.Toolbox/blob/main/Release.Notes.md)
 	if %value%==x goto T.Settings
 	if %value%==X goto T.Settings
 )
@@ -3136,9 +3155,9 @@ goto :eof
 :wget1
 :: [%~1=Download Name] [%~2=Silent Install]
 Call :InternetControl
-FOR /F "tokens=1" %%i in ('FIND "%~1" %Location%\Extra\Links.txt') do set link=%%i
 Call :LogSave "wget1" "%~1 indirildi."
 echo    %R%[90m[Wget]%R%[0m ►%R%[33m %~n1%R%[0m indiriliyor %R%[90m/%R%[0m yükleniyor...
+FOR /F "tokens=1" %%i in ('FIND "%~1" %Location%\Extra\Links.txt') do set link=%%i
 %Location%\Files\wget.exe -c -q --no-check-certificate --show-progress "%link%" -t 10 -O %download%\%~1
 "%download%\%~1" %~2
 goto :eof
@@ -3148,9 +3167,9 @@ goto :eof
 :wget2
 :: [%~1=Download Name]
 Call :InternetControl
-FOR /F "tokens=1" %%i in ('FIND "%~1" %Location%\Extra\Links.txt') do set link=%%i
 Call :LogSave "wget2" "%~1 indirildi."
 echo    %R%[90m[Wget]%R%[0m ►%R%[33m %~n1%R%[0m indiriliyor %R%[90m/%R%[0m yükleniyor...
+FOR /F "tokens=1" %%i in ('FIND "%~1" %Location%\Extra\Links.txt') do set link=%%i
 %Location%\Files\wget.exe -c -q --no-check-certificate --show-progress "%link%" -t 10 -O %download%\%~1
 goto :eof
 
@@ -3159,9 +3178,9 @@ goto :eof
 :wget3
 :: [%~1=Download Location] [%~n1: Download Name] [%~x1: İndirme uzantısı]
 Call :InternetControl
-FOR /F "tokens=1" %%i in ('FIND "%~n1%~x1" %Location%\Extra\Links.txt') do set link=%%i
 Call :LogSave "wget3" "%~n1 indirildi."
 echo    %R%[90m[Wget]%R%[0m ►%R%[33m %~n1%R%[0m indiriliyor...
+FOR /F "tokens=1" %%i in ('FIND "%~n1%~x1" %Location%\Extra\Links.txt') do set link=%%i
 %Location%\Files\wget -c -q --no-check-certificate --show-progress "%link%" -t 10 -O %~1
 goto :eof
 
@@ -3170,9 +3189,9 @@ goto :eof
 :wget4
 :: [%~1=Download Name]
 Call :InternetControl
-FOR /F "tokens=1" %%i in ('FIND "%~1" %Location%\Extra\Links.txt') do set link=%%i
 Call :LogSave "wget4" "%~1 indirildi."
 echo    %R%[90m[Wget]%R%[0m ►%R%[33m %~n1%R%[0m indiriliyor %R%[90m/%R%[0m yükleniyor...
+FOR /F "tokens=1" %%i in ('FIND "%~1" %Location%\Extra\Links.txt') do set link=%%i
 %Location%\Files\wget.exe -c -q --no-check-certificate --show-progress "%link%" -t 10 -O %download%\%~1
 "%download%\%~1"
 goto :eof
@@ -3188,6 +3207,7 @@ goto :eof
 :: --------------------------------------------------------------------------------------------------------
  
 :InternetControl
+if %InternetCheck% EQU 1 (goto :eof)
 ping -n 1 google.com > NUL
 	if %errorlevel%==1 (echo   %R%[1;97m%R%[41m                                İnternet bağlantısı yok                                    %R%[0m
 						Call :LogSave "InternetControl" "HATA! İnternet bağlantısı yok."
@@ -3245,8 +3265,8 @@ goto :eof
 
 :OSfind
 cls
-if %OSCheck%==10 GOTO Win10SettingsMenu
-if %OSCheck%==11 GOTO Win11SettingsMenu
+if %OSCheck% EQU 10 (goto Win10SettingsMenu)
+if %OSCheck% EQU 11 (goto Win11SettingsMenu)
 exit
 	
 :: --------------------------------------------------------------------------------------------------------

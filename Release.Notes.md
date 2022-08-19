@@ -4,7 +4,7 @@
 -   Mail: ognitorenks@gmail.com
 -   Site: https://ognitorenks.blogspot.com/
 
-<details><B><summary> Versiyon 3.5.3 ►  GELİŞTİRİLİYOR...</B></summary>
+<details><B><summary> Versiyon 3.5.3 ►  20.08.2022</B></summary>
 
 	• Toolbox, internet kontrol durumunu kapatacak ayarlama yapıldı.
 		• Bazı durumlarda internet olmasına rağmen bağlantı olmadığına dair uyarı verdiği için eklendi.
@@ -16,6 +16,7 @@
 		• Node.JS
 		• Unity.Hub
 	• Windows Düzenleme > 'OgnitorenKs Toolbox ekle' bölümü eklendi. İmaja toolbox'ı zahmetsiz bir şekilde entegre edebilirsiniz.
+	• Windows Düzenleme > Program çakışmalarını önlemek için bazı işlemlerde uyarı mesajı eklendi.
 	
 	
 </details>

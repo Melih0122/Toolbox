@@ -43,8 +43,10 @@ Call :NSudo
 :: Varsayılan Mount klasör yolu
 set Mount=%Location%\Edit\Mount
 
-set LogsSettings=0&FOR /F "tokens=2" %%a in ('findstr /C:"LogsSettings" %Location%\Settings.ini') do set value=%%a
-	if %value%==1 (set LogsSettings=1)
+set LogsSettings=0&FOR /F "tokens=2" %%a in ('findstr /C:"LogsSettings" %Location%\Settings.ini') do (
+	if %%a EQU 1 (set LogsSettings=1)
+)
+FOR /F "tokens=2" %%a in ('findstr /C:"InternetCheck" %Location%\Settings.ini') do (set InternetCheck=%%a)
 
 :: İhtiyaç duyulan dosyaları indirir.
 echo                   %R%[92m Dosyalar kontrol ediliyor...%R%[0m
@@ -55,7 +57,7 @@ FOR %%a in (Setup.zip Newico.zip Oldico.zip) do (
 
 :WindowsEditMenu
 cls
-mode con cols=53 lines=31
+mode con cols=53 lines=33
 echo  %R%[90m┌─────────────────────────────────────────────────┐%R%[0m
 echo  %R%[90m│%R%[1;97m%R%[100m            OgnitorenKs Windows Editör           %R%[0m%R%[90m│%R%[0m
 echo  %R%[90m├─────────────────────────────────────────────────┤%R%[0m
@@ -81,8 +83,9 @@ echo  %R%[90m│  %R%[32m 15.%C%[33m Setup Düzenle%C%[90m [İmaj]              
 echo  %R%[90m│  %R%[36m 16.%C%[33m Yeni Simgeleri yükle%C%[90m [İmaj]               │%R%[0m
 echo  %R%[90m│  %R%[36m 17.%C%[33m Gpedit.msc ekle%C%[90m [İmaj]                    │%R%[0m
 echo  %R%[90m│  %R%[36m 18.%C%[33m Hyper-V ekle%C%[90m [İmaj]                       │%R%[0m
+echo  %R%[90m│  %R%[36m 19.%C%[33m OgnitorenKs Toolbox ekle%C%[90m [İmaj]           │%R%[0m
 echo  %R%[90m├─────────────────────────────────────────────────┤%R%[0m
-echo  %R%[90m│  %R%[36m 19.%R%[36m İmaj yol tanımla                          %R%[90m│%R%[0m
+echo  %R%[90m│  %R%[36m 20.%R%[36m İmaj yol tanımla                          %R%[90m│%R%[0m
 echo  %R%[90m└─────────────────────────────────────────────────┘%R%[0m
 set /p WindowsEditMenu= %R%[92m İşlem : %R%[0m
 	if %WindowsEditMenu%==1 (Call :WimReader)
@@ -103,7 +106,8 @@ set /p WindowsEditMenu= %R%[92m İşlem : %R%[0m
 	if %WindowsEditMenu%==16 (Call :Newico)
 	if %WindowsEditMenu%==17 (Call :gpeditmsc)
 	if %WindowsEditMenu%==18 (Call :HyperV)
-	if %WindowsEditMenu%==19 (Call :degisken3)
+	if %WindowsEditMenu%==19 (Call :Toolbox)
+	if %WindowsEditMenu%==20 (Call :degisken3)
 )
 goto WindowsEditMenu
 	
@@ -385,6 +389,11 @@ goto :eof
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 :gpeditmsc
 Call :Panel "%R%[100m                       Gpedit.Msc Yükleyici                       %R%[0m"
+echo  %R%[37m NTLite tarzı program açıksa sorun yaşanmaması için kapatınız%R%[0m
+echo.
+set /p Warning=%R%[33m  Devam etmek için %R%[96m'X'%R%[33m Menü için %R%[96m'R'%R%[33m tuşlayınız: %R%[0m
+	if %Warning%==R (goto :eof)
+	if %Warning%==r (goto :eof)
 Call :LogSave "Gpedit.msc" "Gpedit.msc entegre edildi. '%Mount%'"
 FOR /f %%a IN ('"dir /b /s %Mount%\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~*.mum"') do (Dism /Image:%Mount% /Add-Package:"%%a")
 FOR /f %%a IN ('"dir /b /s %Mount%\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~*.mum") do (Dism /Image:%Mount% /Add-Package:"%%a")
@@ -395,9 +404,31 @@ goto :eof
 
 :HyperV
 Call :Panel "%R%[100m                         Hyper-V Yükleyici                        %R%[0m"
+echo  %R%[37m NTLite tarzı program açıksa sorun yaşanmaması için kapatınız%R%[0m
+echo.
+set /p Warning=%R%[33m  Devam etmek için %R%[96m'X'%R%[33m Menü için %R%[96m'R'%R%[33m tuşlayınız: %R%[0m
+	if %Warning%==R (goto :eof)
+	if %Warning%==r (goto :eof)
 Call :LogSave "HyperV" "Hyper-V entegre edildi. '%Mount%'"
 For /f %%a IN ('"dir /b /s %Mount%\Windows\servicing\Packages\Microsoft-Hyper-V*.mum"') DO (Dism /Image:%Mount% /Add-Package:"%%a")
 Dism /Image:%Mount% /Enable-Feature /FeatureName:Microsoft-Hyper-V-All
+goto :eof
+
+:: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+
+:Toolbox
+Call :Panel "%R%[100m                         Toolbox Yükleyici                        %R%[0m"
+echo  %R%[37m NTLite tarzı program açıksa sorun yaşanmaması için kapatınız%R%[0m
+echo.
+set /p Warning=%R%[33m  Devam etmek için %R%[96m'X'%R%[33m Menü için %R%[96m'R'%R%[33m tuşlayınız: %R%[0m
+	if %Warning%==R (goto :eof)
+	if %Warning%==r (goto :eof)
+Call :LogSave "OgnitorenKs Toolbox" "OgnitorenKs.Toolbox entegre edildi. '%Mount%'"
+%NSudo% Powershell -command "Expand-Archive -Force '%Location%\Files\Toolbox.zip' '%Mount%'"
+Call :RegeditInstall
+Call :sz "HKLM\OFF_SOFTWARE\Microsoft\Windows\CurrentVersion\Run" "Katilimsiz" "C:\OgnitorenKs.Toolbox\Katilimsiz.bat"
+Call :RegeditCollect
+Call :ProcessCompleted
 goto :eof
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
@@ -494,6 +525,7 @@ goto :eof
 :: --------------------------------------------------------------------------------------------------------
 
 :InternetControl
+if %InternetCheck% EQU 1 (goto :eof)
 ping -n 1 google.com > NUL
 	if %errorlevel%==1 (echo   %R%[1;97m%R%[41m Internet yok %R%[0m
 						Call :LogSave "InternetControl" "HATA! İnternet bağlantısı yok."
