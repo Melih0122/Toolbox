@@ -9,11 +9,13 @@
 	• Toolbox, internet kontrol durumunu kapatacak ayarlama yapıldı.
 		• Bazı durumlarda internet olmasına rağmen bağlantı olmadığına dair uyarı verdiği için eklendi.
 	• Chocolatey ana indirme sistemi olarak tanımlandı. İlk açılışta yüklü değilse kurulum işlemini gerçekleştirecektir.
+		• Chocolatey'i doğrudan varsayılan indirici olarak seçmemin sebebi olası indirme hatalarını en aza indirmektir.
 		• Benim hazırladığım indirme sistemini kullanmak isteyenler toolbox ayarlarından değiştirebilir.
+		• Chocolatey indirme sistemine dahil olmayan uygulamaları belirtmek için menü de yanlarına 'ø' sembolü eklendi.
 	• 'Uygulama İndir' bölümüne eklenler;
 		• Node.JS
 		• Unity.Hub
-	
+	• Windows Düzenleme > 'OgnitorenKs Toolbox ekle' bölümü eklendi. İmaja toolbox'ı zahmetsiz bir şekilde entegre edebilirsiniz.
 	
 	
 </details>
