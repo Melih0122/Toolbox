@@ -8,8 +8,11 @@
 
 	• Toolbox, internet kontrol durumunu kapatacak ayarlama yapıldı.
 		• Bazı durumlarda internet olmasına rağmen bağlantı olmadığına dair uyarı verdiği için eklendi.
-	• Chocolatey ana indirme sistemi olarak tanımlandı.
+	• Chocolatey ana indirme sistemi olarak tanımlandı. İlk açılışta yüklü değilse kurulum işlemini gerçekleştirecektir.
 		• Benim hazırladığım indirme sistemini kullanmak isteyenler toolbox ayarlarından değiştirebilir.
+	• 'Uygulama İndir' bölümüne eklenler;
+		• Node.JS
+		• Unity.Hub
 	
 	
 	
