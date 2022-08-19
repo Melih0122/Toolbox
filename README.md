@@ -20,8 +20,8 @@
 ----
 Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar ücretsiz alternatifler arasında seçilmiştir. WinRaR hariç o da ücretli ama ücretsiz bir yazılımdır.
 
-![cmd_lqULVypgpq](https://user-images.githubusercontent.com/93199689/182481372-912a9aa7-841e-4bf8-8c82-d1cc6f8322bd.png)
-![cmd_lqULVypgpq](https://user-images.githubusercontent.com/93199689/182481372-912a9aa7-841e-4bf8-8c82-d1cc6f8322bd.png)
+![cmd_STdBteJb4S](https://user-images.githubusercontent.com/93199689/185706294-a2f95d24-72cf-479c-be9f-4d065999edce.png)
+![cmd_otDomifS1u](https://user-images.githubusercontent.com/93199689/185706427-a2b5cb1d-33f6-4fdd-9027-aca214dc8583.png)
 
 	• 1M - All in One Runtimes: C++ 2005-2022 / Java / XNA Framework / OpenAL / DirectX. Bu programlar oyunlar ve bazı uygulamalarda sorun yaşamamanız için mutlaka kurulmalıdır.
 		• 1M tuşlarsanız All in One Runtimes içindeki programları tek tek veya toplu yükleyebileceğiniz menüye aktarılırsınız.
@@ -85,31 +85,33 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	• 49 - Visual Studio Code: Visual Studio'nun editör halidir. Genelde web geliştirme için kullanılır.
 	• 50 - Github Desktop: Grafik arayüzlü bir git istemcisidir.
 	• 51 - Git: Dağıtım takip sistemidir.
-	• 52 - Blender: Ücretsiz, açık kaynaklı bir çalışmadır. 3D tasarımlarda kullanılacak mükemmel uygulama.
+	• 52 - Node.JS: Java script kullanılarak server tabanlı uygulama geliştirebilirsiniz.
+	• 53 - Unity Hub: Oyun motorudur. Oyun oluşturmanızı sağlar.
+	• 54 - Blender: Ücretsiz, açık kaynaklı bir çalışmadır. 3D tasarımlarda kullanılacak mükemmel uygulama.
 #### ► Uzak Bağlantı
-	• 53 - TeamViewer: Bilgisayarlar arası uzaktan bağlantı sağlar.
-	• 54 - AnyDesk: Bilgisayalar arası uzak bağlantı sağlar.
+	• 55 - TeamViewer: Bilgisayarlar arası uzaktan bağlantı sağlar.
+	• 56 - AnyDesk: Bilgisayalar arası uzak bağlantı sağlar.
 #### ► Temizlik
-	• 55 - Hibit Uninstaller: Kalıntı bırakmadan program kaldırmayı sağlar. Ayrıca çöp dosya temizler. Market uygulamalarını da kaldırabilir.
-	• 56 - Revo Uninstaller: Program kaldırma uygulaması.
-	• 57 - Wise Care 365: PC temizlik uygulamasıdır. Tek sürüme verilen ücretsiz pro sürümüdür.
-	• 58 - Unlocker: Silinmeyen dosyaları silmeyi sağlar.
+	• 57 - Hibit Uninstaller: Kalıntı bırakmadan program kaldırmayı sağlar. Ayrıca çöp dosya temizler. Market uygulamalarını da kaldırabilir.
+	• 58 - Revo Uninstaller: Program kaldırma uygulaması.
+	• 59 - Wise Care 365: PC temizlik uygulamasıdır. Tek sürüme verilen ücretsiz pro sürümüdür.
+	• 60 - Unlocker: Silinmeyen dosyaları silmeyi sağlar.
 #### ► Oyunlar
-	• 59 - OSU!: Müzik video oyunduur.
-	• 60 - World Of Tanks: Online tank oyunu.
-	• 61 - Genshin Impact: Online oyundur.
-	• 62 - League Of Legends[TR]: Riot Games'in oyunudur. 5 vs 5 şeklinde karşılaşma yapılır.
-	• 63 - League Of Legends[EUW]: Riot Games'in oyunudur. 5 vs 5 şeklinde karşılaşma yapılır.
-	• 64 - Valorant: Riot Games'in CS:GO tarzı oyunudur.
+	• 61 - OSU!: Müzik video oyunduur.
+	• 62 - World Of Tanks: Online tank oyunu.
+	• 63 - Genshin Impact: Online oyundur.
+	• 64 - League Of Legends[TR]: Riot Games'in oyunudur. 5 vs 5 şeklinde karşılaşma yapılır.
+	• 65 - League Of Legends[EUW]: Riot Games'in oyunudur. 5 vs 5 şeklinde karşılaşma yapılır.
+	• 66 - Valorant: Riot Games'in CS:GO tarzı oyunudur.
 #### ► Görev Çubuğu / Başlat Menüsü
-	• 65 - Openshell: Alternatif başlat menüsü
-	• 66 - TaskbarX: Görev çubuğunda özelleştirme yapmanızı sağlar.
+	• 67 - Openshell: Alternatif başlat menüsü
+	• 68 - TaskbarX: Görev çubuğunda özelleştirme yapmanızı sağlar.
 #### ► Diğer
-	• 67 - MSI Afterburner: GPU fan ayarı yapar, SS alır, Video kaydı alır, oyunlarda donanımların kullanım değerlerini gösterir, voltaj değerlerini değiştirebilirsiniz.
-	• 68 - Everything: Sistemdeki dosyaları arayıp bulmanızı sağlar. Çok kullanışlı bir programdır.
-	• 69 - Hamachi: Ortak bir ağ kurmaya yarayan yazılımdır. Online oyunlarda arkadaşlarınızla oyun kurmak için ortak bir ağ gerektiğinde hayat kurtaran bir programdır.
-	• 70 - GlassWire: İnternet takip programı. Bilgisayarınızda hangi program nereye ne göndermiş ne almış hepsini görebilirsiniz.
-	• 71 - WARP: Cloudflare'in DNS/VPN hizmetidir. Ücretsizdir. 
+	• 69 - MSI Afterburner: GPU fan ayarı yapar, SS alır, Video kaydı alır, oyunlarda donanımların kullanım değerlerini gösterir, voltaj değerlerini değiştirebilirsiniz.
+	• 70 - Everything: Sistemdeki dosyaları arayıp bulmanızı sağlar. Çok kullanışlı bir programdır.
+	• 71 - Hamachi: Ortak bir ağ kurmaya yarayan yazılımdır. Online oyunlarda arkadaşlarınızla oyun kurmak için ortak bir ağ gerektiğinde hayat kurtaran bir programdır.
+	• 72 - GlassWire: İnternet takip programı. Bilgisayarınızda hangi program nereye ne göndermiş ne almış hepsini görebilirsiniz.
+	• 73 - WARP: Cloudflare'in DNS/VPN hizmetidir. Ücretsizdir. 
 </details>
 
 <details><B><summary> 2 - Araç Yükleyici</B></summary>
@@ -283,9 +285,9 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 </details>
 
 <details><B><summary> 5 - Windows Düzenleme</B></summary>
-Mavi renkli işlem numaraları 19 numaralı işlem ile alakalıdır.
+Mavi renkli işlem numaraları 20 numaralı işlem ile alakalıdır.
 
-![cmd_CYShydSkCH](https://user-images.githubusercontent.com/93199689/172699814-00070e10-8d67-42fe-ac4e-ad7eba681c3f.png)
+![cmd_LefRw8Hm9U](https://user-images.githubusercontent.com/93199689/185707013-2837c2dc-6c82-45fd-a3c4-a845499bcc22.png)
 
 	• 1 - WIM / ESD Okuyucu: install.wim ve install.esd dosyalarının içeriği hakkında bilgi verir.
 	• 2 - AIO Windows Hazırla: İnstall.wim sürümlerini birleştirmeye yarar. "X" tuşu burada çalışmaz.
@@ -351,7 +353,8 @@ Mavi renkli işlem numaraları 19 numaralı işlem ile alakalıdır.
 		► Konu anlatımı için bakınız: https://ognitorenks.blogspot.com/2022/03/windows-setup-bolumu-nasl-duzenlenir.html
 	• 17 - Gpedit.msc ekle [İmaj]: Offline sistemden Windows Home ve Home Single Language sürümlerine ekleyebilirsiniz.
 	• 18 - Hyper-V ekle [İmaj]: Home ve HomeSingle Language sürümlerinin imajlarına Hyper-V ekler.
-	• 19 - Mount yol tanımla: Bu bölüm 9 - 11 - 12 - 14 - 16 - 17 - 18 bölümleriyle bağlantılıdır. 
+	• 19 - Toolbox ekle [İmaj]: OgnitorenKs Toolbox'ı imaja entegre etmenizi sağlar. İlk açılışta masasüstüne setup kısayolunu atar.
+	• 20 - Mount yol tanımla: Bu bölüm 9 - 11 - 12 - 14 - 16 - 17 - 18 - 19 bölümleriyle bağlantılıdır. 
 	     • Burada tanımlanan klasör yolu ile işlem yapılmaktadır.
 	     • Bu bölüm ilk girişte "Edit\Mount" klasör yolunu alır. Mount dosyaları farklı bir klasörde ise 26 numaralı işlem ile değiştirin.
 </details>
@@ -493,15 +496,17 @@ Performans ile ilgili ayarları uygular. İşlem öncesi değiştirilecek veya e
 <details><B><summary> Z - Toolbox Ayarları</B></summary>
 Toolbox üzerinde ayar yapıp. Bilgi alabileceğiniz bölüm.
 
-![cmd_mojfU6QUZj](https://user-images.githubusercontent.com/93199689/172699746-34cb8dce-bb50-4fa1-abee-4c04a5e02afa.png)
+![cmd_6Fh9EPLg7p](https://user-images.githubusercontent.com/93199689/185707803-1ae88294-ea37-48c0-afd7-4596bf3844f7.png)
 
 	• 1 [A/K] - Otomatik Güncelleme: Güncelleştirmeleri otomatik olarak takip edip etmeyeceğini ayarlayabilirsiniz.
 	• 2 [A/K] - Log Kayıt: Yapılan işlemlerden sonra kayıt ayarını açıp kapatabilirsiniz.
 	• 3 [A/K] - Tarayıcı eklenti ayarı: Tarayıcılar yüklenirken eklenti yüklenip yüklenmeyeceğini ayarlayabilirsiniz.
-	•       4 - Masaüstüne kısayol oluştur.
-	•       5 - Güncelleme Kontrol Et
-	•       6 - Toolbox Rehber
-	•       7 - ognitorenks.blogspot.com
-	•       8 - Github Proje Sayfası
-	•       9 - Güncelleme Notları
+	• 4 [A/K] - Chocolatey yükleme sistemi: Chocolatey yükleme sistemini açıp kapatmaya yarar.
+	• 5 [A/K] - İnternet bağlantı kontrolü: Bazı durumlarda google.com adresine gönderilen pinglerde yaşanan sorunlardan dolayı internet olmasına rağmen indirme işlemlerinde internet yok hatası verebiliyor. Bu tarz bir hata yaşarsanız bu bölümü kapatınız.
+	•       6 - Masaüstünde kısayol oluştur.
+	•       7 - Güncelleme Kontrol Et
+	•       8 - Toolbox Rehber
+	•       9 - ognitorenks.blogspot.com
+	•      10 - Github Proje Sayfası
+	•      11 - Güncelleme Notları
 </details>
