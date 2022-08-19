@@ -496,15 +496,17 @@ Performans ile ilgili ayarları uygular. İşlem öncesi değiştirilecek veya e
 <details><B><summary> Z - Toolbox Ayarları</B></summary>
 Toolbox üzerinde ayar yapıp. Bilgi alabileceğiniz bölüm.
 
-![cmd_mojfU6QUZj](https://user-images.githubusercontent.com/93199689/172699746-34cb8dce-bb50-4fa1-abee-4c04a5e02afa.png)
+![cmd_6Fh9EPLg7p](https://user-images.githubusercontent.com/93199689/185707803-1ae88294-ea37-48c0-afd7-4596bf3844f7.png)
 
 	• 1 [A/K] - Otomatik Güncelleme: Güncelleştirmeleri otomatik olarak takip edip etmeyeceğini ayarlayabilirsiniz.
 	• 2 [A/K] - Log Kayıt: Yapılan işlemlerden sonra kayıt ayarını açıp kapatabilirsiniz.
 	• 3 [A/K] - Tarayıcı eklenti ayarı: Tarayıcılar yüklenirken eklenti yüklenip yüklenmeyeceğini ayarlayabilirsiniz.
-	•       4 - Masaüstüne kısayol oluştur.
-	•       5 - Güncelleme Kontrol Et
-	•       6 - Toolbox Rehber
-	•       7 - ognitorenks.blogspot.com
-	•       8 - Github Proje Sayfası
-	•       9 - Güncelleme Notları
+	• 4 [A/K] - Chocolatey yükleme sistemi: Chocolatey yükleme sistemini açıp kapatmaya yarar.
+	• 5 [A/K] - İnternet bağlantı kontrolü: Bazı durumlarda google.com adresine gönderilen pinglerde yaşanan sorunlardan dolayı internet olmasına rağmen indirme işlemlerinde internet yok hatası verebiliyor. Bu tarz bir hata yaşarsanız bu bölümü kapatınız.
+	•       6 - Masaüstünde kısayol oluştur.
+	•       7 - Güncelleme Kontrol Et
+	•       8 - Toolbox Rehber
+	•       9 - ognitorenks.blogspot.com
+	•      10 - Github Proje Sayfası
+	•      11 - Güncelleme Notları
 </details>
