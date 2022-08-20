@@ -13,12 +13,12 @@
 #
 # For example:
 #
-#0.0.0.0 0.0.0.0 0.0.0.0 102.54.94.970.0.0.0 0.0.0.0  rhino.acme.com0.0.0.0 0.0.0.0 0.0.0.0 0.0.0.0 0.0.0.0 # source server
-#0.0.0.0 0.0.0.0 0.0.0.0  38.25.63.100.0.0.0 0.0.0.0  x.acme.com0.0.0.0 0.0.0.0 0.0.0.0 0.0.0.0 0.0.0.0 0.0.0.0 0.0.0.0 # x client host
+#      102.54.94.97     rhino.acme.com          # source server
+#       38.25.63.10     x.acme.com              # x client host
 
 # localhost name resolution is handled within DNS itself.
-#	127.0.0.10.0.0.0 0.0.0.0 0.0.0.0  localhost
-#	::10.0.0.0 0.0.0.0 0.0.0.0 0.0.0.0 0.0.0.0 0.0.0.0  localhost
+#	127.0.0.1       localhost
+#	::1             localhost
 
 0.0.0.0 telemetry.microsoft.com 
 0.0.0.0 vortex.data.microsoft.com 
