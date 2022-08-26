@@ -4,6 +4,19 @@
 -   Mail: ognitorenks@gmail.com
 -   Site: https://ognitorenks.blogspot.com/
 
+<details><B><summary> Versiyon 3.6 ►  26.08.2022</B></summary>
+
+	• Windows Düzenleme > 'Katılımsız Program / Ayar Ekle' bölümü eklendi.
+		• Düzenleme yapacağınız imajların ilk açılış ekranına katılımsız kurulum ekleyebileceksiniz.
+		• İçerisindeki programlar temel olarak ihtiyaç duyulabilecek programlardan seçilmiştir.
+		• Toolbox ekle bu bölüme eklendi. Hatalar giderildi.
+	• Performans Optimizasyonu > Ognitorenks Güç seçeneği kaldırıldı. 
+		• Yerine Nihai performans ekle getirildi.
+	• Windows Düzenleme > Menülere uyarı mesajları eklendi.
+	
+	
+</details>
+
 <details><B><summary> Versiyon 3.5.3 ►  20.08.2022</B></summary>
 
 	• Toolbox, internet kontrol durumunu kapatacak ayarlama yapıldı.

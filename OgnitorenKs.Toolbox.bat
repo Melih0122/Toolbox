@@ -71,7 +71,7 @@ for /f %%a in ('"cd"') do set Location=%%a
 set Logs=%Location%\Edit\Logs
 set download=%Location%\Download
 Call :NSudo
-set version=3.5.3
+set version=3.6
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 :T.Settings
@@ -253,7 +253,7 @@ echo    %R%[90m█  █ █    ██  █  █    █   █  █ █  █ █  
 echo    %R%[90m█  █ █ ██ █ █ █  █    █   █  █ ████ ██  █ █ █ ██   ████    %R%[90m  █   █  █ █  █ █   ███  █  █   █  %R%[0m	
 echo    %R%[90m█  █ █  █ █  ██  █    █   █  █ █ █  █   █  ██ █ █     █    %R%[90m  █   █  █ █  █ █   █  █ █  █  █ █ %R%[0m
 echo    %R%[90m████ ████ █   █ ███   █   ████ █  █ ███ █   █ █  █ ████    %R%[90m  █   ████ ████ ███ ███  ████ █   █%R%[0m
-echo    %R%[90mognitorenks.blogspot.com                                                                 %R%[90m%version%%R%[0m
+echo    %R%[90mognitorenks.blogspot.com                                                                   %R%[90m%version%%R%[0m
 echo.
 echo               %R%[90m %caption% %R%[90m^|%R%[90m x%osarch% %R%[90m^|%R%[90m %ImageBuild% %R%[0m%R%[90m^|%R%[90m %isderleme%%R%[0m
 echo               %R%[90m┌──────────────────────────────────────────────────────────────────────┐%R%[0m

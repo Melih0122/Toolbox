@@ -24,7 +24,7 @@
 ::
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
-VersionCheck:3.5.3
+VersionCheck:3.6
 Version8Check:2.7
 
 ►►► All in One Runtimes ◄◄◄
@@ -45,15 +45,15 @@ https://aka.ms/vs/17/release/vc_redist.x64.exe M.Visual.C++2015-x64.exe
 https://javadl.oracle.com/webapps/download/AutoDL?BundleId=246808_424b9da4b48848379167015dcc250d8d Java.exe https://www.java.com/tr/download/manual.jsp
 https://download.microsoft.com/download/A/C/2/AC2C903B-E6E8-42C2-9FD7-BEBAC362A930/xnafx40_redist.msi XNA.Framework.4.0.msi https://www.microsoft.com/en-us/download/details.aspx?id=20914
 https://openal.org/downloads/oalinst.zip OpenAL.zip https://www.openal.org/downloads/
-https://download.visualstudio.microsoft.com/download/pr/dc0e0e83-0115-4518-8b6a-590ed594f38a/65b63e41f6a80decb37fa3c5af79a53d/windowsdesktop-runtime-6.0.7-win-x64.exe DesktopRuntime.6-x64.exe https://dotnet.microsoft.com/en-us/download/dotnet/6.0
-https://download.visualstudio.microsoft.com/download/pr/f21307ec-9007-48ba-80cb-0b1b7c3c212a/366a3d6b4c092d85d7979c6bb818f1b6/windowsdesktop-runtime-6.0.7-win-x86.exe DesktopRuntime.6-x86.exe https://dotnet.microsoft.com/en-us/download/dotnet/6.0
+https://download.visualstudio.microsoft.com/download/pr/b4a17a47-2fe8-498d-b817-30ad2e23f413/00020402af25ba40990c6cc3db5cb270/windowsdesktop-runtime-6.0.8-win-x64.exe DesktopRuntime.6-x64.exe https://dotnet.microsoft.com/en-us/download/dotnet/6.0
+https://download.visualstudio.microsoft.com/download/pr/61747fc6-7236-4d5e-85e5-a5df5f480f3a/02203594bf1331f0875aa6491419ffa1/windowsdesktop-runtime-6.0.8-win-x86.exe DesktopRuntime.6-x86.exe https://dotnet.microsoft.com/en-us/download/dotnet/6.0
 https://download.microsoft.com/download/8/4/A/84A35BF1-DAFE-4AE8-82AF-AD2AE20B6B14/directx_Jun2010_redist.exe DirectX.exe
 
 ►►► Mesaj ◄◄◄
 
 https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x86 Discord.exe https://discord.com/
 https://web.whatsapp.com/desktop/windows/release/x64/WhatsAppSetup.exe WhatsApp.exe https://www.whatsapp.com/download
-https://updates.signal.org/desktop/signal-desktop-win-5.55.0.exe Signal.exe https://signal.org/download/
+https://updates.signal.org/desktop/signal-desktop-win-5.56.0.exe Signal.exe https://signal.org/download/
 https://telegram.org/dl/desktop/win64 Telegram.exe https://desktop.telegram.org/
 https://zoom.us/client/latest/ZoomInstallerFull.msi Zoom.msi
 
@@ -68,29 +68,29 @@ https://api.wemod.com/client/download Wemod.exe
 
 ►►► RAM TEMİZLEYİCİ ◄◄◄
 
-https://docs.google.com/uc?export=download&id=1UwWfsuVhuj_KJKbCC5_4rVFWZGMD7_um ISLC.zip
+https://docs.google.com/uc?export=download&id=1UwWfsuVhuj_KJKbCC5_4rVFWZGMD7_um ISLC.zip https://www.wagnardsoft.com/forums/viewtopic.php?t=1256
 https://github.com/henrypp/memreduct/releases/download/v.3.4/memreduct-3.4-setup.exe MemReduct.exe https://github.com/henrypp/memreduct/releases
 
 ►►► TARAYICI ◄◄◄
 
 :: https://chromeenterprise.google/browser/download/thank-you/?platform=WIN64_MSI&channel=stable&usagestats=0
-https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B024830B2-E2C2-595D-CC2C-D59ED5C24D9A%7D%26lang%3Den%26browser%3D5%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dtrue%26ap%3Dx64-stable-statsdef_0%26brand%3DGCEA/dl/chrome/install/googlechromestandaloneenterprise64.msi GoogleChrome.msi
+https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B225F9402-3265-F325-6026-28CDF593903F%7D%26lang%3Den%26browser%3D5%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dtrue%26ap%3Dx64-stable-statsdef_0%26brand%3DGCEA/dl/chrome/install/googlechromestandaloneenterprise64.msi GoogleChrome.msi
 https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=tr Firefox.exe
 https://brave-browser-downloads.s3.brave.com/latest/brave_installer-x64.exe Brave.exe
-https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/0d5f98e6-819e-49ab-8dc3-e65d8f27815b/MicrosoftEdgeEnterpriseX64.msi Edge.msi https://www.microsoft.com/en-us/edge/business/download
+https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/2f56f555-a769-4a4a-bd1d-8b7affd26e0d/MicrosoftEdgeEnterpriseX64.msi Edge.msi https://www.microsoft.com/en-us/edge/business/download
 https://net.geo.opera.com/opera_gx/stable/windows OperaGX.exe
 
 ►►► SIKIŞTIRMA ◄◄◄
 
-https://www.7-zip.org/a/7z2200-x64.msi 7-Zip.msi https://www.7-zip.org/download.html
+https://www.7-zip.org/a/7z2201-x64.msi 7-Zip.msi https://www.7-zip.org/download.html
 https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-611tr.exe Winrar.exe https://www.win-rar.com/predownload.html?&L=5
 
 ►►► MULTİMEDYA ◄◄◄
 
-https://download.kde.org/stable/kdenlive/22.04/windows/kdenlive-22.04.3.exe Kdenlive.exe https://kdenlive.org/en/download/
+https://download.kde.org/stable/kdenlive/22.08/windows/kdenlive-22.08.0.exe Kdenlive.exe https://kdenlive.org/en/download/
 https://github.com/OpenShot/openshot-qt/releases/download/v2.6.1/OpenShot-v2.6.1-x86_64.exe Openshot.exe https://www.openshot.org/tr/download/
 https://github.com/mltframework/shotcut/releases/download/v22.06.23/shotcut-win64-220623.exe Shotcut.exe https://shotcut.org/download/
-https://download.kde.org/stable/krita/5.0.6/krita-x64-5.0.6-setup.exe Krita.exe https://krita.org/en/download/krita-desktop/
+https://download.kde.org/stable/krita/5.1.0/krita-x64-5.1.0-setup.exe Krita.exe https://krita.org/en/download/krita-desktop/
 https://ftp.gwdg.de/pub/grafik/gimp/v2.10/windows/gimp-2.10.32-setup-1.exe Gimp.exe https://www.gimp.org/downloads/
 https://cdn-fastly.obsproject.com/downloads/OBS-Studio-27.2.4-Full-Installer-x64.exe OBS.exe https://obsproject.com/tr/download
 https://github.com/ShareX/ShareX/releases/download/v14.1.0/ShareX-14.1.0-setup.exe ShareX.exe https://github.com/ShareX/ShareX/releases
@@ -101,7 +101,7 @@ https://github.com/Tichau/FileConverter/releases/download/v1.2.3/FileConverter-1
 
 ►►► VİDEO-SES OYNATICI ◄◄◄
 
-https://files3.codecguide.com/K-Lite_Codec_Pack_1710_Mega.exe Klite.exe https://codecguide.com/download_k-lite_codec_pack_mega.htm
+https://files3.codecguide.com/K-Lite_Codec_Pack_1715_Mega.exe Klite.exe https://codecguide.com/download_k-lite_codec_pack_mega.htm
 https://mirrors.netix.net/vlc/vlc/3.0.17.4/win64/vlc-3.0.17.4-win64.exe VLCMediaPlayer.exe https://www.videolan.org/index.tr.html
 https://t1.daumcdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe PotPlayer.exe https://potplayer.daum.net/
 https://www.aimp.ru/?do=download.file&id=4 Aimp.exe https://www.aimp.ru/?do=download&os=windows
@@ -113,12 +113,12 @@ https://mirror2.internetdownloadmanager.com/idman641build2.exe?v=lt&filename=idm
 https://dn3.freedownloadmanager.org/6/latest/fdm_x64_setup.exe FreeDownloadManager.exe https://www.freedownloadmanager.org/
 https://docs.google.com/uc?export=download&id=1z7u4XZQVNDWN3mflWZBW6C6nIf0lbuUo EagleGet.zip
 https://proxy.byclickdownloader.com/ExternalSetup/InstallPage/ByClickDownloader-Setup.exe ByClick.exe https://www.byclickdownloader.com/tr/
-https://jztkft.dl.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-4.4.3.1/qbittorrent_4.4.3.1_x64_setup.exe Qbittorrent.exe https://www.qbittorrent.org/download.php
+https://yer.dl.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-4.4.4/qbittorrent_4.4.4_x64_setup.exe Qbittorrent.exe https://www.qbittorrent.org/download.php
 
 ►►► BELGELER ◄◄◄
 
-https://ftp.gwdg.de/pub/tdf/libreoffice/stable/7.3.5/win/x86_64/LibreOffice_7.3.5_Win_x64.msi LibreOffice.msi https://tr.libreoffice.org/indir/libreoffice-taze-surum/
-https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/1900820071/AcroRdrDC1900820071_tr_TR.exe AdobeReader.exe https://get.adobe.com/tr/reader/enterprise/
+https://ftp.gwdg.de/pub/tdf/libreoffice/stable/7.4.0/win/x86_64/LibreOffice_7.4.0_Win_x64.msi LibreOffice.msi https://tr.libreoffice.org/indir/libreoffice-taze-surum/
+https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2200220191/AcroRdrDC2200220191_en_US.exe AdobeReader.exe https://get.adobe.com/tr/reader/enterprise/
 https://www.pdf-xchange.de/DL/tracker9/editor-msi64-tracker.php PdfXchange.msi https://pdf-xchange.eu/DL/pdf-xchange-editor.htm
 https://calibre-ebook.com/dist/win64 Calibre.msi https://calibre-ebook.com/download_windows64
 
@@ -126,9 +126,9 @@ https://calibre-ebook.com/dist/win64 Calibre.msi https://calibre-ebook.com/downl
 
 https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.4.4/npp.8.4.4.Installer.x64.exe Notepad.exe https://notepad-plus-plus.org/downloads/
 https://www.python.org/ftp/python/3.10.6/python-3.10.6-amd64.exe Python.exe https://www.python.org
-https://az764295.vo.msecnd.net/stable/da76f93349a72022ca4670c1b84860304616aaa2/VSCodeUserSetup-x64-1.70.0.exe VisualStudioCode.exe https://code.visualstudio.com/
+https://az764295.vo.msecnd.net/stable/e4503b30fc78200f846c62cf8091b76ff5547662/VSCodeUserSetup-x64-1.70.2.exe VisualStudioCode.exe https://code.visualstudio.com/
 https://central.github.com/deployments/desktop/desktop/latest/win32 Github.exe https://desktop.github.com/
-https://github.com/git-for-windows/git/releases/download/v2.37.1.windows.1/Git-2.37.1-64-bit.exe Git.exe https://git-scm.com/download/win
+https://github.com/git-for-windows/git/releases/download/v2.37.2.windows.2/Git-2.37.2.2-64-bit.exe Git.exe https://git-scm.com/download/win
 https://nodejs.org/dist/v16.17.0/node-v16.17.0-x64.msi NodeJS.msi https://nodejs.org/en/download/
 https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup.exe UnityHub.exe https://unity3d.com/get-unity/download
 https://ftp.halifax.rwth-aachen.de/blender/release/Blender3.2/blender-3.2.2-windows-x64.msi Blender.msi https://www.blender.org/download/
@@ -162,13 +162,14 @@ https://github.com/ChrisAnd1998/TaskbarX/releases/download/1.7.6.0/TaskbarX_1.7.
 ►►► DİĞER ◄◄◄
 
 https://files01.tchspt.com/temp/MSIAfterburnerSetup464.exe MSIAfterburner.exe https://www.msi.com/Landing/afterburner/graphics-cards
-https://www.voidtools.com/Everything-1.4.1.1017.x64-Setup.exe Everything.exe https://www.voidtools.com/tr-tr/
+https://www.voidtools.com/Everything-1.4.1.1018.x64-Setup.exe Everything.exe https://www.voidtools.com/tr-tr/
 https://secure.logmein.com/hamachi.msi Hamachi.msi https://www.vpn.net/
 https://download.glasswire.com/GlassWireSetup.exe GlassWire.exe https://www.glasswire.com/
 https://1111-releases.cloudflareclient.com/windows/Cloudflare_WARP_Release-x64.msi WARP.msi https://1.1.1.1/
 
 ►►► GOOGLE DRİVE ◄◄◄
 
+https://docs.google.com/uc?export=download&id=1VWcLahOUlV9vRikCC3IkWJnhEG003cfc ToolboxSetup.txt
 https://docs.google.com/uc?export=download&id=1aCBwYuFCoj3uMy2BsTgJc5vKYjtOJd0b Links.txt
 https://docs.google.com/uc?export=download&id=18kwIyPhIpk0wS-LbwMhsi4ocXJk0R-rG Oldico.zip
 https://docs.google.com/uc?export=download&id=1D6TR20HEo6diHH_g53GxPL5Tpdg3cT2m Newico.zip
@@ -187,7 +188,7 @@ https://downloads.ntlite.com/files/NTLite_setup_x64.exe NTLite.exe https://www.n
 https://github.com/Chuyu-Team/Dism-Multi-language/releases/download/v10.1.1002.1/Dism++10.1.1002.1.zip Dism++.zip https://github.com/Chuyu-Team/Dism-Multi-language/releases
 
 ►►► USB Hazırlayıcı ◄◄◄
-https://github.com/pbatard/rufus/releases/download/v3.19/rufus-3.19p.exe Rufus.exe https://github.com/pbatard/rufus/releases
+https://github.com/pbatard/rufus/releases/download/v3.20/rufus-3.20p.exe Rufus.exe https://github.com/pbatard/rufus/releases
 
 ►►► Donanım Bilgisi ◄◄◄
 https://download.aida64.com/aida64extreme675.zip AIDA64.zip https://www.aida64.com/downloads
@@ -200,7 +201,7 @@ https://www.alcpu.com/CoreTemp/CoreTemp64.zip CoreTemp.zip https://www.alcpu.com
 
 ►►► Test Araçları ◄◄◄
 https://osdn.net/frs/redir.php?m=rwthaachen&f=crystaldiskmark%2F77539%2FCrystalDiskMark8_0_4b.zip CrystalDiskMark.zip https://crystalmark.info/en/download/#CrystalDiskMark
-https://www.mersenne.org/ftp_root/gimps/p95v308b15.win64.zip Prime95.zip https://www.mersenne.org/download/
+https://www.mersenne.org/ftp_root/gimps/p95v308b16.win64.zip Prime95.zip https://www.mersenne.org/download/
 https://dl.ocbase.com/per/stable/OCCT.exe OCCT.exe https://www.ocbase.com/download
 https://docs.google.com/uc?export=download&id=1RYDNzfoeO3xntz4ujTVBLjW57gM_D-tT FurMark.zip https://geeks3d.com/furmark/
 
@@ -227,28 +228,3 @@ https://files1.majorgeeks.com/10afebdbffcd4742c81a3cb0f6ce4092156b4375/drives/SS
 https://download.sysinternals.com/files/ProcessMonitor.zip ProcessMonitor.zip https://www.majorgeeks.com/files/details/process_monitor_portable.html
 https://www2.aomeisoftware.com/download/pa/PAssist_Std.exe AOEMI.exe https://www.aomeitech.com/download.html
 https://github.com/mehmetguduk/Spotify-Adblocker/releases/download/Exe/Spotify.Adblocker.exe Spotify.Adblocker.exe https://github.com/mehmetguduk/Spotify-Adblocker/releases
-
-■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-
-Silinecek
-►►► All in One Runtimes ◄◄◄
-
-:: https://docs.microsoft.com/tr-TR/cpp/windows/latest-supported-vc-redist?view=msvc-170
-https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x86.EXE 05x86.exe
-https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x64.EXE 05x64.exe  
-https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x86.exe 08x86.exe  
-https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x64.exe 08x64.exe 
-https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x86.exe 10x86.exe
-https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x64.exe 10x64.exe
-https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x86.exe 12x86.exe
-https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe 12x64.exe
-https://aka.ms/highdpimfc2013x86enu 13x86.exe
-https://aka.ms/highdpimfc2013x64enu 13x64.exe
-https://aka.ms/vs/17/release/vc_redist.x86.exe 15x86.exe
-https://aka.ms/vs/17/release/vc_redist.x64.exe 15x64.exe
-https://javadl.oracle.com/webapps/download/AutoDL?BundleId=246474_2dee051a5d0647d5be72a7c0abff270e javax64.exe https://www.java.com/tr/download/manual.jsp
-https://download.microsoft.com/download/A/C/2/AC2C903B-E6E8-42C2-9FD7-BEBAC362A930/xnafx40_redist.msi xnafx40.msi https://www.microsoft.com/en-us/download/details.aspx?id=20914
-https://openal.org/downloads/oalinst.zip oal.zip https://www.openal.org/downloads/
-https://download.visualstudio.microsoft.com/download/pr/3aa4e942-42cd-4bf5-afe7-fc23bd9c69c5/64da54c8864e473c19a7d3de15790418/windowsdesktop-runtime-5.0.17-win-x64.exe Desktop5x64.exe https://dotnet.microsoft.com/download/dotnet/5.0
-https://download.visualstudio.microsoft.com/download/pr/b6fe5f2a-95f4-46f1-9824-f5994f10bc69/db5ec9b47ec877b5276f83a185fdb6a0/windowsdesktop-runtime-5.0.17-win-x86.exe Desktop5x86.exe https://dotnet.microsoft.com/download/dotnet/5.0
-https://download.microsoft.com/download/8/4/A/84A35BF1-DAFE-4AE8-82AF-AD2AE20B6B14/directx_Jun2010_redist.exe DirectX.exe

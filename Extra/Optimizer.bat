@@ -34,7 +34,7 @@ echo  %R%[90m│%R%[0m   %R%[32m 5%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]%R%[0m
 powercfg -list | findstr /C:"OgnitorenKs" > NUL 2>&1
 	if %errorlevel%==0 (set optvalue=%R%[32m♦%R%[0m)
 	if %errorlevel%==1 (set optvalue=%R%[100m %R%[0m)
-echo  %R%[90m│%R%[0m   %R%[32m 6%C%[90m[%R%[36m A %C%[90m]%R%[0m%optvalue%%R%[90m -%R%[33m OgnitorenKs Güç Seçeneği             %R%[90m│%R%[0m
+echo  %R%[90m│%R%[0m   %R%[32m 6%C%[90m[%R%[36m A %C%[90m]%R%[0m%optvalue%%R%[90m -%R%[33m Nihai Performans Güç Seçeneği        %R%[90m│%R%[0m
 echo  %R%[90m│%R%[0m   %R%[32m 7%C%[90m[%R%[36mA%C%[90m/%R%[36mK%C%[90m]  -%R%[33m Aygıt Optimizasyonu                  %R%[90m│%R%[0m
 echo  %R%[90m│%R%[0m   %R%[32m 8%C%[90m       -%R%[33m Uygulama İşlem Önceliği Düzenleme    %R%[90m│%R%[0m
 echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
@@ -125,8 +125,8 @@ set /p value= %C%[92m İşlem :%C%[0m
 	if %value%==5k (Call :FindSave Genel.bat
 					DEL /F /Q /A "%Yedek%\Genel.bat" > NUL 2>&1
 					Call :ProcessCompletedReset)
-	if %value%==6a (Call :OgnitorenKsPow)
-	if %value%==6A (Call :OgnitorenKsPow)
+	if %value%==6a (Call :NihaiPow)
+	if %value%==6A (Call :NihaiPow)
 	if %value%==7a (cls
 					Call :Warning2
 					echo  ►%R%[96m Ayarlar uygulanıyor...%R%[0m
@@ -168,13 +168,14 @@ dir /b "%Yedek%\%~1" > NUL 2>&1
 						exit)
 goto :eof
 
-:OgnitorenKsPow
-powercfg -list | findstr /C:"OgnitorenKs" > NUL 2>&1
+:NihaiPow
+powercfg -list | findstr /C:"Nihai" > NUL 2>&1
 	if %errorlevel%==0 (echo  ►%R%[31m Güç seçeneği ekli...%R%[0m
 						timeout /t 2 /nobreak > NUL)
-	if %errorlevel%==1 (echo  ►%R%[96m OgnitorenKs Güç Seçeneği ekleniyor...%R%[0m
-						powercfg -import %Location%\Files\OgnitorenKs.pow > NUL 2>&1)
-FOR /F "tokens=4" %%b in ('powercfg -list ^| findstr /C:"OgnitorenKs"') do (powercfg -setactive %%b > NUL)
+	if %errorlevel%==1 (echo  ►%R%[96m Nihai Performans Güç Seçeneği ekleniyor...%R%[0m
+						powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61 > NUL 2>&1)
+FOR /F "tokens=4" %%b in ('powercfg -list ^| findstr /C:"Nihai"') do (powercfg -setactive %%b > NUL)
+Call :ProcessCompleted
 goto :eof
 
 :RuntimeLevel

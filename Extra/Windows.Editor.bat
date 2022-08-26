@@ -57,9 +57,13 @@ FOR %%a in (Setup.zip Newico.zip Oldico.zip) do (
 
 :WindowsEditMenu
 cls
-mode con cols=53 lines=33
+mode con cols=53 lines=37
 echo  %R%[90m┌─────────────────────────────────────────────────┐%R%[0m
 echo  %R%[90m│%R%[1;97m%R%[100m            OgnitorenKs Windows Editör           %R%[0m%R%[90m│%R%[0m
+echo  %R%[90m├─────────────────────────────────────────────────┤%R%[0m
+echo  %R%[90m│%R%[37m ►%R%[36m '20'%R%[90m numaralı işlemle İmaj yolu tanımlanmalı  │%R%[0m
+echo  %R%[90m│%R%[37m ►%R%[90m Mavi renkli işlemler%R%[36m 20%R%[90m numaralı bölüme bağlı │%R%[0m
+echo  %R%[90m│%R%[37m ►%R%[90m NTLite gibi programlar kapalı olmalıdır.      │%R%[0m
 echo  %R%[90m├─────────────────────────────────────────────────┤%R%[0m
 echo  %R%[90m│   %R%[32m 1.%C%[33m WIM / ESD Okuyucu                         %R%[90m│%R%[0m
 echo  %R%[90m│   %R%[32m 2.%C%[33m AIO Windows Hazırla                       %R%[90m│%R%[0m
@@ -83,7 +87,7 @@ echo  %R%[90m│  %R%[32m 15.%C%[33m Setup Düzenle%C%[90m [İmaj]              
 echo  %R%[90m│  %R%[36m 16.%C%[33m Yeni Simgeleri yükle%C%[90m [İmaj]               │%R%[0m
 echo  %R%[90m│  %R%[36m 17.%C%[33m Gpedit.msc ekle%C%[90m [İmaj]                    │%R%[0m
 echo  %R%[90m│  %R%[36m 18.%C%[33m Hyper-V ekle%C%[90m [İmaj]                       │%R%[0m
-echo  %R%[90m│  %R%[36m 19.%C%[33m OgnitorenKs Toolbox ekle%C%[90m [İmaj]           │%R%[0m
+echo  %R%[90m│  %R%[36m 19.%C%[33m Katılımsız Program / Ayar ekle%C%[90m [İmaj]     │%R%[0m
 echo  %R%[90m├─────────────────────────────────────────────────┤%R%[0m
 echo  %R%[90m│  %R%[36m 20.%R%[36m İmaj yol tanımla                          %R%[90m│%R%[0m
 echo  %R%[90m└─────────────────────────────────────────────────┘%R%[0m
@@ -97,7 +101,7 @@ set /p WindowsEditMenu= %R%[92m İşlem : %R%[0m
 	if %WindowsEditMenu%==7 (Call :ImageRemount Call)
 	if %WindowsEditMenu%==8 (Call :ImageUnmount Call)
 	if %WindowsEditMenu%==9 (Call :RegeditInstall Call)
-	if %WindowsEditMenu%==10 (Call :RegeditCollet Call)
+	if %WindowsEditMenu%==10 (Call :RegeditCollect Call)
 	if %WindowsEditMenu%==11 (Call :UpdateInstaller)
 	if %WindowsEditMenu%==12 (Call :AppxInstaller)
 	if %WindowsEditMenu%==13 (Call :DriverYedek)
@@ -106,7 +110,7 @@ set /p WindowsEditMenu= %R%[92m İşlem : %R%[0m
 	if %WindowsEditMenu%==16 (Call :Newico)
 	if %WindowsEditMenu%==17 (Call :gpeditmsc)
 	if %WindowsEditMenu%==18 (Call :HyperV)
-	if %WindowsEditMenu%==19 (Call :Toolbox)
+	if %WindowsEditMenu%==19 (Call :SetupMaker)
 	if %WindowsEditMenu%==20 (Call :degisken3)
 )
 goto WindowsEditMenu
@@ -299,7 +303,7 @@ for /f %%i in ('"dir /b %Location%\Edit\Update\*"') do (
 )
 echo %R%[92m WinSxS temizleniyor...%R%[0m
 Dism /Image:%Mount% /Cleanup-Image /StartComponentCleanup
-	if %errorlevel%==1 (echo %R%[91m TEMİZLEME İŞLEMİ BAŞARISIZ%R%[0m
+	if %errorlevel%==1 (echo %R%[91m Temizleme işlemi başarısız.%R%[0m
 						Call :LogSave "OfflineDismYukle" "WinSxS temizlenirken hata oluştu. '%Mount%'"
 						timeout /t 5 /nobreak > NUL
 						goto WindowsEditMenu)
@@ -333,7 +337,7 @@ goto :eof
 
 :SetupEdit
 RD /S /Q "%Location%\Edit\Mount" > NUL 2>&1
-Call :RegeditCollet ::
+Call :RegeditCollect ::
 dir /b %Location%\Edit\Mount\* > NUL 2>&1
 	if %errorlevel%==0 (echo %R%[31m Mount klasörü dolu işlem yapılamaz%R%[0m
 						Call :ImageRemount ::
@@ -366,7 +370,7 @@ reg add "HKLM\OFF_HKU\SOFTWARE\Peter Lerup\LaunchBar" /v "AlwaysOnTop" /t REG_SZ
 reg add "HKLM\OFF_HKU\SOFTWARE\Peter Lerup\LaunchBar" /v "AutoHide" /t REG_SZ /d 0 /f > NUL 2>&1
 reg add "HKLM\OFF_HKU\SOFTWARE\Peter Lerup\LaunchBar" /v "Center" /t REG_SZ /d 1 /f > NUL 2>&1
 reg add "HKLM\OFF_HKU\SOFTWARE\Peter Lerup\LaunchBar" /v "Buttons" /t REG_SZ /d "Power.lnk;BypassToolbox.lnk;setup.exe.lnk;Explorer++.lnk;Start Menu.lnk;" /f > NUL 2>&1
-Call :RegeditCollet ::
+Call :RegeditCollect ::
 cls
 set /p value=►%C%[92m Driver yüklensin mi? [E/H]: %C%[0m
 	if %value%==E (Call :DriverYukle)
@@ -416,19 +420,8 @@ goto :eof
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
-:Toolbox
-Call :Panel "%R%[100m                         Toolbox Yükleyici                        %R%[0m"
-echo  %R%[37m NTLite tarzı program açıksa sorun yaşanmaması için kapatınız%R%[0m
-echo.
-set /p Warning=%R%[33m  Devam etmek için %R%[96m'X'%R%[33m Menü için %R%[96m'R'%R%[33m tuşlayınız: %R%[0m
-	if %Warning%==R (goto :eof)
-	if %Warning%==r (goto :eof)
-Call :LogSave "OgnitorenKs Toolbox" "OgnitorenKs.Toolbox entegre edildi. '%Mount%'"
-%NSudo% Powershell -command "Expand-Archive -Force '%Location%\Files\Toolbox.zip' '%Mount%'"
-Call :RegeditInstall
-Call :sz "HKLM\OFF_SOFTWARE\Microsoft\Windows\CurrentVersion\Run" "Katilimsiz" "C:\OgnitorenKs.Toolbox\Katilimsiz.bat"
-Call :RegeditCollect
-Call :ProcessCompleted
+:SetupMaker
+Call :Powershell "Start-Process '%Location%\Extra\Katilimsiz.Hazirlayici.bat'"
 goto :eof
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
@@ -653,7 +646,7 @@ goto :eof
 
 :: --------------------------------------------------------------------------------------------------------
 
-:RegeditCollet
+:RegeditCollect
 for /f "tokens=* delims=" %%a in ('reg query "HKLM" ^| findstr "{"') do (
 	reg unload "%%a" >nul 2>&1
 )
@@ -665,7 +658,7 @@ reg unload HKLM\OFF_HKCU > NUL 2>&1
 reg unload HKLM\OFF_SCHEMA > NUL 2>&1
 reg unload HKLM\OFF_SOFTWARE > NUL 2>&1
 reg unload HKLM\OFF_SYSTEM > NUL 2>&1
-Call :LogSave "RegeditCollet" "'%Mount%' klasöründen regedit kayıtları toplandı"
+Call :LogSave "RegeditCollect" "'%Mount%' klasöründen regedit kayıtları toplandı"
 %~1 :ProcessCompleted
 goto :eof
 
