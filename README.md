@@ -361,6 +361,7 @@ Mavi renkli işlem numaraları 20 numaralı işlem ile alakalıdır.
 		• Bu bölümde ilk işlem olarak 'Katılımsız kurulum yedekle', son işlem olarak 'Yedek katılımsız kurulum ekle' uygulanmalıdır.
 		• Çoklu seçim yapılabilir. Tek tek uğraşmanız gerekmez.
 		• Bu bölümle ilgili görseller altta yer almaktadır.
+		• 29 - Masaüstüne dosya ekle : Masaüstüne atmak istediğiniz dosyaları 'C:\OgnitorenKs.Toolbox\Edit\Desktop' bölümüne atınız.
 	• 20 - Mount yol tanımla: Bu bölüm 9 - 11 - 12 - 14 - 16 - 17 - 18 - 19 bölümleriyle bağlantılıdır. 
 	     • Burada tanımlanan klasör yolu ile işlem yapılmaktadır.
 	     • Bu bölüm ilk girişte "Edit\Mount" klasör yolunu alır. Mount dosyaları farklı bir klasörde ise 26 numaralı işlem ile değiştirin.
