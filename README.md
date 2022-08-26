@@ -493,14 +493,14 @@ Performans ile ilgili ayarları uygular. İşlem öncesi değiştirilecek veya e
 Örnek;
 1a / 2k / 3A / 4K 
 
-![cmd_HjYH3YrbGN](https://user-images.githubusercontent.com/93199689/182487352-bcd4e66e-bfb3-470a-851e-b37591cc3278.png)
+![cmd_E08YT9hFBD](https://user-images.githubusercontent.com/93199689/186998733-92cd2d1c-8edb-429d-a9a8-676459d6b324.png)
 
 	• 1[A/K] - Svchost Ram Optimizasyonu: Svchost hizmetini sistemdeki Ram miktarınıza göre düzenler ve parçalar halindeki Svchost işlemlerini tüm hale getirerek Ram kullanımı düşürür. Bazı durumlarda ses ve mikrofon ayarlarına girerken bellek taşma hatası yapabilir. Böyle bir hata alırsanız kapatabilirsiniz.
 	• 2[A/K] - İnternet Optimizasyonu: İnternet bağlantısında bazı iyileştirmeler yapar.
 	• 3[A/K] - AMD Ekran Kartı Optimizasyonu: Akıcı ve yüksek FPS almanız için performans odaklı düzenlemeler yapar.
 	• 4[A/K] - NVIDIA Ekran Kartı Optimizasyonu: Akıcı ve yüksek FPS almanız için performans odaklı düzenlemeler yapar.
 	• 5[A/K] - Genel Optimizasyon: Genel olarak derlenen performans düzenlemelerini uygular.
-	• 6[ A ] - OgnitorenKs Güç Seçeneği: Yüksek performans için en iyi ayarların yapıldığı güç seçeneğini ekler ve seçili hale getirir.
+	• 6[ A ] - Nihai Performans Güç Seçeneği: Yüksek performans için en iyi ayarların yapıldığı güç seçeneğini ekler ve seçili hale getirir.
 	• 7[A/K] - Aygıt Optimizasyonu: Bazı aygıt servislerini devre dışı bırakarak gecikmeyi düşürmeyi sağlar.
 	• 8      - Uygulama işlem önceliği düzenleme: Görev Yöneticisi Ayrıntılar bölümünde yer alan uygulamaların çalışma önceliklerini bu bölümden sürekli olarak değiştirebilirsiniz.
 </details>
