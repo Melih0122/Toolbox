@@ -287,7 +287,7 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 <details><B><summary> 5 - Windows Düzenleme</B></summary>
 Mavi renkli işlem numaraları 20 numaralı işlem ile alakalıdır.
 
-![cmd_LefRw8Hm9U](https://user-images.githubusercontent.com/93199689/185707013-2837c2dc-6c82-45fd-a3c4-a845499bcc22.png)
+![cmd_4a6ZsF8Zme](https://user-images.githubusercontent.com/93199689/186950651-a8c14046-7499-4917-b712-9665bc278657.png)
 
 	• 1 - WIM / ESD Okuyucu: install.wim ve install.esd dosyalarının içeriği hakkında bilgi verir.
 	• 2 - AIO Windows Hazırla: İnstall.wim sürümlerini birleştirmeye yarar. "X" tuşu burada çalışmaz.
@@ -353,10 +353,21 @@ Mavi renkli işlem numaraları 20 numaralı işlem ile alakalıdır.
 		► Konu anlatımı için bakınız: https://ognitorenks.blogspot.com/2022/03/windows-setup-bolumu-nasl-duzenlenir.html
 	• 17 - Gpedit.msc ekle [İmaj]: Offline sistemden Windows Home ve Home Single Language sürümlerine ekleyebilirsiniz.
 	• 18 - Hyper-V ekle [İmaj]: Home ve HomeSingle Language sürümlerinin imajlarına Hyper-V ekler.
-	• 19 - Toolbox ekle [İmaj]: OgnitorenKs Toolbox'ı imaja entegre etmenizi sağlar. İlk açılışta masasüstüne setup kısayolunu atar.
+	• 19 - Katılımsız Program / Ayar ekle [İmaj]: İmaj dosyalarına ilk açılışlarına program yükleyip, ayar ekleme entegre eder.
+		• Bu bölüme girmeden önce 'Mount yol tanımla' bölümünden imajı çıkardığınız klasörün yolunu vermelisiniz.
+		• İlk açılışta Online / Offline olarak yükleme seçeneğini sorar.
+		• Online kurulumda programlar ilk açılışta indirilir, kurulur ve silinir.
+		• Offline kurulumda programlar katılımsız kurulum dosyası hazırlandığında indirilir. İlk açılışta yüklenir ve silinir.
+		• Bu bölümde ilk işlem olarak 'Katılımsız kurulum yedekle', son işlem olarak 'Yedek katılımsız kurulum ekle' uygulanmalıdır.
+		• Çoklu seçim yapılabilir. Tek tek uğraşmanız gerekmez.
+		• Bu bölümle ilgili görseller altta yer almaktadır.
 	• 20 - Mount yol tanımla: Bu bölüm 9 - 11 - 12 - 14 - 16 - 17 - 18 - 19 bölümleriyle bağlantılıdır. 
 	     • Burada tanımlanan klasör yolu ile işlem yapılmaktadır.
 	     • Bu bölüm ilk girişte "Edit\Mount" klasör yolunu alır. Mount dosyaları farklı bir klasörde ise 26 numaralı işlem ile değiştirin.
+	     
+![cmd_gYrOpo7iog](https://user-images.githubusercontent.com/93199689/186950946-7667fdd4-5c9a-4a23-bbae-a26c6708d878.png)
+![cmd_z2sx5gAcWu](https://user-images.githubusercontent.com/93199689/186950957-ff456ee7-678c-488a-b666-10d6914d333c.png)
+
 </details>
 
 <details><B><summary> 6 - Kullancı Hesap Yönetimi</B></summary>
