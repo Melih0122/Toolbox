@@ -488,7 +488,7 @@ Kaldırılması Microsoft tarafından engellenen bazı uygulamaları kaldırmay�
 
 </details>
 
-<details><B><summary> 21 - Performans Optimizasyonu</B></summary>
+<details><B><summary> 21 - Performans Optimizasyonu [Denizlili]</B></summary>
 Performans ile ilgili ayarları uygular. İşlem öncesi değiştirilecek veya eklenecek regedit kayıtları tespit edilir ve yedekleri alınır. Kullanmak için istediğiniz işlemi ve Aç veya kapatın baş harflerini yazmanız lazım. 
 Örnek;
 1a / 2k / 3A / 4K 
