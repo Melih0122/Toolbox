@@ -4,6 +4,22 @@
 -   Mail: ognitorenks@gmail.com
 -   Site: https://ognitorenks.blogspot.com/
 
+<details><B><summary> Versiyon 3.6.1 ►  GELİŞTİRİLİYOR...</B></summary>
+
+	• Performans Optimizasyonu > Nihai Performans güç seçeneği bölümünün durumunu gösteren komutdaki hata giderildi.
+	• Windows Edit > Katılımsız Program / Ayar Ekle > Masaüstüne dosya ekle bölümüne dosyalarınızı ekleyeceğiniz klasör dizini açılacak şekilde ayarlandı.
+		• Dosyalarınızı açılan klasör penceresinin içine attıktan sonra herhangi bir tuşlama yaparak işleme devam edecebileceksiniz.
+	• Windows Edit > Katılımsız Program / Ayar Ekle > Katılmsız dosya içine sonradan chocolatey sisteminden ve offline programların nasıl ekleneceğine dair bilgi mesajları eklendi.
+		• Görev Zamanlayıcı optimizasyonu
+		• Animasyon efektlerini kapat
+		• Yeni mouse simgesi
+		• Klavye-Mouse Optimizasyonu eklendi.
+	• Performans Optimizasyonu > İnternet optimizasyon, AMD - Nvidia ekran kartı optimizasyonu, Genel optimizasyon bölümleri kaldırıldı.
+		• Tam olarak istenileni veremediği için bu bölümleri kaldırdım. Genel optimizasyon bölümü 'Güncelleme sonrası Temizlik' ile benzer olduğu için kaldırıldı.
+
+	
+	
+</details>
 <details><B><summary> Versiyon 3.6 ►  26.08.2022</B></summary>
 
 	• Windows Düzenleme > 'Katılımsız Program / Ayar Ekle' bölümü eklendi.
