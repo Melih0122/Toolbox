@@ -18,7 +18,8 @@
 		• Tam olarak istenileni veremediği için bu bölümleri kaldırdım. Genel optimizasyon bölümü 'Güncelleme sonrası Temizlik' ile benzer olduğu için kaldırıldı.
 	• Temizle ve kapat bölümündeki komut hatası giderildi.
 	• Kaldırılamayan uygulamalar bölümünde Python Chocolatey sisteminden yüklenecek şekilde düzenlendi.
-	• 
+	• Uygulama ve Araç indirme bölümleri aktif indirme sistemini göstermesi için eklemeler yapıldı.
+		• Hızlı değişim için Toolbox Ayarlarına yönlendirme bölümü eklendi.
 	
 	
 </details>
