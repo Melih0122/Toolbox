@@ -16,7 +16,9 @@
 		• Klavye-Mouse Optimizasyonu eklendi.
 	• Performans Optimizasyonu > İnternet optimizasyon, AMD - Nvidia ekran kartı optimizasyonu, Genel optimizasyon bölümleri kaldırıldı.
 		• Tam olarak istenileni veremediği için bu bölümleri kaldırdım. Genel optimizasyon bölümü 'Güncelleme sonrası Temizlik' ile benzer olduğu için kaldırıldı.
-
+	• Temizle ve kapat bölümündeki komut hatası giderildi.
+	• Kaldırılamayan uygulamalar bölümünde Python Chocolatey sisteminden yüklenecek şekilde düzenlendi.
+	• 
 	
 	
 </details>
