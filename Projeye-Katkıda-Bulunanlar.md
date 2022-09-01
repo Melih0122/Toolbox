@@ -10,7 +10,7 @@
 	  • Sistem Hakkında - RAM soket yapısının eklenmesi.
 	  • Sistem Hakkında - Sistem format tarihinin eklenmesi.
 	  ----------------------
-	  ► KaanBeyhan [DOGGEST]
+	  ► KaanBeyhan [Denizlili] [DarkOS]
 	  ----------------------
 	  • İndirme işlemlerinde ilerleme çubuğunun eklenmesi.
 	  • Performans optimizasyonun eklenmesi.
