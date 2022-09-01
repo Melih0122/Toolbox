@@ -20,6 +20,9 @@
 	• Kaldırılamayan uygulamalar bölümünde Python Chocolatey sisteminden yüklenecek şekilde düzenlendi.
 	• Uygulama ve Araç indirme bölümleri aktif indirme sistemini göstermesi için eklemeler yapıldı.
 		• Hızlı değişim için Toolbox Ayarlarına yönlendirme bölümü eklendi.
+	• Araç yükleme > Geforce Experience eklendi
+	• Hizmetleri Yönet > Tanı ilkesi hizmeti eklendi. İçerisinde program uyumluluk hizmeti de bulunmaktadır.
+	• Hizmetleri Yönet > Hızlı kullanıcı değiştir bölümüne eksik döngü parametresi eklendi.
 	
 	
 </details>
