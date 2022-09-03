@@ -23,6 +23,13 @@
 	• Araç yükleme > Geforce Experience eklendi
 	• Hizmetleri Yönet > Tanı ilkesi hizmeti eklendi. İçerisinde program uyumluluk hizmeti de bulunmaktadır.
 	• Hizmetleri Yönet > Hızlı kullanıcı değiştir bölümüne eksik döngü parametresi eklendi.
+	• Windows 10/11 Edit > Gpedit.msc bölümündeki gereksiz komutlar kaldırıldı.
+	• Chocolatey yedek indirme sistemi olarak ayarlandı.
+	• Windows Edit > Katılımsız Program / Ayar Ekle > 'Katılımsız dosyası oluştur' bölümünde 'Start.bat' kaldırıldı.
+		• Katilimsiz.bat üzerinden powershell ile yönetici alınacak şekilde düzenlendi.
+		• Daha önceden bu bölümde katılmsız hazırlayıcı yapıp yedekleyenler yeniden düzenleme yapmalıdır.
+	•
+	
 	
 	
 </details>
