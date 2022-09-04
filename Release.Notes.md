@@ -29,7 +29,10 @@
 		• Katilimsiz.bat üzerinden powershell ile yönetici alınacak şekilde düzenlendi.
 		• Daha önceden bu bölümde katılmsız hazırlayıcı yapıp yedekleyenler yeniden düzenleme yapmalıdır.
 	• "Toolbox Ayarları" bölümü "Toolbox Ayarları - İletişim" olarak düzenlendi.
-		• Menü içeriği iletişim ve site bölümleri sade hale getirildi.
+		• Menü içinde iletişim ve site bölümleri sade hale getirildi.
+	• Windows 10 Edit > Simge değiştir bölümünde bazı durumlarda değiştirme işleminin yapılamadığı uyarı yapıldı.
+		• Bu tarz bir sorunda manuel olarak bu dosyaları değiştirmek isterseniz "Simge değiştirme konusu" eklendi.
+	• Windows 10 Edit > Gpedit.msc bölümü kaldırıldı. Son güncellemelerde yükleme işleme rağmen aktif olmuyordu.
 	
 	
 	
