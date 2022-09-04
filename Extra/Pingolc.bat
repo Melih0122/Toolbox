@@ -25,7 +25,7 @@
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 echo off
 chcp 65001 > NUL 2>&1
-mode con cols=48 lines=21
+mode con cols=48 lines=22
 title Ping Ölçer / OgnitorenKs
 
 setlocal
@@ -61,8 +61,12 @@ Call :pingolcdns 9.9.9.9 149.112.112.112
 echo                 %R%[92m Quad9:%R%[0m %pingdns1%-%pingdns2%
 Call :pingolcdns 208.67.222.222 208.67.220.220
 echo               %R%[92m OpenDns:%R%[0m %pingdns1%-%pingdns2%
+echo  %R%[90m├────────────────────────────────────────────┤%R%[0m
+echo  %R%[32m                   X-%R%[37m Menü%R%[0m
 echo  %R%[90m└────────────────────────────────────────────┘%R%[0m
-set /p pingolc=%R%[1;97m  %R%[42m Ping Ölç %R%[0m%R%[90m[Site/IP]%R%[92m :%R%[0m 
+set /p pingolc=%R%[1;97m  %R%[42m Ping Ölç %R%[0m%R%[90m[Site/IP]%R%[92m :%R%[0m
+	if %pingolc%==x exit
+	if %pingolc%==X exit
 Call :pingolcum %pingolc%
 echo                     ►  %ping%  ◄
 pause > NUL

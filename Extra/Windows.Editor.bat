@@ -90,6 +90,7 @@ echo  %R%[90m│  %R%[36m 18.%C%[33m Hyper-V ekle%C%[90m [İmaj]                
 echo  %R%[90m│  %R%[36m 19.%C%[33m Katılımsız Program / Ayar ekle%C%[90m [İmaj]     │%R%[0m
 echo  %R%[90m├─────────────────────────────────────────────────┤%R%[0m
 echo  %R%[90m│  %R%[36m 20.%R%[36m İmaj yol tanımla                          %R%[90m│%R%[0m
+echo  %R%[90m│   %R%[32m X.%R%[37m Menü / Kapat                              %R%[90m│%R%[0m
 echo  %R%[90m└─────────────────────────────────────────────────┘%R%[0m
 set /p WindowsEditMenu= %R%[92m İşlem : %R%[0m
 	if %WindowsEditMenu%==1 (Call :WimReader)
@@ -112,6 +113,8 @@ set /p WindowsEditMenu= %R%[92m İşlem : %R%[0m
 	if %WindowsEditMenu%==18 (Call :HyperV)
 	if %WindowsEditMenu%==19 (Call :SetupMaker)
 	if %WindowsEditMenu%==20 (Call :degisken3)
+	if %WindowsEditMenu%==x exit
+	if %WindowsEditMenu%==X exit
 )
 goto WindowsEditMenu
 	

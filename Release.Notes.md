@@ -26,14 +26,14 @@
 	• Windows 10/11 Edit > Gpedit.msc bölümündeki gereksiz komutlar kaldırıldı.
 	• Chocolatey yedek indirme sistemi olarak ayarlandı.
 	• Windows Edit > Katılımsız Program / Ayar Ekle > 'Katılımsız dosyası oluştur' bölümünde 'Start.bat' kaldırıldı.
-		• Katilimsiz.bat üzerinden powershell ile yönetici alınacak şekilde düzenlendi.
+		• Katilimsiz.bat yönetici yetki alma komutları değiştirildi.
 		• Daha önceden bu bölümde katılmsız hazırlayıcı yapıp yedekleyenler yeniden düzenleme yapmalıdır.
 	• "Toolbox Ayarları" bölümü "Toolbox Ayarları - İletişim" olarak düzenlendi.
 		• Menü içinde iletişim ve site bölümleri sade hale getirildi.
 	• Windows 10 Edit > Simge değiştir bölümünde bazı durumlarda değiştirme işleminin yapılamadığı uyarı yapıldı.
 		• Bu tarz bir sorunda manuel olarak bu dosyaları değiştirmek isterseniz "Simge değiştirme konusu" eklendi.
 	• Windows 10 Edit > Gpedit.msc bölümü kaldırıldı. Son güncellemelerde yükleme işleme rağmen aktif olmuyordu.
-	
+	• Kullanım deneyimini arttırmak için Sağ üstten kapatılacak şekilde düzenlenmiş bölümlere X tuşu kapat olarak eklendi.
 	
 	
 </details>

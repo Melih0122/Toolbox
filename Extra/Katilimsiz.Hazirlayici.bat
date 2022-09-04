@@ -78,25 +78,26 @@ set /p KatilimsizMod= %R%[92m İşlem : %R%[0m
 :: ==============================================================================================================================
 
 :katilimsizmenu
+set ErrorTime=0
 cls
 mode con cols=73 lines=45
 set xognitorenksx=%R%[90m►
-title          O  G  N  I  T  O  R  E  N  K  S     ^|    OGNITORENKS TOOLBOX    ^|       T   O   O   L   B   O   X
+title  - OGNITORENKS TOOLBOX -
 echo   %R%[90m┌───────────────────────────────────────────────────────────────────┐%R%[0m
 echo   %R%[90m│%R%[1;97m%R%[100m                   Katılımsız Kurulum Hazırlayıcı                  %R%[0m%R%[90m│%R%[0m
 echo   %R%[90m├───────────────────────────────────────────────────────────────────┤%R%[0m
-echo   %R%[90m│%R%[37m ►%R%[90m İlk işlem%R%[32m '32'%R%[90m son işlem%R%[32m '33'%R%[90m numarasıyla yapılmalıdır          │%R%[0m
+echo   %R%[90m│%R%[37m ►%R%[90m İlk işlem%R%[32m '96'%R%[90m son işlem%R%[32m '97'%R%[90m numarasıyla yapılmalıdır          │%R%[0m
 echo   %R%[90m│%R%[37m ►%R%[90m NTLite gibi programlar kapalı olmalıdır.                        │%R%[0m
 echo   %R%[90m├────────────────────────────┬──────────────────────────────────────┤%R%[0m
 echo   %R%[90m│%R%[32m    1-%R%[33m All in One Runtimes  %R%[90m│%xognitorenksx% Araçlar - Ayarlar                   %R%[90m│%R%[0m
-echo   %R%[90m│%xognitorenksx% Ram Temizleyici           %R%[90m│%R%[32m   28-%R%[37m OgnitorenKs Toolbox ekle       %R%[90m│%R%[0m
+echo   %R%[90m│%xognitorenksx% Ram Temizleyici           %R%[90m│%R%[32m   28-%R%[37m OgnitorenKs Toolbox            %R%[90m│%R%[0m
 echo   %R%[90m│%R%[32m    2-%R%[36m ISLC                 %R%[90m│%R%[32m   29-%R%[37m Masaüstüne Dosya ekle          %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    3-%R%[36m Mem Reduct           %R%[90m│%R%[32m   30-%R%[37m Nihai Performans ekle          %R%[90m│%R%[0m
-echo   %R%[90m│%xognitorenksx% Tarayıcı                  %R%[90m│%R%[32m   31-%R%[37m Svchost Optimizasyon ekle      %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    4-%R%[33m Google Chrome        %R%[90m│%R%[0m                                      %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    5-%R%[33m Mozilla Firefox      %R%[90m│%R%[0m                                      %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    6-%R%[33m Brave                %R%[90m│%R%[0m                                      %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    7-%R%[33m Microsoft Edge       %R%[90m│%R%[0m                                      %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    3-%R%[36m Mem Reduct           %R%[90m│%R%[32m   30-%R%[37m Nihai Performans               %R%[90m│%R%[0m
+echo   %R%[90m│%xognitorenksx% Tarayıcı                  %R%[90m│%R%[32m   31-%R%[37m Svchost Optimizasyon           %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    4-%R%[33m Google Chrome        %R%[90m│%R%[32m   32-%R%[37m Görev Zamanlayıcı optimizasyonu%R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    5-%R%[33m Mozilla Firefox      %R%[90m│%R%[32m   33-%R%[37m Animasyon efektlerini kapat    %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    6-%R%[33m Brave                %R%[90m│%R%[32m   34-%R%[37m Yeni mouse simgesi             %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    7-%R%[33m Microsoft Edge       %R%[90m│%R%[32m   35-%R%[37m Klavye-Mouse Optimizasyonu     %R%[90m│%R%[0m
 echo   %R%[90m│%R%[32m    8-%R%[33m OperaGX              %R%[90m│%R%[0m                                      %R%[90m│%R%[0m
 echo   %R%[90m│%xognitorenksx% Sıkıştırma                %R%[90m│%R%[0m                                      %R%[90m│%R%[0m
 echo   %R%[90m│%R%[32m    9-%R%[36m 7-Zip                %R%[90m│%R%[0m                                      %R%[90m│%R%[0m 
@@ -115,16 +116,17 @@ echo   %R%[90m│%xognitorenksx% Temizlik                  %R%[90m│%R%[0m     
 echo   %R%[90m│%R%[32m   19-%R%[33m Hibit Uninstaller    %R%[90m│%R%[0m                                      %R%[90m│%R%[0m
 echo   %R%[90m│%R%[32m   20-%R%[33m Revo Uninstaller     %R%[90m│%R%[0m                                      %R%[90m│%R%[0m
 echo   %R%[90m│%R%[32m   21-%R%[33m Wise Care 365        %R%[90m│%R%[0m                                      %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   22-%R%[33m Unlocker             %R%[90m│%R%[0m                                      %R%[90m│%R%[0m
-echo   %R%[90m│%xognitorenksx% Diğer                     %R%[90m│%xognitorenksx% Katılımsız Hazırlayıcı              %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   23-%R%[36m OpenShell            %R%[90m│%R%[32m   32-%R%[93m Katılımsız dosyası oluştur     %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   24-%R%[36m TaskbarX             %R%[90m│%R%[32m   33-%R%[93m Katılımsız dosyasını tamamla   %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   25-%R%[36m MSI Afterburner      %R%[90m│%xognitorenksx% Katılımsız Yedekleyici              %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   26-%R%[36m Everything           %R%[90m│%R%[32m   34-%R%[93m Katılımsız kurulum yedekle     %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   27-%R%[36m Glasswire            %R%[90m│%R%[32m   35-%R%[93m Yedek katılımsız kurulum ekle  %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   22-%R%[33m Unlocker             %R%[90m│%xognitorenksx% Katılımsız Hazırlayıcı              %R%[90m│%R%[0m
+echo   %R%[90m│%xognitorenksx% Diğer                     %R%[90m│%R%[32m   96-%R%[93m Katılımsız dosyası oluştur     %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   23-%R%[36m OpenShell            %R%[90m│%R%[32m   97-%R%[93m Katılımsız dosyasını tamamla   %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   24-%R%[36m TaskbarX             %R%[90m│%xognitorenksx% Katılımsız Yedekleyici              %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   25-%R%[36m MSI Afterburner      %R%[90m│%R%[32m   98-%R%[93m Katılımsız kurulum yedekle     %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   26-%R%[36m Everything           %R%[90m│%R%[32m   99-%R%[93m Yedek katılımsız kurulum ekle  %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   27-%R%[36m Glasswire            %R%[90m│%R%[32m    X-%R%[37m Menü / Kapat                   %R%[90m│%R%[0m
 echo   %R%[90m└────────────────────────────┴──────────────────────────────────────┘
 set /p $multi=%R%[32m  Çoklu Seçim %R%[90mx,y: %R%[0m 
 cls
+
 echo   %R%[90m┌───────────────────────────────────────────────────────────────────┐%R%[0m
 echo   %R%[90m│%R%[1;97m%R%[100m                   Katılımsız Kurulum Hazırlayıcı                  %R%[0m%R%[90m│%R%[0m
 echo   %R%[90m├────────────────────────────┬──────────────────────────────────────┤%R%[0m
@@ -153,7 +155,7 @@ FOR %%a in (%$multi%) do (
 	if %%a EQU 20 if %KatilimsizMod%==1 (Call :ChocoPrint revo-uninstaller) else (Call :wget1 RevoUninstaller.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-")
 	if %%a EQU 21 if %KatilimsizMod%==1 (Call :OnlinePrint1 WiseCare365.zip WiseCare365.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-") else (Call :wget2 WiseCare365.zip WiseCare365.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-")
 	if %%a EQU 22 if %KatilimsizMod%==1 (Call :ChocoPrint io-unlocker) else (Call :wget1 Unlocker.exe "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-")
-	if %%a EQU 23 if %KatilimsizMod%==1 (Call :ChocoPrint open-shell) else (Call :wget1 OpenShell.exe "/quiet /norestart ADDLOCAL=StartMenu")
+	if %%a EQU 23 (Call :OpenShell)
 	if %%a EQU 24 if %KatilimsizMod%==1 (Call :ChocoPrint taskbarx) else (Call :TaskbarX)
 	if %%a EQU 25 if %KatilimsizMod%==1 (Call :ChocoPrint msiafterburner) else (Call :wget1 MSIAfterburner.exe /S)
 	if %%a EQU 26 if %KatilimsizMod%==1 (Call :ChocoPrint everything) else (Call :wget1 Everything.exe /S)
@@ -162,11 +164,17 @@ FOR %%a in (%$multi%) do (
 	if %%a EQU 29 (Call :DesktopFiles)
 	if %%a EQU 30 (Call :NihaiPerformans)
 	if %%a EQU 31 (Call :Svchost)
-	if %%a EQU 32 (Call :OpenBat)
-	if %%a EQU 33 (Call :CloseBat)
-	if %%a EQU 34 (Call :KatilimsizYedekle)
-	if %%a EQU 35 (Call :KatilimsizYukle)
+	if %%a EQU 32 (Call :GorevZamanlayici)
+	if %%a EQU 33 (Call :AnimasyonKapat)
+	if %%a EQU 34 (Call :Mouse.Icon)
+	if %%a EQU 35 (Call :Klavye-Mouse.Optimizasyon)
+	if %%a EQU 96 (Call :OpenBat)
+	if %%a EQU 97 (Call :CloseBat)
+	if %%a EQU 98 (Call :KatilimsizYedekle)
+	if %%a EQU 99 (Call :KatilimsizYukle)
 )
+echo %$multi% | findstr /i "x" > NUL 2>&1
+	if %errorlevel%==0 exit
 Call :ProcessCompleted
 goto katilimsizmenu
 
@@ -189,6 +197,13 @@ goto :eof
 :DesktopFiles
 Call :PrintCheck "Masaüstü dosyaları yükleniyor" "Masaüstü dosyaları"
 if %ErrorTime%==1 (goto :eof)
+echo.
+echo      •%R%[92m Açılan klasör penceresine dosyaları atın%R%[0m
+echo.
+echo      •%R%[96m İşleme devam etmek için herhangi bir tuşa basın%R%[0m
+timeout /t 1 /nobreak > NUL
+Call :Powershell "Start-Process '%Location%\Edit\Desktop'"
+pause > NUL
 Call :Powershell "Compress-Archive -Path '%Location%\Edit\Desktop\*' -DestinationPath '%Mount%\OgnitorenKs.Toolbox\Katilimsiz\DesktopFiles.zip'"
 dir /b "%Mount%\OgnitorenKs.Toolbox\Katilimsiz\DesktopFiles.zip" > NUL 2>&1
 	if %errorlevel%==1 (goto :eof)
@@ -225,6 +240,172 @@ echo FOR /F "tokens=4" %%%%g in ^('systeminfo ^^^| FIND "Total Physical Memory"'
 echo set Svchost=%%Svchost:~0,-4%%
 echo set /a Svchost=^(%%Svchost%%*1024*1024+1024000^)
 echo reg add "HKLM\SYSTEM\CurrentControlSet\Control" /v "SvcHostSplitThresholdInKB" /t REG_DWORD /d 0x%%Svchost%% /f ^> NUL 2^>^&1
+) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\Katilimsiz.bat 
+goto :eof
+
+:: ==============================================================================================================================
+
+:GorevZamanlayici
+Call :PrintCheck "Görev zamanlayacısı optimize" "Görev zamanlayacı optimizasyonu"
+if %ErrorTime%==1 (goto :eof)
+(
+echo.
+echo echo ►%%R%%[33m Görev zamanlayacısı optimize%%R%%[37m ediliyor...%%R%%[0m
+echo schtasks /change /TN "\Microsoft\Windows\Windows Defender\Windows Defender Cache Maintenance" /DISABLE ^> NUL 2^>^&1
+echo schtasks /change /TN "\Microsoft\Windows\Windows Defender\Windows Defender Cleanup" /DISABLE ^> NUL 2^>^&1
+echo schtasks /change /TN "\Microsoft\Windows\Windows Defender\Windows Defender Scheduled Scan" /DISABLE ^> NUL 2^>^&1
+echo schtasks /change /TN "\Microsoft\Windows\Windows Defender\Windows Defender Verification" /DISABLE ^> NUL 2^>^&1
+echo schtasks /change /TN "\Microsoft\Windows\WindowsUpdate\Scheduled Start" /DISABLE ^> NUL 2^>^&1
+echo schtasks /change /TN "\Microsoft\Windows\Maps\MapsToastTask" /DISABLE ^> NUL 2^>^&1
+echo schtasks /change /TN "\Microsoft\Windows\Maps\MapsUpdateTask" /DISABLE ^> NUL 2^>^&1
+echo schtasks /change /TN "\Microsoft\Windows\DiskDiagnostic\Microsoft-Windows-DiskDiagnosticDataCollector" /DISABLE ^> NUL 2^>^&1
+echo schtasks /change /TN "\Microsoft\Windows\SystemRestore\SR" /DISABLE  ^> NUL 2^>^&1
+echo schtasks /change /TN "\Microsoft\Windows\Speech\SpeechModelDownloadTask" /DISABLE  ^> NUL 2^>^&1
+echo schtasks /change /TN "\Microsoft\Windows\UpdateOrchestrator\UpdateModelTask" /DISABLE ^> NUL 2^>^&1
+echo schtasks /change /TN "\Microsoft\Windows\Application Experience\ProgramDataUpdater" /DISABLE ^> NUL 2^>^&1
+echo schtasks /change /TN "\Microsoft\Windows\Application Experience\StartupAppTask" /DISABLE ^> NUL 2^>^&1
+echo schtasks /change /TN "\Microsoft\Windows\Application Experience\Microsoft Compatibility Appraiser" /DISABLE ^> NUL 2^>^&1
+echo schtasks /change /TN "\Microsoft\Windows\Application Experience\ProgramDataUpdater" /DISABLE ^> NUL 2^>^&1
+echo schtasks /change /TN "\Microsoft\Windows\DiskCleanup\SilentCleanup" /DISABLE ^> NUL 2^>^&1
+echo schtasks /change /TN "\Microsoft\Windows\Windows Error Reporting\QueueReporting" /DISABLE ^> NUL 2^>^&1
+echo schtasks /change /TN "\Microsoft\Windows\WindowsUpdate\Scheduled Start" /DISABLE ^> NUL 2^>^&1
+echo schtasks /change /TN "\Microsoft\Windows\Power Efficiency Diagnostics\AnalyzeSystem" /DISABLE ^> NUL 2^>^&1
+echo schtasks /change /TN "\Microsoft\Windows\RemoteAssistance\RemoteAssistanceTask" /DISABLE ^> NUL 2^>^&1
+echo schtasks /change /TN "\Microsoft\Windows\Time Zone\SynchronizeTimeZone" /DISABLE ^> NUL 2^>^&1
+echo schtasks /change /TN "\Microsoft\Windows\UpdateOrchestrator\Schedule Scan" /DISABLE ^> NUL 2^>^&1
+echo schtasks /change /TN "\Microsoft\Windows\UpdateOrchestrator\Schedule Scan Static Task" /DISABLE ^> NUL 2^>^&1
+echo schtasks /change /TN "\Microsoft\Windows\UpdateOrchestrator\UpdateModelTask" /DISABLE ^> NUL 2^>^&1
+echo schtasks /change /TN "\Microsoft\Windows\WaaSMedic\PerformRemediation" /DISABLE ^> NUL 2^>^&1
+echo schtasks /change /TN "\Microsoft\Windows\Customer Experience Improvement Program\Consolidator" /DISABLE ^> NUL 2^>^&1
+echo schtasks /change /TN "\Microsoft\Windows\Customer Experience Improvement Program\KernelCeipTask" /DISABLE ^> NUL 2^>^&1
+echo schtasks /change /TN "\Microsoft\Windows\Customer Experience Improvement Program\USBCeip" /DISABLE ^> NUL 2^>^&1
+echo schtasks /change /TN "\Microsoft\Windows\Power Efficiency Diagnostics\AnalyzeSystem" /DISABLE ^> NUL 2^>^&1
+echo schtasks /Change /TN "\Microsoft\Windows\Shell\FamilySafetyMonitor" /DISABLE ^> NUL 2^>^&1
+echo schtasks /Change /TN "\Microsoft\Windows\Shell\FamilySafetyRefresh" /DISABLE ^> NUL 2^>^&1
+echo schtasks /Change /TN "\Microsoft\Windows\Feedback\Siuf\DmClient" /DISABLE ^> NUL 2^>^&1
+echo schtasks /Change /TN "\Microsoft\Windows\Feedback\Siuf\DmClientOnScenarioDownload" /DISABLE ^> NUL 2^>^&1
+) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\Katilimsiz.bat 
+goto :eof
+
+:: ==============================================================================================================================
+
+:AnimasyonKapat
+Call :PrintCheck "Animasyon ve transparan efektleri" "Animasyon efektlerini kapat"
+if %ErrorTime%==1 (goto :eof)
+(
+echo.
+echo echo ►%%R%%[33m Animasyon ve transparan efektleri%%R%%[37m kapatılıyor...%%R%%[0m
+echo reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize" /v "EnableTransparency" /t REG_DWORD /d "0" ^> NUL 2^>^&1
+echo reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects" /v "VisualFXSetting" /t REG_DWORD /d 3 /f ^> NUL 2^>^&1
+echo reg add "HKCU\Control Panel\Desktop" /v "UserPreferencesMask" /t REG_BINARY /d "9012038010000000" /f ^> NUL 2^>^&1
+echo reg add "HKCU\Control Panel\Desktop\WindowMetrics" /v "MinAnimate" /t REG_SZ /d 0 /f ^> NUL 2^>^&1
+echo reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "TaskbarAnimations" /t REG_DWORD /d 0 /f ^> NUL 2^>^&1
+echo reg add "HKCU\Software\Microsoft\Windows\DWM" /v "EnableAeroPeek" /t REG_DWORD /d 0 /f ^> NUL 2^>^&1
+echo reg add "HKCU\Software\Microsoft\Windows\DWM" /v "AlwaysHibernateThumbnails" /t REG_DWORD /d 0 /f ^> NUL 2^>^&1
+echo reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "ListviewAlphaSelect" /t REG_DWORD /d 0 /f ^> NUL 2^>^&1
+echo reg add "HKCU\Control Panel\Desktop" /v "DragFullWindows" /t REG_SZ /d 0 ^> NUL 2^>^&1
+echo reg add "HKCU\Control Panel\Desktop" /v "FontSmoothing" /t REG_SZ /d 2 ^> NUL 2^>^&1
+echo reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "ListviewShadow" /t REG_DWORD /d 1 ^> NUL 2^>^&1
+echo reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer" /v "ShellState" /t REG_BINARY /d "240000003E28000000000000000000000000000001000000130000000000000062000000" ^> NUL 2^>^&1
+) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\Katilimsiz.bat 
+goto :eof
+
+:: ==============================================================================================================================
+
+:OpenShell
+if %KatilimsizMod%==1 (Call :ChocoPrint open-shell)
+if %KatilimsizMod%==2 (Call :wget1 OpenShell.exe "/quiet /norestart ADDLOCAL=StartMenu")
+if %ErrorTime%==1 (goto :eof)
+(
+echo Call :Powershell "Get-CimInstance -ClassName Win32_UserAccount ^| Select-Object -Property Name,SID" ^> %%Temp%%\cusername.txt
+echo FOR /F "tokens=2" %%%%a in ^('Find "%%username%%" %%Temp%%\cusername.txt'^) do set currentusername=%%%%a
+echo reg add "HKU\%%currentusername%%\SOFTWARE\OpenShell" /t REG_SZ /f ^> NUL 2^>^&1
+echo reg add "HKU\%%currentusername%%\SOFTWARE\OpenShell\OpenShell" /t REG_SZ /f ^> NUL 2^>^&1
+echo reg add "HKU\%%currentusername%%\SOFTWARE\OpenShell\OpenShell\Settings" /t REG_SZ /f ^> NUL 2^>^&1
+echo reg add "HKU\%%currentusername%%\SOFTWARE\OpenShell\StartMenu" /t REG_SZ /f ^> NUL 2^>^&1
+echo reg add "HKU\%%currentusername%%\SOFTWARE\OpenShell\StartMenu\Settings" /t REG_SZ /f ^> NUL 2^>^&1
+echo reg add "HKU\%%currentusername%%\SOFTWARE\OpenShell\ClassicExplorer" /t REG_SZ /f ^> NUL 2^>^&1
+echo reg add "HKU\%%currentusername%%\SOFTWARE\OpenShell\ClassicExplorer\Settings" /t REG_SZ /f ^> NUL 2^>^&1
+echo reg add "HKU\%%currentusername%%\SOFTWARE\OpenShell\ClassicExplorer" /v "ShowedToolbar" /t REG_DWORD /d 1 /f ^> NUL 2^>^&1
+echo reg add "HKU\%%currentusername%%\SOFTWARE\OpenShell\ClassicExplorer" /v "NewLine" /t REG_DWORD /d 0 /f ^> NUL 2^>^&1
+echo reg add "HKU\%%currentusername%%\SOFTWARE\OpenShell\ClassicExplorer\Settings" /v "ShowStatusBar" /t REG_DWORD /d 0 /f ^> NUL 2^>^&1
+echo reg add "HKU\%%currentusername%%\SOFTWARE\OpenShell\StartMenu" /v "ShowedStyle2" /t REG_DWORD /d 1 /f ^> NUL 2^>^&1
+echo reg add "HKU\%%currentusername%%\SOFTWARE\OpenShell\StartMenu" /v "CSettingsDlg" /t REG_BINARY /d c80100001a0100000000000000000000360d00000100000000000000 /f ^> NUL 2^>^&1
+echo reg add "HKU\%%currentusername%%\SOFTWARE\OpenShell\StartMenu" /v "OldItems" /t REG_BINARY /f ^> NUL 2^>^&1
+echo reg add "HKU\%%currentusername%%\SOFTWARE\OpenShell\StartMenu" /v "ItemRanks" /t REG_BINARY /d 0 /f ^> NUL 2^>^&1
+echo reg add "HKU\%%currentusername%%\SOFTWARE\OpenShell\StartMenu\MRU" /v "0" /t REG_SZ /d "C:\Windows\regedit.exe" /f ^> NUL 2^>^&1
+echo reg add "HKU\%%currentusername%%\SOFTWARE\OpenShell\StartMenu\Settings" /v "Version" /t REG_DWORD /d 04040098 /f ^> NUL 2^>^&1
+echo reg add "HKU\%%currentusername%%\SOFTWARE\OpenShell\StartMenu\Settings" /v "AllProgramsMetro" /t REG_DWORD /d 1 /f ^> NUL 2^>^&1
+echo reg add "HKU\%%currentusername%%\SOFTWARE\OpenShell\StartMenu\Settings" /v "RecentMetroApps" /t REG_DWORD /d 1 /f ^> NUL 2^>^&1
+echo reg add "HKU\%%currentusername%%\SOFTWARE\OpenShell\StartMenu\Settings" /v "StartScreenShortcut" /t REG_DWORD /d 0 /f ^> NUL 2^>^&1
+echo reg add "HKU\%%currentusername%%\SOFTWARE\OpenShell\StartMenu\Settings" /v "SearchInternet" /t REG_DWORD /d 0 /f ^> NUL 2^>^&1
+echo reg add "HKU\%%currentusername%%\SOFTWARE\OpenShell\StartMenu\Settings" /v "GlassOverride" /t REG_DWORD /d 1 /f ^> NUL 2^>^&1
+echo reg add "HKU\%%currentusername%%\SOFTWARE\OpenShell\StartMenu\Settings" /v "GlassColor" /t REG_DWORD /d 0 /f ^> NUL 2^>^&1
+echo reg add "HKU\%%currentusername%%\SOFTWARE\OpenShell\StartMenu\Settings" /v "SkinW7" /t REG_SZ /d "Midnight" /f ^> NUL 2^>^&1
+echo reg add "HKU\%%currentusername%%\SOFTWARE\OpenShell\StartMenu\Settings" /v "SkinVariationW7 /t REG_SZ /f ^> NUL 2^>^&1
+echo reg add "HKU\%%currentusername%%\SOFTWARE\OpenShell\StartMenu\Settings" /v "SkinOptionsW7" /t REG_MULTI_SZ /d "USER_IMAGE=1"\0"SMALL_ICONS=0"\0"LARGE_FONT=0"\0"DISABLE_MASK=0"\0"OPAQUE=0"\0"TRANSPARENT_LESS=0"\0"TRANSPARENT_MORE=1"\0"WHITE_SUBMENUS2=0" /f ^> NUL 2^>^&1
+echo reg add "HKU\%%currentusername%%\SOFTWARE\OpenShell\StartMenu\Settings" /v "SkipMetro" /t REG_DWORD /d 1 /f ^> NUL 2^>^&1
+echo reg add "HKU\%%currentusername%%\SOFTWARE\OpenShell\StartMenu\Settings" /v "MenuItems7" /t REG_MULTI_SZ /d "Item1.Command=user_files"\0"Item1.Settings=NOEXPAND"\0"Item2.Command=user_documents"\0"Item2.Settings=NOEXPAND"\0"Item3.Command=user_pictures"\0"Item3.Settings=NOEXPAND"\0"Item4.Command=user_music"\0"Item4.Settings=NOEXPAND"\0"Item5.Command=user_videos"\0"Item5.Settings=NOEXPAND"\0"Item6.Command=downloads"\0"Item6.Settings=NOEXPAND"\0"Item7.Command=homegroup"\0"Item7.Settings=ITEM_DISABLED"\0"Item8.Command=separator"\0"Item9.Command=games"\0"Item9.Settings=TRACK_RECENT|NOEXPAND|ITEM_DISABLED"\0"Item10.Command=favorites"\0"Item10.Settings=ITEM_DISABLED"\0"Item11.Command=recent_documents"\0"Item12.Command=computer"\0"Item12.Settings=NOEXPAND"\0"Item13.Command=network"\0"Item13.Settings=ITEM_DISABLED"\0"Item14.Command=network_connections"\0"Item14.Settings=ITEM_DISABLED"\0"Item15.Command=separator"\0"Item16.Command=control_panel"\0"Item16.Settings=TRACK_RECENT"\0"Item17.Command=pc_settings"\0"Item17.Settings=TRACK_RECENT"\0"Item18.Command=admin"\0"Item18.Settings=TRACK_RECENT|ITEM_DISABLED"\0"Item19.Command=devices"\0"Item19.Settings=ITEM_DISABLED"\0"Item20.Command=defaults"\0"Item20.Settings=ITEM_DISABLED"\0"Item21.Command=help"\0"Item21.Settings=ITEM_DISABLED"\0"Item22.Command=run"\0"Item23.Command=apps"\0"Item23.Settings=ITEM_DISABLED"\0"Item24.Command=windows_security"\0"Item24.Settings=ITEM_DISABLED"\0" /f ^> NUL 2^>^&1
+) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\Katilimsiz.bat 
+goto :eof
+
+:: ==============================================================================================================================
+
+:Mouse.Icon
+Call :PrintCheck "Yeni mouse iconu" "Yeni mouse iconu"
+if %ErrorTime%==1 (goto :eof)
+Call :Powershell "Expand-Archive -Force '%Location%\Files\Mouse.Icon.zip' '%Mount%\OgnitorenKs.Toolbox\Download'"
+(
+echo.
+echo echo ►%%R%%[33m Yeni mouse iconu%%R%%[37m yükleniyor...%%R%%[0m
+echo RunDll32 advpack.dll,LaunchINFSection %%Location%%\Download\Dark\Install.inf,DefaultInstall
+echo RunDll32 advpack.dll,LaunchINFSection %%Location%%\Download\Light\Install.inf,DefaultInstall
+) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\Katilimsiz.bat 
+goto :eof
+
+:: ==============================================================================================================================
+
+:Klavye-Mouse.Optimizasyon
+Call :PrintCheck "Klavye-Mouse optimizasyonu" "Klavye-Mouse optimizasyonu"
+if %ErrorTime%==1 (goto :eof)
+(
+echo.
+echo echo ►%%R%%[33m Klavye-Mouse optimizasyonu%%R%%[37m yapılıyor...%%R%%[0m
+echo :: Mouse
+echo reg add "HKLM\SYSTEM\CurrentControlSet\Services\mouhid\Parameters" /v "TreatAbsolutePointerAsAbsolute" /t REG_DWORD /d "1" /f ^> NUL 2^>^&1
+echo reg add "HKLM\SYSTEM\CurrentControlSet\Services\mouhid\Parameters" /v "TreatAbsoluteAsRelative" /t REG_DWORD /d "0" ^> NUL 2^>^&1
+echo reg add "HKCU\Control Panel\Mouse" /v "MouseHoverTime" /t REG_SZ /d "0" /f ^> NUL 2^>^&1
+echo reg add "HKCU\Control Panel\Mouse" /v "MouseSensitivity" /t REG_SZ /d "10" /f ^> NUL 2^>^&1
+echo reg add "HKCU\Control Panel\Mouse" /v "MouseSpeed" /t REG_DWORD /d "0" /f ^> NUL 2^>^&1
+echo reg add "HKCU\Control Panel\Mouse" /v "MouseThreshold1" /t REG_DWORD /d "0" /f ^> NUL 2^>^&1
+echo reg add "HKCU\Control Panel\Mouse" /v "MouseThreshold2" /t REG_DWORD /d "0" /f ^> NUL 2^>^&1
+echo reg add "HKCU\Control Panel\Mouse" /v "SmoothMouseXCurve" /t REG_BINARY /d "000000000000000000a0000000000000004001000000000000800200000000000000050000000000" /f ^> NUL 2^>^&1
+echo reg add "HKCU\Control Panel\Mouse" /v "SmoothMouseYCurve" /t REG_BINARY /d "000000000000000066a6020000000000cd4c050000000000a0990a00000000003833150000000000" /f ^> NUL 2^>^&1
+echo reg add "HKLM\SOFTWARE\Microsoft\Input\Settings\ControllerProcessor\CursorSpeed" /v "CursorSensitivity" /t REG_DWORD /d "0x2710" /f ^> NUL 2^>^&1
+echo reg add "HKLM\SOFTWARE\Microsoft\Input\Settings\ControllerProcessor\CursorSpeed" /v "CursorUpdateInterval" /t REG_DWORD /d "0x1" /f ^> NUL 2^>^&1
+echo reg add "HKLM\SOFTWARE\Microsoft\Input\Settings\ControllerProcessor\CursorSpeed" /v "IRRemoteNavigationDelta" /t REG_DWORD /d "0x1" /f ^> NUL 2^>^&1
+echo reg add "HKLM\SOFTWARE\Microsoft\Input\Settings\ControllerProcessor\CursorMagnetism" /v "AttractionRectInsetInDIPS" /t REG_DWORD /d "0x5" /f ^> NUL 2^>^&1
+echo reg add "HKLM\SOFTWARE\Microsoft\Input\Settings\ControllerProcessor\CursorMagnetism" /v "DistanceThresholdInDIPS" /t REG_DWORD /d "0x28" /f ^> NUL 2^>^&1
+echo reg add "HKLM\SOFTWARE\Microsoft\Input\Settings\ControllerProcessor\CursorMagnetism" /v "MagnetismDelayInMilliseconds" /t REG_DWORD /d "0x32" /f ^> NUL 2^>^&1
+echo reg add "HKLM\SOFTWARE\Microsoft\Input\Settings\ControllerProcessor\CursorMagnetism" /v "MagnetismUpdateIntervalInMilliseconds" /t REG_DWORD /d "0x10" /f ^> NUL 2^>^&1
+echo reg add "HKLM\SOFTWARE\Microsoft\Input\Settings\ControllerProcessor\CursorMagnetism" /v "VelocityInDIPSPerSecond" /t REG_DWORD /d "0x168" /f ^> NUL 2^>^&1
+echo :: Klavye 
+echo reg add "HKCU\Control Panel\Keyboard" /v "KeyboardDelay" /t REG_SZ /d 0 /f ^> NUL 2^>^&1
+echo reg add "HKCU\Control Panel\Keyboard" /v "KeyboardSpeed" /t REG_SZ /d 31 /f ^> NUL 2^>^&1
+echo reg add "HKLM\SYSTEM\CurrentControlSet\Services\kbdclass\Parameters" /v "KeyboardDataQueueSize" /t REG_DWORD /d 10 /f ^> NUL 2^>^&1
+echo reg add "HKCU\Control Panel\Accessibility\Keyboard Preference" /v "On" /t REG_SZ /d 0 /f ^> NUL 2^>^&1
+echo reg add "HKCU\Control Panel\Accessibility\Keyboard Response" /v "AutoRepeatDelay" /t REG_SZ /d 0 /f ^> NUL 2^>^&1
+echo reg add "HKCU\Control Panel\Accessibility\Keyboard Response" /v "AutoRepeatRate" /t REG_SZ /d 0 /f ^> NUL 2^>^&1
+echo reg add "HKCU\Control Panel\Accessibility\Keyboard Response" /v "BounceTime" /t REG_SZ /d 0 /f ^> NUL 2^>^&1
+echo reg add "HKCU\Control Panel\Accessibility\Keyboard Response" /v "DelayBeforeAcceptance" /t REG_SZ /d 0 /f ^> NUL 2^>^&1
+echo reg add "HKCU\Control Panel\Accessibility\Keyboard Response" /v "Flags" /t REG_SZ /d 0 /f ^> NUL 2^>^&1
+echo reg add "HKCU\Control Panel\Accessibility\Keyboard Response" /v "Last BounceKey Setting" /t REG_DWORD /d 0 /f ^> NUL 2^>^&1
+echo reg add "HKCU\Control Panel\Accessibility\Keyboard Response" /v "Last Valid Delay" /t REG_DWORD /d 0 /f ^> NUL 2^>^&1
+echo reg add "HKCU\Control Panel\Accessibility\Keyboard Response" /v "Last Valid Repeat" /t REG_DWORD /d 0 /f ^> NUL 2^>^&1
+echo reg add "HKCU\Control Panel\Accessibility\Keyboard Response" /v "Last Valid Wait" /t REG_DWORD /d 0 /f ^> NUL 2^>^&1
+echo reg add "HKCU\Control Panel\Accessibility\MouseKeys" /v "Flags" /t REG_SZ /d 0 /f ^> NUL 2^>^&1
+echo reg add "HKCU\Control Panel\Accessibility\MouseKeys" /v "MaximumSpeed" /t REG_SZ /d 0 /f ^> NUL 2^>^&1
+echo reg add "HKCU\Control Panel\Accessibility\MouseKeys" /v "TimeToMaximumSpeed" /t REG_SZ /d 0 /f ^> NUL 2^>^&1
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\Katilimsiz.bat 
 goto :eof
 
@@ -355,8 +536,7 @@ goto :eof
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
 :OpenBAT
-Call :PrintCheck "ognitorenks.blogspot.com" "Katılımsız dosyası oluştur"
-if %ErrorTime%==1 (goto :eof)
+echo    ►%R%[33m Katılımsız dosyası oluşturuluyor... %R%[0m
 :: Gerekli klasör ve dosyalar hazırlanıyor.
 mkdir "%Mount%\OgnitorenKs.Toolbox\Katilimsiz" > NUL 2>&1
 mkdir "%Mount%\OgnitorenKs.Toolbox\Extra" > NUL 2>&1
@@ -364,21 +544,6 @@ mkdir "%Mount%\OgnitorenKs.Toolbox\Download" > NUL 2>&1
 mkdir "%Mount%\OgnitorenKs.Toolbox\Files" > NUL 2>&1
 copy /y "%Location%\Files\wget.exe" "%Mount%\OgnitorenKs.Toolbox\Files" > NUL 2>&1
 copy /y "%Location%\Files\NSudo.exe" "%Mount%\OgnitorenKs.Toolbox\Files" > NUL 2>&1
-
-(
-echo echo off
-echo cls
-echo chcp 65001 ^> NUL
-echo title ognitorenks.blogspot.com
-echo.
-echo cd /d "%%~dp0"
-echo for /f %%%%a in ^('"cd"'^) do set Location=%%%%a
-echo set Location=%%Location:~0,-11%%
-echo.
-echo set NSudo="%%Location%%\Files\NSudo.exe" -U:E -P:E cmd /c
-echo %%NSudo%% Powershell -Command "Start-Process '%%Location%%\Katilimsiz\Katilimsiz.bat'"
-echo exit
-) > %Mount%\OgnitorenKs.Toolbox\Katilimsiz\Start.bat
 
 (
 echo :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
@@ -421,6 +586,14 @@ echo :: Üst düzey yetki
 echo set NSudo="%%Location%%\Files\NSudo.exe" -U:T -P:E -Wait -ShowWindowMode:hide cmd /c
 echo :: Yönetici yetkisi 
 echo set NSudo2="%%Location%%\Files\NSudo.exe" -U:E -P:E -Wait cmd /c
+echo :: Yönetici yetkisi beklemesiz
+echo set NSudo3="%%Location%%\Files\NSudo.exe" -U:E -P:E cmd /c
+echo.
+echo ::Yönetici yetki kontrol
+echo %%windir%%\system32\reg.exe query "HKU\S-1-5-19" ^> NUL 2^>^&1 ^|^| ^(
+echo %%NSudo3%% Powershell -command "Start-Process '%%Location%%\Katilimsiz\Katilimsiz.bat'"
+echo exit
+echo ^)
 echo.
 echo :: Katılımsız kurulum modunu ayarlar. İlk oluşturduğunuzda otomatik ayarlanır sonradan değiştirmeyin.
 echo set KatilimsizMod=%KatilimsizMod%
@@ -441,11 +614,41 @@ echo %%NSudo%% Powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New
 echo :OfflineMod
 echo cls
 echo :: ===================================================================================
+echo ::
+echo :: Kapsamlı bilgi için; https://ognitorenks.blogspot.com/2022/08/format-sonras-aclacak-sekilde-bat.html
+echo ::
+echo :: • Chocolatey sisteminde farklı programlar nasıl eklenir?
+echo :: 
+echo :: Sonradan Chocolatey sisteminden program eklemek isterseniz. Eğer offline kurulum hazırladıysanız yukarıdan 'set KatilimsizMod=1' yapınız.
+echo :: Alttaki linke tıklayarak açılan web sayfasının arama motorunda programları aratabilirsiniz.
+echo :: https://community.chocolatey.org/packages
+echo :: Bulduğunuz programların sağ yanında beyaz kutucuk içinde 'choco install ----' yazar. Choco install'dan sonra yazan bölümü kopyalayın.
+echo :: Alt bölüme şu şekilde ekleyin; ^(Dikkat edin :: bu işareti eklemeyin yoksa yorum satırı olur ve işlem yapmaz^)
+echo :: Call :Choco adobereader
+echo :: Call :Choco winrar
+echo :: 'Call :Choco' yazan yerden sonra kopyaladığınız bölümü yapıştırmanız gerekiyor.
+echo ::
+echo :: • Offline kurulum için sonradan program nasıl eklenir?
+echo ::
+echo :: Eklemek istediğiniz setup dosyasını imaj klasörü yolu içinde yer alan 'OgnitorenKs.Toolbox\Download' içine ekleyin.
+echo :: İmaj klasörüne nasıl ulaşılır? : - NTLite ^> Kaynak ^> İşlem yaptığınız Windows sürümüne sağ tıklayın. ^> 'Bağlama dizinini keşfet' tıklayın. Açılan klasör penceresidir.
+echo :: Program ismini uzantısıyla kopyaladıktan sonra aşağıya şu şekilde ekleyin;
+echo :: "C:\OgnitorenKs.Toolbox\Download\adobereader.exe" /sPB /rs /msi
+echo :: adobereader.exe yazan yere kopyaladığınız programın ismini uzantısıyla yapıştırın.
+echo :: Tırnak işareti dışında kalan bölüm sessiz kurulum parametresidir. Programın sessiz kurulum parametresini bulmak için alttaki siteyi kullanabilirsiniz;
+echo :: https://silentinstallhq.com/
+echo :: .msi uzantılı dosyalar /qn parametresiyle sessiz kurulum yapmaktadır. 
+echo :: Program eğer katılımsız olarak hazırlanmışsa herhangi bir sessiz kurulum parametersi girmeniz gerekmez. Şu şekilde yapınız;
+echo :: "C:\OgnitorenKs.Toolbox\Download\adobereader.exe"
+echo ::
+echo :: ===================================================================================
+echo ::
 echo :: ► ► Yapacağınız farklı program ve ayarları buradan sonra ekleyin.
 echo.
 echo.
 echo.
 ) > %Mount%\OgnitorenKs.Toolbox\Katilimsiz\Katilimsiz.bat
+timeout /t 2 /nobreak > NUL
 goto :eof
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
@@ -542,7 +745,7 @@ echo ^)
 echo exit /B 0
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\Katilimsiz.bat
 Call :RegeditInstall
-reg add "HKLM\OFF_SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /v "OgnitorenKs" /t REG_SZ /d "C:\OgnitorenKs.Toolbox\Katilimsiz\Start.bat" /f
+reg add "HKLM\OFF_SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /v "OgnitorenKs" /t REG_SZ /d "C:\OgnitorenKs.Toolbox\Katilimsiz\Katilimsiz.bat" /f
 Call :RegeditCollect
 goto :eof
 
@@ -556,7 +759,7 @@ goto :eof
 set /p Yedek=%R%[97m  ►%R%[92m Yedek Zip Yolu : %R%[0m
 Call :Powershell "Expand-Archive -Force '%Yedek%' '%Mount%'" 
 Call :RegeditInstall
-reg add "HKLM\OFF_SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /v "OgnitorenKs" /t REG_SZ /d "C:\OgnitorenKs.Toolbox\Katilimsiz\Start.bat" /f
+reg add "HKLM\OFF_SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /v "OgnitorenKs" /t REG_SZ /d "C:\OgnitorenKs.Toolbox\Katilimsiz\Katilimsiz.bat" /f
 Call :RegeditCollect
 goto :eof
 

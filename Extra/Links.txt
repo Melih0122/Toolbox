@@ -24,7 +24,7 @@
 ::
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
-VersionCheck:3.6
+VersionCheck:3.6.1
 Version8Check:2.7
 
 ►►► All in One Runtimes ◄◄◄
@@ -53,7 +53,7 @@ https://download.microsoft.com/download/8/4/A/84A35BF1-DAFE-4AE8-82AF-AD2AE20B6B
 
 https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x86 Discord.exe https://discord.com/
 https://web.whatsapp.com/desktop/windows/release/x64/WhatsAppSetup.exe WhatsApp.exe https://www.whatsapp.com/download
-https://updates.signal.org/desktop/signal-desktop-win-5.56.0.exe Signal.exe https://signal.org/download/
+https://updates.signal.org/desktop/signal-desktop-win-5.57.0.exe Signal.exe https://signal.org/download/
 https://telegram.org/dl/desktop/win64 Telegram.exe https://desktop.telegram.org/
 https://zoom.us/client/latest/ZoomInstallerFull.msi Zoom.msi
 
@@ -74,10 +74,10 @@ https://github.com/henrypp/memreduct/releases/download/v.3.4/memreduct-3.4-setup
 ►►► TARAYICI ◄◄◄
 
 :: https://chromeenterprise.google/browser/download/thank-you/?platform=WIN64_MSI&channel=stable&usagestats=0
-https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B225F9402-3265-F325-6026-28CDF593903F%7D%26lang%3Den%26browser%3D5%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dtrue%26ap%3Dx64-stable-statsdef_0%26brand%3DGCEA/dl/chrome/install/googlechromestandaloneenterprise64.msi GoogleChrome.msi
+https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B6076B6AF-71E0-6987-6335-47C108B12F7D%7D%26lang%3Den%26browser%3D5%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dtrue%26ap%3Dx64-stable-statsdef_0%26brand%3DGCEA/dl/chrome/install/googlechromestandaloneenterprise64.msi GoogleChrome.msi
 https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=tr Firefox.exe
 https://brave-browser-downloads.s3.brave.com/latest/brave_installer-x64.exe Brave.exe
-https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/2f56f555-a769-4a4a-bd1d-8b7affd26e0d/MicrosoftEdgeEnterpriseX64.msi Edge.msi https://www.microsoft.com/en-us/edge/business/download
+https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/5cdb292a-ea8a-4aed-b2c5-73e2a74ad28f/MicrosoftEdgeEnterpriseX64.msi Edge.msi https://www.microsoft.com/en-us/edge/business/download
 https://net.geo.opera.com/opera_gx/stable/windows OperaGX.exe
 
 ►►► SIKIŞTIRMA ◄◄◄
@@ -92,7 +92,7 @@ https://github.com/OpenShot/openshot-qt/releases/download/v2.6.1/OpenShot-v2.6.1
 https://github.com/mltframework/shotcut/releases/download/v22.06.23/shotcut-win64-220623.exe Shotcut.exe https://shotcut.org/download/
 https://download.kde.org/stable/krita/5.1.0/krita-x64-5.1.0-setup.exe Krita.exe https://krita.org/en/download/krita-desktop/
 https://ftp.gwdg.de/pub/grafik/gimp/v2.10/windows/gimp-2.10.32-setup-1.exe Gimp.exe https://www.gimp.org/downloads/
-https://cdn-fastly.obsproject.com/downloads/OBS-Studio-27.2.4-Full-Installer-x64.exe OBS.exe https://obsproject.com/tr/download
+https://cdn-fastly.obsproject.com/downloads/OBS-Studio-28.0.1-Full-Installer-x64.exe OBS.exe https://obsproject.com/tr/download
 https://github.com/ShareX/ShareX/releases/download/v14.1.0/ShareX-14.1.0-setup.exe ShareX.exe https://github.com/ShareX/ShareX/releases
 https://github.com/audacity/audacity/releases/download/Audacity-3.1.3/audacity-win-3.1.3-64bit.exe Audacity.exe https://www.audacityteam.org/download/
 https://github.com/sylikc/jpegview/releases/download/v1.0.40/JPEGView64_en-us_1.0.40.msi JPEGView.msi https://github.com/sylikc/jpegview/releases
@@ -101,7 +101,7 @@ https://github.com/Tichau/FileConverter/releases/download/v1.2.3/FileConverter-1
 
 ►►► VİDEO-SES OYNATICI ◄◄◄
 
-https://files3.codecguide.com/K-Lite_Codec_Pack_1715_Mega.exe Klite.exe https://codecguide.com/download_k-lite_codec_pack_mega.htm
+https://files3.codecguide.com/K-Lite_Codec_Pack_1720_Mega.exe Klite.exe https://codecguide.com/download_k-lite_codec_pack_mega.htm
 https://mirrors.netix.net/vlc/vlc/3.0.17.4/win64/vlc-3.0.17.4-win64.exe VLCMediaPlayer.exe https://www.videolan.org/index.tr.html
 https://t1.daumcdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe PotPlayer.exe https://potplayer.daum.net/
 https://www.aimp.ru/?do=download.file&id=4 Aimp.exe https://www.aimp.ru/?do=download&os=windows
@@ -113,7 +113,7 @@ https://mirror2.internetdownloadmanager.com/idman641build2.exe?v=lt&filename=idm
 https://dn3.freedownloadmanager.org/6/latest/fdm_x64_setup.exe FreeDownloadManager.exe https://www.freedownloadmanager.org/
 https://docs.google.com/uc?export=download&id=1z7u4XZQVNDWN3mflWZBW6C6nIf0lbuUo EagleGet.zip
 https://proxy.byclickdownloader.com/ExternalSetup/InstallPage/ByClickDownloader-Setup.exe ByClick.exe https://www.byclickdownloader.com/tr/
-https://yer.dl.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-4.4.4/qbittorrent_4.4.4_x64_setup.exe Qbittorrent.exe https://www.qbittorrent.org/download.php
+https://yer.dl.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-4.4.5/qbittorrent_4.4.5_x64_setup.exe Qbittorrent.exe https://www.qbittorrent.org/download.php
 
 ►►► BELGELER ◄◄◄
 
@@ -126,9 +126,9 @@ https://calibre-ebook.com/dist/win64 Calibre.msi https://calibre-ebook.com/downl
 
 https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.4.4/npp.8.4.4.Installer.x64.exe Notepad.exe https://notepad-plus-plus.org/downloads/
 https://www.python.org/ftp/python/3.10.6/python-3.10.6-amd64.exe Python.exe https://www.python.org
-https://az764295.vo.msecnd.net/stable/e4503b30fc78200f846c62cf8091b76ff5547662/VSCodeUserSetup-x64-1.70.2.exe VisualStudioCode.exe https://code.visualstudio.com/
+https://az764295.vo.msecnd.net/stable/784b0177c56c607789f9638da7b6bf3230d47a8c/VSCodeUserSetup-x64-1.71.0.exe VisualStudioCode.exe https://code.visualstudio.com/
 https://central.github.com/deployments/desktop/desktop/latest/win32 Github.exe https://desktop.github.com/
-https://github.com/git-for-windows/git/releases/download/v2.37.2.windows.2/Git-2.37.2.2-64-bit.exe Git.exe https://git-scm.com/download/win
+https://github.com/git-for-windows/git/releases/download/v2.37.3.windows.1/Git-2.37.3-64-bit.exe Git.exe https://git-scm.com/download/win
 https://nodejs.org/dist/v16.17.0/node-v16.17.0-x64.msi NodeJS.msi https://nodejs.org/en/download/
 https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup.exe UnityHub.exe https://unity3d.com/get-unity/download
 https://ftp.halifax.rwth-aachen.de/blender/release/Blender3.2/blender-3.2.2-windows-x64.msi Blender.msi https://www.blender.org/download/
@@ -222,6 +222,7 @@ https://github.com/Orbmu2k/nvidiaProfileInspector/releases/download/2.3.0.10/nvi
 https://ftp.nluug.nl/pub/games/PC/guru3d/tweak/[Guru3D.com]-RadeonMod.zip RadeonMod.zip https://www.guru3d.com/files-details/amd-registry-editor-download.html
 https://github.com/GSDragoon/RadeonSoftwareSlimmer/releases/download/1.7.0/RadeonSoftwareSlimmer_1.7.0_net60.zip RadeonSoftwareSlimmer.zip https://github.com/GSDragoon/RadeonSoftwareSlimmer/releases
 https://docs.google.com/uc?export=download&id=1_JP9LtvkdxH-l3C4Z0ceGMEeII5pwwgk NVCleanstall.zip https://www.techpowerup.com/nvcleanstall/
+https://tr.download.nvidia.com/GFE/GFEClient/3.25.1.27/GeForce_Experience_v3.25.1.27.exe GeForce.Experience.exe https://www.nvidia.com/tr-tr/geforce/geforce-experience/
 
 ►►► Diğer  ◄◄◄
 https://files1.majorgeeks.com/10afebdbffcd4742c81a3cb0f6ce4092156b4375/drives/SSD%20Booster%20Setup.exe SSDBooster.exe https://www.majorgeeks.com/files/details/ssd_booster.html
