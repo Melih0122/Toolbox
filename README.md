@@ -7,7 +7,7 @@
 - ► <B> [Projeye Katkıda Bulunanlar](https://github.com/OgnitorenKs/OgnitorenKs.Toolbox/blob/main/Projeye-Katk%C4%B1da-Bulunanlar.md) </B>
 
 # OGNİTORENKS TOOLBOX
-![cmd_UsAAGBW63Y](https://user-images.githubusercontent.com/93199689/186952036-5e24604a-c2d9-46b2-9d23-173f59f9cda1.png)
+![cmd_a8lVbN2mVf](https://user-images.githubusercontent.com/93199689/188331219-795981af-62e3-4c3f-bf03-af5f57c09d02.png)
 
 - OgnitorenKs Toolbox Windows 10 - 11 sürümlerinin x64 mimarilerinde açılmaktadır. En güncel olan Windows sürümü ile senkronize olarak gelişmektedir.
 - Windows ekran ölçeklendirme ayarı Toolbox'ın pencere ayarını bozabiliyor. Sorunsuz kullanım için Toolbox'ı kullanırken ölçeklendirme etkileri kapatılmalıdır.
@@ -18,9 +18,9 @@
 # OGNİTORENKS TOOLBOX İÇERİĞİ
 <details><B><summary> 1 - Uygulama Yükleyici</B></summary>
 ----
-Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar ücretsiz alternatifler arasında seçilmiştir. WinRaR hariç o da ücretli ama ücretsiz bir yazılımdır.
+Bu bölümdeki programların büyük çoğunluğu ücretsiz uygulamalar arasında seçilmiştir.
 
-![cmd_STdBteJb4S](https://user-images.githubusercontent.com/93199689/185706294-a2f95d24-72cf-479c-be9f-4d065999edce.png)
+![cmd_hwfcW39jKk](https://user-images.githubusercontent.com/93199689/188331249-0092939a-bb1d-477d-b0e9-cdd8335a5a4e.png)
 ![cmd_otDomifS1u](https://user-images.githubusercontent.com/93199689/185706427-a2b5cb1d-33f6-4fdd-9027-aca214dc8583.png)
 
 	• 1M - All in One Runtimes: C++ 2005-2022 / Java / XNA Framework / OpenAL / DirectX. Bu programlar oyunlar ve bazı uygulamalarda sorun yaşamamanız için mutlaka kurulmalıdır.
@@ -116,7 +116,7 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 
 <details><B><summary> 2 - Araç Yükleyici</B></summary>
 
-![cmd_tLRrpUgl5E](https://user-images.githubusercontent.com/93199689/177618916-a3863a49-9770-468f-9756-995c5e175dbc.png)
+![Clover_rtfpEZPUmc](https://user-images.githubusercontent.com/93199689/188331256-c4066adb-a7ad-4f5a-91f4-9716a9eb1658.png)
 
 #### ► Windows Düzenleme
 	• 1 - NTLite: Sistem düzenleme işleminde kullanılır. En kullanışlı ve kapsamlı yazılımlardandır. Ücretsiz özellikleriyle performans sürüm düzenlemesi yapılabilir.
@@ -153,18 +153,19 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	• 25 - Radeon Software Slimmer: Ekran kartı kurulumuyla ilgili çok fazla seçenek sunarak ihtiyaç dışı özellikleri devre dışı bırakmanızı sağlar.
 	• 26 - NVCCleanstall: NVIDIA ekran kartı driver kurulumunda fazla seçenek sunarak ihtiyaç dışı özellikleri yüklememenizi sağlar.
 	• 27 - Snappy Driver Installer: Driver güncelleme, yükleme uygulamasıdır. Ücretsizdir. Herhangi bir kısıtlam söz konusu değildir. Sayfaları üzerinden yapımcılarına destek olabilirsiniz.
+	• 28 - Geforce Experience: Nvidia ekran kartı driver yükleme aracı.
 #### ► Diğer
-	• 28 - SSD Booster: SSD sağlığının uzaması için bazı indexleme ve SSD'ler için gereksiz hızlandırma servislerini devre dışı bırakmanızı sağlar. SSD'ye harici olarak hız vermez.
-	• 29 - Folder2ISO: Klasörleri ISO'ya dönüştürebileceğiniz basit, küçük bir uygulama.
-	• 30 - Process Monitor: Olası sorunlarda analiz yapabilmek için log dosyası oluşturmanızı sağlar.
-	• 31 - AOMEI Partition Assistans: Disk yönetimi uygulamasıdır.
-	• 32 - Spotify Adblocker: Spotify ücretsiz sürümünde çıkan sesli reklamlar geldiğinde ses sisteminde Spotify'ın sesini kapatır. Böylece reklam dinlemekten kurtulursunuz. Programın yapımcısı 'Mehmet Güdük'tür. Reklam engelleyici çalıştırdığınızda açık değil ise Spotify'da açmaktadır. Böylece her Spotify açtığınızda reklam engelleyici açma derdiniz de bulunmuyor. Ücretsiz sürüm kullananlar programı mutlaka yüklemeli.
+	• 29 - SSD Booster: SSD sağlığının uzaması için bazı indexleme ve SSD'ler için gereksiz hızlandırma servislerini devre dışı bırakmanızı sağlar. SSD'ye harici olarak hız vermez.
+	• 30 - Folder2ISO: Klasörleri ISO'ya dönüştürebileceğiniz basit, küçük bir uygulama.
+	• 31 - Process Monitor: Olası sorunlarda analiz yapabilmek için log dosyası oluşturmanızı sağlar.
+	• 32 - AOMEI Partition Assistans: Disk yönetimi uygulamasıdır.
+	• 33 - Spotify Adblocker: Spotify ücretsiz sürümünde çıkan sesli reklamlar geldiğinde ses sisteminde Spotify'ın sesini kapatır. Böylece reklam dinlemekten kurtulursunuz. Programın yapımcısı 'Mehmet Güdük'tür. Reklam engelleyici çalıştırdığınızda açık değil ise Spotify'da açmaktadır. Böylece her Spotify açtığınızda reklam engelleyici açma derdiniz de bulunmuyor. Ücretsiz sürüm kullananlar programı mutlaka yüklemeli.
 	   ► Resmi Sayfası: https://github.com/mehmetguduk/Spotify-Adblocker
 </details>
 
 <details><B><summary> 3 - Windows 10 Edit</B></summary>
 	
-![cmd_ZaCFOruc92](https://user-images.githubusercontent.com/93199689/182486143-d438d5da-314c-44b9-95f2-c78370d6da0e.png)
+![cmd_nH0CG8fVtr](https://user-images.githubusercontent.com/93199689/188331301-fdf97480-80c7-4eae-b153-fe70686a1c50.png)
 
 	• 1 - Taskbar saat yanı simge ayarı [GÖSTER/GİZLE]: 
 	     •[Göster]: 0 - Saat yanında yer alan tüm simgeleri gösterir.
@@ -188,22 +189,20 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	     •[Aç]: 1 - Windows sistem dosyalarını sıkıştırmayı açar.
 	     •[Kapat]: 2 - Windows sistem dosyalarını sıkıştırmayı kapatır.
 		
-	• 7 - Gpedit.msc (Yerel Grup ilkesi) [Ekle]: Windows Home ve Home Single Language sürümlerine "Gpedit.msc" ekler.
-	
-	• 8 - Simgeleri Değiştir [Eski/Yeni]: 21H2 beta sürümünde gelen ancak iptal edilen simgeleri sisteme yükler. Bu bölüme ilk girişinizde simge dosyalarını indirecektir! Bazı durumlarda simgeleri değişse dahi değişmemiş görünebilir. Bu tarz durumlarda yeniden başlatma işleminden sonra simge değiştirme bölümünü yeniden uygulayınız.
+	• 7 - Simgeleri Değiştir [Eski/Yeni]: 21H2 beta sürümünde gelen ancak iptal edilen simgeleri sisteme yükler. Bu bölüme ilk girişinizde simge dosyalarını indirecektir! Bazı durumlarda simgeleri değişse dahi değişmemiş görünebilir. Bu tarz durumlarda yeniden başlatma işleminden sonra simge değiştirme bölümünü yeniden uygulayınız.
 	     •[Eski]: 1 - Windows 10 eski (Varsayılan) simgeleri yükler.
 	     •[Yeni]: 2 - Windows 10 yeni simgeleri yükler.
-	• 9 - Güncellemeleri 2050 yılına kadar ertele: Windows Update hizmetini 2050 yılına kadar etkisiz hale getirir.
-	• 10 - Telemetri/Reklam engelli hosts ekle: Telemetri ve reklam iplerinin engellendiği hosts dosyasını yükler. Spotify, Blitz, Wemod gibi uygulama arayüzünde çıkan reklamlarda engellenir.
-	• 11 - Windows Fotoğraf Görüntüleyici [Aç/Kapat]: Eski Windows Fotoğraf Görüntüleyeicisini açıp kapatır.
-	• 12 - Alt + Tab [Eski/Yeni]: Uygulamalar arası hızlı geçiş bölümünü eski veya yeni haliyle kullanmanızı sağlar.
-	• 13 - Sağ-Tık Yönet [Ekle/Kaldır]: Masaüstü ve Klasör içi sağ tık bölümünde Yönet bölümü ekler. Yönet bölümü içinde;
+	• 8 - Güncellemeleri 2050 yılına kadar ertele: Windows Update hizmetini 2050 yılına kadar etkisiz hale getirir.
+	• 9 - Telemetri/Reklam engelli hosts ekle: Telemetri ve reklam iplerinin engellendiği hosts dosyasını yükler. Spotify, Blitz, Wemod gibi uygulama arayüzünde çıkan reklamlarda engellenir.
+	• 10 - Windows Fotoğraf Görüntüleyici [Aç/Kapat]: Eski Windows Fotoğraf Görüntüleyeicisini açıp kapatır.
+	• 11 - Alt + Tab [Eski/Yeni]: Uygulamalar arası hızlı geçiş bölümünü eski veya yeni haliyle kullanmanızı sağlar.
+	• 12 - Sağ-Tık Yönet [Ekle/Kaldır]: Masaüstü ve Klasör içi sağ tık bölümünde Yönet bölümü ekler. Yönet bölümü içinde;
 		• Denetim Masası / Ayarlar / Güç Yönetimi / Görev Yöneticisi / Komut İstemi / Regedit / Explorer Reset / Temp Temizle / Simge önbelleğini temizle 
 </details>
 
 <details><B><summary> 3 - Windows 11 Edit</B></summary>
 
-![cmd_rkEd7c3L43](https://user-images.githubusercontent.com/93199689/182486164-2a49c4b6-c4aa-40f1-8819-3a39e7975ce9.png)
+![cmd_r5l2MKpaOB](https://user-images.githubusercontent.com/93199689/188331325-eb0c48f4-fc67-4037-a72d-cebd49b6385d.png)
 
 	• 1 - Taskbar Boyut [Küçük/Orta/Büyük]: 22H2'de çalışmıyor.
 	     •[Küçük]: 0 - Görev çubuğunu küçük yapar.
@@ -233,13 +232,12 @@ Bu bölümdeki programların hiçbiri ücretli değildir. Bütün programlar üc
 	• 7 - CompactOS (Windows Sıkıştırma) [Aç/Kapat]: Windows sistem dosyalarını sıkıştırarak 3 - 4 GB'lık bir alan kazanmanızı sağlar. Performans kaybı yaratmaz.
 	     •[Aç]: 1 - Windows sistem dosyalarını sıkıştırmayı açar.
 	     •[Kapat]: 2 - Windows sistem dosyalarını sıkıştırmayı kapatır.
-		
-	• 8 - Gpedit.msc (Yerel Grup ilkesi) [Ekle]: Windows Home ve Home Single Language sürümlerine "Gpedit.msc" ekler.
-	• 9 - Güncellemeleri 2050 yılına kadar ertele: Windows Update hizmetini 2050 yılına kadar etkisiz hale getirir.
-	• 10 - Telemetri/Reklam engelli hosts ekle: Telemetri ve reklam iplerinin engellendiği hosts dosyasını yükler. Spotify, Blitz, Wemod gibi uygulama arayüzünde çıkan reklamlarda engellenir.
-	• 11 - Windows Fotoğraf Görüntüleyici [Aç/Kapat]: Eski Windows Fotoğraf Görüntüleyeicisini açıp kapatır.
-	• 12 - Alt + Tab [Eski/Yeni]: Uygulamalar arası hızlı geçiş bölümünü eski veya yeni haliyle kullanmanızı sağlar.
-	• 13 - Sağ-Tık Yönet [Ekle/Kaldır]: Masaüstü ve Klasör içi sağ tık bölümünde Yönet bölümü ekler. Yönet bölümü içinde;
+
+	• 8 - Güncellemeleri 2050 yılına kadar ertele: Windows Update hizmetini 2050 yılına kadar etkisiz hale getirir.
+	• 9 - Telemetri/Reklam engelli hosts ekle: Telemetri ve reklam iplerinin engellendiği hosts dosyasını yükler. Spotify, Blitz, Wemod gibi uygulama arayüzünde çıkan reklamlarda engellenir.
+	• 10 - Windows Fotoğraf Görüntüleyici [Aç/Kapat]: Eski Windows Fotoğraf Görüntüleyeicisini açıp kapatır.
+	• 11 - Alt + Tab [Eski/Yeni]: Uygulamalar arası hızlı geçiş bölümünü eski veya yeni haliyle kullanmanızı sağlar.
+	• 12 - Sağ-Tık Yönet [Ekle/Kaldır]: Masaüstü ve Klasör içi sağ tık bölümünde Yönet bölümü ekler. Yönet bölümü içinde;
 		• Denetim Masası / Ayarlar / Güç Yönetimi / Görev Yöneticisi / Komut İstemi / Regedit / Explorer Reset / Temp Temizle / Simge önbelleğini temizle 
 </details>
 
@@ -249,7 +247,7 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 
 Örnek: 1a / 2k / 4A / 10K / 23a / 24k  
 
-![cmd_9hgHYBXtry](https://user-images.githubusercontent.com/93199689/182486189-7d13021a-88bb-4f3f-87c4-ec87c24d2280.png)
+![cmd_hvJTHyyjGS](https://user-images.githubusercontent.com/93199689/188331362-99b29e7d-1ab0-4221-bf9e-d73e43ab69ad.png)
 
 	• 1 [A/K]- Bluetooth hizmeti : Bluetooth hizmetlerini kapatır açar.
 	• 2 [A/K]- Yazıcı hizmeti : Yazıcı hizmetlerini kapatır açar.
@@ -282,12 +280,13 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 	• 29 [A/K]- Fax hizmeti: Fax hizmetini açıp kapatmaya yarar. Açıp veya kapattıktan sonra reset atınız.
 	• 30 [A/K]- Yazı Tipi Önbelllği hizmeti: Yazı tipi önbelleği hizmetini kapatır. SSD'ler için kapatılması önerilir. Kapatılırsa uygulamaların açılış hızında düşüşe neden olabilir. 
 	• 31 [A/K]- Hızlı Kullanıcı Değiştirme hizmeti: Hızlı kullanıcı değiştirme hizmetini açıp kapatır. "Ctrl + Alt + Delete" ekranında hızlı kullanıcı değiştirme bölümünü açıp kapatır. 
+	• 32 [A/K]- Tanı İlkesi Hizmeti: Program uyumluluk yardımcısı hizmetleridir.
 </details>
 
 <details><B><summary> 5 - Windows Düzenleme</B></summary>
 Mavi renkli işlem numaraları 20 numaralı işlem ile alakalıdır.
 
-![cmd_4a6ZsF8Zme](https://user-images.githubusercontent.com/93199689/186950651-a8c14046-7499-4917-b712-9665bc278657.png)
+![cmd_Y2Nw4BzZUh](https://user-images.githubusercontent.com/93199689/188331370-3fded65f-3585-4b15-8051-0335e7239419.png)
 
 	• 1 - WIM / ESD Okuyucu: install.wim ve install.esd dosyalarının içeriği hakkında bilgi verir.
 	• 2 - AIO Windows Hazırla: İnstall.wim sürümlerini birleştirmeye yarar. "X" tuşu burada çalışmaz.
@@ -431,7 +430,7 @@ Simge önbelleğini temizleyerek arama bölümündeki simge hatasını, masaüst
 <details><B><summary> 14 - Ping Ölçer</B></summary>
 İçerisinde belirli sitelerin ping durumlarını otomatik gösterir. Alt bölümde yer alan "Ping ölç" bölümüyle istediğiniz site ve IP'nin pingini ölçebilirsiniz.
 	
-![cmd_RYynOfcKdu](https://user-images.githubusercontent.com/93199689/167626925-b8e56f24-a69a-4b84-b71b-42f91aafcc70.png)
+![cmd_LI4e3XcXIt](https://user-images.githubusercontent.com/93199689/188331396-39132ff2-8853-40ee-911a-293d36401fcf.png)
 
 </details>
 
@@ -493,22 +492,18 @@ Performans ile ilgili ayarları uygular. İşlem öncesi değiştirilecek veya e
 Örnek;
 1a / 2k / 3A / 4K 
 
-![cmd_E08YT9hFBD](https://user-images.githubusercontent.com/93199689/186998733-92cd2d1c-8edb-429d-a9a8-676459d6b324.png)
+![Clover_A4QrST7BBq](https://user-images.githubusercontent.com/93199689/188331413-705dcfeb-6f4e-4b9a-8afa-69c02bef781d.png)
 
 	• 1[A/K] - Svchost Ram Optimizasyonu: Svchost hizmetini sistemdeki Ram miktarınıza göre düzenler ve parçalar halindeki Svchost işlemlerini tüm hale getirerek Ram kullanımı düşürür. Bazı durumlarda ses ve mikrofon ayarlarına girerken bellek taşma hatası yapabilir. Böyle bir hata alırsanız kapatabilirsiniz.
-	• 2[A/K] - İnternet Optimizasyonu: İnternet bağlantısında bazı iyileştirmeler yapar.
-	• 3[A/K] - AMD Ekran Kartı Optimizasyonu: Akıcı ve yüksek FPS almanız için performans odaklı düzenlemeler yapar.
-	• 4[A/K] - NVIDIA Ekran Kartı Optimizasyonu: Akıcı ve yüksek FPS almanız için performans odaklı düzenlemeler yapar.
-	• 5[A/K] - Genel Optimizasyon: Genel olarak derlenen performans düzenlemelerini uygular.
-	• 6[ A ] - Nihai Performans Güç Seçeneği: Yüksek performans için en iyi ayarların yapıldığı güç seçeneğini ekler ve seçili hale getirir.
-	• 7[A/K] - Aygıt Optimizasyonu: Bazı aygıt servislerini devre dışı bırakarak gecikmeyi düşürmeyi sağlar.
-	• 8      - Uygulama işlem önceliği düzenleme: Görev Yöneticisi Ayrıntılar bölümünde yer alan uygulamaların çalışma önceliklerini bu bölümden sürekli olarak değiştirebilirsiniz.
+	• 2[ A ] - Nihai Performans Güç Seçeneği: Yüksek performans için en iyi ayarların yapıldığı güç seçeneğini ekler ve seçili hale getirir.
+	• 3[A/K] - Aygıt Optimizasyonu: Bazı aygıt servislerini devre dışı bırakarak gecikmeyi düşürmeyi sağlar.
+	• 4      - Uygulama işlem önceliği düzenleme: Görev Yöneticisi Ayrıntılar bölümünde yer alan uygulamaların çalışma önceliklerini bu bölümden sürekli olarak değiştirebilirsiniz.
 </details>
 
 <details><B><summary> Z - Toolbox Ayarları</B></summary>
 Toolbox üzerinde ayar yapıp. Bilgi alabileceğiniz bölüm.
 
-![cmd_6Fh9EPLg7p](https://user-images.githubusercontent.com/93199689/185707803-1ae88294-ea37-48c0-afd7-4596bf3844f7.png)
+![cmd_LssN6dG8HD](https://user-images.githubusercontent.com/93199689/188331463-5d7d0aee-ed9b-480c-a709-7724ea79e0c5.png)
 
 	• 1 [A/K] - Otomatik Güncelleme: Güncelleştirmeleri otomatik olarak takip edip etmeyeceğini ayarlayabilirsiniz.
 	• 2 [A/K] - Log Kayıt: Yapılan işlemlerden sonra kayıt ayarını açıp kapatabilirsiniz.
@@ -517,8 +512,8 @@ Toolbox üzerinde ayar yapıp. Bilgi alabileceğiniz bölüm.
 	• 5 [A/K] - İnternet bağlantı kontrolü: Bazı durumlarda google.com adresine gönderilen pinglerde yaşanan sorunlardan dolayı internet olmasına rağmen indirme işlemlerinde internet yok hatası verebiliyor. Bu tarz bir hata yaşarsanız bu bölümü kapatınız.
 	•       6 - Masaüstünde kısayol oluştur.
 	•       7 - Güncelleme Kontrol Et
-	•       8 - Toolbox Rehber
-	•       9 - ognitorenks.blogspot.com
-	•      10 - Github Proje Sayfası
-	•      11 - Güncelleme Notları
+	•       8 - Toolbox Rehber (blogspot)
+	•       9 - Güncelleme Notları
+	•      10 - Hakkımda - İletişim: Bana ulaşabileceğiniz bağlantıları içereren sayfaya yönlendirir.
+	
 </details>
