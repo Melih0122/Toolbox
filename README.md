@@ -510,8 +510,8 @@ Toolbox üzerinde ayar yapıp. Bilgi alabileceğiniz bölüm.
 	• 3 [A/K] - Tarayıcı eklenti ayarı: Tarayıcılar yüklenirken eklenti yüklenip yüklenmeyeceğini ayarlayabilirsiniz.
 	• 4 [A/K] - Chocolatey yükleme sistemi: Chocolatey yükleme sistemini açıp kapatmaya yarar.
 	• 5 [A/K] - İnternet bağlantı kontrolü: Bazı durumlarda google.com adresine gönderilen pinglerde yaşanan sorunlardan dolayı internet olmasına rağmen indirme işlemlerinde internet yok hatası verebiliyor. Bu tarz bir hata yaşarsanız bu bölümü kapatınız.
-	•       6 - Masaüstünde kısayol oluştur.
-	•       7 - Güncelleme Kontrol Et
+	•       6 - Masaüstüne kısayol oluştur
+	•       7 - Güncellemeleri kontrol et
 	•       8 - Toolbox Rehber (blogspot)
 	•       9 - Güncelleme Notları
 	•      10 - Hakkımda - İletişim: Bana ulaşabileceğiniz bağlantıları içereren sayfaya yönlendirir.
