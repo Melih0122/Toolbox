@@ -4,7 +4,7 @@
 -   Mail: ognitorenks@gmail.com
 -   Site: https://ognitorenks.blogspot.com/
 
-<details><B><summary> Versiyon 3.6.1 ►  GELİŞTİRİLİYOR...</B></summary>
+<details><B><summary> Versiyon 3.6.1 ►  04.09.2022</B></summary>
 
 	• Performans Optimizasyonu > Nihai Performans güç seçeneği bölümünün durumunu gösteren komutdaki hata giderildi.
 	• Windows Edit > Katılımsız Program / Ayar Ekle > Masaüstüne dosya ekle bölümüne dosyalarınızı ekleyeceğiniz klasör dizini açılacak şekilde ayarlandı.
