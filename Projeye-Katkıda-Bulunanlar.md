@@ -10,7 +10,7 @@
 	  • Sistem Hakkında - RAM soket yapısının eklenmesi.
 	  • Sistem Hakkında - Sistem format tarihinin eklenmesi.
 	  ----------------------
-	  ► KaanBeyhan [Denizlili] [DarkOS]
+	  ► KaanBeyhan (Denizlili)
 	  ----------------------
 	  • İndirme işlemlerinde ilerleme çubuğunun eklenmesi.
 	  • Performans optimizasyonun eklenmesi.
@@ -27,11 +27,12 @@
 	  ► Legnica
 	  ----------
 	  • Windows Search önbelliğinin temizlenmesiyle ilgili komutların eklenmesi.
-	  -------------
-	  ► EnixYazılım
-	  -------------
-	  • OperaGX yazılımının indirme bölümüne eklenmesi.
 	  -------
 	  ► Finch
 	  --------
 	  • Yönetici yetkili kısayolun oluşturulması.
+	  -------
+	  ► AntiCoranavirus
+	  --------
+	  • Geri bildirim aracının hazırlanması.
+	  • Hash karşılaştırıcı bölümünde büyük küçük harf hatasının giderilmesi.

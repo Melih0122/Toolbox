@@ -4,6 +4,22 @@
 -   Mail: ognitorenks@gmail.com
 -   Site: https://ognitorenks.blogspot.com/
 
+<details><B><summary> Versiyon 3.7 ►  GELİŞTİRİLİYOR...</B></summary>
+
+	• x64 sistem uyarısı eklendi.
+	• Yönetici yetki uyarısı kaldırıldı. Düzenlenen komutlar ile doğrudan yönetici yetkisi alınacak.
+	• Dağınık tarih verileri optimize edildi.
+	• Zip dosyalarını ayıklamak için 7-zip eklendi. Öncesinde Powershell kullanıyordum.
+	• Dosya kontrol sistemi geliştirildi.
+	• Toolbox oto güncelleme komutları optimize edildi.
+	• Ana menü içindeki gereksiz yönlendirme mesajları kaldırıldı.
+	• Lisans yönetimi bölümünde 'slmgr /ipk' komutları düzenlendi. Ana menü yönlendirme bölümüne alındı. Ayrı başlık silindi.
+	• Hizmet yönetimi bölümü kodları toparlandı. Karmaşık durduğu için okunaklığını azaltmaktaydı.
+	• Internet kontrol adresi Links.txt dosyası içine eklendi. Olası internet yok sorununa hızlı çözüm üretmek için bu şekilde düzenledim.
+	• SHA 256 Hash karşılaştırıcı bölümünde büyük küçük harflerden kaynaklı oluşan uyumsuzluk sorunu giderildi. [AntiCoranivirus]'a desteği için teşekkür ederim.
+
+</details>
+
 <details><B><summary> Versiyon 3.6.1 ►  04.09.2022</B></summary>
 
 	• Performans Optimizasyonu > Nihai Performans güç seçeneği bölümünün durumunu gösteren komutdaki hata giderildi.
