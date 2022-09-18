@@ -17,6 +17,31 @@
 	• Hizmet yönetimi bölümü kodları toparlandı. Karmaşık durduğu için okunaklığını azaltmaktaydı.
 	• Internet kontrol adresi Links.txt dosyası içine eklendi. Olası internet yok sorununa hızlı çözüm üretmek için bu şekilde düzenledim.
 	• SHA 256 Hash karşılaştırıcı bölümünde büyük küçük harflerden kaynaklı oluşan uyumsuzluk sorunu giderildi. [AntiCoranivirus]'a desteği için teşekkür ederim.
+	• Kullanıcı hesap yönetimi bölümündeki komutlar toparlandı.
+	• Hizmet Yönetimi > Akış hizmeti bölümüne 'Kaliteli Windows Ses Deneyimi hizmeti' eklendi.
+	• Hizmet Yönetimi bölümü yeniden düzenlendi. Menü genişletildi.
+		• Disk birleştirme hizmeti eklendi.
+		• Optimizasyon bölümü buraya eklendi.
+			• Oyun Modu eklendi.
+		• Özellikler bölümü eklendi
+			• Paint
+			• Wordpad
+			• Notepad
+			• Adım Kaydedici
+			• Powershell-ISE
+			• Matematik ifade tanıyıcı
+			• Windows Media Player
+			• Internet Explorer
+			• Linux için altyapı
+			• Net Framework 3.5
+			• Net Framework 4.5
+			• DirectPlay
+	• PC Temizle bölümünde System32 Temp klasörü içinde '.tmp' isimli boş klasörleri silme komutu eklendi.
+	• Güncelleme sonrası temizlik bölümünde Python yüklenmeme hatası giderildi.
+	• 'PC Temizle' bölümü 'Genel Temizlik' olarak değiştirildi.
+	• 'İnternet önbelliğini temizle', 'Genel Temizlik' bölümüne eklendi.
+	• Optimizasyon bölümünde yer alan 'İşlem Önceliği' ana menüye alındı.
+	• 'Windows - Market Onar' bölümü 'Genel Windows Onarımı' olarak değiştirildi.
 	
 
 </details>
