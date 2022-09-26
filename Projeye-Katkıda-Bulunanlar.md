@@ -31,8 +31,3 @@
 	  ► Finch
 	  --------
 	  • Yönetici yetkili kısayolun oluşturulması.
-	  -------
-	  ► AntiCoranavirus
-	  --------
-	  • Geri bildirim aracının hazırlanması.
-	  • Hash karşılaştırıcı bölümünde büyük küçük harf hatasının giderilmesi.
