@@ -36,13 +36,29 @@
 			• Net Framework 3.5
 			• Net Framework 4.5
 			• DirectPlay
+			• CompactOs ►"Windows 10/11 Edit bölümünden taşındı"
+			• Eski Fotoğraf Görüntüleyici ► "Windows 10/11 Edit bölümünden taşındı"
+			• Eski Alt + Tab ► "Windows 10/11 Edit bölümünden taşındı"
+			• Güncellemeleri 2050'ye ertele ► "Windows 10/11 Edit bölümünden taşındı"
+		• Sağ-tık Yönetici bölümü eklendi. ► "Windows 10/11 Edit bölümündeki ilgili ayarlar buraya eklendi"
+			• Sahiplik Al
+			• Yönet
+			• Çalıştırma Seçenekleri
+			• Terminal (Win11)
+			• Eski Menü (Win11)
 	• PC Temizle bölümünde System32 Temp klasörü içinde '.tmp' isimli boş klasörleri silme komutu eklendi.
 	• Güncelleme sonrası temizlik bölümünde Python yüklenmeme hatası giderildi.
 	• 'PC Temizle' bölümü 'Genel Temizlik' olarak değiştirildi.
 	• 'İnternet önbelliğini temizle', 'Genel Temizlik' bölümüne eklendi.
 	• Optimizasyon bölümünde yer alan 'İşlem Önceliği' ana menüye alındı.
-	• 'Windows - Market Onar' bölümü 'Genel Windows Onarımı' olarak değiştirildi.
-	
+	• 'Kullanıcı Hesap Yönetimi' ve 'Lisans Yönetimi' tek bir başlıkta toplandı: 'Hesap ve Lisans Yönetimi'
+	• Windows 10/11 Edit bölümünlerinde yer alan içeriklerin büyük kısmı 'Hizmet yönetimi' bölümüne aktarıldı.
+		• Windows 10/11 Edit alanı birleştirildi.
+		• Simge değiştir bölümü stabil bir çalışma düzeni göstermediği için kaldırıldı.
+		• Windows 11 Edit > Taskbar Boyut ve Taskbar Konumu 22H2'de çalışmadığı için kaldırıldı.
+	• Güncelleme sonrası temizlik bölümünde uygulanan regedit kayıtlarına yedekleme sistemi getirildi.
+	• Renklendirme komutu tek parça haline getirildi.
+	• Windows Editör dosya kontrol sistemi konu başından alındı ve ilgili başlıklara eklendi
 
 </details>
 
