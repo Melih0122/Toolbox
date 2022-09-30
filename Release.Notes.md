@@ -58,8 +58,15 @@
 		• Windows 11 Edit > Taskbar Boyut ve Taskbar Konumu 22H2'de çalışmadığı için kaldırıldı.
 	• Güncelleme sonrası temizlik bölümünde uygulanan regedit kayıtlarına yedekleme sistemi getirildi.
 	• Renklendirme komutu tek parça haline getirildi.
-	• Windows Editör dosya kontrol sistemi konu başından alındı ve ilgili başlıklara eklendi
-
+	• 'Windows Editör' dosya kontrol sistemi konu başından alındı ve ilgili başlıklara eklendi.
+		• 'Hyper-V / gpedit.msc ekle' bölümleri kaldırıldı.
+		• İmaj topla bölümündeki Mount yol hatası giderildi.
+	• Kullanıcı değişken atama bölümlerindeki kod karmaşıklığını önlemek için 'MobileValue' fonksiyonu oluşturuldu.
+	• 'Windows Editör' > İmaj toplama bölümüne Powershell ve Dism ile toplama seçenekleri eklendi. 
+		•Settings.ini üzerinden düzenlenecek şekilde ayarlama yapıldı.
+	
+	
+	
 </details>
 
 <details><B><summary> Versiyon 3.6.1 ►  04.09.2022</B></summary>
