@@ -163,7 +163,7 @@ Bu bölümdeki programların büyük çoğunluğu ücretsiz uygulamalar arasınd
 	   ► Resmi Sayfası: https://github.com/mehmetguduk/Spotify-Adblocker
 </details>
 
-<details><B><summary> 3 - Windows 10 Edit</B></summary>
+<details><B><summary> 3 - Görev Çubuğu Yöneticisi</B></summary>
 	
 ![cmd_nH0CG8fVtr](https://user-images.githubusercontent.com/93199689/188331301-fdf97480-80c7-4eae-b153-fe70686a1c50.png)
 
@@ -174,71 +174,16 @@ Bu bölümdeki programların büyük çoğunluğu ücretsiz uygulamalar arasınd
 	• 2 - Bildirim Alanı [Aç/Kapat]: 
 	     •[Aç]: 0 - Saat sağında yer alan bildirim alanını açar.
 	     •[Kapat]: 1 - Saat sağında yer alan bildirim alanını kapatır.
-		
-	• 3 - Sahiplik Al [Ekle/Kaldır]: Bazı sistem dosyalarında yetki sorunu yaşadığınızda imdadınıza yetişecek bölümdür.
-	     •[Ekle]: 1 - Sağ-tık bölümüne "Sahiplik Al" butonunu ekler.
-	     •[Kaldır]: 2 - Sağ-tık bölümünden "Sahipli Al" butonunu kaldırır.
-	     
-	• 4 - Taskbar Hava Durumu [Aç/Kapat]:
-	     •[Kapat]: 0 - Görev çubuğundaki hava durumu simgesini kaldırır.
-	     •[Aç]: 1 - Görev çubuğundaki hava durumu simgesini ve ayarlarını geri getirir.	
-	     
-	• 5 - Microsoft Store Kaldır: Bu bölüm kullanıldıktan sonra sisteme bir daha Microsoft Store yükleyemezsiniz.
 	
-	• 6 - CompactOS (Windows Sıkıştırma) [Aç/Kapat]: Windows sistem dosyalarını sıkıştırarak 3 - 4 GB'lık bir alan kazanmanızı sağlar. Performans kaybı yaratmaz.
-	     •[Aç]: 1 - Windows sistem dosyalarını sıkıştırmayı açar.
-	     •[Kapat]: 2 - Windows sistem dosyalarını sıkıştırmayı kapatır.
-		
-	• 7 - Simgeleri Değiştir [Eski/Yeni]: 21H2 beta sürümünde gelen ancak iptal edilen simgeleri sisteme yükler. Bu bölüme ilk girişinizde simge dosyalarını indirecektir! Bazı durumlarda simgeleri değişse dahi değişmemiş görünebilir. Bu tarz durumlarda yeniden başlatma işleminden sonra simge değiştirme bölümünü yeniden uygulayınız.
-	     •[Eski]: 1 - Windows 10 eski (Varsayılan) simgeleri yükler.
-	     •[Yeni]: 2 - Windows 10 yeni simgeleri yükler.
-	• 8 - Güncellemeleri 2050 yılına kadar ertele: Windows Update hizmetini 2050 yılına kadar etkisiz hale getirir.
-	• 9 - Telemetri/Reklam engelli hosts ekle: Telemetri ve reklam iplerinin engellendiği hosts dosyasını yükler. Spotify, Blitz, Wemod gibi uygulama arayüzünde çıkan reklamlarda engellenir.
-	• 10 - Windows Fotoğraf Görüntüleyici [Aç/Kapat]: Eski Windows Fotoğraf Görüntüleyeicisini açıp kapatır.
-	• 11 - Alt + Tab [Eski/Yeni]: Uygulamalar arası hızlı geçiş bölümünü eski veya yeni haliyle kullanmanızı sağlar.
-	• 12 - Sağ-Tık Yönet [Ekle/Kaldır]: Masaüstü ve Klasör içi sağ tık bölümünde Yönet bölümü ekler. Yönet bölümü içinde;
-		• Denetim Masası / Ayarlar / Güç Yönetimi / Görev Yöneticisi / Komut İstemi / Regedit / Explorer Reset / Temp Temizle / Simge önbelleğini temizle 
-</details>
-
-<details><B><summary> 3 - Windows 11 Edit</B></summary>
-
-![cmd_r5l2MKpaOB](https://user-images.githubusercontent.com/93199689/188331325-eb0c48f4-fc67-4037-a72d-cebd49b6385d.png)
-
-	• 1 - Taskbar Boyut [Küçük/Orta/Büyük]: 22H2'de çalışmıyor.
-	     •[Küçük]: 0 - Görev çubuğunu küçük yapar.
-	     •[Orta]: 1 - Görev çubuğunu varsayılan haline getirir.
-	     •[Büyük]: 2 - Görev çubuğunu büyük yapar.
-		
-	• 2 - Taskbar Konumu [Alt/Üst]: 22H2'de çalışmıyor.
-	     •[Alt]: 1 - Görev çubuğunu alt bölüme alır.
-	     •[Üst]: 3 - Görev çubuğunu üst bölüme alır
-		
-	• 3 - Taskbar Simge Konumu [Sol/Orta]:
+	• 3 - Taskbar Hava Durumu [Aç/Kapat]:
+	     •[Kapat]: 0 - Görev çubuğundaki hava durumu simgesini kaldırır.
+	     •[Aç]: 1 - Görev çubuğundaki hava durumu simgesini ve ayarlarını geri getirir.
+	
+	• 4 - Taskbar Simge Konumu [Sol/Orta]:
 	     •[Sol]: 0 - Görev çubuğundaki simgeleri sola dayar.
 	     •[Orta]: 1 - Görev çubuğundaki simgeleri ortalar. (Varsayılan)	
-		
-	• 4 - Sağ-tık Menü [Eski/Yeni]:
-	     •[Eski]: 1 - Sağ-tık menüsünü Windows 10'daki gibi yapar.
-	     •[Yeni]: 2 - Sağ-tık menüsünü Windows 11'deki gibi yapar. (Varsayılan)
-		
-	• 5 -Sağ-tık terminal [Ekle/Kaldır]:
-	     •[Kaldır]: 1 - Sağ-tık menüsünden terminal'i kaldırır.
-	     •[Ekle]: 2 - Sağ-tık menüsüne terminal ekler. (Varsayılan)
-		
-	• 6 - Sahiplik Al [Ekle/Kaldır]: Bazı sistem dosyalarında yetki sorunu yaşadığınızda imdadınıza yetişecek bölümdür.
-	     •[Ekle]: 1 - Sağ-tık bölümüne "Sahiplik Al" butonunu ekler.
-	     •[Kaldır]: 2 - Sağ-tık bölümünden "Sahiplik Al" butonunu kaldırır.
 	
-	• 7 - CompactOS (Windows Sıkıştırma) [Aç/Kapat]: Windows sistem dosyalarını sıkıştırarak 3 - 4 GB'lık bir alan kazanmanızı sağlar. Performans kaybı yaratmaz.
-	     •[Aç]: 1 - Windows sistem dosyalarını sıkıştırmayı açar.
-	     •[Kapat]: 2 - Windows sistem dosyalarını sıkıştırmayı kapatır.
 
-	• 8 - Güncellemeleri 2050 yılına kadar ertele: Windows Update hizmetini 2050 yılına kadar etkisiz hale getirir.
-	• 9 - Telemetri/Reklam engelli hosts ekle: Telemetri ve reklam iplerinin engellendiği hosts dosyasını yükler. Spotify, Blitz, Wemod gibi uygulama arayüzünde çıkan reklamlarda engellenir.
-	• 10 - Windows Fotoğraf Görüntüleyici [Aç/Kapat]: Eski Windows Fotoğraf Görüntüleyeicisini açıp kapatır.
-	• 11 - Alt + Tab [Eski/Yeni]: Uygulamalar arası hızlı geçiş bölümünü eski veya yeni haliyle kullanmanızı sağlar.
-	• 12 - Sağ-Tık Yönet [Ekle/Kaldır]: Masaüstü ve Klasör içi sağ tık bölümünde Yönet bölümü ekler. Yönet bölümü içinde;
-		• Denetim Masası / Ayarlar / Güç Yönetimi / Görev Yöneticisi / Komut İstemi / Regedit / Explorer Reset / Temp Temizle / Simge önbelleğini temizle 
 </details>
 
 <details><B><summary> 4 - Hizmetleri Yönet</B></summary>
@@ -249,12 +194,32 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 
 ![cmd_hvJTHyyjGS](https://user-images.githubusercontent.com/93199689/188331362-99b29e7d-1ab0-4221-bf9e-d73e43ab69ad.png)
 
-	• 1 [A/K]- Bluetooth hizmeti : Bluetooth hizmetlerini kapatır açar.
-	• 2 [A/K]- Yazıcı hizmeti : Yazıcı hizmetlerini kapatır açar.
-	• 3 [A/K]- Telefon hizmeti : Telefon uygulamasına ait hizmetleri kapatır açar.
-	• 4 [A/K]- Tarifeli ağları : Kotalı internetiniz var, kota aşımını önlemek için bu hizmeti kullanabilirsiniz. (Nasıl oluyor hiç bilmiyorum, yalnızca hizmeti açıyorum :D)
-	• 5 [A/K]- IP Yardımcısı (IPv6) : IPv6 destekli internet hizmetiniz var ise bu hizmeti açın.
-	• 6 [A/K]- Mobil Etkin Nokta (Hotspot) : Kullandığınız cihazdan interneti paylaşmanızı sağlayayacak donanım var ise buradan hizmeti açabilirsiniz.
+	► Hizmetler
+	• 1 [A/K]- Bluetooth : Bluetooth hizmetlerini kapatır açar.
+	• 2 [A/K]- Telefon: Telefon uygulamasına ait hizmetleri kapatır açar.
+	• 3 [A/K]- Yazıcı: Yazıcı hizmetlerini kapatır açar.
+	• 4 [A/K]- Tarayıcı ve Kamera: Tarayıcı ve kamera hizmetlerini açar. Buradaki kamera hizmetleri cihazın birden fazla ugulama tarafından kullanılmasını düzenlemektedir.
+	• 5 [A/K]- Kalem ve Dokunmatik: Dokunmatik cihazlar için ilgili hizmetleri açar, kapatır.
+	• 6 [A/K]- Fax: Fax cihazı için ilgili hizmet ve bileşeneleri açıp, kapatır.
+	• 7 [A/K]- Bitlocker Sürücü Şifreleme: Sürücü şifreleme hizmetini açar, kapatır.
+	• 8 [A/K]- Tarifeli ağları : Kotalı internetiniz var, kota aşımını önlemek için bu hizmeti kullanabilirsiniz. (Nasıl oluyor hiç bilmiyorum, yalnızca hizmeti açıyorum :D)
+	• 9 [A/K]- IP Yardımcısı (IPv6): IPv6 desteği için ağ hizmetleri açar. Yaygın bir kullanım alanı yoktur.
+	• 10 [A/K]- Mobil Etkin Nokta: WIFI donanımıyla cihaz üzerinden internet yayınlamaya sağlayan hizmetleri açar, kapatır.
+	• 11 [A/K]- Radyo ve Uçak Modu: Windows 11'de kapatılması engellenmiştir, yalnızca açabilirsiniz. Windows 10'da açıp, kapatabilirsiniz. Windows 11'de kapatılırsa görev çubuğundan ağ simgesi kaybolmaktadır.
+	• 12 [A/K]- Windows Şimdi Bağlan (WPS): WPS hizmetlerini açar, kapatır.
+	• 13 [A/K]- WIFI: WIFI hizmetlerini açar kapatır.
+	• 14 [A/K]- Konum: Konum hizmetlerini açar, kapatır.
+	• 15 [A/K]- Miracast: WIFI üzerinden kablosuz ekran aktarma hizmetlerini açar, kapatır.
+	• 16 [A/K/o]- Akış: Ağ üzerindeki cihazları görme, ağ üzerinden dosya paylaşımı gibi hizmetlri açar, kapatır.
+	• 17 [A/K]- Uzak Masaüstü: Uzak masaüstü hizmetleri açar, kapatır.
+	• 18 [A/K]- Hızlı Getir (Sysmain): Fazla kullanılan dosyaları önbellekleme yaparak, daha hızlı bir hizmet sunmaya çalışır, ancak bu yüksek disk kullanımına sebep olabilir. SSD varsa gereksiz bir hizmettir. Ancak HDD varsa açmanız gerekebilir.
+	• 19 [A/K]- Hızlı Başlat (Hibernate): Bilgisayarın daha hızlı açılması için son kapatma öncesi önbellekleme yapar. Sistemi yeniden açarken bu önbellek dosyasından faydalanır. Açık olması hatalara neden olabilir. Buradaki işlem hizmeti doğrudan açmaz. Yalnızca üzerindeki kilidi açar. İlgili ayar bölümünden yeniden açılması gerekmektedir.
+	• 20 [A/K]- Windows Search: Uzak masaüstü, Akış ve Miracast hizmetlerinden ihtiyaç duyulabilir.
+	• 21 [A/K]- Xbox: Xbox hizmetini açar kapatır. Xbox'ı tamamen kaldırmaz yalnızca pasif ve kullanılmaz hale getirir.
+	• 22 [A/K]- Karma Gerçeklik(VR): Karma gerçeklik hizmetinlerini açar, kapatır. Bileşen yüklemesi veya kaldırması yapmaz.
+	• 23 [A/K]- Tanı İlkesi (Uyumluluk): Uyumluluk hizmetini açar, kapatır.
+	• 24 [A/K]- 
+	10  obil Etkin Nokta (Hotspot) : Kullandığınız cihazdan interneti paylaşmanızı sağlayayacak donanım var ise buradan hizmeti açabilirsiniz.
 	• 7 [A/K]- Radyo ve Uçak modu hizmeti : Laptoplarda kullanılacak hizmettir. Windows 11'de bu hizmet kapalı olunca ağ simgesi görünmüyor. 
 	• 8 [A/K]- Miracast Hizmeti : Ağ veya WIFI üzerinden cihazlara görüntü aktarma özelliğidir. Kapatılması durumunda Ayarlar/Cihazlar bölümü açılmayacaktır. Bu tarz bir sorunda hizmeti yeniden açmanız gerekmektedir.
 	• 9 [A/K/o]- Akış Hizmeti : Aynı ağdaki cihazları görme ve yayın aktarmak için kullanılır. Bu bölümde özel bir parametre eklenmiştir. '9o'ile yalnızca ana hizmeti açıp yan hizmetleri devre dışı bırakabilirsiniz. Sorun olursa hizmetlerin tamamını açmak için '9a' tuşlamanız gerekmektedir. 
