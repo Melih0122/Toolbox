@@ -254,7 +254,7 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 	• 57 [A/K]- Çalıştırma Seçenekleri: Exe uzantılı dosyaları işlem önceliğini düzenleyerek açmanızı sağlayan bölümü sağ-tıka ekler.
 	• 58 [A/K]- Terminal: Windows 11 sistemlerde sağ-tık menüsünde yer alan Terminal bölümü kaldırıp, ekler.
 	• 59 [A/K]- Eski Menü: Windows 11 sistemlerde eski sağ tık menüsünü açıp, kapatır.
-
+</details>
 <details><B><summary> 5 - Windows Düzenleme</B></summary>
 Mavi renkli işlem numaraları 18 numaralı işlem ile alakalıdır.
 
