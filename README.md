@@ -7,7 +7,7 @@
 - ► <B> [Projeye Katkıda Bulunanlar](https://github.com/OgnitorenKs/OgnitorenKs.Toolbox/blob/main/Projeye-Katk%C4%B1da-Bulunanlar.md) </B>
 
 # OGNİTORENKS TOOLBOX
-![cmd_a8lVbN2mVf](https://user-images.githubusercontent.com/93199689/188331219-795981af-62e3-4c3f-bf03-af5f57c09d02.png)
+![cmd_weccV1gqyA](https://user-images.githubusercontent.com/93199689/193428393-8ddb0888-2fde-4a37-87bb-27e479f75140.png)
 
 - OgnitorenKs Toolbox Windows 10 - 11 sürümlerinin x64 mimarilerinde açılmaktadır. En güncel olan Windows sürümü ile senkronize olarak gelişmektedir.
 - Windows ekran ölçeklendirme ayarı Toolbox'ın pencere ayarını bozabiliyor. Sorunsuz kullanım için Toolbox'ı kullanırken ölçeklendirme etkileri kapatılmalıdır.
@@ -165,7 +165,7 @@ Bu bölümdeki programların büyük çoğunluğu ücretsiz uygulamalar arasınd
 
 <details><B><summary> 3 - Görev Çubuğu Yöneticisi</B></summary>
 	
-![cmd_nH0CG8fVtr](https://user-images.githubusercontent.com/93199689/188331301-fdf97480-80c7-4eae-b153-fe70686a1c50.png)
+![cmd_bmhFjeytPW](https://user-images.githubusercontent.com/93199689/193428423-5ef2dcc9-c0e2-4bd7-a82f-96da05a0fc17.png)
 
 	• 1 - Taskbar saat yanı simge ayarı [GÖSTER/GİZLE]: 
 	     •[Göster]: 0 - Saat yanında yer alan tüm simgeleri gösterir.
@@ -192,7 +192,7 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 
 Örnek: 1a / 2k / 4A / 10K / 23a / 24k  
 
-![cmd_hvJTHyyjGS](https://user-images.githubusercontent.com/93199689/188331362-99b29e7d-1ab0-4221-bf9e-d73e43ab69ad.png)
+![cmd_sjXAghXnW6](https://user-images.githubusercontent.com/93199689/193428433-01c1c1a1-fc44-430b-b981-e361af670eb5.png)
 
 	► Hizmetler
 	• 1 [A/K]- Bluetooth : Bluetooth hizmetlerini kapatır açar.
@@ -218,40 +218,47 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 	• 21 [A/K]- Xbox: Xbox hizmetini açar kapatır. Xbox'ı tamamen kaldırmaz yalnızca pasif ve kullanılmaz hale getirir.
 	• 22 [A/K]- Karma Gerçeklik(VR): Karma gerçeklik hizmetinlerini açar, kapatır. Bileşen yüklemesi veya kaldırması yapmaz.
 	• 23 [A/K]- Tanı İlkesi (Uyumluluk): Uyumluluk hizmetini açar, kapatır.
-	• 24 [A/K]- 
-	10  obil Etkin Nokta (Hotspot) : Kullandığınız cihazdan interneti paylaşmanızı sağlayayacak donanım var ise buradan hizmeti açabilirsiniz.
-	• 7 [A/K]- Radyo ve Uçak modu hizmeti : Laptoplarda kullanılacak hizmettir. Windows 11'de bu hizmet kapalı olunca ağ simgesi görünmüyor. 
-	• 8 [A/K]- Miracast Hizmeti : Ağ veya WIFI üzerinden cihazlara görüntü aktarma özelliğidir. Kapatılması durumunda Ayarlar/Cihazlar bölümü açılmayacaktır. Bu tarz bir sorunda hizmeti yeniden açmanız gerekmektedir.
-	• 9 [A/K/o]- Akış Hizmeti : Aynı ağdaki cihazları görme ve yayın aktarmak için kullanılır. Bu bölümde özel bir parametre eklenmiştir. '9o'ile yalnızca ana hizmeti açıp yan hizmetleri devre dışı bırakabilirsiniz. Sorun olursa hizmetlerin tamamını açmak için '9a' tuşlamanız gerekmektedir. 
-	• 10 [A/K]- Uzakmasaüstü hizmeti : Uzakmasaüstü hizmetlerini açıp kapatır.
-	• 11 [A/K]- Windows Search: Indexleme hizmetini açar. Bazı bilgisayarlarda Miracast ve Akış hizmetlerini çalışması için aktif olması gerekmektedir.
-	• 12 [A/K]- Windows Şimdi Bağlan (WPS) : WPS özelliğini kullanmanızı sağlayan hizmeti açar.
-	• 13 [A/K]- Tarayıcı ve Kamera hizmetleri : Tarayıcı ve Kamera cihazlarını için gerekli olan hizmetleri açıp kapatır.
-	• 14 [A/K]- Insider hizmeti : Windows ön sürümlerini erkenden deneyimleyip hataları bulup bildirmek gibi bir koca yüreğiniz var ise bu servisi aktif ederek. Insider sürüme kayıt olunuz.
-	• 15 [A/K]- Biyometrik Hizmeti : Kullanıdığınız cihazda parmak okuyucu tarzı cihazlar var ise sorunsuz kullanmanız için açar.
-	• 16 [A/K]- Kalem ve Dokunmatik Klavye hizmetini : Dokunmatik destekli cihazınız var ise sorunsuz kullanmanız için hizmetleri açar.
-	• 17 [A/K]- Sistem geri yükleme hizmeti : Sistem geri yükleme hizmetini açar.
-	• 18 [A/K]- Sysmain (Hızlı Getir) : Windows daha hızlı deneyim sunması için diski daha fazla kullanır. Yüksek disk kullanımına sebebiyet verir. SSD varsa gereksizdir. Kullanırsanız hizmeti açar.
-	• 19 [A/K]- Hızlı Başlat (Hibernate) : Sistem önbellekleme yaparak hızlı açılmasını sağlar. Ancak kapanmama gibi sorunlara neden olmaktadır. Kullanmak isterseniz hizmeti açar.
-	• 20 [A/K]- Konum hizmetini : Bilgisayarlarda bu özelliği hep gereksiz bulmuşumdur. Laptop cihazınız konumunuzu tam olarak tespit edebiliyorsa açın. Yoksa hiç açmayın.
-	• 21 [A/K]- Hyper-V hizmetini: Home ve Home Single Language sistemlerde bile Hyper-V açıp kapatmanızı sağlar.
-	• 22 [A/K]- Xbox hizmetini: Xbox servislerini kapatıp, açar.
-	• 23 [A/K]- Bitlocker Sürücü şifreleme hizmeti: Sürücü şifreleme hizmetini kapatır açar.
-	• 24 [A/K]- Karma Gerçeklik hizmeti (VR): Karma gerçeklik kapatır açar.
-	• 25 [A/K]- Driver Yükle / Güncelle (Update): Windows Update üzerinden Driver güncellemesini açıp, kapatmanızı sağlar.
-	• 26 [A/K]- Bellek Sıkıştırma hizmeti: Bellek içindeki verinin belli bir bölümünü sıkıştıran hizmeti kapatır ve açar. Gecikme düşürmek için hizmet kapalı tutulabilir.
-	• 27 [A/K]- Core Parking (CPU Çekirdek Uyku Modu): İşlemci çekirdeklerinin sürekli tam yükte çalışmasını istiyorsanız hizmeti kapatabilirsiniz. Tam tersi durum için açık hale getirebilirsiniz.
-	• 28 [A/K]- Wifi hizmeti: Wifi hizmetlerini açıp kapatmaya yarar.
-	• 29 [A/K]- Fax hizmeti: Fax hizmetini açıp kapatmaya yarar. Açıp veya kapattıktan sonra reset atınız.
-	• 30 [A/K]- Yazı Tipi Önbelllği hizmeti: Yazı tipi önbelleği hizmetini kapatır. SSD'ler için kapatılması önerilir. Kapatılırsa uygulamaların açılış hızında düşüşe neden olabilir. 
-	• 31 [A/K]- Hızlı Kullanıcı Değiştirme hizmeti: Hızlı kullanıcı değiştirme hizmetini açıp kapatır. "Ctrl + Alt + Delete" ekranında hızlı kullanıcı değiştirme bölümünü açıp kapatır. 
-	• 32 [A/K]- Tanı İlkesi Hizmeti: Program uyumluluk yardımcısı hizmetleridir.
-</details>
+	• 24 [A/K]- Hızlı Kullanıcı Değiştir: Hızlı kullanıcı değiştirme hizmeti ve ayarını açar, kapatır.
+	• 25 [A/K]- Yazı Tipi Önbelliği: Sık kullanılan fontları önbelleğe alarak açılış hızını arttırır. Bu hizmetleri açıp, kapatır.
+	• 26 [A/K]- Insider: Insider sürümlere geçmeyi sağlayan hizmeti açar kapatır
+	• 27 [A/K]- Biyometrik: Biyometrik cihazlar için gerekli servis. Hello Face için gereklidir.
+	• 28 [A/K]- Hyper-V: Hyper-V hizmetlerini açıp kapatmayı sağlar.
+	• 29 [A/K]- Sistem Geri Yükleme: Sistem geri yükleme, dosya geçmişi gibi hizmetleri açıp, kapatır.
+	• 30 [A/K]- Driver Yükle - Güncelle: Driverları update üzerinden yükleyip güncellemeyi sağlayan hizmet ve ayarları açıp, kapatır.
+	• 31 [A/K]- Bellek sıkıştırma: Bellek içindeki verinin belli bir bölümünü sıkıştıran hizmeti kapatır ve açar. Gecikme düşürmek için hizmet kapalı tutulabilir.
+	• 32 [A/K]- Disk Birleştirme (Defrag): Disk birleştirme hizmetini açar kapatır. Harddiskler için faydalı hizmettir. Ancak bunu harici programlarla manuel olarak yapmak isterseniz buhizmeti kapatabilirsiniz.
+	• 33 [A/K]- Paint: Paint uygulamasını kapatıp, açar.
+	• 34 [A/K]- Wordpad: Wordpad uygulamasını kapatıp, açar.
+	• 35 [A/K]- Notepad: Notepad uygulamasını kapatıp, açar. Kapatırken sağ-tık yeni metin belgesini korur.
+	• 36 [A/K]- Adım kaydedici: Yapılan işlemleri sırasıyla SS alarak yapılan işlemleri nasıl gerçekleştirdiğinizi adım adım kaydederek başkalarıyla paylaşmanızı sağlar.
+	• 37 [A/K]- Powershell-ISE: Powershell kod editörünü kaldırıp, yükler.
+	• 38 [A/K]- Matematik ifade tanıyıcı: Matematik ifadelerini tanımlamayı sağlayan hizmeti açıp, kapatır
+	• 39 [A/K]- Windows Media Player: Windows Media Player açıp, kapatır.
+	• 40 [A/K]- Internet Explorer: Internet Explorer kapatıp, açar.
+	• 41 [A/K]- Linux için altyapı: Linux için gerekli olan altyapı hizmetlerini açıp, kapatır.
+	• 42 [A/K]- Net Framework 3.5: Belli başlı uygulamalar ihtiyaç duymaktadır. Oyun ve programlar için açık kalması oluşacak hataları önler.
+	• 43 [A/K]- Net Framework 4.5: Belli başlı uygulamalar ihtiyaç duymaktadır. Oyun ve programlar için açık kalması oluşacak hataları önler.
+	• 44 [A/K]- DirectPlay: Eski oyunlar için destek sağlamaktadır.
+	• 45 [A/K]- CompactOS: Windows sistemini belli oranda sıkıştırır. 2 ila 4 GB arası alan sağlar. Kurtarma alanı varsa onuda kaldırarak daha büyük bir alan açar. Performans kaybı yaratmaz.
+	• 46 [A/K]- Eski Fotoğraf Görüntüleyici: Eski foto görüntüleyiciyi açıp, kapatır.
+	• 47 [A/K]- Eski ALT + TAB: ALT + TAB alanını eski basit haline getirir. Alt + Tab'larda yaşanan bazı kasılma sorunlarını önleyebilir.
+	• 48 [A/K]- Güncellemeleri 2050'ye ertele: Güncelleştirmeleri 2050 yılına erteler. Driver yükleme ayarı açıksa yükler ancak güncellemeleri dahil etmez.
+	• 49 [A/K]- Svchost: Svchost hizmetlerini sistem RAM durumuna göre optimize eder. İşlemci üzerinden büyük bir yük kaldırır. 
+	• 50 [ A ]- Nihai Performans: Nihai perfromans ekler ve aktif eder.
+	• 51 [A/K]- Oyun Modu: Windows'un oyun modunu açıp, kapatır. Açık olması OBS gibi bazı programlarda sorun yaratabilir.
+	• 52 [A/K]- CPU Çekirdek Uyku Modu: CPU çekirdeklerinin uyku moduna geçmesini önler.
+	• 53 [A/K]- Reklam engelli hosts: Telemetri / Reklam engelli hosts dosyasını ekler. Eski dosyası hosts.bak olarak aynı dizinde yedekler.
+	• 54 [A/K]- Gereksiz aygıtlar: Gecikmeyi düşürmek için bazı önemsiz aygıtları açıp, kapatır.
+	• 55 [A/K]- Sahiplik Al: Sağ-Tık Sahiplik al ekler. Silerken veya değiştirirken yetki sorunu yaşarsanız bu bölüm ile kolayca halledebilirsiniz.
+	• 56 [A/K]- Yönet: Sağ-Tıka çok işlevli Yönet bölümü ekler, kaldırır.
+	• 57 [A/K]- Çalıştırma Seçenekleri: Exe uzantılı dosyaları işlem önceliğini düzenleyerek açmanızı sağlayan bölümü sağ-tıka ekler.
+	• 58 [A/K]- Terminal: Windows 11 sistemlerde sağ-tık menüsünde yer alan Terminal bölümü kaldırıp, ekler.
+	• 59 [A/K]- Eski Menü: Windows 11 sistemlerde eski sağ tık menüsünü açıp, kapatır.
 
 <details><B><summary> 5 - Windows Düzenleme</B></summary>
-Mavi renkli işlem numaraları 20 numaralı işlem ile alakalıdır.
+Mavi renkli işlem numaraları 18 numaralı işlem ile alakalıdır.
 
-![cmd_Y2Nw4BzZUh](https://user-images.githubusercontent.com/93199689/188331370-3fded65f-3585-4b15-8051-0335e7239419.png)
+![cmd_koooLfxNax](https://user-images.githubusercontent.com/93199689/193428452-9ccb120f-5cbd-4f89-bce6-a1370ddce8dd.png)
 
 	• 1 - WIM / ESD Okuyucu: install.wim ve install.esd dosyalarının içeriği hakkında bilgi verir.
 	• 2 - AIO Windows Hazırla: İnstall.wim sürümlerini birleştirmeye yarar. "X" tuşu burada çalışmaz.
@@ -315,9 +322,7 @@ Mavi renkli işlem numaraları 20 numaralı işlem ile alakalıdır.
 	• 15 - Setup Düzenle [İmaj]: Windows yükleme dosyalarını özelleştirir. İlk girişte "Files\setup10.zip" dosyasını indirir. Kendinize özel bölüm oluşturmak istiyorsanız. Aşağıdaki linke bakınız.
 	• 16 - Yeni Simgeleri yükle [İmaj]: Yeni simgeleri imaja entegre eder. İlk girişte "Files\Newico.zip" dosyasını indirir.
 		► Konu anlatımı için bakınız: https://ognitorenks.blogspot.com/2022/03/windows-setup-bolumu-nasl-duzenlenir.html
-	• 17 - Gpedit.msc ekle [İmaj]: Offline sistemden Windows Home ve Home Single Language sürümlerine ekleyebilirsiniz.
-	• 18 - Hyper-V ekle [İmaj]: Home ve HomeSingle Language sürümlerinin imajlarına Hyper-V ekler.
-	• 19 - Katılımsız Program / Ayar ekle [İmaj]: İmaj dosyalarına ilk açılışlarına program yükleyip, ayar ekleme entegre eder.
+	• 17 - Katılımsız Program / Ayar ekle [İmaj]: İmaj dosyalarına ilk açılışlarına program yükleyip, ayar ekleme entegre eder.
 		• Bu bölüme girmeden önce 'Mount yol tanımla' bölümünden imajı çıkardığınız klasörün yolunu vermelisiniz.
 		• İlk açılışta Online / Offline olarak yükleme seçeneğini sorar.
 		• Online kurulumda programlar ilk açılışta indirilir, kurulur ve silinir.
@@ -326,18 +331,17 @@ Mavi renkli işlem numaraları 20 numaralı işlem ile alakalıdır.
 		• Çoklu seçim yapılabilir. Tek tek uğraşmanız gerekmez.
 		• Bu bölümle ilgili görseller altta yer almaktadır.
 		• 29 - Masaüstüne dosya ekle : Masaüstüne atmak istediğiniz dosyaları 'C:\OgnitorenKs.Toolbox\Edit\Desktop' bölümüne atınız.
-	• 20 - Mount yol tanımla: Bu bölüm 9 - 11 - 12 - 14 - 16 - 17 - 18 - 19 bölümleriyle bağlantılıdır. 
+	• 18 - Mount yol tanımla: Bu bölüm 9 - 11 - 12 - 14 - 16 - 17  bölümleriyle bağlantılıdır. 
 	     • Burada tanımlanan klasör yolu ile işlem yapılmaktadır.
-	     • Bu bölüm ilk girişte "Edit\Mount" klasör yolunu alır. Mount dosyaları farklı bir klasörde ise 26 numaralı işlem ile değiştirin.
+	     • Bu bölüm ilk girişte "Edit\Mount" klasör yolunu alır. Mount dosyaları farklı bir klasörde ise 18 numaralı işlem ile değiştirin.
 	     
 ![cmd_gYrOpo7iog](https://user-images.githubusercontent.com/93199689/186950946-7667fdd4-5c9a-4a23-bbae-a26c6708d878.png)
 ![cmd_z2sx5gAcWu](https://user-images.githubusercontent.com/93199689/186950957-ff456ee7-678c-488a-b666-10d6914d333c.png)
 
 </details>
 
-<details><B><summary> 6 - Kullancı Hesap Yönetimi</B></summary>
-
-![cmd_syq0J0s2EV](https://user-images.githubusercontent.com/93199689/167623117-71bfc629-f729-48a4-be7c-561b215cb878.png)
+<details><B><summary> 6 - Hesap ve Lisans Yönetimi</B></summary>
+![cmd_TJH2uCD7iq](https://user-images.githubusercontent.com/93199689/193428458-54ea9895-ab0a-4d4a-b6e7-5c3087cba1dd.png
 
 	• 1 - Administrator Aktifleştir: Administrator hesabını açar.
 	• 2 - Administrator Kapat: Administrator hesabını kapatır.
@@ -346,79 +350,67 @@ Mavi renkli işlem numaraları 20 numaralı işlem ile alakalıdır.
 	• 5 - Kullanıcı Sil: Mevcut bir kullanıcıyı silebilirsiniz.
 	• 6 - Şifremi unuttum: Şifre değiştirmek veya şifre oluşturmak için bu bölüm kullanılabilir.
 	• 7 - Mevcut Kullanıcıları Göster [*]: Sistemde kayıtlı kullanıcıları gösterir.
+	• 8 - Lisans Gir [ipk]: Lisans numaranızı girerek sistemi lisanslayabilirsiniz.
+	• 9 - Lisans Durumu [dli]: Lisans durumu hakkında bilgi verir.
+	• 10 - Lisans Durumu Detaylı [dlv]: Lisans durumu hakkında detaylı bilgi verir.
+	• 11 - Lisans Süresini Öğren [xpr]: Lisans süresi hakkında detaylı bilgi verir.
+	• 12 - Lisans Sil [upk]: Sistem kullandığınız lisansı siler.
+	• 13 - Lisans Süre Sıfırla [rearm]: Windows 30 günlük deneme sürümü süresini 3 defa uzatabilirsiniz.
 </details>
 	
-<details><B><summary> 7 - Lisans Yönetimi</B></summary>
-
-SLMGR.VBS komutlarını içermektedir. Crack tarzı işlemler bulunmamaktadır.
-
-![cmd_XbdXB7HxRa](https://user-images.githubusercontent.com/93199689/167623153-126106ea-df07-48e6-bb56-7ac03cb65b19.png)
-
-	• 1 - Lisans Gir [ipk]: Lisans numaranızı girerek sistemi lisanslayabilirsiniz.
-	• 2 - Lisans Durumu [dli]: Lisans durumu hakkında bilgi verir.
-	• 3 - Lisans Durumu Detaylı [dlv]: Lisans durumu hakkında detaylı bilgi verir.
-	• 4 - Lisans Süresini Öğren [xpr]: Lisans süresi hakkında detaylı bilgi verir.
-	• 5 - Lisans Sil [upk]: Sistem kullandığınız lisansı siler.
-	• 6 - Lisans Süre Sıfırla [rearm]: Windows 30 günlük deneme sürümü süresini 3 defa uzatabilirsiniz.
-</details>
-	
-<details><B><summary> 8 - Sistem Hakkında</B></summary>
+<details><B><summary> 7 - Sistem Hakkında</B></summary>
 Sistem ve donanım hakkında bilgi verir.
 
 ![cmd_mDH1JvgaDM](https://user-images.githubusercontent.com/93199689/167623663-1d3cde57-4f54-48fb-bbce-a33a8e8f220c.png)
 </details>
 		
-<details><B><summary> 9 - Güncelleme Sonrası Temizlik</B></summary>
+<details><B><summary> 8 - Güncelleme Sonrası Temizlik</B></summary>
 Düzenlediğim sistemleri güncelleme sonrası ilk haline getirmeye yarar.
 </details>
 	
-<details><B><summary> 10 - Windows / Market Onar</B></summary>
+<details><B><summary> 9 - Windows / Market Onar</B></summary>
 Microsoft'un önerdiği bütün onarma seçeneklerini uygular.
 </details>
 	
-<details><B><summary> 11 - PC Temizle</B></summary>
+<details><B><summary> 10 - Genel Temizlik</B></summary>
 Simge önbelleğini,
 Temp klasörlerini,
 SoftwareDistribution klasörünü,
 GPU driver setup klasörünü,
 WinSxS temizliği yapar.
 </details>
-	
-<details><B><summary> 12 - İnternet Önbellek Temizle</B></summary>
-Olası internet arızalarında bu bölümü kullanabilirsiniz. Güvenlik duvarını da sıfırlamaktadır. 2-3 haftada bir kullanabilirsiniz.
-</details>
-	
-<details><B><summary> 13 - Simge Hatalarını Onar</B></summary>
+
+<details><B><summary> 11 - Simge Hatalarını Onar</B></summary>
 Simge önbelleğini temizleyerek arama bölümündeki simge hatasını, masaüstü veya klasör içerisindeki simge hatalarını giderir. 
 </details>
 	
-<details><B><summary> 14 - Ping Ölçer</B></summary>
+<details><B><summary> 12 - Ping Ölçer</B></summary>
 İçerisinde belirli sitelerin ping durumlarını otomatik gösterir. Alt bölümde yer alan "Ping ölç" bölümüyle istediğiniz site ve IP'nin pingini ölçebilirsiniz.
 	
 ![cmd_LI4e3XcXIt](https://user-images.githubusercontent.com/93199689/188331396-39132ff2-8853-40ee-911a-293d36401fcf.png)
 
 </details>
 
-<details><B><summary> 15 - Fat32 to NTFS</B></summary>
+<details><B><summary> 13 - Fat32 to NTFS</B></summary>
 Fat32 olarak formatlanmış USB diskleri veri kaybı olmadan NTFS'ye çevirir. Disk harfini girmeniz gerekmektedir.
 	
 ![cmd_IbpcglgIoZ](https://user-images.githubusercontent.com/93199689/167626995-480e24ba-31b6-4580-ad1d-40fffc936687.png)
 
 </details>
 
-<details><B><summary> 16 - Kayıtlı Wifi Bilgileri [ARCHLEY]</B></summary>
+<details><B><summary> 14 - Kayıtlı Wifi Bilgileri [ARCHLEY]</B></summary>
 Bu bölümde sisteme girdiğiniz Wifi isim ve şifrelerini görebilirsiniz. Çalışmasını toolbox'a eklediği için Archley'e teşekkür ederim.
 
 </details>
 
-<details><B><summary> 17 - Zaman Ayarlı PC Kapat</B></summary>
+<details><B><summary> 15 - Zaman Ayarlı PC Kapat</B></summary>
 Seçilen belirli bir süreden sonra PC otomatik kapatır. PC üzerinde uygulanmış bir oto kapatma işlemi mevcut değilse 'İptal Et' butonu görünmeyecektir.
 	
 ![cmd_qBHeLUqaMj](https://user-images.githubusercontent.com/93199689/177620977-146cfc29-86e0-4553-a472-b4179a1bfb40.png)
 
 </details>
 
-<details><B><summary> 18 - Appx - Güncelleme Yükleyici</B></summary>
+<details><B><summary> 16 - Appx - Güncelleme Yükleyici</B></summary>
 Appx ve Update dosyalarını yüklemenizi sağlayan bölümdür. 
 Msix yükleme desteği sisteminizde yok ise bu bölüme atacağınız .msix uzantılı uygulamalar yüklenmeyecektir. Bunun için msix desteğinin yüklenmesi gerekmektedir. Düzenleme yaptığım sistemlerin için bu özelliği etkinleştirirek paylaşıyorum.
 
@@ -427,12 +419,12 @@ Msix yükleme desteği sisteminizde yok ise bu bölüme atacağınız .msix uzan
 
 </details>
 
-<details><B><summary> 19 - Hash Kontrol [SHA-256]</B></summary>
+<details><B><summary> 17 - Hash Kontrol [SHA-256]</B></summary>
 SHA-256 değerlerini karşılaştırmayı sağlar. Karşılatıracağınız SHA256 değerini girip, karşılaştırılacak dosya yolunu girmeniz gerekiyor. Kontrolleri sağlayıp detaylarını işlem sonunda gösterir.
 
 </details>
 
-<details><B><summary> 20 - Kaldırılamayan Uygulamalar </B></summary>
+<details><B><summary> 18 - Kaldırılamayan Uygulamalar </B></summary>
 Kaldırılması Microsoft tarafından engellenen bazı uygulamaları kaldırmayı sağlar. Yeniden yüklenemez. Kaldırırken dikkatli olun. Bu bölümün çalışması için PC'de Python kurulu olması gerekmektedir. Kurulu değilse otomatik olarak yüklemektedir. Windows 11'de çalışmamaktadır.
 
 ![cmd_cY92Xi0S1f](https://user-images.githubusercontent.com/93199689/177619102-82d56bcf-3a81-4ea4-9ccf-16ffde40436d.png)
@@ -452,18 +444,10 @@ Kaldırılması Microsoft tarafından engellenen bazı uygulamaları kaldırmay�
 
 </details>
 
-<details><B><summary> 21 - Performans Optimizasyonu</B></summary>
-Performans ile ilgili ayarları uygular. İşlem öncesi değiştirilecek veya eklenecek regedit kayıtları tespit edilir ve yedekleri alınır. Kullanmak için istediğiniz işlemi ve Aç veya kapatın baş harflerini yazmanız lazım. 
-Örnek;
-1a / 2k / 3A / 4K 
+<details><B><summary> 19 - İşlem Önceliği</B></summary>
+İstediğiniz uygulamaları regedit üzerinden işlem önceliğini kalıcı olarak değiştirmenizi sağlar.
 
-![Clover_A4QrST7BBq](https://user-images.githubusercontent.com/93199689/188331413-705dcfeb-6f4e-4b9a-8afa-69c02bef781d.png)
-
-	• 1[A/K] - Svchost Ram Optimizasyonu: Svchost hizmetini sistemdeki Ram miktarınıza göre düzenler ve parçalar halindeki Svchost işlemlerini tüm hale getirerek Ram kullanımı düşürür. Bazı durumlarda ses ve mikrofon ayarlarına girerken bellek taşma hatası yapabilir. Böyle bir hata alırsanız kapatabilirsiniz.
-	• 2[ A ] - Nihai Performans Güç Seçeneği: Yüksek performans için en iyi ayarların yapıldığı güç seçeneğini ekler ve seçili hale getirir.
-	• 3[A/K] - Aygıt Optimizasyonu: Bazı aygıt servislerini devre dışı bırakarak gecikmeyi düşürmeyi sağlar.
-	• 4      - Uygulama işlem önceliği düzenleme: Görev Yöneticisi Ayrıntılar bölümünde yer alan uygulamaların çalışma önceliklerini bu bölümden sürekli olarak değiştirebilirsiniz.
-</details>
+![cmd_wHyk2JA1A8](https://user-images.githubusercontent.com/93199689/193428478-051e1ea9-467b-440e-8dfb-8f11d52f322a.png)
 
 <details><B><summary> Z - Toolbox Ayarları</B></summary>
 Toolbox üzerinde ayar yapıp. Bilgi alabileceğiniz bölüm.
