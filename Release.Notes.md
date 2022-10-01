@@ -53,7 +53,7 @@
 	• Optimizasyon bölümünde yer alan 'İşlem Önceliği' ana menüye alındı.
 	• 'Kullanıcı Hesap Yönetimi' ve 'Lisans Yönetimi' tek bir başlıkta toplandı: 'Hesap ve Lisans Yönetimi'
 	• Windows 10/11 Edit bölümünlerinde yer alan içeriklerin büyük kısmı 'Hizmet yönetimi' bölümüne aktarıldı.
-		• Windows 10/11 Edit alanı birleştirildi.
+		• Windows 10/11 Edit alanı 'Görev çubuğu yöneticisi' olarak değiştirildi.
 		• Simge değiştir bölümü stabil bir çalışma düzeni göstermediği için kaldırıldı.
 		• Windows 11 Edit > Taskbar Boyut ve Taskbar Konumu 22H2'de çalışmadığı için kaldırıldı.
 	• Güncelleme sonrası temizlik bölümünde uygulanan regedit kayıtlarına yedekleme sistemi getirildi.
@@ -64,6 +64,7 @@
 	• Kullanıcı değişken atama bölümlerindeki kod karmaşıklığını önlemek için 'MobileValue' fonksiyonu oluşturuldu.
 	• 'Windows Editör' > İmaj toplama bölümüne Powershell ve Dism ile toplama seçenekleri eklendi. 
 		•Settings.ini üzerinden düzenlenecek şekilde ayarlama yapıldı.
+	• Extra\UpdateAfter.bat dosyası içindeki komutları OgnitorenKs.Toolbox.bat 'UpdateAfter' bölümüne eklendi.
 	
 	
 	

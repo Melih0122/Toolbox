@@ -295,7 +295,7 @@ if %ErrorTime%==1 (goto :eof)
 (
 echo.
 echo echo ►%%R%%[33m Animasyon ve transparan efektleri%%R%%[37m kapatılıyor...%%R%%[0m
-echo reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize" /v "EnableTransparency" /t REG_DWORD /d "0" ^> NUL 2^>^&1
+echo reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize" /v "EnableTransparency" /t REG_DWORD /d "0" /f ^> NUL 2^>^&1
 echo reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects" /v "VisualFXSetting" /t REG_DWORD /d 3 /f ^> NUL 2^>^&1
 echo reg add "HKCU\Control Panel\Desktop" /v "UserPreferencesMask" /t REG_BINARY /d "9012038010000000" /f ^> NUL 2^>^&1
 echo reg add "HKCU\Control Panel\Desktop\WindowMetrics" /v "MinAnimate" /t REG_SZ /d 0 /f ^> NUL 2^>^&1
@@ -303,10 +303,10 @@ echo reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" 
 echo reg add "HKCU\Software\Microsoft\Windows\DWM" /v "EnableAeroPeek" /t REG_DWORD /d 0 /f ^> NUL 2^>^&1
 echo reg add "HKCU\Software\Microsoft\Windows\DWM" /v "AlwaysHibernateThumbnails" /t REG_DWORD /d 0 /f ^> NUL 2^>^&1
 echo reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "ListviewAlphaSelect" /t REG_DWORD /d 0 /f ^> NUL 2^>^&1
-echo reg add "HKCU\Control Panel\Desktop" /v "DragFullWindows" /t REG_SZ /d 0 ^> NUL 2^>^&1
-echo reg add "HKCU\Control Panel\Desktop" /v "FontSmoothing" /t REG_SZ /d 2 ^> NUL 2^>^&1
-echo reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "ListviewShadow" /t REG_DWORD /d 1 ^> NUL 2^>^&1
-echo reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer" /v "ShellState" /t REG_BINARY /d "240000003E28000000000000000000000000000001000000130000000000000062000000" ^> NUL 2^>^&1
+echo reg add "HKCU\Control Panel\Desktop" /v "DragFullWindows" /t REG_SZ /d 0 /f ^> NUL 2^>^&1
+echo reg add "HKCU\Control Panel\Desktop" /v "FontSmoothing" /t REG_SZ /d 2 /f ^> NUL 2^>^&1
+echo reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "ListviewShadow" /t REG_DWORD /d 1 /f ^> NUL 2^>^&1
+echo reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer" /v "ShellState" /t REG_BINARY /d "240000003E28000000000000000000000000000001000000130000000000000062000000" /f ^> NUL 2^>^&1
 ) >> %Mount%\OgnitorenKs.Toolbox\Katilimsiz\Katilimsiz.bat 
 goto :eof
 

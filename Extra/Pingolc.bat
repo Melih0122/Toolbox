@@ -14,13 +14,13 @@
 ::                       ██    ██   ██ ██   ██ ██      ██   ██ ██   ██   ██  ██
 ::                       ██    ███████ ███████ ███████ ██████  ███████  ██    ██
 ::
-::  Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
+::  ► Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
 ::
-::  İletişim - Contact;
+::  ► İletişim - Contact;
 ::  --------------------------------------
 ::  • Discord: OgnitorenKs#2737 
 ::  •    Mail: ognitorenks@gmail.com
-::  •    Site: https://ognitorenks.blogspot.com/
+::  •    Site: https://ognitorenks.com.tr
 ::
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 echo off
@@ -28,9 +28,11 @@ chcp 65001 > NUL 2>&1
 mode con cols=48 lines=22
 title Ping Ölçer / OgnitorenKs
 
+::Renklendirme komutu
 setlocal
-call :ColorEnd
+for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do rem"') do (set R=%%b)
 
+:: Konum bilgisi alınır
 cd /d "%~dp0"
 for /f %%a in ('"cd"') do set Location=%%a
 set Location=%Location:~0,-6%
@@ -73,11 +75,10 @@ pause > NUL
 goto ping1
 
 
-
 :pingolcum
 for /f "tokens=9" %%a in ('ping -n 1 %~1') do SET ping=%%a
 set ping=%ping:~0,-2% %R%[96mMS%R%[0m
-GOTO:EOF
+goto :eof
 
 :pingolcdns
 for /f "tokens=9" %%a in ('ping -n 1 %~1') do SET ping=%%a
@@ -85,12 +86,4 @@ set pingdns1=%ping:~0,-2%
 
 for /f "tokens=9" %%a in ('ping -n 1 %~2') do SET ping=%%a
 set pingdns2=%ping:~0,-2% %R%[96mMS%R%[0m
-GOTO:EOF
-
-
-:ColorEnd
-for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do rem"') do (
-  set R=%%b
-  exit /B 0
-)
-exit /B 0
+goto :eof

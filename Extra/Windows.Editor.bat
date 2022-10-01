@@ -14,13 +14,13 @@
 ::                       ██    ██   ██ ██   ██ ██      ██   ██ ██   ██   ██  ██
 ::                       ██    ███████ ███████ ███████ ██████  ███████  ██    ██
 ::
-::  Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
+::  ► Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
 ::
-::  İletişim - Contact;
+::  ► İletişim - Contact;
 ::  --------------------------------------
 ::  • Discord: OgnitorenKs#2737 
 ::  •    Mail: ognitorenks@gmail.com
-::  •    Site: https://ognitorenks.blogspot.com/
+::  •    Site: https://ognitorenks.com.tr
 ::
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 echo off
@@ -29,67 +29,64 @@ chcp 65001 > NUL
 mode con cols=61 lines=20
 title OgnitorenKs Windows Editör
 
+:: --------------------------------------------------------------------------------------------------------
+
 :: Renklendirme komutları 
 setlocal
-call :ColorEnd
-Call :ColorEnd2
+for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do rem"') do (set R=%%b)
+
+:: --------------------------------------------------------------------------------------------------------
 
 :: Konum bilgisi alınır
 cd /d "%~dp0"
 for /f %%a in ('"cd"') do set Location=%%a
 set Location=%Location:~0,-6%
-Call :NSudo
-
-:: Varsayılan Mount klasör yolu
 set Mount=%Location%\Edit\Mount
+set NSudo="%Location%\Files\NSudo.exe" -U:T -P:E -Wait -ShowWindowMode:hide cmd /c
 
+:: --------------------------------------------------------------------------------------------------------
+:: Toolbox ayarlarını okur
 set LogsSettings=0&FOR /F "tokens=2" %%a in ('findstr /C:"LogsSettings" %Location%\Settings.ini') do (
 	if %%a EQU 1 (set LogsSettings=1)
 )
 FOR /F "tokens=2" %%a in ('findstr /C:"InternetCheck" %Location%\Settings.ini') do (set InternetCheck=%%a)
+FOR /F "tokens=2" %%a in ('findstr /C:"Unmount" %Location%\Settings.ini') do (set Unmount=%%a)
 
-:: İhtiyaç duyulan dosyaları indirir.
-echo                   %R%[92m Dosyalar kontrol ediliyor...%R%[0m
-FOR %%a in (Setup.zip Newico.zip Oldico.zip) do (
-	dir /b %Location%\Files\%%a > NUL 2>&1
-		if %errorlevel%==1 (Call :FilesDownloader %%a)
-)
+:: --------------------------------------------------------------------------------------------------------
 
 :WindowsEditMenu
 cls
-mode con cols=53 lines=37
+mode con cols=53 lines=35
 echo  %R%[90m┌─────────────────────────────────────────────────┐%R%[0m
 echo  %R%[90m│%R%[1;97m%R%[100m            OgnitorenKs Windows Editör           %R%[0m%R%[90m│%R%[0m
 echo  %R%[90m├─────────────────────────────────────────────────┤%R%[0m
-echo  %R%[90m│%R%[37m ►%R%[36m '20'%R%[90m numaralı işlemle İmaj yolu tanımlanmalı  │%R%[0m
-echo  %R%[90m│%R%[37m ►%R%[90m Mavi renkli işlemler%R%[36m 20%R%[90m numaralı bölüme bağlı │%R%[0m
+echo  %R%[90m│%R%[37m ►%R%[36m '18'%R%[90m numaralı işlemle İmaj yolu tanımlanmalı  │%R%[0m
+echo  %R%[90m│%R%[37m ►%R%[90m Mavi renkli işlemler%R%[36m 18%R%[90m numaralı bölüme bağlı │%R%[0m
 echo  %R%[90m│%R%[37m ►%R%[90m NTLite gibi programlar kapalı olmalıdır.      │%R%[0m
 echo  %R%[90m├─────────────────────────────────────────────────┤%R%[0m
-echo  %R%[90m│   %R%[32m 1.%C%[33m WIM / ESD Okuyucu                         %R%[90m│%R%[0m
-echo  %R%[90m│   %R%[32m 2.%C%[33m AIO Windows Hazırla                       %R%[90m│%R%[0m
-echo  %R%[90m│   %R%[32m 3.%C%[33m ISO Hazırla                               %R%[90m│%R%[0m
-echo  %R%[90m│   %R%[32m 4.%C%[33m ESD to WIM dönüştürücü                    %R%[90m│%R%[0m
-echo  %R%[90m│   %R%[32m 5.%C%[33m İndex silici                              %R%[90m│%R%[0m
-echo  %R%[90m│   %R%[32m 6.%C%[33m İmaj Yükle                                %R%[90m│%R%[0m
-echo  %R%[90m│   %R%[32m 7.%C%[33m İmaj Yeniden Yükle                        %R%[90m│%R%[0m
-echo  %R%[90m│   %R%[32m 8.%C%[33m İmaj Topla                                %R%[90m│%R%[0m
+echo  %R%[90m│   %R%[32m 1.%R%[33m WIM / ESD Okuyucu                         %R%[90m│%R%[0m
+echo  %R%[90m│   %R%[32m 2.%R%[33m AIO Windows Hazırla                       %R%[90m│%R%[0m
+echo  %R%[90m│   %R%[32m 3.%R%[33m ISO Hazırla                               %R%[90m│%R%[0m
+echo  %R%[90m│   %R%[32m 4.%R%[33m ESD to WIM dönüştürücü                    %R%[90m│%R%[0m
+echo  %R%[90m│   %R%[32m 5.%R%[33m İndex silici                              %R%[90m│%R%[0m
+echo  %R%[90m│   %R%[32m 6.%R%[33m İmaj Yükle                                %R%[90m│%R%[0m
+echo  %R%[90m│   %R%[32m 7.%R%[33m İmaj Yeniden Yükle                        %R%[90m│%R%[0m
+echo  %R%[90m│   %R%[32m 8.%R%[33m İmaj Topla                                %R%[90m│%R%[0m
 echo  %R%[90m├─────────────────────────────────────────────────┤%R%[0m
-echo  %R%[90m│   %R%[36m 9.%C%[33m Regedit yükle%R%[90m [İmaj]                      │%R%[0m
-echo  %R%[90m│  %R%[32m 10.%C%[33m Regedit topla%R%[90m [İmaj]                      │%R%[0m 
+echo  %R%[90m│   %R%[36m 9.%R%[33m Regedit yükle%R%[90m [İmaj]                      │%R%[0m
+echo  %R%[90m│  %R%[32m 10.%R%[33m Regedit topla%R%[90m [İmaj]                      │%R%[0m 
 echo  %R%[90m├─────────────────────────────────────────────────┤%R%[0m
-echo  %R%[90m│  %R%[36m 11.%C%[33m Güncelleme Yükleyici%C%[90m [İmaj                │%R%[0m
-echo  %R%[90m│  %R%[36m 12.%C%[33m Appx yükleyici%C%[90m [İmaj]                     │%R%[0m
+echo  %R%[90m│  %R%[36m 11.%R%[33m Güncelleme Yükleyici%R%[90m [İmaj                │%R%[0m
+echo  %R%[90m│  %R%[36m 12.%R%[33m Appx yükleyici%R%[90m [İmaj]                     │%R%[0m
 echo  %R%[90m├─────────────────────────────────────────────────┤%R%[0m
-echo  %R%[90m│  %R%[32m 13.%C%[33m Driver Yedekle%C%[90m [Yüklü Sistem]             │%R%[0m
-echo  %R%[90m│  %R%[36m 14.%C%[33m Driver Yükle%C%[90m [İmaj]                       │%R%[0m
+echo  %R%[90m│  %R%[32m 13.%R%[33m Driver Yedekle%R%[90m [Yüklü Sistem]             │%R%[0m
+echo  %R%[90m│  %R%[36m 14.%R%[33m Driver Yükle%R%[90m [İmaj]                       │%R%[0m
 echo  %R%[90m├─────────────────────────────────────────────────┤%R%[0m
-echo  %R%[90m│  %R%[32m 15.%C%[33m Setup Düzenle%C%[90m [İmaj]                      │%R%[0m
-echo  %R%[90m│  %R%[36m 16.%C%[33m Yeni Simgeleri yükle%C%[90m [İmaj]               │%R%[0m
-echo  %R%[90m│  %R%[36m 17.%C%[33m Gpedit.msc ekle%C%[90m [İmaj]                    │%R%[0m
-echo  %R%[90m│  %R%[36m 18.%C%[33m Hyper-V ekle%C%[90m [İmaj]                       │%R%[0m
-echo  %R%[90m│  %R%[36m 19.%C%[33m Katılımsız Program / Ayar ekle%C%[90m [İmaj]     │%R%[0m
+echo  %R%[90m│  %R%[32m 15.%R%[33m Setup Düzenle%R%[90m [İmaj]                      │%R%[0m
+echo  %R%[90m│  %R%[36m 16.%R%[33m Yeni Simgeleri yükle%R%[90m [İmaj]               │%R%[0m
+echo  %R%[90m│  %R%[36m 17.%R%[33m Katılımsız Program / Ayar ekle%R%[90m [İmaj]     │%R%[0m
 echo  %R%[90m├─────────────────────────────────────────────────┤%R%[0m
-echo  %R%[90m│  %R%[36m 20.%R%[36m İmaj yol tanımla                          %R%[90m│%R%[0m
+echo  %R%[90m│  %R%[36m 18.%R%[36m İmaj yol tanımla                          %R%[90m│%R%[0m
 echo  %R%[90m│   %R%[32m X.%R%[37m Menü / Kapat                              %R%[90m│%R%[0m
 echo  %R%[90m└─────────────────────────────────────────────────┘%R%[0m
 set /p WindowsEditMenu= %R%[92m İşlem : %R%[0m
@@ -109,10 +106,8 @@ set /p WindowsEditMenu= %R%[92m İşlem : %R%[0m
 	if %WindowsEditMenu%==14 (Call :DriverYukle)
 	if %WindowsEditMenu%==15 (Call :SetupEdit)
 	if %WindowsEditMenu%==16 (Call :Newico)
-	if %WindowsEditMenu%==17 (Call :gpeditmsc)
-	if %WindowsEditMenu%==18 (Call :HyperV)
-	if %WindowsEditMenu%==19 (Call :SetupMaker)
-	if %WindowsEditMenu%==20 (Call :degisken3)
+	if %WindowsEditMenu%==17 (Call :Powershell "Start-Process '%Location%\Extra\Katilimsiz.Hazirlayici.bat'")
+	if %WindowsEditMenu%==18 (Call :degisken3)
 	if %WindowsEditMenu%==x exit
 	if %WindowsEditMenu%==X exit
 )
@@ -120,7 +115,7 @@ goto WindowsEditMenu
 	
 :WimReader
 Call :Panel "%R%[100m                        WIM / ESD Okuyucu                         %R%[0m"
-Call :degisken1
+Call :degisken1 
 mode con cols=99 lines=40
 Call :OgnitorenKs.Reader "%MainWim%" echo :: :: :: :: ::
 echo                      %R%[92m Menüye dönmek için herhangi bir tuşa basınız.%R%[0m
@@ -132,9 +127,9 @@ goto :eof
 
 :AIO.Maker
 Call :Panel "%R%[100m                       AIO Windows Hazırla                        %R%[0m"
-echo   ►%C%[96m Ana Sürüm%R%[0m ◄
+echo   ►%R%[96m Ana Sürüm%R%[0m ◄
 Call :degisken1
-echo   ►%C%[96m Eklenecek Sürüm%R%[0m ◄
+echo   ►%R%[96m Eklenecek Sürüm%R%[0m ◄
 Call :degisken2
 mode con cols=99 lines=40
 Call :OgnitorenKs.Reader "%MainWim%" :: echo "%R%[100m                                          ► ANA SÜRÜM ◄                                        %R%[0m" :: :: ::
@@ -167,21 +162,19 @@ goto :eof
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
 :ISOMaker
-dir /b "%Location%\Files\oscdimg.exe" > NUL 2>&1
-	 if %errorlevel%==1 (echo %R%[1;97m%R%[41m oscdimg.exe dosyası bulunamadı %R%[0m&timeout /t 4 /nobreak > NUL&goto WindowsEditMenu)
 Call :Panel "%R%[100m                             ISO MAKER                            %R%[0m"
 echo  %R%[96m Örnek:%R%[33m C:\Windows10Pro%R%[0m
-set /p MainWim=%C%[92m   İmaj klasör yolu : %C%[0m
+set /p MainWim=%R%[92m   İmaj klasör yolu : %R%[0m
 	if %MainWim%==x GOTO WindowsEditMenu
 	if %MainWim%==X GOTO WindowsEditMenu
 echo.
-set /p etiket=%C%[92m   Etiket ismi : %C%[0m
+set /p etiket=%R%[92m   Etiket ismi : %R%[0m
 echo.
-set /p isokayit=%C%[92m   ISO ismi : %C%[0m
+set /p isokayit=%R%[92m   ISO ismi : %R%[0m
  
 mode con cols=99 lines=40
 Call :LogSave "ISOMaker" "İmaj:'%MainWim%' -Etiket:'%etiket%' -ISO:'%isokayit%' ISO dosyası oluşturuldu"
-echo ►%R%[33m ISO dosyası hazırlanıyor...%C%[0m
+echo ►%R%[33m ISO dosyası hazırlanıyor...%R%[0m
 %Location%\Files\oscdimg.exe -m -o -u2 -udfver102 -bootdata:2#p0,e,b%MainWim%\boot\etfsboot.com#pEF,e,b%MainWim%\efi\microsoft\boot\efisys.bin -L%etiket% %MainWim%\ %Location%\Edit\%isokayit%.iso
 Call :Powershell "Start-Process '%Location%\Edit'"
 Call :ProcessCompleted
@@ -203,7 +196,7 @@ FOR %%a in (%$index%) do (
 	FOR /F "tokens=3" %%b IN ('Dism /Get-WimInfo /WimFile:%MainWim% /Index:%%a ^| FIND "Architecture"') do (
 		FOR /F "tokens=2 delims=:" %%c IN ('Dism /Get-WimInfo /WimFile:%MainWim% /Index:%%a ^| FIND "Name"') do (
 			Call :Panel2 "%R%[33m %%a %R%[37m►%R%[33m (%%c %%b)%R%[37m dönüştürülüyor...%R%[0m"
-			Call :esdtowim %MainWim% "%%a"
+			Call :esdtowimturn %MainWim% "%%a"
 			)
 		)
 	)
@@ -219,7 +212,7 @@ Call :Panel "%R%[100m                               WIM SİL                    
 Call :degisken1
 mode con cols=99 lines=40
 Call :OgnitorenKs.Reader "%MainWim%" echo :: :: :: :: ::
-set /p index=%C%[92m İşlem : %C%[0m
+set /p index=%R%[92m İşlem : %R%[0m
 
 echo %$index% | findstr "x" > NUL 2>&1
 	if %errorlevel%==0 goto WindowsEditMenu
@@ -240,11 +233,13 @@ goto :eof
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
 :WimMount
-Call :ImageRemount ::
-Call :RegeditCollect ::
-Call :ImageUnmount ::
+:: Mount klasörünün içindeki herhangi bir dosya varsa işlem gerçekleştirilemez.
 RD /S /Q "%Location%\Edit\Mount" > NUL 2>&1
-mkdir "%Location%\Edit\Mount" > NUL 2>&1
+dir /b %Location%\Edit\Mount\* > NUL 2>&1
+	if %errorlevel%==0 (echo %R%[31m Mount klasörü dolu işlem yapılamaz%R%[0m
+						timeout /t 5 /nobreak > NUL
+						goto :eof)
+MD "%Location%\Edit\Mount" > NUL 2>&1
 cls
 Call :Panel "%R%[100m                              WIM MOUNT                           %R%[0m"
 Call :degisken1
@@ -252,7 +247,7 @@ mode con cols=99 lines=40
 Call :OgnitorenKs.Reader "%MainWim%" echo :: :: :: :: ::
 echo %MainWim% | find "install.esd" > NUL 2>&1
 	if %errorlevel%==0 (echo  %R%[1;97m%R%[41m ESD dosya tespit edildi. İşlem yapılamaz %R%[0m&pause > NUL&goto WindowsEditMenu)
-set /p index= %C%[92m İşlem : %C%[0m
+set /p index= %R%[92m İşlem : %R%[0m
 	if %index%==x goto WindowsEditMenu
 	if %index%==X goto WindowsEditMenu
 cls
@@ -277,8 +272,9 @@ goto :eof
 
 :ImageUnmount
 %~1 :Panel "%R%[100m                            İmaj Toplanıyor                       %R%[0m"
-Call :LogSave "ImageUnmount" "'%Mount%' klasörü toplandı"
-Call :Powershell "Dismount-WindowsImage -Path '%Location%\Edit\Mount' -Save"
+if %Unmount% EQU 0 (Call :Powershell "Dismount-WindowsImage -Path '%Mount%' -Save")
+if %Unmount% EQU 1 (Dism /Unmount-Wim  /MountDir:%Mount% /commit
+						if %errorlevel% EQU 1 (Call :Powershell "Dismount-WindowsImage -Path '%Mount%' -Save"))
 %~1 :ProcessCompleted
 goto :eof
 
@@ -313,12 +309,11 @@ Dism /Image:%Mount% /Cleanup-Image /StartComponentCleanup
 Call :ProcessCompleted
 goto :eof
 
-
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
 :DriverYedek
 RD /S /Q "%Location%\Edit\Driver\Yedek" > NUL 2>&1
-mkdir "%Location%\Edit\Driver\Yedek" > NUL 2>&1
+MD "%Location%\Edit\Driver\Yedek" > NUL 2>&1
 Call :Panel "%R%[100m                           Driver Yedekle                        %R%[0m"
 Dism /Online /Export-Driver /Destination:%Location%\Edit\Driver\Yedek
 Call :LogSave "DriverYedek" "Driverlar yedeklendi"
@@ -335,50 +330,62 @@ Dism /Image:%Mount% /Add-Driver /Driver:%Location%\Edit\Driver /Recurse
 Call :ProcessCompleted
 goto :eof
 
-
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
 :SetupEdit
-RD /S /Q "%Location%\Edit\Mount" > NUL 2>&1
-Call :RegeditCollect ::
+:: Setup.zip dosyasını kontrol eder yoksa yeniden indirir.
+Call :ToolboxFileChecker Setup.zip
+RD /S /Q "%Location%\Edit\Mount" > NUL 2>&1	
+:: Yüklü regedit kaydı varsa toplanması için uyarı yapıyorum
+:: Farklı programların yüklediği regedit kayıtlarını tespit edemez.
+reg query HKLM\OFF_SOFTWARE > NUL 2>&1
+	if %errorlevel%==0 (echo %R%[31m HATA! Offline regedit kayıtları yüklü%R%[0m
+						timeout /t 5 /nobreak > NUL
+						goto :eof)
+:: Mount klasörünün içindeki herhangi bir dosya varsa işlem gerçekleştirilemez.
 dir /b %Location%\Edit\Mount\* > NUL 2>&1
 	if %errorlevel%==0 (echo %R%[31m Mount klasörü dolu işlem yapılamaz%R%[0m
-						Call :ImageRemount ::
-						Call :ImageUnmount ::)
-RD /S /Q "%Location%\Edit\Mount" > NUL 2>&1
-mkdir "%Location%\Edit\Mount" > NUL 2>&1
-set Mount=%Location%\Edit\Mount
-
-dir /b %Location%\Files\Setup.zip > NUL 2>&1
-	if %errorlevel%==1 (Call :FilesDownloader Setup.zip)
+						timeout /t 5 /nobreak > NUL
+						goto :eof)
+:: Mount klasörü işlem öncesi silinip yeniden oluşturulması olası hataların önüne geçmektedir.
+MD "%Location%\Edit\Mount" > NUL 2>&1
 
 Call :Panel "%R%[100m                           Setup Düzenle                         %R%[0m"
+:: Boot.wim yolunu almak için degisken4 fonksiyonu aranır.
 Call :degisken4
 mode con cols=99 lines=40
+:: boot.wim dosyasının içeriği okunur.
 FOR /F "tokens=3" %%b IN ('Dism /Get-WimInfo /WimFile:%MainWim% /Index:%index% ^| FIND "Architecture"') do (set iarc=%%b)
 FOR /F "tokens=2 delims=:" %%c IN ('Dism /Get-WimInfo /WimFile:%MainWim% /Index:%index% ^| FIND "Name"') do ( set iname=%%c)
+:: Alınan içerik bilgileri ekrana yansıtılır.
 Call :Panel2 "%R%[33m %index% %R%[37m►%R%[33m (%iname%)%R%[37m açılıyor...%R%[0m"
+:: Dism ile setup bölümü mount edilir.
 Dism /Mount-Image /ImageFile:%MainWim% /MountDir:"%Location%\Edit\Mount" /Index:%index%
 cls
 echo ►%R%[33m Dosyalar imaja ekleniyor...%R%[0m
-%NSudo% Powershell -command "Expand-Archive -Force '%Location%\Files\Setup.zip' '%Location%\Edit\Mount'"
+:: Setup.zip dosyası Mount klasörüne çıkarılır.
+%NSudo% Powershell -command "Expand-Archive -Force '%Location%\Files\Download\Setup.zip' '%Location%\Edit\Mount'"
 cls
-Call :Panel2 "%R%[96m Lerup Launcher menü konumunu seçiniz%R%[0m"
-set /p barkonum=%R%[97m  ► %R%[92m[%R%[92m Sol:%R%[1;97m 1 %R%[35m/%R%[92m Üst:%R%[1;97m 2 %R%[35m/%R%[92m Sağ:%R%[1;97m 3 %R%[35m/%R%[92m Alt:%R%[1;97m 4 %R%[92m] : %R%[0m 
+:: Lerup Launch Bar konumu seçmeniz istenir.
+Call :Panel2 "%R%[96m 'Lerup Launch Bar' menü konumunu seçiniz%R%[0m"
+set /p barkonum=%R%[97m  ► %R%[92m[%R%[92m Sol:%R%[1;97m 1 %R%[35m/%R%[92m Üst:%R%[1;97m 2 %R%[35m/%R%[92m Sağ:%R%[1;97m 3 %R%[35m/%R%[92m Alt:%R%[1;97m 4 %R%[92m] : %R%[0m
+:: Regedit kayıtları yüklenir ve alttaki reg kayıtları imaja eklendikten sonra regedit kayıtları toplanır. 
 Call :RegeditInstall ::
-reg add "HKLM\OFF_HKU\SOFTWARE\Peter Lerup\LaunchBar" /v "Location" /t REG_SZ /d %barkonum% /f > NUL 2>&1
-reg add "HKLM\OFF_HKU\SOFTWARE\Peter Lerup\LaunchBar" /v "UseLargeIcons" /t REG_SZ /d 1 /f > NUL 2>&1
-reg add "HKLM\OFF_HKU\SOFTWARE\Peter Lerup\LaunchBar" /v "UseLargeMenus" /t REG_SZ /d 1 /f > NUL 2>&1
-reg add "HKLM\OFF_HKU\SOFTWARE\Peter Lerup\LaunchBar" /v "AlwaysOnTop" /t REG_SZ /d 1 /f > NUL 2>&1
-reg add "HKLM\OFF_HKU\SOFTWARE\Peter Lerup\LaunchBar" /v "AutoHide" /t REG_SZ /d 0 /f > NUL 2>&1
-reg add "HKLM\OFF_HKU\SOFTWARE\Peter Lerup\LaunchBar" /v "Center" /t REG_SZ /d 1 /f > NUL 2>&1
-reg add "HKLM\OFF_HKU\SOFTWARE\Peter Lerup\LaunchBar" /v "Buttons" /t REG_SZ /d "Power.lnk;BypassToolbox.lnk;setup.exe.lnk;Explorer++.lnk;Start Menu.lnk;" /f > NUL 2>&1
+Call :sz "HKLM\OFF_HKU\SOFTWARE\Peter Lerup\LaunchBar" "Location" %barkonum%
+Call :sz "HKLM\OFF_HKU\SOFTWARE\Peter Lerup\LaunchBar" "UseLargeIcons" 1
+Call :sz "HKLM\OFF_HKU\SOFTWARE\Peter Lerup\LaunchBar" "UseLargeMenus" 1
+Call :sz "HKLM\OFF_HKU\SOFTWARE\Peter Lerup\LaunchBar" "AlwaysOnTop" 1
+Call :sz "HKLM\OFF_HKU\SOFTWARE\Peter Lerup\LaunchBar" "AutoHide" 0
+Call :sz "HKLM\OFF_HKU\SOFTWARE\Peter Lerup\LaunchBar" "Center" 1
+Call :sz "HKLM\OFF_HKU\SOFTWARE\Peter Lerup\LaunchBar" "Buttons" "Power.lnk;BypassToolbox.lnk;setup.exe.lnk;Explorer++.lnk;Start Menu.lnk;"
 Call :RegeditCollect ::
 cls
-set /p value=►%C%[92m Driver yüklensin mi? [E/H]: %C%[0m
+:: Driver ekleme işleminiz varsa bunu size sorar.
+set /p value=►%R%[92m Driver yüklensin mi? [E/H]: %R%[0m
 	if %value%==E (Call :DriverYukle)
 	if %value%==e (Call :DriverYukle)
-set /p value=►%C%[92m İmaj toplansın mı? [E/H]: %C%[0m
+:: İşlem sonrası yapılacak farklı işlemler yok ise toplanması için soru yöneltir.
+set /p value=►%R%[92m İmaj toplansın mı? [E/H]: %R%[0m
 	if %value%==E (Call :ImageUnmount ::)
 	if %value%==e (Call :ImageUnmount ::)
 goto :eof
@@ -387,44 +394,11 @@ goto :eof
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
 :Newico
-Call :Panel "%R%[100m                       Yeni Simge Yükleyici                       %R%[0m"
+Call :ToolboxFileChecker Newico.zip
+Call :Panel "%R%[100m                 Windows 10 Yeni Simge Yükleyici                  %R%[0m"
 Call :LogSave "Newico" "Yeni simgeler entegre edildi. '%Mount%'"
-%NSudo% Powershell -command "Expand-Archive -Force '%Location%\Files\Newico.zip' '%Mount%\Windows'"
+%NSudo% Powershell -command "Expand-Archive -Force '%Location%\Files\Download\Newico.zip' '%Mount%\Windows'"
 Call :ProcessCompleted
-goto :eof
-
-:: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-:gpeditmsc
-Call :Panel "%R%[100m                       Gpedit.Msc Yükleyici                       %R%[0m"
-echo  %R%[37m NTLite tarzı program açıksa sorun yaşanmaması için kapatınız%R%[0m
-echo.
-set /p Warning=%R%[33m  Devam etmek için %R%[96m'X'%R%[33m Menü için %R%[96m'R'%R%[33m tuşlayınız: %R%[0m
-	if %Warning%==R (goto :eof)
-	if %Warning%==r (goto :eof)
-Call :LogSave "Gpedit.msc" "Gpedit.msc entegre edildi. '%Mount%'"
-FOR /f %%a IN ('"dir /b /s %Mount%\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~*.mum"') do (Dism /Image:%Mount% /Add-Package:"%%a")
-FOR /f %%a IN ('"dir /b /s %Mount%\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~*.mum") do (Dism /Image:%Mount% /Add-Package:"%%a")
-Call :ProcessCompleted
-goto :eof
-
-:: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-
-:HyperV
-Call :Panel "%R%[100m                         Hyper-V Yükleyici                        %R%[0m"
-echo  %R%[37m NTLite tarzı program açıksa sorun yaşanmaması için kapatınız%R%[0m
-echo.
-set /p Warning=%R%[33m  Devam etmek için %R%[96m'X'%R%[33m Menü için %R%[96m'R'%R%[33m tuşlayınız: %R%[0m
-	if %Warning%==R (goto :eof)
-	if %Warning%==r (goto :eof)
-Call :LogSave "HyperV" "Hyper-V entegre edildi. '%Mount%'"
-For /f %%a IN ('"dir /b /s %Mount%\Windows\servicing\Packages\Microsoft-Hyper-V*.mum"') DO (Dism /Image:%Mount% /Add-Package:"%%a")
-Dism /Image:%Mount% /Enable-Feature /FeatureName:Microsoft-Hyper-V-All
-goto :eof
-
-:: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-
-:SetupMaker
-Call :Powershell "Start-Process '%Location%\Extra\Katilimsiz.Hazirlayici.bat'"
 goto :eof
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
@@ -436,7 +410,7 @@ goto :eof
 
 :: --------------------------------------------------------------------------------------------------------
 
-:esdtowim
+:esdtowimturn
 Call :LogSave "ESDtoWIM" "'%~2'-'%~1' sürümü dönüştürüldü"
 dir /b %Location%\Edit\install.wim > NUL 2>&1
 	if %errorlevel%==0 (Call :LogSave "ESDtoWIM" "HATA! Mevcut install.wim dosyası üzerine ekleme işlemi gerçekleştirildi"
@@ -474,7 +448,7 @@ goto :eof
 %~5  %R%[90m│%R%[1;97m%~6%R%[90m│%R%[0m
 %~5  %R%[90m├───────┬────────┬─────────────┬────────┬─────────────┬─────────────────────────────────────────┤%R%[0m
 %~2  %R%[90m┌───────┬────────┬─────────────┬────────┬─────────────┬─────────────────────────────────────────┐%R%[0m
-echo  %R%[90m│%R%[0m %C%[32mINDEX%C%[0m %R%[90m│%R%[0m %C%[32mMİMARİ%C%[0m %R%[90m│%R%[0m %C%[32m   SÜRÜM%C%[0m    %R%[90m│%R%[0m  %C%[32mDİL%C%[0m   %R%[90m│%R%[0m    %C%[32mEDİT%C%[0m     %R%[90m│%R%[0m    %C%[32mİSİM%C%[0m
+echo  %R%[90m│%R%[0m %R%[32mINDEX%R%[0m %R%[90m│%R%[0m %R%[32mMİMARİ%R%[0m %R%[90m│%R%[0m %R%[32m   SÜRÜM%R%[0m    %R%[90m│%R%[0m  %R%[32mDİL%R%[0m   %R%[90m│%R%[0m    %R%[32mEDİT%R%[0m     %R%[90m│%R%[0m    %R%[32mİSİM%R%[0m
 FOR /F "tokens=3" %%a IN ('Dism /Get-WimInfo /WimFile:%~1 ^| FIND "Index"') DO (
 	FOR /F "tokens=3" %%b IN ('Dism /Get-WimInfo /WimFile:%~1 /Index:%%a ^| FIND "Architecture"') DO (
 		FOR /F "tokens=3" %%c in ('Dism /Get-WimInfo /WimFile:%~1  /Index:%%a ^| Find "Version"') do (
@@ -484,7 +458,7 @@ FOR /F "tokens=3" %%a IN ('Dism /Get-WimInfo /WimFile:%~1 ^| FIND "Index"') DO (
 						FOR /F "tokens=2 delims=':'" %%g in ('Dism /Get-WimInfo /WimFile:%~1  /Index:%%a ^| findstr /i Name') do (
 							FOR /F "tokens=2 delims='-',':' " %%h in ('Dism /Get-WimInfo /WimFile:%~1  /Index:%%a ^| findstr /i Modified') do (
 								echo  %R%[90m├───────┼────────┼─────────────┼────────┼─────────────┼─────────────────────────────────────────┤%R%[0m
-								echo      %C%[92m%%a%C%[0m   ►   %C%[33m%%b%C%[0m    %C%[36m %%d.%%e%C%[0m    %C%[33m%%f%C%[0m    %C%[36m%%h%C%[0m  %C%[37m %%g%C%[0m
+								echo      %R%[92m%%a%R%[0m   ►   %R%[33m%%b%R%[0m    %R%[36m %%d.%%e%R%[0m    %R%[33m%%f%R%[0m    %R%[36m%%h%R%[0m  %R%[37m %%g%R%[0m
 								)
 							)
 						)
@@ -500,32 +474,23 @@ goto :eof
 
 :: --------------------------------------------------------------------------------------------------------
 
-:NSudo
-dir /b "%Location%\Files\NSudo.exe" > NUL 2>&1
-	if %errorlevel%==1 (Call :LogSave "NSudo" "NSudo.exe dosyası bulunamadı. Yeniden indirildi."
-						Call :FilesDownloader "NSudo.zip"
-						Call :Powershell "Expand-Archive -Force '%Location%\Files\NSudo.zip' '%Location%\Files'"
-						DEL /F /Q /A "%Location%\Files\NSudo.zip" > NUL 2>&1
+:ToolboxFileChecker
+dir /b "%Location%\Files\Download\%~1" > NUL 2>&1
+	if %errorlevel% EQU 1 (Call :InternetControl
+						   FOR /F "tokens=1" %%i in ('FIND "%~1" %Location%\Extra\Links.txt') do set link=%%i
+						   %Location%\Files\wget.exe -c -q --no-check-certificate --show-progress "%link%" -O %Location%\Files\Download\%~1
 )
-set NSudo="%Location%\Files\NSudo.exe" -U:T -P:E -Wait -ShowWindowMode:hide cmd /c
-goto :eof
-
-:: --------------------------------------------------------------------------------------------------------
-
-:FilesDownloader [%~1=Download Name]
-Call :InternetControl
-FOR /F "tokens=1" %%i in ('FIND "%~1" %Location%\Extra\Links.txt') do set link=%%i
-%Location%\Files\wget.exe -c -q --no-check-certificate --show-progress "%link%" -O %Location%\Files\%~1
 goto :eof
 
 :: --------------------------------------------------------------------------------------------------------
 
 :InternetControl
 if %InternetCheck% EQU 1 (goto :eof)
-ping -n 1 google.com > NUL
-	if %errorlevel%==1 (echo   %R%[1;97m%R%[41m Internet yok %R%[0m
+FOR /F "tokens=1" %%a in ('FIND "InternetControlPing" %Location%\Extra\Links.txt') do (set link=%%a)
+ping -n 1 %link% > NUL
+	if %errorlevel%==1 (echo   %R%[1;97m%R%[41m İnternet bağlantısı yok %R%[0m
 						Call :LogSave "InternetControl" "HATA! İnternet bağlantısı yok."
-						timeout /t 4 /nobreak > NUL
+						timeout /t 3 /nobreak > NUL
 						goto :eof)
 goto :eof
 
@@ -540,6 +505,15 @@ goto :eof
 
 :: --------------------------------------------------------------------------------------------------------
 
+:MobileValue
+echo.
+set /p MobileValue=%R%[96m %~1 : %R%[0m
+	if %MobileValue%==x (goto %~2)
+	if %MobileValue%==X (goto %~2)
+goto :eof
+
+:: --------------------------------------------------------------------------------------------------------
+
 :Powershell
 chcp 437 > NUL 2>&1
 Powershell -command %*
@@ -549,22 +523,18 @@ goto :eof
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
 :degisken1
-set /p MainWim=%C%[97m  ►%C%[92m Klasör veya Dosya yolu : %C%[0m
+set /p MainWim=%R%[97m  ►%R%[92m Klasör veya Dosya yolu : %R%[0m
 	if %MainWim%==x GOTO menu
 	if %MainWim%==X GOTO menu
-
 echo %MainWim%\ | Find /C /I "\\" > NUL 2>&1
 	if %errorlevel%==0 (set MainWim=%MainWim:~0,-1%
 						Call :LogSave "degisken1" "ISO kalıbından yol verildi. '%MainWim%'")
-
 echo %MainWim% | Findstr /C:"boot.wim" > NUL 2>&1
 	if %errorlevel%==0 (Call :LogSave "degisken1" "boot.wim dosyası tanımlandı. '%MainWim%'"
-						goto :eof)
-						
+						goto :eof)		
 echo %MainWim% | Findstr /C:"install." > NUL 2>&1
 	if %errorlevel%==0 (Call :LogSave "degisken1" "install.wim/esd dosya yolu direkt tanımlandı. '%MainWim%'"
-						goto :eof)
-						
+						goto :eof)				
 dir /b %MainWim%\sources\install.wim > NUL 2>&1
 	if %errorlevel%==0 (set MainWim="%MainWim%\sources\install.wim")
 	if %errorlevel%==1 (set MainWim="%MainWim%\sources\install.esd")
@@ -574,7 +544,7 @@ goto :eof
 :: --------------------------------------------------------------------------------------------------------
 
 :degisken2
-set /p AddWim=%C%[97m  ►%C%[92m Klasör veya Dosya yolu : %C%[0m
+set /p AddWim=%R%[97m  ►%R%[92m Klasör veya Dosya yolu : %R%[0m
 	if %AddWim%==x GOTO menu
 	if %AddWim%==X GOTO menu
 
@@ -601,16 +571,17 @@ goto :eof
 :degisken3
 mode con cols=90 lines=20
 echo.
-echo  %C%[96m Örnek:%C%[33m "C:\OgnitorenKs.Toolbox\Edit\Mount"%C%[0m
+echo  %R%[96m Örnek:%R%[33m "C:\OgnitorenKs.Toolbox\Edit\Mount"%R%[0m
 set /p Mount=%R%[97m  ►%R%[92m Imaj klasör yolu : %R%[0m
 	if %Mount%==x GOTO WindowsEditMenu
 	if %Mount%==X GOTO WindowsEditMenu
 Call :LogSave "degisken3" "Mount klasör yolu tanımlandı. '%Mount%'"
 goto :eof
+
 :: --------------------------------------------------------------------------------------------------------
 
 :degisken4
-set /p MainWim=%C%[97m  ►%C%[92m Klasör veya Dosya yolu : %C%[0m
+set /p MainWim=%R%[97m  ►%R%[92m Klasör veya Dosya yolu : %R%[0m
 	if %MainWim%==x GOTO menu
 	if %MainWim%==X GOTO menu
 	
@@ -633,6 +604,17 @@ Dism /Get-WimInfo /WimFile:%MainWim% /Index:1 | Find "Microsoft Windows Setup" >
 	if %errorlevel%==1 (set index=2)
 Call :LogSave "degisken4" "Setup '%index%' index tespit edildi. '%MainWim%'"
 cls
+goto :eof
+
+:: --------------------------------------------------------------------------------------------------------
+
+:wget4
+:: [%~1=Download Location] [%~n1: Download Name] [%~x1: İndirme uzantısı]
+Call :InternetControl
+Call :ToolboxFileChecker "%Location%\Files\wget.exe"
+Call :LogSave "wget4" "%~n1 indirildi."
+FOR /F "tokens=1" %%i in ('Findstr /C:"%~n1%~x1" %Location%\Extra\Links.txt') do set link=%%i
+%Location%\Files\wget --no-check-certificate "%link%" -t 10 -O %~1 > NUL 2>&1
 goto :eof
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
@@ -730,19 +712,3 @@ echo.
 echo            %R%[37m İşlem tamamlandı%R%[0m
 timeout /t 2 /nobreak > NUL
 goto :eof
-
-:: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-
-:ColorEnd
-for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do rem"') do (
-  set R=%%b
-  exit /B 0
-)
-exit /B 0
-
-:ColorEnd2
-for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do rem"') do (
-  set C=%%b
-  exit /B 0
-)
-exit /B 0
