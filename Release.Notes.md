@@ -4,7 +4,7 @@
 -   Mail: ognitorenks@gmail.com
 -   Site: https://ognitorenks.blogspot.com/
 
-<details><B><summary> Versiyon 3.7 ►  GELİŞTİRİLİYOR...</B></summary>
+<details><B><summary> Versiyon 3.7 ►  01.10.2022</B></summary>
 
 	• x64 sistem uyarısı eklendi.
 	• Yönetici yetki uyarısı kaldırıldı. Düzenlenen komutlar ile doğrudan yönetici yetkisi alınacak.
