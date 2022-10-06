@@ -2,7 +2,14 @@
 ###  İletişim;
 -   Discord: OgnitorenKs#2737 
 -   Mail: ognitorenks@gmail.com
--   Site: https://ognitorenks.blogspot.com/
+-   Site: https://ognitorenks.com.tr
+
+<details><B><summary> Versiyon 3.7.1 ►  06.10.2022</B></summary>
+
+	• Kaldırılamayan uygulamalar bölümünde Python komutları düzenlendi.
+	• Katılımsız program / ayar ekle > klavye - mouse optimizasyonu bölümündeki kod hatası giderildi.
+
+</details>
 
 <details><B><summary> Versiyon 3.7 ►  01.10.2022</B></summary>
 
@@ -65,9 +72,6 @@
 	• 'Windows Editör' > İmaj toplama bölümüne Powershell ve Dism ile toplama seçenekleri eklendi. 
 		•Settings.ini üzerinden düzenlenecek şekilde ayarlama yapıldı.
 	• Extra\UpdateAfter.bat dosyası içindeki komutları OgnitorenKs.Toolbox.bat 'UpdateAfter' bölümüne eklendi.
-	
-	
-	
 </details>
 
 <details><B><summary> Versiyon 3.6.1 ►  04.09.2022</B></summary>
