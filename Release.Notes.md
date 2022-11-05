@@ -4,6 +4,15 @@
 -   Mail: ognitorenks@gmail.com
 -   Site: https://ognitorenks.com.tr
 
+
+<details><B><summary> Versiyon 3.8 ►  GELİŞTİRİLİYOR...</B></summary>
+
+	• 
+	• 
+	• 
+
+</details>
+
 <details><B><summary> Versiyon 3.7.1 ►  06.10.2022</B></summary>
 
 	• Kaldırılamayan uygulamalar bölümünde Python komutları düzenlendi.

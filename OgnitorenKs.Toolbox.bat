@@ -46,7 +46,7 @@ set NSudo="%Location%\Files\NSudo.exe" -U:T -P:E -Wait -ShowWindowMode:hide cmd 
 set NSudo2="%Location%\Files\NSudo.exe" -U:C -P:D -Wait -ShowWindowMode:hide cmd /c
 :: Yönetici Yekisi
 set NSudo3="%Location%\Files\NSudo.exe" -U:E -P:E -ShowWindowMode:hide cmd /c
-set version=3.7
+set version=3.7.1
 
 :: ==============================================================================================================================
 
@@ -56,15 +56,9 @@ FOR %%a in (Download Files\Yedek Edit\Appx Edit\Desktop Edit\Driver Edit\Logs Ed
 )
 
 :: ==============================================================================================================================
-:: Sistem bilgileri alınır ve mimarisi kontrol edilir.
-Call :Powershell "Get-CimInstance Win32_OperatingSystem | Select-Object Caption,InstallDate,OSArchitecture,RegisteredUser,CSName | FL" > %Logs%\OS.txt
-FOR /F "tokens=3" %%d in ('FIND "OSArchitecture" %Logs%\OS.txt') do set osarch=%%d
-if %osarch% NEQ 64 (echo.
-					echo %R%[91m HATA ! Sisteminiz x64 değil %R%[0m
-					echo.
-					echo %R%[37m OgnitorenKs.Toolbox kapatılıyor...%R%[0m
-					timeout /t 4 /nobreak > NUL
-					exit
+:: x64 mimari kontorlü yapılır.
+FOR /F "tokens=3" %%a in ('reg query "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v "PROCESSOR_ARCHITECTURE" 2^>NUL') do (
+	if %%a NEQ AMD64 (cls&Call :Error_Print "ERROR 6"&echo.&Call :Error_Print "HATA! Sistem mimarisi x64 değil"&echo.&Call :Error_Print "Builder kapatılıyor"&timeout /t 4 /nobreak > NUL&exit)
 )
 
 :: ==============================================================================================================================
@@ -163,6 +157,8 @@ exit
 :: ==============================================================================================================================
 
 :ToolboxInfo
+:: Sistem bilgileri alınır
+Call :Powershell "Get-CimInstance Win32_OperatingSystem | Select-Object Caption,InstallDate,OSArchitecture,RegisteredUser,CSName | FL" > %Logs%\OS.txt
 :: Ana ekranda yer alan Kullanıcı adı, işletim sistemi gibi bilgiler alınır. 
 FOR /F "tokens=2 delims=':'" %%a in ('FIND "Caption" %Logs%\OS.txt') do set WinOS=%%a
 set WinOS=%WinOS:~11%
@@ -189,7 +185,7 @@ echo    %R%[90m█  █ █    ██  █  █    █   █  █ █  █ █  
 echo    %R%[90m█  █ █ ██ █ █ █  █    █   █  █ ████ ██  █ █ █ ██   ████    %R%[90m  █   █  █ █  █ █   ███  █  █   █  %R%[0m	
 echo    %R%[90m█  █ █  █ █  ██  █    █   █  █ █ █  █   █  ██ █ █     █    %R%[90m  █   █  █ █  █ █   █  █ █  █  █ █ %R%[0m
 echo    %R%[90m████ ████ █   █ ███   █   ████ █  █ ███ █   █ █  █ ████    %R%[90m  █   ████ ████ ███ ███  ████ █   █%R%[0m
-echo    %R%[90mhttps://ognitorenks.com.tr                                                                 %R%[90m%version%%R%[0m
+echo    %R%[90mhttps://ognitorenks.com.tr                                                               %R%[90m%version%%R%[0m
 echo.
 echo               %R%[90m %WinOS% %R%[90m^|%R%[90m x%osarch% %R%[90m^|%R%[90m %ImageBuild% %R%[0m%R%[90m^|%R%[90m %isderleme%%R%[0m
 echo               %R%[90m┌──────────────────────────────────────────────────────────────────────┐%R%[0m
@@ -1135,7 +1131,7 @@ goto :eof
 cls
 mode con cols=43 lines=22
 :: Bilgisayarda yüklü uygulamalar arasında Python aranır. Yüklü değil ise indirip, kurar. Yalnızca Windows 10 sistemlerde kontrol eder.
-if %OSCheck%==10 (Call :SoftwareCheck Python python)
+if %OSCheck%==10 (Call :SoftwareCheck Python "/quiet InstallAllUsers=1 PrependPath=1")
 Call :Powershell "get-appxpackage | Select-Object Name,NonRemovable" > %Logs%\NonRemoval
 :: Microsoft.Windows.ContentDeliveryManager ContentDeliveryManager
 echo   %R%[90m┌─────────────────────────────────────┐%R%[0m
@@ -1200,7 +1196,7 @@ Call :LogSave "NonRemoval" "%~1 kaldırıldı"
 mkdir "%Location%\Files\Remove" > NUL 2>&1
 copy /y "%Location%\Files\Remove.py" "%Location%\Files\Remove" > NUL 2>&1
 Call :Powershell "(Get-Content %Location%\Files\Remove\Remove.py) | ForEach-Object { $_ -replace 'xxxxxxx', '%~1' } | Set-Content '%Location%\Files\Remove\Remove.py'"
-%NSudo% "%Location%\Files\Remove\Remove.py"
+%NSudo% Python "%Location%\Files\Remove\Remove.py"
 Call :Powershell "Get-AppxPackage -AllUsers *%~2* | Remove-AppxPackage"
 RD /S /Q "%Location%\Files\Remove" > NUL 2>&1
 goto :eof
@@ -2459,6 +2455,12 @@ dir /b "%ProgramData%\chocolatey\choco.exe" > NUL 2>&1
 	if %errorlevel%==1 (Call :LogSave "Choco" "Chocolatey indirildi."
 						echo  ► %R%[33m Chocolatey yükleniyor...%R%[0m
 						%NSudo% Powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && set "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin")
+
+
+%NSudo% Powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh'))" && set "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin")
+
+(New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+
 echo    %R%[90m[Chocolatey]%R%[0m ►%R%[33m %~1%R%[0m indiriliyor %R%[90m/%R%[0m yükleniyor...
 choco install -y --force --limit-output --cache-location=%download% --ignore-checksums %~1 > NUL
 goto :eof
@@ -2630,14 +2632,6 @@ chcp 437 > NUL 2>&1
 Powershell -command %*
 chcp 65001 > NUL 2>&1
 goto :eof
-
-:: --------------------------------------------------------------------------------------------------------
-
-:OSfind
-cls
-if %OSCheck% EQU 10 (goto Win10SettingsMenu)
-if %OSCheck% EQU 11 (goto Win11SettingsMenu)
-exit
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
