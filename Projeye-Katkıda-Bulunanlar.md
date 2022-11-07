@@ -13,7 +13,6 @@
 	  ► KaanBeyhan (Denizlili)
 	  ----------------------
 	  • İndirme işlemlerinde ilerleme çubuğunun eklenmesi.
-	  • Performans optimizasyonun eklenmesi.
 	  ---------
    	  ► Archley
    	  ---------
