@@ -14,7 +14,7 @@
 		• Sistem içinde Microsoft Store ve Uygulama yükleyici (DesktopAppInstaller) olmadığında indirme bölümü çalışmayacak.
 	• Builder aracı için ortak bir dosya sistemi geliştirildi. 
 	• Toolbox loglama özelliği kaldırıldı.
-	• 
+	• Windows Editör bölümü kaldırıldı. Builder aracıyla farklı bir çalışma olarak düzenlenecek.
 	• 
 
 </details>
