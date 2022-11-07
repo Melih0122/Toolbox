@@ -7,7 +7,13 @@
 
 <details><B><summary> Versiyon 3.8 ►  GELİŞTİRİLİYOR...</B></summary>
 
-	• 
+	• Çoklu dil desteği için altyapı oluşturuluyor.
+	• Araçlar katılımsız bölümü kaldırıldı.
+	• Online katılımsız bölümünden oyunlar kaldırıldı. Yeni programlar eklenerek daha düzenli hale getirildi.
+	• İndirme sistemi Winget ve Chocolatey olarak düzenlendi. İndirme sistemleri arasında geçiş kaldırıldı.
+		• Sistem içinde Microsoft Store ve Uygulama yükleyici (DesktopAppInstaller) olmadığında indirme bölümü çalışmayacak.
+	• Builder aracı için ortak bir dosya sistemi geliştirildi. 
+	• Toolbox loglama özelliği kaldırıldı.
 	• 
 	• 
 
