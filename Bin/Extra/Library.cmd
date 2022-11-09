@@ -3,7 +3,7 @@
 ::              ██████   ██████   ██    ██ ████ ████████  ██████  ████████  ████████ ██    ██ ██    ██  ██████
 ::             ██    ██ ██    ██  ███   ██  ██     ██    ██    ██ ██     ██ ██       ███   ██ ██   ██  ██    █
 ::             ██    ██ ██        ████  ██  ██     ██    ██    ██ ██     ██ ██       ████  ██ ██  ██   ██
-::             ██    ██ ██   ████ ██ ██ ██  ██     ██    ██    ██ ████████  ██████   ██ ██ ██ █████      ██████ 
+::             ██    ██ ██   ████ ██ ██ ██  ██     ██    ██    ██ ████████  ██████   ██ ██ ██ █████      ██████
 ::             ██    ██ ██    ██  ██  ████  ██     ██    ██    ██ ██   ██   ██       ██  ████ ██  ██         ██
 ::             ██    ██ ██    ██  ██   ███  ██     ██    ██    ██ ██    ██  ██       ██   ███ ██   ██  ██    ██
 ::              ██████   ██████   ██    ██ ████    ██     ██████  ██     ██ ████████ ██    ██ ██    ██  ██████ 
@@ -98,11 +98,6 @@ dir /b "%Location%\Bin\wget.exe" > NUL 2>&1
 goto :eof
 
 :: -------------------------------------------------------------
-:Settings_Reader
-FOR /F "tokens=2" %%a in ('findstr /C:"TimeUpdate" %Location%\Bin\Settings.ini') do (set TimeLog=%%a)
-goto :eof
-
-:: -------------------------------------------------------------
 :Language_Select
 FOR /F "tokens=3" %%g in ('Findstr /i "Batch_Language" %Location%\Bin\Settings.ini') do (set Language_Select=%%g)
 goto :eof
@@ -141,7 +136,7 @@ FOR /F "tokens=4" %%a in ('dism /get-mountedwiminfo ^| FIND "Mount Dir"') do (
 	FOR /F "delims=\\? tokens=*" %%b in ('echo %%a') do (
 		Dism /Remount-Image /MountDir:"%%b" > NUL 2>&1
 	)
-)	
+)
 goto :eof
 :: -------------------------------------------------------------
 :Check_Admin
@@ -155,18 +150,6 @@ goto :eof
 FOR /F "tokens=3" %%a in ('reg query "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v "PROCESSOR_ARCHITECTURE" 2^>NUL') do (
 	if %%a NEQ AMD64 (cls&Call :Error_Print "ERROR 6"&echo.&Call :Error_Print "HATA! Sistem mimarisi x64 değil"&echo.&Call :Error_Print "Builder kapatılıyor"&timeout /t 4 /nobreak > NUL&exit)
 )
-goto :eof
-
-:: -------------------------------------------------------------
-:Location
-cd /d "%~dp0"
-for /f %%a in ('"cd"') do set Location=%%a
-goto :eof
-
-:: -------------------------------------------------------------
-:ColorPanel
-::Renklendirme komutu
-for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do rem"') do (set R=%%b)
 goto :eof
 
 :: -------------------------------------------------------------
@@ -227,6 +210,16 @@ goto :eof
 chcp 437 > NUL 2>&1
 Powershell -NoLogo -NoProfile -NonInteractive -ExecutionPolicy Bypass -Command %*
 chcp 65001 > NUL 2>&1
+goto :eof
+
+:: -------------------------------------------------------------
+:Chocolatey
+choco install -y --force --limit-output --ignore-checksums %~1
+goto :eof
+
+:: -------------------------------------------------------------
+:Winget
+winget install -e --silent --force --accept-source-agreements --accept-package-agreements --id %~1
 goto :eof
 
 :: -------------------------------------------------------------
@@ -467,125 +460,7 @@ reg delete "%~1" /v "%~2" /f > NUL 2>&1
 goto :eof
 
 :: ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄
-:: ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ►
-:RegeditInstall
-reg load HKLM\OFF_COMPONENTS "%Mount%\Windows\System32\config\COMPONENTS" > NUL 2>&1
-reg load HKLM\OFF_HKU "%Mount%\Windows\System32\config\default" > NUL 2>&1
-reg load HKLM\OFF_HKCU "%Mount%\Users\Default\ntuser.dat" > NUL 2>&1
-reg load HKLM\OFF_SOFTWARE "%Mount%\Windows\System32\config\SOFTWARE" > NUL 2>&1
-reg load HKLM\OFF_SYSTEM "%Mount%\Windows\System32\config\SYSTEM" > NUL 2>&1
-goto :eof
 
-:RegeditCollect
-for /f "tokens=* delims=" %%a in ('reg query "HKLM" ^| findstr "{"') do (
-	reg unload "%%a" > NUL 2>&1
-)
-reg delete "HKLM\OFF_SYSTEM\CurrentControlSet" /f > NUL 2>&1
-reg unload HKLM\OFF_COMPONENTS > NUL 2>&1
-reg unload HKLM\OFF_DRIVERS > NUL 2>&1
-reg unload HKLM\OFF_HKU > NUL 2>&1
-reg unload HKLM\OFF_HKCU > NUL 2>&1
-reg unload HKLM\OFF_SCHEMA > NUL 2>&1
-reg unload HKLM\OFF_SOFTWARE > NUL 2>&1
-reg unload HKLM\OFF_SYSTEM > NUL 2>&1
-goto :eof
-
-:: ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄
-:: ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ►
-:Mount_Road
-echo.
-set /p Mount=%R%[96m               Mount klasör yolu: %R%[0m
-goto :eof
-
-:WimRoad_1
-set /p MainWim=►%R%[92m Klasör veya Dosya yolu : %R%[0m
-For %%a in (x X) do (
-	if %MainWim% EQU %%a (set Error=0&goto :eof)
-)
-Call :Error_Character "%MainWim%"
-echo %MainWim%\ | Find /C /I "\\" > NUL 2>&1
-	if %errorlevel% EQU 0 (set MainWim=%MainWim:~0,-1%
-						   set Error=5
-						   goto :eof)
-echo %MainWim% | Findstr /C:"boot.wim" > NUL 2>&1
-	if %errorlevel% EQU 0 (goto :eof)
-echo %MainWim% | Findstr /C:"install." > NUL 2>&1
-	if %errorlevel% EQU 0 (goto :eof)			
-dir /b %MainWim%\sources\install.wim > NUL 2>&1
-	if %errorlevel% EQU 0 (set MainWim="%MainWim%\sources\install.wim")
-	if %errorlevel% EQU 1 (set Error=8&Call :WimRoad_ESDCheck "%MainWim%")
-goto :eof
-
-:WimRoad_2
-set /p MainWim=►%R%[92m Klasör veya Dosya yolu : %R%[0m
-For %%a in (x X) do (
-	if %MainWim% EQU %%a (set Error=0&goto :eof)
-)
-Call :Error_Character "%MainWim%"
-echo %MainWim%\ | Find /C /I "\\" > NUL 2>&1
-	if %errorlevel% EQU 0 (set Error=5&goto :eof)
-
-echo %MainWim% | Findstr /C:"boot.wim" > NUL 2>&1
-	if %errorlevel% EQU 0 (set Error=4&goto :eof)
-
-echo %MainWim% | Findstr /C:"install." > NUL 2>&1
-	if %errorlevel% EQU 0 (goto :eof)
-	
-dir /b %MainWim%\sources\install.wim > NUL 2>&1
-	if %errorlevel% EQU 0 (set MainWim="%MainWim%\sources\install.wim")
-	if %errorlevel% EQU 1 (set Error=8&Call :WimRoad_ESDCheck "%AddWim%")
-goto :eof
-
-:WimRoad_3
-set /p AddWim=►%R%[92m Klasör veya Dosya yolu : %R%[0m
-For %%a in (x X) do (
-	if %AddWim% EQU %%a (set Error=0&goto :eof)
-)
-Call :Error_Character "%AddWim%"
-echo %AddWim%\ | Find /C /I "\\" > NUL 2>&1
-	if %errorlevel% EQU 0 (set Error=5&goto :eof)
-
-echo %AddWim% | Findstr /C:"boot.wim" > NUL 2>&1
-	if %errorlevel% EQU 0 (set Error=4&goto :eof)
-
-echo %AddWim% | Findstr /C:"install." > NUL 2>&1
-	if %errorlevel% EQU 0 (goto :eof)
-	
-dir /b %AddWim%\sources\install.wim > NUL 2>&1
-	if %errorlevel% EQU 0 (set AddWim="%AddWim%\sources\install.wim")
-	if %errorlevel% EQU 1 (set Error=8&Call :WimRoad_ESDCheck "%AddWim%")
-goto :eof
-
-:WimRoad_4
-set /p MainWim=%R%[97m  ►%R%[92m Klasör veya Dosya yolu : %R%[0m
-For %%a in (x X) do (
-	if %MainWim% EQU %%a (set Error=0&goto :eof)
-)
-Call :Error_Character "%MainWim%"
-echo %MainWim%\ | Find /C /I "\\" > NUL 2>&1
-	if %errorlevel% EQU 0 (set Error=5&goto :eof)					
-echo %MainWim% | Findstr /C:"boot.wim" > NUL 2>&1
-	if %errorlevel% EQU 0 (Dism /Get-WimInfo /WimFile:%MainWim% /Index:1 | Find "Microsoft Windows Setup" > NUL 2>&1
-							 if %errorlevel% EQU 0 (set index=1)
-							 if %errorlevel% EQU 1 (set index=2)
-							 cls&goto :eof
-)
-dir /b %MainWim%\sources\boot.wim > NUL 2>&1
-	if %errorlevel% EQU 0 (set MainWim="%MainWim%\sources\boot.wim")
-	if %errorlevel% EQU 1 (set MainWim="%MainWim%\boot.wim")
-:WimRoad_4_Index
-Dism /Get-WimInfo /WimFile:%MainWim% /Index:1 | Find "Microsoft Windows Setup" > NUL 2>&1
-	if %errorlevel% EQU 0 (set index=1)
-	if %errorlevel% EQU 1 (set index=2)
-cls
-goto :eof
-
-
-:WimRoad_ESDCheck
-dir /b %~1\sources\install.esd > NUL 2>&1
-	if %errorlevel% EQU 0 (set %~1=%Location%\sources\install.esd&set Error=3&goto :eof)
-goto :eof
-:: ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄
 
 :ProcessCompleted
 Call :Border 39 20
@@ -626,3 +501,22 @@ set /p value=%R%[92m                   %R%[0m
 	if %value% EQU R (shutdown -r -f -t 0&exit)
 	if %value% EQU r (shutdown -r -f -t 0&exit)
 goto :eof
+
+:FilesError
+mode con cols=80 lines=30
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+%Lang% :FilesError_1
+echo.
+echo             %R%[31m████ ████ █   █ █ █████ ████ ████ ███ █   █ █  █ ████%R%[0m
+echo             %R%[31m█  █ █    ██  █ █   █   █  █ █  █ █   ██  █ █ █  █   %R%[0m
+echo             %R%[31m█  █ █ ██ █ █ █ █   █   █  █ ████ ██  █ █ █ ██   ████%R%[0m
+echo             %R%[31m█  █ █  █ █  ██ █   █   █  █ █ █  █   █  ██ █ █     █%R%[0m
+echo             %R%[31m████ ████ █   █ █   █   ████ █  █ ███ █   █ █  █ ████%R%[0m
+timeout /t 10 /nobreak > NUL
+start https://ognitorenks.com.tr/2022/04/ognitorenks-toolbox-windows-yardimcisi.html
+exit

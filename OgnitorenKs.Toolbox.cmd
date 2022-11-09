@@ -2,16 +2,16 @@
 ::
 ::       ██████   ██████   ██    ██ ████ ████████  ██████  ████████  ████████ ██    ██ ██    ██  ██████
 ::      ██    ██ ██    ██  ███   ██  ██     ██    ██    ██ ██     ██ ██       ███   ██ ██   ██  ██    █
-::      ██    ██ ██        ████  ██  ██     ██    ██    ██ ██     ██ ██       ████  ██ ██  ██   ██
-::      ██    ██ ██   ████ ██ ██ ██  ██     ██    ██    ██ ████████  ██████   ██ ██ ██ █████      ██████ 
+::      ██    ██ ██        ████  ██  ██     ██    ██    ██ ██     ██ ██       ████  ██ ██  ██   ██     
+::      ██    ██ ██   ████ ██ ██ ██  ██     ██    ██    ██ ████████  ██████   ██ ██ ██ █████      ██████
 ::      ██    ██ ██    ██  ██  ████  ██     ██    ██    ██ ██   ██   ██       ██  ████ ██  ██         ██
 ::      ██    ██ ██    ██  ██   ███  ██     ██    ██    ██ ██    ██  ██       ██   ███ ██   ██  ██    ██
 ::       ██████   ██████   ██    ██ ████    ██     ██████  ██     ██ ████████ ██    ██ ██    ██  ██████ 
 ::
 ::                    ████████ ███████ ███████ ██      ██████  ███████  ██    ██
-::                       ██    ██   ██ ██   ██ ██      ██   ██ ██   ██   ██  ██  
+::                       ██    ██   ██ ██   ██ ██      ██   ██ ██   ██   ██  ██ 
 ::                       ██    ██   ██ ██   ██ ██      ██████  ██   ██     ██   
-::                       ██    ██   ██ ██   ██ ██      ██   ██ ██   ██   ██  ██
+::                       ██    ██   ██ ██   ██ ██      ██   ██ ██   ██   ██  ██ 
 ::                       ██    ███████ ███████ ███████ ██████  ███████  ██    ██
 ::
 ::  ► Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
@@ -24,93 +24,79 @@
 ::
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 :OgnitorenKs.Toolbox
-echo off
-setlocal
+::echo off
 chcp 65001 > NUL 2>&1
-cls
 title  OgnitorenKs Toolbox
-set Library=Call "%~dp0Bin\Library.cmd"
-%Library% :Location
-set Lang=Call "%~dp0Bin\Language\TR.cmd"
 set version=3.8
+cls
 
 :: -------------------------------------------------------------
-:: Konum değişkenini çağırıyoruz.
-%Library% :Location
-:: Renklendirme komutunu çağırıyoruz.
-%Library% :ColorPanel
-:: Değişken hatalarını önlemek için bazı değişkenlere random değer atıyoruz.
-%Library% :Bug_Fix
+:: Renklendirme
+setlocal
+for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do rem"') do (set R=%%b)
+
+:: -------------------------------------------------------------
+:: Konum bilgisi
+cd /d "%~dp0"
+for /f %%a in ('"cd"') do set Location=%%a
+
+:: -------------------------------------------------------------
+:: Değişkenler
+set Library=Call "%Location%\Bin\Extra\Library.cmd"
+set Lang=Call "%Location%\Bin\Language\TR.cmd"
+:: Toolbox ayarları
+FOR /F "tokens=2" %%a in ('findstr /C:"TimeUpdate" %Location%\Bin\Settings.ini') do (set TimeLog=%%a)
+
+:: -------------------------------------------------------------
 :: Klasör yolunda Türkçe karakter ve boşluk olup olmadığını kontrol etmek için ilgili başlığı çağırıyoruz
 %Library% :Error_Character "%Location%"
 :: x64 mimari kontrolü yapılır.
 %Library% :Check_x64
 :: Yönetici yetki kontrolü yapılır
 %Library% :Check_Admin "OgnitorenKs.Toolbox.bat"
-:: Tarih bilgisini alır
-%Library% :Date
-%Library% :Time
+:: Wget dosyasını kontrol eder
+%Library% :Wget_Check
 :: Güncelleştirme kontrol eder
 %Library% :Check_Update "ToolboxVersion" "ToolboxUpdate.bat"
-%Library% :Chocolatey_Check
-
+Call :Chocolatey_Check
 :: Eksik dosya kontrol
-echo %R%[33m Toolbox dosyaları kontrol ediliyor...%R%[0m
-FOR %%b in (7z.dll 7z.exe NSudo.exe DevManView.exe lnk.zip Remove.py Toolbox.zip Settings.ini) do (
-	Call :ToolboxFileChecker "%Location%\Files\%%b"
+FOR %%a in (NSudo.exe DevManView.exe Remove.py Settings.ini) do (
+	dir /b "%Location%\Bin\%%a"
+		if %errorlevel% NEQ 0 (%Library% :FilesError)
 )
-cls
 
 :: ==============================================================================================================================
-
 :ToolboxInfo
+cls
 :: Sistem bilgileri alınır
-Call :Powershell "Get-CimInstance Win32_OperatingSystem | Select-Object Caption,InstallDate,OSArchitecture,RegisteredUser,CSName | FL" > %Logs%\OS.txt
-:: Ana ekranda yer alan Kullanıcı adı, işletim sistemi gibi bilgiler alınır. 
+Call :Powershell "Get-CimInstance Win32_OperatingSystem | Select-Object Caption,InstallDate,OSArchitecture,RegisteredUser,CSName | FL" > %Location%\Bin\Data\OS.txt
 FOR /F "tokens=2 delims=':'" %%a in ('FIND "Caption" %Logs%\OS.txt') do set WinOS=%%a
 set WinOS=%WinOS:~11%
 FOR /F "tokens=5" %%a in ('FIND "Caption" %Logs%\OS.txt') do set OSCheck=%%a
 FOR /F "tokens=2 delims=':'" %%b in ('FIND "RegisteredUser" %Logs%\OS.txt') do set RegisteredUser=%%b
 FOR /F "tokens=2 delims=':'" %%c in ('FIND "CSName" %Logs%\OS.txt') do set pcname=%%c
-FOR /F "tokens=3 delims= " %%f in ('reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Update\TargetingInfo\Installed\Client.OS.rs2.amd64" /v "Version"') do set isderleme=%%f
+FOR /F "tokens=3 delims= " %%f in ('reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Update\TargetingInfo\Installed\Client.OS.rs2.amd64" /v "Version" 2^>NUL') do set isderleme=%%f
 set isderleme=%isderleme:~5%
-FOR /F "tokens=3 delims= " %%f in ('reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v "DisplayVersion"') do set ImageBuild=%%f
-for /f "tokens=2 delims='('" %%f in ('powercfg -list ^| findstr /C:"*"') do set powerr=%%f
-set powerr=%powerr:~0,-3%
-
 :: Toolbox içinde belli bölümlerde sürüm kontrolü için eklendi.
 FOR /F "skip=1 tokens=3" %%b in ('reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v "DisplayVersion" 2^>NUL') do (set OSVersion=%%b)
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
 :menu
-mode con cols=100 lines=30
+mode con cols=100 lines=27
 title               O  G  N  I  T  O  R  E  N  K  S     ^|    OGNITORENKS TOOLBOX    ^|       T   O   O   L   B   O   X
-echo %R%[90m                                                                                       %DateDay%%R%[0m
+echo    %R%[90mAMD64                                                                               %DateDay%%R%[0m
 echo    %R%[90m████ ████ █   █ ███ █████ ████ ████ ███ █   █ █  █ ████    %R%[90m█████ ████ ████ █   ███  ████ █   █%R%[0m
 echo    %R%[90m█  █ █    ██  █  █    █   █  █ █  █ █   ██  █ █ █  █       %R%[90m  █   █  █ █  █ █   █  █ █  █  █ █ %R%[0m
-echo    %R%[90m█  █ █ ██ █ █ █  █    █   █  █ ████ ██  █ █ █ ██   ████    %R%[90m  █   █  █ █  █ █   ███  █  █   █  %R%[0m	
+echo    %R%[90m█  █ █ ██ █ █ █  █    █   █  █ ████ ██  █ █ █ ██   ████    %R%[90m  █   █  █ █  █ █   ███  █  █   █  %R%[0m
 echo    %R%[90m█  █ █  █ █  ██  █    █   █  █ █ █  █   █  ██ █ █     █    %R%[90m  █   █  █ █  █ █   █  █ █  █  █ █ %R%[0m
 echo    %R%[90m████ ████ █   █ ███   █   ████ █  █ ███ █   █ █  █ ████    %R%[90m  █   ████ ████ ███ ███  ████ █   █%R%[0m
-echo    %R%[90mhttps://ognitorenks.com.tr                                                               %R%[90m%version%%R%[0m
+echo    %R%[90mhttps://ognitorenks.com.tr                                                                 %R%[90m%version%%R%[0m
 echo.
-echo               %R%[90m %WinOS% %R%[90m^|%R%[90m x%osarch% %R%[90m^|%R%[90m %ImageBuild% %R%[0m%R%[90m^|%R%[90m %isderleme%%R%[0m
-echo               %R%[90m┌──────────────────────────────────────────────────────────────────────┐%R%[0m
-echo                %R%[33m Hoşgeldin,%R%[90m%RegisteredUser%%R%[0m
-echo               %R%[90m├──────────────────────────────────────────────────────────────────────┤%R%[0m
-echo               %R%[90m│%R%[32m  1-%R%[36m Uygulama Yükleyici %R%[90m[M]      │%R%[32m   2-%R%[36m Hizmetleri Yönet%R%[90m [M]          │%R%[0m
-echo               %R%[90m├─────────────────────────────────┬────────────────────────────────────┤
-echo               %R%[90m│%R%[32m  3-%R%[33m Görev Çubuğu Yöneticisi     %R%[90m│%R%[32m  10-%R%[33m Ping Ölçer %R%[90m [*]               │%R%[0m
-echo               %R%[90m│%R%[32m  4-%R%[33m Hesap ve Lisans Yönetimi%R%[90m[M] │%R%[32m  11-%R%[33m Fat32 to NTFS%R%[90m [M]             │%R%[0m
-echo               %R%[90m│%R%[32m  5-%R%[37m Güncelleme Sonrası Temizlik %R%[90m│%R%[32m  12-%R%[33m Zaman Ayarlı PC Kapat%R%[90m [M]     │%R%[0m
-echo               %R%[90m│%R%[32m  6-%R%[33m Windows - Market Onar       %R%[90m│%R%[32m  13-%R%[33m Appx - Güncelleme Yükleyici   %R%[90m│%R%[0m
-echo               %R%[90m│%R%[32m  7-%R%[33m Genel Temizlik              %R%[90m│%R%[32m  14-%R%[33m Hash Karşılaştırıcı%R%[90m [SHA-256] │%R%[0m
-echo               %R%[90m│%R%[32m  8-%R%[33m Sistem Hakkında%R%[90m [*]         │%R%[32m  15-%R%[33m Kaldırılamayan Uygulamalar%R%[90m [M]│%R%[0m
-echo               %R%[90m│%R%[32m  9-%R%[33m Kayıtlı Wifi Bilgileri      %R%[90m│%R%[32m  16-%R%[33m İşlem Önceliği%R%[90m [M]            │%R%[0m
-echo               %R%[90m├─────────────────────────────────┼────────────────────────────────────┤%R%[0m
-echo               %R%[90m│%R%[32m  Z-%R%[37m Toolbox Ayarları - İletişim %R%[90m│%R%[32m   X-%R%[37m Temizle ve Kapat              %R%[90m│%R%[0m
-echo               %R%[90m└─────────────────────────────────┴────────────────────────────────────┘%R%[0m
-set /p menu=%R%[32m               İşlem: %R%[0m
+echo              %R%[90m %RegisteredUser% = %WinOS% ^| %OSVersion% ^| %isderleme%%R%[0m
+%Lang% :Menu_1
+%Lang% :Value_1
+set /p menu=%R%[32m               %Choice%: %R%[0m
 	if %menu% EQU 1 (goto Software_Installer)
 	if %menu% EQU 2 (goto Service_Management)
 	if %menu% EQU 3 (goto TaskbarSettings)
@@ -127,63 +113,30 @@ set /p menu=%R%[32m               İşlem: %R%[0m
 	if %menu% EQU 14 (Call :HashChecker)
 	if %menu% EQU 15 (goto NonRemovalMenu)
 	if %menu% EQU 16 (goto RuntimeLevel)
-	if %menu% EQU Z goto ToolboxSettings
-	if %menu% EQU z goto ToolboxSettings
-	if %menu% EQU x (cls&DEL /F /Q /A %download%\*&RD /S /Q %download%\*&exit)
-	if %menu% EQU X (cls&DEL /F /Q /A %download%\*&RD /S /Q %download%\*&exit)
+	if %menu% EQU x (cls&DEL /F /Q /A %temp%\* > NUL 2>&1
+					 RD /S /Q %temp%\* > NUL 2>&1
+					 exit)
+	if %menu% EQU X (cls&DEL /F /Q /A %temp%\* > NUL 2>&1
+					 RD /S /Q %temp%\* > NUL 2>&1
+					 exit)
 goto menu
 
 :: ==============================================================================================================================
 
 :Software_Installer
-mode con cols=100 lines=41
+mode con cols=100 lines=38
 title               O  G  N  I  T  O  R  E  N  K  S     ^|    OGNITORENKS TOOLBOX    ^|       T   O   O   L   B   O   X
-set xognitorenksx=%R%[90m►
-echo   %R%[90m┌──────────────────────────────────────────────────────────────────────────────────────────────┐%R%[0m
-echo   %R%[90m│%R%[1;97m%R%[100m                             Online Katılımsız Uygulama Yükleyici                             %R%[0m%R%[90m│%R%[0m
-echo   %R%[90m├────────────────────────────┬──────────────────────────────┬──────────────────────────────────┤%R%[0m
-echo   %R%[90m│%R%[32m    1-%R%[33m All in One Runtimes  %R%[90m│%xognitorenksx% Sıkıştırma                  %R%[90m│%xognitorenksx% Uzak Bağlantı                   %R%[90m│%R%[0m
-echo   %R%[90m│%xognitorenksx% Mesaj                     %R%[90m│%R%[32m   28-%R%[36m 7-Zip                  %R%[90m│%R%[32m   53-%R%[36m Teamviewer                 %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    2-%R%[36m Discord              %R%[90m│%R%[32m   29-%R%[36m Winrar                 %R%[90m│%R%[32m   54-%R%[36m AnyDesk                    %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    3-%R%[36m Whatsapp             %R%[90m│%xognitorenksx% Video-Ses Oynatıcı          %R%[90m│%xognitorenksx% Görev Çubuğu / Başlat Menüsü    %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    4-%R%[36m Signal               %R%[90m│%R%[32m   30-%R%[33m K-Lite Codec           %R%[90m│%R%[32m   55-%R%[33m OpenShell                  %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    5-%R%[36m Telegram             %R%[90m│%R%[32m   31-%R%[33m VLC Media Player       %R%[90m│%R%[32m   56-%R%[33m TaskbarX                   %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    6-%R%[36m Zoom                 %R%[90m│%R%[32m   32-%R%[33m PotPlayer              %R%[90m│%xognitorenksx% Ram Temizleyici                 %R%[90m│%R%[0m
-echo   %R%[90m│%xognitorenksx% Oyun Kütüphane            %R%[90m│%R%[32m   33-%R%[33m Aimp                   %R%[90m│%R%[32m   57-%R%[36m ISLC                       %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    7-%R%[33m Epic Games           %R%[90m│%R%[32m   34-%R%[33m Spotify                %R%[90m│%R%[32m   58-%R%[36m Mem Reduct                 %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    8-%R%[33m Steam                %R%[90m│%xognitorenksx% İndirme Araçları            %R%[90m│%xognitorenksx% Diğer                           %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    9-%R%[33m GOG Galaxy           %R%[90m│%R%[32m   35-%R%[36m Internet Download Man. %R%[90m│%R%[32m   59-%R%[33m MSI Afterburner            %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   10-%R%[33m Ubisoft Connect      %R%[90m│%R%[32m   36-%R%[36m Free Download Manager  %R%[90m│%R%[32m   60-%R%[33m Everything                 %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   11-%R%[33m EA Games/Origin      %R%[90m│%R%[32m   37-%R%[36m Qbittorrent            %R%[90m│%R%[32m   61-%R%[33m Hamachi                    %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   12-%R%[33m Playnite             %R%[90m│%xognitorenksx% Belgeler                    %R%[90m│%R%[32m   62-%R%[33m Glasswire                  %R%[90m│%R%[0m
-echo   %R%[90m│%xognitorenksx% Tarayıcı                  %R%[90m│%R%[32m   38-%R%[33m Libre Office           %R%[90m│%R%[32m   63-%R%[33m Stremio                    %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   13-%R%[36m Google Chrome        %R%[90m│%R%[32m   39-%R%[33m Adobe Reader           %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   14-%R%[36m Mozilla Firefox      %R%[90m│%R%[32m   40-%R%[33m PDF X-Change           %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   15-%R%[36m Brave                %R%[90m│%R%[32m   41-%R%[33m Calibre                %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   16-%R%[36m Microsoft Edge       %R%[90m│%xognitorenksx% Geliştirme / Developer      %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   17-%R%[36m OperaGX              %R%[90m│%R%[32m   42-%R%[33m Notepad++              %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
-echo   %R%[90m│%xognitorenksx% Multimedya                %R%[90m│%R%[32m   43-%R%[36m Python                 %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   18-%R%[33m Kdenlive             %R%[90m│%R%[32m   44-%R%[36m Visual Studio Code     %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   19-%R%[33m Openshot             %R%[90m│%R%[32m   45-%R%[36m Github                 %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   20-%R%[33m Shoutcut             %R%[90m│%R%[32m   46-%R%[36m Node.JS                %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   21-%R%[33m Krita                %R%[90m│%R%[32m   47-%R%[36m Unity Hub              %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   22-%R%[33m Gimp                 %R%[90m│%R%[32m   48-%R%[36m Blender                %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m   
-echo   %R%[90m│%R%[32m   23-%R%[33m OBS Studio           %R%[90m│%xognitorenksx% Temizlik                    %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   24-%R%[33m ShareX               %R%[90m│%R%[32m   49-%R%[33m Unlocker               %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   25-%R%[33m Audacity             %R%[90m│%R%[32m   50-%R%[33m Wise Care 365          %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m 
-echo   %R%[90m│%R%[32m   26-%R%[33m HandBrake            %R%[90m│%R%[32m   51-%R%[33m Hibit Uninstaller      %R%[90m│%R%[32m%R%[37m
-echo   %R%[90m│%R%[32m   27-%R%[33m FileConverter        %R%[90m│%R%[32m   52-%R%[33m Revo Uninstaller       %R%[90m│%R%[32m    X-%R%[37m Menu                       %R%[90m│%R%[0m
-echo   %R%[90m└────────────────────────────┴──────────────────────────────┴──────────────────────────────────┘%R%[0m
-set /p $multi=%R%[32m  Çoklu Seçim %R%[90mx,y: %R%[0m
-
-winget install -e --silent --accept-source-agreements --id 
+%Lang% :Menu_2
+%Lang% :Value_2
+set /p $multi=%R%[32m  %Choice% %R%[90mx,y: %R%[0m
 
 echo %$multi% | findstr /i "x" > NUL 2>&1
 	if %errorlevel%==0 goto menu
 
-echo    →%R%[96m Seçilenler: %$multi%%R%[0m
-echo.
 FOR %%a in (%$multi%) do (
+	cls
+	echo.
+	%Lang% :Menu2_1
 	if %%a==1 (Call :AIO.Runtimes)
 	if %%a==2 (Call :Winget Discord.Discord)
 	if %%a==3 (Call :Winget WhatsApp.WhatsApp)
@@ -240,69 +193,57 @@ FOR %%a in (%$multi%) do (
 	if %%a==54 (Call :Winget AnyDeskSoftwareGmbH.AnyDesk)
 	if %%a==55 (Call :Winget Open-Shell.Open-Shell-Menu)
 	if %%a==56 (Call :Chocolatey taskbarx)
-	if %%a==57 (Call : )
-	if %%a==58 (Call :Winget Henry++.MemReduct)
-	if %%a==59 (Call :Winget msiafterburner)
-	if %%a==60 (Call :Winget voidtools.Everything)
-	if %%a==61 (Call :Winget LogMeIn.Hamachi)
-	if %%a==62 (Call :Winget GlassWire.GlassWire)
-	if %%a==63 (Call :Winget Stremio.Stremio)
+	if %%a==57 (Call :Winget Henry++.MemReduct)
+	if %%a==58 (Call :Winget msiafterburner)
+	if %%a==59 (Call :Winget voidtools.Everything)
+	if %%a==60 (Call :Winget LogMeIn.Hamachi)
+	if %%a==61 (Call :Winget GlassWire.GlassWire)
+	if %%a==62 (Call :Winget Stremio.Stremio)
 )
 goto Software_Installer
 
 :: ==============================================================================================================================
 
 :AIO.Runtimes
-echo    %R%[1;97m%R%[42m All in One Runtimes yükleniyor... %R%[0m
-Dism /Online /Get-Capabilities /format:table > %Logs%\Capabilities.txt
-Dism /Online /Get-Features /format:table > %Logs%\Features.txt
-FOR /F "tokens=3" %%a in ('findstr /C:"NetFX3~~~~" %Logs%\Capabilities.txt') do set aiokontrol=%%a
+%Lang% :Runtimes_1
+Dism /Online /Get-Capabilities /format:table > %Location%\Bin\Data\Capabilities.txt
+Dism /Online /Get-Features /format:table > %Location%\Bin\Data\Features.txt
+FOR /F "tokens=3" %%a in ('findstr /C:"NetFX3~~~~" %Location%\Bin\Data\Capabilities.txt') do set aiokontrol=%%a
 echo %aiokontrol% | findstr /C:"Installed" > NUL 2>&1
-	if %errorlevel%==1 (echo    ►%R%[33m Net Framework 3.5%R%[0m yükleniyor...
-						Dism /Online /Enable-Feature /Featurename:NetFx3 /All /Quiet /NoRestart)
-FOR /F "tokens=3" %%b in ('findstr /C:"IIS-ASPNET45" %Logs%\Features.txt') do set aiokontrol=%%b
+	if %errorlevel%==1 (%Lang% :Runtimes_2
+						Dism /Online /Enable-Feature /Featurename:NetFx3 /All /NoRestart)
+FOR /F "tokens=3" %%b in ('findstr /C:"IIS-ASPNET45" %Location%\Bin\Data\Features.txt') do set aiokontrol=%%b
 echo %aiokontrol% | findstr /C:"Enabled" > NUL 2>&1
-	if %errorlevel%==1 (echo    ►%R%[33m Net Framework 4.5%R%[0m yükleniyor...
-						Dism /Online /Enable-Feature /FeatureName:IIS-ASPNET45 /All /Quiet /NoRestart)
-FOR /F "tokens=3" %%b in ('findstr /C:"DirectPlay" %Logs%\Features.txt') do set aiokontrol=%%b
+	if %errorlevel%==1 (%Lang% :Runtimes_3
+						Dism /Online /Enable-Feature /FeatureName:IIS-ASPNET45 /All /NoRestart)
+FOR /F "tokens=3" %%b in ('findstr /C:"DirectPlay" %Location%\Bin\Data\Features.txt') do set aiokontrol=%%b
 echo %aiokontrol% | findstr /C:"Enabled" > NUL 2>&1
-	if %errorlevel%==1 (echo    ►%R%[33m DirectPlay%R%[0m yükleniyor...
-						Dism /Online /Enable-Feature /FeatureName:DirectPlay /All /Quiet /NoRestart)
-						
-Call :wget1 M.Visual.C++2005-x86.exe /Q
-Call :wget1 M.Visual.C++2005-x64.exe /Q
-Call :wget1 M.Visual.C++2008-x86.exe /q
-Call :wget1 M.Visual.C++2008-x64.exe /q
-Call :wget1 M.Visual.C++2010-x86.exe "/q /norestart"
-Call :wget1 M.Visual.C++2010-x64.exe "/q /norestart"
-Call :wget1 M.Visual.C++2012-x86.exe "/install /quiet /norestart"
-Call :wget1 M.Visual.C++2012-x64.exe "/install /quiet /norestart"
-Call :wget1 M.Visual.C++2013-x86.exe "/install /quiet /norestart"
-Call :wget1 M.Visual.C++2013-x64.exe "/install /quiet /norestart"
-Call :wget1 M.Visual.C++2015-x86.exe "/install /quiet /norestart"
-Call :wget1 M.Visual.C++2015-x64.exe "/install /quiet /norestart" 
-Call :wget1 Java.exe "INSTALL_SILENT=Enable SPONSORS=Disable WEB_ANALYTICS=Disable REBOOT=Disable WEB_JAVA=Disable REMOVEOUTOFDATEJRES=1"
-Call :wget1 XNA.Framework.4.0.msi /qn
-Call :wget1 DesktopRuntime.6-x64.exe "/install /quiet /norestart"
-Call :wget1 DesktopRuntime.6-x86.exe "/install /quiet /norestart"
-::
-Call :wget2 OpenAL.zip 
-Call :7ZipExtract "%download%\OpenAL.zip" "%download%"
-"%download%\oalinst.exe" /SILENT
-::
-Call :wget2 DirectX.exe
-%download%\DirectX.exe /Q /C /T:"%download%\DirectX\"
-"%download%\DirectX\DXSETUP.exe" /silent
+	if %errorlevel%==1 (%Lang% :Runtimes_4
+						Dism /Online /Enable-Feature /FeatureName:DirectPlay /All /NoRestart)
+cls&%Lang% :Runtimes_1&Call :Winget Microsoft.VCRedist.2005.x86
+cls&%Lang% :Runtimes_1&Call :Winget Microsoft.VCRedist.2005.x64
+cls&%Lang% :Runtimes_1&Call :Winget Microsoft.VCRedist.2008.x86
+cls&%Lang% :Runtimes_1&Call :Winget Microsoft.VCRedist.2008.x64
+cls&%Lang% :Runtimes_1&Call :Winget Microsoft.VCRedist.2010.x86
+cls&%Lang% :Runtimes_1&Call :Winget Microsoft.VCRedist.2010.x64
+cls&%Lang% :Runtimes_1&Call :Winget Microsoft.VCRedist.2012.x86
+cls&%Lang% :Runtimes_1&Call :Winget Microsoft.VCRedist.2012.x64
+cls&%Lang% :Runtimes_1&Call :Winget Microsoft.VCRedist.2013.x86
+cls&%Lang% :Runtimes_1&Call :Winget Microsoft.VCRedist.2013.x64
+cls&%Lang% :Runtimes_1&Call :Winget Microsoft.VCRedist.2015+.x86
+cls&%Lang% :Runtimes_1&Call :Winget Microsoft.VCRedist.2015+.x64
+cls&%Lang% :Runtimes_1&Call :Winget Oracle.JavaRuntimeEnvironment
+cls&%Lang% :Runtimes_1&Call :Winget Microsoft.XNARedist
+cls&%Lang% :Runtimes_1&Call :Winget Microsoft.DotNet.DesktopRuntime.6
+cls&%Lang% :Runtimes_1&Call :Chocolatey openal
+cls&%Lang% :Runtimes_1&Call :Winget Microsoft.DirectX
 goto :eof
 
 :: ---------------------------------------------------------------------------------------------------------------------------------------------------
 
 :WindowsRepair
-cls
 mode con cols=100 lines=45
-echo  %R%[90m┌────────────────────────────────────────────────────────────────────────────────────────────────┐%R%[0m
-0,
-echo %R%[92m   Simge hataları onarılıyor...%R%[0m
+%Lang% :Repair_1&%Lang% :Repair_2
 ie4uinit.exe -show
 ie4uinit.exe -ClearIconCache
 taskkill /f /im explorer.exe > NUL 2>&1
@@ -318,24 +259,18 @@ DEL /F /Q /A %localappdata%\Packages\Microsoft.Windows.Search_cw5n1h2txyewy\Temp
 Call :delete2 "HKCU\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\TrayNotify" IconStreams
 Call :delete2 "HKCU\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\TrayNotify" PastIconsStream
 Call :Powershell "Start-Process 'C:\Windows\explorer.exe'"
-
-echo %R%[92m   Sfc /scannow komutu çalışıyor...%R%[0m
+cls&%Lang% :Repair_1&%Lang% :Repair_3
 sfc /scannow
-
-cls
-echo %R%[92m   WinSxS Temizleniyor...%R%[0m
+cls&%Lang% :Repair_1&%Lang% :Repair_4
 Dism /Online /Cleanup-Image /StartComponentCleanup 
-
-cls
+cls&%Lang% :Repair_1&%Lang% :Repair_5
 echo %R%[92m   DISM /Online /Cleanup-Image /RestoreHealth komutu çalıştırılıyor...%R%[0m
 DISM /Online /Cleanup-Image /RestoreHealth
-
-echo %R%[92m   SoftwareDistribution temizleniyor...%R%[0m
+cls&%Lang% :Repair_1&%Lang% :Repair_6
 net stop wuauserv > NUL 2>&1
 RD /S /Q  "%windir%\SoftwareDistribution" > NUL 2>&1
 net start wuauserv > NUL 2>&1
-
-echo %R%[92m   Microsoft Store onarılıyor...%R%[0m
+cls&%Lang% :Repair_1&%Lang% :Repair_7
 :: Market bölümününün sorunsuz çalışması için reg kayıtlarını düzenler
 Call :dword "HKLM\SOFTWARE\Policies\Microsoft\WindowsStore" "RemoveWindowsStore" "0"
 Call :delete2 "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Config" "DODownloadMode" & :: BITS hizmeti varsayılan hale getiriliyor.
@@ -344,35 +279,17 @@ Call :dword "HKLM\SYSTEM\CurrentControlSet\Services\ClipSVC\Parameters" "Inactiv
 Call :dword "HKLM\SYSTEM\CurrentControlSet\Services\ClipSVC\Parameters" "ProcessBiosKey" "1"
 Call :expandsz "HKLM\SYSTEM\CurrentControlSet\Services\ClipSVC\Parameters" "ServiceDll" "%windir%\System32\ClipSVC.dll"
 Call :dword "HKLM\SYSTEM\CurrentControlSet\Services\ClipSVC\Parameters" "ServiceDllUnloadOnStop" "1"
-:: AppX Deployment Service (Dağıtım Hizmeti)
-sc config AppXSvc start= demand > NUL 2>&1
-net start AppXSvc /y > NUL 2>&1
-:: Yetenek Erişim Yöneticisi Hizmeti
-sc config camsvc start= demand > NUL 2>&1
-net start camsvc /y > NUL 2>&1
-:: Şifreleme Hizmetleri
-sc config cryptsvc start= auto > NUL 2>&1
-net start cryptsvc /y > NUL 2>&1
-:: Windows Update
-sc config wuauserv start= demand > NUL 2>&1
-net start wuauserv /y > NUL 2>&1
-:: Depolama Hizmeti
-sc config StorSvc start= demand > NUL 2>&1
-net start StorSvc /y > NUL 2>&1
-:: Arka Plan Akıllı Aktarım Hizmeti
-sc config bits start= auto > NUL 2>&1
-net start bits /y > NUL 2>&1
-::Windows Lisans Yöneticisi Hizmeti
-sc config LicenseManager start= demand > NUL 2>&1
-net start LicenseManager /y > NUL 2>&1
-:: Windows Modül Yükleyici
-sc config trustedinstaller start= demand > NUL 2>&1
-net start trustedinstaller /y > NUL 2>&1
-
-%NSudo% sc config ClipSVC start= demand
-%NSudo% net start ClipSVC /y > NUL 2>&1
-
-echo %R%[92m   DLL dosyaları kontrol ediliyor...%R%[0m
+FOR %%a in (AppXSvc camsvc wuauserv StorSvc LicenseManager trustedinstaller) do (
+	sc config %%a start= demand > NUL 2>&1
+	net start %%a /y > NUL 2>&1
+)
+FOR %%a in (cryptsvc bits) do (
+	sc config %%a start= auto > NUL 2>&1
+	net start %%a /y > NUL 2>&1
+)
+%NSudoTop% sc config ClipSVC start= demand
+%NSudoTop% net start ClipSVC /y > NUL 2>&1
+cls&%Lang% :Repair_1&%Lang% :Repair_8
 FOR %%a in (softpub.dll wintrust.dll initpki.dll dssenh.dll rsaenh.dll gpkcsp.dll sccbase.dll slbcsp.dll mssip32.dll cryptdlg.dll
 			msxml3.dll comcat.dll Msxml.dll Msxml2.dll mshtml.dll shdocvw.dll browseui.dll msjava.dll shdoc401.dll cdm.dll gpkcsp.dll
 			sccbase.dll asctrls.ocx wintrust.dll initpki.dll softpub.dll oleaut32.dll Shell32.dll browseui.dll msrating.dll mlang.dll
@@ -386,10 +303,9 @@ FOR %%a in (shdoc401.dll shdocvw.dll browseui.dll urlmon.dll iesetup.dll occache
 regsvr32 mstinit.exe /setup
 regsvr32 msnsspc.dll /SspcCreateSspiReg
 regsvr32 msapsspc.dll /SspcCreateSspiReg /s
-
-echo %R%[92m   Mağaza resetleniyor...%R%[0m
+cls&%Lang% :Repair_1&%Lang% :Repair_9
 wsreset
-echo %R%[92m   Genel Onarım yapılıyor...%R%[0m
+cls&%Lang% :Repair_1&%Lang% :Repair_10
 :: Genel hata onarımı
 Call :key "HKCU\Software\Microsoft\Internet Explorer\LowRegistry\Audio\PolicyConfig\PropertyStore" & :: Ses düzeylerinin kaydedilmeme sorunu onarır.
 Call :delete2 "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer" "NoTrayItemsDisplay" & :: Görev çubuğunda ekran tepsisi simgelerini açar
@@ -673,8 +589,8 @@ set /p hashpath=%R%[37m  ►%R%[96m Kontrol edilecek dosya yolu: %R%[0m
 cls
 echo.
 echo   %R%[1;97m%R%[46m                                 Hash değerleri karşılaştırılıyor                               %R%[0m
-Call :Powershell "Get-filehash %hashpath% | Select-Object Hash | FL" > %Logs%\hash
-FOR /F "tokens=3" %%a in ('findstr /C:"Hash" %Logs%\hash') do set hashvalue2=%%a
+Call :Powershell "Get-filehash %hashpath% | Select-Object Hash | FL" > %Location%\Bin\Data\hash
+FOR /F "tokens=3" %%a in ('findstr /C:"Hash" %Location%\Bin\Data\hash') do set hashvalue2=%%a
 if %hashvalue2% equ %hashvalue1% (
   set hashcontrol=%R%[1;97m%R%[42m                               Hash değerleri aynı, dosya sorunsuz                             %R%[0m
 ) else (
@@ -718,8 +634,8 @@ goto :eof
 cls
 mode con cols=43 lines=22
 :: Bilgisayarda yüklü uygulamalar arasında Python aranır. Yüklü değil ise indirip, kurar. Yalnızca Windows 10 sistemlerde kontrol eder.
-if %OSCheck%==10 (Call :SoftwareCheck Python "/quiet InstallAllUsers=1 PrependPath=1")
-Call :Powershell "get-appxpackage | Select-Object Name,NonRemovable" > %Logs%\NonRemoval
+if %Win%==10 (Call :SoftwareCheck Python "/quiet InstallAllUsers=1 PrependPath=1")
+Call :Powershell "get-appxpackage | Select-Object Name,NonRemovable" > %Location%\Bin\Data\NonRemoval
 :: Microsoft.Windows.ContentDeliveryManager ContentDeliveryManager
 echo   %R%[90m┌─────────────────────────────────────┐%R%[0m
 echo   %R%[90m│%R%[1;97m%R%[100m          NonRemoval Menu            %R%[0m%R%[90m│%R%[0m
@@ -750,7 +666,7 @@ Call :NonRemovalChecker CBSPreview
 echo   %R%[90m│%R%[36m 12 %SD% -%R%[33m Kamera Barkod Tarayıcı       %R%[90m│%R%[0m
 echo   %R%[90m│%R%[36m  X -%R%[33m Menu                           %R%[90m│%R%[0m
 echo   %R%[90m└─────────────────────────────────────┘%R%[0m
-if %OSCheck%==11 (echo %R%[31m Windows 11 sistemde bu bölüm çalışmaz%R%[0m
+if %Win%==11 (echo %R%[31m Windows 11 sistemde bu bölüm çalışmaz%R%[0m
 			      echo %R%[31m Ana Menu için herhangi bir tuşa basın%R%[0m
 				  pause > NUL
 				  goto menu)
@@ -773,18 +689,18 @@ set /p value=%R%[36m  Kaldır: %R%[0m
 goto NonRemovalMenu
 
 :NonRemovalChecker
-findstr /i "%~1" %Logs%\NonRemoval > NUL 2>&1
+findstr /i "%~1" %Location%\Bin\Data\NonRemoval > NUL 2>&1
 	if %errorlevel%==0 (set SD=%R%[32m♦%R%[0m)
 	if %errorlevel%==1 (set SD=%R%[100m %R%[0m)
 goto :eof
 
 :NonRemoval
-mkdir "%Location%\Files\Remove" > NUL 2>&1
-copy /y "%Location%\Files\Remove.py" "%Location%\Files\Remove" > NUL 2>&1
-Call :Powershell "(Get-Content %Location%\Files\Remove\Remove.py) | ForEach-Object { $_ -replace 'xxxxxxx', '%~1' } | Set-Content '%Location%\Files\Remove\Remove.py'"
-%NSudo% Python "%Location%\Files\Remove\Remove.py"
+mkdir "%Location%\Bin\Remove" > NUL 2>&1
+copy /y "%Location%\Bin\Remove.py" "%Location%\Bin\Remove" > NUL 2>&1
+Call :Powershell "(Get-Content %Location%\Bin\Remove\Remove.py) | ForEach-Object { $_ -replace 'xxxxxxx', '%~1' } | Set-Content '%Location%\Bin\Remove\Remove.py'"
+%NSudo% Python "%Location%\Bin\Remove\Remove.py"
 Call :Powershell "Get-AppxPackage -AllUsers *%~2* | Remove-AppxPackage"
-RD /S /Q "%Location%\Files\Remove" > NUL 2>&1
+RD /S /Q "%Location%\Bin\Remove" > NUL 2>&1
 goto :eof
 
 :: ---------------------------------------------------------------------------------------------------------------------------------------------------
@@ -889,7 +805,7 @@ echo  %R%[90m│   %R%[32m 0.%R%[33m Sol                                        
 echo  %R%[90m│   %R%[32m 1.%R%[33m Orta                                        %R%[90m│%R%[0m
 echo  %R%[90m│   %R%[32m X.%R%[36m Menu                                        %R%[90m│%R%[0m
 echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
-if %OSCheck% EQU 10 (echo %R%[91m Yalnızca Windows 11 sistemler için%R%[0m
+if %Win% EQU 10 (echo %R%[91m Yalnızca Windows 11 sistemler için%R%[0m
 					 timeout /t 3 /nobreak > NUL
 					 goto TaskbarSettings)
 Call :MobileValue İşlem TaskbarSettings
@@ -903,9 +819,9 @@ goto TaskbarSettings
 :Service_Management
 mode con cols=87 lines=41
 title     O G N I T O R E N K S    ^|    OGNITORENKS TOOLBOX  ^|    T  O  O  L  B  O  X
-Dism /Online /Get-Features /format:table > %Logs%\Features.txt
-DISM /Online /Get-Capabilities /format:table > %Logs%\Capabilities.txt
-Call :Powershell "Get-MMAgent" > %Logs%\mc
+Dism /Online /Get-Features /format:table > %Location%\Bin\Data\Features.txt
+DISM /Online /Get-Capabilities /format:table > %Location%\Bin\Data\Capabilities.txt
+Call :Powershell "Get-MMAgent" > %Location%\Bin\Data\mc
 
 reg query "HKLM\SYSTEM\CurrentControlSet\Control\Power" /v "HibernateEnabled" > NUL 2>&1
 	if %errorlevel%==1 (Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Power" HibernateEnabled 1)
@@ -925,8 +841,8 @@ echo  %R%[90m│%R%[32m  3%DL% Yazıcı                       %R%[90m│%R%[32m 
 Call :SV&Call :SVCheck_Left "FrameServer WiaRpc StiSvc"&Call :SVCheck_Capabilities "StepsRecorder"
 echo  %R%[90m│%R%[32m  4%DL% Tarayıcı ve Kamera           %R%[90m│%R%[32m 36%DR% Adım Kaydedici               %R%[90m│%R%[0m
 Call :SV&Call :SVCheck_Capabilities "PowerShell.ISE"
-if %OSCheck%==11 (Call :SVCheck_Left "PenService")
-if %OSCheck%==10 (Call :SVCheck_Left "TabletInputService")
+if %Win%==11 (Call :SVCheck_Left "PenService")
+if %Win%==10 (Call :SVCheck_Left "TabletInputService")
 echo  %R%[90m│%R%[32m  5%DL% Kalem ve Dokunmatik          %R%[90m│%R%[32m 37%DR% Powershell-ISE               %R%[90m│%R%[0m
 Call :SV&Call :SVCheck_Capabilities "fax"&Call :SVCheck_Capabilities "MathRecognizer"
 echo  %R%[90m│%R%[32m  6%DL% Fax                          %R%[90m│%R%[32m 38%DR% Matematik ifade tanıyıcı     %R%[90m│%R%[0m
@@ -1012,15 +928,15 @@ FOR %%a in (%$value%) do (
 	if %%a EQU 5a (Call :S5_Touch start demand açılıyor)
 	if %%a EQU 5A (Call :S5_Touch start demand açılıyor)
 	if %%a EQU 5K (Call :S5_Touch stop disabled kapatılıyor)
-	if %%a EQU 5k (Call :S5_Touch stop disabled kapatılıyor)	
+	if %%a EQU 5k (Call :S5_Touch stop disabled kapatılıyor)
 	if %%a EQU 6a (Call :S6_Fax start demand add açılıyor)
 	if %%a EQU 6A (Call :S6_Fax start demand add açılıyor)
 	if %%a EQU 6K (Call :S6_Fax stop disabled remove kapatılıyor)
-	if %%a EQU 6k (Call :S6_Fax stop disabled remove kapatılıyor)	
+	if %%a EQU 6k (Call :S6_Fax stop disabled remove kapatılıyor)
 	if %%a EQU 7a (Call :S7_Bitlocker start demand boot açılıyor)
 	if %%a EQU 7A (Call :S7_Bitlocker start demand boot açılıyor)
 	if %%a EQU 7K (Call :S7_Bitlocker stop disabled disabled kapatılıyor)
-	if %%a EQU 7k (Call :S7_Bitlocker stop disabled disabled kapatılıyor)	
+	if %%a EQU 7k (Call :S7_Bitlocker stop disabled disabled kapatılıyor)
 	if %%a EQU 8a (Call :S8_LimitedNetwork start auto açılıyor)
 	if %%a EQU 8A (Call :S8_LimitedNetwork start auto açılıyor)
 	if %%a EQU 8K (Call :S8_LimitedNetwork stop disabled kapatılıyor)
@@ -1036,19 +952,19 @@ FOR %%a in (%$value%) do (
 	if %%a EQU 11a (Call :S11_Radio.Plane.Mod start demand açılıyor)
 	if %%a EQU 11A (Call :S11_Radio.Plane.Mod start demand açılıyor)
 	if %%a EQU 11K (Call :S11_Radio.Plane.Mod stop disabled kapatılıyor)
-	if %%a EQU 11k (Call :S11_Radio.Plane.Mod stop disabled kapatılıyor)	
+	if %%a EQU 11k (Call :S11_Radio.Plane.Mod stop disabled kapatılıyor)
 	if %%a EQU 12a (Call :S12_WPS start demand açılıyor)
 	if %%a EQU 12A (Call :S12_WPS start demand açılıyor)
 	if %%a EQU 12K (Call :S12_WPS stop disabled kapatılıyor)
-	if %%a EQU 12k (Call :S12_WPS stop disabled kapatılıyor)	
+	if %%a EQU 12k (Call :S12_WPS stop disabled kapatılıyor)
 	if %%a EQU 13a (Call :S13_WIFI start demand system açılıyor)
 	if %%a EQU 13A (Call :S13_WIFI start demand system açılıyor)
 	if %%a EQU 13K (Call :S13_WIFI stop disabled disabled kapatılıyor)
-	if %%a EQU 13k (Call :S13_WIFI stop disabled disabled kapatılıyor)	
+	if %%a EQU 13k (Call :S13_WIFI stop disabled disabled kapatılıyor)
 	if %%a EQU 14a (Call :S14_Location start demand Allow 1 "Call :delete2" "DisableLocation" açılıyor)
 	if %%a EQU 14A (Call :S14_Location start demand Allow 1 "Call :delete2" "DisableLocation" açılıyor)
 	if %%a EQU 14K (Call :S14_Location stop disabled Deny 0 "Call :dword" "DisableLocation 1" kapıtılıyor)
-	if %%a EQU 14k (Call :S14_Location stop disabled Deny 0 "Call :dword" "DisableLocation 1" kapıtılıyor)	
+	if %%a EQU 14k (Call :S14_Location stop disabled Deny 0 "Call :dword" "DisableLocation 1" kapıtılıyor)
 	if %%a EQU 15a (Call :S15_Miracast start demand açılıyor)
 	if %%a EQU 15A (Call :S15_Miracast start demand açılıyor)
 	if %%a EQU 15K (Call :S15_Miracast stop disabled kapatılıyor)
@@ -1070,7 +986,7 @@ FOR %%a in (%$value%) do (
 	if %%a EQU 19a (Call :S19_Hibernate on 1 açılıyor)
 	if %%a EQU 19A (Call :S19_Hibernate on 1 açılıyor)
 	if %%a EQU 19K (Call :S19_Hibernate off 0 kapatılıyor)
-	if %%a EQU 19k (Call :S19_Hibernate off 0 kapatılıyor)	
+	if %%a EQU 19k (Call :S19_Hibernate off 0 kapatılıyor)
 	if %%a EQU 20a (Call :S20_Wsearch start auto enable açılıyor)
 	if %%a EQU 20A (Call :S20_Wsearch start auto enable açılıyor)
 	if %%a EQU 20K (Call :S20_Wsearch stop disabled disable kapatılıyor)
@@ -1130,13 +1046,13 @@ FOR %%a in (%$value%) do (
 	if %%a EQU 34a (Call :O33_38_40_Capabilities Add WordPad WordPad açılıyor)
 	if %%a EQU 34A (Call :O33_38_40_Capabilities Add WordPad WordPad açılıyor)
 	if %%a EQU 34K (Call :O33_38_40_Capabilities Remove WordPad WordPad kapatılıyor)
-	if %%a EQU 34k (Call :O33_38_40_Capabilities Remove WordPad WordPad kapatılıyor)	
+	if %%a EQU 34k (Call :O33_38_40_Capabilities Remove WordPad WordPad kapatılıyor)
 	if %%a EQU 35a (Call :O33_38_40_Capabilities Add Notepad Notepad açılıyor)
 	if %%a EQU 35A (Call :O33_38_40_Capabilities Add Notepad Notepad açılıyor)
 	if %%a EQU 35K (Call :O33_38_40_Capabilities Remove Notepad Notepad kapatılıyor
-					Regedit /s %Location%\Files\Right-Click.Text.Document.reg)
+					Regedit /s %Location%\Bin\Right-Click.Text.Document.reg)
 	if %%a EQU 35k (Call :O33_38_40_Capabilities Remove Notepad Notepad kapatılıyor
-					Regedit /s %Location%\Files\Right-Click.Text.Document.reg)
+					Regedit /s %Location%\Bin\Right-Click.Text.Document.reg)
 	if %%a EQU 36a (Call :O33_38_40_Capabilities Add "Adım Kaydedici" StepsRecorder açılıyor)
 	if %%a EQU 36A (Call :O33_38_40_Capabilities Add "Adım Kaydedici" StepsRecorder açılıyor)
 	if %%a EQU 36K (Call :O33_38_40_Capabilities Remove "Adım Kaydedici" StepsRecorder kapatılıyor)
@@ -1148,7 +1064,7 @@ FOR %%a in (%$value%) do (
 	if %%a EQU 38a (Call :O33_38_40_Capabilities Add "Matematik ifade tanıyıcı" MathRecognizer açılıyor)
 	if %%a EQU 38A (Call :O33_38_40_Capabilities Add "Matematik ifade tanıyıcı" MathRecognizer açılıyor)
 	if %%a EQU 38K (Call :O33_38_40_Capabilities Remove "Matematik ifade tanıyıcı" MathRecognizer kapatılıyor)
-	if %%a EQU 38k (Call :O33_38_40_Capabilities Remove "Matematik ifade tanıyıcı" MathRecognizer kapatılıyor)	
+	if %%a EQU 38k (Call :O33_38_40_Capabilities Remove "Matematik ifade tanıyıcı" MathRecognizer kapatılıyor)
 	if %%a EQU 39a (Call :O39_WindowsMediaPlayer start demand Enable Dism açılıyor)
 	if %%a EQU 39A (Call :O39_WindowsMediaPlayer start demand Enable Dism açılıyor)
 	if %%a EQU 39K (Call :O39_WindowsMediaPlayer stop disabled Disable :: kapatılıyor)
@@ -1168,7 +1084,7 @@ FOR %%a in (%$value%) do (
 	if %%a EQU 43a (Call :O42_44_Features Enable "Net Framework 4.5" IIS-ASPNET45 açılıyor)
 	if %%a EQU 43A (Call :O42_44_Features Enable "Net Framework 4.5" IIS-ASPNET45 açılıyor)
 	if %%a EQU 43K (Call :O42_44_Features Disable "Net Framework 4.5" IIS-ASPNET45 kapatılıyor)
-	if %%a EQU 43k (Call :O42_44_Features Disable "Net Framework 4.5" IIS-ASPNET45 kapatılıyor)	
+	if %%a EQU 43k (Call :O42_44_Features Disable "Net Framework 4.5" IIS-ASPNET45 kapatılıyor)
 	if %%a EQU 44a (Call :O42_44_Features Enable DirectPlay DirectPlay açılıyor)
 	if %%a EQU 44A (Call :O42_44_Features Enable DirectPlay DirectPlay açılıyor)
 	if %%a EQU 44K (Call :O42_44_Features Disable DirectPlay DirectPlay kapatılıyor)
@@ -1367,7 +1283,7 @@ goto :eof
 :S11_Radio.Plane.Mod
 :: Windows 11'de ağ simgesinde sorun yaşanmaması için hizmetin kapatılması engellendi.
 echo %~3 | Findstr /i "kapatılıyor" > NUL 2>&1
-	if %errorlevel% EQU 0 if %OSCheck% EQU 11 (echo  ►%R%[31m Windows 11'de bu hizmet kapatılamaz.%R%[0m
+	if %errorlevel% EQU 0 if %Win% EQU 11 (echo  ►%R%[31m Windows 11'de bu hizmet kapatılamaz.%R%[0m
 											   timeout /t 3 /nobreak > NUL
 					                           goto :eof)
 echo  ►%R%[96m Radyo yönetim ve uçak modu hizmeti %3 ...%R%[0m&timeout /t 1 /nobreak > NUL
@@ -1652,7 +1568,7 @@ goto :eof
 
 :O33_38_40_Capabilities
 echo  ►%R%[96m %~2 %~4 ...%R%[0m&timeout /t 1 /nobreak > NUL
-FOR /F "tokens=1" %%a in ('Findstr /i "%~3" %Logs%\Capabilities.txt') do (
+FOR /F "tokens=1" %%a in ('Findstr /i "%~3" %Location%\Bin\Data\Capabilities.txt') do (
 	Dism /Online /%~1-Capability /CapabilityName:%%a /Quiet /NoRestart
 )
 ::-------------------------------------
@@ -1678,7 +1594,7 @@ goto :eof
 :O41_WSL
 echo  ►%R%[96m Windows için Linux Altyapı desteği %~2 ...%R%[0m&timeout /t 1 /nobreak > NUL
 FOR %%a in (Microsoft-Windows-Subsystem-Linux VirtualMachinePlatform) do (
-	FOR /F "tokens=1" %%b in ('findstr /C:"%%a" %Logs%\Features.txt') do (
+	FOR /F "tokens=1" %%b in ('findstr /C:"%%a" %Location%\Bin\Data\Features.txt') do (
 		Dism /Online /%~1-Feature /FeatureName:%%b /All /Quiet /NoRestart
 	)
 )
@@ -1692,7 +1608,7 @@ goto :eof
 
 :O42_44_Features
 echo  ►%R%[96m %~2 %~4 ...%R%[0m&timeout /t 1 /nobreak > NUL
-FOR /F "tokens=1" %%a in ('findstr /C:"%~3" %Logs%\Features.txt') do (
+FOR /F "tokens=1" %%a in ('findstr /C:"%~3" %Location%\Bin\Data\Features.txt') do (
 	Dism /Online /%~1-Feature /FeatureName:%%a /All /Quiet /NoRestart
 )
 ::-------------------------------------
@@ -1805,39 +1721,28 @@ Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-
 ::-------------------------------------
 goto :eof
 
-:P53_hosts
-echo  ►%R%[96m Telemetri/Reklam engelli hosts %~2 ...%R%[0m&timeout /t 1 /nobreak > NUL
-if %~1 EQU 0 (%NSudo% copy /y "%Location%\Files\hosts.default" "%windir%\System32\drivers\etc"
-		      %NSudo% rename /y "%windir%\System32\drivers\etc\hosts.default" "hosts")
-if %~1 EQU 1 (%NSudo% Rename "%windir%\System32\drivers\etc\hosts" "hosts.%DateYear%.%random%"
-		      %NSudo% copy /y "%Location%\Files\hosts" "%windir%\System32\drivers\etc")
-::-------------------------------------
-::    Aç = %~1: 1  | %~2: açılıyor 
-:: Kapat = %~1: 0  | %~2: kapatılıyor 
-::-------------------------------------
-goto :eof
-
 :P54_Device
-echo  ►%R%[96m Windows için Linux Altyapı desteği %~2 ...%R%[0m&timeout /t 1 /nobreak > NUL
-"%Location%\Files\DevManView.exe" /%~1 "WAN Miniport (IKEv2)"
-"%Location%\Files\DevManView.exe" /%~1 "WAN Miniport (IP)"
-"%Location%\Files\DevManView.exe" /%~1 "WAN Miniport (IPv6)"
-"%Location%\Files\DevManView.exe" /%~1 "WAN Miniport (L2TP)"
-"%Location%\Files\DevManView.exe" /%~1 "WAN Miniport (Network Monitor)"
-"%Location%\Files\DevManView.exe" /%~1 "WAN Miniport (PPPOE)"
-"%Location%\Files\DevManView.exe" /%~1 "WAN Miniport (PPTP)"
-"%Location%\Files\DevManView.exe" /%~1 "WAN Miniport (SSTP)"
-"%Location%\Files\DevManView.exe" /%~1 "NDIS Virtual Network Adapter Enumerator"
-"%Location%\Files\DevManView.exe" /%~1 "Microsoft RRAS Root Enumerator"
-"%Location%\Files\DevManView.exe" /%~1 "High Precision Event Timer"
-"%Location%\Files\DevManView.exe" /%~1 "Composite Bus Enumerator"
-"%Location%\Files\DevManView.exe" /%~1 "UMBus Root Bus Enumerator"
-"%Location%\Files\DevManView.exe" /%~1 "SM Bus Controller"
-"%Location%\Files\DevManView.exe" /%~1 "AMD SMBus"
-"%Location%\Files\DevManView.exe" /%~1 "Intel SMBus"
-"%Location%\Files\DevManView.exe" /%~1 "AMD PSP"
-"%Location%\Files\DevManView.exe" /%~1 "Intel Management Engine"
-"%Location%\Files\DevManView.exe" /%~1 "Microsoft Kernel Debug Network Adapter"
+echo  ►%R%[96m Gereksiz Aygıtlar %~2 ...%R%[0m&timeout /t 1 /nobreak > NUL
+%Library% :Powershell "Get-PnpDevice -FriendlyName 'WAN Miniport (PPPOE)' | Disable-PnpDevice -Confirm:$false"
+"%Location%\Bin\DevManView.exe" /%~1 "WAN Miniport (IKEv2)"
+"%Location%\Bin\DevManView.exe" /%~1 "WAN Miniport (IP)"
+"%Location%\Bin\DevManView.exe" /%~1 "WAN Miniport (IPv6)"
+"%Location%\Bin\DevManView.exe" /%~1 "WAN Miniport (L2TP)"
+"%Location%\Bin\DevManView.exe" /%~1 "WAN Miniport (Network Monitor)"
+"%Location%\Bin\DevManView.exe" /%~1 "WAN Miniport (PPPOE)"
+"%Location%\Bin\DevManView.exe" /%~1 "WAN Miniport (PPTP)"
+"%Location%\Bin\DevManView.exe" /%~1 "WAN Miniport (SSTP)"
+"%Location%\Bin\DevManView.exe" /%~1 "NDIS Virtual Network Adapter Enumerator"
+"%Location%\Bin\DevManView.exe" /%~1 "Microsoft RRAS Root Enumerator"
+"%Location%\Bin\DevManView.exe" /%~1 "High Precision Event Timer"
+"%Location%\Bin\DevManView.exe" /%~1 "Composite Bus Enumerator"
+"%Location%\Bin\DevManView.exe" /%~1 "UMBus Root Bus Enumerator"
+"%Location%\Bin\DevManView.exe" /%~1 "SM Bus Controller"
+"%Location%\Bin\DevManView.exe" /%~1 "AMD SMBus"
+"%Location%\Bin\DevManView.exe" /%~1 "Intel SMBus"
+"%Location%\Bin\DevManView.exe" /%~1 "AMD PSP"
+"%Location%\Bin\DevManView.exe" /%~1 "Intel Management Engine"
+"%Location%\Bin\DevManView.exe" /%~1 "Microsoft Kernel Debug Network Adapter"
 ::-------------------------------------
 ::    Aç = %~1 : enable   | %~2: açılıyor   
 :: Kapat = %~1 : disable  | %~2: kapatılıyor
@@ -1907,7 +1812,7 @@ if %~1 EQU 1 (Call :expandsz "HKCR\Directory\background\shell\Yonet" "Icon" "%%%
 			  Call :expandsz "HKCR\Directory\background\shell\Yonet\shell\9IconCache" "Icon" "%%%%SystemRoot%%%%\ico\RightClick\8.ico"
 			  Call :sz "HKCR\Directory\background\shell\Yonet\shell\9IconCache" "MUIVerb" "Simge Önbelliğini Temizle"
 			  Call :vexpandsz "HKCR\Directory\background\shell\Yonet\shell\9IconCache\command" "%%%%SystemRoot%%%%\NSudo.exe -U:E -P:E -ShowWindowMode:hide cmd /c %%%%Windir%%%%\ReIconCache.exe /I /F"
-			  Call :PSExtract 1 "%Location%\Files\ico\RightClickYonet.zip" "%Windir%")
+			  Call :PSExtract 1 "%Location%\Bin\ico\RightClickYonet.zip" "%Windir%")
 ::-------------------------------------
 ::    Aç = %~1: 1  | %~2: açılıyor 
 :: Kapat = %~1: 0  | %~2: kapatılıyor 
@@ -1935,7 +1840,7 @@ if %~1 EQU 1 (Call :sz "HKCR\exefile\shell\Priority" "MUIVerb" "Çalıştırma S
 			  Call :vesz "HKCR\exefile\Shell\Priority\shell\005flyout" "Düşük"
 			  Call :sz "HKCR\exefile\Shell\Priority\shell\005flyout" "Icon" "%%%%windir%%%%\ico\1.ico"
 			  Call :vesz "HKCR\exefile\Shell\Priority\shell\005flyout\command" "cmd /c start \"\" /Low \"%%%%1\""
-			  Call :PSExtract 1 "%Location%\Files\ico\RightClickYonet.zip" "%windir%")
+			  Call :PSExtract 1 "%Location%\Bin\ico\RightClickYonet.zip" "%windir%")
 ::-------------------------------------
 ::    Aç = %~1: 1  | %~2: açılıyor 
 :: Kapat = %~1: 0  | %~2: kapatılıyor 
@@ -1944,7 +1849,7 @@ goto :eof
 
 :R58_Terminal
 echo  ►%R%[96m Terminal %~2 ...%R%[0m&timeout /t 1 /nobreak > NUL
-if %OSCheck% EQU 10 (echo %R%[91m Windows 10'da kullanılamaz%R%[0m
+if %Win% EQU 10 (echo %R%[91m Windows 10'da kullanılamaz%R%[0m
 					 timeout /t 2 /nobreak > NUL
 					 goto :eof)
 if %~1 EQU 0 (Call :delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked")
@@ -1957,7 +1862,7 @@ goto :eof
 
 :R59_OldMenu
 echo  ►%R%[96m Eski Windows menüsü %~2 ...%R%[0m&timeout /t 1 /nobreak > NUL
-if %OSCheck% EQU 10 (echo %R%[91m Windows 10'da kullanılamaz%R%[0m
+if %Win% EQU 10 (echo %R%[91m Windows 10'da kullanılamaz%R%[0m
 					 timeout /t 2 /nobreak > NUL
 					 goto :eof)
 if %~1 EQU 0 (Call :delete "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32")
@@ -1973,77 +1878,9 @@ goto :eof
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 :_TOOLBOX__DEPO__HANGAR_
 :SoftwareCheck
-Call :Powershell "Get-ItemProperty HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\* | Select-Object DisplayName" > %Logs%\InstallApp
-Findstr /i "%~n1" %Logs%\InstallApp > NUL 2>&1
+Call :Powershell "Get-ItemProperty HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\* | Select-Object DisplayName" > %Location%\Bin\Data\InstallApp
+Findstr /i "%~n1" %Location%\Bin\Data\InstallApp > NUL 2>&1
 	if %errorlevel%==1 (Call :wget1 %~1 "%~2")
-goto :eof
-:: --------------------------------------------------------------------------------------------------------
-
-:Choco
-:: [%~1=Download Name]
-Call :InternetControl
-dir /b "%ProgramData%\chocolatey\choco.exe" > NUL 2>&1
-	if %errorlevel%==1 (echo  ► %R%[33m Chocolatey yükleniyor...%R%[0m
-						%NSudo% Powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && set "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin")
-
-
-%NSudo% Powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh'))" && set "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin")
-
-(New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
-
-echo    %R%[90m[Chocolatey]%R%[0m ►%R%[33m %~1%R%[0m indiriliyor %R%[90m/%R%[0m yükleniyor...
-choco install -y --force --limit-output --cache-location=%download% --ignore-checksums %~1 > NUL
-goto :eof
-
-:: --------------------------------------------------------------------------------------------------------
-
-:wget1
-:: [%~1=Download Name] [%~2=Silent Install]
-Call :InternetControl
-Call :ToolboxFileChecker "%Location%\Files\wget.exe"
-echo    %R%[90m[Wget]%R%[0m ►%R%[33m %~n1%R%[0m indiriliyor %R%[90m/%R%[0m yükleniyor...
-FOR /F "tokens=1" %%i in ('Findstr /C:"%~1" %Location%\Extra\Links.txt') do set link=%%i
-%Location%\Files\wget.exe -c -q --no-check-certificate --show-progress "%link%" -t 10 -O %download%\%~1
-"%download%\%~1" %~2
-goto :eof
-
-:: --------------------------------------------------------------------------------------------------------
-
-:wget2
-:: [%~1=Download Name]
-Call :InternetControl
-Call :ToolboxFileChecker "%Location%\Files\wget.exe"
-echo    %R%[90m[Wget]%R%[0m ►%R%[33m %~n1%R%[0m indiriliyor %R%[90m/%R%[0m yükleniyor...
-FOR /F "tokens=1" %%i in ('Findstr /C:"%~1" %Location%\Extra\Links.txt') do set link=%%i
-%Location%\Files\wget.exe -c -q --no-check-certificate --show-progress "%link%" -t 10 -O %download%\%~1
-goto :eof
-
-:: --------------------------------------------------------------------------------------------------------
-
-:wget3
-:: [%~1=Download Location] [%~n1: Download Name] [%~x1: İndirme uzantısı]
-Call :InternetControl
-Call :ToolboxFileChecker "%Location%\Files\wget.exe"
-echo    %R%[90m[Wget]%R%[0m ►%R%[33m %~n1%R%[0m indiriliyor...
-FOR /F "tokens=1" %%i in ('Findstr /C:"%~n1%~x1" %Location%\Extra\Links.txt') do set link=%%i
-%Location%\Files\wget -c -q --no-check-certificate --show-progress "%link%" -t 10 -O %~1
-goto :eof
-
-:: --------------------------------------------------------------------------------------------------------
-
-:wget4
-:: [%~1=Download Location] [%~n1: Download Name] [%~x1: İndirme uzantısı]
-Call :InternetControl
-Call :ToolboxFileChecker "%Location%\Files\wget.exe"
-FOR /F "tokens=1" %%i in ('Findstr /C:"%~n1%~x1" %Location%\Extra\Links.txt') do set link=%%i
-%Location%\Files\wget --no-check-certificate "%link%" -t 10 -O %~1 > NUL 2>&1
-goto :eof
-
-:: --------------------------------------------------------------------------------------------------------
-
-:wgetcontrol
-dir /b "%Location%\Files\wget.exe" > NUL 2>&1
-	if %errorlevel% EQU 1 (Call :PSDownload "%Location%\Files\wget.exe")
 goto :eof
 
 :: --------------------------------------------------------------------------------------------------------
@@ -2057,33 +1894,10 @@ goto :eof
 
 :: --------------------------------------------------------------------------------------------------------
 
-:7ZipExtract
-:: 7-zip ile üst düzey yetki kullanarak dosya çıkarma işlemi yapılamamaktadır.
-::  %~1: Sıkıştırılmış dosyanın bulunduğu yer  |  %~2: Çıkarılacağı yer
-"%Location%\Files\7z.exe" x "%~1" -o%~2 -y > NUL 2>&1
-goto :eof
-
-:: --------------------------------------------------------------------------------------------------------
-
 :PSExtract
 :: %~1: Yetki ayarı | %~2: Sıkıştırılmış dosyanın bulunduğu yer  |  %~3: Çıkarılacağı yer
 if %~1 EQU 0 (Call :Powershell "Expand-Archive -Force '%~2' '%~3'")
 if %~1 EQU 1 (%NSudo% Powershell -command "Expand-Archive -Force '%~2' '%~3'")
-goto :eof
-
-:: --------------------------------------------------------------------------------------------------------
-
-:FileControl
-dir /b "%~1" > NUL 2>&1
-	if %errorlevel%==1 (Call :FileError)
-goto :eof
-
-:: --------------------------------------------------------------------------------------------------------
-
-:Plugins
-findstr /C:"PluginSetting= 0" %Location%\Settings.ini > NUL 2>&1
-	if %errorlevel%==1 (goto :eof)
-For /f "tokens=2" %%a in ('findstr /C:"Plugin" %Location%\Settings.ini') do (Call :sz "HKLM\SOFTWARE\WOW6432Node\%~1\Extensions\%%a" "update_url" "https://clients2.google.com/service/update2/crx")
 goto :eof
 
 :: --------------------------------------------------------------------------------------------------------
@@ -2105,57 +1919,20 @@ chcp 65001 > NUL 2>&1
 goto :eof
 
 :: --------------------------------------------------------------------------------------------------------
- 
-:InternetControl
-if %InternetCheck% EQU 1 (goto :eof)
-FOR /F "tokens=1" %%a in ('FIND "InternetControlPing" %Location%\Extra\Links.txt') do (set link=%%a)
-ping -n 1 %link% > NUL
-	if %errorlevel%==1 (echo   %R%[1;97m%R%[41m İnternet bağlantısı yok %R%[0m
-						timeout /t 3 /nobreak > NUL
-						goto :eof
-)
+:Chocolatey
+choco install -y --force --limit-output --ignore-checksums %~1
 goto :eof
 
 :: --------------------------------------------------------------------------------------------------------
-
-:ToolboxFileChecker
-dir /b "%~1" > NUL 2>&1
-	if %errorlevel% EQU 1 (Call :ToolboxFileError)
+:Winget
+winget install -e --silent --force --accept-source-agreements --accept-package-agreements --id %~1
 goto :eof
 
 :: --------------------------------------------------------------------------------------------------------
-
-:LostMenu
-mode con cols=97 lines=38
-echo   %R%[90m┌───────────────────────────────────────────────────────────────────────────────────────────┐%R%[0m
-echo   %R%[90m│%R%[1;97m%R%[100m OGNITORENKS TOOLBOX %version% %R%[0m%R%[90m ^|%R%[32m USER:%R%[37m%registereduser% %R%[90m^|%R%[32m PC-Name:%R%[37m%pcname%%R%[0m
-echo   %R%[90m│%R%[32m OS:%R%[37m %caption% %R%[90m^|%R%[37m x%osarch% %R%[90m^|%R%[37m %ImageBuild% %R%[0m%R%[90m^|%R%[37m %isderleme% %R%[90m^|%R%[32m Power:%R%[37m %powerr%%R%[0m
-echo   %R%[90m├───────────────────────────────────────────────────────────────────────────────────────────┤%R%[0m
-goto :eof
-
-:: --------------------------------------------------------------------------------------------------------
-
 :ExplorerReset
 taskkill /f /im explorer.exe > NUL 2>&1
 Call :Powershell "Start-Process 'C:\Windows\explorer.exe'"
 goto :EOF
-
-:: --------------------------------------------------------------------------------------------------------
-
-:LogSave
-:: %~1: Bölüm adı | %~2: Bilgi kısmı
-if %LogsSettings%==1 (goto :eof)
-echo [%DateDay% - %time%] ^| %~1 ^| %~2 >> %Location%\Logs
-goto :eof
-
-:: --------------------------------------------------------------------------------------------------------
-
-:Powershell
-:: Powershell komutları kullanıldığında komut istemi compact moda girmektedir. Bunu önlemek için karakter takımları arasında geçiş yapıyoruz.
-chcp 437 > NUL 2>&1
-Powershell -command %*
-chcp 65001 > NUL 2>&1
-goto :eof
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
@@ -2163,8 +1940,8 @@ goto :eof
 for /f "skip=2 tokens=2" %%a in ('reg query "%~2" /v "%~3" 2^> NUL') do set regtur=%%a
 for /f "skip=2 tokens=3" %%a in ('reg query "%~2" /v "%~3" 2^> NUL') do set deger=%%a
 reg query "%~2" /v "%~3" /s > NUL 2>&1
-	if %errorlevel%==0 (echo reg add "%~2" /v "%~3" /t %regtur% /d "%deger%" /f ^> NUL 2^>^&1 >> %Location%\Files\Yedek\%~1.bat)
-	if %errorlevel%==1 (echo reg delete "%~2" /v "%~3" /f ^> NUL 2^>^&1 >> %Location%\Files\Yedek\%~1.bat)
+	if %errorlevel%==0 (echo reg add "%~2" /v "%~3" /t %regtur% /d "%deger%" /f ^> NUL 2^>^&1 >> %Location%\Bin\Yedek\%~1.bat)
+	if %errorlevel%==1 (echo reg delete "%~2" /v "%~3" /f ^> NUL 2^>^&1 >> %Location%\Bin\Yedek\%~1.bat)
 reg add "%~2" /v "%~3" /t %~4 /d "%~5" /f > NUL 2>&1
 	if %errorlevel%==1 (%NSudo% reg add "%~2" /v "%~3" /t %~4 /d "%~5" /f)
 ::-------------------------------------
@@ -2180,8 +1957,8 @@ goto :eof
 for /f "skip=2 tokens=2" %%a in ('reg query "%~2" /ve 2^> NUL') do set regtur=%%a
 for /f "skip=2 tokens=3" %%a in ('reg query "%~2" /ve 2^> NUL') do set deger=%%a
 reg query "%~2" /ve > NUL 2>&1
-	if %errorlevel%==0 (echo reg add "%~2" /ve /t %regtur% /d "%deger%" /f ^> NUL 2^>^&1 >> %Location%\Files\Yedek\%~1.bat)
-	if %errorlevel%==1 (echo reg delete "%~2" /ve /f ^> NUL 2^>^&1 >> %Location%\Files\Yedek\%~1.bat)
+	if %errorlevel%==0 (echo reg add "%~2" /ve /t %regtur% /d "%deger%" /f ^> NUL 2^>^&1 >> %Location%\Bin\Yedek\%~1.bat)
+	if %errorlevel%==1 (echo reg delete "%~2" /ve /f ^> NUL 2^>^&1 >> %Location%\Bin\Yedek\%~1.bat)
 reg add "%~2" /ve /t %~3 /d "%~4" /f > NUL 2>&1
 	if %errorlevel%==1 (%NSudo% reg add "%~2" /ve /t %~3 /d "%~4" /f)
 ::-------------------------------------
@@ -2194,7 +1971,7 @@ goto :eof
 
 :RegSave_Delete_Key
 reg query %~2 > NUL 2>&1
-	if %errorlevel%==0 (echo reg add "%~2" /f ^> NUL 2^>^&1 >> %Location%\Files\Yedek\%~1.bat)
+	if %errorlevel%==0 (echo reg add "%~2" /f ^> NUL 2^>^&1 >> %Location%\Bin\Yedek\%~1.bat)
 reg delete "%~2" /f > NUL 2>&1
 	if %errorlevel%==1 (%NSudo% reg delete "%~2" /f)
 ::-------------------------------------
@@ -2207,7 +1984,7 @@ goto :eof
 for /f "skip=2 tokens=2" %%a in ('reg query "%~2" /v "%~3" 2^> NUL') do set regtur=%%a
 for /f "skip=2 tokens=3" %%a in ('reg query "%~2" /v "%~3" 2^> NUL') do set deger=%%a
 reg query "%~2" /v "%~3" /s > NUL 2>&1
-	if %errorlevel%==0 (echo reg add "%~2" /v "%~3" /t %regtur% /d "%deger%" /f ^> NUL 2^>^&1 >> %Location%\Files\Yedek\%~1.bat)
+	if %errorlevel%==0 (echo reg add "%~2" /v "%~3" /t %regtur% /d "%deger%" /f ^> NUL 2^>^&1 >> %Location%\Bin\Yedek\%~1.bat)
 reg delete "%~2" /v "%~3" /f > NUL 2>&1
 	if %errorlevel%==1 (%NSudo% reg delete "%~2" /v "%~3" /f)
 ::-------------------------------------
@@ -2222,8 +1999,8 @@ goto :eof
 for /f "skip=2 tokens=3" %%a in ('reg query "%~2" /v "%~3" 2^> NUL') do set regtur=%%a
 for /f "skip=2 tokens=4" %%a in ('reg query "%~2" /v "%~3" 2^> NUL') do set deger=%%a
 reg query "%~2" /v "%~3" /s > NUL 2>&1
-	if %errorlevel%==0 (echo reg add "%~2" /v "%~3" /t %regtur% /d "%deger%" /f ^> NUL 2^>^&1 >> %Location%\Files\Yedek\%~1.bat)
-	if %errorlevel%==1 (echo reg delete "%~2" /v "%~3" /f ^> NUL 2^>^&1 >> %Location%\Files\Yedek\%~1.bat)
+	if %errorlevel%==0 (echo reg add "%~2" /v "%~3" /t %regtur% /d "%deger%" /f ^> NUL 2^>^&1 >> %Location%\Bin\Yedek\%~1.bat)
+	if %errorlevel%==1 (echo reg delete "%~2" /v "%~3" /f ^> NUL 2^>^&1 >> %Location%\Bin\Yedek\%~1.bat)
 reg add "%~2" /v "%~3" /t %~4 /d "%~5" /f > NUL 2>&1
 	if %errorlevel%==1 (%NSudo% reg add "%~2" /v "%~3" /t %~4 /d "%~5" /f)
 ::-------------------------------------
@@ -2232,56 +2009,6 @@ reg add "%~2" /v "%~3" /t %~4 /d "%~5" /f > NUL 2>&1
 ::  %~1 : Yedek kayıt dosya adı  | %~2: Regedit yolu  | %~3: Regedit Adı  | %~4: Regedit Türü  | %~5: Regedit Veri
 ::  Regtur: Regedit Türü  | deger: Regedit Veri
 ::-------------------------------------
-goto :eof
-
-:key
-reg add "%~1" /f > NUL 2>&1
-	if %errorlevel%==1 (%NSudo% reg add "%~1" /f)
-goto :eof
-
-:dword
-reg add "%~1" /v "%~2" /t REG_DWORD /d "%~3" /f > NUL 2>&1
-	if %errorlevel%==1 (%NSudo% reg add "%~1" /v "%~2" /t REG_DWORD /d "%~3" /f)
-goto :eof
-
-:binary
-reg add "%~1" /v "%~2" /t REG_BINARY /d "%~3" /f > NUL 2>&1
-	if %errorlevel%==1 (%NSudo% reg add "%~1" /v "%~2" /t REG_BINARY /d "%~3" /f)
-goto :eof
-
-:sz
-reg add "%~1" /v "%~2" /t REG_SZ /d "%~3" /f > NUL 2>&1
-	if %errorlevel%==1 (%NSudo% reg add "%~1" /v "%~2" /t REG_SZ /d "%~3" /f)
-goto :eof
-
-:vesz
-reg add "%~1" /ve /t REG_SZ /d "%~2" /f > NUL 2>&1
-	if %errorlevel%==1 (%NSudo% reg add "%~1" /ve /t REG_SZ /d "%~2" /f)
-goto :eof
-
-:multisz
-reg add "%~1" /v "%~2" /t REG_MULTI_SZ /d "%~3" /f > NUL 2>&1
-	if %errorlevel%==1 (%NSudo% reg add "%~1" /v "%~2" /t REG_MULTI_SZ /d "%~3" /f)
-goto :eof
-
-:expandsz
-reg add "%~1" /v "%~2" /t REG_EXPAND_SZ /d "%~3" /f > NUL 2>&1
-	if %errorlevel%==1 (%NSudo% reg add "%~1" /v "%~2" /t REG_EXPAND_SZ /d "%~3" /f)
-goto :eof
-
-:vexpandsz
-reg add "%~1" /ve /t REG_EXPAND_SZ /d "%~2" /f > NUL 2>&1
-	if %errorlevel%==1 (%NSudo% reg add "%~1" /ve /t REG_EXPAND_SZ /d "%~2" /f)
-goto :eof
-
-:delete
-reg delete "%~1" /f > NUL 2>&1
-	if %errorlevel%==1 (%NSudo% reg delete "%~1" /f)
-goto :eof
-
-:delete2
-reg delete "%~1" /v "%~2" /f > NUL 2>&1
-	if %errorlevel%==1 (%NSudo% reg delete "%~1" /v "%~2" /f)
 goto :eof
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
@@ -2304,12 +2031,12 @@ For %%a in (%~1) do (reg query "HKLM\SYSTEM\CurrentControlSet\Services\%%a" /v "
 goto :eof
 
 :SVCheck_Capabilities
-FOR /F "tokens=3" %%a in ('Findstr /i "%~1" %Logs%\Capabilities.txt') do (echo %%a | Findstr /i "Installed" > NUL 2>&1)
+FOR /F "tokens=3" %%a in ('Findstr /i "%~1" %Location%\Bin\Data\Capabilities.txt') do (echo %%a | Findstr /i "Installed" > NUL 2>&1)
 	if %errorlevel% EQU 0 (set DR=%R%[90m[%R%[36mA%R%[90m/%R%[36mK%R%[90m]%R%[32m♦%R%[90m -%R%[33m)
 goto :eof
 
 :SVCheck_Features
-FOR /F "tokens=3" %%a in ('Findstr /i "%~1" %Logs%\Features.txt') do (echo %%a | Findstr /i "Enabled" > NUL 2>&1)
+FOR /F "tokens=3" %%a in ('Findstr /i "%~1" %Location%\Bin\Data\Features.txt') do (echo %%a | Findstr /i "Enabled" > NUL 2>&1)
 	if %errorlevel% EQU 0 (set DR=%R%[90m[%R%[36mA%R%[90m/%R%[36mK%R%[90m]%R%[32m♦%R%[90m -%R%[33m)
 goto :eof
 
@@ -2341,7 +2068,7 @@ powercfg -list | findstr /C:"%~1" > NUL 2>&1
 goto :eof
 
 :SVCheck_Memory
-findstr /i "%~1" %Logs%\mc > NUL 2>&1
+findstr /i "%~1" %Location%\Bin\Data\mc > NUL 2>&1
 	if %errorlevel%==1 (set DL=%R%[90m[%R%[36mA%R%[90m/%R%[36mK%R%[90m]%R%[32m♦%R%[90m -%R%[33m)
 goto :eof
 
@@ -2358,96 +2085,21 @@ Findstr /i "telemetry.microsoft.com" %windir%\System32\drivers\etc\hosts > NUL 2
 goto :eof
 
 :SVCheck_OS10
-if %OSCheck% EQU 10 (set DR=%R%[90m[%R%[36mA%R%[90m/%R%[36mK%R%[90m]%R%[101m %R%[0m%R%[90m -%R%[33m)
+if %Win% EQU 10 (set DR=%R%[90m[%R%[36mA%R%[90m/%R%[36mK%R%[90m]%R%[101m %R%[0m%R%[90m -%R%[33m)
 goto :eof
 
 :SVCheck_OS11
-if %OSCheck% EQU 11 (set DR=%R%[90m[%R%[36mA%R%[90m/%R%[36mK%R%[90m]%R%[101m %R%[0m%R%[90m -%R%[33m)
-goto :eof
-
-:: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-
-:ToolboxSettings
-cls
-mode con cols=55 lines=21
-echo  %R%[90m┌───────────────────────────────────────────────────┐%R%[0m
-echo  %R%[90m│%R%[1;97m%R%[100m                 Toolbox Ayarları                  %R%[0m%R%[90m│%R%[0m
-echo  %R%[90m├───────────────────────────────────────────────────┤%R%[0m
-set SD=%R%[100m %R%[0m&FOR /F "tokens=2" %%a in ('findstr /C:"AutoUpdate" %Location%\Settings.ini') do (if %%a EQU 0 (set SD=%R%[32m♦%R%[0m))
-echo  %R%[90m│   %R%[32m 1%R%[90m[%R%[36mA%R%[90m/%R%[36mK%R%[90m]%R%[0m%SD%%R%[90m -%R%[33m Otomatik Güncelleme                  %R%[90m│%R%[0m
-set SD=%R%[100m %R%[0m&FOR /F "tokens=2" %%a in ('findstr /C:"LogsSettings" %Location%\Settings.ini') do (if %%a EQU 0 (set SD=%R%[32m♦%R%[0m))
-echo  %R%[90m│   %R%[32m 2%R%[90m[%R%[36mA%R%[90m/%R%[36mK%R%[90m]%R%[0m%SD%%R%[90m -%R%[33m Log Kayıt                            %R%[90m│%R%[0m
-set SD=%R%[100m %R%[0m&FOR /F "tokens=2" %%a in ('findstr /C:"PluginSetting" %Location%\Settings.ini') do (if %%a EQU 0 (set SD=%R%[32m♦%R%[0m))
-echo  %R%[90m│   %R%[32m 3%R%[90m[%R%[36mA%R%[90m/%R%[36mK%R%[90m]%R%[0m%SD%%R%[90m -%R%[33m Tarayıcı eklenti ayarı               %R%[90m│%R%[0m
-set SD=%R%[100m %R%[0m&FOR /F "tokens=2" %%a in ('findstr /C:"Chocolatey" %Location%\Settings.ini') do (if %%a EQU 0 (set SD=%R%[32m♦%R%[0m))
-echo  %R%[90m│   %R%[32m 4%R%[90m[%R%[36mA%R%[90m/%R%[36mK%R%[90m]%R%[0m%SD%%R%[90m -%R%[33m Chocolatey yükleme sistemi           %R%[90m│%R%[0m
-set SD=%R%[100m %R%[0m&FOR /F "tokens=2" %%a in ('findstr /C:"InternetCheck" %Location%\Settings.ini') do (if %%a EQU 0 (set SD=%R%[32m♦%R%[0m))
-echo  %R%[90m│   %R%[32m 5%R%[90m[%R%[36mA%R%[90m/%R%[36mK%R%[90m]%R%[0m%SD%%R%[90m -%R%[33m İnternet bağlantı kontrolü           %R%[90m│%R%[0m
-echo  %R%[90m│         %R%[32m 6%R%[90m -%R%[33m Masaüstünde kısayol oluştur          %R%[90m│%R%[0m
-echo  %R%[90m│         %R%[32m 7%R%[90m -%R%[33m Güncellemeleri Kontrol Et            %R%[90m│%R%[0m
-echo  %R%[90m├───────────────────────────────────────────────────┤%R%[0m
-echo  %R%[90m│         %R%[32m 8%R%[90m -%R%[33m Toolbox Rehber                       %R%[90m│%R%[0m
-echo  %R%[90m│         %R%[32m 9%R%[90m -%R%[33m Güncelleme Notları                   %R%[90m│%R%[0m
-echo  %R%[90m│        %R%[32m 10%R%[90m -%R%[33m Hakkımda-İletişim                    %R%[90m│%R%[0m
-echo  %R%[90m│         %R%[32m X%R%[90m -%R%[36m Menu                                 %R%[90m│%R%[0m
-echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
-set /p value=%R%[92m  İşlem : %R%[0m
-	if %value%==1a (Call :ToolboxSettingsChange AutoUpdate 0)
-	if %value%==1A (Call :ToolboxSettingsChange AutoUpdate 0)
-	if %value%==1K (Call :ToolboxSettingsChange AutoUpdate 1)
-	if %value%==1k (Call :ToolboxSettingsChange AutoUpdate 1)
-	if %value%==2a (Call :ToolboxSettingsChange LogsSettings 0)
-	if %value%==2A (Call :ToolboxSettingsChange LogsSettings 0)
-	if %value%==2K (Call :ToolboxSettingsChange LogsSettings 1)
-	if %value%==2k (Call :ToolboxSettingsChange LogsSettings 1)
-	if %value%==3a (Call :ToolboxSettingsChange PluginSetting 0)
-	if %value%==3A (Call :ToolboxSettingsChange PluginSetting 0)
-	if %value%==3K (Call :ToolboxSettingsChange PluginSetting 1)
-	if %value%==3k (Call :ToolboxSettingsChange PluginSetting 1)
-	if %value%==4a (Call :ToolboxSettingsChange Chocolatey 0
-				    %NSudo% Powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && set "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin")
-	if %value%==4A (Call :ToolboxSettingsChange Chocolatey 0
-					%NSudo% Powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && set "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin")
-	if %value%==4K (Call :ToolboxSettingsChange Chocolatey 1
-					RD /S /Q "%ProgramData%\chocolatey" > NUL 2>&1)
-	if %value%==4k (Call :ToolboxSettingsChange Chocolatey 1
-					RD /S /Q "%ProgramData%\chocolatey" > NUL 2>&1)
-	if %value%==5a (Call :ToolboxSettingsChange InternetCheck 0)
-	if %value%==5A (Call :ToolboxSettingsChange InternetCheck 0)
-	if %value%==5K (Call :ToolboxSettingsChange InternetCheck 1)
-	if %value%==5k (Call :ToolboxSettingsChange InternetCheck 1)
-	if %value%==6 (Call :7ZipExtract "%Location%\Files\lnk.zip" "C:\users\%username%\Desktop")
-	if %value%==7 (Call :UpdateReset
-				   goto OgnitorenKs.Toolbox)
-	if %value%==8 (start https://ognitorenks.com.tr/2022/04/ognitorenks-toolbox-windows-yardimcisi.html)
-	if %value%==9 (start https://github.com/OgnitorenKs/OgnitorenKs.Toolbox/blob/main/Release.Notes.md)
-	if %value%==10 (start https://ognitorenks.com.tr/iletisim)
-	if %value%==x goto OgnitorenKs.Toolbox
-	if %value%==X goto OgnitorenKs.Toolbox
-)
-goto ToolboxSettings
-
-:ToolboxSettingsChange
-FOR /F "tokens=1" %%a in ('findstr /C:"%~1" %Location%\Settings.ini') do (set S1=%%a)
-FOR /F "tokens=2" %%a in ('findstr /C:"%~1" %Location%\Settings.ini') do (set S2= %%a)
-Call :Powershell "(Get-Content %Location%\Settings.ini) | ForEach-Object { $_ -replace '%S1%%S2%', '%S1% %~2' } | Set-Content '%Location%\Settings.ini'"
-Call :ProcessCompleted
-goto :eof
-
-:UpdateReset
-for /f "tokens=2" %%a in ('findstr /i "TimeUpdate" %Location%\Settings.ini') do (
-	Call :Powershell "(Get-Content %Location%\Settings.ini) | ForEach-Object { $_ -replace '%%a', 'xx.xx.xxxx' } | Set-Content '%Location%\Settings.ini'"
-)
+if %Win% EQU 11 (set DR=%R%[90m[%R%[36mA%R%[90m/%R%[36mK%R%[90m]%R%[101m %R%[0m%R%[90m -%R%[33m)
 goto :eof
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
 :UpdateAfter
 cls
-Rename "%Location%\Files\Yedek\Update.bat" "Update.%DateDay%.bat" > NUL 2>&1
+Rename "%Location%\Bin\Yedek\Update.bat" "Update.%DateDay%.bat" > NUL 2>&1
 
 echo %R%[92m Güncelleme sonrası temizlik işlemi yapılıyor.%R%[0m
-if %OSCheck%==10 (echo %R%[92m Güncelleme sonrası yüklenen uygulamalar siliniyor...%R%[0m
+if %Win%==10 (echo %R%[92m Güncelleme sonrası yüklenen uygulamalar siliniyor...%R%[0m
 				  Call :SoftwareCheck Python.exe "/quiet InstallAllUsers=1 PrependPath=1"
 				  Call :NonRemoval Microsoft.549981C3F5F10 549981C3F5F10
 				  Call :NonRemoval Microsoft.Windows.HolographicFirstRun Holographic
@@ -2533,8 +2185,8 @@ Call :RegSave Update "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet" 
 :: SmartScreen
 ::for "tokens=* USEBACKQ" %i in (`wmic.exe useraccount where "name="%username%"" get sid ^| findstr "S-"`) do set currentusername=%i
 ::set currentusername=%currentusername:~0,-3%
-Call :Powershell "Get-CimInstance -ClassName Win32_UserAccount | Select-Object -Property Name,SID" > %Logs%\cusername
-FOR /F "tokens=2" %%a in ('Find "%username%" %Logs%\cusername') do set currentusername=%%a
+Call :Powershell "Get-CimInstance -ClassName Win32_UserAccount | Select-Object -Property Name,SID" > %Location%\Bin\Data\cusername
+FOR /F "tokens=2" %%a in ('Find "%username%" %Location%\Bin\Data\cusername') do set currentusername=%%a
 Call :RegSave Update "HKU\%currentusername%\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" "EnableWebContentEvaluation" REG_DWORD 0x0
 Call :RegSave Update "HKU\%currentusername%\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" "PreventOverride" REG_DWORD 0x0
 Call :RegSave Update "HKU\%currentusername%\SOFTWARE\Policies\Microsoft\Edge" "SmartScreenEnabled" REG_DWORD 0x0
@@ -2813,7 +2465,7 @@ bcdedit /set {current} recoveryenabled no > NUL 2>&1
 powercfg /h off > NUL 2>&1
 bcdedit /set useplatformtick yes > NUL 2>&1
 bcdedit /set disabledynamictick yes > NUL 2>&1
-"%Location%\Files\DevManView.exe" /disable "High precision event timer"
+"%Location%\Bin\DevManView.exe" /disable "High precision event timer"
 
 echo %R%[92m Görev zamanlayıcısında düzenlemeler yapılıyor.%R%[0m
 schtasks /change /TN "\Microsoft\Windows\Windows Defender\Windows Defender Cache Maintenance" /DISABLE > NUL 2>&1
@@ -2853,70 +2505,3 @@ Call :ProcessCompletedReset
 goto menu
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-
-:ProcessCompleted
-mode con cols=39 lines=20
-echo.
-echo            %R%[90m┌───────────────┐%R%[0m
-echo            %R%[90m│%R%[32m               %R%[90m│%R%[0m
-echo            %R%[90m│%R%[32m          ██   %R%[90m│%R%[0m
-echo            %R%[90m│%R%[32m         ██    %R%[90m│%R%[0m
-echo            %R%[90m│%R%[32m   ██   ██     %R%[90m│%R%[0m
-echo            %R%[90m│%R%[32m    ██ ██      %R%[90m│%R%[0m
-echo            %R%[90m│%R%[32m     ███       %R%[90m│%R%[0m
-echo            %R%[90m│               %R%[90m│%R%[0m
-echo            %R%[90m└───────────────┘%R%[0m
-echo.
-echo            %R%[37m İşlem tamamlandı%R%[0m
-timeout /t 2 /nobreak > NUL
-goto :eof
-
-:ProcessCompletedReset
-mode con cols=39 lines=20
-echo.
-echo            %R%[90m┌───────────────┐%R%[0m
-echo            %R%[90m│%R%[32m               %R%[90m│%R%[0m
-echo            %R%[90m│%R%[32m          ██   %R%[90m│%R%[0m
-echo            %R%[90m│%R%[32m         ██    %R%[90m│%R%[0m
-echo            %R%[90m│%R%[32m   ██   ██     %R%[90m│%R%[0m
-echo            %R%[90m│%R%[32m    ██ ██      %R%[90m│%R%[0m
-echo            %R%[90m│%R%[32m     ███       %R%[90m│%R%[0m
-echo            %R%[90m│               %R%[90m│%R%[0m
-echo            %R%[90m└───────────────┘%R%[0m
-echo.
-echo            %R%[37m İşlem tamamlandı%R%[0m
-echo.
-echo       %R%[33m Yeniden başlatmak için %R%[96m'R'%R%[0m
-echo          %R%[33m Devam etmek için %R%[96m'X'%R%[0m
-echo               %R%[33m tuşlayın%R%[0m
-set /p value=%R%[92m                   %R%[0m
-	if %value%==R (shutdown -r -f -t 0&exit)
-	if %value%==r (shutdown -r -f -t 0&exit)
-	if %value%==x goto menu
-	if %value%==X goto menu
-) else 
-	goto menu
-goto :eof
-
-:ToolboxFileError
-mode con cols=80 lines=30
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo                                 %R%[41m EKSİK DOSYA %R%[0m
-echo.
-echo                          %R%[41m Toolbox'ı yeniden indiriniz %R%[0m
-echo. 
-echo               %R%[31m[##################### HATA #####################]%R%[0m  
-echo.
-echo             %R%[31m████ ████ █   █ █ █████ ████ ████ ███ █   █ █  █ ████%R%[0m
-echo             %R%[31m█  █ █    ██  █ █   █   █  █ █  █ █   ██  █ █ █  █   %R%[0m
-echo             %R%[31m█  █ █ ██ █ █ █ █   █   █  █ ████ ██  █ █ █ ██   ████%R%[0m
-echo             %R%[31m█  █ █  █ █  ██ █   █   █  █ █ █  █   █  ██ █ █     █%R%[0m
-echo             %R%[31m████ ████ █   █ █   █   ████ █  █ ███ █   █ █  █ ████%R%[0m
-timeout /t 10 /nobreak > NUL
-start https://ognitorenks.com.tr/2022/04/ognitorenks-toolbox-windows-yardimcisi.html
-exit
