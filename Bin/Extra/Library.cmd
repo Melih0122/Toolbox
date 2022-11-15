@@ -82,13 +82,7 @@ if %TimeLog% NEQ %DateDay% (Call :Powershell "(Get-Content %Location%\Bin\Settin
 goto :eof
 
 :: -------------------------------------------------------------
-:Chocolatey_Check
-:: Chocolatey indirme sisteminin yüklü olup olmadığını kontrol eder. Yüklü değilse kurulum işlemini gerçekleştirir.
-dir /b "%ProgramData%\chocolatey" > NUL 2>&1
-	if %errorlevel% EQU 1 (%Lang% :Chocolatey_1
-						   %NSudoTop% Powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && set "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
-)
-goto :eof
+
 
 :: -------------------------------------------------------------
 :Wget_Check
@@ -153,12 +147,6 @@ FOR /F "tokens=3" %%a in ('reg query "HKLM\SYSTEM\CurrentControlSet\Control\Sess
 goto :eof
 
 :: -------------------------------------------------------------
-:Bug_Fix
-set menu=E%Random%
-set Error=Error%Random%
-goto :eof
-
-:: -------------------------------------------------------------
 :Error_Character
 :: Klasör yolunda Türkçe karakterleri kontrol eder
 set Check=%~1
@@ -192,11 +180,6 @@ echo %R%[1;97m%R%[41m %~1 %R%[0m
 goto :eof
 
 :: -------------------------------------------------------------
-:Border
-mode con cols=%~1 lines=%~2
-goto :eof
-
-:: -------------------------------------------------------------
 :Powershell
 :: Powershell komutları kullanıldığında komut istemi compact moda girmektedir. Bunu önlemek için karakter takımları arasında geçiş yapıyoruz.
 chcp 437 > NUL 2>&1
@@ -212,15 +195,7 @@ Powershell -NoLogo -NoProfile -NonInteractive -ExecutionPolicy Bypass -Command %
 chcp 65001 > NUL 2>&1
 goto :eof
 
-:: -------------------------------------------------------------
-:Chocolatey
-choco install -y --force --limit-output --ignore-checksums %~1
-goto :eof
 
-:: -------------------------------------------------------------
-:Winget
-winget install -e --silent --force --accept-source-agreements --accept-package-agreements --id %~1
-goto :eof
 
 :: -------------------------------------------------------------
 :wget
@@ -250,59 +225,7 @@ ping -n 1 %link% > NUL
 goto :eof
 
 :: -------------------------------------------------------------
-:Mount_Check
-:: Mount klasöründe yüklü sistem var ise değişkeni ayarlar. Yok ise Mount klasörünü siler
-dir /b "%Location%\Mount\Windows\regedit.exe" > NUL 2>&1
-	if %errorlevel% EQU 0 (set Error=7)
-	if %errorlevel% EQU 1 (RD /S /Q "%Location%\Mount" > NUL 2>&1)	
-:: Yüklü regedit kayıtları var ise kaldırır. Ancak builder aracı dışında farklı isimle kayıt edildiyse kaldırmaz.
-reg query HKLM | find /C /I "OFF_" > NUL 2>&1
-	if %errorlevel% EQU 0 (Call :RegeditCollect)
-reg query HKLM | findstr /i "{" > NUL 2>&1
-	if %errorlevel% EQU 0 (Call :RegeditCollect)
-:: Mount klasörü işlem öncesi silinip yeniden oluşturulması olası hataların önüne geçmektedir.
-MD "%Location%\Mount" > NUL 2>&1
-goto :eof
 
-:: -------------------------------------------------------------
-:Regedit_Convert
-:: Offline regedit eklemek için Regedit klasörüne eklenen .reg dosyaları uygun şekilde düzenlenir.
-:: Regedit kayıtlarında boşluk ve Türkçe harf olma ihtimaline karşılık isimlerine random sayılar veriyorum.
-FOR /f "tokens=*" %%g in ('dir /b /s %Location%\Add\Image\Regedit\*.reg 2^>NUL') do (Call :Rename_Reg "%%g")
-timeout /t 1 /nobreak > NUL
-:: Regedit kayıtlarını offline kayıtlar göre düzenler.
-FOR /F "tokens=*" %%g in ('dir /b /s %Location%\Add\Image\Regedit\*.reg 2^>NUL') do (
-	Call :Powershell "(Get-Content %%g) | ForEach-Object { $_ -replace 'HKEY_USERS', 'HKU' } | Set-Content '%%g'"
-)
-::
-FOR /F "tokens=*" %%g in ('dir /b /s %Location%\Add\Image\Regedit\*.reg 2^>NUL') do (
-	Call :Powershell "(Get-Content %%g) | ForEach-Object { $_ -replace 'HKEY_LOCAL_MACHINE', 'HKLM' } | Set-Content '%%g'"
-)
-::
-FOR /F "tokens=*" %%g in ('dir /b /s %Location%\Add\Image\Regedit\*.reg 2^>NUL') do (
-	Call :Powershell "(Get-Content %%g) | ForEach-Object { $_ -replace 'HKEY_CLASSES_ROOT', 'HKCR' } | Set-Content '%%g'"
-)
-::
-FOR /F "tokens=*" %%g in ('dir /b /s %Location%\Add\Image\Regedit\*.reg 2^>NUL') do (
-	Call :Powershell "(Get-Content %%g) | ForEach-Object { $_ -replace 'HKEY_CURRENT_USER', 'HKCU' } | Set-Content '%%g'"
-)
-::
-FOR /F "skip=2 delims=\_ tokens=2" %%g in ('Find "HKU\S-1-5" %Location%\Add\Image\Regedit\*.reg 2^>NUL') do (set ValueR=%%g)
-FOR /F "tokens=*" %%g in ('dir /b /s %Location%\Add\Image\Regedit\*.reg 2^>NUL') do (
-	Call :Powershell "(Get-Content %%g) | ForEach-Object { $_ -replace '%ValueR%', '.Default' } | Set-Content '%%g'"
-)
-timeout /t 2 /nobreak > NUL
-Call :Powershell_2 "%Location%\Bin\ConvertReg.ps1" "%Location%\Add\Image\Regedit" "%Location%\Output\Regedit"
-:: Regedit kayıtlarını yükler
-FOR /F "tokens=*" %%g in ('dir /b /s %Location%\Output\Regedit\*.reg 2^>NUL') do (
-	Regedit /s %%g
-)
-goto :eof
-
-:: -------------------------------------------------------------
-:Rename_Reg
-Rename "%~1" "%Random%%~x1" > NUL 2>&1
-goto :eof
 
 :: -------------------------------------------------------------
 :Builder_Reader
@@ -310,89 +233,7 @@ goto :eof
 FOR /F "tokens=2" %%a in ('findstr /C:"%~2" %Location%\Configs\Bulilder\') do (set Builder=%%a)
 goto :eof
 
-:: -------------------------------------------------------------
-:OgnitorenKs.Reader
-%~3  %R%[90m┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐%R%[0m
-%~3  %R%[90m│%R%[1;97m%~4%R%[90m│%R%[0m
-%~3  %R%[90m├───────┬────────┬─────────────┬────────┬─────────────┬────────────────────────────────────────────────────────────────────────┤%R%[0m
-%~5  %R%[90m├───────┴────────┴─────────────┴────────┴─────────────┴────────────────────────────────────────────────────────────────────────┤%R%[0m
-%~5  %R%[90m│%R%[1;97m%~6%R%[90m│%R%[0m
-%~5  %R%[90m├───────┬────────┬─────────────┬────────┬─────────────┬────────────────────────────────────────────────────────────────────────┤%R%[0m
-%~2  %R%[90m┌───────┬────────┬─────────────┬────────┬─────────────┬────────────────────────────────────────────────────────────────────────┐%R%[0m
-echo  %R%[90m│%R%[0m %R%[32mINDEX%R%[0m %R%[90m│%R%[0m %R%[32mMİMARİ%R%[0m %R%[90m│%R%[0m %R%[32m   SÜRÜM%R%[0m    %R%[90m│%R%[0m  %R%[32mDİL%R%[0m   %R%[90m│%R%[0m    %R%[32mEDİT%R%[0m     %R%[90m│%R%[0m    %R%[32mİSİM%R%[0m
-FOR /F "tokens=3" %%a IN ('Dism /Get-WimInfo /WimFile:%~1 ^| FIND "Index"') DO (
-	FOR /F "tokens=3" %%b IN ('Dism /Get-WimInfo /WimFile:%~1 /Index:%%a ^| FIND "Architecture"') DO (
-		FOR /F "tokens=3" %%c in ('Dism /Get-WimInfo /WimFile:%~1  /Index:%%a ^| Find "Version"') do (
-			FOR /F "tokens=3 delims=." %%d in ('"echo %%c"') do (
-				FOR /F "tokens=4" %%e in ('Dism /Get-WimInfo /WimFile:%~1  /Index:%%a ^| Find "Build"') do (
-					FOR /F "tokens=1" %%f in ('Dism /Get-WimInfo /WimFile:%~1  /Index:%%a ^| findstr /i Default') do (
-						FOR /F "tokens=2 delims=':'" %%g in ('Dism /Get-WimInfo /WimFile:%~1  /Index:%%a ^| findstr /i Name') do (
-							FOR /F "tokens=2 delims='-',':' " %%h in ('Dism /Get-WimInfo /WimFile:%~1  /Index:%%a ^| findstr /i Modified') do (
-								echo  %R%[90m├───────┼────────┼─────────────┼────────┼─────────────┼────────────────────────────────────────────────────────────────────────┤%R%[0m
-								echo      %R%[92m%%a%R%[0m   ►   %R%[33m%%b%R%[0m    %R%[36m %%d.%%e%R%[0m    %R%[33m%%f%R%[0m    %R%[36m%%h%R%[0m  %R%[37m %%g%R%[0m
-								)
-							)
-						)
-					)
-				)
-			)
-		)
-	)
-)
-%~2  %R%[90m└───────┴────────┴─────────────┴────────┴─────────────┴────────────────────────────────────────────────────────────────────────┘%R%[0m
-%~7  %R%[90m└───────┴────────┴─────────────┴────────┴─────────────┴────────────────────────────────────────────────────────────────────────┘%R%[0m
-goto :eof
 
-:: ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► 
-:Dism_Asistan
-Call :Border 130 40
-echo %R%[1;97m%R%[100m %~1 %R%[0m
-echo.
-Call :%~2
-goto :eof
-
-:Dism_Mount
-Dism /Mount-Image /ImageFile:%MainWim% /MountDir:"%Mount%" /Index:%~1
-goto :eof
-
-:Dism_ReMount
-Dism /Remount-Image /MountDir:"%Mount%"
-goto :eof
-
-:Dism_UnMount
-:: Dism bazı durumlarda hata verip kapanabiliyor. Bu tarz bir durumda Powershell üzerinden toplama işlemi yapması için önlem aldım.
-Call :RegeditCollect
-Dism /Unmount-Image /MountDir:%Mount% /commit
-	if %errorlevel% EQU 1 (echo %R%[31m Dism komutu hata verdiği için Powershell üzerinden toplama işlemi yapılıyor...%R%[0m
-						   Call :Powershell "Dismount-WindowsImage -Path '%Mount%' -Save")
-goto :eof
-
-:Dism_Driver
-Dism /Image:%Mount% /Add-Driver /Driver:%Location%\Add\Image\Driver /Recurse
-goto :eof
-
-:Dism_Update
-for /f %%g in ('"dir /b %Location%\Add\Image\Update\*"') do (
-	Dism /Image:%Mount% /Add-Package /Packagepath=%Location%\Add\Image\Update\%%g
-)
-goto :eof
-
-:Dism_WinSxS
-Dism /Image:%Mount% /Cleanup-Image /StartComponentCleanup
-goto :eof
-
-:Dism_PackagePath
-FOR /F "tokens=*" %%g in ('dir /b /s %~1') do (
-	Dism /Image:%Mount% /Add-Package /PackagePath=%%g
-)
-goto :eof
-
-:Wimlib
-"%Location%\Bin\wimlib-imagex.exe" %*
-goto :eof
-
-:: ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄
-:: ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ► ►
 :RegAdd
 Reg add "%~1" /v "%~2" /t "%~3" /d "%~4" /f > NUL 2>&1
 	if %errorlevel% EQU 1 (%NSudoTop% Reg add "%~1" /v "%~2" /t "%~3" /d "%~4" /f > NUL 2>&1)
