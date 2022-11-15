@@ -82,16 +82,6 @@ if %TimeLog% NEQ %DateDay% (Call :Powershell "(Get-Content %Location%\Bin\Settin
 goto :eof
 
 :: -------------------------------------------------------------
-
-
-:: -------------------------------------------------------------
-:Wget_Check
-:: Wget kontrolü yapar, yoksa indirir.
-dir /b "%Location%\Bin\wget.exe" > NUL 2>&1
-	if %errorlevel% EQU 1 (Call :PSDownload "%Location%\Bin\wget.exe")
-goto :eof
-
-:: -------------------------------------------------------------
 :Language_Select
 FOR /F "tokens=3" %%g in ('Findstr /i "Batch_Language" %Location%\Bin\Settings.ini') do (set Language_Select=%%g)
 goto :eof
