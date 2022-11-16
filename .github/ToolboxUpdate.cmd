@@ -51,8 +51,8 @@ DEL /F /Q /A "%Location%\Toolbox.zip" > NUL 2>&1
 cls&Call :Panel "[■■■■■■■■■■■■■■■■■UPDATE_COMPLETE■■■■■■■■■■■■■■■■]" "%R%[92m   Updating OgnitorenKs Toolbox...%R%[0m"
 for /f "tokens=2" %%a in ('echo %date%') do set Date=%%a
 set Date=%Date:~0,-8%.%Date:~3,-5%.%Date:~6%
-for /f "tokens=2" %%a in ('findstr /i "TimeUpdate" %Location%\Settings.ini') do (
-	Call :Powershell "(Get-Content %Location%\Settings.ini) | ForEach-Object { $_ -replace '%%a', '%Date%' } | Set-Content '%Location%\Settings.ini'"
+for /f "tokens=2" %%a in ('findstr /i "TimeUpdate" %Location%\Bin\Settings.ini') do (
+	Call :Powershell "(Get-Content %Location%\Settings.ini) | ForEach-Object { $_ -replace '%%a', '%Date%' } | Set-Content '%Location%\Bin\Settings.ini'"
 )
 timeout /t 2 /nobreak > NUL
 :: Güncel Toolbox açılır.
