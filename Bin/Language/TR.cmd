@@ -79,7 +79,7 @@ goto :eof
 ::------------------------------------------------------------------------------------------------------
 set xognitorenksx=%R%[90m►
 echo   %R%[90m┌──────────────────────────────────────────────────────────────────────────────────────────────┐%R%[0m
-echo   %R%[90m│%R%[1;97m%R%[100m                             Online Katılımsız Uygulama Yükleyici                             %R%[0m%R%[90m│%R%[0m
+echo   %R%[90m│%R%[92m                             Online Katılımsız Uygulama Yükleyici                             %R%[90m│%R%[0m
 echo   %R%[90m├────────────────────────────┬──────────────────────────────┬──────────────────────────────────┤%R%[0m
 echo   %R%[90m│%R%[32m    1-%R%[33m All in One Runtimes  %R%[90m│%xognitorenksx% Sıkıştırma                  %R%[90m│%xognitorenksx% Uzak Bağlantı                   %R%[90m│%R%[0m
 echo   %R%[90m│%xognitorenksx% Mesaj                     %R%[90m│%R%[32m   28-%R%[36m 7-Zip                  %R%[90m│%R%[32m   53-%R%[36m Teamviewer                 %R%[90m│%R%[0m
@@ -121,7 +121,7 @@ goto :eof
 
 :Menu_3
 echo  %R%[90m┌────────────────────────────────────────────────────────────────────────┐%R%[0m
-echo  %R%[90m│%R%[1;97m%R%[100m      Kullanıcı Hesap Yönetimi                 Lisans Yönetimi          %R%[0m%R%[90m│%R%[0m
+echo  %R%[90m│%R%[92m      Kullanıcı Hesap Yönetimi                 Lisans Yönetimi          %R%[90m│%R%[0m
 echo  %R%[90m├──────────────────────────────────────┬─────────────────────────────────┤%R%[0m
 echo  %R%[90m│%R%[32m  1-%R%[33m Administrator Aktifleştir        %R%[90m│%R%[32m  8-%R%[36m Lisans Gir%R%[90m [ipk]            │%R%[0m
 echo  %R%[90m│%R%[32m  2-%R%[33m Administrator Kapat              %R%[90m│%R%[32m  9-%R%[36m Lisans Durumu%R%[90m [dli]         │%R%[0m
@@ -135,13 +135,13 @@ goto :eof
 
 :Menu_4
 echo  %R%[90m┌───────────────────────────────────────────────────┐%R%[0m
-echo  %R%[90m│%R%[1;97m%R%[100m             Çalışma Öncelik Planlayıcı            %R%[0m%R%[90m│%R%[0m
+echo  %R%[90m│%R%[92m             Çalışma Öncelik Planlayıcı            %R%[90m│%R%[0m
 echo  %R%[90m├───────────────────────────────────────────────────┤%R%[0m
 echo  %R%[90m│   %R%[32m 1.%R%[33m Yüksek                                      %R%[90m│%R%[0m
 echo  %R%[90m│   %R%[32m 2.%R%[33m Normal Üstü                                 %R%[90m│%R%[0m
 echo  %R%[90m│   %R%[32m 3.%R%[33m Normal Altı                                 %R%[90m│%R%[0m
 echo  %R%[90m│   %R%[32m 4.%R%[33m Düşük                                       %R%[90m│%R%[0m
-echo  %R%[90m│   %R%[32m X.%R%[36m Menu                                        %R%[90m│%R%[0m
+echo  %R%[90m│   %R%[32m X.%R%[37m Menu                                        %R%[90m│%R%[0m
 echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
 goto :eof
 
@@ -153,7 +153,7 @@ goto :eof
 
 :Menu_4
 echo  %R%[90m┌───────────────────────────────────────────────────┐%R%[0m
-echo  %R%[90m│%R%[1;97m%R%[100m            Otomatik Bilgisayar Kapatma            %R%[0m%R%[90m│%R%[0m
+echo  %R%[90m│%R%[92m            Otomatik Bilgisayar Kapatma            %R%[90m│%R%[0m
 echo  %R%[90m├───────────────────────────────────────────────────┤%R%[0m
 echo  %R%[90m│                 %R%[32m 0.%R%[33m 30%R%[90m [Dakika]                   │%R%[0m
 echo  %R%[90m│                 %R%[32m 1.%R%[33m  1%R%[90m [Saat]                     │%R%[0m
@@ -165,7 +165,7 @@ echo  %R%[90m│                 %R%[32m 6.%R%[33m  6%R%[90m [Saat]             
 echo  %R%[90m│                 %R%[32m 7.%R%[33m  7%R%[90m [Saat]                     │%R%[0m
 echo  %R%[90m│                 %R%[32m 8.%R%[33m  8%R%[90m [Saat]                     │%R%[0m
 echo  %R%[90m│                 %R%[32m 9.%R%[33m  Manuel                       %R%[90m│%R%[0m
-echo  %R%[90m│                 %R%[32m X.%R%[36m  Menu                         %R%[90m│%R%[0m
+echo  %R%[90m│                 %R%[32m X.%R%[37m  Menu                         %R%[90m│%R%[0m
 echo  %R%[90m├───────────────────────────────────────────────────┤%R%[0m
 echo  %ShutDownTime%
 echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
@@ -185,53 +185,53 @@ goto :eof
 
 :Menu_5
 echo  %R%[90m┌───────────────────────────────────────────────────┐%R%[0m
-echo  %R%[90m│%R%[1;97m%R%[100m                Windows Özelleştirme               %R%[0m%R%[90m│%R%[0m
+echo  %R%[90m│%R%[92m                Windows Özelleştirme               %R%[90m│%R%[0m
 echo  %R%[90m├───────────────────────────────────────────────────┤%R%[0m
 echo  %R%[90m│   %R%[32m 1.%R%[33m Taskbar saat yanı simge ayarı%R%[90m [GÖSTER/GİZLE]│%R%[0m
 echo  %R%[90m│   %R%[32m 2.%R%[33m Bildirim Alanı%R%[90m [AÇ/KAPAT]                   │%R%[0m
 echo  %R%[90m│   %R%[32m 3.%R%[33m Taskbar Hava Durumu%R%[90m [AÇ/KAPAT]              │%R%[0m
 echo  %R%[90m│   %R%[32m 4.%R%[33m Taskbar Simge Konumu%R%[90m [SOL/ORTA]             │%R%[0m
-echo  %R%[90m│   %R%[32m X.%R%[36m Menu                                        %R%[90m│%R%[0m
+echo  %R%[90m│   %R%[32m X.%R%[37m Menu                                        %R%[90m│%R%[0m
 echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
 goto :eof
 
 :Menu_6
 echo  %R%[90m┌───────────────────────────────────────────────────┐%R%[0m
-echo  %R%[90m│%R%[1;97m%R%[100m               Saat Yanı Simge Ayarı               %R%[0m%R%[90m│%R%[0m
+echo  %R%[90m│%R%[92m               Saat Yanı Simge Ayarı               %R%[90m│%R%[0m
 echo  %R%[90m├───────────────────────────────────────────────────┤%R%[0m
 echo  %R%[90m│   %R%[32m 0.%R%[33m Hepsini Göster                              %R%[90m│%R%[0m
 echo  %R%[90m│   %R%[32m 1.%R%[33m Hepsini Gizle                               %R%[90m│%R%[0m
-echo  %R%[90m│   %R%[32m X.%R%[36m Menu                                        %R%[90m│%R%[0m
+echo  %R%[90m│   %R%[32m X.%R%[37m Menu                                        %R%[90m│%R%[0m
 echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
 goto :eof
 
 :Menu_7
 echo  %R%[90m┌───────────────────────────────────────────────────┐%R%[0m
-echo  %R%[90m│%R%[1;97m%R%[100m               Bildirim Alanı Ayarı                %R%[0m%R%[90m│%R%[0m
+echo  %R%[90m│%R%[92m               Bildirim Alanı Ayarı                %R%[90m│%R%[0m
 echo  %R%[90m├───────────────────────────────────────────────────┤%R%[0m
 echo  %R%[90m│   %R%[32m 0.%R%[33m Açık                                        %R%[90m│%R%[0m
 echo  %R%[90m│   %R%[32m 1.%R%[33m Kapalı                                      %R%[90m│%R%[0m
-echo  %R%[90m│   %R%[32m X.%R%[36m Menu                                        %R%[90m│%R%[0m
+echo  %R%[90m│   %R%[32m X.%R%[37m Menu                                        %R%[90m│%R%[0m
 echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
 goto :eof
 
 :Menu_8
 echo  %R%[90m┌───────────────────────────────────────────────────┐%R%[0m
-echo  %R%[90m│%R%[1;97m%R%[100m         Görev Çubuğu Hava Durumu Ayarı            %R%[0m%R%[90m│%R%[0m
+echo  %R%[90m│%R%[92m         Görev Çubuğu Hava Durumu Ayarı            %R%[90m│%R%[0m
 echo  %R%[90m├───────────────────────────────────────────────────┤%R%[0m
 echo  %R%[90m│   %R%[32m 0.%R%[33m Kapat                                       %R%[90m│%R%[0m
 echo  %R%[90m│   %R%[32m 1.%R%[33m Aç                                          %R%[90m│%R%[0m
-echo  %R%[90m│   %R%[32m X.%R%[36m Menu                                        %R%[90m│%R%[0m
+echo  %R%[90m│   %R%[32m X.%R%[37m Menu                                        %R%[90m│%R%[0m
 echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
 goto :eof
 
 :Menu_9
 echo  %R%[90m┌───────────────────────────────────────────────────┐%R%[0m
-echo  %R%[90m│%R%[90m            Görev Çubuğu Simge Konumu              │%R%[0m
+echo  %R%[90m│%R%[92m            Görev Çubuğu Simge Konumu              %R%[90m│%R%[0m
 echo  %R%[90m├───────────────────────────────────────────────────┤%R%[0m
 echo  %R%[90m│   %R%[32m 0.%R%[33m Sol                                         %R%[90m│%R%[0m
 echo  %R%[90m│   %R%[32m 1.%R%[33m Orta                                        %R%[90m│%R%[0m
-echo  %R%[90m│   %R%[32m X.%R%[36m Menu                                        %R%[90m│%R%[0m
+echo  %R%[90m│   %R%[32m X.%R%[37m Menu                                        %R%[90m│%R%[0m
 echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
 goto :eof
 
@@ -776,6 +776,7 @@ echo.
 echo HATA! Klasör yolunda Türkçe karakter var
 echo.
 echo Toolbox kapanıyor...%R%[0m
+timeout /t 4 /nobreak > NUL
 goto :eof
 
 :Error_2
@@ -784,6 +785,7 @@ echo.
 echo HATA! Klasör yolunda boşluk var
 echo.
 echo Toolbox kapanıyor...%R%[0m
+timeout /t 4 /nobreak > NUL
 goto :eof
 
 :Error_6
@@ -792,4 +794,5 @@ echo.
 echo HATA! Sistem mimarisi x64 değil
 echo.
 echo Toolbox kapanıyor...%R%[0m
+timeout /t 4 /nobreak > NUL
 goto :eof

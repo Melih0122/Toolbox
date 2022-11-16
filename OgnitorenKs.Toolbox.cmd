@@ -30,47 +30,75 @@ title  OgnitorenKs Toolbox
 set version=3.8
 cls
 
+:: -------------------------------------------------------------
 :: Renklendirme
 setlocal
 for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E#&echo on&for %%b in (1) do rem"') do (set R=%%b)
 
+:: -------------------------------------------------------------
 :: Konum bilgisi
 cd /d "%~dp0"
 for /f %%a in ('"cd"') do set Location=%%a
 
+:: -------------------------------------------------------------
 :: Değişkenler
 set Library=Call "%Location%\Bin\Extra\Library.cmd"
 set Lang=Call "%Location%\Bin\Language\TR.cmd"
 set NSudo="%Location%\Bin\NSudo.exe" -U:T -P:E -Wait -ShowWindowMode:hide cmd /c
 set NSudo2="%Location%\Bin\NSudo.exe" -U:E -P:E -ShowWindowMode:hide cmd /c
 
+:: -------------------------------------------------------------
 :: Admin yetkisini kontrol eder
 reg query "HKU\S-1-5-19" > NUL 2>&1
 	if %errorlevel%==1 (%NSudo2% Powershell -command "Start-Process '%Location%\OgnitorenKs.Toolbox.cmd'"
 						exit)
 
+:: -------------------------------------------------------------
 :: x64 sistem kontrolü yapılır.
 FOR /F "tokens=3" %%a in ('reg query "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v "PROCESSOR_ARCHITECTURE" 2^>NUL') do (
 	if %%a NEQ AMD64 (cls&%Lang% :Error_6&timeout /t 4 /nobreak > NUL&exit)
 )
 
+:: -------------------------------------------------------------
 :: Klasör yolunda Türkçe karakterleri kontrol eder
 echo %Location% | Find /I "ö" > NUL 2>&1
-	if %errorlevel% EQU 0 (cls&%Lang% :Error_1&timeout /t 4 /nobreak > NUL&exit)
+	if %errorlevel% EQU 0 (cls&%Lang% :Error_1&exit)
 echo %Location% | Find /I "ü" > NUL 2>&1
-	if %errorlevel% EQU 0 (cls&%Lang% :Error_1&timeout /t 4 /nobreak > NUL&exit)
+	if %errorlevel% EQU 0 (cls&%Lang% :Error_1&exit)
 echo %Location% | Find /I "ğ" > NUL 2>&1
-	if %errorlevel% EQU 0 (cls&%Lang% :Error_1&timeout /t 4 /nobreak > NUL&exit)
+	if %errorlevel% EQU 0 (cls&%Lang% :Error_1&exit)
 echo %Location% | Find /I "ş" > NUL 2>&1
-	if %errorlevel% EQU 0 (cls&%Lang% :Error_1&timeout /t 4 /nobreak > NUL&exit)
+	if %errorlevel% EQU 0 (cls&%Lang% :Error_1&exit)
 echo %Location% | Find /I "ç" > NUL 2>&1
-	if %errorlevel% EQU 0 (cls&%Lang% :Error_1&timeout /t 4 /nobreak > NUL&exit)
+	if %errorlevel% EQU 0 (cls&%Lang% :Error_1&exit)
 echo %Location% | Find "ı" > NUL 2>&1
-	if %errorlevel% EQU 0 (cls&%Lang% :Error_1&timeout /t 4 /nobreak > NUL&exit)
+	if %errorlevel% EQU 0 (cls&%Lang% :Error_1&exit)
 echo %Location% | Find "İ" > NUL 2>&1
-	if %errorlevel% EQU 0 (cls&%Lang% :Error_1&timeout /t 4 /nobreak > NUL&exit)
+	if %errorlevel% EQU 0 (cls&%Lang% :Error_1&exit)
 :: Klasör yolunda boşlukları tespit eder.
-if "%Location%" NEQ "%Location: =%" (cls&%Lang% :Error_2&timeout /t 4 /nobreak > NUL&exit)
+if "%Location%" NEQ "%Location: =%" (cls&%Lang% :Error_2&exit)
+
+:: -------------------------------------------------------------
+:: Chocolatey indirme sisteminin yüklü olup olmadığını kontrol eder. Yüklü değilse kurulum işlemini gerçekleştirir.
+dir /b "%ProgramData%\chocolatey" > NUL 2>&1
+	if %errorlevel% EQU 1 (%Lang% :Chocolatey_1
+						   %NSudo% Powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && set "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+)
+:: -------------------------------------------------------------
+:: Desktop App Installer kontrol eder
+Call :Powershell "Get-AppxPackage -AllUsers" > %Location%\Bin\Data\Appx.txt
+Findstr /i "Microsoft.DesktopAppInstaller_8wekyb3d8bbwe" %Location%\Bin\Data\Appx.txt > NUL 2>&1
+	if %errorlevel% NEQ 0 (set Winget=1)
+	if %errorlevel% EQU 0 (set Winget=0)
+	
+:: -------------------------------------------------------------
+:: Eksik dosya kontrol
+::FOR %%a in (DevManView.exe Settings.ini) do (Call :Check_File "%Location%\Bin\%%a")
+
+:: -------------------------------------------------------------
+:: Sistem bilgileri alınır
+Call :Powershell "Get-CimInstance Win32_OperatingSystem | Select-Object Caption,InstallDate,OSArchitecture,RegisteredUser,CSName | FL" > %Location%\Bin\Data\OS.txt
+FOR /F "tokens=5" %%a in ('FIND "Caption" %Logs%\OS.txt') do set Win=%%a
 
 :: -------------------------------------------------------------
 :: Güncelleştirme kontrol eder
@@ -78,14 +106,14 @@ if "%Location%" NEQ "%Location: =%" (cls&%Lang% :Error_2&timeout /t 4 /nobreak >
 Call :Date
 cls
 :: Settings.ini dosyası içinden güncelleme ayarını kontrol ederek yönlendirme yapar.
-FOR /F "tokens=2" %%a in ('findstr /C:"AutoUpdate" %Location%\Bin\Settings.ini') do (if %%a EQU 1 (goto :eof))
+FOR /F "tokens=2" %%a in ('findstr /C:"AutoUpdate" %Location%\Bin\Settings.ini') do (if %%a EQU 1 (goto menu))
 :: Builder otomatik güncelleme işleminin durumunu kontrol eder ve yönlendirir.
 %Lang% :Update_1
 FOR /F "tokens=2" %%a in ('findstr /C:"TimeUpdate" %Location%\Bin\Settings.ini') do (set TimeLog=%%a)
 :: Settings.ini dosyasına kaydedilen tarih ile güncel tarih verisi karşılaştırılır. Tarihler farklı ise güncellemeler kontrol edilir.
 if %TimeLog% NEQ %DateDay% (Call :Powershell "(Get-Content %Location%\Bin\Settings.ini) | ForEach-Object { $_ -replace '%TimeLog%', '%DateDay%' } | Set-Content '%Location%\Bin\Settings.ini'"
 							Call :PSDownload "%Location%\Bin\Extra\Links.txt"
-							FOR /F "tokens=3" %%b in ('Findstr /C:"Version" %Location%\Bin\Extra\Links.txt') do (
+							FOR /F "tokens=3" %%b in ('Findstr /C:"ToolboxVersion" %Location%\Bin\Extra\Links.txt') do (
 							set NewVersion=%%b
 							if %NewVersion% NEQ %version% (cls&%Lang% :Update_2
 														   timeout /t 5 /nobreak > NUL
@@ -94,33 +122,7 @@ if %TimeLog% NEQ %DateDay% (Call :Powershell "(Get-Content %Location%\Bin\Settin
 														   exit)
 	)
 )
-
-:: -------------------------------------------------------------
-:: Chocolatey indirme sisteminin yüklü olup olmadığını kontrol eder. Yüklü değilse kurulum işlemini gerçekleştirir.
-dir /b "%ProgramData%\chocolatey" > NUL 2>&1
-	if %errorlevel% EQU 1 (%Lang% :Chocolatey_1
-						   %NSudo% Powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && set "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
-)
-
-:: -------------------------------------------------------------
-:: Desktop App Installer kontrol eder
-Powershell -command "Get-AppxPackage -AllUsers" | Findstr /i "Microsoft.DesktopAppInstaller_8wekyb3d8bbwe" > NUL 2>&1
-	if %errorlevel% NEQ 0 (set Winget=1)
-	if %errorlevel% EQU 0 (set Winget=0)
-	
-:: -------------------------------------------------------------
-:: Eksik dosya kontrol
-FOR %%a in (DevManView.exe Settings.ini) do (Call :Check_File "%Location%\Bin\%%a")
-
-:: ==============================================================================================================================
-
-:: Sistem bilgileri alınır
-%Library% :Powershell "Get-CimInstance Win32_OperatingSystem | Select-Object Caption,InstallDate,OSArchitecture,RegisteredUser,CSName | FL" > %Location%\Bin\Data\OS.txt
-FOR /F "tokens=5" %%a in ('FIND "Caption" %Logs%\OS.txt') do set Win=%%a
-
-
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-
 :menu
 Call :Value_Reset
 :: -------------------------------------------------------------
@@ -141,7 +143,7 @@ echo    %R%[90m█  █ █  █ █  ██  █    █   █  █ █ █  █
 echo    %R%[90m████ ████ █   █ ███   █   ████ █  █ ███ █   █ █  █ ████    %R%[90m  █   ████ ████ ███ ███  ████ █   █%R%[0m
 echo    %R%[90mhttps://ognitorenks.com.tr                                                                 %R%[90m%version%%R%[0m
 echo.
-echo              %R%[90m %Value2% : %Value1% ^| %Value4% ^| %Value3%%R%[0m
+echo              %R%[90m %Value2%: %Value1% ^| %Value4% ^| %Value3%%R%[0m
 :: Dil dosyasından menüyü çağırır
 %Lang% :Menu_1
 :: Dil dosyasından değişken mesajını çağırır.
@@ -156,9 +158,9 @@ Call :Upper menu "%menu%"
 	if %menu% EQU 5 (goto UpdateAfter)
 	if %menu% EQU 6 (goto WindowsRepair)
 	if %menu% EQU 7 (Call :PC_Cleaner)
-	if %menu% EQU 8 (%Library% :Powershell "Start-Process '%Location%\Extra\Sistem.Hakkinda.bat'")
+	if %menu% EQU 8 (Call :Powershell "Start-Process '%Location%\Extra\Sistem.Hakkinda.bat'")
 	if %menu% EQU 9 (Call :WifiInfo)
-	if %menu% EQU 10 (%Library% :Powershell "Start-Process '%Location%\Extra\Pingolc.bat'")
+	if %menu% EQU 10 (Call :Powershell "Start-Process '%Location%\Extra\Pingolc.bat'")
 	if %menu% EQU 11 (Call :Fat32toNTFS)
 	if %menu% EQU 12 (goto shutdownpc)
 	if %menu% EQU 13 (Call :Update.Appx.Installer)
@@ -307,7 +309,7 @@ mkdir "%localappdata%\Packages\Microsoft.Windows.Search_cw5n1h2txyewy\LocalState
 DEL /F /Q /A %localappdata%\Packages\Microsoft.Windows.Search_cw5n1h2txyewy\TempState\* > NUL 2>&1
 Call :delete2 "HKCU\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\TrayNotify" IconStreams
 Call :delete2 "HKCU\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\TrayNotify" PastIconsStream
-%Library% :Powershell "Start-Process 'C:\Windows\explorer.exe'"
+Call :Powershell "Start-Process 'C:\Windows\explorer.exe'"
 cls&%Lang% :Repair_1&%Lang% :Repair_3
 sfc /scannow
 cls&%Lang% :Repair_1&%Lang% :Repair_4
@@ -358,7 +360,7 @@ cls&%Lang% :Repair_1&%Lang% :Repair_10
 :: Genel hata onarımı
 Call :key "HKCU\Software\Microsoft\Internet Explorer\LowRegistry\Audio\PolicyConfig\PropertyStore" & :: Ses düzeylerinin kaydedilmeme sorunu onarır.
 Call :delete2 "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer" "NoTrayItemsDisplay" & :: Görev çubuğunda ekran tepsisi simgelerini açar
-%Library% :Powershell "Start-Process '%windir%\System32\ctfmon.exe'"
+Call :Powershell "Start-Process '%windir%\System32\ctfmon.exe'"
 Call :ProcessCompletedReset
 goto menu
 
@@ -404,7 +406,7 @@ RD /S /Q "%Location%\Edit" > NUL 2>&1
 MD "%Location%\Edit\Update" > NUL 2>&1
 MD "%Location%\Edit\Appx" > NUL 2>&1
 timeout /t 1 /nobreak > NUL
-%Library% :Powershell "Start-Process '%Location%\Edit'"
+Call :Powershell "Start-Process '%Location%\Edit'"
 pause > NUL
 cls
 
@@ -414,7 +416,7 @@ for /f %%a in ('"dir /b %Location%\Edit\Update\*"') do (
 )
 :: Appx yükleyici
 for /f %%b in ('"dir /b %Location%\Edit\Appx\*"') do (
-	%Library% :Powershell "Add-AppxPackage -Path %Location%\Edit\Appx\%%b"
+	Call :Powershell "Add-AppxPackage -Path %Location%\Edit\Appx\%%b"
 )
 RD /S /Q "%Location%\Edit" > NUL 2>&1
 %Library% :ProcessCompleted
@@ -566,7 +568,7 @@ set /p hashpath=%R%[37m  ►%R%[96m %Choice%: %R%[0m
 cls
 echo.
 %Lang% Hash_1
-%Library% :Powershell "Get-filehash %hashpath% | Select-Object Hash | FL" > %Location%\Bin\Data\hash
+Call :Powershell "Get-filehash %hashpath% | Select-Object Hash | FL" > %Location%\Bin\Data\hash
 FOR /F "tokens=3" %%a in ('findstr /C:"Hash" %Location%\Bin\Data\hash') do set hashvalue2=%%a
 if %hashvalue2% equ %hashvalue1% (
   %Lang% :Value_11&echo %hashcontrol%
@@ -606,9 +608,9 @@ goto :eof
 :NonRemoval
 mkdir "%Location%\Bin\Remove" > NUL 2>&1
 copy /y "%Location%\Bin\Remove.py" "%Location%\Bin\Remove" > NUL 2>&1
-%Library% :Powershell "(Get-Content %Location%\Bin\Remove\Remove.py) | ForEach-Object { $_ -replace 'xxxxxxx', '%~1' } | Set-Content '%Location%\Bin\Remove\Remove.py'"
+Call :Powershell "(Get-Content %Location%\Bin\Remove\Remove.py) | ForEach-Object { $_ -replace 'xxxxxxx', '%~1' } | Set-Content '%Location%\Bin\Remove\Remove.py'"
 %NSudo% Python "%Location%\Bin\Remove\Remove.py"
-%Library% :Powershell "Get-AppxPackage -AllUsers *%~2* | Remove-AppxPackage"
+Call :Powershell "Get-AppxPackage -AllUsers *%~2* | Remove-AppxPackage"
 RD /S /Q "%Location%\Bin\Remove" > NUL 2>&1
 goto :eof
 
@@ -689,7 +691,7 @@ mode con cols=87 lines=41
 title     O G N I T O R E N K S    ^|    OGNITORENKS TOOLBOX  ^|    T  O  O  L  B  O  X
 Dism /Online /Get-Features /format:table > %Location%\Bin\Data\Features.txt
 DISM /Online /Get-Capabilities /format:table > %Location%\Bin\Data\Capabilities.txt
-%Library% :Powershell "Get-MMAgent" > %Location%\Bin\Data\mc
+Call :Powershell "Get-MMAgent" > %Location%\Bin\Data\mc
 
 reg query "HKLM\SYSTEM\CurrentControlSet\Control\Power" /v "HibernateEnabled" > NUL 2>&1
 	if %errorlevel%==1 (Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Power" HibernateEnabled 1)
@@ -1285,7 +1287,7 @@ goto :eof
 
 :S31_MemoryCompression
 %Lang% :Service_31&timeout /t 1 /nobreak > NUL
-%Library% :Powershell "%~1-MMAgent -mc"
+Call :Powershell "%~1-MMAgent -mc"
 ::-------------------------------------
 ::    Aç = %~1 : Enable   | %~2: açılıyor   
 :: Kapat = %~1 : Disable  | %~2: kapatılıyor
@@ -1448,7 +1450,7 @@ goto :eof
 
 :P52_Device
 %Lang% :Service_52&timeout /t 1 /nobreak > NUL
-%Library% :Powershell "Get-PnpDevice -FriendlyName 'WAN Miniport (PPPOE)' | Disable-PnpDevice -Confirm:$false"
+Call :Powershell "Get-PnpDevice -FriendlyName 'WAN Miniport (PPPOE)' | Disable-PnpDevice -Confirm:$false"
 "%Location%\Bin\DevManView.exe" /%~1 "WAN Miniport (IKEv2)"
 "%Location%\Bin\DevManView.exe" /%~1 "WAN Miniport (IP)"
 "%Location%\Bin\DevManView.exe" /%~1 "WAN Miniport (IPv6)"
@@ -1620,16 +1622,22 @@ set Value10=
 set Value11=
 set Svchost=
 set link=
-set Check=
 set NSudo2=
 goto :eof
 
 :: --------------------------------------------------------------------------------------------------------
-
 :PSExtract
 :: %~1: Yetki ayarı | %~2: Sıkıştırılmış dosyanın bulunduğu yer  |  %~3: Çıkarılacağı yer
-if %~1 EQU 0 (%Library% :Powershell "Expand-Archive -Force '%~2' '%~3'")
+if %~1 EQU 0 (Call :Powershell "Expand-Archive -Force '%~2' '%~3'")
 if %~1 EQU 1 (%NSudo% Powershell -command "Expand-Archive -Force '%~2' '%~3'")
+goto :eof
+
+:: --------------------------------------------------------------------------------------------------------
+:Powershell
+:: Powershell komutları kullanıldığında komut istemi compact moda girmektedir. Bunu önlemek için karakter takımları arasında geçiş yapıyoruz.
+chcp 437 > NUL 2>&1
+Powershell -command %*
+chcp 65001 > NUL 2>&1
 goto :eof
 
 :: --------------------------------------------------------------------------------------------------------
@@ -1650,8 +1658,7 @@ goto :eof
 :: --------------------------------------------------------------------------------------------------------
 :MobileValue
 %Lang% :%~1
-echo.
-set /p MobileValue=%R%[96m %Choice% : %R%[0m
+set /p MobileValue=%R%[32m %Choice% : %R%[0m
 	if %MobileValue%==x (goto %~2)
 	if %MobileValue%==X (goto %~2)
 goto :eof
@@ -1678,7 +1685,7 @@ goto :eof
 :: --------------------------------------------------------------------------------------------------------
 :ExplorerReset
 taskkill /f /im explorer.exe > NUL 2>&1
-%Library% :Powershell "Start-Process 'C:\Windows\explorer.exe'"
+Call :Powershell "Start-Process 'C:\Windows\explorer.exe'"
 goto :EOF
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
