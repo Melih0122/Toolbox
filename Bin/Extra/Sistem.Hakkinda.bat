@@ -20,7 +20,7 @@
 ::  --------------------------------------
 ::  • Discord: OgnitorenKs#2737 
 ::  •    Mail: ognitorenks@gmail.com
-::  •    Site: https://ognitorenks.blogspot.com/
+::  •    Site: https://ognitorenks.com.tr
 ::
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 echo off
@@ -28,18 +28,6 @@ cls
 chcp 65001 > NUL 2>&1
 mode con cols=95 lines=44
 title      Sistem Hakkında / OgnitorenKs
-
-
-setlocal
-Call :ColorEnd
-
-
-:Logs
-cd /d "%~dp0"
-for /f %%a in ('"cd"') do set Location=%%a
-set Location=%Location:~0,-6%
-set Logs=%Location%\Edit\Logs
-echo [%date% - %time%] ^| SistemHakkinda ^| Sistem hakkında bölümü çalıştırıldı. >> %Location%\Logs
 echo.
 echo.
 echo.
@@ -267,18 +255,3 @@ echo.
 echo                           %R%[92m Kapatmak için herhangi bir tuşa basınız.%R%[0m
 pause > NUL
 exit
-
-
-:ColorEnd
-for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do rem"') do (
-  set R=%%b
-  exit /B 0
-)
-exit /B 0
-
-:ColorEnd2
-for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do rem"') do (
-  set C=%%b
-  exit /B 0
-)
-exit /B 0

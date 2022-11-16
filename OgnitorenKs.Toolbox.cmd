@@ -30,65 +30,108 @@ title  OgnitorenKs Toolbox
 set version=3.8
 cls
 
-:: -------------------------------------------------------------
 :: Renklendirme
 setlocal
-for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do rem"') do (set R=%%b)
+for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E#&echo on&for %%b in (1) do rem"') do (set R=%%b)
 
-:: -------------------------------------------------------------
 :: Konum bilgisi
 cd /d "%~dp0"
 for /f %%a in ('"cd"') do set Location=%%a
 
-:: -------------------------------------------------------------
 :: Değişkenler
 set Library=Call "%Location%\Bin\Extra\Library.cmd"
 set Lang=Call "%Location%\Bin\Language\TR.cmd"
-:: Toolbox ayarları
-FOR /F "tokens=2" %%a in ('findstr /C:"TimeUpdate" %Location%\Bin\Settings.ini') do (set TimeLog=%%a)
+set NSudo="%Location%\Bin\NSudo.exe" -U:T -P:E -Wait -ShowWindowMode:hide cmd /c
+set NSudo2="%Location%\Bin\NSudo.exe" -U:E -P:E -ShowWindowMode:hide cmd /c
+
+:: Admin yetkisini kontrol eder
+reg query "HKU\S-1-5-19" > NUL 2>&1
+	if %errorlevel%==1 (%NSudo2% Powershell -command "Start-Process '%Location%\OgnitorenKs.Toolbox.cmd'"
+						exit)
+
+:: x64 sistem kontrolü yapılır.
+FOR /F "tokens=3" %%a in ('reg query "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v "PROCESSOR_ARCHITECTURE" 2^>NUL') do (
+	if %%a NEQ AMD64 (cls&%Lang% :Error_6&timeout /t 4 /nobreak > NUL&exit)
+)
+
+:: Klasör yolunda Türkçe karakterleri kontrol eder
+echo %Location% | Find /I "ö" > NUL 2>&1
+	if %errorlevel% EQU 0 (cls&%Lang% :Error_1&timeout /t 4 /nobreak > NUL&exit)
+echo %Location% | Find /I "ü" > NUL 2>&1
+	if %errorlevel% EQU 0 (cls&%Lang% :Error_1&timeout /t 4 /nobreak > NUL&exit)
+echo %Location% | Find /I "ğ" > NUL 2>&1
+	if %errorlevel% EQU 0 (cls&%Lang% :Error_1&timeout /t 4 /nobreak > NUL&exit)
+echo %Location% | Find /I "ş" > NUL 2>&1
+	if %errorlevel% EQU 0 (cls&%Lang% :Error_1&timeout /t 4 /nobreak > NUL&exit)
+echo %Location% | Find /I "ç" > NUL 2>&1
+	if %errorlevel% EQU 0 (cls&%Lang% :Error_1&timeout /t 4 /nobreak > NUL&exit)
+echo %Location% | Find "ı" > NUL 2>&1
+	if %errorlevel% EQU 0 (cls&%Lang% :Error_1&timeout /t 4 /nobreak > NUL&exit)
+echo %Location% | Find "İ" > NUL 2>&1
+	if %errorlevel% EQU 0 (cls&%Lang% :Error_1&timeout /t 4 /nobreak > NUL&exit)
+:: Klasör yolunda boşlukları tespit eder.
+if "%Location%" NEQ "%Location: =%" (cls&%Lang% :Error_2&timeout /t 4 /nobreak > NUL&exit)
 
 :: -------------------------------------------------------------
-:: Klasör yolunda Türkçe karakter ve boşluk olup olmadığını kontrol etmek için ilgili başlığı çağırıyoruz
-%Library% :Error_Character "%Location%"
-:: x64 mimari kontrolü yapılır.
-%Library% :Check_x64
-:: Yönetici yetki kontrolü yapılır
-%Library% :Check_Admin "OgnitorenKs.Toolbox.bat"
-:: Wget dosyasını kontrol eder
-%Library% :Wget_Check
 :: Güncelleştirme kontrol eder
-%Library% :Check_Update "ToolboxVersion" "ToolboxUpdate.bat"
+:: Tarih bilgisini alır
+Call :Date
+cls
+:: Settings.ini dosyası içinden güncelleme ayarını kontrol ederek yönlendirme yapar.
+FOR /F "tokens=2" %%a in ('findstr /C:"AutoUpdate" %Location%\Bin\Settings.ini') do (if %%a EQU 1 (goto :eof))
+:: Builder otomatik güncelleme işleminin durumunu kontrol eder ve yönlendirir.
+%Lang% :Update_1
+FOR /F "tokens=2" %%a in ('findstr /C:"TimeUpdate" %Location%\Bin\Settings.ini') do (set TimeLog=%%a)
+:: Settings.ini dosyasına kaydedilen tarih ile güncel tarih verisi karşılaştırılır. Tarihler farklı ise güncellemeler kontrol edilir.
+if %TimeLog% NEQ %DateDay% (Call :Powershell "(Get-Content %Location%\Bin\Settings.ini) | ForEach-Object { $_ -replace '%TimeLog%', '%DateDay%' } | Set-Content '%Location%\Bin\Settings.ini'"
+							Call :PSDownload "%Location%\Bin\Extra\Links.txt"
+							FOR /F "tokens=3" %%b in ('Findstr /C:"Version" %Location%\Bin\Extra\Links.txt') do (
+							set NewVersion=%%b
+							if %NewVersion% NEQ %version% (cls&%Lang% :Update_2
+														   timeout /t 5 /nobreak > NUL
+														   Call :PSDownload "%temp%\ToolboxUpdate.cmd"
+														   Call :Powershell "Start-Process '%temp%\ToolboxUpdate.cmd'"
+														   exit)
+	)
+)
 
 :: -------------------------------------------------------------
 :: Chocolatey indirme sisteminin yüklü olup olmadığını kontrol eder. Yüklü değilse kurulum işlemini gerçekleştirir.
 dir /b "%ProgramData%\chocolatey" > NUL 2>&1
 	if %errorlevel% EQU 1 (%Lang% :Chocolatey_1
-						   %NSudoTop% Powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && set "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+						   %NSudo% Powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && set "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 )
 
 :: -------------------------------------------------------------
+:: Desktop App Installer kontrol eder
+Powershell -command "Get-AppxPackage -AllUsers" | Findstr /i "Microsoft.DesktopAppInstaller_8wekyb3d8bbwe" > NUL 2>&1
+	if %errorlevel% NEQ 0 (set Winget=1)
+	if %errorlevel% EQU 0 (set Winget=0)
+	
+:: -------------------------------------------------------------
 :: Eksik dosya kontrol
-FOR %%a in (NSudo.exe DevManView.exe Remove.py Settings.ini) do (Call :Check_File "%Location%\Bin\%%a")
+FOR %%a in (DevManView.exe Settings.ini) do (Call :Check_File "%Location%\Bin\%%a")
 
 :: ==============================================================================================================================
-:ToolboxInfo
-cls
+
 :: Sistem bilgileri alınır
 %Library% :Powershell "Get-CimInstance Win32_OperatingSystem | Select-Object Caption,InstallDate,OSArchitecture,RegisteredUser,CSName | FL" > %Location%\Bin\Data\OS.txt
 FOR /F "tokens=5" %%a in ('FIND "Caption" %Logs%\OS.txt') do set Win=%%a
-FOR /F "tokens=2 delims=':'" %%a in ('FIND "Caption" %Logs%\OS.txt') do set WinOS=%%a
-set WinOS=%WinOS:~11%
-FOR /F "tokens=2 delims=':'" %%b in ('FIND "RegisteredUser" %Logs%\OS.txt') do set RegisteredUser=%%b
-FOR /F "tokens=3 delims= " %%f in ('reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Update\TargetingInfo\Installed\Client.OS.rs2.amd64" /v "Version" 2^>NUL') do set isderleme=%%f
-set isderleme=%isderleme:~5%
-:: Toolbox içinde belli bölümlerde sürüm kontrolü için eklendi.
-FOR /F "skip=1 tokens=3" %%b in ('reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v "DisplayVersion" 2^>NUL') do (set OSVersion=%%b)
+
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
 :menu
-mode con cols=100 lines=27
 Call :Value_Reset
+:: -------------------------------------------------------------
+FOR /F "tokens=2 delims=':'" %%a in ('FIND "Caption" %Logs%\OS.txt') do set Value1=%%a
+set Value1=%Value1:~11%
+FOR /F "tokens=2 delims=':'" %%b in ('FIND "RegisteredUser" %Logs%\OS.txt') do set Value2=%%b
+FOR /F "tokens=3 delims= " %%f in ('reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Update\TargetingInfo\Installed\Client.OS.rs2.amd64" /v "Version" 2^>NUL') do set Value3=%%f
+set Value3=%Value3:~5%
+FOR /F "skip=1 tokens=3" %%b in ('reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v "DisplayVersion" 2^>NUL') do (set Value4=%%b)
+:: -------------------------------------------------------------
+mode con cols=100 lines=27
 title               O  G  N  I  T  O  R  E  N  K  S     ^|    OGNITORENKS TOOLBOX    ^|       T   O   O   L   B   O   X
 echo    %R%[90mAMD64                                                                               %DateDay%%R%[0m
 echo    %R%[90m████ ████ █   █ ███ █████ ████ ████ ███ █   █ █  █ ████    %R%[90m█████ ████ ████ █   ███  ████ █   █%R%[0m
@@ -98,12 +141,14 @@ echo    %R%[90m█  █ █  █ █  ██  █    █   █  █ █ █  █
 echo    %R%[90m████ ████ █   █ ███   █   ████ █  █ ███ █   █ █  █ ████    %R%[90m  █   ████ ████ ███ ███  ████ █   █%R%[0m
 echo    %R%[90mhttps://ognitorenks.com.tr                                                                 %R%[90m%version%%R%[0m
 echo.
-echo              %R%[90m %RegisteredUser% : %WinOS% ^| %OSVersion% ^| %isderleme%%R%[0m
+echo              %R%[90m %Value2% : %Value1% ^| %Value4% ^| %Value3%%R%[0m
 :: Dil dosyasından menüyü çağırır
 %Lang% :Menu_1
 :: Dil dosyasından değişken mesajını çağırır.
 %Lang% :Value_1
 set /p menu=%R%[32m               %Choice%: %R%[0m
+if %Winget% EQU 1 (%Lang% :Winget_1&pause > NUL&goto menu)
+Call :Upper menu "%menu%"
 	if %menu% EQU 1 (goto Software_Installer)
 	if %menu% EQU 2 (goto Service_Management)
 	if %menu% EQU 3 (goto TaskbarSettings)
@@ -119,9 +164,6 @@ set /p menu=%R%[32m               %Choice%: %R%[0m
 	if %menu% EQU 13 (Call :Update.Appx.Installer)
 	if %menu% EQU 14 (Call :HashChecker)
 	if %menu% EQU 15 (goto RuntimeLevel)
-	if %menu% EQU x (cls&DEL /F /Q /A %temp%\* > NUL 2>&1
-					 RD /S /Q %temp%\* > NUL 2>&1
-					 exit)
 	if %menu% EQU X (cls&DEL /F /Q /A %temp%\* > NUL 2>&1
 					 RD /S /Q %temp%\* > NUL 2>&1
 					 exit)
@@ -136,12 +178,11 @@ title               O  G  N  I  T  O  R  E  N  K  S     ^|    OGNITORENKS TOOLBO
 %Lang% :Menu_2
 :: Dil dosyasından değişken içi mesajı çağırır.
 %Lang% :Value_2
-set /p $multi=%R%[32m  %Choice% %R%[90mx,y: %R%[0m
+set /p multi=%R%[32m  %Choice% %R%[90mx,y: %R%[0m
+Call :Upper multi "%multi%"
+	if %multi% EQU X (goto menu)
 
-echo %$multi% | findstr /i "x" > NUL 2>&1
-	if %errorlevel%==0 goto menu
-
-FOR %%a in (%$multi%) do (
+FOR %%a in (%multi%) do (
 	cls
 	echo.
 	%Lang% :Menu2_1
@@ -295,8 +336,8 @@ FOR %%a in (cryptsvc bits) do (
 	sc config %%a start= auto > NUL 2>&1
 	net start %%a /y > NUL 2>&1
 )
-%NSudoTop% sc config ClipSVC start= demand
-%NSudoTop% net start ClipSVC /y > NUL 2>&1
+%NSudo% sc config ClipSVC start= demand
+%NSudo% net start ClipSVC /y > NUL 2>&1
 cls&%Lang% :Repair_1&%Lang% :Repair_8
 FOR %%a in (softpub.dll wintrust.dll initpki.dll dssenh.dll rsaenh.dll gpkcsp.dll sccbase.dll slbcsp.dll mssip32.dll cryptdlg.dll
 			msxml3.dll comcat.dll Msxml.dll Msxml2.dll mshtml.dll shdocvw.dll browseui.dll msjava.dll shdoc401.dll cdm.dll gpkcsp.dll
@@ -1578,19 +1619,9 @@ set Value9=
 set Value10=
 set Value11=
 set Svchost=
-goto :eof
-:: --------------------------------------------------------------------------------------------------------
-:Check_File
-dir /b "%~1" > NUL 2>&1
-	if %errorlevel% NEQ 0 (%Library% :FilesError)
-goto :eof
-
-:: --------------------------------------------------------------------------------------------------------
-:PSDownload
-Call :InternetControl
-echo    %R%[90m[Powershell]%R%[0m ►%R%[33m %~n1%R%[0m indiriliyor...
-FOR /F "tokens=1" %%i in ('Findstr /C:"%~n1%~x1" %Location%\Extra\Links.txt') do set link=%%i
-%Library% :Powershell "& { iwr %link% -OutFile %~1 }"
+set link=
+set Check=
+set NSudo2=
 goto :eof
 
 :: --------------------------------------------------------------------------------------------------------
@@ -1602,7 +1633,21 @@ if %~1 EQU 1 (%NSudo% Powershell -command "Expand-Archive -Force '%~2' '%~3'")
 goto :eof
 
 :: --------------------------------------------------------------------------------------------------------
+:Date
+:: Tarih bilgisi alınır
+for /f "tokens=2" %%a in ('echo %date%') do set Date=%%a
+:: YIL.AY.GÜN
+set DateYear=%Date:~6%-%Date:~3,-5%-%Date:~0,-8%
+:: GÜN.AY.YIL
+set DateDay=%Date:~0,-8%.%Date:~3,-5%.%Date:~6%
+goto :eof
 
+:: --------------------------------------------------------------------------------------------------------
+:Time
+for /f "tokens=1" %%a in ('echo %time%') do set Time=%%a
+goto :eof
+
+:: --------------------------------------------------------------------------------------------------------
 :MobileValue
 %Lang% :%~1
 echo.
@@ -1781,4 +1826,8 @@ goto :eof
 
 :SVCheck_OS11
 if %Win% EQU 11 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[101m %R%[0m%R%[90m -%R%[33m)
+goto :eof
+
+:Error_Character
+
 goto :eof

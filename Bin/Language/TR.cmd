@@ -116,7 +116,7 @@ echo   %R%[90m└─────────────────────
 goto :eof
 
 :Menu2_1
-echo  ►%R%[92m Seçilenler:%R%[0m %$multi%
+echo  ►%R%[92m Seçilenler:%R%[0m %multi%
 goto :eof
 
 :Menu_3
@@ -244,7 +244,7 @@ echo %R%[92m Güncelleştirmeler kontrol ediliyor...%R%[0m
 goto :eof
 
 :Update_2
-echo %R%[1;97m%R%[100m GÜNCELLEME MEVCUT %R%[0m
+echo %R%[1;97m%R%[100m GÜNCELLEME %R%[0m
 echo.
 echo  • %R%[32m Yüklü Sürüm:%R%[37m %version%%R%[0m
 echo  •%R%[32m Güncel Sürüm:%R%[37m %%b%R%[0m
@@ -254,14 +254,6 @@ goto :eof
 
 :Chocolatey_1
 echo  ► %R%[33m Chocolatey yükleniyor...%R%[0m
-goto :eof
-
-:FilesError_1
-echo                                 %R%[41m EKSİK DOSYA %R%[0m
-echo.
-echo                          %R%[41m Toolbox'ı yeniden indiriniz %R%[0m
-echo.
-echo               %R%[31m[##################### HATA #####################]%R%[0m
 goto :eof
 
 :Runtimes_1
@@ -770,5 +762,34 @@ goto :eof
 echo  ►%R%[96m Eski Windows menüsü %Choice%...%R%[0m
 goto :eof
 
-:Service_
+:Winget_1
+echo  %R%[31m HATA! WINGET BULUNAMADI
+echo.
+echo  Lütfen "DesktopAppInstaller" kurunuz.%R%[0m
+echo.
+echo  Ana menü için herhangi bir tuşa basınız...
+goto :eof
+
+:Error_1
+echo %R%[31m HATA 1
+echo.
+echo HATA! Klasör yolunda Türkçe karakter var
+echo.
+echo Toolbox kapanıyor...%R%[0m
+goto :eof
+
+:Error_2
+echo %R%[31m HATA 2
+echo.
+echo HATA! Klasör yolunda boşluk var
+echo.
+echo Toolbox kapanıyor...%R%[0m
+goto :eof
+
+:Error_6
+echo %R%[31m HATA 6
+echo.
+echo HATA! Sistem mimarisi x64 değil
+echo.
+echo Toolbox kapanıyor...%R%[0m
 goto :eof

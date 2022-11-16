@@ -68,15 +68,17 @@ FOR /F "tokens=2" %%a in ('findstr /C:"AutoUpdate" %Location%\Bin\Settings.ini')
 :: Builder otomatik güncelleme işleminin durumunu kontrol eder ve yönlendirir.
 Call :Border 80 30
 %Lang% :Update_1
+FOR /F "tokens=2" %%a in ('findstr /C:"TimeUpdate" %Location%\Bin\Settings.ini') do (set TimeLog=%%a)
 :: Settings.ini dosyasına kaydedilen tarih ile güncel tarih verisi karşılaştırılır. Tarihler farklı ise güncellemeler kontrol edilir.
 if %TimeLog% NEQ %DateDay% (Call :Powershell "(Get-Content %Location%\Bin\Settings.ini) | ForEach-Object { $_ -replace '%TimeLog%', '%DateDay%' } | Set-Content '%Location%\Bin\Settings.ini'"
-							Call :wget %Location%\Bin\Extra\Links.txt
-							FOR /F "tokens=2" %%b in ('Findstr /C:"%~1" %Location%\Bin\Extra\Links.txt') do (
-							if %%b NEQ %version% (cls&%Lang% :Update_2
-												  timeout /t 5 /nobreak > NUL
-												  Call :wget %temp%\%~2
-												  Call :Powershell "Start-Process '%temp%\%~2'"
-												  exit)
+							Call :PSDownload "%Location%\Bin\Extra\Version.txt"
+							FOR /F "tokens=2" %%b in ('Findstr /C:"%~1" %Location%\Bin\Extra\Version.txt') do (
+							set NewVersion=%%b
+							if %NewVersion% NEQ %version% (cls&%Lang% :Update_2
+														   timeout /t 5 /nobreak > NUL
+														   Call :PSDownload %temp%\%~2
+														   Call :Powershell "Start-Process '%temp%\%~2'"
+														   exit)
 	)
 )
 goto :eof
@@ -185,8 +187,6 @@ Powershell -NoLogo -NoProfile -NonInteractive -ExecutionPolicy Bypass -Command %
 chcp 65001 > NUL 2>&1
 goto :eof
 
-
-
 :: -------------------------------------------------------------
 :wget
 :: [%~1=Download Location] [%~n1: Download Name] [%~x1: İndirme uzantısı]
@@ -199,7 +199,6 @@ goto :eof
 
 :: -------------------------------------------------------------
 :PSDownload
-Call :InternetControl
 echo    %R%[90m[Powershell]%R%[0m ►%R%[33m %~n1%R%[0m indiriliyor...
 FOR /F "tokens=1" %%i in ('Findstr /C:"%~n1%~x1" %Location%\Bin\Extra\Links.txt') do set link=%%i
 Call :Powershell "& { iwr %link% -OutFile %~1 }"
@@ -213,9 +212,6 @@ FOR /F "tokens=1" %%g in ('FIND "PingCheckRoad" %Location%\Bin\Extra\Links.txt')
 ping -n 1 %link% > NUL
 	if %errorlevel% EQU 1 (cls&Call :Error_Print "ERROR 9"&echo.&set /p Error=%R%[1,97m%R%[41m HATA! İnternet bağlantısını sağlayıp herhangi bir tuşa basınız [Geç: 9A]= %R%[0m&Call :InternetControl)
 goto :eof
-
-:: -------------------------------------------------------------
-
 
 :: -------------------------------------------------------------
 :Builder_Reader
