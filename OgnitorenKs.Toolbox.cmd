@@ -144,29 +144,28 @@ echo    %R%[90m█  █ █  █ █  ██  █    █   █  █ █ █  █
 echo    %R%[90m████ ████ █   █ ███   █   ████ █  █ ███ █   █ █  █ ████    %R%[90m  █   ████ ████ ███ ███  ████ █   █%R%[0m
 echo    %R%[90mhttps://ognitorenks.com.tr                                                                 %R%[90m%version%%R%[0m
 echo.
-echo              %R%[90m %Value2%: %Value1% ^| %Value4% ^| %Value3%%R%[0m
+echo           %R%[90m %Value2%: %Value1% ^| %Value4% ^| %Value3%%R%[0m
 :: Dil dosyasından menüyü çağırır
 %Lang% :Menu_1
 :: Dil dosyasından değişken mesajını çağırır.
-%Lang% :Value_1
-set /p menu=%R%[32m               %Choice%: %R%[0m
+%Lang% :Value_4
+set /p menu=%R%[32m            %Choice%: %R%[0m
 if %Winget% EQU 1 (%Lang% :Winget_1&pause > NUL&goto menu)
 Call :Upper menu "%menu%"
 	if %menu% EQU 1 (goto Software_Installer)
 	if %menu% EQU 2 (goto Service_Management)
-	if %menu% EQU 3 (goto TaskbarSettings)
-	if %menu% EQU 4 (goto UserLicenceManager)
-	if %menu% EQU 5 (goto UpdateAfter)
-	if %menu% EQU 6 (goto WindowsRepair)
-	if %menu% EQU 7 (Call :PC_Cleaner)
+	if %menu% EQU 3 (goto UserLicenceManager)
+	if %menu% EQU 4 (goto shutdownpc)
+	if %menu% EQU 5 (Call :Update.Appx.Installer)
+	if %menu% EQU 6 (Call :HashChecker)
+	if %menu% EQU 7 (Call :Fat32toNTFS)
 	if %menu% EQU 8 (Call :Powershell "Start-Process '%Location%\Extra\Sistem.Hakkinda.bat'")
 	if %menu% EQU 9 (Call :WifiInfo)
 	if %menu% EQU 10 (Call :Powershell "Start-Process '%Location%\Extra\Pingolc.bat'")
-	if %menu% EQU 11 (Call :Fat32toNTFS)
-	if %menu% EQU 12 (goto shutdownpc)
-	if %menu% EQU 13 (Call :Update.Appx.Installer)
-	if %menu% EQU 14 (Call :HashChecker)
-	if %menu% EQU 15 (goto RuntimeLevel)
+	if %menu% EQU 11 (goto RuntimeLevel)
+	if %menu% EQU 12 (goto UpdateAfter)
+	if %menu% EQU 13 (goto WindowsRepair)
+	if %menu% EQU 14 (Call :PC_Cleaner)
 	if %menu% EQU X (cls&DEL /F /Q /A %temp%\* > NUL 2>&1
 					 RD /S /Q %temp%\* > NUL 2>&1
 					 exit)
@@ -299,14 +298,12 @@ mode con cols=100 lines=45
 ie4uinit.exe -show
 ie4uinit.exe -ClearIconCache
 taskkill /f /im explorer.exe > NUL 2>&1
-Call :sz "HKCU\Control Panel\Desktop" "WaitToKillAppTimeout" "10000"
-Call :sz "HKCU\Control Panel\Desktop" "HungAppTimeout" "3000"
 DEL /F /Q /A "%localappdata%\IconCache.db" > NUL 2>&1
 DEL /F /Q /A %localappdata%\Microsoft\Windows\Explorer\* > NUL 2>&1
 DEL /F /Q /A %localappdata%\Microsoft\Windows\Explorer\IconCacheToDelete\* > NUL 2>&1
 DEL /F /Q /A %localappdata%\Microsoft\Windows\Explorer\NotifyIcon\* > NUL 2>&1
 RD /S /Q "%localappdata%\Packages\Microsoft.Windows.Search_cw5n1h2txyewy\LocalState\AppIconCache" > NUL 2>&1
-mkdir "%localappdata%\Packages\Microsoft.Windows.Search_cw5n1h2txyewy\LocalState\AppIconCache" > NUL 2>&1
+MD "%localappdata%\Packages\Microsoft.Windows.Search_cw5n1h2txyewy\LocalState\AppIconCache" > NUL 2>&1
 DEL /F /Q /A %localappdata%\Packages\Microsoft.Windows.Search_cw5n1h2txyewy\TempState\* > NUL 2>&1
 Call :delete2 "HKCU\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\TrayNotify" IconStreams
 Call :delete2 "HKCU\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\TrayNotify" PastIconsStream
@@ -361,7 +358,6 @@ cls&%Lang% :Repair_1&%Lang% :Repair_10
 :: Genel hata onarımı
 Call :key "HKCU\Software\Microsoft\Internet Explorer\LowRegistry\Audio\PolicyConfig\PropertyStore" & :: Ses düzeylerinin kaydedilmeme sorunu onarır.
 Call :delete2 "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer" "NoTrayItemsDisplay" & :: Görev çubuğunda ekran tepsisi simgelerini açar
-Call :Powershell "Start-Process '%windir%\System32\ctfmon.exe'"
 Call :ProcessCompletedReset
 goto menu
 
@@ -606,85 +602,6 @@ echo  %R%[90m└─────────────────────�
 pause > NUL
 goto :eof
 
-:NonRemoval
-mkdir "%Location%\Bin\Remove" > NUL 2>&1
-copy /y "%Location%\Bin\Remove.py" "%Location%\Bin\Remove" > NUL 2>&1
-Call :Powershell "(Get-Content %Location%\Bin\Remove\Remove.py) | ForEach-Object { $_ -replace 'xxxxxxx', '%~1' } | Set-Content '%Location%\Bin\Remove\Remove.py'"
-%NSudo% Python "%Location%\Bin\Remove\Remove.py"
-Call :Powershell "Get-AppxPackage -AllUsers *%~2* | Remove-AppxPackage"
-RD /S /Q "%Location%\Bin\Remove" > NUL 2>&1
-goto :eof
-
-:: ---------------------------------------------------------------------------------------------------------------------------------------------------
-
-:TaskbarSettings
-mode con cols=55 lines=14
-%Lang% :Menu_5
-%Lang% :Value_4
-set /p value=%R%[92m  %Choice% : %R%[0m
-	if %value%==1 (Call :TS_EkranTepsi)
-	if %value%==2 (Call :TS_Bildirim)
-	if %value%==3 (Call :TS_HavaDurumu)
-	if %value%==4 (Call :TS_TaskbarLocation)
-	if %value%==x goto menu
-	if %value%==X goto menu
-goto TaskbarSettings
-
-:: ---------------------------------------------------------------------------------------------------------------------------------------------------------------
-	
-:TS_EkranTepsi
-mode con cols=55 lines=15
-echo.
-echo.
-%Lang% :Menu_6
-Call :MobileValue Value_4 TaskbarSettings
-Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer" "EnableAutoTray" "%MobileValue%"
-Call :ExplorerReset
-%Library% :ProcessCompleted
-goto TaskbarSettings
-
-:: ---------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-:TS_Bildirim
-mode con cols=55 lines=15
-echo.
-echo.
-%Lang% :Menu_7
-Call :MobileValue Value_4 TaskbarSettings
-Call :dword "HKCU\SOFTWARE\Policies\Microsoft\Windows\Explorer" "DisableNotificationCenter" "%MobileValue%"
-Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\Explorer" "DisableNotificationCenter" "%MobileValue%"
-Call :ExplorerReset
-%Library% :ProcessCompleted
-goto TaskbarSettings
-
-:: ---------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-:TS_HavaDurumu
-mode con cols=55 lines=15
-echo.
-echo.
-%Lang% :Menu_8
-Call :MobileValue Value_4 TaskbarSettings
-Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Feeds" "EnableFeeds" "%MobileValue%"
-Call :ExplorerReset
-%Library% :ProcessCompleted
-goto TaskbarSettings
-
-:: ---------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-:TS_TaskbarLocation
-mode con cols=55 lines=15
-echo.
-%Lang% :Menu_9
-if %Win% EQU 10 (%Lang% :Menu9_1
-				 timeout /t 3 /nobreak > NUL
-			     goto TaskbarSettings)
-Call :MobileValue Value_4 TaskbarSettings
-Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "TaskbarAl" "%MobileValue%"
-Call :ExplorerReset
-%Library% :ProcessCompleted
-goto TaskbarSettings
-
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
 :Service_Management
@@ -701,7 +618,6 @@ reg query "HKLM\Software\Policies\Microsoft\Windows\DriverSearching" /v "SearchO
 	
 %Lang% :Service_Menu_On_Off
 %Lang% :Service_Menu_1
-%Lang% :Service_Menu_1_1
 Call :SV&Call :SVCheck_Left "BthAvctpSvc bthserv BluetoothUserService BTAGService"&Call :SVCheck_Capabilities "MSPaint"
 %Lang% :Service_Menu_2
 Call :SV&Call :SVCheck_Left "TapiSrv PhoneSvc"&Call :SVCheck_Capabilities "WordPad"
@@ -775,8 +691,6 @@ Call :Upper "value" "%value%"
 	if %value% EQU X (goto menu)
 
 cls
-%Lang% :Service_Menu_1
-
 FOR %%a in (%$value%) do (
 	if %%a EQU 1%E1% (%Lang% :Value_13 0&Call :S1_Bluetooth start demand auto)
 	if %%a EQU 1%D1% (%Lang% :Value_13 1&Call :S1_Bluetooth stop disabled disabled)
@@ -1775,9 +1689,9 @@ goto :eof
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
 :SV
-set DL=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[100m %R%[0m%R%[90m -%R%[33m
-set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[100m %R%[0m%R%[90m -%R%[33m
-set DO=%R%[90m[%R%[36m %E1% %R%[90m]%R%[100m %R%[0m%R%[90m -%R%[33m
+set DL=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[90m█%R%[90m -%R%[33m
+set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[90m█%R%[90m -%R%[33m
+set DO=%R%[90m[%R%[36m %E1% %R%[90m]%R%[90m█%R%[90m -%R%[33m
 set SO=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]  -%R%[33m
 goto :eof
 
@@ -1814,13 +1728,13 @@ goto :eof
 :SVCheck_RegRight_Ozel
 reg query "%~1" /v "%~2" > NUL 2>&1
 	if %errorlevel% EQU 0 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[32m♦%R%[90m -%R%[33m)
-	if %errorlevel% EQU 1 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[100m %R%[0m%R%[90m -%R%[33m)
+	if %errorlevel% EQU 1 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[90m█%R%[90m -%R%[33m)
 goto :eof
 
 :SVCheck_RegRight_Ozel2
 reg query %~1 > NUL 2>&1
 	if %errorlevel% EQU 0 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[32m♦%R%[90m -%R%[33m)
-	if %errorlevel% EQU 1 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[100m %R%[0m%R%[90m -%R%[33m)
+	if %errorlevel% EQU 1 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[90m█%R%[90m -%R%[33m)
 goto :eof
 
 :SVCheck_Memory
@@ -1830,7 +1744,7 @@ goto :eof
 
 :SVCheck_Compact
 Compact /CompactOS:Query | Findstr /i "The system is not in the Compact state" > NUL 2>&1
-	if %errorlevel%==0 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[100m %R%[0m%R%[90m -%R%[33m)
+	if %errorlevel%==0 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[90m█%R%[90m -%R%[33m)
 	if %errorlevel%==1 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[32m♦%R%[90m -%R%[33m)
 goto :eof
 

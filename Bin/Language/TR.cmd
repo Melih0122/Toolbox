@@ -58,29 +58,25 @@ goto :eof
 
 :Menu_1
 :: Kılavuz çizgisi
-::------------------------------------------------------------------------------------------------------
-echo               %R%[90m┌─────────────────────────────────┬────────────────────────────────────┐%R%[0m
-echo               %R%[90m│%R%[32m  1-%R%[37m Uygulama Yükleyici %R%[90m[M]      │%R%[32m   2-%R%[37m Hizmetleri Yönet%R%[90m [M]          │%R%[0m
-echo               %R%[90m├─────────────────────────────────┼────────────────────────────────────┤
-echo               %R%[90m│%R%[32m  3-%R%[33m Görev Çubuğu Yöneticisi     %R%[90m│%R%[32m  10-%R%[33m Ping Ölçer %R%[90m [*]               │%R%[0m
-echo               %R%[90m│%R%[32m  4-%R%[33m Hesap ve Lisans Yönetimi%R%[90m[M] │%R%[32m  11-%R%[33m Fat32 to NTFS%R%[90m [M]             │%R%[0m
-echo               %R%[90m│%R%[32m  5-%R%[33m Güncelleme Sonrası Temizlik %R%[90m│%R%[32m  12-%R%[33m Zaman Ayarlı PC Kapat%R%[90m [M]     │%R%[0m
-echo               %R%[90m│%R%[32m  6-%R%[33m Windows - Market Onar       %R%[90m│%R%[32m  13-%R%[33m Appx - Güncelleme Yükleyici   %R%[90m│%R%[0m
-echo               %R%[90m│%R%[32m  7-%R%[33m Genel Temizlik              %R%[90m│%R%[32m  14-%R%[33m Hash Karşılaştırıcı%R%[90m [SHA-256] │%R%[0m
-echo               %R%[90m│%R%[32m  8-%R%[33m Sistem Hakkında%R%[90m [*]         │%R%[32m  15-%R%[33m İşlem Önceliği%R%[90m [M]            │%R%[0m
-echo               %R%[90m│%R%[32m  9-%R%[33m Kayıtlı Wifi Bilgileri      %R%[90m│%R%[32m%R%[90m%R%[90m                                    │%R%[0m
-echo               %R%[90m├─────────────────────────────────┼────────────────────────────────────┤%R%[0m
-echo               %R%[90m│%R%[32m  Z-%R%[36m İletişim                    %R%[90m│%R%[32m   X-%R%[36m Temizle ve Kapat              %R%[90m│%R%[0m
-echo               %R%[90m└─────────────────────────────────┴────────────────────────────────────┘%R%[0m
+echo            %R%[90m┌────────────────────────────────────┬───────────────────────────────────────┐%R%[0m
+echo            %R%[90m│%R%[32m  1-%R%[37m Uygulama Yükleyici %R%[90m[M]         │%R%[32m   2-%R%[37m Hizmetleri Yönet%R%[90m [M]             │%R%[0m
+echo            %R%[90m├────────────────────────────────────┼───────────────────────────────────────┤
+echo            %R%[90m│%R%[32m  3-%R%[33m Hesap ve Lisans Yönetimi%R%[90m[M]    │%R%[32m  10-%R%[33m Ping Ölçer %R%[90m [*]                  │%R%[0m
+echo            %R%[90m│%R%[32m  4-%R%[33m Zaman Ayarlı PC Kapat%R%[90m [M]      │%R%[32m  11-%R%[33m İşlem Önceliği%R%[90m [M]               │%R%[0m
+echo            %R%[90m│%R%[32m  5-%R%[33m Appx - Güncelleme Yükleyici    %R%[90m│%R%[32m  12-%R%[33m Güncelleme Sonrası Temizlik      %R%[90m│%R%[0m
+echo            %R%[90m│%R%[32m  6-%R%[33m Hash Karşılaştırıcı%R%[90m [SHA-256]  │%R%[32m  13-%R%[33m Windows - Market Onar            %R%[90m│%R%[0m
+echo            %R%[90m│%R%[32m  7-%R%[33m Fat32 to NTFS%R%[90m [M]              │%R%[32m  14-%R%[33m Genel Temizlik                   %R%[90m│%R%[0m
+echo            %R%[90m│%R%[32m  8-%R%[33m Sistem Hakkında%R%[90m [*]            │%R%[32m%R%[90m%R%[90m                                       │%R%[0m
+echo            %R%[90m│%R%[32m  9-%R%[33m Kayıtlı Wifi Bilgileri         %R%[90m│%R%[32m%R%[90m%R%[90m                                       │%R%[0m
+echo            %R%[90m├────────────────────────────────────┼───────────────────────────────────────┤%R%[0m
+echo            %R%[90m│%R%[32m  Z-%R%[36m İletişim                       %R%[90m│%R%[32m   X-%R%[36m Temizle ve Kapat                 %R%[90m│%R%[0m
+echo            %R%[90m└────────────────────────────────────┴───────────────────────────────────────┘%R%[0m
 goto :eof
 
 :Menu_2
 :: Kılavuz çizgisi
-::------------------------------------------------------------------------------------------------------
 set xognitorenksx=%R%[90m►
-echo   %R%[90m┌──────────────────────────────────────────────────────────────────────────────────────────────┐%R%[0m
-echo   %R%[90m│%R%[92m                             Online Katılımsız Uygulama Yükleyici                             %R%[90m│%R%[0m
-echo   %R%[90m├────────────────────────────┬──────────────────────────────┬──────────────────────────────────┤%R%[0m
+echo   %R%[90m┌────────────────────────────┬──────────────────────────────┬──────────────────────────────────┐%R%[0m
 echo   %R%[90m│%R%[32m    1-%R%[33m All in One Runtimes  %R%[90m│%xognitorenksx% Sıkıştırma                  %R%[90m│%xognitorenksx% Uzak Bağlantı                   %R%[90m│%R%[0m
 echo   %R%[90m│%xognitorenksx% Mesaj                     %R%[90m│%R%[32m   28-%R%[36m 7-Zip                  %R%[90m│%R%[32m   53-%R%[36m Teamviewer                 %R%[90m│%R%[0m
 echo   %R%[90m│%R%[32m    2-%R%[36m Discord              %R%[90m│%R%[32m   29-%R%[36m Winrar                 %R%[90m│%R%[32m   54-%R%[36m AnyDesk                    %R%[90m│%R%[0m
@@ -183,68 +179,12 @@ goto :eof
 echo %R%[96m  Oto kapatma iptal edildi%R%[0m
 goto :eof
 
-:Menu_5
-echo  %R%[90m┌───────────────────────────────────────────────────┐%R%[0m
-echo  %R%[90m│%R%[92m                Windows Özelleştirme               %R%[90m│%R%[0m
-echo  %R%[90m├───────────────────────────────────────────────────┤%R%[0m
-echo  %R%[90m│   %R%[32m 1.%R%[33m Taskbar saat yanı simge ayarı%R%[90m [GÖSTER/GİZLE]│%R%[0m
-echo  %R%[90m│   %R%[32m 2.%R%[33m Bildirim Alanı%R%[90m [AÇ/KAPAT]                   │%R%[0m
-echo  %R%[90m│   %R%[32m 3.%R%[33m Taskbar Hava Durumu%R%[90m [AÇ/KAPAT]              │%R%[0m
-echo  %R%[90m│   %R%[32m 4.%R%[33m Taskbar Simge Konumu%R%[90m [SOL/ORTA]             │%R%[0m
-echo  %R%[90m│   %R%[32m X.%R%[37m Menu                                        %R%[90m│%R%[0m
-echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
-goto :eof
-
-:Menu_6
-echo  %R%[90m┌───────────────────────────────────────────────────┐%R%[0m
-echo  %R%[90m│%R%[92m               Saat Yanı Simge Ayarı               %R%[90m│%R%[0m
-echo  %R%[90m├───────────────────────────────────────────────────┤%R%[0m
-echo  %R%[90m│   %R%[32m 0.%R%[33m Hepsini Göster                              %R%[90m│%R%[0m
-echo  %R%[90m│   %R%[32m 1.%R%[33m Hepsini Gizle                               %R%[90m│%R%[0m
-echo  %R%[90m│   %R%[32m X.%R%[37m Menu                                        %R%[90m│%R%[0m
-echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
-goto :eof
-
-:Menu_7
-echo  %R%[90m┌───────────────────────────────────────────────────┐%R%[0m
-echo  %R%[90m│%R%[92m               Bildirim Alanı Ayarı                %R%[90m│%R%[0m
-echo  %R%[90m├───────────────────────────────────────────────────┤%R%[0m
-echo  %R%[90m│   %R%[32m 0.%R%[33m Açık                                        %R%[90m│%R%[0m
-echo  %R%[90m│   %R%[32m 1.%R%[33m Kapalı                                      %R%[90m│%R%[0m
-echo  %R%[90m│   %R%[32m X.%R%[37m Menu                                        %R%[90m│%R%[0m
-echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
-goto :eof
-
-:Menu_8
-echo  %R%[90m┌───────────────────────────────────────────────────┐%R%[0m
-echo  %R%[90m│%R%[92m         Görev Çubuğu Hava Durumu Ayarı            %R%[90m│%R%[0m
-echo  %R%[90m├───────────────────────────────────────────────────┤%R%[0m
-echo  %R%[90m│   %R%[32m 0.%R%[33m Kapat                                       %R%[90m│%R%[0m
-echo  %R%[90m│   %R%[32m 1.%R%[33m Aç                                          %R%[90m│%R%[0m
-echo  %R%[90m│   %R%[32m X.%R%[37m Menu                                        %R%[90m│%R%[0m
-echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
-goto :eof
-
-:Menu_9
-echo  %R%[90m┌───────────────────────────────────────────────────┐%R%[0m
-echo  %R%[90m│%R%[92m            Görev Çubuğu Simge Konumu              %R%[90m│%R%[0m
-echo  %R%[90m├───────────────────────────────────────────────────┤%R%[0m
-echo  %R%[90m│   %R%[32m 0.%R%[33m Sol                                         %R%[90m│%R%[0m
-echo  %R%[90m│   %R%[32m 1.%R%[33m Orta                                        %R%[90m│%R%[0m
-echo  %R%[90m│   %R%[32m X.%R%[37m Menu                                        %R%[90m│%R%[0m
-echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
-goto :eof
-
-:Menu9_1
-echo %R%[91m Yalnızca Windows 11 sistemler için%R%[0m
-goto :eof
-
 :Update_1
 echo %R%[92m Güncelleştirmeler kontrol ediliyor...%R%[0m
 goto :eof
 
 :Update_2
-echo %R%[1;97m%R%[100m GÜNCELLEME %R%[0m
+echo %R%[92m GÜNCELLEME %R%[0m
 echo.
 echo  • %R%[32m Yüklü Sürüm:%R%[37m %version%%R%[0m
 echo  •%R%[32m Güncel Sürüm:%R%[37m %NewVersion%%R%[0m
@@ -257,7 +197,7 @@ echo  ► %R%[33m Chocolatey yükleniyor...%R%[0m
 goto :eof
 
 :Runtimes_1
-echo    %R%[1;97m%R%[42m All in One Runtimes yükleniyor... %R%[0m
+echo    %R%[92m All in One Runtimes yükleniyor... %R%[0m
 goto :eof
 
 :Runtimes_2
@@ -274,7 +214,7 @@ goto :eof
 
 :Repair_1
 echo  %R%[90m┌────────────────────────────────────────────────────────────────────────────────────────────────┐%R%[0m
-echo  %R%[90m│%R%[1;97m%R%[100m                                     Windows / Store Onar                                       %R%[0m%R%[90m│%R%[0m
+echo  %R%[90m│%R%[92m                                     Windows / Store Onar                                       %R%[90m│%R%[0m
 echo  %R%[90m└────────────────────────────────────────────────────────────────────────────────────────────────┘%R%[0m
 goto :eof
 
@@ -316,7 +256,7 @@ goto :eof
 
 :Clear_1
 echo  %R%[90m┌────────────────────────────────────────────────────────────┐%R%[0m
-echo  %R%[90m│%R%[1;97m%R%[100m                       PC Temizleyici                       %R%[0m%R%[90m│%R%[0m
+echo  %R%[90m│%R%[92m                       PC Temizleyici                       %R%[90m│%R%[0m
 echo  %R%[90m└────────────────────────────────────────────────────────────┘%R%[0m
 goto :eof
 
@@ -346,7 +286,7 @@ goto :eof
 
 :Installer_1
 echo  %R%[90m┌──────────────────────────────────────────────────────────────────┐%R%[0m
-echo  %R%[90m│%R%[1;97m%R%[100m                     Appx - Güncelleme Yükleyici                  %R%[0m%R%[90m│%R%[0m
+echo  %R%[90m│%R%[92m                     Appx - Güncelleme Yükleyici                  %R%[90m│%R%[0m
 echo  %R%[90m└──────────────────────────────────────────────────────────────────┘%R%[0m
 echo.
 echo   %R%[37m Açılan klasör penceresinden%R%[0m
@@ -359,7 +299,7 @@ goto :eof
 
 :Converter_1
 echo   %R%[90m┌──────────────────────────────────────────────────────────┐%R%[0m
-echo   %R%[90m│%R%[1;97m%R%[100m                      Fat32 to NTFS                       %R%[0m%R%[90m│%R%[0m
+echo   %R%[90m│%R%[92m                      Fat32 to NTFS                       %R%[90m│%R%[0m
 echo   %R%[90m├──────────────────────────────────────────────────────────┤%R%[0m
 echo       %R%[32mHarf      İsim%R%[0m
 goto :eof
@@ -382,17 +322,13 @@ goto :eof
 
 :Wifi_1
 echo  %R%[90m┌─────────────────────────────────────────────────────────────┐%R%[0m
-echo  %R%[90m│%R%[1;97m%R%[100m                    Kayıtlı Wifi Bilgileri                   %R%[0m%R%[90m│%R%[0m
-echo  %R%[90m│%R%[1;97m%R%[100m                          (Archley)                          %R%[0m%R%[90m│%R%[0m
+echo  %R%[90m│%R%[92m                    Kayıtlı Wifi Bilgileri                   %R%[90m│%R%[0m
+echo  %R%[90m│%R%[92m                          (Archley)                          %R%[90m│%R%[0m
 echo  %R%[90m├─────────────────────────────────────────────────────────────┤%R%[0m
 goto :eof
 
 :Service_Menu_1
-echo  %R%[90m┌───────────────────────────────────────────────────────────────────────────────────┐
-echo  %R%[90m│%R%[1;97m%R%[100m                                  Hizmet Yönetimi                                  %R%[0m%R%[90m│%R%[0m
-echo  %R%[90m├─────────────────────────────────────────┬─────────────────────────────────────────┤
-goto :eof
-:Service_Menu_1_1
+echo  %R%[90m┌─────────────────────────────────────────┬─────────────────────────────────────────┐%R%[0m
 echo  %R%[90m│► Hizmetler                              │► Özellikler                             │%R%[0m
 goto :eof
 :Service_Menu_2
