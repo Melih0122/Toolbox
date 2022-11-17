@@ -1,6 +1,6 @@
 [OgnitorenKs.Toolbox]
 
-Version = 3.8
+ToolboxVersion = 3.8
 
 https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/Bin/Extra/Links.txt
 https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/Toolbox.zip

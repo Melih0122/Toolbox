@@ -247,7 +247,7 @@ goto :eof
 echo %R%[1;97m%R%[100m GÜNCELLEME %R%[0m
 echo.
 echo  • %R%[32m Yüklü Sürüm:%R%[37m %version%%R%[0m
-echo  •%R%[32m Güncel Sürüm:%R%[37m %%b%R%[0m
+echo  •%R%[32m Güncel Sürüm:%R%[37m %NewVersion%%R%[0m
 echo.
 echo %R%[96m Güncelleme işlemi başlıyor...%R%[0m
 goto :eof
