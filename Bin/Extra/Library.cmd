@@ -62,25 +62,7 @@ goto :eof
 :: ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄
 
 :Check_Update
-Call :Date
-:: Settings.ini dosyası içinden güncelleme ayarını kontrol ederek yönlendirme yapar.
-FOR /F "tokens=2" %%a in ('findstr /C:"AutoUpdate" %Location%\Bin\Settings.ini') do (if %%a EQU 1 (goto :eof))
-:: Builder otomatik güncelleme işleminin durumunu kontrol eder ve yönlendirir.
-Call :Border 80 30
-%Lang% :Update_1
-FOR /F "tokens=2" %%a in ('findstr /C:"TimeUpdate" %Location%\Bin\Settings.ini') do (set TimeLog=%%a)
-:: Settings.ini dosyasına kaydedilen tarih ile güncel tarih verisi karşılaştırılır. Tarihler farklı ise güncellemeler kontrol edilir.
-if %TimeLog% NEQ %DateDay% (Call :Powershell "(Get-Content %Location%\Bin\Settings.ini) | ForEach-Object { $_ -replace '%TimeLog%', '%DateDay%' } | Set-Content '%Location%\Bin\Settings.ini'"
-							Call :PSDownload "%Location%\Bin\Extra\Version.txt"
-							FOR /F "tokens=2" %%b in ('Findstr /C:"%~1" %Location%\Bin\Extra\Version.txt') do (
-							set NewVersion=%%b
-							if %NewVersion% NEQ %version% (cls&%Lang% :Update_2
-														   timeout /t 5 /nobreak > NUL
-														   Call :PSDownload %temp%\%~2
-														   Call :Powershell "Start-Process '%temp%\%~2'"
-														   exit)
-	)
-)
+
 goto :eof
 
 :: -------------------------------------------------------------
@@ -126,39 +108,13 @@ FOR /F "tokens=4" %%a in ('dism /get-mountedwiminfo ^| FIND "Mount Dir"') do (
 goto :eof
 :: -------------------------------------------------------------
 :Check_Admin
-:: Admin yetkisini kontrol eder
-reg query "HKU\S-1-5-19" > NUL 2>&1
-	if %errorlevel%==1 (%NSudo2% Powershell -command "Start-Process '%Location%\%~1'"
-						exit)
+
 goto :eof
 :: -------------------------------------------------------------
-:Check_x64
-FOR /F "tokens=3" %%a in ('reg query "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v "PROCESSOR_ARCHITECTURE" 2^>NUL') do (
-	if %%a NEQ AMD64 (cls&Call :Error_Print "ERROR 6"&echo.&Call :Error_Print "HATA! Sistem mimarisi x64 değil"&echo.&Call :Error_Print "Builder kapatılıyor"&timeout /t 4 /nobreak > NUL&exit)
-)
-goto :eof
+
 
 :: -------------------------------------------------------------
-:Error_Character
-:: Klasör yolunda Türkçe karakterleri kontrol eder
-set Check=%~1
-echo %Check% | Find /I "ö" > NUL 2>&1
-	if %errorlevel% EQU 0 (cls&Call :Error_Print "ERROR 1"&echo.&Call :Error_Print "HATA! Klasör yolunda Türkçe karakter var"&echo.&Call :Error_Print "Toolbox kapanıyor..."&timeout /t 4 /nobreak > NUL&exit)
-echo %Check% | Find /I "ü" > NUL 2>&1
-	if %errorlevel% EQU 0 (cls&Call :Error_Print "ERROR 1"&echo.&Call :Error_Print "HATA! Klasör yolunda Türkçe karakter var"&echo.&Call :Error_Print "Toolbox kapanıyor..."&timeout /t 4 /nobreak > NUL&exit)
-echo %Check% | Find /I "ğ" > NUL 2>&1
-	if %errorlevel% EQU 0 (cls&Call :Error_Print "ERROR 1"&echo.&Call :Error_Print "HATA! Klasör yolunda Türkçe karakter var"&echo.&Call :Error_Print "Toolbox kapanıyor..."&timeout /t 4 /nobreak > NUL&exit)
-echo %Check% | Find /I "ş" > NUL 2>&1
-	if %errorlevel% EQU 0 (cls&Call :Error_Print "ERROR 1"&echo.&Call :Error_Print "HATA! Klasör yolunda Türkçe karakter var"&echo.&Call :Error_Print "Toolbox kapanıyor..."&timeout /t 4 /nobreak > NUL&exit)
-echo %Check% | Find /I "ç" > NUL 2>&1
-	if %errorlevel% EQU 0 (cls&Call :Error_Print "ERROR 1"&echo.&Call :Error_Print "HATA! Klasör yolunda Türkçe karakter var"&echo.&Call :Error_Print "Toolbox kapanıyor..."&timeout /t 4 /nobreak > NUL&exit)
-echo %Check% | Find "ı" > NUL 2>&1
-	if %errorlevel% EQU 0 (cls&Call :Error_Print "ERROR 1"&echo.&Call :Error_Print "HATA! Klasör yolunda Türkçe karakter var"&echo.&Call :Error_Print "Toolbox kapanıyor..."&timeout /t 4 /nobreak > NUL&exit)
-echo %Check% | Find "İ" > NUL 2>&1
-	if %errorlevel% EQU 0 (cls&Call :Error_Print "ERROR 1"&echo.&Call :Error_Print "HATA! Klasör yolunda Türkçe karakter var"&echo.&Call :Error_Print "Toolbox kapanıyor..."&timeout /t 4 /nobreak > NUL&exit)
-:: Klasör yolunda boşlukları tespit eder.
-if "%Check%" NEQ "%Check: =%" (cls&Call :Error_Print "ERROR 2"&echo.&Call :Error_Print "HATA! Klasör yolunda boşluk var"&echo.&Call :Error_Print "Toolbox kapanıyor..."&timeout /t 4 /nobreak > NUL&exit)
-goto :eof
+
 
 :: -------------------------------------------------------------
 :For_Print
