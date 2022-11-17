@@ -119,8 +119,8 @@ Call :PSDownload "%Location%\Bin\Extra\Links.txt"
 FOR /F "tokens=3" %%b in ('Findstr /C:"ToolboxVersion" %Location%\Bin\Extra\Links.txt') do (set NewVersion=%%b)
 if %NewVersion% NEQ %version% (cls&%Lang% :Update_2
 							   timeout /t 5 /nobreak > NUL
-							   Call :PSDownload "%temp%\ToolboxUpdate.cmd"
-							   Call :Powershell "Start-Process '%temp%\ToolboxUpdate.cmd'"
+							   Call :PSDownload "%Location%\ToolboxUpdate.cmd"
+							   Call :Powershell "Start-Process '%Location%\ToolboxUpdate.cmd'"
 							   exit)
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
@@ -1628,7 +1628,6 @@ goto :eof
 
 :: --------------------------------------------------------------------------------------------------------
 :PSDownload
-echo    %R%[90m[Powershell]%R%[0m ►%R%[33m %~n1%R%[0m indiriliyor...
 FOR /F "tokens=1" %%i in ('Findstr /C:"%~n1%~x1" %Location%\Bin\Extra\Links.txt') do set link=%%i
 Call :Powershell "& { iwr %link% -OutFile %~1 }"
 goto :eof
