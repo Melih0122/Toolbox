@@ -821,8 +821,8 @@ FOR %%a in (BthAvctpSvc bthserv BluetoothUserService BTAGService) do (
 sc config CDPUserSvc start= %3 > NUL 2>&1
 net %1 CDPUserSvc /y > NUL 2>&1
 ::-------------------------------------------------------
-::    Aç = %1 : start | %2 : demand   | %3 : auto     | %4: açılıyor
-:: Kapat = %1 : stop  | %2 : disabled | %3 : disabled | %4: kapatılıyor
+::    Aç = %1 : start | %2 : demand   | %3 : auto
+:: Kapat = %1 : stop  | %2 : disabled | %3 : disabled
 ::-------------------------------------------------------
 goto :eof
 
@@ -835,8 +835,8 @@ FOR %%a in (TapiSrv PhoneSvc) do (
 :: Bluetooth (AVCTP hizmeti) | Bluetooth destek hizmeti | Bluetooth kullanıcı desteği hizmeti | Ses ağ geçidi hizmeti
 FOR %%a in (BthAvctpSvc bthserv BluetoothUserService BTAGService) do (sc config %%a start= %3 > NUL 2>&1)
 ::-------------------------------------------------------
-::    Aç = %1 : start | %2 : demand   | %3 : demand  | %4 : açılıyor
-:: Kapat = %1 : stop  | %2 : disabled | %3 : demand  | %4 : kapatılıyor
+::    Aç = %1 : start | %2 : demand   | %3 : demand
+:: Kapat = %1 : stop  | %2 : disabled | %3 : demand
 ::-------------------------------------------------------
 goto :eof
 
@@ -849,8 +849,8 @@ sc config UmRdpService start= %2 > NUL 2>&1
 net %1 UmRdpService /y > NUL 2>&1
 DEL /F /Q /A %windir%\System32\spool\PRINTERS\* > NUL 2>&1
 ::----------------------------------------------------------------------
-::    Aç = %1 : start | %2 : demand   | %3 : auto     | %4 : açılıyor
-:: Kapat = %1 : stop  | %2 : disabled | %3 : disabled | %4 : kapatılıyor
+::    Aç = %1 : start | %2 : demand   | %3 : auto
+:: Kapat = %1 : stop  | %2 : disabled | %3 : disabled
 ::----------------------------------------------------------------------
 goto :eof
 
@@ -862,8 +862,8 @@ FOR %%a in (FrameServer FrameServerMonitor WiaRpc StiSvc) do (
 	sc config %%a start= %2 > NUL 2>&1
 	net %1 %%a /y > NUL 2>&1)
 ::-------------------------------------------------------
-::    Aç = %1 : start | %2 : demand   | %3 : açılıyor
-:: Kapat = %1 : stop  | %2 : disabled | %3 : kapatılıyor
+::    Aç = %1 : start | %2 : demand
+:: Kapat = %1 : stop  | %2 : disabled
 ::-------------------------------------------------------
 goto :eof
 
@@ -876,8 +876,8 @@ net %1 PenService /y > NUL 2>&1
 sc config TabletInputService start= %2 > NUL 2>&1
 net %1 TabletInputService /y > NUL 2>&1
 ::-------------------------------------------------------
-::    Aç = %1 : start | %2 : demand   | %3 : açılıyor
-:: Kapat = %1 : stop  | %2 : disabled | %3 : kapatılıyor
+::    Aç = %1 : start | %2 : demand
+:: Kapat = %1 : stop  | %2 : disabled
 ::-------------------------------------------------------
 goto :eof
 
@@ -887,8 +887,8 @@ Dism /Online /NoRestart /%~3-Capability /CapabilityName:Print.Fax.Scan~~~~0.0.1.
 sc config fax start= %~2 > NUL 2>&1
 net %1 fax /y > NUL 2>&1
 ::---------------------------------------------------------------------
-::    Aç = %1 : start | %2 : demand   | %3 : Add      | %4 : açılıyor
-:: Kapat = %1 : stop  | %2 : disabled | %3 : Remove   | %4 : kapatılıyor
+::    Aç = %1 : start | %2 : demand   | %3 : Add
+:: Kapat = %1 : stop  | %2 : disabled | %3 : Remove
 ::---------------------------------------------------------------------
 goto :eof
 
@@ -898,8 +898,8 @@ goto :eof
 sc config BDESVC start= %2 > NUL 2>&1
 net %1 BDESVC /y > NUL 2>&1
 ::-------------------------------------------------------
-::    Aç = %1 : start | %2 : demand   | %3 : boot      | %4 : açılıyor
-:: Kapat = %1 : stop  | %2 : disabled | %3 : disabled  | %4 : kapatılıyor
+::    Aç = %1 : start | %2 : demand   | %3 : boot
+:: Kapat = %1 : stop  | %2 : disabled | %3 : disabled
 ::------------------------------------------------------
 goto :eof
 
@@ -909,8 +909,8 @@ goto :eof
 sc config DusmSvc start= %2 > NUL 2>&1
 net %1 DusmSvc /y > NUL 2>&1
 ::-------------------------------------------------------
-::    Aç = %1 : start | %2 : auto     | %3 : açılıyor
-:: Kapat = %1 : stop  | %2 : disabled | %3 : kapatılıyor
+::    Aç = %1 : start | %2 : auto
+:: Kapat = %1 : stop  | %2 : disabled
 ::-------------------------------------------------------
 goto :eof
 
@@ -922,8 +922,8 @@ net %1 iphlpsvc /y > NUL 2>&1
 sc config IpxlatCfgSvc start= %2 > NUL 2>&1
 net %1 IpxlatCfgSvc /y > NUL 2>&1
 ::----------------------------------------------------------------------
-::    Aç = %1 : start | %2 : demand   | %3 : auto     | %4 : açılıyor
-:: Kapat = %1 : stop  | %2 : disabled | %3 : disabled | %4 : kapatılıyor
+::    Aç = %1 : start | %2 : demand   | %3 : auto
+:: Kapat = %1 : stop  | %2 : disabled | %3 : disabled
 ::----------------------------------------------------------------------
 goto :eof
 
@@ -934,8 +934,8 @@ FOR %%a in (icssvc SharedAccess ALG) do (
 	sc config %%a start= %2 > NUL 2>&1
 	net %1 %%a /y > NUL 2>&1)
 ::-------------------------------------------------------
-::    Aç = %1 : start | %2 : demand   | %3 : açılıyor
-:: Kapat = %1 : stop  | %2 : disabled | %3 : kapatılıyor
+::    Aç = %1 : start | %2 : demand
+:: Kapat = %1 : stop  | %2 : disabled
 ::-------------------------------------------------------
 goto :eof
 
@@ -945,8 +945,8 @@ goto :eof
 sc config RMSvc start= %2 > NUL 2>&1
 net %1 RMSvc /y > NUL 2>&1
 ::-------------------------------------------------------
-::    Aç = %1 : start | %2 : demand   | %3 : açılıyor   
-:: Kapat = %1 : stop  | %2 : disabled | %3 : kapatılıyor
+::    Aç = %1 : start | %2 : demand
+:: Kapat = %1 : stop  | %2 : disabled
 ::-------------------------------------------------------
 goto :eof
 
@@ -956,8 +956,8 @@ goto :eof
 sc config wcncsvc start= %2 > NUL 2>&1
 net %1 wcncsvc /y > NUL 2>&1
 ::-------------------------------------------------------
-::    Aç = %1 : start | %2 : demand   | %3 : açılıyor
-:: Kapat = %1 : stop  | %2 : disabled | %3 : kapatılıyor
+::    Aç = %1 : start | %2 : demand
+:: Kapat = %1 : stop  | %2 : disabled
 ::-------------------------------------------------------
 goto :eof
 
@@ -970,8 +970,8 @@ FOR %%a in (WwanSvc WlanSvc wcncsvc lmhosts vwifibus NativeWifiP Ndisuio) do (
 sc config vwififlt start= %~3 > NUL 2>&1
 net %1 vwififlt /y > NUL 2>&1
 ::---------------------------------------------------------------------
-::    Aç = %1 : start | %2 : demand   | %3 : System   | %4 : açılıyor
-:: Kapat = %1 : stop  | %2 : disabled | %3 : Disabled | %4 : kapatılıyor
+::    Aç = %1 : start | %2 : demand   | %3 : System
+:: Kapat = %1 : stop  | %2 : disabled | %3 : Disabled
 ::---------------------------------------------------------------------
 goto :eof
 
@@ -987,8 +987,8 @@ net %1 NaturalAuthentication /y > NUL 2>&1
 sc config lfsvc start= %2 > NUL 2>&1
 net %1 lfsvc /y > NUL 2>&1
 ::----------------------------------------------------------------------------------------------------------------------------------------------
-::    Aç = %1 : start  | %2 : demand    | %~3 : Allow |  %~4 : 1 | %5 : Call :delete2  | %~6 : "DisableLocation"     | %7 : açılıyor
-:: Kapat = %1 : stop   | %2 : disabled  | %~3 : Deny  |  %~4 : 0 | %5 : Call :dword    | %~6 : "DisableLocation 1"   | %7 : kapatılıyor
+::    Aç = %1 : start  | %2 : demand    | %~3 : Allow |  %~4 : 1 | %5 : Call :delete2  | %~6 : "DisableLocation"
+:: Kapat = %1 : stop   | %2 : disabled  | %~3 : Deny  |  %~4 : 0 | %5 : Call :dword    | %~6 : "DisableLocation 1" 
 ::----------------------------------------------------------------------------------------------------------------------------------------------
 goto :eof
 
@@ -999,8 +999,8 @@ FOR %%a in (ConsentUxUserSvc DevicePickerUserSvc DevicesFlowUserSvc) do (
 	sc config %%a start= %2 > NUL 2>&1
 	net %1 %%a /y > NUL 2>&1)
 ::-------------------------------------------------------
-::    Aç = %1 : start | %2 : demand    | %3 : açılıyor    
-:: Kapat = %1 : stop  | %2 : disabled  | %3 : kapatılıyor
+::    Aç = %1 : start | %2 : demand 
+:: Kapat = %1 : stop  | %2 : disabled
 ::-------------------------------------------------------
 goto :eof
 
@@ -1013,9 +1013,9 @@ FOR %%a in (PNRPAutoReg PNRPsvc p2psvc p2pimsvc upnphost QWAVE) do (
 sc config SSDPSRV start= %4 > NUL 2>&1
 net %~2 SSDPSRV /y > NUL 2>&1
 ::-------------------------------------------------------
-::    Aç = %1 : start | %2 : start   | %3 : demand    | %4 : demand    | %5 : açılıyor 
-:: Kapat = %1 : stop  | %2 : stop    | %3 : disabled  | %4 : disabled  | %5 : kapatılıyor 
-::  Özel = %1 : stop  | %2 : start   | %3 : disabled  | %4 : demand    | %5 : açılıyor 
+::    Aç = %1 : start | %2 : start   | %3 : demand    | %4 : demand
+:: Kapat = %1 : stop  | %2 : stop    | %3 : disabled  | %4 : disabled
+::  Özel = %1 : stop  | %2 : start   | %3 : disabled  | %4 : demand
 ::-------------------------------------------------------
 goto :eof
 
@@ -1026,8 +1026,8 @@ FOR %%a in (TermService UmRdpService SessionEnv RasAuto RasMan RpcLocator) do (
 	sc config %%a start= %2 > NUL 2>&1
 	net %1 %%a /y > NUL 2>&1)
 ::-------------------------------------------------------
-::    Aç = %1 : start | %2 : demand    | %3 : açılıyor
-:: Kapat = %1 : stop  | %2 : disabled  | %3 : kapatılıyor
+::    Aç = %1 : start | %2 : demand
+:: Kapat = %1 : stop  | %2 : disabled
 ::-------------------------------------------------------
 goto :eof
 
@@ -1036,8 +1036,8 @@ goto :eof
 sc config SysMain start= %2 > NUL 2>&1
 net %1 SysMain /y > NUL 2>&1
 ::-------------------------------------------------------
-::    Aç = %1 : start | %2 : auto   | %3 : açılıyor
-:: Kapat = %1 : stop  | %2 : disabled | %3 : kapatılıyor
+::    Aç = %1 : start | %2 : auto
+:: Kapat = %1 : stop  | %2 : disabled
 ::-------------------------------------------------------
 goto :eof
 
@@ -1048,8 +1048,8 @@ powercfg /hibernate %1
 Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Power" "HibernateEnabled" "%~2"
 Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power" "HiberbootEnabled" "%~2"
 ::-------------------------------------------------------
-::    Aç = %1 : On  | %~2 : 1  | %3 : açılıyor
-:: Kapat = %1 : Off | %~2 : 0  | %3 : kapatılıyor
+::    Aç = %1 : On  | %~2 : 1
+:: Kapat = %1 : Off | %~2 : 0
 ::-------------------------------------------------------
 goto :eof
 
@@ -1060,8 +1060,8 @@ Dism /Online /%~3-feature /featurename:SearchEngine-Client-Package /Quiet /NoRes
 sc config WSearch start= %2 > NUL 2>&1
 net %1 WSearch /y > NUL 2>&1
 ::-------------------------------------------------------
-::    Aç = %1 : start | %2 : auto     | %3 : enable   | %4 : açılıyor
-:: Kapat = %1 : stop  | %2 : disabled | %3 : disable  | %4 : kapatılıyor
+::    Aç = %1 : start | %2 : auto     | %3 : enable
+:: Kapat = %1 : stop  | %2 : disabled | %3 : disable
 ::-------------------------------------------------------
 goto :eof
 
@@ -1079,8 +1079,8 @@ Call :sz "HKCU\System\GameConfigStore" "GameDVR_FSEBehavior" "%4"
 %~5 "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "DisabledHotkeys" "G"
 Call :ExplorerReset
 ::----------------------------------------------------------------------------------------------------------------------------------------------
-::    Aç = %1 : start  | %2 : demand    | %3 : 1  |  %4 : 0  | %~5 : Call :delete2 | %6 : açılıyor
-:: Kapat = %1 : stop   | %2 : disabled  | %3 : 0  |  %4 : 2  | %~5 : Call :dword   | %6 : kapatılıyor
+::    Aç = %1 : start  | %2 : demand    | %3 : 1  |  %4 : 0  | %~5 : Call :delete2
+:: Kapat = %1 : stop   | %2 : disabled  | %3 : 0  |  %4 : 2  | %~5 : Call :dword
 ::----------------------------------------------------------------------------------------------------------------------------------------------
 goto :eof
 
@@ -1090,8 +1090,8 @@ goto :eof
 FOR %%a in (SharedRealitySvc VacSvc perceptionsimulation spectrum MixedRealityOpenXRSvc) do (
 	sc config %%a start= %1 > NUL 2>&1)
 ::------------------------------------------
-::    Aç = %1 : demand    | %2 : açılıyor   
-:: Kapat = %1 : disabled  | %2 : kapatılıyor
+::    Aç = %1 : demand 
+:: Kapat = %1 : disabled
 ::------------------------------------------
 goto :eof
 
@@ -1105,8 +1105,8 @@ sc config PcaSvc start= %~3 > NUL 2>&1
 net %1 PcaSvc /y > NUL 2>&1
 Call :dword "HKCU\SOFTWARE\Policies\Microsoft\Windows\AppCompat" "DisablePCA" %4
 ::---------------------------------------------------------------------
-::    Aç = %1 : start | %2 : auto     | %3 : demand    | %4 : 0    | %5 : açılıyor
-:: Kapat = %1 : stop  | %2 : disabled | %3 : disabled  | %4 : 1    | %5 : kapatılıyor
+::    Aç = %1 : start | %2 : auto     | %3 : demand    | %4 : 0
+:: Kapat = %1 : stop  | %2 : disabled | %3 : disabled  | %4 : 1
 ::---------------------------------------------------------------------
 goto :eof
 
@@ -1117,8 +1117,8 @@ Call :dword "HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Policies
 sc config seclogon start= %2 > NUL 2>&1
 net %1 seclogon /y > NUL 2>&1
 ::---------------------------------------------------------------------
-::    Aç = %1 : start | %2 : demand   | %3 : 0  | %4 : açılıyor
-:: Kapat = %1 : stop  | %2 : disabled | %3 : 1  | %4 : kapatılıyor
+::    Aç = %1 : start | %2 : demand   | %3 : 0
+:: Kapat = %1 : stop  | %2 : disabled | %3 : 1
 ::---------------------------------------------------------------------
 goto :eof
 
@@ -1129,8 +1129,8 @@ For %%a in (FontCache FontCache3.0.0.0) do (
 	net %1 %%a /y > NUL 2>&1
 )
 ::---------------------------------------------------------------------
-::    Aç = %1 : start | %2 : demand   | %3 : açılıyor
-:: Kapat = %1 : stop  | %2 : disabled | %3 : kapatılıyor
+::    Aç = %1 : start | %2 : demand
+:: Kapat = %1 : stop  | %2 : disabled
 ::---------------------------------------------------------------------
 goto :eof
 
@@ -1140,8 +1140,8 @@ goto :eof
 sc config wisvc start= %2 > NUL 2>&1
 net %1 wisvc /y > NUL 2>&1
 ::-------------------------------------------------------
-::    Aç = %1 : start | %2 : demand   | %3 : açılıyor
-:: Kapat = %1 : stop  | %2 : disabled | %3 : kapatılıyor
+::    Aç = %1 : start | %2 : demand 
+:: Kapat = %1 : stop  | %2 : disabled
 ::-------------------------------------------------------
 goto :eof
 
@@ -1151,8 +1151,8 @@ goto :eof
 sc config WbioSrvc start= %2 > NUL 2>&1
 net %1 WbioSrvc /y > NUL 2>&1
 ::-------------------------------------------------------
-::    Aç = %1 : start | %2 : demand   | %3 : açılıyor
-:: Kapat = %1 : stop  | %2 : disabled | %3 : kapatılıyor
+::    Aç = %1 : start | %2 : demand
+:: Kapat = %1 : stop  | %2 : disabled
 ::-------------------------------------------------------
 goto :eof
 
@@ -1165,8 +1165,8 @@ FOR %%a in (HvHost vmicvss vmicguestinterface vmicshutdown vmicvmsession vmichea
 Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" "Enabled" "%~4"
 bcdedit /set hypervisorlaunchtype %5
 ::------------------------------------------
-::    Aç = %1 : demand    | %2 : Enable  | %~3 : For  | %~4: 1  | %5 : on   | %6 : açılıyor   
-:: Kapat = %1 : disabled  | %2 : Disable | %~3 : ::   | %~4: 0  | %5 : off  | %6 : kapatılıyor
+::    Aç = %1 : demand    | %2 : Enable  | %~3 : For  | %~4: 1  | %5 : on  
+:: Kapat = %1 : disabled  | %2 : Disable | %~3 : ::   | %~4: 0  | %5 : off
 ::------------------------------------------
 goto :eof
 
@@ -1180,8 +1180,8 @@ schtasks /change /TN "\Microsoft\Windows\SystemRestore\SR" /%3 > NUL 2>&1
 Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore" "DisableConfig" "%~4"
 Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore" "DisableSR" "%~4"
 ::-------------------------------------------------------------------------------
-::    Aç = %1 : start | %2 : demand   | %3 : ENABLE  | %~4 : 0  | %5 : boot      | %~6: açılıyor
-:: Kapat = %1 : stop  | %2 : disabled | %3 : DISABLE | %~4 : 1  | %5 : disabled  | %~6: kapatılıyor
+::    Aç = %1 : start | %2 : demand   | %3 : ENABLE  | %~4 : 0  | %5 : boot
+:: Kapat = %1 : stop  | %2 : disabled | %3 : DISABLE | %~4 : 1  | %5 : disabled
 ::-------------------------------------------------------------------------------
 goto :eof
 
@@ -1195,8 +1195,8 @@ Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" "ExcludeWUD
 Call :dword "HKLM\Software\Policies\Microsoft\Windows\DriverSearching" "SearchOrderConfig" "%~2"
 gpupdate /force > NUL 2>&1
 ::-------------------------------------
-::    Aç = %~1 : 0  | %~2: 1  | %3 : açılıyor   
-:: Kapat = %~1 : 1  | %~2: 0  | %3 : kapatılıyor
+::    Aç = %~1 : 0  | %~2: 1
+:: Kapat = %~1 : 1  | %~2: 0
 ::-------------------------------------
 goto :eof
 
@@ -1204,8 +1204,8 @@ goto :eof
 %Lang% :Service_31&timeout /t 1 /nobreak > NUL
 Call :Powershell "%~1-MMAgent -mc"
 ::-------------------------------------
-::    Aç = %~1 : Enable   | %~2: açılıyor   
-:: Kapat = %~1 : Disable  | %~2: kapatılıyor
+::    Aç = %~1 : Enable  
+:: Kapat = %~1 : Disable
 ::-------------------------------------
 goto :eof
 
@@ -1215,18 +1215,18 @@ sc config defragsvc start= %~2 > NUL 2>&1
 net %~1 defragsvc /y > NUL 2>&1
 schtasks /Change /TN "Microsoft\Windows\Defrag\ScheduledDefrag" /%~3
 ::-------------------------------------
-::    Aç = %~1 : start   | %~2: demand    | %~3: Enable   | %~4: açılıyor   
-:: Kapat = %~1 : stop    | %~2: disabled  | %~3: Disable  | %~4: kapatılıyor
+::    Aç = %~1 : start   | %~2: demand    | %~3: Enable
+:: Kapat = %~1 : stop    | %~2: disabled  | %~3: Disable
 ::-------------------------------------
 goto :eof
 
 :O33_38_40_Capabilities
-FOR /F "tokens=1" %%a in ('Findstr /i "%~3" %Location%\Bin\Data\Capabilities.txt') do (
+FOR /F "tokens=1" %%a in ('Findstr /i "%~2" %Location%\Bin\Data\Capabilities.txt') do (
 	Dism /Online /%~1-Capability /CapabilityName:%%a /Quiet /NoRestart
 )
 ::-------------------------------------
-::    Aç = %~1: Remove  | %~2: Özellik adı  | %~3: Find ile bulunacak özellik adı | %~4: açılıyor   
-:: Kapat = %~1: Add     | %~2: Özellik adı  | %~3: Find ile bulunacak özellik adı | %~4: kapatılıyor
+::    Aç = %~1: Remove  | %~2: Find ile bulunacak özellik adı  
+:: Kapat = %~1: Add     | %~2: Find ile bulunacak özellik adı
 ::-------------------------------------
 goto :eof
 
@@ -1264,8 +1264,8 @@ FOR /F "tokens=1" %%a in ('findstr /C:"%~2" %Location%\Bin\Data\Features.txt') d
 	Dism /Online /%~1-Feature /FeatureName:%%a /All /Quiet /NoRestart
 )
 ::-------------------------------------
-::    Aç = %~1: Enable    | %~3: Find ile bulunacak özellik adı 
-:: Kapat = %~1: Disable   | %~3: Find ile bulunacak özellik adı
+::    Aç = %~1: Enable    | %~2: Find ile bulunacak özellik adı 
+:: Kapat = %~1: Disable   | %~2: Find ile bulunacak özellik adı
 ::-------------------------------------
 goto :eof
 
