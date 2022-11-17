@@ -1,4 +1,5 @@
 echo off
+chcp 65001 > NUL
 cls
 mode con cols=80 lines=30
 title OgnitorenKs Toolbox Updater
@@ -7,12 +8,6 @@ title OgnitorenKs Toolbox Updater
 ::Renklendirme komutu
 setlocal
 for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do rem"') do (set R=%%b)
-
-:: Konum bilgisi
-cd /d "%~dp0"
-for /f %%a in ('"cd"') do set Location=%%a
-echo %Location%
-pause
 
 :: =============================================================
 :: Güncelleme dosyası indirilir
@@ -37,7 +32,6 @@ for /f "tokens=2" %%a in ('findstr /i "TimeUpdate" %Location%\Bin\Settings.ini')
 timeout /t 2 /nobreak > NUL
 :: Güncel Toolbox açılır.
 Call :Powershell "Start-Process '%Location%\OgnitorenKs.Toolbox.bat'"
-DEL /F /Q /A "%Location%\Toolbox.Update.bat" > NUL 2>&1
 exit
 :: =============================================================
 :: ██████████████████████████████████████████████████████████████████████████████████████████████████
