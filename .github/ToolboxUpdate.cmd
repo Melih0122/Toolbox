@@ -17,7 +17,7 @@ for /f %%a in ('"cd"') do set Location=%%a
 :: =============================================================
 :: Güncelleme dosyası indirilir
 cls&Call :Panel "[■■■■■■■■■■■■                                    ]" "%R%[92m   Updating OgnitorenKs Toolbox...%R%[0m"
-Call :Powershell -C "& { iwr https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/Toolbox.zip -OutFile %Location%\Toolbox.zip }"
+Call :Powershell "& { iwr https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/Toolbox.zip -OutFile %Location%\Toolbox.zip }"
 
 :: İndirilen güncelleme zip dosyası klasörü çıkarılır.
 cls&Call :Panel "[■■■■■■■■■■■■■■■■■■■■■■■■                        ]" "%R%[92m   Updating OgnitorenKs Toolbox...%R%[0m"
@@ -32,12 +32,12 @@ cls&Call :Panel "[■■■■■■■■■■■■■■■■■UPDATE_COMP
 for /f "tokens=2" %%a in ('echo %date%') do set Date=%%a
 set Date=%Date:~0,-8%.%Date:~3,-5%.%Date:~6%
 for /f "tokens=2" %%a in ('findstr /i "TimeUpdate" %Location%\Bin\Settings.ini') do (
-	Call :Powershell "(Get-Content %Location%\Settings.ini) | ForEach-Object { $_ -replace '%%a', '%Date%' } | Set-Content '%Location%\Bin\Settings.ini'"
+	Call :Powershell "(Get-Content %Location%\Bin\Settings.ini) | ForEach-Object { $_ -replace '%%a', '%Date%' } | Set-Content '%Location%\Bin\Settings.ini'"
 )
 timeout /t 2 /nobreak > NUL
 :: Güncel Toolbox açılır.
-Call :Powershell "Start-Process '%Location%\OgnitorenKs.Toolbox.bat'"
-DEL /F /Q /A "%Location%\OgnitorenKs.Toolbox.bat"
+Call :Powershell "Start-Process '%Location%\OgnitorenKs.Toolbox.cmd'"
+DEL /F /Q /A "%Location%\ToolboxUpdate.cmd"
 exit
 :: =============================================================
 :: ██████████████████████████████████████████████████████████████████████████████████████████████████
