@@ -115,15 +115,14 @@ if %TimeLog% NEQ %DateDay% (goto Update)
 if %TimeLog% EQU %DateDay% (goto menu)
 :Update
 Call :Powershell "(Get-Content %Location%\Bin\Settings.ini) | ForEach-Object { $_ -replace '%TimeLog%', '%DateDay%' } | Set-Content '%Location%\Bin\Settings.ini'"
-				   Call :PSDownload "%Location%\Bin\Extra\Links.txt"
-				   FOR /F "tokens=3" %%b in ('Findstr /C:"ToolboxVersion" %Location%\Bin\Extra\Links.txt') do (set NewVersion=%%b)
-				   if %NewVersion% NEQ %version% (cls&%Lang% :Update_2
-												  timeout /t 5 /nobreak > NUL
-												  Call :PSDownload "%temp%\ToolboxUpdate.cmd"
-												  Call :Powershell "Start-Process '%temp%\ToolboxUpdate.cmd'"
-												  exit)
-	)
-)
+Call :PSDownload "%Location%\Bin\Extra\Links.txt"
+FOR /F "tokens=3" %%b in ('Findstr /C:"ToolboxVersion" %Location%\Bin\Extra\Links.txt') do (set NewVersion=%%b)
+if %NewVersion% NEQ %version% (cls&%Lang% :Update_2
+							   timeout /t 5 /nobreak > NUL
+							   Call :PSDownload "%temp%\ToolboxUpdate.cmd"
+							   Call :Powershell "Start-Process '%temp%\ToolboxUpdate.cmd'"
+							   exit)
+
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 :menu
 Call :Value_Reset
