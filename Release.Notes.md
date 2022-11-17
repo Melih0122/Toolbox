@@ -12,9 +12,13 @@
 	• Online katılımsız bölümünden oyunlar kaldırıldı. Yeni programlar eklenerek daha düzenli hale getirildi.
 	• İndirme sistemi Winget ve Chocolatey olarak düzenlendi. İndirme sistemleri arasında geçiş kaldırıldı.
 		• Sistem içinde Microsoft Store ve Uygulama yükleyici (DesktopAppInstaller) olmadığında indirme bölümü çalışmayacak.
-	• Builder aracı için ortak bir dosya sistemi geliştirildi. 
 	• Toolbox loglama özelliği kaldırıldı.
 	• Windows Editör bölümü kaldırıldı. Builder aracıyla farklı bir çalışma olarak düzenlenecek.
+	• İnternet kontrol bölümleri kaldırıldı. Bazı sistemlerde anlamsız hatalara neden oluyordu.
+	• Klasör yolunda Türkçe karakter ve boşluk tespiti için komutlar eklendi.
+	• Güncellemeler artık Toolbox'ı attığınız dizin içinde yapılacak.
+	• 
+	• 
 	• 
 
 </details>

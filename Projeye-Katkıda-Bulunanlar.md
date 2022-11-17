@@ -1,8 +1,3 @@
-### Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
-- ► Discord: OgnitorenKs#2737 
-- ► Mail: ognitorenks@gmail.com
-- ► Site: [ognitorenks.blogspot.com](https://ognitorenks.blogspot.com/)
-
 ### Projeye katkıda bulunanlar
 	  ----------------------
 	  ► Eray Türkay 
