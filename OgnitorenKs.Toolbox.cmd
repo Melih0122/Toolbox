@@ -98,7 +98,7 @@ Findstr /i "Microsoft.DesktopAppInstaller_8wekyb3d8bbwe" %Location%\Bin\Data\App
 :: -------------------------------------------------------------
 :: Sistem bilgileri alınır
 Call :Powershell "Get-CimInstance Win32_OperatingSystem | Select-Object Caption,InstallDate,OSArchitecture,RegisteredUser,CSName | FL" > %Location%\Bin\Data\OS.txt
-FOR /F "tokens=5" %%a in ('FIND "Caption" %Logs%\OS.txt') do set Win=%%a
+FOR /F "tokens=5" %%a in ('FIND "Caption" %Location%\Bin\Data\OS.txt') do set Win=%%a
 
 :: -------------------------------------------------------------
 :: Güncelleştirme kontrol eder
@@ -127,9 +127,9 @@ if %NewVersion% NEQ %version% (cls&%Lang% :Update_2
 :menu
 Call :Value_Reset
 :: -------------------------------------------------------------
-FOR /F "tokens=2 delims=':'" %%a in ('FIND "Caption" %Logs%\OS.txt') do set Value1=%%a
+FOR /F "tokens=2 delims=':'" %%a in ('FIND "Caption" %Location%\Bin\Data\OS.txt') do set Value1=%%a
 set Value1=%Value1:~11%
-FOR /F "tokens=2 delims=':'" %%b in ('FIND "RegisteredUser" %Logs%\OS.txt') do set Value2=%%b
+FOR /F "tokens=2 delims=':'" %%b in ('FIND "RegisteredUser" %Location%\Bin\Data\OS.txt') do set Value2=%%b
 FOR /F "tokens=3 delims= " %%f in ('reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Update\TargetingInfo\Installed\Client.OS.rs2.amd64" /v "Version" 2^>NUL') do set Value3=%%f
 set Value3=%Value3:~5%
 FOR /F "skip=1 tokens=3" %%b in ('reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v "DisplayVersion" 2^>NUL') do (set Value4=%%b)
