@@ -41,9 +41,19 @@ cd /d "%~dp0"
 for /f %%a in ('"cd"') do set Location=%%a
 
 :: -------------------------------------------------------------
+:: Dil seçimi
+FOR /F "tokens=6" %%a in ('Dism /online /Get-intl ^| Find /I "Default system UI language"') do (
+	if %%a EQU tr-TR (set Lang=Call "%Location%\Bin\Language\TR.cmd")
+	if %%a NEQ tr-TR (set Lang=Call "%Location%\Bin\Language\EN.cmd")
+)
+:: Manuel dil seçimi
+FOR /F "tokens=3" %%a in ('Findstr /i "Select_Language" %Location%\Bin\Settings.ini') do (
+	if %%a EQU 0 (FOR /F "tokens=3" %%b in ('Findstr /i "Manuel_Language" %Location%\Bin\Settings.ini') do (set Lang=Call "%Location%\Bin\Language\%%b.cmd"))
+)
+	
+:: -------------------------------------------------------------
 :: Değişkenler
 set Library=Call "%Location%\Bin\Extra\Library.cmd"
-set Lang=Call "%Location%\Bin\Language\TR.cmd"
 set NSudo="%Location%\Bin\NSudo.exe" -U:T -P:E -Wait -ShowWindowMode:hide cmd /c
 set NSudo2="%Location%\Bin\NSudo.exe" -U:E -P:E -ShowWindowMode:hide cmd /c
 
@@ -90,10 +100,6 @@ Call :Powershell "Get-AppxPackage -AllUsers" > %Location%\Bin\Data\Appx.txt
 Findstr /i "Microsoft.DesktopAppInstaller_8wekyb3d8bbwe" %Location%\Bin\Data\Appx.txt > NUL 2>&1
 	if %errorlevel% NEQ 0 (set Winget=1)
 	if %errorlevel% EQU 0 (set Winget=0)
-	
-:: -------------------------------------------------------------
-:: Eksik dosya kontrol
-::FOR %%a in (DevManView.exe Settings.ini) do (Call :Check_File "%Location%\Bin\%%a")
 
 :: -------------------------------------------------------------
 :: Sistem bilgileri alınır
@@ -150,8 +156,8 @@ echo           %R%[90m %Value2%: %Value1% ^| %Value4% ^| %Value3%%R%[0m
 :: Dil dosyasından değişken mesajını çağırır.
 %Lang% :Value_4
 set /p menu=%R%[32m            %Choice%: %R%[0m
-if %Winget% EQU 1 (%Lang% :Winget_1&pause > NUL&goto menu)
-Call :Upper menu "%menu%"
+title OgnitorenKs Toolbox
+	if %Winget% EQU 1 (%Lang% :Winget_1&pause > NUL&goto menu)
 	if %menu% EQU 1 (goto Software_Installer)
 	if %menu% EQU 2 (goto Service_Management)
 	if %menu% EQU 3 (goto UserLicenceManager)
@@ -159,16 +165,14 @@ Call :Upper menu "%menu%"
 	if %menu% EQU 5 (Call :Update.Appx.Installer)
 	if %menu% EQU 6 (Call :HashChecker)
 	if %menu% EQU 7 (Call :Fat32toNTFS)
-	if %menu% EQU 8 (Call :Powershell "Start-Process '%Location%\Extra\Sistem.Hakkinda.bat'")
+	if %menu% EQU 8 (Call "%Location%\Bin\Extra\System.Info.cmd")
 	if %menu% EQU 9 (Call :WifiInfo)
-	if %menu% EQU 10 (Call :Powershell "Start-Process '%Location%\Extra\Pingolc.bat'")
-	if %menu% EQU 11 (goto RuntimeLevel)
-	if %menu% EQU 12 (goto UpdateAfter)
-	if %menu% EQU 13 (goto WindowsRepair)
-	if %menu% EQU 14 (Call :PC_Cleaner)
-	if %menu% EQU X (cls&DEL /F /Q /A %temp%\* > NUL 2>&1
-					 RD /S /Q %temp%\* > NUL 2>&1
-					 exit)
+	if %menu% EQU 10 (goto PingMeter)
+	if %menu% EQU 11 (Call "%Location%\Bin\Extra\UpdateAfter\UpdateAfter.cmd")
+	if %menu% EQU 12 (goto WindowsRepair)
+	if %menu% EQU 13 (Call :PC_Cleaner)
+	if %menu% EQU X (goto Exit)
+	if %menu% EQU x (goto Exit)
 goto menu
 
 :: ==============================================================================================================================
@@ -181,8 +185,8 @@ title               O  G  N  I  T  O  R  E  N  K  S     ^|    OGNITORENKS TOOLBO
 :: Dil dosyasından değişken içi mesajı çağırır.
 %Lang% :Value_2
 set /p multi=%R%[32m  %Choice% %R%[90mx,y: %R%[0m
-Call :Upper multi "%multi%"
-	if %multi% EQU X (goto menu)
+echo %multi% | Findstr /i "x" > NUL 2>&1
+	if %errorlevel% EQU 0 (goto menu)
 
 FOR %%a in (%multi%) do (
 	cls
@@ -391,7 +395,7 @@ Dism /Online /Cleanup-Image /StartComponentCleanup
 ipconfig /flushdns > NUL 2>&1
 ipconfig /release > NUL 2>&1
 ipconfig /renew > NUL 2>&1
-%Library% :ProcessCompleted
+Call :ProcessCompleted
 goto :eof
 
 :: ---------------------------------------------------------------------------------------------------------------------------------------------------
@@ -416,14 +420,13 @@ for /f %%b in ('"dir /b %Location%\Edit\Appx\*"') do (
 	Call :Powershell "Add-AppxPackage -Path %Location%\Edit\Appx\%%b"
 )
 RD /S /Q "%Location%\Edit" > NUL 2>&1
-%Library% :ProcessCompleted
+Call :ProcessCompleted
 goto :eof
 
 :: ---------------------------------------------------------------------------------------------------------------------------------------------------
 
 :Fat32toNTFS
 mode con cols=63 lines=25
-
 chcp 437 > NUL 2>&1
 for /f "skip=3 tokens=*" %%a in ('Powershell -command "Get-CimInstance -ClassName Win32_LogicalDisk | Select-Object -Property DeviceID,VolumeName"') do (
    echo     -  %%a)
@@ -432,7 +435,7 @@ chcp 65001 > NUL 2>&1
 echo   %R%[90m└──────────────────────────────────────────────────────────┘%R%[0m
 Call :MobileValue "Value_3" "menu"
 convert %MobileValue%: /fs:NTFS /v
-%Library% :ProcessCompleted
+Call :ProcessCompleted
 goto :eof
 
 :: ---------------------------------------------------------------------------------------------------------------------------------------------------
@@ -457,7 +460,7 @@ set /p value=%R%[92m %Choice% : %R%[0m
 	if %value%==13 (slmgr /rearm)
 	if %value%==x goto menu
 	if %value%==X goto menu
-%Library% :ProcessCompleted
+Call :ProcessCompleted
 goto UserLicenceManager
 
 :User3
@@ -486,31 +489,6 @@ slmgr /ipk %MobileValue%
 goto :eof
 
 :: ---------------------------------------------------------------------------------------------------------------------------------------------------
-:RuntimeLevel
-mode con cols=55 lines=17
-%Lang% :Menu_4
-%Lang% :Value_4
-set /p value2=%R%[32m  %Choice% :%R%[0m
-	if %value2%==1 (set value2=3)
-	if %value2%==2 (set value2=6)
-	if %value2%==3 (set value2=5)
-	if %value2%==4 (set value2=1)
-	if %value2%==x goto menu
-	if %value2%==X goto menu
-
-echo.
-%Lang% :Menu3_1
-%Lang% :Value_7
-set /p value=%R%[96m  ► %Choice%: %R%[0m
-
-for %%a in (%value%) do (
-	reg add "HKLM\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\%%a\PerfOptions" /v "CpuPriorityClass" /t REG_DWORD /d "%value2%" /f
-)
-%Library% :ProcessCompleted
-goto menu
-
-:: ---------------------------------------------------------------------------------------------------------------------------------------------------
-
 :shutdownpc
 mode con cols=55 lines=21
 :: Kapatma kontrol
@@ -611,14 +589,16 @@ Dism /Online /Get-Features /format:table > %Location%\Bin\Data\Features.txt
 DISM /Online /Get-Capabilities /format:table > %Location%\Bin\Data\Capabilities.txt
 Call :Powershell "Get-MMAgent" > %Location%\Bin\Data\mc
 
+:: Eksik reg kayıtlarından hata vermemesi için eklenir. Herhangi bir ayarı bozmaz. 
 reg query "HKLM\SYSTEM\CurrentControlSet\Control\Power" /v "HibernateEnabled" > NUL 2>&1
 	if %errorlevel%==1 (Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Power" HibernateEnabled 1)
 reg query "HKLM\Software\Policies\Microsoft\Windows\DriverSearching" /v "SearchOrderConfig" > NUL 2>&1
 	if %errorlevel%==1 (Call :dword "HKLM\Software\Policies\Microsoft\Windows\DriverSearching" "SearchOrderConfig" 1)
-	
+
 %Lang% :Service_Menu_On_Off
+echo.
 %Lang% :Service_Menu_1
-Call :SV&Call :SVCheck_Left "BthAvctpSvc bthserv BluetoothUserService BTAGService"&Call :SVCheck_Capabilities "MSPaint"
+Call :SV&Call :SVCheck_Left "BthAvctpSvc bthserv BluetoothUserService BTAGService"&Call :SVCheck_Capabilities "MSPaint"&Call :SVCheck_OS11
 %Lang% :Service_Menu_2
 Call :SV&Call :SVCheck_Left "TapiSrv PhoneSvc"&Call :SVCheck_Capabilities "WordPad"
 %Lang% :Service_Menu_3
@@ -686,12 +666,14 @@ Call :SV&Call :SVCheck_Left "defragsvc"
 %Lang% :Service_Menu_33
 echo  %R%[90m└─────────────────────────────────────────┴─────────────────────────────────────────┘%R%[0m
 %Lang% :Value_2
-set /p value=%R%[32m  %Choice% %R%[0m 
+set /p value=%R%[32m  %Choice%: %R%[0m
+:: Upper ile küçük harfleri büyük harflere dönüştürüyoruz.
 Call :Upper "value" "%value%"
-	if %value% EQU X (goto menu)
-
+:: if value çoklu seçimde hata verdiği için burayı errorlevel'den veri alacak şekilde düzenledim.
+echo %value% | Findstr /i "X" > NUL 2>&1
+	if %errorlevel% EQU 0 (goto menu)
 cls
-FOR %%a in (%$value%) do (
+FOR %%a in (%value%) do (
 	if %%a EQU 1%E1% (%Lang% :Value_13 0&Call :S1_Bluetooth start demand auto)
 	if %%a EQU 1%D1% (%Lang% :Value_13 1&Call :S1_Bluetooth stop disabled disabled)
 	if %%a EQU 2%E1% (%Lang% :Value_13 0&Call :S2_Phone start demand demand)
@@ -809,7 +791,7 @@ FOR %%a in (%$value%) do (
 	if %%a EQU 57%E1% (%Lang% :Value_13 0&Call :R57_OldMenu 1)
 	if %%a EQU 57%D1% (%Lang% :Value_13 1&Call :R57_OldMenu 0)
 )
-%Library% :ProcessCompleted
+Call :ProcessCompleted
 goto Service_Management
 
 :S1_Bluetooth
@@ -1306,7 +1288,7 @@ goto :eof
 
 :O48_Update2050
 %Lang% :Service_48&timeout /t 1 /nobreak > NUL
-for /f "tokens=1" %%a in ('echo %time%') do set Time=%%a
+Call :Time&Call :Date
 if %~1 EQU 0 (Call :delete2 "HKLM\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" "PauseFeatureUpdatesStartTime"
 			  Call :delete2 "HKLM\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" "PauseQualityUpdatesStartTime"
 			  Call :delete2 "HKLM\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" "PauseUpdatesExpiryTime"
@@ -1516,6 +1498,59 @@ Call :ExplorerReset
 ::-------------------------------------
 goto :eof
 
+:: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+:PingMeter
+mode con cols=48 lines=25
+%Lang% :Ping_1
+Call :PingMeter1 www.youtube.com
+echo   %R%[90m•%R%[33m Youtube:%R%[37m %Value1% %R%[90mMS%R%[0m
+Call :PingMeter1 www.facebook.com
+echo   %R%[90m•%R%[33m Facebook:%R%[37m %Value1% %R%[90mMS%R%[0m
+Call :PingMeter1 www.twitter.com
+echo   %R%[90m•%R%[33m Twitter:%R%[37m %Value1% %R%[90mMS%R%[0m
+Call :PingMeter1 www.instagram.com
+echo   %R%[90m•%R%[33m Instagram:%R%[37m %Value1% %R%[90mMS%R%[0m
+Call :PingMeter1 www.reddit.com
+echo   %R%[90m•%R%[33m Reddit:%R%[37m %Value1% %R%[90mMS%R%[0m
+Call :PingMeter1 www.twitch.tv
+echo   %R%[90m•%R%[33m Twitch:%R%[37m %Value1% %R%[90mMS%R%[0m
+echo  %R%[90m ► DNS %R%[0m
+Call :PingMeter1 1.1.1.1 
+Call :PingMeter2 1.0.0.1
+echo   %R%[90m•%R%[33m Cloudflare:%R%[37m %Value1%-%Value2% %R%[90mMS%R%[0m
+Call :PingMeter1 8.8.8.8 
+Call :PingMeter2 8.8.4.4
+echo   %R%[90m•%R%[33m Google:%R%[37m %Value1%-%Value2% %R%[90mMS%R%[0m
+Call :PingMeter1 9.9.9.9 
+Call :PingMeter2 149.112.112.112
+echo   %R%[90m•%R%[33m Quad9:%R%[37m %Value1%-%Value2% %R%[90mMS%R%[0m
+Call :PingMeter1 208.67.222.222 
+Call :PingMeter2 208.67.220.220
+echo   %R%[90m•%R%[33m OpenDns:%R%[37m %Value1%-%Value2% %R%[90mMS%R%[0m
+%Lang% :Ping_2
+%Lang% :Ping_Value_1
+set /p Value=%R%[32m  %Choice%: %R%[0m
+	if %Value% EQU x (goto menu)
+	if %Value% EQU X (goto menu)
+Call :PingMeter1 %Value%
+echo.
+echo   ►%R%[37m %Value1% %R%[90mMS%R%[0m
+echo.
+%Lang% :Extra_13
+pause > NUL
+goto menu
+
+:PingMeter1
+for /f "tokens=9" %%a in ('ping -n 1 %~1') do SET Value1=%%a
+set Value1=%Value1:~0,-2%
+goto :eof
+
+:PingMeter2
+for /f "tokens=9" %%a in ('ping -n 1 %~1') do SET Value2=%%a
+set Value2=%Value2:~0,-2%
+goto :eof
+
+
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 :_TOOLBOX__DEPO__HANGAR_
@@ -1538,6 +1573,8 @@ set Value11=
 set Svchost=
 set link=
 set NSudo2=
+set regtur=
+set deger=
 goto :eof
 
 :: --------------------------------------------------------------------------------------------------------
@@ -1589,7 +1626,7 @@ goto :eof
 :Upper
 :: %~1: Değişken adı  | %~2: Girilen Hash Değeri
 chcp 437 > NUL 2>&1
-FOR /F %%a in ('Powershell -command "'%~2'.ToUpper()"') do (set %~1=%%a)
+FOR /F %%g in ('Powershell -command "'%~2'.ToUpper()"') do (set %~1=%%g)
 chcp 65001 > NUL 2>&1
 goto :eof
 
@@ -1607,87 +1644,68 @@ goto :eof
 :ExplorerReset
 taskkill /f /im explorer.exe > NUL 2>&1
 Call :Powershell "Start-Process 'C:\Windows\explorer.exe'"
-goto :EOF
+goto :eof
+
+:: --------------------------------------------------------------------------------------------------------
+:Exit
+cls
+DEL /F /Q /A %temp%\* > NUL 2>&1
+RD /S /Q %temp%\* > NUL 2>&1
+DEL /F /Q /A %Location%\Bin\Data\* > NUL 2>&1
+exit
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-
-:RegSave
-for /f "skip=2 tokens=2" %%a in ('reg query "%~2" /v "%~3" 2^> NUL') do set regtur=%%a
-for /f "skip=2 tokens=3" %%a in ('reg query "%~2" /v "%~3" 2^> NUL') do set deger=%%a
-reg query "%~2" /v "%~3" /s > NUL 2>&1
-	if %errorlevel%==0 (echo reg add "%~2" /v "%~3" /t %regtur% /d "%deger%" /f ^> NUL 2^>^&1 >> %Location%\Bin\Yedek\%~1.bat)
-	if %errorlevel%==1 (echo reg delete "%~2" /v "%~3" /f ^> NUL 2^>^&1 >> %Location%\Bin\Yedek\%~1.bat)
-reg add "%~2" /v "%~3" /t %~4 /d "%~5" /f > NUL 2>&1
-	if %errorlevel%==1 (%NSudo% reg add "%~2" /v "%~3" /t %~4 /d "%~5" /f)
-::-------------------------------------
-::  Bu bölüm eklenecek regedit kaydını okur ve var olan değeri yedekler.
-::  Eklenecek bütün regedit değerleri buraya yönlendirilir. Yalnızca %~3 değerinde boşluk varsa RegSave_space bölümüne yönlendirilir.
-::  %~1 : Yedek kayıt dosya adı  | %~2: Regedit yolu  | %~3: Regedit Adı  | %~4: Regedit Türü  | %~5: Regedit Veri
-::  Regtur: Regedit Türü  | deger: Regedit Veri
-::-------------------------------------
+:key
+reg add "%~1" /f > NUL 2>&1
+	if %errorlevel%==1 (%NSudo% reg add "%~1" /f)
 goto :eof
 
-:RegSave_ve
-:: Varsayılan regedit değerleri için kullanılır.
-for /f "skip=2 tokens=2" %%a in ('reg query "%~2" /ve 2^> NUL') do set regtur=%%a
-for /f "skip=2 tokens=3" %%a in ('reg query "%~2" /ve 2^> NUL') do set deger=%%a
-reg query "%~2" /ve > NUL 2>&1
-	if %errorlevel%==0 (echo reg add "%~2" /ve /t %regtur% /d "%deger%" /f ^> NUL 2^>^&1 >> %Location%\Bin\Yedek\%~1.bat)
-	if %errorlevel%==1 (echo reg delete "%~2" /ve /f ^> NUL 2^>^&1 >> %Location%\Bin\Yedek\%~1.bat)
-reg add "%~2" /ve /t %~3 /d "%~4" /f > NUL 2>&1
-	if %errorlevel%==1 (%NSudo% reg add "%~2" /ve /t %~3 /d "%~4" /f)
-::-------------------------------------
-::  Bu bölüm eklenecek regedit kaydını okur ve var olan değeri yedekler.
-::  %~3 değeri varsayılan olan regedit değerleri buraya yönlendirilir.
-::  %~1 : Yedek kayıt dosya adı  | %~2: Regedit yolu  | %~3: Regedit Adı  | %~4: Regedit Türü  | %~5: Regedit Veri
-::  Regtur: Regedit Türü  | deger: Regedit Veri
-::-------------------------------------
+:dword
+reg add "%~1" /v "%~2" /t REG_DWORD /d "%~3" /f > NUL 2>&1
+	if %errorlevel%==1 (%NSudo% reg add "%~1" /v "%~2" /t REG_DWORD /d "%~3" /f)
 goto :eof
 
-:RegSave_Delete_Key
-reg query %~2 > NUL 2>&1
-	if %errorlevel%==0 (echo reg add "%~2" /f ^> NUL 2^>^&1 >> %Location%\Bin\Yedek\%~1.bat)
-reg delete "%~2" /f > NUL 2>&1
-	if %errorlevel%==1 (%NSudo% reg delete "%~2" /f)
-::-------------------------------------
-::  Bu bölüm silinecek regedit kaydını okur ve var olan değeri yedekler.
-::  %~1 : Yedek kayıt dosya adı  | %~2: Regedit yolu
-::-------------------------------------
+:binary
+reg add "%~1" /v "%~2" /t REG_BINARY /d "%~3" /f > NUL 2>&1
+	if %errorlevel%==1 (%NSudo% reg add "%~1" /v "%~2" /t REG_BINARY /d "%~3" /f)
 goto :eof
 
-:RegSave_Delete
-for /f "skip=2 tokens=2" %%a in ('reg query "%~2" /v "%~3" 2^> NUL') do set regtur=%%a
-for /f "skip=2 tokens=3" %%a in ('reg query "%~2" /v "%~3" 2^> NUL') do set deger=%%a
-reg query "%~2" /v "%~3" /s > NUL 2>&1
-	if %errorlevel%==0 (echo reg add "%~2" /v "%~3" /t %regtur% /d "%deger%" /f ^> NUL 2^>^&1 >> %Location%\Bin\Yedek\%~1.bat)
-reg delete "%~2" /v "%~3" /f > NUL 2>&1
-	if %errorlevel%==1 (%NSudo% reg delete "%~2" /v "%~3" /f)
-::-------------------------------------
-::  Bu bölüm silinecek regedit kaydını okur ve var olan değeri yedekler.
-::  %~1 : Yedek kayıt dosya adı  | %~2: Regedit yolu | %~3: Regedit Adı
-::  Regtur: Regedit Türü  | deger: Regedit Veri
-::-------------------------------------
+:sz
+reg add "%~1" /v "%~2" /t REG_SZ /d "%~3" /f > NUL 2>&1
+	if %errorlevel%==1 (%NSudo% reg add "%~1" /v "%~2" /t REG_SZ /d "%~3" /f)
 goto :eof
 
-:RegSave_space
-:: Regedit kaydında %~2 değerinde boşluk olduğunda bu bölüm kullanılır.
-for /f "skip=2 tokens=3" %%a in ('reg query "%~2" /v "%~3" 2^> NUL') do set regtur=%%a
-for /f "skip=2 tokens=4" %%a in ('reg query "%~2" /v "%~3" 2^> NUL') do set deger=%%a
-reg query "%~2" /v "%~3" /s > NUL 2>&1
-	if %errorlevel%==0 (echo reg add "%~2" /v "%~3" /t %regtur% /d "%deger%" /f ^> NUL 2^>^&1 >> %Location%\Bin\Yedek\%~1.bat)
-	if %errorlevel%==1 (echo reg delete "%~2" /v "%~3" /f ^> NUL 2^>^&1 >> %Location%\Bin\Yedek\%~1.bat)
-reg add "%~2" /v "%~3" /t %~4 /d "%~5" /f > NUL 2>&1
-	if %errorlevel%==1 (%NSudo% reg add "%~2" /v "%~3" /t %~4 /d "%~5" /f)
-::-------------------------------------
-::  Bu bölüm eklenecek regedit kaydını okur ve var olan değeri yedekler.
-::  %~3 değerinde boşluk varsa RegSave_space bölümüne yönlendirilir.
-::  %~1 : Yedek kayıt dosya adı  | %~2: Regedit yolu  | %~3: Regedit Adı  | %~4: Regedit Türü  | %~5: Regedit Veri
-::  Regtur: Regedit Türü  | deger: Regedit Veri
-::-------------------------------------
+:vesz
+reg add "%~1" /ve /t REG_SZ /d "%~2" /f > NUL 2>&1
+	if %errorlevel%==1 (%NSudo% reg add "%~1" /ve /t REG_SZ /d "%~2" /f)
+goto :eof
+
+:multisz
+reg add "%~1" /v "%~2" /t REG_MULTI_SZ /d "%~3" /f > NUL 2>&1
+	if %errorlevel%==1 (%NSudo% reg add "%~1" /v "%~2" /t REG_MULTI_SZ /d "%~3" /f)
+goto :eof
+
+:expandsz
+reg add "%~1" /v "%~2" /t REG_EXPAND_SZ /d "%~3" /f > NUL 2>&1
+	if %errorlevel%==1 (%NSudo% reg add "%~1" /v "%~2" /t REG_EXPAND_SZ /d "%~3" /f)
+goto :eof
+
+:vexpandsz
+reg add "%~1" /ve /t REG_EXPAND_SZ /d "%~2" /f > NUL 2>&1
+	if %errorlevel%==1 (%NSudo% reg add "%~1" /ve /t REG_EXPAND_SZ /d "%~2" /f)
+goto :eof
+
+:delete
+reg delete "%~1" /f > NUL 2>&1
+	if %errorlevel%==1 (%NSudo% reg delete "%~1" /f)
+goto :eof
+
+:delete2
+reg delete "%~1" /v "%~2" /f > NUL 2>&1
+	if %errorlevel%==1 (%NSudo% reg delete "%~1" /v "%~2" /f)
 goto :eof
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-
 :SV
 set DL=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[90m█%R%[90m -%R%[33m
 set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[90m█%R%[90m -%R%[33m
@@ -1695,33 +1713,42 @@ set DO=%R%[90m[%R%[36m %E1% %R%[90m]%R%[90m█%R%[90m -%R%[33m
 set SO=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]  -%R%[33m
 goto :eof
 
+
 :SVCheck_Left
-For %%a in (%~1) do (reg query "HKLM\SYSTEM\CurrentControlSet\Services\%%a" /v "Start" | Findstr /i 4 > NUL 2>&1)
+FOR %%g in (%~1) do (Call :For_Left %%g)
+goto :eof
+
+:For_Left
+reg query "HKLM\SYSTEM\CurrentControlSet\Services\%~1" /v "Start" 2>NUL | Findstr /i "0x4" > NUL 2>&1
 	if %errorlevel% EQU 1 (set DL=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[32m♦%R%[90m -%R%[33m)
 goto :eof
 
 :SVCheck_Right
-For %%a in (%~1) do (reg query "HKLM\SYSTEM\CurrentControlSet\Services\%%a" /v "Start" | Findstr /i 4 > NUL 2>&1)
+FOR %%g in (%~1) do (Call :For_Right %%g)
+goto :eof
+
+:For_Right
+reg query "HKLM\SYSTEM\CurrentControlSet\Services\%~1" /v "Start" 2>NUL | Findstr /i "0x4" > NUL 2>&1
 	if %errorlevel% EQU 1 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[32m♦%R%[90m -%R%[33m)
 goto :eof
 
 :SVCheck_Capabilities
-FOR /F "tokens=3" %%a in ('Findstr /i "%~1" %Location%\Bin\Data\Capabilities.txt') do (echo %%a | Findstr /i "Installed" > NUL 2>&1)
+Findstr /i "%~1" %Location%\Bin\Data\Capabilities.txt | Findstr /i "Installed" > NUL 2>&1
 	if %errorlevel% EQU 0 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[32m♦%R%[90m -%R%[33m)
 goto :eof
 
 :SVCheck_Features
-FOR /F "tokens=3" %%a in ('Findstr /i "%~1" %Location%\Bin\Data\Features.txt') do (echo %%a | Findstr /i "Enabled" > NUL 2>&1)
+Findstr /i "%~1" %Location%\Bin\Data\Features.txt | Findstr /i "Enabled" > NUL 2>&1
 	if %errorlevel% EQU 0 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[32m♦%R%[90m -%R%[33m)
 goto :eof
 
 :SVCheck_RegLeft
-for /f "skip=1 tokens=3" %%a in ('reg query "%~1" /v "%~2"') do (echo %%a | findstr /i "%~3" > NUL 2>&1)
+reg query "%~1" /v "%~2" 2>NUL | Findstr /i "%~3" > NUL 2>&1
 	if %errorlevel% EQU 1 (set DL=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[32m♦%R%[90m -%R%[33m)
 goto :eof
 
 :SVCheck_RegRight
-for /f "skip=1 tokens=3" %%a in ('reg query "%~1" /v "%~2"') do (echo %%a | findstr /i "%~3" > NUL 2>&1)
+reg query "%~1" /v "%~2" 2>NUL | Findstr /i "%~3" > NUL 2>&1
 	if %errorlevel% EQU 1 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[32m♦%R%[90m -%R%[33m)
 goto :eof
 
@@ -1749,13 +1776,51 @@ Compact /CompactOS:Query | Findstr /i "The system is not in the Compact state" >
 goto :eof
 
 :SVCheck_OS10
-if %Win% EQU 10 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[101m %R%[0m%R%[90m -%R%[33m)
+if %Win% EQU 10 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[31m█%R%[0m%R%[90m -%R%[33m)
 goto :eof
 
 :SVCheck_OS11
-if %Win% EQU 11 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[101m %R%[0m%R%[90m -%R%[33m)
+if %Win% EQU 11 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[31m█%R%[0m%R%[90m -%R%[33m)
 goto :eof
 
-:Error_Character
+:: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
+:ProcessCompleted
+mode con cols=39 lines=20
+echo.
+echo            %R%[90m┌───────────────┐%R%[0m
+echo            %R%[90m│%R%[32m               %R%[90m│%R%[0m
+echo            %R%[90m│%R%[32m          ██   %R%[90m│%R%[0m
+echo            %R%[90m│%R%[32m         ██    %R%[90m│%R%[0m
+echo            %R%[90m│%R%[32m   ██   ██     %R%[90m│%R%[0m
+echo            %R%[90m│%R%[32m    ██ ██      %R%[90m│%R%[0m
+echo            %R%[90m│%R%[32m     ███       %R%[90m│%R%[0m
+echo            %R%[90m│               %R%[90m│%R%[0m
+echo            %R%[90m└───────────────┘%R%[0m
+echo.
+echo            %R%[37m İşlem tamamlandı%R%[0m
+timeout /t 1 /nobreak > NUL
+goto :eof
+
+:ProcessCompletedReset
+mode con cols=39 lines=20
+echo.
+echo            %R%[90m┌───────────────┐%R%[0m
+echo            %R%[90m│%R%[32m               %R%[90m│%R%[0m
+echo            %R%[90m│%R%[32m          ██   %R%[90m│%R%[0m
+echo            %R%[90m│%R%[32m         ██    %R%[90m│%R%[0m
+echo            %R%[90m│%R%[32m   ██   ██     %R%[90m│%R%[0m
+echo            %R%[90m│%R%[32m    ██ ██      %R%[90m│%R%[0m
+echo            %R%[90m│%R%[32m     ███       %R%[90m│%R%[0m
+echo            %R%[90m│               %R%[90m│%R%[0m
+echo            %R%[90m└───────────────┘%R%[0m
+echo.
+echo            %R%[37m İşlem tamamlandı%R%[0m
+echo.
+echo       %R%[33m Yeniden başlatmak için %R%[96m'R'%R%[0m
+echo          %R%[33m Devam etmek için %R%[96m'X'%R%[0m
+echo               %R%[33m tuşlayın%R%[0m
+set /p value=%R%[92m                   %R%[0m
+	if %value% EQU R (shutdown -r -f -t 0&exit)
+	if %value% EQU r (shutdown -r -f -t 0&exit)
 goto :eof

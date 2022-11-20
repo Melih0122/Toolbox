@@ -1,25 +1,26 @@
-:UpdateAfter
-cls
-Rename "%Location%\Bin\Yedek\Update.bat" "Update.%DateDay%.bat" > NUL 2>&1
+MD "%Location%\Bin\Extra\UpdateAfter\Backup" > NUL 2>&1
+for /f "tokens=1" %%a in ('echo %time%') do set Time=%%a
+Rename "%Location%\Bin\Extra\UpdateAfter\Backup\Update.bat" "Update.%DateDay%_%Random%.bat" > NUL 2>&1
 
 cls
-echo %R%[92m Güncelleme sonrası temizlik işlemi yapılıyor.%R%[0m
-echo %R%[92m Defender dosyaları siliniyor...%R%[0m
+%Lang% :After_1
 %NSudo% DEL /F /Q /A "%windir%\System32\CompatTelRunner.exe" "%windir%\System32\drivers\MsSecFlt.sys" "%windir%\System32\drivers\WdBoot.sys" "%windir%\System32\drivers\WdFilter.sys" "%windir%\System32\drivers\WdNisDrv.sys" "%windir%\System32\smartscreen.exe" "%windir%\System32\securityhealthhost.exe" "%windir%\System32\securityhealthservice.exe" "%windir%\System32\securityhealthsystray.exe" "%windir%\System32\SgrmBroker.exe"
 %NSudo% RD /S /Q "%programfiles%\Windows Defender Advanced Threat Protection" "%programfiles%\Windows Defender" "%programfiles%\Windows Security" "%programfiles(x86)%\Windows Security" "%programfiles(x86)%\Windows Defender" "%programfiles(x86)%\Windows Defender Advanced Threat Protection" "%programdata%\Microsoft\Windows Security Health" "%programdata%\Microsoft\Windows Defender Advanced Threat Protection" "%programdata%\Microsoft\Windows Defender" "%windir%\SystemApps\Microsoft.Windows.SecHealthUI_cw5n1h2txyewy"
-echo %R%[92m Hizmetler düzenleniyor...%R%[0m
-:: Silinecek servisler
-FOR %%a in (SecurityHealthService Sense SgrmBroker WdNisSvc WinDefend wscsvc DiagTrack dmwappushservice diagnosticshub.standartcollector.service diagsvc) do (
-	%NSudo% net stop %%a
-	%NSudo% sc delete %%a
-)
-:: Kapatılacak servisler
-FOR %%b in () do (
+
+%Lang% :After_2
+FOR /F "tokens=4" %%g in ('Findstr /i "Service-1" %Location%\Bin\Extra\UpdateAfter\Services.txt') do (
 	%NSudo% sc config %%a start= disabled
 	%NSudo% net stop %%a /y
 )
+FOR /F "tokens=4" %%g in ('Findstr /i "Service-2" %Location%\Bin\Extra\UpdateAfter\Services.txt') do (
+	%NSudo% net stop %%a /y
+	%NSudo% sc delete %%a
+)
+FOR /F "tokens=4" %%g in ('Findstr /i "Service-3" %Location%\Bin\Extra\UpdateAfter\Services.txt') do (
+	%NSudo% sc config %%a start= demand
+)
 
-echo %R%[92m Regedit kayıtları düzenleniyor.%R%[0m
+%Lang% :After_3
 :: Defender
 Call :RegSave Update "HKLM\SOFTWARE\Microsoft\Windows Defender Security Center\Notifications" "DisableNotifications" REG_DWORD 0x1
 Call :RegSave Update "HKLM\SOFTWARE\Microsoft\Windows Defender Security Center\Notifications" "DisableEnhancedNotifications" REG_DWORD 0x1
@@ -79,8 +80,8 @@ Call :RegSave Update "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet" 
 :: SmartScreen
 ::for "tokens=* USEBACKQ" %i in (`wmic.exe useraccount where "name="%username%"" get sid ^| findstr "S-"`) do set currentusername=%i
 ::set currentusername=%currentusername:~0,-3%
-%Library% :Powershell "Get-CimInstance -ClassName Win32_UserAccount | Select-Object -Property Name,SID" > %Location%\Bin\Data\cusername
-FOR /F "tokens=2" %%a in ('Find "%username%" %Location%\Bin\Data\cusername') do set currentusername=%%a
+Call :Powershell "Get-CimInstance -ClassName Win32_UserAccount | Select-Object -Property Name,SID" > %Location%\Bin\Data\cusername
+FOR /F "tokens=2" %%a in ('Findstr /i "%username%" %Location%\Bin\Data\cusername') do set currentusername=%%a
 Call :RegSave Update "HKU\%currentusername%\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" "EnableWebContentEvaluation" REG_DWORD 0x0
 Call :RegSave Update "HKU\%currentusername%\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" "PreventOverride" REG_DWORD 0x0
 Call :RegSave Update "HKU\%currentusername%\SOFTWARE\Policies\Microsoft\Edge" "SmartScreenEnabled" REG_DWORD 0x0
@@ -144,8 +145,8 @@ Call :RegSave Update "HKLM\SOFTWARE\Policies\Wow6432Node\Microsoft\Windows\Windo
 Call :RegSave Update "HKLM\SOFTWARE\Policies\Wow6432Node\Microsoft\Windows\Windows Search" "AllowCortanaAboveLock" REG_DWORD 0x0
 :: Taskbar
 Call :RegSave Update "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "ShowTaskViewButton" REG_DWORD 0x0 & :: Görev Görünümü Simgesi Kaldırılıyor...
-Call :RegSave Update "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "MMTaskbarEnabled" REG_DWORD 0x1 & :: Görev Çubuğu ve bütün simgeleri tüm monitörlerde göster
-Call :RegSave Update "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "MMTaskbarMode" REG_DWORD 0x0 & :: Görev Çubuğu ve bütün simgeleri tüm monitörlerde göster
+::Call :RegSave Update "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "MMTaskbarEnabled" REG_DWORD 0x1 & :: Görev Çubuğu ve bütün simgeleri tüm monitörlerde göster
+::Call :RegSave Update "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "MMTaskbarMode" REG_DWORD 0x0 & :: Görev Çubuğu ve bütün simgeleri tüm monitörlerde göster
 Call :RegSave Update "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize" "EnableTransparency" REG_DWORD 0x0 & :: Görev çubuğu transparan özelliği devre dışı bırakılıyor...
 Call :RegSave Update "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "ShowCortanaButton" REG_DWORD 0x0 & :: Cortana Butonu kaldırılıyor...
 :: Explorer
@@ -361,7 +362,7 @@ bcdedit /set useplatformtick yes > NUL 2>&1
 bcdedit /set disabledynamictick yes > NUL 2>&1
 "%Location%\Bin\DevManView.exe" /disable "High precision event timer"
 
-echo %R%[92m Görev zamanlayıcısında düzenlemeler yapılıyor.%R%[0m
+%Lang% :After_4
 schtasks /change /TN "\Microsoft\Windows\Windows Defender\Windows Defender Cache Maintenance" /DISABLE > NUL 2>&1
 schtasks /change /TN "\Microsoft\Windows\Windows Defender\Windows Defender Cleanup" /DISABLE > NUL 2>&1
 schtasks /change /TN "\Microsoft\Windows\Windows Defender\Windows Defender Scheduled Scan" /DISABLE > NUL 2>&1
@@ -395,4 +396,87 @@ schtasks /Change /TN "\Microsoft\Windows\Shell\FamilySafetyMonitor" /DISABLE > N
 schtasks /Change /TN "\Microsoft\Windows\Shell\FamilySafetyRefresh" /DISABLE > NUL 2>&1
 schtasks /Change /TN "\Microsoft\Windows\Feedback\Siuf\DmClient" /DISABLE > NUL 2>&1
 schtasks /Change /TN "\Microsoft\Windows\Feedback\Siuf\DmClientOnScenarioDownload" /DISABLE > NUL 2>&1
+goto :eof
+
+:: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+:RegSave
+for /f "skip=2 tokens=2" %%a in ('reg query "%~2" /v "%~3" 2^> NUL') do set regtur=%%a
+for /f "skip=2 tokens=3" %%a in ('reg query "%~2" /v "%~3" 2^> NUL') do set deger=%%a
+reg query "%~2" /v "%~3" /s > NUL 2>&1
+	if %errorlevel%==0 (echo reg add "%~2" /v "%~3" /t %regtur% /d "%deger%" /f ^> NUL 2^>^&1 >> %Location%\Bin\Extra\UpdateAfter\Backup\%~1.bat)
+	if %errorlevel%==1 (echo reg delete "%~2" /v "%~3" /f ^> NUL 2^>^&1 >> %Location%\Bin\Extra\UpdateAfter\Backup\%~1.bat)
+reg add "%~2" /v "%~3" /t %~4 /d "%~5" /f > NUL 2>&1
+	if %errorlevel%==1 (%NSudo% reg add "%~2" /v "%~3" /t %~4 /d "%~5" /f)
+::-------------------------------------
+::  Bu bölüm eklenecek regedit kaydını okur ve var olan değeri yedekler.
+::  Eklenecek bütün regedit değerleri buraya yönlendirilir. Yalnızca %~3 değerinde boşluk varsa RegSave_space bölümüne yönlendirilir.
+::  %~1 : Yedek kayıt dosya adı  | %~2: Regedit yolu  | %~3: Regedit Adı  | %~4: Regedit Türü  | %~5: Regedit Veri
+::  Regtur: Regedit Türü  | deger: Regedit Veri
+::-------------------------------------
+goto :eof
+
+:RegSave_ve
+:: Varsayılan regedit değerleri için kullanılır.
+for /f "skip=2 tokens=2" %%a in ('reg query "%~2" /ve 2^> NUL') do set regtur=%%a
+for /f "skip=2 tokens=3" %%a in ('reg query "%~2" /ve 2^> NUL') do set deger=%%a
+reg query "%~2" /ve > NUL 2>&1
+	if %errorlevel%==0 (echo reg add "%~2" /ve /t %regtur% /d "%deger%" /f ^> NUL 2^>^&1 >> %Location%\Bin\Extra\UpdateAfter\Backup\%~1.bat)
+	if %errorlevel%==1 (echo reg delete "%~2" /ve /f ^> NUL 2^>^&1 >> %Location%\Bin\Extra\UpdateAfter\Backup\%~1.bat)
+reg add "%~2" /ve /t %~3 /d "%~4" /f > NUL 2>&1
+	if %errorlevel%==1 (%NSudo% reg add "%~2" /ve /t %~3 /d "%~4" /f)
+::-------------------------------------
+::  Bu bölüm eklenecek regedit kaydını okur ve var olan değeri yedekler.
+::  %~3 değeri varsayılan olan regedit değerleri buraya yönlendirilir.
+::  %~1 : Yedek kayıt dosya adı  | %~2: Regedit yolu  | %~3: Regedit Adı  | %~4: Regedit Türü  | %~5: Regedit Veri
+::  Regtur: Regedit Türü  | deger: Regedit Veri
+::-------------------------------------
+goto :eof
+
+:RegSave_Delete_Key
+reg query %~2 > NUL 2>&1
+	if %errorlevel%==0 (echo reg add "%~2" /f ^> NUL 2^>^&1 >> %Location%\Bin\Extra\UpdateAfter\Backup\%~1.bat)
+reg delete "%~2" /f > NUL 2>&1
+	if %errorlevel%==1 (%NSudo% reg delete "%~2" /f)
+::-------------------------------------
+::  Bu bölüm silinecek regedit kaydını okur ve var olan değeri yedekler.
+::  %~1 : Yedek kayıt dosya adı  | %~2: Regedit yolu
+::-------------------------------------
+goto :eof
+
+:RegSave_Delete
+for /f "skip=2 tokens=2" %%a in ('reg query "%~2" /v "%~3" 2^> NUL') do set regtur=%%a
+for /f "skip=2 tokens=3" %%a in ('reg query "%~2" /v "%~3" 2^> NUL') do set deger=%%a
+reg query "%~2" /v "%~3" /s > NUL 2>&1
+	if %errorlevel%==0 (echo reg add "%~2" /v "%~3" /t %regtur% /d "%deger%" /f ^> NUL 2^>^&1 >> %Location%\Bin\Extra\UpdateAfter\Backup\%~1.bat)
+reg delete "%~2" /v "%~3" /f > NUL 2>&1
+	if %errorlevel%==1 (%NSudo% reg delete "%~2" /v "%~3" /f)
+::-------------------------------------
+::  Bu bölüm silinecek regedit kaydını okur ve var olan değeri yedekler.
+::  %~1 : Yedek kayıt dosya adı  | %~2: Regedit yolu | %~3: Regedit Adı
+::  Regtur: Regedit Türü  | deger: Regedit Veri
+::-------------------------------------
+goto :eof
+
+:RegSave_space
+:: Regedit kaydında %~2 değerinde boşluk olduğunda bu bölüm kullanılır.
+for /f "skip=2 tokens=3" %%a in ('reg query "%~2" /v "%~3" 2^> NUL') do set regtur=%%a
+for /f "skip=2 tokens=4" %%a in ('reg query "%~2" /v "%~3" 2^> NUL') do set deger=%%a
+reg query "%~2" /v "%~3" /s > NUL 2>&1
+	if %errorlevel%==0 (echo reg add "%~2" /v "%~3" /t %regtur% /d "%deger%" /f ^> NUL 2^>^&1 >> %Location%\Bin\Extra\UpdateAfter\Backup\%~1.bat)
+	if %errorlevel%==1 (echo reg delete "%~2" /v "%~3" /f ^> NUL 2^>^&1 >> %Location%\Bin\Extra\UpdateAfter\Backup\%~1.bat)
+reg add "%~2" /v "%~3" /t %~4 /d "%~5" /f > NUL 2>&1
+	if %errorlevel%==1 (%NSudo% reg add "%~2" /v "%~3" /t %~4 /d "%~5" /f)
+::-------------------------------------
+::  Bu bölüm eklenecek regedit kaydını okur ve var olan değeri yedekler.
+::  %~3 değerinde boşluk varsa RegSave_space bölümüne yönlendirilir.
+::  %~1 : Yedek kayıt dosya adı  | %~2: Regedit yolu  | %~3: Regedit Adı  | %~4: Regedit Türü  | %~5: Regedit Veri
+::  Regtur: Regedit Türü  | deger: Regedit Veri
+::-------------------------------------
+goto :eof
+
+:Powershell
+:: Powershell komutları kullanıldığında komut istemi compact moda girmektedir. Bunu önlemek için karakter takımları arasında geçiş yapıyoruz.
+chcp 437 > NUL 2>&1
+Powershell -command %*
+chcp 65001 > NUL 2>&1
 goto :eof

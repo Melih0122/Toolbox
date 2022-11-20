@@ -61,11 +61,11 @@ goto :eof
 echo            %R%[90m┌────────────────────────────────────┬───────────────────────────────────────┐%R%[0m
 echo            %R%[90m│%R%[32m  1-%R%[37m Uygulama Yükleyici %R%[90m[M]         │%R%[32m   2-%R%[37m Hizmetleri Yönet%R%[90m [M]             │%R%[0m
 echo            %R%[90m├────────────────────────────────────┼───────────────────────────────────────┤
-echo            %R%[90m│%R%[32m  3-%R%[33m Hesap ve Lisans Yönetimi%R%[90m[M]    │%R%[32m  10-%R%[33m Ping Ölçer %R%[90m [*]                  │%R%[0m
-echo            %R%[90m│%R%[32m  4-%R%[33m Zaman Ayarlı PC Kapat%R%[90m [M]      │%R%[32m  11-%R%[33m İşlem Önceliği%R%[90m [M]               │%R%[0m
-echo            %R%[90m│%R%[32m  5-%R%[33m Appx - Güncelleme Yükleyici    %R%[90m│%R%[32m  12-%R%[33m Güncelleme Sonrası Temizlik      %R%[90m│%R%[0m
-echo            %R%[90m│%R%[32m  6-%R%[33m Hash Karşılaştırıcı%R%[90m [SHA-256]  │%R%[32m  13-%R%[33m Windows - Market Onar            %R%[90m│%R%[0m
-echo            %R%[90m│%R%[32m  7-%R%[33m Fat32 to NTFS%R%[90m [M]              │%R%[32m  14-%R%[33m Genel Temizlik                   %R%[90m│%R%[0m
+echo            %R%[90m│%R%[32m  3-%R%[33m Hesap ve Lisans Yönetimi%R%[90m [M]   │%R%[32m  10-%R%[33m Ping Ölçer%R%[90m [*]                   │%R%[0m
+echo            %R%[90m│%R%[32m  4-%R%[33m Zaman Ayarlı PC Kapat%R%[90m [M]      │%R%[32m  11-%R%[33m Güncelleme Sonrası Temizlik      %R%[90m│%R%[0m
+echo            %R%[90m│%R%[32m  5-%R%[33m Appx - Güncelleme Yükleyici    %R%[90m│%R%[32m  12-%R%[33m Windows - Market Onar            %R%[90m│%R%[0m
+echo            %R%[90m│%R%[32m  6-%R%[33m SHA-256 Karşılaştırıcı         %R%[90m│%R%[32m  13-%R%[33m Genel Temizlik                   %R%[90m│%R%[0m
+echo            %R%[90m│%R%[32m  7-%R%[33m Fat32 to NTFS%R%[90m [M]              │%R%[32m%R%[90m%R%[90m                                       │%R%[0m
 echo            %R%[90m│%R%[32m  8-%R%[33m Sistem Hakkında%R%[90m [*]            │%R%[32m%R%[90m%R%[90m                                       │%R%[0m
 echo            %R%[90m│%R%[32m  9-%R%[33m Kayıtlı Wifi Bilgileri         %R%[90m│%R%[32m%R%[90m%R%[90m                                       │%R%[0m
 echo            %R%[90m├────────────────────────────────────┼───────────────────────────────────────┤%R%[0m
@@ -76,6 +76,7 @@ goto :eof
 :Menu_2
 :: Kılavuz çizgisi
 set xognitorenksx=%R%[90m►
+echo.
 echo   %R%[90m┌────────────────────────────┬──────────────────────────────┬──────────────────────────────────┐%R%[0m
 echo   %R%[90m│%R%[32m    1-%R%[33m All in One Runtimes  %R%[90m│%xognitorenksx% Sıkıştırma                  %R%[90m│%xognitorenksx% Uzak Bağlantı                   %R%[90m│%R%[0m
 echo   %R%[90m│%xognitorenksx% Mesaj                     %R%[90m│%R%[32m   28-%R%[36m 7-Zip                  %R%[90m│%R%[32m   53-%R%[36m Teamviewer                 %R%[90m│%R%[0m
@@ -84,12 +85,12 @@ echo   %R%[90m│%R%[32m    3-%R%[36m Whatsapp             %R%[90m│%xognitoren
 echo   %R%[90m│%R%[32m    4-%R%[36m Signal               %R%[90m│%R%[32m   30-%R%[33m K-Lite Codec           %R%[90m│%R%[32m   55-%R%[33m OpenShell                  %R%[90m│%R%[0m
 echo   %R%[90m│%R%[32m    5-%R%[36m Telegram             %R%[90m│%R%[32m   31-%R%[33m VLC Media Player       %R%[90m│%R%[32m   56-%R%[33m TaskbarX                   %R%[90m│%R%[0m
 echo   %R%[90m│%R%[32m    6-%R%[36m Zoom                 %R%[90m│%R%[32m   32-%R%[33m PotPlayer              %R%[90m│%xognitorenksx% Diğer                           %R%[90m│%R%[0m
-echo   %R%[90m│%xognitorenksx% Oyun Kütüphane            %R%[90m│%R%[32m   33-%R%[33m Aimp                   %R%[90m│%R%[32m   57-%R%[33m Mem Reduct                 %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    7-%R%[33m Epic Games           %R%[90m│%R%[32m   34-%R%[33m Spotify                %R%[90m│%R%[32m   58-%R%[33m MSI Afterburner            %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    8-%R%[33m Steam                %R%[90m│%xognitorenksx% İndirme Araçları            %R%[90m│%R%[32m   59-%R%[33m Everything                 %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m    9-%R%[33m GOG Galaxy           %R%[90m│%R%[32m   35-%R%[36m Internet Download Man. %R%[90m│%R%[32m   60-%R%[33m Hamachi                    %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   10-%R%[33m Ubisoft Connect      %R%[90m│%R%[32m   36-%R%[36m Free Download Manager  %R%[90m│%R%[32m   61-%R%[33m Glasswire                  %R%[90m│%R%[0m
-echo   %R%[90m│%R%[32m   11-%R%[33m EA Games/Origin      %R%[90m│%R%[32m   37-%R%[36m Qbittorrent            %R%[90m│%R%[32m   62-%R%[33m Stremio                    %R%[90m│%R%[0m
+echo   %R%[90m│%xognitorenksx% Oyun Kütüphane            %R%[90m│%R%[32m   33-%R%[33m Aimp                   %R%[90m│%R%[32m   57-%R%[36m Mem Reduct                 %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    7-%R%[33m Epic Games           %R%[90m│%R%[32m   34-%R%[33m Spotify                %R%[90m│%R%[32m   58-%R%[36m MSI Afterburner            %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    8-%R%[33m Steam                %R%[90m│%xognitorenksx% İndirme Araçları            %R%[90m│%R%[32m   59-%R%[36m Everything                 %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m    9-%R%[33m GOG Galaxy           %R%[90m│%R%[32m   35-%R%[36m Internet Download Man. %R%[90m│%R%[32m   60-%R%[36m Hamachi                    %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   10-%R%[33m Ubisoft Connect      %R%[90m│%R%[32m   36-%R%[36m Free Download Manager  %R%[90m│%R%[32m   61-%R%[36m Glasswire                  %R%[90m│%R%[0m
+echo   %R%[90m│%R%[32m   11-%R%[33m EA Games/Origin      %R%[90m│%R%[32m   37-%R%[36m Qbittorrent            %R%[90m│%R%[32m   62-%R%[36m Stremio                    %R%[90m│%R%[0m
 echo   %R%[90m│%R%[32m   12-%R%[33m Playnite             %R%[90m│%xognitorenksx% Belgeler                    %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
 echo   %R%[90m│%xognitorenksx% Tarayıcı                  %R%[90m│%R%[32m   38-%R%[33m Libre Office           %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
 echo   %R%[90m│%R%[32m   13-%R%[36m Google Chrome        %R%[90m│%R%[32m   39-%R%[33m Adobe Reader           %R%[90m│%R%[32m%R%[37m                                  %R%[90m│%R%[0m
@@ -127,24 +128,6 @@ echo  %R%[90m│%R%[32m  5-%R%[33m Kullanıcı Sil                    %R%[90m│
 echo  %R%[90m│%R%[32m  6-%R%[33m Şifremi unuttum / değiştir       %R%[90m│%R%[32m 13-%R%[36m Lisans Süre Sıfırla%R%[90m [rearm] │%R%[0m
 echo  %R%[90m│%R%[32m  7-%R%[33m Mevcut Kullanıcıları Göster%R%[90m [*]  │%R%[32m  X-%R%[37m Menu                        %R%[90m│%R%[0m
 echo  %R%[90m└──────────────────────────────────────┴─────────────────────────────────┘%R%[0m
-goto :eof
-
-:Menu_4
-echo  %R%[90m┌───────────────────────────────────────────────────┐%R%[0m
-echo  %R%[90m│%R%[92m             Çalışma Öncelik Planlayıcı            %R%[90m│%R%[0m
-echo  %R%[90m├───────────────────────────────────────────────────┤%R%[0m
-echo  %R%[90m│   %R%[32m 1.%R%[33m Yüksek                                      %R%[90m│%R%[0m
-echo  %R%[90m│   %R%[32m 2.%R%[33m Normal Üstü                                 %R%[90m│%R%[0m
-echo  %R%[90m│   %R%[32m 3.%R%[33m Normal Altı                                 %R%[90m│%R%[0m
-echo  %R%[90m│   %R%[32m 4.%R%[33m Düşük                                       %R%[90m│%R%[0m
-echo  %R%[90m│   %R%[32m X.%R%[37m Menu                                        %R%[90m│%R%[0m
-echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
-goto :eof
-
-:Menu3_1
-echo %R%[90m  Görev Yöneticisi - Ayrıntılar%R%[0m
-echo %R%[90m  bölümünden uygulama isimlerini öğrenebilirsiniz.%R%[0m
-echo %R%[90m  ► Uygulamalar arası boşluk bırakarak çoklu yazabilirsiniz.%R%[0m
 goto :eof
 
 :Menu_4
@@ -731,4 +714,113 @@ echo HATA! Sistem mimarisi x64 değil
 echo.
 echo Toolbox kapanıyor...%R%[0m
 timeout /t 4 /nobreak > NUL
+goto :eof
+
+
+:Extra_Value_1
+set Value5=UEFI-GPT
+goto :eof
+
+:Extra_Value_2
+set Value5=BIOS-MBR
+goto :eof
+
+:Extra_Value_3
+set Value1=RAM
+goto :eof
+
+:Extra_Value_4
+set Value1=GPU
+goto :eof
+
+:Extra_1
+echo                               %R%[92m Sistem ve donanım bilgisi alınıyor%R%[0m
+echo.
+echo                                      %R%[92m Lütfen bekleyiniz...%R%[0m
+goto :eof
+
+:Extra_2
+echo  %R%[90m┌───────────────────────────────────────────────────────────────────────────────────────────┐%R%[0m
+echo  %R%[90m│%R%[92m                                       SİSTEM HAKKINDA                                     %R%[90m│%R%[0m
+echo  %R%[90m├───────────────────────────────────────────────────────────────────────────────────────────┤%R%[0m
+goto :eof
+
+:Extra_3
+echo   ►%R%[32m Bilgisayar:%R%[37m %Value2% %R%[0m
+echo   ►%R%[32m Kullanıcı :%R%[37m %Value1% %R%[0m
+goto :eof
+
+:Extra_4
+echo   ►%R%[32m Format Tarihi:%R%[37m %Value1%%R%[90m ^| %R%[32mSaat Dilimi:%R%[37m %Value2%%R%[90m ^|%R%[37m %Value3% - %Value4%%R%[0m
+goto :eof
+
+:Extra_5
+echo   ►%R%[32m Sistem:%R%[37m %Value1%%R%[90m ^| %R%[37mx%Value2%%R%[90m ^| %R%[37m%Value4%%R%[90m ^| %R%[37m%Value3%%R%[90m ^| %R%[37m%Value5%%R%[0m
+goto :eof
+
+:Extra_6
+echo   ►%R%[32m Anakart:%R%[37m %Value1%%Value2%%R%[90m ^| %R%[32mSoket:%R%[37m%Value3%%R%[90m ^| %R%[32mBios:%R%[37m%Value4%%R%[0m
+goto :eof
+
+:Extra_7
+echo   ►%R%[32m CPU:%R%[37m%Value1% %R%[0m
+echo   ►%R%[32m CPU Çekirdek:%R%[37m%Value2% %R%[90m^|%R%[32m Threads:%R%[37m%Value3% %R%[90m^|%R%[32m L2:%R%[37m%Value4%%R%[36m MB%R%[90m ^|%R%[32m L3:%R%[37m%Value5%%R%[36m MB%R%[90m ^|%R%[32m CPU MHZ:%R%[37m%Value6%%R%[0m
+goto :eof
+
+:Extra_8
+echo   ►%R%[32m GPU:%R%[37m%Value1%%R%[90m ^|%R%[32m VRAM:%R%[37m%Value2%%R%[36m GB%R%[0m 
+echo   ►%R%[32m GPU Driver:%R%[37m%Value3%%R%[90m ^| %R%[32mDriver Tarih:%R%[37m %Value4%%R%[0m
+goto :eof
+
+:Extra_9
+echo   ►%R%[32m Monitör:%R%[37m%Value1% %R%[90m^|%R%[37m%Value4% %R%[36mHZ%R%[90m ^|%R%[37m%Value2% %R%[36mx%R%[37m%Value3%%R%[0m
+goto :eof
+
+:Extra_10
+echo   ►%R%[32m RAM:%R%[37m %Value2% %R%[36mGB%R%[90m ^|%R%[37m%Value3% %R%[36m MHZ%R%[90m ^|%R%[32m Soket:%R%[37m %Value1% %R%[0m
+goto :eof
+
+:Extra_11
+echo          %R%[32m Marka - Model - Kapasite - MHZ%R%[0m
+goto :eof
+
+:Extra_12
+echo         %R%[32m Model - VRAM - Driver%R%[0m
+goto :eof
+
+:Extra_13
+echo %R%[92m Ana menü için herhangi bir tuşa basınız.%R%[0m
+goto :eof
+
+:Ping_1
+echo  %R%[90m┌────────────────────────────────────────────┐%R%[0m
+echo  %R%[90m│%R%[92m             Hazır Ping Ölçümleri           %R%[90m│%R%[0m
+echo  %R%[90m├────────────────────────────────────────────┤%R%[0m
+goto :eof
+
+:Ping_2
+echo  %R%[90m├────────────────────────────────────────────┤%R%[0m
+echo  %R%[32m                   X-%R%[37m Menü%R%[0m
+echo  %R%[90m└────────────────────────────────────────────┘%R%[0m
+goto :eof
+
+:Ping_Value_1
+set Choice=[Site/IP]
+goto :eof
+
+:After_1
+echo %R%[92m Güncelleme sonrası temizlik işlemi yapılıyor.%R%[0m
+echo %R%[92m Defender dosyaları siliniyor...%R%[0m
+goto :eof
+
+:After_2
+echo %R%[92m Hizmetler düzenleniyor...%R%[0m
+goto :eof
+
+:After_3
+echo %R%[92m Regedit kayıtları düzenleniyor.%R%[0m
+goto :eof
+
+:After_4
+echo %R%[92m Görev zamanlayıcısında düzenlemeler yapılıyor.%R%[0m
 goto :eof
