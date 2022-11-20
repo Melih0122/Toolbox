@@ -41,6 +41,10 @@ cd /d "%~dp0"
 for /f %%a in ('"cd"') do set Location=%%a
 
 :: -------------------------------------------------------------
+:: Gerekli klasörler oluşturulur.
+MD "%Location%\Bin\Data" > NUL 2>&1
+
+:: -------------------------------------------------------------
 :: Dil seçimi
 FOR /F "tokens=6" %%a in ('Dism /online /Get-intl ^| Find /I "Default system UI language"') do (
 	if %%a EQU tr-TR (set Lang=Call "%Location%\Bin\Language\TR.cmd")
@@ -156,7 +160,7 @@ echo           %R%[90m %Value2%: %Value1% ^| %Value4% ^| %Value3%%R%[0m
 :: Dil dosyasından değişken mesajını çağırır.
 %Lang% :Value_4
 set /p menu=%R%[32m            %Choice%: %R%[0m
-title OgnitorenKs Toolbox
+title  OgnitorenKs Toolbox
 	if %Winget% EQU 1 (%Lang% :Winget_1&pause > NUL&goto menu)
 	if %menu% EQU 1 (goto Software_Installer)
 	if %menu% EQU 2 (goto Service_Management)
@@ -377,9 +381,8 @@ Start explorer.exe > NUL 2>&1
 %Lang% :Clear_3
 DEL /F /Q /A %temp%\* > NUL 2>&1
 RD /S /Q %temp%\* > NUL 2>&1
-:: https://www.sordum.net/70705/system32-icerisinde-binlerce-tw-tmp-klasoru-sorunu/
 FOR /F %%a in ('dir /b /s %Windir%\System32\config\systemprofile\AppData\Local\*.tmp') do (RD /S /Q %%a > NUL 2>&1)
-%Lang% :Clear_4
+%Lang% :Repair_6
 net stop wuauserv > NUL 2>&1
 RD /S /Q  %windir%\SoftwareDistribution > NUL 2>&1
 net start wuauserv > NUL 2>&1
@@ -527,7 +530,6 @@ shutdown -s -f -t %MobileValue%
 goto :eof
 
 :: ---------------------------------------------------------------------------------------------------------------------------------------------------
-
 :HashChecker
 cls
 echo.
@@ -564,7 +566,6 @@ pause > NUL
 goto :eof
 
 :: ---------------------------------------------------------------------------------------------------------------------------------------------------
-
 :WifiInfo
 mode con cols=65 lines=45
 %Lang% :Wifi_1
@@ -581,7 +582,6 @@ pause > NUL
 goto :eof
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-
 :Service_Management
 mode con cols=87 lines=41
 title     O G N I T O R E N K S    ^|    OGNITORENKS TOOLBOX  ^|    T  O  O  L  B  O  X
@@ -1550,11 +1550,21 @@ for /f "tokens=9" %%a in ('ping -n 1 %~1') do SET Value2=%%a
 set Value2=%Value2:~0,-2%
 goto :eof
 
-
+:: --------------------------------------------------------------------------------------------------------
+:Exit
+cls
+DEL /F /Q /A %temp%\* > NUL 2>&1
+RD /S /Q %temp%\* > NUL 2>&1
+DEL /F /Q /A %Location%\Bin\Data\* > NUL 2>&1
+exit
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 :_TOOLBOX__DEPO__HANGAR_
 :Value_Reset
+set DL=
+set DR=
+set DO=
+set SO=
 set E1=
 set D1=
 set Value=
@@ -1622,7 +1632,6 @@ set /p MobileValue=%R%[32m %Choice% : %R%[0m
 goto :eof
 
 :: --------------------------------------------------------------------------------------------------------
-
 :Upper
 :: %~1: Değişken adı  | %~2: Girilen Hash Değeri
 chcp 437 > NUL 2>&1
@@ -1645,14 +1654,6 @@ goto :eof
 taskkill /f /im explorer.exe > NUL 2>&1
 Call :Powershell "Start-Process 'C:\Windows\explorer.exe'"
 goto :eof
-
-:: --------------------------------------------------------------------------------------------------------
-:Exit
-cls
-DEL /F /Q /A %temp%\* > NUL 2>&1
-RD /S /Q %temp%\* > NUL 2>&1
-DEL /F /Q /A %Location%\Bin\Data\* > NUL 2>&1
-exit
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 :key

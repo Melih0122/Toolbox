@@ -251,10 +251,6 @@ goto :eof
 echo %R%[92m   Temp dosyası temizleniyor...%R%[0m
 goto :eof
 
-:Clear_4
-echo %R%[92m   SoftwareDistribution temizleniyor...%R%[0m
-goto :eof
-
 :Clear_5
 echo %R%[92m   Prefetch temizleniyor...%R%[0m
 goto :eof

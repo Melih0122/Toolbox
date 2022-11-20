@@ -23,7 +23,7 @@
 	• İşlem önceliği bölümü kaldırıldı. 1909 sonrası Windows otomatik yönetiyor. 
 	• Toolbox ayarları bölümü kaldırıdlı.
 	• Güncelleme sonrası temizlik bölümü düzenlendi.
-	• Hizmet yönetimi bölümündeki kontrol komutları düzenlendi. Olası hata mesajları önlendi. Hatasız içerik kontrolü ayarları yapıldı.
+	• Hizmet yönetimi bölümündeki kontrol komutları düzenlendi. Olası hata mesajları önlendi. Hatasız içerik kontrol ayarları yapıldı.
 	• 
 
 </details>
