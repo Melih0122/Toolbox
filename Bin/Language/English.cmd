@@ -65,7 +65,7 @@ echo            %R%[90m│%R%[32m  7-%R%[33m Fat32 to NTFS%R%[90m [M]           
 echo            %R%[90m│%R%[32m  8-%R%[33m System Info%R%[90m [*]                │%R%[32m%R%[90m%R%[90m                                       │%R%[0m
 echo            %R%[90m│%R%[32m  9-%R%[33m Saved Wifi Information         %R%[90m│%R%[32m%R%[90m%R%[90m                                       │%R%[0m
 echo            %R%[90m├────────────────────────────────────┼───────────────────────────────────────┤%R%[0m
-echo            %R%[90m│%R%[32m  Z-%R%[36m Communication                  %R%[90m│%R%[32m   X-%R%[36m Clear and Close                  %R%[90m│%R%[0m
+echo            %R%[90m│%R%[32m  L-%R%[36m Language Setting               %R%[90m│%R%[32m   X-%R%[36m Clear and Close                  %R%[90m│%R%[0m
 echo            %R%[90m└────────────────────────────────────┴───────────────────────────────────────┘%R%[0m
 goto :eof
 
@@ -121,7 +121,7 @@ echo  %R%[90m│%R%[32m  2-%R%[33m Administrator Close              %R%[90m│%R
 echo  %R%[90m│%R%[32m  3-%R%[33m Add user to admin group          %R%[90m│%R%[32m 10-%R%[36m License Status Detailed%R%[90m[dlv]│%R%[0m
 echo  %R%[90m│%R%[32m  4-%R%[33m Add New User                     %R%[90m│%R%[32m 11-%R%[36m License Term%R%[90m [xpr]          │%R%[0m
 echo  %R%[90m│%R%[32m  5-%R%[33m Delete User                      %R%[90m│%R%[32m 12-%R%[36m License Remove%R%[90m [upk]        │%R%[0m
-echo  %R%[90m│%R%[32m  6-%R%[33m I forgot / change my password    %R%[90m│%R%[32m 13-%R%[36m License Term Reset%R%[90m [rearm]  │%R%[0m
+echo  %R%[90m│%R%[32m  6-%R%[33m Forgot / Change My Password      %R%[90m│%R%[32m 13-%R%[36m License Term Reset%R%[90m [rearm]  │%R%[0m
 echo  %R%[90m│%R%[32m  7-%R%[33m Show Current Users%R%[90m [*]           │%R%[32m  X-%R%[37m Menu                        %R%[90m│%R%[0m
 echo  %R%[90m└──────────────────────────────────────┴─────────────────────────────────┘%R%[0m
 goto :eof
@@ -279,6 +279,10 @@ echo   %R%[90m├─────────────────────
 echo      %R%[32m Letter    Name%R%[0m
 goto :eof
 
+:Converter_2
+echo       %R%[32m X.%R%[36m Menu%R%[0m
+goto :eof
+
 :Hash_1
 echo   %R%[1;97m%R%[46m                                    Hash values are compared                                    %R%[0m
 goto :eof
@@ -303,6 +307,7 @@ echo  %R%[90m├─────────────────────�
 goto :eof
 
 :Service_Menu_1
+echo   %R%[90m█%R%[37m = Closed ^| %R%[32m♦%R%[37m = Open ^| %R%[31m█%R%[37m = Removed ^| %R%[35m█%R%[37m = Incompatible Windows
 echo  %R%[90m┌─────────────────────────────────────────┬─────────────────────────────────────────┐%R%[0m
 echo  %R%[90m│► Services                               │► Features                               │%R%[0m
 goto :eof
@@ -400,7 +405,7 @@ goto :eof
 echo  %R%[90m│%R%[32m 31%DL% Memory Compression           %R%[90m│%R%[32m                                         %R%[90m│%R%[0m
 goto :eof
 :Service_Menu_33
-echo  %R%[90m│%R%[32m 32%DL% Disk Defragmentation         %R%[90m│%R%[32m                                         %R%[90m│%R%[0m
+echo  %R%[90m│%R%[32m 32%DL% Disk Defragmentation         %R%[90m│%R%[32m X-%R%[37m Menu                                 %R%[90m│%R%[0m
 goto :eof
 
 :Service_Menu_On_Off
@@ -815,4 +820,12 @@ goto :eof
 
 :After_4
 echo %R%[92m Adjustments are made in the task scheduler.%R%[0m
+goto :eof
+
+:Lang_1
+echo  %R%[90m┌───────────────────────────────────────────────────┐%R%[0m
+echo  %R%[90m│   %R%[32m 1.%R%[33m Turkish (tr-TR)                             %R%[90m│%R%[0m
+echo  %R%[90m│   %R%[32m 2.%R%[33m English (en-US)                             %R%[90m│%R%[0m
+echo  %R%[90m│   %R%[32m X.%R%[36m Menu                                        %R%[90m│%R%[0m
+echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
 goto :eof

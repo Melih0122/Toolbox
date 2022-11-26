@@ -8,6 +8,7 @@
 <details><B><summary> Versiyon 3.8 ►  GELİŞTİRİLİYOR...</B></summary>
 
 	• Çoklu dil desteği için altyapı oluşturuldu.
+		• Dil seçimini sistem açılışınd otomatik yapmaktadır. Açıldıktan sonra bu "Dil ayarları" bölümünden değiştirilebilir.
 	• Araçlar katılımsız bölümü kaldırıldı.
 	• Online katılımsız bölümünden oyunlar kaldırıldı. Yeni programlar eklenerek daha düzenli hale getirildi.
 	• İndirme sistemi Winget ve Chocolatey olarak düzenlendi. İndirme sistemleri arasında geçiş kaldırıldı.
@@ -17,10 +18,8 @@
 	• İnternet kontrol bölümleri kaldırıldı. Bazı sistemlerde anlamsız hatalara neden oluyordu.
 	• Klasör yolunda Türkçe karakter ve boşluk tespiti için komutlar eklendi.
 	• Güncellemeler artık Toolbox'ı attığınız dizin içinde yapılacak.
-	• Görev çubuğu yöneticisi kaldırıldı.
 	• Simge hatalarını onar bölümü "Windows - Market onar" bölümüne eklendi.
 	• Kaldırılamayan uygulamalar bölümü kaldırıldı. Yalnızca Win10'da çalışıyordu.
-	• İşlem önceliği bölümü kaldırıldı. 1909 sonrası Windows otomatik yönetiyor. 
 	• Toolbox ayarları bölümü kaldırıdlı.
 	• Güncelleme sonrası temizlik bölümü düzenlendi.
 	• Hizmet yönetimi bölümündeki kontrol komutları düzenlendi. Olası hata mesajları önlendi. Hatasız içerik kontrol ayarları yapıldı.

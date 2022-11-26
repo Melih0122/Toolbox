@@ -9,15 +9,15 @@ cls
 
 %Lang% :After_2
 FOR /F "tokens=4" %%g in ('Findstr /i "Service-1" %Location%\Bin\Extra\UpdateAfter\Services.txt') do (
-	%NSudo% sc config %%a start= disabled
-	%NSudo% net stop %%a /y
+	%NSudo% sc config %%g start= disabled
+	%NSudo% net stop %%g /y
 )
 FOR /F "tokens=4" %%g in ('Findstr /i "Service-2" %Location%\Bin\Extra\UpdateAfter\Services.txt') do (
-	%NSudo% net stop %%a /y
-	%NSudo% sc delete %%a
+	%NSudo% net stop %%g /y
+	%NSudo% sc delete %%g
 )
 FOR /F "tokens=4" %%g in ('Findstr /i "Service-3" %Location%\Bin\Extra\UpdateAfter\Services.txt') do (
-	%NSudo% sc config %%a start= demand
+	%NSudo% sc config %%g start= demand
 )
 
 %Lang% :After_3

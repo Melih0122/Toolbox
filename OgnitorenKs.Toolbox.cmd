@@ -47,8 +47,8 @@ MD "%Location%\Bin\Data" > NUL 2>&1
 :: -------------------------------------------------------------
 :: Dil seçimi
 FOR /F "tokens=6" %%a in ('Dism /online /Get-intl ^| Find /I "Default system UI language"') do (
-	if %%a EQU tr-TR (set Lang=Call "%Location%\Bin\Language\TR.cmd")
-	if %%a NEQ tr-TR (set Lang=Call "%Location%\Bin\Language\EN.cmd")
+	if %%a EQU tr-TR (set Lang=Call "%Location%\Bin\Language\Turkish.cmd")
+	if %%a NEQ tr-TR (set Lang=Call "%Location%\Bin\Language\English.cmd")
 )
 :: Manuel dil seçimi
 FOR /F "tokens=3" %%a in ('Findstr /i "Select_Language" %Location%\Bin\Settings.ini') do (
@@ -57,7 +57,6 @@ FOR /F "tokens=3" %%a in ('Findstr /i "Select_Language" %Location%\Bin\Settings.
 	
 :: -------------------------------------------------------------
 :: Değişkenler
-set Library=Call "%Location%\Bin\Extra\Library.cmd"
 set NSudo="%Location%\Bin\NSudo.exe" -U:T -P:E -Wait -ShowWindowMode:hide cmd /c
 set NSudo2="%Location%\Bin\NSudo.exe" -U:E -P:E -ShowWindowMode:hide cmd /c
 
@@ -175,6 +174,10 @@ title  OgnitorenKs Toolbox
 	if %menu% EQU 11 (Call "%Location%\Bin\Extra\UpdateAfter\UpdateAfter.cmd")
 	if %menu% EQU 12 (goto WindowsRepair)
 	if %menu% EQU 13 (Call :PC_Cleaner)
+	if %menu% EQU 14 (goto TaskbarSettings)
+	if %menu% EQU 15 (goto RuntimeLevel)
+	if %menu% EQU l (goto Language_Menu)
+	if %menu% EQU L (goto Language_Menu)
 	if %menu% EQU X (goto Exit)
 	if %menu% EQU x (goto Exit)
 goto menu
@@ -253,7 +256,7 @@ FOR %%a in (%multi%) do (
 	if %%a==55 (Call :Winget Open-Shell.Open-Shell-Menu)
 	if %%a==56 (Call :Chocolatey taskbarx)
 	if %%a==57 (Call :Winget Henry++.MemReduct)
-	if %%a==58 (Call :Winget msiafterburner)
+	if %%a==58 (Call :Chocolatey msiafterburner)
 	if %%a==59 (Call :Winget voidtools.Everything)
 	if %%a==60 (Call :Winget LogMeIn.Hamachi)
 	if %%a==61 (Call :Winget GlassWire.GlassWire)
@@ -321,7 +324,6 @@ sfc /scannow
 cls&%Lang% :Repair_1&%Lang% :Repair_4
 Dism /Online /Cleanup-Image /StartComponentCleanup 
 cls&%Lang% :Repair_1&%Lang% :Repair_5
-echo %R%[92m   DISM /Online /Cleanup-Image /RestoreHealth komutu çalıştırılıyor...%R%[0m
 DISM /Online /Cleanup-Image /RestoreHealth
 cls&%Lang% :Repair_1&%Lang% :Repair_6
 net stop wuauserv > NUL 2>&1
@@ -415,11 +417,11 @@ pause > NUL
 cls
 
 :: Güncelleme yükleyici
-for /f %%a in ('"dir /b %Location%\Edit\Update\*"') do (
+FOR /F %%a in ('"dir /b %Location%\Edit\Update\*"') do (
 	DISM /Online /add-package /packagepath=%Location%\Edit\Update\%%a /norestart
 )
 :: Appx yükleyici
-for /f %%b in ('"dir /b %Location%\Edit\Appx\*"') do (
+FOR /F %%b in ('"dir /b %Location%\Edit\Appx\*"') do (
 	Call :Powershell "Add-AppxPackage -Path %Location%\Edit\Appx\%%b"
 )
 RD /S /Q "%Location%\Edit" > NUL 2>&1
@@ -430,11 +432,12 @@ goto :eof
 
 :Fat32toNTFS
 mode con cols=63 lines=25
+%Lang% :Converter_1
 chcp 437 > NUL 2>&1
 for /f "skip=3 tokens=*" %%a in ('Powershell -command "Get-CimInstance -ClassName Win32_LogicalDisk | Select-Object -Property DeviceID,VolumeName"') do (
    echo     -  %%a)
 chcp 65001 > NUL 2>&1
-   echo       %R%[32m X.%R%[36m Menu%R%[0m
+%Lang% :Converter_2
 echo   %R%[90m└──────────────────────────────────────────────────────────┘%R%[0m
 Call :MobileValue "Value_3" "menu"
 convert %MobileValue%: /fs:NTFS /v
@@ -544,7 +547,7 @@ echo.
 set /p hashpath=%R%[37m  ►%R%[96m %Choice%: %R%[0m
 cls
 echo.
-%Lang% Hash_1
+%Lang% :Hash_1
 Call :Powershell "Get-filehash %hashpath% | Select-Object Hash | FL" > %Location%\Bin\Data\hash
 FOR /F "tokens=3" %%a in ('findstr /C:"Hash" %Location%\Bin\Data\hash') do set hashvalue2=%%a
 if %hashvalue2% equ %hashvalue1% (
@@ -581,6 +584,64 @@ echo  %R%[90m└─────────────────────�
 pause > NUL
 goto :eof
 
+:: ---------------------------------------------------------------------------------------------------------------------------------------------------
+:TaskbarSettings
+mode con cols=55 lines=14
+%Lang% :Service_Menu_On_Off
+echo.
+%Lang% :Service_Info_2
+%Lang% :Taskbar_1
+Call :SV&Call :SV_RegRight1 "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer" "EnableAutoTray" 0x1&Call :SV_None&Call :SVCheck_OS11
+%Lang% :Taskbar_2
+Call :SV&Call :SV_RegRight1 "HKCU\SOFTWARE\Policies\Microsoft\Windows\Explorer" "DisableNotificationCenter" 0x1&Call :SV_None&Call :SVCheck_OS11
+%Lang% :Taskbar_3
+Call :SV&Call :SV_RegRight1 "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "TaskbarDa" 0x0&Call :SV_None
+%Lang% :Taskbar_4
+Call :SV&Call :SV_RegRight1 "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "TaskbarAl" 0x1&Call :SV_None&Call :SVCheck_OS10
+%Lang% :Taskbar_5
+echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
+%Lang% :Value_4
+set /p Value=%R%[92m  %Choice% : %R%[0m
+:: Upper ile küçük harfleri büyük harflere dönüştürüyoruz.
+Call :Upper "Value" "%Value%"
+cls
+FOR %%a in (%Value%) do (
+	if %%a EQU 1%E1% if %Win% EQU 11 (%Lang% :CheckOS_2) else (Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer" "EnableAutoTray" "0x0")
+	if %%a EQU 1%D1% if %Win% EQU 11 (%Lang% :CheckOS_2) else (Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer" "EnableAutoTray" "0x1")
+	if %%a EQU 2%E1% if %Win% EQU 11 (%Lang% :CheckOS_2) else (Call :dword "HKCU\SOFTWARE\Policies\Microsoft\Windows\Explorer" "DisableNotificationCenter" "0x0")
+	if %%a EQU 2%D1% if %Win% EQU 11 (%Lang% :CheckOS_2) else (Call :dword "HKCU\SOFTWARE\Policies\Microsoft\Windows\Explorer" "DisableNotificationCenter" "0x1")
+	if %%a EQU 3%E1% if %Win% EQU 11 (Call :delete2 "HKLM\SOFTWARE\Policies\Microsoft\Dsh" "AllowNewsAndInterests"&Call :dword "HKLM\SOFTWARE\Microsoft\PolicyManager\default\NewsAndInterests\AllowNewsAndInterests" "value" "0x1"&Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "TaskbarDa" "0x1") else (Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Feeds" "EnableFeeds" "0x1"&Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\Feeds" "ShellFeedsTaskbarViewMode" "0x1")
+	if %%a EQU 3%D1% if %Win% EQU 11 (Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Dsh" "AllowNewsAndInterests" "0x0"&Call :dword "HKLM\SOFTWARE\Microsoft\PolicyManager\default\NewsAndInterests\AllowNewsAndInterests" "value" "0x0"&Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "TaskbarDa" "0x0") else (Call :dword "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Feeds" "EnableFeeds" "0x0"&Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\Feeds" "ShellFeedsTaskbarViewMode" "0x2")
+	if %%a EQU 4%E1% if %Win% EQU 10 (%Lang% :CheckOS_2) else (Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "TaskbarAl" "0x0")
+	if %%a EQU 4%D1% if %Win% EQU 10 (%Lang% :CheckOS_2) else (Call :dword "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "TaskbarAl" "0x1")
+	if %%a EQU X (goto menu)
+)
+Call :ExplorerReset
+Call :ProcessCompleted
+goto TaskbarSettings
+
+:: ---------------------------------------------------------------------------------------------------------------------------------------------------
+:RuntimeLevel
+mode con cols=55 lines=17
+%Lang% :Menu_5
+%Lang% :Value_4
+set /p value=%R%[32m  %Choice% :%R%[0m
+	if %value% EQU 1 (set value2=0x3)
+	if %value% EQU 2 (set value2=0x6)
+	if %value% EQU 3 (set value2=0x5)
+	if %value% EQU 4 (set value2=0x1)
+	if %value% EQU x (goto menu)
+	if %value% EQU X (goto menu)
+echo.
+%Lang% :Menu5_1
+%Lang% :Value_7
+set /p value=%R%[96m  ► %Choice%: %R%[0m
+for %%a in (%value%) do (
+	reg add "HKLM\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\%%a\PerfOptions" /v "CpuPriorityClass" /t REG_DWORD /d "%value2%" /f
+)
+Call :ProcessCompleted
+goto menu
+
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 :Service_Management
 mode con cols=87 lines=41
@@ -589,80 +650,76 @@ Dism /Online /Get-Features /format:table > %Location%\Bin\Data\Features.txt
 DISM /Online /Get-Capabilities /format:table > %Location%\Bin\Data\Capabilities.txt
 Call :Powershell "Get-MMAgent" > %Location%\Bin\Data\mc
 
-:: Eksik reg kayıtlarından hata vermemesi için eklenir. Herhangi bir ayarı bozmaz. 
-reg query "HKLM\SYSTEM\CurrentControlSet\Control\Power" /v "HibernateEnabled" > NUL 2>&1
-	if %errorlevel%==1 (Call :dword "HKLM\SYSTEM\CurrentControlSet\Control\Power" HibernateEnabled 1)
-reg query "HKLM\Software\Policies\Microsoft\Windows\DriverSearching" /v "SearchOrderConfig" > NUL 2>&1
-	if %errorlevel%==1 (Call :dword "HKLM\Software\Policies\Microsoft\Windows\DriverSearching" "SearchOrderConfig" 1)
-
 %Lang% :Service_Menu_On_Off
 echo.
+%Lang% :Service_Info
 %Lang% :Service_Menu_1
-Call :SV&Call :SVCheck_Left "BthAvctpSvc bthserv BluetoothUserService BTAGService"&Call :SVCheck_Capabilities "MSPaint"&Call :SVCheck_OS11
+Call :SV&Call :SV_Left1 "BthAvctpSvc bthserv BluetoothUserService BTAGService"&Call :SV_Capabilities1 "MSPaint"&Call :SV_None
 %Lang% :Service_Menu_2
-Call :SV&Call :SVCheck_Left "TapiSrv PhoneSvc"&Call :SVCheck_Capabilities "WordPad"
+Call :SV&Call :SV_Left1 "TapiSrv PhoneSvc"&Call :SV_Capabilities1 "WordPad"&Call :SV_None
 %Lang% :Service_Menu_3
-Call :SV&Call :SVCheck_Left "Spooler"&Call :SVCheck_Capabilities "Notepad"
+Call :SV&Call :SV_Left1 "Spooler"&Call :SV_Capabilities1 "Notepad"&Call :SV_None
 %Lang% :Service_Menu_4
-Call :SV&Call :SVCheck_Left "FrameServer WiaRpc StiSvc"&Call :SVCheck_Capabilities "StepsRecorder"
+Call :SV&Call :SV_Left1 "FrameServer WiaRpc StiSvc"&Call :SV_Capabilities1 "StepsRecorder"&Call :SV_None
 %Lang% :Service_Menu_5
-Call :SV&Call :SVCheck_Capabilities "PowerShell.ISE"
-if %Win%==11 (Call :SVCheck_Left "PenService")
-if %Win%==10 (Call :SVCheck_Left "TabletInputService")
+Call :SV&Call :SV_Capabilities1 "PowerShell.ISE"
+if %Win%==11 (Call :SV_Left1 "PenService")
+if %Win%==10 (Call :SV_Left1 "TabletInputService")
+Call :SV_None
 %Lang% :Service_Menu_6
-Call :SV&Call :SVCheck_Capabilities "fax"&Call :SVCheck_Capabilities "MathRecognizer"
+Call :SV&Call :SV_Capabilities1 "fax"&Call :SV_Capabilities1 "MathRecognizer"&Call :SV_None
 %Lang% :Service_Menu_7
-Call :SV&Call :SVCheck_Left "BDESVC"&Call :SVCheck_Features "WindowsMediaPlayer"
+Call :SV&Call :SV_Left1 "BDESVC"&Call :SVCheck_Features "WindowsMediaPlayer"&Call :SV_None
 %Lang% :Service_Menu_8
-Call :SV&Call :SVCheck_Left "DusmSvc"&Call :SVCheck_Capabilities "InternetExplorer"
+Call :SV&Call :SV_Left1 "DusmSvc"&Call :SV_Capabilities1 "InternetExplorer"&Call :SV_None
 %Lang% :Service_Menu_9
-Call :SV&Call :SVCheck_Left "iphlpsvc IpxlatCfgSvc"&Call :SVCheck_Features "Subsystem-Linux"
+Call :SV&Call :SV_Left1 "iphlpsvc IpxlatCfgSvc"&Call :SVCheck_Features "Subsystem-Linux"&Call :SV_None
 %Lang% :Service_Menu_10
-Call :SV&Call :SVCheck_Left "icssvc SharedAccess ALG"&Call :SVCheck_Capabilities "NetFX3"
+Call :SV&Call :SV_Left1 "icssvc SharedAccess ALG"&Call :SV_Capabilities1 "NetFX3"&Call :SV_None
 %Lang% :Service_Menu_11
-Call :SV&Call :SVCheck_Left "RMSvc"&Call :SVCheck_Features "IIS-ASPNET45"
+Call :SV&Call :SV_Left1 "RMSvc"&Call :SVCheck_Features "IIS-ASPNET45"&Call :SV_None
 %Lang% :Service_Menu_12
-Call :SV&Call :SVCheck_Left "wcncsvc"&Call :SVCheck_Features "DirectPlay"
+Call :SV&Call :SV_Left1 "wcncsvc"&Call :SVCheck_Features "DirectPlay"&Call :SV_None
 %Lang% :Service_Menu_13
-Call :SV&Call :SVCheck_Left "WwanSvc WlanSvc wcncsvc lmhosts vwifibus NativeWifiP Ndisuio vwififlt"&Call :SVCheck_Compact
+Call :SV&Call :SV_Left1 "WwanSvc WlanSvc wcncsvc lmhosts vwifibus NativeWifiP Ndisuio vwififlt"&Call :SVCheck_Compact&Call :SV_None
 %Lang% :Service_Menu_14
-Call :SV&Call :SVCheck_Left "lfsvc NaturalAuthentication"&Call :SVCheck_RegRight_Ozel "HKLM\SOFTWARE\Microsoft\Windows Photo Viewer\Capabilities\FileAssociations" ".jpg"
+Call :SV&Call :SV_Left1 "lfsvc NaturalAuthentication"&Call :SVCheck_RegRight_Ozel "HKLM\SOFTWARE\Microsoft\Windows Photo Viewer\Capabilities\FileAssociations" ".jpg"&Call :SV_None
 %Lang% :Service_Menu_15
-Call :SV&Call :SVCheck_Left "ConsentUxUserSvc DevicePickerUserSvc DevicesFlowUserSvc"&Call :SVCheck_RegRight_Ozel "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer" "AltTabSettings"
+Call :SV&Call :SV_Left1 "ConsentUxUserSvc DevicePickerUserSvc DevicesFlowUserSvc"&Call :SVCheck_RegRight_Ozel "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer" "AltTabSettings"&Call :SV_None
 %Lang% :Service_Menu_16
-Call :SV&Call :SVCheck_Left "PNRPAutoReg PNRPsvc p2psvc p2pimsvc upnphost QWAVE SSDPSRV"&Call :SVCheck_RegRight_Ozel "HKLM\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" "PauseUpdatesExpiryTime"
+Call :SV&Call :SV_Left1 "PNRPAutoReg PNRPsvc p2psvc p2pimsvc upnphost QWAVE SSDPSRV"&Call :SVCheck_RegRight_Ozel "HKLM\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" "PauseUpdatesExpiryTime"&Call :SV_None
 %Lang% :Service_Menu_17
-Call :SV&Call :SVCheck_Left "TermService UmRdpService SessionEnv RasAuto RasMan RpcLocator"
+Call :SV&Call :SV_Left1 "TermService UmRdpService SessionEnv RasAuto RasMan RpcLocator"&Call :SV_None
 %Lang% :Service_Menu_18
-Call :SV&Call :SVCheck_Left "SysMain"&Call :SVCheck_RegRight "HKLM\System\CurrentControlSet\Control" "SvcHostSplitThresholdInKB" "0x380000"
+Call :SV&Call :SV_Left1 "SysMain"&Call :SV_RegRight1 "HKLM\System\CurrentControlSet\Control" "SvcHostSplitThresholdInKB" "0x380000"&Call :SV_None
 %Lang% :Service_Menu_19
-Call :SV&Call :SVCheck_RegLeft "HKLM\SYSTEM\CurrentControlSet\Control\Power" "HibernateEnabled" "0x0"&Call :SVCheck_RegRight "HKCU\SOFTWARE\Microsoft\GameBar" "AutoGameModeEnabled" "0x0"
+Call :SV&Call :SV_RegLeft1 "HKLM\SYSTEM\CurrentControlSet\Control\Power" "HibernateEnabled" "0x0"&Call :SV_RegRight1 "HKCU\SOFTWARE\Microsoft\GameBar" "AutoGameModeEnabled" "0x0"&Call :SV_None
 %Lang% :Service_Menu_20
-Call :SV&Call :SVCheck_Left "WSearch"&Call :SVCheck_RegRight "HKLM\SYSTEM\ControlSet001\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\0cc5b647-c1df-4637-891a-dec35c318583" "ValueMax" "0x0"&Call :SVCheck_RegRight "HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\0cc5b647-c1df-4637-891a-dec35c318583" "ValueMax" "0x0"
+Call :SV&Call :SV_Left1 "WSearch"&Call :SV_RegRight1 "HKLM\SYSTEM\ControlSet001\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\0cc5b647-c1df-4637-891a-dec35c318583" "ValueMax" "0x0"&Call :SV_RegRight1 "HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\0cc5b647-c1df-4637-891a-dec35c318583" "ValueMax" "0x0"&Call :SV_None
 %Lang% :Service_Menu_21
-Call :SV&Call :SVCheck_Left "BcastDVRUserService XboxGipSvc XboxNetApiSvc XblAuthManager XblGameSave DoSvc"
+Call :SV&Call :SV_Left1 "BcastDVRUserService XboxGipSvc XboxNetApiSvc XblAuthManager XblGameSave DoSvc"&Call :SV_None
 %Lang% :Service_Menu_22
-Call :SV&Call :SVCheck_Left "SharedRealitySvc VacSvc perceptionsimulation spectrum MixedRealityOpenXRSvc"
+Call :SV&Call :SV_Left1 "SharedRealitySvc VacSvc perceptionsimulation spectrum MixedRealityOpenXRSvc"&Call :SV_None
 %Lang% :Service_Menu_23
-Call :SV&Call :SVCheck_Left "DPS WdiServiceHost WdiSystemHost PcaSvc"&Call :SVCheck_RegRight_Ozel2 "HKCR\*\shell\runas"
+Call :SV&Call :SV_Left1 "DPS WdiServiceHost WdiSystemHost PcaSvc"&Call :SVCheck_RegRight_Ozel2 "HKCR\*\shell\runas"&Call :SV_None
 %Lang% :Service_Menu_24
-Call :SV&Call :SVCheck_Left "seclogon"&Call :SVCheck_RegRight_Ozel2 "HKCR\Directory\background\shell\Yonet"
+Call :SV&Call :SV_Left1 "seclogon"&Call :SVCheck_RegRight_Ozel2 "HKCR\Directory\background\shell\Yonet"&Call :SV_None
 %Lang% :Service_Menu_25
-Call :SV&Call :SVCheck_Left "FontCache FontCache3.0.0.0"&Call :SVCheck_RegRight_Ozel2 "HKCR\exefile\shell\Priority"
+Call :SV&Call :SV_Left1 "FontCache FontCache3.0.0.0"&Call :SVCheck_RegRight_Ozel2 "HKCR\exefile\shell\Priority"&Call :SV_None
 %Lang% :Service_Menu_26
-Call :SV&Call :SVCheck_Left "wisvc"&Call :SVCheck_RegRight_Ozel "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked" "{9F156763-7844-4DC4-B2B1-901F640F5155}"&Call :SVCheck_OS10
+Call :SV&Call :SV_Left1 "wisvc"&Call :SVCheck_RegRight_Ozel "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked" "{9F156763-7844-4DC4-B2B1-901F640F5155}"&Call :SV_None&Call :SVCheck_OS10
 %Lang% :Service_Menu_27
-Call :SV&Call :SVCheck_Left "WbioSrvc"&Call :SVCheck_RegRight_Ozel2 "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32"&Call :SVCheck_OS10
+Call :SV&Call :SV_Left1 "WbioSrvc"&Call :SVCheck_RegRight_Ozel2 "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32"&Call :SV_None&Call :SVCheck_OS10
 %Lang% :Service_Menu_28
-Call :SV&Call :SVCheck_Left "HvHost"
+Call :SV&Call :SV_Left1 "HvHost"&Call :SV_None
 %Lang% :Service_Menu_29
-Call :SV&Call :SVCheck_Left "SDRSVC VSS swprv wbengine fhsvc"
+Call :SV&Call :SV_Left1 "SDRSVC VSS swprv wbengine fhsvc"&Call :SV_None
 %Lang% :Service_Menu_30
-Call :SV&Call :SVCheck_RegLeft "HKLM\Software\Policies\Microsoft\Windows\DriverSearching" "SearchOrderConfig" "0x0"
+Call :SV&Call :SV_RegLeft1 "HKLM\Software\Policies\Microsoft\Windows\DriverSearching" "SearchOrderConfig" "0x0"&Call :SV_None
 %Lang% :Service_Menu_31
-Call :SV&Call :SVCheck_Memory "False"
+Call :SV&Call :SVCheck_Memory "False"&Call :SV_None
 %Lang% :Service_Menu_32
-Call :SV&Call :SVCheck_Left "defragsvc"
+Call :SV&Call :SV_Left1 "defragsvc"&Call :SV_None
 %Lang% :Service_Menu_33
 echo  %R%[90m└─────────────────────────────────────────┴─────────────────────────────────────────┘%R%[0m
 %Lang% :Value_2
@@ -674,7 +731,7 @@ echo %value% | Findstr /i "X" > NUL 2>&1
 	if %errorlevel% EQU 0 (goto menu)
 cls
 FOR %%a in (%value%) do (
-	if %%a EQU 1%E1% (%Lang% :Value_13 0&Call :S1_Bluetooth start demand auto)
+	if %%a EQU 1%E1% (%Lang% :Value_13 0&Call :S1_Bluetooth start demand auto)           
 	if %%a EQU 1%D1% (%Lang% :Value_13 1&Call :S1_Bluetooth stop disabled disabled)
 	if %%a EQU 2%E1% (%Lang% :Value_13 0&Call :S2_Phone start demand demand)
 	if %%a EQU 2%D1% (%Lang% :Value_13 1&Call :S2_Phone stop disabled demand)
@@ -1551,6 +1608,28 @@ set Value2=%Value2:~0,-2%
 goto :eof
 
 :: --------------------------------------------------------------------------------------------------------
+:Language_Menu
+mode con cols=55 lines=15
+echo.
+echo.
+%Lang% :Lang_1
+%Lang% :Value_1
+Call :MobileValue "Value_1" menu
+	if %MobileValue% EQU 1 (set Lang=Call "%Location%\Bin\Language\Turkish.cmd"
+							set Value2=Turkish)
+	if %MobileValue% EQU 2 (set Lang=Call "%Location%\Bin\Language\English.cmd"
+							set Value2=English)
+:: Manuel dil ayarını aktfileştiri
+FOR /F "tokens=3" %%g in ('Findstr /i "Select_Language" %Location%\Bin\Settings.ini') do (
+	Call :Powershell "(Get-Content %Location%\Bin\Settings.ini) | ForEach-Object { $_ -replace '%%g', '0' } | Set-Content '%Location%\Bin\Settings.ini'"
+)
+:: Seçilen dili kayıt eder.
+FOR /F "tokens=3" %%g in ('Findstr /i "Manuel_Language" %Location%\Bin\Settings.ini') do (
+	Call :Powershell "(Get-Content %Location%\Bin\Settings.ini) | ForEach-Object { $_ -replace '%%g', '%Value2%' } | Set-Content '%Location%\Bin\Settings.ini'"
+)
+goto menu
+
+:: --------------------------------------------------------------------------------------------------------
 :Exit
 cls
 DEL /F /Q /A %temp%\* > NUL 2>&1
@@ -1585,6 +1664,10 @@ set link=
 set NSudo2=
 set regtur=
 set deger=
+set Servis_Value1=
+set Servis_Value2=
+set SVL=
+set SVR=
 goto :eof
 
 :: --------------------------------------------------------------------------------------------------------
@@ -1650,6 +1733,12 @@ winget install -e --silent --force --accept-source-agreements --accept-package-a
 goto :eof
 
 :: --------------------------------------------------------------------------------------------------------
+:Check_OS
+if %Win% EQU 10 (%Lang% :CheckOS_1)
+if %Win% EQU 11 (%Lang% :CheckOS_2)
+goto :eof
+
+:: --------------------------------------------------------------------------------------------------------
 :ExplorerReset
 taskkill /f /im explorer.exe > NUL 2>&1
 Call :Powershell "Start-Process 'C:\Windows\explorer.exe'"
@@ -1708,33 +1797,60 @@ goto :eof
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 :SV
-set DL=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[90m█%R%[90m -%R%[33m
-set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[90m█%R%[90m -%R%[33m
-set DO=%R%[90m[%R%[36m %E1% %R%[90m]%R%[90m█%R%[90m -%R%[33m
+set DL=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]█ -%R%[33m
+set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]█ -%R%[33m
+set DO=%R%[90m[%R%[36m %E1% %R%[90m]%R%[90m█ -%R%[33m
 set SO=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]  -%R%[33m
+set Servis_Value1=0
+set Servis_Value2=0
+set SVL=
+set SVR=
 goto :eof
 
-
-:SVCheck_Left
-FOR %%g in (%~1) do (Call :For_Left %%g)
+:SV_None
+if %Servis_Value1% EQU 1 (set DL=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[31m█%R%[90m -%R%[33m)
+if %Servis_Value2% EQU 1 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[31m█%R%[90m -%R%[33m)
 goto :eof
 
-:For_Left
-reg query "HKLM\SYSTEM\CurrentControlSet\Services\%~1" /v "Start" 2>NUL | Findstr /i "0x4" > NUL 2>&1
+:SV_Left1
+FOR %%g in (%~1) do (Call :SV_Left2 %%g)
+goto :eof
+
+:SV_Left2
+set SVL=%~1
+reg query "HKLM\SYSTEM\CurrentControlSet\Services\%SVL%" /v "Start" > NUL 2>&1
+	if %errorlevel% EQU 1 (set Servis_Value1=1&Call :SV_Left3&goto :eof)
+	if %errorlevel% EQU 0 (Call :SV_Left3&goto :eof)
+
+:SV_Left3
+reg query "HKLM\SYSTEM\CurrentControlSet\Services\%SVL%" /v "Start" 2>NUL | Findstr /i "0x4" > NUL 2>&1
 	if %errorlevel% EQU 1 (set DL=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[32m♦%R%[90m -%R%[33m)
 goto :eof
 
-:SVCheck_Right
-FOR %%g in (%~1) do (Call :For_Right %%g)
+:SV_Right1
+FOR %%g in (%~1) do (Call :SV_Right2 %%g)
 goto :eof
 
-:For_Right
-reg query "HKLM\SYSTEM\CurrentControlSet\Services\%~1" /v "Start" 2>NUL | Findstr /i "0x4" > NUL 2>&1
+:SV_Right2
+set SVR=%~1
+reg query "HKLM\SYSTEM\CurrentControlSet\Services\%SVR%" /v "Start" 2>NUL
+	if %errorlevel% EQU 1 (set Servis_Value2=1&Call :SV_Right3&goto :eof)
+	if %errorlevel% EQU 0 (Call :SV_Right3&goto :eof)
+
+:SV_Right3
+reg query "HKLM\SYSTEM\CurrentControlSet\Services\%SVR%" /v "Start" 2>NUL | Findstr /i "0x4" > NUL 2>&1
 	if %errorlevel% EQU 1 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[32m♦%R%[90m -%R%[33m)
 goto :eof
 
-:SVCheck_Capabilities
-Findstr /i "%~1" %Location%\Bin\Data\Capabilities.txt | Findstr /i "Installed" > NUL 2>&1
+:SV_Capabilities1
+set SVR=%~1
+FOR /F "tokens=1" %%g in ('Findstr /i "%SVR%" %Location%\Bin\Data\Capabilities.txt') do (echo %%g > %Location%\Bin\Data\Capabilities2.txt)
+Findstr /i "%SVR%" %Location%\Bin\Data\Capabilities2.txt > NUL 2>&1
+	if %errorlevel% EQU 0 (Call :SV_Capabilities2&goto :eof)
+	if %errorlevel% EQU 1 (set Servis_Value2=1&Call :SV_Capabilities2&goto :eof)
+
+:SV_Capabilities2
+Findstr /i "%SVR%" %Location%\Bin\Data\Capabilities.txt | Findstr /i "Installed" > NUL 2>&1
 	if %errorlevel% EQU 0 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[32m♦%R%[90m -%R%[33m)
 goto :eof
 
@@ -1743,26 +1859,42 @@ Findstr /i "%~1" %Location%\Bin\Data\Features.txt | Findstr /i "Enabled" > NUL 2
 	if %errorlevel% EQU 0 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[32m♦%R%[90m -%R%[33m)
 goto :eof
 
-:SVCheck_RegLeft
-reg query "%~1" /v "%~2" 2>NUL | Findstr /i "%~3" > NUL 2>&1
+:SV_RegLeft1
+set Value1=%~1
+set Value2=%~2
+set Value3=%~3
+reg query "%Value1%" /v "%Value2%" > NUL 2>&1
+	if %errorlevel% EQU 0 (Call :SV_RegLeft2&goto :eof)
+	if %errorlevel% EQU 1 (set Servis_Value2=1&Call :SV_RegLeft2&goto :eof)
+
+:SV_RegLeft2
+reg query "%Value1%" /v "%Value2%" 2>NUL | Findstr /i "%Value3%" > NUL 2>&1
 	if %errorlevel% EQU 1 (set DL=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[32m♦%R%[90m -%R%[33m)
 goto :eof
 
-:SVCheck_RegRight
-reg query "%~1" /v "%~2" 2>NUL | Findstr /i "%~3" > NUL 2>&1
+:SV_RegRight1
+set Value1=%~1
+set Value2=%~2
+set Value3=%~3
+reg query "%Value1%" /v "%Value2%" > NUL 2>&1
+	if %errorlevel% EQU 0 (Call :SV_RegRight2&goto :eof)
+	if %errorlevel% EQU 1 (set Servis_Value2=1&Call :SV_RegRight2&goto :eof)
+
+:SV_RegRight2
+reg query "%Value1%" /v "%Value2%" 2>NUL | Findstr /i "%Value3%" > NUL 2>&1
 	if %errorlevel% EQU 1 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[32m♦%R%[90m -%R%[33m)
 goto :eof
 
 :SVCheck_RegRight_Ozel
 reg query "%~1" /v "%~2" > NUL 2>&1
 	if %errorlevel% EQU 0 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[32m♦%R%[90m -%R%[33m)
-	if %errorlevel% EQU 1 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[90m█%R%[90m -%R%[33m)
+	if %errorlevel% EQU 1 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]█ -%R%[33m)
 goto :eof
 
 :SVCheck_RegRight_Ozel2
 reg query %~1 > NUL 2>&1
 	if %errorlevel% EQU 0 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[32m♦%R%[90m -%R%[33m)
-	if %errorlevel% EQU 1 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[90m█%R%[90m -%R%[33m)
+	if %errorlevel% EQU 1 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]█ -%R%[33m)
 goto :eof
 
 :SVCheck_Memory
@@ -1772,16 +1904,16 @@ goto :eof
 
 :SVCheck_Compact
 Compact /CompactOS:Query | Findstr /i "The system is not in the Compact state" > NUL 2>&1
-	if %errorlevel%==0 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[90m█%R%[90m -%R%[33m)
+	if %errorlevel%==0 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]█ -%R%[33m)
 	if %errorlevel%==1 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[32m♦%R%[90m -%R%[33m)
 goto :eof
 
 :SVCheck_OS10
-if %Win% EQU 10 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[31m█%R%[0m%R%[90m -%R%[33m)
+if %Win% EQU 10 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[35m█%R%[90m -%R%[33m)
 goto :eof
 
 :SVCheck_OS11
-if %Win% EQU 11 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[31m█%R%[0m%R%[90m -%R%[33m)
+if %Win% EQU 11 (set DR=%R%[90m[%R%[36m%E1%%R%[90m/%R%[36m%D1%%R%[90m]%R%[35m█%R%[90m -%R%[33m)
 goto :eof
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
