@@ -88,6 +88,7 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 	• 57 [A/K]- Eski Menü: Windows 11 sistemlerde eski sağ tık menüsünü açıp, kapatır.
 </details>
 <details><B><summary> 3 - Hesap ve Lisans Yönetimi</B></summary>
+	
 	• 1 - Administrator Aktifleştir: Administrator hesabını açar.
 	• 2 - Administrator Kapat: Administrator hesabını kapatır.
 	• 3 - Admin grubuna kullanıcı ekle: Admin grubuna kullanıcı eklersiniz.
