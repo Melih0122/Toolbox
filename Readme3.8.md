@@ -10,24 +10,22 @@
 ![cmd_weccV1gqyA](https://user-images.githubusercontent.com/93199689/193428393-8ddb0888-2fde-4a37-87bb-27e479f75140.png)
 
 - OgnitorenKs Toolbox Windows 10 - 11 sürümlerinin x64 mimarilerinde açılmaktadır. En güncel olan Windows sürümü ile senkronize olarak gelişmektedir.
-- Windows ekran ölçeklendirme ayarı Toolbox'ın pencere ayarını bozabiliyor. Sorunsuz kullanım için Toolbox'ı kullanırken ölçeklendirme etkileri kapatılmalıdır.
+- Windows ekran ölçeklendirme ayarı Toolbox'ın pencere ayarını bozabiliyor. Sorunsuz kullanım için Toolbox'ı kullanırken ölçeklendirme kapatılmalıdır.
 - Toolbox'ı bazı antivirüsler zararlı olarak işaretleyebilir. Bu tarz bir durumda uygulamayı beyaz listeye almanız gerekebilir.
 
-# OGNİTORENKS TOOLBOX İÇERİĞİ
 <details><B><summary> 1 - Uygulama Yükleyici</B></summary>
 ----
 Bu bölümdeki programların büyük çoğunluğu ücretsiz uygulamalar arasında seçilmiştir. All in One Runtimes bölümü içinde C++ 2005-2022 / Java / XNA Framework / OpenAL / DirectX yer almaktadır. Diğer programlar kategorilere ayrılarak detaylandırılmıştır.
 
-![cmd_hwfcW39jKk](https://user-images.githubusercontent.com/93199689/188331249-0092939a-bb1d-477d-b0e9-cdd8335a5a4e.png)
-![cmd_otDomifS1u](https://user-images.githubusercontent.com/93199689/185706427-a2b5cb1d-33f6-4fdd-9027-aca214dc8583.png)
 
+</details>
 <details><B><summary> 2 - Hizmetleri Yönet</B></summary>
 
 Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip daha sonra aç / kapat baş harflerini eklemek gerekiyor.
 
 Örnek: 1a / 2k / 4A / 10K / 23a / 24k  
 
-![cmd_sjXAghXnW6](https://user-images.githubusercontent.com/93199689/193428433-01c1c1a1-fc44-430b-b981-e361af670eb5.png)
+![cmd_sjXAghXnW6](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/1.png)
 
 	► Hizmetler
 	• 1 [A/K]- Bluetooth : Bluetooth hizmetlerini kapatır açar.
