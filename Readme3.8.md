@@ -7,8 +7,8 @@
 - ► <B> [Projeye Katkıda Bulunanlar](https://github.com/OgnitorenKs/OgnitorenKs.Toolbox/blob/main/Projeye-Katk%C4%B1da-Bulunanlar.md) </B>
 
 # OGNİTORENKS TOOLBOX
-- OgnitorenKs Toolbox Windows 10 - 11 sürümlerinin x64 mimarilerinde açılmaktadır. En güncel olan Windows sürümü ile senkronize olarak gelişmektedir.
-- Windows ekran ölçeklendirme ayarı Toolbox'ın pencere ayarını bozabiliyor. Sorunsuz kullanım için Toolbox'ı kullanırken ölçeklendirme kapatılmalıdır.
+- OgnitorenKs Toolbox Windows 10 - 11 sürümlerinin x64 mimarilerinde çalışmaktadır. En güncel olan Windows sürümü ile senkronize olarak gelişmektedir.
+- Windows ekran ölçeklendirme ayarı Toolbox'ın pencere ayarını bozabilir. Sorunsuz kullanım için Toolbox'ı kullanırken ölçeklendirme kapatılmalıdır.
 - Toolbox'ı bazı antivirüsler zararlı olarak işaretleyebilir. Bu tarz bir durumda uygulamayı beyaz listeye almanız gerekebilir.
 
 ![ana menu](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/1.png)
@@ -88,7 +88,7 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 	• 57 [A/K]- Eski Menü: Windows 11 sistemlerde eski sağ tık menüsünü açıp, kapatır.
 </details>
 <details><B><summary> 3 - Hesap ve Lisans Yönetimi</B></summary>
-![cmd_TJH2uCD7iq](https://user-images.githubusercontent.com/93199689/193428458-54ea9895-ab0a-4d4a-b6e7-5c3087cba1dd.png
+![lisans](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/4.png)
 
 	• 1 - Administrator Aktifleştir: Administrator hesabını açar.
 	• 2 - Administrator Kapat: Administrator hesabını kapatır.
@@ -108,55 +108,59 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 <details><B><summary> 4 - Zaman Ayarlı PC Kapat</B></summary>
 Seçilen belirli bir süreden sonra PC otomatik kapatır. PC üzerinde uygulanmış bir oto kapatma işlemi mevcut değilse 'İptal Et' butonu görünmeyecektir.
 	
-![cmd_qBHeLUqaMj](https://user-images.githubusercontent.com/93199689/177620977-146cfc29-86e0-4553-a472-b4179a1bfb40.png)
+![shutdown](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/5.png)
 
 </details>
 
 <details><B><summary> 5 - Appx - Güncelleme Yükleyici</B></summary>
-Appx ve Update dosyalarını yüklemenizi sağlayan bölümdür. 
-Msix yükleme desteği sisteminizde yok ise bu bölüme atacağınız .msix uzantılı uygulamalar yüklenmeyecektir. Bunun için msix desteğinin yüklenmesi gerekmektedir. Düzenleme yaptığım sistemlerin için bu özelliği etkinleştirirek paylaşıyorum.
-
-	• Appx dosyalarıyla ilgili detaylı bilgi için bakınız:https://ognitorenks.blogspot.com/2021/11/rehber-powershell-appx-komutlarnn_9.html
+Appx ve Update dosyalarını yüklemenizi sağlayan bölümdür.
+Msix yükleme desteği sisteminizde yok ise bu bölüme atacağınız .msix uzantılı uygulamalar yüklenmeyecektir. Bunun için msix desteğinin yüklenmesi gerekmektedir. 
+	
+	• Appx dosyalarıyla ilgili detaylı bilgi için bakınız: https://ognitorenks.com.tr/2021/11/microsoft-store-onar-yukle-sil-komutlari-appx-indir.html
 	• Güncelleme dosyalarını indirebileceğiniz site: https://www.catalog.update.microsoft.com/
 
+![appx](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/6.png)
+	
 </details>
 
 <details><B><summary> 6 - SHA-256 Karşılaştırıcı [SHA-256]</B></summary>
-SHA-256 değerlerini karşılaştırmayı sağlar. Karşılatıracağınız SHA256 değerini girip, karşılaştırılacak dosya yolunu girmeniz gerekiyor. Kontrolleri sağlayıp detaylarını işlem sonunda gösterir.
+SHA-256 değerlerini karşılaştırmayı sağlar. Karşılatıracağınız SHA256 değerini girip, sonra dosya yolunu girmeniz gerekiyor. Kontrolleri sağlayıp detaylarını işlem sonunda gösterir.
+
+![sha256](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/7.png)
 
 </details>
 
 <details><B><summary> 7 - Fat32 to NTFS</B></summary>
 Fat32 olarak formatlanmış USB diskleri veri kaybı olmadan NTFS'ye çevirir. Disk harfini girmeniz gerekmektedir.
 	
-![cmd_IbpcglgIoZ](https://user-images.githubusercontent.com/93199689/167626995-480e24ba-31b6-4580-ad1d-40fffc936687.png)
+![fat32](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/8.png)
 
 </details>
 
 <details><B><summary> 8 - Sistem Hakkında</B></summary>
 Sistem ve donanım hakkında bilgi verir.
 
-![cmd_mDH1JvgaDM](https://user-images.githubusercontent.com/93199689/167623663-1d3cde57-4f54-48fb-bbce-a33a8e8f220c.png)
+![sistem](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/9.png)
 </details>
 
-<details><B><summary> 9 - Kayıtlı Wifi Bilgileri [ARCHLEY]</B></summary>
-Bu bölümde sisteme girdiğiniz Wifi isim ve şifrelerini görebilirsiniz. Çalışmasını toolbox'a eklediği için Archley'e teşekkür ederim.
+<details><B><summary> 9 - Kayıtlı Wifi Bilgileri</B></summary>
+Bu bölümde sistemde kayıtlı WIFI'lerin bilgilerine bakabilirsiniz. Çalışmasını toolbox'a eklediği için Archley'e teşekkür ederim.
 
 </details>
 
 <details><B><summary> 10 - Ping Ölçer</B></summary>
-İçerisinde belirli sitelerin ping durumlarını otomatik gösterir. Alt bölümde yer alan "Ping ölç" bölümüyle istediğiniz site ve IP'nin pingini ölçebilirsiniz.
+İçerisinde belirli sitelerin ping durumlarını otomatik gösterir. Alt bölümde yer alan "Site/IP" bölümüyle istediğiniz site ve IP'nin pingini ölçebilirsiniz.
 	
-![cmd_LI4e3XcXIt](https://user-images.githubusercontent.com/93199689/188331396-39132ff2-8853-40ee-911a-293d36401fcf.png)
+![ping](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/10.png)
 
 </details>
 
 <details><B><summary> 11 - Güncelleme Sonrası Temizlik</B></summary>
-Düzenlediğim sistemleri güncelleme sonrası ilk haline getirmeye yarar.
+Düzenlediğim sistemleri güncelleme sonrası ilk haline getirmeye sağlar.
 </details>
 	
 <details><B><summary> 12 - Windows / Market Onar</B></summary>
-Microsoft'un önerdiği bütün onarma seçeneklerini uygular.
+Microsoft'un önerdiği onarma seçeneklerini uygular.
 </details>
 	
 <details><B><summary> 13 - Genel Temizlik</B></summary>
