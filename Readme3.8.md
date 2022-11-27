@@ -7,7 +7,8 @@
 - ► <B> [Projeye Katkıda Bulunanlar](https://github.com/OgnitorenKs/OgnitorenKs.Toolbox/blob/main/Projeye-Katk%C4%B1da-Bulunanlar.md) </B>
 
 # OGNİTORENKS TOOLBOX
-![cmd_weccV1gqyA](https://user-images.githubusercontent.com/93199689/193428393-8ddb0888-2fde-4a37-87bb-27e479f75140.png)
+
+![anamenu](https://user-images.githubusercontent.com/93199689/193428393-8ddb0888-2fde-4a37-87bb-27e479f75140.png)
 
 - OgnitorenKs Toolbox Windows 10 - 11 sürümlerinin x64 mimarilerinde açılmaktadır. En güncel olan Windows sürümü ile senkronize olarak gelişmektedir.
 - Windows ekran ölçeklendirme ayarı Toolbox'ın pencere ayarını bozabiliyor. Sorunsuz kullanım için Toolbox'ı kullanırken ölçeklendirme kapatılmalıdır.
