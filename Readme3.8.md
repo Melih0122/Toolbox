@@ -88,9 +88,6 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 	• 57 [A/K]- Eski Menü: Windows 11 sistemlerde eski sağ tık menüsünü açıp, kapatır.
 </details>
 <details><B><summary> 3 - Hesap ve Lisans Yönetimi</B></summary>
-
-![lisans](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/4.png)
-
 	• 1 - Administrator Aktifleştir: Administrator hesabını açar.
 	• 2 - Administrator Kapat: Administrator hesabını kapatır.
 	• 3 - Admin grubuna kullanıcı ekle: Admin grubuna kullanıcı eklersiniz.
@@ -104,6 +101,9 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 	• 11 - Lisans Süresini Öğren [xpr]: Lisans süresi hakkında detaylı bilgi verir.
 	• 12 - Lisans Sil [upk]: Sistem kullandığınız lisansı siler.
 	• 13 - Lisans Süre Sıfırla [rearm]: Windows 30 günlük deneme sürümü süresini 3 defa uzatabilirsiniz.
+
+![lisans](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/4.png)
+
 </details>
 
 <details><B><summary> 4 - Zaman Ayarlı PC Kapat</B></summary>
