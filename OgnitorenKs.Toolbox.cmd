@@ -1714,7 +1714,7 @@ goto :eof
 :: --------------------------------------------------------------------------------------------------------
 :MobileValue
 %Lang% :%~1
-set /p MobileValue=%R%[32m %Choice% : %R%[0m
+set /p MobileValue=%R%[32m  %Choice% : %R%[0m
 	if %MobileValue%==x (goto %~2)
 	if %MobileValue%==X (goto %~2)
 goto :eof
