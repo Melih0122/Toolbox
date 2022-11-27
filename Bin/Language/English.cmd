@@ -32,6 +32,10 @@ goto :eof
 set Choice=Licence
 goto :eof
 
+:Value_7
+set Choice=Application name
+goto :eof
+
 :Value_8
 set Choice=Enter a value in minutes
 goto :eof
@@ -61,11 +65,11 @@ echo            %R%[90m│%R%[32m  3-%R%[33m Account-License Management %R%[90m[
 echo            %R%[90m│%R%[32m  4-%R%[33m Timer PC Shutdown%R%[90m [M]          │%R%[32m  11-%R%[33m Post Update Cleaning             %R%[90m│%R%[0m
 echo            %R%[90m│%R%[32m  5-%R%[33m Appx - Update Installer        %R%[90m│%R%[32m  12-%R%[33m Windows - Strore Repair          %R%[90m│%R%[0m
 echo            %R%[90m│%R%[32m  6-%R%[33m SHA-256 Comparator             %R%[90m│%R%[32m  13-%R%[33m PC Cleaner                       %R%[90m│%R%[0m
-echo            %R%[90m│%R%[32m  7-%R%[33m Fat32 to NTFS%R%[90m [M]              │%R%[32m%R%[90m%R%[90m                                       │%R%[0m
-echo            %R%[90m│%R%[32m  8-%R%[33m System Info%R%[90m [*]                │%R%[32m%R%[90m%R%[90m                                       │%R%[0m
+echo            %R%[90m│%R%[32m  7-%R%[33m Fat32 to NTFS%R%[90m [M]              │%R%[32m  14-%R%[33m Taskbar Customization            %R%[90m│%R%[0m
+echo            %R%[90m│%R%[32m  8-%R%[33m System Info%R%[90m [*]                │%R%[32m  15-%R%[33m Process priority                 %R%[90m│%R%[0m
 echo            %R%[90m│%R%[32m  9-%R%[33m Saved Wifi Information         %R%[90m│%R%[32m%R%[90m%R%[90m                                       │%R%[0m
 echo            %R%[90m├────────────────────────────────────┼───────────────────────────────────────┤%R%[0m
-echo            %R%[90m│%R%[32m  L-%R%[36m Language Setting               %R%[90m│%R%[32m   X-%R%[36m Clear and Close                  %R%[90m│%R%[0m
+echo            %R%[90m│%R%[32m  L-%R%[36m Language Setting - Contact     %R%[90m│%R%[32m   X-%R%[36m Clear and Close                  %R%[90m│%R%[0m
 echo            %R%[90m└────────────────────────────────────┴───────────────────────────────────────┘%R%[0m
 goto :eof
 
@@ -156,6 +160,24 @@ goto :eof
 
 :Menu4_1
 echo %R%[96m  Auto shutdown canceled%R%[0m
+goto :eof
+
+:Menu_5
+echo  %R%[90m┌───────────────────────────────────────────────────┐%R%[0m
+echo  %R%[90m│%R%[92m               Work Priority Planner               %R%[90m│%R%[0m
+echo  %R%[90m├───────────────────────────────────────────────────┤%R%[0m
+echo  %R%[90m│   %R%[32m 1.%R%[33m High                                        %R%[90m│%R%[0m
+echo  %R%[90m│   %R%[32m 2.%R%[33m Above Normal                                %R%[90m│%R%[0m
+echo  %R%[90m│   %R%[32m 3.%R%[33m Subnormal                                   %R%[90m│%R%[0m
+echo  %R%[90m│   %R%[32m 4.%R%[33m Low                                         %R%[90m│%R%[0m
+echo  %R%[90m│   %R%[32m X.%R%[36m Menu                                        %R%[90m│%R%[0m
+echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
+goto :eof
+
+:Menu5_1
+echo %R%[90m  Task Manager - Details -
+echo %R%[90m  You can learn the application names.
+echo %R%[90m  You can type multiple by leaving a space.
 goto :eof
 
 :Update_1
@@ -306,8 +328,14 @@ echo  %R%[90m│%R%[92m                          (Archley)                      
 echo  %R%[90m├─────────────────────────────────────────────────────────────┤%R%[0m
 goto :eof
 
-:Service_Menu_1
+
+:Service_Info
 echo   %R%[90m█%R%[37m = Closed ^| %R%[32m♦%R%[37m = Open ^| %R%[31m█%R%[37m = Removed ^| %R%[35m█%R%[37m = Incompatible Windows
+goto :eof
+:Service_Info_2
+echo   %R%[90m█ = Closed ^| %R%[32m♦%R%[90m = Open ^| %R%[35m█%R%[90m = Incompatible Windows
+goto :eof
+:Service_Menu_1
 echo  %R%[90m┌─────────────────────────────────────────┬─────────────────────────────────────────┐%R%[0m
 echo  %R%[90m│► Services                               │► Features                               │%R%[0m
 goto :eof
@@ -824,8 +852,36 @@ goto :eof
 
 :Lang_1
 echo  %R%[90m┌───────────────────────────────────────────────────┐%R%[0m
+echo  %R%[90m│   %R%[32m 0.%R%[33m Contact                                     %R%[90m│%R%[0m
 echo  %R%[90m│   %R%[32m 1.%R%[33m Turkish (tr-TR)                             %R%[90m│%R%[0m
 echo  %R%[90m│   %R%[32m 2.%R%[33m English (en-US)                             %R%[90m│%R%[0m
 echo  %R%[90m│   %R%[32m X.%R%[36m Menu                                        %R%[90m│%R%[0m
 echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
+goto :eof
+
+:CheckOS_1
+echo %R%[31m Cannot run on Win10 system%R%[0m
+goto :eof
+
+:CheckOS_2
+echo %R%[31m Cannot run on Win11 system%R%[0m
+goto :eof
+
+:Taskbar_1
+echo  %R%[90m┌───────────────────────────────────────────────────┐%R%[0m
+echo  %R%[90m│%R%[92m               Taskbar Customization               %R%[90m│%R%[0m
+echo  %R%[90m├───────────────────────────────────────────────────┤%R%[0m
+goto :eof
+:Taskbar_2
+echo  %R%[90m│ %R%[32m 1%DR% Show clock side icons%R%[90m Win10            │%R%[0m
+goto :eof
+:Taskbar_3
+echo  %R%[90m│ %R%[32m 2%DR% Notification Area%R%[90m Win10                │%R%[0m
+goto :eof
+:Taskbar_4
+echo  %R%[90m│ %R%[32m 3%DR% Taskbar Weather                        %R%[90m│%R%[0m
+goto :eof
+:Taskbar_5
+echo  %R%[90m│ %R%[32m 4%DR% Align taskbar left%R%[90m Win11               │%R%[0m
+echo  %R%[90m│ %R%[32m X -%R%[37m Menu                                         %R%[90m│%R%[0m
 goto :eof

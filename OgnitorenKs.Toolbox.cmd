@@ -650,6 +650,11 @@ Dism /Online /Get-Features /format:table > %Location%\Bin\Data\Features.txt
 DISM /Online /Get-Capabilities /format:table > %Location%\Bin\Data\Capabilities.txt
 Call :Powershell "Get-MMAgent" > %Location%\Bin\Data\mc
 
+:: Regedit yedekler. İlk açılışa özel bunu yapar. Oluşturduğu yedek dosyası silinirse yeniden oluşturur.
+MD "%Location%\Bin\Extra\UpdateAfter\Backup" > NUL 2>&1
+dir /b "%Location%\Bin\Extra\UpdateAfter\Backup\Service.reg" > NUL 2>&1
+	if %errorlevel% EQU 1 (reg export "HKLM\SYSTEM\CurrentControlSet\Services" %Location%\Bin\Extra\UpdateAfter\Backup\Service.reg > NUL 2>&1)
+
 %Lang% :Service_Menu_On_Off
 echo.
 %Lang% :Service_Info
@@ -1491,7 +1496,7 @@ if %~1 EQU 1 (Call :expandsz "HKCR\Directory\background\shell\Yonet" "Icon" "%%%
 			  Call :vexpandsz "HKCR\Directory\background\shell\Yonet\shell\8TempClear\command" "%%%%SystemRoot%%%%\NSudo.exe -U:E -P:E -ShowWindowMode:hide cmd /c RD /S /Q %%%%%temp%%%%"
 			  ::
 			  Call :expandsz "HKCR\Directory\background\shell\Yonet\shell\9IconCache" "Icon" "%%%%SystemRoot%%%%\ico\RightClick\8.ico"
-			  Call :sz "HKCR\Directory\background\shell\Yonet\shell\9IconCache" "MUIVerb" "%Value11"
+			  Call :sz "HKCR\Directory\background\shell\Yonet\shell\9IconCache" "MUIVerb" "%Value11%"
 			  Call :vexpandsz "HKCR\Directory\background\shell\Yonet\shell\9IconCache\command" "%%%%SystemRoot%%%%\NSudo.exe -U:E -P:E -ShowWindowMode:hide cmd /c %%%%Windir%%%%\ReIconCache.exe /I /F"
 			  Call :PSExtract 1 "%Location%\Bin\ico\RightClickYonet.zip" "%Windir%")
 ::-------------------------------------

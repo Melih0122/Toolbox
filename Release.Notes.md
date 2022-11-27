@@ -23,6 +23,7 @@
 	• Toolbox ayarları bölümü kaldırıdlı.
 	• Güncelleme sonrası temizlik bölümü düzenlendi.
 	• Hizmet yönetimi bölümündeki kontrol komutları düzenlendi. Olası hata mesajları önlendi. Hatasız içerik kontrol ayarları yapıldı.
+	• Hizmet yönetimi bölümüne ilk açılışta yedekleme komutları eklendi.
 	• 
 
 </details>

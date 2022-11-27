@@ -68,7 +68,7 @@ echo            %R%[90m│%R%[32m  7-%R%[33m Fat32 to NTFS%R%[90m [M]           
 echo            %R%[90m│%R%[32m  8-%R%[33m Sistem Hakkında%R%[90m [*]            │%R%[32m  15-%R%[33m İşlem önceliği                   %R%[90m│%R%[0m
 echo            %R%[90m│%R%[32m  9-%R%[33m Kayıtlı Wifi Bilgileri         %R%[90m│%R%[32m%R%[90m%R%[90m                                       │%R%[0m
 echo            %R%[90m├────────────────────────────────────┼───────────────────────────────────────┤%R%[0m
-echo            %R%[90m│%R%[32m  L-%R%[36m Dil Ayarı                      %R%[90m│%R%[32m   X-%R%[36m Temizle ve Kapat                 %R%[90m│%R%[0m
+echo            %R%[90m│%R%[32m  L-%R%[36m Dil Ayarı - İletişim           %R%[90m│%R%[32m   X-%R%[36m Temizle ve Kapat                 %R%[90m│%R%[0m
 echo            %R%[90m└────────────────────────────────────┴───────────────────────────────────────┘%R%[0m
 goto :eof
 
@@ -849,6 +849,7 @@ goto :eof
 
 :Lang_1
 echo  %R%[90m┌───────────────────────────────────────────────────┐%R%[0m
+echo  %R%[90m│   %R%[32m 0.%R%[33m İletişim                                    %R%[90m│%R%[0m
 echo  %R%[90m│   %R%[32m 1.%R%[33m Turkish (tr-TR)                             %R%[90m│%R%[0m
 echo  %R%[90m│   %R%[32m 2.%R%[33m English (en-US)                             %R%[90m│%R%[0m
 echo  %R%[90m│   %R%[32m X.%R%[36m Menü                                        %R%[90m│%R%[0m
