@@ -26,7 +26,7 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 
 Örnek: 1a / 2k / 4A / 10K / 23a / 24k  
 
-![cmd_sjXAghXnW6](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/1.png)
+![hizmet](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/3.png)
 
 	► Hizmetler
 	• 1 [A/K]- Bluetooth : Bluetooth hizmetlerini kapatır açar.
