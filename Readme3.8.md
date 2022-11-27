@@ -7,18 +7,18 @@
 - ► <B> [Projeye Katkıda Bulunanlar](https://github.com/OgnitorenKs/OgnitorenKs.Toolbox/blob/main/Projeye-Katk%C4%B1da-Bulunanlar.md) </B>
 
 # OGNİTORENKS TOOLBOX
-
-![ana menu](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/1.png)
-
 - OgnitorenKs Toolbox Windows 10 - 11 sürümlerinin x64 mimarilerinde açılmaktadır. En güncel olan Windows sürümü ile senkronize olarak gelişmektedir.
 - Windows ekran ölçeklendirme ayarı Toolbox'ın pencere ayarını bozabiliyor. Sorunsuz kullanım için Toolbox'ı kullanırken ölçeklendirme kapatılmalıdır.
 - Toolbox'ı bazı antivirüsler zararlı olarak işaretleyebilir. Bu tarz bir durumda uygulamayı beyaz listeye almanız gerekebilir.
 
+![ana menu](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/1.png)
+
 <details><B><summary> 1 - Uygulama Yükleyici</B></summary>
-----
+
 Bu bölümdeki programların büyük çoğunluğu ücretsiz uygulamalar arasında seçilmiştir. All in One Runtimes bölümü içinde C++ 2005-2022 / Java / XNA Framework / OpenAL / DirectX yer almaktadır. Diğer programlar kategorilere ayrılarak detaylandırılmıştır.
 
-
+![uygulama](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/2.png)
+	
 </details>
 <details><B><summary> 2 - Hizmetleri Yönet</B></summary>
 
