@@ -173,11 +173,22 @@ GPU driver setup klasörünü,
 WinSxS temizliği yapar.
 </details>
 
+<details><B><summary> 14 - Görev Çubuğu Özelleştirme</B></summary>
+1a / 2K /3a yazarak aç-kapat yapabilirsiniz. Uyumsuz olan bölümleri denersiniz PC'de sorun yaşarsınız. Lütfen bu tarz bir uygulamadan kaçının.
+	• 1 [A/K]- Saat yanı simgeleri göster (Win10): Kapalı olursa ses ve ağ simgesini gösterir, diğer simgeler ok işaretinde kalır. Açık olursa hepsini gösterir.
+	• 2 [A/K]- Bildirim Alanı (Win10): Görev çubuğunda yer alan bildirim alanını kapatıp açmaya yarar.
+	• 3 [A/K]- Görev Çubuğu Hava Durumu: Görev çubuğunda hava durumunu açıp kapatır. Windows 11 sistemlerde Windows Experience Pack'ın yüklü olması gerekmektedir.
+	• 4 [A/K]- Görev çubuğunu sola hizala (Win11): Açık olursa görev çubuğu simgeleri sola hizalanır. Kapalı olursa ortalanır.
+	
+![ping](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/11.png)
+</details>
 
+<details><B><summary> 15 - İşlem önceliği</B></summary>
+Programların çalışma önceliğini kalıcı olarak değiştiremenizi sağlar. Bu bölümü ilk açtığınız da programın çalışacağı kademeyi seçmeniz gerekmektedir. Daha sonrasında Görev yönetici - Ayrıntılar bölümünden 
 
-
-
-
+	
+![ping](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/12.png)
+</details>
 
 
 
