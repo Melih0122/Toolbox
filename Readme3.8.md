@@ -181,13 +181,14 @@ WinSxS temizliği yapar.
 	• 4 [A/K]- Görev çubuğunu sola hizala (Win11): Açık olursa görev çubuğu simgeleri sola hizalanır. Kapalı olursa ortalanır.
 	
 ![ping](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/11.png)
+	
 </details>
 
 <details><B><summary> 15 - İşlem önceliği</B></summary>
 Programların çalışma önceliğini kalıcı olarak değiştiremenizi sağlar. Bu bölümü ilk açtığınız da programın çalışacağı kademeyi seçmeniz gerekmektedir. Daha sonrasında Görev yönetici - Ayrıntılar bölümünden 
 
-	
 ![ping](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/12.png)
+	
 </details>
 
 
