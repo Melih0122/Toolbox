@@ -1,4 +1,4 @@
-![title](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/title.png)
+![title2](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/title.png)
 
 ### Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
 - ► Discord: OgnitorenKs#2737 
