@@ -88,8 +88,7 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 	• 57 [A/K]- Eski Menü: Windows 11 sistemlerde eski sağ tık menüsünü açıp, kapatır.
 </details>
 <details><B><summary> 3 - Hesap ve Lisans Yönetimi</B></summary>
-![lisans](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/4.png)
-
+	
 	• 1 - Administrator Aktifleştir: Administrator hesabını açar.
 	• 2 - Administrator Kapat: Administrator hesabını kapatır.
 	• 3 - Admin grubuna kullanıcı ekle: Admin grubuna kullanıcı eklersiniz.
@@ -103,6 +102,9 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 	• 11 - Lisans Süresini Öğren [xpr]: Lisans süresi hakkında detaylı bilgi verir.
 	• 12 - Lisans Sil [upk]: Sistem kullandığınız lisansı siler.
 	• 13 - Lisans Süre Sıfırla [rearm]: Windows 30 günlük deneme sürümü süresini 3 defa uzatabilirsiniz.
+
+![lisans](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/4.png)
+
 </details>
 
 <details><B><summary> 4 - Zaman Ayarlı PC Kapat</B></summary>
@@ -171,11 +173,22 @@ GPU driver setup klasörünü,
 WinSxS temizliği yapar.
 </details>
 
+<details><B><summary> 14 - Görev Çubuğu Özelleştirme</B></summary>
+1a / 2K /3a yazarak aç-kapat yapabilirsiniz. Uyumsuz olan bölümleri denersiniz PC'de sorun yaşarsınız. Lütfen bu tarz bir uygulamadan kaçının.
+	• 1 [A/K]- Saat yanı simgeleri göster (Win10): Kapalı olursa ses ve ağ simgesini gösterir, diğer simgeler ok işaretinde kalır. Açık olursa hepsini gösterir.
+	• 2 [A/K]- Bildirim Alanı (Win10): Görev çubuğunda yer alan bildirim alanını kapatıp açmaya yarar.
+	• 3 [A/K]- Görev Çubuğu Hava Durumu: Görev çubuğunda hava durumunu açıp kapatır. Windows 11 sistemlerde Windows Experience Pack'ın yüklü olması gerekmektedir.
+	• 4 [A/K]- Görev çubuğunu sola hizala (Win11): Açık olursa görev çubuğu simgeleri sola hizalanır. Kapalı olursa ortalanır.
+	
+![ping](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/11.png)
+</details>
 
+<details><B><summary> 15 - İşlem önceliği</B></summary>
+Programların çalışma önceliğini kalıcı olarak değiştiremenizi sağlar. Bu bölümü ilk açtığınız da programın çalışacağı kademeyi seçmeniz gerekmektedir. Daha sonrasında Görev yönetici - Ayrıntılar bölümünden 
 
-
-
-
+	
+![ping](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/12.png)
+</details>
 
 
 
