@@ -1,4 +1,4 @@
-![133149924-e6949257-3aa5-4564-9977-f96fe4640967](https://user-images.githubusercontent.com/93199689/177007559-8ff9a779-80ce-4ccd-ac96-5a0e7b9fd423.png)
+![title](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/title.png)
 
 ### Hazırlayan: Hüseyin UZUNYAYLA / OgnitorenKs
 - ► Discord: OgnitorenKs#2737 
