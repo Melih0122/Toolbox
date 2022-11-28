@@ -175,6 +175,7 @@ WinSxS temizliği yapar.
 
 <details><B><summary> 14 - Görev Çubuğu Özelleştirme</B></summary>
 1a / 2K /3a yazarak aç-kapat yapabilirsiniz. Uyumsuz olan bölümleri denersiniz PC'de sorun yaşarsınız. Lütfen bu tarz bir uygulamadan kaçının.
+	
 	• 1 [A/K]- Saat yanı simgeleri göster (Win10): Kapalı olursa ses ve ağ simgesini gösterir, diğer simgeler ok işaretinde kalır. Açık olursa hepsini gösterir.
 	• 2 [A/K]- Bildirim Alanı (Win10): Görev çubuğunda yer alan bildirim alanını kapatıp açmaya yarar.
 	• 3 [A/K]- Görev Çubuğu Hava Durumu: Görev çubuğunda hava durumunu açıp kapatır. Windows 11 sistemlerde Windows Experience Pack'ın yüklü olması gerekmektedir.
