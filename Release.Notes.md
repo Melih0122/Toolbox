@@ -5,7 +5,7 @@
 -   Site: https://ognitorenks.com.tr
 
 
-<details><B><summary> Versiyon 3.8 ►  GELİŞTİRİLİYOR...</B></summary>
+<details><B><summary> Versiyon 3.8 ►  29.11.2022 - THE END</B></summary>
 
 	• Çoklu dil desteği için altyapı oluşturuldu.
 		• Dil seçimini sistem açılışınd otomatik yapmaktadır. Açıldıktan sonra bu "Dil ayarları" bölümünden değiştirilebilir.
@@ -24,7 +24,6 @@
 	• Güncelleme sonrası temizlik bölümü düzenlendi.
 	• Hizmet yönetimi bölümündeki kontrol komutları düzenlendi. Olası hata mesajları önlendi. Hatasız içerik kontrol ayarları yapıldı.
 	• Hizmet yönetimi bölümüne ilk açılışta yedekleme komutları eklendi.
-	• 
 
 </details>
 
