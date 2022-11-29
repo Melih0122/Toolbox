@@ -51,8 +51,8 @@ FOR /F "tokens=6" %%a in ('Dism /online /Get-intl ^| Find /I "Default system UI 
 	if %%a NEQ tr-TR (set Lang=Call "%Location%\Bin\Language\English.cmd")
 )
 :: Manuel dil seçimi
-FOR /F "tokens=3" %%a in ('Findstr /i "Select_Language" %Location%\Bin\Settings.ini') do (
-	if %%a EQU 0 (FOR /F "tokens=3" %%b in ('Findstr /i "Manuel_Language" %Location%\Bin\Settings.ini') do (set Lang=Call "%Location%\Bin\Language\%%b.cmd"))
+FOR /F "tokens=2" %%a in ('Findstr /i "Service_Language" %Location%\Bin\Settings.ini') do (
+	if %%a EQU Demand (FOR /F "tokens=2" %%b in ('Findstr /i "Select_Language" %Location%\Bin\Settings.ini') do (set Lang=Call "%Location%\Bin\Language\%%b.cmd"))
 )
 	
 :: -------------------------------------------------------------
@@ -115,7 +115,7 @@ FOR /F "tokens=5" %%a in ('FIND "Caption" %Location%\Bin\Data\OS.txt') do set Wi
 Call :Date
 cls
 :: Settings.ini dosyası içinden güncelleme ayarını kontrol ederek yönlendirme yapar.
-FOR /F "tokens=2" %%a in ('findstr /C:"AutoUpdate" %Location%\Bin\Settings.ini') do (if %%a EQU 1 (goto menu))
+FOR /F "tokens=2" %%a in ('findstr /C:"Update" %Location%\Bin\Settings.ini') do (if %%a EQU 1 (goto menu))
 :: Builder otomatik güncelleme işleminin durumunu kontrol eder ve yönlendirir.
 %Lang% :Update_1
 FOR /F "tokens=2" %%a in ('findstr /C:"TimeUpdate" %Location%\Bin\Settings.ini') do (set TimeLog=%%a)
@@ -1625,11 +1625,11 @@ Call :MobileValue "Value_1" menu
 	if %MobileValue% EQU 2 (set Lang=Call "%Location%\Bin\Language\English.cmd"
 							set Value2=English)
 :: Manuel dil ayarını aktfileştiri
-FOR /F "tokens=3" %%g in ('Findstr /i "Select_Language" %Location%\Bin\Settings.ini') do (
-	Call :Powershell "(Get-Content %Location%\Bin\Settings.ini) | ForEach-Object { $_ -replace '%%g', '0' } | Set-Content '%Location%\Bin\Settings.ini'"
+FOR /F "tokens=2" %%g in ('Findstr /i "Service_Language" %Location%\Bin\Settings.ini') do (
+	Call :Powershell "(Get-Content %Location%\Bin\Settings.ini) | ForEach-Object { $_ -replace '%%g', 'Demand' } | Set-Content '%Location%\Bin\Settings.ini'"
 )
 :: Seçilen dili kayıt eder.
-FOR /F "tokens=3" %%g in ('Findstr /i "Manuel_Language" %Location%\Bin\Settings.ini') do (
+FOR /F "tokens=2" %%g in ('Findstr /i "Select_Language" %Location%\Bin\Settings.ini') do (
 	Call :Powershell "(Get-Content %Location%\Bin\Settings.ini) | ForEach-Object { $_ -replace '%%g', '%Value2%' } | Set-Content '%Location%\Bin\Settings.ini'"
 )
 goto menu
