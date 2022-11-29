@@ -5,6 +5,7 @@
 - ► Mail: ognitorenks@gmail.com
 - ► Site: [https://ognitorenks.com.tr](https://ognitorenks.com.tr)
 - ► <B> [Projeye Katkıda Bulunanlar](https://github.com/OgnitorenKs/OgnitorenKs.Toolbox/blob/main/Projeye-Katk%C4%B1da-Bulunanlar.md) </B>
+- ► Language Packs= Turkish | English
 
 # OGNİTORENKS TOOLBOX
 - OgnitorenKs Toolbox Windows 10 - 11 sürümlerinin x64 mimarilerinde çalışmaktadır. En güncel olan Windows sürümü ile senkronize olarak gelişmektedir.
