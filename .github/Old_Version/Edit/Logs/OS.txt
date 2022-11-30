@@ -1,0 +1,10 @@
+
+
+Caption        : Microsoft Windows 11 Pro
+InstallDate    : 30.10.2022 22:51:41
+OSArchitecture : 64 bit
+RegisteredUser : OgnitorenKs
+CSName         : DESKTOP-17MI28S
+
+
+
