@@ -45,9 +45,9 @@ echo  %R%[90m├─────────────────────�
 FOR /F "tokens=3" %%a in ('FIND "InstallDate" %Location%\Bin\Data\OS.txt') do set Value1=%%a
 FOR /F "tokens=3" %%c in ('FIND "Caption" %Location%\Bin\Data\utc.txt') do set Value2=%%c
 set Value2=%Value2:~1,-4%
-for /f "tokens=2" %%a in ('echo %date%') do set Value3=%%a
+for /f "tokens=2" %%a in ('echo %date%') do set DateDay=%%a
+set DateDay=%Date:~0,-8%.%Date:~3,-5%.%Date:~6%
 for /f "tokens=1" %%b in ('echo %time%') do set Value4=%%b
-set Time2=%Time2:~0,-3%
 %Lang% :Extra_4
 
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■

@@ -773,7 +773,7 @@ echo   ►%R%[32m Kullanıcı :%R%[37m %Value1% %R%[0m
 goto :eof
 
 :Extra_4
-echo   ►%R%[32m Format Tarihi:%R%[37m %Value1%%R%[90m ^| %R%[32mSaat Dilimi:%R%[37m %Value2%%R%[90m ^|%R%[37m %Value3% - %Value4%%R%[0m
+echo   ►%R%[32m Format Tarihi:%R%[37m %Value1%%R%[90m ^| %R%[32mSaat Dilimi:%R%[37m %Value2%%R%[90m ^|%R%[37m %DateDay% - %Value4%%R%[0m
 goto :eof
 
 :Extra_5
