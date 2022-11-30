@@ -207,6 +207,7 @@ Programların çalışma önceliğini kalıcı olarak değiştiremenizi sağlar.
 </details>
 
 <details><B><summary> 16 - Dil Ayarı - İletişim</B></summary>
+	
 ![dil](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/13.png)
 ![lang](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/EN/13.png)
 	
