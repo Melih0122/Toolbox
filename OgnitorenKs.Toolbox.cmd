@@ -1620,6 +1620,7 @@ echo.
 %Lang% :Lang_1
 %Lang% :Value_1
 Call :MobileValue "Value_1" menu
+	if %MobileValue% EQU 0 (start https://ognitorenks.com.tr/iletisim)
 	if %MobileValue% EQU 1 (set Lang=Call "%Location%\Bin\Language\Turkish.cmd"
 							set Value2=Turkish)
 	if %MobileValue% EQU 2 (set Lang=Call "%Location%\Bin\Language\English.cmd"
