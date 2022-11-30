@@ -1,0 +1,10 @@
+
+
+Speed            : 3200
+SMBIOSMemoryType : 26
+
+Speed            : 3200
+SMBIOSMemoryType : 26
+
+
+
