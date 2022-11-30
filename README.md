@@ -20,15 +20,18 @@
 Bu bölümdeki programların büyük çoğunluğu ücretsiz uygulamalar arasında seçilmiştir. All in One Runtimes bölümü içinde C++ 2005-2022 / Java / XNA Framework / OpenAL / DirectX yer almaktadır. Diğer programlar kategorilere ayrılarak detaylandırılmıştır.
 
 ![uygulama](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/2.png)
+![application](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/EN/2.png)
 	
 </details>
 <details><B><summary> 2 - Hizmetleri Yönet</B></summary>
 
 Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip daha sonra aç / kapat baş harflerini eklemek gerekiyor.
 
-Örnek: 1a / 2k / 4A / 10K / 23a / 24k  
+Örnek: 1a / 2k / 4A / 10K / 23a / 24k
+Sample: 1e / 2d / 4E / 10D / 23E / 24D 
 
 ![hizmet](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/3.png)
+![application](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/EN/3.png)
 
 	► Hizmetler
 	• 1 [A/K]- Bluetooth : Bluetooth hizmetlerini kapatır açar.
@@ -106,6 +109,7 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 	• 13 - Lisans Süre Sıfırla [rearm]: Windows 30 günlük deneme sürümü süresini 3 defa uzatabilirsiniz.
 
 ![lisans](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/4.png)
+![license](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/EN/4.png)
 
 </details>
 
@@ -113,6 +117,7 @@ Bu bölümü kullanmak için işlem yapacağınz bölümün numarasını girip d
 Seçilen belirli bir süreden sonra PC otomatik kapatır. PC üzerinde uygulanmış bir oto kapatma işlemi mevcut değilse 'İptal Et' butonu görünmeyecektir.
 	
 ![shutdown](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/5.png)
+![shut](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/EN/5.png)
 
 </details>
 
@@ -124,6 +129,7 @@ Msix yükleme desteği sisteminizde yok ise bu bölüme atacağınız .msix uzan
 	• Güncelleme dosyalarını indirebileceğiniz site: https://www.catalog.update.microsoft.com/
 
 ![appx](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/6.png)
+![appxins](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/EN/6.png)
 	
 </details>
 
@@ -131,6 +137,7 @@ Msix yükleme desteği sisteminizde yok ise bu bölüme atacağınız .msix uzan
 SHA-256 değerlerini karşılaştırmayı sağlar. Karşılatıracağınız SHA256 değerini girip, sonra dosya yolunu girmeniz gerekiyor. Kontrolleri sağlayıp detaylarını işlem sonunda gösterir.
 
 ![sha256](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/7.png)
+![hash](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/EN/7.png)
 
 </details>
 
@@ -138,6 +145,7 @@ SHA-256 değerlerini karşılaştırmayı sağlar. Karşılatıracağınız SHA2
 Fat32 olarak formatlanmış USB diskleri veri kaybı olmadan NTFS'ye çevirir. Disk harfini girmeniz gerekmektedir.
 	
 ![fat32](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/8.png)
+![tontfs](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/EN/8.png)
 
 </details>
 
@@ -145,6 +153,7 @@ Fat32 olarak formatlanmış USB diskleri veri kaybı olmadan NTFS'ye çevirir. D
 Sistem ve donanım hakkında bilgi verir.
 
 ![sistem](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/9.png)
+![system](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/EN/9.png)
 </details>
 
 <details><B><summary> 9 - Kayıtlı Wifi Bilgileri</B></summary>
@@ -156,6 +165,7 @@ Bu bölümde sistemde kayıtlı WIFI'lerin bilgilerine bakabilirsiniz. Çalışm
 İçerisinde belirli sitelerin ping durumlarını otomatik gösterir. Alt bölümde yer alan "Site/IP" bölümüyle istediğiniz site ve IP'nin pingini ölçebilirsiniz.
 	
 ![ping](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/10.png)
+![pingmeter](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/EN/10.png)
 
 </details>
 
@@ -183,18 +193,25 @@ WinSxS temizliği yapar.
 	• 3 [A/K]- Görev Çubuğu Hava Durumu: Görev çubuğunda hava durumunu açıp kapatır. Windows 11 sistemlerde Windows Experience Pack'ın yüklü olması gerekmektedir.
 	• 4 [A/K]- Görev çubuğunu sola hizala (Win11): Açık olursa görev çubuğu simgeleri sola hizalanır. Kapalı olursa ortalanır.
 	
-![ping](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/11.png)
-	
+![gorevcubugu](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/11.png)
+![taskbar](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/EN/11.png)	
+
 </details>
 
 <details><B><summary> 15 - İşlem önceliği</B></summary>
 Programların çalışma önceliğini kalıcı olarak değiştiremenizi sağlar. Bu bölümü ilk açtığınız da programın çalışacağı kademeyi seçmeniz gerekmektedir. Daha sonrasında Görev yönetici - Ayrıntılar bölümünden 
 
-![ping](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/12.png)
+![islem](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/12.png)
+![process](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/EN/12.png)
 	
 </details>
 
+<details><B><summary> 16 - Dil Ayarı - İletişim</B></summary>
+![dil](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/13.png)
+![lang](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/EN/13.png)
+	
 
+</details>
 
 
 
