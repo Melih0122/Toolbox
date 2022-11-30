@@ -13,6 +13,7 @@
 - Toolbox'ı bazı antivirüsler zararlı olarak işaretleyebilir. Bu tarz bir durumda uygulamayı beyaz listeye almanız gerekebilir.
 
 ![ana menu](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/1.png)
+![Eng menu](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/EN/1.png)
 
 <details><B><summary> 1 - Uygulama Yükleyici</B></summary>
 
