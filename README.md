@@ -14,6 +14,8 @@
 - Windows ekran ölçeklendirme ayarı Toolbox'ın pencere ayarını bozabilir. Sorunsuz kullanım için Toolbox'ı kullanırken ölçeklendirme kapatılmalıdır.
 - Toolbox'ı bazı antivirüsler zararlı olarak işaretleyebilir. Bu tarz bir durumda uygulamayı beyaz listeye almanız gerekebilir.
 
+#### Uygulama indirme bölümünde indirme işlemi yapılamıyorsa. Microsoft Store ile Desktop App Installer (Uygulama yükleyici) güncellenmelidir.
+
 ![ana menu](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/1.png)
 ![Eng menu](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/EN/1.png)
 
