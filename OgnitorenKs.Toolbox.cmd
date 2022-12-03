@@ -98,11 +98,14 @@ dir /b "%ProgramData%\chocolatey" > NUL 2>&1
 						   %NSudo% Powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && set "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 )
 :: -------------------------------------------------------------
-:: Desktop App Installer kontrol eder
+:: Desktop App Installer kontrol eder ve yükler
 Call :Powershell "Get-AppxPackage -AllUsers" > %Location%\Bin\Data\Appx.txt
 Findstr /i "Microsoft.DesktopAppInstaller_8wekyb3d8bbwe" %Location%\Bin\Data\Appx.txt > NUL 2>&1
-	if %errorlevel% NEQ 0 (set Winget=1)
-	if %errorlevel% EQU 0 (set Winget=0)
+	 if %errorlevel% NEQ 0 (Call :PSDownload %Temp%\DesktopAppInstaller.msixbundle
+							Call :Powershell "Add-AppxPackage -Path %Temp%\DesktopAppInstaller.msixbundle")
+Winget > NUL 2>&1
+	 if %errorlevel% NEQ 0 (Call :PSDownload %Temp%\DesktopAppInstaller.msixbundle
+							Call :Powershell "Add-AppxPackage -Path %Temp%\DesktopAppInstaller.msixbundle")
 
 :: -------------------------------------------------------------
 :: Sistem bilgileri alınır
@@ -160,7 +163,6 @@ echo           %R%[90m %Value2%: %Value1% ^| %Value4% ^| %Value3%%R%[0m
 %Lang% :Value_4
 set /p menu=%R%[32m            %Choice%: %R%[0m
 title  OgnitorenKs Toolbox
-	if %Winget% EQU 1 (%Lang% :Winget_1&pause > NUL&goto menu)
 	if %menu% EQU 1 (goto Software_Installer)
 	if %menu% EQU 2 (goto Service_Management)
 	if %menu% EQU 3 (goto UserLicenceManager)
@@ -211,7 +213,7 @@ FOR %%a in (%multi%) do (
 	if %%a==10 (Call :Winget Ubisoft.Connect)
 	if %%a==11 (Call :Winget ElectronicArts.EADesktop)
 	if %%a==12 (Call :Winget Playnite.Playnite)
-	if %%a==13 (Call :Winget Google.Chrome)
+	if %%a==13 (Call :Winget2 Google.Chrome)
 	if %%a==14 (Call :Winget Mozilla.Firefox)
 	if %%a==15 (Call :Winget Brave.Brave)
 	if %%a==16 (Call :Winget Microsoft.Edge)
@@ -232,7 +234,7 @@ FOR %%a in (%multi%) do (
 	if %%a==31 (Call :Winget VideoLAN.VLC.Nightly)
 	if %%a==32 (Call :Winget Daum.PotPlayer)
 	if %%a==33 (Call :Winget AIMP.AIMP)
-	if %%a==34 (Call :Winget Spotify.Spotify)
+	if %%a==34 (Call :Winget2 Spotify.Spotify)
 	if %%a==35 (Call :Winget Tonec.InternetDownloadManager)
 	if %%a==36 (Call :Winget SoftDeluxe.FreeDownloadManager)
 	if %%a==37 (Call :Winget qBittorrent.qBittorrent)
@@ -1739,6 +1741,15 @@ winget install -e --silent --force --accept-source-agreements --accept-package-a
 goto :eof
 
 :: --------------------------------------------------------------------------------------------------------
+:Winget2
+"%Location%\Bin\NSudo.exe" -U:C -Wait cmd /c winget install -e --silent --force --accept-source-agreements --accept-package-agreements --id %~1
+goto :eof
+
+:: --------------------------------------------------------------------------------------------------------
+:DesktopAppInstaller
+
+
+:: --------------------------------------------------------------------------------------------------------
 :Check_OS
 if %Win% EQU 10 (%Lang% :CheckOS_1)
 if %Win% EQU 11 (%Lang% :CheckOS_2)
@@ -1926,6 +1937,7 @@ goto :eof
 
 :ProcessCompleted
 mode con cols=39 lines=20
+::--------------------------------------------------
 echo.
 echo            %R%[90m┌───────────────┐%R%[0m
 echo            %R%[90m│%R%[32m               %R%[90m│%R%[0m
@@ -1937,7 +1949,7 @@ echo            %R%[90m│%R%[32m     ███       %R%[90m│%R%[0m
 echo            %R%[90m│               %R%[90m│%R%[0m
 echo            %R%[90m└───────────────┘%R%[0m
 echo.
-echo            %R%[37m İşlem tamamlandı%R%[0m
+%Lang% :Process_1
 timeout /t 1 /nobreak > NUL
 goto :eof
 
@@ -1954,11 +1966,7 @@ echo            %R%[90m│%R%[32m     ███       %R%[90m│%R%[0m
 echo            %R%[90m│               %R%[90m│%R%[0m
 echo            %R%[90m└───────────────┘%R%[0m
 echo.
-echo            %R%[37m İşlem tamamlandı%R%[0m
-echo.
-echo       %R%[33m Yeniden başlatmak için %R%[96m'R'%R%[0m
-echo          %R%[33m Devam etmek için %R%[96m'X'%R%[0m
-echo               %R%[33m tuşlayın%R%[0m
+%Lang% :Process_2
 set /p value=%R%[92m                   %R%[0m
 	if %value% EQU R (shutdown -r -f -t 0&exit)
 	if %value% EQU r (shutdown -r -f -t 0&exit)

@@ -105,7 +105,10 @@
 ► Service-1 = GpuEnergyDrv                                 ◄|► GPU Energy Driver
 ► Service-2 = SgrmAgent                                    ◄|► System Guard Runtime Monitor Agent
 ► Service-1 = mrxsmb10                                     ◄|► SMB 1.x MiniRedirector
-► Service-2 = MsSecFlt                                     ◄|► Microsoft Güvenlik Olayları Bileşen Mini Filtresi
+► Service-0 = MsSecFlt                                     ◄|► Microsoft Güvenlik Olayları Bileşen Mini Filtresi
 ► Service-2 = WdBoot                                       ◄|► Windows Defender
 ► Service-2 = WdFilter                                     ◄|► Windows Defender
 ► Service-2 = WdNisDrv                                     ◄|► Windows Defender
+► Service-1 = TextInputManagementService                   ◄|► Metin Girişi Yönetimi Hizmet
+► Service-1 = webthreatdefsvc                              ◄|► Web Tehdit Savunması Hizmeti
+► Service-1 = webthreatdefusersvc                          ◄|► Web Tehdit Savunması Kullanıcı Hizmeti

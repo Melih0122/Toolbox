@@ -885,3 +885,14 @@ goto :eof
 echo  %R%[90m│ %R%[32m 4%DR% Align taskbar left%R%[90m Win11               │%R%[0m
 echo  %R%[90m│ %R%[32m X -%R%[37m Menu                                         %R%[90m│%R%[0m
 goto :eof
+
+:Process_1
+echo           %R%[37m Process completed%R%[0m
+goto :eof
+
+:Process_2
+echo           %R%[37m Process completed%R%[0m
+echo.
+echo            %R%[33m Restart  :%R%[96m R%R%[0m
+echo            %R%[33m Continue :%R%[96m X%R%[0m
+goto :eof

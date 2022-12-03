@@ -882,3 +882,15 @@ goto :eof
 echo  %R%[90m│ %R%[32m 4%DR% Görev çubuğunu sola hizala%R%[90m Win11       │%R%[0m
 echo  %R%[90m│ %R%[32m X -%R%[37m Menü                                         %R%[90m│%R%[0m
 goto :eof
+
+:Process_1
+echo            %R%[37m İşlem tamamlandı%R%[0m
+goto :eof
+
+:Process_2
+echo            %R%[37m İşlem tamamlandı%R%[0m
+echo.
+echo       %R%[33m Yeniden başlatmak için %R%[96m'R'%R%[0m
+echo          %R%[33m Devam etmek için %R%[96m'X'%R%[0m
+echo               %R%[33m tuşlayın%R%[0m
+goto :eof
