@@ -7,10 +7,14 @@
 - ► <B> [Projeye Katkıda Bulunanlar](https://github.com/OgnitorenKs/OgnitorenKs.Toolbox/blob/main/Projeye-Katk%C4%B1da-Bulunanlar.md) </B>
 - ► Language Packs= Turkish | English
 
+Çalışmanın tüm hakları Hüseyin UZUNYAYLA’ya aittir. Çalışma üzerinde geliştirme, kopyalama, içeriğini değiştirmek yasaktır. Uygulamayı farklı platformlar üzerinde paylaşmak isterseniz tarafımdan izin almanız gerekmektedir.
+
 # OGNİTORENKS TOOLBOX
 - OgnitorenKs Toolbox Windows 10 - 11 sürümlerinin x64 mimarilerinde çalışmaktadır. En güncel olan Windows sürümü ile senkronize olarak gelişmektedir.
 - Windows ekran ölçeklendirme ayarı Toolbox'ın pencere ayarını bozabilir. Sorunsuz kullanım için Toolbox'ı kullanırken ölçeklendirme kapatılmalıdır.
 - Toolbox'ı bazı antivirüsler zararlı olarak işaretleyebilir. Bu tarz bir durumda uygulamayı beyaz listeye almanız gerekebilir.
+
+#### Uygulama indirme bölümünde indirme işlemi yapılamıyorsa. Microsoft Store ile Desktop App Installer (Uygulama yükleyici) güncellenmelidir.
 
 ![ana menu](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/TR/1.png)
 ![Eng menu](https://raw.githubusercontent.com/OgnitorenKs/Toolbox/main/.github/SS/EN/1.png)
