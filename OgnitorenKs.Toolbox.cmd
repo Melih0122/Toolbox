@@ -232,7 +232,7 @@ FOR %%a in (%multi%) do (
 	if %%a==29 (Call :Winget RARLab.WinRAR)
 	if %%a==30 (Call :Winget CodecGuide.K-LiteCodecPack.Mega)
 	if %%a==31 (Call :Winget VideoLAN.VLC.Nightly)
-	if %%a==32 (Call :Winget Daum.PotPlayer)
+	if %%a==32 (Call :Winget2 Daum.PotPlayer)
 	if %%a==33 (Call :Winget AIMP.AIMP)
 	if %%a==34 (Call :Winget2 Spotify.Spotify)
 	if %%a==35 (Call :Winget Tonec.InternetDownloadManager)
