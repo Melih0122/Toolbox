@@ -4,6 +4,11 @@
 -   Mail: ognitorenks@gmail.com
 -   Site: https://ognitorenks.com.tr
 
+<details><B><summary> Versiyon 3.8.1 ►  08.12.2022 - THE END</B></summary>
+
+	• Genel olarak son düzenlemeler yapılıp, bir kaç bug giderildi.
+
+</details>
 
 <details><B><summary> Versiyon 3.8 ►  29.11.2022 - THE END</B></summary>
 

@@ -109,6 +109,9 @@
 ► Service-2 = WdBoot                                       ◄|► Windows Defender
 ► Service-2 = WdFilter                                     ◄|► Windows Defender
 ► Service-2 = WdNisDrv                                     ◄|► Windows Defender
-► Service-1 = TextInputManagementService                   ◄|► Metin Girişi Yönetimi Hizmet
 ► Service-1 = webthreatdefsvc                              ◄|► Web Tehdit Savunması Hizmeti
 ► Service-1 = webthreatdefusersvc                          ◄|► Web Tehdit Savunması Kullanıcı Hizmeti
+► Service-1 = GraphicsPerfSvc                              ◄|► Grafik performans izleme hizmeti
+► Service-1 = tzautoupdate                                 ◄|► Otomatik saat dilimi güncelleştirici
+► Service-1 = BcastDVRUserService                          ◄|► Oyun DVR ve Yayın Kullanıcı Hizmeti
+► Service-1 = NPSMSvc                                      ◄|► Windows Now Playing Session Manager

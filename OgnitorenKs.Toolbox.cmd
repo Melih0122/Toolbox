@@ -24,10 +24,11 @@
 ::
 :: ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 :OgnitorenKs.Toolbox
+mode con cols=100 lines=27
 echo off
 chcp 65001 > NUL 2>&1
 title  OgnitorenKs Toolbox
-set version=3.8
+set version=3.8.1
 cls
 
 :: -------------------------------------------------------------
@@ -58,12 +59,11 @@ FOR /F "tokens=2" %%a in ('Findstr /i "Service_Language" %Location%\Bin\Settings
 :: -------------------------------------------------------------
 :: Değişkenler
 set NSudo="%Location%\Bin\NSudo.exe" -U:T -P:E -Wait -ShowWindowMode:hide cmd /c
-set NSudo2="%Location%\Bin\NSudo.exe" -U:E -P:E -ShowWindowMode:hide cmd /c
 
 :: -------------------------------------------------------------
 :: Admin yetkisini kontrol eder
 reg query "HKU\S-1-5-19" > NUL 2>&1
-	if %errorlevel%==1 (%NSudo2% Powershell -command "Start-Process '%Location%\OgnitorenKs.Toolbox.cmd'"
+	if %errorlevel%==1 ("%Location%\Bin\NSudo.exe" -U:E -ShowWindowMode:hide cmd /c Powershell -command "Start-Process '%Location%\OgnitorenKs.Toolbox.cmd'"
 						exit)
 
 :: -------------------------------------------------------------
@@ -154,7 +154,7 @@ echo    %R%[90m█  █ █    ██  █  █    █   █  █ █  █ █  
 echo    %R%[90m█  █ █ ██ █ █ █  █    █   █  █ ████ ██  █ █ █ ██   ████    %R%[90m  █   █  █ █  █ █   ███  █  █   █  %R%[0m
 echo    %R%[90m█  █ █  █ █  ██  █    █   █  █ █ █  █   █  ██ █ █     █    %R%[90m  █   █  █ █  █ █   █  █ █  █  █ █ %R%[0m
 echo    %R%[90m████ ████ █   █ ███   █   ████ █  █ ███ █   █ █  █ ████    %R%[90m  █   ████ ████ ███ ███  ████ █   █%R%[0m
-echo    %R%[90mhttps://ognitorenks.com.tr                                                                 %R%[90m%version%%R%[0m
+echo    %R%[90mhttps://ognitorenks.com.tr                                                               %R%[90m%version%%R%[0m
 echo.
 echo           %R%[90m %Value2%: %Value1% ^| %Value4% ^| %Value3%%R%[0m
 :: Dil dosyasından menüyü çağırır
@@ -213,7 +213,7 @@ FOR %%a in (%multi%) do (
 	if %%a==10 (Call :Winget Ubisoft.Connect)
 	if %%a==11 (Call :Winget ElectronicArts.EADesktop)
 	if %%a==12 (Call :Winget Playnite.Playnite)
-	if %%a==13 (Call :Winget2 Google.Chrome)
+	if %%a==13 (Call :Winget Google.Chrome)
 	if %%a==14 (Call :Winget Mozilla.Firefox)
 	if %%a==15 (Call :Winget Brave.Brave)
 	if %%a==16 (Call :Winget Microsoft.Edge)
@@ -232,9 +232,9 @@ FOR %%a in (%multi%) do (
 	if %%a==29 (Call :Winget RARLab.WinRAR)
 	if %%a==30 (Call :Winget CodecGuide.K-LiteCodecPack.Mega)
 	if %%a==31 (Call :Winget VideoLAN.VLC.Nightly)
-	if %%a==32 (Call :Winget2 Daum.PotPlayer)
+	if %%a==32 (Call :Winget Daum.PotPlayer)
 	if %%a==33 (Call :Winget AIMP.AIMP)
-	if %%a==34 (Call :Winget2 Spotify.Spotify)
+	if %%a==34 (Call :Winget Spotify.Spotify)
 	if %%a==35 (Call :Winget Tonec.InternetDownloadManager)
 	if %%a==36 (Call :Winget SoftDeluxe.FreeDownloadManager)
 	if %%a==37 (Call :Winget qBittorrent.qBittorrent)
@@ -1268,7 +1268,7 @@ goto :eof
 
 :O33_38_40_Capabilities
 FOR /F "tokens=1" %%a in ('Findstr /i "%~2" %Location%\Bin\Data\Capabilities.txt') do (
-	Dism /Online /%~1-Capability /CapabilityName:%%a /Quiet /NoRestart
+	Dism /Online /%~1-Capability /CapabilityName:%%a /NoRestart
 )
 ::-------------------------------------
 ::    Aç = %~1: Remove  | %~2: Find ile bulunacak özellik adı  
@@ -1278,9 +1278,9 @@ goto :eof
 
 :O39_WindowsMediaPlayer
 %Lang% :Service_39&timeout /t 1 /nobreak > NUL
-%~4 /Online /Add-Capability /CapabilityName:Media.WindowsMediaPlayer~~~~0.0.12.0 /Quiet /NoRestart
-Dism /Online /%3-Feature /FeatureName:MediaPlayback /Quiet /NoRestart
-Dism /online /%3-Feature /FeatureName:WindowsMediaPlayer /Quiet /NoRestart
+%~4 /Online /Add-Capability /CapabilityName:Media.WindowsMediaPlayer~~~~0.0.12.0 /NoRestart
+Dism /Online /%3-Feature /FeatureName:MediaPlayback /NoRestart
+Dism /online /%3-Feature /FeatureName:WindowsMediaPlayer /NoRestart
 :: Windows Media Player Ağ Paylaşım Hizmeti
 sc config WMPNetworkSvc start= %2 > NUL 2>&1
 net %1 WMPNetworkSvc /y > NUL 2>&1
@@ -1307,7 +1307,7 @@ goto :eof
 
 :O42_44_Features
 FOR /F "tokens=1" %%a in ('findstr /C:"%~2" %Location%\Bin\Data\Features.txt') do (
-	Dism /Online /%~1-Feature /FeatureName:%%a /All /Quiet /NoRestart
+	Dism /Online /%~1-Feature /FeatureName:%%a /All /NoRestart
 )
 ::-------------------------------------
 ::    Aç = %~1: Enable    | %~2: Find ile bulunacak özellik adı 
@@ -1627,6 +1627,10 @@ Call :MobileValue "Value_1" menu
 							set Value2=Turkish)
 	if %MobileValue% EQU 2 (set Lang=Call "%Location%\Bin\Language\English.cmd"
 							set Value2=English)
+	if %MobileValue% EQU 3 (set Lang=Call "%Location%\Bin\Language\German.cmd"
+							set Value2=German)
+	if %MobileValue% EQU 4 (FOR /F "tokens=2" %%g in ('Findstr /i "Service_Language" %Location%\Bin\Settings.ini') do (Call :Powershell "(Get-Content %Location%\Bin\Settings.ini) | ForEach-Object { $_ -replace '%%g', 'Auto' } | Set-Content '%Location%\Bin\Settings.ini'")
+							goto OgnitorenKs.Toolbox)
 :: Manuel dil ayarını aktfileştiri
 FOR /F "tokens=2" %%g in ('Findstr /i "Service_Language" %Location%\Bin\Settings.ini') do (
 	Call :Powershell "(Get-Content %Location%\Bin\Settings.ini) | ForEach-Object { $_ -replace '%%g', 'Demand' } | Set-Content '%Location%\Bin\Settings.ini'"
@@ -1635,7 +1639,7 @@ FOR /F "tokens=2" %%g in ('Findstr /i "Service_Language" %Location%\Bin\Settings
 FOR /F "tokens=2" %%g in ('Findstr /i "Select_Language" %Location%\Bin\Settings.ini') do (
 	Call :Powershell "(Get-Content %Location%\Bin\Settings.ini) | ForEach-Object { $_ -replace '%%g', '%Value2%' } | Set-Content '%Location%\Bin\Settings.ini'"
 )
-goto menu
+goto OgnitorenKs.Toolbox
 
 :: --------------------------------------------------------------------------------------------------------
 :Exit
@@ -1669,7 +1673,6 @@ set Value10=
 set Value11=
 set Svchost=
 set link=
-set NSudo2=
 set regtur=
 set deger=
 set Servis_Value1=
@@ -1738,16 +1741,8 @@ goto :eof
 :: --------------------------------------------------------------------------------------------------------
 :Winget
 winget install -e --silent --force --accept-source-agreements --accept-package-agreements --id %~1
+	if %errorlevel% NEQ 0 (cls&"%Location%\Bin\NSudo.exe" -U:C -Wait cmd /c winget install -e --silent --force --accept-source-agreements --accept-package-agreements --id %~1)
 goto :eof
-
-:: --------------------------------------------------------------------------------------------------------
-:Winget2
-"%Location%\Bin\NSudo.exe" -U:C -Wait cmd /c winget install -e --silent --force --accept-source-agreements --accept-package-agreements --id %~1
-goto :eof
-
-:: --------------------------------------------------------------------------------------------------------
-:DesktopAppInstaller
-
 
 :: --------------------------------------------------------------------------------------------------------
 :Check_OS

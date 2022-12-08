@@ -738,7 +738,6 @@ echo Toolbox kapanıyor...%R%[0m
 timeout /t 4 /nobreak > NUL
 goto :eof
 
-
 :Extra_Value_1
 set Value5=UEFI-GPT
 goto :eof
@@ -852,6 +851,8 @@ echo  %R%[90m┌─────────────────────�
 echo  %R%[90m│   %R%[32m 0.%R%[33m İletişim                                    %R%[90m│%R%[0m
 echo  %R%[90m│   %R%[32m 1.%R%[33m Turkish (tr-TR)                             %R%[90m│%R%[0m
 echo  %R%[90m│   %R%[32m 2.%R%[33m English (en-US)                             %R%[90m│%R%[0m
+echo  %R%[90m│   %R%[32m 3.%R%[33m German (de-DE)                              %R%[90m│%R%[0m
+echo  %R%[90m│   %R%[32m 4.%R%[33m Otomatik                                    %R%[90m│%R%[0m
 echo  %R%[90m│   %R%[32m X.%R%[36m Menü                                        %R%[90m│%R%[0m
 echo  %R%[90m└───────────────────────────────────────────────────┘%R%[0m
 goto :eof
