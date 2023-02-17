@@ -890,6 +890,10 @@ goto :eof
 %Lang% :Service_3&timeout /t 1 /nobreak > NUL
 sc config Spooler start= %3 > NUL 2>&1
 net %1 Spooler /y > NUL 2>&1
+FOR %%g in (PrintWorkflowUserSvc McpManagementService PrintNotify) do (
+	sc config %%g start= demand > NUL 2>&1
+	net start %%g /y > NUL 2>&1
+)
 :: Uzak Masaüstü Hizmetleri Kullanıcı Modu Bağlantı Noktası Yeniden Yönlendiricisi
 sc config UmRdpService start= %2 > NUL 2>&1
 net %1 UmRdpService /y > NUL 2>&1
@@ -944,8 +948,8 @@ goto :eof
 sc config BDESVC start= %2 > NUL 2>&1
 net %1 BDESVC /y > NUL 2>&1
 ::-------------------------------------------------------
-::    Aç = %1 : start | %2 : demand   | %3 : boot
-:: Kapat = %1 : stop  | %2 : disabled | %3 : disabled
+::    Aç = %1 : start | %2 : demand  
+:: Kapat = %1 : stop  | %2 : disabled
 ::------------------------------------------------------
 goto :eof
 
@@ -1041,7 +1045,7 @@ goto :eof
 :S15_Miracast
 %Lang% :Service_15&timeout /t 1 /nobreak > NUL
 :: ConsentUx kullanıcı hizmeti | Miracast, DLNA kullanıcı arabirimini | Cihaz Akışı
-FOR %%a in (ConsentUxUserSvc DevicePickerUserSvc DevicesFlowUserSvc) do (
+FOR %%a in (ConsentUxUserSvc DevicePickerUserSvc DevicesFlowUserSvc WFDSConMgrSvc) do (
 	sc config %%a start= %2 > NUL 2>&1
 	net %1 %%a /y > NUL 2>&1)
 ::-------------------------------------------------------
@@ -1053,7 +1057,7 @@ goto :eof
 :S16_Flow
 %Lang% :Service_16&timeout /t 1 /nobreak > NUL
 ::PNRP Makine adı yayın hizmeti | Eş adı çözümleme protokolü | Eş ağ gruplandırma | Eşler arası ağ oluşturma kimlik yöneticisi | UPNP aygıt ana makinesi | Upnp Aygıt ana bilgisyarı (Ağdaki cihazları bulur)
-FOR %%a in (PNRPAutoReg PNRPsvc p2psvc p2pimsvc upnphost QWAVE) do (
+FOR %%a in (PNRPAutoReg PNRPsvc p2psvc p2pimsvc upnphost QWAVE lmhosts LanmanServer fdPHost FDResPub) do (
 	sc config %%a start= %3 > NUL 2>&1
 	net %1 %%a /y > NUL 2>&1)
 sc config SSDPSRV start= %4 > NUL 2>&1
