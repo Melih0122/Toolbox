@@ -8,6 +8,17 @@ goto :eof
 :: #########################################################################################################
 :: ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄ ◄
 
+
+
+E0001>Toolbox klasör yolunda Türkçe karakter tespit edildi>
+E0002>Toolbox klasör yolunda boşluk tespit edildi>
+E0003>Sistem mimariniz x64 değil>
+
+
+
+M0001>Chocolatey yükleniyor...>
+
+
 :Value_1
 set Choice=Seçim
 goto :eof
